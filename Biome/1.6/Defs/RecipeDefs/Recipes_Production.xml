@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--切割白瑶砖-->
+	<!--Cut mist agate blocks (disabled)-->
 	<!--<RecipeDef>
 		<defName>RI_Recipe_MistAgateBlocksAny</defName>
 		<label>make mist agate blocks</label>
@@ -38,7 +38,7 @@
 		</products>
 	</RecipeDef>-->
 
-	<!--芦荟搓医药-->
+	<!--Make medicine from aloe vera-->
 	<RecipeDef>
 		<defName>RI_Recipe_MakeMedicineFromAloeVera</defName>
 		<label>make medicine from aloe vera</label>
@@ -96,7 +96,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--芦荟搓医药x4-->
+	<!--Make medicine from aloe vera x4-->
 	<RecipeDef>
 		<defName>RI_Recipe_MakeMedicineFromAloeVeraBulk</defName>
 		<label>make medicine from aloe vera x4</label>
@@ -154,7 +154,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--煮安魂汤x1-->
+	<!--Decoct tranquilizing soup x1-->
 	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder" MayRequire="RI.RimImmortal.Core">
 		<defName>RI_Recipe_MakeTranquilizingSoup</defName>
 		<label>decoct tranquilizing soup</label>
@@ -184,7 +184,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--煮安魂汤x4-->
+	<!--Decoct tranquilizing soup x4-->
 	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder" MayRequire="RI.RimImmortal.Core">
 		<defName>RI_Recipe_MakeTranquilizingSoupBulk</defName>
 		<label>decoct tranquilizing soup x4</label>

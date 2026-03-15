@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--弭金砂-->
+	<!--Miragold-->
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>RI_Drug_Miragold</defName>
 		<label>miragold</label>
@@ -77,7 +77,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<!--研究-->
+			<!--Research requirement-->
 			<researchPrerequisite>RI_ElysiumDrugs</researchPrerequisite>
 			<recipeUsers>
 				<li>DrugLab</li>
@@ -105,7 +105,7 @@
 		<allowedArchonexusCount>50</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--弭金砂效果hediff-->
+	<!--Miragold high effect hediff-->
 	<HediffDef>
 		<defName>RI_Hediff_MiragoldHigh</defName>
 		<label>miragold effect</label>
@@ -150,7 +150,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--飘飘欲仙-->
+	<!--Walk upon air (mood thought)-->
 	<ThoughtDef>
 		<defName>RI_Thought_MiragoldHigh</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
@@ -168,7 +168,7 @@
 
 	<!-- Smokeleaf addiction -->
 
-	<!--弭金砂化学-->
+	<!--Miragold chemical-->
 	<ChemicalDef>
 		<defName>RI_Chemical_Miragold</defName>
 		<label>Miragold</label>
@@ -187,7 +187,7 @@
 		<listPriority>25</listPriority>
 	</NeedDef>
 
-	<!--弭金砂耐受-->
+	<!--Miragold tolerance-->
 	<HediffDef ParentName="DrugToleranceBase">
 		<defName>RI_Hediff_MiragoldTolerance</defName>
 		<label>miragold tolerance</label>
@@ -218,7 +218,7 @@
 		</hediffGivers>
 	</HediffDef>
 
-	<!--弭金砂依赖hediff-->
+	<!--Miragold addiction hediff-->
 	<HediffDef ParentName="AddictionBase">
 		<defName>RI_Hediff_MiragoldAddiction</defName>
 		<label>miragold dependence</label>
@@ -256,7 +256,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--弭金砂戒断心情-->
+	<!--Miragold withdrawal thought-->
 	<ThoughtDef>
 		<defName>RI_Thought_MiragoldWithdrawal</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>

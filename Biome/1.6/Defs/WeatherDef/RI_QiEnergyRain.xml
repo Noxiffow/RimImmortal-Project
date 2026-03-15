@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<!--灵光之雨-->
+	<!--Spiritual radiance rain weather-->
 	<WeatherDef MayRequire="RI.RimImmortal.Core">
 		<defName>RI_QiEnergyRain</defName>
 		<label>spiritual radiance rain</label>
@@ -12,32 +12,32 @@
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
 		<weatherThought>RI_Thought_QiEnergyRain</weatherThought>
-		<!-- 限制仅在特定生物群系中出现的额外条件 -->
+		<!-- Extra conditions limiting occurrence to specific biomes -->
 		<!-- <repeatable>false</repeatable> -->
 		<canOccurInAmbientHorror>false</canOccurInAmbientHorror>
 		<accuracyMultiplier>0.5</accuracyMultiplier>
-		<!-- 雾的效果 -->
+		<!-- Fog effect -->
 		<rainRate>1</rainRate>
-		<!-- 雨的效果 -->
+		<!-- Rain effect -->
 		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Fog</li>
 			<li>Ambient_Rain</li>
 		</ambientSounds>
 		<overlayClasses>
-			<!-- 同时使用雾和雨的视觉效果 -->
+			<!-- Combined fog and rain visuals -->
 			<!--<li>WeatherOverlay_Fog</li>-->
 			<!--<li>WeatherOverlay_Rain</li>-->
 			<li>RI_PeachBlossomLand.WeatherOverlay_QiEnergyRain</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
-			<!-- 降雨因子影响 -->
+			<!-- Rainfall factor influence -->
 			<points>
 				<li>(0, 0)</li>
 				<li>(1300, 1)</li>
 			</points>
 		</commonalityRainfallFactor>
-		<!-- 天空颜色设置 -->
+		<!-- Sky color settings -->
 		<skyColorsDay>
 			<sky>(0.8, 0.8, 0.8)</sky>
 			<shadow>(0.92, 0.92, 0.92)</shadow>

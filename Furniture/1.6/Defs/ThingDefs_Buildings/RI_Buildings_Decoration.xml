@@ -9,9 +9,9 @@
 		<defName>RI_DryVege</defName>
 	</DesignatorDropdownGroupDef>
 
-	<!--======================= 餐厅装饰 ==============================-->
+	<!--======================= Restaurant decorations ==============================-->
 
-	<!--吊柜-->
+	<!--Wall cupboard-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_WallCupboard</defName>
 		<label>Wall cupboard</label>
@@ -39,9 +39,9 @@
 		</statBases>
 	</ThingDef>
 
-	<!--======================厨房装饰======================-->
+	<!--====================== Kitchen decorations ======================-->
 
-	<!--厨具架-->
+	<!--Cooking tool rack-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_KitchenToolShelf</defName>
 		<label>Cooking tool rack</label>
@@ -68,7 +68,7 @@
 		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
 	</ThingDef>
 
-	<!--原木砧板-->
+	<!--Log cutting board-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_CuttingBoard</defName>
 		<label>Log cutting board</label>
@@ -94,7 +94,7 @@
 		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
 	</ThingDef>
 
-	<!--酒坛-->
+	<!--Wine jars-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_WineJar</defName>
 		<label>Wine jars</label>
@@ -120,7 +120,7 @@
 		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
 	</ThingDef>
 
-	<!--碗堆-->
+	<!--Stack of bowls-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_StackBowls</defName>
 		<label>Stack of bowls</label>
@@ -146,7 +146,7 @@
 		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
 	</ThingDef>
 
-	<!--瓶瓶罐罐-->
+	<!--Jars and bottles-->
 	<ThingDef ParentName="RI_Ming_DecorationBase">
 		<defName>RI_Building_DecorationBottles</defName>
 		<label>Jars and bottles</label>
@@ -172,9 +172,9 @@
 		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
 	</ThingDef>
 
-	<!--======================节日装饰======================-->
+	<!--====================== Festival decorations ======================-->
 
-	<!--年红-->
+	<!--Red paper (Spring Festival)-->
 	<ThingDef ParentName="RI_DecorationBase">
 		<defName>RI_Building_RedPaper</defName>
 		<label>Red paper</label>
@@ -201,7 +201,7 @@
 
 	</ThingDef>
 
-	<!--灯笼（装饰）-->
+	<!--Red lantern (decoration)-->
 	<ThingDef ParentName="RI_DecorationBase">
 		<defName>RI_Building_RedLantern</defName>
 		<label>Red lantern (decoration)</label>
@@ -230,7 +230,7 @@
 
 	</ThingDef>
 
-	<!--灯笼串（装饰）-->
+	<!--Lantern string (decoration)-->
 	<ThingDef ParentName="RI_DecorationBase">
 		<defName>RI_Building_SmallRedLantern</defName>
 		<label>Small red lantern (decoration)</label>
@@ -259,7 +259,7 @@
 
 	</ThingDef>
 
-	<!--干辣椒-->
+	<!--Dry chili-->
 	<ThingDef ParentName="RI_DecorationBase">
 		<defName>RI_Building_DryChili</defName>
 		<label>Dry chili</label>
@@ -285,7 +285,7 @@
 		<designatorDropdown>RI_DryVege</designatorDropdown>
 	</ThingDef>
 
-	<!--干玉米-->
+	<!--Dry corn-->
 	<ThingDef ParentName="RI_DecorationBase">
 		<defName>RI_Building_DryCorn</defName>
 		<label>Dry corn</label>
@@ -311,9 +311,9 @@
 		<designatorDropdown>RI_DryVege</designatorDropdown>
 	</ThingDef>
 
-	<!--======================= 现代餐厅装饰 ==============================-->
+	<!--======================= Modern restaurant decorations ==============================-->
 
-	<!--现代碗柜-->
+	<!--Modern wall cupboard-->
 	<ThingDef ParentName="RI_ModernDecorationBase">
 		<defName>RI_Building_ModernWallCupboard</defName>
 		<label>Modern wall cupboard</label>
@@ -341,7 +341,7 @@
 		</statBases>
 	</ThingDef>
 
-	<!--抽油烟机-->
+	<!--Kitchen hood-->
 	<ThingDef ParentName="RI_ModernDecorationBase">
 		<defName>RI_Building_KitchenHood</defName>
 		<label>Kitchen hood</label>
@@ -367,7 +367,7 @@
 		</statBases>
 	</ThingDef>
 
-	<!--水槽-->
+	<!--Kitchen sink-->
 	<ThingDef ParentName="RI_ModernDecorationBase">
 		<defName>RI_Building_KitchenSink</defName>
 		<label>Kitchen sink</label>

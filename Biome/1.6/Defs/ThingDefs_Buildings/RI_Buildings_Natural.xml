@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--白瑶原石-->
+	<!--Mist agate rock (disabled)-->
 	<!--<ThingDef ParentName="RockBase">
 		<defName>RI_Rock_MineableMistAgate</defName>
 		<label>mist agate</label>
@@ -26,7 +26,7 @@
 		</building>
 	</ThingDef>-->
 
-	<!--古修建筑遗迹——装了仙路才会掉灵石-->
+	<!--Ancient cultivator building ruin — drops spirit crystals if Core is installed-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_AncientCultivatorRuinsA</defName>
 		<label>ancient cultivator building ruin</label>
@@ -80,7 +80,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--古修路灯遗迹——装了仙路才会掉灵石-->
+	<!--Ancient cultivator lamp ruin — drops spirit crystals if Core is installed-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_AncientCultivatorLampRuinsA</defName>
 		<label>ancient cultivator lamp ruin</label>

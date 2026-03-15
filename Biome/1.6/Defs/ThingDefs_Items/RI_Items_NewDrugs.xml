@@ -16,7 +16,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!--=================药品前置=================-->
+	<!--================= Drug base type =================-->
 	<ThingDef Name="RI_Base_Drug" ParentName="RI_Base_EatMedicine" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -37,15 +37,15 @@
 			<preferability>NeverForNutrition</preferability>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
-			<!--服用-->
+			<!--Ingest command-->
 			<ingestCommandString>take {0}</ingestCommandString>
-			<!--服用中-->
+			<!--Ingest report string-->
 			<ingestReportString>taking {0}</ingestReportString>
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<chairSearchRadius>7</chairSearchRadius>
 			<drugCategory>Medical</drugCategory>
 		</ingestible>
-		<!--携带分类-->
+		<!--Take group category-->
 		<orderedTakeGroup>Drug</orderedTakeGroup>
 		<comps>
 			<li Class="CompProperties_Drug">
@@ -55,7 +55,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--安魂汤-->
+	<!--Tranquilizing soup-->
 	<ThingDef ParentName="RI_Base_Drug">
 		<defName>RI_Drug_TranquilizingSoup</defName>
 		<label>【Third-rate】Tranquilizing soup</label>

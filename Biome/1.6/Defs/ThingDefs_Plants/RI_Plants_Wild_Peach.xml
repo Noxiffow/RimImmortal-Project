@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--芳草桃源植物-->
+	<!--Peach Blossom Garden plants-->
 
 	<!--=========================== Carpets ==========================-->
 
-	<!--寸心蕨-->
+	<!--Inch heart fern-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RI_Plant_InchHeartFern</defName>
 		<label>inch heart fern</label>
@@ -38,7 +38,7 @@
 	</ThingDef>
 
 
-	<!--紫彩蕨-->
+	<!--Purple fern-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RI_Plant_PurpleFern</defName>
 		<label>purple fern</label>
@@ -72,7 +72,7 @@
 
 	<!--============================= Bushes ================================-->
 
-	<!--骨蕨-->
+	<!--Bone fern-->
 	<ThingDef ParentName="BushBase">
 		<defName>RI_Plant_BoneFern</defName>
 		<label>bone fern</label>
@@ -92,7 +92,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--芦荟Aloe Vera-->
+	<!--Aloe Vera-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RI_Plant_AloeVera</defName>
 		<label>aloe vera</label>
@@ -137,7 +137,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--幻金莲Phantom Gold Lotus-->
+	<!--Phantom Gold Lotus-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RI_Plant_PhantomGoldLotus</defName>
 		<label>phantom gold lotus</label>
@@ -178,7 +178,7 @@
 
 	<!--============================ Trees ============================-->
 
-	<!--桃树-->
+	<!--Peach tree-->
 	<ThingDef ParentName="TreeBase">
 		<defName>RI_Plant_PeachTree</defName>
 		<label>peach tree</label>
@@ -225,7 +225,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--仙桃树-->
+	<!--Immortal peach tree base-->
 	<ThingDef ParentName="PlantBase" Name="RI_PeachTreeBase" Abstract="True">
 		<graphicData>
 			<shaderParameters>
@@ -295,7 +295,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--仙桃树-->
+	<!--Immortal peach tree-->
 	<ThingDef ParentName="RI_PeachTreeBase">
 		<defName>RI_Plant_ImmortalPeachTree</defName>
 		<label>immortal peach tree</label>

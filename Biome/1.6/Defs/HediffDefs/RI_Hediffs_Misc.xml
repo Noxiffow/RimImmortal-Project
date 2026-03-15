@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--昏睡-->
+	<!--Tranquilizer hediff-->
 	<HediffDef MayRequire="RI.RimImmortal.Core">
 		<defName>RI_Hediff_DrugTranquilizing</defName>
 		<label>tranquillizer</label>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--明朝灯具Base-->
+	<!--Ming-style lighting base-->
 	<ThingDef Name="RI_LightMing_Base" ParentName="RI_Furniture_BuildingBase" Abstract="True">
 		<category>Building</category>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -94,9 +94,9 @@
 		</building>
 	</ThingDef>
 
-	<!--灯具，没有明火的-->
+	<!--Lamps without open flames-->
 
-	<!--镂空罩灯-->
+	<!--Hood lamp-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_OpenworkCoveredLamp</defName>
 		<label>Hood lamp</label>
@@ -130,7 +130,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--宫女侍奉灯-->
+	<!--Palace maid lamp-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_PalaceMaidLamp</defName>
 		<label>Palace maid lamp</label>
@@ -163,16 +163,16 @@
 		</comps>
 	</ThingDef>
 
-	<!--==========================================烛台类==========================================-->
+	<!--========================================== Candlesticks ==========================================-->
 
-	<!--烛台一类-->
+	<!--Candlestick group-->
 	<DesignatorDropdownGroupDef>
 		<defName>RI_DropdownGroup_Candlestick</defName>
 	</DesignatorDropdownGroupDef>
 
-	<!--两种低级的-->
+	<!--Basic types-->
 
-	<!--小烛台-->
+	<!--Small candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_SmallCandlestick</defName>
 		<label>Small candlestick</label>
@@ -210,7 +210,7 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--花口烛台-->
+	<!--Floral candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_FloralCandlestick</defName>
 		<label>Floral candlestick</label>
@@ -248,9 +248,9 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--高级一点的-->
+	<!--Higher-tier types-->
 
-	<!--莲座烛台-->
+	<!--Lotus pedestal candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_LotusPedestalCandlestick</defName>
 		<label>Lotus pedestal candlestick</label>
@@ -289,7 +289,7 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--立杯烛台-->
+	<!--Goblet-style candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_GobletStyleCandlestick</defName>
 		<label>Goblet-style candlestick</label>
@@ -328,7 +328,7 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--长枝灯台-->
+	<!--Long-branched candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_LongBranchedCandlestick</defName>
 		<label>Long-branched candlestick</label>
@@ -367,7 +367,7 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--兽首灯台-->
+	<!--Beast-head candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_BeastHeadCandlestick</defName>
 		<label>Beast-head candlestick</label>
@@ -406,9 +406,9 @@
 		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
 	</ThingDef>
 
-	<!--更加高级一点的-->
+	<!--Premium types-->
 
-	<!--辟邪烛台-->
+	<!--Lion-shaped candlestick-->
 	<ThingDef ParentName="RI_LightMing_Base">
 		<defName>RI_Building_LionShapedCandlestick</defName>
 		<label>Lion-shaped candlestick</label>

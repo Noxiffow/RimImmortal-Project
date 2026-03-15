@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--==================药材前置=================-->
+	<!--================== Herb base type =================-->
 	<ThingDef Abstract="True" Name="RI_Base_MedicalResourceA" ParentName="ResourceBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -34,7 +34,7 @@
 		</comps>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
-		<!--落地音效得改-->
+		<!--TODO: fix drop sound-->
 		<tickerType>Rare</tickerType>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -42,7 +42,7 @@
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
-	<!--幻金莲-->
+	<!--Phantom gold lotus resource-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_PhantomGoldLotus</defName>
 		<label>phantom gold lotus</label>
@@ -80,7 +80,7 @@
 		</comps>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
-		<!--落地音效得改-->
+		<!--TODO: fix drop sound-->
 		<tickerType>Rare</tickerType>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -88,9 +88,9 @@
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
-	<!--==================食材=================-->
+	<!--================== Food ingredients =================-->
 
-	<!--桃子-->
+	<!--Peach-->
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>RI_Resource_RawPeach</defName>
 		<label>peach</label>
@@ -116,7 +116,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--芦荟-->
+	<!--Aloe vera resource-->
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>RI_Resource_AloeVera</defName>
 		<label>aloe vera</label>
@@ -143,7 +143,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--仙桃-->
+	<!--Immortal peach-->
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>RI_Things_ImmortalPeach</defName>
 		<label>immortal peach</label>

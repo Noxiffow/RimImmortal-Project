@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--家具group-->
+	<!--Furniture designation group-->
 	<DesignationCategoryDef>
 		<defName>RI_RimImmortals_Living_Furniture</defName>
 		<label>RI Furniture</label>

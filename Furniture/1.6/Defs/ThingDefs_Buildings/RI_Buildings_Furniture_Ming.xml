@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--================================明式家具================================-->
+	<!--================================ Ming-style furniture ================================-->
 
-	<!--杌凳-->
+	<!--Square stool-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_SquareChair</defName>
 		<label>Square stool</label>
@@ -41,7 +41,7 @@
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--坐墩-->
+	<!--Drum stool-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_RoundChair</defName>
 		<label>Drum stool</label>
@@ -80,7 +80,7 @@
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--条凳-->
+	<!--Long bench-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_LongBench</defName>
 		<label>Long bench</label>
@@ -119,7 +119,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--酒桌（1x2）-->
+	<!--Basic table (1x2)-->
 	<ThingDef ParentName="RI_OldCulture_TableBase">
 		<defName>RI_Building_MingBasicTable</defName>
 		<label>Basic table (1x2)</label>
@@ -140,7 +140,7 @@
 		<costStuffCount>40</costStuffCount>
 	</ThingDef>
 
-	<!--画案（2x3）-->
+	<!--Painting table (2x3)-->
 	<ThingDef ParentName="RI_OldCulture_TableBase">
 		<defName>RI_Building_MingDrawTable</defName>
 		<label>Painting table (2x3)</label>
@@ -163,7 +163,7 @@
 		</building>
 	</ThingDef>
 
-	<!--八仙桌（2x2）-->
+	<!--Eight immortal table (2x2)-->
 	<ThingDef ParentName="RI_OldCulture_TableBase">
 		<defName>RI_Building_EightManSquareTable</defName>
 		<label>Eight immortal table (2x2)</label>
@@ -187,7 +187,7 @@
 		</building>
 	</ThingDef>
 
-	<!--月牙桌（1x1）-->
+	<!--Half-round table (1x1)-->
 	<ThingDef ParentName="RI_OldCulture_TableBase">
 		<defName>RI_Building_HalfRoundTable</defName>
 		<label>Half-round table (1x1)</label>
@@ -208,7 +208,7 @@
 		<costStuffCount>30</costStuffCount>
 	</ThingDef>
 
-	<!--围屏-->
+	<!--Folding screen-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_FoldingScreen</defName>
 		<label>Folding screen</label>
@@ -251,7 +251,7 @@
 		</building>
 	</ThingDef>
 
-	<!--三层架格-->
+	<!--Book shelf-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_TallShelf</defName>
 		<label>Book shelf</label>
@@ -299,7 +299,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--四件柜-->
+	<!--Large cabinet-->
 	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
 		<defName>RI_Building_StorageShelf</defName>
 		<label>Large cabinet</label>
@@ -350,7 +350,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--罗汉床-->
+	<!--Arhat bed-->
 	<ThingDef ParentName="RI_Ming_Furniture_SleepingBedBase">
 		<defName>RI_Building_SleepingBed</defName>
 		<label>Arhat bed</label>
@@ -377,7 +377,7 @@
 		</building>
 	</ThingDef>
 
-	<!--架子床-->
+	<!--Double shelf bed-->
 	<ThingDef ParentName="RI_Ming_Furniture_SleepingBedBase">
 		<defName>RI_Building_MingDoubleBed</defName>
 		<label>Double shelf bed</label>
@@ -404,10 +404,10 @@
 			<bed_showSleeperBody>False</bed_showSleeperBody>
 		</building>
 
-		<!--多层贴图要加-->
+		<!--Requires multi-layer texture comp-->
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<comps>
-			<!--多层贴图-->
+			<!--Multi-layer textures-->
 			<li Class="RI_MultiLayer.CompProperties_LayerDrawer">
 				<graphics>
 					<li>

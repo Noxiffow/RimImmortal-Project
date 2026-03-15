@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--桃花障-->
+	<!--Peach blossom maze weather-->
 	<WeatherDef>
 		<defName>RI_PeachBlossomFog</defName>
 		<label>Peach blossom maze</label>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ==============狸力LiLi================ -->
+	<!-- ============== Li Li ================ -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_LiLi</defName>
 		<label>Li Li</label>
@@ -38,10 +38,10 @@
 			</li>
 		</tools>
 		<race>
-			<!--群居动物-->
+			<!--Herd animal-->
 			<herdAnimal>true</herdAnimal>
 			<petness>0.50</petness>
-			<!--亲昵间隔-->
+			<!--Nuzzle interval-->
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<baseBodySize>2.6</baseBodySize>
 			<baseHealthScale>2.7</baseHealthScale>
@@ -53,11 +53,11 @@
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<waterCellCost>10</waterCellCost>
 			<trainability>Advanced</trainability>
-			<!--特殊能力-->
+			<!--Special trainables-->
 			<specialTrainables>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
 			</specialTrainables>
-			<!--用的肉-->
+			<!--Uses this meat type-->
 			<useMeatFrom>Pig</useMeatFrom>
 			<litterSizeCurve>
 				<points>
@@ -170,7 +170,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!-- ==============鹿蜀LuShu================ -->
+	<!-- ============== Lu Shu ================ -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_LuShu</defName>
 		<label>Lu Shu</label>
@@ -186,7 +186,7 @@
 			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>0.9</uiIconScale>
-		<!--产奶-->
+		<!--Milkable-->
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -206,9 +206,9 @@
 			<roamMtbDays>2</roamMtbDays>
 			<petness>0.6</petness>
 			<trainability>Intermediate</trainability>
-			<!--用的肉-->
+			<!--Uses this meat type-->
 			<useMeatFrom>Horse</useMeatFrom>
-			<!--受伤反击-->
+			<!--Manhunter on damage-->
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 			<packAnimal>true</packAnimal>
@@ -402,7 +402,7 @@
 		</lifeStages>-->
 	</PawnKindDef>
 
-	<!-- ==============长右ChangYou================ -->
+	<!-- ============== Chang You ================ -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_ChangYou</defName>
 		<label>Chang You</label>
@@ -457,14 +457,14 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<trainability>Advanced</trainability>
-			<!--特殊能力-->
+			<!--Special trainables-->
 			<specialTrainables>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
 			</specialTrainables>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<lifeExpectancy>30</lifeExpectancy>
-			<!--受伤反击-->
+			<!--Manhunter on damage-->
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<soundEating>Herbivore_Eat</soundEating>
@@ -549,7 +549,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!-- ==============旋龟Xuan turtle================ -->
+	<!-- ============== Xuan turtle ================ -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_XuanTurtle</defName>
 		<label>Xuan turtle</label>
@@ -576,7 +576,7 @@
 				<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<!--下蛋-->
+		<!--Lays eggs-->
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>RI_Thing_EggXuanTurtleUnfertilized</eggUnfertilizedDef>
@@ -677,7 +677,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!--旋龟蛋受精-->
+	<!--Xuan turtle egg (fertilized)-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>RI_Thing_EggXuanTurtleFertilized</defName>
 		<label>Xuan turtle egg (fert.)</label>
@@ -699,7 +699,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--旋龟蛋未受精-->
+	<!--Xuan turtle egg (unfertilized)-->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>RI_Thing_EggXuanTurtleUnfertilized</defName>
 		<label>Xuan turtle (unfert.)</label>
@@ -714,23 +714,23 @@
 		</statBases>
 	</ThingDef>
 
-	<!-- ==============类Lei cat================ -->
+	<!-- ============== Lei cat ================ -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_LeiCat</defName>
 		<label>Lei cat</label>
 		<description>The Lei Cat resembles a slightly larger domestic cat. It has longer fur on its head, a nimble body, and smooth, supple fur marked with dark patterns.\n\nThese animals are solitary by nature and are only occasionally spotted in the mountains and wilderness. Local residents refer to similar creatures as “Xiangmao” (literally “fragrant-furred”).</description>
 		<statBases>
-			<!-- 移动速度：比普通猫稍微快一点点 -->
+			<!-- Move speed: slightly faster than a domestic cat -->
 			<MoveSpeed>5.2</MoveSpeed>
 			<MarketValue>270</MarketValue>
-			<!-- 价值较高，是很稀有的宠物 -->
+			<!-- High market value — a rare pet -->
 			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<Wildness>0</Wildness>
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<!--捕食者-->
+			<!--Predator-->
 			<predator>true</predator>
 			<maxPreyBodySize>0.4</maxPreyBodySize>
 			<herdAnimal>false</herdAnimal>
@@ -739,13 +739,13 @@
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
-			<!-- nuzzleMtbHours 越小，亲昵越频繁。8代表平均每8个游戏小时蹭人一次，会频繁给小人加心情！ -->
+			<!-- Lower nuzzleMtbHours = more frequent nuzzling. 8 = once per 8 game hours — boosts mood often! -->
 			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<petness>1</petness>
-			<!-- 无法训练 -->
+			<!-- Not trainable -->
 			<trainability>None</trainability>
 			<lifeExpectancy>18</lifeExpectancy>
-			<!-- 生命阶段对应的属性变化 -->
+			<!-- Life stage attribute changes -->
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -755,20 +755,20 @@
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
 					<soundWounded>Pawn_Cat_Injured</soundWounded>
-					<!-- 借用原版猫的叫声 -->
+					<!-- Reuses vanilla cat sounds -->
 					<soundDeath>Pawn_Cat_Death</soundDeath>
 					<soundCall>Pawn_Cat_Call</soundCall>
 					<soundAngry>Pawn_Cat_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 
-			<!-- 动物特有音效和特效 -->
+			<!-- Animal-specific sounds and effects -->
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tools>
-			<!-- 动物的近战攻击方式：抓挠和咬 -->
+			<!-- Animal melee attacks: scratch and bite -->
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -804,33 +804,33 @@
 	</ThingDef>
 
 
-	<!-- ==================== 2. Lei cat 生成与贴图定义 (PawnKindDef) ==================== -->
+	<!-- ==================== Lei cat PawnKindDef ==================== -->
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>RI_Pawn_LeiCat</defName>
 		<label>Lei cat</label>
 		<race>RI_Animal_LeiCat</race>
 
-		<!-- 战斗力评分，较弱，不用担心触发高强度袭击 -->
+		<!-- Combat power: weak — won't trigger high-intensity raids -->
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.2</ecoSystemWeight>
 
-		<!-- 三个生命阶段的贴图设置 (幼体、青少年、成年) -->
+		<!-- Texture settings for three life stages (baby, juvenile, adult) -->
 		<lifeStages>
-			<!-- 幼体 (Baby) -->
+			<!-- Baby -->
 			<li>
 				<label>Lei kitten</label>
-				<!-- 幼崽的称呼 -->
+				<!-- Baby label -->
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/TWCR_LeiCat</texPath>
 					<drawSize>0.7</drawSize>
-					<!-- 幼崽体型缩小 -->
+					<!-- Reduced size for baby -->
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/Dessicated_RI_Pawn_LeiCat</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
-			<!-- 成年 (Adult) -->
+			<!-- Adult -->
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/RI_Pawn_LeiCat</texPath>

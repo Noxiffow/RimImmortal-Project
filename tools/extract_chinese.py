@@ -12,8 +12,10 @@ import os
 import re
 import sys
 
-# Chinese character ranges (CJK Unified + extensions + punctuation)
-CHINESE_RE = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf\uff00-\uffef\u3000-\u303f]+')
+# Chinese character ranges (CJK Unified Ideographs + extensions only)
+# Excludes fullwidth punctuation (\uff00-\uffef) and CJK symbols (\u3000-\u303f)
+# because the mod uses 【】 brackets as intentional tier-label formatting.
+CHINESE_RE = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]+')
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

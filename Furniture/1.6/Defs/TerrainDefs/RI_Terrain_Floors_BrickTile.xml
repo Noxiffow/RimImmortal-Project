@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--太阳纹地砖-->
+	<!--Sun-patterned tile-->
 	<!--Sun-patterned tile-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_SunPatternedTile_Base">
 		<renderPrecedence>220</renderPrecedence>
@@ -73,7 +73,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_SunPatternedTileRedBrick</defName>
 		<label>red brick sun-patterned tile</label>
@@ -83,7 +83,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_SunPatternedTileBlackBrick</defName>
 		<label>black brick sun-patterned tile</label>
@@ -94,7 +94,7 @@
 	</TerrainDef>
 
 
-	<!--交错细墁-->
+	<!--Staggered fine tile-->
 	<!--staggered fine tile-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_StaggeredFineTile_Base">
 		<renderPrecedence>220</renderPrecedence>
@@ -169,7 +169,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName MayRequire="RI.RimImmortal.Living">RI_Floor_StaggeredFineTileRedBrick</defName>
 		<label>red brick staggered fine tile</label>
@@ -179,7 +179,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_StaggeredFineTileBlackBrick</defName>
 		<label>black brick staggered fine tile</label>

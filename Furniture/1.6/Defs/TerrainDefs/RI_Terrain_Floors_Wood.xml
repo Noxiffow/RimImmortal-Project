@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--檀木地板 需要锦衣玉食-->
+	<!--Sandalwood floor (requires Living mod)-->
 	<TerrainDef ParentName="FloorBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_SolidWoodPlankFloor</defName>
 		<label>Sandalwood floor</label>
@@ -28,7 +28,7 @@
 		<uiOrder>9004</uiOrder>
 	</TerrainDef>
 
-	<!--竹地板 需要锦衣玉食-->
+	<!--Bamboo plank floor (requires Living mod)-->
 	<TerrainDef ParentName="FloorBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_BambooPlankFloor</defName>
 		<label>Bamboo plank floor</label>

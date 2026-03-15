@@ -29,7 +29,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!--灯笼-->
+	<!--Red lantern (lit)-->
 	<ThingDef ParentName="RI_Furniture_LanternBase">
 		<defName>RI_Building_RedLantern_Light</defName>
 		<label>Red lantern</label>
@@ -83,7 +83,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--现代灯笼-->
+	<!--Modern red lantern (electric)-->
 	<ThingDef ParentName="RI_Furniture_LanternBase">
 		<defName>RI_Building_RedLantern_Electric</defName>
 		<label>Modern red lantern</label>

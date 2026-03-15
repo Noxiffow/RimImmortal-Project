@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--======================= 地板装饰 ==============================-->
+	<!--======================= Floor tile decorations ==============================-->
 
-	<!--地板装饰-->
+	<!--Floor decoration dropdown-->
 	<DesignatorDropdownGroupDef>
 		<defName>RI_DropdownGroup_PatternFloor</defName>
 	</DesignatorDropdownGroupDef>
 
-	<!--莲花纹铺地-->
+	<!--Lotus pattern tile-->
 	<ThingDef ParentName="RI_BuildingFloor_Base">
 		<defName>RI_Building_LotusPatternFloor</defName>
 		<label>Lotus pattern tile</label>
@@ -27,7 +27,7 @@
 		<uiIconScale>1</uiIconScale>
 	</ThingDef>
 
-	<!--寿字纹铺地-->
+	<!--Longevity pattern tile-->
 	<ThingDef ParentName="RI_BuildingFloor_Base">
 		<defName>RI_Building_LongevityPatternFloor</defName>
 		<label>Longevity pattern tile</label>
@@ -47,7 +47,7 @@
 		<uiIconScale>1</uiIconScale>
 	</ThingDef>
 
-	<!--太极纹铺地-->
+	<!--Tai-chi pattern tile-->
 	<ThingDef ParentName="RI_BuildingFloor_Base">
 		<defName>RI_Building_TaiChiPatternFloor</defName>
 		<label>Tai-chi pattern tile</label>
@@ -67,7 +67,7 @@
 		<uiIconScale>1</uiIconScale>
 	</ThingDef>
 
-	<!--花园铺地-->
+	<!--Garden pattern tile-->
 	<ThingDef ParentName="RI_BuildingFloor_Base">
 		<defName>RI_Building_BasicPatternFloor</defName>
 		<label>Garden pattern tile</label>

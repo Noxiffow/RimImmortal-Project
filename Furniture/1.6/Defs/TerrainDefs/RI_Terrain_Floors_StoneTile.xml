@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--雕梁画栋地砖——石块类的-->
+	<!--RimImmortal floor tiles (stone types)-->
 
-	<!--石片铺地-->
+	<!--Flake floor-->
 	<!--Flake floor-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_FlakeFloor_Base">
 		<renderPrecedence>220</renderPrecedence>
@@ -75,7 +75,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Tile_FlakeFloorRedBrick</defName>
 		<label>red brick flake floor</label>
@@ -85,7 +85,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Tile_FlakeFloorBlackBrick</defName>
 		<label>black brick flake floor</label>
@@ -95,7 +95,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--方砖斜墁-->
+	<!--Diagonal-laid square tile-->
 	<!--Diagonal-laid square tile-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_DiagonalSquareTile_Base">
 		<renderPrecedence>220</renderPrecedence>
@@ -170,7 +170,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_DiagonalSquareTileRedBrick</defName>
 		<label>red brick diagonal square tile</label>
@@ -180,7 +180,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Floor_DiagonalSquareTileBlackBrick</defName>
 		<label>black brick diagonal square tile</label>
@@ -190,7 +190,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--细墁地砖-->
+	<!--Fine plastered floor tile-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_FinePlasteredFloorBase">
 		<renderPrecedence>220</renderPrecedence>
 		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
@@ -264,7 +264,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_FinePlasteredFloorBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_FinePlasteredFloorRedBrick</defName>
 		<label>red brick plastered floor</label>
@@ -274,7 +274,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_FinePlasteredFloorBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_FinePlasteredFloorBlackBrick</defName>
 		<label>black brick plastered floor</label>
@@ -284,7 +284,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--冰裂纹石砖-->
+	<!--Ice-crack stone brick-->
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_IceCrackStoneBrickBase">
 		<renderPrecedence>220</renderPrecedence>
 		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
@@ -358,7 +358,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--红砖-->
+	<!--Red brick-->
 	<TerrainDef ParentName="RI_IceCrackStoneBrickBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_IceCrackStoneBrickRedBrick</defName>
 		<label>red brick ice-crack brick tile</label>
@@ -368,7 +368,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--青砖-->
+	<!--Black brick-->
 	<TerrainDef ParentName="RI_IceCrackStoneBrickBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_IceCrackStoneBrickBlackBrick</defName>
 		<label>black brick ice-crack brick tile</label>

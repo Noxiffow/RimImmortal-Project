@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--丝丝灵雨-->
+	<!--Spiritual radiance rain thought-->
 	<ThoughtDef MayRequire="RI.RimImmortal.Core">
 		<defName>RI_Thought_QiEnergyRain</defName>
 		<durationDays>0.1</durationDays>

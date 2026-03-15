@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--粉草坪-->
+	<!--Pink lawn (disabled)-->
 	<!--<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>TWRL_Terrain_PinkLawn</defName>
 		<label>pink lawn</label>
@@ -42,7 +42,7 @@
 		</tags>
 	</TerrainDef>
 
-	--><!--肥沃粉草坪--><!--
+	--><!--Rich pink lawn (disabled)--><!--
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>TWRL_Terrain_RichPinkLawn</defName>
 		<label>rich pink lawn</label>
@@ -85,7 +85,7 @@
 		</spaceEdgeGraphicData>
 	</TerrainDef>
 
-	--><!--蓝草坪--><!--
+	--><!--Blue lawn (disabled)--><!--
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>TWRL_Terrain_BlueLawn</defName>
 		<label>blue lawn</label>

@@ -5,9 +5,9 @@
 		<tab>RI_ResearchTab</tab>
 	</ResearchProjectDef>
 
-	<!--=============================== 部落到中世纪的科技 ===================================-->
+	<!--=============================== Tribal to Medieval Technology ===================================-->
 
-	<!--照明-->
+	<!--Lighting-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_Lighting</defName>
 		<label>Lighting</label>
@@ -18,7 +18,7 @@
 		<researchViewY>4.2</researchViewY>
 	</ResearchProjectDef>
 
-	<!--地砖铺设-->
+	<!--Floor tiles-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_FloorTile</defName>
 		<label>Floor tile</label>
@@ -32,7 +32,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--榫卯-->
+	<!--Mortise and tenon-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_Carpentry</defName>
 		<label>Mortise and tenon</label>
@@ -46,7 +46,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--节日家具-->
+	<!--Festival furniture-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_FestivalFurniture</defName>
 		<label>Festival furniture</label>
@@ -60,7 +60,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--明式家具-->
+	<!--Ming-style furniture-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_MingDynastyFurniture</defName>
 		<label>Ming style furniture</label>
@@ -74,7 +74,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--王朝家具-->
+	<!--Dynasty furniture-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_DynastyFurniture</defName>
 		<label>Dynasty furniture</label>
@@ -90,7 +90,7 @@
 
 	<!--================================================================-->
 
-	<!--现代中式家具-->
+	<!--Modern Chinese furniture-->
 	<ResearchProjectDef ParentName="RI_Research_Furniture_Base">
 		<defName>RI_Research_ModernChineseFurniture</defName>
 		<label>Modern Chinese furniture</label>
