@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--==================传统花卉==================-->
+	<!--================== Traditional flowers ==================-->
 
-	<!--花卉前置-->
+	<!--Flower base-->
 	<ThingDef ParentName="PlantBase" Name="RI_Flower_PlantBase" Abstract="True">
 		<statBases>
 			<Nutrition>0.05</Nutrition>
@@ -29,7 +29,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--兰花-->
+	<!--Orchid-->
 	<ThingDef ParentName="RI_Flower_PlantBase">
 		<defName>RI_Plant_Orchid</defName>
 		<label>orchid</label>
@@ -43,7 +43,7 @@
 			<texPath>Things/Plant/RI_Plant_Orchid</texPath>
 		</graphicData>
 		<plant>
-			<!--种植特点-->
+			<!--Planting notes-->
 			<sowWork>750</sowWork>
 			<growMinGlow>0.3</growMinGlow>
 			<growDays>3</growDays>
@@ -53,7 +53,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--水仙-->
+	<!--Narcissus-->
 	<ThingDef ParentName="RI_Flower_PlantBase">
 		<defName>RI_Plant_Narcissus</defName>
 		<label>narcissus</label>
@@ -67,7 +67,7 @@
 			<texPath>Things/Plant/RI_Plant_Narcissus</texPath>
 		</graphicData>
 		<plant>
-			<!--种植特点-->
+			<!--Planting notes-->
 			<sowWork>750</sowWork>
 			<growMinGlow>0.3</growMinGlow>
 			<growDays>1.5</growDays>
@@ -77,7 +77,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--牡丹-->
+	<!--Peony-->
 	<ThingDef ParentName="RI_Flower_PlantBase">
 		<defName>RI_Plant_Peony</defName>
 		<label>peony</label>
@@ -91,7 +91,7 @@
 			<texPath>Things/Plant/RI_Plant_Peony</texPath>
 		</graphicData>
 		<plant>
-			<!--种植特点-->
+			<!--Planting notes-->
 			<sowWork>750</sowWork>
 			<growMinGlow>0.3</growMinGlow>
 			<growDays>3</growDays>
@@ -101,7 +101,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--菊花-->
+	<!--Chrysanthemum-->
 	<ThingDef ParentName="RI_Flower_PlantBase">
 		<defName>RI_Plant_Chrysanthemum</defName>
 		<label>chrysanthemum</label>
@@ -115,7 +115,7 @@
 			<texPath>Things/Plant/RI_Plant_Chrysanthemum</texPath>
 		</graphicData>
 		<plant>
-			<!--种植特点-->
+			<!--Planting notes-->
 			<sowWork>750</sowWork>
 			<growMinGlow>0.3</growMinGlow>
 			<growDays>4</growDays>

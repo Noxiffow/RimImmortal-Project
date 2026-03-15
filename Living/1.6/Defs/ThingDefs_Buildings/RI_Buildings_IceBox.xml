@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--寒髓冰鉴-->
+	<!--Marrow ice cellar-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_IceMarrowBox</defName>
 		<label>Ice marrow box</label>
@@ -54,7 +54,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<!--冒个蓝光-->
+			<!--Emits blue glow-->
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(104,223,224)</glowColor>
@@ -64,7 +64,7 @@
 				<heatPerSecond>-20</heatPerSecond>
 				<heatPushMinTemperature>-12</heatPushMinTemperature>
 			</li>
-			<!--效率为1天消耗1寒髓-->
+			<!--Efficiency: consumes 1 marrow per day-->
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1</fuelConsumptionRate>
 				<fuelCapacity>10</fuelCapacity>
@@ -78,7 +78,7 @@
 			</li>
 		</comps>
 		<designationCategory>RI_RimImmortals_Group</designationCategory>
-		<!--百工解锁-->
+		<!--Unlocked by research-->
 		<researchPrerequisites>
 			<li>RI_CarpentryAndCrafting</li>
 		</researchPrerequisites>

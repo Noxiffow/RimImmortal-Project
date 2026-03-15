@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--挖泥-->
+	<!--Dig mud-->
 	<RecipeDef>
 		<defName>RI_DigMud</defName>
 		<label>dig soil</label>
@@ -21,11 +21,11 @@
 		<products>
 			<RI_Resource_Mud>15</RI_Resource_Mud>
 		</products>
-		<!--学不到东西-->
+		<!--No skill gain-->
 		<workSkillLearnFactor>0</workSkillLearnFactor>
 	</RecipeDef>
 
-	<!--挖泥 x4-->
+	<!--Dig mud x4-->
 	<RecipeDef>
 		<defName>RI_DigMudBulk</defName>
 		<label>dig soil x4</label>
@@ -45,11 +45,11 @@
 		<products>
 			<RI_Resource_Mud>60</RI_Resource_Mud>
 		</products>
-		<!--学不到东西-->
+		<!--No skill gain-->
 		<workSkillLearnFactor>0</workSkillLearnFactor>
 	</RecipeDef>
 
-	<!--烧砖Base-->
+	<!--Fire brick base-->
 	<RecipeDef Name="RI_RecipeBase_Bricks" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -65,7 +65,7 @@
 		<jobString>Baking brick</jobString>
 	</RecipeDef>
 
-	<!--烧制青砖-->
+	<!--Fire black bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeBlackBrick</defName>
 		<label>make Black brick</label>
@@ -85,7 +85,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--烧制青砖-->
+	<!--Fire black bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeBlackBrickBulk</defName>
 		<label>make Black brick x4</label>
@@ -105,7 +105,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--烧制青砖-->
+	<!--Fire black bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeBlackBrickTen</defName>
 		<label>make Black brick x10</label>
@@ -126,7 +126,7 @@
 	</RecipeDef>
 
 
-	<!--烧制红砖-->
+	<!--Fire red bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeRedBrick</defName>
 		<label>make Red brick</label>
@@ -146,7 +146,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--烧制红砖-->
+	<!--Fire red bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeRedBrickBulk</defName>
 		<label>make Red brick x4</label>
@@ -166,7 +166,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--烧制红砖-->
+	<!--Fire red bricks-->
 	<RecipeDef ParentName="RI_RecipeBase_Bricks">
 		<defName>RI_MakeRedBrickTen</defName>
 		<label>make Red brick x10</label>
@@ -186,7 +186,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--把铁木整成钢铁？-->
+	<!--Convert ironwood to steel?-->
 	<RecipeDef>
 		<defName>RI_MakeIronWoodToSteel</defName>
 		<label>Extract steel from iron wood</label>
@@ -222,7 +222,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--锻打镔铁-->
+	<!--Forge Damascus iron-->
 	<RecipeDef>
 		<defName>RI_MakeSteelToIron</defName>
 		<label>Forge pattern steel</label>
@@ -258,7 +258,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--锻打镔铁x4-->
+	<!--Forge Damascus iron x4-->
 	<RecipeDef>
 		<defName>RI_MakeSteelToIronBulk</defName>
 		<label>Forge pattern steel x4</label>
@@ -294,7 +294,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--培养蚕Cultivate more silkworm-->
+	<!--Cultivate silkworms-->
 	<RecipeDef>
 		<defName>RI_Recipe_CultivateSilkworm</defName>
 		<label>Cultivate more silkworm</label>
@@ -338,7 +338,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--培养冰蚕Cultivate more silkworm-->
+	<!--Cultivate ice silkworms-->
 	<RecipeDef>
 		<defName>RI_Recipe_CultivateIceSilkworm</defName>
 		<label>Cultivate more ice silkworm</label>
@@ -382,9 +382,9 @@
 		</products>
 	</RecipeDef>
 
-	<!--======================热压机配方======================-->
+	<!--====================== Heat press recipes ======================-->
 
-	<!--热压Base-->
+	<!--Heat press base-->
 	<RecipeDef Name="RI_RecipeBase_HeatPress" Abstract="True">
 		<workAmount>2400</workAmount>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -393,7 +393,7 @@
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 
-	<!--制作合成纤维-->
+	<!--Make synthetic fiber-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_PressSynthread</defName>
 		<label>heat pressed synthread</label>
@@ -428,7 +428,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--制作纤维x4-->
+	<!--Make synthetic fiber x4-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_PressSynthreadBulk</defName>
 		<label>heat pressed synthread x4</label>
@@ -463,7 +463,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--木板制作胶合板-->
+	<!--Make plywood from planks-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakePlywood</defName>
 		<label>wood plank heat pressed plywood</label>
@@ -489,7 +489,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--木板制作胶合板 x4-->
+	<!--Make plywood from planks x4-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakePlywoodBulk</defName>
 		<label>wood plank heat pressed plywood x4</label>
@@ -515,7 +515,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--竹子制作胶合板-->
+	<!--Make plywood from bamboo-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakePlywoodBamboo</defName>
 		<label>bamboo heat pressed plywood</label>
@@ -541,7 +541,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--竹子制作胶合板 x4-->
+	<!--Make plywood from bamboo x4-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakePlywoodBambooBulk</defName>
 		<label>bamboo heat pressed plywood x4</label>
@@ -567,7 +567,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--铁木热压钢铁-->
+	<!--Heat-press ironwood to steel-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakeIronWoodSteel</defName>
 		<label>ironwood heat pressed steel</label>
@@ -593,7 +593,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--铁木热压钢铁 x4-->
+	<!--Heat-press ironwood to steel x4-->
 	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
 		<defName>RI_Recipe_MakeIronWoodSteelBulk</defName>
 		<label>ironwood heat pressed steel x4</label>

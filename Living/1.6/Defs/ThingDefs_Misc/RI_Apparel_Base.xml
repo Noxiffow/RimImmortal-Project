@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--布帛菽粟的前置和核心的前置分开-->
+	<!--Living mod base separated from Core mod base-->
 	
-	<!--===================== 衣服 =====================-->
+	<!--===================== Clothing =====================-->
 
-	<!--服装前置——基础衣服前置，ApparelBase不用改了yyds-->
+	<!--Clothing base — inherits from ApparelBase (no changes needed)-->
 	<ThingDef Name="RI_Living_BasicApparel_Base" ParentName="ApparelBase" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<uiIconScale>1</uiIconScale>
 		<techLevel>Medieval</techLevel>
-		<!--贴图-->
+		<!--Texture-->
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!--储存-->
+		<!--Storage-->
 		<thingCategories>
 			<li>RI_Category_NormalClothing</li>
 		</thingCategories>
-		<!--制作清单-->
+		<!--Crafting requirements-->
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -44,32 +44,32 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
-		<!--贸易tag-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
-		<!--随机颜色-->
+		<!--Random color-->
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--不让npc刷新-->
+		<!--Prevent NPC refresh-->
 		<generateAllowChance>0</generateAllowChance>
 		<generateCommonality>0.01</generateCommonality>
 	</ThingDef>
 
-	<!--服装前置——没有布料皮料，基础服饰-->
+	<!--Clothing base — no textile/leather requirement, basic apparel-->
 	<ThingDef Name="RI_Living_ApparelNostuffCategories_Base" ParentName="ApparelBase" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<uiIconScale>1</uiIconScale>
 		<techLevel>Medieval</techLevel>
-		<!--贴图-->
+		<!--Texture-->
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!--储存-->
+		<!--Storage-->
 		<thingCategories>
 			<li>RI_Category_NormalClothing</li>
 		</thingCategories>
-		<!--制作清单-->
+		<!--Crafting requirements-->
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -80,41 +80,41 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-		<!--贸易tag-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--不让npc刷新-->
+		<!--Prevent NPC refresh-->
 		<generateAllowChance>0</generateAllowChance>
 		<generateCommonality>0.01</generateCommonality>
 	</ThingDef>
 
-	<!--===================== 帽子 =====================-->
+	<!--===================== Hats =====================-->
 
-	<!--帽子前置——基础帽子-->
+	<!--Hat base — basic hat-->
 	<ThingDef Name="RI_Living_MakeableHat_Base" ParentName="ApparelBase" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<uiIconScale>1</uiIconScale>
 		<techLevel>Medieval</techLevel>
-		<!--贴图-->
+		<!--Texture-->
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!--储存-->
+		<!--Storage-->
 		<thingCategories>
 			<li>RI_Category_NormalClothing</li>
 		</thingCategories>
-		<!--服装特性-->
+		<!--Apparel properties-->
 		<apparel>
-			<!--不知道干嘛的-->
+			<!--Unknown purpose-->
 			<parentTagDef>ApparelHead</parentTagDef>
 			<layers>
 				<li>Overhead</li>
 			</layers>
 		</apparel>
-		<!--制作清单-->
+		<!--Crafting requirements-->
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -139,38 +139,38 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
-		<!--贸易tag-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--不让npc刷新-->
+		<!--Prevent NPC refresh-->
 		<generateAllowChance>0</generateAllowChance>
 		<generateCommonality>0.01</generateCommonality>
 	</ThingDef>
 
-	<!--帽子前置——没有布料皮料，基础帽子-->
+	<!--Hat base — no textile/leather requirement, basic hat-->
 	<ThingDef Name="RI_Living_MakeableHatNostuffCategories_Base" ParentName="ApparelBase" Abstract="True">
 		<tickerType>Normal</tickerType>
 		<uiIconScale>1</uiIconScale>
 		<techLevel>Medieval</techLevel>
-		<!--贴图-->
+		<!--Texture-->
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!--储存-->
+		<!--Storage-->
 		<thingCategories>
 			<li>RI_Category_NormalClothing</li>
 		</thingCategories>
-		<!--服装特性-->
+		<!--Apparel properties-->
 		<apparel>
 			<parentTagDef>ApparelHead</parentTagDef>
 			<layers>
 				<li>Overhead</li>
 			</layers>
 		</apparel>
-		<!--制作清单-->
+		<!--Crafting requirements-->
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -181,12 +181,12 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-		<!--贸易tag-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>Clothing</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--不让npc刷新-->
+		<!--Prevent NPC refresh-->
 		<generateAllowChance>0</generateAllowChance>
 		<generateCommonality>0.01</generateCommonality>
 	</ThingDef>

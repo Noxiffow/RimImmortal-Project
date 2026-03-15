@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--蚕箱-->
+	<!--Silkworm box-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_SilkwormRearingBox</defName>
 		<label>Silkworm rearing box</label>
@@ -28,7 +28,7 @@
 			<li>BuildingsProduction</li>
 		</thingCategories>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<!--没有ticker建筑就不会运行-->
+		<!--Building requires ticker to function-->
 		<tickerType>Normal</tickerType>
 		<statBases>
 			<WorkToBuild>1800</WorkToBuild>
@@ -41,14 +41,14 @@
 		<designationCategory>RI_RimImmortals_Group</designationCategory>
 		<comps>
 			<li Class="RI_Frame_RiceCooker.CompProperties_RiceCookerFrame">
-				<!-- 空闲状态 -->
+				<!-- Idle state -->
 				<idleGraphicData>
 					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1,1)</drawSize>
 				</idleGraphicData>
 
-				<!-- 工作状态 -->
+				<!-- Working state -->
 				<workingGraphicData>
 					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker_Finish</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -64,22 +64,22 @@
 						<count>20</count>
 					</li>
 				</ingredients>
-				<!--产出产物-->
+				<!--Produce output-->
 				<outputThing>RI_Resource_SilkwormCocoon</outputThing>
 				<outputCount>25</outputCount>
-				<!--完成的音效-->
+				<!--Completion sound-->
 				<finishSound>RI_Sound_WaveSoundA</finishSound>
-				<!--工作需要的tick_5天-->
+				<!--Work duration in ticks — 5 days-->
 				<workTicks>300000</workTicks>
-				<!--下雨是否摧毁产物-->
+				<!--Whether rain destroys output-->
 				<!--<destroyByRain>false</destroyByRain>-->
-				<!--需不需要电力-->
+				<!--Whether power is required-->
 				<requirePower>false</requirePower>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<!--冰蚕箱-->
+	<!--Ice silkworm box-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_IceSilkwormRearingBox</defName>
 		<label>Ice silkworm rearing box</label>
@@ -106,7 +106,7 @@
 			<li>BuildingsProduction</li>
 		</thingCategories>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<!--没有ticker建筑就不会运行-->
+		<!--Building requires ticker to function-->
 		<tickerType>Normal</tickerType>
 		<statBases>
 			<WorkToBuild>1800</WorkToBuild>
@@ -119,14 +119,14 @@
 		<designationCategory>RI_RimImmortals_Group</designationCategory>
 		<comps>
 			<li Class="RI_Frame_RiceCooker.CompProperties_RiceCookerFrame">
-				<!-- 空闲状态 -->
+				<!-- Idle state -->
 				<idleGraphicData>
 					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1,1)</drawSize>
 				</idleGraphicData>
 
-				<!-- 工作状态 -->
+				<!-- Working state -->
 				<workingGraphicData>
 					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker_Finish</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -142,16 +142,16 @@
 						<count>5</count>
 					</li>
 				</ingredients>
-				<!--产出产物-->
+				<!--Produce output-->
 				<outputThing>RI_Resource_IceSilkwormCocoon</outputThing>
 				<outputCount>25</outputCount>
-				<!--完成的音效-->
+				<!--Completion sound-->
 				<finishSound>RI_Sound_WaveSoundA</finishSound>
-				<!--工作需要的tick_5天-->
+				<!--Work duration in ticks — 5 days-->
 				<workTicks>300000</workTicks>
-				<!--下雨是否摧毁产物-->
+				<!--Whether rain destroys output-->
 				<!--<destroyByRain>false</destroyByRain>-->
-				<!--需不需要电力-->
+				<!--Whether power is required-->
 				<requirePower>false</requirePower>
 			</li>
 		</comps>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--瓦楞帽-->
+	<!--Woven straw hat-->
 	<ThingDef ParentName="RI_Living_MakeableHat_Base">
 		<defName>RI_Apparel_WaiterHat</defName>
 		<label>Waiter hat</label>
@@ -10,7 +10,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_WaiterHat/RI_Apparel_WaiterHat</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Materials-->
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -33,7 +33,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_WaiterHat/RI_Apparel_WaiterHat</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displays with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -52,7 +52,7 @@
 		</equippedStatOffsets>
 	</ThingDef>
 
-	<!--帷帽-->
+	<!--Veil hat-->
 	<ThingDef ParentName="RI_Living_MakeableHat_Base">
 		<defName>RI_Apparel_VeilHat</defName>
 		<label>Veil hat</label>
@@ -61,7 +61,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_VeilHat/RI_Apparel_VeilHat</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Materials-->
 		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -84,7 +84,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_VeilHat/RI_Apparel_VeilHat</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displays with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -100,7 +100,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!--三山帽-->
+	<!--Three-peak hat-->
 	<ThingDef ParentName="RI_Living_MakeableHat_Base">
 		<defName>RI_Apparel_SanShanHat</defName>
 		<label>SanShan hat</label>
@@ -109,7 +109,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SanShanHat/RI_Apparel_SanShanHat</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Materials-->
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -142,7 +142,7 @@
 		</equippedStatOffsets>
 	</ThingDef>
 
-	<!--小冠-->
+	<!--Small crown-->
 	<ThingDef ParentName="RI_Living_MakeableHat_Base">
 		<defName>RI_Apparel_SmallCrown</defName>
 		<label>Small crown</label>
@@ -151,7 +151,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SmallCrown/RI_Apparel_SmallCrown</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Materials-->
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Leathery</li>
@@ -176,7 +176,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SmallCrown/RI_Apparel_SmallCrown</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displays with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -195,7 +195,7 @@
 		</equippedStatOffsets>
 	</ThingDef>
 
-	<!--嵌金三山帽——没有原料--><!--
+	<!--Gold-inlaid three-peak hat — no materials required--><!--
 	<ThingDef ParentName="RI_Living_MakeableHatNostuffCategories_Base">
 		<defName>RI_Apparel_GoldenSanShanHat</defName>
 		<label>Golden SanShan hat</label>
@@ -204,7 +204,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_GoldenSanShanHat/RI_Apparel_GoldenSanShanHat</texPath>
 		</graphicData>
 
-		--><!--原料--><!--
+		--><!--Materials--><!--
 		<costList>
 			<Cloth>10</Cloth>
 			<RI_Resource_GoldenSilk>30</RI_Resource_GoldenSilk>

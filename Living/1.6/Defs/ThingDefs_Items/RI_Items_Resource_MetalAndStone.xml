@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--镔铁-->
+	<!--Damascus iron-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_DamascusIron</defName>
 		<label>pattern steel</label>
@@ -53,7 +53,7 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--乌刚玉-->
+	<!--Black corundum-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_BlackCorundum</defName>
 		<label>dark corundum</label>
@@ -115,7 +115,7 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--青砖-->
+	<!--Black bricks-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_BlackBrick</defName>
 		<label>black brick</label>
@@ -177,7 +177,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<allowedArchonexusCount>500</allowedArchonexusCount>
 
-		<!--装备，会导致报错，下次大更新提前说明再加上-->
+		<!--Equipment — causes errors; explain before adding in next major update-->
 		<!--<equipmentType>Primary</equipmentType>
 		<techLevel>Neolithic</techLevel>
 		<comps>
@@ -200,7 +200,7 @@
 		</tools>-->
 	</ThingDef>
 
-	<!--红砖-->
+	<!--Red bricks-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_RedBrick</defName>
 		<label>red brick</label>
@@ -261,7 +261,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<allowedArchonexusCount>500</allowedArchonexusCount>
 
-		<!--装备，会导致报错，下次大更新提前说明再加上-->
+		<!--Equipment — causes errors; explain before adding in next major update-->
 		<!--<equipmentType>Primary</equipmentType>
 		<techLevel>Neolithic</techLevel>
 		<comps>
@@ -284,7 +284,7 @@
 		</tools>-->
 	</ThingDef>
 
-	<!--寒髓-->
+	<!--Marrow crystal-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_IceMarrow</defName>
 		<label>ice marrow</label>

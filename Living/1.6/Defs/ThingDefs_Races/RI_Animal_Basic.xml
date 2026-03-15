@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- =========================火鼠============================= -->
+	<!-- ========================= Fire rat ============================= -->
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_FireRat</defName>
@@ -160,7 +160,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!-- ==========================天狗============================ -->
+	<!-- ========================== Sky hound ============================ -->
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>RI_Animal_TianDog</defName>

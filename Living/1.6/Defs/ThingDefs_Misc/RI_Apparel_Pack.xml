@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ===============背包基础=============== -->
+	<!-- =============== Backpack base =============== -->
 	<ThingDef Name="RI_Apparel_BackpackBase" ParentName="ApparelMakeableBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>

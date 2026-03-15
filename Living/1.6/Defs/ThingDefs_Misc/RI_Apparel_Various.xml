@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--短衫-->
+	<!--Short tunic-->
 	<ThingDef ParentName="RI_Living_BasicApparel_Base">
 		<defName>RI_Apparel_InsideApparel</defName>
 		<label>Inside-shirt</label>
@@ -47,7 +47,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!--直裰-->
+	<!--Zhiduo robe-->
 	<ThingDef ParentName="RI_Living_BasicApparel_Base">
 		<defName>RI_Apparel_BasicMiddleClothes</defName>
 		<label>Middle robe</label>
@@ -94,7 +94,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!--长绔-->
+	<!--Long trousers-->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>RI_Apparel_LongPants</defName>
 		<label>Long pants</label>
@@ -104,7 +104,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Materials-->
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -148,7 +148,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!--小包帕-->
+	<!--Small handkerchief bag-->
 	<ThingDef ParentName="RI_Living_BasicApparel_Base">
 		<defName>RI_Apparel_HairBunCloth</defName>
 		<label>Hair bun cloth</label>
@@ -194,7 +194,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<!--和发型同时显示-->
+			<!--Displays with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -206,7 +206,7 @@
 		</apparel>
 	</ThingDef>
 
-	<!--庄子巾-->
+	<!--Zhuangzi headscarf-->
 	<ThingDef ParentName="RI_Living_BasicApparel_Base">
 		<defName>RI_Apparel_ZhuangZiScarf</defName>
 		<label>ZhuangZi scarf</label>
@@ -252,7 +252,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<!--和发型同时显示-->
+			<!--Displays with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>

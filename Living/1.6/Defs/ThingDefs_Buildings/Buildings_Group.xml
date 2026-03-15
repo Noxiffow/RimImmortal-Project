@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--仙路生产-->
+	<!--RimImmortal production-->
 	<DesignationCategoryDef>
 		<defName>RI_RimImmortals_Group</defName>
 		<label>RI Production</label>

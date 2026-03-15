@@ -55,7 +55,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--毛竹-->
+	<!--Mao bamboo-->
 	<ThingDef ParentName="RI_TreeBase">
 		<defName>RI_Plant_MosoBamboo</defName>
 		<label>Moso bamboo</label>
@@ -83,7 +83,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--檀木树-->
+	<!--Sandalwood tree-->
 	<ThingDef ParentName="RI_TreeBase">
 		<defName>RI_Plant_SandalwoodTree</defName>
 		<label>Sandalwood tree</label>
@@ -122,7 +122,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--苍血竹-->
+	<!--Blood bamboo tree-->
 	<ThingDef ParentName="RI_TreeBase">
 		<defName>RI_Plant_GreenBloodBamboo</defName>
 		<label>Green blood bamboo</label>
@@ -161,7 +161,7 @@
 		</plant>
 	</ThingDef>
 
-	<!--铁木树-->
+	<!--Ironwood tree-->
 	<ThingDef ParentName="RI_TreeBase">
 		<defName>RI_Plant_IronWoodTree</defName>
 		<label>Iron wood tree</label>
@@ -197,12 +197,12 @@
 		</plant>
 	</ThingDef>
 
-	<!--桑树——收获得到桑叶-->
+	<!--Mulberry tree — harvest yields mulberry leaves-->
 	<ThingDef ParentName="RI_TreeBase">
 		<defName>RI_Plant_MulberryTree</defName>
 		<label>Mulberry tree</label>
 		<description>The mulberry tree is a deciduous tree, and its leaves are the primary food source for silkworms. In addition to this, various parts of the mulberry tree can be used in traditional medicine, making it an important economic crop.</description>
-		<!--描述超链接-->
+		<!--Description hyperlinks-->
 		<descriptionHyperlinks>
 			<ThingDef>RI_Resource_MulberryLeaf</ThingDef>
 		</descriptionHyperlinks>

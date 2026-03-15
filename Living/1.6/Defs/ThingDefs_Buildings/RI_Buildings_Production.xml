@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--砖窑-->
+	<!--Brick kiln-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_BrickKiln</defName>
 		<label>kiln</label>
@@ -43,14 +43,14 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<recipes>
-			<!--烧砖-->
+			<!--Fire bricks-->
 			<li>RI_MakeBlackBrick</li>
 			<li>RI_MakeBlackBrickBulk</li>
 			<li>RI_MakeBlackBrickTen</li>
 			<li>RI_MakeRedBrick</li>
 			<li>RI_MakeRedBrickBulk</li>
 			<li>RI_MakeRedBrickTen</li>
-			<!--窑炉该干的活-->
+			<!--Kiln work-->
 			<li>ExtractMetalFromSlag</li>
 			<li>SmeltOrDestroyThing</li>
 			<li>SmeltWeapon</li>
@@ -102,7 +102,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--挖泥坑-->
+	<!--Dig mud pit-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_MudDigWhole</defName>
 		<label>digging pit</label>
@@ -167,7 +167,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<!--电窑炉-->
+	<!--Electric kiln-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_ElectricKiln</defName>
 		<label>electric kiln</label>
@@ -195,14 +195,14 @@
 		</costList>
 
 		<recipes>
-			<!--烧砖-->
+			<!--Fire bricks-->
 			<li>RI_MakeBlackBrick</li>
 			<li>RI_MakeBlackBrickBulk</li>
 			<li>RI_MakeBlackBrickTen</li>
 			<li>RI_MakeRedBrick</li>
 			<li>RI_MakeRedBrickBulk</li>
 			<li>RI_MakeRedBrickTen</li>
-			<!--窑炉该干的活-->
+			<!--Kiln work-->
 			<li>ExtractMetalFromSlag</li>
 			<li>SmeltOrDestroyThing</li>
 			<li>SmeltWeapon</li>
@@ -265,7 +265,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!-- 中世纪————锯马 -->
+	<!-- Medieval — sawhorse -->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_SawHorse</defName>
 		<label>saw horses</label>
@@ -327,8 +327,8 @@
 	<!--sawing mechine-->
 	<!--<ThingDef ParentName="BenchBase">
 		<defName>TW_TCT_BenchSaw</defName>
-		<label>台锯</label>
-		<description>一种使用圆形锯片的机床，可以快速有效地将原木切割成想要的形状。</description>
+		<label>table saw</label>
+		<description>A machine tool using a circular saw blade, capable of quickly and efficiently cutting raw logs into desired shapes.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/TW_TCT_BenchSaw</texPath>
@@ -398,8 +398,8 @@
 		</researchPrerequisites>
 	</ThingDef>-->
 
-	<!-- 工业————热压机 -->
-	<!--可以制作合成纤维，别的能做的得想想-->
+	<!-- Industrial — heat press -->
+	<!--Can make synthetic fiber; other possible uses TBD-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_HotPressMachine</defName>
 		<label>heat press</label>
@@ -485,7 +485,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--工业钻机-->
+	<!--Industrial drill-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_IndustrialDrilling</defName>
 		<label>industrial drilling</label>
@@ -502,14 +502,14 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<altitudeLayer>Building</altitudeLayer>
-		<!--不可通过-->
+		<!--Impassable-->
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
 		<fillPercent>1</fillPercent>
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<designationCategory>RI_RimImmortals_Group</designationCategory>
-		<!-- 更大！ -->
+		<!-- Larger! -->
 		<specialDisplayRadius>6.9</specialDisplayRadius>
 		<rotatable>true</rotatable>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--挥棒子咻一声-->
+	<!--Swing whoosh-->
 	<SoundDef>
 		<defName>RI_Sound_WaveSoundA</defName>
 		<context>MapOnly</context>
@@ -18,7 +18,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--劈木头咔一声-->
+	<!--Chop thwack-->
 	<SoundDef>
 		<defName>RI_Sound_ChopKaA</defName>
 		<context>MapOnly</context>
@@ -35,7 +35,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--锯木头声音-->
+	<!--Sawing sound-->
 	<SoundDef>
 		<defName>RI_Sound_SawOffWoodA</defName>
 		<context>MapOnly</context>
@@ -52,7 +52,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--劈木头声音-->
+	<!--Chopping sound-->
 	<SoundDef>
 		<defName>RI_Sound_ChopWoodA</defName>
 		<context>MapOnly</context>

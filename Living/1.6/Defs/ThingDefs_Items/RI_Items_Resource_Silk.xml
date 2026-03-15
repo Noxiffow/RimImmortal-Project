@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--布料啥的前置-->
+	<!--Textile base-->
 	<ThingDef Abstract="True" Name="RI_Base_Fabric" ParentName="ResourceBase">
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -21,7 +21,7 @@
 		<allowedArchonexusCount>100</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--丝绸-->
+	<!--Silk-->
 	<ThingDef ParentName="RI_Base_Fabric">
 		<defName>RI_Resource_Silk</defName>
 		<label>silk</label>
@@ -54,7 +54,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!--火浣皮-->
+	<!--Fireproof hide-->
 	<ThingDef ParentName="RI_Base_Fabric">
 		<defName>RI_Resource_FireCloth</defName>
 		<label>fire rat leather</label>
@@ -85,7 +85,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<!--冰蚕丝-->
+	<!--Ice silkworm thread-->
 	<ThingDef ParentName="RI_Base_Fabric">
 		<defName>RI_Resource_IceSilk</defName>
 		<label>ice silk</label>
@@ -116,7 +116,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<!--金丝-->
+	<!--Gold thread-->
 	<ThingDef ParentName="RI_Base_Fabric">
 		<defName>RI_Resource_GoldenSilk</defName>
 		<label>golden silk</label>
@@ -150,7 +150,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!--银丝-->
+	<!--Silver thread-->
 	<ThingDef ParentName="RI_Base_Fabric">
 		<defName>RI_Resource_SilverSilk</defName>
 		<label>silver silk</label>

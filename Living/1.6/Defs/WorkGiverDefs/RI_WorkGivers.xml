@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--烧制粘土-->
+	<!--Fire clay-->
 	<WorkGiverDef>
 		<defName>RI_WorkGiver_BakeBrick</defName>
 		<label>bake clay</label>
@@ -20,7 +20,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--挖掘-->
+	<!--Excavate-->
 	<WorkGiverDef>
 		<defName>RI_WorkGiver_Digging</defName>
 		<label>digging</label>
@@ -38,7 +38,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--电饭煲框架，投料work-->
+	<!--Rice cooker framework — fill work-->
 	<WorkGiverDef>
 		<defName>RI_WorkGiver_FillRiceCooker</defName>
 		<label>input resource</label>
@@ -53,7 +53,7 @@
 		<scanThings>true</scanThings>
 	</WorkGiverDef>
 
-	<!--木材加工-->
+	<!--Wood processing-->
 	<WorkGiverDef>
 		<defName>RI_WorkGiver_Timber</defName>
 		<label>timber</label>
@@ -72,7 +72,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--热压原料-->
+	<!--Heat-press raw materials-->
 	<WorkGiverDef>
 		<defName>RI_WorkGiver_HeatPress</defName>
 		<label>heat press resource</label>
@@ -93,11 +93,11 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--操作工业钻机-->
+	<!--Operate industrial drill-->
 	<WorkGiverDef Class="RI_Framework_LivingPack.LivingWorkGiverDef">
 		<defName>RI_WorkGiver_IndustrialDrill</defName>
 		<label>Operate industrial drilling</label>
-		<!-- 使用你刚才写的 C# 类 -->
+		<!-- Use your C# class -->
 		<giverClass>RI_Framework_LivingPack.WorkGiver_LivingDrill</giverClass>
 		<workType>Mining</workType>
 		<priorityInType>50</priorityInType>
@@ -106,7 +106,7 @@
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
-		<!-- 关键！在这里填入你的工业钻机的 defName -->
+		<!-- Key: fill in the defName of your industrial drill here -->
 		<drills>
 			<li>RI_Building_IndustrialDrilling</li>
 		</drills>

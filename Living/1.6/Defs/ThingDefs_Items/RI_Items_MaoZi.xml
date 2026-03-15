@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 御贡酒 -->
+	<!-- Royal tribute wine (disabled) -->
 	<ThingDef ParentName="DrugBase">
 		<defName>RI_Drug_ImperialWine</defName>
 		<label>Imperial tribute</label>
@@ -13,7 +13,7 @@
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/RI_Drug_ImperialWine</texPath>
-			<!-- 记得准备贴图 -->
+			<!-- Remember to prepare the texture -->
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -26,18 +26,18 @@
 		<statBases>
 			<MarketValue>300</MarketValue>
 			<Mass>0.5</Mass>
-			<!--价值多少贡献点-->
+			<!--Contribution value-->
 			<RoyalFavorValue>1</RoyalFavorValue>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<Flammability>0.5</Flammability>
-			<!-- 高度酒易燃 -->
+			<!-- High-proof alcohol is flammable -->
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<foodType>Fluid, Processed</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>0.6</joy>
-			<!-- 提供大量娱乐 (啤酒只有 0.17) -->
+			<!-- Provides large recreation boost (beer is only 0.17) -->
 			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Beer</ingestSound>
 			<ingestHoldOffsetStanding>
@@ -52,7 +52,7 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.35</severity>
-					<!-- 强劲：一瓶顶三瓶啤酒 (啤酒 0.15) -->
+					<!-- Strong: one bottle equals three beers (beer is 0.15) -->
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -66,7 +66,7 @@
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
 				<addictiveness>0.015</addictiveness>
-				<!-- 成瘾性略高于啤酒 -->
+				<!-- Addiction rate slightly higher than beer -->
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>

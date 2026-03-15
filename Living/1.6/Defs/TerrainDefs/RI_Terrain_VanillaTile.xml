@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--地砖-->
+	<!--Floor tiles-->
 	<TerrainDef ParentName="TileStoneBase" >
 		<defName>RI_TileRedBrick</defName>
 		<label>red brick tile</label>
@@ -20,7 +20,7 @@
 		</costList>
 	</TerrainDef>
 
-	<!--石板-->
+	<!--Stone tiles-->
 	<TerrainDef ParentName="FlagstoneBase">
 		<defName>RI_FlagstoneRedBrick</defName>
 		<label>red brick flagstone</label>

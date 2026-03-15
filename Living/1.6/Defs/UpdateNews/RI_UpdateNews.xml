@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ======================仙路-俗世仙工 更新信息====================== -->
+	<!-- ====================== RimImmortal-Living update info ====================== -->
 
 	<RI_Frame_Newspaper.UpdateNewsDef>
 		<defName>RI_RimImmortal_Living_101</defName>
-		<!-- 这里写翻译键，而不是直接写名字 -->
+		<!-- Write translation key here, not the name directly -->
 		<modName>RI_RimImmortal_Living</modName>
 		<version>1.0.1</version>
-		<!-- 这里也写翻译键 -->
+		<!-- Write translation key here too -->
 		<newsText>RI_RimImmortal_Living_Text</newsText>
 		<imagePath>UI/News/News1</imagePath>
 		<imageAspect>3.5</imageAspect>
 
-		<!-- 在这里微调坐标和大小 -->
+		<!-- Fine-tune position and size here -->
 		<windowX>8</windowX>
-		<!-- 距离屏幕左边 -->
+		<!-- Distance from screen left edge -->
 		<windowY>510</windowY>
-		<!-- 距离屏幕顶端 -->
+		<!-- Distance from screen top edge -->
 		<windowWidth>500</windowWidth>
-		<!-- 宽度调窄一点 -->
+		<!-- Narrow the width slightly -->
 		<windowHeight>277</windowHeight>
-		<!-- 高度调长一点 -->
+		<!-- Increase the height slightly -->
 	</RI_Frame_Newspaper.UpdateNewsDef>
 
 </Defs>

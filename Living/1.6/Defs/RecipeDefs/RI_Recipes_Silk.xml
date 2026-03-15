@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--金丝银丝Base-->
+	<!--Gold/silver thread base-->
 	<RecipeDef Name="RI_RecipeBase_MetalSilk" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -14,7 +14,7 @@
 		</recipeUsers>
 	</RecipeDef>
 
-	<!--丝绸Base-->
+	<!--Silk base-->
 	<RecipeDef Name="RI_RecipeBase_Silk" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -27,7 +27,7 @@
 		</recipeUsers>
 	</RecipeDef>
 
-	<!--织造丝绸-->
+	<!--Weave silk-->
 	<RecipeDef ParentName="RI_RecipeBase_Silk">
 		<defName>RI_MakeSilk</defName>
 		<label>Weave silk</label>
@@ -54,7 +54,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--织造冰蚕丝-->
+	<!--Weave ice silkworm thread-->
 	<RecipeDef ParentName="RI_RecipeBase_Silk">
 		<defName>RI_MakeIceSilk</defName>
 		<label>Weave ice silk</label>
@@ -81,7 +81,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--织造丝绸 x4-->
+	<!--Weave silk x4-->
 	<RecipeDef ParentName="RI_RecipeBase_Silk">
 		<defName>RI_MakeSilkBulk</defName>
 		<label>Weave silk x4</label>
@@ -108,7 +108,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--织造冰蚕丝 x4-->
+	<!--Weave ice silkworm thread x4-->
 	<RecipeDef ParentName="RI_RecipeBase_Silk">
 		<defName>RI_MakeIceSilkBulk</defName>
 		<label>Weave ice silk x4</label>
@@ -135,7 +135,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--捻制金丝-->
+	<!--Spin gold thread-->
 	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
 		<defName>RI_MakeGoldSilk</defName>
 		<label>Twist gold silk</label>
@@ -188,7 +188,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--捻制银丝-->
+	<!--Spin silver thread-->
 	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
 		<defName>RI_MakeSilverSilk</defName>
 		<label>Twist silver silk</label>
@@ -241,7 +241,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--熔炼Base-->
+	<!--Smelting base-->
 	<RecipeDef Name="RI_RecipeBase_MeltMetalSilk" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -254,7 +254,7 @@
 		</recipeUsers>
 	</RecipeDef>
 
-	<!--金丝熔炼回金子-->
+	<!--Smelt gold thread back to gold-->
 	<RecipeDef ParentName="RI_RecipeBase_MeltMetalSilk">
 		<defName>RI_MakeGoldSilktoGold</defName>
 		<label>Melt gold silk</label>
@@ -281,7 +281,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--银丝熔炼回银子-->
+	<!--Smelt silver thread back to silver-->
 	<RecipeDef ParentName="RI_RecipeBase_MeltMetalSilk">
 		<defName>RI_MakeSilverSilktoSilver</defName>
 		<label>Melt silver silk</label>

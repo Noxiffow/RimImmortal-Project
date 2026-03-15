@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--劈开原木，用到近战1级-->
+	<!--Chop log — requires Melee 1-->
 	<RecipeDef>
 		<defName>RI_Recipe_ChopWoodLog</defName>
 		<label>chop woodlog</label>
@@ -39,9 +39,9 @@
 		</products>
 	</RecipeDef>
 
-	<!--锯木头Base-->
+	<!--Saw wood base-->
 	<RecipeDef Name="RI_RecipeBase_SawWood" Abstract="True">
-		<!--描述-->
+		<!--Description-->
 		<jobString>sawing wood</jobString>
 		<description>Saw timber into flat wood planks. Different types of wood yield different amounts of planks.</description>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -58,7 +58,7 @@
 		<researchPrerequisite>RI_BasicTechnology</researchPrerequisite>
 	</RecipeDef>
 
-	<!--锯开原木-->
+	<!--Saw off log-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffThinWood</defName>
 		<label>saw off wood</label>
@@ -83,7 +83,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--锯开原木x4-->
+	<!--Saw off log x4-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffThinWoodBulk</defName>
 		<label>saw off wood x4</label>
@@ -108,7 +108,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--锯开檀木-->
+	<!--Saw off sandalwood-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffSandalWood</defName>
 		<label>saw off sandalwood</label>
@@ -134,7 +134,7 @@
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 
-	<!--锯开檀木x4-->
+	<!--Saw off sandalwood x4-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffSandalWoodBulk</defName>
 		<label>saw off sandalwood x4</label>
@@ -159,7 +159,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--锯开玄铁木-->
+	<!--Saw off ironwood-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffIronWood</defName>
 		<label>saw off ironwood</label>
@@ -185,7 +185,7 @@
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 
-	<!--锯开玄铁木x4-->
+	<!--Saw off ironwood x4-->
 	<RecipeDef ParentName="RI_RecipeBase_SawWood">
 		<defName>RI_Recipe_SawOffIronWoodBulk</defName>
 		<label>saw off ironwood x4</label>
@@ -212,9 +212,9 @@
 
 	<!--<RecipeDef>
 		<defName>RI_Recipe_MakeWoodGlue</defName>
-		<label>熬制木工胶</label>
-		<description>用动物皮来熬制木工胶，比较缓慢。</description>
-		<jobString>正在熬制木工胶。</jobString>
+		<label>brew wood glue</label>
+		<description>Brew wood glue from leather. Slow process.</description>
+		<jobString>brewing wood glue</jobString>
 		<workAmount>1600</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -246,9 +246,9 @@
 
 	<RecipeDef>
 		<defName>TW_TCT_Make_WoodGlue_Five</defName>
-		<label>熬制木工胶 x5</label>
-		<description>用动物皮来熬制木工胶，比较缓慢。</description>
-		<jobString>正在熬制木工胶。</jobString>
+		<label>brew wood glue x5</label>
+		<description>Brew wood glue from leather. Slow process.</description>
+		<jobString>brewing wood glue</jobString>
 		<workAmount>1600</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -280,9 +280,9 @@
 
 	<RecipeDef>
 		<defName>TW_TCT_Make_WoodGlue_HighTech</defName>
-		<label>提炼木工胶</label>
-		<description>随着化工业的发展，发明了用中性胺和动物皮制作木工胶的技术，这种工艺略微复杂，但是产量得到了飞跃式的进步。</description>
-		<jobString>正在提炼木工胶。</jobString>
+		<label>refine wood glue</label>
+		<description>With the development of the chemical industry, a technique for making wood glue from neutroamine and leather was invented. This process is slightly complex, but yields dramatically more output.</description>
+		<jobString>refining wood glue</jobString>
 		<workAmount>1900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -324,9 +324,9 @@
 
 	<!--<RecipeDef>
 		<defName>TW_TCT_Make_WoodGlue_HighTech_Five</defName>
-		<label>提炼木工胶 x5</label>
-		<description>随着化工业的发展，发明了用中性胺和动物皮制作木工胶的技术，这种工艺略微复杂，但是产量得到了飞跃式的进步。</description>
-		<jobString>正在提炼木工胶。</jobString>
+		<label>refine wood glue x5</label>
+		<description>With the development of the chemical industry, a technique for making wood glue from neutroamine and leather was invented. This process is slightly complex, but yields dramatically more output.</description>
+		<jobString>refining wood glue</jobString>
 		<workAmount>1900</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -368,9 +368,9 @@
 
 	<!--<RecipeDef>
 		<defName>RI_Recipe_HeatMakePlywood</defName>
-		<label>热压胶合板</label>
-		<description>通过工业热压机，可以让胶合板制作效率变得更高，高压高温技术让木工胶的消耗更少了，制作速度也更快。</description>
-		<jobString>正在热压胶合板。</jobString>
+		<label>heat-press plywood</label>
+		<description>Industrial hot-pressing equipment greatly increases plywood production efficiency. High heat and pressure reduce wood glue consumption and speed up the process.</description>
+		<jobString>heat-pressing plywood</jobString>
 		<workAmount>1500</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -409,9 +409,9 @@
 
 	<RecipeDef>
 		<defName>RI_Recipe_HeatMakePlywoodBulk</defName>
-		<label>热压胶合板 x5</label>
-		<description>通过工业热压机，可以让胶合板制作效率变得更高，高压高温技术让木工胶的消耗更少了，制作速度也更快。</description>
-		<jobString>正在热压胶合板。</jobString>
+		<label>heat-press plywood x5</label>
+		<description>Industrial hot-pressing equipment greatly increases plywood production efficiency. High heat and pressure reduce wood glue consumption and speed up the process.</description>
+		<jobString>heat-pressing plywood</jobString>
 		<workAmount>1500</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -450,9 +450,9 @@
 
 	<!--<RecipeDef>
 		<defName>TW_TCT_Make_HighDensityBoard</defName>
-		<label>压制压缩木板</label>
-		<description>通过工业热压机，可以让胶合板制作效率变得更高，高压高温技术让木工胶的消耗更少了，制作速度也更快。</description>
-		<jobString>正在热压胶合板。</jobString>
+		<label>compress high-density board</label>
+		<description>Industrial hot-pressing equipment greatly increases plywood production efficiency. High heat and pressure reduce wood glue consumption and speed up the process.</description>
+		<jobString>heat-pressing plywood</jobString>
 		<workAmount>1500</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -483,9 +483,9 @@
 
 	<RecipeDef>
 		<defName>TW_TCT_Make_HighDensityBoard_Five</defName>
-		<label>压制压缩木板 x5</label>
-		<description>通过工业热压机，可以让胶合板制作效率变得更高，高压高温技术让木工胶的消耗更少了，制作速度也更快。</description>
-		<jobString>正在热压胶合板。</jobString>
+		<label>compress high-density board x5</label>
+		<description>Industrial hot-pressing equipment greatly increases plywood production efficiency. High heat and pressure reduce wood glue consumption and speed up the process.</description>
+		<jobString>heat-pressing plywood</jobString>
 		<workAmount>1500</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>

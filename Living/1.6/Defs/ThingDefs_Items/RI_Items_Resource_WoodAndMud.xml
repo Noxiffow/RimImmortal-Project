@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--檀木-->
+	<!--Sandalwood-->
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>RI_Resource_SandalWoodLog</defName>
 		<label>sandalwood</label>
@@ -76,7 +76,7 @@
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--竹子-->
+	<!--Bamboo-->
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>RI_Resource_RawBamboo</defName>
 		<label>bamboo</label>
@@ -151,7 +151,7 @@
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--玄铁木-->
+	<!--Ironwood-->
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>RI_Resource_IronWood</defName>
 		<label>ironwood</label>
@@ -224,7 +224,7 @@
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--苍血竹-->
+	<!--Blood bamboo tree-->
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>RI_Resource_JadeBloodBamboo</defName>
 		<label>jade-blood bamboo</label>
@@ -300,7 +300,7 @@
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
 
-	<!--泥土-->
+	<!--Mud-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_Mud</defName>
 		<label>soil</label>
@@ -348,7 +348,7 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
 
-	<!-- 薄木材 -->
+	<!-- Thin wood -->
 	<!--wood plank-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_ThinWood</defName>
@@ -395,7 +395,7 @@
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
 
-	<!-- 胶合板 -->
+	<!-- Plywood -->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_Plywood</defName>
 		<label>plywood</label>
@@ -421,7 +421,7 @@
 			<categories>
 				<li>Woody</li>
 			</categories>
-			<!--真空-->
+			<!--Vacuum-->
 			<isAirtight>true</isAirtight>
 			<commonality>0.1</commonality>
 			<color>(212,203,184)</color>

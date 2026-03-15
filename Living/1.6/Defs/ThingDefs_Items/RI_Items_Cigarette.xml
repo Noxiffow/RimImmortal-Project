@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ==================== 1. 化学物质定义 ==================== -->
-	<!-- 必须定义一个专属的化学物质，防止它和原版大麻烟的耐受度混淆 -->
+	<!-- ==================== 1. Chemical substance definition ==================== -->
+	<!-- Must define a unique chemical to prevent tolerance overlap with vanilla smokeleaf -->
 	<ChemicalDef>
 		<defName>RI_Chemical_Cigarette</defName>
 		<label>cigarette</label>
@@ -11,7 +11,7 @@
 		<onGeneratedAddictedToleranceChance>0.01</onGeneratedAddictedToleranceChance>
 	</ChemicalDef>
 
-	<!--需求-->
+	<!--Requirements-->
 	<NeedDef ParentName="DrugAddictionNeedBase">
 		<defName>RI_Need_PremiumTobacco</defName>
 		<needClass>Need_Chemical</needClass>
@@ -20,14 +20,14 @@
 		<listPriority>25</listPriority>
 	</NeedDef>
 
-	<!-- 云华烟 -->
+	<!-- Cloud blossom cigarette -->
 	<ThingDef ParentName="DrugBase">
 		<defName>RI_Drug_YunHuaCigarette</defName>
 		<label>YunHua cigarette</label>
 		<description>Human relationships are like flowers seen through the mist—impossible to grasp, yet impossible to live without.\n\nYunhua cigarettes are expensive, high-end cigarettes. Whether one actually enjoys smoking them hardly matters. In certain situations, they serve as a token of courtesy—a kind of social pass.</description>
 
 		<graphicData>
-			<!-- 你的香烟贴图路径，建议画一个红色的经典烟盒或者单根香烟 -->
+			<!-- Cigarette texture path; suggest a red classic cigarette box or single cigarette -->
 			<texPath>Things/Item/Drug/RI_Drug_YunHuaCigarette</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
@@ -41,23 +41,23 @@
 		<stackLimit>10</stackLimit>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
-			<!-- 【超高价格】原版大麻烟价值是 11，这里设为 85，一包堪比高级零部件 -->
+			<!-- [Very high price] Vanilla smokeleaf costs 11; set to 85 here — one pack rivals advanced components -->
 			<MarketValue>140</MarketValue>
-			<!--价值多少贡献点-->
+			<!--Contribution value-->
 			<RoyalFavorValue>0.4</RoyalFavorValue>
 			<Mass>0.1</Mass>
 			<DeteriorationRate>2</DeteriorationRate>
 			<Flammability>1.5</Flammability>
-			<!-- 易燃 -->
+			<!-- Flammable -->
 		</statBases>
 
 		<techLevel>Industrial</techLevel>
 
 		<ingestible>
-			<!-- 作为娱乐药物使用 -->
+			<!-- Used as recreational drug -->
 			<foodType>Plant, Processed</foodType>
 			<joyKind>Chemical</joyKind>
-			<!-- 极高的娱乐值补充 (0.9 代表抽一根几乎能补满娱乐条) -->
+			<!-- Very high recreation boost (0.9 = nearly fills recreation bar per cigarette) -->
 			<joy>0.8</joy>
 			<baseIngestTicks>720</baseIngestTicks>
 			<nurseable>true</nurseable>
@@ -87,13 +87,13 @@
 			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
 
 			<outcomeDoers>
-				<!-- 1. 抽完给 High 的状态 -->
+				<!-- 1. Gives high state after use -->
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>RI_Hediff_ChunghwaHigh</hediffDef>
 					<severity>1.0</severity>
 					<toleranceChemical>RI_Chemical_Cigarette</toleranceChemical>
 				</li>
-				<!-- 2. 给一点点微乎其微的耐受度 -->
+				<!-- 2. Adds minimal tolerance -->
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>RI_Hediff_PremiumTobaccoTolerance</hediffDef>
 					<severity>0.02</severity>
@@ -105,7 +105,7 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>RI_Chemical_Cigarette</chemical>
-				<!-- 【极低成瘾性】原版大麻是 0.02，这里是 0.005 (0.5%的概率)，而且需要非常高的耐受度才会触发成瘾判定 -->
+				<!-- [Extremely low addiction] Vanilla smokeleaf is 0.02; this is 0.005 (0.5% chance), requires very high tolerance to trigger -->
 				<addictiveness>0.005</addictiveness>
 				<minToleranceToAddict>0.45</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
@@ -115,7 +115,7 @@
 		</comps>
 	</ThingDef>
 
-	<!-- ==================== 4. 抽烟后的心情加成 (Thought) ==================== -->
+	<!-- ==================== 4. Post-smoke mood bonus (Thought) ==================== -->
 	<ThoughtDef>
 		<defName>RI_Thought_ChunghwaHigh</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
@@ -130,7 +130,7 @@
 		</stages>
 	</ThoughtDef>
 
-	<!--戒断心情-->
+	<!--Withdrawal thought-->
 	<ThoughtDef>
 		<defName>SmokeleafWithdrawal</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>

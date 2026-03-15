@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 烟草 -->
+	<!-- Tobacco -->
 	<HediffDef>
 		<defName>RI_Hediff_ChunghwaHigh</defName>
 		<label>smoked</label>
@@ -16,7 +16,7 @@
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-1.5</severityPerDay>
-				<!-- 状态消退速度 -->
+				<!-- Status decay rate -->
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>
@@ -36,8 +36,8 @@
 		</stages>
 	</HediffDef>
 
-	<!-- ==================== 5. 耐受度与成瘾性 (防止报错的支撑文件) ==================== -->
-	<!-- 即使极难成瘾，环世界依然要求药物必须配套这三个节点，否则会爆红字 -->
+	<!-- ==================== 5. Tolerance and addiction (support file to prevent errors) ==================== -->
+	<!-- Even with extremely low addiction chance, RimWorld requires drugs to have these three nodes or errors will be thrown -->
 	<HediffDef ParentName="DrugToleranceBase">
 		<defName>RI_Hediff_PremiumTobaccoTolerance</defName>
 		<label>tobacco tolerance</label>

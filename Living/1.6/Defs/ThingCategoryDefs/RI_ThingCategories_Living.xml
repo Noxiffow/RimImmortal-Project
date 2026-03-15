@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--====================================仙路储存====================================-->
+	<!--==================================== RimImmortal storage ====================================-->
 
-	<!--================一级分类（已经无了）=====================-->
+	<!--================ Top-level categories (removed) =====================-->
 	<!--<ThingCategoryDef\>-->
 
-	<!--====================================二级分类====================================-->
+	<!--==================================== Second-level categories ====================================-->
 
-	<!--仙路-衣着-->
+	<!--RimImmortal — Apparel-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Apparel</defName>
 		<label>RI-Apparel</label>
@@ -17,7 +17,7 @@
 		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
 	</ThingCategoryDef>
 	
-	<!--衣冠-->
+	<!--Headwear-->
 	<ThingCategoryDef>
 		<defName>RI_Category_NormalClothing</defName>
 		<label>Clothing</label>
@@ -26,9 +26,9 @@
 		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
 	</ThingCategoryDef>
 
-	<!--====================================仙路原料====================================-->
+	<!--==================================== RimImmortal raw materials ====================================-->
 
-	<!--仙路-原料-->
+	<!--RimImmortal — Raw materials-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Resource</defName>
 		<label>RI-Resource</label>
@@ -37,7 +37,7 @@
 		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
 	</ThingCategoryDef>
 
-	<!--畜牧-->
+	<!--Livestock-->
 	<ThingCategoryDef>
 		<defName>RI_Category_AnimalProductRaw</defName>
 		<label>Animal product</label>
@@ -46,7 +46,7 @@
 		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
 	</ThingCategoryDef>
 
-	<!--药材-->
+	<!--Herbs-->
 	<ThingCategoryDef>
 		<defName>RI_Category_DrugsMaterials</defName>
 		<label>Drug material</label>
@@ -55,7 +55,7 @@
 		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
 	</ThingCategoryDef>
 
-	<!--土木-->
+	<!--Earth and wood-->
 	<ThingCategoryDef>
 		<defName>RI_Category_WoodStone</defName>
 		<label>Wood and Clay</label>
@@ -64,7 +64,7 @@
 		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
 	</ThingCategoryDef>
 
-	<!--金石-->
+	<!--Metal and stone-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Ore</defName>
 		<label>Ore and Metal</label>
@@ -73,9 +73,9 @@
 		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
 	</ThingCategoryDef>
 
-	<!--====================================仙路成品====================================-->
+	<!--==================================== RimImmortal products ====================================-->
 
-	<!--仙路-成品-->
+	<!--RimImmortal — Products-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Manufactured</defName>
 		<label>RI manufactured</label>
@@ -84,7 +84,7 @@
 		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
 	</ThingCategoryDef>
 
-	<!--布帛-->
+	<!--Textiles-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Fabric</defName>
 		<label>Fabric</label>

@@ -5,9 +5,9 @@
 		<tab>RI_ResearchTab</tab>
 	</ResearchProjectDef>
 
-	<!--=============================== 部落到中世纪的科技 ===================================-->
+	<!--=============================== Tribal to Medieval technology ===================================-->
 
-	<!--天工开物-->
+	<!--Heavenly crafts-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_BasicTechnology</defName>
 		<label>Works of Nature</label>
@@ -18,7 +18,7 @@
 		<researchViewY>5.6</researchViewY>
 	</ResearchProjectDef>
 
-	<!--纺织-->
+	<!--Textile weaving-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_Weaving</defName>
 		<label>Weaving</label>
@@ -29,7 +29,7 @@
 		<researchViewY>4.9</researchViewY>
 	</ResearchProjectDef>
 
-	<!--布衣裁缝-->
+	<!--Cloth tailoring-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_Research_MakingCloth</defName>
 		<label>Cloth tailoring</label>
@@ -43,7 +43,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--王朝锦衣-->
+	<!--Dynasty silk apparel-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_Research_MakingDynastyCloth</defName>
 		<label>Dynasty cloth</label>
@@ -57,7 +57,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--百工-->
+	<!--Industrial crafts-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_CarpentryAndCrafting</defName>
 		<label>Crafting</label>
@@ -72,9 +72,9 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--============================中世纪============================-->
+	<!--============================ Medieval ============================-->
 
-	<!--奇花异木-->
+	<!--Exotic flowers and trees-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_HighLevelPlanting</defName>
 		<label>Magical plants</label>
@@ -89,7 +89,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--锻钢-->
+	<!--Steel forging-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_Smithing</defName>
 		<label>Steel forging</label>
@@ -104,9 +104,9 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--============================电力时代============================-->
+	<!--============================ Industrial age ============================-->
 
-	<!--电力学-->
+	<!--Electrology-->
 	<ResearchProjectDef ParentName="RI_Research_Living_Base">
 		<defName>RI_Electric</defName>
 		<label>Electrical Technology</label>
