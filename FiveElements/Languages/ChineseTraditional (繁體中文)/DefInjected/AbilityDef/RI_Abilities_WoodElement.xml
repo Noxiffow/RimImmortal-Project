@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spring grow -->
+  <RI_Ability_EverythingGrow.label>春生</RI_Ability_EverythingGrow.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Foundation rank of the Wood-element Path\n\n</color>Qi cost: 100\n\nAccelerates the growth of plants in an instant.\n\nBy nourishing the soil with Qi energy, this spell stimulates the potential within plant cells, causing them to grow rapidly. Though highly effective, it comes with a long cooldown. -->
+  <RI_Ability_EverythingGrow.description>&lt;color=#7FCD44>此功法为 木行法门 化丹境界 所学\n\n&lt;/color>灵气消耗：100\n\n令植物的生长骤然加快。\n\n以灵气滋润土地中的植物，激发植物细胞的潜力，迅速生长。这种法术虽然好用，但冷却时间较长。</RI_Ability_EverythingGrow.description>
+  
+  <!-- EN: Forest guardian -->
+  <RI_Ability_ForestGuardian.label>森灵护卫</RI_Ability_ForestGuardian.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Strengthening foundation Realm of the Wood-element Path\n\n</color>Qi cost: 500\n\nTransform Tree into Verdant creature.\n\nThrough the Vitality arts of the Wood Path, ordinary trees are granted vitality and transformed into powerful Verdant creatures.\n\nOrdinary tree——Verdant guard\nQingMing tree——QingMing dryad -->
+  <RI_Ability_ForestGuardian.description>&lt;color=#7FCD44>此功法为 木行法门 灵丹境界 所学\n\n&lt;/color>灵气消耗：500\n\n将树木转化为树灵。\n\n以木行生机之术，赋予树木生机，将树木转变为强大的树灵。\n\n任何普通树——森林护卫\n青冥树——青冥树灵</RI_Ability_ForestGuardian.description>
+  
+  <!-- EN: Garden army -->
+  <RI_Ability_GardenArmy.label>草木列阵</RI_Ability_GardenArmy.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Core-coagulation rank of the Wood-element Path\n\n</color>Qi cost: 300\n\nTransform plants into turret-type structures.\n\nUsing the Wood Path’s Vitality spells, various plants are granted life and reshaped into different turrets.\n\nCorn——Corn-cannon\nBerry——Berry-shooter\nCactus——Cactus-spitter -->
+  <RI_Ability_GardenArmy.description>&lt;color=#7FCD44>此功法为 木行法门 化丹境界 所学\n\n&lt;/color>灵气消耗：300\n\n将植物转化为炮台。\n\n以木行生机之术，赋予植物生机，将植物转变为不同的炮台。\n\n玉米——玉米炮\n莓果——莓果塔\n仙人球——多棱刺球</RI_Ability_GardenArmy.description>
+  <RI_Ability_GardenArmy.cachedTooltip>&lt;color=#7FCD44>此功法为 木行法门 化丹境界 所学\n\n&lt;/color>灵气消耗：300\n\n将植物转化为炮台。\n\n以木行生机之术，赋予植物生机，将植物转变为不同的炮台。\n\n玉米——玉米炮\n莓果——莓果塔\n仙人球——多棱刺球</RI_Ability_GardenArmy.cachedTooltip>
+  
+  <!-- EN: Verdant bind -->
+  <RI_Ability_VerdantBind.label>结草缚藤</RI_Ability_VerdantBind.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Core-formation rank of the Wood-element Path\n\n</color>Qi cost: 100\n\nTransform plants into functional structures.\n\nUsing the Wood Path’s Vitality spells, plants are infused with vitality and transformed into functional buildings.\n\nBrambles——Strangle-thorn\nAgave——Agave-spike -->
+  <RI_Ability_VerdantBind.description>&lt;color=#7FCD44>此功法为 木行法门 结丹境界 所学\n\n&lt;/color>灵气消耗：100\n\n将植物转化为功能性建筑。\n\n以木行生机之术，赋予植物生机，将植物转变为功能性建筑。\n\n荆棘——绞杀荆棘\n龙舌兰——龙刺</RI_Ability_VerdantBind.description>
+  
+  <!-- EN: Vitality absorption -->
+  <RI_Ability_VitalityAbsorption.label>生机予夺</RI_Ability_VitalityAbsorption.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Core-formation rank of the Wood-element Path\n\n</color>Qi cost: 150\n\nDrains the vitality from plants.\n\nThrough a unique technique, this spell extracts the life energy of growing plants and converts it into a special form of Qi known as Vitality, nourishing the caster in return.\n\nOnce forbidden by the Wood-path sects, this technique was reluctantly reclaimed after their near-destruction during the Sect Wars. -->
+  <RI_Ability_VitalityAbsorption.description>&lt;color=#7FCD44>此功法为 木行法门 结丹境界 所学\n\n&lt;/color>灵气消耗：150\n\n灵气消耗：150\n\n夺走植物的生机。\n\n以独特的法术，将植物的生长能量吸收，并转化为一种被称为生机的特殊灵气，用以反哺自身。\n\n这种功法曾被木行门派禁止使用，然而门派战争之后，木行门派面临覆灭，不得不重新掌握这种功法。</RI_Ability_VitalityAbsorption.description>
+  
+  <!-- EN: Wood element cultivation -->
+  <RI_Ability_WoodCultivation.label>巽木</RI_Ability_WoodCultivation.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Noviciate rank of the Wood-element Path\n\n</color>Spiritual energy acquisition efficiency +25%.\n\nA cultivation method unique to the Wood Path.\n\nBy using Qi to enhance one's sensitivity to life, it increases the efficiency of cultivation. -->
+  <RI_Ability_WoodCultivation.description>&lt;color=#7FCD44>此功法为 木行法门 固基境界 所学\n\n&lt;/color>木行法门独有修炼功法。\n\n以灵气增强对生机的感知能力，从而提升修炼效率。</RI_Ability_WoodCultivation.description>
+  
+  <!-- EN: Vitality grafting -->
+  <RI_Ability_WoodLifeGive.label>生机嫁接</RI_Ability_WoodLifeGive.label>
+  <!-- EN: <color=#7FCD44>This technique is learned by the Spirit constraint rank of the Wood-element Path\n\n</color>Qi cost: 350\n\nGraft vitality into a Verdant Creature to extend its life.\n\nA secret technique of the Wood-Element Path, this method allows a cultivator to graft their own vitality into another being. Once a source of pride among practitioners, the art was lost due to the break in its lineage—its brilliance fading into silence. In the end, only flora most deeply bonded with a Wood-Element cultivator can still receive vitality through this method.\n\nThis once-legendary technique was created by Daoist Qingyu during the era of the sect wars. Tragically, it was also this very art that eventually led to his untimely death. -->
+  <RI_Ability_WoodLifeGive.description>&lt;color=#7FCD44>此功法为 木行法门 化神境界 所学\n\n&lt;/color>灵气消耗：350\n\n将生机嫁接给树灵，延长其生机。\n\n木行秘法，将自身生机嫁接给其他生物，这本是引以为傲的绝学，然而由于传承中断，绝学成为了绝唱。最终，只有与木行修练者连接最紧密的一草一木，可以嫁接生机。\n\n这一绝学由青榆道人在门派战争时期所发明，然而最终也是因为这一法术引来了杀身之祸。</RI_Ability_WoodLifeGive.description>
+  
+</LanguageData>

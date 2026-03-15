@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>NzRI_SaveMe</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>360</durationDays>
+        <stackLimit>300</stackLimit>
+        <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>saved my life</label>
+                <baseOpinionOffset>33</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>NzRI_CheatMe</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>30</durationDays>
+        <stackLimit>300</stackLimit>
+        <stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>cheat me</label>
+                <baseOpinionOffset>-15</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <!-- 好话 -->
+    <ThoughtDef>
+        <defName>NzRI_T_GracefulWords</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>60</durationDays>
+        <stackLimit>300</stackLimit>
+        <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>speaks eloquently.</label>
+                <description>It's a pleasure to listen to this person speak.</description>
+                <baseOpinionOffset>10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <!-- 无意义的话 -->
+    <ThoughtDef>
+        <defName>NzRI_T_NonsenseWords</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>60</durationDays>
+        <stackLimit>300</stackLimit>
+        <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>talking nonsense.</label>
+                <description>Listening to this person talk is frustrating and confusing.</description>
+
+                <baseOpinionOffset>-7</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- 好心情 -->
+    <ThoughtDef>
+        <defName>NzRI_Thought_Zw_FantasyMemory</defName>
+        <label>Beautiful Memory</label>
+        <description>this person is immersed in a beautiful memory.</description>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <stackLimit>1</stackLimit>
+        <durationDays>15</durationDays>
+        <stages>
+            <li>
+                <label>Beautiful Memory</label>
+                <description>this person is immersed in a beautiful memory.</description>
+                <baseMoodEffect>50</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>NzRI_T_DoWhatForMe</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>60</durationDays>
+        <stackLimit>300</stackLimit>
+        <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>wtf</label>
+                <description>what have you done to me! !!!</description>
+                <baseOpinionOffset>-20</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

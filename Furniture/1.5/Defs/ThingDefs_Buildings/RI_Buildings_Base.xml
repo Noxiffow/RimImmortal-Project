@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===========仙路最基础的家具base===========-->
+	<ThingDef Name="RI_Furniture_BuildingBase" ParentName="BuildingBase" Abstract="True">
+		<designationCategory>RI_RimImmortals_Living_Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef Name="RI_FurnitureBase" ParentName="RI_Furniture_BuildingBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<pathCost>30</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<building>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+
+	<!--明朝家具base-->
+	<ThingDef Name="RI_OldCulture_FurnitureBase" ParentName="RI_FurnitureBase" Abstract="True">
+		<graphicData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RI_Research_MingDynastyFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- 明朝桌子base -->
+	<ThingDef Abstract="True" ParentName="RI_FurnitureBase" Name="RI_OldCulture_TableBase">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>42</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>RI_Research_MingDynastyFurniture</li>
+		</researchPrerequisites>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<uiOrder>2300</uiOrder>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+		<building>
+			<buildingTags>
+				<li>RitualFocus</li>
+			</buildingTags>
+		</building>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_RitualFocus</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--仙路——床base-->
+	<ThingDef ParentName="RI_Furniture_BuildingBase" Name="RI_Furniture_SleepingBedBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingClass>Building_Bed</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<Flammability>0.7</Flammability>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>true</useHitPoints>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Bed</li>
+			</buildingTags>
+			<paintable>true</paintable>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>EndTable</li>
+					<li>Dresser</li>
+					<li>RI_Building_StorageShelf</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--明朝床base-->
+	<ThingDef ParentName="RI_Furniture_SleepingBedBase" Name="RI_Ming_Furniture_SleepingBedBase" Abstract="True">
+		<researchPrerequisites>
+			<li>RI_Research_MingDynastyFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!--地砖装饰基础-->
+	<ThingDef ParentName="RI_Furniture_BuildingBase" Name="RI_BuildingFloor_Base" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>true</drawRotated>
+		</graphicData>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<description>The pattern arranged by the floor tiles is more complicated to make, but it is quite good-looking.</description>
+		<rotatable>true</rotatable>
+		<pathCost>3</pathCost>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<passability>Standable</passability>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<techLevel>Medieval</techLevel>
+		<selectable>true</selectable>
+		<useHitPoints>true</useHitPoints>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef />
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<!--地面装饰层-->
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<wipesPlants>true</wipesPlants>
+		<!--地板装饰下拉栏-->
+		<designatorDropdown>RI_DropdownGroup_PatternFloor</designatorDropdown>
+	</ThingDef>
+
+	<!--======================= 装饰基础 ==============================-->
+	<ThingDef ParentName="RI_Furniture_BuildingBase" Name="RI_DecorationBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawRotated>true</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<rotatable>true</rotatable>
+		<pathCost>3</pathCost>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<techLevel>Medieval</techLevel>
+		<selectable>true</selectable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+	</ThingDef>
+
+	<!--明朝装饰-->
+	<ThingDef ParentName="RI_DecorationBase" Name="RI_Ming_DecorationBase" Abstract="True">
+		<researchPrerequisites>
+			<li>RI_Research_MingDynastyFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--节日装饰-->
+	<ThingDef ParentName="RI_DecorationBase" Name="RI_Festival_DecorationBase" Abstract="True">
+		<researchPrerequisites>
+			<li>RI_Research_FestivalFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--现代餐厅装饰-->
+	<ThingDef ParentName="RI_Furniture_BuildingBase" Name="RI_ModernDecorationBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawRotated>true</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<rotatable>true</rotatable>
+		<pathCost>3</pathCost>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<techLevel>Medieval</techLevel>
+		<selectable>true</selectable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<researchPrerequisites>
+			<li>RI_Research_ModernChineseFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

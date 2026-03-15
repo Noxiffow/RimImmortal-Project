@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Innate -->
+  <Base.label>TODO</Base.label>
+  <!-- EN: ... -->
+  <Base.description>TODO</Base.description>
+  
+  <!-- EN: Medicine Initial approach -->
+  <ElixirsStrengthen.label>炼药法门</ElixirsStrengthen.label>
+  <!-- EN: ... -->
+  <ElixirsStrengthen.description>TODO</ElixirsStrengthen.description>
+  
+  <!-- EN: Internal pellet Initial approach -->
+  <InternalPellet.label>内丹法门</InternalPellet.label>
+  <!-- EN: ... -->
+  <InternalPellet.description>TODO</InternalPellet.description>
+  
+  <!-- EN: Physical Initial approach -->
+  <PhysicalStrengthen.label>炼体法门</PhysicalStrengthen.label>
+  <!-- EN: ... -->
+  <PhysicalStrengthen.description>TODO</PhysicalStrengthen.description>
+  
+</LanguageData>

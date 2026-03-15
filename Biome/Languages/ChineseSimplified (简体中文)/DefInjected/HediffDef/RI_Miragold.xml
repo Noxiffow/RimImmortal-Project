@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: miragold dependence -->
+  <RI_Hediff_MiragoldAddiction.label>弭金砂依赖</RI_Hediff_MiragoldAddiction.label>
+  <!-- EN: Long-term inhalation of miragold forces the brain to adapt to its sedative effects, making it difficult for the body to function normally without the drug. When regular intake is interrupted, users experience clear withdrawal symptoms, such as mental disarray and muscle pain.\nHowever, with prolonged and complete abstinence from Miragold, the body is compelled to readapt and gradually return to a normal state, allowing the addiction to be overcome. -->
+  <RI_Hediff_MiragoldAddiction.description>长期吸入弭金砂会迫使大脑习惯其带来的镇静效果，使身体在无药状态下难以维持正常运转。一旦无法定期摄入弭金砂，使用者便会出现明显的戒断反应，如心神紊乱，肌肉疼痛。\n然而，若能长期彻底断绝弭金砂，其身体将被迫重新适应，恢复到正常状态，从而摆脱成瘾。</RI_Hediff_MiragoldAddiction.description>
+  <!-- EN: withdrawal -->
+  <RI_Hediff_MiragoldAddiction.stages.withdrawal.label>脱瘾</RI_Hediff_MiragoldAddiction.stages.withdrawal.label>
+  
+  <!-- EN: miragold effect -->
+  <RI_Hediff_MiragoldHigh.label>弭金砂效果</RI_Hediff_MiragoldHigh.label>
+  <!-- EN: The active properties of Miragold enter the bloodstream and nervous system, producing powerful analgesic and euphoric effects, often accompanied by drowsiness and increased hunger. -->
+  <RI_Hediff_MiragoldHigh.description>弭金砂中的药性成分进入血液和神经，起到强效阵痛和快感，并且伴随令人犯困和容易饥饿的效果。</RI_Hediff_MiragoldHigh.description>
+  <!-- EN: a miragold high -->
+  <RI_Hediff_MiragoldHigh.labelNoun>弭金砂效果</RI_Hediff_MiragoldHigh.labelNoun>
+  
+  <!-- EN: miragold tolerance -->
+  <RI_Hediff_MiragoldTolerance.label>弭金砂耐受</RI_Hediff_MiragoldTolerance.label>
+  <!-- EN: Tolerance to Miragold gradually develops. The more severe the tolerance becomes, the greater the amount of the addictive substance required to achieve the same effect. -->
+  <RI_Hediff_MiragoldTolerance.description>对弭金砂逐渐产生了耐受性。耐受性越严重，要达到同样的效果就需要越多的成瘾品。</RI_Hediff_MiragoldTolerance.description>
+  <!-- EN: small -->
+  <RI_Hediff_MiragoldTolerance.stages.small.label>较小</RI_Hediff_MiragoldTolerance.stages.small.label>
+  <!-- EN: large -->
+  <RI_Hediff_MiragoldTolerance.stages.large.label>普通</RI_Hediff_MiragoldTolerance.stages.large.label>
+  <!-- EN: massive -->
+  <RI_Hediff_MiragoldTolerance.stages.massive.label>严重</RI_Hediff_MiragoldTolerance.stages.massive.label>
+  
+</LanguageData>

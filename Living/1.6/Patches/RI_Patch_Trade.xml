@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+		<!-- 给原版部落商队 (批发、战争、萨满) 添加寒髓 -->
+		<Operation Class="PatchOperationAdd">
+			<xpath>
+				/Defs/TraderKindDef[
+				defName="Caravan_Neolithic_Bulk" or
+				defName="Caravan_Neolithic_ShamanMerchant"
+				]/stockGenerators
+			</xpath>
+
+			<value>
+				<!-- 使用 SingleDef 生成器，确保必然出现该特定物品 -->
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>RI_Resource_IceMarrow</thingDef>
+					<!-- 数量范围：这里设定为 2~8 个，你可以根据需要修改 -->
+					<countRange>5~15</countRange>
+				</li>
+			</value>
+		</Operation>
+
+		<!-- 去部落的定居点也能买到 -->
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>RI_Resource_IceMarrow</thingDef>
+					<countRange>50~105</countRange>
+				</li>
+			</value>
+		</Operation>
+
+</Patch>

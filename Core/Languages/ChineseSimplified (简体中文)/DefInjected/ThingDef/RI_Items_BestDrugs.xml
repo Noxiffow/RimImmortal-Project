@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 【First-rate】Thran Demon elixir -->
+  <RI_Drug_DemonElixir.label>【一品】修罗魔喰丹</RI_Drug_DemonElixir.label>
+  <!-- EN: First-rate elixir, it will permanently increase melee ability, but reduce consciousness. People who have eaten Demon elixir say that they can hear a man's laughter ringing in their ears, at which point their hands shake uncontrollably. But once they hold the weapon, the trembling will disappear magically, as if there is a voice in the ear telling them to fight frantically and kill. Because its effects are so mysterious, some scholars have speculated that the drug was created by a celestial deity called the Thran God, whose purpose was to awaken memories in a person's blood and arouse warlike emotions in them. That is, pure fighting machine. -->
+  <RI_Drug_DemonElixir.description>一品丹药，服用后会在24小时内强行激发潜力和肉体活性，大大增强近战能力。\n\n听那些吃过修罗丹的人说，他们能听到一个男人的笑声在耳边回响，一到此时，他们的双手就会无法控制地颤抖。一旦握住兵器，颤抖就会神奇地消失，似乎有声音在耳边让他们去疯狂的战斗，杀戮。因为其药效过于神秘，一些学者猜测这种药被一位叫做喰仙的天仙创造，其用途就是唤醒一个人血脉中的记忆，激发他们好战的情绪。也就是将人变为纯粹的战斗机器。</RI_Drug_DemonElixir.description>
+  <!-- EN: Eat {0} -->
+  <RI_Drug_DemonElixir.ingestible.ingestCommandString>服用 {0}</RI_Drug_DemonElixir.ingestible.ingestCommandString>
+  <!-- EN: Eating {0} -->
+  <RI_Drug_DemonElixir.ingestible.ingestReportString>服用 {0} 中</RI_Drug_DemonElixir.ingestible.ingestReportString>
+  
+  <!-- EN: 【First-rate】Celestial spirit Jade elixir -->
+  <RI_Drug_FiveTreasuresElixir.label>【一品】天灵宝玉丹</RI_Drug_FiveTreasuresElixir.label>
+  <!-- EN: First-rate elixir, permanently improves the absorption efficiency of Qi. The magic effect of this elixir can be truly called a miracle medicine, and its secret recipe is only passed on by word of mouth among pharmacist, who are few and far between. Therefore, this kind of elixir directly caused the price of the pharmacist to increase again and again, so that some ordinary pharmacists were sent as guests. -->
+  <RI_Drug_FiveTreasuresElixir.description>一品丹药，在10天内，极大地提升灵气的吸取效率。\n\n这种丹药的神奇效果可以被真正称之为灵丹妙药，其制作秘方只在炼药师之间口口相传，而炼药师则是稀少的存在。所以这类丹药直接造成了炼药师的身价一再提高，以至于一些普通炼药师被大门派封为座上宾客。</RI_Drug_FiveTreasuresElixir.description>
+  <!-- EN: Eat {0} -->
+  <RI_Drug_FiveTreasuresElixir.ingestible.ingestCommandString>服用 {0}</RI_Drug_FiveTreasuresElixir.ingestible.ingestCommandString>
+  <!-- EN: Eating {0} -->
+  <RI_Drug_FiveTreasuresElixir.ingestible.ingestReportString>服用 {0} 中</RI_Drug_FiveTreasuresElixir.ingestible.ingestReportString>
+  
+  <!-- EN: 【First-rate】Foundation building elixir -->
+  <RI_Drug_FoundationBuildingElixir.label>【一品】通玄筑基丹</RI_Drug_FoundationBuildingElixir.label>
+  <!-- EN: First-rate elixir, essential for upgrade from the Qi Condensation Realm to the Foundation Realm, significantly increasing the success rate of upgrade.\n\nThis elixir requires a variety of rare ingredients and exceptional alchemy skills, making it consistently expensive. Most sizable sects have dedicated alchemists specializing in crafting Foundation Establishment Pills to meet the needs of their young disciples.\n\n*As a necessary item for upgrade, the Foundation elixir does not need to be taken directly. It only needs to be placed near the upgrade point. -->
+  <RI_Drug_FoundationBuildingElixir.description>一品丹药，可以提升突破成功率，是凝气境突破至筑基境的必备之物。\n\n这种丹药需用到多种药材，同时需要超高的炼丹技巧，所以价格一直居高不下。稍微大一些的宗门，都会配备专门炼制筑基丹的炼药师，以满足门内年轻人的需求。\n\n*作为突破必须品，筑基丹不需要直接服用，只需要在突破点附近放置即可。</RI_Drug_FoundationBuildingElixir.description>
+  <!-- EN: Eat {0} -->
+  <RI_Drug_FoundationBuildingElixir.ingestible.ingestCommandString>服用 {0}</RI_Drug_FoundationBuildingElixir.ingestible.ingestCommandString>
+  <!-- EN: Eating {0} -->
+  <RI_Drug_FoundationBuildingElixir.ingestible.ingestReportString>服用 {0} 中</RI_Drug_FoundationBuildingElixir.ingestible.ingestReportString>
+  
+  <!-- EN: 【First-rate】Medulla oblongata elixir -->
+  <RI_Drug_MedullaOblongataElixir.label>【一品】生肌理髓丹</RI_Drug_MedullaOblongataElixir.label>
+  <!-- EN: First-rate elixir, can quickly heal wound and repair a permanent scar at the same time. Medulla oblongata elixir is a very tempting treasure in any society, because of its powerful drug effect, attracting countless people to fight for it. And many pharmacists are also in order to refine this elixirs to embark on the road of cultivation. Although healing wounds does not solve all problems, it does save the lives of many seriously injured patients. -->
+  <RI_Drug_MedullaOblongataElixir.description>一品丹药，可以在12小时内，大大增强愈合能力，同时阻断感染。\n\n理髓丹在无论什么社会中都是非常有诱惑力的宝物，因为其强大的药效，吸引了无数人前来争抢。而许多炼药师也是为了炼制这种丹药才走上了修仙之路。尽管治愈伤口，并不能解决所有问题，但它确实挽救了许多重伤患者的生命。</RI_Drug_MedullaOblongataElixir.description>
+  <!-- EN: Eat {0} -->
+  <RI_Drug_MedullaOblongataElixir.ingestible.ingestCommandString>服用 {0}</RI_Drug_MedullaOblongataElixir.ingestible.ingestCommandString>
+  <!-- EN: Eating {0} -->
+  <RI_Drug_MedullaOblongataElixir.ingestible.ingestReportString>服用 {0} 中</RI_Drug_MedullaOblongataElixir.ingestible.ingestReportString>
+  
+</LanguageData>

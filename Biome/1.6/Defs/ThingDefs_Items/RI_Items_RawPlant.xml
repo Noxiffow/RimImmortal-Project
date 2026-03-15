@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--==================药材前置=================-->
+	<ThingDef Abstract="True" Name="RI_Base_MedicalResourceA" ParentName="ResourceBase">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<possessionCount>1</possessionCount>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>10</DeteriorationRate>
+			<Mass>0.05</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>RI_Thought_AteHerb</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<foodType>Plant</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<!--落地音效得改-->
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	<!--幻金莲-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_PhantomGoldLotus</defName>
+		<label>phantom gold lotus</label>
+		<description>The Phantom Gold Lotus prefers shade and grows in deep forests and streamside wetlands. Its petals are golden, and the stamens carry a faint, lingering fragrance.\n\nThe blossom possesses mild hallucinogenic properties. In some cultures, people burn the petals and inhale the drifting fumes to seek omens or visions. In the cultivation world, alchemists refine the Phantom Gold Lotus into calming and pain-relieving pills, saving countless lives.\n\nYet this flower also has a darker side. Its active essence can be processed into Mijin Sand, a highly addictive hallucinogen that has ruined families and destroyed lives.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_PhantomGoldLotus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>38</MarketValue>
+			<Nutrition>0.1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>10</DeteriorationRate>
+			<Mass>0.05</Mass>
+		</statBases>
+		<possessionCount>1</possessionCount>
+		<stackLimit>75</stackLimit>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>RI_Thought_AteHerb</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<foodType>Plant</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<!--落地音效得改-->
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	<!--==================食材=================-->
+
+	<!--桃子-->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RI_Resource_RawPeach</defName>
+		<label>peach</label>
+		<description>Just picked peaches, very sweet, put a long time will become soft.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_RawPeach</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.1</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>12</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--芦荟-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>RI_Resource_AloeVera</defName>
+		<label>aloe vera</label>
+		<description>Raw aloe vera. A flavoring and preserving agent that is necessary for making beer.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_AloeVera</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+
+	<!--仙桃-->
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>RI_Things_ImmortalPeach</defName>
+		<label>immortal peach</label>
+		<description>The Immortal peach is a rare and precious fruit, smooth and lustrous in appearance, with a sweetness like honey. Its most remarkable effect is rejuvenation: consuming it makes the eater younger by roughly one year.\n\nThis life-extending property does not defy fate, but works by using the spiritual energy contained within the fruit to mend the body, allowing the flesh to return to a younger state. For this reason, it is especially valuable to the elderly and infirm, and is typically seen only at high-end auctions.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Things_ImmortalPeach</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<thingCategories>
+			<li>RI_Category_ImmortalThings</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Mass>0.2</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1.6</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>VegetableOrFruit</foodType>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="RI_PeachBlossomLand.IngestibleOutcomeDoer_ReduceAge">
+					<years>1</years>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============================帽子============================-->
+
+	<!--汗带-->
+	<ThingDef ParentName="RI_MakeableHat_Base">
+		<defName>RI_Apparel_ExerciseBandana</defName>
+		<label>Exercise head band</label>
+		<description>It's just a simple fabric band that's tied around your head to keep the sweat from getting into your eyes.\n\n&lt;color=#FFFF00&gt;【Special effects】Pain shock threshold +10%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_ExerciseBandana/RI_Apparel_ExerciseBandana</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.05</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_ExerciseBandana/RI_Apparel_ExerciseBandana</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<displayPriority>1</displayPriority>
+		</recipeMaker>
+		<!--装备效果-->
+		<equippedStatOffsets>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--刺客面巾-->
+	<ThingDef ParentName="RI_MakeableHat_Base">
+		<defName>RI_Apparel_AssassinMask</defName>
+		<label>Assassin mask</label>
+		<description>A towel that covers the lower part of your face. Loved by people who don't like people to know who they are.\n\n&lt;color=#FFFF00&gt;【Special effects】Toxic environment resistance +50%.\nPain shock threshold +5%.\n&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_AssassinMask/RI_Apparel_AssassinMask</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>700</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_AssassinMask/RI_Apparel_AssassinMask</wornGraphicPath>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<displayPriority>2</displayPriority>
+		</recipeMaker>
+		<!--装备效果-->
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.5</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--裹头巾-->
+	<ThingDef ParentName="RI_MakeableHat_Base">
+		<defName>RI_Apparel_HeadScarf</defName>
+		<label>Head scarf</label>
+		<description>A long fabric strip wrapped around the forehead and topknot, providing a small amount of protection.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_HeadScarf/RI_Apparel_HeadScarf</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.05</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<displayPriority>3</displayPriority>
+		</recipeMaker>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_HeadScarf/RI_Apparel_HeadScarf</wornGraphicPath>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!--斗笠——没有基础原料-->
+	<ThingDef ParentName="RI_MakeableHatNostuffCategories_Base">
+		<defName>RI_Apparel_RainHat</defName>
+		<label>Rain Hat</label>
+		<description>A rain hat made of hay and fiber. Although there is no protective ability, it can make the body not get wet from the rain, and it can also hide its face in the crowd, which is the necessary rain gear for some travelers and workers.\n\n&lt;color=#FFFF00&gt;【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_RainHat/RI_Apparel_RainHat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<Hay>40</Hay>
+		</costList>
+
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.3</Mass>
+			<EquipDelay>1.5</EquipDelay>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_Tag_Hidden</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_RainHat/RI_Apparel_RainHat</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<comps>
+			<li Class="WhoXiuXian.RI_RainCoatComp" />
+		</comps>
+		<!--可以在手工点制作-->
+		<recipeMaker>
+			<displayPriority>3</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

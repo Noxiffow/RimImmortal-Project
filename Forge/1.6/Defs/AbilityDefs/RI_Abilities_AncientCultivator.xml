@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——Noviciate rank测试-->
+	<!--2固基境界——Foundation rank测试-->
+	<!--3化丹境界——Core formation rank测试-->
+	<!--4结丹境界——Core coagulation rank测试-->
+	<!--5灵丹境界——Core consummation rank测试-->
+	<!--6化神境界——Spirit constraint rank测试-->
+	<!--7元婴境界——Primordial spirit baby rank测试-->
+	<!--8大成境界——Primordial spirit maturity rank测试-->
+	<!--9合体境界——Primordial spirit combine rank测试-->
+
+	<!--古修功法-->
+	<AbilityDef  ParentName="RI_PsycastBase" >
+		<defName>RI_Ability_AncientSkill</defName>
+		<label>AncientSkill</label>
+		<description>&lt;color=#96bdb8&gt;This technique any rank can be learned\n\n&lt;/color&gt;Qi cost: 80.\n\nThe exercises obtained from the ancient cultivator, it consumed too much Qi, so it was improved and produced a new skill. Can temporarily allow Qi to transform the body, making the whole body like copper skin and iron bones. At the same time, it can also improve human body function, improve melee ability and movement speed.</description>
+		<iconPath>Ability/Ancient/RI_Ability_AncientSkill</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>360</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_AncientCultivatorPlayerHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_ExHediffAdd">
+				<compClass>WhoXiuXian.Abilities.CompAbilityEffect_ExHediffAdd</compClass>
+				<hediffDef>RI_ShadowWithMove</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_Asura_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<scale>2</scale>
+				<fleckDefs>
+					<li>RI_BloodBoilAsura</li>
+					<li>RI_BloodBoilAsura_1</li>
+				</fleckDefs>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-80</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+</Defs>
+

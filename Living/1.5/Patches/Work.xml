@@ -1,0 +1,13 @@
+<Patch>
+
+	<!--原版烹饪可以在仙路灶台上-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RI_Building_CookTable</li>
+			<li>RI_Building_FoodPrepareTable</li>
+			<li>RI_Building_ModernCookingStove</li>
+		</value>
+	</Operation>
+
+</Patch>

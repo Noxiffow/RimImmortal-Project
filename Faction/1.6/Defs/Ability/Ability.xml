@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef Name="RI_CultivationMethodBase" ParentName="RI_PsycastBase" Abstract="True">
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<!--大息龟眠功A-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_TortoiseMeditationMethod</defName>
+		<label>Tortoise meditation method</label>
+		<description>Tortoise meditation method.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_TortoiseMeditationMethod</iconPath>
+		<displayOrder>1</displayOrder>
+		<hostile>false</hostile>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_TortoiseMeditationMethod</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--吞山魔功B-->
+	<!--能学会-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_MountainEatingCultivationMethod</defName>
+		<label>Mountain-eating cultivation method</label>
+		<description>Mountain-eating cultivation method.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_MountainEatingCultivationMethod</iconPath>
+		<displayOrder>1</displayOrder>
+		<hostile>false</hostile>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_MountainEatingCultivationMethod</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--玄天诀C-->
+	<!--能学会-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_MysticCultivationMethod</defName>
+		<label>Mystic cultivation method</label>
+		<description>Mystic cultivation method.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_MysticCultivationMethod</iconPath>
+		<displayOrder>1</displayOrder>
+		<hostile>false</hostile>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_MysticCultivationMethod</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--巧工速修法D-->
+	<!--能学会-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_RefinementWorkspeedMethod</defName>
+		<label>Refinement workspeed method</label>
+		<description>Refinement workspeed method.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_RefinementWorkspeedMethod</iconPath>
+		<displayOrder>1</displayOrder>
+		<hostile>false</hostile>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_RefinementWorkspeedMethod</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--流云步法E-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_AirStepExercise</defName>
+		<label>Air step exercise</label>
+		<description>Air step exercise.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_AirStepExercise</iconPath>
+		<displayOrder>1</displayOrder>
+		<hostile>false</hostile>
+		<targetRequired>False</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_AirStepExercise</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
+

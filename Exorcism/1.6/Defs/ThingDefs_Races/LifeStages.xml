@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <LifeStageDef>
+    <defName>RI_EvilCreature_HeadSpider_Adult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <milkable>true</milkable>
+  </LifeStageDef>
+
+</Defs>

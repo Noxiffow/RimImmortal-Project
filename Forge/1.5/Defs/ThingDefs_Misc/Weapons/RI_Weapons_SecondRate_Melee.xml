@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--二品 近战锐器兵器 前置-->
+	<ThingDef Name="RI_SecondWeapon_Sharp_Base" ParentName="RI_MagicalWeapon_Sharp_Base" Abstract="True">
+		<tradeTags>
+			<li>RI_SecondWeapon_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="RI_SecondWeapon_Blunt_Base" ParentName="RI_MagicalWeapon_Blunt_Base" Abstract="True">
+		<tradeTags>
+			<li>RI_SecondWeapon_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--巨门斧-->
+	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
+		<defName>RI_Weapon_JumenAxe</defName>
+		<label>Jumen axe【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nAn axe of ancient god soldiers, forged from a large amount of metal, it is carved all over the grain. When holding the axe to stimulate the aura, the axe will emit waves of low chirping, affecting the area of people.</description>
+		<graphicData>
+			<!--RI_Weapon_JumenAxe-->
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_JumenAxe</texPath>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>15</Mass>
+		</statBases>
+		<weaponTags>
+			<li>RI_BetterWeapon_Tag</li>
+		</weaponTags>
+		<equippedAngleOffset>-90</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>斧刃</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Demolish</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak_breakBuilding</def>
+						<amount>2</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>斧刃</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Demolish</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>1.6</cooldownTime>
+				<chanceFactor>999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak_breakBuilding</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_JumenAxe_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.4</drawSize>
+					<color>(0.9,0.9,0.9,0.7)</color>
+				</graphicData>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_AxeExcitation</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>破阵斧鸣</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>100</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--毒心梭-->
+	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
+		<defName>RI_Weapon_DESword</defName>
+		<label>Poison shuttle【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA shuttle that can fly freely, with a strong poison, is a terrible assassination weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_DESword</texPath>
+			<drawSize>1.65</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<weaponTags>
+			<li>RI_BetterWeapon_Tag</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.76</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>10</amount>
+						<chance>0.4</chance>
+					</li>
+					<li>
+						<def>RI_BladeToxic</def>
+						<amount>8</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>0.9</cooldownTime>
+				<chanceFactor>9990</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_BladeToxic</def>
+						<amount>8</amount>
+						<chance>0.9</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_DESword_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.65</drawSize>
+					<color>(1,1,1,0.75)</color>
+				</graphicData>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_Ability_DESword</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>剧毒飞刃</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>100</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--青玉锤-->
+	<ThingDef ParentName="RI_SecondWeapon_Blunt_Base">
+		<defName>RI_Weapon_CyanogenJadeHammer</defName>
+		<label>Nephrite jade hammer【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA hammer that looks very fragile, but is actually very strong, like a whole.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_CyanogenJadeHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.27</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<Mass>20</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>摧破</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Vertigo</def>
+						<amount>6</amount>
+						<chance>0.6</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>摧破</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.65</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Vertigo</def>
+						<amount>6</amount>
+						<chance>0.6</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_CyanogenJadeHammer_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.27</drawSize>
+					<color>(0.8,0.8,0.8,0.5)</color>
+				</graphicData>
+			</li>
+
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_Weapon_CyanogenJadeSword_Ability</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>青玉摧破</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>100</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--风魔刀-->
+	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
+		<defName>RI_Weapons_WindDemonBlade</defName>
+		<label>Wind demon blade【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA big blade to unleash the wind. Although it is made of metal, the veins on it are like blood vessels and tendons, and they throb faintly when waved.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_WindDemonBlade</texPath>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<Mass>9</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>刀刃</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>4</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>刀背</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_WindDemonBlade_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.1</drawSize>
+					<color>(1,1,1,0.65)</color>
+				</graphicData>
+			</li>
+
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_DemonWind</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>地煞狂风</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>110</baseReloadTicks>
+
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--雷王枪-->
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_ThunderLordLance" ParentName="RI_SecondWeapon_Sharp_Base">
+		<defName>RI_Weapon_ThunderLordLance</defName>
+		<label>Thunder lord lance【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA long, powerful lance that sent lightning bolts all over its body. The weapon is said to have been as powerful as the First-rate weapon, but since it became too unstable, it has been modified to be less powerful and more controllable.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_ThunderLordLance</texPath>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<ElectricalPR>0.3</ElectricalPR>
+		<ElectricalLightingScale>10</ElectricalLightingScale>
+		<ExplosionDef>EMP</ExplosionDef>
+		<ElectricalDamage>Burn</ElectricalDamage>
+		<ElectricalDamageAmount>12</ElectricalDamageAmount>
+		<statBases>
+			<MarketValue>4300</MarketValue>
+			<Mass>13</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>枪头</label>
+				<capacities>
+					<li>RI_Stab_ThunderLordLance</li>
+				</capacities>
+				<power>37</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>6</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>枪杆</label>
+				<capacities>
+					<li>RI_Stab_ThunderLordLance</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>0.64</cooldownTime>
+				<chanceFactor>999</chanceFactor>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_ThunderLordLance_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.4</drawSize>
+					<color>(0.8,0.8,0.8,0.8)</color>
+				</graphicData>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_ThunderLordLance_lightningStrike</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>卿云迅雷</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>100</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--鼠须剑-->
+	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
+		<defName>RI_Weapon_RatWhiskerSword</defName>
+		<label>Rat whisker sword【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA thin sword, because it is as small as a mouse's whiskers, so it is called a ratwhisker sword.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_RatWhiskerSword</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>剑刃</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>2</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>剑尖</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>1.6</cooldownTime>
+				<chanceFactor>5999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_RatWhiskerSword_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.2</drawSize>
+					<color>(1,1,1,0.4)</color>
+				</graphicData>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_RatWhiskerSword</abilityDef>
+				<maxCharges>9</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>势如破竹</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>100</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_Weapon_RatWhiskerSword</hediffDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<DamageDef ParentName="Scratch">
+		<defName>RI_BladeToxic</defName>
+		<label>toxic shuttle</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
+	<DamageDef ParentName="Scratch">
+		<defName>RI_BladeToxic_1</defName>
+		<label>toxic shuttle</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
+</Defs>
+

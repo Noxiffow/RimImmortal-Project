@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] [mumbled] at [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] made [noises] towards [RECIPIENT_nameDef].</li>
+    <li>mumbled->groaned</li>
+    <li>mumbled->gurgled</li>
+    <li>mumbled->hissed incoherently</li>
+    <li>mumbled->rasped</li>
+    <li>noises->wet, clicking noises</li>
+    <li>noises->a low, hungry growl</li>
+    <li>noises->a sound like snapping bones</li>
+  -->
+  <RI_RulePack_ZombieMumble.rulePack.rulesStrings>TODO</RI_RulePack_ZombieMumble.rulePack.rulesStrings>
+  
+</LanguageData>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--前往spot点，并激活面板-->
+	<JobDef>
+		<defName>RI_Job_GoToSpot</defName>
+		<driverClass>RIRitualFramework.JobDriver_GoToSpot</driverClass>
+		<reportString>GoToSpot.</reportString>
+	</JobDef>
+
+	<DutyDef>
+		<defName>RI_DutyPrepareUpgradeNORequireThing</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_GoToSpot">
+				</li>
+				<li Class="JobGiver_Idle" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+	
+<!--突破仪式的USEitem的Duty-->
+	<DutyDef>
+		<defName>RI_DutyUseItem</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_UseItem">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+<!--突破仪式的job-->
+
+    <JobDef>
+		<defName>RI_Job_FindObjectAndGotoSpot</defName>
+		<driverClass>RIRitualFramework.JobDriver_FindObjectAndGotoSpot</driverClass>
+		<reportString>GoToSpot.</reportString>
+	</JobDef>
+
+	 <JobDef>
+		<defName>RI_Job_GotoUpgradeSpot</defName>
+		<driverClass>RIRitualFramework.JobDriver_GotoUpgradeSpot</driverClass>
+		<reportString>GoToSpot.</reportString>
+	</JobDef>
+
+
+	<JobDef>
+		<defName>RI_Job_GetWindow</defName>
+		<driverClass>RIRitualFramework.JobDriver_GetWindow</driverClass>
+		<reportString>PrepareUpgrad.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RI_Job_GetObjectToSpot</defName>
+		<driverClass>RIRitualFramework.JobDriver_GetObjectToSpot</driverClass>
+		<reportString>PrepareUpgrad.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RI_Job_BeginRitual</defName>
+		<driverClass>RIRitualFramework.JobDriver_BeginRitual</driverClass>
+		<reportString>祈祷中.</reportString>
+	</JobDef>
+	<JobDef>
+		<defName>RI_Job_Upgrade</defName>
+		<driverClass>RIRitualFramework.JobDriver_Upgrade</driverClass>
+		<reportString>祈祷中.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RI_Job_GetIncident</defName>
+		<driverClass>RIRitualFramework.JobDriver_GetIncident</driverClass>
+		<reportString>Praying.</reportString>
+	</JobDef>
+
+<!--前往某地-->
+	<JobDef>
+		<defName>RI_Job_GotoSpotAround</defName>
+		<driverClass>RIRitualFramework.JobDriver_GotoSpotAround</driverClass>
+		<reportString>GoTo!</reportString>
+	</JobDef>
+<!--释放天灯-->
+	<JobDef>
+		<defName>RI_Job_ReleaseLantern</defName>
+		<driverClass>RIRitualFramework.JobDriver_ReleaseLantern</driverClass>
+		<reportString>Realease.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>RI_Job_EatDrug</defName>
+		<driverClass>RIRitualFramework.JobDriver_EatDrug</driverClass>
+		<reportString>Eat Drug.</reportString>
+	</JobDef>
+
+
+	<JobDef>
+		<defName>RI_Job_StudyBook</defName>
+		<driverClass>Core.JobDriver_StudyBook</driverClass>
+		<reportString>Studying.</reportString>
+	</JobDef>
+
+	<JobDef>
+		<defName>RI_Job_WaitThunder</defName>
+		<driverClass>RIRitualFramework.JobDriver_WaitThunder</driverClass>
+		<reportString>WaitThunder.</reportString>
+	</JobDef>
+
+<!--突破阶段获取丹药-->
+	<DutyDef>
+		<defName>RI_DutyPrepareUpgrade</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_GetWindow" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>RI_DutyPrepareUpgradeNoWindow</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_GetObjectToSpot">
+				</li>
+				<li Class="JobGiver_Idle" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>RI_DutyReleaseLantern</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_ReleaseLantern">
+				</li>
+				<li Class="JobGiver_Idle" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>RI_DutyGatherRitual</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_EatDrug">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+
+<!--观众前往仪式附近某点,并等待-->
+	<DutyDef>
+		<defName>RI_GoToAndWait</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_GotoSpotAround">
+				</li>
+				<li Class="JobGiver_Idle" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>RI_DutyWaitThunder</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_WaitThunder">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>text02</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_Upgrade">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+<!--沿着spot点不断移动-->
+	<DutyDef>
+		<defName>RI_GetIncident</defName>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="RIRitualFramework.JobGiver_GetIncident">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+</Defs>

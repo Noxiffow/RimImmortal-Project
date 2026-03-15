@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Log cutting board -->
+  <RI_Building_CuttingBoard.label>原木砧板</RI_Building_CuttingBoard.label>
+  <!-- EN: A cutting board made from solid logs—sturdy and durable.\n\nRotate to switch textures. -->
+  <RI_Building_CuttingBoard.description>一个用原木切成的砧板，结实耐用。\n\n通过旋转来切换贴图。</RI_Building_CuttingBoard.description>
+  
+  <!-- EN: Jars and bottles -->
+  <RI_Building_DecorationBottles.label>瓶瓶罐罐</RI_Building_DecorationBottles.label>
+  <!-- EN: Various jars and bottles—possibly filled with seasonings.\n\nRotate to switch textures. -->
+  <RI_Building_DecorationBottles.description>一些瓶瓶罐罐，可能装着调味料。\n\n通过旋转来切换贴图。</RI_Building_DecorationBottles.description>
+  
+  <!-- EN: Dry chili -->
+  <RI_Building_DryChili.label>干辣椒</RI_Building_DryChili.label>
+  <!-- EN: A bunch of dried peppers. Just for decoration. -->
+  <RI_Building_DryChili.description>一串干辣椒，只是装饰。</RI_Building_DryChili.description>
+  
+  <!-- EN: Dry corn -->
+  <RI_Building_DryCorn.label>干玉米</RI_Building_DryCorn.label>
+  <!-- EN: A bunch of dried corns. Just for decoration. -->
+  <RI_Building_DryCorn.description>一串干玉米，只是装饰。</RI_Building_DryCorn.description>
+  
+  <!-- EN: Kitchen hood -->
+  <RI_Building_KitchenHood.label>抽油烟机</RI_Building_KitchenHood.label>
+  <!-- EN: A range hood, purely decorative. -->
+  <RI_Building_KitchenHood.description>一台抽油烟机，只是装饰。</RI_Building_KitchenHood.description>
+  
+  <!-- EN: Kitchen sink -->
+  <RI_Building_KitchenSink.label>水槽</RI_Building_KitchenSink.label>
+  <!-- EN: A sink, purely decorative. -->
+  <RI_Building_KitchenSink.description>一个水槽，只是装饰。</RI_Building_KitchenSink.description>
+  
+  <!-- EN: Cooking tool rack -->
+  <RI_Building_KitchenToolShelf.label>厨具架</RI_Building_KitchenToolShelf.label>
+  <!-- EN: A row of kitchen tools—essential tools for any cook.\n\nRotate to switch textures. -->
+  <RI_Building_KitchenToolShelf.description>一排厨具，厨师做菜少不了它们。\n\n通过旋转来切换贴图。</RI_Building_KitchenToolShelf.description>
+  
+  <!-- EN: Modern wall cupboard -->
+  <RI_Building_ModernWallCupboard.label>现代厨房碗柜</RI_Building_ModernWallCupboard.label>
+  <!-- EN: A modern dish cabinet for storing bowls and chopsticks. -->
+  <RI_Building_ModernWallCupboard.description>一个现代碗柜，用于收纳碗筷。</RI_Building_ModernWallCupboard.description>
+  
+  <!-- EN: Red lantern (decoration) -->
+  <RI_Building_RedLantern.label>灯笼（装饰）</RI_Building_RedLantern.label>
+  <!-- EN: A string of cute little red lanterns do not emit light, they are just decorations.\n\nRotate to switch textures. -->
+  <RI_Building_RedLantern.description>一盏喜庆的红灯笼，并不会发光，只是装饰品。\n\n通过旋转来切换贴图。</RI_Building_RedLantern.description>
+  
+  <!-- EN: Red paper -->
+  <RI_Building_RedPaper.label>年红</RI_Building_RedPaper.label>
+  <!-- EN: Some blessing in red letters, couplets. -->
+  <RI_Building_RedPaper.description>在红纸上写下的吉祥话语。</RI_Building_RedPaper.description>
+  
+  <!-- EN: Small red lantern (decoration) -->
+  <RI_Building_SmallRedLantern.label>灯笼串（装饰）</RI_Building_SmallRedLantern.label>
+  <!-- EN: A string of cute little red lanterns do not emit light, they are just decorations.\n\nRotate to switch textures. -->
+  <RI_Building_SmallRedLantern.description>一串可爱的小红灯笼，并不会发光，只是装饰品。\n\n通过旋转来切换贴图。</RI_Building_SmallRedLantern.description>
+  
+  <!-- EN: Stack of bowls -->
+  <RI_Building_StackBowls.label>碗堆</RI_Building_StackBowls.label>
+  <!-- EN: A stack of clean bowls, commonly seen in kitchens.\n\nRotate to switch textures. -->
+  <RI_Building_StackBowls.description>一摞碗，厨房常见，貌似洗干净了。\n\n通过旋转来切换贴图。</RI_Building_StackBowls.description>
+  
+  <!-- EN: Wall cupboard -->
+  <RI_Building_WallCupboard.label>碗柜</RI_Building_WallCupboard.label>
+  <!-- EN: A cupboard for storing bowls and chopsticks. -->
+  <RI_Building_WallCupboard.description>一个碗柜，用于收纳碗筷。</RI_Building_WallCupboard.description>
+  
+  <!-- EN: Wine jars -->
+  <RI_Building_WineJar.label>酒坛</RI_Building_WineJar.label>
+  <!-- EN: Several wine jars, though they appear to be empty.\n\nRotate to switch textures. -->
+  <RI_Building_WineJar.description>一些酒坛，里面似乎没有酒。\n\n通过旋转来切换贴图。</RI_Building_WineJar.description>
+  
+</LanguageData>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 酸性粘液 -->
+    <ThingDef ParentName="BaseFilth">
+        <defName>NzRI_Filth_AcidMucus</defName>
+        <label>acid mucus</label>
+        <thingClass>LiquidFuel</thingClass>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <pathCost>30</pathCost>
+        <statBases>
+            <Beauty>-10</Beauty>
+            <Cleanliness>-15</Cleanliness>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MoveSpeed>0.7</MoveSpeed>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Projectile/Acid</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <filth>
+            <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+            <disappearsInDays>3~5</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>30</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <maxThickness>1</maxThickness>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+</Defs>

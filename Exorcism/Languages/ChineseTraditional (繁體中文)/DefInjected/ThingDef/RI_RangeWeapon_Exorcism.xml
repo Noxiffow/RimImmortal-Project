@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavenly fire wave -->
+  <RI_Bullet_FireWave.label>TODO</RI_Bullet_FireWave.label>
+  
+  <!-- EN: 金色光球 -->
+  <RI_Bullet_GoldenSphere.label>TODO</RI_Bullet_GoldenSphere.label>
+  
+  <!-- EN: disruptive chime -->
+  <RI_Bullet_SanQingBell.label>破障音波</RI_Bullet_SanQingBell.label>
+  
+  <!-- EN: lightning bolt -->
+  <RI_Bullet_WindThunder.label>TODO</RI_Bullet_WindThunder.label>
+  
+  <!-- EN: SanQing bell shockwave -->
+  <RI_Projectile_SanQingBell.label>TODO</RI_Projectile_SanQingBell.label>
+  
+  <!-- EN: BaGua flag -->
+  <RI_RangeWeapon_DetainGhostFlag.label>八卦旗</RI_RangeWeapon_DetainGhostFlag.label>
+  <!-- EN: 八卦旗，道门的一种法器。挥动旗帜可以引动天地正气化作金色光球射向敌人，令其神魂震荡无法动弹。同时可以令周围的队友进入更专注的状态。 -->
+  <RI_RangeWeapon_DetainGhostFlag.description>TODO</RI_RangeWeapon_DetainGhostFlag.description>
+  <!-- EN: BaGua flag -->
+  <RI_RangeWeapon_DetainGhostFlag.verbs.Verb_Shoot.label>TODO</RI_RangeWeapon_DetainGhostFlag.verbs.Verb_Shoot.label>
+  
+  <!-- EN: 天火镇邪旗 -->
+  <RI_RangeWeapon_HeavenlyFireFlag.label>TODO</RI_RangeWeapon_HeavenlyFireFlag.label>
+  <!-- EN: 一面绣有烈日符咒的长旗。挥舞时，旗面震荡空气产生炙热的红色声波，能够点燃敌人的灵魂。 -->
+  <RI_RangeWeapon_HeavenlyFireFlag.description>TODO</RI_RangeWeapon_HeavenlyFireFlag.description>
+  <!-- EN: flagpole -->
+  <RI_RangeWeapon_HeavenlyFireFlag.tools.flagpole.label>TODO</RI_RangeWeapon_HeavenlyFireFlag.tools.flagpole.label>
+  <!-- EN: 天火镇邪旗 -->
+  <RI_RangeWeapon_HeavenlyFireFlag.verbs.Verb_Shoot.label>TODO</RI_RangeWeapon_HeavenlyFireFlag.verbs.Verb_Shoot.label>
+  
+  <!-- EN: SanQing bell -->
+  <RI_RangeWeapon_SanQingBell.label>三清铃</RI_RangeWeapon_SanQingBell.label>
+  <!-- EN: Originally a ritual instrument used in sacrificial rites, the SanQing bell was believed to summon divine forces and exorcism. As time passed, its function gradually shifted, eventually evolving into a specialized artifact designed to break defenses.\n\nThe bell’s body is engraved with talisman and fitted with a specially crafted clapper within. When gently shaken, the clapper strikes the talisman patterns, producing an unusual, ordered tone rather than an ordinary chime. This sound wave can be directed toward a target, inducing resonance within its internal structure, progressively destabilizing its equilibrium and causing defensive systems to falter—or even collapse entirely. -->
+  <RI_RangeWeapon_SanQingBell.description>三清铃原为祭祀所用的礼器，具备召神遣将，震慑邪祟的作用。随着岁月流转，其用途逐渐变化，最终发展为用于破障的法器。\n\n铃身外刻符咒，内嵌特制铃舌,轻摇之时，铃舌敲击符纹，激起一种特殊的音律。这种音波可定向释放，对目标体内结构产生共振效应，逐步扰乱其稳定状态，使防御体系失衡，乃至崩解。</RI_RangeWeapon_SanQingBell.description>
+  <!-- EN: release disruptive chime -->
+  <RI_RangeWeapon_SanQingBell.verbs.release_disruptive_chime.label>TODO</RI_RangeWeapon_SanQingBell.verbs.release_disruptive_chime.label>
+  
+  <!-- UNUSED -->
+  <RI_RangeWeapon_SanQingBell.verbs.throw_frag_grenade.label>释放铃响</RI_RangeWeapon_SanQingBell.verbs.throw_frag_grenade.label>
+  
+  <!-- EN: wind thunder drum -->
+  <RI_RangeWeapon_WindThunderDrum.label>风雷鼓</RI_RangeWeapon_WindThunderDrum.label>
+  <!-- EN: 很强的鼓 -->
+  <RI_RangeWeapon_WindThunderDrum.description>可以释放带电冲击波的风雷鼓。</RI_RangeWeapon_WindThunderDrum.description>
+  <!-- EN: drum stick -->
+  <RI_RangeWeapon_WindThunderDrum.tools.drum_stick.label>鼓槌</RI_RangeWeapon_WindThunderDrum.tools.drum_stick.label>
+  <!-- EN: wind thunder drum -->
+  <RI_RangeWeapon_WindThunderDrum.verbs.Verb_Shoot.label>TODO</RI_RangeWeapon_WindThunderDrum.verbs.Verb_Shoot.label>
+  
+</LanguageData>

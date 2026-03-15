@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Plants>3</Plants>
+	<Social>-2</Social>
+	<Crafting>3</Crafting>
+	<Construction>3</Construction>
+	<Animals>3</Animals>
+	<Crafting>3</Crafting>
+	<Shooting>3</Shooting>
+	<Crafting>3</Crafting>
+	<Crafting>3</Crafting>
+	
+	<requiredWorkTags>
+	<li>Violent</li>
+	<li>Animals</li>
+	</requiredWorkTags>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	
+	<possessions>
+	<Cloth>10</Cloth>
+	</possessions>
+	-->
+
+	<!--============修炼者============-->
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorAdult1</defName>
+		<title>Cultivator</title>
+		<titleShort>Cultivator</titleShort>
+		<description>[PAWN_nameDef]Learned the art of cultivation in adulthood. With the support of his family, [PAWN_pronoun] took the path of immortal cultivation.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorAdult2</defName>
+		<title>Free cultivator</title>
+		<titleShort>Free cultivator</titleShort>
+		<description>[PAWN_nameDef]'s cultivation path was not smooth. After many years of hard work, [PAWN_nameDef] chose to travel the world in the clouds and live without restraints.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>3</Animals>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorAdult3</defName>
+		<title>Revenge cultivator</title>
+		<titleShort>Revenger</titleShort>
+		<description>[PAWN_nameDef] Once a cultivator, [PAWN_pronoun] was severely wounded in a siege against the cultivators. All of [PAWN_possessive]'s companions were killed, but [PAWN_pronoun] managed to escape. From that moment on, revenge became [PAWN_possessive]'s main goal.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>10</Shooting>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorAdult4</defName>
+		<title>Bad cultivator</title>
+		<titleShort>Bad cultivator</titleShort>
+		<description>[PAWN_nameDef] has experienced a walk-in, which has irreversibly altered [PAWN_possessive]'s brain. [PAWN_pronoun] became incapable of using long range weapons and has a short and irritable temper.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>10</Melee>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Assassin1</defName>
+		<title>Successful assassin</title>
+		<titleShort>Assassin</titleShort>
+		<description>[PAWN_nameDef] used to infiltrate a faction and kill its leader, so [Pawn_namedef] gained self-confidence.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Assassin</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>8</Melee>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Assassin2</defName>
+		<title>Unknown assassin</title>
+		<titleShort>Assassin</titleShort>
+		<description>[PAWN_nameDef] did not like to kill people, [PAWN_pronoun] just to make money, went down this road.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Assassin</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>8</Melee>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_SwordMan1</defName>
+		<title>Sword mad man</title>
+		<titleShort>Sword mad man</titleShort>
+		<description>[PAWN_nameDef] went further and further in his study of kendo, and [PAWN_pronoun] once killed a man in the street who despised [PAWN_pronoun's] swordsmanship, and then fled the scene.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_SwordMan</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>15</Melee>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_SwordMan2</defName>
+		<title>Sword mad man</title>
+		<titleShort>Sword mad man</titleShort>
+		<description>[PAWN_nameDef] has a very high talent for kendo, but [PAWN_pronoun] lost a duel to a swordsman who was younger than [PAWN_pronoun], so [PAWN_pronoun] gradually exceeded the ordinary people's training, and eventually became a sword-lover. But [PAWN_pronoun] doesn't care, [PAWN_pronoun] just wants to wield the sword!</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_SwordMan</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>15</Melee>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorAdult5</defName>
+		<title>Wicked cultivator</title>
+		<titleShort>Wicked cultivator</titleShort>
+		<description>Kidnapping, stealing, robbing, [PAWN_nameDef] has never cared to gain profit through normal means.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<!--============可以是修炼者============-->
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Adult1</defName>
+		<title>Nobody</title>
+		<titleShort>Nobody</titleShort>
+		<description>[PAWN_nameDef] has been quietly playing bystander in the world, and with each new place, [PAWN_pronoun] lives under a different identity.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_WickedCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>7</Melee>
+			<Crafting>5</Crafting>
+			<Plants>3</Plants>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Adult2</defName>
+		<title>Dishonest businessman</title>
+		<titleShort>Businessman</titleShort>
+		<description>[PAWN_nameDef] is not only miserly, but greedy. [PAWN_pronoun] won't let any lucrative business go by, nor will he let any scrap of silver slip through [PAWN_possessive]'s fingers.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_WickedCultivator</li>
+		</spawnCategories>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<skillGains>
+			<Social>10</Social>
+		</skillGains>
+	</BackstoryDef>
+
+</Defs>

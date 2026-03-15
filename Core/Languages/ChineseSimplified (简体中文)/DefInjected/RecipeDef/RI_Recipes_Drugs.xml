@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make All-grain pill -->
+  <RI_MakeAllCropsPill.label>炼制【三品】百粮丸</RI_MakeAllCropsPill.label>
+  <!-- EN: Making All-grain pill -->
+  <RI_MakeAllCropsPill.description>炼制【三品】百粮丸。</RI_MakeAllCropsPill.description>
+  <!-- EN: Making All-grain pill -->
+  <RI_MakeAllCropsPill.jobString>炼制百粮丸中</RI_MakeAllCropsPill.jobString>
+  
+  <!-- EN: Make Blood Saving pill -->
+  <RI_MakeBloodSavingPill.label>炼制【三品】保血丸</RI_MakeBloodSavingPill.label>
+  <!-- EN: Making Blood Saving pill -->
+  <RI_MakeBloodSavingPill.description>炼制【三品】保血丸。</RI_MakeBloodSavingPill.description>
+  <!-- EN: Making Blood Saving pill -->
+  <RI_MakeBloodSavingPill.jobString>炼制保血丸中</RI_MakeBloodSavingPill.jobString>
+  
+  <!-- EN: Make Cultivate-energy pill -->
+  <RI_MakeCultivateEnergyPill.label>炼制【三品】归灵丸</RI_MakeCultivateEnergyPill.label>
+  <!-- EN: Making Cultivate-energy pill -->
+  <RI_MakeCultivateEnergyPill.description>炼制【三品】归灵丸。</RI_MakeCultivateEnergyPill.description>
+  <!-- EN: Making Cultivate-energy pill -->
+  <RI_MakeCultivateEnergyPill.jobString>炼制归灵丸中</RI_MakeCultivateEnergyPill.jobString>
+  
+  <!-- EN: Make Spirit jade pill -->
+  <RI_MakeCultivateMoreEnergyPill.label>炼制【二品】灵玉丸</RI_MakeCultivateMoreEnergyPill.label>
+  <!-- EN: Making Spirit jade pill -->
+  <RI_MakeCultivateMoreEnergyPill.description>炼制灵玉丸</RI_MakeCultivateMoreEnergyPill.description>
+  <!-- EN: Making Spirit jade pill -->
+  <RI_MakeCultivateMoreEnergyPill.jobString>正在炼制灵玉丸</RI_MakeCultivateMoreEnergyPill.jobString>
+  
+  <!-- EN: Make Scorching-Wind pill -->
+  <RI_MakeExpelColdPill.label>炼制【二品】炙风丸</RI_MakeExpelColdPill.label>
+  <!-- EN: Making Scorching-Wind pill -->
+  <RI_MakeExpelColdPill.description>炼制【二品】炙风丸。</RI_MakeExpelColdPill.description>
+  <!-- EN: Making Scorching-Wind pill -->
+  <RI_MakeExpelColdPill.jobString>炼制炙风丸中</RI_MakeExpelColdPill.jobString>
+  
+  <!-- EN: Make Cold-frost pill -->
+  <RI_MakeExpelHotPill.label>炼制【二品】玄寒丸</RI_MakeExpelHotPill.label>
+  <!-- EN: Making Cold-frost pill -->
+  <RI_MakeExpelHotPill.description>炼制【二品】玄寒丸。</RI_MakeExpelHotPill.description>
+  <!-- EN: Making Cold-frost pill -->
+  <RI_MakeExpelHotPill.jobString>炼制玄寒丸中</RI_MakeExpelHotPill.jobString>
+  
+  <!-- EN: Make Gold blood pill -->
+  <RI_MakeGoldBloodPill.label>炼制【二品】金血丸</RI_MakeGoldBloodPill.label>
+  <!-- EN: Making Gold blood pill -->
+  <RI_MakeGoldBloodPill.description>炼制【二品】金血丸。</RI_MakeGoldBloodPill.description>
+  <!-- EN: Making Gold blood pill -->
+  <RI_MakeGoldBloodPill.jobString>炼制金血丸中</RI_MakeGoldBloodPill.jobString>
+  
+  <!-- EN: Make Green balm -->
+  <RI_MakeGreenBalm.label>熬制【三品】清风膏</RI_MakeGreenBalm.label>
+  <!-- EN: Making Green balm -->
+  <RI_MakeGreenBalm.description>熬制【三品】清风膏。</RI_MakeGreenBalm.description>
+  <!-- EN: Making Green balm -->
+  <RI_MakeGreenBalm.jobString>熬制清风膏中</RI_MakeGreenBalm.jobString>
+  
+  <!-- EN: Make Pain-relieving balm -->
+  <RI_MakeHealBalm.label>熬制【三品】跌打膏</RI_MakeHealBalm.label>
+  <!-- EN: Making Pain-relieving balm -->
+  <RI_MakeHealBalm.description>熬制【三品】跌打膏。</RI_MakeHealBalm.description>
+  <!-- EN: Making Pain-relieving balm -->
+  <RI_MakeHealBalm.jobString>熬制跌打膏中</RI_MakeHealBalm.jobString>
+  
+  <!-- EN: Make Herb powder -->
+  <RI_MakeHerbPowder.label>配制【二品】回春散</RI_MakeHerbPowder.label>
+  <!-- EN: Making Herb powder -->
+  <RI_MakeHerbPowder.description>配制【二品】回春散。</RI_MakeHerbPowder.description>
+  <!-- EN: Making Herb powder -->
+  <RI_MakeHerbPowder.jobString>配制回春散中</RI_MakeHerbPowder.jobString>
+  
+  <!-- EN: Make LingYun pill -->
+  <RI_MakeLingYunPill.label>炼制【三品】凌云丸</RI_MakeLingYunPill.label>
+  <!-- EN: Making LingYun pill -->
+  <RI_MakeLingYunPill.description>炼制【三品】凌云丸。</RI_MakeLingYunPill.description>
+  <!-- EN: Making LingYun pill -->
+  <RI_MakeLingYunPill.jobString>炼制凌云丸中</RI_MakeLingYunPill.jobString>
+  
+  <!-- EN: Make Solid-foundation powder -->
+  <RI_MakeStrongPhysiquePowder.label>配制【三品】固元散</RI_MakeStrongPhysiquePowder.label>
+  <!-- EN: Making Solid-foundation powder -->
+  <RI_MakeStrongPhysiquePowder.description>配制【三品】固元散。</RI_MakeStrongPhysiquePowder.description>
+  <!-- EN: Making Solid-foundation powder -->
+  <RI_MakeStrongPhysiquePowder.jobString>配制固元散中</RI_MakeStrongPhysiquePowder.jobString>
+  
+  <!-- EN: Make Three-rock powder -->
+  <RI_MakeThreeRockPowder.label>配制【三品】三石散</RI_MakeThreeRockPowder.label>
+  <!-- EN: Making Three-rock powder -->
+  <RI_MakeThreeRockPowder.description>配制【三品】三石散。</RI_MakeThreeRockPowder.description>
+  <!-- EN: Making Three-rock powder -->
+  <RI_MakeThreeRockPowder.jobString>配制三石散中</RI_MakeThreeRockPowder.jobString>
+  
+  <!-- EN: Make Thran Demon elixir -->
+  <RI_Recipe_MakeDemonElixir.label>炼制【一品】修罗魔喰丹</RI_Recipe_MakeDemonElixir.label>
+  <!-- EN: Making Thran Demon elixir -->
+  <RI_Recipe_MakeDemonElixir.description>炼制【一品】修罗魔喰丹。</RI_Recipe_MakeDemonElixir.description>
+  <!-- EN: Making Thran Demon elixir -->
+  <RI_Recipe_MakeDemonElixir.jobString>炼制修罗魔喰丹中</RI_Recipe_MakeDemonElixir.jobString>
+  
+  <!-- EN: Make Foundation building elixir -->
+  <RI_Recipe_MakeFoundationBuildingElixir.label>炼制【一品】通玄筑基丹</RI_Recipe_MakeFoundationBuildingElixir.label>
+  <!-- EN: Making Foundation building elixir -->
+  <RI_Recipe_MakeFoundationBuildingElixir.description>炼制【一品】通玄筑基丹。</RI_Recipe_MakeFoundationBuildingElixir.description>
+  <!-- EN: Making Foundation building elixir -->
+  <RI_Recipe_MakeFoundationBuildingElixir.jobString>炼制通玄筑基丹中</RI_Recipe_MakeFoundationBuildingElixir.jobString>
+  
+  <!-- EN: Make Celestial spirit Jade elixir -->
+  <RI_Recipe_MakeJadeTreasuresElixir.label>炼制【一品】天灵宝玉丹</RI_Recipe_MakeJadeTreasuresElixir.label>
+  <!-- EN: Making Celestial spirit Jade elixir -->
+  <RI_Recipe_MakeJadeTreasuresElixir.description>炼制【一品】天灵宝玉丹。</RI_Recipe_MakeJadeTreasuresElixir.description>
+  <!-- EN: Making Celestial spirit Jade elixir -->
+  <RI_Recipe_MakeJadeTreasuresElixir.jobString>炼制天灵宝玉丹中</RI_Recipe_MakeJadeTreasuresElixir.jobString>
+  
+  <!-- EN: Make Medulla oblongata elixir -->
+  <RI_Recipe_MakeMedullaOblongataElixir.label>炼制【一品】生肌理髓丹</RI_Recipe_MakeMedullaOblongataElixir.label>
+  <!-- EN: Making Medulla oblongata elixir -->
+  <RI_Recipe_MakeMedullaOblongataElixir.description>炼制【一品】生肌理髓丹。</RI_Recipe_MakeMedullaOblongataElixir.description>
+  <!-- EN: Making Medulla oblongata elixir -->
+  <RI_Recipe_MakeMedullaOblongataElixir.jobString>炼制生肌理髓丹中</RI_Recipe_MakeMedullaOblongataElixir.jobString>
+  
+</LanguageData>

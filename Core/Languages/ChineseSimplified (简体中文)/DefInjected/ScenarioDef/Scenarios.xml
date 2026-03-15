@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Treasure-holder -->
+  <CultivationOfImmortals.label>持宝人</CultivationOfImmortals.label>
+  <!-- EN: While traveling among the stars, you stumbled upon a mysterious ancient scroll and a Spiritual Roots, which you thought you could trade for a good price, but what you didn't expect was to be hunted down and killed by people from all walks of life, so much so that you had to run away to this edge-of-the-planet. Even so, the enemy still clung on and surrounded you. You drink the wine in the pot in order to strengthen your courage, and after a sound night of fighting, you are brought to this strange land by the horse in a coma ......\n\nNote: This script is designed for the introductory players of the Edge Immortal Path, so that you can experience the process of cultivation from the ground up. -->
+  <CultivationOfImmortals.description>你在星际间旅行的时候，偶然发现了一卷神秘的古书和一份灵芽。本以为可以换一个好价钱，但没想到接踵而来的是各路人马的追杀，以至于你不得不逃到了边缘星球上。即便如此，敌人还是紧咬不放，将你包围。你为了壮胆，将壶中的酒一饮而尽，酣战一晚后，你在昏迷中被马儿带上了这陌生的土地……\n\n注意：这个剧本是为边缘仙路入门玩家设计的，可以体验从零开始的修炼过程。</CultivationOfImmortals.description>
+  <!-- EN: While traveling among the stars, you stumbled upon a mysterious ancient scroll and a Spiritual Roots, which you thought you could trade for a good price, but what you didn't expect was to be hunted down and killed by people from all walks of life, so much so that you had to run away to this edge-of-the-planet. Even so, the enemy still clung on and surrounded you. You drink the wine in the pot in order to strengthen your courage, and after a sound night of fighting, you are brought to this strange land by the horse in a coma ......\n\nNote: This script is designed for the introductory players of the Edge Immortal Path, so that you can experience the process of cultivation from the ground up. -->
+  <CultivationOfImmortals.scenario.description>你在星际间旅行的时候，偶然发现了一卷神秘的古书和一份灵芽。本以为可以换一个好价钱，但没想到接踵而来的是各路人马的追杀，以至于你不得不逃到了边缘星球上。即便如此，敌人还是紧咬不放，将你包围。你为了壮胆，将壶中的酒一饮而尽，酣战一晚后，你在昏迷中被马儿带上了这陌生的土地……\n\n注意：这个剧本是为边缘仙路入门玩家设计的，可以体验从零开始的修炼过程。</CultivationOfImmortals.scenario.description>
+  <!-- EN: Treasure-holder -->
+  <CultivationOfImmortals.scenario.name>持宝人</CultivationOfImmortals.scenario.name>
+  <!-- EN: You awaken to the sound of hooves and bumps, your hangover and bruises giving you a splitting headache, and you reflexively feel for your bag, reassured by the Spiritual Roots and an ancient volume lying quietly inside. \n\nThis is the edge of the land, maybe the people who are after you will give up on this, but you'll soon be faced with an even bigger dilemma, that of survival. \n\nThe good thing is, you still have a horse to keep you company. -->
+  <CultivationOfImmortals.scenario.parts.GameStartDialog.text>你在马蹄声和颠簸中苏醒，宿醉和瘀伤使你头痛欲裂，你条件反射般摸了摸袋子，里面安静躺着的灵芽和一卷古书令你放心下来。\n\n这里是边缘之地，或许追杀你的人会就此放弃，但你马上就会面临更大的困境，那就是生存。\n\n好在，你还有一匹马陪伴你。</CultivationOfImmortals.scenario.parts.GameStartDialog.text>
+  <!-- EN: A wandering man who escaped pursuit carries a treasure that can open the path to cultivation. -->
+  <CultivationOfImmortals.scenario.summary>一名逃脱追杀的彷徨之人，怀揣着能开启修炼之路的宝物。</CultivationOfImmortals.scenario.summary>
+  
+</LanguageData>

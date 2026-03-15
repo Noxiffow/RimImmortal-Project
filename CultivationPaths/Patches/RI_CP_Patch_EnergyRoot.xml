@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Adds the PathlessMonitor comp to Hediff_RI_EnergyRoot (RI Core).
+         This comp tracks whether the cultivator has a path and applies the
+         untethered qi penalty (×0.10 energy gain) when they do not. -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods><li>RI.RimImmortal.Core</li></mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/HediffDef[defName="Hediff_RI_EnergyRoot"]/comps</xpath>
+            <value>
+                <li Class="RimImmortal_CultivationPaths.HediffCompProperties_PathlessMonitor"/>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

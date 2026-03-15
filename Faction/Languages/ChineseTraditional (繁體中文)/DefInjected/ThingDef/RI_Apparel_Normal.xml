@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Sect collar shirt -->
+  <RI_Apparel_BasicSectShirt.label>制式交领短衫</RI_Apparel_BasicSectShirt.label>
+  <!-- EN: A short shirt issued by sects. It is simplified on the basis of traditional clothing. The fabric is specially thickened where it is easy to wear, such as the collar and the corner, and the two sides of the clothes have openings to facilitate activities. -->
+  <RI_Apparel_BasicSectShirt.description>宗门统一发配的短衫，在传统服饰的基础上简化而来。交领和衣角等容易磨损之处特意加厚了布料，衣服的两侧有开口，方便活动。</RI_Apparel_BasicSectShirt.description>
+  
+  <!-- EN: Flonne crown -->
+  <RI_Apparel_FlonneCrown.label>芙蓉冠</RI_Apparel_FlonneCrown.label>
+  <!-- EN: The crown sculpted into the shape of a flonne flower is quite exquisite.\n\nThis type of crown is usually reserved for individuals of high rank and power, but that doesn't stop it from being secretly spread among the common folk as a fashion trend. -->
+  <RI_Apparel_FlonneCrown.description>雕琢成芙蓉外形的头冠，相当华丽。\n\n这种头冠一般只有位高权重之人才有资格佩戴，但这也并不能阻止民间偷偷将其作为时尚而传播。</RI_Apparel_FlonneCrown.description>
+  
+  <!-- EN: Light robe -->
+  <RI_Apparel_LightRobe.label>仙门斗篷</RI_Apparel_LightRobe.label>
+  <!-- EN: A large, thick cloak, with excellent craftsmanship and attention to detail. -->
+  <RI_Apparel_LightRobe.description>一件宽大厚实的斗篷，做工和细节都非常不错。</RI_Apparel_LightRobe.description>
+  
+  <!-- EN: Lotus crown -->
+  <RI_Apparel_LotusCrown.label>莲花冠</RI_Apparel_LotusCrown.label>
+  <!-- EN: The crown sculpted into the shape of a lotus flower is quite exquisite.\n\nThis type of crown is usually reserved for individuals of high rank and power, but that doesn't stop it from being secretly spread among the common folk as a fashion trend. -->
+  <RI_Apparel_LotusCrown.description>雕琢成莲花外形的头冠，相当华丽。\n\n这种头冠一般只有位高权重之人才有资格佩戴，但这也并不能阻止民间偷偷将其作为时尚而传播。</RI_Apparel_LotusCrown.description>
+  
+</LanguageData>

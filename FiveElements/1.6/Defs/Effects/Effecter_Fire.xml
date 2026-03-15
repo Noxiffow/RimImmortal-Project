@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 测试特效 -->
+	<EffecterDef>
+		<defName>RI_Effecter_BlockedProjectile</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+				<soundDef>Interceptor_BlockProjectile</soundDef>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>RedSun_Fleck_BlockedProjectile_A</fleckDef>
+				<maxMoteCount>1</maxMoteCount>
+				<!--只需要一次-->
+				<rotationRate>90</rotationRate>
+				<!--顺时针旋转速度，360是每秒一圈，负是逆时针-->
+				<ticksBetweenMotes>90</ticksBetweenMotes>
+				<!--循环播放的间隔-->
+				<positionRadius>0</positionRadius>
+				<attachToSpawnThing>true</attachToSpawnThing>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>RedSun_Fleck_BlockedProjectile_B</fleckDef>
+				<maxMoteCount>1</maxMoteCount>
+				<rotationRate>120</rotationRate>
+				<ticksBetweenMotes>90</ticksBetweenMotes>
+				<positionRadius>0</positionRadius>
+				<attachToSpawnThing>true</attachToSpawnThing>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>RedSun_Fleck_BlockedProjectile_C</fleckDef>
+				<maxMoteCount>1</maxMoteCount>
+				<rotationRate>-120</rotationRate>
+				<ticksBetweenMotes>90</ticksBetweenMotes>
+				<positionRadius>0</positionRadius>
+				<attachToSpawnThing>true</attachToSpawnThing>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RedSun_Fleck_BlockedProjectile_A</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>10</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<graphicData>
+			<texPath>Things/Mote/FireElement/FireElement_Big_A</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>23</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RedSun_Fleck_BlockedProjectile_B</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>10</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<graphicData>
+			<texPath>Things/Mote/FireElement/FireElement_Big_B</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>18</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RedSun_Fleck_BlockedProjectile_C</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>10</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+		<graphicData>
+			<texPath>Things/Mote/FireElement/FireElement_Big_C</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>23</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<!--技能选中特效——火行——离火-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_Fire_Cultivation</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/FireElement/RI_Ability_Fire_Cultivation</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cultivation method: Air step -->
+  <RI_Hediff_AirStepExercise.label>流云步法</RI_Hediff_AirStepExercise.label>
+  <!-- EN: A cultivation technique designed to enhance qi absorption efficiency. This method slightly increases movement speed. -->
+  <RI_Hediff_AirStepExercise.description>一种修炼功法，可以增进灵气获取效率。这种功法可以略微增加移动速度。</RI_Hediff_AirStepExercise.description>
+  
+  <!-- EN: Cultivation method: Mountain eating -->
+  <RI_Hediff_MountainEatingCultivationMethod.label>吞山魔功</RI_Hediff_MountainEatingCultivationMethod.label>
+  <!-- EN: A cultivation technique designed to enhance qi absorption efficiency. This method makes people feel hungry much more quickly. -->
+  <RI_Hediff_MountainEatingCultivationMethod.description>一种修炼功法，可以增进灵气获取效率。这种功法会让人饿得更快。</RI_Hediff_MountainEatingCultivationMethod.description>
+  
+  <!-- EN: Cultivation method: Mystic -->
+  <RI_Hediff_MysticCultivationMethod.label>玄天秘法</RI_Hediff_MysticCultivationMethod.label>
+  <!-- EN: A cultivation technique designed to enhance qi absorption efficiency. However, it causes the practitioner to experience physical pain. -->
+  <RI_Hediff_MysticCultivationMethod.description>一种修炼功法，可以增进灵气获取效率。这种功法会让人感到疼痛。</RI_Hediff_MysticCultivationMethod.description>
+  
+  <!-- EN: Cultivation method: Refinement handwork -->
+  <RI_Hediff_RefinementWorkspeedMethod.label>精研巧工</RI_Hediff_RefinementWorkspeedMethod.label>
+  <!-- EN: A cultivation technique designed to enhance qi absorption efficiency. It provides a modest boost to the practitioner's work efficiency. -->
+  <RI_Hediff_RefinementWorkspeedMethod.description>一种修炼功法，可以增进灵气获取效率。这种功法会让人的工作效率少量提高。</RI_Hediff_RefinementWorkspeedMethod.description>
+  
+  <!-- EN: Cultivation method: Tortoise meditation -->
+  <RI_Hediff_TortoiseMeditationMethod.label>龟眠之法</RI_Hediff_TortoiseMeditationMethod.label>
+  <!-- EN: A cultivation technique designed to enhance qi absorption efficiency. It requires practitioners to sleep longer while also slowing their metabolism. -->
+  <RI_Hediff_TortoiseMeditationMethod.description>一种修炼功法，可以增进灵气获取效率。这种功法会让人需要睡更多时间，同时减少新陈代谢。</RI_Hediff_TortoiseMeditationMethod.description>
+  
+</LanguageData>

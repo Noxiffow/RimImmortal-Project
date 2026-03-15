@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================古修门=============================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientDoor</defName>
+		<label>Ancient cultivator door</label>
+		<description>An ancient cultivator style door, made of steel.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Ancient/RI_Building_AncientDoorIcon</uiIconPath>
+		<thingClass>Building_Door</thingClass>
+		<category>Building</category>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<WorkToBuild>1050</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<uiOrder>2015</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<researchPrerequisites>
+			<li>RI_AncientCultivatorRestoration</li>
+		</researchPrerequisites>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/Door_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>false</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientWall</defName>
+		<label>Ancient cultivator wall</label>
+		<description>An ancient cultivator style walls, made of steel.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Ancient/Wall/RI_Building_AncientWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Ancient/Wall/RI_Building_AncientWallIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>0.1</Flammability>
+			<MeditationFocusStrength>0.3</MeditationFocusStrength>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<uiOrder>2008</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<costList>
+			<Steel>7</Steel>
+		</costList>
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>RI_Building_AncientDoor</li>
+			</relatedBuildCommands>
+		</building>
+		<researchPrerequisites>
+			<li>RI_AncientCultivatorRestoration</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientPillar</defName>
+		<label>Ancient cultivator column</label>
+		<description>Support columns in the ancient cultivator style, made of steel.</description>
+		<graphicData>
+			<drawSize>(1.2,1.2)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<texPath>Things/Building/Ancient/RI_Building_AncientPillar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>RI_AncientCultivatorRestoration</li>
+		</researchPrerequisites>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<uiOrder>2040</uiOrder>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<!-- must be kept in sync with roof hold-up radius -->
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+
+</Defs>

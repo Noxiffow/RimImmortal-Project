@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install Bionic stomach-Earth -->
+  <InstallEarthBionicStomach.label>安装戍土鼎胃</InstallEarthBionicStomach.label>
+  <!-- EN: Install a Bionic stomach-Earth. -->
+  <InstallEarthBionicStomach.description>安装戍土鼎胃。</InstallEarthBionicStomach.description>
+  <!-- EN: Installing Bionic stomach-Earth -->
+  <InstallEarthBionicStomach.jobString>安装戍土鼎胃</InstallEarthBionicStomach.jobString>
+  
+  <!-- EN: install Bionic heart-Fire -->
+  <InstallFireBionicHeart.label>安装千壶焱心</InstallFireBionicHeart.label>
+  <!-- EN: Install a Bionic heart-Fire. -->
+  <InstallFireBionicHeart.description>安装千壶焱心。</InstallFireBionicHeart.description>
+  <!-- EN: Installing Bionic heart-Fire -->
+  <InstallFireBionicHeart.jobString>安装千壶焱心</InstallFireBionicHeart.jobString>
+  
+  <!-- EN: install Bionic lung-Metal -->
+  <InstallMetalBionicLung.label>安装肃金御肺</InstallMetalBionicLung.label>
+  <!-- EN: Install a Bionic lung-Metal. -->
+  <InstallMetalBionicLung.description>安装肃金御肺。</InstallMetalBionicLung.description>
+  <!-- EN: Installing Bionic lung-Metal -->
+  <InstallMetalBionicLung.jobString>安装肃金御肺</InstallMetalBionicLung.jobString>
+  
+  <!-- EN: install Bionic kidney-Water -->
+  <InstallWaterBionicKidney.label>安装寒灵水肾</InstallWaterBionicKidney.label>
+  <!-- EN: Install a Bionic kidney-Water. -->
+  <InstallWaterBionicKidney.description>安装寒灵水肾。</InstallWaterBionicKidney.description>
+  <!-- EN: Installing Bionic kidney-Water -->
+  <InstallWaterBionicKidney.jobString>安装寒灵水肾</InstallWaterBionicKidney.jobString>
+  
+  <!-- EN: install Bionic liver-Wood -->
+  <InstallWoodBionicLiver.label>安装棠木枝肝</InstallWoodBionicLiver.label>
+  <!-- EN: Install a Bionic liver-Wood. -->
+  <InstallWoodBionicLiver.description>安装棠木枝肝。</InstallWoodBionicLiver.description>
+  <!-- EN: Installing Bionic liver-Wood -->
+  <InstallWoodBionicLiver.jobString>安装棠木枝肝</InstallWoodBionicLiver.jobString>
+  
+  <!-- EN: Install Black steel arm -->
+  <RI_InstallBlackSteelArm.label>安装庚钢义臂</RI_InstallBlackSteelArm.label>
+  <!-- EN: Install Black steel arm. -->
+  <RI_InstallBlackSteelArm.description>安装庚钢义臂。</RI_InstallBlackSteelArm.description>
+  <!-- EN: Installing Black steel arm. -->
+  <RI_InstallBlackSteelArm.jobString>安装庚钢义臂</RI_InstallBlackSteelArm.jobString>
+  
+  <!-- EN: Install Black steel foot -->
+  <RI_InstallBlackSteelFoot.label>安装庚钢义足</RI_InstallBlackSteelFoot.label>
+  <!-- EN: Install Black steel foot. -->
+  <RI_InstallBlackSteelFoot.description>安装庚钢义足。</RI_InstallBlackSteelFoot.description>
+  <!-- EN: Installing Black steel foot. -->
+  <RI_InstallBlackSteelFoot.jobString>安装庚钢义足</RI_InstallBlackSteelFoot.jobString>
+  
+  <!-- EN: Install Black steel hand -->
+  <RI_InstallBlackSteelHand.label>安装庚钢义手</RI_InstallBlackSteelHand.label>
+  <!-- EN: Install Black steel hand. -->
+  <RI_InstallBlackSteelHand.description>安装庚钢义手。</RI_InstallBlackSteelHand.description>
+  <!-- EN: Installing Black steel hand. -->
+  <RI_InstallBlackSteelHand.jobString>安装庚钢义手</RI_InstallBlackSteelHand.jobString>
+  
+  <!-- EN: Install Black steel leg -->
+  <RI_InstallBlackSteelLeg.label>安装庚钢义腿</RI_InstallBlackSteelLeg.label>
+  <!-- EN: Install Black steel leg. -->
+  <RI_InstallBlackSteelLeg.description>安装庚钢义腿。</RI_InstallBlackSteelLeg.description>
+  <!-- EN: Installing Black steel leg. -->
+  <RI_InstallBlackSteelLeg.jobString>安装庚钢义腿</RI_InstallBlackSteelLeg.jobString>
+  
+  <!-- EN: Install Black steel spine -->
+  <RI_InstallBlackSteelSpine.label>安装庚钢脊椎</RI_InstallBlackSteelSpine.label>
+  <!-- EN: Install Black steel spine. -->
+  <RI_InstallBlackSteelSpine.description>安装庚钢脊椎。</RI_InstallBlackSteelSpine.description>
+  <!-- EN: Installing Black steel spine. -->
+  <RI_InstallBlackSteelSpine.jobString>安装庚钢脊椎</RI_InstallBlackSteelSpine.jobString>
+  
+  <!-- EN: Install Jade arm -->
+  <RI_InstallJadeFakeArm.label>安装翠玉臂</RI_InstallJadeFakeArm.label>
+  <!-- EN: Install Jade arm. -->
+  <RI_InstallJadeFakeArm.description>安装翠玉臂。</RI_InstallJadeFakeArm.description>
+  <!-- EN: Installing Jade arm. -->
+  <RI_InstallJadeFakeArm.jobString>安装翠玉臂</RI_InstallJadeFakeArm.jobString>
+  
+  <!-- EN: Install Jade eye -->
+  <RI_InstallJadeFakeEye.label>安装翠玉眼</RI_InstallJadeFakeEye.label>
+  <!-- EN: Install Jade eye. -->
+  <RI_InstallJadeFakeEye.description>安装翠玉眼。</RI_InstallJadeFakeEye.description>
+  <!-- EN: Installing Jade eye. -->
+  <RI_InstallJadeFakeEye.jobString>安装翠玉眼</RI_InstallJadeFakeEye.jobString>
+  
+  <!-- EN: Install Jade foot -->
+  <RI_InstallJadeFakeFoot.label>安装翠玉足</RI_InstallJadeFakeFoot.label>
+  <!-- EN: Install Jade foot. -->
+  <RI_InstallJadeFakeFoot.description>安装翠玉足。</RI_InstallJadeFakeFoot.description>
+  <!-- EN: Installing Jade foot. -->
+  <RI_InstallJadeFakeFoot.jobString>安装翠玉足</RI_InstallJadeFakeFoot.jobString>
+  
+  <!-- EN: Install Jade hand -->
+  <RI_InstallJadeFakeHand.label>安装翠玉手</RI_InstallJadeFakeHand.label>
+  <!-- EN: Install Jade hand. -->
+  <RI_InstallJadeFakeHand.description>安装翠玉手。</RI_InstallJadeFakeHand.description>
+  <!-- EN: Installing Jade hand. -->
+  <RI_InstallJadeFakeHand.jobString>安装翠玉手</RI_InstallJadeFakeHand.jobString>
+  
+</LanguageData>

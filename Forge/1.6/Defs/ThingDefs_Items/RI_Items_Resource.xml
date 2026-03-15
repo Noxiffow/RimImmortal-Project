@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== 庚钢 ====================-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_BlackSteel</defName>
+		<label>Black steel</label>
+		<description>A very stable dark blue alloy that has a certain restraining effect on Qi. After a long research on Qi, researchers found a way to combine Qi and steel, through a specific proportion, with ultra-high temperature and high pressure processing, so that Qi and steel into a new alloy material. This alloy is heptyl steel, which has ultra-high durability, sharpness and stability. It is very suitable for making advanced weapons and armor, or raw materials and cutting heads for various chips. In short, this is a new alloy that only modern cultivators can master.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_BlackSteel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>26</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffPower_Armor_Sharp>2.1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>55</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>2.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.8</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>RI_Category_Ore</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<!--气密性-->
+			<isAirtight>true</isAirtight>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.1</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(99,109,176)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>8</MaxHitPoints>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<Beauty>2</Beauty>
+				<Flammability>0</Flammability>
+				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_DeviceCoreComponent</defName>
+		<label>Device core circuit</label>
+		<description>A circuit chip made of black steel as raw material can be applied to high-grade weapons, talisman and other items.\n\nThe chip can automatically adjust the behavior mode according to the set scene to fit the needs of the user. The chip is powered by a spirit stone, not a battery, but rather a bullet. The chip will channel the spirit stone into a specific loop, and each use will fully release the power of one spirit stone.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_DeviceCoreComponent</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_SpiritCoreComponent</defName>
+		<label>Spirit core circuit</label>
+		<description>A circuit chip made of Reiki out of thin air, made from the spirit of a top refiner.\n\nThis chip will consume the life of the mixer, is an extremely precious material, according to some refiners say that this chip has been born of its own wisdom, can adjust the details according to the habits of the material and the user, but also has a magical self-repair function.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_SpiritCoreComponent</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<MarketValue>2150</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_AncientWeaponRelic</defName>
+		<label>Ancient weapon relic</label>
+		<description>The fragments of weapons left behind by ancient cultivator repair contain wonderful Qi circuits, which can hardly be copied in modern.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_AncientWeaponRelic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<MarketValue>1250</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_AncientArmorRelic</defName>
+		<label>Ancient armor relic</label>
+		<description>The fragments of armors left behind by ancient cultivator repair contain wonderful Qi circuits, which can hardly be copied in modern.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_AncientArmorRelic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<MarketValue>1250</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

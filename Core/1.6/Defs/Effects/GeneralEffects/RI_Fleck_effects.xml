@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--莲花坐-->
+ <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RI_lotusPosition</defName>
+    <graphicData>
+      <texPath>Effects/general/RI_lotusPosition</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+	<fadeInTime>0.3</fadeInTime>
+    <solidTime>0.05</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+	<growthRate>2</growthRate>
+  </FleckDef>
+  
+  <!--撑筋拔骨-周围   需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
+ <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+    <defName>RI_exercise</defName>
+    <graphicData>
+      <texPath>Effects/general/RI_exercise</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.05</solidTime>
+    <fadeOutTime>0.7</fadeOutTime>
+	<growthRate>-1.3</growthRate>
+	<RotationAngle>180~180</RotationAngle>
+	<VelocityAngle>0~360</VelocityAngle>
+  </FleckDef>
+  <!--撑筋拔骨-光点-->
+ <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RI_exercise_1</defName>
+    <graphicData>
+      <texPath>Effects/general/RI_exercise_1</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+	<fadeInTime>0.9</fadeInTime>
+    <solidTime>0.01</solidTime>
+    <fadeOutTime>0.25</fadeOutTime>
+	<growthRate>2</growthRate>
+  </FleckDef>
+  <!--气血翻涌 需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
+   <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef"  ParentName="FleckBase_Thrown">
+    <defName>RI_BloodBoilAsura</defName>
+    <graphicData>
+      <texPath>Effects/general/RI_BloodBoilAsura</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.05</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+	<growthRate>-1.5</growthRate>
+	<RotationAngle>90~90</RotationAngle>
+	<VelocityAngle>0~360</VelocityAngle>
+	
+  </FleckDef>
+    <!--气血翻涌-内圈 需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
+   <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef"  ParentName="FleckBase_Thrown">
+    <defName>RI_BloodBoilAsura_1</defName>
+    <graphicData>
+      <texPath>Effects/general/RI_BloodBoilAsura</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.05</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+	<growthRate>-1.5</growthRate>
+	<RotationAngle>-30~-30</RotationAngle>
+	<VelocityAngle>0~360</VelocityAngle>
+	
+  </FleckDef>
+  </Defs>

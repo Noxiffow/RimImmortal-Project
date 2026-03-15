@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--生物子类_僵尸_敌对版本-->
+	<ThingDef ParentName="RI_ThingBase_Aberrant">
+		<defName>RI_Animal_Zombie</defName>
+		<label>Walking dead</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture.</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>2</FilthRate>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<!--攻击方式-->
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<body>Human</body>
+			<baseHealthScale>2</baseHealthScale>
+			<trainability>None</trainability>
+			<baseBodySize>1</baseBodySize>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_ConcentrateAberrantBlood>5</RI_Resource_ConcentrateAberrantBlood>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_Zombie</defName>
+		<label>Walking dead</label>
+		<race>RI_Animal_Zombie</race>
+		<combatPower>180</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<aiAvoidCover>true</aiAvoidCover>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/RI_EvilCreature_Zombie1</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/RI_EvilCreature_Zombie2</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/RI_EvilCreature_Zombie3</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/RI_EvilCreature_Zombie</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.7, 0.3)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/Dessicated_RI_EvilCreature_Zombie</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<startingHediffs>
+			<li>
+				<def>RI_Hediff_WalkingDead</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<!--铁甲尸-->
+	<!--生物子类_僵尸_敌对版本-->
+	<ThingDef ParentName="RI_ThingBase_Aberrant">
+		<defName>RI_Animal_ZombieArmor</defName>
+		<label>armor zombie</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture.</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>2</FilthRate>
+			<ArmorRating_Sharp>2.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+		</statBases>
+		<!--攻击方式-->
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<body>Human</body>
+			<baseHealthScale>4</baseHealthScale>
+			<trainability>None</trainability>
+			<baseBodySize>2</baseBodySize>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.3)</li>
+				<li>(0.32, 0, 0.08)</li>
+				<li>(0.0, 0, -0.21)</li>
+				<li>(-0.32, 0, 0.08)</li>
+			</headPosPerRotation>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_ConcentrateAberrantBlood>7</RI_Resource_ConcentrateAberrantBlood>
+		</butcherProducts>
+
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_ZombieArmor</defName>
+		<label>armor zombie</label>
+		<race>RI_Animal_ZombieArmor</race>
+		<combatPower>350</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<aiAvoidCover>true</aiAvoidCover>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_ZombieArmor/RI_EvilCreature_ZombieArmorA</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_ZombieArmor/RI_EvilCreature_ZombieArmor</texPath>
+					<drawSize>2.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.7, 0.3)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/Dessicated_RI_EvilCreature_Zombie</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<startingHediffs>
+			<li>
+				<def>RI_Hediff_WalkingDead</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<!--浮肿尸-->
+	<ThingDef ParentName="RI_ThingBase_Aberrant">
+		<defName>RI_EvilCreature_ZombieBoomer</defName>
+		<label>Boomer</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<MarketValue>450</MarketValue>
+			<FilthRate>2</FilthRate>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<!--死亡后爆炸，得重写一个新的爆炸效果，酸液之类的-->
+			<deathAction>
+				<workerClass>DeathActionWorker_BigExplosion</workerClass>
+			</deathAction>
+			<body>Human</body>
+			<baseHealthScale>1.2</baseHealthScale>
+			<trainability>Advanced</trainability>
+			<baseBodySize>1.5</baseBodySize>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.3)</li>
+				<li>(0.32, 0, 0.08)</li>
+				<li>(0.0, 0, -0.21)</li>
+				<li>(-0.32, 0, 0.08)</li>
+			</headPosPerRotation>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_CorpseOil>10</RI_Resource_CorpseOil>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_ZombieBoomer</defName>
+		<label>Boomer</label>
+		<race>RI_EvilCreature_ZombieBoomer</race>
+		<combatPower>400</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<aiAvoidCover>true</aiAvoidCover>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphicChance>0.9</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_ZombieBoomer/RI_EvilCreature_ZombieBoomer1</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_ZombieBoomer/RI_EvilCreature_ZombieBoomer</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.7, 0.3)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_ZombieBoomer/Dessicated_RI_EvilCreature_ZombieBoomer</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<startingHediffs>
+			<li>
+				<def>RI_Hediff_WalkingDead</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+</Defs>

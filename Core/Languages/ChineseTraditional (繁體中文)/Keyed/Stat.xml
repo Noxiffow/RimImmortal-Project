@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- EN: TODO -->
+  <RI_InRoom>在{0}</RI_InRoom>
+    <!-- EN: TODO -->
+  <RI_OutRoom>不在{0}</RI_OutRoom>
+  <!-- UNUSED -->
+  <RI_InRoom>在{0}</RI_InRoom>
+  <RI_OutRoom>不在{0}</RI_OutRoom>
+
+</LanguageData>

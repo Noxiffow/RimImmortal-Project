@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- UNUSED -->
+	<!-- EN: Can not Upgrade -->
+  <NoBeginUpgrade>无法突破</NoBeginUpgrade>
+	<!-- EN: Upgrade -->
+  <BeginUpgrade>突破</BeginUpgrade>
+	<!-- EN:  Upgrade is in progress -->
+  <RitualInProgress> 突破正在进行</RitualInProgress>
+	<!-- EN:  No spiritual root -->
+  <NoSpiritualBud> 无灵芽</NoSpiritualBud>
+	<!-- EN:  rank not perfect -->
+  <NotAtBottleneck> 境界尚未圆满</NotAtBottleneck>
+	<!-- EN: Upgrade cooldown over -->
+  <RitualCanBeCastAgain>突破冷却完成</RitualCanBeCastAgain>
+	<!-- EN: Upgrade start -->
+  <RitualStarted>突破开始</RitualStarted>
+	<!-- EN: Upgrade canceled -->
+  <RitualCanceled>突破取消</RitualCanceled>
+	<!-- EN: Time for Upgrade -->
+  <TimeForUpgrade>境界圆满，可以突破了！</TimeForUpgrade>
+	<!-- EN: It must be placed near the upgrade platform -->
+  <NeedUpgradeSpot>必须放置在突破台附近</NeedUpgradeSpot>
+	<!-- EN: Count max -->
+  <CountMax>数量达到上限</CountMax>
+	<!-- EN: Outdoor exercises -->
+  <VisitOutdoorExercises>仙人幻境</VisitOutdoorExercises>
+	<!-- EN: Outdoor exercises -->
+  <OutdoorExercisesNotion>外出历练</OutdoorExercisesNotion>
+	<!-- EN: gain progress in cultivation -->
+  <OutdoorExercisesXPGain>外出历练获得修炼进度</OutdoorExercisesXPGain>
+
+</LanguageData>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, a green orb floats in the dazzling starry sky. An elderly figure with white hair, dressed in simple robes, appears before him, smiling warmly. He takes a jade talisman from his sleeve, and the talisman transforms into spiritual energy, rushing into the cultivator's mind.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+    <li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, the clang of metal and the sound of battle filled the air. A red-haired warrior, with a fierce gaze, stared into the distance. His bare chest gleamed, and in his hand, spiritual energy shaped a massive axe, which he swung toward the far horizon.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+    <li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, countless giant machines rose from the ground, their gears clashing endlessly, while currents of energy flowed like rushing blood. A copper-skinned statue materialized out of thin air. It opened its mouth, spitting out a series of numbers, as if revealing a coordinate.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+    <li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, an androgynous scholar, his face hidden behind a fan, shifted through dozens of different appearances, finally settling into the form of a cultivator. With a seductive smile, he lightly tapped the fan, and an image began to materialize before him.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+  -->
+  <OpportunitySite_OutdoorExercises.questDescriptionRules.rulesStrings>
+    <li>questDescription->一名修炼者莫名进入玄妙的梦境状态，一幅景色在他眼前如画卷般展开…\n\n梦中，一颗位于璀璨星空中的青色圆球，一名鹤发老者，身着布衣，笑意盈盈，出现在了面前。祂从袖中取出一枚玉符，玉符化为灵气，直冲入脑海。\n\n待修炼者回神，脑中已多出一段记忆，指向不远处的某个地点。显然，那里有值得探寻之物。</li>
+    <li>questDescription->一名修炼者莫名进入玄妙的梦境状态，一幅景色在他眼前如画卷般展开…\n\n梦中，金戈铁马，喊杀震天，一名赤发壮汉，向着远方怒目而视。祂赤裸上身，手中以灵气捏出巨斧，劈向远方。\n\n待修炼者回神，脑中已多出一段记忆，指向不远处的某个地点。显然，那里有值得探寻之物。</li>
+    <li>questDescription->一名修炼者莫名进入玄妙的梦境状态，一幅景色在他眼前如画卷般展开…\n\n梦中，无数巨大机械拔地而起，齿轮声响不止，电流成为奔腾血液，一具铜皮人像凭空诞生。祂张嘴吐出连串数字，仿佛是一个坐标。\n\n待修炼者回神，脑中已多出一段记忆，指向不远处的某个地点。显然，那里有值得探寻之物。</li>
+    <li>questDescription->一名修炼者莫名进入玄妙的梦境状态，一幅景色在他眼前如画卷般展开…\n\n梦中，一名难分男女的阴柔书生以扇遮面，祂在变换了数十个外貌后，最终又变成了修士模样。祂妖媚一笑，手指点在扇上，一幅图画显现。\n\n待修炼者回神，脑中已多出一段记忆，指向不远处的某个地点。显然，那里有值得探寻之物。</li>
+  </OpportunitySite_OutdoorExercises.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Immortal guidance</li>
+    <li>questName->Immortal experience</li>
+    <li>questName->Immortal show the way</li>
+  -->
+  <OpportunitySite_OutdoorExercises.questNameRules.rulesStrings>
+    <li>questName->天仙指引</li>
+    <li>questName->天仙历练</li>
+    <li>questName->仙人指路</li>
+  </OpportunitySite_OutdoorExercises.questNameRules.rulesStrings>
+  <!-- EN: The illusion disappears -->
+  <OpportunitySite_OutdoorExercises.root.nodes.OutdoorExercisesTimeOut.node.nodes.Letter.label.slateRef>幻境消散</OpportunitySite_OutdoorExercises.root.nodes.OutdoorExercisesTimeOut.node.nodes.Letter.label.slateRef>
+  <!-- EN: The realm of spiritual illusions, after sustaining itself for a time, gradually dissipated on its own. -->
+  <OpportunitySite_OutdoorExercises.root.nodes.OutdoorExercisesTimeOut.node.nodes.Letter.text.slateRef>灵气幻境在维持了一段时间后，自行消散了。</OpportunitySite_OutdoorExercises.root.nodes.OutdoorExercisesTimeOut.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

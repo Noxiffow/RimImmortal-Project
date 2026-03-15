@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Planter box (1x1) -->
+  <RI_Building_PlanterBox.label>药材种植箱（1×1）</RI_Building_PlanterBox.label>
+  <!-- EN: A 1x1 size planting box that can grow medicinal herbs. -->
+  <RI_Building_PlanterBox.description>一个可以种植药材的1x3大小种植箱。</RI_Building_PlanterBox.description>
+  
+  <!-- EN: Planter box (1x3) -->
+  <RI_Building_PlanterBoxA.label>药材种植箱（1×3）</RI_Building_PlanterBoxA.label>
+  <!-- EN: A 1x3 size planting box that can grow medicinal herbs. -->
+  <RI_Building_PlanterBoxA.description>一个可以种植药材的1x3大小种植箱。</RI_Building_PlanterBoxA.description>
+  
+  <!-- EN: Planter box (2x3) -->
+  <RI_Building_PlanterBoxB.label>药材种植箱（2×3）</RI_Building_PlanterBoxB.label>
+  <!-- EN: A 2x3 size planting box that can grow medicinal herbs. -->
+  <RI_Building_PlanterBoxB.description>一个可以种植药材的2x3大小种植箱。</RI_Building_PlanterBoxB.description>
+  
+</LanguageData>

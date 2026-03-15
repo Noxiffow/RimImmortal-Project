@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: JueRu -->
+  <RI_Animal_JueRu.label>玃如</RI_Animal_JueRu.label>
+  <!-- EN: There are beasts in the west, like the deer with a white tail and the horse with four horns. Its name is JueRu.\n\nIt was a deer like animal, but very intelligent, the male has two pairs of large horns, but both sexes have a pair of antlers under their ears. -->
+  <RI_Animal_JueRu.description>西方有兽焉，如鹿白尾，马足人手四角。其名曰玃如。\n\n这是一种形似鹿，但十分聪明的动物，雄性有两对大角，但无论雌雄，在耳朵下方都有一对茸角。</RI_Animal_JueRu.description>
+  <!-- EN: left hoof -->
+  <RI_Animal_JueRu.tools.left_hoof.label>左蹄</RI_Animal_JueRu.tools.left_hoof.label>
+  <!-- EN: right hoof -->
+  <RI_Animal_JueRu.tools.right_hoof.label>右蹄</RI_Animal_JueRu.tools.right_hoof.label>
+  <!-- EN: head -->
+  <RI_Animal_JueRu.tools.head.label>头</RI_Animal_JueRu.tools.head.label>
+  
+</LanguageData>

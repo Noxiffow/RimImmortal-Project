@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="RI_RecipeBase_Medical" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_BasicElixirs</researchPrerequisite>
+	</RecipeDef>
+
+	<!--制作象牙粉-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>RI_MakeElephantTuskPowder</defName>
+		<label>Make Elephant tusk powder</label>
+		<description>Grind the elephant tusk into powder.</description>
+		<jobString>Making Elephant tusk powder</jobString>
+		<workAmount>1400</workAmount>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElephantTusk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_ElephantTuskPowder>10</RI_Resource_ElephantTuskPowder>
+		</products>
+	</RecipeDef>
+
+	<!--制作象牙粉x4-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>RI_MakeElephantTuskPowderBulk</defName>
+		<label>Make Elephant tusk powder x4</label>
+		<description>Grind the elephant tusk into powder.</description>
+		<jobString>Making Elephant tusk powder</jobString>
+		<workAmount>4000</workAmount>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElephantTusk</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_ElephantTuskPowder>40</RI_Resource_ElephantTuskPowder>
+		</products>
+	</RecipeDef>
+
+	<!--制作金沙-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>RI_MakeGoldSand</defName>
+		<label>Make Gold sand</label>
+		<description>Grinding gold into gold sand.</description>
+		<jobString>Making Gold sand</jobString>
+		<workAmount>1400</workAmount>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_GoldSand>5</RI_Resource_GoldSand>
+		</products>
+	</RecipeDef>
+
+	<!--制作金沙x4-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>RI_MakeGoldSandBulk</defName>
+		<label>Make Gold sand x4</label>
+		<description>Grinding gold into gold sand.</description>
+		<jobString>Making Gold sand</jobString>
+		<workAmount>4000</workAmount>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_GoldSand>20</RI_Resource_GoldSand>
+		</products>
+	</RecipeDef>
+
+	<!--制作丹辅-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>Make_DrugBase</defName>
+		<label>Make Drug base</label>
+		<description>Extracts from some food ingredients that can become drug base.</description>
+		<jobString>Making Drug base</jobString>
+		<workAmount>1400</workAmount>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_DrugBase>5</RI_Resource_DrugBase>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	
+	<!--制作丹辅x4-->
+	<RecipeDef ParentName="RI_RecipeBase_Medical">
+		<defName>Make_DrugBaseBulk</defName>
+		<label>Make Drug base x4</label>
+		<description>Extracts from some food ingredients that can become drug base.</description>
+		<jobString>Making Drug base</jobString>
+		<workAmount>4000</workAmount>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_DrugBase>20</RI_Resource_DrugBase>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+		</defaultIngredientFilter>
+	</RecipeDef>
+
+	<!--移除灵芽的手术-->
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<workerClass>WhoXiuXian.RI_Recipe_RemoveRoot</workerClass>
+		<defName>RemoveEnergyRoot</defName>
+		<label>Cut spiritual root</label>
+		<description>The spiritual root are removed and extracted.</description>
+		<descriptionHyperlinks>
+			<ThingDef>EnergyRoot</ThingDef>
+			<HediffDef>Hediff_RI_EnergyRoot</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing EnergyRoot.</jobString>
+		<removesHediff>Hediff_RI_EnergyRoot</removesHediff>
+	</RecipeDef>
+	
+</Defs>

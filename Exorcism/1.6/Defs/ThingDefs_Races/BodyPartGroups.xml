@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- 分组 -->
+    <BodyPartGroupDef>
+        <defName>RI_MiddleFrontRightLeg</defName>
+        <label>middle front right leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+    <BodyPartGroupDef>
+        <defName>RI_MiddleBehindRightLeg</defName>
+        <label>middle behind right leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+    <BodyPartGroupDef>
+        <defName>RI_MiddleFrontLeftLeg</defName>
+        <label>middle front left leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+    <BodyPartGroupDef>
+        <defName>RI_MiddleBehindLeftLeg</defName>
+        <label>middle front left leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+    <BodyPartGroupDef>
+        <defName>RI_BehindLeftLeg</defName>
+        <label>behind left leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+    <BodyPartGroupDef>
+        <defName>RI_BehindRightLeg</defName>
+        <label>behind right leg</label>
+        <labelShort>leg</labelShort>
+    </BodyPartGroupDef>
+</Defs>

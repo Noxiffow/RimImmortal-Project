@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--炼制尸傀特效-->
+	<EffecterDef>
+		<defName>RI_Effecter_MakeCorpse</defName>
+		<!--工作台特效-->
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<positionRadius>1</positionRadius>
+				<positionRadiusMin>0.5</positionRadiusMin>
+				<fleckDef>RI_FleckDef_BloodFleckA</fleckDef>
+				<ticksBetweenMotes>80</ticksBetweenMotes>
+				<initialDelayTicks>0</initialDelayTicks>
+				<scale>0.4~0.6</scale>
+				<rotation>-30~30</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>1.5</positionRadius>
+				<positionRadiusMin>0.5</positionRadiusMin>
+				<fleckDef>RI_FleckDef_BloodRingA</fleckDef>
+				<positionLerpFactor>0.49</positionLerpFactor>
+				<chancePerTick>0.2</chancePerTick>
+				<scale>0.1~0.3</scale>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--特效fleck-->
+
+	<!--血液A-->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RI_FleckDef_BloodFleckA</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>2</fadeOutTime>
+		<growthRate>0</growthRate>
+		<acceleration>(0, 0, 0.3)</acceleration>
+		<graphicData>
+			<texPath>Things/Mote/RI_FleckDef_BloodFleckA</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
+
+	<!--光环-->
+	<FleckDef ParentName="FleckBase">
+		<defName>RI_FleckDef_BloodRingA</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>3</fadeOutTime>
+		<growthRate>0.3</growthRate>
+		<graphicData>
+			<texPath>Things/Mote/RI_FleckDef_BloodRingA</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make charm -->
+  <RI_CharmMake.label>制作符箓</RI_CharmMake.label>
+  <!-- EN: Making charm -->
+  <RI_CharmMake.gerund>制作符箓中</RI_CharmMake.gerund>
+  <!-- EN: Make charm -->
+  <RI_CharmMake.verb>制作符箓</RI_CharmMake.verb>
+  
+  <!-- EN: Make talisman -->
+  <RI_MakeTalisman.label>打造法宝</RI_MakeTalisman.label>
+  <!-- EN: Making talisman -->
+  <RI_MakeTalisman.gerund>打造法宝中</RI_MakeTalisman.gerund>
+  <!-- EN: Make talisman -->
+  <RI_MakeTalisman.verb>打造法宝</RI_MakeTalisman.verb>
+  
+</LanguageData>

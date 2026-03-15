@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ghost fire explode -->
+  <RI_Arrow_GhostFireCrossbow_Ability.label>鬼火爆破</RI_Arrow_GhostFireCrossbow_Ability.label>
+  <!-- EN: Fire 3 flaming arrow. -->
+  <RI_Arrow_GhostFireCrossbow_Ability.description>射出产生燃烧爆炸的箭矢。</RI_Arrow_GhostFireCrossbow_Ability.description>
+  
+</LanguageData>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EffecterDef>
+    <defName>NzRI_Ef_ZenSound2</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.0</positionRadius>
+        <fleckDef>NzRI_Fl_ZenSound2_1</fleckDef>
+        <chancePerTick>1.0</chancePerTick>
+        <speed>0.0</speed>
+        <scale>0.1~12.0</scale> <!-- 初始大小为0.1，最大大小为2.0 -->
+        <angle>0</angle>
+        <positionLerpFactor>1.0</positionLerpFactor>
+        <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+    <defName>NzRI_Fl_ZenSound2_1</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.5</fadeInTime>
+    <solidTime>1.0</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <growthRate>2.0</growthRate> <!-- 设置增长率 -->
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <texPath>Things/Mote/ZenSoundMote1</texPath>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <RotationAngle>90~90</RotationAngle>
+    <VelocityAngle>0~360</VelocityAngle>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>NzRI_Ef_DivineLightKick</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.0</positionRadius>
+        <fleckDef>NzRI_Fl_DivineLightKick</fleckDef>
+        <burstCount>1</burstCount>
+        <speed>20.0</speed> <!-- 设置速度，使其发射出去 -->
+        <scale>1.0~2.0</scale> <!-- 初始大小为1.0，最大大小为2.0 -->
+        <angle>0</angle>
+        <positionLerpFactor>1.0</positionLerpFactor>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!-- 使用角度来计算速度 -->
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NzRI_Fl_DivineLightKick</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>1.0</growthRate> <!-- 设置增长率 -->
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MoteGlow</shaderType> <!-- 使用支持透明度的着色器 -->
+      <texPath>Things/Mote/Ability/ZdE2</texPath> <!-- 替换为你的纹理路径 -->
+      <drawSize>5</drawSize>
+    </graphicData>
+    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!-- 使其朝向移动方向旋转 -->
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>NzRI_Ef_TentacleSlash</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.5</positionRadius>
+        <fleckDef>NzRI_Fl_TentacleSlash</fleckDef>
+        <burstCount>1</burstCount>
+        <speed>1.0</speed> <!-- 设置速度，使其发射出去 -->
+        <scale>1.0~2.0</scale> <!-- 初始大小为1.0，最大大小为2.0 -->
+        <angle>0</angle>
+        <positionLerpFactor>1.0</positionLerpFactor>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!-- 使用角度来计算速度 -->
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NzRI_Fl_TentacleSlash</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>1.0</growthRate> <!-- 设置增长率 -->
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MoteGlow</shaderType> <!-- 使用支持透明度的着色器 -->
+      <texPath>Things/Mote/Ability/ZdS2</texPath> <!-- 替换为你的纹理路径 -->
+      <drawSize>5</drawSize>
+    </graphicData>
+    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!-- 使其朝向移动方向旋转 -->
+  </FleckDef>
+
+</Defs>

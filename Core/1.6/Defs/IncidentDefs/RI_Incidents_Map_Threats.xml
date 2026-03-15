@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--被追捕的修炼者-->
+	<IncidentDef>
+		<defName>RI_BeHuntedWandererJoin</defName>
+		<label>The hunted cultivator</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<questScriptDef>RI_BeHuntedWandererJoinsQuest</questScriptDef>
+		<baseChance>0.4</baseChance>
+		<pawnKind>RI_Pawn_Cultivator</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+	</IncidentDef>
+
+	<!--歹修袭击-->
+	<IncidentDef>
+		<defName>RI_RaidBadGuys</defName>
+		<label>Cultivator raid</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.Incidents.RI_IncidentWorker_RaidBadGuys</workerClass>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>3</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<letterLabel>Cultivator raid</letterLabel>
+		<letterText>A group of cultivators has arrived in your colony, and they're up to no good!</letterText>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+	<!--剑狂袭击-->
+	<IncidentDef>
+		<defName>RI_RaidInvisibleKiller</defName>
+		<label>Sword madman raid</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.Incidents.RI_IncidentWorker_RaidKiller</workerClass>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>0.8</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<letterLabel>Sword mad man raid</letterLabel>
+		<letterText>Edge of the horizon, the blade is coming! Several sword mad man have heard of your colony and come to challenge you.</letterText>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+	<!--刺客-->
+	<IncidentDef>
+		<defName>RI_RaidAssassin</defName>
+		<label>Assassin raid</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.Incidents.RI_IncidentWorker_RaidAssassin</workerClass>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>0.4</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<letterLabel>Assassin raid</letterLabel>
+		<letterText>There are assassins! Several assassins have emerged to kill your colonists!</letterText>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+</Defs>

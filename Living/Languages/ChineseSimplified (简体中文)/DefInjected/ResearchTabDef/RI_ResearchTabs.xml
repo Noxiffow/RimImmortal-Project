@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: RimImmortal -->
+  <RI_ResearchTab.label>仙路</RI_ResearchTab.label>
+  <!-- EN: You will embark on a journey of cultivation. Master new methods and exercises by studying books, and master more Qi technology. \n\n* In the research list, you can learn how to play this mod by browsing the text of each research project. -->
+  <RI_ResearchTab.generalDescription>你将踏上修炼之旅。通过读书，掌握新的方法和练习，掌握更多的气技术。\n\n*在研究列表中，您可以通过浏览每个研究项目的文本来学习如何玩这个mod。</RI_ResearchTab.generalDescription>
+  <!-- EN: RimImmortal -->
+  <RI_ResearchTab.generalTitle>仙路</RI_ResearchTab.generalTitle>
+  
+</LanguageData>

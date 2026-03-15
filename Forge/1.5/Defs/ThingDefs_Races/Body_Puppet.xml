@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyDef>
+		<defName>RI_Puppet_BodyDef</defName>
+		<label>Golem</label>
+		<corePart>
+			<def>RI_Puppet_Torso</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Torso</li>
+				<li>LeftHand</li>
+				<li>RightHand</li>
+				<li>HeadAttackTool</li>
+			</groups>
+			<parts>
+				<li>
+					<def>RI_Puppet_Core</def>
+					<customLabel>Golem core</customLabel>
+					<coverage>0.001</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+            </parts>
+		</corePart>
+	</BodyDef>
+	
+</Defs>

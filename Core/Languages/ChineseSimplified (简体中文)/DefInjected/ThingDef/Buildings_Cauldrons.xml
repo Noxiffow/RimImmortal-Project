@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: TaiYi cauldron -->
+  <RI_Building_Cauldrons.label>太乙炼丹炉</RI_Building_Cauldrons.label>
+  <!-- EN: A large standard cauldron, can be used to refine a highly effective medicine. -->
+  <RI_Building_Cauldrons.description>一台大型标准炼丹炉，可以炼制效果极强的一品丹药。</RI_Building_Cauldrons.description>
+  
+  <!-- EN: Cauldron -->
+  <RI_Building_LittleCauldrons.label>小型炼丹炉</RI_Building_LittleCauldrons.label>
+  <!-- EN: A small, portable cauldron. This cauldron can be used to refine lower products of herbal medicine. -->
+  <RI_Building_LittleCauldrons.description>一个方便携带的小型炼丹炉。此炼丹炉可以用来炼制三品至二品的丹药，最高级的一品丹药需要更大的炼丹炉。</RI_Building_LittleCauldrons.description>
+  
+</LanguageData>

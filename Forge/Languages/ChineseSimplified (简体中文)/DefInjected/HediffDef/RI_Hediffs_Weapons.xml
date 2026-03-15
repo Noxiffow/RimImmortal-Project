@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi connection -->
+  <RI_Hediff_AncientGun.label>与子偕作</RI_Hediff_AncientGun.label>
+  <!-- EN: The Qi attached to the rifle creates a link between the same guns. The more people that line up this gun, the stronger the connection effect will be. -->
+  <RI_Hediff_AncientGun.description>灵铳上附加的灵气会在同样的枪之间产生连携效果。列装此枪的小人越多，就会产生越强的连携效果。</RI_Hediff_AncientGun.description>
+  <RI_Hediff_AncientGun.descriptionCached>灵铳上附加的灵气会在同样的枪之间产生连携效果。列装此枪的小人越多，就会产生越强的连携效果。</RI_Hediff_AncientGun.descriptionCached>
+  <!-- EN: Single -->
+  <RI_Hediff_AncientGun.stages.Single.label>壹</RI_Hediff_AncientGun.stages.Single.label>
+  <!-- EN: Trinity -->
+  <RI_Hediff_AncientGun.stages.Trinity.label>叁</RI_Hediff_AncientGun.stages.Trinity.label>
+  <!-- EN: Sextet -->
+  <RI_Hediff_AncientGun.stages.Sextet.label>陆</RI_Hediff_AncientGun.stages.Sextet.label>
+  
+  <!-- EN: Boost morale -->
+  <RI_Hediff_AxeExcitation.label>破阵斧鸣</RI_Hediff_AxeExcitation.label>
+  <!-- EN: Morale was greatly boosted, and combat effectiveness increased. -->
+  <RI_Hediff_AxeExcitation.description>士气被极大鼓舞，战斗力提升。</RI_Hediff_AxeExcitation.description>
+  <!-- EN: Boost morale -->
+  <RI_Hediff_AxeExcitation.labelNoun>破阵斧鸣</RI_Hediff_AxeExcitation.labelNoun>
+  
+  <!-- EN: Divine power of Chiyou -->
+  <RI_Hediff_ChiYouFlameHalberd.label>蚩尤神力</RI_Hediff_ChiYouFlameHalberd.label>
+  <!-- EN: Chiyou's divine power attached to himself, bringing great power. -->
+  <RI_Hediff_ChiYouFlameHalberd.description>蚩尤的神力依附于自身，带来强大的力量。</RI_Hediff_ChiYouFlameHalberd.description>
+  
+  <!-- EN: Pearl light -->
+  <RI_Hediff_GlassPearlUmbrella.label>琉璃珠光</RI_Hediff_GlassPearlUmbrella.label>
+  <!-- EN: The Qi of the umbrella protects the body and improves the healing ability. -->
+  <RI_Hediff_GlassPearlUmbrella.description>伞的灵气护住身体，并能提升医疗能力。</RI_Hediff_GlassPearlUmbrella.description>
+  <!-- EN: Pearl light -->
+  <RI_Hediff_GlassPearlUmbrella.labelNoun>琉璃珠光</RI_Hediff_GlassPearlUmbrella.labelNoun>
+  
+  <!-- EN: Glaze pearl -->
+  <RI_Hediff_GlassPearlUmbrella_Ability.label>珠光疗愈</RI_Hediff_GlassPearlUmbrella_Ability.label>
+  <!-- EN: A faint Qi envelop itself, mending the wound. -->
+  <RI_Hediff_GlassPearlUmbrella_Ability.description>淡淡的灵气笼罩自身，修复着伤口。</RI_Hediff_GlassPearlUmbrella_Ability.description>
+  <!-- EN: Glaze pearl -->
+  <RI_Hediff_GlassPearlUmbrella_Ability.labelNoun>珠光疗愈</RI_Hediff_GlassPearlUmbrella_Ability.labelNoun>
+  
+  <!-- EN: Light sword -->
+  <RI_Hediff_LightSword.label>金光剑</RI_Hediff_LightSword.label>
+  <!-- EN: The light sword drawn from the light sword charm, made of pure Qi condensation, it's powerful. -->
+  <RI_Hediff_LightSword.description>光剑符中抽出的光剑，由纯粹的灵气凝结而成，威力强大。</RI_Hediff_LightSword.description>
+  <!-- EN: Light sword -->
+  <RI_Hediff_LightSword.labelNoun>金光剑</RI_Hediff_LightSword.labelNoun>
+  
+  <!-- EN: Unstoppable -->
+  <RI_Hediff_PojunSword.label>势如破竹</RI_Hediff_PojunSword.label>
+  <!-- EN: When a target with this effect is attacked, the attacker accelerates wound healing for a short time. -->
+  <RI_Hediff_PojunSword.description>拥有此效果的目标被攻击后，攻击者会短暂时间内加速伤口愈合。</RI_Hediff_PojunSword.description>
+  <!-- EN: Unstoppable -->
+  <RI_Hediff_PojunSword.labelNoun>势如破竹</RI_Hediff_PojunSword.labelNoun>
+  
+  <!-- EN: Divine blessing -->
+  <RI_Hediff_PojunSword_Ability.label>赐福</RI_Hediff_PojunSword_Ability.label>
+  <!-- EN: Heal the wound in a short time. -->
+  <RI_Hediff_PojunSword_Ability.description>短时间内恢复伤口。</RI_Hediff_PojunSword_Ability.description>
+  <!-- EN: Divine blessing -->
+  <RI_Hediff_PojunSword_Ability.labelNoun>赐福</RI_Hediff_PojunSword_Ability.labelNoun>
+  
+  <!-- EN: Unstoppable -->
+  <RI_Hediff_RatWhiskerSword.label>势如破竹</RI_Hediff_RatWhiskerSword.label>
+  <!-- EN: When a target with this effect is attacked, the attacker accelerates wound healing for a short time. -->
+  <RI_Hediff_RatWhiskerSword.description>拥有此效果的目标被攻击后，攻击者会短暂时间内加速伤口愈合。</RI_Hediff_RatWhiskerSword.description>
+  <!-- EN: Unstoppable -->
+  <RI_Hediff_RatWhiskerSword.labelNoun>势如破竹</RI_Hediff_RatWhiskerSword.labelNoun>
+  
+  <!-- EN: Heal spark -->
+  <RI_Hediff_RatWhiskerSword_Ability.label>疗愈闪光</RI_Hediff_RatWhiskerSword_Ability.label>
+  <!-- EN: Heal the wound in a short time. -->
+  <RI_Hediff_RatWhiskerSword_Ability.description>短时间内恢复伤口。</RI_Hediff_RatWhiskerSword_Ability.description>
+  <!-- EN: Heal spark -->
+  <RI_Hediff_RatWhiskerSword_Ability.labelNoun>疗愈闪光</RI_Hediff_RatWhiskerSword_Ability.labelNoun>
+  
+  <!-- EN: Dragon haste -->
+  <RI_Hediff_Weapon_DragonPatternStick.label>龙鸣急速</RI_Hediff_Weapon_DragonPatternStick.label>
+  <!-- EN: Holding the stick will give you great power, your whole body will burst out, and your movement speed will be significantly increased. -->
+  <RI_Hediff_Weapon_DragonPatternStick.description>持棍人生出伟力，浑身力量爆发，移动速度会显著提升。</RI_Hediff_Weapon_DragonPatternStick.description>
+  <!-- EN: Dragon haste -->
+  <RI_Hediff_Weapon_DragonPatternStick.labelNoun>龙鸣急速</RI_Hediff_Weapon_DragonPatternStick.labelNoun>
+  
+  <!-- EN: Army destroyer -->
+  <RI_Hediff_Weapon_PojunSword.label>破军</RI_Hediff_Weapon_PojunSword.label>
+  <!-- EN: The sword bearer is like a divine aid, as if opening the eye of heaven, so that the melee hit rate is greatly improved. -->
+  <RI_Hediff_Weapon_PojunSword.description>持剑人有如神助，仿佛开了天眼，令近战命中率大大提高。</RI_Hediff_Weapon_PojunSword.description>
+  <!-- EN: Army destroyer -->
+  <RI_Hediff_Weapon_PojunSword.labelNoun>破军</RI_Hediff_Weapon_PojunSword.labelNoun>
+  
+  <!-- EN: Rat eye -->
+  <RI_Hediff_Weapon_RatWhiskerSword.label>鼠眼</RI_Hediff_Weapon_RatWhiskerSword.label>
+  <!-- EN: Qi infusion improves vision and improves accuracy. At the same time, it improves its healing ability. -->
+  <RI_Hediff_Weapon_RatWhiskerSword.description>灵气灌注使得视力提升，命中率增强。同时令自身的治愈能力提高。</RI_Hediff_Weapon_RatWhiskerSword.description>
+  <!-- EN: Rat eye -->
+  <RI_Hediff_Weapon_RatWhiskerSword.labelNoun>鼠眼</RI_Hediff_Weapon_RatWhiskerSword.labelNoun>
+  
+  <!-- EN: God slayer -->
+  <RI_Hediff_Weapon_SlayinglmmortalSword.label>斩仙</RI_Hediff_Weapon_SlayinglmmortalSword.label>
+  <!-- EN: The sword bearer exudes a powerful force that makes the hearts of those around him succumb. -->
+  <RI_Hediff_Weapon_SlayinglmmortalSword.description>持剑人散发出强大的威压，令周围的人心生臣服之意。</RI_Hediff_Weapon_SlayinglmmortalSword.description>
+  <!-- EN: God slayer -->
+  <RI_Hediff_Weapon_SlayinglmmortalSword.labelNoun>斩仙</RI_Hediff_Weapon_SlayinglmmortalSword.labelNoun>
+  
+  <!-- EN: Spark of thunder -->
+  <RI_Hediff_Weapon_ThunderMinigun.label>雷霆激发</RI_Hediff_Weapon_ThunderMinigun.label>
+  <!-- EN: The gunman's hands are wrapped in thunder, which improves his ability to operate. -->
+  <RI_Hediff_Weapon_ThunderMinigun.description>持枪者双手被雷霆缠绕，令操作能力提升。</RI_Hediff_Weapon_ThunderMinigun.description>
+  <!-- EN: Spark of thunder -->
+  <RI_Hediff_Weapon_ThunderMinigun.labelNoun>雷霆激发</RI_Hediff_Weapon_ThunderMinigun.labelNoun>
+  
+  <!-- EN: White frost vision -->
+  <RI_Hediff_Weapon_WhiteApeBow.label>白霜灵视</RI_Hediff_Weapon_WhiteApeBow.label>
+  <!-- EN: The spirit is attached to you, which greatly improves the visual ability. -->
+  <RI_Hediff_Weapon_WhiteApeBow.description>魂灵依附于自身，令视觉能力大大提升。</RI_Hediff_Weapon_WhiteApeBow.description>
+  <!-- EN: White frost vision -->
+  <RI_Hediff_Weapon_WhiteApeBow.labelNoun>白霜灵视</RI_Hediff_Weapon_WhiteApeBow.labelNoun>
+  
+</LanguageData>

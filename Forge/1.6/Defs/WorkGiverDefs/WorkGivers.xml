@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--制作符箓-->
+	<WorkGiverDef>
+		<defName>RI_CharmMake</defName>
+		<label>Make charm</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_CharmWorkbench</li>
+		</fixedBillGiverDefs>
+		<verb>Make charm</verb>
+		<gerund>Making charm</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--制作法宝-->
+	<WorkGiverDef>
+		<defName>RI_MakeTalisman</defName>
+		<label>Make talisman</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_EnergyForge</li>
+			<li>RI_Building_SpiritForge</li>
+		</fixedBillGiverDefs>
+		<verb>Make talisman</verb>
+		<gerund>Making talisman</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

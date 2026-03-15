@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--分类-->
+  <IncidentCategoryDef>
+    <defName>RI_Incident_Exorcism</defName>
+    <needsParmsPoints>true</needsParmsPoints>
+    <canUseAnomalyChance>true</canUseAnomalyChance>
+  </IncidentCategoryDef>
+  <!--邪祟——信件颜色-->
+  <LetterDef Name="RI_Exorcism_LetterBase">
+    <defName>RI_Incident_Exorcism_Letter</defName>
+    <color>(108, 168, 142)</color>
+    <flashColor>(158, 209, 177)</flashColor>
+    <flashInterval>16</flashInterval>
+    <bounce>true</bounce>
+    <arriveSound>RI_Sound_ExorcismThreat</arriveSound>
+    <pauseMode>AnyThreat</pauseMode>
+  </LetterDef>
+  <!--血月——信件颜色-->
+  <LetterDef>
+    <defName>RI_Incident_BloodMoon_Letter</defName>
+    <color>(199, 54, 54)</color>
+    <flashColor>(199, 54, 54)</flashColor>
+    <flashInterval>16</flashInterval>
+    <bounce>true</bounce>
+    <arriveSound>RI_Sound_ExorcismThreat</arriveSound>
+    <pauseMode>AnyThreat</pauseMode>
+  </LetterDef>
+  <!--邪祟信件-->
+  <MessageTypeDef>
+    <defName>RI_Incident_Exorcism_Message</defName>
+    <sound>RI_Sound_ExorcismThreat</sound>
+  </MessageTypeDef>
+  <!--邪祟信件音效-->
+  <SoundDef>
+    <defName>RI_Sound_ExorcismThreat</defName>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Exorcism/RI_Sound_ExorcismThreat</clipPath>
+          </li>
+        </grains>
+        <volumeRange>50~50</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--诅咒蔓延-->
+  <IncidentDef>
+    <defName>RI_Exorcism_CurseSpread</defName>
+    <label>Curse spread</label>
+    <workerClass>RimZombieGirl.IncidentWorker_CurseSpread</workerClass>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+    <letterLabel>Curse spread</letterLabel>
+    <letterText>Several colonists were suddenly struck with a burning fever, their bodies growing frail — It is cursing.\n\nSeek a way to break the curse, or it will steadily worsen until it utterly consumes their lives.</letterText>
+    <letterDef>RI_Incident_Exorcism_Letter</letterDef>
+    <baseChance>0.3</baseChance>
+    <modExtensions>
+      <li Class="RimZombieGirl.IncidentDefExtension_Curse">
+        <victimRange>0~2</victimRange>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <!--血月-->
+  <IncidentDef>
+    <defName>RI_Exorcism_BloodMoonHaze</defName>
+    <label>Blood moon</label>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>RI_Exorcism_BloodMoonHaze</gameCondition>
+    <baseChance>0.2</baseChance>
+    <!-- given by a special storyteller comp -->
+    <disabledWhen>
+      <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+    </disabledWhen>
+    <durationDays>5~15</durationDays>
+    <earliestDay>15</earliestDay>
+    <tale>NoxiousHaze</tale>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+  </IncidentDef>
+  <!--血月气候-->
+  <GameConditionDef>
+    <defName>RI_Exorcism_BloodMoonHaze</defName>
+    <conditionClass>RimZombieGirl.GameCondition_BloodMoon</conditionClass>
+    <label>Blood moon</label>
+    <description>Blood Moon rises, and the aberrants emerge.\n\nBlood moon is a rare and strange climate. Once the balance of Yin and Yang is disrupted, curses will run rampant. Accompanied by the wanton spread of blood mist.\n\nIt endures for several days, during which the aberrants grow violently frenzied.\nNormally, a Blood Moon occurs only once every {MTB} days.</description>
+    <startMessage>The Blood Moon descends, the mist with the stench of blood, as aberrant creatures stir restlessly...</startMessage>
+    <endMessage>The moon has returned to normal.</endMessage>
+    <canBePermanent>true</canBePermanent>
+    <allowUnderground>false</allowUnderground>
+    <pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+  </GameConditionDef>
+  <!--尸卷虫出动-->
+  <IncidentDef>
+    <defName>RI_Exorcism_BurrowingInsects</defName>
+    <label>Corpse bug out</label>
+    <workerClass>RimZombieGirl.IncidentWorker_BurrowingInsects</workerClass>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <letterLabel>Burrowing insects</letterLabel>
+    <letterText>A small swarm of Corpse bugs caught the scent of flesh and burrowed up from underground.</letterText>
+    <letterDef>RI_Incident_Exorcism_Letter</letterDef>
+    <baseChance>0.3</baseChance>
+    <modExtensions>
+      <li Class="RimZombieGirl.IncidentDefExtension_BurrowingInsects">
+        <!-- 生成数量范围 -->
+        <insectCount>1~9</insectCount>
+        <!-- 可以定义多个虫子种类，随机选择 -->
+        <insectKinds>
+          <li>RI_EvilCreature_CorpseEater_Pawn</li>
+          <!--<li>Spelopede</li>
+					<li>Megaspider</li>-->
+        </insectKinds>
+      </li>
+    </modExtensions>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+  </IncidentDef>
+  <!--泥佛现形-->
+  <IncidentDef>
+    <defName>RI_Exorcism_MudSculptureSpawn</defName>
+    <label>Clay Buddha appeared</label>
+    <workerClass>RimZombieGirl.IncidentWorker_BuildingSpawn</workerClass>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <letterLabel>Clay Buddha appeared</letterLabel>
+    <letterText>A gust of sinister wind swept past, and at some unknown moment, some strange Buddha statues have surfaced around your colony...</letterText>
+    <letterDef>RI_Incident_Exorcism_Letter</letterDef>
+    <baseChance>0.3</baseChance>
+    <modExtensions>
+      <li Class="RimZombieGirl.IncidentDefExtension_BuildingSpawn">
+        <buildingDef>RI_Building_ClayBuddha</buildingDef>
+        <count>1~5</count>
+      </li>
+    </modExtensions>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+  </IncidentDef>
+  <!--诅咒荒坟-->
+  <IncidentDef>
+    <defName>RI_Exorcism_CursedGravesSpawn</defName>
+    <label>Cursed graves</label>
+    <workerClass>RimZombieGirl.IncidentWorker_CursedGraveSpawn</workerClass>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <letterLabel>Cursed graves appeared</letterLabel>
+    <letterText>Accompanied by chilling scratches and mournful cries from all around, mounds of desolate graves emerged near the colony.</letterText>
+    <letterDef>RI_Incident_Exorcism_Letter</letterDef>
+    <baseChance>0.3</baseChance>
+    <modExtensions>
+      <li Class="RimZombieGirl.IncidentDefExtension_CursedGraveSpawn">
+        <buildingDef>RI_CursedGrave</buildingDef>
+        <count>3~9</count>
+      </li>
+    </modExtensions>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+  </IncidentDef>
+  <!--诅咒纸钱雾气-->
+  <GameConditionDef>
+    <defName>RI_Exorcism_CursedFog</defName>
+    <conditionClass>RimZombieGirl.GameCondition_CursedBloodFog</conditionClass>
+    <label>cursed fog</label>
+    <description>test</description>
+    <startMessage>Acidic smog has begun due to pollution in this region of the world.</startMessage>
+    <endMessage>The acidic smog is lifting.</endMessage>
+    <canBePermanent>true</canBePermanent>
+    <allowUnderground>false</allowUnderground>
+    <pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+  </GameConditionDef>
+  <!--诅咒复苏-->
+  <IncidentDef>
+    <defName>RI_Exorcism_CurseResurrected</defName>
+    <label>Curse resurrected</label>
+    <workerClass>RimZombieGirl.IncidentWorker_CurseResurrection</workerClass>
+    <category>RI_Incident_Exorcism</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <letterLabel>TEST</letterLabel>
+    <letterText>TEST</letterText>
+    <letterDef>RI_Incident_Exorcism_Letter</letterDef>
+    <baseChance>0.1</baseChance>
+    <tags>
+      <li>RI_CurseRaid</li>
+    </tags>
+  </IncidentDef>
+  <!--召唤血蛄侯-->
+  <IncidentDef>
+    <defName>CD_Incident_RaidCandlelight</defName>
+    <label>summon Crimson Tyrant</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>FS_SuperiorZombie.IncidentWorker_SuperiorZombie</workerClass>
+    <baseChance>0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Raid</tale>
+    <ignoreRecentSelectionWeighting>true</ignoreRecentSelectionWeighting>
+    <modExtensions>
+      <li Class="FS_SuperiorZombie.Ext_OpeningHediff">
+        <!--给boss的hediff-->
+        <innateHediffs>
+          <li>RI_Hediff_CrimsonFlesh</li>
+        </innateHediffs>
+        <!--给全图的hediff-->
+        <mapPawnHediff>RI_Hediff_CrushingBone</mapPawnHediff>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+  <RaidStrategyDef>
+    <defName>CD_Strategy_RocketBreaching</defName>
+    <workerClass>FS_SuperiorZombie.RaidStrategyWorker_SuperiorZombie</workerClass>
+    <minPawns>4</minPawns>
+    <raidLootValueFactor>1</raidLootValueFactor>
+    <arriveModes>
+      <li>EdgeWalkIn</li>
+    </arriveModes>
+    <pointsFactorCurve>
+      <points>
+        <li>0, 2</li>
+      </points>
+    </pointsFactorCurve>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Siege</letterLabelEnemy>
+    <arrivalTextEnemy>##</arrivalTextEnemy>
+    <letterLabelFriendly>Friendlies</letterLabelFriendly>
+    <arrivalTextFriendly>It looks like they want to use siege tactics to help you.</arrivalTextFriendly>
+  </RaidStrategyDef>
+  <!--山蜘蛛破土而出-->
+  <!--<IncidentDef>
+		<defName>RI_SpiderAttack</defName>
+		<label>spider infestation</label>
+		<category>ThreatBig</category>
+		-->
+  <!-- 大型威胁 -->
+  <!--
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		-->
+  <!-- 链接到上面的 C# 类 -->
+  <!--
+		<workerClass>TW_Framework_IncidentFrame.IncidentWorker_SpiderAttack</workerClass>
+		<letterLabel>Spiders!</letterLabel>
+		<letterText>A group of giant spiders have burrowed up from the deep earth! They are hungry and attacking anything that moves.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1.0</baseChance>
+		-->
+  <!-- 发生几率 -->
+  <!--
+		<minRefireDays>15</minRefireDays>
+		-->
+  <!-- 两次发生的最小间隔 -->
+  <!--
+		<pointsScaleable>true</pointsScaleable>
+		-->
+  <!-- 难度随玩家财富增长 -->
+  <!--
+		<tale>Infestation</tale>
+	</IncidentDef>-->
+  <!--蜘蛛！-->
+  <RI_Framework_IncidentFrame.IncidentDef_Burrow>
+    <defName>RI_Incident_SpiderBurrow</defName>
+    <label>spider</label>
+    <workerClass>RI_Framework_IncidentFrame.IncidentWorker_Burrow</workerClass>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <!-- 框架特有配置 -->
+    <DiggingpawnKind>RI_EvilCreature_SuperBigSpider</DiggingpawnKind>
+    <minCount>1</minCount>
+    <maxCount>5</maxCount>
+    <arrivalSound>Hive_Spawn</arrivalSound>
+    <!-- 基础配置 -->
+    <letterLabel>Spider!</letterLabel>
+    <letterText>Spider!</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>0.05</baseChance>
+  </RI_Framework_IncidentFrame.IncidentDef_Burrow>
+  <RI_Framework_IncidentFrame.IncidentDef_Burrow>
+    <defName>RI_ZombieFleshLured</defName>
+    <label>冥尸加入</label>
+    <workerClass>TW_Framework_IncidentFrame.IncidentWorker_ZombieFleshLured</workerClass>
+    <category>Misc</category>
+    <!-- 设为杂项事件，不会消耗大的袭击冷却 -->
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <!-- 这里填你现有的冥娘 PawnKindDef -->
+    <pawnKind>RI_Pawn_Zombie</pawnKind>
+    <minCount>1</minCount>
+    <maxCount>1</maxCount>
+    <!-- 视觉效果：钻地时冒点血，很有感觉 -->
+    <fleckDef>BloodSplash</fleckDef>
+    <letterLabel>冥尸加入</letterLabel>
+    <letterText>一位被新鲜血肉气息吸引的冥尸从地下钻了出来。它们似乎属于{0}，只要不干扰它们，它们应该不会攻击。</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <baseChance>0.01</baseChance>
+  </RI_Framework_IncidentFrame.IncidentDef_Burrow>
+</Defs>

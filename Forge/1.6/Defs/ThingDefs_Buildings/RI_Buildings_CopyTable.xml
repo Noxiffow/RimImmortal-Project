@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--灵气研究器-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_SpiritAnalyzer</defName>
+		<label>Spirit analyzer</label>
+		<description>An analyzer that continuously stimulates the transformation of spiritual crystal into Qi, records the fluctuations of Qi through a computer to obtain more scientific inspiration, thereby increasing the speed of scientific research.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_SpiritAnalyzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.85</drawSize>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<researchPrerequisites>
+			<li>RI_SpiritMechineTech</li>
+		</researchPrerequisites>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>150</Steel>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_LiquidJade>4</RI_Resource_LiquidJade>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(131,247,200,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.1</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--拷贝台-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_CopyTable</defName>
+		<label>Book duplicator</label>
+		<description>This machine was developed after the study of Advanced Qi-ology, and was initially invented by some scholars to reproduce damaged ancient skill scrolls for research purposes.\n\nThe technology used to manufacture this machine was later made public and used to reproduce skill books, which resulted in a huge impact on the book market, with prices plummeting. This was a huge surprise for those poor free cultivators.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_CopyTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.25,2.25)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<RI_Resource_SpiritualCrystal>3</RI_Resource_SpiritualCrystal>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2520</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(131,247,200,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>RI_SpiritualRevolution</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<WorkGiverDef>
+		<defName>RI_DoBillsCopyBook</defName>
+		<label>Copy book</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>221</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_CopyTable</li>
+		</fixedBillGiverDefs>
+		<verb>copy</verb>
+		<gerund>copy at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

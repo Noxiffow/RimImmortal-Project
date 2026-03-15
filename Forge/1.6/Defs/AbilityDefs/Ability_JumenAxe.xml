@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AbilityDef>
+		<defName>RI_AxeExcitation</defName>
+		<label>Boost morale</label>
+		<description>Wield the axe to inspire nearby comrades in 7 bars, increasing their movement speed, melee hit rate and melee damage.</description>
+		<iconPath>Ability/Weapon/RI_AxeExcitation</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<targetRequired>false</targetRequired>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>2020</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<range>7</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetable>true</targetable>
+			<requireLineOfSight>false</requireLineOfSight>
+			<drawAimPie>true</drawAimPie>
+			<defaultCooldownTime>1</defaultCooldownTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_AxeExcitation">
+				<range>7</range>
+				<cooldownTicks>1600</cooldownTicks>
+				<hediffDef>RI_Hediff_AxeExcitation</hediffDef>
+				<fleckdef>RI_Fleck_AxeExcitation</fleckdef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>
+

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: black brick staggered fine tile -->
+  <RI_Floor_StaggeredFineTileBlackBrick.label>青砖交错细墁</RI_Floor_StaggeredFineTileBlackBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileBlackBrick.description>TODO</RI_Floor_StaggeredFineTileBlackBrick.description>
+  
+  <!-- EN: granite staggered fine tile -->
+  <RI_Floor_StaggeredFineTileGranite.label>花岗岩交错细墁</RI_Floor_StaggeredFineTileGranite.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileGranite.description>TODO</RI_Floor_StaggeredFineTileGranite.description>
+  
+  <!-- EN: limestone staggered fine tile -->
+  <RI_Floor_StaggeredFineTileLimestone.label>石灰岩交错细墁</RI_Floor_StaggeredFineTileLimestone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileLimestone.description>TODO</RI_Floor_StaggeredFineTileLimestone.description>
+  
+  <!-- EN: marble staggered fine tile -->
+  <RI_Floor_StaggeredFineTileMarble.label>大理石交错细墁</RI_Floor_StaggeredFineTileMarble.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileMarble.description>TODO</RI_Floor_StaggeredFineTileMarble.description>
+  
+  <!-- EN: red brick staggered fine tile -->
+  <RI_Floor_StaggeredFineTileRedBrick.label>红砖交错细墁</RI_Floor_StaggeredFineTileRedBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileRedBrick.description>TODO</RI_Floor_StaggeredFineTileRedBrick.description>
+  
+  <!-- EN: sandstone staggered fine tile -->
+  <RI_Floor_StaggeredFineTileSandstone.label>砂岩交错细墁</RI_Floor_StaggeredFineTileSandstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileSandstone.description>TODO</RI_Floor_StaggeredFineTileSandstone.description>
+  
+  <!-- EN: slate staggered fine tile -->
+  <RI_Floor_StaggeredFineTileSlate.label>板岩交错细墁</RI_Floor_StaggeredFineTileSlate.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_StaggeredFineTileSlate.description>TODO</RI_Floor_StaggeredFineTileSlate.description>
+  
+  <!-- EN: black brick sun-patterned tile -->
+  <RI_Floor_SunPatternedTileBlackBrick.label>青砖太阳纹地砖</RI_Floor_SunPatternedTileBlackBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileBlackBrick.description>TODO</RI_Floor_SunPatternedTileBlackBrick.description>
+  
+  <!-- EN: granite sun-patterned tile -->
+  <RI_Floor_SunPatternedTileGranite.label>花岗岩太阳纹地砖</RI_Floor_SunPatternedTileGranite.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileGranite.description>TODO</RI_Floor_SunPatternedTileGranite.description>
+  
+  <!-- EN: limestone sun-patterned tile -->
+  <RI_Floor_SunPatternedTileLimestone.label>石灰岩太阳纹地砖</RI_Floor_SunPatternedTileLimestone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileLimestone.description>TODO</RI_Floor_SunPatternedTileLimestone.description>
+  
+  <!-- EN: marble sun-patterned tile -->
+  <RI_Floor_SunPatternedTileMarble.label>大理石太阳纹地砖</RI_Floor_SunPatternedTileMarble.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileMarble.description>TODO</RI_Floor_SunPatternedTileMarble.description>
+  
+  <!-- EN: red brick sun-patterned tile -->
+  <RI_Floor_SunPatternedTileRedBrick.label>红砖太阳纹地砖</RI_Floor_SunPatternedTileRedBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileRedBrick.description>TODO</RI_Floor_SunPatternedTileRedBrick.description>
+  
+  <!-- EN: sandstone sun-patterned tile -->
+  <RI_Floor_SunPatternedTileSandstone.label>砂岩太阳纹地砖</RI_Floor_SunPatternedTileSandstone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileSandstone.description>TODO</RI_Floor_SunPatternedTileSandstone.description>
+  
+  <!-- EN: slate sun-patterned tile -->
+  <RI_Floor_SunPatternedTileSlate.label>板岩太阳纹地砖</RI_Floor_SunPatternedTileSlate.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Floor_SunPatternedTileSlate.description>TODO</RI_Floor_SunPatternedTileSlate.description>
+  
+</LanguageData>

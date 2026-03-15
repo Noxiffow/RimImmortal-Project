@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: summon Crimson Tyrant -->
+  <CD_Incident_RaidCandlelight.label>血蛄侯入侵！</CD_Incident_RaidCandlelight.label>
+  
+  <!-- EN: Blood moon -->
+  <RI_Exorcism_BloodMoonHaze.label>血月</RI_Exorcism_BloodMoonHaze.label>
+  
+  <!-- EN: Corpse bug out -->
+  <RI_Exorcism_BurrowingInsects.label>尸卷虫出动</RI_Exorcism_BurrowingInsects.label>
+  <!-- EN: Burrowing insects -->
+  <RI_Exorcism_BurrowingInsects.letterLabel>尸卷虫出动</RI_Exorcism_BurrowingInsects.letterLabel>
+  <!-- EN: A small swarm of Corpse bugs caught the scent of flesh and burrowed up from underground. -->
+  <RI_Exorcism_BurrowingInsects.letterText>一小群尸卷虫闻到了血肉的味道，从地下挖掘而出。</RI_Exorcism_BurrowingInsects.letterText>
+  
+  <!-- EN: Cursed graves -->
+  <RI_Exorcism_CursedGravesSpawn.label>诅咒荒坟</RI_Exorcism_CursedGravesSpawn.label>
+  <!-- EN: Cursed graves appeared -->
+  <RI_Exorcism_CursedGravesSpawn.letterLabel>诅咒荒坟</RI_Exorcism_CursedGravesSpawn.letterLabel>
+  <!-- EN: Accompanied by chilling scratches and mournful cries from all around, mounds of desolate graves emerged near the colony. -->
+  <RI_Exorcism_CursedGravesSpawn.letterText>伴随着四周传来的阵阵刺耳的刮擦声和凄厉的哭喊声，一片片荒凉的坟墓出现在了这个殖民地附近。</RI_Exorcism_CursedGravesSpawn.letterText>
+  
+  <!-- EN: Curse resurrected -->
+  <RI_Exorcism_CurseResurrected.label>诅咒复苏</RI_Exorcism_CurseResurrected.label>
+  <!-- EN: TEST -->
+  <RI_Exorcism_CurseResurrected.letterLabel>诅咒复苏</RI_Exorcism_CurseResurrected.letterLabel>
+  <!-- EN: TEST -->
+  <RI_Exorcism_CurseResurrected.letterText>诅咒复苏</RI_Exorcism_CurseResurrected.letterText>
+  
+  <!-- EN: Curse spread -->
+  <RI_Exorcism_CurseSpread.label>诅咒蔓延</RI_Exorcism_CurseSpread.label>
+  <!-- EN: Curse spread -->
+  <RI_Exorcism_CurseSpread.letterLabel>诅咒蔓延</RI_Exorcism_CurseSpread.letterLabel>
+  <!-- EN: Several colonists were suddenly struck with a burning fever, their bodies growing frail — It is cursing.\n\nSeek a way to break the curse, or it will steadily worsen until it utterly consumes their lives. -->
+  <RI_Exorcism_CurseSpread.letterText>几名殖民者突然发了高烧，变得虚弱，这正是诅咒作祟。\n\n寻找能解除诅咒的办法，否则诅咒将逐渐加深，直至彻底吞噬他们的性命。</RI_Exorcism_CurseSpread.letterText>
+  
+  <!-- EN: Clay Buddha appeared -->
+  <RI_Exorcism_MudSculptureSpawn.label>泥佛现形</RI_Exorcism_MudSculptureSpawn.label>
+  <!-- EN: Clay Buddha appeared -->
+  <RI_Exorcism_MudSculptureSpawn.letterLabel>泥佛现形</RI_Exorcism_MudSculptureSpawn.letterLabel>
+  <!-- EN: A gust of sinister wind swept past, and at some unknown moment, some strange Buddha statues have surfaced around your colony... -->
+  <RI_Exorcism_MudSculptureSpawn.letterText>一阵阴风刮过，地面上不知何时出现了几尊破烂的佛像。</RI_Exorcism_MudSculptureSpawn.letterText>
+  
+  <!-- EN: spider -->
+  <RI_Incident_SpiderBurrow.label>蜘蛛</RI_Incident_SpiderBurrow.label>
+  <!-- EN: Spider! -->
+  <RI_Incident_SpiderBurrow.letterLabel>蜘蛛！</RI_Incident_SpiderBurrow.letterLabel>
+  <!-- EN: Spider! -->
+  <RI_Incident_SpiderBurrow.letterText>蜘蛛！</RI_Incident_SpiderBurrow.letterText>
+  
+  <!-- EN: 冥尸加入 -->
+  <RI_ZombieFleshLured.label>冥尸加入</RI_ZombieFleshLured.label>
+  <!-- EN: 冥尸加入 -->
+  <RI_ZombieFleshLured.letterLabel>冥尸加入</RI_ZombieFleshLured.letterLabel>
+  <!-- EN: 一位被新鲜血肉气息吸引的冥尸从地下钻了出来。它们似乎属于{0}，只要不干扰它们，它们应该不会攻击。 -->
+  <RI_ZombieFleshLured.letterText>TODO</RI_ZombieFleshLured.letterText>
+  
+</LanguageData>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--太阳纹地砖-->
+	<!--Sun-patterned tile-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_SunPatternedTile_Base">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_SunPatternedTile</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+			<Beauty>3</Beauty>
+			<CleaningTimeFactor>0.7</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_Floor_SunPatternedTile</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>3777</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Floor_SunPatternedTile</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base">
+		<defName>RI_Floor_SunPatternedTileSandstone</defName>
+		<label>sandstone sun-patterned tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base">
+		<defName>RI_Floor_SunPatternedTileGranite</defName>
+		<label>granite sun-patterned tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base">
+		<defName>RI_Floor_SunPatternedTileLimestone</defName>
+		<label>limestone sun-patterned tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base">
+		<defName>RI_Floor_SunPatternedTileSlate</defName>
+		<label>slate sun-patterned tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base">
+		<defName>RI_Floor_SunPatternedTileMarble</defName>
+		<label>marble sun-patterned tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_SunPatternedTileRedBrick</defName>
+		<label>red brick sun-patterned tile</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>4</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_Floor_SunPatternedTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_SunPatternedTileBlackBrick</defName>
+		<label>black brick sun-patterned tile</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>4</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+
+	<!--交错细墁-->
+	<!--staggered fine tile-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_StaggeredFineTile_Base">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_StaggeredFineTile</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>2</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_Floor_StaggeredFineTile</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Road</li>
+		</tags>
+		<uiOrder>3778</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Floor_StaggeredFineTile</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base">
+		<defName>RI_Floor_StaggeredFineTileSandstone</defName>
+		<label>sandstone staggered fine tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>5</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base">
+		<defName>RI_Floor_StaggeredFineTileGranite</defName>
+		<label>granite staggered fine tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>5</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base">
+		<defName>RI_Floor_StaggeredFineTileLimestone</defName>
+		<label>limestone staggered fine tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>5</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base">
+		<defName>RI_Floor_StaggeredFineTileSlate</defName>
+		<label>slate staggered fine tile</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<BlocksSlate>5</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base">
+		<defName>RI_Floor_StaggeredFineTileMarble</defName>
+		<label>marble staggered fine tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>5</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName MayRequire="RI.RimImmortal.Living">RI_Floor_StaggeredFineTileRedBrick</defName>
+		<label>red brick staggered fine tile</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>5</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_Floor_StaggeredFineTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_StaggeredFineTileBlackBrick</defName>
+		<label>black brick staggered fine tile</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>5</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+</Defs>

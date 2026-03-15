@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aberrant technology -->
+  <RI_ExorcismResearch_AberrantTechnology.label>邪祟技术</RI_ExorcismResearch_AberrantTechnology.label>
+  <!-- EN: Acquire knowledge and techniques from Aberrant-related texts, and learn about various Aberrant materials. -->
+  <RI_ExorcismResearch_AberrantTechnology.description>从邪祟相关文献中学到知识和技术，了解各种邪祟原料。</RI_ExorcismResearch_AberrantTechnology.description>
+  
+  <!-- EN: Advanced corpse creature -->
+  <RI_ExorcismResearch_AdvancedCorpseCreature.label>高阶尸傀</RI_ExorcismResearch_AdvancedCorpseCreature.label>
+  <!-- EN: Unlock methods to refine greater corpse puppet. -->
+  <RI_ExorcismResearch_AdvancedCorpseCreature.description>解锁高阶尸傀炼制之法。</RI_ExorcismResearch_AdvancedCorpseCreature.description>
+  
+  <!-- EN: Art of defense -->
+  <RI_ExorcismResearch_ArtDefense.label>御敌之法</RI_ExorcismResearch_ArtDefense.label>
+  <!-- EN: Study Daoist combat techniques, enabling Daoists to confront enemies head-on. -->
+  <RI_ExorcismResearch_ArtDefense.description>研习战斗道法，使道士能正面御敌。</RI_ExorcismResearch_ArtDefense.description>
+  
+  <!-- EN: Dao inherit -->
+  <RI_ExorcismResearch_DaoInherit.label>道门传承</RI_ExorcismResearch_DaoInherit.label>
+  <!-- EN: Learn knowledge and methods from Daoist sect, and understand the various raw materials used in Daoist sect. -->
+  <RI_ExorcismResearch_DaoInherit.description>从道门的典籍中学到知识和技术，了解各种道门所用的原料。</RI_ExorcismResearch_DaoInherit.description>
+  
+  <!-- EN: Elementary corpse creature -->
+  <RI_ExorcismResearch_ElementaryCorpseCreature.label>低阶尸傀</RI_ExorcismResearch_ElementaryCorpseCreature.label>
+  <!-- EN: Unlock methods to refine lesser corpse puppet. -->
+  <RI_ExorcismResearch_ElementaryCorpseCreature.description>解锁低阶尸傀炼制之法。</RI_ExorcismResearch_ElementaryCorpseCreature.description>
+  
+  <!-- EN: Corpse alchemy -->
+  <RI_ExorcismResearch_EvilCreature.label>炼尸术</RI_ExorcismResearch_EvilCreature.label>
+  <!-- EN: Unlock basic corpse-refining techniques. -->
+  <RI_ExorcismResearch_EvilCreature.description>解锁基础炼尸技术。</RI_ExorcismResearch_EvilCreature.description>
+  
+  <!-- EN: The Book of a hundred evils -->
+  <RI_ExorcismResearch_EvilPowerBasic.label>《百邪录》</RI_ExorcismResearch_EvilPowerBasic.label>
+  <!-- EN: Aberrant directory:\n\nGrade D Aberrant:\nWalking corpse\nCow corpse\nCorpse bug\nHuman head spider\nGrade C Aberrant:\nDead shot\nGrade B Aberrant:\nGrade A Aberrant -->
+  <RI_ExorcismResearch_EvilPowerBasic.description>邪祟名录：\n\n丁级邪祟：\n僵尸\n牛僵尸\n尸卷虫\n人面蜘蛛\n\n丙级邪祟：\n乙级邪祟：\n甲级邪祟</RI_ExorcismResearch_EvilPowerBasic.description>
+  
+  <!-- EN: Exorcism basic -->
+  <RI_ExorcismResearch_ExorcismBasic.label>镇邪诛鬼</RI_ExorcismResearch_ExorcismBasic.label>
+  <!-- EN: Heaven and earth hold righteous Qi, flowing in myriad forms.\n\nAberrants threaten the world, and Daoist techniques are studied to restrain them. -->
+  <RI_ExorcismResearch_ExorcismBasic.description>天地有正气，杂然赋流形。\n\n邪祟危害世间，研究道门技术用于克制邪祟。</RI_ExorcismResearch_ExorcismBasic.description>
+  
+  <!-- EN: Exorcism charm -->
+  <RI_ExorcismResearch_ExorcismCharm.label>符箓</RI_ExorcismResearch_ExorcismCharm.label>
+  <!-- EN: Unlock the art of charm drawing, usable for defense, healing, and offense. -->
+  <RI_ExorcismResearch_ExorcismCharm.description>解锁绘制符箓之法，可用于防护、治疗与攻击。</RI_ExorcismResearch_ExorcismCharm.description>
+  
+  <!-- EN: Exorcism instrument -->
+  <RI_ExorcismResearch_ExorcismInstrument.label>法器制作</RI_ExorcismResearch_ExorcismInstrument.label>
+  <!-- EN: Unlock the crafting of basic Exorcism instruments, serving for protection and the dispelling of Aberrants. -->
+  <RI_ExorcismResearch_ExorcismInstrument.description>解锁基础法器制作，用以护身与驱除邪祟。</RI_ExorcismResearch_ExorcismInstrument.description>
+  
+  <!-- EN: Horror furniture -->
+  <RI_ExorcismResearch_HorrorFurniture.label>恐怖家具</RI_ExorcismResearch_HorrorFurniture.label>
+  <!-- EN: Unlock horror-themed furniture. -->
+  <RI_ExorcismResearch_HorrorFurniture.description>解锁恐怖风格的家具。</RI_ExorcismResearch_HorrorFurniture.description>
+  
+  <!-- EN: Intermediate corpse creature -->
+  <RI_ExorcismResearch_IntermediateCorpseCreature.label>中阶尸傀</RI_ExorcismResearch_IntermediateCorpseCreature.label>
+  <!-- EN: Unlock methods to refine intermediate corpse puppet. -->
+  <RI_ExorcismResearch_IntermediateCorpseCreature.description>解锁中阶尸傀炼制之法。</RI_ExorcismResearch_IntermediateCorpseCreature.description>
+  
+  <!-- EN: Necrosapiens -->
+  <RI_ExorcismResearch_NecrosapiensAlchemy.label>冥尸炼制之法</RI_ExorcismResearch_NecrosapiensAlchemy.label>
+  <!-- EN: Unlocks the technique to refine the deceased into Necrosapiens.\n\nAccording to historical records, Necrosapiens evolve through three stages: Nether blood, Nightmare flesh, and Eternal bone.\n\nEach stage requires the consumption of rare substances, followed by several days of dormancy within a coffin to undergo metamorphosis. -->
+  <RI_ExorcismResearch_NecrosapiensAlchemy.description>解锁将死者炼制为冥尸的技术。\n\n根据历史记载，冥尸分为三个阶段：冥血，魇肉，不化骨，每个阶段需要吞食特殊之物，再进入棺材中休眠数日，进行蜕变。</RI_ExorcismResearch_NecrosapiensAlchemy.description>
+  
+  <!-- EN: Necrosapiens organ -->
+  <RI_ExorcismResearch_NecrosapiensOrgan.label>邪术器官</RI_ExorcismResearch_NecrosapiensOrgan.label>
+  <!-- EN: Further study of forbidden arts unlocks implant technology derived from Necrosapiens. -->
+  <RI_ExorcismResearch_NecrosapiensOrgan.description>进一步钻研邪术，掌握了冥尸的植入体技术。</RI_ExorcismResearch_NecrosapiensOrgan.description>
+  
+  <!-- EN: Necrosapiens intensive surgery -->
+  <RI_ExorcismResearch_NecrosapiensSurgery.label>冥尸控制技术</RI_ExorcismResearch_NecrosapiensSurgery.label>
+  <!-- EN: Through mastery of forbidden arts, specialized methods were developed to control Necrosapiens. Talismans, technological apparatus, and physical restraints are employed to suppress their bloodthirsty instincts. -->
+  <RI_ExorcismResearch_NecrosapiensSurgery.description>通过对邪术的掌握，人类发明了用特殊技术来控制冥尸的方法。利用符咒，科技，和物理限制，压抑冥尸的嗜血本性。</RI_ExorcismResearch_NecrosapiensSurgery.description>
+  
+  <!-- EN: Advanced exorcism instrument -->
+  <RI_Research_BetterExorcismInstrument.label>高阶法器制作</RI_Research_BetterExorcismInstrument.label>
+  <!-- EN: Refine the forging of Daoist artifacts, unlocking more powerful tools. -->
+  <RI_Research_BetterExorcismInstrument.description>提升法器的炼制技艺，解锁威力更强的法器。</RI_Research_BetterExorcismInstrument.description>
+  
+</LanguageData>

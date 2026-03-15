@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 影响：低 -->
+
+	<MemeGroupDef>
+		<defName>RI_Primacy</defName>
+		<drawOffset>(0.5, 0.5)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>1900</renderOrder>
+	</MemeGroupDef>
+
+	<!--正道之途-->
+	<MemeDef>
+		<defName>RI_Meme_FrankAndRighteous</defName>
+		<label>Righteous path</label>
+		<description>心如明镜，终成大道。我们始终行走于正道之上，不会偏离。</description>
+		<iconPath>UI/Memes/RI_Meme_FrankAndRighteous</iconPath>
+		<allowDuringTutorial>true</allowDuringTutorial>
+		<groupDef MayRequire="Ludeon.RimWorld.Ideology">Misc</groupDef>
+		<impact>1</impact>
+		<renderOrder>35</renderOrder>
+		<!--不相容-->
+		<exclusionTags>
+			<li>RI_Primacy</li>
+		</exclusionTags>
+		<!--=====规定戒律=====-->
+		<requireOne>
+			<li>
+				<li>OrganUse_Abhorrent</li>
+				<li>OrganUse_HorribleNoSell</li>
+			</li>
+			<li>
+				<li>Cannibalism_Abhorrent</li>
+				<li>Cannibalism_Horrible</li>
+				<li>Cannibalism_Disapproved</li>
+			</li>
+			<li>
+				<li>Charity_Worthwhile</li>
+			</li>
+			<li>
+				<li>Skullspike_Disapproved</li>
+			</li>
+		</requireOne>
+		<consumableBuildings>
+			<li>SacrificialFlag</li>
+		</consumableBuildings>
+		<generalRules>
+
+		</generalRules>
+		<descriptionMaker>
+
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>cultivate</theme>
+				<adjective>cultivate</adjective>
+				<member>cultivator</member>
+			</li>
+		</symbolPacks>
+		<selectOneOrNone>
+			<noneChance>0.8</noneChance>
+			<preceptThingPairs>
+				<li>
+					<precept>ApparelDesired_Soft_Subordinate</precept>
+					<thing>Apparel_VisageMask</thing>
+				</li>
+			</preceptThingPairs>
+		</selectOneOrNone>
+		<!--风格-->
+		<styleItemTags>
+			<li>
+				<tag>Wild</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>0</weightFactor>
+			</li>
+		</styleItemTags>
+		<!--认同特性-->
+		<agreeableTraits>
+			<li>Kind</li>
+		</agreeableTraits>
+		<!--不认同特性-->
+		<disagreeableTraits>
+			<li>Psychopath</li>
+			<li>Cannibal</li>
+		</disagreeableTraits>
+	</MemeDef>
+
+	<!--邪魔外道-->
+	<MemeDef>
+		<defName>RI_Meme_EvilWays</defName>
+		<label>Thran deviant path</label>
+		<description>We follow the path of Thran, the Devouring Immortal. Without war and bloodshed, life would be unbearably dull. In this world, strength reigns supreme—even heaven and earth shall bow before me.</description>
+		<iconPath>UI/Memes/RI_Meme_EvilWays</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>1</impact>
+		<renderOrder>35</renderOrder>
+		<!--不相容-->
+		<exclusionTags>
+			<li>RI_Primacy</li>
+		</exclusionTags>
+		<!--=====规定戒律=====-->
+		<requireOne>
+			<li>
+				<li>Skullspike_Desired</li>
+			</li>
+			<li>
+				<li>Corpses_DontCare</li>
+			</li>
+			<li>
+				<li>Slavery_Acceptable</li>
+				<li>Slavery_Honorable</li>
+			</li>
+			<li>
+				<li>Execution_Required</li>
+				<li>Execution_RespectedIfGuilty</li>
+			</li>
+			<li>
+				<li>OrganUse_Acceptable</li>
+			</li>
+		</requireOne>
+		<!--<replacementPatterns>
+			<li>SacrificePrisoner</li>
+			<li>GladiatorDuel</li>
+		</replacementPatterns>-->
+		<generalRules>
+
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>cultivate</theme>
+				<adjective>cultivate</adjective>
+				<member>cultivator</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>RI_Style_NeoCultivation</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<ritualsToMake>1</ritualsToMake>
+		<!--<replaceRitualsWithTags>
+			<li>CelebratedDate</li>
+		</replaceRitualsWithTags>-->
+		<!--认同特性-->
+		<!--<agreeableTraits>
+			<li>Psychopath</li>
+			<li>Cannibal</li>
+			<li>RI_Trait_BodyMaker</li>
+		</agreeableTraits>
+		--><!--不认同特性--><!--
+		<disagreeableTraits>
+			<li>Kind</li>
+			<li>Greedy</li>
+			<li>Jealous</li>
+		</disagreeableTraits>-->
+	</MemeDef>
+
+	<!-- 影响：中 -->
+
+	<!--修炼至上-->
+	<!--之后更新再说吧-->
+
+
+</Defs>

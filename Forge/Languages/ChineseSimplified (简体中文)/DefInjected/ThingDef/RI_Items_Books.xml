@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Skill book-Spirit healing armor -->
+  <RI_BookAbility_RI_AncientCultivatorPlayer.label>通用功法书《天罡灵愈铠》</RI_BookAbility_RI_AncientCultivatorPlayer.label>
+  <!-- EN: A book made up of Qi, titled "Spirit healing armor". \n\nThe exercises obtained from the ancient cultivator, it consumed too much Qi, so it was improved and produced a new skill. Can temporarily allow Qi to transform the body, making the whole body like copper skin and iron bones. At the same time, it can also improve human body function, improve melee ability and movement speed. -->
+  <RI_BookAbility_RI_AncientCultivatorPlayer.description>一卷由灵气凝聚而成的读物，书名写着《天罡灵愈铠》。\n\n从古修手中获得的功法，但是古代功法消耗的灵气过多，于是经过改进，产生的新功法。可以暂时让灵气改造肉体，使得周身如铜皮铁骨一般。与此同时还能提升人体机能，提高近战能力和移速。</RI_BookAbility_RI_AncientCultivatorPlayer.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Spirit healing armor"! -->
+  <RI_BookAbility_RI_AncientCultivatorPlayer.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了天罡灵愈铠！</RI_BookAbility_RI_AncientCultivatorPlayer.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_RI_AncientCultivatorPlayer.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_RI_AncientCultivatorPlayer.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Initial approach book-Forge -->
+  <RI_BookD.label>炼器法门书《考工记》</RI_BookD.label>
+  <!-- EN: An ancient book made of Qi condensation, the title of which is "Book of Diverse Crafts".\n\nThe Forge Initial approach studies the use of spiritual Qi in objects, creating things with Qi; controlling objects with Qi; and nurturing objects with Qi. The early stages involve a lot of theory, while the later stages involve more practice. A master of Forge can use their own Qi as raw material to create Spirit core circuit for divine artifacts. The Spirit core circuit themselves already have a certain degree of intelligence, and can be used to create divine machinery.\n\n"Book of Diverse Crafts" derive from the "Rites of Zhou", the original author is unknown. "Book of Diverse Crafts" is a document describing the specifications and manufacturing techniques of various types of work such as official handicrafts in the Spring and Autumn and Warring States periods of China.\n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach! -->
+  <RI_BookD.description>一本由灵气凝聚而成的古书，书名写着《考工记》。\n\n炼器法门研究的是将灵气用于器物，以气造物；以气御物；以气养物。前期多理论，后期多实践，入门者须锤炼心神，坚定匠心。炼器之大成者，可以以自身神魂为原料，制作出神魂宝器构件，构件本身已带有一定的灵智，可制造神机。\n\n《考工记》出于《周礼》，原作者不详，是中国春秋战国时期记述官营手工业等各工种规范和制造工艺的文献。\n\n注意：一旦完全钻研完一本法门书，修炼者将与这条法门绑定，无法再学习其他法门！</RI_BookD.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Forge Initial approach as his cultivation direction! -->
+  <RI_BookD.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}将炼器法门作为了自己的修炼方向！</RI_BookD.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookD.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookD.comps.CompBookStudiable.completedLetterTitle>
+  
+</LanguageData>

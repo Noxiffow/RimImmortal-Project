@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 烟草 -->
+	<HediffDef>
+		<defName>RI_Hediff_ChunghwaHigh</defName>
+		<label>smoked</label>
+		<labelNoun>a cigarette high</labelNoun>
+		<description>tobacco active in the bloodstream. It smooths the nerves and sharpens the mind slightly.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.5</severityPerDay>
+				<!-- 状态消退速度 -->
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.9</painFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- ==================== 5. 耐受度与成瘾性 (防止报错的支撑文件) ==================== -->
+	<!-- 即使极难成瘾，环世界依然要求药物必须配套这三个节点，否则会爆红字 -->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>RI_Hediff_PremiumTobaccoTolerance</defName>
+		<label>tobacco tolerance</label>
+		<description>A built-up tolerance to tobacco.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>RI_Chemical_Cigarette</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>RI_Hediff_PremiumTobaccoAddiction</defName>
+		<label>tobacco addiction</label>
+		<description>A chemical addiction to premium tobacco.</description>
+		<chemicalNeed>RI_Need_PremiumTobacco</chemicalNeed>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.04</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>withdrawal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_Food</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+  
+</Defs>

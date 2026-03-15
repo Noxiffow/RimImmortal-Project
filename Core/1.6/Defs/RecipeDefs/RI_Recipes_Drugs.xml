@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--三品丹的base-->
+	<RecipeDef Name="RI_RecipeBase_withDanStove" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>RI_Building_LittleCauldrons</li>
+			<li>RI_Building_Cauldrons</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_BasicElixirs</researchPrerequisite>
+	</RecipeDef>
+
+	<!--=============================三品丹=============================-->
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeHealBalm</defName>
+		<label>Make Pain-relieving balm</label>
+		<description>Making Pain-relieving balm</description>
+		<jobString>Making Pain-relieving balm</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PlantainSeed</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_HealBalm>1</RI_Drug_HealBalm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeBloodSavingPill</defName>
+		<label>Make Blood Saving pill</label>
+		<description>Making Blood Saving pill</description>
+		<jobString>Making Blood Saving pill</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PlantainSeed</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_BloodSavingPill>1</RI_Drug_BloodSavingPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeLingYunPill</defName>
+		<label>Make LingYun pill</label>
+		<description>Making LingYun pill</description>
+		<jobString>Making LingYun pill</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LanternBerries</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_LingYunPill>1</RI_Drug_LingYunPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeCultivateEnergyPill</defName>
+		<label>Make Cultivate-energy pill</label>
+		<description>Making Cultivate-energy pill</description>
+		<jobString>Making Cultivate-energy pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_CultivateEnergyPill>1</RI_Drug_CultivateEnergyPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeGreenBalm</defName>
+		<label>Make Green balm</label>
+		<description>Making Green balm</description>
+		<jobString>Making Green balm</jobString>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_GreenBalm>1</RI_Drug_GreenBalm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+		<defName>RI_MakeAllCropsPill</defName>
+		<label>Make All-grain pill</label>
+		<description>Making All-grain pill</description>
+		<jobString>Making All-grain pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilverGinseng</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_AllCropsPill>3</RI_Drug_AllCropsPill>
+		</products>
+	</RecipeDef>
+
+	<!--=============================二品丹=============================-->
+
+	<!--二品丹的base-->
+	<RecipeDef Name="RI_RecipeBase_withBigDanStove" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>RI_Building_Cauldrons</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_InitialApproach_ElixirsStrengthen</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeExpelHotPill</defName>
+		<label>Make Cold-frost pill</label>
+		<description>Making Cold-frost pill</description>
+		<jobString>Making Cold-frost pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ElephantTuskPowder</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_ExpelHotPill>3</RI_Drug_ExpelHotPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeExpelColdPill</defName>
+		<label>Make Scorching-Wind pill</label>
+		<description>Making Scorching-Wind pill</description>
+		<jobString>Making Scorching-Wind pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ElephantTuskPowder</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_ExpelColdPill>3</RI_Drug_ExpelColdPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeCultivateMoreEnergyPill</defName>
+		<label>Make Spirit jade pill</label>
+		<description>Making Spirit jade pill</description>
+		<jobString>Making Spirit jade pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_CultivateMoreEnergyPill>3</RI_Drug_CultivateMoreEnergyPill>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeGoldBloodPill</defName>
+		<label>Make Gold blood pill</label>
+		<description>Making Gold blood pill</description>
+		<jobString>Making Gold blood pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilverGinseng</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_GoldBloodPill>3</RI_Drug_GoldBloodPill>
+		</products>
+	</RecipeDef>
+
+	<!--<RecipeDef ParentName="RI_RecipeBase_withDanStove">
+
+		<label>炼制红阳丸</label>
+
+		<label>炼制通神散</label>
+
+		<label>炼制聚灵丸</label>
+
+		<label>炼制青冥丹</label>
+-->
+	<!--=============================一品丹=============================-->
+
+	<!--一品丹的base-->
+	<RecipeDef Name="RI_RecipeBase_MakeBestDrugs" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>RI_Building_Cauldrons</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_Cauldrons</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeMedullaOblongataElixir</defName>
+		<label>Make Medulla oblongata elixir</label>
+		<description>Making Medulla oblongata elixir</description>
+		<jobString>Making Medulla oblongata elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PlantainSeed</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_JunGouBezoar</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_MedullaOblongataElixir>1</RI_Drug_MedullaOblongataElixir>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeDemonElixir</defName>
+		<label>Make Thran Demon elixir</label>
+		<description>Making Thran Demon elixir</description>
+		<jobString>Making Thran Demon elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PiloseAntler</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_DemonElixir>1</RI_Drug_DemonElixir>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeJadeTreasuresElixir</defName>
+		<label>Make Celestial spirit Jade elixir</label>
+		<description>Making Celestial spirit Jade elixir</description>
+		<jobString>Making Celestial spirit Jade elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DuskyMushroom</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_JunGouBezoar</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_FiveTreasuresElixir>1</RI_Drug_FiveTreasuresElixir>
+		</products>
+	</RecipeDef>
+
+	<!--制作筑基丹-->
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeFoundationBuildingElixir</defName>
+		<label>Make Foundation building elixir</label>
+		<description>Making Foundation building elixir</description>
+		<jobString>Making Foundation building elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LanternBerries</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_FoundationBuildingElixir>1</RI_Drug_FoundationBuildingElixir>
+		</products>
+	</RecipeDef>
+
+	<!--=============================药散啥的=============================-->
+
+	<!--制作药散的base-->
+	<RecipeDef Name="RI_RecipeBase_MakeSomePowder" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_InitialApproach_ElixirsStrengthen</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder">
+		<defName>RI_MakeHerbPowder</defName>
+		<label>Make Herb powder</label>
+		<description>Making Herb powder</description>
+		<jobString>Making Herb powder</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PlantainSeed</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_HerbPowder>1</RI_Drug_HerbPowder>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder">
+		<defName>RI_MakeThreeRockPowder</defName>
+		<label>Make Three-rock powder</label>
+		<description>Making Three-rock powder</description>
+		<jobString>Making Three-rock powder</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilverGinseng</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_ThreeRockPowder>1</RI_Drug_ThreeRockPowder>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder">
+		<defName>RI_MakeStrongPhysiquePowder</defName>
+		<label>Make Solid-foundation powder</label>
+		<description>Making Solid-foundation powder</description>
+		<jobString>Making Solid-foundation powder</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DuskyMushroom</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_StrongPhysiquePowder>1</RI_Drug_StrongPhysiquePowder>
+		</products>
+	</RecipeDef>
+
+</Defs>

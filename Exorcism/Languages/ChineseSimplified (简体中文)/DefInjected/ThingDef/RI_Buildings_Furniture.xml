@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aberrant blood storage -->
+  <RI_Building_EvilBloodStorage.label>邪血储存器</RI_Building_EvilBloodStorage.label>
+  <!-- EN: A container for storing concentrated aberrant blood, storage can keep blood not corruption. -->
+  <RI_Building_EvilBloodStorage.description>储存浓缩邪血的容器，可以保持邪血不会腐败。</RI_Building_EvilBloodStorage.description>
+  <!-- EN: Disassemble the storage structure immediately and recycle all materials. -->
+  <RI_Building_EvilBloodStorage.comps.CompHayStack.uiDesc>储存浓缩邪血的容器，可以保持邪血不会腐败。</RI_Building_EvilBloodStorage.comps.CompHayStack.uiDesc>
+  <!-- EN: open up -->
+  <RI_Building_EvilBloodStorage.comps.CompHayStack.uiLabel>打开</RI_Building_EvilBloodStorage.comps.CompHayStack.uiLabel>
+  
+  <!-- EN: Ghost fire brazier -->
+  <RI_Building_GreenBrazier.label>鬼火盆</RI_Building_GreenBrazier.label>
+  <!-- EN: A brazier ablaze with ghost fire, its flames fierce yet giving little light, and scarcely any heat. -->
+  <RI_Building_GreenBrazier.description>燃烧熊熊鬼火的火盆，然而火势虽大，却不明亮，温度也不高。</RI_Building_GreenBrazier.description>
+  
+  <!-- EN: Ghost fire candle -->
+  <RI_Building_GreenTorch.label>鬼火烛台</RI_Building_GreenTorch.label>
+  <!-- EN: A candlestick lit with a faint, eerie ghost fire, terrifying. -->
+  <RI_Building_GreenTorch.description>点燃着幽幽鬼火的烛台，可怕异常。</RI_Building_GreenTorch.description>
+  
+  <!-- EN: Strange plaster -->
+  <RI_Building_StrangePlaster.label>怪异膏药</RI_Building_StrangePlaster.label>
+  <!-- EN: A plaster that emits a strange smell, only for decoration. -->
+  <RI_Building_StrangePlaster.description>散发着怪异气味的膏药，只有装饰作用。</RI_Building_StrangePlaster.description>
+  
+  <!-- EN: Strange potion -->
+  <RI_Building_StrangePotion.label>怪异药剂</RI_Building_StrangePotion.label>
+  <!-- EN: A potion that emits a strange smell, only for decoration. -->
+  <RI_Building_StrangePotion.description>散发着怪异气味的药剂，只有装饰作用。</RI_Building_StrangePotion.description>
+  
+  <!-- EN: tomb -->
+  <RI_Building_Tomb.label>坟</RI_Building_Tomb.label>
+  <!-- EN: A decent final resting place. Colonists will visit full graves to gain meditative joy. -->
+  <RI_Building_Tomb.description>死后安息之处，落叶归根。</RI_Building_Tomb.description>
+  
+  <!-- EN: Ghost fire -->
+  <RI_GhostFire_Green.label>鬼火</RI_GhostFire_Green.label>
+  
+</LanguageData>

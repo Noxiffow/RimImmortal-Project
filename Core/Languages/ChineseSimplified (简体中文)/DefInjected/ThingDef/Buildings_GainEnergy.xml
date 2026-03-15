@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Upgrade platform -->
+  <RI_Building_BetterUpgradePlatform.label>突破台</RI_Building_BetterUpgradePlatform.label>
+  <!-- EN: A upgrade platform, which can be used as an alternative to a upgrade point for cultivation.\n\nThis platform has no special effects but is extremely sturdy, capable of withstanding heavenly tribulations or damage from cultivators. -->
+  <RI_Building_BetterUpgradePlatform.description>一个突破台，可以替代突破点进行突破。\n\n这种突破台没有什么特殊效果，只是材质坚固，避免被天雷或者修炼者破坏。</RI_Building_BetterUpgradePlatform.description>
+  
+  <!-- EN: Cultivation spot -->
+  <RI_Building_CultivationSpot.label>修炼点</RI_Building_CultivationSpot.label>
+  <!-- EN: Just a place for meditation. -->
+  <RI_Building_CultivationSpot.description>一个用于打坐的修炼点。</RI_Building_CultivationSpot.description>
+  
+  <!-- EN: Cultivation cushion -->
+  <RI_Building_FuTon.label>蒲团</RI_Building_FuTon.label>
+  <!-- EN: A cushion for meditation, on which the cultivator can meditate to better absorb Qi.\n\nSpecial buildings can be placed nearby to improve the efficiency of Qi acquisition. -->
+  <RI_Building_FuTon.description>一个用于打坐的蒲团，修炼者可以通过在蒲团上打坐来更好地吸收灵气。\n\n可以在附近放置提高灵气获取效率的特殊建筑。</RI_Building_FuTon.description>
+  
+  <!-- EN: Cultivation platform -->
+  <RI_Building_StoneSittingPlatform.label>聚灵台</RI_Building_StoneSittingPlatform.label>
+  <!-- EN: A large platform for meditation, it is a high-level cultivation platform that requires a lot of materials to build. The platform can greatly speed up the acquisition of Qi, which is an essential treasure for cultivators.\n\nSpecial buildings can be placed nearby to improve the efficiency of Qi acquisition. -->
+  <RI_Building_StoneSittingPlatform.description>一个用于打坐的大型平台,需要用不少材料才能打造的高级修炼台。聚灵台能大大加快灵气获取速度，对修炼者来说是必不可少的宝物。\n\n可以在附近放置提高灵气获取效率的特殊建筑。</RI_Building_StoneSittingPlatform.description>
+  
+  <!-- EN: Upgrade spot -->
+  <RI_Building_UpgradeSpot.label>突破点</RI_Building_UpgradeSpot.label>
+  <!-- EN: A upgrade spot, the cultivator must upgrade by the upgrade point. -->
+  <RI_Building_UpgradeSpot.description>一个突破点，修炼者必须通过突破点来进行突破。</RI_Building_UpgradeSpot.description>
+  
+</LanguageData>

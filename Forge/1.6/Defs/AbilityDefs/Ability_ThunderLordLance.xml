@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<AbilityDef>
+		<defName>RI_ThunderLordLance_lightningStrike</defName>
+		<label>Thunder and lightning</label>
+		<description>With the release person as the origin, release lightning in 8 directions around it, attacking targets along the way.</description>
+		<iconPath>Ability/Weapon/RI_ThunderLordLance_lightningStrike</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>false</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>720</cooldownTicksRange>
+		<!--RangedWeapon_Cooldown>4.10</RangedWeapon_Cooldown-->
+		<verbProperties>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>8</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>Explosion_EMP</soundCast>
+			<defaultCooldownTime>1.6</defaultCooldownTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0.2, 0)</li>
+					<li>(1, 1)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_lightningStrike">
+				<range>8</range>
+				<lineWidthEnd>5</lineWidthEnd>
+				<cooldownTicks>450</cooldownTicks>
+				<projectileDef>RI_ThunderLordLance_lightningStrike_Bullet</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_ThunderLordLance_lightningStrike_Bullet</defName>
+		<label>Thunder</label>
+		<thingClass>RI_Starch.RI_Projectile.Projectile_lightningStrike</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RI_lightningStrike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>17</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_ThunderLordLance_Lighting</defName>
+		<thingClass>RI_Starch.RI_ThingClass.RI_MoteLighting</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Effects/ThunderLordLance/RI_ThunderLordLance_Ability</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_ThunderLordLance_Lighting_a</defName>
+		<thingClass>RI_Starch.RI_ThingClass.RI_MoteLighting</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData>
+			<texPath>Effects/ThunderLordLance/RI_ThunderLordLance_Ability_1</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+</Defs>
+

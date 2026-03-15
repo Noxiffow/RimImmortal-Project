@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Iron ball dartle -->
+  <RI_Arrow_IronThrowingBall_Ability.label>铁球连射</RI_Arrow_IronThrowingBall_Ability.label>
+  <!-- EN: Shoots out 5 iron balls to deal massive damage. -->
+  <RI_Arrow_IronThrowingBall_Ability.description>快速射出5发铁乌鸡，造成巨大伤害。</RI_Arrow_IronThrowingBall_Ability.description>
+  
+</LanguageData>

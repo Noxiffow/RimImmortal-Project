@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================仙路更新信息====================== -->
+
+	<RI_Frame_Newspaper.UpdateNewsDef>
+		<defName>RI_RimImmortal_Core_101</defName>
+		<!-- 这里写翻译键，而不是直接写名字 -->
+		<modName>RI_RimImmortal_Core</modName>
+		<version>1.0.1</version>
+		<!-- 这里也写翻译键 -->
+		<newsText>RI_RimImmortal_Core_Text</newsText>
+		<imagePath>UI/News/News1</imagePath>
+		<imageAspect>3.5</imageAspect>
+		
+		<!-- 在这里微调坐标和大小 -->
+		<windowX>8</windowX>
+		<!-- 距离屏幕左边 -->
+		<windowY>510</windowY>
+		<!-- 距离屏幕顶端 -->
+		<windowWidth>500</windowWidth>
+		<!-- 宽度调窄一点 -->
+		<windowHeight>283</windowHeight>
+		<!-- 高度调长一点 -->
+	</RI_Frame_Newspaper.UpdateNewsDef>
+
+</Defs>

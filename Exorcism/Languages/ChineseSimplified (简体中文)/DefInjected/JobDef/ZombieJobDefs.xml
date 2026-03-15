@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: digging cursed grave -->
+  <Job_DigCursedGrave.reportString>挖掘</Job_DigCursedGrave.reportString>
+  
+  <!-- EN: suppressing TargetA. -->
+  <RI_Zombie_Suppress.reportString>压制</RI_Zombie_Suppress.reportString>
+  
+</LanguageData>

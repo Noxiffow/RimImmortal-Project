@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="RI_BodyPartModBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<Mass>1</Mass>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isTechHediff>true</isTechHediff>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<pathCost>10</pathCost>
+	</ThingDef>
+
+	<!--翠玉前置-->
+	<ThingDef Name="RI_JadeBodypartBase" ParentName="RI_BodyPartModBase" Abstract="True">
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RI_Category_JadeBodyPart</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>RI_Research_Prosthetic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--庚钢前置-->
+	<ThingDef Name="RI_BlackSteelBodypartBase" ParentName="RI_BodyPartModBase" Abstract="True">
+		<tradeTags>
+			<li>AdvancedProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RI_Category_BlackSteelBodyPart</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>RI_BlackSteelSyntheticTechnology</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--五脏前置，买不到，只能自己做-->
+	<ThingDef Name="RI_InsideBodyPartBase" ParentName="RI_BodyPartModBase" Abstract="True">
+		<tradeTags>
+			<li>RI_InsideBodyPartTag</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RI_Category_InsideBodyPart</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- 翠玉系列 -->
+
+	<ThingDef ParentName="RI_JadeBodypartBase">
+		<defName>RI_Prostheses_JadeFakeHand</defName>
+		<label>Jade hand</label>
+		<description>Using the jade as the shell, the movable hand of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallJadeFakeHand</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_JadeFakeHand</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>220</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_JadeBodypartBase">
+		<defName>RI_Prostheses_JadeFakeArm</defName>
+		<label>Jade arm</label>
+		<description>Using the jade as the shell, the movable arm of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallJadeFakeArm</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_JadeFakeArm</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_JadeBodypartBase">
+		<defName>RI_Prostheses_JadeFakeFoot</defName>
+		<label>Jade foot</label>
+		<description>Using the jade as the shell, the movable foot of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallJadeFakeFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_JadeFakeFoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>220</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_JadeBodypartBase">
+		<defName>RI_Prostheses_JadeFakeEye</defName>
+		<label>Jade eye</label>
+		<description>A fake eyeball, carved with jade, is merely decorative and looks very evil under certain angles of light.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallJadeFakeEye</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_JadeFakeEye</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--庚钢系列-->
+
+	<ThingDef ParentName="RI_BlackSteelBodypartBase">
+		<defName>RI_Prostheses_BlackSteelHand</defName>
+		<label>Black steel hand</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallBlackSteelHand</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_BlackSteelHand</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BlackSteelBodypartBase">
+		<defName>RI_Prostheses_BlackSteelLeg</defName>
+		<label>Black steel leg</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallBlackSteelLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_BlackSteelLeg</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1100</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BlackSteelBodypartBase">
+		<defName>RI_Prostheses_BlackSteelArm</defName>
+		<label>Black steel arm</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallBlackSteelArm</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_BlackSteelArm</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1100</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BlackSteelBodypartBase">
+		<defName>RI_Prostheses_BlackSteelFoot</defName>
+		<label>Black steel foot</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallBlackSteelFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_BlackSteelFoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BlackSteelBodypartBase">
+		<defName>RI_Prostheses_BlackSteelSpine</defName>
+		<label>Black steel spine</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_InstallBlackSteelSpine</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_BlackSteelSpine</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--五行内脏-->
+
+	<ThingDef ParentName="RI_InsideBodyPartBase">
+		<defName>RI_Prostheses_EarthBionicStomach</defName>
+		<label>Bionic stomach-Earth</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_EarthBionicStomach</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_EarthBionicStomach</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_InsideBodyPartBase">
+		<defName>RI_Prostheses_FireBionicHeart</defName>
+		<label>Bionic heart-Fire</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_FireBionicHeart</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_FireBionicHeart</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_InsideBodyPartBase">
+		<defName>RI_Prostheses_WaterBionicKidney</defName>
+		<label>Bionic kidney-Water</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_WaterBionicKidney</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_WaterBionicKidney</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2100</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_InsideBodyPartBase">
+		<defName>RI_Prostheses_WoodBionicLiver</defName>
+		<label>Bionic liver-Wood</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_WoodBionicLiver</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_WoodBionicLiver</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_InsideBodyPartBase">
+		<defName>RI_Prostheses_MetalBionicLung</defName>
+		<label>Bionic lung-Metal</label>
+		<description>Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_MetalBionicLung</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/RI_Prostheses_MetalBionicLung</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2100</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+</Defs>

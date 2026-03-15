@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<RaidStrategyDef Name="ImmediateAttack">
+		<defName>RI_WickedAttack</defName>
+		<workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RI_Faction_WickedCultivators</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 0)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>CenterDrop</li>
+		</arriveModes>
+		<letterLabelEnemy>Raid</letterLabelEnemy>
+		<arrivalTextEnemy>A group of cultivators has arrived in your colony, and they're up to no good!</arrivalTextEnemy>
+	</RaidStrategyDef>-->
+
+</Defs>

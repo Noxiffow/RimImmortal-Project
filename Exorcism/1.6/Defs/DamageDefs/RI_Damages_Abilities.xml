@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 诅咒 -->
+	<DamageDef ParentName="Bite">
+		<defName>RI_Dm_BloodCurse</defName>
+		<label>blood curse</label>
+		<deathMessage>{0} was cursed to death</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_He_BloodCurse</hediff>
+				<severityPerDamageDealt>0.9</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<hediff>RI_He_BloodCurse</hediff>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
+	<!-- 三清铃冲击波 -->
+	<DamageDef ParentName="StunBase">
+		<defName>RI_ZombieMelee_SanQingBell</defName>
+		<label>三清铃冲击波</label>
+		<workerClass>DamageWorker_Stun</workerClass>
+		<deathMessage>{0} has been purified by San Qing Bell.</deathMessage>
+		<harmsHealth>false</harmsHealth>
+		<impactSoundType>MechBandShockwave</impactSoundType>
+		<defaultDamage>1</defaultDamage>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCenterEffecter>BlastSanQingShockwave</explosionCenterEffecter>
+		<explosionCellEffecter></explosionCellEffecter>
+		<explosionCellEffecterChance>0</explosionCellEffecterChance>
+		<explosionCellEffecterMaxRadius>0</explosionCellEffecterMaxRadius>
+		<soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+		<combatLogRules>Damage_MechBandShockwave</combatLogRules>
+		<causeStun>false</causeStun>
+	</DamageDef>
+
+	<!--尸毒-->
+	<DamageDef ParentName="BluntBase">
+		<defName>RI_Damage_ZombieInfection</defName>
+		<label>corpse poison</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} was torn apart by the undead.</deathMessage>
+		<hediff>Scratch</hediff>
+		<!-- 基础造成抓伤 -->
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+
+		<!-- ★★★ 核心：造成伤害时附加尸毒 ★★★ -->
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_ZombiePoison</hediff>
+				<!-- 每次造成伤害，增加 0.1 严重度。
+             假设僵尸攻击力10，这就增加了1.0严重度(直接致死)是不对的。
+             severityPerDamageDealt 是按"每点伤害"计算的。
+             如果我们想让一次攻击增加 0.15，且攻击力约为 8~10：
+             0.15 / 10 = 0.015 左右 -->
+				<inverseStatScaling>true</inverseStatScaling>
+				<severityPerDamageDealt>0.1</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Anesthetic needle wound -->
+  <RI_Dm_AnestheticSpikeWound.label>乌麻针刺</RI_Dm_AnestheticSpikeWound.label>
+  <!-- EN: Anesthetic needle wound. -->
+  <RI_Dm_AnestheticSpikeWound.description>乌麻针造成的小伤口。</RI_Dm_AnestheticSpikeWound.description>
+  <!-- EN: anesthetic spike scar -->
+  <RI_Dm_AnestheticSpikeWound.comps.HediffComp_GetsPermanent.permanentLabel>乌麻针刺</RI_Dm_AnestheticSpikeWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Spiked off -->
+  <RI_Dm_AnestheticSpikeWound.injuryProps.destroyedLabel>针刺</RI_Dm_AnestheticSpikeWound.injuryProps.destroyedLabel>
+  <!-- EN: Spiked out -->
+  <RI_Dm_AnestheticSpikeWound.injuryProps.destroyedOutLabel>针刺</RI_Dm_AnestheticSpikeWound.injuryProps.destroyedOutLabel>
+  <!-- EN: {0} in the {1} -->
+  <RI_Dm_AnestheticSpikeWound.labelNounPretty>{0}在{1}里面</RI_Dm_AnestheticSpikeWound.labelNounPretty>
+  
+  <!-- EN: Anesthetic -->
+  <RI_Hediff_Anesthetic.label>迷醉</RI_Hediff_Anesthetic.label>
+  <!-- EN: Qi infused with anesthetic properties enters the bloodstream, causing most living beings to lose consciousness. -->
+  <RI_Hediff_Anesthetic.description>带有麻醉效果的灵气从血液进入，大部分生物都会因此而失去意识。</RI_Hediff_Anesthetic.description>
+  <RI_Hediff_Anesthetic.descriptionCached>带有麻醉效果的灵气从血液进入，大部分生物都会因此而失去意识。</RI_Hediff_Anesthetic.descriptionCached>
+  
+  <!-- EN: Psychedelic gas -->
+  <RI_Hediff_PsychedelicDrugs.label>迷幻香</RI_Hediff_PsychedelicDrugs.label>
+  <!-- EN: Inhaled the psychedelic gas, causing dizziness and inducing either frenzy or confusion. -->
+  <RI_Hediff_PsychedelicDrugs.description>吸入了带有致幻效果的迷香，令人头晕目眩，还会导致狂暴或者迷茫。</RI_Hediff_PsychedelicDrugs.description>
+  
+</LanguageData>

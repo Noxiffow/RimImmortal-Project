@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Modern red lantern -->
+  <RI_Building_RedLantern_Electric.label>现代灯笼</RI_Building_RedLantern_Electric.label>
+  <!-- EN: A modern lantern, with a light bulb installed inside, requires electricity. -->
+  <RI_Building_RedLantern_Electric.description>一盏现代灯笼，内部装了灯泡，需要消耗电力。</RI_Building_RedLantern_Electric.description>
+  
+  <!-- EN: Red lantern -->
+  <RI_Building_RedLantern_Light.label>灯笼</RI_Building_RedLantern_Light.label>
+  <!-- EN: A red lantern, emit light and looks festive. -->
+  <RI_Building_RedLantern_Light.description>一盏红灯笼，可以发光，模样喜庆。</RI_Building_RedLantern_Light.description>
+  
+</LanguageData>

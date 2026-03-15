@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 八卦旗范围特效 -->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_ZombieMote_DetainGhostFlagRange</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>9999999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>RimZombieGirl.Graphic_MoteRotation</graphicClass>
+			<texPath>Things/Mote/RI_ZombieMote_DetainGhostFlagRange</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>12.5</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--拘鬼旗特效-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_ZombieMote_SpiritFlag</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/RI_FleckDef_BloodRingA</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!-- 拘鬼旗旗帜特效 -->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_ZombieMote_DetainGhostFlagFlashFlag</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>false</drawOffscreen>
+		<mote>
+			<fadeInTime>1</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<solidTime>0</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<unattachedDrawOffset>(0,0,1)</unattachedDrawOffset>
+		</mote>
+		<graphicData>
+			<graphicClass>RimZombieGirl.Graphic_MoteAlpha</graphicClass>
+			<texPath>Things/Mote/RI_FleckDef_BloodRingA</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

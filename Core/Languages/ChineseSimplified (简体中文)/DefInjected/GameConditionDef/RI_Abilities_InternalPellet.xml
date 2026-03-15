@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Jade tiger thunder -->
+  <EnergyThunder.label>玉虎鸣</EnergyThunder.label>
+  <!-- EN: Powerful thunderstorms. -->
+  <EnergyThunder.description>强大的仙法雷暴。</EnergyThunder.description>
+  <!-- EN: The thunderstorm subsided. -->
+  <EnergyThunder.endMessage>仙法雷暴平息了。</EnergyThunder.endMessage>
+  <!-- EN: A freak localized flashstorm is striking a small area with lightning. This can cause massive fires -->
+  <EnergyThunder.letterText>一场仙人引来的雷暴正以闪电轰击一小块区域，这可能导致大规模火灾！</EnergyThunder.letterText>
+  
+</LanguageData>

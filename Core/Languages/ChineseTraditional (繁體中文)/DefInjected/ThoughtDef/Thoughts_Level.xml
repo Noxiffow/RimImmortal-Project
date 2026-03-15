@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 止观 -->
+  <RI_Samatha.stages.0.label>止观</RI_Samatha.stages.0.label>
+  <!-- EN: 我只能听见自己的心跳声，我从未如此清晰地感受世界。 -->
+  <RI_Samatha.stages.0.description>我只能听见自己的心跳声，我从未如此清晰地感受世界。</RI_Samatha.stages.0.description>
+  
+  <!-- EN: Spiritual consciousness -->
+  <RI_Thought_Level1.stages.Spiritual_consciousness.label>灵识</RI_Thought_Level1.stages.Spiritual_consciousness.label>
+  <!-- EN: The consciousness born in your Core is in tune with your mind, but it is not yet in the air. -->
+  <RI_Thought_Level1.stages.Spiritual_consciousness.description>在你的丹田处诞生的意识与你心意相通，但目前尚且虚无缥缈。</RI_Thought_Level1.stages.Spiritual_consciousness.description>
+  
+  <!-- EN: Spiritual consciousness -->
+  <RI_Thought_Level2.stages.Spiritual_consciousness.label>灵识</RI_Thought_Level2.stages.Spiritual_consciousness.label>
+  <!-- EN: The consciousness born in your Core is in tune with you. -->
+  <RI_Thought_Level2.stages.Spiritual_consciousness.description>在你的丹田处诞生的意识与你心意相通。</RI_Thought_Level2.stages.Spiritual_consciousness.description>
+  
+  <!-- EN: Spiritual consciousness -->
+  <RI_Thought_Level3.stages.Spiritual_consciousness.label>灵识</RI_Thought_Level3.stages.Spiritual_consciousness.label>
+  <!-- EN: The consciousness born in your Core is in tune with you，which can help you block out negativity. -->
+  <RI_Thought_Level3.stages.Spiritual_consciousness.description>在你的丹田处诞生的意识与你心意相通，且能够帮你屏蔽负面情绪。</RI_Thought_Level3.stages.Spiritual_consciousness.description>
+  
+  <!-- EN: Spiritual consciousness -->
+  <RI_Thought_Level4.stages.Spiritual_consciousness.label>灵识</RI_Thought_Level4.stages.Spiritual_consciousness.label>
+  <!-- EN: The strong consciousness born in your Core is in tune with you. -->
+  <RI_Thought_Level4.stages.Spiritual_consciousness.description>在你的丹田处诞生的强大意识与你心意相通。</RI_Thought_Level4.stages.Spiritual_consciousness.description>
+  
+  <!-- EN: Realm upgrade -->
+  <RI_Thought_LevelUp.stages.Realm_upgrade.label>境界突破</RI_Thought_LevelUp.stages.Realm_upgrade.label>
+  <!-- EN: I became a higher Realm cultivator! Powerful Qi surged within me! -->
+  <RI_Thought_LevelUp.stages.Realm_upgrade.description>我的境界更上一层楼！强大的灵力在我体内涌动！</RI_Thought_LevelUp.stages.Realm_upgrade.description>
+  
+  <!-- EN: Upgrade Faliure! -->
+  <RI_Thought_Passion.stages.Upgrade_Faliure.label>突破失败</RI_Thought_Passion.stages.Upgrade_Faliure.label>
+  <!-- EN: Upgrade Faliure! -->
+  <RI_Thought_Passion.stages.Upgrade_Faliure.description>突破失败了。</RI_Thought_Passion.stages.Upgrade_Faliure.description>
+  
+  <!-- EN: Upgrade Sucess! -->
+  <RI_Thought_Positive.stages.Upgrade_Sucess.label>突破成功</RI_Thought_Positive.stages.Upgrade_Sucess.label>
+  <!-- EN: Upgrade Sucess! -->
+  <RI_Thought_Positive.stages.Upgrade_Sucess.description>突破成功了。</RI_Thought_Positive.stages.Upgrade_Sucess.description>
+  
+  <!-- EN: 青冥树抚慰 -->
+  <RI_Thought_QingMing.stages.0.label>青冥树抚慰</RI_Thought_QingMing.stages.0.label>
+  <!-- EN: 我能感受到来自青冥树的心灵抚慰 -->
+  <RI_Thought_QingMing.stages.0.description>我能感受到来自青冥树的心灵抚慰</RI_Thought_QingMing.stages.0.description>
+  
+</LanguageData>

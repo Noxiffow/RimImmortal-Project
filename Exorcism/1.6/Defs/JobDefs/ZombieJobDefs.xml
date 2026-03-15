@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <!-- 镇压僵尸工作 -->
+    <defName>RI_Zombie_Suppress</defName>
+    <driverClass>RimZombieGirl.JobDriver_SuppressZombie</driverClass>
+    <reportString>suppressing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  <JobDef>
+    <defName>Job_DigCursedGrave</defName>
+    <driverClass>RimZombieGirl.JobDriver_DigCursedGrave</driverClass>
+    <reportString>digging cursed grave</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <!-- <checkOverrideOnExpire>false</checkOverrideOnExpire> -->
+  </JobDef>
+</Defs>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——测试-->
+	<!--2固基境界——测试-->
+	<!--3化丹境界——测试-->
+	<!--4结丹境界——测试-->
+	<!--5灵丹境界——测试-->
+	<!--6化神境界——测试-->
+	<!--7元婴境界——测试-->
+	<!--8大成境界——测试-->
+	<!--9出窍境界——测试-->
+
+	<!--====================炼体法门PhysicalStrengthen====================-->
+
+	<!--凝气境界——结跏趺坐-->
+	<AbilityDef  ParentName="RI_PsycastBase" >
+		<defName>RI_Activity_LotusPosition</defName>
+		<label>Lotus position</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Qi Condensation Realm of the Body Refining Method\n\n&lt;/color&gt;Spiritual Energy Consumption: 0.33/second\n\nSitting in lotus position is a basic technique that improves the perception of spiritual energy and meridians in the body by sitting cross-legged. A skilled cultivator can consciously compress the arteries and slow down the blood flow through sitting in lotus position, so that the speed of practice after meditation can be accelerated, and small wounds can automatically recover over time.\n\nThis technique can be turned on and off freely, and spiritual energy will be slowly consumed when it is turned on.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_LotusPosition</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_LotusPositionHediff</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>False</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Activity_LotusPosition_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<fleckDef>RI_lotusPosition</fleckDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--固基境界——金刚拳-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_VajraBoxing</defName>
+		<label>Vajra punch</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Solid Foundation Realm of the Body Refining Method\n\n&lt;/color&gt;The Vajra Fist is a set of traditional ancient martial arts, with simple and powerful fists, fierce and decisive. \n\nThe basic damage of this technique is: 2, and each level of combat skill increases the damage by +2. \n\n(Hint: You can use the shortcut key P to hit continuously)</description>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hotKey>Misc12</hotKey>
+		<aiCanUse>true</aiCanUse>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_VajraBoxing</iconPath>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>0</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>50</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityVajraBoxing">
+				<beatback>false</beatback>
+				<damage>2</damage>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_VajraBoxing_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-5</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化丹境界——撑筋拔骨-->
+	<AbilityDef  ParentName="RI_PsycastBase" >
+		<defName>RI_Ability_StretchingExercise</defName>
+		<label>Stretching exercise</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Dan realm of the Body Refining Method\n\n&lt;/color&gt;The bones are straight and the tendons are soft, and the qi and blood flow smoothly. By introducing spiritual energy into the meridians to assist in the training of tendons and bones, the body can feel lighter and the force can be more smooth.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_StretchingExercise</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_StretchingExerciseHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_StretchingExercise_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<fleckDefs>
+					<li>RI_exercise</li>
+					<li>RI_exercise_1</li>
+				</fleckDefs>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-25</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化丹境界——十峰掌-->
+	<AbilityDef>
+		<defName>RI_NeutronPluse</defName>
+		<label>Palm wind blast</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Danhua realm of the Body Refining Method\n\n&lt;/color&gt;By injecting spiritual energy into the palms, a powerful Qi bursts out during the fierce slapping, killing the enemy. \n\nThe basic damage of this technique is: 2, and each level of combat skill increases the damage by +2.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_NeutronPluse</iconPath>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>ChargeLance_Fire</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!--特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_AoEFist">
+				<compClass>WhoXiuXian.Abilities.CompAbilityEffect_AoEFist</compClass>
+				<range>7.9</range>
+				<lineWidthEnd>9</lineWidthEnd>
+				<SpawnFleck>CMC_NeutronBurst</SpawnFleck>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_NeutronPluse_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<scale>1.2</scale>
+				<fleckDefs>
+					<li>RI_BloodBoilAsura</li>
+					<li>RI_BloodBoilAsura_1</li>
+				</fleckDefs>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<EffecterDef>
+		<defName>CMC_PulseWave</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>0.15</positionRadius>
+				<fleckDef>CMC_SparkFlash_Blue</fleckDef>
+				<chancePerTick>0.9</chancePerTick>
+				<speed>13.5</speed>
+				<scale>2.3~2.7</scale>
+				<angle>-15~15</angle>
+				<positionLerpFactor>0.85</positionLerpFactor>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>0.6</positionRadius>
+				<fleckDef>CMC_SparkFlash</fleckDef>
+				<chancePerTick>0.56</chancePerTick>
+				<scale>1.2~1.4</scale>
+				<positionLerpFactor>0.65</positionLerpFactor>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<positionRadius>0.6</positionRadius>
+				<fleckDef>CMC_SparkFlash</fleckDef>
+				<chancePerTick>0.76</chancePerTick>
+				<scale>1.8~1.9</scale>
+				<positionLerpFactor>0.65</positionLerpFactor>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--结丹境界——一苇轻功-->
+	<AbilityDef Name="QuickJump">
+		<defName>RI_Ability_QuickJump</defName>
+		<label>YiWei QingKung</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Body Refining Method, Jindan Realm\n\n&lt;/color&gt;Yiwei Qinggong is a technique that allows a person to burst out with super jumping power in a short period of time. It is said that if practiced to the extreme, one can touch the water with his toes and cross the river.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_QuickJump</iconPath>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>WhoXiuXian.RI_AbilityVerb_QuickJump</verbClass>
+			<label>YiWei QingKung</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.1</warmupTime>
+			<range>15</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_QuickJump_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-12</rEnergy>
+			</li>
+		</comps>
+		<jobDef>CastJump</jobDef>
+	</AbilityDef>
+
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>RI_QuickJumpFlyer</defName>
+		<thingClass>WhoXiuXian.RI_QuickJumpFlyer</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>0.01</flightDurationMin>
+			<flightSpeed>10000</flightSpeed>
+		</pawnFlyer>
+	</ThingDef>
+
+	<!--灵丹境界——分筋错骨手-->
+
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Activity_FJCGS</defName>
+		<label>Joint lock</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Spiritual Pill Realm of the Body Refining Method\n\n&lt;/color&gt;A domineering technique that can subdue a person in an instant through joint techniques. This move is extremely lethal to the human body, but for large animals or creatures without pain, this move can only leave some bruises.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_FJCGS</iconPath>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<targetRequired>True</targetRequired>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>5</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>5</range>
+			<targetParams>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetMechs>False</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityFJCG">
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Activity_FJCGS_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-25</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--灵丹境界——气血翻涌-->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_BloodBoil</defName>
+		<label>Blood boil</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Spiritual Pill Realm of the Body Refining Method\n\n&lt;/color&gt;Auxiliary technique. After using this technique, you will be given a "madness" buff that lasts for 3 hours, greatly improving your melee ability and speed. However, after the buff ends, you will fall into a weak state, with reduced consciousness and reduced operation.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_BloodBoil</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_KY</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_BloodBoil_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<scale>1.2</scale>
+				<fleckDefs>
+					<li>RI_BloodBoilAsura</li>
+					<li>RI_BloodBoilAsura_1</li>
+				</fleckDefs>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-35</rEnergy>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_ExHediffAdd">
+				<compClass>WhoXiuXian.Abilities.CompAbilityEffect_ExHediffAdd</compClass>
+				<hediffDef>RI_ShadowWithMove</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化神境界——寸拳-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_OneInchPunch</defName>
+		<label>One-Inch punch</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Body Refining Method, Spiritual Transformation Realm\n\n&lt;/color&gt;Inch Fist is a kind of boxing technique inherited from ancient wars, which emphasizes the burst of super high damage in a very short distance. This move is extremely powerful, but it also consumes a lot of spiritual energy. \n\nThe basic damage of this technique is: 10, and each level of combat skill is increased by +2 damage.</description>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_OneInchPunch</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<!--<Ability_Duration>3000</Ability_Duration>-->
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>50</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityVajraBoxing">
+				<beatback>true</beatback>
+				<damage>10</damage>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_OneInchPunch_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-45</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--元婴境界——焚天-->
+	<AbilityDef Name="fentian">
+		<defName>RI_Ability_IncendiarySky</defName>
+		<label>Incendiary sky</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Nascent Soul stage of the Body Refining Method\n\n&lt;/color&gt;A palm technique that descends from the sky, infusing the whole body's spiritual energy into the palms in the air, fiercely slamming the ground to knock the enemy away. From a distance, the fire looks like an explosion, so it is named Incendiary sky.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_IncendiarySky</iconPath>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>WhoXiuXian.RI_AbilityVerb_BurningEarth</verbClass>
+			<label>Incendiary sky</label>
+			<violent>true</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<range>19.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_IncendiarySky_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-80</rEnergy>
+			</li>
+		</comps>
+		<jobDef>CastJump</jobDef>
+	</AbilityDef>
+
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>RI_BurningEarthFlyer</defName>
+		<thingClass>WhoXiuXian.RI_BurningEarthFlyer</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>0.25</flightDurationMin>
+			<flightSpeed>20</flightSpeed>
+			<heightFactor>5</heightFactor>
+		</pawnFlyer>
+	</ThingDef>
+
+	<!--大成境界——修罗-->
+	<AbilityDef  ParentName="RI_PsycastBase" >
+		<defName>RI_Ability_Asura</defName>
+		<label>Asura</label>
+		<description>&lt;color=#ED7434&gt;This technique is learned in the Great Accomplishment Realm of Body Refining\n\n&lt;/color&gt;Entering the Shura state, greatly improving the melee ability and the overall physical state, reducing the consumption of techniques, and being almost invincible. However, when the buff is over, it will enter an extremely weak state, and the combat power is not as good as that of ordinary people.</description>
+		<iconPath>UI/Abilities/PhysicalStrengthen/RI_Ability_Asura</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>240</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_AsuraHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_ExHediffAdd">
+				<compClass>WhoXiuXian.Abilities.CompAbilityEffect_ExHediffAdd</compClass>
+				<hediffDef>RI_ShadowWithMove</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_Asura_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<!--触发特效-->
+				<scale>2</scale>
+				<fleckDefs>
+					<li>RI_BloodBoilAsura</li>
+					<li>RI_BloodBoilAsura_1</li>
+				</fleckDefs>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-35</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
+

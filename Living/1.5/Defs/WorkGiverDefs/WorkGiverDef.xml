@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========蚕卵箱对应的WorkGiverDef========-->
+
+	<WorkGiverDef>
+		<defName>TakeRI_Resource_SilkwormCocoon</defName>
+		<label>Take silk worm cocoon</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take silk worm cocoon</verb>
+		<gerund>Take silk worm cocoon</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_SilkwormRearingBox</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>FillRI_Resource_SilkwormEgg</defName>
+		<label>Fill worm egg</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill worm egg</verb>
+		<gerund>Fill worm egg</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_MulberryLeaf</AddThingDef>
+				<!--通过这个modExtensions设置填充物是什么-->
+				<BuildingDef>RI_Building_SilkwormRearingBox</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+
+	<!--========冰蚕卵箱对应的WorkGiverDef========-->
+
+	<WorkGiverDef>
+		<defName>TakeRI_Resource_IceSilkwormCocoon</defName>
+		<label>Take ice silk worm cocoon</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take ice silk worm cocoon</verb>
+		<gerund>Take ice silk worm cocoon</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_IceSilkwormRearingBox</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>FillRI_Resource_IceSilkwormEgg</defName>
+		<label>Fill worm egg</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill worm egg</verb>
+		<gerund>Fill worm egg</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_MulberryLeaf</AddThingDef>
+				<BuildingDef>RI_Building_IceSilkwormRearingBox</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<!--========竹叶青酿造桶对应的WorkGiverDef========-->
+
+	<WorkGiverDef>
+		<defName>TakeRI_Building_BambooLeafWineBarrel</defName>
+		<label>Take Bamboo leaf wine</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take Bamboo leaf wine</verb>
+		<gerund>Take Bamboo leaf wine</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_BambooLeafWineBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>FillRI_Building_BambooLeafWineBarrel</defName>
+		<label>Fill Fermentation liquid of "Bamboo leaf wine"</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill Fermentation liquid of "Bamboo leaf wine"</verb>
+		<gerund>Fill Fermentation liquid of "Bamboo leaf wine"</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_BambooLeafWineFermentedLiquor</AddThingDef>
+				<BuildingDef>RI_Building_BambooLeafWineBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<!--========稻酿酿造桶对应的WorkGiverDef========-->
+
+	<WorkGiverDef>
+		<defName>TakeRI_Building_GrainLiquorBarrel</defName>
+		<label>Take Grain liquor</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take Grain liquor</verb>
+		<gerund>Take Grain liquor</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_GrainLiquorBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>FillRI_Building_GrainLiquorBarrel</defName>
+		<label>Fill Fermentation liquid of "Grain liquor"</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill Fermentation liquid of "Grain liquor"</verb>
+		<gerund>Fill Fermentation liquid of "Grain liquor"</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_GrainLiquorFermentedLiquor</AddThingDef>
+				<BuildingDef>RI_Building_GrainLiquorBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<!--========醉春风酿造桶对应的WorkGiverDef========-->
+
+	<WorkGiverDef>
+		<defName>TakeRI_Building_DrunkenSpringBreezeBarrel</defName>
+		<label>Take Drunken spring breeze</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take Drunken spring breeze</verb>
+		<gerund>Take Drunken spring breeze</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_DrunkenSpringBreezeBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>FillRI_Building_DrunkenSpringBreezeBarrel</defName>
+		<label>Fill Fermentation liquid of "Drunken spring breeze"</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill Fermentation liquid of "Drunken spring breeze"</verb>
+		<gerund>Fill Fermentation liquid of "Drunken spring breeze"</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_DrunkenSpringBreezeFermentedLiquor</AddThingDef>
+				<BuildingDef>RI_Building_DrunkenSpringBreezeBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<!--========银芝药酒酿造桶对应的WorkGiverDef========-->
+
+	<WorkGiverDef MayRequire="RI.RimImmortal.Core">
+		<defName>TakeRI_Building_LingzhiBrandyBarrel</defName>
+		<label>Take Lingzhi brandy</label>
+		<giverClass>RI_Living.WorkGiver_TakeRI_Resource_SilkwormCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>Take Lingzhi brandy</verb>
+		<gerund>Take Lingzhi brandy</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<BuildingDef>RI_Building_LingzhiBrandyBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+	<WorkGiverDef MayRequire="RI.RimImmortal.Core">
+		<defName>FillRI_Building_LingzhiBrandyBarrel</defName>
+		<label>Fill Fermentation liquid of "Lingzhi brandy"</label>
+		<giverClass>RI_Living.WorkGiver_RI_Resource_SilkwormEgg</giverClass>
+		<workType>Hauling</workType>
+		<verb>Fill Fermentation liquid of "Lingzhi brandy"</verb>
+		<gerund>Fill Fermentation liquid of "Lingzhi brandy"</gerund>
+		<priorityInType>19</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+		<modExtensions>
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<AddThingDef>RI_Resource_LingzhiBrandyFermentedLiquor</AddThingDef>
+				<BuildingDef>RI_Building_LingzhiBrandyBarrel</BuildingDef>
+				<!--填对应的建筑，必需-->
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+
+</Defs>

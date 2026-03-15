@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <NzRI_Bj_Thing_DyeingEvil>(染煞的)</NzRI_Bj_Thing_DyeingEvil>
+
+    <NzRI_Bj_Thing_MeleeWeaponAddComp_NoTarget>目标位置没有物品</NzRI_Bj_Thing_MeleeWeaponAddComp_NoTarget>
+
+    <NzRI_Bj_Thing_MeleeWeaponAddComp_NotMeleeWeapon>目标不是近战武器</NzRI_Bj_Thing_MeleeWeaponAddComp_NotMeleeWeapon>
+</LanguageData>

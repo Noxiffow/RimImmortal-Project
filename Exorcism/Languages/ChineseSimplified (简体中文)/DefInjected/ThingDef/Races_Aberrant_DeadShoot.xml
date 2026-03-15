@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dead shooter -->
+  <RI_EvilCreature_DeadShoot_Race.label>死眼</RI_EvilCreature_DeadShoot_Race.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture. -->
+  <RI_EvilCreature_DeadShoot_Race.description>TODO</RI_EvilCreature_DeadShoot_Race.description>
+  <!-- EN: head -->
+  <RI_EvilCreature_DeadShoot_Race.tools.head.label>头</RI_EvilCreature_DeadShoot_Race.tools.head.label>
+  
+</LanguageData>

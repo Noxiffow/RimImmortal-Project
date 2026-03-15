@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: charm bandage -->
+  <RI_ZombieApparel_BandageBody.label>符咒绷带</RI_ZombieApparel_BandageBody.label>
+  <!-- EN: Several strips of cloth wrapped around the body, barely covering one’s privacy. A warding talisman is affixed to the front, slightly suppressing the bloodlust of a necro. -->
+  <RI_ZombieApparel_BandageBody.description>几根包裹在身上的布条，稍微遮挡住隐私。正面贴上了镇邪符咒，可以略微压制冥尸的嗜血欲望。</RI_ZombieApparel_BandageBody.description>
+  
+  <!-- EN: bandage head -->
+  <RI_ZombieApparel_BandageHead.label>绷带头</RI_ZombieApparel_BandageHead.label>
+  <!-- EN: A simple strip of cloth worn around the head, mainly used to maintain visual consistency with the body wrappings. -->
+  <RI_ZombieApparel_BandageHead.description>一条简单的布条，主要用于和裹在身上的布条保持视觉统一。</RI_ZombieApparel_BandageHead.description>
+  
+  <!-- EN: necro-restraint clothing -->
+  <RI_ZombieApparel_RestraintClothing.label>役冥服</RI_ZombieApparel_RestraintClothing.label>
+  <!-- EN: A specialized garment developed using aberrant techniques. Allows others to more easily restrain and suppress a necro. -->
+  <RI_ZombieApparel_RestraintClothing.description>结合镇邪技术，研制出的特殊衣物。可以方便其他人对冥尸进行压制。</RI_ZombieApparel_RestraintClothing.description>
+  
+  <!-- EN: necro-restraint crown -->
+  <RI_ZombieApparel_RestraintHat.label>役冥冠</RI_ZombieApparel_RestraintHat.label>
+  <!-- EN: A special headpiece developed using aberrant techniques. Allows others to more easily restrain and suppress a necro. -->
+  <RI_ZombieApparel_RestraintHat.description>结合镇邪技术，研制出的特殊帽子。可以方便其他人对冥尸进行压制。</RI_ZombieApparel_RestraintHat.description>
+  
+  <!-- EN: necro-restraint suit -->
+  <RI_ZombieApparel_RestraintSuit.label>役冥袍</RI_ZombieApparel_RestraintSuit.label>
+  <!-- EN: A specialized robe developed using aberrant techniques. Greatly increases the efficiency of suppressing a necro. -->
+  <RI_ZombieApparel_RestraintSuit.description>结合镇邪技术，研制出的特殊衣物。可以大大增加压制冥尸的效率。</RI_ZombieApparel_RestraintSuit.description>
+  
+  <!-- EN: necro-restraint underwear -->
+  <RI_ZombieApparel_RestraintUnder.label>役冥内衣</RI_ZombieApparel_RestraintUnder.label>
+  <!-- EN: A specialized undergarment developed using aberrant techniques.Allows others to more easily restrain and suppress a necro. -->
+  <RI_ZombieApparel_RestraintUnder.description>结合镇邪技术，研制出的特殊内衣。可以方便其他人对冥尸进行压制。</RI_ZombieApparel_RestraintUnder.description>
+  
+  <!-- EN: soul-suppression charm -->
+  <RI_ZombieApparel_SealCharm.label>镇魄符</RI_ZombieApparel_SealCharm.label>
+  <!-- EN: A talisman affixed to the forehead of a necrocorpse. It carries uncanny effects capable of suppressing the necro. -->
+  <RI_ZombieApparel_SealCharm.description>贴在冥尸额头的符咒，带有神奇的效果，可以压制冥尸。</RI_ZombieApparel_SealCharm.description>
+  
+</LanguageData>

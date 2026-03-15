@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--道士童年背景故事-->
+
+	<!--
+	<Melee>5</Melee>
+	<Shooting>5</Shooting>
+	<Plants>8</Plants>
+	<Mining>3</Mining>
+	<Cooking>7</Cooking>
+	<Construction>-4</Construction>
+	<Crafting>-4</Crafting>
+	<Medicine>1</Medicine>
+	<Animals>4</Animals>
+	-->
+
+	<!--辛勤童子-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistChildA</defName>
+		<title>diligent acolyte</title>
+		<titleShort>acolyte</titleShort>
+		<description>[PAWN_nameDef] was sent into the Daoist order by [PAWN_possessive] parents at a young age and lived under the guidance of a master. Each day, [PAWN_pronoun] hauled water, chopped firewood, and swept the courtyards, earning the chance to cultivate through hard labor.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>2</Plants>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--抄经学徒-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistChildB</defName>
+		<title>scribe apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>After entering the Daoist order, [PAWN_nameDef] spent days and nights copying scriptures, wearing calluses into [PAWN_possessive] fingers. The monotonous routine laid a solid foundation in literacy and fostered a calm, steady temperament.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--药园童子-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistChildC</defName>
+		<title>herb garden novice</title>
+		<titleShort>novice</titleShort>
+		<description>[PAWN_nameDef] was assigned to tend the herb gardens from an early age, caring for plants and learning to identify medicinal herbs. Through planting in spring, harvesting in summer and autumn, and storing in winter, [PAWN_pronoun] gradually acquired basic knowledge of herbal medicine and decoctions.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>4</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--自律童子-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistChildD</defName>
+		<title>disciplined novice</title>
+		<titleShort>novice</titleShort>
+		<description>Joining the Daoist order in childhood, [PAWN_nameDef] was tasked with striking the morning bell and evening drum. Amid the resonant chimes, [PAWN_pronoun] gradually developed habits of discipline and regularity.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--道门学徒-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistChildE</defName>
+		<title>Daoist apprentice</title>
+		<titleShort>apprentice</titleShort>
+		<description>[PAWN_nameDef] lived a life of memorizing precepts, where even minor mistakes would invite reprimands from senior disciples. In the quiet atmosphere of the mountains, [PAWN_pronoun] seemed to grasp a faint sense of the Dao’s direction.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

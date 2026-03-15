@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 酒的前置 -->
+	<ThingDef ParentName="RI_DrugBase" Name="RI_WineBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<descriptionHyperlinks>
+			<HediffDef>AlcoholHigh</HediffDef>
+			<HediffDef>AlcoholTolerance</HediffDef>
+		</descriptionHyperlinks>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.1</Nutrition>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Tea</li>
+		</thingCategories>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.2</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.01</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>Bottle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+		<allowedArchonexusCount>150</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--发酵液前置-->
+
+	<ThingDef ParentName="ResourceBase" Name="RI_FermentedLiquorBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_FermentedLiquor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Brewery</li>
+				<li>RI_Building_FoodPrepareTable</li>
+			</recipeUsers>
+			<researchPrerequisite>RI_Research_Brewing</researchPrerequisite>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workAmount>500</workAmount>
+			<workSkill>Cooking</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+			<bulkRecipeCount>4</bulkRecipeCount>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--酒曲-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_WineYeast</defName>
+		<label>Wine yeast</label>
+		<description>The wine yeast made from grains is a brewing ingredient composed of starch, sugars, and yeast.\n\nWith the help of yeast, the sugars within the grains are broken down into ethanol, giving birth to the earliest forms of alcohol. Specially crafted yeast greatly accelerate this process.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_WineYeast</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>5</MarketValue>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>0.01</Mass>
+			<Nutrition>0.2</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<stackLimit>75</stackLimit>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<pathCost>10</pathCost>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<preferability>RawBad</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>-30</optimalityOffsetHumanlikes>
+		</ingestible>
+	</ThingDef>
+
+	<!--竹叶青-->
+	<ThingDef ParentName="RI_WineBase">
+		<defName>RI_Alcohol_BambooLeafWine</defName>
+		<label>Bamboo leaf wine</label>
+		<description>Green Bamboo in a Shaded Path, Vines Brushing One’s Robe.\n\nBamboo leaf wine is a type of baijiu infused with bamboo leaves during the brewing process. With an alcohol content around 35%.\n\nIt boasts a clear, pale green body and a faint bamboo fragrance, offering the drinker the feeling of stepping into a deep bamboo grove.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_BambooLeafWine</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Alcohol_BambooLeafWine</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_Brewing</researchPrerequisite>
+		</recipeMaker>
+		<!--假装有原料-->
+		<costList>
+			<RI_Resource_BambooLeafWineFermentedLiquor>1</RI_Resource_BambooLeafWineFermentedLiquor>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_BambooLeafWine</hediffDef>
+					<severity>0.75</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<toleranceChemical>Alcohol</toleranceChemical>
+					<severity>0.01</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+			<li>RI_Alcohol</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--竹叶青发酵液-->
+	<ThingDef ParentName="RI_FermentedLiquorBase">
+		<defName>RI_Resource_BambooLeafWineFermentedLiquor</defName>
+		<label>Fermentation liquid of "Bamboo leaf wine"</label>
+		<description>Fermentation liquid of "Bamboo Leaf Green", cooked bamboo and rice are mixed together, then fermented with wine yeast.</description>
+		<costList>
+			<RawRice>10</RawRice>
+			<RI_Resource_RawBamboo>10</RI_Resource_RawBamboo>
+			<RI_Resource_WineYeast>1</RI_Resource_WineYeast>
+		</costList>
+	</ThingDef>
+
+	<!--稻酿-->
+	<ThingDef ParentName="RI_WineBase">
+		<defName>RI_Alcohol_GrainLiquor</defName>
+		<label>Grain liquor</label>
+		<description>Lanling Fine Wine, Golden Fragrance; Amber Light in a Jade Cup.\n\nRice Brew, true to its name, is crafted purely from rice. After aging, it gradually deepens from pale yellow to a tempting amber hue. It holds an alcohol content of around 20%.\n\nGrain liquor is a type of yellow wine. It has a rich, mellow and sweet taste and is known as the "meat wine".</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_GrainLiquor</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Alcohol_GrainLiquor</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>35</MarketValue>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_Brewing</researchPrerequisite>
+		</recipeMaker>
+		<!--假装有原料-->
+		<costList>
+			<RI_Resource_GrainLiquorFermentedLiquor>1</RI_Resource_GrainLiquorFermentedLiquor>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_GrainLiquor</hediffDef>
+					<severity>0.75</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.05</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<toleranceChemical>Alcohol</toleranceChemical>
+					<severity>0.005</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+			<li>RI_Alcohol</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--稻酿发酵液-->
+	<ThingDef ParentName="RI_FermentedLiquorBase">
+		<defName>RI_Resource_GrainLiquorFermentedLiquor</defName>
+		<label>Fermentation liquid of "Grain liquor"</label>
+		<description>Fermentation liquid of "Grain liquor", cooked rice is mixed and fermented with wine yeast.</description>
+		<costList>
+			<RawRice>20</RawRice>
+			<RI_Resource_WineYeast>1</RI_Resource_WineYeast>
+		</costList>
+	</ThingDef>
+
+	<!--醉春风-->
+	<ThingDef ParentName="RI_WineBase">
+		<defName>RI_Alcohol_DrunkenSpringBreeze</defName>
+		<label>Drunken spring breeze</label>
+		<description>Spring Winds and Fine Rain at the Fall of Blossoms, Whipping the Horse to Drink at the Tavern.\n\nDrunken Spring Breeze is a low-alcohol brew that can be made from any kind of grain. It has a cloudy body and a mild alcohol content of about 5%.\n\nIts refreshing aroma and low strength have made it especially popular among female drinkers.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_DrunkenSpringBreeze</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Alcohol_DrunkenSpringBreeze</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>24</MarketValue>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_Brewing</researchPrerequisite>
+		</recipeMaker>
+		<!--假装有原料-->
+		<costList>
+			<RI_Resource_DrunkenSpringBreezeFermentedLiquor>1</RI_Resource_DrunkenSpringBreezeFermentedLiquor>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_DrunkenSpringBreeze</hediffDef>
+					<severity>0.75</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.01</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+			<li>RI_Alcohol</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--醉春风发酵液-->
+	<ThingDef ParentName="RI_FermentedLiquorBase">
+		<defName>RI_Resource_DrunkenSpringBreezeFermentedLiquor</defName>
+		<label>Fermentation liquid of "Drunken spring breeze"</label>
+		<description>Fermentation liquid of "Drunken spring breeze", cooked crops is mixed and fast fermented with wine yeast.</description>
+		<costList>
+			<RI_Resource_WineYeast>1</RI_Resource_WineYeast>
+			<RawRice>10</RawRice>
+		</costList>
+	</ThingDef>
+
+	<!--银芝药酒-->
+	<ThingDef ParentName="RI_WineBase" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Alcohol_LingzhiBrandy</defName>
+		<label>Lingzhi brandy</label>
+		<description>Silver Ganoderma Elixir is said to originate from the secret recipe of an immortal fond of drinking. In his twilight years, he freely shared the formula.\n\nThis medicinal liquor incorporates Ganoderma and Silver-Core Ginseng, resulting in a dry taste with a slight herbal note. The alcohol content is around 20%.\n\nIts unique feature is the ability to lightly enhance a cultivator’s sensitivity to Qi, as well as relieve pain and promote blood circulation — qualities that have provided countless drunken cultivators a fine excuse to buy more.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_LingzhiBrandy</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Alcohol_LingzhiBrandy</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_Brewing</researchPrerequisite>
+		</recipeMaker>
+		<!--假装有原料-->
+		<costList>
+			<RI_Resource_LingzhiBrandyFermentedLiquor>1</RI_Resource_LingzhiBrandyFermentedLiquor>
+		</costList>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_LingzhiBrandy</hediffDef>
+					<severity>0.75</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.3</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<toleranceChemical>Alcohol</toleranceChemical>
+					<severity>0.015</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+			<li>RI_Alcohol</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--银芝药酒发酵液-->
+	<ThingDef ParentName="RI_FermentedLiquorBase" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Resource_LingzhiBrandyFermentedLiquor</defName>
+		<label>Fermentation liquid of "Lingzhi brandy"</label>
+		<description>Fermentation liquid of "Lingzhi brandy", cooked Lingzhi, Silver Ginseng, and rice are mixed together, then fermented with wine yeast.</description>
+		<costList>
+			<RI_Resource_LingZhi>3</RI_Resource_LingZhi>
+			<RI_Resource_SilverGinseng>2</RI_Resource_SilverGinseng>
+			<RI_Resource_WineYeast>1</RI_Resource_WineYeast>
+		</costList>
+	</ThingDef>
+
+	<!--猴儿酿——无法酿造，只能买-->
+	<ThingDef ParentName="RI_WineBase">
+		<defName>RI_Alcohol_MonkeyWine</defName>
+		<label>Monkey's wine</label>
+		<description>Monkey's wine is a mysterious fruit wine. Legend has it that a group of monkeys, having gained intelligence, gathered fruits into hollow trees, letting them ferment naturally, thus creating this brew.\n\nIt carries a rich fruity aroma and an alcohol content between 3% and 5%. Some drunkards claim the wine possesses various wondrous effects, though such tales are difficult to verify.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_MonkeyWine</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Alcohol_MonkeyWine</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>120</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_MonkeyWine</hediffDef>
+					<severity>0.75</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.15</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>RI_Alcohol</li>
+		</tradeTags>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ═══════════════════════ FAMILY MARKERS ═══════════════════════════ -->
+    <!-- These two hediffs identify which path family a cultivator belongs to.
+         They carry no stats — all stat effects live in the sub-path hediffs below.
+         Applied alongside the sub-path hediff when a cultivator commits to a path. -->
+
+    <HediffDef>
+        <defName>Hediff_RI_CP_OrthodoxPath</defName>
+        <label>orthodox cultivation path</label>
+        <description>This cultivator walks the path of orthodoxy — steady, principled, aligned with heaven and earth.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Hediff_RI_CP_DemonicPath</defName>
+        <label>demonic cultivation path</label>
+        <description>This cultivator walks the demon's road — consuming, hungering, marked by darkness.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+    </HediffDef>
+
+    <!-- ═══════════════════════ ORTHODOX SUB-PATHS ════════════════════════ -->
+
+    <!-- Martial Orthodoxy — disciplined combat cultivation.
+         Qi flows as precise, cutting force. The body is a weapon;
+         every breath sharpens it. Neither the sword nor the fist —
+         the will behind both. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_MartialOrthodoxy</defName>
+        <label>martial orthodoxy path</label>
+        <description>This cultivator walks the warrior's road within the orthodox tradition. Their qi flows not as a river but as an edge — clean, decisive, unstoppable. Others sense discipline in every movement.
+
+Their strikes carry the weight of trained will. Their eyes gleam with clear, focused light.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.15</GI_EnergyGainEff>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+                    <MeleeHitChance>0.08</MeleeHitChance>
+                    <ShootingAccuracyPawn>0.08</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_OrthodoxEyeGlow"/>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_QiDeviationMonitor"/>
+        </comps>
+    </HediffDef>
+
+    <!-- Tranquil Sage — inner clarity cultivation.
+         The mind becomes a still lake. Disturbances pass over it
+         but do not disturb the depths. Power through absolute calm. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_TranquilSage</defName>
+        <label>tranquil sage path</label>
+        <description>This cultivator walks the sage's road — still, clear, unshakeable. Their qi moves without haste or waste. Those who speak with them feel inexplicably at ease.
+
+They do not rush. They do not falter. Their foundation is diamond.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.12</GI_EnergyGainEff>
+                    <GlobalLearningFactor>1.20</GlobalLearningFactor>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+                    <PsychicSensitivity>0.10</PsychicSensitivity>
+                </statOffsets>
+                <capMods>
+                    <li><capacity>Consciousness</capacity><offset>0.08</offset></li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_OrthodoxEyeGlow"/>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_QiDeviationMonitor"/>
+        </comps>
+    </HediffDef>
+
+    <!-- ═══════════════════════ DEMONIC SUB-PATHS ═════════════════════════ -->
+
+    <!-- Merciless Demon — endurance and body refinement.
+         The flesh becomes stone. The blood becomes oil.
+         A Merciless Demon does not die easily. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_MercilessDemon</defName>
+        <label>merciless demon path</label>
+        <description>This cultivator has chosen the path of the iron body — refining through pain, hardship, and relentless aggression. Their qi fortifies the flesh rather than burning through it. They are difficult to kill.
+
+Their eyes glow with a deep, steady crimson.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.40</GI_EnergyGainEff>
+                    <InjuryHealingFactor>1.30</InjuryHealingFactor>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>0.06</MentalBreakThreshold>
+                    <PsychicSensitivity>0.15</PsychicSensitivity>
+                    <PainShockThreshold>0.10</PainShockThreshold>
+                    <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+                <EyeColor>(0.85, 0.05, 0.05)</EyeColor>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_QiDeviationMonitor"/>
+        </comps>
+    </HediffDef>
+
+    <!-- Abyssal Demon — raw qi consumption and power.
+         The cultivator does not gather qi — they become a hunger.
+         Staggering power. Real cost to sanity. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_AbyssalDemon</defName>
+        <label>abyssal demon path</label>
+        <description>This cultivator has surrendered to the void's hunger. Their qi does not flow — it devours. The dantian becomes an abyss that draws energy from everything nearby. The power output is extreme.
+
+The mind pays. Their eyes burn with a deep, hungering crimson.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.70</GI_EnergyGainEff>
+                    <WorkSpeedGlobal>1.05</WorkSpeedGlobal>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>0.12</MentalBreakThreshold>
+                    <PsychicSensitivity>0.40</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+                <EyeColor>(0.65, 0.00, 0.00)</EyeColor>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_QiDeviationMonitor"/>
+        </comps>
+    </HediffDef>
+
+</Defs>

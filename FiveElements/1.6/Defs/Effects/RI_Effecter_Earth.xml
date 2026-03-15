@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--技能选中特效——土行——坤土-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Earth_Cultivation</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/EarthElement/RI_Mote_Earth_Cultivation</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<!--<color>(0.54,0.45,0.33)</color>-->
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——土行——基础-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Earth_Normal</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/EarthElement/RI_Mote_Earth_Normal</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<!--<color>(0.54,0.45,0.33)</color>-->
+			<drawSize>5</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——土行——地震-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Earth_Earthquake</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/EarthElement/RI_Mote_Earth_Earthquake</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<!--<color>(0.54,0.45,0.33)</color>-->
+			<drawSize>5</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——土行——土之领域-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Earth_EarthDomain</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+			<fadeInTime>0.75</fadeInTime>
+			<fadeOutTime>0.75</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/EarthElement/RI_Mote_Earth_EarthDomain</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<!--<color>(0.54,0.45,0.33)</color>-->
+			<drawSize>8</drawSize>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

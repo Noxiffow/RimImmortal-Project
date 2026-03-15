@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Bamboo energy blade -->
+  <RI_Bullet_JadeBambooBlade.label>竹剑气</RI_Bullet_JadeBambooBlade.label>
+  
+  <!-- EN: Bamboo energy knife -->
+  <RI_Bullet_JadeBambooFlyingKnife.label>竹飞刀</RI_Bullet_JadeBambooFlyingKnife.label>
+  
+  <!-- EN: Bamboo energy spear -->
+  <RI_Bullet_JadeBambooSpearShoot.label>竹枪</RI_Bullet_JadeBambooSpearShoot.label>
+  
+  <!-- EN: Bamboo energy slash -->
+  <RI_Bullet_JadeBambooSwordBlade.label>竹刀气</RI_Bullet_JadeBambooSwordBlade.label>
+  
+  <!-- EN: Jade bamboo blade【Third-rate】 -->
+  <RI_Weapon_JadeBambooBlade.label>苍血刀【三品】</RI_Weapon_JadeBambooBlade.label>
+  <!-- EN: 【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo blade, can release a powerful long-distance energy cut, cut the enemy.\n\n<color=#FFFF00>【Special effects】Basic projectile armor penetration +25%.</color> -->
+  <RI_Weapon_JadeBambooBlade.description>【三品】远程兵器\n\n苍血竹这种原料可以很好的承载灵气。用苍血竹和灵石打造的兵器，其近战杀伤力虽然有限，但可激发出兵刃之气，远程杀伤敌人。\n\n苍血刀，可释放出威力强大的刀气，斩击敌人。\n\n【特殊效果】发射物护甲穿透+25%。</RI_Weapon_JadeBambooBlade.description>
+  <!-- EN: point -->
+  <RI_Weapon_JadeBambooBlade.tools.point.label>刀尖</RI_Weapon_JadeBambooBlade.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_JadeBambooBlade.tools.edge.label>刀刃</RI_Weapon_JadeBambooBlade.tools.edge.label>
+  <!-- EN: Jade bamboo blade【Third-rate】 -->
+  <RI_Weapon_JadeBambooBlade.verbs.Verb_Shoot.label>苍血刀【三品】</RI_Weapon_JadeBambooBlade.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Jade bamboo throw-knife【Third-rate】 -->
+  <RI_Weapon_JadeBambooFlyKnife.label>苍竹飞刀【三品】</RI_Weapon_JadeBambooFlyKnife.label>
+  <!-- EN: 【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo throw-knife, destruction is not strong, but win in the number.\n\n<color=#FFFF00>【Special effects】Basic projectile armor penetration +25%.</color> -->
+  <RI_Weapon_JadeBambooFlyKnife.description>【三品】远程兵器\n\n苍血竹这种原料可以很好的承载灵气。用苍血竹和灵石打造的兵器，其近战杀伤力虽然有限，但可激发出兵刃之气，远程杀伤敌人。\n\n苍竹飞刀，杀伤性不强，但胜在数量。\n\n【特殊效果】发射物护甲穿透+25%。</RI_Weapon_JadeBambooFlyKnife.description>
+  <!-- EN: point -->
+  <RI_Weapon_JadeBambooFlyKnife.tools.point.label>刀尖</RI_Weapon_JadeBambooFlyKnife.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_JadeBambooFlyKnife.tools.edge.label>刀刃</RI_Weapon_JadeBambooFlyKnife.tools.edge.label>
+  <!-- EN: Jade bamboo throw-knife【Third-rate】 -->
+  <RI_Weapon_JadeBambooFlyKnife.verbs.Verb_Shoot.label>苍竹飞刀【三品】</RI_Weapon_JadeBambooFlyKnife.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Jade bamboo spear【Third-rate】 -->
+  <RI_Weapon_JadeBambooSpear.label>苍竹枪【三品】</RI_Weapon_JadeBambooSpear.label>
+  <!-- EN: 【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo spear, can release a strong piercing energy spear, but the attack distance is close.\n\n<color=#FFFF00>【Special effects】Basic projectile armor penetration +25%.</color> -->
+  <RI_Weapon_JadeBambooSpear.description>【三品】远程兵器\n\n苍血竹这种原料可以很好的承载灵气。用苍血竹和灵石打造的兵器，其近战杀伤力虽然有限，但可激发出兵刃之气，远程杀伤敌人。\n\n苍竹枪，可释放穿刺性很强的矛气，只是攻击距离较近。\n\n【特殊效果】发射物护甲穿透+25%。</RI_Weapon_JadeBambooSpear.description>
+  <!-- EN: point -->
+  <RI_Weapon_JadeBambooSpear.tools.point.label>枪尖</RI_Weapon_JadeBambooSpear.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_JadeBambooSpear.tools.edge.label>枪刃</RI_Weapon_JadeBambooSpear.tools.edge.label>
+  <!-- EN: Jade bamboo spear【Third-rate】 -->
+  <RI_Weapon_JadeBambooSpear.verbs.Verb_Shoot.label>苍竹枪【三品】</RI_Weapon_JadeBambooSpear.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Jade bamboo sword【Third-rate】 -->
+  <RI_Weapon_JadeBambooSword.label>苍竹剑【三品】</RI_Weapon_JadeBambooSword.label>
+  <!-- EN: 【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo sword, can release a continuous energy blade.\n\n<color=#FFFF00>【Special effects】Basic projectile armor penetration +25%.</color> -->
+  <RI_Weapon_JadeBambooSword.description>【三品】远程兵器\n\n苍血竹这种原料可以很好的承载灵气。用苍血竹和灵石打造的兵器，其近战杀伤力虽然有限，但可激发出兵刃之气，远程杀伤敌人。\n\n苍竹剑，可释放出连续的剑气。\n\n【特殊效果】发射物护甲穿透+25%。</RI_Weapon_JadeBambooSword.description>
+  <!-- EN: point -->
+  <RI_Weapon_JadeBambooSword.tools.point.label>剑尖</RI_Weapon_JadeBambooSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_JadeBambooSword.tools.edge.label>剑刃</RI_Weapon_JadeBambooSword.tools.edge.label>
+  <!-- EN: Jade bamboo sword【Third-rate】 -->
+  <RI_Weapon_JadeBambooSword.verbs.Verb_Shoot.label>苍竹剑【三品】</RI_Weapon_JadeBambooSword.verbs.Verb_Shoot.label>
+  
+</LanguageData>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>RI_Faction_JusticeSect</defName>
+		<label>Justice sect</label>
+		<categoryTag>Justice sect</categoryTag>
+		<description>A large intergalactic sect composed of several enclaves scattered across different planets. This sect follows the righteous path, emphasizes inheritance, and has a well-structured and hierarchical organization. Its members study multiple schools of cultivation.\n\nThe sect also places great importance on disciple training. Newly inducted cultivators are continuously guided by elders to learn and cultivate.\n\nBy completing sect missions, they earn contribution points, which can be exchanged for resources and better cultivation environments.</description>
+		<pawnSingular>Cultivator</pawnSingular>
+		<pawnsPlural>Cultivators</pawnsPlural>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Master</leaderTitle>
+		<!--头衔点数——贡献点-->
+		<royalFavorLabel>Contribution</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RI_Faction_SectContribution</royalFavorIconPath>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<factionIconPath>World/WorldObjects/Expanding/RI_Faction_JusticeSect</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<techLevel>Ultra</techLevel>
+		<!--命名-->
+		<factionNameMaker>RI_Namer_JusticeSect</factionNameMaker>
+		<settlementNameMaker>RI_Namer_SectSettlementPack</settlementNameMaker>
+		<colorSpectrum>
+			<li>(0.55, 0.94, 0.9)</li>
+		</colorSpectrum>
+
+		<!--文化-->
+		<requiredMemes>
+			<li>RI_Meme_FrankAndRighteous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+		</allowedMemes>
+		<structureMemeWeights>
+			<RI_Structure_QiOriginFaith>1</RI_Structure_QiOriginFaith>
+		</structureMemeWeights>
+		<!--风格-->
+		<allowedCultures>
+			<li>RI_Qi_Culture</li>
+		</allowedCultures>
+
+		<!--异种-->
+		<xenotypeSet>
+
+		</xenotypeSet>
+
+		<!--背景故事-->
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RI_BackStory_Sect</li>
+				</categories>
+				<commonality>0.9</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>RI_BackStory_Special</li>
+				</categories>
+				<commonality>0.1</commonality>
+			</li>
+		</backstoryFilters>
+		<!--服饰-->
+		<apparelStuffFilter>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Leather_Human</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<!--温度-->
+		<allowedArrivalTemperatureRange>-50~100</allowedArrivalTemperatureRange>
+		<!--头衔-->
+		<fixedLeaderKinds>
+			<li>RI_Pawn_SectMaster</li>
+		</fixedLeaderKinds>
+		<royalTitleTags>
+			<li>RI_Sect_Title</li>
+		</royalTitleTags>
+		<royalTitleInheritanceRelations>
+			<li>Child</li>
+		</royalTitleInheritanceRelations>
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+
+		<!--商队-->
+		<baseTraderKinds>
+			<li>RI_Base_JusticeSect_Standard</li>
+		</baseTraderKinds>
+		<visitorTraderKinds Inherit="false">
+            <li>RI_Sect_Caravan_TraderVisitor</li>
+        </visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>RI_Sect_Caravan_TraderGeneral</li>
+			<li>RI_Sect_Caravan_StandardTrader</li>
+			<li>RI_Sect_Caravan_CombatSupplier</li>
+			<li>RI_Sect_Caravan_BookTrader</li>
+			<li>RI_Sect_Caravan_ContributionPatrolCollector</li>
+		</caravanTraderKinds>
+
+		<!--袭击-->
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>RI_SectRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+
+		<pawnGroupMakers>
+			<!-- 商队 -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RI_Pawn_SectDeacon>1</RI_Pawn_SectDeacon>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+				</carriers>
+				<guards>
+					<RI_Pawn_SectFollower>5</RI_Pawn_SectFollower>
+					<RI_Pawn_OuterDisciple>5</RI_Pawn_OuterDisciple>
+					<RI_Pawn_InnerDisciple>2</RI_Pawn_InnerDisciple>
+					<RI_Pawn_SectGuard>6</RI_Pawn_SectGuard>
+				</guards>
+			</li>
+			<li>
+				<!-- 普通修仙者袭击 -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<RI_Pawn_SectFollower>20</RI_Pawn_SectFollower>
+					<RI_Pawn_OuterDisciple>10</RI_Pawn_OuterDisciple>
+					<RI_Pawn_InnerDisciple>5</RI_Pawn_InnerDisciple>
+					<RI_Pawn_SectGuard>10</RI_Pawn_SectGuard>
+					<RI_Pawn_SectMaster>1</RI_Pawn_SectMaster>
+				</options>
+			</li>
+			<li>
+				<!-- Base defense, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RI_Pawn_SectFollower>20</RI_Pawn_SectFollower>
+					<RI_Pawn_OuterDisciple>10</RI_Pawn_OuterDisciple>
+					<RI_Pawn_InnerDisciple>5</RI_Pawn_InnerDisciple>
+					<RI_Pawn_SectGuard>10</RI_Pawn_SectGuard>
+					<RI_Pawn_SectElder>3</RI_Pawn_SectElder>
+					<RI_Pawn_SectMaster>1</RI_Pawn_SectMaster>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>70</configurationListOrderPriority>
+		<disallowedRaidAgeRestrictions>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+		</disallowedRaidAgeRestrictions>
+		<dropPodActive>ActiveDropPod_RI_Sect_Faction</dropPodActive>
+		<dropPodIncoming>DropPodIncoming_RI_Sect_Faction</dropPodIncoming>
+	</FactionDef>
+
+	<ThingDef ParentName="ActiveDropPod">
+		<!--空投，贴图记得改，可以是Graphic_Random-->
+		<defName>ActiveDropPod_RI_Sect_Faction</defName>
+		<label>仙舟</label>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
+			<!--记得修改贴图-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<soundOpen>DropPod_Open_Mechanoid</soundOpen>
+		<statBases>
+			<MaxHitPoints>999999</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DropPodIncoming">
+		<!--空投，贴图记得改，可以是Graphic_Random-->
+		<defName>DropPodIncoming_RI_Sect_Faction</defName>
+		<label>仙舟：飞行中</label>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
+			<!--记得修改贴图-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<anticipationSound>DropPod_Fall_Mechanoid</anticipationSound>
+			<impactSound>DropPod_Impact</impactSound>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingSetMakerDef>
+		<defName>RI_SectRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+						<li>RI_Resource_SpiritualCrystal</li>
+						<li>MealSurvivalPack</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+
+</Defs>

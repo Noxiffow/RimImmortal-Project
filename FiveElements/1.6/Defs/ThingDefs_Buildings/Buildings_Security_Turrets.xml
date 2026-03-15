@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== 木行植物炮台 ======================== -->
+
+	<!--<killedLeavings>
+		<WoodLog>4</WoodLog>
+	</killedLeavings>-->
+
+	<!--<tradeability>None</tradeability>-->
+	<!--<destroyOnDrop>true</destroyOnDrop>-->
+	
+	<!--玉米炮-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Turret_CornCannon</defName>
+		<label>Corn-cannon</label>
+		<description>A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/RI_Turret_CornCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<offset>(-0.13,-0.87,-0.1)</offset>
+				<volume>(0.5,0.4,0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<minifiedDef IsNull="True" />
+		<uiIconPath>Things/Building/Security/PlantTurret/RI_Turret_CornCannon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<!--Half health due to small size and no wood-->
+			<Flammability>1</Flammability>
+			<WorkToBuild>1</WorkToBuild>
+			<Mass>40</Mass>
+			<!--Half mass-->
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps Inherit="False">
+			<li Class="CompProperties_Refuelable">
+				<!--Same life duration-->
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionRate>3</fuelConsumptionRate>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+				<fuelCapacity>1</fuelCapacity>
+				<fuelLabel>Life percentage left</fuelLabel>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelMultiplier>100</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<!--<designationCategory>EcotechDesignation</designationCategory>-->
+		<uiOrder>2650</uiOrder>
+		<!--<specialDisplayRadius>16.9</specialDisplayRadius>-->
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<claimable>true</claimable>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RI_Gun_CornCannon</turretGunDef>
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+			<playTargetAcquiredSound>false</playTargetAcquiredSound>
+			<deconstructible>false</deconstructible>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--玉米炮——枪-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RI_Gun_CornCannon</defName>
+		<label>Corn cannon</label>
+		<description>A rocketswarm tube of the type usually mounted on a rocketswarm launcher turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/RI_Gun_CornCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Item</altitudeLayer>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<AccuracyTouch>0.5</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+			<Mass>4</Mass>
+			<Flammability>3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_Rocket</defaultProjectile>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<warmupTime>5</warmupTime>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>30</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_Rocket</defName>
+		<label>corn bomb</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Projectile_CornBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>1.9</explosionRadius>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--莓果塔-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Turret_BerryShooter</defName>
+		<label>Berry-shooter</label>
+		<description>A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/RI_Turret_BerryShooter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<offset>(-0.13,-0.87,-0.1)</offset>
+				<volume>(0.5,0.4,1.05)</volume>
+			</shadowData>
+		</graphicData>
+		<minifiedDef/>
+		<!--<uiIconPath>Things/Security/PrimaTurretSMG/PrimaTurretSMG_MenuIcon</uiIconPath>-->
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<!--Half health due to small size and no wood-->
+			<Flammability>1</Flammability>
+			<WorkToBuild>1</WorkToBuild>
+			<Mass>40</Mass>
+			<!--Half mass-->
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps Inherit="False">
+			<li Class="CompProperties_Refuelable">
+				<!--Same life duration-->
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionRate>3</fuelConsumptionRate>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+				<fuelCapacity>1</fuelCapacity>
+				<fuelLabel>Life percentage left</fuelLabel>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelMultiplier>100</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>2650</uiOrder>
+		<!--<specialDisplayRadius>16.9</specialDisplayRadius>-->
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<claimable>true</claimable>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RI_Gun_BerryShooter</turretGunDef>
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+			<playTargetAcquiredSound>false</playTargetAcquiredSound>
+			<deconstructible>false</deconstructible>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--莓果塔-枪-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RI_Gun_BerryShooter</defName>
+		<label>Berry-shooter</label>
+		<description>0</description>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/RI_Gun_BerryShooter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.3</drawSize>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<Mass>4</Mass>
+			<Flammability>3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Projectile_BerryBullet</defaultProjectile>
+				<warmupTime>4.0</warmupTime>
+				<range>14</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>GunShotA</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--莓果塔-子弹-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Projectile_BerryBullet</defName>
+		<label>berry bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Projectile_BerryBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--多棱刺球-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Turret_CactusSpitter</defName>
+		<label>Cactus-spitter</label>
+		<description>A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/RI_Turret_CactusSpitter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<offset>(-0.13,-0.87,-0.1)</offset>
+				<volume>(0.5,0.4,0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<minifiedDef IsNull="True" />
+		<uiIconPath>Things/Building/Security/PlantTurret/RI_Turret_CactusSpitter</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<!--Half health due to small size and no wood-->
+			<Flammability>1</Flammability>
+			<WorkToBuild>1</WorkToBuild>
+			<Mass>40</Mass>
+			<!--Half mass-->
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps Inherit="False">
+			<li Class="CompProperties_Refuelable">
+				<!--Same life duration-->
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionRate>3</fuelConsumptionRate>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+				<fuelCapacity>1</fuelCapacity>
+				<fuelLabel>Life percentage left</fuelLabel>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelMultiplier>100</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<!--<designationCategory>EcotechDesignation</designationCategory>-->
+		<uiOrder>2650</uiOrder>
+		<!--<specialDisplayRadius>16.9</specialDisplayRadius>-->
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<claimable>true</claimable>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RI_Gun_CactusSpitter</turretGunDef>
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+			<playTargetAcquiredSound>false</playTargetAcquiredSound>
+			<deconstructible>false</deconstructible>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--多棱刺球-枪-->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RI_Gun_CactusSpitter</defName>
+		<label>Cactus-spitter</label>
+		<description>。</description>
+		<graphicData>
+			<texPath>Things/Building/Security/PlantTurret/Blank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.6,1.6)</drawSize>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+			<Mass>4</Mass>
+			<Flammability>3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Projectile_CactusSpike</defaultProjectile>
+				<warmupTime>4.0</warmupTime>
+				<range>32</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>GunShotA</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--多棱刺球-子弹-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Projectile_CactusSpike</defName>
+		<label>cactus spike</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Projectile_CactusSpike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.6,1.6)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

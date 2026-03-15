@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: CorpsePuppet -->
+  <CorpsePuppet.label>尸傀</CorpsePuppet.label>
+  <!-- EN: CorpsePuppet -->
+  <CorpsePuppet.description>尸傀</CorpsePuppet.description>
+  
+  <!-- EN: CorpsePuppet_RenderScaleCounter -->
+  <CorpsePuppet_RenderScaleCounter.label>TODO</CorpsePuppet_RenderScaleCounter.label>
+  <!-- EN: # -->
+  <CorpsePuppet_RenderScaleCounter.description>TODO</CorpsePuppet_RenderScaleCounter.description>
+  
+  <!-- EN: 服用血魄丹 -->
+  <RI_BloodDrugAte.label>服用血魄丹</RI_BloodDrugAte.label>
+  <!-- EN: BloodDrugAte -->
+  <RI_BloodDrugAte.description>TODO</RI_BloodDrugAte.description>
+  
+  <!-- EN: blood curse -->
+  <RI_He_BloodCurse.label>血液诅咒</RI_He_BloodCurse.label>
+  <!-- EN: A wound caused by a blood curse. -->
+  <RI_He_BloodCurse.description>TODO</RI_He_BloodCurse.description>
+  <!-- EN: Spiked off -->
+  <RI_He_BloodCurse.injuryProps.destroyedLabel>TODO</RI_He_BloodCurse.injuryProps.destroyedLabel>
+  <!-- EN: Spiked out -->
+  <RI_He_BloodCurse.injuryProps.destroyedOutLabel>TODO</RI_He_BloodCurse.injuryProps.destroyedOutLabel>
+  <!-- EN: an blood curse wound -->
+  <RI_He_BloodCurse.labelNoun>TODO</RI_He_BloodCurse.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <RI_He_BloodCurse.labelNounPretty>TODO</RI_He_BloodCurse.labelNounPretty>
+  
+  <!-- EN: corpse creature -->
+  <RI_Hediff_UndeadCreature.label>死而不僵</RI_Hediff_UndeadCreature.label>
+  <!-- EN: # -->
+  <RI_Hediff_UndeadCreature.description>死而不僵</RI_Hediff_UndeadCreature.description>
+  
+  <!-- EN: iron pagoda -->
+  <RI_Hediff_UndeadIronPagoda.label>铁浮屠</RI_Hediff_UndeadIronPagoda.label>
+  <!-- EN: # -->
+  <RI_Hediff_UndeadIronPagoda.description>铁浮屠</RI_Hediff_UndeadIronPagoda.description>
+  
+  <!-- EN: paper doll -->
+  <RI_Hediff_UndeadPaperDoll.label>纸人</RI_Hediff_UndeadPaperDoll.label>
+  <!-- EN: # -->
+  <RI_Hediff_UndeadPaperDoll.description>纸人</RI_Hediff_UndeadPaperDoll.description>
+  
+  <!-- EN: patch man -->
+  <RI_Hediff_UndeadPatchMan.label>缝合尸</RI_Hediff_UndeadPatchMan.label>
+  <!-- EN: # -->
+  <RI_Hediff_UndeadPatchMan.description>缝合尸</RI_Hediff_UndeadPatchMan.description>
+  
+  <!-- EN: walking dead -->
+  <RI_Hediff_WalkingDead.label>行尸走肉</RI_Hediff_WalkingDead.label>
+  <!-- EN: This creature is biologically dead but reanimated by anomalous forces. It feels no pain, needs no sleep, and desires only flesh. -->
+  <RI_Hediff_WalkingDead.description>行尸走肉</RI_Hediff_WalkingDead.description>
+  
+  <!-- EN: 死而不僵 -->
+  <RI_Hediff_ZombieBloodCore.label>死而不僵</RI_Hediff_ZombieBloodCore.label>
+  <!-- EN: AA -->
+  <RI_Hediff_ZombieBloodCore.description>死而不僵</RI_Hediff_ZombieBloodCore.description>
+  
+  <!-- EN: meat hunger -->
+  <RI_MeatHunger.label>嗜血</RI_MeatHunger.label>
+  <!-- EN: # -->
+  <RI_MeatHunger.description>嗜血</RI_MeatHunger.description>
+  <!-- EN: initial -->
+  <RI_MeatHunger.stages.initial.label>轻度</RI_MeatHunger.stages.initial.label>
+  <!-- EN: moderate -->
+  <RI_MeatHunger.stages.moderate.label>中度</RI_MeatHunger.stages.moderate.label>
+  <!-- EN: extreme -->
+  <RI_MeatHunger.stages.extreme.label>重度</RI_MeatHunger.stages.extreme.label>
+  
+  <!-- EN: 服用异构肉 -->
+  <RI_UpgradeMeatAte.label>服用异构肉</RI_UpgradeMeatAte.label>
+  <!-- EN: UpgradeMeatAte -->
+  <RI_UpgradeMeatAte.description>服用异构肉</RI_UpgradeMeatAte.description>
+  
+</LanguageData>

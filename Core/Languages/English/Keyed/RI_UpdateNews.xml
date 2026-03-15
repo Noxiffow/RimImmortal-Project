@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- 刚才代码里定义的通用 UI 键 -->
+	<RI_News_Title>Mod Update: {0}</RI_News_Title>
+	<RI_News_Version>Version: {0}</RI_News_Version>
+	<RI_News_Next>Next</RI_News_Next>
+	<RI_News_Close>Close</RI_News_Close>
+
+	<!-- 你在这个公告里自定义的键 -->
+	<RI_RimImmortal_Core>RimImmortal-Core</RI_RimImmortal_Core>
+	<RI_RimImmortal_Core_Text>- Fixed a bug in the recipe.\n- Added a notification system.</RI_RimImmortal_Core_Text>
+</LanguageData>

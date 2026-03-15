@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--百炼铁衣-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_SoftIronJacket</defName>
+		<label>Iron cloak【Third-rate】</label>
+		<description>【Third-rate】apparel\n\nA cloak with a shoulder plate and a thin plate sewn on the inside.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/IronCoat/RI_Apparel_SoftIronJacket</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>5</Mass>
+			<Flammability>0.5</Flammability>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/IronCoat/RI_Apparel_SoftIronJacket</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_Apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_InitialApproach_ToolsStrengthen</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_SecondRateArmor_Tag</li>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--八卦衣-->
+	<ThingDef ParentName="RI_ApparelNostuffCategories_Base">
+		<defName>RI_Apparel_BaGuaCoat</defName>
+		<label>BaGua robe【Second-rate】</label>
+		<description>【Second-rate】apparel\n\n"The Qingyun Taoist, clad in a golden-threaded Bagua robe and wolf-hide upturned-toe boots, wielded a coin sword, ready to subdue the wicked fiend. However, as he cast his spell, the demon’s aura retaliated, taking the form of his master and attempting to flee. With a shake of his ritual bell and a swift hand seal, the Taoist entrapped the demon, turning the tide and securing victory."——Tales of a Century Immortal Path\n\nThe bagua robe is a classic clothes of traditional Taoists, crafted from fine fabric and embroidered with Bagua patterns. Within its weave lie delicate spiritual components that harmonize the energies of earth, offering both protection in battle and enhanced cultivation insights.\n\n&lt;color=#FFFF00&gt;【Special effects】\nResearch speed +10%.\nEntity study rate +10%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/DemonSlayer/RI_Apparel_BaGuaCoat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<Cloth>100</Cloth>
+			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.2</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DemonSlayer/RI_Apparel_BaGuaCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="False">
+				<li>RI_DaoCloth</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_QiTraining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<ResearchSpeed>0.3</ResearchSpeed>
+			<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.3</EntityStudyRate>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_SecondRateArmor_Tag</li>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--古修盔甲-->
+	<ThingDef ParentName="RI_BestArmor_NostuffCategories_Base">
+		<defName>RI_Apparel_AncientCultivatorArmor</defName>
+		<label>Ancient cultivator armor【Second-rate】</label>
+		<description>【Second-rate】apparel\n\nAncient cultivators crafted marvelous armor from steel and spirit stones, achieving an unbelievable level of durability and hardness while maintaining mobility and lightness. This armor seems to absorb kinetic energy and produce a formidable defense, but the principles behind it are difficult to analyze due to its antiquity.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Ancient/RI_Apparel_AncientCultivatorArmor</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>12000</MaxHitPoints>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>9</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ancient/RI_Apparel_AncientCultivatorArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_AncientCultivatorArmor</li>
+			</tags>
+		</apparel>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--鎏金天王甲-->
+	<ThingDef ParentName="RI_ArmorNostuffCategories_Base">
+		<defName>RI_Apparel_GoldBestArmor</defName>
+		<label>Gilded general armor【Second-rate】</label>
+		<description>【Second-rate】apparel\n\nA gilded armor with a magnificent appearance, refined through the method of forge, exuding a faint aura of spiritual might.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/GoldBestArmor/RI_Apparel_GoldBestArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<Gold>10</Gold>
+			<Plasteel>100</Plasteel>
+			<RI_Resource_BlackSteel>10</RI_Resource_BlackSteel>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>4.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GoldBestArmor/RI_Apparel_GoldBestArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<ArrestSuccessChance>0.1</ArrestSuccessChance>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_SecondRateArmor_Tag</li>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--精铁虎卫甲-->
+	<ThingDef ParentName="RI_ArmorNostuffCategories_Base">
+		<defName>RI_Apparel_TigerGuardArmor</defName>
+		<label>Tiger guard armor【Second-rate】</label>
+		<description>【Second-rate】apparel\n\nA armor forged from refined iron through the method of Forge, engraved with a tiger head, exuding an imposing presence.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/TigerGuardArmor/RI_Apparel_TigerGuardArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<Steel>300</Steel>
+			<RI_Resource_BlackSteel>10</RI_Resource_BlackSteel>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>23000</WorkToMake>
+			<MaxHitPoints>700</MaxHitPoints>
+			<Mass>4.5</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TigerGuardArmor/RI_Apparel_TigerGuardArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_SecondRateArmor_Tag</li>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
+

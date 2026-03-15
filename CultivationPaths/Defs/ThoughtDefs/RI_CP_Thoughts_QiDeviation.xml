@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Stage 1+ — Physical fatigue from disrupted qi flow -->
+    <ThoughtDef>
+        <defName>RI_CP_Thought_QiDeviation_Fatigue</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_QiDeviation_Fatigue</workerClass>
+        <stages>
+            <li>
+                <label>qi disruption fatigue</label>
+                <description>My qi writhes through the wrong meridians. Every movement costs more than it should.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Stage 1+ (demonic only) — Mental anxiety from volatile dark qi -->
+    <ThoughtDef>
+        <defName>RI_CP_Thought_QiDeviation_Anxiety</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_QiDeviation_Anxiety</workerClass>
+        <stages>
+            <li>
+                <label>dark qi lashing inward</label>
+                <description>The demonic qi has turned against me. It gnaws at my mind without mercy.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Stage 2+ — Insomnia from internal qi turbulence -->
+    <ThoughtDef>
+        <defName>RI_CP_Thought_QiDeviation_Insomnia</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_QiDeviation_Insomnia</workerClass>
+        <stages>
+            <li>
+                <label>cannot rest</label>
+                <description>Every time I close my eyes the qi convulses. There is no rest to be found.</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Stage 3 — Hallucinations from severe qi rampage -->
+    <ThoughtDef>
+        <defName>RI_CP_Thought_QiDeviation_Hallucination</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_QiDeviation_Hallucination</workerClass>
+        <stages>
+            <li>
+                <label>qi-induced visions</label>
+                <description>The world fractures into shapes that shouldn't exist. My qi is screaming.</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

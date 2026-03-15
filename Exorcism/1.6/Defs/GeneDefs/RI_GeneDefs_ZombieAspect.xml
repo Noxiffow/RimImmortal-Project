@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 这里是僵尸的特性基因 使用 Aspect，因为Trait有特殊含义 -->
+  <GeneCategoryDef>
+    <defName>RI_GeneCategory_Zombie</defName>
+    <label>Necrosapien</label>
+    <!-- 显示的标题 -->
+    <displayPriorityInXenotype>900</displayPriorityInXenotype>
+    <!-- 排序优先级，越高越靠前 -->
+  </GeneCategoryDef>
+  <!-- 不朽冥髓 -->
+  <GeneDef ParentName="RI_ZombieCore_GeneBase">
+    <defName>RI_ZombieCore_Aspect_DeadButNotDead</defName>
+    <geneClass>RimZombieGirl.DeadNotDead</geneClass>
+    <label>nether marrow</label>
+    <description>Unique gene of Necrosapiens.\nThe Necrosapiens relies on the unique Necro-plasm contained within its blood and bone marrow as its primary energy source, forming an entirely novel and extraordinarily efficient metabolic system. Due to genetic and physiological constraints, they are incapable of digesting most plant-based nutrients and can only consume raw flesh and blood.\n\nAt the same time, the Necro-plasm reinforces the Necrosapiens’s body, granting its cells exceptional anti-aging capabilities and completely halting decay, rendering it a unique existence that straddles the boundary between life and death.\n\n*The Nether marrow gene serves as the core gene of the Necrosapiens and cannot be removed or extracted.</description>
+    <iconPath>UI/Icons/Genes/RI_ZombieCore_Aspect_DeadButNotDead</iconPath>
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <exclusionTags>
+      <li>DeadNotDead</li>
+    </exclusionTags>
+    <enablesNeeds>
+      <li>RI_Zombie_Suppress</li>
+    </enablesNeeds>
+    <hediffGiversCannotGive Inherit="True">
+      <!-- 营养不良 -->
+      <li>Malnutrition</li>
+    </hediffGiversCannotGive>
+    <modExtensions>
+      <li Class="RimZombieGirl.GeneDefExt">
+        <mustEndogene>True</mustEndogene>
+        <hediffDef>RI_Hediff_ZombieBloodCore</hediffDef>
+        <foodType>CarnivoreAnimalStrict, AnimalProduct, Corpse, Meat</foodType>
+        <allowEatCorpse>True</allowEatCorpse>
+        <thinkTree>
+          <!-- 当有这个基因的时候，会追加行为树替换 -->
+          <thinkTreeMain>RI_Zombie_ThinkBase</thinkTreeMain>
+        </thinkTree>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <!-- 撕裂利爪 -->
+  <GeneDef>
+    <defName>Nzflm_Ev_RippingClaws</defName>
+    <label>ripping claws</label>
+    <geneClass>RimZombieGirl.GeneExt</geneClass>
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <!-- 一种由几丁质和硬化骨骼组成的利爪，替代手部，其中蕴含的力道甚至可以将敌人撕成两半 -->
+    <description>A claw made of chitin and hardened bones, replacing the hands, the force contained in it can even tear the enemy in half.</description>
+    <iconPath>UI/Icons/Genes/Nzflm_Ev_RippingClaws</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statOffsets>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statOffsets>
+    <modExtensions>
+      <li Class="RimZombieGirl.GeneDefExt">
+        <comps>
+          <li Class="RimZombieGirl.CompProperties_BionicPartAdd">
+            <hediffDef>RI_Zombie_RippingClaws</hediffDef>
+            <bodyPartDef>Hand</bodyPartDef>
+            <installCount>-1</installCount>
+          </li>
+        </comps>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <!-- 僵尸-不可阻挡 -->
+  <GeneDef>
+    <defName>RI_ZombieGene_ZombieUnstoppable</defName>
+    <label>unstoppable</label>
+    <description>Carriers of this gene are not slowed down when taking damage.</description>
+    <iconPath>UI/Icons/Genes/RI_ZombieGene_ZombieUnstoppable</iconPath>
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <displayOrderInCategory>550</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.8</IncomingDamageFactor>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+    </statFactors>
+  </GeneDef>
+  <!-- 僵尸-骨鳞 -->
+  <GeneDef>
+    <defName>RI_ZombieGene_BoneScale</defName>
+    <label>bone scale</label>
+    <description>Carriers of this gene have tough, bony scales that provide extra protection.</description>
+    <iconPath>UI/Icons/Genes/RI_ZombieGene_ZombieUnstoppable</iconPath>
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <displayOrderInCategory>550</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statOffsets>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+    </statOffsets>
+  </GeneDef>
+  <!--阳光畏惧-->
+  <GeneDef>
+    <defName>RI_ZombieGene_SunSuperSensitivity</defName>
+    <label>sun phobia</label>
+    <description>zombie afraid sun.</description>
+    <iconPath>UI/Icons/Genes/RI_ZombieGene_SunSuperSensitivity</iconPath>
+    <!-- 记得找个图标 -->
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <!-- ★★★ 核心：在阳光下的属性惩罚 ★★★ -->
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statOffsets>
+          <MoveSpeed>-2</MoveSpeed>
+          <!-- 移速大幅降低 -->
+          <Flammability>5</Flammability>
+          <!-- 僵尸怕火 -->
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <!-- 绑定一个被动心情，具体逻辑由 Worker Class 控制 -->
+    <!-- 如果不想写C#，可以用下面的纯XML替代方案，但C#效果最好 -->
+  </GeneDef>
+  <!--吃生肉基因-->
+  <GeneDef>
+    <defName>RI_ZombieGene_ZombieDiet</defName>
+    <label>zombie diet</label>
+    <description>This carrier's digestive system has mutated. They can only digest raw meat and corpses. They refuse to eat cooked meals or plant matter.</description>
+    <iconPath>UI/Icons/Genes/RI_ZombieGene_ZombieDiet</iconPath>
+    <!-- 找个生肉图标 -->
+    <displayCategory>RI_GeneCategory_Zombie</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <!-- 这是一个负面/限制性基因，给点代谢奖励 -->
+    <!-- 让僵尸吃生肉不中毒、不心情低落 -->
+    <statOffsets>
+      <FoodPoisonChance>-1.0</FoodPoisonChance>
+      <!-- 免疫食物中毒 -->
+    </statOffsets>
+    <!-- 移除 "吃了生肉/尸体" 的心情惩罚 -->
+    <!-- 注意：这只移除了心情惩罚，没有强制让他们吃，强制逻辑在 C# 里 -->
+    <dontMindRawFood>true</dontMindRawFood>
+    <!-- 关键：允许吃尸体 -->
+    <!-- 在原版机制里，如果不加这个，小人即使饿死也不会主动去啃尸体 -->
+    <!-- Biotech DLC 添加的标签 -->
+    <customEffectDescriptions>
+      <li>Restricts diet to raw meat and corpses.</li>
+    </customEffectDescriptions>
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+        <!-- 强制食人者特性，让他们把人肉当美食 -->
+      </li>
+    </forcedTraits>
+  </GeneDef>
+</Defs>

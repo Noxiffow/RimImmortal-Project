@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==============符咒类武器==============-->
+
+	<!--符咒武器前置-->
+	<ThingDef Name="RI_Base_DaoistCharmWeapon" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Medieval</techLevel>
+		<possessionCount>1</possessionCount>
+		<!--音效-->
+		<soundInteract>RI_Sound_TakeCharm</soundInteract>
+		<!--可熔炼-->
+		<smeltable>true</smeltable>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<!--图标大小-->
+		<uiIconScale>1.5</uiIconScale>
+		<weaponTags>
+			<li>RI_Tags_DaoistCharm</li>
+		</weaponTags>
+		<tradeTags>
+			<li>RI_TradeTag_DaoistCharm</li>
+		</tradeTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>0</relicChance>
+		<!--制作-->
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+			<effectWorking>Cremate</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>RI_Unfinished_DaoistCharm</unfinishedThingDef>
+		</recipeMaker>
+		<!--在架子上旋转-->
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+	<!--符咒子弹前置-->
+	<ThingDef Name="RI_Base_DaoistCharmBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--火矢符-->
+	<ThingDef ParentName="RI_Base_DaoistCharmWeapon">
+		<defName>RI_CharmWeapon_FireArrowCharm</defName>
+		<label>Flame arrow charm</label>
+		<description>A stack of inscribed charms, reusable.\n\nThe Flame arrow charm fires a flame arrow of considerable power—but one must take care not to set the surroundings ablaze.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_CharmWeapon_FireArrowCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+		</statBases>
+		<!--制作-->
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismCharm</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<RI_Resource_CharmPaper>9</RI_Resource_CharmPaper>
+			<RI_Resource_InkJade>3</RI_Resource_InkJade>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_FireArrowCharm</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>24</range>
+				<soundCast>RI_Sound_FireArrow</soundCast>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<!--破墙-->
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--火矢-->
+	<ThingDef ParentName="RI_Base_DaoistCharmBullet">
+		<defName>RI_Bullet_FireArrowCharm</defName>
+		<label>flame arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_FireArrowCharm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<!--火焰箭Class-->
+		<thingClass>FireArrow</thingClass>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<speed>70</speed>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<!--神锋符-->
+	<ThingDef ParentName="RI_Base_DaoistCharmWeapon">
+		<defName>RI_CharmWeapon_BladeCharm</defName>
+		<label>Flash blade charms</label>
+		<description>A stack of inscribed charms, reusable.\n\nThe Flash blade charm unleashes a blinding slash at high speed, often reducing foes to fragments before they even realize what has happened.\n\nIts destructive force is so great that the Daoist sect strictly forbids its use during sparring among fellow disciples.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_CharmWeapon_BladeCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>65</MarketValue>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>4.1</RangedWeapon_Cooldown>
+		</statBases>
+		<!--制作-->
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismCharm</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<RI_Resource_CharmPaper>9</RI_Resource_CharmPaper>
+			<RI_Resource_InkJade>3</RI_Resource_InkJade>
+		</costList>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_FlashBlade</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>18</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<soundCast>RI_Sound_BladeOut</soundCast>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--锋芒-->
+	<ThingDef ParentName="RI_Base_DaoistCharmBullet">
+		<defName>RI_Bullet_FlashBlade</defName>
+		<label>flash blade</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_FlashBlade</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2.1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--定魂符-->
+	<ThingDef ParentName="RI_Base_DaoistCharmWeapon">
+		<defName>RI_CharmWeapon_SpiritControlCharm</defName>
+		<label>Spirit control charms</label>
+		<description>A stack of inscribed charms, reusable.\n\nThe Spirit control charm releases a burst of golden light that briefly restrains the target’s movements. Whether attacking or retreating, it proves extremely handy.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_RangeWeapon_SpiritControlCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>65</MarketValue>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		<!--制作-->
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismCharm</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<RI_Resource_CharmPaper>9</RI_Resource_CharmPaper>
+			<RI_Resource_InkJade>3</RI_Resource_InkJade>
+		</costList>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_ControlLight</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>23</range>
+				<soundCast>RI_Sound_FireArrow</soundCast>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--定魂金光-->
+	<ThingDef ParentName="RI_Base_DaoistCharmBullet">
+		<defName>RI_Bullet_ControlLight</defName>
+		<label>control light</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_FlashBlade</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2.1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

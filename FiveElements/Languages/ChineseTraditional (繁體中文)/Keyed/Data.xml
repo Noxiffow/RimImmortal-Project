@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- EN: Now Vitality -->
+  <RI.Five_NowVitality>当前生机：</RI.Five_NowVitality>
+    <!-- EN: Regenerate -->
+  <RI_Wood_Gizmo_Btn_Regenerate>万物回春</RI_Wood_Gizmo_Btn_Regenerate>
+    <!-- EN: Extract stored vitality to restore life to oneself. -->
+  <RI_Wood_Gizmo_Btn_Regenerate_Desc>榨取储藏的生机，让生命重归自己的身体。</RI_Wood_Gizmo_Btn_Regenerate_Desc>
+    <!-- EN: Activate Area Shield -->
+  <RI_FiveElements_ActivateAreaShield>激活区域护盾</RI_FiveElements_ActivateAreaShield>
+    <!-- EN: Activate the tower's shield to intercept nearby projectiles and area shield to protect allies. The tower will be destroyed after activation. -->
+  <RI_FiveElements_ActivateAreaShieldDesc>激活拦截子弹的护盾和区域护盾保护盟友，激活后石塔会被摧毁。</RI_FiveElements_ActivateAreaShieldDesc>
+    <!-- EN: Area Shield -->
+  <RI_FiveElements_WorldSealingTowerStatus>区域护盾</RI_FiveElements_WorldSealingTowerStatus>
+
+</LanguageData>

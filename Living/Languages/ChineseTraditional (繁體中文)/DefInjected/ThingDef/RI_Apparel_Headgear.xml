@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: SanShan hat -->
+  <RI_Apparel_SanShanHat.label>三山帽</RI_Apparel_SanShanHat.label>
+  <!-- EN: This is a type of official hat worn by eunuchs in ancient imperial palaces.\n\nIt is made of bamboo strips as the framework and sewn with fabric, with a domed top and a raised section behind the crown, while the sides have a wavy design, hence the name "Three-Mountain Hat."\n\nOver the years, this hat has undergone considerable evolution and has a variety of distinctive features. -->
+  <RI_Apparel_SanShanHat.description>三山帽是古代皇宫中，太监所戴的官帽。\n\n以竹丝作为骨架，用织物缝合制成，帽子带有圆顶，帽后高出一片山墙，而两侧有起伏，故得名三山帽。\n这种帽子经过长年的演变，有诸多外形变化。</RI_Apparel_SanShanHat.description>
+  
+  <!-- EN: Small crown -->
+  <RI_Apparel_SmallCrown.label>小冠</RI_Apparel_SmallCrown.label>
+  <!-- EN: Small crown is a type of hair-bun crown, mostly made of leather or gold and jade.\n\nThe method of wearing it is simple, just put it on the bun and fix it with a hairpin horizontally.\n\nThis type of crown is loved by officials, civil servants, and scholars, and is usually worn as a decoration rather than for formal occasions. -->
+  <RI_Apparel_SmallCrown.description>小冠是一种发簪冠，多为皮制或金玉制。\n\n佩戴方法简单，只需要将其套在发髻上，然后横插发簪固定。\n这种小冠被官员，文官，学士所喜爱，一般作为装饰，而非正式。</RI_Apparel_SmallCrown.description>
+  
+  <!-- EN: Veil hat -->
+  <RI_Apparel_VeilHat.label>帷帽</RI_Apparel_VeilHat.label>
+  <!-- EN: Veil hat is a kind of hat that is favored by women. It has a wide eaves around it. Under the eaves there is a hanging silk screen or thin silk, which grows to the neck to cover the face and resist the effect of wind and sand. -->
+  <RI_Apparel_VeilHat.description>帷帽是一种深受女性喜爱的帽子。它周围有宽大的帽檐，帽檐下挂着丝网或薄绸，长到脖子，遮住脸，可以起到抵抗风沙的作用。</RI_Apparel_VeilHat.description>
+  
+  <!-- EN: Waiter hat -->
+  <RI_Apparel_WaiterHat.label>瓦楞帽</RI_Apparel_WaiterHat.label>
+  <!-- EN: Waiter hat is a popular hat that originated among nomads and was later loved by the common people.\n\nSquare shape and flat top, hat body made by four pieces of fabric stitched together, the brim such as a gentle slope, extended to the forehead, can shade the sun. -->
+  <RI_Apparel_WaiterHat.description>瓦楞帽是一种起源于游牧民族，之后被平民喜爱的帽子。\n\n方形平顶，帽身由四片瓦楞状织物缝缀而成，帽檐如缓坡，延至前额，可以遮阳。</RI_Apparel_WaiterHat.description>
+  
+</LanguageData>

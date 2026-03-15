@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--吃了普通菜，民以食为天-->
+
+	<!--家乡小食-->
+	<ThoughtDef>
+		<defName>RI_AtesimpleMeal</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>taste of home cooking</label>
+				<description>These foods, while simple, are also reassuring.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>RI_AteFeastMeatMeal</li>
+		</replaceThoughts>
+		<!--会被哪个覆盖掉-->
+	</ThoughtDef>
+
+	<!--食髓知味-->
+	<ThoughtDef>
+		<defName>RI_AteFeastMeatMeal</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>Meat feast</label>
+				<description>A whole big meat dish will make your cravings go away. Although a little greasy, but very satisfied!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>RI_AtesimpleMeal</li>
+		</replaceThoughts>
+	</ThoughtDef>
+
+	<!--消暑止渴-->
+	<ThoughtDef>
+		<defName>RI_FeelQuenchThirst</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Quench thirst</label>
+				<description>The cold watermelon quenches my thirst.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--团团圆圆-->
+	<ThoughtDef>
+		<defName>RI_EatMooncake</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Taste of mooncake</label>
+				<description>The moon looks better in my hometown.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--吃了沙糖桔-->
+	<ThoughtDef>
+		<defName>RI_Thought_SugarTangerineHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_SugarTangerineHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>sugar tangerine!</label>
+				<description>So sweet! I have to peel and eat the next one right away!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--吃不到沙糖桔-->
+	<ThoughtDef>
+		<defName>SugarTangerineWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_SugarTangerineAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>No sugar tangerine</label>
+				<description>I haven't had a sugar orange in a while.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--香甜奶茶-->
+	<ThoughtDef>
+		<defName>RI_Thought_BubbleTea</defName>
+		<durationDays>0.1</durationDays>
+		<stages>
+			<li>
+				<label>Bubble tea!</label>
+				<description>Sweet bubble tea!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--甜甜蜜蜜-->
+	<ThoughtDef>
+		<defName>RI_Thought_AteDessert</defName>
+		<durationDays>0.1</durationDays>
+		<stages>
+			<li>
+				<label>Sweet like honey</label>
+				<description>Sweetness enters the mouth, bringing joy to the heart, oh, let’s have another piece!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--粽香-->
+	<ThoughtDef>
+		<defName>RI_Thought_EatZongZi</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ZongZi</label>
+				<description>The fragrance of zongzi and the fragrance of mugwort.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

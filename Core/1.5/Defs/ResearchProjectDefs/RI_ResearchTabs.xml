@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 仙路新开的科技树 -->
+
+	<ResearchTabDef>
+		<defName>RI_ResearchTab</defName>
+		<label>RimImmortal</label>
+		<generalTitle>Rimimmortal-Research</generalTitle>
+		<generalDescription>You will embark on a journey of cultivation. Master new methods and exercises by studying books, and master more Qi technology. \n\n* In the research list, you can learn how to play this mod by browsing the text of each research project.</generalDescription>
+	</ResearchTabDef>
+
+	<!-- 泰南，你好贴心 -->
+
+</Defs>

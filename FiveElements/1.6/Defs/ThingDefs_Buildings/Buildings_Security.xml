@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== 木行植物陷阱 ======================== -->
+
+	<!--绞杀荆棘-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Trap_StrangleThorn</defName>
+		<label>Strangle-thorn</label>
+		<description>Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forth and strike the victim. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<thingClass>RI_FiveElements.Building_TrapDamagerX</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/RI_Building_StrangleThorn</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<uiOrder>90</uiOrder>
+
+		<statBases>
+			<Mass>2.5</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>1</Beauty>
+			<Cleanliness>-5</Cleanliness>
+			<TrapMeleeDamage>0.5</TrapMeleeDamage>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+
+		<building>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>true</trapDestroyOnSpring>
+			<trapDamageCategory>RI_ThornDamage_Category</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+
+		<modExtensions>
+			<li Class="RI_FiveElements.TrapModExt">
+				<damageDef>RI_ThornDamage</damageDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+	<!--龙刺-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Trap_AgaveSpike</defName>
+		<label>Agave-spike</label>
+		<description>A trap conjured through a Wood path technique, transformed from an agave plant.\n\nAgave-spike is a ground spike that deals minor damage to enemies who step on it. Under the influence of vitality techniques, the transformed agave leaves harden like steel, easily piercing through the sole of a foot.</description>
+		<thingClass>Building_TrapDamager</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/RI_Building_AgaveSpike</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.8,1.8)</drawSize>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<uiOrder>90</uiOrder>
+
+		<statBases>
+			<Mass>2.5</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>1</Beauty>
+			<Cleanliness>-5</Cleanliness>
+			<TrapMeleeDamage>10</TrapMeleeDamage>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+
+		<building>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>true</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

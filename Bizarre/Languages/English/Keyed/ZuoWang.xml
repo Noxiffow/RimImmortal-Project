@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <NzRI_Zw_ReduceFg_NotEnough>Not enough feigang</NzRI_Zw_ReduceFg_NotEnough>
+
+    <NzRI_Zw_ReduceYq_NotEnough>Not enough innate qi</NzRI_Zw_ReduceYq_NotEnough>
+
+    <NzRI_Zw_DropTargetItem_Droped>{Pawn} traded their items</NzRI_Zw_DropTargetItem_Droped>
+
+    <NzRI_Zw_DropTargetItem_NoItem>{Pawn} has no items to trade</NzRI_Zw_DropTargetItem_NoItem>
+
+    <NzRI_Zw_MvIllness_NoDest>No target</NzRI_Zw_MvIllness_NoDest>
+
+    <NzRI_Zw_MvIllness_NoPerson>No one at the target location</NzRI_Zw_MvIllness_NoPerson>
+
+    <NzRI_Zw_MvIllness_NoIllness>No one to heal</NzRI_Zw_MvIllness_NoIllness>
+
+    <NzRI_Zw_Is_TooPowerful>This creature {Pawn} is too powerful</NzRI_Zw_Is_TooPowerful>
+
+    <NzRI_Zw_FictionReality_NoPlace>No place to put</NzRI_Zw_FictionReality_NoPlace>
+
+    <NzRI_Zw_FictionReality_Success>A new {Thing} has appeared</NzRI_Zw_FictionReality_Success>
+
+    <Zw_CalcuCheatSuccess_Success>Your lie was successful</Zw_CalcuCheatSuccess_Success>
+
+    <Zw_CalcuCheatSuccess_Fail>They saw through your lie. Clearly your words (social) were not enough to deceive them (intellect)</Zw_CalcuCheatSuccess_Fail>
+
+    <Label_FeiGang>Feigang</Label_FeiGang>
+
+    <Label_InnateQi>YiQi</Label_InnateQi>
+</LanguageData>

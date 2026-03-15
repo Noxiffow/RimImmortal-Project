@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Name="RI_FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<fertility>0</fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+		<pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="BurnedFloorBase">
+		<defName>RI_Building_BurnedFloor</defName>
+		<label>Burned floor</label>
+		<renderPrecedence>251</renderPrecedence>
+		<description>Burned-out floor.</description>
+		<texturePath>Terrain/Surfaces/BurnedStrawmatting</texturePath>
+		<edgeType>FadeRough</edgeType>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FloorBase">
+		<defName>RI_Building_AncientFloorA</defName>
+		<label>Ancient Floor A</label>
+		<description>An ancient cultivator style floor, made of steel.</description>
+		<texturePath>Things/Building/Floors/Ancient/RI_Building_AncientFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<burnedDef>RI_Building_BurnedFloor</burnedDef>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>700</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RI_AncientCultivatorRestoration</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FloorBase">
+		<defName>RI_Building_AncientFloorB</defName>
+		<label>Ancient Floor B</label>
+		<description>An ancient cultivator style floor, made of steel.</description>
+		<texturePath>Things/Building/Floors/Ancient/RI_Building_AncientFloorB</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>351</renderPrecedence>
+		<burnedDef>RI_Building_BurnedFloor</burnedDef>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>700</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>RI_AncientCultivatorRestoration</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FloorBase">
+		<defName>RI_Building_AncientSteelFloor</defName>
+		<label>Ancient black steel floor</label>
+		<description>The floor made of black steel can be fireproof and has a high degree of cleanliness.</description>
+		<texturePath>Things/Building/Floors/Ancient/RI_Building_AncientSteelFloor</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<burnedDef>RI_Building_BurnedFloor</burnedDef>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>5</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+			<WorkToBuild>1800</WorkToBuild>
+		</statBases>
+		<costList>
+			<RI_Resource_BlackSteel>1</RI_Resource_BlackSteel>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>RI_BlackSteelSyntheticTechnology</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+
+
+
+</Defs>

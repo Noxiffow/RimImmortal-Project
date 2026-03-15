@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 列阵 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Bj_Embattle</defName>
+        <label>embattle</label>
+        <!-- 让你的盟友在周围列阵，增加他们的战斗力，持续6小时 -->
+        <description>Let your allies embattle around you, increasing their combat effectiveness, lasting 6 hours.</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>30000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <!-- <category>Sanguophage</category> -->
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音为怒吼 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <targetRequired>False</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.01</warmupTime>
+            <!-- TODO -->
+            <range>-1</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-15</rEnergy>
+            </li> -->
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <durationSecondsOverride>167</durationSecondsOverride>
+                <hediffDef>NzRI_He_Bj_Embattle</hediffDef>
+                <psychic>False</psychic>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef> 
+
+    <!-- 血战 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Bj_DieFighting</defName>
+        <label>die fighting</label>
+        <!-- 进入狂暴的战斗状态，决不投降，绝不后退 -->
+        <description>Enter a berserk fighting state, never surrendering or retreating</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>30000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <!-- <category>Sanguophage</category> -->
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音为怒吼 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <targetRequired>False</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.01</warmupTime>
+            <!-- TODO -->
+            <range>-1</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-15</rEnergy>
+            </li> -->
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <durationSecondsOverride>167</durationSecondsOverride>
+                <hediffDef>NzRI_He_Bj_DieFighting</hediffDef>
+                <psychic>False</psychic>
+                <replaceExisting>true</replaceExisting>
+            </li>
+            <li Class="CompProperties_AbilityGiveMentalState">
+                <compClass>CompAbilityEffect_GiveMentalState</compClass>
+                <stateDef>BerserkTrance</stateDef>
+                <soundMale>BerserkTrance_Resolve_Male</soundMale>
+                <soundFemale>BerserkTrance_Resolve_Female</soundFemale>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 染煞 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Bj_DyeingEvil</defName>
+        <label>dyeing evil</label>
+        <!-- 使一件近战武器沾染煞气，使用这件武器的人会变的非常强大，但是也会更加容易激怒 -->
+        <cooldownTicksRange>120000</cooldownTicksRange>
+        <description>Make a melee weapon tainted with evil, the user of this weapon will become very powerful, but also more easily angered.</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <!-- TODO 声音是皇权的 -->
+        <!-- <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound> -->
+        <!-- <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound> -->
+        <!-- <warmupEffecter>Implant_Xenogerm</warmupEffecter> -->
+        <aiCanUse>false</aiCanUse>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>True</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>True</showPsycastEffects>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3.9</range>
+            <warmupTime>6</warmupTime>
+            <drawAimPie>True</drawAimPie>
+            <requireLineOfSight>True</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>False</canTargetSelf>
+                <canTargetPawns>False</canTargetPawns>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetItems>True</canTargetItems>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-299</rEnergy>
+            </li> -->
+            
+        </comps>
+    </AbilityDef> 
+
+    <!-- 铁魄 -->
+
+    <!-- 将相首 -->
+</Defs>

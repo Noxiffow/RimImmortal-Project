@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--刷怪蛋基类-->
+  <ThingDef ParentName="ResourceBase" Name="RI_ZombieBase_UndeadCreature" Abstract="True">
+    <description>NONE</description>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>0</MarketValue>
+      <Mass>10</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Special/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <stackLimit>1</stackLimit>
+    <tradeability>None</tradeability>
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0</generateCommonality>
+  </ThingDef>
+  <!--==========================尸体傀儡 刷怪蛋==========================-->
+  <!--刷怪蛋——纸人-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_PaperDoll</defName>
+    <label>paper doll</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_PaperDoll_Pawn</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--刷怪蛋——缝合尸-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_PatchMan</defName>
+    <label>patch man</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_PatchMan_Pawn</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--刷怪蛋——尸傀-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_CorpsePuppet</defName>
+    <label>corpse puppet</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_CorpsePuppet_Pawn</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--刷怪蛋——浮肿尸-->
+  <!--<ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+		<defName>RI_SpawnEgg_Boomer</defName>
+		<label>boomer</label>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+				<hatcherDaystoHatch>0</hatcherDaystoHatch>
+				<hatcherPawn>RI_CorpseCreature_PaperDoll_Pawn</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>-->
+  <!--刷怪蛋——僵尸马-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_ZombieHorse</defName>
+    <label>zombie horse</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_ZombieHorse_Pawn</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--刷怪蛋——僵尸牛-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_ZombieCow</defName>
+    <label>zombie buffalo</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_ZombieCow_Pawn</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--刷怪蛋——铁浮图-->
+  <ThingDef ParentName="RI_ZombieBase_UndeadCreature">
+    <defName>RI_SpawnEgg_IronPagoda</defName>
+    <label>iron pagoda</label>
+    <comps>
+      <li Class="RimZombieGirl.CompProperties_PlayerHatcher">
+        <hatcherDaystoHatch>0</hatcherDaystoHatch>
+        <hatcherPawn>RI_CorpseCreature_ZombieArmor_Pawn</hatcherPawn>
+        <spawnAges>18</spawnAges>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--符水-->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>RI_Drug_TalismanWater</defName>
+    <label>amulet soup</label>
+    <description>A bowl of clear water infused with the ashes of a burned charm. Fine sediment lingers at the bottom, and it emits a faintly calming presence.\n\nWhen consumed, it grants immunity to wound infections and intestinal illnesses for one day, non-addictive.</description>
+    <descriptionHyperlinks>
+      <HediffDef>RI_Hediff_AmuletProtection</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/RI_Drug_TalismanWater</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>50</stackLimit>
+    <techLevel>Medieval</techLevel>
+    <tradeTags>
+      <li>Drug</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <!-- 制作很快 -->
+      <MarketValue>6</MarketValue>
+      <!-- 便宜 -->
+      <Mass>0.1</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <!-- 摄取属性 -->
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.05</joy>
+      <baseIngestTicks>100</baseIngestTicks>
+      <!-- 喝得很快 -->
+      <nurseable>true</nurseable>
+      <drugCategory>Medical</drugCategory>
+      <!-- 归类为医疗品 -->
+      <!-- 喝下去的效果 -->
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RI_Hediff_AmuletProtection</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="RimZombieGirl.IngestionOutcomeDoer_CureFleshMutationParts">
+          <maxPartsToCure>3</maxPartsToCure>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <!-- 制作配方 -->
+    <recipeMaker>
+      <recipeUsers>
+        <li>RI_Building_ExorcismInstrumentBench</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <!-- 算作烹饪或智识都可以，这里设为烹饪 -->
+    </recipeMaker>
+    <!-- 成本：1个草药 (代表草药/符纸) -->
+    <costList>
+      <MedicineHerbal>1</MedicineHerbal>
+      <RI_Resource_CharmPaper>5</RI_Resource_CharmPaper>
+    </costList>
+    <!-- 这是一个没有任何成瘾性的药物 -->
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

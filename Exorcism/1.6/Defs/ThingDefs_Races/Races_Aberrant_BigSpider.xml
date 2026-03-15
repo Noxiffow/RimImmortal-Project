@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 山蜘蛛 -->
+	<ThingDef ParentName="RI_Base_EvilCreatureSpider">
+		<defName>RI_EvilCreature_SuperBigSpider_Race</defName>
+		<label>arachnid</label>
+		<description>RI_EvilCreature_SuperBigSpider_Race.</description>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			<!-- 移动速度-->
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<!-- 护甲-->
+			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+			<!-- 护甲-->
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<!-- 最低舒适温度-->
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<!-- 最高舒适温度-->
+			<MarketValue>600</MarketValue>
+			<!-- 市场价值-->
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<intelligence>ToolUser</intelligence>
+			<body>RI_EvilCreature_HeadSpider_BodyDef</body>
+			<lifeExpectancy>300</lifeExpectancy>
+			<!-- 预期寿命-->
+			<baseBodySize>4.5</baseBodySize>
+			<baseHealthScale>6</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<!--攻击方式：第一对足，头撞-->
+			<li>
+				<label>first pair of legs</label>
+				<labelNoLocation>legs</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+					<!-- 伤害类型-->
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.4</cooldownTime>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>first pair of legs</label>
+				<labelNoLocation>legs</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+					<!-- 伤害类型-->
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.4</cooldownTime>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>spider fang</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>3</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_SuperBigSpider</defName>
+		<label>arachnid</label>
+		<race>RI_EvilCreature_SuperBigSpider_Race</race>
+		<combatPower>700</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_SuperBigSpider/RI_EvilCreature_SuperBigSpider</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_SuperBigSpider/Dessicated_Megascarab</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<startingHediffs>
+			<li>
+				<!--炮台hediff-->
+				<def>RI_TurretHediff_SpiderShoot</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+</Defs>

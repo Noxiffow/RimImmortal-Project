@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Walking dead -->
+  <RI_EvilCreature_Zombie.label>僵尸</RI_EvilCreature_Zombie.label>
+  
+  <!-- EN: armor zombie -->
+  <RI_EvilCreature_ZombieArmor.label>铁甲尸</RI_EvilCreature_ZombieArmor.label>
+  
+  <!-- EN: Boomer -->
+  <RI_EvilCreature_ZombieBoomer.label>浮肿尸</RI_EvilCreature_ZombieBoomer.label>
+  
+</LanguageData>

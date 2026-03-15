@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="RI_GolemBoxBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.1,0,0.8,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconOffset>(0,-0.14)</uiIconOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<uiOrder>40</uiOrder>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases>
+			<Mass>20</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-1</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RI_Research_Golem</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+	</ThingDef>
+
+	<ThingDef Name="RI_GolemEggBase" ParentName="ResourceBase" Abstract="True">
+		<description>Golem trap.</description>
+		<graphicData>
+			<texPath>Blank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>1005</MarketValue>
+			<Mass>0.15</Mass>
+			<MaxHitPoints>99999</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-9999</minSafeTemperature>
+				<maxSafeTemperature>9999</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+				<!--损坏的进程，不用管-->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemBoxBase">
+		<!--前置是爆炸陷阱的前置-->
+		<defName>RI_WoodenPuppetTrap</defName>
+		<label>Wooden golem box</label>
+		<description>Low-level wooden golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
+		<graphicData>
+			<texPath>Things/Building/Special/RI_WoodenPuppetTrap</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>75</WoodLog>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.9</explosiveRadius>
+				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<postExplosionSpawnThingDef>RI_WoodenPuppetEgg</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
+				<researchProjectDef>RI_Research_Golem</researchProjectDef>
+				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemEggBase">
+		<defName>RI_WoodenPuppetEgg</defName>
+		<label>Golem trap</label>
+		<comps>
+			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
+				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
+				<!--需要0.00001天孵化-->
+				<hatcherPawn>RI_WoodenPuppet</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemBoxBase">
+		<!--前置是爆炸陷阱的前置-->
+		<defName>RI_StonyPuppetTrap</defName>
+		<label>Stony golem box</label>
+		<description>Low-level stony golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
+		<graphicData>
+			<texPath>Things/Building/Special/RI_StonyPuppetTrap</texPath>
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.9</explosiveRadius>
+				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<postExplosionSpawnThingDef>RI_StonyPuppetEgg</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
+				<researchProjectDef>RI_Research_Golem</researchProjectDef>
+				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemEggBase">
+		<defName>RI_StonyPuppetEgg</defName>
+		<label>Golem trap</label>
+		<comps>
+			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
+				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
+				<!--需要0.00001天孵化-->
+				<hatcherPawn>RI_StonyPuppet</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemBoxBase">
+		<!--前置是爆炸陷阱的前置-->
+		<defName>RI_SteelPuppetTrap</defName>
+		<label>Steel golem box</label>
+		<description>Low-level steel golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
+		<graphicData>
+			<texPath>Things/Building/Special/RI_SteelPuppetTrap</texPath>
+		</graphicData>
+		<costList>
+			<Steel>75</Steel>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.9</explosiveRadius>
+				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<postExplosionSpawnThingDef>RI_SteelPuppetEgg</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
+				<researchProjectDef>RI_Research_Golem</researchProjectDef>
+				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_GolemEggBase">
+		<defName>RI_SteelPuppetEgg</defName>
+		<label>Golem trap</label>
+		<comps>
+			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
+				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
+				<!--需要0.00001天孵化-->
+				<hatcherPawn>RI_SteelPuppet</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--只需要一个pawn且不希望被其他mod影响数量（有一些mod会擅自修改pawn的combatPower，说的就是你！Yayo ComBat！）用上面的方法，需要一次性生成多个pawn用下面的方法-->
+
+	<!--<ThingDef ParentName="BuildingBase" Name="RI_PuppetSpawnerBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Blank</texPath>
+			<drawSize>(1,1)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>0</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationHotKey>Misc1</designationHotKey>
+		<comps>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+	</ThingDef>
+
+  <ThingDef ParentName="RI_PuppetSpawnerBase">
+		<defName>RI_WoodenPuppetSpawner</defName>
+		<label>木制傀儡激活</label>
+		<description>木制傀儡激活</description>
+		<graphicData>
+			
+		</graphicData>
+		<comps Inherit="False">
+			<li Class="CompProperties_SpawnerPawn">
+				<spawnablePawnKinds>
+					<li>RI_WoodenPuppet</li>
+				</spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+				<spawnSound>Tunnel_End</spawnSound>
+        <maxPawnsToSpawn>1</maxPawnsToSpawn>
+				<initialPawnsPoints>9999</initialPawnsPoints>
+				<maxSpawnedPawnsPoints>9999</maxSpawnedPawnsPoints>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>60</lifespanTicks>
+				<expireEffect>RaisedRock_Collapse</expireEffect>
+			</li>
+		</comps>
+		<selectable>true</selectable>
+	</ThingDef>-->
+
+
+
+
+</Defs>

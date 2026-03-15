@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef Name="RI_Prostheses_Base" ParentName="SurgeryFlesh" Abstract="True">
+		<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<recipeUsers>
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!--安装翠玉系列-->
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallJadeFakeArm</defName>
+		<label>Install Jade arm</label>
+		<description>Install Jade arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeArm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing Jade arm.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_JadeFakeArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_JadeFakeArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_JadeFakeArm</addsHediff>
+		<!--<researchPrerequisite>Prosthetics</researchPrerequisite>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallJadeFakeEye</defName>
+		<label>Install Jade eye</label>
+		<description>Install Jade eye.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeEye</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Jade eye.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_JadeFakeEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_JadeFakeEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_JadeFakeEye</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallJadeFakeHand</defName>
+		<label>Install Jade hand</label>
+		<description>Install Jade hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeHand</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Jade hand.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_JadeFakeHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_JadeFakeHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_JadeFakeHand</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallJadeFakeFoot</defName>
+		<label>Install Jade foot</label>
+		<description>Install Jade foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeFoot</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Jade foot.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_JadeFakeFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_JadeFakeFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_JadeFakeFoot</addsHediff>
+	</RecipeDef>
+
+	<!--安装庚钢系列-->
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallBlackSteelArm</defName>
+		<label>Install Black steel arm</label>
+		<description>Install Black steel arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelArm</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Black steel arm.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_BlackSteelArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_BlackSteelArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_BlackSteelArm</addsHediff>
+		<!--<researchPrerequisite>Prosthetics</researchPrerequisite>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallBlackSteelLeg</defName>
+		<label>Install Black steel leg</label>
+		<description>Install Black steel leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelLeg</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Black steel leg.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_BlackSteelLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_BlackSteelLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_BlackSteelLeg</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallBlackSteelFoot</defName>
+		<label>Install Black steel foot</label>
+		<description>Install Black steel foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelFoot</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Black steel foot.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_BlackSteelFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_BlackSteelFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_BlackSteelFoot</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallBlackSteelHand</defName>
+		<label>Install Black steel hand</label>
+		<description>Install Black steel hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelHand</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Black steel hand.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_BlackSteelHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_BlackSteelHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_BlackSteelHand</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_Prostheses_Base">
+		<defName>RI_InstallBlackSteelSpine</defName>
+		<label>Install Black steel spine</label>
+		<description>Install Black steel spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelSpine</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing Black steel spine.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_BlackSteelSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>RI_Prostheses_BlackSteelSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_BlackSteelSpine</addsHediff>
+	</RecipeDef>
+
+	<!--===============================五行内脏===============================-->
+
+	<!--千壶焱心-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallFireBionicHeart</defName>
+		<label>install Bionic heart-Fire</label>
+		<description>Install a Bionic heart-Fire.</description>
+		<jobString>Installing Bionic heart-Fire</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_FireBionicHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Prostheses_FireBionicHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_FireBionicHeart</addsHediff>
+	</RecipeDef>
+
+	<!--戍土鼎胃-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallEarthBionicStomach</defName>
+		<label>install Bionic stomach-Earth</label>
+		<description>Install a Bionic stomach-Earth.</description>
+		<jobString>Installing Bionic stomach-Earth</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_EarthBionicStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Prostheses_EarthBionicStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_EarthBionicStomach</addsHediff>
+	</RecipeDef>
+
+	<!--肃金御肺-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallMetalBionicLung</defName>
+		<label>install Bionic lung-Metal</label>
+		<description>Install a Bionic lung-Metal.</description>
+		<jobString>Installing Bionic lung-Metal</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_MetalBionicLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Prostheses_MetalBionicLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_MetalBionicLung</addsHediff>
+	</RecipeDef>
+
+	<!--寒灵水肾-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallWaterBionicKidney</defName>
+		<label>install Bionic kidney-Water</label>
+		<description>Install a Bionic kidney-Water.</description>
+		<jobString>Installing Bionic kidney-Water</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_WaterBionicKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Prostheses_WaterBionicKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_WaterBionicKidney</addsHediff>
+	</RecipeDef>
+
+	<!--棠木枝肝-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallWoodBionicLiver</defName>
+		<label>install Bionic liver-Wood</label>
+		<description>Install a Bionic liver-Wood.</description>
+		<jobString>Installing Bionic liver-Wood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Prostheses_WoodBionicLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Prostheses_WoodBionicLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_WoodBionicLiver</addsHediff>
+	</RecipeDef>
+
+</Defs>

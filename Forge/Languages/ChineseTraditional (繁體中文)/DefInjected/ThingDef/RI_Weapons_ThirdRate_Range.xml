@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spiritual arrow -->
+  <RI_Arrow_Basic.label>灵箭</RI_Arrow_Basic.label>
+  
+  <!-- EN: Spiritual bullet -->
+  <RI_Bullet_Harquebus.label>灵弹</RI_Bullet_Harquebus.label>
+  
+  <!-- EN: Long range spiritual bullet -->
+  <RI_Bullet_LongRange.label>狙击弹</RI_Bullet_LongRange.label>
+  
+  <!-- EN: Throwing knife -->
+  <RI_Throwing_ThrowingKnife.label>飞镖</RI_Throwing_ThrowingKnife.label>
+  
+  <!-- EN: Flying locust bow【Third-rate】 -->
+  <RI_Weapon_BasicBow.label>飞蝗弓【三品】</RI_Weapon_BasicBow.label>
+  <!-- EN: 【Third-rate】range.\n\nA compound bow specially strengthened with Qi is very light and flexible, like the legs of a locust, hence the name flying Locust bow. -->
+  <RI_Weapon_BasicBow.description>【三品】远程。\n\n一支用灵气特殊加强处理的复合弓，非常轻便柔韧，如同蝗虫的腿一般，故得名飞蝗弓。</RI_Weapon_BasicBow.description>
+  <!-- EN: limb -->
+  <RI_Weapon_BasicBow.tools.limb.label>limb</RI_Weapon_BasicBow.tools.limb.label>
+  <!-- EN: Flying locust bow【Third-rate】 -->
+  <RI_Weapon_BasicBow.verbs.Verb_Shoot.label>飞蝗弓【三品】</RI_Weapon_BasicBow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Triple shot harquebus【Third-rate】 -->
+  <RI_Weapon_Harquebus.label>连珠炮【三品】</RI_Weapon_Harquebus.label>
+  <!-- EN: 【Third-rate】range.\n\nAn archaic arquegun, but made of excellent material, capable of firing three rounds in a row. -->
+  <RI_Weapon_Harquebus.description>【三品】远程。\n\n一杆样貌古朴的火绳枪，但是使用了相当优秀的材料，可以连续射出三发灵弹。</RI_Weapon_Harquebus.description>
+  <!-- EN: stock -->
+  <RI_Weapon_Harquebus.tools.stock.label>stock</RI_Weapon_Harquebus.tools.stock.label>
+  <!-- EN: barrel -->
+  <RI_Weapon_Harquebus.tools.barrel.label>barrel</RI_Weapon_Harquebus.tools.barrel.label>
+  <!-- EN: Triple shot harquebus【Third-rate】 -->
+  <RI_Weapon_Harquebus.verbs.Verb_Shoot.label>连珠炮【三品】</RI_Weapon_Harquebus.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Long range musket【Third-rate】 -->
+  <RI_Weapon_LongRangeMusket.label>鹰眼火枪【三品】</RI_Weapon_LongRangeMusket.label>
+  <!-- EN: 【Third-rate】range.\n\nA long-range musket based on an earlier version of the harquebus, with a higher long-range hit rate and a better spiritual bullet. -->
+  <RI_Weapon_LongRangeMusket.description>【三品】远程。\n\n一种基于早期火枪改造而来的远射火枪，远距离命中率较高，射出的灵弹威力也更高。</RI_Weapon_LongRangeMusket.description>
+  <!-- EN: stock -->
+  <RI_Weapon_LongRangeMusket.tools.stock.label>stock</RI_Weapon_LongRangeMusket.tools.stock.label>
+  <!-- EN: Long range musket【Third-rate】 -->
+  <RI_Weapon_LongRangeMusket.verbs.Verb_Shoot.label>鹰眼火枪【三品】</RI_Weapon_LongRangeMusket.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_LongRangeMusket.tools.barrel.label>barrel</RI_Weapon_LongRangeMusket.tools.barrel.label>
+  
+  <!-- EN: Throwing knife【Third-rate】 -->
+  <RI_Weapon_ThrowingKnife.label>脱手镖【三品】</RI_Weapon_ThrowingKnife.label>
+  <!-- EN: 【Third-rate】range.\n\nA throwing knife embedded with a spiritual crystal to inflict more damage. This kind of assassinate weapon is despised by the upright man, but because of its practicality, many travelers will carry one or two throwing knives for self-defense. -->
+  <RI_Weapon_ThrowingKnife.description>【三品】远程。\n\n一种飞镖暗器，在其中镶嵌了灵石以产生更大的伤害。这种暗器被正道人士所不齿，但由于其实用性，所以许多行者都会带一两个暗器防身。</RI_Weapon_ThrowingKnife.description>
+  <!-- EN: point -->
+  <RI_Weapon_ThrowingKnife.tools.point.label>point</RI_Weapon_ThrowingKnife.tools.point.label>
+  <!-- EN: Throwing knife【Third-rate】 -->
+  <RI_Weapon_ThrowingKnife.verbs.Verb_Shoot.label>脱手镖【三品】</RI_Weapon_ThrowingKnife.verbs.Verb_Shoot.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_ThrowingKnife.tools.shaft.label>shaft</RI_Weapon_ThrowingKnife.tools.shaft.label>
+  
+</LanguageData>

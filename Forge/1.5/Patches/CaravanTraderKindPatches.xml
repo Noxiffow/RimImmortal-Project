@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<!--为了不和其他mod产生patch冲突，采用Conditional（条件）类patch-->
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName = "OutlanderCivil"]/caravanTraderKinds</xpath>
+		<!--判断有没有caravanTraderKinds这个接口，如果有，执行match，如果没有，执行nomatch-->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName = "OutlanderCivil"]</xpath>
+			<value>
+				<caravanTraderKinds>
+					<li>RI_Talisman_Caravan_BlindBox</li>
+					<!--探宝人-->
+				</caravanTraderKinds>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName = "OutlanderCivil"]/caravanTraderKinds</xpath>
+			<value>
+				<li>RI_Talisman_Caravan_BlindBox</li>
+				<!--探宝人-->
+			</value>
+		</match>
+	</Operation>
+
+	<!--如果想让散修派系加上商队，把所有的OutlanderCivil改成散修的就可以了-->
+
+</Patch>

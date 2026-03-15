@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--书信，介绍世界观用的-->
+	<ThingDef Name="RI_ReadableBook_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<selectable>true</selectable>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Rare</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<stackLimit>75</stackLimit>
+		<thingCategories>
+			<li>RI_Category_StoryBooks</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.05</Mass>
+			<MarketValue>30</MarketValue>
+			<Flammability>1</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--本体的书籍前置，和门派区分开-->
+	<ThingDef ParentName="RI_ReadableBook_Base" Name="RI_CoreNotebook_base" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Books/RI_Book_OldNotebook</texPath>
+		</graphicData>
+		<!--散修商队会带这个-->
+		<tradeTags>
+			<li>RI_Sect_NoteBook_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--云家上卷-->
+	<ThingDef ParentName="RI_CoreNotebook_base">
+		<defName>RI_Book_YunClanA</defName>
+		<label>Records of Yun Clan (Volume I)</label>
+		<description>In the year of Xinwei, on the day of Yun Fan's wedding, the Yun residence was ablaze with lights, guests filled the halls, cultivators gathered, and exotic beasts and spiritual birds roamed, creating an unprecedented spectacle. Meanwhile, the servant Li Gui sat alone in the herb garden, an outer sect disciple of humble bloodline, unnoticed by all.\n\nLate at night, as the banquet began to wind down, a sharp and tragic scream pierced the air, and chaos erupted in the Yun residence! Black-clad assassins infiltrated, their blades flashing, and the Yun family disciples fought valiantly but were overwhelmed, blood flowing like rivers in moments. The head of the Yun family, Cloud Zhenren Yun Xin, filled with murderous intent, hovered in the air. His palm crackled with dragon-like lightning, cutting down enemies, instilling terror in all. By the time Li Gui arrived, the battle was nearing its end, Yun Xin, exhausted and wounded, was gravely injured by the assassins. At this critical moment, Yun Xin’s younger brother, Yun Miao, appeared, unleashing a swirling thunder that obliterated the enemies without a trace.\n\nYun Xin, on the brink of death, sighed as he realized his meridians were destroyed, and he would never cultivate again. Yun Miao wept uncontrollably, kneeling beside him.</description>
+	</ThingDef>
+	
+	<!--历史正文上卷-->
+	<ThingDef ParentName="RI_CoreNotebook_base">
+		<defName>RI_Book_HistoryTextVolumeA</defName>
+		<label>History text (Volume I)</label>
+		<description>According to some military documents found:\n\nIn 33■■, humanity first discovered Qi energy in Lingbing, and soon after, began applying Qi technology to the military, resulting in the creation of modified soldiers with the power to annihilate entire armies. In 3■■■, the military launched a war against the superintelligences. However, despite initial victories, humanity was ultimately defeated in the face of the overwhelming power of the super-intelligent creations.\n\nIn 3449, after the conclusion of the Fangyuan War, humanity split into three factions: the Hawk faction, represented by part of the military, continued the fight; the Ascendant faction, consisting mostly of the public, accepted the existence of the superintelligences; and some war veterans chose to join the Gui Xu faction, distancing themselves from the conflict.\n\n— Recorded by the Jiang in 5479.</description>
+	</ThingDef>
+
+	<!--历史正文下卷-->
+	<ThingDef ParentName="RI_CoreNotebook_base">
+		<defName>RI_Book_HistoryTextVolumeB</defName>
+		<label>History text (Volume II)</label>
+		<description>After the war, according to reliable historical records:\n\nFive of the strongest Qi masters of the time once gathered on a certain planet, exchanging insights and delving into the mysteries of Qi. Eventually, they each took different paths, and they were later revered by future generations as the "Dragon Masters." In 35■■, one of the Dragon Masters, before his death, compiled and passed down the Eight Great Paths, establishing the foundation for cultivation methods and realms, ensuring the continuation of the legacy.\n\nSubsequent history is hard to trace, but the ancient cultivators and the sect wars mentioned by the immortals must have occurred on some distant planet. If that place is found, perhaps all the hidden history can be uncovered.\n\n— Recorded by the Jiang in 5481.</description>
+	</ThingDef>
+
+</Defs>

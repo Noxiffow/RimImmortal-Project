@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator armor【Second-rate】 -->
+  <RI_Apparel_AncientCultivatorArmor.label>古修玄铁甲【二品】</RI_Apparel_AncientCultivatorArmor.label>
+  <!-- EN: 【Second-rate】apparel\n\nAncient cultivators crafted marvelous armor from steel and spirit stones, achieving an unbelievable level of durability and hardness while maintaining mobility and lightness. This armor seems to absorb kinetic energy and produce a formidable defense, but the principles behind it are difficult to analyze due to its antiquity. -->
+  <RI_Apparel_AncientCultivatorArmor.description>【二品】盔甲\n\n古代修炼者以钢铁和灵石打造的奇妙盔甲，在保证行动能力和轻便的前提下，达到了不可思议的耐久度和硬度。这种盔甲似乎可以吸收动能，产生强大的防御力，但是由于年代久远，难以分析其中的原理。</RI_Apparel_AncientCultivatorArmor.description>
+  
+  <!-- EN: BaGua robe【Second-rate】 -->
+  <RI_Apparel_BaGuaCoat.label>八卦衣【二品】</RI_Apparel_BaGuaCoat.label>
+  <!-- EN: 【Second-rate】apparel\n\n"The Qingyun Taoist, clad in a golden-threaded Bagua robe and wolf-hide upturned-toe boots, wielded a coin sword, ready to subdue the wicked fiend. However, as he cast his spell, the demon’s aura retaliated, taking the form of his master and attempting to flee. With a shake of his ritual bell and a swift hand seal, the Taoist entrapped the demon, turning the tide and securing victory."——Tales of a Century Immortal Path\n\nThe bagua robe is a classic clothes of traditional Taoists, crafted from fine fabric and embroidered with Bagua patterns. Within its weave lie delicate spiritual components that harmonize the energies of earth, offering both protection in battle and enhanced cultivation insights.\n\n<color=#FFFF00>【Special effects】\nResearch speed +10%.\nEntity study rate +10%.</color> -->
+  <RI_Apparel_BaGuaCoat.description>【二品】服饰\n\n“青云道士身穿金丝八卦衣，脚踏狼皮翘头靴，手捏一柄铜钱剑，正要捉那恶妖。不料施法时，妖气反扑，化作他师傅之相，欲夺路而走。道士一抖法铃，捏了个法诀，将那妖困于其中，最终反败为胜。”——《百年仙途》\n\n八卦衣乃是传统道士的穿着，布料精细，绣有八卦图案。改进后，衣服内的微小灵气构件能够调和大地中的灵气，不仅可以御敌，还能增强道士的研究能力。\n\n&lt;color=#FFFF00>【特殊效果】\n研究速度+10%。\n实体调查速度+10%。&lt;/color></RI_Apparel_BaGuaCoat.description>
+  
+  <!-- EN: Gilded general armor【Second-rate】 -->
+  <RI_Apparel_GoldBestArmor.label>鎏金天王甲【二品】</RI_Apparel_GoldBestArmor.label>
+  <!-- EN: 【Second-rate】apparel\n\nA gilded armor with a magnificent appearance, refined through the method of forge, exuding a faint aura of spiritual might. -->
+  <RI_Apparel_GoldBestArmor.description>【二品】盔甲\n\n一副鎏金风格的盔甲，外形华丽，经过炼器之法的处理，具有淡淡的灵气威压。</RI_Apparel_GoldBestArmor.description>
+  
+  <!-- EN: Iron cloak【Third-rate】 -->
+  <RI_Apparel_SoftIronJacket.label>百炼铁衣【三品】</RI_Apparel_SoftIronJacket.label>
+  <!-- EN: 【Third-rate】apparel\n\nA cloak with a shoulder plate and a thin plate sewn on the inside. -->
+  <RI_Apparel_SoftIronJacket.description>【三品】服饰\n\n一种装上了肩甲，并且在内侧缝制了轻薄甲片的披风衣物。</RI_Apparel_SoftIronJacket.description>
+  
+  <!-- EN: Tiger guard armor【Second-rate】 -->
+  <RI_Apparel_TigerGuardArmor.label>精铁虎卫甲【二品】</RI_Apparel_TigerGuardArmor.label>
+  <!-- EN: 【Second-rate】apparel\n\nA armor forged from refined iron through the method of Forge, engraved with a tiger head, exuding an imposing presence. -->
+  <RI_Apparel_TigerGuardArmor.description>【二品】盔甲\n\n一副以精铁和炼器之法打造而成的头盔，上面雕刻着虎头，非常威风。</RI_Apparel_TigerGuardArmor.description>
+  
+</LanguageData>

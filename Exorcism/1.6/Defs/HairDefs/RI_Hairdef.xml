@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>RI_Zombie_HairStyle</defName>
+		<label>zombie hairstyle</label>
+		<!--冥尸-->
+	</StyleItemCategoryDef>
+
+	<!--styleGender——Any Male Female-->
+
+	<!--=============================== 头发 ================================-->
+
+	<!--短发 男女通用-->
+
+	<!--僵尸短发A-->
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirlShortHairA</defName>
+		<label>zombie short hair A</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirlShortHairA</texPath>
+		<category>RI_Zombie_HairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--僵尸短发B-->
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirlShortHairB</defName>
+		<label>zombie short hair B</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirlShortHairB</texPath>
+		<category>RI_Zombie_HairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--僵尸短发C-->
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirlShortHairC</defName>
+		<label>zombie short hair C</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirlShortHairC</texPath>
+		<category>RI_Zombie_HairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--僵尸短发D-->
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirlShortHairD</defName>
+		<label>zombie short hair D</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirlShortHairD</texPath>
+		<category>RI_Zombie_HairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--僵尸短发E-->
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirlShortHairE</defName>
+		<label>zombie short hair E</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirlShortHairE</texPath>
+		<category>RI_Zombie_HairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--长发 男女通用-->
+
+	<!--长发A--><!--
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirl_B</defName>
+		<label>ZombieGirl</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirl_B</texPath>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	--><!--短发B--><!--
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirl_C</defName>
+		<label>ZombieGirl</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirl_C</texPath>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	--><!--短发B--><!--
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirl_LadyA</defName>
+		<label>ZombieGirl</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirl_LadyA</texPath>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	--><!--短发B--><!--
+	<HairDef>
+		<defName>RI_HairStyle_ZombieGirl_LadyB</defName>
+		<label>ZombieGirl</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ZombieGirl_LadyB</texPath>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_HairStyle</li>
+		</styleTags>
+	</HairDef>-->
+
+
+</Defs>

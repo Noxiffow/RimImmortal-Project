@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>title->[titleBasic]</li>
+    <li>title(p=2)->[titleAuthored]</li>
+    <li>titleBasic(p=6)->[randAdjective]大侠秘籍</li>
+    <li>titleBasic(p=6)->大侠手迹</li>
+    <li>titleBasic->大龙别部</li>
+    <li>titleBasic->身寸鸟英雄传</li>
+    <li>titleBasic->如未神掌</li>
+    <li>titleBasic->凌波徽步</li>
+    <li>titleBasic->九阳直经</li>
+    <li>titleBasic->六胖神剑</li>
+    <li>titleAuthored->[ANYPAWN_nameIndef]大侠的心得</li>
+    <li>titleAuthored->[ANYPAWN_nameIndef]大侠倾注的心血</li>
+    <li>titleAuthored->[ANYPAWN_nameIndef]大侠专注十年之上</li>
+    <li>titleAuthored->[ANYPAWN_nameIndef]大侠扣脚半天才写出</li>
+    <li>titleAuthored->[ANYPAWN_nameIndef]大侠为传承全部功力所创</li>
+  -->
+  <DaXiaBook_Namer.rulePack.rulesStrings>TODO</DaXiaBook_Namer.rulePack.rulesStrings>
+  
+</LanguageData>

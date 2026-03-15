@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--沙糖桔-->
+	<!--sugar tangerine暂定，orange指橙子，不是橘子-->
+
+	<ThingDef ParentName="RI_DrugBase">
+		<defName>RI_Food_SugarTangerine</defName>
+		<label>Sugar tangerine</label>
+		<description>The sugar tangerine orange is a cultivated citrus variety. It's small and as sweet as granulated sugar, hence the name.\n\nThis fruit is slightly addictive but has mild withdrawal symptoms. People with high blood sugar should limit consumption.</description>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_SugarTangerineHigh</HediffDef>
+			<HediffDef>RI_Hediff_SugarTangerineTolerance</HediffDef>
+			<HediffDef>RI_Hediff_SugarTangerineAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<thingCategories>
+			<li>RI_Category_Dessert</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_SugarTangerine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>3</DeteriorationRate>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<baseIngestTicks>80</baseIngestTicks>
+			<chairSearchRadius>4</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.3</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_SugarTangerineHigh</hediffDef>
+					<severity>0.50</severity>
+					<toleranceChemical>RI_Chemical_SugarTangerine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_SugarTangerineTolerance</hediffDef>
+					<toleranceChemical>RI_Chemical_SugarTangerine</toleranceChemical>
+					<severity>0.032</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>RI_Chemical_SugarTangerine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+
+	<ChemicalDef>
+		<defName>RI_Chemical_SugarTangerine</defName>
+		<label>SugarTangerine</label>
+		<addictionHediff>RI_Hediff_SugarTangerineAddiction</addictionHediff>
+		<toleranceHediff>RI_Hediff_SugarTangerineTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+
+	<!--沙糖桔渴求-->
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>RI_Need_SugarTangerine</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Need sugar tangerine</label>
+		<description>Because of an SugarTangerine addiction, this person needs to regularly consume SugarTangerine to avoid withdrawal symptoms.</description>
+		<listPriority>20</listPriority>
+	</NeedDef>
+
+</Defs>

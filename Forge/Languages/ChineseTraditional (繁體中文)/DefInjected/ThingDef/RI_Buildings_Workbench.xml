@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Anvil -->
+  <RI_Building_Anvil.label>铁砧</RI_Building_Anvil.label>
+  <!-- EN: An anvil can be placed near the forge to improve work efficiency. -->
+  <RI_Building_Anvil.description>一个铁砧，可以摆放在锻炉附近，提高工作效率。</RI_Building_Anvil.description>
+  
+  <!-- EN: Talisman-making workbench -->
+  <RI_Building_CharmWorkbench.label>构件制作台</RI_Building_CharmWorkbench.label>
+  <!-- EN: A workbench for making some simple talisman talisman. -->
+  <RI_Building_CharmWorkbench.description>一个用来制作一些简单的法宝符箓的工作台。</RI_Building_CharmWorkbench.description>
+  
+  <!-- EN: Energy talisman forge -->
+  <RI_Building_EnergyForge.label>灵器锻炉</RI_Building_EnergyForge.label>
+  <!-- EN: A wood-fueled stove with an attached countertop for preparing meals. -->
+  <RI_Building_EnergyForge.description>一个用来制作仙路兵器和盔甲的锻造炉。</RI_Building_EnergyForge.description>
+  
+  <!-- EN: Spirit talisman forge -->
+  <RI_Building_SpiritForge.label>神魂宝器锻炉</RI_Building_SpiritForge.label>
+  <!-- EN: An advanced table for crafting top weapons, armor and talismans, which requires the creation of the Spirit core circuit. -->
+  <RI_Building_SpiritForge.description>一个用来制作顶级兵器，盔甲和法宝的高级工作台，需要用炼器法门才能创造的的神魂宝器构件制造。</RI_Building_SpiritForge.description>
+  
+  <!-- EN: Forging tool table -->
+  <RI_Building_ToolTable.label>铁匠工具桌</RI_Building_ToolTable.label>
+  <!-- EN: A table with a stack of blacksmith's tools can be placed near the forge to increase productivity. -->
+  <RI_Building_ToolTable.description>一个摆放着一堆铁匠工具的桌子，可以摆放在锻炉附近，提高工作效率。</RI_Building_ToolTable.description>
+  
+</LanguageData>

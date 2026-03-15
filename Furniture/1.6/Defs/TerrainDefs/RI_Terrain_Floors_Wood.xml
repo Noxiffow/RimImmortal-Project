@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--檀木地板 需要锦衣玉食-->
+	<TerrainDef ParentName="FloorBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_SolidWoodPlankFloor</defName>
+		<label>Sandalwood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_SolidWoodPlankFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(122,72,55)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<costList>
+			<RI_Resource_SandalWoodLog>3</RI_Resource_SandalWoodLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>9004</uiOrder>
+	</TerrainDef>
+
+	<!--竹地板 需要锦衣玉食-->
+	<TerrainDef ParentName="FloorBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_BambooPlankFloor</defName>
+		<label>Bamboo plank floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_BambooPlankFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(186,159,128)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<costList>
+			<RI_Resource_RawBamboo MayRequire="RI.RimImmortal.Living">3</RI_Resource_RawBamboo>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>9005</uiOrder>
+	</TerrainDef>
+
+</Defs>

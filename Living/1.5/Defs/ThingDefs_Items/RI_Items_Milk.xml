@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!-- 奶制品的前置 -->
+	<ThingDef Name="RI_DairyCheese_Base" ParentName="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.05</Mass>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<!--优先度比简单食物略高-->
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<performMergeCompatibilityChecks>false</performMergeCompatibilityChecks>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--奶豆腐-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_Byaslag</defName>
+		<label>Byaslag</label>
+		<description>Byaslag is a traditional dairy product, primarily popular among nomadic cultures. It is made by fermenting milk into yogurt, then heating it to separate the whey from the curds. The curds are then pressed into shape and dried, resulting in byaslag.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_Byaslag</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_CookFood</li>
+		</thingCategories>
+		
+		<statBases>
+			<MarketValue>12</MarketValue>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<ingestible>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+	</ThingDef>
+
+	<!--酥油-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_Butter</defName>
+		<label>Butter</label>
+		<description>Butter is a product made by extracting fat from milk, a process that requires considerable effort. It is high in calories, rich in nutritional value, and highly durable for storage. Sometimes, it is even used as currency.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_Butter</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_CookFood</li>
+		</thingCategories>
+		
+		<statBases>
+			<MarketValue>30</MarketValue>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<ingestible>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--奶酪-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_Yogurt</defName>
+		<label>Yogurt</label>
+		<description>Yogurt made through microbial fermentation. It's highly nutritious and has a longer shelf life than milk.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_Yogurt</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_Tea</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>6</MarketValue>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<ingestible>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--甜莓奶酪-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_SweetBerryYogurt</defName>
+		<label>Sweet berry yogurt</label>
+		<description>Yogurt made through microbial fermentation. It's highly nutritious and has a longer shelf life than milk.\n\nThis yogurt is mixed with berry jam, improving the taste, and is considered a type of dessert.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_SweetBerryYogurt</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_Dessert</li>
+		</thingCategories>
+		
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<ingestible>
+			<ingestSound>Meal_Eat</ingestSound>
+			<tasteThought>RI_Thought_AteDessert</tasteThought>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--奶茶-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_MilkTea</defName>
+		<label>Milk tea</label>
+		<description>In ancient times, milk tea was more focused on its functionality, such as the Tibetan butter tea made with tea leaves, butter, and salt. Of course, there were also various other flavored milk teas loved by people.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_MilkTea</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_Tea</li>
+		</thingCategories>
+
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<ingestible>
+			<tasteThought>RI_AtesimpleMeal</tasteThought>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+	</ThingDef>
+
+	<!--珍珠奶茶-->
+	<ThingDef ParentName="RI_DairyCheese_Base">
+		<defName>RI_Food_BubbleTea</defName>
+		<label>Bubble tea</label>
+		<description>Adding starch-made pearls to milk tea not only gives it a smooth and sweet taste, but also adds an element of fun. This type of milk tea is especially popular among young people.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_BubbleTea</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>RI_Category_Tea</li>
+		</thingCategories>
+
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<ingestible>
+			<ingestSound>Meal_Eat</ingestSound>
+			<tasteThought>RI_Thought_BubbleTea</tasteThought>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+	</ThingDef>
+
+</Defs>

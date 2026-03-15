@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- =============================================================================== -->
+	<!-- 蜘蛛类邪异基类 -->
+	<!-- 躯干 -->
+	<BodyPartDef Name = "RI_SpiderTorso_Base" Abstract="True">
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+	<!-- 脖子 -->
+	<BodyPartDef Name = "RI_SpiderNeck_Base" Abstract="True">
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>	<!-- 这个意思是是否能被衣服覆盖-->
+		<solid>true</solid> <!-- 这个意思是是否能被直接伤害到-->
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+			<li>TalkingPathway</li>
+		</tags>
+  	</BodyPartDef>
+	<!-- 头 -->
+	<BodyPartDef Name = "RI_SpiderHead_Base" Abstract = "True">
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<executionPartPriority>500</executionPartPriority>
+	</BodyPartDef>
+	<!-- 眼睛 -->
+	<BodyPartDef Name = "RI_SpiderEye_Base" Abstract = "True">
+		<defName>Eye</defName>
+		<label>eye</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor><!-- 永久损伤率-->
+		<delicate>true</delicate> <!-- 是否易碎-->
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify><!-- 是否会产生疤痕-->
+		<socketed>false</socketed><!-- 是否可以使用仿生体替换-->
+		<beautyRelated>true</beautyRelated><!-- 是否与美观度有关-->
+		<tags>
+			<li>SightSource</li>
+		</tags>
+		<hitChanceFactors><!-- 被伤害类型命中的概率系数-->
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+	</BodyPartDef>
+	<!-- 腿 -->
+	<BodyPartDef Name = "RI_SpiderLeg_Base" Abstract = "True">
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!-- =============================================================================== -->
+	<!-- 人面蜘蛛 -->
+	<!-- 躯干 -->
+	<BodyPartDef ParentName = "RI_SpiderTorso_Base" Name="RI_EvilCreature_HeadSpider_Torso">
+		<defName>RI_EvilCreature_HeadSpider_Torso</defName>
+		<label>EvilCreature Head Spider Torso</label>
+		<hitPoints>60</hitPoints>
+	</BodyPartDef>
+	<!-- 脖子 -->
+	<BodyPartDef ParentName = "RI_SpiderNeck_Base" Name="RI_EvilCreature_HeadSpider_Neck">
+		<defName>RI_EvilCreature_HeadSpider_Neck</defName>
+		<label>EvilCreature Head Spider Neck</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+	<!-- 头 -->
+	<BodyPartDef ParentName = "RI_SpiderHead_Base" Name="RI_EvilCreature_HeadSpider_Head">
+		<defName>RI_EvilCreature_HeadSpider_Head</defName>
+		<label>EvilCreature Head Spider Head</label>
+		<hitPoints>40</hitPoints>
+	</BodyPartDef>
+	<!-- 眼睛 -->
+	<BodyPartDef ParentName = "RI_SpiderEye_Base" Name="RI_EvilCreature_HeadSpider_Eye">
+		<defName>RI_EvilCreature_HeadSpider_Eye</defName>
+		<label>EvilCreature Head Spider Eye</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+	<!-- 腿 -->
+	<BodyPartDef ParentName = "RI_SpiderLeg_Base" Name="RI_EvilCreature_HeadSpider_Leg">
+		<defName>RI_EvilCreature_HeadSpider_Leg</defName>
+		<label>EvilCreature Head Spider Leg</label>
+		<hitPoints>40</hitPoints>
+	</BodyPartDef>
+
+	<!-- 腐虫之母 -->
+	<!-- 躯干 -->
+	<BodyPartDef ParentName = "RI_SpiderTorso_Base" Name="RI_EvilCreature_WormMother_Torso">
+		<defName>RI_EvilCreature_WormMother_Torso</defName>
+		<label>EvilCreature WormMother Torso</label>
+		<hitPoints>1200</hitPoints>
+		<tags>
+			<li>BreathingSource</li>
+			<li>BloodPumpingSource</li>
+		</tags>
+	</BodyPartDef>
+	<!-- 脖子 -->
+	<BodyPartDef ParentName = "RI_SpiderNeck_Base" Name="RI_EvilCreature_WormMother_Neck">
+		<defName>RI_EvilCreature_WormMother_Neck</defName>
+		<label>EvilCreature WormMother Neck</label>
+		<hitPoints>500</hitPoints>
+	</BodyPartDef>
+	<!-- 头 -->
+	<BodyPartDef ParentName = "RI_SpiderHead_Base" Name="RI_EvilCreature_WormMother_Head">
+		<defName>RI_EvilCreature_WormMother_Head</defName>
+		<label>EvilCreature WormMother Head</label>
+		<hitPoints>700</hitPoints>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+	<!-- 眼睛 -->
+	<BodyPartDef ParentName = "RI_SpiderEye_Base" Name="RI_EvilCreature_WormMother_Eye">
+		<defName>RI_EvilCreature_WormMother_Eye</defName>
+		<label>EvilCreature WormMother Eye</label>
+		<hitPoints>120</hitPoints>
+	</BodyPartDef>
+	<!-- 腿 -->
+	<BodyPartDef ParentName = "RI_SpiderLeg_Base" Name="RI_EvilCreature_WormMother_Leg">
+		<defName>RI_EvilCreature_WormMother_Leg</defName>
+		<label>EvilCreature WormMother Leg</label>
+		<hitPoints>500</hitPoints>
+	</BodyPartDef>
+</Defs>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--芳草桃源植物-->
+
+	<!--=========================== Carpets ==========================-->
+
+	<!--寸心蕨-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_InchHeartFern</defName>
+		<label>inch heart fern</label>
+		<description>A fern that grows in humid, ventilated environments. Its mature fronds grow into a heart-shaped form.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_InchHeartFern</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<!--<sowTags>
+				<li>Ground</li>
+			</sowTags>-->
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+
+	<!--紫彩蕨-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_PurpleFern</defName>
+		<label>purple fern</label>
+		<description>A fern that grows in humid, ventilated environments. As it matures, its fronds turn a deep purple and develop a subtle metallic sheen.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_PurpleFern</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<!--<sowTags>
+				<li>Ground</li>
+			</sowTags>-->
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+	<!--============================= Bushes ================================-->
+
+	<!--骨蕨-->
+	<ThingDef ParentName="BushBase">
+		<defName>RI_Plant_BoneFern</defName>
+		<label>bone fern</label>
+		<description>A fern that grows in humid, ventilated environments. Its stems are unusually rigid, almost skeletal—earning it the name “Bone Fern.”</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_BoneFern</texPath>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growDays>3</growDays>
+			<leaflessGraphicPath>Things/Plant/RI_Plant_BoneFern_Leafless</leaflessGraphicPath>
+			<visualSizeRange>0.95~1.5</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!--芦荟Aloe Vera-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_AloeVera</defName>
+		<label>aloe vera</label>
+		<description>Aloe vera is a medicinal plant with thick, fleshy leaves.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_AloeVera</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.6, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>6</growDays>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestedThingDef>RI_Resource_AloeVera</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowMinSkill>2</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+				<li>SoilSpiritual</li>
+			</sowTags>
+			<visualSizeRange>0.9~1.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>300</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+
+	<!--幻金莲Phantom Gold Lotus-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_PhantomGoldLotus</defName>
+		<label>phantom gold lotus</label>
+		<description>The Phantom Gold Lotus prefers shade and grows in deep forests and streamside wetlands. Its petals are golden, and the stamens carry a faint, lingering fragrance.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_PhantomGoldLotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>5</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RI_Resource_PhantomGoldLotus</harvestedThingDef>
+			<drugForHarvestPurposes>True</drugForHarvestPurposes>
+			<harvestYield>4</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+				<li>SoilSpiritual</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<sowResearchPrerequisites>
+				<li>RI_FertileSoil</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Trees ============================-->
+
+	<!--桃树-->
+	<ThingDef ParentName="TreeBase">
+		<defName>RI_Plant_PeachTree</defName>
+		<label>peach tree</label>
+		<description>People have cultivated peach trees for a long history. When the fruit ripens, peaches can be harvested. In spring, soft pink blossoms cover the branches, and in autumn the trees bear fruit.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_PeachTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<growDays>16</growDays>
+			<visualSizeRange>1.3~2.5</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Cocoa</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/RI_Plant_PeachTree</immatureGraphicPath>
+			<harvestWork>310</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>20</harvestYield>
+			<harvestedThingDef>RI_Resource_RawPeach</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<!--<sowResearchPrerequisites>
+				<li>RI_Planting</li>
+			</sowResearchPrerequisites>-->
+		</plant>
+	</ThingDef>
+
+	<!--仙桃树-->
+	<ThingDef ParentName="PlantBase" Name="RI_PeachTreeBase" Abstract="True">
+		<graphicData>
+			<shaderParameters>
+				<_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
+				<_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
+				<_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
+				<_FallBehaviorEnabled>1</_FallBehaviorEnabled>
+			</shaderParameters>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Nutrition>2.0</Nutrition>
+			<Mass>150</Mass>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<neverMultiSelect>False</neverMultiSelect>
+		<fillPercent>0.25</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.13)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<!--<sowMinSkill>8</sowMinSkill>-->
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<harvestWork>800</harvestWork>
+			<harvestedThingDef>RI_Things_ImmortalPeach</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestMinGrowth>0.7</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<burnedThingDef>BurnedTree</burnedThingDef>
+			<choppedThingDef>ChoppedStump</choppedThingDef>
+			<smashedThingDef>SmashedStump</smashedThingDef>
+			<treeCategory>Full</treeCategory>
+			<!--<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+				<li>SoilSpiritual</li>
+			</sowTags>-->
+			<visualSizeRange>2~3.8</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>24</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<interferesWithRoof>true</interferesWithRoof>
+			<destroyedByFlooding>false</destroyedByFlooding>
+		</plant>
+	</ThingDef>
+
+	<!--仙桃树-->
+	<ThingDef ParentName="RI_PeachTreeBase">
+		<defName>RI_Plant_ImmortalPeachTree</defName>
+		<label>immortal peach tree</label>
+		<description>The Immortal peach tree appears only within the peach garden, bearing the legendary Immortal Peaches. It is said that consuming one can restore youth and turn back the years. Thriving in areas rich with spiritual energy, its trunk is smooth and jade-like in luster. Each tree produces only one or two Immortal peaches, making them exceedingly rare and precious.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_ImmortalPeachTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>15</Beauty>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<ingestible />
+		<plant>
+			<growDays>25</growDays>
+			<leaflessGraphicPath>Things/Plant/RI_Plant_ImmortalPeachTree</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/RI_Plant_ImmortalPeachTree</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/RI_Plant_ImmortalPeachTree</leaflessImmatureGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestYield>2</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+		</plant>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Walking dead -->
+  <RI_Animal_Zombie.label>僵尸</RI_Animal_Zombie.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture. -->
+  <RI_Animal_Zombie.description>丁级邪异，威胁系数低。\n\n僵尸的行动缓慢，嗜好人肉，不过没有传染性。这种恶心的生物在一些星球已经被人们所习惯，成为了流行文化的一部分。</RI_Animal_Zombie.description>
+  <!-- EN: left hand -->
+  <RI_Animal_Zombie.tools.left_hand.label>左手</RI_Animal_Zombie.tools.left_hand.label>
+  <!-- EN: right hand -->
+  <RI_Animal_Zombie.tools.right_hand.label>右手</RI_Animal_Zombie.tools.right_hand.label>
+  
+  <!-- UNUSED -->
+  <RI_Animal_Zombie.tools.head.label>头</RI_Animal_Zombie.tools.head.label>
+  
+  <!-- EN: armor zombie -->
+  <RI_Animal_ZombieArmor.label>铁甲尸</RI_Animal_ZombieArmor.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture. -->
+  <RI_Animal_ZombieArmor.description>TODO</RI_Animal_ZombieArmor.description>
+  <!-- EN: left hand -->
+  <RI_Animal_ZombieArmor.tools.left_hand.label>左手</RI_Animal_ZombieArmor.tools.left_hand.label>
+  <!-- EN: right hand -->
+  <RI_Animal_ZombieArmor.tools.right_hand.label>右手</RI_Animal_ZombieArmor.tools.right_hand.label>
+  
+  <!-- UNUSED -->
+  <RI_Animal_ZombieArmor.tools.head.label>头</RI_Animal_ZombieArmor.tools.head.label>
+  
+  <!-- EN: Boomer -->
+  <RI_EvilCreature_ZombieBoomer.label>浮肿尸</RI_EvilCreature_ZombieBoomer.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture. -->
+  <RI_EvilCreature_ZombieBoomer.description>TODO</RI_EvilCreature_ZombieBoomer.description>
+  <!-- EN: left hand -->
+  <RI_EvilCreature_ZombieBoomer.tools.left_hand.label>左手</RI_EvilCreature_ZombieBoomer.tools.left_hand.label>
+  <!-- EN: right hand -->
+  <RI_EvilCreature_ZombieBoomer.tools.right_hand.label>右手</RI_EvilCreature_ZombieBoomer.tools.right_hand.label>
+  <!-- EN: head -->
+  <RI_EvilCreature_ZombieBoomer.tools.head.label>头</RI_EvilCreature_ZombieBoomer.tools.head.label>
+  
+</LanguageData>

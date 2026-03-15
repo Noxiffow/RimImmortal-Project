@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Earth cultivation -->
+  <RI_Hediff_EarthCultivationHediff.label>坤土功法</RI_Hediff_EarthCultivationHediff.label>
+  <!-- EN: Earth element cultivation technique, enhances the cultivator's defensive strength. -->
+  <RI_Hediff_EarthCultivationHediff.description>土行修炼功法，可以增强修炼者的防御力。</RI_Hediff_EarthCultivationHediff.description>
+  
+  <!-- EN: Petrified -->
+  <RI_Hediff_EarthDomainEffect.label>石化</RI_Hediff_EarthDomainEffect.label>
+  <!-- EN: Stone erupts from the earth, binding the target firmly in place. -->
+  <RI_Hediff_EarthDomainEffect.description>从大地中喷涌出石块，将人牢牢束缚在原地。</RI_Hediff_EarthDomainEffect.description>
+  
+  <!-- EN: Shattered rock -->
+  <RI_Hediff_FlyingSand.label>碎岩</RI_Hediff_FlyingSand.label>
+  <!-- EN: Scattered shards of rock cling to the surface of the body, reducing vision. -->
+  <RI_Hediff_FlyingSand.description>飞溅的岩石碎片附着在人体表面，降低视野。</RI_Hediff_FlyingSand.description>
+  
+  <!-- EN: Stone armor -->
+  <RI_Hediff_StoneArmorEffect.label>石甲</RI_Hediff_StoneArmorEffect.label>
+  <!-- EN: Fragments of stone infused with Qi wrap around the body, redirecting all incoming impact forces into the ground and greatly enhancing defensive capability, at the cost of reduced movement speed. -->
+  <RI_Hediff_StoneArmorEffect.description>附带灵气的石片包裹在身上，可以将任何冲击力引入地下，大大增强防御力，但是会降低移动速度。</RI_Hediff_StoneArmorEffect.description>
+  
+  <!-- EN: World-sealing shield -->
+  <RI_Hediff_WorldSealingShield.label>镇岳盾</RI_Hediff_WorldSealingShield.label>
+  <!-- EN: A powerful shield given by the guardian stone tower. -->
+  <RI_Hediff_WorldSealingShield.description>镇岳塔给予的强大护盾。</RI_Hediff_WorldSealingShield.description>
+  
+</LanguageData>

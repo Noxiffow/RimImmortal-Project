@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--乌麻针刺-->
+	<HediffDef>
+		<defName>RI_Dm_AnestheticSpikeWound</defName>
+		<label>Anesthetic needle wound</label>
+		<description>Anesthetic needle wound.</description>
+		<hediffClass>Hediff_Injury</hediffClass>
+		<tendable>true</tendable>
+		<displayWound>true</displayWound>
+		<labelNounPretty>{0} in the {1}</labelNounPretty>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.01</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>anesthetic spike scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.01</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.005</averagePainPerSeverityPermanent>
+			<bleedRate>0.03</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Spiked off</destroyedLabel>
+			<destroyedOutLabel>Spiked out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+
+	<!--迷醉-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_Hediff_Anesthetic</defName>
+		<label>Anesthetic</label>
+		<description>Qi infused with anesthetic properties enters the bloodstream, causing most living beings to lose consciousness.</description>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--致幻-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_Hediff_PsychedelicDrugs</defName>
+		<label>Psychedelic gas</label>
+		<description>Inhaled the psychedelic gas, causing dizziness and inducing either frenzy or confusion.</description>
+		<stages>
+			<li>
+				<painOffset>-0.7</painOffset>
+				<statOffsets>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.7</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!--安抚冥尸-->
+	<WorkGiverDef>
+		<defName>RI_Work_ZombieSuppression</defName>
+		<label>pacify</label>
+		<giverClass>RimZombieGirl.WorkGiver_Warden_SuppressZombie</giverClass>
+		<workType>Warden</workType>
+		<verb>pacify</verb>
+		<gerund>pacifying</gerund>
+		<priorityInType>93</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<!--制造尸傀-->
+	<WorkGiverDef>
+		<defName>RI_Work_CreateCorpsePuppet</defName>
+		<label>make corpse puppet</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_CorpseForge</li>
+		</fixedBillGiverDefs>
+		<verb>make corpse puppet at</verb>
+		<gerund>making corpse puppet at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--制作法器-->
+	<WorkGiverDef>
+		<defName>RI_Work_CreateExorcismInstrument</defName>
+		<label>make exorcism instrument</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_ExorcismInstrumentBench</li>
+		</fixedBillGiverDefs>
+		<verb>make exorcism instrument at</verb>
+		<gerund>making exorcism instrument at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--合成邪祟物品-->
+	<WorkGiverDef>
+		<defName>RI_Work_CreateAberrantStuff</defName>
+		<label>make aberrant stuff</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Art</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_AberrantWorkbench</li>
+		</fixedBillGiverDefs>
+		<verb>make aberrant stuff at</verb>
+		<gerund>making aberrant stuff at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

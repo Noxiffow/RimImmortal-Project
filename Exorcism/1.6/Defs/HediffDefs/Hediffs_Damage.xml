@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--热能切割-->
+	<HediffDef>
+		<defName>ZombieMelee_Weakened</defName>
+		<label>Thermal Cutting</label>
+		<description>Being cut by a thermal weapon weakens even the strongest defenses.</description>
+		<defaultLabelColor>(1,0.71,0.2)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>1.30</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>-0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.3</ArmorRating_Blunt>
+					<ArmorRating_Heat>-0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<!--附加特效-->
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>1</drawSize>
+				<texPath>Things/Mote/ZombieMelee_Weakened</texPath>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+
+	<!--三清铃子弹效果——破障铃响，三个阶段：失谐，共振，瓦解-->
+	<HediffDef>
+		<defName>RI_ZombieHediff_SanQing</defName>
+		<label>disruptive chime</label>
+		<description>The target’s defenses are shattered by the special tones released by the SanQing bell through resonance. The more times the sound waves strike, the stronger the resonance damage becomes.</description>
+		<defaultLabelColor>(1,0.71,0.2)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>2400</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<stages>
+			<li>
+				<label>dissonance</label>
+				<minSeverity>0.3</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.1</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>-0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>-0.25</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<label>resonance</label>
+				<minSeverity>0.6</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.1</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>-0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>-0.25</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<label>disintegration</label>
+				<minSeverity>0.9</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.1</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>-0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>-0.25</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

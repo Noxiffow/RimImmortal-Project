@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--=========贸易品，修士会带，少量刷新，主要是卖钱用=========-->
+	<!--前置-->
+	<ThingDef Name="RI_TradeGood_Base" Abstract="True" ParentName="ResourceBase">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<thingCategories>
+			<li>RI_Category_TradeGood</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--家书-->
+	<ThingDef ParentName="RI_TradeGood_Base">
+		<defName>RI_TradeGood_FamilyLetter</defName>
+		<label>Family letter</label>
+		<description>"A child leaves home young, returns old, His accent unchanged, though hair turns grey."\n\nAn aged bamboo slip, its inscriptions now faded. Some free cultivators, having drifted to the outer rim planets, found themselves unwelcomed by the locals. But do they still have a chance to regret?\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it.</description>
+		<graphicData>
+			<texPath>Things/Item/TradeGood/RI_TradeGood_FamilyLetter</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--染血木人像-->
+	<ThingDef ParentName="RI_TradeGood_Base">
+		<defName>RI_TradeGood_BloodstainedWoodenEffigy</defName>
+		<label>Bloodstained wooden effigy</label>
+		<description>A wooden figurine, stained with blood and worn smooth from years of touch. Few are born wicked; most who stray down the dark path have their own stories. Yet life is like a game of chess—once a piece is placed, there is no turning back.\n\nTo steady their wavering hearts, evil cultivators hold their own beliefs, with Thran Immortal being the most revered. Such wooden figurines serve as objects of their devotion.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it.</description>
+		<graphicData>
+			<texPath>Things/Item/TradeGood/RI_TradeGood_BloodstainedWoodenEffigy</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--锈蚀勋章-->
+	<ThingDef ParentName="RI_TradeGood_Base">
+		<defName>RI_TradeGood_CorrodedMedal</defName>
+		<label>Corroded medal</label>
+		<description>A small military medal, corroded beyond recognition, yet highly sought after by antique collectors. This medal appears to trace back to the distant era of the Founder's War, a time when cultivators had yet to call themselves Immortals and instead served as soldiers, following orders.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it.</description>
+		<graphicData>
+			<texPath>Things/Item/TradeGood/RI_TradeGood_CorrodedMedal</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--闪闪发光的灵石-->
+	<ThingDef ParentName="RI_TradeGood_Base">
+		<defName>RI_TradeGood_ShimmeringSpiritualCrystal</defName>
+		<label>Shimmering spiritual crystal</label>
+		<description>A small, perfectly cut Spiritual Crystal refracts dazzling light under illumination. The artisan who crafted it must have been incredibly patient, as Spiritual Crystals are fragile and prone to breaking with the slightest mistake, making them rare as decorative pieces. However, even when cut and polished, the crystal’s essence remains unchanged—it can still provide cultivators with a trace of Qi energy.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it.\n\nThis crystal can not control the role of life.</description>
+		<graphicData>
+			<texPath>Things/Item/TradeGood/RI_TradeGood_ShimmeringSpiritualCrystal</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>900</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(165,249,215)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

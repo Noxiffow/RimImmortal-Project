@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--======================冥娘肤色======================-->
+
+	<!--冥娘肤色B——浅绿-->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>RI_Gene_ZombieSkinA</defName>
+		<label>Necrosapiens skin (green)</label>
+		<labelShortAdj>cyan</labelShortAdj>
+		<description>Unique gene of Necrosapiens.\nThe skin takes on a green hue, drained of blood, with veins becoming strikingly visible.</description>
+		<skinColorOverride>(185,199,194)</skinColorOverride>
+		<displayOrderInCategory>302</displayOrderInCategory>
+	</GeneDef>
+
+	<!--冥娘肤色C——淡粉-->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>RI_Gene_ZombieSkinB</defName>
+		<label>Necrosapiens skin (pink)</label>
+		<labelShortAdj>pink</labelShortAdj>
+		<description>Unique gene of Necrosapiens.\nThe skin takes on a faint pink hue, drained of blood, with veins becoming strikingly visible.</description>
+		<skinColorOverride>(199,185,186)</skinColorOverride>
+		<displayOrderInCategory>303</displayOrderInCategory>
+	</GeneDef>
+
+	<!--冥娘肤色D——天青-->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>RI_Gene_ZombieSkinC</defName>
+		<label>Necrosapiens skin (blue)</label>
+		<labelShortAdj>blue</labelShortAdj>
+		<description>Unique gene of Necrosapiens.\nThe skin takes on a blue hue, drained of blood, with veins becoming strikingly visible.</description>
+		<skinColorOverride>(185,191,199)</skinColorOverride>
+		<displayOrderInCategory>304</displayOrderInCategory>
+	</GeneDef>
+
+	<!--冥娘肤色D——苍白-->
+	<GeneDef ParentName="GeneSkinColorOverride">
+		<defName>RI_Gene_ZombieSkinD</defName>
+		<label>Necrosapiens skin (pale)</label>
+		<labelShortAdj>pale</labelShortAdj>
+		<description>Unique gene of Necrosapiens.\nThe skin takes on a pale hue, drained of blood, with veins becoming strikingly visible.</description>
+		<skinColorOverride>(230,224,220)</skinColorOverride>
+		<displayOrderInCategory>305</displayOrderInCategory>
+	</GeneDef>
+
+	<!--======================冥娘体型======================-->
+
+	<!--冥娘体型 瘦-->
+	<GeneDef ParentName="GeneBodyBase">
+		<defName>RI_Gene_ZombieThin</defName>
+		<label>Necrosapiens body (thin)</label>
+		<description>Unique gene of Necrosapiens.\nSlender male and female physique.</description>
+		<iconPath>UI/Icons/Genes/RI_Gene_ZombieThin</iconPath>
+		<bodyType>Thin</bodyType>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneDef">
+				<!--<forceFemale>true</forceFemale>-->
+				<forcedBodyTypes>
+					<li>RI_ExorcismBodyType_Thin</li>
+				</forcedBodyTypes>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Zombie</symbol>
+				</li>
+				<li>
+					<symbol>Necro</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!--冥娘体型 标准-->
+	<GeneDef ParentName="GeneBodyBase">
+		<defName>RI_Gene_ZombieStandard</defName>
+		<label>Necrosapiens body (standard)</label>
+		<description>Unique gene of Necrosapiens.\nStandard male and female physique.</description>
+		<iconPath>UI/Icons/Genes/RI_Gene_ZombieStandard</iconPath>
+		<bodyType>Standard</bodyType>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneDef">
+				<!--<forceFemale>true</forceFemale>-->
+				<forcedBodyTypesFemale>
+					<li>RI_ExorcismBodyType_Female</li>
+				</forcedBodyTypesFemale>
+				<forcedBodyTypesMale>
+					<li>RI_ExorcismBodyType_Male</li>
+				</forcedBodyTypesMale>
+			</li>
+		</modExtensions>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Zombie</symbol>
+				</li>
+				<li>
+					<symbol>Necro</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+
+	<!--ParentName="GeneJawBase"-->
+	<!--冥尸脸型-->
+	<GeneDef>
+		<defName>RI_GeneHead_NecrosapiensHead</defName>
+		<label>Necrosapiens head</label>
+		<description>Unique gene of Necrosapiens.\nThe face is slightly thin and the veins are obvious.</description>
+		<iconPath>UI/Icons/Genes/RI_GeneHead_NecrosapiensHead</iconPath>
+		<forcedHeadTypes>
+			<!--男脸-->
+			<li>RI_ZombieHead_Male_ApathyA</li>
+			<li>RI_ZombieHead_Male_ApathyB</li>
+			<!--女脸-->
+			<li>RI_ZombieHead_Female_ApathyA</li>
+			<li>RI_ZombieHead_Female_ApathyB</li>
+			<li>RI_ZombieHead_Female_ApathyC</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>97</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Zombie</symbol>
+				</li>
+				<li>
+					<symbol>Necro</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+
+	<!--头前置-->
+
+	<HeadTypeDef Name="RI_Face_AverageBase" Abstract="True">
+		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
+		<beardMeshSize>(1.5, 1.5)</beardMeshSize>
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>RI_GeneHead_NecrosapiensHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!--========两种男脸========-->
+
+	<!--圆脸A-->
+	<HeadTypeDef ParentName="RI_Face_AverageBase">
+		<defName>RI_ZombieHead_Male_ApathyA</defName>
+		<graphicPath>Things/Pawn/Humanlike/RI_ZombieHeads/Male/RI_ZombieHead_Male_ApathyA</graphicPath>
+		<gender>Male</gender>
+		<eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+	<!--圆脸B-->
+	<HeadTypeDef ParentName="RI_Face_AverageBase">
+		<defName>RI_ZombieHead_Male_ApathyB</defName>
+		<graphicPath>Things/Pawn/Humanlike/RI_ZombieHeads/Male/RI_ZombieHead_Male_ApathyB</graphicPath>
+		<gender>Male</gender>
+		<eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+	<!--========三种女脸========-->
+
+	<!--圆脸A-->
+	<HeadTypeDef ParentName="RI_Face_AverageBase">
+		<defName>RI_ZombieHead_Female_ApathyA</defName>
+		<graphicPath>Things/Pawn/Humanlike/RI_ZombieHeads/Female/RI_ZombieHead_Female_ApathyA</graphicPath>
+		<gender>Female</gender>
+		<eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+	<!--圆脸B-->
+	<HeadTypeDef ParentName="RI_Face_AverageBase">
+		<defName>RI_ZombieHead_Female_ApathyB</defName>
+		<graphicPath>Things/Pawn/Humanlike/RI_ZombieHeads/Female/RI_ZombieHead_Female_ApathyB</graphicPath>
+		<gender>Female</gender>
+		<eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+	<!--圆脸A-->
+	<HeadTypeDef ParentName="RI_Face_AverageBase">
+		<defName>RI_ZombieHead_Female_ApathyC</defName>
+		<graphicPath>Things/Pawn/Humanlike/RI_ZombieHeads/Female/RI_ZombieHead_Female_ApathyC</graphicPath>
+		<gender>Female</gender>
+		<eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+
+	<!--赤瞳-->
+	<GeneDef ParentName="GeneEyeColor">
+		<defName>RI_Gene_ZombieRedEyes</defName>
+		<label>red eyes</label>
+		<labelShortAdj>red-eyed</labelShortAdj>
+		<description>Carriers of this gene have deeply red-pigmented eyes.</description>
+		<iconPath>UI/Icons/Genes/RI_Gene_ZombieRedEyes</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/Pawn/Humanlike/RI_ZombieEyes/Red/Male/RedEyes_Male</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/RI_ZombieEyes/Red/Female/RedEyes_Female</texPathFemale>
+				<anchorTag>RightEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.15</drawSize>
+				<side>Right</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0.05, -0.23)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Things/Pawn/Humanlike/RI_ZombieEyes/Red/Male/RedEyes_Male</texPath>
+				<texPathFemale>Things/Pawn/Humanlike/RI_ZombieEyes/Red/Female/RedEyes_Female</texPathFemale>
+				<anchorTag>LeftEye</anchorTag>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.15</drawSize>
+				<side>Left</side>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0.06, -0.23)</offset>
+						<flip>true</flip>
+					</defaultData>
+					<dataWest>
+						<flip>false</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<!--短骨角-->
+	<GeneDef ParentName="GeneHeadboneBase">
+		<defName>RI_Gene_BoneHorns</defName>
+		<label>Bone-horns</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>UI/Icons/Genes/RI_Gene_BoneHorns</iconPath>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/RI_ZombieExtraStuff/RI_Gene_BoneHorns/RI_Gene_BoneHorns</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>horn</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>horn</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!--椎骨尾-->
+	<GeneDef ParentName="GeneTailBase">
+		<defName>RI_Gene_BoneTail</defName>
+		<label>furry tail</label>
+		<description>Carriers of this gene grow a fluffy tail which partially protects them from cold temperatures.</description>
+		<iconPath>UI/Icons/Genes/Gene_TailFurry</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/RI_ZombieExtraStuff/RI_Gene_BoneTail/RI_Gene_BoneTail</texPath>
+				<!--<colorType>Hair</colorType>-->
+				<overrideMeshSize>(1.8,1.8)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0,0.05)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(-0, 0,0.11)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.5, 0, -0.15)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.5, 0, -0.15)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+</Defs>

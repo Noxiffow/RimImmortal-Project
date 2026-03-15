@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: kiln -->
+  <RI_Building_BrickKiln.label>窑炉</RI_Building_BrickKiln.label>
+  <!-- EN: A large brick-built kiln fueled by firewood. It reaches extremely high internal temperatures. -->
+  <RI_Building_BrickKiln.description>一个用砖头搭建的大型窑炉，烧木柴，内部温度很高。</RI_Building_BrickKiln.description>
+  
+  <!-- EN: electric kiln -->
+  <RI_Building_ElectricKiln.label>电窑炉</RI_Building_ElectricKiln.label>
+  <!-- EN: An electrically heated kiln developed during the industrial era. However, traditional brick kilns fueled by firewood were not immediately phased out due to their large capacity and low construction cost.\n\nOnly later, as factories demanded higher standards for cleanliness and precise temperature control, did electric kilns fully replace traditional kilns. -->
+  <RI_Building_ElectricKiln.description>电加热的窑炉在工业时期被发明，不过烧柴的砖制窑炉因为容积大和造价低的优点，依然没有被淘汰。\n\n直到后来，工厂对清洁和控温技术有了更高的要求，电窑炉才彻底替代了传统窑炉。</RI_Building_ElectricKiln.description>
+  
+  <!-- EN: heat press -->
+  <RI_Building_HotPressMachine.label>热压机</RI_Building_HotPressMachine.label>
+  <!-- EN: A machine that applies high heat and pressure simultaneously, allowing materials to bond tightly in a controlled environment and form new materials.\n\nThis machine is used to produce certain industrial materials.\n\nThis machine is dangerous. Do not put your head inside while it is operating. -->
+  <RI_Building_HotPressMachine.description>热压机通过同时施加高温与高压，使材料在受控环境下紧密结合，形成新材料。\n\n这种机器可以用来制作一些工业原料。\n\n机器危险，请勿在启动时把头伸到里面。</RI_Building_HotPressMachine.description>
+  
+  <!-- EN: industrial drilling -->
+  <RI_Building_IndustrialDrilling.label>工业钻机</RI_Building_IndustrialDrilling.label>
+  <!-- EN: An industrial drilling machine used to extract minerals from deep beneath the surface, with a larger operational range. If no mineral deposits are detected, the drill will continuously produce chunks of stone. -->
+  <RI_Building_IndustrialDrilling.description>一种用于从地表深处开采矿产的工业钻机，范围更大。如果未发现矿藏，该钻探设备将源源不断地挖出石块。</RI_Building_IndustrialDrilling.description>
+  
+  <!-- EN: digging pit -->
+  <RI_Building_MudDigWhole.label>挖掘坑</RI_Building_MudDigWhole.label>
+  <!-- EN: A crude excavation pit that can be built on soil, used to extract materials such as dirt.\n\nIn some regions, forcing juvenile offenders to dig pits was a common form of punishment. -->
+  <RI_Building_MudDigWhole.description>一个粗糙的挖掘坑，可以建在泥地上，挖掘出泥土等原料。\n\n在某些地方，惩罚少年犯的方法就是让他们挖坑。</RI_Building_MudDigWhole.description>
+  
+  <!-- EN: saw horses -->
+  <RI_Building_SawHorse.label>锯马</RI_Building_SawHorse.label>
+  <!-- EN: Two wooden frames placed side by side, resembling the legs of a horse. Logs rest across them like a horse’s body, hence the name “saw horses.”\n\nA simple workbench used to cut logs into planks. -->
+  <RI_Building_SawHorse.description>两个架子并排放，形似马腿，木料骑在架子上，形如马身，故称锯马。\n\n这是一种构造简单的工作台，方便将原木切割成木板。</RI_Building_SawHorse.description>
+  
+</LanguageData>

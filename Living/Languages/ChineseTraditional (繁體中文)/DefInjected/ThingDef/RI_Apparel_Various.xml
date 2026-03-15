@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Middle robe -->
+  <RI_Apparel_BasicMiddleClothes.label>直裰</RI_Apparel_BasicMiddleClothes.label>
+  <!-- EN: A simple middle robe. -->
+  <RI_Apparel_BasicMiddleClothes.description>一件简单的直裰，长袖过膝。</RI_Apparel_BasicMiddleClothes.description>
+  
+  <!-- EN: Inside-shirt -->
+  <RI_Apparel_InsideApparel.label>短衫</RI_Apparel_InsideApparel.label>
+  <!-- EN: A simple inside-shirt. -->
+  <RI_Apparel_InsideApparel.description>一件简单的短衫。</RI_Apparel_InsideApparel.description>
+  
+  <!-- EN: Long pants -->
+  <RI_Apparel_LongPants.label>长绔</RI_Apparel_LongPants.label>
+  <!-- EN: A pair of simple long pants. -->
+  <RI_Apparel_LongPants.description>一条简单的长绔。</RI_Apparel_LongPants.description>
+  
+</LanguageData>

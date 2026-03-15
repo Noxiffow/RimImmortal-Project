@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Brick kiln -->
+  <RI_Building_BrickKiln.label>砖窑</RI_Building_BrickKiln.label>
+  <!-- EN: A brick kiln. It's hot inside. -->
+  <RI_Building_BrickKiln.description>一个砖窑，内部温度很高。</RI_Building_BrickKiln.description>
+  
+  <!-- EN: electric kiln -->
+  <RI_Building_ElectricKiln.label>电砖窑</RI_Building_ElectricKiln.label>
+  <!-- EN: An electric-powered station for smithing non-mechanical weapons and tools. -->
+  <RI_Building_ElectricKiln.description>TODO</RI_Building_ElectricKiln.description>
+  
+  <!-- EN: Digging pit -->
+  <RI_Building_MudDigWhole.label>挖掘坑</RI_Building_MudDigWhole.label>
+  <!-- EN: A simple digging pit can easily be destroyed. You can dig up dirt and stuff like that. -->
+  <RI_Building_MudDigWhole.description>一个简单的挖掘坑，也很容易被摧毁。可以从中挖掘到泥土之类的东西。</RI_Building_MudDigWhole.description>
+  
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bone shooter -->
+  <RI_TurretHediff_BoneShoot.label>骨片发射器</RI_TurretHediff_BoneShoot.label>
+  <!-- EN: # -->
+  <RI_TurretHediff_BoneShoot.description>TODO</RI_TurretHediff_BoneShoot.description>
+  
+  <!-- EN: evil fire shooter -->
+  <RI_TurretHediff_EvilFireShoot.label>邪火发射器</RI_TurretHediff_EvilFireShoot.label>
+  <!-- EN: # -->
+  <RI_TurretHediff_EvilFireShoot.description>TODO</RI_TurretHediff_EvilFireShoot.description>
+  
+  <!-- EN: spider spit shooter -->
+  <RI_TurretHediff_SpiderShoot.label>蜘蛛丝发射器</RI_TurretHediff_SpiderShoot.label>
+  <!-- EN: # -->
+  <RI_TurretHediff_SpiderShoot.description>TODO</RI_TurretHediff_SpiderShoot.description>
+  
+</LanguageData>

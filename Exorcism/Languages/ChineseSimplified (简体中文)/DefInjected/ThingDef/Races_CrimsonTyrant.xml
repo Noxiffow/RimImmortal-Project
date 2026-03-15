@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crimson Tyrant -->
+  <RI_Race_CrimsonTyrant.label>血蛄侯</RI_Race_CrimsonTyrant.label>
+  <!-- EN: Crimson Tyrant was a renowned general of a nation before his death in a war, filled with endless anger and regret. After his death, his corpse was secretly transformed into a zombie. From then on, he spent hundreds of years in a cycle of slumber and killing, grinding his teeth and sucking blood, killing countless people.\n\nAfter a long time, the Crimson Tyrant's body had become as hard as steel, comparable to a powerful weapon. The eternal flames of anger burning in his eyes, and the third eye embedded on his forehead was a powerful weapon inted, capable of releasing destructive lasers that terrified the enemy. The most terrifying thing was that the king of blood could not be truly destroyed. His existence had been deeply etched into the river of time. Every time Crimson Tyrant died, a new figure would emerge from the sea of corpses, inheriting his strength and anger, and reappearing in the world.\n\nIt is said that by placing a specially made bell on a blood altar, one can wake Crimson Tyrant. -->
+  <RI_Race_CrimsonTyrant.description>血蛄侯生前是一国赫赫有名的将军，却在一场战争中，怀着无尽的愤怒与悔恨陨落。死后，他的遗体被秘密改造，化作僵尸。从那时起，他在沉眠与杀戮的循环中度过了数百年的岁月，磨牙吮血，杀人如麻。\n\n经历了漫长的时间，尸王的肉体早已坚硬如精钢，堪比神兵利器。他的双眼中燃烧着永不熄灭的怒火，而额头镶嵌的第三只眼，则是植入的强大武器，能够释放毁灭性的激光，令敌人闻风丧胆。最可怕的是，血蛄侯无法真正被毁灭。他的存在已深深烙印于时间的长河中。每当血蛄侯死亡，便会有新的身影从尸山血海中诞生，继承他的力量与怒火，重新降临世间。\n\n相传，只要找到一种特制的铃铛，将其安放在盛满鲜血的祭台上，即可唤醒血蛄侯。</RI_Race_CrimsonTyrant.description>
+  <!-- EN: 近战 -->
+  <RI_Race_CrimsonTyrant.tools.0.label>近战</RI_Race_CrimsonTyrant.tools.0.label>
+  <!-- EN: 近战 -->
+  <RI_Race_CrimsonTyrant.tools.0.labelNoLocation>近战</RI_Race_CrimsonTyrant.tools.0.labelNoLocation>
+  
+  <!-- EN: Blood beam -->
+  <RI_Weapon_ZombieBloodBeam.label>血射线</RI_Weapon_ZombieBloodBeam.label>
+  <!-- EN: A high-energy gamma ray laser which fires a sweeping beam that pierces thick armor and burns targets. Because of the health risks, grasers are usually only used by mechanoids. This one was made to interface directly with a mechanoid wielder and draw from its power source. -->
+  <RI_Weapon_ZombieBloodBeam.description>TODO</RI_Weapon_ZombieBloodBeam.description>
+  <!-- EN: barrel -->
+  <RI_Weapon_ZombieBloodBeam.tools.barrel.label>TODO</RI_Weapon_ZombieBloodBeam.tools.barrel.label>
+  <!-- EN: Blood beam -->
+  <RI_Weapon_ZombieBloodBeam.verbs.Verb_ShootBeam.label>TODO</RI_Weapon_ZombieBloodBeam.verbs.Verb_ShootBeam.label>
+  
+</LanguageData>

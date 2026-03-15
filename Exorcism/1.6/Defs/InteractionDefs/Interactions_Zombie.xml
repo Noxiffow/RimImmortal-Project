@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 镇压僵尸交互动作 -->
+	<InteractionDef>
+		<defName>RI_Zombie_Int_ZombieSuppress</defName>
+		<label>suppress zombie</label>
+		<symbol>UI/Icons/Slavery</symbol>
+		<workerClass>RimZombieGirl.InteractionWorker_ZombieSuppress</workerClass>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] there would be punishments for rebellion.</li>
+				<li>r_logentry->[INITIATOR_nameDef] warned [RECIPIENT_nameDef] that disobedience would be punished.</li>
+				<li>r_logentry->[INITIATOR_nameDef] cautioned [RECIPIENT_nameDef] against infractions of any kind.</li>
+				<li>r_logentry->[INITIATOR_nameDef] suggested that [RECIPIENT_nameDef] follow orders and not ask questions.</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+
+	<!--僵尸聊天-->
+	<InteractionDef>
+		<defName>RI_Interaction_ZombieMumble</defName>
+		<label>zombie mumble</label>
+		<!--<workerClass>RI_Frame_ZombieLife.InteractionWorker_ZombieMumble</workerClass>-->
+		<!-- 指定对话文本生成规则 -->
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef][mumble_verb][RECIPIENT_nameDef]，[mumble_detail]。</li>
+				<li>r_logentry->[INITIATOR_nameDef]对着[RECIPIENT_nameDef][mumble_action]。</li>
+
+				<!-- 动作谓语：低语、嘶吼、盯着 -->
+				<li>mumble_verb->发出低沉的嘶吼</li>
+				<li>mumble_verb->含糊不清地嘟囔着</li>
+				<li>mumble_verb->僵硬地试图交流</li>
+
+				<!-- 具体的行为细节描述 -->
+				<li>mumble_detail->带着一股阴冷气息</li>
+				<li>mumble_detail->双眼空洞盯着对方</li>
+
+				<!-- 完整短语：僵尸特有的古怪社交行为 -->
+				<li>mumble_action->吐出了一口寒气</li>
+				<li>mumble_action->歪着头，发出了一阵低沉的笑声</li>
+				<li>mumble_action->重复着一些支离破碎的单字</li>
+				<li>mumble_action->僵硬地伸出手</li>
+
+				<!-- 情感色彩描述（用于对方感受到的恐惧感） -->
+				<li>zombie_adj->毛骨悚然的</li>
+				<li>zombie_adj->阴冷的</li>
+				<li>zombie_adj->毫无生机的</li>
+				<li>zombie_adj->断断续续的</li>
+			</rulesStrings>
+		</logRulesInitiator>
+		<!-- 画不动新图标了，先替代一下 -->
+		<symbol>UI/Abilities/RI_ZombieAbility_BiteOn</symbol>
+		<socialFightBaseChance>0.01</socialFightBaseChance>
+		<!-- 容易引发打架 -->
+		<recipientThought>RI_Thought_ZombieMumbleReceived</recipientThought>
+		<!-- 对方获得的心情 -->
+	</InteractionDef>
+
+</Defs>

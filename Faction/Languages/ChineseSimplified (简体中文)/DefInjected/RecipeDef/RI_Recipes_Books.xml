@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Mystic cultivation method -->
+  <RI_MakeMysticCultivationMethod.label>合成玄天诀</RI_MakeMysticCultivationMethod.label>
+  <!-- EN: Use the spiritual crystal to print the power on the paper and draw the charm. -->
+  <RI_MakeMysticCultivationMethod.description>合成玄天诀</RI_MakeMysticCultivationMethod.description>
+  <!-- EN: Making Mystic cultivation method -->
+  <RI_MakeMysticCultivationMethod.jobString>合成玄天诀中</RI_MakeMysticCultivationMethod.jobString>
+  
+  <!-- EN: produce "Celestial Caravan" orbital pager -->
+  <RI_Recipe_Make_OrbitalPager.label>制作“苍穹商旅”轨道呼叫器</RI_Recipe_Make_OrbitalPager.label>
+  <!-- EN: produce "Celestial Caravan" orbital pager. -->
+  <RI_Recipe_Make_OrbitalPager.description>制作“苍穹商旅”轨道呼叫器。</RI_Recipe_Make_OrbitalPager.description>
+  <!-- EN: producing "Celestial Caravan" orbital pager -->
+  <RI_Recipe_Make_OrbitalPager.jobString>制作“苍穹商旅”轨道呼叫器中</RI_Recipe_Make_OrbitalPager.jobString>
+  
+</LanguageData>

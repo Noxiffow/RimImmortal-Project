@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Clay Buddha -->
+  <RI_Building_ClayBuddha.label>泥塑佛像</RI_Building_ClayBuddha.label>
+  <!-- EN: A ritual altar with many tools placed on it, which can be used to make exorcism instrument. -->
+  <RI_Building_ClayBuddha.description>一尊破裂的小型佛像，泥塑而成，散发着诅咒的气息。\n\n佛教曾经盛极一时，佛像也被认为是一种庇护法器。于是便有人将污秽封印于佛像内部，一旦破坏这些佛像，那么污秽随着诅咒必将释放。</RI_Building_ClayBuddha.description>
+  
+  <!-- EN: Cursed grave -->
+  <RI_CursedGrave.label>诅咒荒坟</RI_CursedGrave.label>
+  <!-- EN: A ritual altar with many tools placed on it, which can be used to make exorcism instrument. -->
+  <RI_CursedGrave.description>%#！@#</RI_CursedGrave.description>
+  
+</LanguageData>

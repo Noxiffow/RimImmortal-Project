@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——Noviciate rank测试-->
+	<!--2固基境界——Foundation rank测试-->
+	<!--3化丹境界——Core formation rank测试-->
+	<!--4结丹境界——Core coagulation rank测试-->
+	<!--5灵丹境界——Core consummation rank测试-->
+	<!--6化神境界——Spirit constraint rank测试-->
+	<!--7元婴境界——Primordial spirit baby rank测试-->
+	<!--8大成境界——Primordial spirit maturity rank测试-->
+	<!--9合体境界——Primordial spirit combine rank测试-->
+
+	<!--====================炼器法门TalismanCreating====================-->
+
+	<!--凝气境界——匠心-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_WorkFocus</defName>
+		<label>Work focus</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Noviciate rank of the Forge method\n\n&lt;/color&gt;Qi cost: 25\n\nThe unique cultivation method of the Forge, while increasing the cultivation speed, solidifies the mind with the craftsman's heart and improves the cultivation speed.</description>
+		<iconPath>Ability/TalismanCreating/RI_Ability_WorkFocus</iconPath>
+		<cooldownTicksRange>3000</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>2000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_WorkFocus_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_WorkDrive</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applicableToMechs>False</applicableToMechs>
+				<canTargetBaby>False</canTargetBaby>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<!--消耗灵气-->
+				<rEnergy>-25</rEnergy>
+				<!--消耗灵气-->
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化丹境界——修复-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Repair</defName>
+		<label>Repair</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Core formation rank of the Forge method\n\n&lt;/color&gt;Qi cost: 50\n\nQi breaks down surrounding matter and is used to fill damaged items, but only for dead objects.</description>
+		<iconPath>Ability/TalismanCreating/RI_Ability_Repair</iconPath>
+		<hotKey></hotKey>
+		<cooldownTicksRange>1800</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>2</warmupTime>
+			<range>5</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_Repair_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+			<li Class="RI_Talisman.CompProperties_RI_Repair">
+				<moteCastDef>RI_Ability_RepairActive_Mote</moteCastDef>
+				<radius>5</radius>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--结丹境界——铳铁再造-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_TurretAssemble</defName>
+		<label>Turret assemble</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Core coagulation rank of the Forge method\n\n&lt;/color&gt;Qi cost: 100\n\nUsing Qi to break down some raw materials and reassemble them into a solid battery is a very practical exercise.</description>
+		<iconPath>Ability/TalismanCreating/RI_Ability_TurretAssemble</iconPath>
+		<targetRequired>True</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+			<Ability_EffectRadius>5</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>4</warmupTime>
+			<range>5</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_TurretAssemble_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-100</rEnergy>
+			</li>
+			<li Class="RI_Talisman.CompProperties_RI_TurretAssemble">
+				<turretDefStone>RI_Turret_StoneTower</turretDefStone>
+				<turretDefSteel>RI_Turret_SteelCrossbow</turretDefSteel>
+				<turretDefMecha>RI_Turret_StoneTower</turretDefMecha>
+				<moteCastDef>RI_Ability_TurretAssembleActive_Mote</moteCastDef>
+				<radius>5</radius>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化神境界——工匠激励-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_WorkInsentive</defName>
+		<label>Work insentive</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Spirit constraint rank of the Forge method\n\n&lt;/color&gt;Qi cost: 110\n\nOn the basis of the Work focus, exudes the Qi, so that people around can also be immersed in the craftsmanship.</description>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<iconPath>Ability/TalismanCreating/RI_Ability_WorkInsentive</iconPath>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<hotKey></hotKey>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>1000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_WorkInsentive_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_WorkDriveCommand</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<applicableToMechs>False</applicableToMechs>
+				<canTargetBaby>False</canTargetBaby>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<!--消耗灵气-->
+				<rEnergy>-110</rEnergy>
+				<!--消耗灵气-->
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--元婴境界——百材分解-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_MaterialDecomposition</defName>
+		<label>Material decomposition</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Primordial spirit baby rank of the Forge method\n\n&lt;/color&gt;Qi cost: 70\n\nTaking apart substances, decomposing them, and re-refining them into raw materials is a skill that advanced refiners can master.</description>
+		<cooldownTicksRange>2000</cooldownTicksRange>
+		<iconPath>Ability/TalismanCreating/RI_Ability_ComponentRefine</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hotKey></hotKey>
+		<targetRequired>True</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>20</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>5</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetBuildings>True</canTargetBuildings>
+				<canTargetPawns>False</canTargetPawns>
+				<canTargetLocations>False</canTargetLocations>
+				<canTargetAnimals>False</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_ComponentRefine_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-70</rEnergy>
+			</li>
+			<li Class="RI_Talisman.CompProperties_RI_MaterialDecomposition">
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--大成境界——神机诞生-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_ComponentRefine</defName>
+		<label>Spirit creation</label>
+		<description>&lt;color=#edad56&gt;This technique is learned by the Primordial spirit maturity rank of the Forge method\n\n&lt;/color&gt;Qi cost: 450\n\nWith their own spirit as the material, make a spiritual spirit with innate components, this raw material can be used as the core of a weapon armor and other items.</description>
+		<cooldownTicksRange>50000</cooldownTicksRange>
+		<iconPath>Ability/TalismanCreating/RI_Ability_MaterialDecomposition</iconPath>
+		<hotKey></hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>12</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_MaterialDecompositione_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-450</rEnergy>
+			</li>
+			<li Class="CompProperties_AbilitySpawn">
+				<thingDef>RI_Resource_SpiritCoreComponent</thingDef>
+				<allowOnBuildings>False</allowOnBuildings>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
+

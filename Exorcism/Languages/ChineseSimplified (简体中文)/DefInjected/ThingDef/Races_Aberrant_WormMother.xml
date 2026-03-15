@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: worm mother -->
+  <RI_EvilCreature_WormMother_Race.label>人面蜘蛛</RI_EvilCreature_WormMother_Race.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nThe human head on the Human-Head Spider is not real but a form of mimicry. These massive spiders dwell in ancient battlefields and graveyards, gradually evolving to resemble human heads over time.\n\nSingle Human-head Spider is easy for an ordinary person to kill, but they often move in swarms, posing a threat that should not be underestimated. -->
+  <RI_EvilCreature_WormMother_Race.description>#</RI_EvilCreature_WormMother_Race.description>
+  <!-- EN: first pair of legs -->
+  <RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-0.label>TODO</RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-0.label>
+  <!-- EN: legs -->
+  <RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-0.labelNoLocation>TODO</RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-0.labelNoLocation>
+  <!-- EN: first pair of legs -->
+  <RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-1.label>TODO</RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-1.label>
+  <!-- EN: legs -->
+  <RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-1.labelNoLocation>TODO</RI_EvilCreature_WormMother_Race.tools.first_pair_of_legs-1.labelNoLocation>
+  <!-- EN: head -->
+  <RI_EvilCreature_WormMother_Race.tools.head.label>TODO</RI_EvilCreature_WormMother_Race.tools.head.label>
+  
+</LanguageData>

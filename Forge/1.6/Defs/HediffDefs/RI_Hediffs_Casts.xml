@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--炼器法门的buff-->
+
+	<HediffDef>
+		<defName>RI_WorkDriveCommand</defName>
+		<label>Work motivation</label>
+		<description>A wide range of Qi enveloped themselves, greatly increasing work efficiency.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0.59,0.21)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange" MayRequire="Ludeon.RimWorld.Ideology">
+				<range>8.9</range>
+				<mote>Mote_WorkCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>RI_WorkDrive</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_WorkDrive</defName>
+		<label>Concentration</label>
+		<description>A special Qi wrapped around themselves, so that concentration greatly improved, work efficiency increased.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0.59,0.21)</defaultLabelColor>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_WorkDriveHediff</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+					<GI_EnergyGainEff>0.2</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--古修超人-->
+	<HediffDef>
+		<defName>RI_AncientCultivatorHediff</defName>
+		<label>Spirit healing armor</label>
+		<labelNoun>Spirit healing armor</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>An ancient cultivator's unique skill that automatically restores a layer of body armor to wounds while increasing movement speed and attack speed. Because of the thin Qi in modern times, the ancient cultivator cannot hold for too long.</description>
+		<defaultLabelColor>(0.37,0.65,0.46)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_AncientCultivatorHediff</compClass>
+			</li>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(0.27,0.81,0.79)</EyeColor>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Flame>0.1</Flame>
+					<Burn>0.1</Burn>
+				</damageFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.4</ArmorRating_Heat>
+					<MeleeHitChance>40</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(0.27,0.81,0.79,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!--古修超人(玩家版)-->
+	<HediffDef>
+		<defName>RI_AncientCultivatorPlayerHediff</defName>
+		<label>Spirit healing armor</label>
+		<labelNoun>Spirit healing armor</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The whole body becomes copper iron bone general, enhances the protection ability, but also improves the melee ability and speed.</description>
+		<defaultLabelColor>(0.37,0.65,0.46)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_AncientCultivatorHediff</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+					<MoveSpeed>1</MoveSpeed>
+					<MeleeDodgeChance>50</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Gilded fish-tail axe【Second-rate】 -->
+  <RI_Weapon_GoldAxe.label>鎏金鱼尾斧【二品】</RI_Weapon_GoldAxe.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA gilded fish-tail axe with a luxurious appearance, refined through the method of Forge, granting it formidable lethality. -->
+  <RI_Weapon_GoldAxe.description>【二品】近战兵器\n\n一把鎏金风格的单手斧，外形华丽，经过炼器之法的处理，具有强大的杀伤力。</RI_Weapon_GoldAxe.description>
+  <!-- EN: edge -->
+  <RI_Weapon_GoldAxe.tools.edge.label>斧刃</RI_Weapon_GoldAxe.tools.edge.label>
+  
+  <!-- EN: Gilded octagonal mace【Second-rate】 -->
+  <RI_Weapon_GoldMace.label>鎏金八棱锤【二品】</RI_Weapon_GoldMace.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA gilded one-handed mace with a luxurious appearance, refined through the method of Forge, granting it formidable lethality. -->
+  <RI_Weapon_GoldMace.description>【二品】近战兵器\n\n一把鎏金风格的战锤，外形华丽，经过炼器之法的处理，具有强大的杀伤力。</RI_Weapon_GoldMace.description>
+  <!-- EN: head -->
+  <RI_Weapon_GoldMace.tools.head.label>锤头</RI_Weapon_GoldMace.tools.head.label>
+  
+  <!-- EN: Gilded serpent spear【Second-rate】 -->
+  <RI_Weapon_GoldSnakeSpear.label>鎏金蛇矛【二品】</RI_Weapon_GoldSnakeSpear.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA gilded snake spear with a luxurious appearance, refined through the method of Forge, granting it formidable lethality. -->
+  <RI_Weapon_GoldSnakeSpear.description>【二品】近战兵器\n\n一把鎏金风格的蛇矛，外形华丽，经过炼器之法的处理，具有强大的杀伤力。</RI_Weapon_GoldSnakeSpear.description>
+  <!-- EN: point -->
+  <RI_Weapon_GoldSnakeSpear.tools.point.label>矛尖</RI_Weapon_GoldSnakeSpear.tools.point.label>
+  
+  <!-- EN: Gilded dragon-tiger sword【Second-rate】 -->
+  <RI_Weapon_GoldSword.label>鎏金龙虎剑【二品】</RI_Weapon_GoldSword.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA gilded one-handed sword with a luxurious appearance, refined through the method of Forge, granting it formidable lethality. -->
+  <RI_Weapon_GoldSword.description>【二品】近战兵器\n\n一把鎏金风格的单手剑，外形华丽，经过炼器之法的处理，具有强大的杀伤力。</RI_Weapon_GoldSword.description>
+  <!-- EN: edge -->
+  <RI_Weapon_GoldSword.tools.edge.label>剑刃</RI_Weapon_GoldSword.tools.edge.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_GoldSword.tools.point.label>剑尖</RI_Weapon_GoldSword.tools.point.label>
+  
+  <!-- EN: Gilded three-pointed double-edged spear【Second-rate】 -->
+  <RI_Weapon_GoldThreeSpear.label>鎏金三尖两刃枪【二品】</RI_Weapon_GoldThreeSpear.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA gilded three-pointed double-edged spear with a luxurious appearance, refined through the method of Forge, granting it formidable lethality. -->
+  <RI_Weapon_GoldThreeSpear.description>【二品】近战兵器\n\n一把鎏金风格的三尖两刃枪，外形华丽，经过炼器之法的处理，具有强大的杀伤力。</RI_Weapon_GoldThreeSpear.description>
+  <!-- EN: point -->
+  <RI_Weapon_GoldThreeSpear.tools.point.label>枪尖</RI_Weapon_GoldThreeSpear.tools.point.label>
+  
+</LanguageData>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ironwood -->
+  <RI_Resource_IronWood.label>玄铁木</RI_Resource_IronWood.label>
+  <!-- EN: Ironwood appears unremarkable but is as hard as iron.\n\nThis wood is extremely tough and difficult to work with. Its heartwood is an excellent material for crafting high-quality weapons.\n\nHowever, it is still wood and does not resist fire. -->
+  <RI_Resource_IronWood.description>玄铁木，其貌不扬，坚硬如铁。\n\n这种木材非常坚硬，加工困难，芯材是打造上等兵器的绝佳材料。\n\n但此物毕竟还是木材，并不能防火。</RI_Resource_IronWood.description>
+  <!-- EN: Black iron wood -->
+  <RI_Resource_IronWood.stuffProps.stuffAdjective>玄铁木</RI_Resource_IronWood.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_IronWood.tools.log.label>玄铁木</RI_Resource_IronWood.tools.log.label>
+  
+  <!-- EN: jade-blood bamboo -->
+  <RI_Resource_JadeBloodBamboo.label>苍血竹</RI_Resource_JadeBloodBamboo.label>
+  <!-- EN: Jade-blood bamboo grows slowly and is a rare material. Its fibers have a jade-like luster and are exceptionally fine and strong.\n\nWeapons made from jade-blood bamboo are as sharp as refined steel, though they cannot withstand flames. -->
+  <RI_Resource_JadeBloodBamboo.description>苍血竹生长缓慢，是一种稀有材料，其纤维带有玉石的光泽，非常细密坚固。\n\n用苍血竹制作的武器，锋利堪比精铁，但无法抵挡火焰。</RI_Resource_JadeBloodBamboo.description>
+  <!-- EN: Green blood bamboo -->
+  <RI_Resource_JadeBloodBamboo.stuffProps.stuffAdjective>苍血竹</RI_Resource_JadeBloodBamboo.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_JadeBloodBamboo.tools.log.label>苍血竹</RI_Resource_JadeBloodBamboo.tools.log.label>
+  
+  <!-- EN: soil -->
+  <RI_Resource_Mud.label>粘土</RI_Resource_Mud.label>
+  <!-- EN: Soil dig from the ground and purified of impurities. It can be fired into bricks. -->
+  <RI_Resource_Mud.description>从地里挖出来的泥土，已经剔除了杂质，可以烧制成砖头。</RI_Resource_Mud.description>
+  
+  <!-- EN: plywood -->
+  <RI_Resource_Plywood.label>胶合板</RI_Resource_Plywood.label>
+  <!-- EN: A modern board made by stacking layers of wood particles, then pressing, bonding, and drying them at high temperature.\n\nPlywood has good hardness. Furniture made from it is more durable than solid wood furniture and is relatively inexpensive. -->
+  <RI_Resource_Plywood.description>用多层堆叠的木材颗粒经过高温挤压，粘合，干燥后得到的现代板材。\n\n胶合板的硬度良好，制作的家具比原木家具更加耐用，并且十分便宜。</RI_Resource_Plywood.description>
+  <!-- EN: plywood -->
+  <RI_Resource_Plywood.stuffProps.stuffAdjective>胶合板</RI_Resource_Plywood.stuffProps.stuffAdjective>
+  
+  <!-- EN: bamboo -->
+  <RI_Resource_RawBamboo.label>竹子</RI_Resource_RawBamboo.label>
+  <!-- EN: Bamboo is a lightweight building material that can be used to quickly erect structures. However, it is highly flammable.\n\nScholars admire bamboo for its upright resilience, while craftsmen value its abundance and ease of processing. -->
+  <RI_Resource_RawBamboo.description>竹子是一种轻便的建材，可以用于快速搭起建筑，不过小心，竹子易燃。\n\n文人爱竹子的挺拔不屈，而工匠则爱竹子的唾手可得，加工方便。</RI_Resource_RawBamboo.description>
+  <!-- EN: Bamboo -->
+  <RI_Resource_RawBamboo.stuffProps.stuffAdjective>竹</RI_Resource_RawBamboo.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_RawBamboo.tools.log.label>竹子</RI_Resource_RawBamboo.tools.log.label>
+  
+  <!-- EN: sandalwood -->
+  <RI_Resource_SandalWoodLog.label>檀木</RI_Resource_SandalWoodLog.label>
+  <!-- EN: Sandalwood is a fine-grained, fragrant, and valuable hardwood. Its excellent qualities make sandalwood furniture expensive.\n\nWhen burned, sandalwood releases a pleasant aroma. Scholars and refined gentlemen often burn it as incense at home, bathing in the woody fragrance to relax body and mind. -->
+  <RI_Resource_SandalWoodLog.description>檀木是一种质地细密，带有香味的名贵木材。其优异的特性，使得檀木家具价格高昂。\n\n檀木焚烧后带有香味，一些文人雅士往往会在家中燃香，沐浴在木质香气中，以达到放松身心的效果。</RI_Resource_SandalWoodLog.description>
+  <!-- EN: Sandal wood -->
+  <RI_Resource_SandalWoodLog.stuffProps.stuffAdjective>檀木</RI_Resource_SandalWoodLog.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_SandalWoodLog.tools.log.label>檀木</RI_Resource_SandalWoodLog.tools.log.label>
+  
+  <!-- EN: wood plank -->
+  <RI_Resource_ThinWood.label>薄木板</RI_Resource_ThinWood.label>
+  <!-- EN: Thin planks sawn from timber. They are lightweight and easy to process. -->
+  <RI_Resource_ThinWood.description>木材锯开得到的薄木板，非常轻，很容易加工。</RI_Resource_ThinWood.description>
+  <!-- EN: wood plank -->
+  <RI_Resource_ThinWood.stuffProps.stuffAdjective>木板</RI_Resource_ThinWood.stuffProps.stuffAdjective>
+  
+</LanguageData>

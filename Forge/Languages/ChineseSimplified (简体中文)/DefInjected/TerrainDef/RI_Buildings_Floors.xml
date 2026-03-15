@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient Floor A -->
+  <RI_Building_AncientFloorA.label>古修地板A</RI_Building_AncientFloorA.label>
+  <!-- EN: An ancient cultivator style floor, made of steel. -->
+  <RI_Building_AncientFloorA.description>古修风格的地板，用钢铁打造。</RI_Building_AncientFloorA.description>
+  
+  <!-- EN: Ancient Floor B -->
+  <RI_Building_AncientFloorB.label>古修地板B</RI_Building_AncientFloorB.label>
+  <!-- EN: An ancient cultivator style floor, made of steel. -->
+  <RI_Building_AncientFloorB.description>古修风格的地板，用钢铁打造。</RI_Building_AncientFloorB.description>
+  
+  <!-- EN: Ancient black steel floor -->
+  <RI_Building_AncientSteelFloor.label>庚钢地板</RI_Building_AncientSteelFloor.label>
+  <!-- EN: The floor made of black steel can be fireproof and has a high degree of cleanliness. -->
+  <RI_Building_AncientSteelFloor.description>庚钢打造的地板，可以防火，同时具有较高的洁净度。</RI_Building_AncientSteelFloor.description>
+  
+  <!-- EN: Burned floor -->
+  <RI_Building_BurnedFloor.label>烧毁的地板</RI_Building_BurnedFloor.label>
+  <!-- EN: Burned-out floor. -->
+  <RI_Building_BurnedFloor.description>烧毁的地板。</RI_Building_BurnedFloor.description>
+  
+</LanguageData>

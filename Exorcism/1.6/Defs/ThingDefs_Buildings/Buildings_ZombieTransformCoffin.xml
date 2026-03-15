@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=============== 炼冥棺 ===============-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_ZombieTransformationCoffin</defName>
+		<label>Necro-resurrect coffin</label>
+		<description>TEST</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_ZombieTransformationCoffin/RI_Building_ZombieTransformationCoffinOpen</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6.3,6.3)</drawSize>
+			<shadowData>
+				<volume>(2.8,2.8,3.8)</volume>
+			</shadowData>
+		</graphicData>
+		<thingClass>RimZombieGirl.Building_TransformationCoffin</thingClass>
+		<containedPawnsSelectable>true</containedPawnsSelectable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<size>(3,4)</size>
+		<!--原料-->
+		<costList>
+			<RI_Resource_ErosionBronze>50</RI_Resource_ErosionBronze>
+			<RI_Resource_ConcentrateAberrantBlood>20</RI_Resource_ConcentrateAberrantBlood>
+			<RI_Resource_InkJade>10</RI_Resource_InkJade>
+			<RI_Resource_CharmPaper>20</RI_Resource_CharmPaper>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<!--图标-->
+		<uiIconPath>Things/Building/Misc/RI_Building_ZombieTransformationCoffin/RI_Building_ZombieTransformationCoffin_Icon</uiIconPath>
+		<uiIconScale>1.6</uiIconScale>
+		<uiOrder>3980</uiOrder>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+		<passability>Standable</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<expandHomeArea>false</expandHomeArea>
+			<isInert>true</isInert>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+					<disallowedCategories>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">CorpsesDrone</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+			<relatedBuildCommands>
+				<li>RI_TransformAccelerator</li>
+				<li>RI_Building_BloodCrucible</li>
+			</relatedBuildCommands>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<uiOrder>2050</uiOrder>
+		<comps>
+			<!--邪血燃料-->
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelGizmoLabel>Aberrant blood</fuelGizmoLabel>
+				<fuelCapacity>144</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>RI_Resource_ConcentrateAberrantBlood</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<minimumFueledThreshold>5</minimumFueledThreshold>
+				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+				<initialAllowAutoRefuel>false</initialAllowAutoRefuel>
+				<showFuelGizmo>false</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<autoRefuelPercent>1</autoRefuelPercent>
+			</li>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Grave</compClass>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_TransformAccelerator</li>
+					<li>RI_Building_BloodCrucible</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<!--<placeWorkers><li>PlaceWorker_MeditationOffsetBuildingsNear</li></placeWorkers>-->
+		<modExtensions>
+			<li Class="RimZombieGirl.PawnTransformProperites">
+				<costCount>72</costCount>
+				<ticksToConvert>1440000</ticksToConvert>
+				<craftingSound>Recipe_Machining</craftingSound>
+				<hidePawnGraphic>
+					<texPath>Things/Building/Misc/RI_Building_ZombieTransformationCoffin/RI_Building_ZombieTransformationCoffin</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(6.3,6.3)</drawSize>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+					<shadowData>
+						<volume>(0.83, 0.3, 1.7)</volume>
+					</shadowData>
+				</hidePawnGraphic>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!--进入棺材工作-->
+	<JobDef>
+		<defName>EnterTransformationCoffin</defName>
+		<driverClass>RimZombieGirl.JobDriver_EnterTransformationCoffin</driverClass>
+		<reportString>entering Transformation Coffin.</reportString>
+		<taleOnCompletion>EnteredZombieTransformationCoffin</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<!--入棺Tale-->
+	<TaleDef>
+		<defName>EnteredZombieTransformationCoffin</defName>
+		<label>entered transformation coffin</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>5</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun-&gt;[PAWN_nameDef] entering a transformation coffin</li>
+				<li>image-&gt;[PAWN_nameFull] lying still inside a transformation coffin [circumstance_group]</li>
+				<li>image-&gt;[PAWN_nameFull] stepping into the transformation coffin [circumstance_group]</li>
+				<li>image-&gt;[PAWN_nameFull] sealed in a transformation coffin, body twitching [circumstance_group]</li>
+				<li>image-&gt;[PAWN_nameFull] screaming silently as the coffin closes [circumstance_group]</li>
+				<li>image-&gt;a green glow leaking from the transformation coffin as [PAWN_nameFull] lies within [circumstance_group]</li>
+				<li>circumstance_phrase-&gt;with vacant eyes</li>
+				<li>circumstance_phrase-&gt;while whispering forgotten words</li>
+				<li>circumstance_phrase-&gt;as their humanity slips away</li>
+				<li>circumstance_phrase-&gt;with a final look at the world</li>
+				<li>desc_sentence-&gt;[PAWN_nameDef]'s skin begins to pale and flake.</li>
+				<li>desc_sentence&gt;A mechanical hum surrounds the coffin.</li>
+				<li>desc_sentence&gt;The air smells of ozone and rot.</li>
+				<li>desc_sentence&gt;[PAWN_nameDef] lets out a guttural breath before silence.</li>
+				<li>desc_sentence&gt;Other coffins nearby pulse with green light.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+	<ThingDef ParentName="BuildingBase" Name="TransformationCoffinBuildingBase" Abstract="True">
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<passability>PassThroughOnly</passability>
+		<!--<defaultPlacingRot>South</defaultPlacingRot>-->
+		<designationCategory>Biotech</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiOrder>2000</uiOrder>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories Inherit="False">
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<!--<researchPrerequisites><li>Deathrest</li></researchPrerequisites>-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Building_ZombieTransformationCoffin</ThingDef>
+		</descriptionHyperlinks>
+		<building>
+			<relatedBuildCommands>
+				<li>RI_Building_ZombieTransformationCoffin</li>
+			</relatedBuildCommands>
+		</building>
+		<placeWorkers>
+			<li>RimZombieGirl.PlaceWorker_DrawLinesToTransformingCoffin</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="TransformationCoffinBuildingBase">
+		<defName>RI_TransformAccelerator</defName>
+		<label>transform accelerator</label>
+		<description>加速器</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/DeathrestAccelerator/DeathrestAccelerator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.3, 1.8)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0.2,0.7,1.8)</rect>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>50</Mass>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<RI_Resource_ErosionBronze>40</RI_Resource_ErosionBronze>
+			<RI_Resource_AberrantComponents>2</RI_Resource_AberrantComponents>
+		</costList>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="RimZombieGirl.CompProperties_FacilityForCoffin">
+				<maxSimultaneous>2</maxSimultaneous>
+				<transformTimeReduce>3</transformTimeReduce>
+				<dailyConsumptionReduction>0</dailyConsumptionReduction>
+				<linkableBuildings>
+					<li>RI_Building_ZombieTransformationCoffin</li>
+				</linkableBuildings>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TransformationCoffinBuildingBase">
+		<defName>RI_Building_BloodCrucible</defName>
+		<label>Blood crucible</label>
+		<description>A crucible made of Erosion bronze, heated to a certain degree, can refine blood. When connected to the Necro-resurrect coffin, it reduces the consumption of aberrant blood.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_BloodCrucible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.3,2.3)</drawSize>
+			<shadowData>
+				<volume>(0.5,0.3,0.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0.2,0.7,1.8)</rect>
+			</damageData>
+		</graphicData>
+		<!--<defaultPlacingRot>East</defaultPlacingRot>-->
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>50</Mass>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+
+		<costList>
+			<RI_Resource_ErosionBronze>40</RI_Resource_ErosionBronze>
+			<RI_Resource_ConcentrateAberrantBlood>20</RI_Resource_ConcentrateAberrantBlood>
+		</costList>
+		
+		<!--图标-->
+		<uiIconPath>Things/Building/Misc/RI_Building_BloodCrucible_Icon</uiIconPath>
+		<uiIconScale>1.25</uiIconScale>
+		<uiOrder>3982</uiOrder>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="RimZombieGirl.CompProperties_FacilityForCoffin">
+				<maxSimultaneous>4</maxSimultaneous>
+				<transformTimeReduce>0</transformTimeReduce>
+				<dailyConsumptionReduction>0.2</dailyConsumptionReduction>
+				<linkableBuildings>
+					<li>RI_Building_ZombieTransformationCoffin</li>
+				</linkableBuildings>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

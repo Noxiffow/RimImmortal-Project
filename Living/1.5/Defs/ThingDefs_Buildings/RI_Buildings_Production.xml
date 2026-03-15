@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--简易灶台-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_CookTable</defName>
+		<label>Cooking stove</label>
+		<description>A simple earthen stove built of fire-resistant brick. The stovetop is equipped with a pan and a steamer, enough to prepare most dishes.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_CookTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.05,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+			<WorkTableWorkSpeedFactor>0.8</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2100</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSurvival</li>
+			<li>CookMealSurvivalBulk</li>
+			<li>Make_Pemmican</li>
+			<li>Make_PemmicanBulk</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>150.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_KitchenCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RI_Research_FoodRecipe</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--饮食备菜台-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_FoodPrepareTable</defName>
+		<label>Food Preparing table</label>
+		<description>A table with cooking tools. It can be used for cooking, it can be used for making snacks, it is a work table that any restaurant will prepare for the chef.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_FoodPrepareTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.45,1.45)</drawSize>
+			<shadowData>
+				<volume>(2.9, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<recipes>
+			<li>ButcherCorpseFlesh</li>
+			<li>Make_Kibble</li>
+			<li>RI_Recipe_CutWatermelon</li>
+		</recipes>
+		<costStuffCount>70</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_KitchenCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RI_Research_FoodRecipe</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--现代猛火灶台-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_ModernCookingStove</defName>
+		<label>Modern cooking stove</label>
+		<description>A fire stove, with a very strong firepower, can be in a short period of time to produce food. It is equipped with sinks that run water all the time to cool the metal cooktop itself.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_ModernCookingStove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.59,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+			<WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2110</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<recipes>
+			<li>CookMealSurvival</li>
+			<li>CookMealSurvivalBulk</li>
+			<li>Make_Pemmican</li>
+			<li>Make_PemmicanBulk</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.15</heatPerTickWhileWorking>
+		</building>
+		<designationHotKey>Misc8</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RI_Electric</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--茶炉-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_TeaStove</defName>
+		<label>Tea stove</label>
+		<description>A small tea stove, divided into two parts of the stove and the teapot, can be used to cook tea, or boil medicine soup.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_TeaStove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.11,2.11)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<recipes>
+			<!--奶制品-->
+			<li>RI_Recipe_CookMilkTea</li>
+			<li>RI_Recipe_CookMilkTeaBulk</li>
+			<li>RI_Recipe_CookBubbleTea</li>
+			<li>RI_Recipe_CookBubbleTeaBulk</li>
+		</recipes>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2100</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>100</fuelConsumptionRate>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>7</heatPerSecond>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_KitchenCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RI_Research_FoodRecipe</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--1x1立柜（链接烹饪台-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_KitchenCabinet</defName>
+		<label>Kitchen cabinet</label>
+		<description>A kitchen counter with an attached hanging cabinet stocked with tools. Placed near the stove to speed up cooking.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_KitchenCabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.15,2.15)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>1</Cleanliness>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>RI_Research_FoodRecipe</li>
+		</researchPrerequisites>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!--砖窑-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_BrickKiln</defName>
+		<label>Brick kiln</label>
+		<description>A brick kiln. It's hot inside.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_BrickKiln</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5.7,5.6)</drawSize>
+			<shadowData>
+				<volume>(1.95,0.5,1.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0.1,2.4,1.8)</rect>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>4500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Cleanliness>-20</Cleanliness>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<size>(3,3)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<fillPercent>1</fillPercent>
+		<passability>Impassable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellIcon>DiningChair</interactionCellIcon>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<recipes>
+			<!--烧砖-->
+			<li>RI_MakeBlackBrick</li>
+			<li>RI_MakeBlackBrickBulk</li>
+			<li>RI_MakeBlackBrickTen</li>
+			<li>RI_MakeRedBrick</li>
+			<li>RI_MakeRedBrickBulk</li>
+			<li>RI_MakeRedBrickTen</li>
+			<!--窑炉该干的活-->
+			<li>ExtractMetalFromSlag</li>
+			<li>SmeltOrDestroyThing</li>
+			<li>SmeltWeapon</li>
+			<li>SmeltApparel</li>
+			<li>DestroyWeapon</li>
+			<li>DestroyApparel</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>15</heatPerSecond>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+			<forceShowRoomStats>true</forceShowRoomStats>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<paintable>true</paintable>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<designationHotKey>Misc5</designationHotKey>
+		<researchPrerequisites>
+			<li>RI_BasicTechnology</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--挖泥坑-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_MudDigWhole</defName>
+		<label>Digging pit</label>
+		<description>A simple digging pit can easily be destroyed. You can dig up dirt and stuff like that.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_MudDigWhole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<WorkTableWorkSpeedFactor>0.9</WorkTableWorkSpeedFactor>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<size>(3,3)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>RI_DigMud</li>
+			<li>RI_DigMudBulk</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--穿邪异皮做的衣服-->
+	<ThoughtDef>
+		<defName>RI_Thought_WearingAberrantLeather</defName>
+		<workerClass>ThoughtWorker_DreadLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Aberrant leather {0}</label>
+				<description>I hate this stuff. It stinks.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Aberrant leather {0} (+1)</label>
+				<description>Two dread leather items. These make me uncomfortable.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Aberrant leather {0} (+2)</label>
+				<description>These three dread leather items make me squirm. They smell awful.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Aberrant leather {0} etc</label>
+				<description>I'm covered in this horrible stuff.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<nullifyingHediffs>
+			<li>Inhumanized</li>
+		</nullifyingHediffs>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Nightmare</defName>
+		<label>噩梦</label>
+		<description>这个殖民者做了一个可怕的噩梦。</description>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<stackLimit>1</stackLimit>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>噩梦</label>
+				<description>I'm covered in this horrible stuff.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--日光畏惧-->
+	<ThoughtDef>
+		<defName>RI_Thought_ZombieAfraidSun</defName>
+		<workerClass>RI_Frame_ZombieLife.ThoughtWorker_JiangshiSun</workerClass>
+		<stages>
+			<li>
+				<label>sun!</label>
+				<description>The sunlight! it's burning!</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+				<!-- 心情 -12 -->
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--和僵尸聊天的反应-->
+	<!-- ================= 心情定义 ================= -->
+	<ThoughtDef>
+		<defName>RI_Thought_ZombieMumbleReceived</defName>
+		<showBubble>true</showBubble>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>0.5</durationDays>
+		<!-- 持续半天 -->
+		<stackLimit>5</stackLimit>
+		<stages>
+			<li>
+				<label>disturbing mumble</label>
+				<description>That thing tried to talk to me...terrifying.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+				<!-- 心情 -3 -->
+			</li>
+		</stages>
+		<!--一些特性无视-->
+		<nullifyingTraits>
+			<li>Cannibal</li>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+
+	<!-- ================= 对话文本 (RulePack) ================= -->
+	<RulePackDef>
+		<defName>RI_RulePack_ZombieMumble</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [mumbled] at [RECIPIENT_nameDef].</li>
+				<li>r_logentry->[INITIATOR_nameDef] made [noises] towards [RECIPIENT_nameDef].</li>
+
+				<li>mumbled->groaned</li>
+				<li>mumbled->gurgled</li>
+				<li>mumbled->hissed incoherently</li>
+				<li>mumbled->rasped</li>
+
+				<li>noises->wet, clicking noises</li>
+				<li>noises->a low, hungry growl</li>
+				<li>noises->a sound like snapping bones</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

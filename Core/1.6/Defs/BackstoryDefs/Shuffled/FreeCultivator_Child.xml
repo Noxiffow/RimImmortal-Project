@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Melee>3</Melee>
+	<Social>-2</Social>
+	<Crafting>3</Crafting>
+	<Construction>3</Construction>
+	<Animals>3</Animals>
+	<Crafting>3</Crafting>
+	<Crafting>3</Crafting>
+	<Crafting>3</Crafting>
+	<Crafting>3</Crafting>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>-->
+
+	<!--============修炼者============-->
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorChild1</defName>
+		<title>Innate energy root</title>
+		<titleShort>Innate energy root</titleShort>
+		<description>[PAWN_nameDef] was seen as an anomaly during his childhood, due to [PAWN_pronoun]'s ability to control his Qi having been revealed as an infant. This was kept hidden from [PAWN_possessive]'s family until [PAWN_pronoun] reached adulthood.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>1</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorChild2</defName>
+		<title>Artificial energy root</title>
+		<titleShort>Artificial energy root</titleShort>
+		<description>[PAWN_nameDef]Born into a large family. The [PAWN_possessive] family spent a lot of money to get a spirit bud, and after a minor surgery, [PAWN_pronoun] had the power to control his Qi.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>3</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorChild3</defName>
+		<title>Experimental material</title>
+		<titleShort>Experimental material</titleShort>
+		<description>For as long as he can remember, [PAWN_nameDef]'s world has consisted of nurses in white coats and glass walls. [PAWN_pronoun] developed a deep friendship with a nurse who secretly let [PAWN_nameDef] go.</description>
+		<slot>Childhood</slot>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Animals>5</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_CultivatorChild4</defName>
+		<title>Nobody child</title>
+		<titleShort>Nobody child</titleShort>
+		<description>[PAWN_nameDef] is an eccentric child who never cried at birth. But [PAWN_pronoun] learns everything quickly, and occasionally spouts off comments that no one can understand.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>3</Animals>
+			<Melee>3</Melee>
+			<Social>-2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--============可以是修炼者============-->
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Child1</defName>
+		<title>Young adulthood</title>
+		<titleShort>Young adulthood</titleShort>
+		<description>[PAWN_nameDef] 's family is very poor, [PAWN_possessive]' s hands have long rubbed out blisters in the work, and people around him all say [PAWN_pronoun] is a sensible child.</description>
+		<slot>Childhood</slot>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<skillGains>
+			<Mining>3</Mining>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Child2</defName>
+		<title>Evil child</title>
+		<titleShort>Evil child</titleShort>
+		<description>[PAWN_nameDef's] brain circuits are different from those of ordinary people, and [PAWN_pronoun] has lost its reverence for all earthly things.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>3</Construction>
+			<Social>5</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Child3</defName>
+		<title>Innocent child</title>
+		<titleShort>Innocent child</titleShort>
+		<description>[PAWN_nameDef] had a very happy childhood, and [PAWN_nameDef] was possessive of [PAWN_pronoun] by his family, and he was able to feed himself well from childhood, which helped [Pawn_namedef] develop an optimistic personality.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+		<forcedTraits>
+			<NaturalMood>1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Child4</defName>
+		<title>Unassuming child</title>
+		<titleShort>Unassuming child</titleShort>
+		<description>[PAWN_nameDef] is an eccentric child who never cried at birth. But [PAWN_pronoun] learns everything quickly, and occasionally spouts off comments that no one can understand.</description>
+		<slot>Childhood</slot>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Mining>3</Mining>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_Child5</defName>
+		<title>Homeless child</title>
+		<titleShort>Homeless child</titleShort>
+		<description>[PAWN_nameDef] lost his family when he was a child, and due to [PAWN_pronoun's] good physical quality, he was selected by an organization and trained as an assassin.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_Assassin</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--2025/4月新增背景故事：云家族人相关，散修相关-->
+
+	<!--云家遗族孩童-->
+	<BackstoryDef>
+		<defName>RI_Backstory_Child_Yun1</defName>
+		<title>Yun family survivor's child</title>
+		<titleShort>Yun family child</titleShort>
+		<description>The Yun family fell into decline during the Sect Wars, but under the leadership of Master Tianyun, they rose to prominence once more. However, in the end, they could not overcome time and gradually faded into obscurity.\n[PAWN_nameDef] was born into a humble family, only discovering [PAWN_possessive] family's history many years later. Determined, [PAWN_pronoun] set his sights on entering the cultivation world to continue the glorious legacy of [PAWN_possessive] ancestors.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--云家外族孩童-->
+	<BackstoryDef>
+		<defName>RI_Backstory_Child_Yun2</defName>
+		<title>Yun family foreign's child</title>
+		<titleShort>Yun family child</titleShort>
+		<description>After the fall of the Yun family, a portion of the surviving descendants fled to distant lands. After parting ways, they established new families. While perusing old books in his family’s collection, [PAWN_nameDef] stumbled upon this forgotten history. Although [PAWN_possessive] family had changed its name and abandoned all ties to the past, [PAWN_nameDef] made the resolute decision to venture into the cultivation world, seeking out other surviving members of the Yun family.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_WickedCultivator</li>
+			<li>RI_Pawn_FreeCultivator</li>
+			<li>RI_Pawn_Cultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

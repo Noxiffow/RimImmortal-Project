@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TipSetDef>
+		<defName>RI_GameplayTips</defName>
+		<tips>
+
+			<!--游戏教程-->
+			<li TKey="CultivatorRoad">&lt;color=#baffe3&gt;Implant a Spiritual root to become a cultivator; study cultivation methods to officially begin your path to immortal.&lt;/color&gt;</li>
+			<li TKey="GetRoots">&lt;color=#baffe3&gt;Spiritual roots can be obtained in various ways: trade, brewing QingMing jade wine, or even by extracting them from living cultivators...&lt;/color&gt;</li>
+			<li TKey="VeinSoil">&lt;color=#baffe3&gt;Spirit Vein soil is born from areas rich in Qi energy. Not only is it highly fertile, but cultivating upon such land greatly accelerates progress.&lt;/color&gt;</li>
+			<li TKey="LiquidJade">&lt;color=#baffe3&gt;Liquid Jade is a rare mineral formed from concentrated heaven-and-earth Qi, Extremely scarce—do not miss the chance to gather it when found.&lt;/color&gt;</li>
+			<li TKey="PerfectRank">&lt;color=#baffe3&gt;Upon reaching the Perfect rank, one may attempt a upgrade. Certain rank require rare items to assist in the process.&lt;/color&gt;</li>
+			<li TKey="CultivationRank">&lt;color=#baffe3&gt;Cultivation rank: Catkins, Noviciate rank, Foundation rank, Core-formation rank, Core-coagulation rank, Core-consummation rank, Spirit constraint rank, Primordial-spirit baby rank, Primordial-spirit maturity rank, Primordial-spirit combine rank, Terrestrial immortal rank.&lt;/color&gt;</li>
+			<li TKey="Ascension">&lt;color=#baffe3&gt;After reaching the Terrestrial immortal rank, one must build an Ascension Platform, defend raids from all directions, and only then may they soar beyond immotal.&lt;/color&gt;</li>
+			<li TKey="SpiritConstraintRank">&lt;color=#baffe3&gt;The Spirit constraint rank marks a major bottleneck in cultivation; progress is painstakingly slow. However, once one upgrade into the Primordial-spirit baby rank, their power surges dramatically.&lt;/color&gt;</li>
+
+			<!--历史背景-->
+			<li TKey="SpiritualArchotechnology">&lt;color=#baffe3&gt;Humanity first discovered Qi energy from the Spiritual archotechnology and quickly weaponized it for warfare.&lt;/color&gt;</li>
+			<li TKey="FounderWar">&lt;color=#baffe3&gt;With Qi energy as their weapon, humanity challenged the Archotechs in the catastrophic Founder's War—only to be utterly crushed in the end.&lt;/color&gt;</li>
+			<li TKey="DragonMaster">&lt;color=#baffe3&gt;After Founder's War, prodigies from across various disciplines gathered by some miracle. They came to be revered as the Dragon masters.&lt;/color&gt;</li>
+			<li TKey="EightPrimalPaths">&lt;color=#baffe3&gt;Five Dragon masters devoted their lives to creating the first cultivation system and devised the Eight Primal-Paths.&lt;/color&gt;</li>
+			<li TKey="Sanctuary">&lt;color=#baffe3&gt;Dragon master terraformed an entire planet to serve as a Oasis for cultivators. Legends say this world cannot be detected by any device, and its coordinates remain a mystery to this day.&lt;/color&gt;</li>
+			<li TKey="FiveElementsSect">&lt;color=#baffe3&gt;The cultivation world flourished around the Eight Primal-Paths. From them arose countless sects, among which the Five-Elements Sect was the greatest.&lt;/color&gt;</li>
+			<li TKey="SectWar">&lt;color=#baffe3&gt;Peace among sects lasted for centuries—until a devastating war engulfed the cultivation realm. The conflict ended with the shattering of the Five Elements Sect and the death of hundreds of millions.&lt;/color&gt;</li>
+			<li TKey="AncientCultivator">&lt;color=#baffe3&gt;After sect war, countless cultivators fled to rimworld at the edges of the universe. These survivors became known to future generations as the Ancient Cultivators.&lt;/color&gt;</li>
+
+			<!--法门介绍-->
+
+		</tips>
+	</TipSetDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_PerfumeBottle</defName>
+		<thingClass>WhoXiuXian.Abilities.RI_Mote_PerfumeBottle</thingClass>
+		<graphicData>
+			<drawSize>5</drawSize>
+			<!-- TODO -->
+			<texPath>Things/Mote/RI_Mote_PerfumeBottle</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>27.1</solidTime>
+			<fadeOutTime>0.6</fadeOutTime>
+		</mote>
+		<modExtensions>
+			<li Class="WhoXiuXian.Abilities.PerfumeBottleModExtension">
+				<!-- 效果间隔时间 -->
+				<interval>420</interval>
+				<!-- 狂暴几率 -->
+				<berserkChance>0.2</berserkChance>
+				<!-- 迷惑几率 -->
+				<confusionChance>0.2</confusionChance>
+				<!-- 绑定Hediff -->
+				<hediffDef>RI_Hediff_PsychedelicDrugs</hediffDef>
+				<!-- 有效范围 -->
+				<radius>5.5</radius>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

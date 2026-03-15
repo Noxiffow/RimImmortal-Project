@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LetterDef>
+		<defName>DebugMode</defName>
+		<color>(65, 200, 65)</color>
+		<flashColor>(85, 255, 85)</flashColor>
+		<flashInterval>6</flashInterval>
+		<bounce>false</bounce>
+		<arriveSound>LetterArrive_Good</arriveSound>
+		<description>如果你看到了这个消息，现在这个mod是以Debug模式工作的，请联系开发者</description>
+	</LetterDef>
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>RI_SpiritualRockThought</defName>
+		<workerClass>WhoXiuXian.RI_ThoughtWorker_SpiritalRock</workerClass>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Spiritual rock comfort</label>
+				<description>The light Qi that from spiritual rock makes people calm and more focused.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

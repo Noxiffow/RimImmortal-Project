@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chief guard -->
+  <RI_IdeoRole_ChiefGuard.label>首席护法</RI_IdeoRole_ChiefGuard.label>
+  <!-- EN: A specialized sect position dedicated to safeguarding the sect. Held by the most skilled combatant, it unlocks both ranged and melee abilities. -->
+  <RI_IdeoRole_ChiefGuard.description>一个特殊的宗门职位，专职于保护宗门。由最擅长战斗的人担任，将会同时解锁射击和近战技能。</RI_IdeoRole_ChiefGuard.description>
+  
+  <!-- EN: Grand elder -->
+  <RI_IdeoRole_GrandElder.label>太上长老</RI_IdeoRole_GrandElder.label>
+  <!-- EN: A highly important position within the sect, responsible for the education and guidance of disciples from other sects, possessing a unique meditation technique. -->
+  <RI_IdeoRole_GrandElder.description>一个在宗门中十分重要的职位，将会负责对其他门派弟子的教育和指点工作，拥有独特的冥想之法。</RI_IdeoRole_GrandElder.description>
+  
+</LanguageData>

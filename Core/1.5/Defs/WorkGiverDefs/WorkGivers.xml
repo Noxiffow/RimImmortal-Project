@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>RI_StudyRoute</defName>
+		<label>study new route</label>
+		<giverClass>WorkGiver_StudyInteract</giverClass>
+		<workType>Research</workType>
+		<verb>study</verb>
+		<gerund>studying</gerund>
+		<priorityInType>110</priorityInType>
+		<canBeDoneByMechs>false</canBeDoneByMechs>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RI_Resource_SpiritualCrystalScan</defName>
+		<label>operate spiritual crystal scanner</label>
+		<giverClass>WorkGiver_OperateScanner</giverClass>
+		<workType>Research</workType>
+		<priorityInType>50</priorityInType>
+		<verb>scan</verb>
+		<gerund>scanning at</gerund>
+		<scannerDef>RI_Building_CrystalVeinDetector</scannerDef>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>false</canBeDoneByMechs>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RI_DanMake</defName>
+		<label>Refining Elixir</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Doctor</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_LittleCauldrons</li>
+			<li>RI_Building_Cauldrons</li>
+		</fixedBillGiverDefs>
+		<verb>cook</verb>
+		<gerund>Refining Elixir</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RI_MedicalMake</defName>
+		<label>Make medicinal materials</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Doctor</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</fixedBillGiverDefs>
+		<verb>cook</verb>
+		<gerund>Make medicinal materials on</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--<WorkGiverDef>
+		<defName>RI_DoBillsCopyBook</defName>
+		<label>Copy book</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>221</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_CopyTable</li>
+		</fixedBillGiverDefs>
+		<verb>copy</verb>
+		<gerund>copy at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>-->
+
+	<!--工作Base添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</value>
+	</Operation>
+
+</Defs>

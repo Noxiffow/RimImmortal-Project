@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--==========测试法门==========-->
+	<!--1凝气境界——测试-->
+	<!--2固基境界——测试-->
+	<!--3化丹境界——测试-->
+	<!--4结丹境界——测试-->
+	<!--5灵丹境界——测试-->
+	<!--6化神境界——测试-->
+	<!--7元婴境界——测试-->
+	<!--8大成境界——测试-->
+	<!--9合体境界——测试-->
+
+	<!--父类-->
+	<AbilityDef Name="RI_PsycastBase" Abstract="True">
+		<abilityClass>WhoXiuXian.Abilities.RI_PsyCastBase</abilityClass>
+		<category>Psychic</category>
+		<statBases>
+			<Ability_Duration>0</Ability_Duration>
+		</statBases>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>WhoXiuXian.Abilities.RI_Verb_Cast</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetAnimals>False</canTargetAnimals>
+				<thingCategory>Item</thingCategory>
+				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<!--====================先天法门Base====================-->
+
+	<!--凝气境界——汇灵聚石-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_JD</defName>
+		<label>Crystal sublimation</label>
+		<description>&lt;color=#82FFCD&gt;This technique is learned by the Noviciate rank\n\n&lt;/color&gt;Qi Cost: 50\n\nGenerate a Spiritual Crystal.\n\nA basic technique mastered by all cultivators: by expelling Qi from the body and condensing it, one can form a spiritual crystal.</description>
+		<iconPath>UI/Abilities/Base/LS</iconPath>
+		<hotKey></hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.1</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySpawn">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+				<allowOnBuildings>False</allowOnBuildings>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化丹——灵气护体-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_HT</defName>
+		<label>Qi armor</label>
+		<description>&lt;color=#82FFCD&gt;This technique is learned by the Core-formation rank\n\n&lt;/color&gt;Qi Cost: 50\n\nRelease a Layer of Qi Shield.\n\nUsing Qi to form a soft layer of armor over the body provides basic protection.\n\nThis is a very fundamental technique. Advanced cultivators can create more complex shields for significantly enhanced defense.</description>
+		<level>0</level>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<iconPath>UI/Abilities/Base/HT</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ShieldHediff_PlayerShield</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--元婴境界——元神出窍-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_GS</defName>
+		<label>Primordial spirit separation</label>
+		<description>&lt;color=#82FFCD&gt;This technique is learned by the Primordial-spirit baby rank\n\n&lt;/color&gt;Qi Cost: 300\n\nA high-level spell that only cultivators at the Primordial-spirit baby rank or above can learn.\n\nIt involves separating a portion of one’s soul and condensing it into a glowing orb that remains outside the body. In the moment the cultivator’s physical body is destroyed, the soul fragment will reconstruct the body, effectively resurrecting the cultivator.\n\nHowever, the soul must not stray too far from the cultivator. If it does, resurrection will no longer be possible.</description>
+		<cooldownTicksRange>50000</cooldownTicksRange>
+		<iconPath>UI/Abilities/Base/WOCYUAN</iconPath>
+		<hotKey></hotKey>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>10000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>12</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_GenShinHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-300</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
+

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThinkTreeDef>
+        <defName>RI_Zombie_ThinkBase</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <!-- 进行亲密行为（做爱） -->
+                <li Class="ThinkNode_ConditionalLyingDown">
+                    <subNodes>
+                        <li Class="ThinkNode_ChancePerHour_Lovin">
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>SatisfyingNeeds</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_DoLovin" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 如果必须继续躺着 -->
+                <li Class="ThinkNode_ConditionalMustKeepLyingDown">
+                    <subNodes>
+                        <!-- 继续保持躺下 -->
+                        <li Class="JobGiver_KeepLyingDown" />
+                    </subNodes>
+                </li>
+
+                <!-- 引用“倒地”子树 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Downed</treeDef>
+                </li>
+
+                <!-- 引用“着火反应”子树 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>BurningResponse</treeDef>
+                </li>
+
+                 <!-- 引用“严重精神状态”子树 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>MentalStateCritical</treeDef>
+                </li>
+
+                <!-- 近战威胁反应 -->
+                <li Class="JobGiver_ReactToCloseMeleeThreat" />
+
+                <!-- 引用“非严重精神状态”子树 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>MentalStateNonCritical</treeDef>
+                </li>
+
+                <!-- 优先完成僵尸必须需求子树 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>RI_Zombie_BasicNeedsAndWork</treeDef>
+                </li>
+
+                
+                <!-- 被拴住时的行为 -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>RopedPawn</treeDef>
+                </li>
+
+                <!-- 给模组插入用的钩子， 人类精神状态 -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Humanlike_PostMentalState</insertTag>
+                </li>
+
+                <!-- 执行排队的Job -->
+                <li Class="ThinkNode_QueuedJob" />
+
+                <!-- 被征召时等待 -->
+                <li Class="ThinkNode_ConditionalColonist">
+                    <subNodes>
+                        <!-- 打标签：被征召命令 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>DraftedOrder</tagToGive>
+                            <subNodes>
+                                <!-- 移动到可站立位置 -->
+                                <li Class="JobGiver_MoveToStandable" />
+                                <!-- 执行命令 -->
+                                <li Class="JobGiver_Orders" />
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                
+
+                <!-- 关闭自我治疗 -->
+                <!-- NPC自我治疗 -->
+                <!-- <li Class="ThinkNode_ConditionalNPCCanSelfTendNow">
+                <subNodes>
+                    <li Class="JobGiver_SelfTend" />
+                </subNodes>
+                </li> -->
+
+                <!-- 高优先级领主指令 -->
+                <li Class="ThinkNode_JoinVoluntarilyJoinableLord">
+                    <dutyHook>HighPriority</dutyHook>
+                    <subNodes>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LordDuty</treeDef>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 给模组插入用的钩子 -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Humanlike_PostDuty</insertTag>
+                </li>
+
+                
+
+                <!-- 囚犯行为 -->
+                <!-- TODO 目前考虑囚犯行为需要删改 -->
+                <li Class="ThinkNode_ConditionalPrisoner">
+                    <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                    <subNodes>
+                        <!-- 如果在玩家家园地图 -->
+                        <li Class="ThinkNode_ConditionalInNonPlayerHomeMap">
+                            <invert>true</invert>
+                            <subNodes>
+                                <!-- 如果应该等待而不是逃跑 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Idle</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_PrisonerWaitInsteadOfEscaping">
+                                            <maxDanger>Deadly</maxDanger>
+                                        </li>
+                                    </subNodes>
+                                </li>
+
+                                <!-- 逃跑行为 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Escaping</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_PrisonerEscape" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 被释放后离开地图 -->
+                        <li Class="ThinkNode_ConditionalReleased">
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_ExitMapBest">
+                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 医疗原因休息 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>RestingForMedicalReasons</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_PatientGoToBed" />
+                            </subNodes>
+                        </li>
+
+                        <!-- 更换衣物 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>ChangingApparel</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_PrisonerGetDressed" />
+                            </subNodes>
+                        </li>
+
+                        <!-- 满足囚犯需求 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <!-- 按优先级排序的需求行为 -->
+                                <li Class="ThinkNode_PrioritySorter">
+                                    <subNodes>
+                                        <!-- 自动喂食（生物科技DLC） -->
+                                        <li Class="JobGiver_Autofeed"
+                                            MayRequire="Ludeon.RimWorld.Biotech" />
+                                        <!-- 获取食物 -->
+                                        <li Class="JobGiver_GetFood" />
+                                        <!-- 休息 -->
+                                        <li Class="JobGiver_GetRest" />
+                                        <!-- 满足化学需求 -->
+                                        <li Class="JobGiver_SatisfyChemicalNeed" />
+                                        <!-- 满足化学依赖（生物科技DLC） -->
+                                        <li Class="JobGiver_SatifyChemicalDependency"
+                                            MayRequire="Ludeon.RimWorld.Biotech" />
+                                        <!-- 获取血源（生物科技DLC） -->
+                                        <li Class="JobGiver_GetHemogen"
+                                            MayRequire="Ludeon.RimWorld.Biotech" />
+                                        <!-- 进入死亡休眠（生物科技DLC） -->
+                                        <li Class="JobGiver_GetDeathrest"
+                                            MayRequire="Ludeon.RimWorld.Biotech" />
+                                        <!-- 娱乐需求 -->
+                                        <li Class="ThinkNode_Priority_GetJoy">
+                                            <subNodes>
+                                                <li Class="JobGiver_GetJoy" />
+                                                <li Class="JobGiver_GetJoyInBed" />
+                                            </subNodes>
+                                        </li>
+                                        <!-- 冥想 -->
+                                        <li Class="JobGiver_Meditate" />
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 如果在非玩家家园地图 -->
+                        <li Class="ThinkNode_ConditionalInNonPlayerHomeMap">
+                            <subNodes>
+                                <!-- 附近没有未倒地的殖民者 -->
+                                <li Class="ThinkNode_ConditionalAnyUndownedColonistSpawnedNearby">
+                                    <invert>true</invert>
+                                    <subNodes>
+                                        <!-- 逃跑 -->
+                                        <li Class="ThinkNode_Tagger">
+                                            <tagToGive>Escaping</tagToGive>
+                                            <subNodes>
+                                                <li Class="JobGiver_PrisonerEscape" />
+                                            </subNodes>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                                <!-- 在殖民地内游荡 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Idle</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_WanderColony">
+                                            <maxDanger>Deadly</maxDanger>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 当前房间内游荡 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_WanderCurrentRoom">
+                                    <maxDanger>Deadly</maxDanger>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 错误空闲处理 -->
+                        <li Class="JobGiver_IdleError" />
+                    </subNodes>
+                </li>
+
+                <!-- 如果是殖民者，执行强制和紧急工作 -->
+                <li Class="ThinkNode_ConditionalColonist">
+                    <subNodes>
+                        <!-- 寻找允许区域 -->
+                        <li Class="JobGiver_SeekAllowedArea" />
+
+                        <!-- 寻找安全温度环境 -->
+                        <li Class="JobGiver_BringBabyToSafety" />
+                        <li Class="JobGiver_SeekSafeTemperature" />
+
+                        <!-- 丢弃未使用的物品 -->
+                        <li Class="JobGiver_DropUnusedInventory" />
+
+                        <!-- 紧急工作 -->
+                        <li Class="JobGiver_Work">
+                            <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                            <emergency>true</emergency>
+                        </li>
+
+                        <!-- 饥饿时获取食物 -->
+                        <li Class="ThinkNode_ConditionalStarving">
+                            <subNodes>
+                                <!-- 打标签：满足需求 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>SatisfyingNeeds</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_GetFood">
+                                            <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 母乳喂养 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_Autofeed" MayRequire="Ludeon.RimWorld.Biotech" />
+                            </subNodes>
+                        </li>
+
+                        <!-- 中优先级领主指令 -->
+                        <li Class="ThinkNode_JoinVoluntarilyJoinableLord">
+                            <dutyHook>MediumPriority</dutyHook>
+                            <subNodes>
+                                <li Class="ThinkNode_Subtree">
+                                    <treeDef>LordDuty</treeDef>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 捡起倒地武器 -->
+                        <li Class="JobGiver_PickupDroppedWeapon">
+                            <ignoreForbidden>true</ignoreForbidden>
+                        </li>
+
+                        <!-- 优化衣物 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>ChangingApparel</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_OptimizeApparel">
+                                    <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 外观更改（意识形态DLC） -->
+                        <li MayRequire="Ludeon.RimWorld.Ideology"
+                            Class="ThinkNode_ConditionalWantsLookChange">
+                            <subNodes>
+                                <li Class="JobGiver_UseStylingStationAutomatic" />
+                            </subNodes>
+                        </li>
+
+                        <!-- 染发（意识形态DLC） -->
+                        <li MayRequire="Ludeon.RimWorld.Ideology" Class="JobGiver_DyeHair" />
+
+                        <!-- 补充库存物品 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>TakeForInventoryStock</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_TakeForInventoryStock">
+                                    <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                                </li>
+                            </subNodes>
+                        </li>
+
+                        <!-- 卸下自身库存 -->
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>UnloadingOwnInventory</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_UnloadYourInventory" />
+                            </subNodes>
+                        </li>
+
+                        <!-- 食物需求大于0.6时打包食物 -->
+                        <li Class="ThinkNode_ConditionalNeedPercentageAbove">
+                            <need>Food</need>
+                            <threshold>0.6</threshold>
+                            <subNodes>
+                                <li Class="JobGiver_PackFood">
+                                    <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 按特质行为 -->
+                <li Class="ThinkNode_TraitBehaviors" />
+
+                <!-- 给模组插入用的钩子 -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Humanlike_PreMain</insertTag>
+                </li>
+
+                <!-- 主殖民者行为核心 -->
+                <li Class="ThinkNode_ConditionalColonist">
+                    <subNodes>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>MainColonistBehaviorCore</treeDef>
+                            <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- 主野人行为核心 -->
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>WildMan</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>MainWildManBehaviorCore</treeDef>
+                            <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 给模组插入用的钩子 -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Humanlike_PostMain</insertTag>
+                </li>
+
+                <!-- 空闲殖民者行为 -->
+                <li Class="ThinkNode_ConditionalColonist">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- 娱乐需求未满时进行娱乐 -->
+                                <li Class="ThinkNode_ConditionalNeedPercentageAbove">
+                                    <need>Joy</need>
+                                    <threshold>0.9</threshold>
+                                    <invert>true</invert>
+                                    <subNodes>
+                                        <li Class="JobGiver_IdleJoy" />
+                                    </subNodes>
+                                </li>
+
+                                <!-- 在殖民地内游荡 -->
+                                <li Class="JobGiver_WanderColony">
+                                    <maxDanger>None</maxDanger>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 空闲野人行为 -->
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>WildMan</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- 在任意地方游荡 -->
+                                <li Class="JobGiver_WanderAnywhere">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 中立访客：未受伤离开地图，否则去医疗床 -->
+                <li Class="ThinkNode_ConditionalGuest">
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalNonPlayerNonHostileFactionOrFactionless">
+                            <subNodes>
+                                <!-- 医疗原因休息 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>RestingForMedicalReasons</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_PatientGoToBed" />
+                                    </subNodes>
+                                </li>
+
+                                <!-- 离开地图 -->
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_ExitMapBest">
+                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 非殖民者最终兜底：没事干就离开地图 -->
+                <li Class="ThinkNode_ConditionalColonist">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapBest">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 无法离开时就在任意地方游荡 -->
+                <li Class="ThinkNode_Tagger">
+                    <tagToGive>Idle</tagToGive>
+                    <subNodes>
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <!-- 错误空闲处理 -->
+                <li Class="JobGiver_IdleError" />
+
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+
+    <!-- 满足需求子树 -->
+    <ThinkTreeDef>
+        <defName>RI_Zombie_BasicNeedsAndWork</defName>
+        <thinkRoot Class="ThinkNode_Tagger">
+            <tagToGive>SatisfyingNeeds</tagToGive>            <!-- note that JobGiver_Work will assign its own
+            tag -->
+            <subNodes>
+                <li Class="ThinkNode_PrioritySorter">
+                    <subNodes>
+                        <!-- 进食 -->
+                        <!-- <li Class="JobGiver_GetFood"/> -->
+                        <!-- <li Class="RimZombieGirl.JobGiver_Zombie_GetFood" /> -->
+                        <!-- 休息 -->
+                        <!-- <li Class="JobGiver_GetRest"/> -->
+                        <!-- 化学需求 -->
+                        <!-- <li Class="JobGiver_SatisfyChemicalNeed"/> -->
+                        <!-- 化学依赖 -->
+                        <!-- <li Class="JobGiver_SatifyChemicalDependency" MayRequire="Ludeon.RimWorld.Biotech" /> -->
+                        <!-- 工作 -->
+                        <!-- <li Class="JobGiver_Work"/> -->
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+</Defs>

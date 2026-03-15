@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 正德寺 禅音 技能 特效/功能 Mote -->
+	<ThingDef ParentName="MoteBase">
+		<defName>NzRI_Zw_Mote_ZenSound</defName>
+		<thingClass>NzRimImmortalBizarre.Mote_ZenSound</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/ZenSoundMote2</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>1.5</solidTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<!-- 正德寺 拖拽技能 绳子特效 Mote -->
+	<ThingDef ParentName="MoteBase">
+		<defName>NzRI_Mote_Rope</defName>
+		<thingClass>NzRimImmortalBizarre.Mote_Rope</thingClass>
+		<graphicData>
+			<texPath>Ability/Zd2</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>2.5</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<!-- 正德寺 扫堂腿 旋转特效 Mote -->
+	<ThingDef ParentName="MoteBase">
+		<defName>NzRI_Mote_LegSweep</defName>
+		<thingClass>NzRimImmortalBizarre.Mote_SpinningLine</thingClass>
+		<graphicData>
+			<texPath>Ability/Zd2</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.1</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+	</ThingDef>	
+</Defs>

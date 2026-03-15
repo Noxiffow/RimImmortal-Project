@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cyclone landmine -->
+  <RI_Ability_CycloneLandmine.label>气旋雷</RI_Ability_CycloneLandmine.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Spirit Alchemy Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：30\n\nBy creating a violent and chaotic compressed spiritual energy ball, shooting it out, and quietly waiting near the ground for prey. Once anything touches the spiritual energy ball, its stability will be completely destroyed, causing the release of internally raging spiritual energy like razor blades, with astonishing destructive power. -->
+  <RI_Ability_CycloneLandmine.description>&lt;color=#64AEF5>此功法为 内丹法门 灵丹境界 所学\n\n&lt;/color>灵气消耗：30\n\n通过制造一颗狂暴且混乱的压缩灵气球，将其射出去，并在贴近地面的地方静静等待猎物。一旦有任何东西触碰到灵气球，将会彻底破坏其稳定性，导致内部狂暴如利刃的灵气瞬间释放，破坏力惊人。</RI_Ability_CycloneLandmine.description>
+  
+  <!-- EN: Jade tiger thunder -->
+  <RI_Ability_DestructiveThunder.label>玉虎鸣</RI_Ability_DestructiveThunder.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Master Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：200\n\nAdds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy.Adds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy. -->
+  <RI_Ability_DestructiveThunder.description>&lt;color=#64AEF5>此功法为 内丹法门 大成境界 所学\n\n&lt;/color>灵气消耗：200\n\n将丹田催动到极限释放灵气直接拉来远处的雷雨云，并且以极细腻的对电荷的操作制造出一颗球形闪电用来指引闪电的方向。球形闪电本身没有任何攻击力，在到达目的地后消散引来范围极大的落雷打击，一出此招，引发天地变化，威力非凡。</RI_Ability_DestructiveThunder.description>
+  
+  <!-- EN: Energy guide -->
+  <RI_Ability_EnergyGuide.label>导引</RI_Ability_EnergyGuide.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Refine Soul Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：30\n\nContinuous consumption of spiritual energy, approximately 5 points consumed per hour, provides the "Exhale the Old and Inhale the New" buff, accelerating wound recovery. The technique can be closed at any time. -->
+  <RI_Ability_EnergyGuide.description>&lt;color=#64AEF5>此功法为 内丹法门 化神境界 所学\n\n&lt;/color>灵气消耗：30\n\n持续恢复灵气，每秒1点，持续3分钟,提供“吐故纳新”buff,提高射击速度,加速伤口恢复。</RI_Ability_EnergyGuide.description>
+  
+  <!-- EN: Energy recovery -->
+  <RI_Ability_EnergyRecovery.label>存神</RI_Ability_EnergyRecovery.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Spiritual Formation Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：50\n\nAdds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy. -->
+  <RI_Ability_EnergyRecovery.description>&lt;color=#64AEF5>此功法为 内丹法门 元婴境界 所学\n\n&lt;/color>灵气消耗：50\n\n持续恢复灵气，每秒1点，持续4分钟,添加“灵脉翻涌”buff。暂时减少疼痛给，所有伤口包扎，提高射击准确度。</RI_Ability_EnergyRecovery.description>
+  
+  <!-- EN: Breathing exercise -->
+  <RI_Ability_InternalFunction.label>周天功法</RI_Ability_InternalFunction.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Enlightenment Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：0.33/s\n\nThe Internal Pellet Initial Approachunique cultivation gong method to control the frequency of breathing and fixed movements to adjust the body posture, so that the body is in a better state to absorb the spiritual qi. \n\nThis technique can be turned on and off freely, and when it is on, it will slowly consume the Qi. -->
+  <RI_Ability_InternalFunction.description>&lt;color=#64AEF5>此功法为 内丹法门 凝气境界 所学\n\n&lt;/color>灵气消耗：0.33/秒\n\n内丹法门独有修炼功法以控制呼吸的频率和固定的动作来调整体态，令身体处于更好吸收灵气的状态。\n\n此功法可以自由开启关闭，开启时会缓慢消耗灵气。</RI_Ability_InternalFunction.description>
+  
+  <!-- EN: Qi bullet -->
+  <RI_Ability_QiBullet.label>气弹</RI_Ability_QiBullet.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Strengthening foundation Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：5\n\nOne of the most basic outward-projecting techniques, it condenses a Qi bullet at the fingertip and then shoots it out.\n\n(Hint: Can be used with hotkey P for rapid fire) -->
+  <RI_Ability_QiBullet.description>&lt;color=#64AEF5>此功法为 内丹法门 固基境界 所学\n\n&lt;/color>灵气消耗：5\n\n最基础的外放式功法之一，通过在指尖凝聚一颗气弹，然后射出。\n\n此功法基础伤害为：5，每提升一级射击技能+2伤害。\n\n（提示：可以使用快捷键P连发）</RI_Ability_QiBullet.description>
+  
+  <!-- EN: Qi shield protecting -->
+  <RI_Ability_QiProtecting.label>护体罡气</RI_Ability_QiProtecting.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Core Formation Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：40\n\nBy continuously outputting spiritual power to create positive and negative charges swirling around the body and controlling them to rotate at high speed within a certain distance, a shield that can resist bullets is formed. Any incoming bullets will be ionized and vaporized. -->
+  <RI_Ability_QiProtecting.description>&lt;color=#64AEF5>此功法为 内丹法门 结丹境界 所学\n\n&lt;/color>灵气消耗：40\n\n通过持续输出灵力制造出环绕在身边的正负电荷并且控制在一定的距离内高速旋转，形成了一圈可以抵挡子弹的护盾。任何飞来的子弹都会被电离气化。</RI_Ability_QiProtecting.description>
+  
+  <!-- EN: Samatha -->
+  <RI_Ability_Samatha.label>止观</RI_Ability_Samatha.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Core Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：30\n\nThrough special breathing techniques to activate the elixir field, sending spiritual energy throughout the body and brain to calm oneself down, cutting off the sensitivity to emotions, while also improving the efficiency of spiritual energy usage. -->
+  <RI_Ability_Samatha.description>&lt;color=#64AEF5>此功法为 内丹法门 化丹境界 所学\n\n&lt;/color>灵气消耗：30\n\n通过特殊的呼吸法催动丹田，将灵气送往全身和大脑使得自己平静下来，增加射击精度，切断对情绪的感受力。与此同时还能提高灵气的使用效率。</RI_Ability_Samatha.description>
+  
+  <!-- EN: Thunder -->
+  <RI_Ability_Thunder.label>惊雷</RI_Ability_Thunder.label>
+  <!-- EN: <color=#64AEF5>This technique is learned by the Refine Soul Realm of the Internal Pellet Initial Approach\n\n</color>Qi cost：40\n\nActivate the spiritual energy in the elixir field and condense it into a charge released at the location of the mind. This is similar to an artificial lightning rod. It can attract lightning from distant thunderclouds to instantly strike a small area, creating extremely strong lethality. -->
+  <RI_Ability_Thunder.description>&lt;color=#64AEF5>此功法为 内丹法门 化神境界 所学\n\n&lt;/color>灵气消耗：40\n\n催动丹田中的灵气并凝聚成电荷释放在心念的位置，这类似于人造的引雷针。可以从远处的雷雨云中引来闪电瞬间轰击一小块区域，形成极强的杀伤力。\n\n此功法每提升一级射击技能+2伤害。</RI_Ability_Thunder.description>
+  
+</LanguageData>

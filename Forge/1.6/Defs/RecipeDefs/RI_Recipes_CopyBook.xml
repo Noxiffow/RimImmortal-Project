@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- 这是个模板，所有的抄书逻辑都是根据这个生成的 -->
+	<!-- 别手贱，如果没有ingredients会报错 -->
+	<RecipeDef Name="RI_RecipeBase_CopyBook">
+		<defName>RI_RecipeBase_CopyBook</defName>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workSkill>Intellectual</workSkill>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>RI_UnfinishedManuscript</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<recipeUsers>
+			<li>RI_Building_CopyTable</li>
+		</recipeUsers>
+		<products>
+		</products>
+	</RecipeDef>
+
+</Defs>

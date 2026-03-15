@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--尸毒-->
+	<!--一般被僵尸攻击，一些子弹射中，都会附带这个hediff，不是很严重，只是降低行动力，意识啥的-->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>RI_Hediff_ZombiePoison</defName>
+		<label>corpse poison</label>
+		<description>A necrotic toxin. It stiffens muscles and coagulates blood without clouding the mind.</description>
+		<!-- 尸毒绿 -->
+		<initialSeverity>0.1</initialSeverity>
+		<!-- 严重度到1死亡 -->
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1</maxSeverity>
+		<isBad>true</isBad>
+
+		<!-- 毒素自然代谢 -->
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000~180000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.4</severityPerDay>
+				<!-- 代谢速度 -->
+			</li>
+			<!--随机触发诅咒-->
+			<li Class="RI_Frame_ZombieLife.HediffCompProperties_RandomCurse">
+				<minSeverity>0.5</minSeverity>
+				<!-- 只有在重度(>0.8)时触发 -->
+				<mtbDays>1</mtbDays>
+				<!-- 平均半天触发一次判定 (很危险) -->
+				<curseList>
+					<li>RI_CurseHediff</li>
+					<li>Plague</li>
+				</curseList>
+			</li>
+		</comps>
+
+		<stages>
+			<!-- 阶段1：轻度 -->
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+
+			<!-- 阶段2：中度 -->
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<label>moderate</label>
+				<painFactor>1.2</painFactor>
+				<!--邪恶的副作用嘻嘻-->
+				<statOffsets>
+					<FoodPoisonChance>0.2</FoodPoisonChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.20</offset>
+						<!-- 开始影响移动 -->
+					</li>
+				</capMods>
+			</li>
+
+			<!-- 阶段3：重度 -->
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>severe</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painFactor>1.5</painFactor>
+				<statOffsets>
+					<FoodPoisonChance>0.5</FoodPoisonChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.60</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.60</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--蚀骨-->
+	<HediffDef ParentName="InfectionBase">
+		<defName>RI_Hediff_CrushingBone</defName>
+		<label>crushing bone</label>
+		<description>The ominous shouting emitted by the Crimson Tyrant, causes all surrounding creatures to feel panic and pain from within, as if bones were rubbing against each other. This effect is more psychic, people with higher mental sensitivity will experience more panic.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.3, 0.25)</defaultLabelColor>
+		<makesSickThought>true</makesSickThought>
+		<stages>
+			<li>
+				<painFactor>1.2</painFactor>
+				<statOffsets>
+					<RestFallRateFactor>1.5</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--血煞魔体-->
+	<HediffDef>
+		<defName>RI_Hediff_CrimsonFlesh</defName>
+		<label>Crimson flesh</label>
+		<description>The Crimson Tyrant's powerful body makes him immune to some attacks. At the same time, it has considerable resistance to various negative effects.</description>
+		<defaultLabelColor>(0.8, 0.3, 0.25)</defaultLabelColor>
+		<!--二逼泰南写的什么换算，颜色公式是用RGB，把255压缩成了1，全部除以255-->
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<priceImpact>false</priceImpact>
+		<!--<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>-->
+		<stages>
+			<li>
+				<hungerRateFactor>0.1</hungerRateFactor>
+				<totalBleedFactor>0</totalBleedFactor>
+				<statOffsets>
+					<MeleeHitChance>10</MeleeHitChance>
+					<ArmorRating_Sharp>5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>5</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.2</ArmorRating_Heat>
+					<ComfyTemperatureMax>500</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+					<ToxicResistance>1</ToxicResistance>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+				<painFactor>0</painFactor>
+				<statFactors>
+					<Flammability>0</Flammability>
+					<RestFallRateFactor>0</RestFallRateFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+					<IncomingDamageFactor>0.1</IncomingDamageFactor>
+					<InjuryHealingFactor>25</InjuryHealingFactor>
+					<MentalBreakThreshold>0</MentalBreakThreshold>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_He_SpeedRush</defName>
+		<label>speed rush</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<!-- 你现在感觉到了一股强烈的兴奋感，你的速度和力量都得到了提升 -->
+		<description>#.</description>
+		<isBad>false</isBad>
+		<initialSeverity>0.3</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>3</postFactor>
+					</li>
+				</capMods>
+				<!-- <statOffsets>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.5</AimingDelayFactor>
+                    <MeleeHitChance>10</MeleeHitChance>
+                    <MeleeDodgeChance>15</MeleeDodgeChance>
+                </statOffsets>
+                <statFactors>
+                    <MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+                </statFactors>                 -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_He_BloodEruption</defName>
+		<label>blood eruption</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>#.</description>
+		<isBad>false</isBad>
+		<initialSeverity>0.3</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+				<!-- <statOffsets>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.5</AimingDelayFactor>
+                    <MeleeHitChance>10</MeleeHitChance>
+                    <MeleeDodgeChance>15</MeleeDodgeChance>
+                </statOffsets>
+                <statFactors>
+                    <MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+                </statFactors>                 -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--符水-->
+	<HediffDef>
+		<defName>RI_Hediff_AmuletProtection</defName>
+		<label>amulet soup</label>
+		<description>Having consumed amulet soup, wounds will not worsen into infection, and the stomach remains free of discomfort.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.49,1,0.48)</defaultLabelColor>
+		<isBad>false</isBad>
+
+		<!-- 状态持续时间 -->
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<!-- 初始给1.0，每天减1，即持续1天 -->
+			</li>
+		</comps>
+
+		<stages>
+			<li>
+				<!-- ★★★ 核心功能：免疫列表 ★★★ -->
+				<makeImmuneTo>
+					<li>WoundInfection</li>
+					<!-- 伤口感染 -->
+					<li>FoodPoisoning</li>
+					<!-- 食物中毒-->
+					<li>GutWorms</li>
+					<!-- 肠道蠕虫-->
+				</makeImmuneTo>
+
+				<!-- 可选：稍微增加一点免疫建立速度，显得更有用 -->
+				<statOffsets>
+					<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

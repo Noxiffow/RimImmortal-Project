@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——测试-->
+	<!--Noviciate
+	-->
+	<!--2固基境界——测试-->
+	<!--Foundation
+	-->
+	<!--3化丹境界——测试-->
+	<!--Core formation
+	-->
+	<!--4结丹境界——测试-->
+	<!--Core coagulation
+	-->
+	<!--5灵丹境界——测试-->
+	<!--Core consummation
+	-->
+	<!--6化神境界——测试-->
+	<!--Spirit constraint
+	-->
+	<!--7元婴境界——测试-->
+	<!--Primordial spirit baby
+	-->
+	<!--8大成境界——测试-->
+	<!--Primordial spirit maturity
+	-->
+	<!--9合体境界——测试-->
+	<!--Primordial spirit combine-->
+
+	<!--====================药诀法门Medicine Path====================-->
+
+	<!--凝气境界——养形-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_BodyTheory</defName>
+		<label>Body exercise</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Noviciate rank of the Medicine Path\n\n&lt;/color&gt;Spiritual energy acquisition efficiency +25%.\n\nThe unique cultivation method of the Medical Path, enhances the body's absorption of Qi through special circulation routes and strengthens healing abilities.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_BodyTheory</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.1</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_BodyTheoryHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_BodyTheory_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_BodyTheory_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--固基境界——春生（砍掉啦！）-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EverythingGrow</defName>
+		<label>Spring grow</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Strengthening foundation Realm of the Elixir method\n\n&lt;/color&gt;Qi cost: 100\n\nTurn spiritual energy into spiritual rain to moisten the plants in the land. This spell can cause the plant to grow rapidly, although good, but requires a long cooldown time.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_EverythingGrow</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<!--冷却12小时-->
+		<hostile>false</hostile>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EffectRadius>5.8</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>1</warmupTime>
+			<range>5.8</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityBoom">
+				<growth>0.5</growth>
+			</li>
+			<!-- <li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging"> -->
+			<!--     <moteCastDef>#TODO</moteCastDef> -->
+			<!-- </li> -->
+			<!-- <li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting"> -->
+			<!--     <moteCastDef>#TODO</moteCastDef> -->
+			<!-- </li> -->
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-100</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--结丹境界——推拿术-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Massage</defName>
+		<label>Massage hand</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Foundation rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 50\n\nThis technique originates from ancient massage arts. By stimulating acupoints and channeling healing Qi into them, it accelerates wound recovery and enhances physical functions.\n\nIt is said that doctors of higher rank can massage meridians and muscles from a distance using Qi alone. However, most choose not to do so, perhaps out of concern that it may weaken the effectiveness of the treatment.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_Massage</iconPath>
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<!--冷却时间-->
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.5</warmupTime>
+			<range>50</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ManipulationHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_Massage_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_Massage_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 乌麻针 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_AnestheticNeedle</defName>
+		<label>Anesthetic needle</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Core-formation rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 60\n\nShoot an anesthetic needle.\n\nThe Dark Anesthetic Needle is a technique requiring cultivators of the Medical Path to prepare a unique anesthetic medicine, nurturing it with Qi until they can skillfully launch it as a flying needle.\n\nIt embodies the dual nature of medicine — capable of saving lives, yet equally capable of taking them.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_AnestheticNeedle</iconPath>
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<!--冷却-->
+		<aiCanUse>true</aiCanUse>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<hostile>true</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.2</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetMechs>False</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>RI_Porj_AnestheticNeedle</projectileDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-60</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 乌麻针 子弹 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Porj_AnestheticNeedle</defName>
+		<label>anesthetic needle</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Porj_AnestheticNeedle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_Dm_AnestheticNeedle</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>5</armorPenetrationBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--化丹境界——治神针-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Acupuncture</defName>
+		<label>Healing needle</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Core-formation rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 90\n\nShoot a healing needle.\n\nThe Healing Needle is one of the core techniques relied upon by most doctors, having saved countless lives. Its principle lies in embedding specially refined Qi into a flying needle. Once the needle pierces the body, it stimulates muscle contraction, halts bleeding, and provides pain relief and anti-inflammatory effects.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_Acupuncture</iconPath>
+		<cooldownTicksRange>2000</cooldownTicksRange>
+		<!--冷却-->
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+		</statBases>
+		<verbProperties>
+			<!--<violent>false</violent>-->
+			<warmupTime>0.2</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>False</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>RI_Projectile_QiSting</projectileDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_Acupuncture_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_Acupuncture_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-90</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--飞针-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Projectile_QiSting</defName>
+		<label>healing needle</label>
+		<thingClass>WhoXiuXian.RI_projectile_FlySting</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Projectile_QiSting</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationBase>5</armorPenetrationBase>
+			<stoppingPower>15</stoppingPower>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- 愈痕术 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_ScarHealing</defName>
+		<label>Scar healing</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Core-coagulation rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 150\n\nScar healing is a technique built upon a simple principle: by releasing a large amount of Qi in a short time, it fills the gaps in flesh and accelerates recovery, making scars seemingly vanish in an instant.\n\nThis technique has become highly sought after in the female market. However, its heavy Qi consumption has left many doctors overwhelmed and weary.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_ScarHealing</iconPath>
+		<cooldownTicksRange>20000</cooldownTicksRange>
+		<!--冷却-->
+		<hostile>false</hostile>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.3</warmupTime>
+			<range>50</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityScarHealing">
+				<healAmount>3</healAmount>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-150</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化神境界——元阳丹火-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_CreateDanFire</defName>
+		<label>Create dan-fire</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Spirit constraint rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 300\n\nGenerate a Spirit fire.\n\nSpirit fire is the fire of Yuan Yang, which is a special product unique to the Elixir method. This fire is refined by the original spirit, with Qi as firewood, it has a trace of spirituality, which can assist in refining and extracting medicinal materials.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_CreateDanFire</iconPath>
+		<!--无冷却-->
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySpawn">
+				<thingDef>RI_Resource_SpiritFire</thingDef>
+				<allowOnBuildings>False</allowOnBuildings>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-300</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 元婴——妙手还形 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_LimbRepair</defName>
+		<label>Limb restoration</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 500\n\nLimb restoration is regarded as an advanced form of the Scar healing, demanding far greater skill from the healer.\n\nIt uses Qi to stimulate muscle growth and directly regrow lost parts, allowing bones, meridians, and blood vessels to be fully reborn.Such a feat not only requires an enormous amount of Qi but also demands a thorough understanding of the human body's internal structure.Without such mastery, a single mistake could lead to catastrophic medical disasters.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_LimbRepair</iconPath>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<!--冷却-->
+		<hostile>false</hostile>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.3</warmupTime>
+			<range>50</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityLimbRepair">
+				<healAmount>3</healAmount>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-500</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 元婴——幻浮香 -->
+	<!-- 请修改RI_Mote_PerfumeBottle -->
+	<!-- 向远处丢出一个写着“香水”的小瓶，它破碎的时候，想必里面的东西会泄露出来吧。 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_PerfumeBottle</defName>
+		<label>Psychedelic perfume</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 180\n\nThrows a Qi-infused orb that applies negative effects to all targets within an area.\n\nHealers are not limited to curing illnesses—in the study of pharmacology, various hallucinogenic substances were also developed. Psychedelic perfume is a technique born from such research. Its unique Qi is blended with psychoactive compounds that, once inhaled, directly affect the nervous system—causing dizziness, shortness of breath, and in some cases, inducing madness or disorientation.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_PerfumeBottle</iconPath>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<targetRequired>True</targetRequired>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_AbilityShoot</verbClass>
+			<ai_IsWeapon>False</ai_IsWeapon>
+			<soundCast>ThrowGrenade</soundCast>
+			<onlyManualCast>True</onlyManualCast>
+			<warmupTime>0.2</warmupTime>
+			<range>17</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetMechs>True</canTargetMechs>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<defaultProjectile>RI_Proj_PerfumeBottle</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-180</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 写着"香水"的小瓶 -->
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>RI_Proj_PerfumeBottle</defName>
+		<label>Psychedelic perfume bottle</label>
+		<thingClass>WhoXiuXian.Abilities.RI_Projectile_ExplosivePerfumeBottle</thingClass>
+		<graphicData>
+			<!-- TODO 替换材质 -->
+			<texPath>Things/Projectile/RI_Proj_PerfumeBottle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_PerfumeToxGas</damageDef>
+			<explosionRadius>5.5</explosionRadius>
+			<explosionDelay>120</explosionDelay>
+			<explosionRadiusDisplayPadding>5</explosionRadiusDisplayPadding>
+			<screenShakeFactor>0.5</screenShakeFactor>
+		</projectile>
+	</ThingDef>
+
+	<!--大成境界——倒转年华-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_SpiritProtection</defName>
+		<label>Age reversing</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 700\n\nThis technique can reverse a person’s age by five years.\n\nExamines every weakness within the body, then releases specially refined healing Qi into each part: unblocking meridians, repairing blood vessels, cleansing organs, and replacing aged cells.Through this process, a small degree of rejuvenation is achieved.\n\nOnce hailed as a path to immortality, this technique ultimately fell short of such dreams — for the brain’s cells cannot be restored.</description>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_SpiritProtection</iconPath>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<!--冷却-->
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hostile>false</hostile>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>5</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>5</warmupTime>
+			<range>50</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ManipulationHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityAgeReversal">
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_SpiritProtection_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_SpiritProtection_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-700</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--合体境界——莲华化生-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_LotusTreatDomain</defName>
+		<label>Lotus rebirth field</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the Primordial-spirit combine rank of the Medicine Path\n\n&lt;/color&gt;Qi cost: 800\n\nThis technique creates a healing domain in which the flow of life never ceases.\n\nUsing one's own Qi as fuel, the alchemist ignites the flame of vitality through internal fire. Lotus bloom between heaven and earth, dispelling pain and granting rebirth.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<cooldownTicksRange>420000</cooldownTicksRange>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_LotusTreatDomain</iconPath>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!--不征兆就不显示-->
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>500</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>8</warmupTime>
+			<range>5</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_TreatDomainHediff</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_SpiritProtection_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_SpiritProtection_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-800</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

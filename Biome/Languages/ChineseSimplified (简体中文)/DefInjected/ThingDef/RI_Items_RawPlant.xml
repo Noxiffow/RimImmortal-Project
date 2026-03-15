@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aloe vera -->
+  <RI_Resource_AloeVera.label>芦荟</RI_Resource_AloeVera.label>
+  <!-- EN: Raw aloe vera. A flavoring and preserving agent that is necessary for making beer. -->
+  <RI_Resource_AloeVera.description>芦荟的汁液含有丰富的营养，可以吃，还能用于制作疗伤药膏。\n\n随着现代医学发展，人们可以萃取出芦荟中的各种元素，用其制作急救喷雾，凝胶等。</RI_Resource_AloeVera.description>
+  
+  <!-- EN: phantom gold lotus -->
+  <RI_Resource_PhantomGoldLotus.label>幻金莲</RI_Resource_PhantomGoldLotus.label>
+  <!-- EN: The Phantom Gold Lotus prefers shade and grows in deep forests and streamside wetlands. Its petals are golden, and the stamens carry a faint, lingering fragrance.\n\nThe blossom possesses mild hallucinogenic properties. In some cultures, people burn the petals and inhale the drifting fumes to seek omens or visions. In the cultivation world, alchemists refine the Phantom Gold Lotus into calming and pain-relieving pills, saving countless lives.\n\nYet this flower also has a darker side. Its active essence can be processed into Mijin Sand, a highly addictive hallucinogen that has ruined families and destroyed lives. -->
+  <RI_Resource_PhantomGoldLotus.description>幻金莲的莲花带有致幻效果，在一些文化中，人们焚烧花朵并吸入迷烟，以求捕捉预兆，窥见幻象。在修仙界，幻金莲被炼药师合成具有镇静与缓解痛苦效果的丸散，挽救过无数濒危者的生命。\n\n但此花也可制成会令人产生幻觉，成瘾性较高的弭金砂，掏空了无数家庭的积蓄，使生命沉沦，毁灭。</RI_Resource_PhantomGoldLotus.description>
+  
+  <!-- EN: peach -->
+  <RI_Resource_RawPeach.label>桃子</RI_Resource_RawPeach.label>
+  <!-- EN: Just picked peaches, very sweet, put a long time will become soft. -->
+  <RI_Resource_RawPeach.description>刚摘下的桃子，很甜，放久了会变软。</RI_Resource_RawPeach.description>
+  
+  <!-- EN: immortal peach -->
+  <RI_Things_ImmortalPeach.label>仙桃</RI_Things_ImmortalPeach.label>
+  <!-- EN: The Immortal peach is a rare and precious fruit, smooth and lustrous in appearance, with a sweetness like honey. Its most remarkable effect is rejuvenation: consuming it makes the eater younger by roughly one year.\n\nThis life-extending property does not defy fate, but works by using the spiritual energy contained within the fruit to mend the body, allowing the flesh to return to a younger state. For this reason, it is especially valuable to the elderly and infirm, and is typically seen only at high-end auctions. -->
+  <RI_Things_ImmortalPeach.description>仙桃是一种罕见的珍贵水果，外形莹润饱满，口感甘甜如蜜。其最特殊的效果为吃下后能令人返老还童，年轻大约一岁。\n\n仙桃的延寿功能并非逆天改命，而是通过蕴含的灵气修补身体，令肉身回归至更年轻的阶段。因此，对年老体衰之人尤为珍贵，只会出现在各种拍卖会上。</RI_Things_ImmortalPeach.description>
+  
+</LanguageData>

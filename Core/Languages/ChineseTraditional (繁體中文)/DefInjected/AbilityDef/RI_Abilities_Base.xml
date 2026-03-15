@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Primordial spirit separation -->
+  <RI_Ability_GS.label>元神出窍</RI_Ability_GS.label>
+  <!-- EN: <color=#82FFCD>This technique is learned by the Primordial-spirit baby rank\n\n</color>Qi Cost: 300\n\nA high-level spell that only cultivators at the Primordial-spirit baby rank or above can learn.\n\nIt involves separating a portion of one’s soul and condensing it into a glowing orb that remains outside the body. In the moment the cultivator’s physical body is destroyed, the soul fragment will reconstruct the body, effectively resurrecting the cultivator.\n\nHowever, the soul must not stray too far from the cultivator. If it does, resurrection will no longer be possible. -->
+  <RI_Ability_GS.description>&lt;color=#82FFCD>此功法为 先天 大成境界 所学\n\n&lt;/color>灵气消耗：300\n\n只有修炼出元神的修炼者才能使用的高级技巧。从丹田处，将自己的记忆和人格用灵气凝固成一颗圆球，并脱离肉体。元神可以看作是修炼者的一道分身，当修炼者死亡的一瞬间，元神会立刻感应到，并重塑修炼者的肉体，实现复活。但是元神不能太过远离修炼者，否则将无法感应到修炼者。</RI_Ability_GS.description>
+  
+  <!-- EN: Qi armor -->
+  <RI_Ability_HT.label>灵气护体</RI_Ability_HT.label>
+  <!-- EN: <color=#82FFCD>This technique is learned by the Core-formation rank\n\n</color>Qi Cost: 50\n\nRelease a Layer of Qi Shield.\n\nUsing Qi to form a soft layer of armor over the body provides basic protection.\n\nThis is a very fundamental technique. Advanced cultivators can create more complex shields for significantly enhanced defense. -->
+  <RI_Ability_HT.description>&lt;color=#82FFCD>此功法为 先天 结丹境界 所学\n\n&lt;/color>灵气消耗：30\n\n通过在身体的表面用灵气制造一层软铠，来实现护体的效果。这是一种很基础的技巧，但更高级的修炼者可以在这方面做得非常细腻，比如制造出层层叠叠的超薄灵气甲片互相堆叠，或者是中空的泡泡结构，来实现更好的防护效果。</RI_Ability_HT.description>
+  
+  <!-- EN: Crystal sublimation -->
+  <RI_Ability_JD.label>汇灵聚石</RI_Ability_JD.label>
+  <!-- EN: <color=#82FFCD>This technique is learned by the Noviciate rank\n\n</color>Qi Cost: 50\n\nGenerate a Spiritual Crystal.\n\nA basic technique mastered by all cultivators: by expelling Qi from the body and condensing it, one can form a spiritual crystal. -->
+  <RI_Ability_JD.description>&lt;color=#82FFCD>此功法为 先天 化丹境界 所学\n\n&lt;/color>灵气消耗：50\n\n只有修炼出内丹的修炼者才会掌握的技巧，将内丹中已经提纯至液态的灵液进一步提炼，从而凝固成灵石，排出体外。</RI_Ability_JD.description>
+  
+</LanguageData>

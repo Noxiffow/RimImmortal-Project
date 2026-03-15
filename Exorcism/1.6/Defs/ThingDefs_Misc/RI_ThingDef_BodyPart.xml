@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="RI_Zombie_BodyPartBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isTechHediff>true</isTechHediff>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<Beauty>0</Beauty>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<Mass>2</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+	<!--僵尸植入体前置-->
+	<HediffDef Name="RI_base_AddedBodyPartBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(0.55, 0.30, 0.27)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>true</priceImpact>
+	</HediffDef>
+
+	<ThingDef Name="RI_base_AberrantBodyPart" ParentName="RI_Zombie_BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>RI_Category_BodyPartsNecrosapiens</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<!--暂时不卖-->
+		<tradeTags>
+			<li>Notrade</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+		</statBases>
+	</ThingDef>
+
+	<!--冥尸植入体-->
+
+	<!--邪血器官系列-->
+
+	<!--邪血心脏-->
+	<ThingDef ParentName="RI_base_AberrantBodyPart">
+		<defName>RI_ZombieBodyPart_AberrantBloodHeart</defName>
+		<label>aberrant blood heart</label>
+		<description>A heart sealed with talismans. Ordinary blood is replaced with aberrant blood, significantly increasing cardiac efficiency.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_AberrantBloodHeart</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallAberrantBloodHeart</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--邪血肺-->
+	<ThingDef ParentName="RI_base_AberrantBodyPart">
+		<defName>RI_ZombieBodyPart_AberrantBloodLung</defName>
+		<label>aberrant blood lung</label>
+		<description>A talisman-sealed lung. Aberrant blood replaces ordinary blood, improving respiratory efficiency and providing resistance to toxins.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_AberrantBloodLung</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallAberrantBloodLung</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--邪血肝-->
+	<ThingDef ParentName="RI_base_AberrantBodyPart">
+		<defName>RI_ZombieBodyPart_AberrantBloodLiver</defName>
+		<label>Aberrant blood liver</label>
+		<description>A talisman-sealed liver. Ordinary blood is replaced with aberrant blood, enhancing metabolic efficiency.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_AberrantBloodLiver</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallAberrantBloodLiver</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--植入体前置-->
+	<ThingDef Name="RI_Base_FlashBodyPart" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>RI_Category_BodyPartsNecrosapiens</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<displayPriority>600</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--钢牙-->
+	<ThingDef ParentName="RI_Base_FlashBodyPart">
+		<defName>RI_ZombieBodyPart_SteelTeeth</defName>
+		<label>steel teeth</label>
+		<description>Teeth forged from steel. Extremely sharp and durable.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_SteelTeeth</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallSteelTeeth</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--钢牙hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_SteelTeeth</defName>
+		<label>steel teeth</label>
+		<labelNoun>a steel teeth</labelNoun>
+		<description>Teeth forged from steel. Extremely sharp and durable.</description>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_SteelTeeth</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<!-- 基础效率100%，不影响说话(除非我们在capMods里扣) -->
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<!-- 核心需求：增加进食效率 -->
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.20</offset>
+						<!-- +20% 进食效率 -->
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>steel bite</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>17</power>
+						<!-- 原版人类牙齿只有8.2 -->
+						<cooldownTime>2.0</cooldownTime>
+						<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--钉舌-->
+	<ThingDef ParentName="RI_Base_FlashBodyPart">
+		<defName>RI_ZombieBodyPart_NailTongue</defName>
+		<label>nail tongue</label>
+		<description>Steel spikes driven through the tongue, permanently embedded.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_NailTongue</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallNailTongue</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--钉舌hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_NailTongue</defName>
+		<label>nail tongue</label>
+		<labelNoun>a nail tongue</labelNoun>
+		<description>Steel spikes driven through the tongue, permanently embedded.</description>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_NailTongue</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<!-- 核心需求：减少说话能力 -->
+			<!-- 舌头的效率直接影响说话。0.5代表50%效率 -->
+			<partEfficiency>0.50</partEfficiency>
+		</addedPartProps>
+		<!-- 如果想不仅影响效率，还想额外扣减，可以用 capMods，但调整 partEfficiency 是最原版的做法 -->
+	</HediffDef>
+
+	<!--钢爪-->
+	<ThingDef ParentName="RI_Base_FlashBodyPart">
+		<defName>RI_ZombieBodyPart_SteelClaw</defName>
+		<label>steel claw</label>
+		<description>Sharpened steel claws embedded into the fingers.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_SteelClaw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallSteelClaw</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--钢爪hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_SteelClaw</defName>
+		<label>steel claw</label>
+		<labelNoun>a steel claw</labelNoun>
+		<description>An installed power claw consisting of a mechanical hand with a hooked claw on each finger. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. The claws can be retracted, making it as useful as a natural hand for non-combat tasks, however its overall ungainliness slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_SteelClaw</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>steel claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>21</power>
+						<cooldownTime>1.8</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_SteelClaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>0.8</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--斩邪爪-->
+	<ThingDef ParentName="RI_Base_FlashBodyPart">
+		<defName>RI_ZombieBodyPart_EvilSlayerClaw</defName>
+		<label>evil-slaying claw</label>
+		<description>Claws forged from bronze. Exceptionally lethal, especially effective against aberrant entities.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_EvilSlayerClaw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallEvilSlayerClaw</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--斩邪爪hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_EvilSlayingClaw</defName>
+		<label>evil-slaying claw</label>
+		<labelNoun>a evil-slaying claw</labelNoun>
+		<description>Claws forged from bronze. Exceptionally lethal, especially effective against aberrant entities.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_EvilSlayerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>evil-slaying claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>35</power>
+						<cooldownTime>1.2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_EvilSlayerClaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--封魔钉-->
+	<ThingDef ParentName="RI_Base_FlashBodyPart">
+		<defName>RI_ZombieBodyPart_DemonBindingNail</defName>
+		<label>demon-binding nail</label>
+		<description>A bronze nail driven into the spine and inscribed with specialized talismans. Slows the onset of bloodthirsty states in revenant corpses.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_ZombieBodyPart_DemonBindingNail</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<RecipeDef>RI_Surgery_InstallSealingNail</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--封魔钉hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_DemonBindingNail</defName>
+		<label>demon-binding nail</label>
+		<labelNoun>demon sealing nails</labelNoun>
+		<description>A bronze nail driven into the spine and inscribed with specialized talismans. Slows the onset of bloodthirsty states in revenant corpses.</description>
+		<!-- 设为 false 避免自动治疗尝试移除它，或者视为义肢 -->
+		<maxSeverity>6.0</maxSeverity>
+		<initialSeverity>1.0</initialSeverity>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<stages>
+			<!-- 1根钉子 -->
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>x1</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.15</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- 2根钉子 -->
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>x2</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.30</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- 3根钉子 -->
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>x3</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.45</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- 4根钉子 -->
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>x4</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.60</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- 5根钉子 -->
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>x5</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.75</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- 6根钉子 -->
+			<li>
+				<minSeverity>6</minSeverity>
+				<label>x6 (Max)</label>
+				<statOffsets>
+					<PsychicSensitivity>-0.90</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<!-- 拆除时返还多少个？这个比较难用 XML 完美控制返还数量，
+         原版 logic 通常只能返还 1 个。
+         如果需要精确返还所有钉子，需要写额外的 C# 移除逻辑。
+         这里我们简单处理，拆除返还 1 个 -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_DemonBindingNail</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--邪血心脏hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_AberrantBloodHeart</defName>
+		<label>Aberrant blood heart</label>
+		<labelNoun>a Aberrant blood heart</labelNoun>
+		<description>An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodHeart</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_AberrantBloodHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.8</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--邪血肺hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_AberrantBloodLung</defName>
+		<label>Aberrant blood lung</label>
+		<labelNoun>a Aberrant blood lung</labelNoun>
+		<description>An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodLung</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_AberrantBloodLung</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.4</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--邪血肝hediff-->
+	<HediffDef ParentName="RI_base_AddedBodyPartBase">
+		<defName>RI_Hediff_AberrantBloodLiver</defName>
+		<label>Aberrant blood liver</label>
+		<labelNoun>a Aberrant blood liver</labelNoun>
+		<description>An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodLiver</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>RI_ZombieBodyPart_AberrantBloodLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

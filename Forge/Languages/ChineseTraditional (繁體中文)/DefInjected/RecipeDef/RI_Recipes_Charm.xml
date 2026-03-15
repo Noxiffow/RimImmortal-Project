@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make fire bomb charm -->
+  <RI_MakeFireCharm.label>绘制阳炎符</RI_MakeFireCharm.label>
+  <!-- EN: Use the spiritual crystal to print the power on the paper and draw the charm. -->
+  <RI_MakeFireCharm.description>通过灵石将灵气烙印到符纸上，绘制符咒。</RI_MakeFireCharm.description>
+  <!-- EN: Making fire bomb charm -->
+  <RI_MakeFireCharm.jobString>绘制阳炎符</RI_MakeFireCharm.jobString>
+  
+  <!-- EN: make light sword charm -->
+  <RI_MakeSwordCharm.label>绘制光剑符</RI_MakeSwordCharm.label>
+  <!-- EN: Use the spiritual crystal to print the power on the paper and draw the charm. -->
+  <RI_MakeSwordCharm.description>通过灵石将灵气烙印到符纸上，绘制符咒。</RI_MakeSwordCharm.description>
+  <!-- EN: Making light sword charm -->
+  <RI_MakeSwordCharm.jobString>绘制光剑符</RI_MakeSwordCharm.jobString>
+  
+  <!-- EN: make thunder charm -->
+  <RI_MakeThunderCharm.label>绘制闪雷符</RI_MakeThunderCharm.label>
+  <!-- EN: Use the spiritual crystal to print the power on the paper and draw the charm. -->
+  <RI_MakeThunderCharm.description>通过灵石将灵气烙印到符纸上，绘制符咒。</RI_MakeThunderCharm.description>
+  <!-- EN: Making thunder charm -->
+  <RI_MakeThunderCharm.jobString>绘制闪雷符</RI_MakeThunderCharm.jobString>
+  
+</LanguageData>

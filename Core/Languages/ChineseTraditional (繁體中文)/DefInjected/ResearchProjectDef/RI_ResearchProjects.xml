@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Basic Alchemy -->
+  <RI_BasicElixirs.label>基础药方</RI_BasicElixirs.label>
+  <!-- EN: In ancient times, there were various complex medical theories, but today, only the most effective formulas have been passed down.\n\nSome ancient herbs were brought to fringe planets by Cultivators, where research led to the unlocking of the Basic Elixirs workbench, Alchemical Furnace, and a small quantity of medicine.\n\nAfter research brewing and psychite feaf, can make Wort and some drugs at the elixirs workbench. -->
+  <RI_BasicElixirs.description>古代曾有各种复杂的医术学说，而如今，只有最有效的药方被流传了下来。\n\n一些古代药材随着修炼者传到了边缘星球，解锁炼药工作台，丹炉和少量丹药。\n\n研究完成酿酒，精神叶等科技后，将可以在炼药工作台制作麦芽汁和部分精神叶制品。</RI_BasicElixirs.description>
+  
+  <!-- EN: Elixir formula -->
+  <RI_Cauldrons.label>丹道妙方</RI_Cauldrons.label>
+  <!-- EN: As an alchemist, learn how to sense the effects of medicine with Qi and extract herbs with Qi from a giant cauldron that is often difficult to navigate to make Elixir. -->
+  <RI_Cauldrons.description>炼药师不仅需要精通灵气操控，还要能够驾驭那些常人难以掌控的巨大炉鼎。通过灵气导引与萃取，他们能够从药材中提炼出精华，炼制出具有神奇疗效的丹药。</RI_Cauldrons.description>
+  
+  <!-- EN: Elysium drugs -->
+  <RI_ElysiumDrugs.label>极乐奇药</RI_ElysiumDrugs.label>
+  <!-- EN: Once, alchemist adepts engaged in elixir refinement inadvertently created many substances with uncanny effects—some granting blissful euphoria, others casting users into endless, dreamlike stupor.\n\nThese drugs once flourished throughout history, bringing ruin to countless families, and were later universally classified as contraband. Regardless of intent, renewed research into Elysium drugs is believed to erode the true resolve of those who seek the Path.\n\nUnlocks Elysium drugs with special effects. -->
+  <RI_ElysiumDrugs.description>曾经炼制丹药的方士集团，意外发明过不少药效奇妙的药物，或令人飘飘欲仙，或令人大梦不醒。\n\n这类药物在历史上曾经盛行一时，令无数人家破人亡，后来统一被列入违禁品。无论出于什么目的，对奇药的再次研究，不会打扰求道之人的本心。\n\n解锁具有特殊效果的奇药。</RI_ElysiumDrugs.description>
+  
+  <!-- EN: Medical herb planting -->
+  <RI_FertileSoil.label>药材种植</RI_FertileSoil.label>
+  <!-- EN: The planting technology has been further upgraded, and advanced medicinal herbs are now being grown on a large scale. Cultivators have also created a simple planting box for growing plants indoors. -->
+  <RI_FertileSoil.description>种植技术进一步升级，高级药材被大面积试种。修士们还制造了一种简易的种植箱，用于在室内培育植物。</RI_FertileSoil.description>
+  
+  <!-- EN: Road to cultivate -->
+  <RI_ImmortalStart.label>踏上仙路</RI_ImmortalStart.label>
+  <!-- EN: You will embark on the road of cultivation—training, upgrade, and undertaking a series of adventures, ultimately ascending to immortal.\n\nBasic Cultivation Technology, unlocks the most fundamental cultivation facilities.\n\n*To begin Cultivation, a pawn must be implanted with a Spirit Root. Spirit Roots can be obtained through various means: trade, consuming Jade wine, or harvesting them from other Cultivators. Cultivators require a cultivation spot or more advanced cultivation facilities to train, and training tasks must be assigned to them accordingly.\n\nWhen the Cultivation progress reaches 100%, the Realm Transformation hediff will be applied. At this point, a upgrade can be attempted at the Upgrade platform. Be aware, if the upgrade fails, the Cultivator's meridians will suffer severe damage. -->
+  <RI_ImmortalStart.description>你将踏上仙路，修炼，突破，展开一系列冒险，最终羽化登仙。\n\n基础仙路科技，解锁最基本的修炼设施。\n\n*想要开始修炼，必须为小人植入一份灵芽。灵芽可以通过各种方式获得：贸易，服用青玉仙露，或者割下其他修炼者的灵芽。修炼者需要一个修炼点，或者更高级的修炼设施来修炼，为修炼者安排修炼工作。\n\n当修炼进度达到100%将会有“境界圆满”Hediff，届时将可以在突破台上进行突破，注意，如果突破失败，修炼者的经脉将受到重创。</RI_ImmortalStart.description>
+  
+  <!-- EN: Cultivation path tree -->
+  <RI_InitialApproach.label>法门树</RI_InitialApproach.label>
+  <!-- EN: Cultivation Path is a shorthand for cultivation approach. It is said that since the earliest Celestial Master invented the method of cultivation, an increasing number of Cultivation Paths have emerged, but in truth, there are only eight original Cultivation Paths.\n\nDue to the significant differences in the Qi circulation logic controlled by each Cultivation Path, a Cultivator can only choose one Cultivation Path to follow. However, some elixirs can be used to forget a Cultivation Path.\n\n*To learn any Cultivation Path, one must first obtain a Cultivation Path Book. The Cultivation Path Book can be randomly acquired from Ruins Tomb quests, or obtained through events. A more reliable method is to build good relations with a large Sect and then summon a merchant caravan to make a purchase. -->
+  <RI_InitialApproach.description>法门，是修炼方向的简称，自从龙师们发明修炼之法和法门，便有越来越多的民间法门诞生，但真正的原初法门就只有八条。\n\n由于不同法门各自掌握的灵气运转逻辑差异极大，所以一名修炼者只能选择一条法门进行修炼，不过，一些丹药可以用于遗忘法门。\n\n*学习任何一条法门，必须要先获得一本法门书，法门书可以从荒冢任务中随机获取一本，也可以从事件中获得，更稳妥的办法是和大型宗门交好后，呼叫商队购买。获得法门书后，必须在经书研究台上进行学习。</RI_InitialApproach.description>
+  
+  <!-- EN: ？ -->
+  <RI_InitialApproach_A.label>未公开内容</RI_InitialApproach_A.label>
+  <!-- EN: ？ -->
+  <RI_InitialApproach_A.description>大饼，等后续mod更新。</RI_InitialApproach_A.description>
+  
+  <!-- EN: ？ -->
+  <RI_InitialApproach_B.label>未公开内容</RI_InitialApproach_B.label>
+  <!-- EN: ？ -->
+  <RI_InitialApproach_B.description>大饼，等后续mod更新。</RI_InitialApproach_B.description>
+  
+  <!-- EN: ？ -->
+  <RI_InitialApproach_C.label>未公开内容</RI_InitialApproach_C.label>
+  <!-- EN: ？ -->
+  <RI_InitialApproach_C.description>大饼，等后续mod更新。</RI_InitialApproach_C.description>
+  
+  <!-- EN: Medicine-Path -->
+  <RI_InitialApproach_ElixirsStrengthen.label>药诀-法门</RI_InitialApproach_ElixirsStrengthen.label>
+  <!-- EN: Elixirs Strengthen Initial Approach specializes in Elixir and Healing, and only the Alchemy Technique allows you to learn how to apply Reiki to alchemy to make those elixirs with magical effects. At the same time, there were also some health-improving, healing arts. -->
+  <RI_InitialApproach_ElixirsStrengthen.description>药诀法门擅长丹道和医术，只有修习药诀法门的修炼者才可以学习如何将灵气用于制药。与此同时，也有一些养生，治疗的功法。</RI_InitialApproach_ElixirsStrengthen.description>
+  
+  <!-- EN: Five elements-Path -->
+  <RI_InitialApproach_FiveElements.label>五行-法门</RI_InitialApproach_FiveElements.label>
+  <!-- EN: The Five Elements Path grasps the laws of change in all things and the power of the natural principles. It once experienced a brief period of great prosperity. However, internal strife eventually tore the Five Elements Cultivation Path into five independent paths. Disciples of the sect waged war against one another, resulting in heavy casualties.\n\nWhen a Cultivator learn any one of the Five Elements Paths, their mind will also acquire fragments of the other four paths. This suggests that the Five Elements Cultivation Path may one day be reunited. -->
+  <RI_InitialApproach_FiveElements.description>五行法门掌握事物变化的规律，感悟自然法则之力，曾有过短暂的鼎盛时期。但随着内部斗争，五行法门被撕裂成了五条独立的法门，门派弟子互相讨伐，死伤惨重。\n\n当修炼者学会任意一条五行法门，脑中都会多出其他四条法门的少许内容，这或许说明了五行法门还有重新合并之日。</RI_InitialApproach_FiveElements.description>
+  
+  <!-- EN: Internal pellet-Path -->
+  <RI_InitialApproach_InternalPellet.label>内丹-法门</RI_InitialApproach_InternalPellet.label>
+  <!-- EN: The Internal Pellet Path is the progenitor of all Cultivation Paths and the foremost of the Eight Primordial Paths. It advocates the dual cultivation of life and essence and pioneered the technique of absorbing Qi energy through meditation.\n\nOver its long evolution, the most significant transformation of the Internal Pellet Path was the shift from techniques originally intended for strengthening the body to the mastery of natural phenomena—ultimately leading to the ability to summon thunder. -->
+  <RI_InitialApproach_InternalPellet.description>内丹法门乃是法门之祖，也是八大原初法门之首，其主张性命双修，并开创了通过打坐来吸收灵气的技术。\n\n内丹法门在漫长的演变过程中，最重要的一次变动，就是将本用于强身健体的功法，发展为对自然气象的操控，从而引发天雷。</RI_InitialApproach_InternalPellet.description>
+  
+  <!-- EN: Physical-Path -->
+  <RI_InitialApproach_PhysicalStrengthen.label>炼体-法门</RI_InitialApproach_PhysicalStrengthen.label>
+  <!-- EN: Cultivating the Physical Cultivation Path is the fastest way to enhance combat strength, seeking the perfect fusion of the body and Qi. Through rigorous training, cultivators unleash their potential and refine the Eight Extraordinary Meridians. At the same time, the integration of Qi and the body grows ever more intimate, making every inch of skin and every meridian brimming with astonishing power.\n\nDue to its simplicity and practicality, the Physical Cultivation Path has developed its own systems across various religions. However, with the outbreak of sectarian wars, the Physical Cultivation sects had to protect themselves and sever their ties to religious affiliations. Even so, some beneficial aspects were integrated into the Physical Cultivation Path. -->
+  <RI_InitialApproach_PhysicalStrengthen.description>修行炼体法门是提升战斗力的最快办法，追求肉身与灵气的完美结合。修炼者通过艰苦的锻炼来激发潜能，淬炼奇经八脉。与此同时，灵气与肉身的交融愈加紧密，使得每一寸肌肤、每一条经脉都蕴藏着惊人的力量。\n\n炼体法门由于简单实用，在不同的宗教中都发展出了各自体系。然而随着门派战争爆发，炼体宗门也不得不明哲保身，纷纷选择切断宗教联系。即便如此，一些有益的内容，还是被融合进了炼体法门中。</RI_InitialApproach_PhysicalStrengthen.description>
+  
+  <!-- EN: Forge-Path -->
+  <RI_InitialApproach_ToolsStrengthen.label>炼器-法门</RI_InitialApproach_ToolsStrengthen.label>
+  <!-- EN: The Path of Forging emphasizes talent above all else, focusing on the deep understanding and mastery over materials. Forge Masters are the pinnacle of this craft, transforming cold, lifeless raw materials into wondrous creations, even imbuing them with sentience.\n\nSome say that the history of forging predates that of cultivation itself, and that era was truly the golden age where the arts of Qi and technology flourished in full bloom. -->
+  <RI_InitialApproach_ToolsStrengthen.description>炼器法门最讲究天赋，修行的是对物质的深刻理解与掌控。炼器师是技术的集大成者，冰冷的原料，在他们手中显现出奇异的变化，甚至能够诞生灵智。\n\n有人说，炼器的历史比修炼之法还久远，而那个时代，才是真正灵气技术百花齐放的时代。</RI_InitialApproach_ToolsStrengthen.description>
+  
+  <!-- EN: Qi-ology -->
+  <RI_QiResearch.label>灵气学</RI_QiResearch.label>
+  <!-- EN: Once, we could only sense the flow of Qi through the Spiritual Root, but now, we utilize instruments to precisely measure the fluctuations of Qi and deduce its underlying laws of motion.\n\nThrough deep research into Qi, the cultivators uncovered further uses of materials such as Liquid Jade and Spiritual Crystals, officially founding the discipline of Qi Science. Liquid Jade is drawn toward objects with high concentrations of Qi, amplifying its potency, while Spiritual Crystals steadily and continuously release minute amounts of Qi.\n\nThus, Qi Science has truly become a discipline that can be systematically mastered, and with this revolution, the path of cultivation enters a new era. -->
+  <RI_QiResearch.description>曾经，我们仅凭灵芽感知灵气流转，如今，我们运用器械精准测量灵气波动，推演运行规律。\n\n通过对灵气的深入研究，修士们发掘出了灵气和柔玉等原料的进一步运用方式，正式开创了灵气学。柔玉能被高浓度灵气的物体所吸引，并对灵气产生一定的增幅，而灵石则可以稳定而持续地释放微量灵气。\n\n自此，灵气学真正成为了一门可被系统掌握的学科，而修炼之法，也因这场变革，迈入了新的纪元。</RI_QiResearch.description>
+  
+  <!-- EN: Cultivate secret method -->
+  <RI_QiTraining.label>修炼秘法</RI_QiTraining.label>
+  <!-- EN: In the in-depth exploration of the mysteries of the human body through the Physical Cultivation Path, some training facilities that enhance cultivation speed have been invented.\n\nUnlock advanced cultivation facilities. -->
+  <RI_QiTraining.description>在炼体法门对人体奥秘的深入探索中，一些提升修炼速度的训练设施被发明出来。\n\n解锁高级修炼设施。</RI_QiTraining.description>
+  
+  <!-- EN: Cultivator armour -->
+  <RI_Research_BasicArmor.label>修士甲胄</RI_Research_BasicArmor.label>
+  <!-- EN: For low-level cultivators without protective techniques, a good piece of armor is essential.\n\nUnlock basic armour. -->
+  <RI_Research_BasicArmor.description>较低境界的修士，尚未拥有更好的护身法术，所以穿一套甲胄是必要的选择。\n\n解锁基础甲胄</RI_Research_BasicArmor.description>
+  
+  <!-- EN: Cultivator clothing -->
+  <RI_Research_BasicClothing.label>修士衣冠</RI_Research_BasicClothing.label>
+  <!-- EN: Ordinary clothing is merely a tool to cover the body, and Cultivators place greater importance on inner cultivation. However, the pursuit of beauty is part of human nature, and Cultivators often compare each other's clothing and patterns.\n\nUnlock Basic Cultivator clothing. -->
+  <RI_Research_BasicClothing.description>寻常衣物不过是遮蔽身体的工具，修炼者更注重内在修为。尽管如此，但追求美是人类天性，修士也会互相攀比衣服纹饰。\n\n解锁基础修炼者服饰。</RI_Research_BasicClothing.description>
+  
+  <!-- EN: Immortal worship -->
+  <RI_Research_ImmortalWorship.label>天仙敬奉</RI_Research_ImmortalWorship.label>
+  <!-- EN: Faith is not merely an illusion but a bridge capable of altering reality. Through the art of sacrificial rites, cultivators establish connections with ascended Immortals, harnessing their celestial power to exchange offerings for tangible rewards. Worship is no longer blind reverence—it has become a pact.\n\nAmong all cultivators, the legends of the Four Celestial Immortals persist. They are Jade Immortal, Thran Immortal, Rust Immortal, and Enigma Immortal—beings of veneration, devotion, and even fervent worship. -->
+  <RI_Research_ImmortalWorship.description>信仰并非虚妄幻想，而是能够改变现实的纽带。通过祭祀之法，修士们得以与飞升仙人建立联系，借助天外伟力，以供奉品换取真实的物质。祭祀不再是盲目的跪拜，而是一份契约。\n\n在所有修炼者之中，流传着四位天仙的传说，祂们分别是玉仙、喰仙、锈仙与惑仙。祂们成为修炼者敬仰、追随、甚至狂热信仰的存在。</RI_Research_ImmortalWorship.description>
+  
+  <!-- EN: Cultivation rank -->
+  <RI_Research_Introduction.label>修炼境界</RI_Research_Introduction.label>
+  <!-- EN: The cultivation rank table of the RimImmortal:Catkins\nNoviciate rank\nFoundation rank\nCore formation rank\nCore coagulation rank\nCore consummation rank -->
+  <RI_Research_Introduction.description>仙路修炼境界表：\n蓬絮\n凝气-突破需要：通玄筑基丹\n固基\n化丹\n结丹\n灵丹\n化神-突破需要：纯阳真气\n元婴\n大成\n合体-突破需要：仙人手谕\n登仙</RI_Research_Introduction.description>
+  
+  <!-- EN: Primitive worship -->
+  <RI_Research_PrimitiveWorship.label>原始崇拜</RI_Research_PrimitiveWorship.label>
+  <!-- EN: The ancients regarded natural phenomena as the embodiment of divine spirits, gradually shaping the socialization and personification of deities. Ritual sacrifices became a crucial part of ancient beliefs, as people believed that only through devout offerings could they earn the favor of the gods. -->
+  <RI_Research_PrimitiveWorship.description>古人将自然现象视作神灵化身，逐渐形成了神灵的社会化与人格化。祭祀成为了古代信仰的重要组成部分，人们认为，只有通过虔诚的祭祀，才能赢得神灵的青睐。</RI_Research_PrimitiveWorship.description>
+  
+  <!-- EN: Advanced Qi-ology -->
+  <RI_SpiritMechineTech.label>高等灵气学</RI_SpiritMechineTech.label>
+  <!-- EN: With the advent of the electrical era, the path of cultivation underwent an unprecedented transformation. Early transistor computers became a tremendous aid in the study of Qi, leveraging powerful computational capabilities to record and precisely analyze the flow, fluctuations, and convergence patterns of Qi energy.\n\nBy processing complex algorithms and mathematical models, cultivators can now predict Qi fluctuations and analyze various challenges in cultivation. These groundbreaking technologies have ushered humanity into a new era where data and technology drive the pursuit of cultivation—the dawn of Advanced Qi Science! -->
+  <RI_SpiritMechineTech.description>随着电力时代到来，修炼之法迎来了前所未有的变革。早期晶体管电脑成为了研究灵气的巨大助力，强大的计算能力可以记录并精确分析灵气的流动、波动和聚集规律。\n\n借助复杂算法和数学模型处理，修士们可以预测灵气的变化趋势，计算分析修炼中的各种难题。这一切新技术让人们正式迈入一个由数据和科技引领的修炼时代——崭新的高级灵气学时代！</RI_SpiritMechineTech.description>
+  
+  <!-- EN: Spiritual Energy Revolution -->
+  <RI_SpiritualRevolution.label>灵气革命</RI_SpiritualRevolution.label>
+  <!-- EN: The widespread adoption of Qi technology has blurred the boundaries between cultivators and ordinary people. Once an exclusive privilege of the few, cultivation is now accompanied by various conveniences accessible to the general populace.\n\nWith advanced Qi studies as its foundation, both workbenches and cultivation facilities have been meticulously refined, greatly freeing cultivators from manual labor and mental strain. All of this marks the dawn of a new era—the Age of Qi Revolution. -->
+  <RI_SpiritualRevolution.description>灵气科技的普及模糊了修炼者与凡人之间的界限。曾经，修炼是少数人独享的特权，而如今，普通民众也能够享受灵气带来的种种便利。\n\n以高等灵气学为基础，工作台和修炼设施都经过了精心改造，极大地解放修炼者的双手和精力。这一切标志着一个全新的时代的到来——灵气革命时代。</RI_SpiritualRevolution.description>
+  
+  <!-- EN: Crystal vein detection -->
+  <RI_UndergroundCrystalVein.label>灵脉观测技术</RI_UndergroundCrystalVein.label>
+  <!-- EN: Through meticulous refinement, Liquid Jade has been crafted into lenses with detection capabilities, allowing cultivators to perceive the flow of spiritual veins deep underground. With the widespread adoption of this technology, cultivators no longer need to rely on spells to locate spiritual veins, significantly enhancing the efficiency of Spiritual Crystal extraction. Cultivation is no longer solely dependent on individual talent and effort—it is steadily advancing toward industrialization.\n\nUnlock Spiritual Vein detector. -->
+  <RI_UndergroundCrystalVein.description>通过精细加工，柔玉被制作成具有探测效果的镜片，它能探测到地下深处的灵脉流动。随着这一技术的普及，意味着修士无需通过法术寻找灵脉，大大提升了挖掘灵石的效率。修炼不再仅仅依赖个人天赋与努力，逐渐迈入了工业化。\n\n解锁灵脉透镜。</RI_UndergroundCrystalVein.description>
+  
+</LanguageData>

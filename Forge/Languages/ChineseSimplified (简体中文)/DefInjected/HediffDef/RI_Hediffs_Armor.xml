@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Light of fire dragon -->
+  <RI_Apparel_FireDragonArmorHediff.label>烛龙之光</RI_Apparel_FireDragonArmorHediff.label>
+  <!-- EN: The light of the fire Dragon protects you from the flames. -->
+  <RI_Apparel_FireDragonArmorHediff.description>烛龙之光保护着你，令你不会受到火焰伤害。</RI_Apparel_FireDragonArmorHediff.description>
+  <!-- EN: Light of fire dragon -->
+  <RI_Apparel_FireDragonArmorHediff.labelNoun>烛龙之光</RI_Apparel_FireDragonArmorHediff.labelNoun>
+  
+  <!-- EN: Eye of poison viper -->
+  <RI_Apparel_PoisonViperArmorHediff.label>相柳之眼</RI_Apparel_PoisonViperArmorHediff.label>
+  <!-- EN: The light of the fire Dragon protects you from the flames. -->
+  <RI_Apparel_PoisonViperArmorHediff.description>相柳之眼注视着你，令你不会受到毒气伤害。</RI_Apparel_PoisonViperArmorHediff.description>
+  <!-- EN: Eye of poison viper -->
+  <RI_Apparel_PoisonViperArmorHediff.labelNoun>相柳之眼</RI_Apparel_PoisonViperArmorHediff.labelNoun>
+  
+</LanguageData>

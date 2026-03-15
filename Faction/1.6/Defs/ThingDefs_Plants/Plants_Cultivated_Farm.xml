@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== 玲珑果树 ==============================-->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>RI_Plant_TreeLingLong</defName>
+		<label>LingLong fruit tree</label>
+		<description>A slow-growing fruit tree that bears Linglong fruits. While rare to find in the wild, it has been successfully propagated through grafting techniques.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_TreeLingLong</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>7</Beauty>
+			<BeautyOutdoors>7</BeautyOutdoors>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<growDays>45</growDays>
+			<visualSizeRange>1.3~2.3</visualSizeRange>
+			<sowMinSkill>7</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>SoilSpiritual</li>
+			</sowTags>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_Cauldrons</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/RI_Plant_TreeLingLong_Immature</immatureGraphicPath>
+			<harvestWork>310</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>5</harvestYield>
+			<harvestedThingDef>RI_Resource_LingLongFruit</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+
+
+</Defs>

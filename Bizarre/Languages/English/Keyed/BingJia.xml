@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <NzRI_Bj_Thing_DyeingEvil>evil-dyed</NzRI_Bj_Thing_DyeingEvil>
+
+    <NzRI_Bj_Thing_MeleeWeaponAddComp_NoTarget>Target position has no item</NzRI_Bj_Thing_MeleeWeaponAddComp_NoTarget>
+
+    <NzRI_Bj_Thing_MeleeWeaponAddComp_NotMeleeWeapon>Target is not a melee weapon</NzRI_Bj_Thing_MeleeWeaponAddComp_NotMeleeWeapon>
+</LanguageData>

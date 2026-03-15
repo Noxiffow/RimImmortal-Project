@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--苍穹商旅 轨道货船-->
+	<TraderKindDef>
+		<defName>RI_Trader_CelestialCaravanOrbital_BulkGoods</defName>
+		<label>Celestial Caravan orbital cargo ship</label>
+		<commonality>1.3</commonality>
+		<orbital>true</orbital>
+		<stockGenerators>
+			<!-- 基础材料 -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>2500~5000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_QingMingMarrow</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_LiquidJade</thingDef>
+				<countRange>5~10</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+				<countRange>150~300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Tree_QingMingSeed</thingDef>
+				<countRange>5~10</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<countRange>100~400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Neutroamine</thingDef>
+				<countRange>25~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Plasteel</thingDef>
+				<countRange>100~500</countRange>
+			</li>
+			<!--传单-->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Book_CelestialCaravanNote</thingDef>
+				<countRange>1~1</countRange>
+			</li>
+			<!--零部件-->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>10~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>5~30</countRange>
+			</li>
+			<!--呼叫器-->
+			<li Class="StockGenerator_SingleDef" MayRequire="RI.RimImmortal.Faction">
+				<thingDef>RI_Thing_OrbitalShipCaller</thingDef>
+				<countRange>5~10</countRange>
+			</li>
+			<!-- 药品 -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>RI_Category_Drugs</categoryDef>
+				<thingDefCountRange>5~12</thingDefCountRange>
+				<countRange>3~7</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>RI_Category_DrugsMaterials</categoryDef>
+				<thingDefCountRange>5~10</thingDefCountRange>
+				<countRange>15~30</countRange>
+			</li>
+
+			<!--三品武器-->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>RI_ThirdWeapon_Tag</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- 寻常衣物 -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_Apparel</categoryDef>
+				<thingDefCountRange>5~7</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- 通用功法书 -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_CommonBooks</categoryDef>
+				<thingDefCountRange>5~9</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- 故事书 -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_StoryBooks</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalImmortals</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalImmortals</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>2~3</countRange>
+				<createMatingPair>
+					<li>AnimalImmortals</li>
+				</createMatingPair>
+			</li>
+
+			<!-- Cultist apparel -->
+
+			<!-- 买的东西 -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>HiTechArmor</tag>
+			</li>
+			<!--仙路的兵器盔甲，什么商队都收-->
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RI_AllWeapon_AllArmor_Tag</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>UtilitySpecial</tag>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shell_Deadlife</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>VoidSculpture</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Shard</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Bioferrite</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>RevenantSpine</thingDef>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

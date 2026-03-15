@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: produce iron pagoda -->
+  <RI_Recipe_CreateIronPagoda.label>炼制铁浮屠</RI_Recipe_CreateIronPagoda.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreateIronPagoda.description>炼制铁浮屠</RI_Recipe_CreateIronPagoda.description>
+  <!-- EN: producing iron pagoda -->
+  <RI_Recipe_CreateIronPagoda.jobString>正在炼制铁浮屠</RI_Recipe_CreateIronPagoda.jobString>
+  
+  <!-- EN: produce paper doll -->
+  <RI_Recipe_CreatePaperDoll.label>炼制纸人</RI_Recipe_CreatePaperDoll.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreatePaperDoll.description>炼制纸人</RI_Recipe_CreatePaperDoll.description>
+  <!-- EN: producing paper doll -->
+  <RI_Recipe_CreatePaperDoll.jobString>正在炼制纸人</RI_Recipe_CreatePaperDoll.jobString>
+  
+  <!-- EN: produce patch man -->
+  <RI_Recipe_CreatePatchMan.label>炼制缝合尸</RI_Recipe_CreatePatchMan.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreatePatchMan.description>炼制缝合尸</RI_Recipe_CreatePatchMan.description>
+  <!-- EN: producing patch man -->
+  <RI_Recipe_CreatePatchMan.jobString>正在炼制缝合尸</RI_Recipe_CreatePatchMan.jobString>
+  
+  <!-- EN: produce corpse puppet -->
+  <RI_Recipe_CreateZombie.label>炼制尸傀</RI_Recipe_CreateZombie.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreateZombie.description>炼制尸傀</RI_Recipe_CreateZombie.description>
+  <!-- EN: producing corpse puppet -->
+  <RI_Recipe_CreateZombie.jobString>正在炼制尸傀</RI_Recipe_CreateZombie.jobString>
+  
+  <!-- EN: produce zombie buffalo -->
+  <RI_Recipe_CreateZombieCow.label>炼制僵尸牛</RI_Recipe_CreateZombieCow.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreateZombieCow.description>炼制僵尸牛</RI_Recipe_CreateZombieCow.description>
+  <!-- EN: producing zombie buffalo -->
+  <RI_Recipe_CreateZombieCow.jobString>正在炼制僵尸牛</RI_Recipe_CreateZombieCow.jobString>
+  
+  <!-- EN: produce zombie horse -->
+  <RI_Recipe_CreateZombieHorse.label>炼制僵尸马</RI_Recipe_CreateZombieHorse.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_CreateZombieHorse.description>炼制僵尸马</RI_Recipe_CreateZombieHorse.description>
+  <!-- EN: producing zombie horse -->
+  <RI_Recipe_CreateZombieHorse.jobString>正在炼制僵尸马</RI_Recipe_CreateZombieHorse.jobString>
+  
+</LanguageData>

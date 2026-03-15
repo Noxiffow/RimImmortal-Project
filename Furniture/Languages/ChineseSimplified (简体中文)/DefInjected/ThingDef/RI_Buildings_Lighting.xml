@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Beast-head candlestick -->
+  <RI_Building_BeastHeadCandlestick.label>兽首烛台</RI_Building_BeastHeadCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. The base is carved with the lively head of a small beast, both whimsical and charming. -->
+  <RI_Building_BeastHeadCandlestick.description>一盏古色古香的烛台，用于照明。这盏柱形的烛台，底座雕刻着一只小兽的大脑袋，活泼可爱。</RI_Building_BeastHeadCandlestick.description>
+  
+  <!-- EN: Floral candlestick -->
+  <RI_Building_FloralCandlestick.label>花口烛台</RI_Building_FloralCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. Its simple structure takes the shape of a flower petal. -->
+  <RI_Building_FloralCandlestick.description>一盏古色古香的烛台，用于照明。这盏简单的烛台有着一个花瓣的造型。</RI_Building_FloralCandlestick.description>
+  
+  <!-- EN: Goblet-style candlestick -->
+  <RI_Building_GobletStyleCandlestick.label>立杯烛台</RI_Building_GobletStyleCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. Its form resembles a large cup stacked with a smaller one, cleverly designed to prevent melted wax from staining the table. -->
+  <RI_Building_GobletStyleCandlestick.description>一盏古色古香的烛台，用于照明。这盏烛台的外形别致，是一个大杯叠着小杯的形制，可以防止融化的蜡弄脏桌面。</RI_Building_GobletStyleCandlestick.description>
+  
+  <!-- EN: Lion-shaped candlestick -->
+  <RI_Building_LionShapedCandlestick.label>辟邪烛台</RI_Building_LionShapedCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. This one is shaped into a Pixie, a mythical beast with the body of a lion and wings. Known for warding off evil and bringing wealth, the Pixie makes this piece both decorative and symbolic. -->
+  <RI_Building_LionShapedCandlestick.description>一盏古色古香的烛台，用于照明。这种烛台被塑造成了辟邪的外形，栩栩如生。\n\n辟邪是一种长相类似带翅狮子的灵兽，能驱走邪秽、祓除不祥，被人们视作守财的象征。</RI_Building_LionShapedCandlestick.description>
+  
+  <!-- EN: Long-branched candlestick -->
+  <RI_Building_LongBranchedCandlestick.label>长枝烛台</RI_Building_LongBranchedCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. This tall and slender candlestick resembles a graceful branch. -->
+  <RI_Building_LongBranchedCandlestick.description>一盏古色古香的烛台，用于照明。这盏烛台有一个很长的枝干，看上去亭亭玉立。</RI_Building_LongBranchedCandlestick.description>
+  
+  <!-- EN: Lotus pedestal candlestick -->
+  <RI_Building_LotusPedestalCandlestick.label>莲座烛台</RI_Building_LotusPedestalCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. This type is adorned with lotus petal motifs. -->
+  <RI_Building_LotusPedestalCandlestick.description>一盏古色古香的烛台，用于照明。这种烛台上有着莲花瓣的花纹。</RI_Building_LotusPedestalCandlestick.description>
+  
+  <!-- EN: Hood lamp -->
+  <RI_Building_OpenworkCoveredLamp.label>镂空罩灯</RI_Building_OpenworkCoveredLamp.label>
+  <!-- EN: A hood lamp designed to prevent the flame from spreading. The ornate, hollowed-out patterns on the cover create a dreamlike atmosphere—clearly a piece of great value. -->
+  <RI_Building_OpenworkCoveredLamp.description>一座有着罩子的灯具，为了防止火焰蔓延。这种罩灯之上，有着复杂的镂空，可以营造出梦幻氛围，想必价值不菲。</RI_Building_OpenworkCoveredLamp.description>
+  
+  <!-- EN: Palace maid lamp -->
+  <RI_Building_PalaceMaidLamp.label>宫女侍奉灯</RI_Building_PalaceMaidLamp.label>
+  <!-- EN: A finely crafted lamp in the form of a lifelike palace maid kneeling with a lantern in hand. The smoke vent is cleverly concealed within her sleeve, and the lamp itself features a movable opening that can be toggled to turn it off.\n\nThis lamp is a rare treasure, affordable only to nobles and royals. -->
+  <RI_Building_PalaceMaidLamp.description>一座设计精妙的灯具，外形是一名宫女掌灯跪坐的姿态，栩栩如生。灯上方，导烟管隐藏在宫女袖中，而灯本身还有一个活动开口，可以手动开关。\n\n这种灯具价值不菲，一般只有王公贵族享受得起。</RI_Building_PalaceMaidLamp.description>
+  
+  <!-- EN: Small candlestick -->
+  <RI_Building_SmallCandlestick.label>小烛台</RI_Building_SmallCandlestick.label>
+  <!-- EN: An antique-style candlestick used for lighting. Simple in design and commonly seen. -->
+  <RI_Building_SmallCandlestick.description>一盏古色古香的烛台，用于照明。这盏烛台外形简单，十分常见。</RI_Building_SmallCandlestick.description>
+  
+  <!-- EN: wall torch lamp -->
+  <TorchWallLamp.label>壁挂火把</TorchWallLamp.label>
+  <!-- EN: A wall-mounted wooden torch for lighting an area. It is not as bright as a regular torch lamp, but it can be mounted on walls. Produces a small amount of heat. -->
+  <TorchWallLamp.description>将一片区域照亮的壁挂式木制火把。亮度不及普通火把，但可以安装在墙体上。需要添加木材作为燃料。产生少量的热量。</TorchWallLamp.description>
+  
+</LanguageData>

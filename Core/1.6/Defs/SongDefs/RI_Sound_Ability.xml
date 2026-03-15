@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--技能音效-->
+
+	<!--技能准备A-->
+	
+	<SoundDef>
+		<defName>RI_Sound_EnergyPreparationA</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_EnergyPreparationA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--技能准备B-->
+
+	<SoundDef>
+		<defName>RI_Sound_EnergyPreparationB</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_EnergyPreparationB</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--电流吱吱声-->
+
+	<SoundDef>
+		<defName>RI_Sound_Electric</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_Electric</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

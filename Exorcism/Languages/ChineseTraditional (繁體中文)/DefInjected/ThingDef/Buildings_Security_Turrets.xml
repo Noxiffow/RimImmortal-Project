@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Blood arrow -->
+  <RI_Bullet_BloodEyeSpot.label>尸血箭</RI_Bullet_BloodEyeSpot.label>
+  
+  <!-- EN: Big red eye -->
+  <RI_Gun_BigRedEye.label>血肉眼</RI_Gun_BigRedEye.label>
+  <!-- EN: A simple automatic gun made to be mounted on a turret. -->
+  <RI_Gun_BigRedEye.description>血肉眼</RI_Gun_BigRedEye.description>
+  <!-- EN: Big red eye -->
+  <RI_Gun_BigRedEye.verbs.Verb_Shoot.label>血肉眼</RI_Gun_BigRedEye.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Crimson pagoda -->
+  <RI_Turret_CrimsonPagoda.label>血肉眼</RI_Turret_CrimsonPagoda.label>
+  <!-- EN: This creature of flesh summoned by the Crimson Tyrant through evil spirit power is called the Crimson pagoda. The tower is made of twisted tissues of human flesh and topped with a large eyeball. Eyeball can spit out high-speed blood arrows, very powerful.\n\nWhile the Crimson Tyrant is alive, he will constantly summon the crimson pagoda. -->
+  <RI_Turret_CrimsonPagoda.description>血肉眼</RI_Turret_CrimsonPagoda.description>
+  
+</LanguageData>

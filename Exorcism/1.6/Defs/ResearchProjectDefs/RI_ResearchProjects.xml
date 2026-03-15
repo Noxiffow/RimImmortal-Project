@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef Name="RI_ExorcismResearch_Base" Abstract="True">
+		<tab>RI_ExorcismResearchTab</tab>
+	</ResearchProjectDef>
+
+	<!--=============================== 部落到中世纪的科技 ===================================-->
+
+	<!--=============================== 驱邪科技 ===================================-->
+
+	<!--镇鬼诛邪-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_ExorcismBasic</defName>
+		<label>Exorcism basic</label>
+		<description>Heaven and earth hold righteous Qi, flowing in myriad forms.\n\nAberrants threaten the world, and Daoist techniques are studied to restrain them.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.4</researchViewY>
+	</ResearchProjectDef>
+
+	<!--道门传承-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_DaoInherit</defName>
+		<label>Dao inherit</label>
+		<description>Learn knowledge and methods from Daoist sect, and understand the various raw materials used in Daoist sect.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_ExorcismBasic</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--法器制作-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_ExorcismInstrument</defName>
+		<label>Exorcism instrument</label>
+		<description>Unlock the crafting of basic Exorcism instruments, serving for protection and the dispelling of Aberrants.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_DaoInherit</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--符箓-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_ExorcismCharm</defName>
+		<label>Exorcism charm</label>
+		<description>Unlock the art of charm drawing, usable for defense, healing, and offense.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_ExorcismInstrument</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--御敌之法-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_ArtDefense</defName>
+		<label>Art of defense</label>
+		<description>Study Daoist combat techniques, enabling Daoists to confront enemies head-on.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_DaoInherit</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--高阶法器制作-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_Research_BetterExorcismInstrument</defName>
+		<label>Advanced exorcism instrument</label>
+		<description>Refine the forging of Daoist artifacts, unlocking more powerful tools.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_ExorcismInstrument</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--=============================== 尸体科技 ===================================-->
+
+	<!--百邪录-->
+	<!--记录所有邪祟-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_EvilPowerBasic</defName>
+		<label>The Book of a hundred evils</label>
+		<description>Aberrant directory:\n\nGrade D Aberrant:\nWalking corpse\nCow corpse\nCorpse bug\nHuman head spider\nGrade C Aberrant:\nDead shot\nGrade B Aberrant:\nGrade A Aberrant</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.9</researchViewY>
+	</ResearchProjectDef>
+
+	<!--邪祟技术-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_AberrantTechnology</defName>
+		<label>Aberrant technology</label>
+		<description>Acquire knowledge and techniques from Aberrant-related texts, and learn about various Aberrant materials.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4.9</researchViewY>
+	</ResearchProjectDef>
+
+	<!--————————尸傀科技路线————————-->
+
+	<!--炼尸术-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_EvilCreature</defName>
+		<label>Corpse alchemy</label>
+		<description>Unlock basic corpse-refining techniques.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_AberrantTechnology</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--玄阴法术-->
+	<!--<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_GloomySpell</defName>
+		<label>Gloomy spell</label>
+		<description>Unlock clothing and weapons associated with Gloomy sorcery.</description>
+		<baseCost>1300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_EvilCreature</li>
+		</prerequisites>
+	</ResearchProjectDef>-->
+
+	<!--低阶尸傀 Elementary corpse creature-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_ElementaryCorpseCreature</defName>
+		<label>Elementary corpse creature</label>
+		<description>Unlock methods to refine lesser corpse puppet.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_AberrantTechnology</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--中阶尸傀 Intermediate corpse creature-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_IntermediateCorpseCreature</defName>
+		<label>Intermediate corpse creature</label>
+		<description>Unlock methods to refine intermediate corpse puppet.</description>
+		<baseCost>1600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_ElementaryCorpseCreature</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--高阶尸傀 Advanced corpse creature-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_AdvancedCorpseCreature</defName>
+		<label>Advanced corpse creature</label>
+		<description>Unlock methods to refine greater corpse puppet.</description>
+		<baseCost>2700</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_IntermediateCorpseCreature</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--恐怖家具-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_HorrorFurniture</defName>
+		<label>Horror furniture</label>
+		<description>Unlock horror-themed furniture.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5.6</researchViewY>
+	</ResearchProjectDef>
+
+	<!--冥尸炼制之法-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_NecrosapiensAlchemy</defName>
+		<label>Necrosapiens</label>
+		<description>Unlocks the technique to refine the deceased into Necrosapiens.\n\nAccording to historical records, Necrosapiens evolve through three stages: Nether blood, Nightmare flesh, and Eternal bone.\n\nEach stage requires the consumption of rare substances, followed by several days of dormancy within a coffin to undergo metamorphosis.</description>
+		<baseCost>2100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_AberrantTechnology</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--冥尸控制技术-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_NecrosapiensSurgery</defName>
+		<label>Necrosapiens intensive surgery</label>
+		<description>Through mastery of forbidden arts, specialized methods were developed to control Necrosapiens. Talismans, technological apparatus, and physical restraints are employed to suppress their bloodthirsty instincts.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_NecrosapiensAlchemy</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--邪术器官-->
+	<ResearchProjectDef ParentName="RI_ExorcismResearch_Base">
+		<defName>RI_ExorcismResearch_NecrosapiensOrgan</defName>
+		<label>Necrosapiens organ</label>
+		<description>Further study of forbidden arts unlocks implant technology derived from Necrosapiens.</description>
+		<baseCost>3500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_ExorcismResearch_NecrosapiensAlchemy</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+</Defs>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 额外负重 -->
+  <RI_MassCarryCapacity.label>额外负重</RI_MassCarryCapacity.label>
+  <!-- EN: 额外负重 -->
+  <RI_MassCarryCapacity.description>额外负重</RI_MassCarryCapacity.description>
+  <!-- EN: {0} kg -->
+  <RI_MassCarryCapacity.formatString>{0} kg</RI_MassCarryCapacity.formatString>
+  <!-- EN: {0} kg -->
+  <RI_MassCarryCapacity.formatStringUnfinalized>{0} kg</RI_MassCarryCapacity.formatStringUnfinalized>
+  
+</LanguageData>

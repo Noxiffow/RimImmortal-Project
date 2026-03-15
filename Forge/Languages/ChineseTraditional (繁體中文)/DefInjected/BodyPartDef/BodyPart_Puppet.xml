@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Golem core -->
+  <RI_Puppet_Core.label>傀儡核心</RI_Puppet_Core.label>
+  
+  <!-- EN: Golem armor -->
+  <RI_Puppet_Shell.label>傀儡装甲</RI_Puppet_Shell.label>
+  
+  <!-- EN: Golem torso -->
+  <RI_Puppet_Torso.label>傀儡躯干</RI_Puppet_Torso.label>
+  
+</LanguageData>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: <color=#baffe3>Implant a Spiritual root to become a cultivator; study cultivation methods to officially begin your path to immortal.</color> -->
+  <RI_GameplayTips.tips.0>&lt;color=#baffe3>植入灵芽，成为修炼者；学习功法，正式踏上修仙之路。&lt;/color></RI_GameplayTips.tips.0>
+  <!-- EN: <color=#baffe3>Spiritual roots can be obtained in various ways: trade, brewing QingMing jade wine, or even by extracting them from living cultivators...</color> -->
+  <RI_GameplayTips.tips.1>&lt;color=#baffe3>灵芽的获取方式多种多样：贸易，酿造青玉仙露，甚至能将活人的灵芽抽取出来...&lt;/color></RI_GameplayTips.tips.1>
+  <!-- EN: <color=#baffe3>Spirit Vein soil is born from areas rich in Qi energy. Not only is it highly fertile, but cultivating upon such land greatly accelerates progress.</color> -->
+  <RI_GameplayTips.tips.2>&lt;color=#baffe3>灵脉土地自灵气浓郁之处诞生，不仅肥沃度高，在土地上打坐修炼，更是事半功倍。&lt;/color></RI_GameplayTips.tips.2>
+  <!-- EN: <color=#baffe3>Liquid Jade is a rare mineral formed from concentrated heaven-and-earth Qi, Extremely scarce—do not miss the chance to gather it when found.</color> -->
+  <RI_GameplayTips.tips.3>&lt;color=#baffe3>柔玉乃是集天地灵气诞生的神奇矿物，非常稀少，遇到不要错过。&lt;/color></RI_GameplayTips.tips.3>
+  <!-- EN: <color=#baffe3>Upon reaching the Perfect rank, one may attempt a upgrade. Certain rank require rare items to assist in the process.</color> -->
+  <RI_GameplayTips.tips.4>&lt;color=#baffe3>修炼至境界圆满，方可突破，一些境界需要额外物品来辅助突破。&lt;/color></RI_GameplayTips.tips.4>
+  <!-- EN: <color=#baffe3>Cultivation rank: Catkins, Noviciate rank, Foundation rank, Core-formation rank, Core-coagulation rank, Core-consummation rank, Spirit constraint rank, Primordial-spirit baby rank, Primordial-spirit maturity rank, Primordial-spirit combine rank, Terrestrial immortal rank.</color> -->
+  <RI_GameplayTips.tips.5>&lt;color=#baffe3>境界划分：蓬絮，凝气，固基，化丹，结丹，灵丹，化神，元婴，大成，合体，登仙。&lt;/color></RI_GameplayTips.tips.5>
+  <!-- EN: <color=#baffe3>After reaching the Terrestrial immortal rank, one must build an Ascension Platform, defend raids from all directions, and only then may they soar beyond immotal.</color> -->
+  <RI_GameplayTips.tips.6>&lt;color=#baffe3>登仙境界后，需要建造登仙台，开启飞升之路，抵御来自各个方位的袭击，方可羽化飞升。&lt;/color></RI_GameplayTips.tips.6>
+  <!-- EN: <color=#baffe3>The Spirit constraint rank marks a major bottleneck in cultivation; progress is painstakingly slow. However, once one upgrade into the Primordial-spirit baby rank, their power surges dramatically.</color> -->
+  <RI_GameplayTips.tips.7>&lt;color=#baffe3>化神境界为修炼途中一大瓶颈，期间实力难以寸进，一旦突破至元婴，便迎来实力飞跃般提升。&lt;/color></RI_GameplayTips.tips.7>
+  <!-- EN: <color=#baffe3>Humanity first discovered Qi energy from the Spiritual archotechnology and quickly weaponized it for warfare.</color> -->
+  <RI_GameplayTips.tips.8>&lt;color=#baffe3>人类自灵炳发现了灵气，将其用于军事。&lt;/color></RI_GameplayTips.tips.8>
+  <!-- EN: <color=#baffe3>With Qi energy as their weapon, humanity challenged the Archotechs in the catastrophic Founder's War—only to be utterly crushed in the end.</color> -->
+  <RI_GameplayTips.tips.9>&lt;color=#baffe3>人类借助灵气，和超凡智能展开了惨烈的棋盘战争，最终以人类全面溃败落幕。&lt;/color></RI_GameplayTips.tips.9>
+  <!-- EN: <color=#baffe3>After Founder's War, prodigies from across various disciplines gathered by some miracle. They came to be revered as the Dragon masters.</color> -->
+  <RI_GameplayTips.tips.10>&lt;color=#baffe3>棋盘战争后，自各个领域诞生的天才，奇迹般地聚在一起，他们被后世尊称为龙师。&lt;/color></RI_GameplayTips.tips.10>
+  <!-- EN: <color=#baffe3>Five Dragon masters devoted their lives to creating the first cultivation system and devised the Eight Primal-Paths.</color> -->
+  <RI_GameplayTips.tips.11>&lt;color=#baffe3>五位龙师穷极一生，发明了最初的修炼之法，以及八条原初法门。&lt;/color></RI_GameplayTips.tips.11>
+  <!-- EN: <color=#baffe3>Dragon master terraformed an entire planet to serve as a Oasis for cultivators. Legends say this world cannot be detected by any device, and its coordinates remain a mystery to this day.</color> -->
+  <RI_GameplayTips.tips.12>&lt;color=#baffe3>龙师们改造了一颗星球，将其作为修炼者的乐土，据说这颗星球无法被仪器探测，至今坐标成谜。&lt;/color></RI_GameplayTips.tips.12>
+  <!-- EN: <color=#baffe3>The cultivation world flourished around the Eight Primal-Paths. From them arose countless sects, among which the Five-Elements Sect was the greatest.</color> -->
+  <RI_GameplayTips.tips.13>&lt;color=#baffe3>曾经以八条原初法门为主，诞生了无数门派，其中五行宗乃是第一大派。&lt;/color></RI_GameplayTips.tips.13>
+  <!-- EN: <color=#baffe3>Peace among sects lasted for centuries—until a devastating war engulfed the cultivation realm. The conflict ended with the shattering of the Five Elements Sect and the death of hundreds of millions.</color> -->
+  <RI_GameplayTips.tips.14>&lt;color=#baffe3>门派之间的和平维持了数百年，然而一场席卷整个修仙界的战争打响，最终以五行宗分裂，数亿人死亡结束。&lt;/color></RI_GameplayTips.tips.14>
+  <!-- EN: <color=#baffe3>After sect war, countless cultivators fled to rimworld at the edges of the universe. These survivors became known to future generations as the Ancient Cultivators.</color> -->
+  <RI_GameplayTips.tips.15>&lt;color=#baffe3>门派战争后，无数修士逃亡宇宙深处的边缘星球，落地生根，这些修士被后人称为古修者。&lt;/color></RI_GameplayTips.tips.15>
+  
+  <!-- UNUSED -->
+  <RI_GameplayTips.CultivatorRoad>植入灵芽，成为修炼者；学习功法，正式踏上修仙之路。</RI_GameplayTips.CultivatorRoad>
+  <RI_GameplayTips.GetRoots>灵芽的获取方式多种多样：贸易，酿造青玉仙露，甚至能将活人的灵芽抽取出来...</RI_GameplayTips.GetRoots>
+  <RI_GameplayTips.VeinSoil>灵脉土地自灵气浓郁之处诞生，不仅肥沃度高，在土地上打坐修炼，更是事半功倍。</RI_GameplayTips.VeinSoil>
+  <RI_GameplayTips.LiquidJade>柔玉乃是集天地灵气诞生的神奇矿物，非常稀少，遇到不要错过。</RI_GameplayTips.LiquidJade>
+  <RI_GameplayTips.PerfectRank>修炼至境界圆满，方可突破，一些境界需要额外物品来辅助突破。</RI_GameplayTips.PerfectRank>
+  <RI_GameplayTips.CultivationRank>境界划分：蓬絮，凝气，固基，化丹，结丹，灵丹，化神，元婴，大成，合体，登仙。</RI_GameplayTips.CultivationRank>
+  <RI_GameplayTips.Ascension>登仙境界后，需要建造登仙台，开启飞升之路，抵御来自各个方位的袭击，方可羽化飞升。</RI_GameplayTips.Ascension>
+  <RI_GameplayTips.SpiritConstraintRank>化神境界为修炼途中一大瓶颈，期间实力难以寸进，一旦突破至元婴，便迎来实力飞跃般提升。</RI_GameplayTips.SpiritConstraintRank>
+  <RI_GameplayTips.SpiritualArchotechnology>人类自灵炳发现了灵气，将其用于军事。</RI_GameplayTips.SpiritualArchotechnology>
+  <RI_GameplayTips.FounderWar>人类借助灵气，和超凡智能展开了惨烈的棋盘战争，最终以人类全面溃败落幕。</RI_GameplayTips.FounderWar>
+  <RI_GameplayTips.DragonMaster>棋盘战争后，自各个领域诞生的天才，奇迹般地聚在一起，他们被后世尊称为龙师。</RI_GameplayTips.DragonMaster>
+  <RI_GameplayTips.EightPrimalPaths>五位龙师穷极一生，发明了最初的修炼之法，以及八条原初法门。</RI_GameplayTips.EightPrimalPaths>
+  <RI_GameplayTips.Sanctuary>龙师们改造了一颗星球，将其作为修炼者的乐土，据说这颗星球无法被仪器探测，至今坐标成谜。</RI_GameplayTips.Sanctuary>
+  <RI_GameplayTips.FiveElementsSect>曾经以八条原初法门为主，诞生了无数门派，其中五行宗乃是第一大派。</RI_GameplayTips.FiveElementsSect>
+  <RI_GameplayTips.SectWar>门派之间的和平维持了数百年，然而一场席卷整个修仙界的战争打响，最终以五行宗分裂，数亿人死亡结束。</RI_GameplayTips.SectWar>
+  <RI_GameplayTips.AncientCultivator>门派战争后，无数修士逃亡宇宙深处的边缘星球，落地生根，这些修士被后人称为古修者。</RI_GameplayTips.AncientCultivator>
+  
+</LanguageData>

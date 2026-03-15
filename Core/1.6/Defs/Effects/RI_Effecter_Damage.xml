@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--====破甲====-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_ArmorBreak</defName>
+		<graphicData>
+			<drawSize>0.5</drawSize>
+			<texPath>Effects/Damage/RI_ArmorBreak</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.2</solidTime>
+			<fadeOutTime>0.6</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>RI_Effecter_ArmorBreak</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>RI_Mote_ArmorBreak</moteDef>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<positionOffset>(0,0,0)</positionOffset>
+				<scale>2</scale>
+				<color>(1,1,1)</color>
+				<absoluteAngle>false</absoluteAngle>
+				<avoidLastPositionRadius>0</avoidLastPositionRadius>
+				<orbitOrigin>true</orbitOrigin>
+				<rotation>0</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+				<attachToSpawnThing>false</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--====穿刺====-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Puncture</defName>
+		<graphicData>
+			<drawSize>0.5</drawSize>
+			<texPath>Effects/Damage/RI_Puncture</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.2</solidTime>
+			<fadeOutTime>0.6</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>RI_Effecter_Puncture</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>RI_Mote_Puncture</moteDef>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<positionOffset>(0,0,0)</positionOffset>
+				<scale>2</scale>
+				<color>(1,1,1)</color>
+				<absoluteAngle>false</absoluteAngle>
+				<avoidLastPositionRadius>0</avoidLastPositionRadius>
+				<orbitOrigin>true</orbitOrigin>
+				<rotation>0</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+				<attachToSpawnThing>false</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--====眩晕====-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Vertigo</defName>
+		<graphicData>
+			<drawSize>0.5</drawSize>
+			<texPath>Effects/Damage/RI_Vertigo</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.2</solidTime>
+			<fadeOutTime>0.6</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>RI_Effecter_Vertigo</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>RI_Mote_Vertigo</moteDef>
+				<positionLerpFactor>0</positionLerpFactor>
+				<positionRadius>0</positionRadius>
+				<burstCount>1</burstCount>
+				<positionOffset>(0,0,0)</positionOffset>
+				<scale>2</scale>
+				<color>(1,1,1)</color>
+				<absoluteAngle>false</absoluteAngle>
+				<avoidLastPositionRadius>0</avoidLastPositionRadius>
+				<orbitOrigin>true</orbitOrigin>
+				<rotation>0</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+				<attachToSpawnThing>false</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

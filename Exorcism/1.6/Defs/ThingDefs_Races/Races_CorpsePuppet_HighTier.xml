@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--铁浮屠-->
+	<MutantDef Abstract="True" Name="BaseCorpsePuppetEntity">
+		<workDisables></workDisables>
+		<consideredSubhuman>true</consideredSubhuman>
+		<canCarryPawns>false</canCarryPawns>
+		<canTend>false</canTend>
+		<whitelistedFloatMenuProviders />
+		<preventsMentalBreaks>true</preventsMentalBreaks>
+		<disablesIdeo>true</disablesIdeo>
+		<disableOwnership>true</disableOwnership>
+		<disablePolicies>true</disablePolicies>
+		<disableTitles>true</disableTitles>
+		<disableNeeds>true</disableNeeds>
+		<disableEatingAtTable>true</disableEatingAtTable>
+		<incapableOfSocialInteractions>true</incapableOfSocialInteractions>
+		<canBeCapturedToHoldingPlatform>true</canBeCapturedToHoldingPlatform>
+		<producesBioferrite>true</producesBioferrite>
+		<overrideLabel>true</overrideLabel>
+		<overrideInspectString>true</overrideInspectString>
+		<canBleed>false</canBleed>
+		<terminatePregnancy>true</terminatePregnancy>
+		<isImmuneToInfections>true</isImmuneToInfections>
+		<removeChronicIllnesses>true</removeChronicIllnesses>
+		<removeAddictions>true</removeAddictions>
+		<disableAging>true</disableAging>
+		<clearsEgo>true</clearsEgo>
+		<partsCleanAndDroppable>false</partsCleanAndDroppable>
+		<breathesAir>false</breathesAir>
+		<removesHediffs>
+			<li>CryptosleepSickness</li>
+			<li>LuciferiumHigh</li>
+			<li>LuciferiumAddiction</li>
+			<li>Scaria</li>
+			<li>CorpseTorment</li>
+			<li>CubeInterest</li>
+			<li>CubeWithdrawal</li>
+			<li>CubeComa</li>
+			<li>CubeRage</li>
+			<li>HeartAttack</li>
+			<li>Scaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplified</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+			<li>Inhumanized</li>
+		</removesHediffs>
+		<disablesGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Hemogenic</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+		</disablesGenes>
+	</MutantDef>
+
+	<MutantDef ParentName="BaseCorpsePuppetEntity">
+		<defName>RI_CorpseCreature_ZombieArmor_Mutant</defName>
+		<label>铁浮屠</label>
+		<description>A complex and powerful corpse creature. Its massive body is assembled from two or more human corpses, implanted with aberrant components, encased in heavy armor, and finally reanimated through forbidden rituals.\n\nIts combat capability is unquestionable—possessing immense strength and formidable defensive power.</description>
+		<!--控制贴图显示的，不要删除-->
+		<hediff>CorpsePuppet</hediff>
+		<thinkTree>Ghoul</thinkTree>
+		<thinkTreeConstant>GhoulConstant</thinkTreeConstant>
+		<showJobReport>true</showJobReport>
+		<disableApparel>false</disableApparel>
+		<whitelistedFloatMenuProviders>
+			<li>FloatMenuOptionProvider_DraftedAttack</li>
+			<li>FloatMenuOptionProvider_DraftedMove</li>
+			<li>FloatMenuOptionProvider_Ingest</li>
+			<li>FloatMenuOptionProvider_EnterMapPortal</li>
+			<li>FloatMenuOptionProvider_FromThing</li>
+			<li>FloatMenuOptionProvider_Equip</li>
+			<!--<li>FloatMenuOptionProvider_Wear</li>-->
+		</whitelistedFloatMenuProviders>
+		<!--变成僵尸-->
+		<relativeTurnedThought>BecameGhoul</relativeTurnedThought>
+		<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+		<needWhitelist>
+			<li>Food</li>
+		</needWhitelist>
+		<overrideFoodType>true</overrideFoodType>
+		<foodType>CarnivoreAnimalStrict</foodType>
+		<allowEatingCorpses>true</allowEatingCorpses>
+		<deathOnDownedChance>0.25</deathOnDownedChance>
+		<givesHediffs>
+			<li>
+				<def>RI_Hediff_UndeadIronPagoda</def>
+				<severity>1</severity>
+			</li>
+			<li>
+				<def>CorpsePuppet_RenderScaleCounter</def>
+				<!--放大系数-->
+				<severity>2</severity>
+			</li>
+		</givesHediffs>
+		<disablesGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+		</disablesGenes>
+		<abilityWhitelist>
+			<!--大跳-->
+			<li>MetalbloodInjection</li>
+		</abilityWhitelist>
+		<deathLetter>One of your ZOMBIEs has died.</deathLetter>
+		<deathLetterExtra>Unlike regular colonists, ghouls do not need to be buried and their death will not upset others. You may choose to bury them should you wish.</deathLetterExtra>
+		<!-- Sounds -->
+		<soundAttackChance>0.25</soundAttackChance>
+		<soundCall>Pawn_Ghoul_Call</soundCall>
+		<soundAttack>Pawn_Ghoul_Attack</soundAttack>
+		<soundWounded>Pawn_Ghoul_Pain</soundWounded>
+		<soundDeath>Pawn_Ghoul_Killed</soundDeath>
+		<!-- Rendering -->
+		<!--<skinColorOverride>(0.58, 0.62, 0.55)</skinColorOverride>
+		<hairColorOverride>(0.65, 0.65, 0.65)</hairColorOverride>-->
+		<bodyTypeGraphicPaths>
+			<Male>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Male>
+			<Female>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Female>
+			<Hulk>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Hulk>
+			<Fat>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Fat>
+			<Thin>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Thin>
+			<Child>Things/Pawn/Animal/RI_CorpseCreature_ZombieArmor/RI_CorpseCreature_ZombieArmor</Child>
+		</bodyTypeGraphicPaths>
+		<forcedHeadTypes>
+			<li>Ghoul_Normal</li>
+		</forcedHeadTypes>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+		</hairTagFilter>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+		</beardTagFilter>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>1.5</chanceFactor>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				<soundMeleeHit>Pawn_Ghoul_Scratch</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>1.5</chanceFactor>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				<soundMeleeHit>Pawn_Ghoul_Scratch</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			</li>
+		</tools>
+		<!--<hediffGivers>
+      <li Class="HediffGiver_MeatHunger">
+        <hediff>MeatHunger</hediff>
+      </li>
+    </hediffGivers>-->
+		<preventIllnesses>true</preventIllnesses>
+		<canTend>true</canTend>
+		<canCarryPawns>true</canCarryPawns>
+		<removePermanentInjuries>true</removePermanentInjuries>
+		<removeAllInjuries>true</removeAllInjuries>
+		<psychicShockUntargetable>true</psychicShockUntargetable>
+		<preventsMentalBreaks>true</preventsMentalBreaks>
+		<disablesIdeo>true</disablesIdeo>
+		<disableOwnership>true</disableOwnership>
+		<disablePolicies>false</disablePolicies>
+		<disableTitles>true</disableTitles>
+		<disableEatingAtTable>true</disableEatingAtTable>
+		<incapableOfSocialInteractions>true</incapableOfSocialInteractions>
+		<canBeCapturedToHoldingPlatform>false</canBeCapturedToHoldingPlatform>
+		<producesBioferrite>false</producesBioferrite>
+		<overrideLabel>true</overrideLabel>
+		<overrideInspectString>true</overrideInspectString>
+		<canBleed>false</canBleed>
+		<isImmuneToInfections>true</isImmuneToInfections>
+		<removeChronicIllnesses>true</removeChronicIllnesses>
+		<removeAddictions>true</removeAddictions>
+		<terminatePregnancy>true</terminatePregnancy>
+		<disableAging>true</disableAging>
+		<hideLabel>True</hideLabel>
+		<canUseDrugs>True</canUseDrugs>
+		<drugWhitelist>
+			<li>VoidsightSerum</li>
+			<li>MetalbloodSerum</li>
+			<li>JuggernautSerum</li>
+			<li>MindNumbSerum</li>
+			<li>SmokeleafJoint</li>
+			<li>Flake</li>
+			<li>GoJuice</li>
+			<li>Yayo</li>
+			<li>WakeUp</li>
+			<li>Luciferium</li>
+			<li>Penoxycyline</li>
+			<li>Beer</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Drug_Psilocap</li>
+		</drugWhitelist>
+		<removesHediffs>
+			<li>CryptosleepSickness</li>
+			<li>LungRot</li>
+			<li>LungRotExposure</li>
+			<li>LuciferiumAddiction</li>
+			<li>Scaria</li>
+			<li>CubeInterest</li>
+			<li>CubeWithdrawal</li>
+			<li>CubeComa</li>
+			<li>CubeRage</li>
+			<li>XenogerminationComa</li>
+			<li>HeartAttack</li>
+			<li>Scaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+			<li>Inhumanized</li>
+		</removesHediffs>
+		<breathesAir>false</breathesAir>
+		<workDisables>
+			<li>AllWork</li>
+		</workDisables>
+	</MutantDef>
+
+	<PawnKindDef Name="CorpsePuppetBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionDef>PlayerColony</defaultFactionDef>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~12</initialResistanceRange>
+		<isGoodBreacher>true</isGoodBreacher>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CorpsePuppetBase">
+		<defName>RI_CorpseCreature_ZombieArmor_Pawn</defName>
+		<label>iron pagoda</label>
+		<defaultFactionDef>PlayerColony</defaultFactionDef>
+		<mutant>RI_CorpseCreature_ZombieArmor_Mutant</mutant>
+		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
+		<combatPower>120</combatPower>
+		<gearHealthRange>0.2~0.4</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>0~100</apparelMoney>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<!--<techHediffsTags>
+			<li>CorpsePuppet</li>
+		</techHediffsTags>-->
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<techHediffsMaxAmount>1</techHediffsMaxAmount>
+	</PawnKindDef>
+
+</Defs>

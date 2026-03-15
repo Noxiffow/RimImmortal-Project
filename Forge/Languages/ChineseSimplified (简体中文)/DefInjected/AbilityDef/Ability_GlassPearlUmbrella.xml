@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Glass pearl light -->
+  <RI_Ability_GlassPearlUmbrella.label>琉璃珠光</RI_Ability_GlassPearlUmbrella.label>
+  <!-- EN: Release 6 light balls to heal 6 teammates within range. -->
+  <RI_Ability_GlassPearlUmbrella.description>释放6个光球，治愈范围内的6名队友。</RI_Ability_GlassPearlUmbrella.description>
+  
+</LanguageData>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== 1. 化学物质定义 ==================== -->
+	<!-- 必须定义一个专属的化学物质，防止它和原版大麻烟的耐受度混淆 -->
+	<ChemicalDef>
+		<defName>RI_Chemical_Cigarette</defName>
+		<label>cigarette</label>
+		<addictionHediff>RI_Hediff_PremiumTobaccoAddiction</addictionHediff>
+		<toleranceHediff>RI_Hediff_PremiumTobaccoTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.01</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+	<!--需求-->
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>RI_Need_PremiumTobacco</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>cigarette</label>
+		<description>Because of a cigarette addiction, this person needs to smoke regularly to avoid withdrawal symptoms.</description>
+		<listPriority>25</listPriority>
+	</NeedDef>
+
+	<!-- 云华烟 -->
+	<ThingDef ParentName="DrugBase">
+		<defName>RI_Drug_YunHuaCigarette</defName>
+		<label>YunHua cigarette</label>
+		<description>Human relationships are like flowers seen through the mist—impossible to grasp, yet impossible to live without.\n\nYunhua cigarettes are expensive, high-end cigarettes. Whether one actually enjoys smoking them hardly matters. In certain situations, they serve as a token of courtesy—a kind of social pass.</description>
+
+		<graphicData>
+			<!-- 你的香烟贴图路径，建议画一个红色的经典烟盒或者单根香烟 -->
+			<texPath>Things/Item/Drug/RI_Drug_YunHuaCigarette</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+
+		<rotatable>false</rotatable>
+		<tradeTags>
+			<li>Drugs</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<!-- 【超高价格】原版大麻烟价值是 11，这里设为 85，一包堪比高级零部件 -->
+			<MarketValue>140</MarketValue>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.4</RoyalFavorValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Flammability>1.5</Flammability>
+			<!-- 易燃 -->
+		</statBases>
+
+		<techLevel>Industrial</techLevel>
+
+		<ingestible>
+			<!-- 作为娱乐药物使用 -->
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<!-- 极高的娱乐值补充 (0.9 代表抽一根几乎能补满娱乐条) -->
+			<joy>0.8</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+
+			<outcomeDoers>
+				<!-- 1. 抽完给 High 的状态 -->
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_ChunghwaHigh</hediffDef>
+					<severity>1.0</severity>
+					<toleranceChemical>RI_Chemical_Cigarette</toleranceChemical>
+				</li>
+				<!-- 2. 给一点点微乎其微的耐受度 -->
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_PremiumTobaccoTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>RI_Chemical_Cigarette</chemical>
+				<!-- 【极低成瘾性】原版大麻是 0.02，这里是 0.005 (0.5%的概率)，而且需要非常高的耐受度才会触发成瘾判定 -->
+				<addictiveness>0.005</addictiveness>
+				<minToleranceToAddict>0.45</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>200</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== 4. 抽烟后的心情加成 (Thought) ==================== -->
+	<ThoughtDef>
+		<defName>RI_Thought_ChunghwaHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_ChunghwaHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>blow a cloud</label>
+				<description>After a cigarette, than live immortal.</description>
+				<baseMoodEffect>18</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--戒断心情-->
+	<ThoughtDef>
+		<defName>SmokeleafWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SmokeleafAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>Just one cigarette</label>
+				<description>I really need one cigarette.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

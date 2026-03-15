@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Black steel -->
+  <RI_Category_BlackSteelBodyPart.label>庚钢假体</RI_Category_BlackSteelBodyPart.label>
+  
+  <!-- EN: Internal organ -->
+  <RI_Category_InsideBodyPart.label>人造器官</RI_Category_InsideBodyPart.label>
+  
+  <!-- EN: Jade -->
+  <RI_Category_JadeBodyPart.label>翠玉假体</RI_Category_JadeBodyPart.label>
+  
+  <!-- EN: RI-Prostheses -->
+  <RI_Category_Prostheses.label>仙路-假体</RI_Category_Prostheses.label>
+  
+  <!-- EN: RI-Talisman -->
+  <RI_Category_Talisman.label>仙路-法宝</RI_Category_Talisman.label>
+  
+</LanguageData>

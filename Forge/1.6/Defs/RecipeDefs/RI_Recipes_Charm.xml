@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="RI_RecipeBase_Charm" Abstract="True">
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>RI_Research_ImmortalWorship</researchPrerequisite>
+		<recipeUsers>
+			<li>RI_Building_CharmWorkbench</li>
+		</recipeUsers>
+    </RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_Charm">
+		<defName>RI_MakeThunderCharm</defName>
+		<label>make thunder charm</label>
+		<description>Use the spiritual crystal to print the power on the paper and draw the charm.</description>
+		<jobString>Making thunder charm</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritualCrystal</li>
+				<li>RI_Resource_LiquidJade</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Weapon_ThunderCharm>1</RI_Weapon_ThunderCharm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_Charm">
+		<defName>RI_MakeFireCharm</defName>
+		<label>make fire bomb charm</label>
+		<description>Use the spiritual crystal to print the power on the paper and draw the charm.</description>
+		<jobString>Making fire bomb charm</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritualCrystal</li>
+				<li>RI_Resource_LiquidJade</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Weapon_FireCharm>1</RI_Weapon_FireCharm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_Charm">
+		<defName>RI_MakeSwordCharm</defName>
+		<label>make light sword charm</label>
+		<description>Use the spiritual crystal to print the power on the paper and draw the charm.</description>
+		<jobString>Making light sword charm</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritualCrystal</li>
+				<li>RI_Resource_LiquidJade</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Weapon_SwordCharm>1</RI_Weapon_SwordCharm>
+		</products>
+	</RecipeDef>
+
+</Defs>

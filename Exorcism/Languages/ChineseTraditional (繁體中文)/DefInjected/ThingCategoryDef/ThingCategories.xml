@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aberrant resource -->
+  <RI_Category_AberrantResource.label>邪祟原料</RI_Category_AberrantResource.label>
+  
+  <!-- EN: Necrosapiens -->
+  <RI_Category_BodyPartsNecrosapiens.label>冥尸植入体</RI_Category_BodyPartsNecrosapiens.label>
+  
+  <!-- EN: necro repair -->
+  <RI_Category_CorpsePuppetRepairKit.label>冥尸缝合包</RI_Category_CorpsePuppetRepairKit.label>
+  
+  <!-- EN: Daoist clothes -->
+  <RI_Category_DaoistApparel.label>道士衣冠</RI_Category_DaoistApparel.label>
+  
+  <!-- EN: Daoist weapons -->
+  <RI_Category_DaoistWeapons.label>道士兵器</RI_Category_DaoistWeapons.label>
+  
+  <!-- EN: evil manufactured -->
+  <RI_Category_EvilManufactured.label>邪术合成物</RI_Category_EvilManufactured.label>
+  
+  <!-- EN: exorcism resource -->
+  <RI_Category_ExorcismResource.label>镇邪原料</RI_Category_ExorcismResource.label>
+  
+  <!-- EN: necro clothes -->
+  <RI_Category_NecroApparel.label>冥尸衣冠</RI_Category_NecroApparel.label>
+  
+  <!-- EN: Aberrant corpses -->
+  <RI_Corpses_Aberrant.label>邪祟尸体</RI_Corpses_Aberrant.label>
+  
+</LanguageData>

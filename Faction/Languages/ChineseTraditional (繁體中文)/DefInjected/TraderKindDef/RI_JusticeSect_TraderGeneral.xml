@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: "Thousands of books" trader -->
+  <RI_Sect_Caravan_BookTrader.label>万卷书行</RI_Sect_Caravan_BookTrader.label>
+  
+  <!-- EN: Peacekeeper armory -->
+  <RI_Sect_Caravan_CombatSupplier.label>止戈武馆</RI_Sect_Caravan_CombatSupplier.label>
+  
+  <!-- EN: Contribution patrol collector -->
+  <RI_Sect_Caravan_ContributionPatrolCollector.label>贡献巡收队</RI_Sect_Caravan_ContributionPatrolCollector.label>
+  
+  <!-- EN: Cultivation resource trader -->
+  <RI_Sect_Caravan_StandardTrader.label>青霄商</RI_Sect_Caravan_StandardTrader.label>
+  
+  <!-- EN: Materials workshop -->
+  <RI_Sect_Caravan_TraderGeneral.label>千材坊</RI_Sect_Caravan_TraderGeneral.label>
+  
+  <!-- EN: Cultivation disciple -->
+  <RI_Sect_Caravan_TraderVisitor.label>修行弟子</RI_Sect_Caravan_TraderVisitor.label>
+  
+</LanguageData>

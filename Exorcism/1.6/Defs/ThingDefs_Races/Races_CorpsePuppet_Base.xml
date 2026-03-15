@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=======================尸体傀儡Thing前置=======================-->
+
+	<ThingDef ParentName="BasePawn" Name="RI_Base_CorpseCreatureBase" Abstract="True">
+		<statBases>
+			<!-- 屠宰产物设为0，通过butcherProducts自定义 -->
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<!-- 底层抗性 -->
+			<ToxicResistance>1.0</ToxicResistance>
+			<Wildness>0</Wildness>
+			<!-- 完全免疫毒素 -->
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</statBases>
+		<race>
+			<!--思考树-->
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<!--群居动物-->
+			<herdAnimal>true</herdAnimal>
+			<!-- 核心修改：无性别，无休息，不流血 -->
+			<hasGenders>false</hasGenders>
+			<needsRest>false</needsRest>
+			<bleedRateFactor>-1</bleedRateFactor>
+
+			<!--姓名-->
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+			<trainability>None</trainability>
+
+			<!--血迹，肉类型-->
+			<fleshType>RI_Aberrant_Flesh</fleshType>
+			<bloodDef>RI_Filth_AberrantBlood</bloodDef>
+
+			<!--不能变蹒跚怪-->
+			<canBecomeShambler>false</canBecomeShambler>
+			<renderTree>Animal</renderTree>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<thingCategories>
+			<li>Animals</li>
+		</thingCategories>
+		<recipes>
+			<li>Sterilize</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">RemovePorcupineQuill</li>
+		</recipes>
+		<comps>
+			<!-- For shambler animals -->
+			<!--<li Class="CompProperties_HoldingPlatformTarget" MayRequire="Ludeon.RimWorld.Anomaly">
+				<baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>true</getsColdContainmentBonus>
+			</li>-->
+			<!--<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+				<anomalyKnowledge>1</anomalyKnowledge>
+				<requiresImprisonment>true</requiresImprisonment>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+			</li>-->
+		</comps>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_Tags_CorpseCreature</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--=======================尸体傀儡Pawn前置=======================-->
+
+	<PawnKindDef Name="RI_Base_CorpseCreaturePawn" Abstract="True">
+		<!--自然中不可能刷新-->
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<wildGroupSize>0</wildGroupSize>
+	</PawnKindDef>
+
+</Defs>

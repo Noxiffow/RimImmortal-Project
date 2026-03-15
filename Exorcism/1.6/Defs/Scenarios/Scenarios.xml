@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--道士下山-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>RI_Scenario_MonkComeDownMountain</defName>
+		<label>Taoist comes down the mountain</label>
+		<description>After years of cultivation on the mountain, your master looked at the emptied rice sacks and sighed. Since your arrival, the sect’s food expenses had nearly doubled, as if even the stove itself was complaining.\n\nOne day, he finally called you over, his gaze both gentle and deliberate. He pressed a heavy bundle into your arms and said, “I see your bones are sturdy enough. It’s time for you to descend into the mortal world, cultivate yourself, and undergo proper trials.”\n\nYou lowered your eyes to the package, feeling the weight of your master’s care. Silently, you vowed to make the Daoist sect renowned—and perhaps, along the way, help them recover some of the lost rice.</description>
+		<scenario>
+			<summary>A novice Taoist, confronting the stories of an unknown world.</summary>
+			<playerFaction>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+
+			<parts>
+				<!-- 开局文本 -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>"So this is the place Master marked on the map… why isn’t it a town?" — You sit astride your donkey, looking utterly bewildered. Glancing down at the heavy bundle in your arms, you untie it, only to have a pile of dried meat cakes spill onto the ground.\n\nThere is no town here, no tavern, no granary—only empty land, waiting for someone to cultivate it.\n\nAt your side rests an ancestral peachwood sword. Though its power is modest, it carries a strange presence that makes it impossible to part with.</text>
+				</li>
+
+				<!-- 选人 -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+				</li>
+
+				<!-- 到达方式 -->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!--饿了-->
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>1.0</chance>
+					<need>Food</need>
+					<levelRange>0~0.1</levelRange>
+				</li>
+
+				<!-- 开局物资 -->
+				<!--干肉饼-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>300</count>
+				</li>
+				<!--药草-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>15</count>
+				</li>
+				<!--桃木剑——道士下山开局仅有-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_MeleeWeapon_AncestralPeachwoodSword</thingDef>
+					<count>1</count>
+				</li>
+				<!--睡袋-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bedroll</thingDef>
+					<stuff>Cloth</stuff>
+					<count>1</count>
+				</li>
+				<!--上品灵芽-->
+				<!--
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EnergyRootHigh</thingDef>
+					<count>1</count>
+				</li>
+				-->
+				<!--筑基丹-->
+				<!--
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_Drug_FoundationBuildingElixir</thingDef>
+					<count>1</count>
+				</li>-->
+				<!--零部件-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<!--开局动物——驴-->
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Donkey</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!--开局科技-->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>LongBlades</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ComplexClothing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>RI_ExorcismResearch_DaoInherit</project>
+				</li>
+
+				<!--玩家hediff-->
+				<!--<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<hediff>Hangover</hediff>
+					<severityRange>0.02~0.05</severityRange>
+				</li>-->
+
+				<!-- 地图散落物品 -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>WoodLog</thingDef>
+					<count>400</count>
+				</li>
+
+				<!--事件-->
+				<!--<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>RI_MakeLINGMAI</incident>
+					<intervalDays>32.45815</intervalDays>
+					<minDays>3</minDays>
+					<maxDays>5</maxDays>
+				</li>-->
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

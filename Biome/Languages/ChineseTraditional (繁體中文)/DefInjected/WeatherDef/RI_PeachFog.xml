@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Peach blossom maze -->
+  <RI_PeachBlossomFog.label>桃花障</RI_PeachBlossomFog.label>
+  <!-- EN: A pale pink mist blankets this region, seemingly a climatic phenomenon caused by unusual fluctuations in spiritual energy disrupting the local ecological cycle.\n\nVisibility is heavily obscured by the fog, reducing the accuracy of ranged weapons. The mist forms layered, natural maze, preventing any creature from entering or leaving the area by ground routes. -->
+  <RI_PeachBlossomFog.description>一层淡粉色的雾气笼罩着这片区域，这似乎是因为不寻常的灵气波动影响了生态循环，从而产生的气候现象。\n\n视线被雾气遮蔽，远程武器的精准度将会下降。雾气形成了层叠的天然迷宫，使得任何生物无法从地面进入这片区域，也无法离开。</RI_PeachBlossomFog.description>
+  
+</LanguageData>

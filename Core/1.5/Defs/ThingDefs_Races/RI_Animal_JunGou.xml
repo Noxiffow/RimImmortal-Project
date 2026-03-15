@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_JunGou</defName>
+		<label>JunGou</label>
+		<devNote>JunGou</devNote>
+		<description>A small cyan animal resembling a rabbit. They move fast and are very timid, and like to eat herbs rich in Qi, so there is a stomach stone containing Qi in the body.</description>
+		<statBases>
+			<MoveSpeed>14</MoveSpeed>
+			<MarketValue>430</MarketValue>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+			<li>
+				<label>Left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>Right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<butcherProducts>
+			<RI_Resource_JunGouBezoar>1</RI_Resource_JunGouBezoar>
+		</butcherProducts>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHealthScale>0.3</baseHealthScale>
+			<baseHungerRate>0.1</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Light</leatherDef>
+			<wildness>0.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>8.661</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.8, 1)</li>
+					<li>(2.4, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>8</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.5</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.9</minAge>
+					<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+					<soundDeath>Pawn_Rodent_Death</soundDeath>
+					<soundCall>Pawn_Rodent_Call</soundCall>
+					<soundAngry>Pawn_Rodent_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.17)</li>
+				<li>(0.2, 0, 0)</li>
+				<li>(0.0, 0, -0.15)</li>
+				<li>(-0.2, 0, 0)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalImmortals</li>
+		</tradeTags>
+	</ThingDef>
+
+  <!--================================================ -->
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Animal_JunGou</defName>
+		<label>JunGou</label>
+		<race>RI_Animal_JunGou</race>
+		<combatPower>233</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/JunGou</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/Dessicated_JunGou</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/JunGou</texPath>
+					<drawSize>1.25</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/Dessicated_JunGou</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/JunGou</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/JunGou/Dessicated_JunGou</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+  
+</Defs>

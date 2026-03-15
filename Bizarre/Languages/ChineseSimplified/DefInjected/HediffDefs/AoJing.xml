@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_AoJing_Molt.label>蜕皮</NzRI_AoJing_Molt.label>
+    <NzRI_AoJing_Molt.description>你身上覆盖了一层坚硬的表皮，上面隐隐有血光和灵气流转。</NzRI_AoJing_Molt.description>
+
+    <NzRI_AoJing_Ascend.label>苍羌登阶</NzRI_AoJing_Ascend.label>
+    <NzRI_AoJing_Ascend.description>你被巴虺注视着，你的技能威力提升了，你的恢复速度提升了。</NzRI_AoJing_Ascend.description>
+
+    <NzRI_AoJing_Agony.label>剧痛</NzRI_AoJing_Agony.label>
+    <NzRI_AoJing_Agony.description>酸性的血肉残渣像蛆虫一样，尝试钻入你的身体，你痛得几乎昏厥。</NzRI_AoJing_Agony.description>
+</LanguageData>

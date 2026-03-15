@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--技能选中特效——木行——巽木-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Wood_Cultivation</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/WoodElement/RI_Mote_Wood_Cultivation</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——木行——春生-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Wood_EverythingGrow</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/WoodElement/RI_Mote_Wood_EverythingGrow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——木行——生机嫁接-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_WoodLifeGive</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/WoodElement/RI_Mote_WoodLifeGive</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--生成植物特效-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Wood_CreatePlantsBuilding</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/WoodElement/RI_Mote_Wood_CreatePlantsBuilding</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>13</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!--抽取生机特效-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_Wood_VitalityAbsorption</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/WoodElement/RI_Mote_Wood_VitalityAbsorption</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>13</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: arachnid -->
+  <RI_EvilCreature_SuperBigSpider_Race.label>山蜘蛛</RI_EvilCreature_SuperBigSpider_Race.label>
+  <!-- EN: RI_EvilCreature_SuperBigSpider_Race. -->
+  <RI_EvilCreature_SuperBigSpider_Race.description>乙级邪异，威胁系数高。\n\n山蜘蛛是一种世间罕见的巨大猛兽，浑身披着坚硬甲壳，极难杀死。它往往会占据一座山洞为巢，吐出丝线制造陷阱，捕获那些倒霉的上山之人。等抓到了猎物，山蜘蛛就会将其拖回山洞，吐出毒液，在猎物麻痹的时候慢慢享用。</RI_EvilCreature_SuperBigSpider_Race.description>
+  <!-- EN: first pair of legs -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-0.label>前足</RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-0.label>
+  <!-- EN: legs -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-0.labelNoLocation>足</RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-0.labelNoLocation>
+  <!-- EN: first pair of legs -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-1.label>前足</RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-1.label>
+  <!-- EN: legs -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-1.labelNoLocation>足</RI_EvilCreature_SuperBigSpider_Race.tools.first_pair_of_legs-1.labelNoLocation>
+  <!-- EN: spider fang -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.spider_fang.label>蜘蛛牙</RI_EvilCreature_SuperBigSpider_Race.tools.spider_fang.label>
+  
+  <!-- UNUSED -->
+  <RI_EvilCreature_SuperBigSpider_Race.tools.head.label>头部</RI_EvilCreature_SuperBigSpider_Race.tools.head.label>
+  
+</LanguageData>

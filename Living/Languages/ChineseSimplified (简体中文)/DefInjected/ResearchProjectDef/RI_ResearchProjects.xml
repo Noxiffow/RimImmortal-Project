@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Works of Nature -->
+  <RI_BasicTechnology.label>天工开物</RI_BasicTechnology.label>
+  <!-- EN: Welcome to the era of slash-and-burn.\n\nUnlock the most basic technologies, such as tea making, cooking, etc. -->
+  <RI_BasicTechnology.description>欢迎来到刀耕火种的时代。\n\n解锁最基础的技术，例如制茶，烹煮等。</RI_BasicTechnology.description>
+  
+  <!-- EN: Crafting -->
+  <RI_CarpentryAndCrafting.label>百工</RI_CarpentryAndCrafting.label>
+  <!-- EN: "A hundred works are the works of saints."\n\nHundred works refers to a series of technical artisans including carpentry, painter, stone, and metalworking. The wise man created the instrument, the scholar wrote it down, the craftsman restored it, and this can be called "craft."\n\nUnlock a series of manual facilities, as well as the crafts associated with them, you need to study and complete the "rock cutting" first. -->
+  <RI_CarpentryAndCrafting.description>“百工之事，皆圣人之作也”。\n\n百工指的是包括木工，漆工，石工，金工等一系列技术工匠。智者创造了器，学者记录下来，巧匠将其复原，而这可称之为“工艺”。\n\n解锁一系列手工设施，以及与之相关的工艺品，需要先研究完成“岩石切割”。</RI_CarpentryAndCrafting.description>
+  
+  <!-- EN: Electrical Technology -->
+  <RI_Electric.label>电气学</RI_Electric.label>
+  <!-- EN: With the advent of the electrical age, electricity and steam engines became one of the most important industries. Unlock a range of power generation and electrical facilities.\n\nNeed to complete the study of "Electricity" first. -->
+  <RI_Electric.description>随着电气时代到来，电力和蒸汽机一举成为了最重要的产业之一。解锁一系列发电，用电设施。\n\n需要先研究完成“电力”。</RI_Electric.description>
+  
+  <!-- EN: Magical plants -->
+  <RI_HighLevelPlanting.label>奇花灵木</RI_HighLevelPlanting.label>
+  <!-- EN: Exotic plants brought by the cultivators, and the cultivation of these crops may have been of great help to the colony.\n\nNeed to study and complete the "tree planting" first. -->
+  <RI_HighLevelPlanting.description>修炼者带来的奇异植物，种植这些作物或许对殖民地大有帮助。\n\n需要先研究完成“植树”。</RI_HighLevelPlanting.description>
+  
+  <!-- EN: Cloth tailoring -->
+  <RI_Research_MakingCloth.label>布衣裁缝</RI_Research_MakingCloth.label>
+  <!-- EN: Weave and cut clothes.\n\nunlock a series of basic traditional costumes. -->
+  <RI_Research_MakingCloth.description>织布裁衣，解锁一系列基础的传统服饰。</RI_Research_MakingCloth.description>
+  
+  <!-- EN: Dynasty cloth -->
+  <RI_Research_MakingDynastyCloth.label>王朝锦衣</RI_Research_MakingDynastyCloth.label>
+  <!-- EN: People can distinguish high from low at a glance by how they dress.\n\nUnlock dynasty style clothing and related technology. -->
+  <RI_Research_MakingDynastyCloth.description>通过穿着打扮，人们一眼就能区分高低贵贱。\n\n解锁王朝风格服饰以及相关技术。</RI_Research_MakingDynastyCloth.description>
+  
+  <!-- EN: Steel forging -->
+  <RI_Smithing.label>锻钢</RI_Smithing.label>
+  <!-- EN: Refined into steel, unlock better forging technology. Steel can be made into high-quality iron, and metal crafts can also be made. \n\nNeed to study the completion of the "Smithing". -->
+  <RI_Smithing.description>百炼成钢，解锁更好的锻造技术。可以将钢铁打造成优质的镔铁，也可以制造金属工艺品。\n\n需要先研究完成“锻造”。</RI_Smithing.description>
+  
+  <!-- EN: Weaving -->
+  <RI_Weaving.label>养蚕织锦</RI_Weaving.label>
+  <!-- EN: Sericulture, weaving, these brocade silk decorated people's lives, also brought wealth.\n\nUnlock textile technology, make silk, etc. -->
+  <RI_Weaving.description>养蚕，纺织，这些锦罗绸缎装点了人们的生活，同时也带来了财富。\n\n解锁纺织技术，制作丝绸等。</RI_Weaving.description>
+  
+</LanguageData>

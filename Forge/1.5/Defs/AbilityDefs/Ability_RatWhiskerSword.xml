@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AbilityDef>
+		<defName>RI_RatWhiskerSword</defName>
+		<label>Unstoppable</label>
+		<description>Mark enemies within 8 squares and attack marked enemies to speed up wound healing in a short time.</description>
+		<iconPath>Ability/Weapon/RI_RatWhiskerSword</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<targetRequired>false</targetRequired>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>1020</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<range>8</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetable>true</targetable>
+			<requireLineOfSight>false</requireLineOfSight>
+			<drawAimPie>true</drawAimPie>
+			<defaultCooldownTime>1</defaultCooldownTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_AxeExcitation">
+				<range>8</range>
+				<cooldownTicks>2000</cooldownTicks>
+				<humansOnly>false</humansOnly>
+				<enemy>true</enemy>
+				<hediffDef>RI_Hediff_RatWhiskerSword</hediffDef>
+				<fleckdef>RI_Fleck_RatWhiskerSword</fleckdef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>
+

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Nephrite jade hammer【Second-rate】 -->
+  <RI_Weapon_CyanogenJadeHammer.label>青玉锤【二品】</RI_Weapon_CyanogenJadeHammer.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA hammer that looks very fragile, but is actually very strong, like a whole. -->
+  <RI_Weapon_CyanogenJadeHammer.description>【二品】近战兵器\n\n一柄看上去十分脆弱的巨锤，但实际上非常坚固，宛如一体。</RI_Weapon_CyanogenJadeHammer.description>
+  <!-- EN: 青玉摧破 -->
+  <RI_Weapon_CyanogenJadeHammer.comps.CompEquippableAbilityReloadable.chargeNoun>青玉碎</RI_Weapon_CyanogenJadeHammer.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_CyanogenJadeHammer.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_CyanogenJadeHammer.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 摧破 -->
+  <RI_Weapon_CyanogenJadeHammer.tools.0.label>摧破</RI_Weapon_CyanogenJadeHammer.tools.0.label>
+  <!-- EN: 摧破 -->
+  <RI_Weapon_CyanogenJadeHammer.tools.1.label>摧破</RI_Weapon_CyanogenJadeHammer.tools.1.label>
+  
+  <!-- EN: Poison shuttle【Second-rate】 -->
+  <RI_Weapon_DESword.label>毒心梭【二品】</RI_Weapon_DESword.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA shuttle that can fly freely, with a strong poison, is a terrible assassination weapon. -->
+  <RI_Weapon_DESword.description>【二品】近战兵器\n\n一柄可以自由操控飞行的飞梭，以猛毒萃成，是一种可怕的暗杀武器。</RI_Weapon_DESword.description>
+  <!-- EN: 剧毒飞刃 -->
+  <RI_Weapon_DESword.comps.CompEquippableAbilityReloadable.chargeNoun>剧毒飞梭</RI_Weapon_DESword.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_DESword.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_DESword.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: blade -->
+  <RI_Weapon_DESword.tools.blade-0.label>梭刺</RI_Weapon_DESword.tools.blade-0.label>
+  <!-- EN: blade -->
+  <RI_Weapon_DESword.tools.blade-1.label>梭刺</RI_Weapon_DESword.tools.blade-1.label>
+  
+  <!-- EN: Jumen axe【Second-rate】 -->
+  <RI_Weapon_JumenAxe.label>巨门斧【二品】</RI_Weapon_JumenAxe.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nAn axe of ancient god soldiers, forged from a large amount of metal, it is carved all over the grain. When holding the axe to stimulate the aura, the axe will emit waves of low chirping, affecting the area of people. -->
+  <RI_Weapon_JumenAxe.description>【二品】近战兵器\n\n一柄源自古代的神兵之斧，以大量的金属锻造而成，其上刻满了纹路。手持斧子的时候激发灵气，斧子会发出一阵阵低沉的鸣叫，影响范围内的人。</RI_Weapon_JumenAxe.description>
+  <!-- EN: 破阵斧鸣 -->
+  <RI_Weapon_JumenAxe.comps.CompEquippableAbilityReloadable.chargeNoun>破阵斧鸣</RI_Weapon_JumenAxe.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_JumenAxe.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_JumenAxe.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 斧刃 -->
+  <RI_Weapon_JumenAxe.tools.0.label>斧刃</RI_Weapon_JumenAxe.tools.0.label>
+  <!-- EN: 斧刃 -->
+  <RI_Weapon_JumenAxe.tools.1.label>斧刃</RI_Weapon_JumenAxe.tools.1.label>
+  
+  <!-- EN: Rat whisker sword【Second-rate】 -->
+  <RI_Weapon_RatWhiskerSword.label>鼠须剑【二品】</RI_Weapon_RatWhiskerSword.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA thin sword, because it is as small as a mouse's whiskers, so it is called a ratwhisker sword. -->
+  <RI_Weapon_RatWhiskerSword.description>【二品】近战兵器\n\n一柄细剑，因为形似老鼠的胡须一般小巧，所以被称为鼠须剑。</RI_Weapon_RatWhiskerSword.description>
+  <!-- EN: 势如破竹 -->
+  <RI_Weapon_RatWhiskerSword.comps.CompEquippableAbilityReloadable.chargeNoun>势如破竹</RI_Weapon_RatWhiskerSword.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_RatWhiskerSword.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_RatWhiskerSword.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 剑刃 -->
+  <RI_Weapon_RatWhiskerSword.tools.0.label>剑刃</RI_Weapon_RatWhiskerSword.tools.0.label>
+  <!-- EN: 剑尖 -->
+  <RI_Weapon_RatWhiskerSword.tools.1.label>剑尖</RI_Weapon_RatWhiskerSword.tools.1.label>
+  
+  <!-- EN: Thunder lord lance【Second-rate】 -->
+  <RI_Weapon_ThunderLordLance.label>雷王枪【二品】</RI_Weapon_ThunderLordLance.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA long, powerful lance that sent lightning bolts all over its body. The weapon is said to have been as powerful as the First-rate weapon, but since it became too unstable, it has been modified to be less powerful and more controllable. -->
+  <RI_Weapon_ThunderLordLance.description>【二品】近战兵器\n\n一柄威力强大的长枪，周身释放出道道闪电。这把武器据说曾是可以比肩一品的强大兵器，但之后由于过于不稳定，被经过改造，减小了威力，也更好控制了。</RI_Weapon_ThunderLordLance.description>
+  <!-- EN: 卿云迅雷 -->
+  <RI_Weapon_ThunderLordLance.comps.CompEquippableAbilityReloadable.chargeNoun>卿云迅雷</RI_Weapon_ThunderLordLance.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_ThunderLordLance.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_ThunderLordLance.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 枪头 -->
+  <RI_Weapon_ThunderLordLance.tools.0.label>枪头</RI_Weapon_ThunderLordLance.tools.0.label>
+  <!-- EN: 枪杆 -->
+  <RI_Weapon_ThunderLordLance.tools.1.label>枪杆</RI_Weapon_ThunderLordLance.tools.1.label>
+  
+  <!-- EN: Wind demon blade【Second-rate】 -->
+  <RI_Weapons_WindDemonBlade.label>风魔刀【二品】</RI_Weapons_WindDemonBlade.label>
+  <!-- EN: 【Second-rate】Melee weapon\n\nA big blade to unleash the wind. Although it is made of metal, the veins on it are like blood vessels and tendons, and they throb faintly when waved. -->
+  <RI_Weapons_WindDemonBlade.description>【二品】近战兵器\n\n一柄可以释放狂风的大刀。虽然是金属打造，但其上的纹路仿佛血管和肌腱一般，在挥动时隐隐跳动着。</RI_Weapons_WindDemonBlade.description>
+  <!-- EN: 地煞狂风 -->
+  <RI_Weapons_WindDemonBlade.comps.CompEquippableAbilityReloadable.chargeNoun>地煞狂风</RI_Weapons_WindDemonBlade.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapons_WindDemonBlade.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapons_WindDemonBlade.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 刀刃 -->
+  <RI_Weapons_WindDemonBlade.tools.0.label>刀刃</RI_Weapons_WindDemonBlade.tools.0.label>
+  <!-- EN: 刀背 -->
+  <RI_Weapons_WindDemonBlade.tools.1.label>刀背</RI_Weapons_WindDemonBlade.tools.1.label>
+  
+</LanguageData>

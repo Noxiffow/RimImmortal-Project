@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Initial approach book-Medicine -->
+  <RI_BookA.label>药诀法门书《灵枢百病论》</RI_BookA.label>
+  <!-- EN: An ancient book made of Qi condensation, the title of which is "Treatise on Febrile diseases".\n\nElixirs Initial approach is not the main medicine, only involves some ancient means of treatment, but the root cause is also inseparable from medicine. The method of refining medicine is the intangible true fire, the heart is the fire storage, the heart has gas, the body into a furnace, through the true fire to strengthen the perception ability, so as to extract the nutrition of medicinal materials, the top pharmacist is able to use the true fire refining reiki, remove Bad part, so as to achieve similar rejuvenation, resurrection of the dead and other mysterious methods. \n\nThis book is by the late Eastern Han Dynasty medical sage Zhang Zhongjing, a collection of his life to learn a book, which contains a large number of diseases detailed explanation and prescription. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach! -->
+  <RI_BookA.description>一本由灵气凝聚而成的古书，书名写着《灵枢百病论》。\n\n药诀法门专门研究如何将灵气入药，并以各种手段辅助治疗。药诀法门还能将自身肉体变为丹炉，心是火藏，心中有气，通过真火的加持，令灵气带有各种特殊的药力。顶级医师更是能以灵气还原肉体，从而实现类似返老还童等奥妙之法。\n\n注意：一旦完全钻研完一本法门书，修炼者将与这条法门绑定，无法再学习其他法门！</RI_BookA.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Elixirs Initial approach as his cultivation direction! -->
+  <RI_BookA.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}将药诀法门作为了自己的修炼方向！</RI_BookA.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookA.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookA.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Luminous bomb -->
+  <RI_BookAbility_BombBullet.label>通用功法书《白焰雷》</RI_BookAbility_BombBullet.label>
+  <!-- EN: A book made up of Qi, titled "Luminous bomb". \n\nThis skill is based on the inner Dan exercises "Qi bullet" and "Cyclone landmine", and is used as the main means of attack by most Free cultivators. Creates an unstable airbomb in your hand, shoots it out, lands and causes a small explosion with considerable force. -->
+  <RI_BookAbility_BombBullet.description>一卷由灵气凝聚而成的读物，书名写着《白焰雷》。\n\n此功法基于内丹功法“气弹”和“气旋雷”改进而来，被大多数散修作为主要的攻击手段。在手中制造出一颗不稳定的气弹，然后射出，落地后引发小型爆炸，威力可观。</RI_BookAbility_BombBullet.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Luminous bomb"! -->
+  <RI_BookAbility_BombBullet.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了白焰雷！</RI_BookAbility_BombBullet.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_BombBullet.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_BombBullet.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Crystal production -->
+  <RI_BookAbility_CrystalProduction.label>通用功法书《竭气聚石》</RI_BookAbility_CrystalProduction.label>
+  <!-- EN: A book made up of Qi, titled "Crystal production". -->
+  <RI_BookAbility_CrystalProduction.description>一卷由灵气凝聚而成的读物，书名写着《竭气聚石》。</RI_BookAbility_CrystalProduction.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Crystal production"! -->
+  <RI_BookAbility_CrystalProduction.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了竭气聚石！</RI_BookAbility_CrystalProduction.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_CrystalProduction.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_CrystalProduction.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Invisible -->
+  <RI_BookAbility_Invisible.label>通用功法书《隐形术》</RI_BookAbility_Invisible.label>
+  <!-- EN: A book made up of Qi, titled "Invisible".\n\nThis skill is a technique suitable for assassins that creates a special Qi shield around the body. The shield is defenseless and refracts light to achieve an almost invisible effect, especially in the dark. -->
+  <RI_BookAbility_Invisible.description>一卷由灵气凝聚而成的读物，书名写着《隐形术》。\n\n隐形术是一种适合刺客的功法，可以在人体周身制造出一层特殊的灵气护盾。护盾没有防御力，可以折射光线，以达到几乎隐形的效果，在黑夜中效果更佳。</RI_BookAbility_Invisible.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Invisible"! -->
+  <RI_BookAbility_Invisible.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了隐形术！</RI_BookAbility_Invisible.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_Invisible.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_Invisible.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Qi lantern -->
+  <RI_BookAbility_QiLantern.label>通用功法书《灵光》</RI_BookAbility_QiLantern.label>
+  <!-- EN: A book made up of Qi, titled "Qi lantern". -->
+  <RI_BookAbility_QiLantern.description>一卷由灵气凝聚而成的读物，书名写着《灵光》。</RI_BookAbility_QiLantern.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Qi lantern"! -->
+  <RI_BookAbility_QiLantern.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了灵光！</RI_BookAbility_QiLantern.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_QiLantern.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_QiLantern.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Wind flying -->
+  <RI_BookAbility_QuickJumpWithNosight.label>通用功法书《御风术》</RI_BookAbility_QuickJumpWithNosight.label>
+  <!-- EN: A book made up of Qi, titled "Wind flying".\n\nThis skill can make the practitioner spray Qi throughout the body, disturb the air flow, and achieve short distance flight. Most cultivators are quite fond of this exercise, so the quantity is quite large and the price is not high. Advanced practitioners can use Qi quite skillfully, soaring and flipping in the air, while lower practitioners are more likely to use Qi to glide. In any case, the feeling of flying is always exhilarating. -->
+  <RI_BookAbility_QuickJumpWithNosight.description>一卷由灵气凝聚而成的读物，书名写着《御风术》。\n\n此功法可以令修炼者在周身喷出灵气，扰动气流，实现短距离飞行。大多数修炼者都相当喜欢这种功法，所以数量颇多，价格也不高。高阶修炼者可以相当娴熟地运用灵气，在空中腾飞翻转，而低阶修炼者更像是利用灵气滑翔。不论如何，飞行的感觉总是令人心旷神怡。</RI_BookAbility_QuickJumpWithNosight.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Wind flying"! -->
+  <RI_BookAbility_QuickJumpWithNosight.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了御风术！</RI_BookAbility_QuickJumpWithNosight.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_QuickJumpWithNosight.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_QuickJumpWithNosight.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Triple slash -->
+  <RI_BookAbility_Slash.label>通用功法书《三段斩》</RI_BookAbility_Slash.label>
+  <!-- EN: A book made up of Qi, titled "Triple slash".\n\nThis skill is based on the improvement of the boxing technique of the body, condensing the Qi around the arm, turning it into a sharp blade, swinging almost three simultaneous strokes in an instant, which is unpredictable. This technique is often taught by cultivators who prefer melee combat, especially those who are no longer satisfied with a variety of martial arts and thus focus on training the physical body. -->
+  <RI_BookAbility_Slash.description>一卷由灵气凝聚而成的读物，书名写着《三段斩》。\n\n此功法基于炼体的拳术改进而来，在手臂周围凝聚灵气，变为锋利的刀刃，在一瞬间挥出几乎是同时的三次斩击，变化莫测。此功法经常被喜好近战的修炼者所学，特别是已经不满足于百般武艺，从而专注于锻炼肉身的武者。</RI_BookAbility_Slash.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Triple slash"! -->
+  <RI_BookAbility_Slash.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了三段斩！</RI_BookAbility_Slash.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_Slash.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_Slash.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Spirit revelation -->
+  <RI_BookAbility_SpiritRevelation.label>通用功法书《神魂识》</RI_BookAbility_SpiritRevelation.label>
+  <!-- EN: A book made up of Qi, titled "Spirit revelation". -->
+  <RI_BookAbility_SpiritRevelation.description>一卷由灵气凝聚而成的读物，书名写着《神魂识》。</RI_BookAbility_SpiritRevelation.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Spirit revelation"! -->
+  <RI_BookAbility_SpiritRevelation.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了神魂识！</RI_BookAbility_SpiritRevelation.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_SpiritRevelation.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_SpiritRevelation.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Long range flying -->
+  <RI_BookAbility_Transport.label>通用功法书《百里神行》</RI_BookAbility_Transport.label>
+  <!-- EN: A book made up of Qi, titled "Long range flying". \n\nThis skill can make the cultivator pneumatize the whole body Qi, achieve ultra-high-speed low-altitude flight, across the mountains and oceans. \n\nIt is said that this exercise was invented by the Sun general of a certain country. -->
+  <RI_BookAbility_Transport.description>一卷由灵气凝聚而成的读物，书名写着《百里神行》。\n\n此功法可以令修炼者气化周身灵气，实现超高速低空飞行，跨越山海。\n\n据说，这是某个国家的太阳将军发明的功法。</RI_BookAbility_Transport.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_Transport.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了百里神行！</RI_BookAbility_Transport.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_Transport.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_Transport.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Initial approach book-Internal pellet -->
+  <RI_BookB.label>内丹法门书《性命真经》</RI_BookB.label>
+  <!-- EN: An ancient book made of Qi condensation, the title of the book written "Internal pellet Scriptures" \n\nThe Internal pellet initial approach is the ancestor of all initial approach, and countless exercises and Qi skills have evolved from the Internal pellet. Qi circulates in the body along a fixed path, so that the body gradually adapts and learns to apply, and the earliest cultivation method was born. Between one breath and one breath, Yin and Yang continue. Then evolved the Zhou Tian operation, the guidance of the spit. The inward and outward Qi is the small ZhouTian, and the big ZhouTian can communicate heaven and earth, heaven and man exchange, borrow the force of nature, and there are endless changes. \n\nThis book is written by Jiran, a strategist in the ChunQiu Period, which contains a variety of knowledge and philosophy from all over the world, and is one of the four sacred texts of Taoism. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach! -->
+  <RI_BookB.description>一本由灵气凝聚而成的古书，书名写着《性命真经》。\n\n内丹法门为所有法门之祖，无数功法神通都由内丹演变而来。灵气在体内沿着经脉循环往复，令身体逐渐适应，就诞生了最早的修炼法。一呼一吸之间，阴阳接续，之后演变出了周天运转，吐纳导引。灵气的内敛与外放乃是小周天，而大周天，则可以沟通天地。以我之灵气，合天地之造化。\n\n此书为内丹祖师——天云真人所撰写。\n\n注意：一旦彻底读完一本法门书，修炼者将与这条法门绑定，无法再学习其他法门！</RI_BookB.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Internal pellet Initial approach as his cultivation direction! -->
+  <RI_BookB.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}将内丹法门作为了自己的修炼方向！</RI_BookB.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookB.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookB.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Initial approach book-Physical -->
+  <RI_BookC.label>炼体法门书《炼体录》</RI_BookC.label>
+  <!-- EN: An ancient book made of Qi condensation, the title of the book is "Cultivation of the KongFu skills."\n\nPhysical Initial approach is one of the oldest Initial approach, through boxing and kung fu, physical exercise, while strengthening the whole body's meridians and even the organ with Qi, turning itself into a sharp weapon that is indestructible. Entry needs to be cut hair for marrow, reborn, deep also have to open the meridian, five gas Chaoyuan, the whole body Qi operation freely, Cultivators do not hold the sword, can also break out a strong lethality. \n\nThis book is a martial arts book written by Cheng Zongyou, a famous martial artist in the late Ming Dynasty, which contains a large number of martial arts, cudgels, spears and knives. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach! -->
+  <RI_BookC.description>一本由灵气凝聚而成的古书，书名写着《炼体录》。\n\n炼体法门是最古老的法门之一，通过拳脚功夫，肉体锻炼，同时以灵气强化全身经脉乃至五脏六腑，将自身化为一尊锋利兵器。入门需得伐毛换髓，脱胎换骨，深入还得打通经脉，五气朝元，全身灵气运转自如，不持兵刃，也能爆发出极强的杀伤力。\n\n注意：一旦完全钻研完一本法门书，修炼者将与这条法门绑定，无法再学习其他法门！</RI_BookC.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Physical Initial approach as his cultivation direction! -->
+  <RI_BookC.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}将炼体法门作为了自己的修炼方向！</RI_BookC.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookC.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookC.comps.CompBookStudiable.completedLetterTitle>
+  
+</LanguageData>

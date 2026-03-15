@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Liquid jade -->
+  <RI_Resource_LiquidJade.label>柔玉</RI_Resource_LiquidJade.label>
+  <!-- EN: Liquid jade is a wonderful mineral that absorbs the spirit of heaven and earth. This non-Newtonian fluid, a mysterious substance that senses and absorbs Qi, can only be found in small amounts in underground rock formations near water flows. When the surface is struck hard, the mineral falls apart, but then slowly softens, like crystal clear, smooth tar. Because of its valuable properties and difficult to store form, this mineral is almost impossible to find on the market. -->
+  <RI_Resource_LiquidJade.description>柔玉是一种能吸收天地灵气的奇妙矿物。这种状态形似非牛顿流体的矿物是一种能够感应并吸收灵气的神奇物质，只能在地下岩层中靠近水流的地方少量被挖掘到。当用力凿击表面的时候，这种矿物会四分五裂，但之后又会慢慢软化，如同晶莹剔透又滑腻的焦油一般。因为其珍贵的特性和难以储存的形态，这种矿物在市场上几乎难以见到。</RI_Resource_LiquidJade.description>
+  
+  <!-- EN: oracle fragment -->
+  <RI_Resource_OracleFragment.label>仙人手谕碎片</RI_Resource_OracleFragment.label>
+  <!-- EN: A fragment of an Immortal oracle, made of jade-like material. To decipher the information within, the fragment must be reassembled on an altar.\n\nThis rare material is possessed by only a few cultivators. Whenever news of a fragment appears, it always causes a stir in the cultivation world. -->
+  <RI_Resource_OracleFragment.description>一枚仙人手谕残片，玉石质地。要想了解其中的信息，必须在供案上将碎片拼凑完整。\n\n这种稀少的材料，只有少数修炼者拥有。每当有碎片的消息出现，必定会引起修仙界的一次轰动。</RI_Resource_OracleFragment.description>
+  
+  <!-- EN: QingMing marrow -->
+  <RI_Resource_QingMingMarrow.label>青冥髓</RI_Resource_QingMingMarrow.label>
+  <!-- EN: The heart wood of the QingMing tree, almost jade tree pith, full of Qi, can be used to make QingMing jade wine. -->
+  <RI_Resource_QingMingMarrow.description>青冥树的心材，已经几乎玉化的树髓，饱含灵气，可以用于制作青玉仙露。</RI_Resource_QingMingMarrow.description>
+  
+  <!-- EN: Spirit fire -->
+  <RI_Resource_SpiritFire.label>丹魄真火</RI_Resource_SpiritFire.label>
+  <!-- EN: The spirit fire, also known as the Primordial Fire.\n\nMost cultivators have Yuanyang in their bodies, but only the cultivators of the Elixir method pay attention to the cultivation of Yuanyang.Once the realm is reached, it will be able to turn the Qi into a furnace, and the Yuanyang of its own will be led out of the body to form the spirit fire for the quenching of medicinal materials.This fire is not very hot, but it is not very stable, and if an external force breaks the enclose Qi shell, it will cause an explosion. -->
+  <RI_Resource_SpiritFire.description>丹魄真火，也被称为先天之火。\n\n修炼者大多体内拥有元阳，但只有药诀法门的修炼者特别注重元阳的修炼。一旦到达元婴境界，将可以把灵气化为炉，将自身的元阳引出体外形成丹魄真火，用于淬炼药材等。此火温度较低，但不太稳定，一旦外力打破包裹的灵气壳，就会导致爆炸。</RI_Resource_SpiritFire.description>
+  
+  <!-- EN: Spiritual crystal -->
+  <RI_Resource_SpiritualCrystal.label>灵石</RI_Resource_SpiritualCrystal.label>
+  <!-- EN: A translucent stone solidified with Qi and colored. Not very hard, but with a plastic-like flexibility, and completely fire-resistant. Cultivators can produce spiritual crystals from within themselves, and because of their diverse functions and stable nature, they are often used as currency among cultivators. After a cultivator dies, the parts of his body filled with spirit will slowly gather into spiritual crystals because of the surrounding pressure, which is why later generations can dig some spiritual crystal veins from the ground. -->
+  <RI_Resource_SpiritualCrystal.description>一颗灵气固化而成的，带有色泽的半透明石头。硬度不高，但带有一种塑料般的柔韧，并且完全耐火。修炼者可以从自身体内产出灵石，而因为其多样的功能和稳定的性质，在修炼者之间经常被作为货币使用。修炼者死后，其身体灵气充盈的部分会因为周遭的压力，缓慢聚拢成灵石，这也是后人可以从地下挖掘到一些灵石矿脉的原因。</RI_Resource_SpiritualCrystal.description>
+  
+  <!-- EN: Primordial spirit -->
+  <RI_Things_GS.label>元神</RI_Things_GS.label>
+  <!-- EN: A translucent ball of light, it seems to emit thousands of light and attract light at the same time. This orb stores all the memories of a cultivator and enough Qi, and when the cultivator dies, the Primordial spirit will activate, transform the Qi into the body, and create another person exactly like the cultivator to achieve resurrection. -->
+  <RI_Things_GS.description>一颗半透明的光球，仿佛在放出万千光芒的同时又在吸引光线。这颗圆球内储存着一个修炼者的一切记忆和足够的灵气，当修炼者死亡后，元神将会启动，将灵气转化成肉体，再造一个和修炼者一模一样的人，实现复活。</RI_Things_GS.description>
+  
+  <!-- EN: QingMing tree seed -->
+  <RI_Tree_QingMingSeed.label>青冥树种</RI_Tree_QingMingSeed.label>
+  <!-- EN: The seed can be used to grow the QingMing tree. It is said that this seed is a strange seed developed by an ancient faction to give ordinary people the opportunity to cultivate. -->
+  <RI_Tree_QingMingSeed.description>青冥树的种子，可以用来种植青冥树。据说这种种子是一支古老的门派研发出来，用来让普通人有机会修炼的一种奇异种子。</RI_Tree_QingMingSeed.description>
+  
+</LanguageData>

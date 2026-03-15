@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>RI_CurseCureBook_Description</defName>
+    <include>
+      <li>ArtDescriptionUtility_Global</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- Roots -->
+        <li>desc-&gt;这本[writingQualityAdjective]的[bookType][follows]，由一位[psycaster][heOrShe][storyStruggles]后编纂而成。[writingQualitySentence]。[maybe_date]。\n\n研读完成后，阅读者可掌握净除诅咒的法门。此书为一次性传承之物，读毕即毁。</li>
+        <!-- Theme -->
+        <li>follows-&gt;系统阐述了祓秽解咒之理</li>
+        <li>follows-&gt;完整记录了破除恶咒的仪轨与要诀</li>
+        <li>follows-&gt;围绕“镇、净、驱、封”四法展开</li>
+        <li>follows-&gt;深入分析了诅咒侵蚀与反制路径</li>
+        <li>follows-&gt;以严谨条目梳理净化流程与禁忌</li>
+        <li>follows-&gt;总结了灾厄环境下的自护与解咒步骤</li>
+        <li>heOrShe-&gt;他</li>
+        <li>heOrShe-&gt;她</li>
+        <li>storyStruggles-&gt;长期巡历灾厄之地</li>
+        <li>storyStruggles-&gt;在多次实战净化中反复验证术式</li>
+        <li>storyStruggles-&gt;遍访古籍后重构了解咒体系</li>
+        <li>storyStruggles-&gt;以自身经验校订了关键仪轨</li>
+        <li>storyStruggles-&gt;结合医理与灵能完成法门归纳</li>
+        <li>psycaster-&gt;道门修士</li>
+        <li>psycaster-&gt;祓秽学者</li>
+        <li>psycaster-&gt;解咒师</li>
+        <li>psycaster-&gt;远行驱厄者</li>
+        <li>psycaster-&gt;镇祟导师</li>
+        <li>psycaster-&gt;净化术宗师</li>
+        <!-- Writing quality -->
+        <li>writingQualityAdjective(quality==6)-&gt;体例严整、论证精密</li>
+        <li>writingQualityAdjective(quality==5)-&gt;见解成熟、条理分明</li>
+        <li>writingQualityAdjective(quality==4)-&gt;内容扎实、表达清楚</li>
+        <li>writingQualityAdjective(quality==3)-&gt;结构完整、叙述平实</li>
+        <li>writingQualityAdjective(quality==2)-&gt;要点零散、勉强可读</li>
+        <li>writingQualityAdjective(quality==1)-&gt;编写仓促、错漏较多</li>
+        <li>writingQualityAdjective(quality==0)-&gt;晦涩混乱、近乎不可用</li>
+        <li>writingQualitySentence(quality[greater_than]4)-&gt;这本书[excellentDesc][excellentExtra]</li>
+        <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)-&gt;这本书[decentDesc][decentExtra]</li>
+        <li>writingQualitySentence(quality[less_than]2)-&gt;这本书[awfulDesc][awfulExtra]</li>
+        <li>excellentDesc-&gt;将复杂术式拆解为可执行步骤</li>
+        <li>excellentDesc-&gt;对诅咒传播机制给出清晰解释</li>
+        <li>excellentDesc-&gt;在理论与实操之间取得了良好平衡</li>
+        <li>excellentDesc-&gt;引用案例准确，复现性极高</li>
+        <li>excellentExtra-&gt;几乎可直接作为净化行动手册使用</li>
+        <li>excellentExtra-&gt;对高危个案亦提供了可靠应对方案</li>
+        <li>excellentExtra-&gt;其流程设计显著提升了解咒成功率</li>
+        <li>decentDesc-&gt;提供了可行的基础净化框架</li>
+        <li>decentDesc-&gt;涵盖了常见诅咒的识别与处置</li>
+        <li>decentDesc-&gt;对初学者具有明确指引价值</li>
+        <li>decentExtra-&gt;但在极端情境下仍缺乏深入细节</li>
+        <li>decentExtra-&gt;部分步骤依赖读者自行判断</li>
+        <li>decentExtra-&gt;对复合型诅咒的处理略显保守</li>
+        <li>awfulDesc-&gt;术语混用，逻辑链条多处断裂</li>
+        <li>awfulDesc-&gt;关键步骤语焉不详，难以执行</li>
+        <li>awfulDesc-&gt;案例选择随意，缺乏验证依据</li>
+        <li>awfulExtra-&gt;贸然照做可能导致净化失败</li>
+        <li>awfulExtra-&gt;未能覆盖诅咒处置的核心原则</li>
+        <li>awfulExtra-&gt;其中部分建议存在明显风险</li>
+        <!-- Date -->
+        <li>maybe_date-&gt;</li>
+        <li>maybe_date-&gt;此书初次抄录于[date_form]。</li>
+        <li>maybe_date-&gt;其成书时间可追溯至[date_form]。</li>
+        <li>maybe_date-&gt;书中未记载明确编纂年代。</li>
+        <li>date_form-&gt;近日</li>
+        <li>date_form-&gt;数十年前</li>
+        <li>date_form-&gt;在[date]年</li>
+        <li>date_form-&gt;在[date_season]季节</li>
+        <!-- Misc -->
+        <li>bookType(p=4)-&gt;解咒秘典</li>
+        <li>bookType(p=3)-&gt;祓秽手册</li>
+        <li>bookType(p=2)-&gt;净化术参考书</li>
+        <li>bookType-&gt;驱厄文录</li>
+        <li>bookType-&gt;镇祟术编</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

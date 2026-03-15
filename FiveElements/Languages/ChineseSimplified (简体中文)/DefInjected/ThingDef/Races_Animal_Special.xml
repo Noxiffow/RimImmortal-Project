@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: QingMing dryad -->
+  <RI_Animal_QingMingDryad.label>青冥树灵</RI_Animal_QingMingDryad.label>
+  <!-- EN: Verdant creatures are intelligent lifeforms created through Wood-Element Path Vitality Tech. Their lifespan depends on the amount of vitality they receive, and their strength lies in their ability to continuously grow and evolve.\n\nQingMing dryads are formed from Qingming Trees and possess the ability to absorb ambient Qi energy from the environment, periodically producing Spiritual Crystals. In addition, QingMing dryads come with a natural bio-shield, capable of protecting nearby cultivators from harm. -->
+  <RI_Animal_QingMingDryad.description>树灵是一种以木行生机之术创造出来的生物，带有一定的智力。树灵的生命长度取决于生机的多寡，而树灵的强大之处在于可以不断生长变强。\n\n青冥树灵是由青冥树转变而成的树灵，具有吸收天地灵气的力量，可以每隔一段时间产出灵石。同时青冥树灵自带一种生物护盾，可以保护修练者。</RI_Animal_QingMingDryad.description>
+  <!-- EN: left claw -->
+  <RI_Animal_QingMingDryad.tools.left_claw.label>左爪</RI_Animal_QingMingDryad.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_QingMingDryad.tools.left_claw.labelNoLocation>爪</RI_Animal_QingMingDryad.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_Animal_QingMingDryad.tools.right_claw.label>右爪</RI_Animal_QingMingDryad.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_QingMingDryad.tools.right_claw.labelNoLocation>爪</RI_Animal_QingMingDryad.tools.right_claw.labelNoLocation>
+  <!-- EN: head -->
+  <RI_Animal_QingMingDryad.tools.head.label>头</RI_Animal_QingMingDryad.tools.head.label>
+  
+  <!-- EN: Verdant guardian -->
+  <RI_Animal_VerdantGuard.label>森林护卫</RI_Animal_VerdantGuard.label>
+  <!-- EN: Verdant creatures are intelligent lifeforms created through Wood-Element Path Vitality Tech. Their lifespan depends on the amount of vitality they receive, and their strength lies in their ability to continuously grow and evolve.\n\nVerdant guardian is the most basic form of Verdant creature, typically transformed from deciduous trees or pines. -->
+  <RI_Animal_VerdantGuard.description>树灵是一种以木行生机之术创造出来的生物，带有一定的智力。树灵的生命长度取决于生机的多寡，而树灵的强大之处在于可以不断生长变强。\n\n森林护卫是一种最基础的树灵，以各种落叶乔木，松木转变而来。</RI_Animal_VerdantGuard.description>
+  <!-- EN: left claw -->
+  <RI_Animal_VerdantGuard.tools.left_claw.label>左爪</RI_Animal_VerdantGuard.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_VerdantGuard.tools.left_claw.labelNoLocation>爪</RI_Animal_VerdantGuard.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_Animal_VerdantGuard.tools.right_claw.label>右爪</RI_Animal_VerdantGuard.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_VerdantGuard.tools.right_claw.labelNoLocation>爪</RI_Animal_VerdantGuard.tools.right_claw.labelNoLocation>
+  <!-- EN: head -->
+  <RI_Animal_VerdantGuard.tools.head.label>头</RI_Animal_VerdantGuard.tools.head.label>
+  
+</LanguageData>

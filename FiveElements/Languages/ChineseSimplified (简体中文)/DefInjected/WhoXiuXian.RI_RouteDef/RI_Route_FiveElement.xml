@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Earth -->
+  <RI_FiveElements_Earth.label>坤土</RI_FiveElements_Earth.label>
+  <!-- EN: ... -->
+  <RI_FiveElements_Earth.description>TODO</RI_FiveElements_Earth.description>
+  
+  <!-- EN: Fire -->
+  <RI_FiveElements_Fire.label>离火</RI_FiveElements_Fire.label>
+  <!-- EN: ... -->
+  <RI_FiveElements_Fire.description>TODO</RI_FiveElements_Fire.description>
+  
+  <!-- EN: Wood -->
+  <RI_FiveElements_Wood.label>巽木</RI_FiveElements_Wood.label>
+  <!-- EN: ... -->
+  <RI_FiveElements_Wood.description>TODO</RI_FiveElements_Wood.description>
+  
+</LanguageData>

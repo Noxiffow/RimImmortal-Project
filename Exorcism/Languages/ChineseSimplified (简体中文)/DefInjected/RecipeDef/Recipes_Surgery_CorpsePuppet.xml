@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 修复冥尸肢体 -->
+  <RI_RepairCorpsePuppetBodyPart.label>修复冥尸肢体</RI_RepairCorpsePuppetBodyPart.label>
+  <!-- EN: Repair all the injury on corpse puppet. -->
+  <RI_RepairCorpsePuppetBodyPart.description>用冥尸缝合包来修复冥尸的肢体。</RI_RepairCorpsePuppetBodyPart.description>
+  <!-- EN: Repairing the puppet -->
+  <RI_RepairCorpsePuppetBodyPart.jobString>正在修复冥尸</RI_RepairCorpsePuppetBodyPart.jobString>
+  
+</LanguageData>

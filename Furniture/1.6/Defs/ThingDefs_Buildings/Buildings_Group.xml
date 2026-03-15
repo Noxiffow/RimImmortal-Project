@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--家具group-->
+	<DesignationCategoryDef>
+		<defName>RI_RimImmortals_Living_Furniture</defName>
+		<label>RI Furniture</label>
+		<description>A collection of furniture and cultivation facilities from RimImmortal mod.</description>
+		<order>350</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+</Defs>

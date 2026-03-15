@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>RI_ShieldHediff_Test</defName>
+		<label>Test shield</label>
+		<description>Installed Explosive Reactive Armor</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--护盾comp-->
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<hitSound/>
+				<!--受击音效，默认为泰南的护盾腰带的受击音效-->
+				<hitFleck/>
+				<!--受击fleck，默认为泰南的护盾腰带的受击特效-->
+				<brokenSound/>
+				<!--破盾音效,默认不播放，泰南的护盾腰带碎盾音效是EnergyShield_Reset-->
+				<brokenFleck/>
+				<!--破盾fleck，默认不播放，泰南的护盾腰带碎盾特效是ExplosionFlash-->
+				<energyMax>300</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>1</energyLoosePerDamage>
+				<!--每点伤害损失多少盾容-->
+				<bubbleMatPath/>
+				<!--护盾泡泡的材质路径，默认为泰南的护盾腰带的泡泡-->
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>护盾</gizmoLabel>
+				<!--gizmo的标签-->
+				<gizmoTip>护盾容量</gizmoTip>
+				<!--gizmo的tip描述-->
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<!--着色器类型，默认为Transparent-->
+				<drawBubbleSize>2.0</drawBubbleSize>
+				<!--绘制泡泡大小-->
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转，默认开-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--====================散修们刷出来的护盾（前置）====================-->
+
+	<!--普通刷出来的修炼者的自带护盾-->
+	<HediffDef Name="RI_FreeCultivatorShield_Hediff_Base" Abstract="True">
+		<description>A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--一段时间后消失-->
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>6000~12000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--红色-->
+	<HediffDef ParentName="RI_FreeCultivatorShield_Hediff_Base">
+		<defName>RI_ShieldHediff_Red</defName>
+		<label>Qi shield</label>
+		<comps>
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Red</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>100</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--绿色-->
+	<HediffDef ParentName="RI_FreeCultivatorShield_Hediff_Base">
+		<defName>RI_ShieldHediff_Green</defName>
+		<label>Qi shield</label>
+		<comps>
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Green</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>100</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--蓝色-->
+	<HediffDef ParentName="RI_FreeCultivatorShield_Hediff_Base">
+		<defName>RI_ShieldHediff_Blue</defName>
+		<label>Qi shield</label>
+		<comps>
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Blue</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>100</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--橙色-->
+	<HediffDef ParentName="RI_FreeCultivatorShield_Hediff_Base">
+		<defName>RI_ShieldHediff_Orange</defName>
+		<label>Qi shield</label>
+		<comps>
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Orange</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>100</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--紫色-->
+	<HediffDef ParentName="RI_FreeCultivatorShield_Hediff_Base">
+		<defName>RI_ShieldHediff_Purple</defName>
+		<label>Qi shield</label>
+		<comps>
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Purple</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>100</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--====================玩家的护盾====================-->
+
+	<HediffDef>
+		<defName>RI_ShieldHediff_PlayerShield</defName>
+		<label>Qi shield</label>
+		<description>A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--一段时间后消失-->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--护盾comp-->
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_Blue</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>200</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--====================内丹护盾====================-->
+
+	<HediffDef>
+		<defName>RI_ShieldHediff_InternalShield</defName>
+		<label>Protective energy shield</label>
+		<description>Drive Qi and surround yourself with a highly defensive air shield.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--一段时间后消失-->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--护盾comp-->
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Effects/Shield/RI_Effect_Shield_InternalShield</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>300</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>灵气护盾</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

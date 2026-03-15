@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spiritual crystal vein detector -->
+  <RI_Building_CrystalVeinDetector.label>灵脉透镜</RI_Building_CrystalVeinDetector.label>
+  <!-- EN: Spiritual crystal vein detector is a kind of gear machine used to detect the underground spiritual crystal vein, and the inside is very precise. The lens made of liquid jade is turned by the coordination of gears, which acts like a compass to reveal the orientation of the spiritual crystal vein. -->
+  <RI_Building_CrystalVeinDetector.description>灵脉透镜是一种用来探测地下灵脉的齿轮机械，内部十分精密。通过齿轮的配合来转动用柔玉制作的透镜，发挥类似罗盘的效果，来揭示灵脉的方位。</RI_Building_CrystalVeinDetector.description>
+  
+</LanguageData>

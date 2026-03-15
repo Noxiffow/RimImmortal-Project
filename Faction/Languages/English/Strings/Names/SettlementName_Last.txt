@@ -1,0 +1,15 @@
+Manor
+Hall
+Temple
+Block
+Courtyard
+Garden
+Court
+
+Immortal Manor
+Mountain Villa
+Spirit Manor
+Daoist Temple
+Immortal Sect
+Daoist Monastery
+Cave Dwelling

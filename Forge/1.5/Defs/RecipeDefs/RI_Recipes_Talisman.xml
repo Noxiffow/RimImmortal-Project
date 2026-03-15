@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="RI_TalismanRecipeBase" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!--低阶法宝前置-->
+	<RecipeDef Name="RI_TierThird_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
+		<researchPrerequisite>RI_CharmResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<!--中阶法宝前置-->
+	<RecipeDef Name="RI_TierSecond_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
+		<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+	</RecipeDef>
+
+	<!--高阶法宝前置-->
+	<RecipeDef Name="RI_TierFirst_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
+		<researchPrerequisite>RI_MasterOfSmithing</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--玉如意-->
+	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
+		<defName>Make_JadeRuyi</defName>
+		<label>make Jade Ruyi【Third-rate】</label>
+		<description>Make Jade Ruyi.</description>
+		<jobString>Making Jade Ruyi.</jobString>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_JadeRuyi>1</RI_Talisman_JadeRuyi>
+		</products>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+		</skillRequirements>
+		<displayPriority>9</displayPriority>
+	</RecipeDef>
+
+	<!--硬币吊坠-->
+	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
+		<defName>Make_CoinsPendant</defName>
+		<label>make Coin pendant【Third-rate】</label>
+		<description>make Coin pendant.</description>
+		<jobString>Making Coin pendant.</jobString>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_CoinsPendant>1</RI_Talisman_CoinsPendant>
+		</products>
+		<displayPriority>10</displayPriority>
+	</RecipeDef>
+
+	<!--象牙吊坠-->
+	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
+		<defName>Make_TuskPendant</defName>
+		<label>make Tusk pendant【Third-rate】</label>
+		<description>make Tusk pendant.</description>
+		<jobString>Making Tusk pendant.</jobString>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElephantTusk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>ElephantTusk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_TuskPendant>1</RI_Talisman_TuskPendant>
+		</products>
+		<displayPriority>11</displayPriority>
+	</RecipeDef>
+
+	<!--毒铃-->
+	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
+		<defName>Make_ToxicBell</defName>
+		<label>make Toxic bell【Third-rate】</label>
+		<description>make Toxic bell.</description>
+		<jobString>Making Toxic bell.</jobString>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_ToxicBell>1</RI_Talisman_ToxicBell>
+		</products>
+		<displayPriority>12</displayPriority>
+	</RecipeDef>
+
+	<!--令牌-->
+	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
+		<defName>Make_SandalwoodToken</defName>
+		<label>make Wooden token【Third-rate】</label>
+		<description>make Wooden token.</description>
+		<jobString>Making Wooden token.</jobString>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_SandalwoodToken>1</RI_Talisman_SandalwoodToken>
+		</products>
+		<displayPriority>13</displayPriority>
+	</RecipeDef>
+
+	<!--==================================二品==================================-->
+
+	<!--储物袋-->
+	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
+		<defName>Make_StorageBag</defName>
+		<label>make Storage bag【Second-rate】</label>
+		<description>make Storage bag.</description>
+		<jobString>Making Storage bag.</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Cloth</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_StorageBag>1</RI_Talisman_StorageBag>
+		</products>
+		<displayPriority>50</displayPriority>
+	</RecipeDef>
+
+	<!--聚石塔-->
+	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
+		<defName>Make_PolyStoneTower</defName>
+		<label>make Poly stone tower【Second-rate】</label>
+		<description>make Poly stone tower.</description>
+		<jobString>Making Poly stone tower.</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksMarble</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSlate</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>BlocksMarble</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_PolyStoneTower>1</RI_Talisman_PolyStoneTower>
+		</products>
+		<displayPriority>51</displayPriority>
+	</RecipeDef>
+
+	<!--风戒-->
+	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
+		<defName>Make_WindRing</defName>
+		<label>make Wind ring【Second-rate】</label>
+		<description>make Wind ring.</description>
+		<jobString>Making Wind ring.</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_WindRing>1</RI_Talisman_WindRing>
+		</products>
+		<displayPriority>52</displayPriority>
+	</RecipeDef>
+
+	<!--纳火珠-->
+	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
+		<defName>Make_Firefighter</defName>
+		<label>make Fire pearl【Second-rate】</label>
+		<description>make Fire pearl.</description>
+		<jobString>Making Fire pearl.</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_Firefighter>1</RI_Talisman_Firefighter>
+		</products>
+		<displayPriority>53</displayPriority>
+	</RecipeDef>
+
+	<!--青囊葫芦-->
+	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
+		<defName>Make_Greengourd</defName>
+		<label>make Medical gourd【Second-rate】</label>
+		<description>make Medical gourd.</description>
+		<jobString>Making Medical gourd.</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilverGinseng</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_LingZhi</li>
+				<li>RI_Resource_SnowLotus</li>
+				<li>RI_Resource_SilverGinseng</li>
+				<li>RI_Resource_TillandsiaDragonShoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_Greengourd>1</RI_Talisman_Greengourd>
+		</products>
+		<displayPriority>54</displayPriority>
+	</RecipeDef>
+
+	<!--==================================一品==================================-->
+
+	<!--紫金葫芦-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_PurpleGoldenGourd</defName>
+		<label>make Purple golden gourd【First-rate】</label>
+		<description>make Wind ring.</description>
+		<jobString>Making Wind ring.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>600</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Gold</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_PurpleGoldenGourd>1</RI_Talisman_PurpleGoldenGourd>
+		</products>
+		<displayPriority>60</displayPriority>
+	</RecipeDef>
+
+	<!--金钵-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_GoldenBowl</defName>
+		<label>make Golden bowl【First-rate】</label>
+		<description>make Golden bowl.</description>
+		<jobString>Making Golden bowl.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_GoldenBowl>1</RI_Talisman_GoldenBowl>
+		</products>
+		<displayPriority>61</displayPriority>
+	</RecipeDef>
+
+	<!--白玉瓶-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_WhiteJadeVase</defName>
+		<label>make White jade vase【First-rate】</label>
+		<description>make White jade vase.</description>
+		<jobString>Making White jade vase.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>500</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Jade</li>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_WhiteJadeVase>1</RI_Talisman_WhiteJadeVase>
+		</products>
+		<displayPriority>62</displayPriority>
+	</RecipeDef>
+
+	<!--玲珑塔-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_ThreeKingTower</defName>
+		<label>make Three king tower【First-rate】</label>
+		<description>make Three king tower.</description>
+		<jobString>Making Three king tower.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>500</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Plasteel</li>
+				<li>Gold</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_ThreeKingTower>1</RI_Talisman_ThreeKingTower>
+		</products>
+		<displayPriority>63</displayPriority>
+	</RecipeDef>
+
+	<!--乾坤袋-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_QiankunStorageBag</defName>
+		<label>make QianKun bag【First-rate】</label>
+		<description>make QianKun bag.</description>
+		<jobString>Making QianKun bag.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>300</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Hyperweave</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_QiankunStorageBag>1</RI_Talisman_QiankunStorageBag>
+		</products>
+		<displayPriority>64</displayPriority>
+	</RecipeDef>
+
+	<!--捆仙绳-->
+	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
+		<defName>Make_ImmortalBindingRope</defName>
+		<label>make Immortal-binding rope【First-rate】</label>
+		<description>make Immortal-binding rope.</description>
+		<jobString>Making Immortal-binding rope.</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Gold</li>
+				<li>Synthread</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Talisman_ImmortalBindingRope>1</RI_Talisman_ImmortalBindingRope>
+		</products>
+		<displayPriority>65</displayPriority>
+	</RecipeDef>
+
+</Defs>

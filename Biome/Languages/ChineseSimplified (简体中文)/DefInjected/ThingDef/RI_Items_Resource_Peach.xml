@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mist agate -->
+  <RI_Resource_MistAgate.label>白瑶</RI_Resource_MistAgate.label>
+  <!-- EN: Mist agate is a rare gemstone of pale cyan and white, often found in mountain streams. Its swirling patterns drift like slow-moving mist, giving it an otherworldly beauty. Harder than ordinary jade, Mist Agate is commonly fashioned into jewelry and ornamental pieces.\n\nThough difficult to obtain in the mortal world, cultivators can use geomantic methods to unearth large Mist Agate deposits, carving out massive raw stones for magnificent furnishings and decorative constructions. -->
+  <RI_Resource_MistAgate.description>白瑶为一种青白相间的珍贵玉石，多在溪流之中被发现，其纹理如云雾般缓缓流动，美丽异常。白瑶比普通玉石的硬度更高，通常被做成首饰或装饰。\n\n此物虽然凡间难寻，然而修炼者可凭堪舆之法，发掘出巨大的白瑶原石，用于打造华丽的家具，装饰。</RI_Resource_MistAgate.description>
+  
+  <!-- EN: mist agate block -->
+  <RI_Resource_MistAgateBrick.label>白瑶砖</RI_Resource_MistAgateBrick.label>
+  <!-- EN: Blocks cut from Mist Agate form excellent building materials—solid, elegant, and spiritually resonant. They can also be crafted into refined weapons and talisman tools of considerable quality. -->
+  <RI_Resource_MistAgateBrick.description>用白瑶切割而成的方正砖块，是一种上好的建筑原料，也可以打造不错的兵器法宝。</RI_Resource_MistAgateBrick.description>
+  <!-- EN: brick -->
+  <RI_Resource_MistAgateBrick.tools.brick.label>TODO</RI_Resource_MistAgateBrick.tools.brick.label>
+  
+</LanguageData>

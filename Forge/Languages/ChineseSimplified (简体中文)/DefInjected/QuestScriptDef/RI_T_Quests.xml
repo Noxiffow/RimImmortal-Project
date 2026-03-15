@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->You [discoveryDesc] an ancient cultivator ruins nearby. You can find some ancient relics in it, such relics often have ancient guardians.</li>
+    <li>discoveryDesc(discovered==false)->learned</li>
+    <li>discoveryDesc(discovered==true)->determined the location</li>
+  -->
+  <RI_OpportunitySite_AncientComplex_Talismaker.questDescriptionRules.rulesStrings>
+    <li>questDescription->你[discoveryDesc]了附近的一个遗迹，应该是一处古代修炼者的宗门遗址。\n\n这处遗迹中可能包含机遇和危险，我们应当做好准备再前往。</li>
+    <li>discoveryDesc(discovered==false)->发现</li>
+    <li>discoveryDesc(discovered==true)->确定位置</li>
+  </RI_OpportunitySite_AncientComplex_Talismaker.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] Ancient cultivator [complex]</li>
+    <li>questName->Ancient cultivator [complex]</li>
+    <li>complexAdj->Secret</li>
+    <li>complex->ruin</li>
+    <li>complex->ruins</li>
+    <li>complex->relic</li>
+  -->
+  <RI_OpportunitySite_AncientComplex_Talismaker.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj]古修[complex]</li>
+    <li>questName->古修[complex]</li>
+    <li>complexAdj->秘密</li>
+    <li>complex->墓地</li>
+    <li>complex->遗址</li>
+    <li>complex->遗迹</li>
+  </RI_OpportunitySite_AncientComplex_Talismaker.questNameRules.rulesStrings>
+  
+  <!-- EN:
+    <li>questDescription->You [discoveryDesc] is an ancient ruins.\n\nThere is a large and stable reserve of Reiki, which may contain unusual treasures, and unusual threats.</li>
+    <li>discoveryDesc(discovered==false)->learned</li>
+    <li>discoveryDesc(discovered==true)->determined the location</li>
+  -->
+  <RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom.questDescriptionRules.rulesStrings>
+    <li>questDescription->你[discoveryDesc]了附近的一个遗迹，应该是一处古代修炼者的宗门遗址。\n\n这里有着庞大而安定的灵气储备，里面可能有着非同寻常的宝物，和非同寻常的威胁！</li>
+    <li>discoveryDesc(discovered==false)->发现</li>
+    <li>discoveryDesc(discovered==true)->确定位置</li>
+  </RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(p=3)->[complexAdj] Ancient cultivator [complex]</li>
+    <li>questName->Ancient cultivator [complex]</li>
+    <li>complexAdj->Dangerous</li>
+    <li>complex->resting place</li>
+    <li>complex->resting ruins</li>
+    <li>complex->resting relic</li>
+  -->
+  <RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom.questNameRules.rulesStrings>
+    <li>questName(p=3)->[complexAdj]古修[complex]</li>
+    <li>questName->古修[complex]</li>
+    <li>complexAdj->危险的</li>
+    <li>complex->沉眠之地</li>
+    <li>complex->沉眠遗址</li>
+    <li>complex->遗址</li>
+    <li>complex->所在地</li>
+  </RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom.questNameRules.rulesStrings>
+  
+</LanguageData>

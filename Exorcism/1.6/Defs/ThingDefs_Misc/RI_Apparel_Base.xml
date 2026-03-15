@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+  <!--布帛菽粟的前置和核心的前置分开-->
+  <!--===================== 衣服 =====================-->
+  <!--服装前置——基础衣服前置，ApparelBase不用改了yyds-->
+	
+  <!--===================== 帽子 =====================-->
+  <!--帽子前置——基础帽子-->
+  <ThingDef Name="RI_Zombie_MakeableHat_Base" ParentName="ApparelBase" Abstract="True">
+    <tickerType>Normal</tickerType>
+    <uiIconScale>1</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <!--贴图-->
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!--储存-->
+    <thingCategories>
+      <li>RI_Category_NecroApparel</li>
+    </thingCategories>
+    <!--服装特性-->
+    <apparel>
+      <!--不知道干嘛的-->
+      <parentTagDef>ApparelHead</parentTagDef>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <!--制作清单-->
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <!--贸易tag-->
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+    <!--不让npc刷新-->
+    <generateAllowChance>0</generateAllowChance>
+    <generateCommonality>0.01</generateCommonality>
+  </ThingDef>
+	
+</Defs>

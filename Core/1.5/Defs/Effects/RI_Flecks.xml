@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CoolPawnShadow</defName>
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.54</solidTime>
+		<fadeOutTime>0.2</fadeOutTime>
+	</FleckDef>
+
+	<ThingDef ParentName="MoteBase">
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<defName>Mote_CoolPawnShadow</defName>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.54</solidTime>
+			<fadeOutTime>0.2</fadeOutTime>
+			<needsMaintenance>false</needsMaintenance>
+		</mote>
+		<graphicData>
+			<drawSize>1.1</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<color>(0, 0, 0, 0)</color>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CMC_MYDE_AF_Fleck_HeatGlowBlue_Intense</defName>
+		<graphicData>
+			<texPath>Things/Mote/LightningGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>FogOfWar</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>0.17</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>CMC_SparkFlash</defName>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<solidTime>0.02</solidTime>
+		<fadeOutTime>0.02</fadeOutTime>
+		<graphicData>
+			<texPath>Things/Mote/SparkFlash</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>CMC_SparkFlash_Blue</defName>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>0.17</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+		<graphicData>
+			<texPath>Things/Mote/LightningGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>CMC_SparkFlash_Blue_LongLasting</defName>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>1.27</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+		<graphicData>
+			<texPath>Things/Mote/LightningGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>CMC_GunTail_Blue</defName>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>2.10</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+		<graphicData>
+			<texPath>Things/Mote/LightningGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(0.16,2.1)</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CMC_GunTail_Fire</defName>
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(0.2,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.6</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CMC_FireGlow</defName>
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(0.3,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.6</fadeOutTime>
+		<growthRate>-0.1</growthRate>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CMC_FireGlowFast</defName>
+		<graphicData>
+			<texPath>Things/Mote/FireGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(0.3,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.3</fadeOutTime>
+		<growthRate>-0.7</growthRate>
+	</FleckDef>
+
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>CMC_NeutronBurst</defName>
+		<graphicData>
+			<texPath>Effects/PhysicalStrengthen/OneInchPunch</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(0.1,0.1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<growthRate>3</growthRate>
+	</FleckDef>
+
+</Defs>

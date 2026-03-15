@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corpse puppet -->
+  <RI_CorpseCreature_CorpsePuppet_Race.label>尸傀</RI_CorpseCreature_CorpsePuppet_Race.label>
+  <!-- EN: An corpse creature made from a human corpse. Easy to control, it rarely turns violent as long as a charm paper is properly affixed. Its intelligence is extremely low, limiting it to the simplest commands. Chemically treated skin provides moderate protection, giving it some advantage in combat. -->
+  <RI_CorpseCreature_CorpsePuppet_Race.description>以人的尸体为原料制作而成的尸傀，方便操控，只要贴上了符纸便几乎不会暴起伤人。它们智商很低，只能完成最基本的指令，经过药物处理的皮肤有一定防御力，这让它们在战斗方面有了一些优势。</RI_CorpseCreature_CorpsePuppet_Race.description>
+  <!-- EN: head -->
+  <RI_CorpseCreature_CorpsePuppet_Race.tools.head.label>头</RI_CorpseCreature_CorpsePuppet_Race.tools.head.label>
+  
+  <!-- EN: paper doll -->
+  <RI_CorpseCreature_PaperDoll_Race.label>纸人</RI_CorpseCreature_PaperDoll_Race.label>
+  <!-- EN: A humanoid figure made of paper and stuffed with straw, animated through dark rituals. Paper dolls can only perform simple cleaning tasks.\n\nThey are extremely vulnerable to fire. -->
+  <RI_CorpseCreature_PaperDoll_Race.description>用纸扎的人形，里面装了稻草，通过邪术赋予了其生命。纸人只能完成简单的清扫工作。\n\n它们非常怕火。</RI_CorpseCreature_PaperDoll_Race.description>
+  <!-- EN: head -->
+  <RI_CorpseCreature_PaperDoll_Race.tools.head.label>头</RI_CorpseCreature_PaperDoll_Race.tools.head.label>
+  
+  <!-- EN: patch man -->
+  <RI_CorpseCreature_PatchMan_Race.label>缝合尸</RI_CorpseCreature_PatchMan_Race.label>
+  <!-- EN: A grotesque creation stitched together from corpse fragments. Its body resembles a torn sack of rags, moving in unnatural, twisted motions while emitting mournful wails.\n\nThis creature is a loyal assistant. Though clumsy and inefficient, it can handle basic hauling and menial labor. -->
+  <RI_CorpseCreature_PatchMan_Race.description>缝合尸是一种面目可憎的造物，其外形如同一个破布口袋，以不合常理的姿势扭曲着挪动，发出哀嚎。\n\n这种邪术造物是忠诚的助手，虽然不算好用，但起码可以做一些搬运杂活。</RI_CorpseCreature_PatchMan_Race.description>
+  <!-- EN: head -->
+  <RI_CorpseCreature_PatchMan_Race.tools.head.label>头</RI_CorpseCreature_PatchMan_Race.tools.head.label>
+  
+  <!-- EN: zombie horse -->
+  <RI_CorpseCreature_ZombieHorse_Race.label>僵尸马</RI_CorpseCreature_ZombieHorse_Race.label>
+  <!-- EN: A horse-shaped corpse creature. Unlike a normal horse, it never tires and can run faster. When no better means of transportation is available, evil practitioners often seek to create a zombie horse. -->
+  <RI_CorpseCreature_ZombieHorse_Race.description>一种马外形的邪术造物，比起普通的马来说，它不知疲倦，跑得更快。当邪术师没有更好的代步工具之前，往往会想办法制作一匹僵尸马。</RI_CorpseCreature_ZombieHorse_Race.description>
+  <RI_CorpseCreature_ZombieHorse_Race.race.meatLabel>马肉</RI_CorpseCreature_ZombieHorse_Race.race.meatLabel>
+  <!-- EN: left hoof -->
+  <RI_CorpseCreature_ZombieHorse_Race.tools.left_hoof.label>左蹄</RI_CorpseCreature_ZombieHorse_Race.tools.left_hoof.label>
+  <!-- EN: hoof -->
+  <RI_CorpseCreature_ZombieHorse_Race.tools.left_hoof.labelNoLocation>蹄</RI_CorpseCreature_ZombieHorse_Race.tools.left_hoof.labelNoLocation>
+  <!-- EN: right hoof -->
+  <RI_CorpseCreature_ZombieHorse_Race.tools.right_hoof.label>右蹄</RI_CorpseCreature_ZombieHorse_Race.tools.right_hoof.label>
+  <!-- EN: hoof -->
+  <RI_CorpseCreature_ZombieHorse_Race.tools.right_hoof.labelNoLocation>蹄</RI_CorpseCreature_ZombieHorse_Race.tools.right_hoof.labelNoLocation>
+  
+  <!-- EN: zombie buffalo -->
+  <RI_EvilCreature_ZombieCow.label>僵尸牛</RI_EvilCreature_ZombieCow.label>
+  <!-- EN: A buffalo-shaped corpse creature. Milk production is impossible. It is primarily used to carry heavy loads. Its thick fur conceals its pale, lifeless eyes, allowing it to deceive most ordinary people. -->
+  <RI_EvilCreature_ZombieCow.description>一种牛外形的邪术造物，产奶是不可能了。它们主要用于驮运沉重的货物，厚厚的毛能覆盖其泛白的眼球，这能骗过大部分普通人。</RI_EvilCreature_ZombieCow.description>
+  <!-- EN: head -->
+  <RI_EvilCreature_ZombieCow.tools.head.label>头</RI_EvilCreature_ZombieCow.tools.head.label>
+  <!-- EN: left hoof -->
+  <RI_EvilCreature_ZombieCow.tools.left_hoof.label>左蹄</RI_EvilCreature_ZombieCow.tools.left_hoof.label>
+  <!-- EN: hoof -->
+  <RI_EvilCreature_ZombieCow.tools.left_hoof.labelNoLocation>蹄</RI_EvilCreature_ZombieCow.tools.left_hoof.labelNoLocation>
+  <!-- EN: right hoof -->
+  <RI_EvilCreature_ZombieCow.tools.right_hoof.label>右蹄</RI_EvilCreature_ZombieCow.tools.right_hoof.label>
+  <!-- EN: hoof -->
+  <RI_EvilCreature_ZombieCow.tools.right_hoof.labelNoLocation>蹄</RI_EvilCreature_ZombieCow.tools.right_hoof.labelNoLocation>
+  
+</LanguageData>

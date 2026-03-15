@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--把布帛菽粟的分类patch掉-->
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Core">
+		<xpath>Defs/DesignationCategoryDef[defName="RI_RimImmortals_Living_Group"]/defName</xpath>
+		<value>
+			<defName>RI_RimImmortals_Group</defName>
+		</value>
+	</Operation>
+
+</Patch>

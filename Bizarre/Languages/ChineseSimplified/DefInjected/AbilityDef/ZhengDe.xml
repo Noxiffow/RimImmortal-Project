@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- 常规 -->
+    <NzRI_Zd_ZenMeditation.label>参禅</NzRI_Zd_ZenMeditation.label>
+    <NzRI_Zd_ZenMeditation.description>在行走坐卧中，参悟禅理，降低移动速度，但是修行进度会随时间上升\n\n 其他特殊能力会随着修行逐渐解锁</NzRI_Zd_ZenMeditation.description>
+
+    <!-- 明心 -->
+    <NzRI_Zw_ZenSound.label>禅音</NzRI_Zw_ZenSound.label>
+    <NzRI_Zw_ZenSound.description>发出一声蕴含禅意的声音，令人幡然醒悟。解除迷茫和狂暴状态，同时略微增加意识和操作。\n这会让你更接近 “明心” 路线</NzRI_Zw_ZenSound.description>
+
+    <Zd_DivineLightKick.label>圆光腿</Zd_DivineLightKick.label>
+    <Zd_DivineLightKick.description>踢出一道光芒，造成少量伤害，并震慑目标一段时间。</Zd_DivineLightKick.description>
+
+    <NzRI_Zd_BulletShield.label>梵界</NzRI_Zd_BulletShield.label>
+    <NzRI_Zd_BulletShield.description>轻踏地面，撑起一片领域，保护范围内的其他人。</NzRI_Zd_BulletShield.description>
+
+    <NzRI_Zd_DebunkingMyths.label>慧眼</NzRI_Zd_DebunkingMyths.label>
+    <NzRI_Zd_DebunkingMyths.description>慧眼眼光能看穿一切虚假\n移除范围内的隐形状态</NzRI_Zd_DebunkingMyths.description>
+
+    <NzRI_Zd_StareAngrily.label>怒视</NzRI_Zd_StareAngrily.label>
+    <NzRI_Zd_StareAngrily.description>愤怒的注释目标，造成火与电伤害。 “怒目金刚瞋目视，恶刹妖魔皆胆裂。”</NzRI_Zd_StareAngrily.description>
+
+    <NzRI_Zd_LionRoar.label>狮子吼</NzRI_Zd_LionRoar.label>
+    <NzRI_Zd_LionRoar.description>发出一声洪亮的吼叫，震慑对方，让对方瑟瑟发抖，甚至无法握住自己的武器</NzRI_Zd_LionRoar.description>
+
+    <NzRI_Zd_MercyHit.label>慈悲掌</NzRI_Zd_MercyHit.label>
+    <NzRI_Zd_MercyHit.description>使用巧劲攻击对方，尝试打晕目标</NzRI_Zd_MercyHit.description>
+
+    <NzRI_Zd_ShakeMountainFist.label>撼山拳</NzRI_Zd_ShakeMountainFist.label>
+    <NzRI_Zd_ShakeMountainFist.description>蓄力并打出重如山岳的一拳，对敌人造成大量伤害</NzRI_Zd_ShakeMountainFist.description>
+
+    <NzRI_Zd_TouchingHead.label>抚顶</NzRI_Zd_TouchingHead.label>
+    <NzRI_Zd_TouchingHead.description>抚摸对方的头部，使用法力庇护对方</NzRI_Zd_TouchingHead.description>
+
+    <!-- 舍身 -->
+    <NzRI_Zd_Almsgiving.label>布施</NzRI_Zd_Almsgiving.label>
+    <NzRI_Zd_Almsgiving.description>割肉饲鹰\n 补充目标的饱腹和休息，同时增强目标的愈合速度\n这会让你更接近 “舍身” 路线</NzRI_Zd_Almsgiving.description>
+
+    <NzRI_Zd_Drag.label>拉拽</NzRI_Zd_Drag.label>
+    <NzRI_Zd_Drag.description>让腿部扭曲变长，拖拽一个人到自己面前</NzRI_Zd_Drag.description>
+
+    <NzRI_Zd_LegSweep.label>扫堂腿</NzRI_Zd_LegSweep.label>
+    <NzRI_Zd_LegSweep.description>让你的腿伸展延长，并在周围造成一次切割伤害，由于位置较低，更大概率对敌人的腿部造成伤害,甚至可能会切断它们</NzRI_Zd_LegSweep.description>
+    
+    <NzRI_Zd_TerrorScream.label>恐怖嘶吼</NzRI_Zd_TerrorScream.label>
+    <NzRI_Zd_TerrorScream.description>发出一声恐怖的吼叫，恐吓敌人，降低其移动和攻击速度</NzRI_Zd_TerrorScream.description>
+
+    <NzRI_Zd_NightmareGaze.label>噩梦凝视</NzRI_Zd_NightmareGaze.label>
+    <NzRI_Zd_NightmareGaze.description>冰冷的凝视，将扭曲与疯狂注入目标的心灵与处理器，即使是机器都会发疯</NzRI_Zd_NightmareGaze.description>
+
+    <NzRI_Zd_TentacleStab.label>触须突刺</NzRI_Zd_TentacleStab.label>
+    <NzRI_Zd_TentacleStab.description>让触须中的活铁瞬间硬化，对敌人的心脏造成致命一击</NzRI_Zd_TentacleStab.description>
+
+    <NzRI_Zd_TentacleSlash.label>触须斩击</NzRI_Zd_TentacleSlash.label>
+    <NzRI_Zd_TentacleSlash.description>让触须中的活铁瞬间硬化，对范围内的敌人进行一次挥砍</NzRI_Zd_TentacleSlash.description>
+</LanguageData>

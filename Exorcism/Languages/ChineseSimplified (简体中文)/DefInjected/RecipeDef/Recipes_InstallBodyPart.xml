@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Install aberrant blood heart -->
+  <RI_Surgery_InstallAberrantBloodHeart.label>植入邪血心脏</RI_Surgery_InstallAberrantBloodHeart.label>
+  <!-- EN: Implant the aberrant blood heart; only the Necrosapiens can endure such an organ. -->
+  <RI_Surgery_InstallAberrantBloodHeart.description>植入邪血心脏，只有冥尸能承受这种器官。</RI_Surgery_InstallAberrantBloodHeart.description>
+  <!-- EN: Installing aberrant blood heart -->
+  <RI_Surgery_InstallAberrantBloodHeart.jobString>正在植入邪血心脏</RI_Surgery_InstallAberrantBloodHeart.jobString>
+  
+  <!-- EN: Install aberrant blood liver -->
+  <RI_Surgery_InstallAberrantBloodLiver.label>植入邪血肝</RI_Surgery_InstallAberrantBloodLiver.label>
+  <!-- EN: Implant the aberrant blood liver; only the Necrosapiens can endure such an organ. -->
+  <RI_Surgery_InstallAberrantBloodLiver.description>植入邪血肝，只有冥尸能承受这种器官。</RI_Surgery_InstallAberrantBloodLiver.description>
+  <!-- EN: Installing aberrant blood liver -->
+  <RI_Surgery_InstallAberrantBloodLiver.jobString>正在植入邪血肝</RI_Surgery_InstallAberrantBloodLiver.jobString>
+  
+  <!-- EN: Install aberrant blood lung -->
+  <RI_Surgery_InstallAberrantBloodLung.label>植入邪血肺</RI_Surgery_InstallAberrantBloodLung.label>
+  <!-- EN: Implant the aberrant blood lung; only the Necrosapiens can endure such an organ. -->
+  <RI_Surgery_InstallAberrantBloodLung.description>植入邪血肺，只有冥尸能承受这种器官。</RI_Surgery_InstallAberrantBloodLung.description>
+  <!-- EN: Installing aberrant blood lung -->
+  <RI_Surgery_InstallAberrantBloodLung.jobString>正在植入邪血肺</RI_Surgery_InstallAberrantBloodLung.jobString>
+  
+  <!-- EN: install evil-slaying claw -->
+  <RI_Surgery_InstallEvilSlayerClaw.label>植入斩邪爪</RI_Surgery_InstallEvilSlayerClaw.label>
+  <!-- EN: Install an evil-slaying claw. -->
+  <RI_Surgery_InstallEvilSlayerClaw.description>植入斩邪爪。</RI_Surgery_InstallEvilSlayerClaw.description>
+  <!-- EN: installing evil-slaying claw -->
+  <RI_Surgery_InstallEvilSlayerClaw.jobString>正在植入斩邪爪</RI_Surgery_InstallEvilSlayerClaw.jobString>
+  
+  <!-- EN: install nail tongue -->
+  <RI_Surgery_InstallNailTongue.label>植入钉舌</RI_Surgery_InstallNailTongue.label>
+  <!-- EN: Install a nail tongue. -->
+  <RI_Surgery_InstallNailTongue.description>植入钉舌。</RI_Surgery_InstallNailTongue.description>
+  <!-- EN: installing nail tongue. -->
+  <RI_Surgery_InstallNailTongue.jobString>正在植入钉舌</RI_Surgery_InstallNailTongue.jobString>
+  
+  <!-- EN: implant demon-binding nail -->
+  <RI_Surgery_InstallSealingNail.label>植入封魔钉</RI_Surgery_InstallSealingNail.label>
+  <!-- EN: Implant a sealing nail. Can be stacked. -->
+  <RI_Surgery_InstallSealingNail.description>植入封魔钉。</RI_Surgery_InstallSealingNail.description>
+  <!-- EN: installing demon-binding nail -->
+  <RI_Surgery_InstallSealingNail.jobString>正在植入封魔钉</RI_Surgery_InstallSealingNail.jobString>
+  
+  <!-- EN: install steel claw -->
+  <RI_Surgery_InstallSteelClaw.label>植入钢爪</RI_Surgery_InstallSteelClaw.label>
+  <!-- EN: Install an steel claw. -->
+  <RI_Surgery_InstallSteelClaw.description>植入钢爪。</RI_Surgery_InstallSteelClaw.description>
+  <!-- EN: installing steel claw -->
+  <RI_Surgery_InstallSteelClaw.jobString>正在植入钢爪</RI_Surgery_InstallSteelClaw.jobString>
+  
+  <!-- EN: install steel teeth -->
+  <RI_Surgery_InstallSteelTeeth.label>植入钢牙</RI_Surgery_InstallSteelTeeth.label>
+  <!-- EN: Install steel teeth. -->
+  <RI_Surgery_InstallSteelTeeth.description>植入钢牙。</RI_Surgery_InstallSteelTeeth.description>
+  <!-- EN: installing iron teeth -->
+  <RI_Surgery_InstallSteelTeeth.jobString>正在植入钢牙</RI_Surgery_InstallSteelTeeth.jobString>
+  
+</LanguageData>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: smoked -->
+  <RI_Hediff_ChunghwaHigh.label>烟草</RI_Hediff_ChunghwaHigh.label>
+  <!-- EN: tobacco active in the bloodstream. It smooths the nerves and sharpens the mind slightly. -->
+  <RI_Hediff_ChunghwaHigh.description>烟草中的活性成分会进入血液。它能缓解神经紧张，令思维敏捷。</RI_Hediff_ChunghwaHigh.description>
+  <!-- EN: a cigarette high -->
+  <RI_Hediff_ChunghwaHigh.labelNoun>烟草亢奋</RI_Hediff_ChunghwaHigh.labelNoun>
+  
+  <!-- EN: tobacco addiction -->
+  <RI_Hediff_PremiumTobaccoAddiction.label>烟草成瘾</RI_Hediff_PremiumTobaccoAddiction.label>
+  <!-- EN: A chemical addiction to premium tobacco. -->
+  <RI_Hediff_PremiumTobaccoAddiction.description>对烟草的化学物质产生依赖。</RI_Hediff_PremiumTobaccoAddiction.description>
+  <!-- EN: withdrawal -->
+  <RI_Hediff_PremiumTobaccoAddiction.stages.withdrawal.label>脱瘾</RI_Hediff_PremiumTobaccoAddiction.stages.withdrawal.label>
+  
+  <!-- EN: tobacco tolerance -->
+  <RI_Hediff_PremiumTobaccoTolerance.label>烟草耐受</RI_Hediff_PremiumTobaccoTolerance.label>
+  <!-- EN: A built-up tolerance to tobacco. -->
+  <RI_Hediff_PremiumTobaccoTolerance.description>对烟草的化学物质产生耐受症状。</RI_Hediff_PremiumTobaccoTolerance.description>
+  <!-- EN: small -->
+  <RI_Hediff_PremiumTobaccoTolerance.stages.small.label>轻度</RI_Hediff_PremiumTobaccoTolerance.stages.small.label>
+  <!-- EN: large -->
+  <RI_Hediff_PremiumTobaccoTolerance.stages.large.label>中度</RI_Hediff_PremiumTobaccoTolerance.stages.large.label>
+  <!-- EN: massive -->
+  <RI_Hediff_PremiumTobaccoTolerance.stages.massive.label>严重</RI_Hediff_PremiumTobaccoTolerance.stages.massive.label>
+  
+</LanguageData>

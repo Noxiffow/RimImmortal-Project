@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseGun" Name="RI_CharmBase" Abstract="True">
+		<tickerType>Normal</tickerType>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<statBases>
+			<Mass>0.1</Mass>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>RI_Charm</li>
+		</weaponTags>
+		<tradeTags>
+			<li>RI_Charm</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>SingleUseWeapon</li>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<relicChance>0</relicChance>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_CharmBase">
+		<defName>RI_Weapon_ThunderCharm</defName>
+		<label>Thunder charm</label>
+		<description>A special charm with a mysterious incantation engraved on it with a spiritual crystal. The Thunder charm can release thunder when activated.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponCharm/RI_Weapon_ThunderCharm</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_ThunderCharm</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+				<range>35.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7.8</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_ThunderCharm</defName>
+		<label>Thunder</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_FireCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>RI_Talisman.RI_Projectile_ThunderCharm</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>3</explosionRadius>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_CharmBase">
+		<defName>RI_Weapon_FireCharm</defName>
+		<label>Fire bomb charm</label>
+		<description>A special charm with a mysterious incantation engraved on it with a spiritual crystal. The Fire bomb charm can cause a violent explosion when activated.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponCharm/RI_Weapon_FireCharm</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_FireCharm</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+				<range>35.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7.8</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_FireCharm</defName>
+		<label>Fire bomb</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_FireCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>RI_Talisman.RI_Projectile_FireCharm</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>6</explosionRadius>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>DropSword</defName>
+		<label>DropSword</label>
+		<thingClass>Skyfaller</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RI_SkyFaller_SwrodCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(10,20)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3, 3)</shadowSize>
+			<explosionRadius>15.0</explosionRadius>
+			<explosionDamage>Vaporize</explosionDamage>
+			<explosionDamageFactor>3.0</explosionDamageFactor>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<speed>1.2</speed>
+		</skyfaller>
+	</ThingDef>
+	
+	<ThingDef ParentName="RI_CharmBase">
+		<defName>RI_Weapon_SwordCharm</defName>
+		<label>Light sword charm</label>
+		<description>A special charm with a mysterious incantation engraved on it with a spiritual crystal. The light sword charm can be activated to summon a light sword from the spell, which is powerful, but only for a limited period of time.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponCharm/RI_Weapon_SwordCharm</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>RI_Starch.RI_Verbs.Verb_LightSwordCharm</verbClass>
+				<range>15</range>
+				<warmupTime>1</warmupTime>
+				<soundCast>Psycast_Skip_Entry</soundCast>
+				<targetable>true</targetable>
+				<requireLineOfSight>false</requireLineOfSight>
+				<drawAimPie>false</drawAimPie>
+				<onlyManualCast>true</onlyManualCast>
+				<defaultCooldownTime>1</defaultCooldownTime>
+				<targetParams>
+					<canTargetSelf>true</canTargetSelf>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<hasStandardCommand>true</hasStandardCommand>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7.8</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<!--邪不胜正！-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>RI_Weapon_LightSword</defName>
+		<label>Light Sword</label>
+		<description>Evil can never prevail over good!</description>
+		<possessionCount>1</possessionCount>
+		<smeltable>false</smeltable>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Special/RI_LightSwordCharm</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.45</drawSize>
+		</graphicData>
+		<equipmentType>Primary</equipmentType>
+		<destroyOnDrop>true</destroyOnDrop>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags Inherit="False">
+		</weaponTags>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costList  Inherit="False">
+			<WoodLog>28</WoodLog>
+		</costList>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker Inherit="False">
+		</recipeMaker>
+		<comps>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_LightSword</hediffDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

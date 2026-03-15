@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi nourishment -->
+  <RI_EnergyRecharge.label>灵气滋养</RI_EnergyRecharge.label>
+  <!-- EN: All cultivators restore their Qi and gain a slight improvement in their cultivation progress. -->
+  <RI_EnergyRecharge.effectDesc>所有修炼者恢复灵气，并提升少量修炼进度。</RI_EnergyRecharge.effectDesc>
+  <!-- EN: All cultivators restore their Qi and gain a slight improvement in their cultivation progress. -->
+  <RI_EnergyRecharge.letterInfoText>灵气滋养</RI_EnergyRecharge.letterInfoText>
+  
+  <!-- EN: Find liquid jade -->
+  <RI_LiquidJadeSpawn.label>发现柔玉</RI_LiquidJadeSpawn.label>
+  <!-- EN: A small amount of liquid jade will emerge from beneath the ground. -->
+  <RI_LiquidJadeSpawn.effectDesc>将会有少量柔玉从地下出现。</RI_LiquidJadeSpawn.effectDesc>
+  <!-- EN: A small amount of liquid jade will emerge from beneath the ground. -->
+  <RI_LiquidJadeSpawn.letterInfoText>发现柔玉</RI_LiquidJadeSpawn.letterInfoText>
+  
+</LanguageData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 脓疮打击 -->
+    <DamageDef ParentName="Bite">
+        <defName>NzRI_Dm_PustuleStrike</defName>
+        <label>pustule strike</label>
+        <additionalHediffs>
+            <li>
+                <hediff>NzRI_Zd_He_PustuleCorrosion</hediff>
+                <severityPerDamageDealt>0.15</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+        <impactSoundType>Toxic</impactSoundType>
+        <damageEffecter>Impact_Toxic</damageEffecter>
+    </DamageDef>
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--资源站点（巨石）-->
+	<SitePartDef>
+		<defName>RI_RuinsSite_CrackedStone</defName>
+		<label>Location of the Rock</label>
+		<description>Location of the Rock.</description>
+		<!-- <workerClass>SitePartWorker_Ambush</workerClass>-->
+		<siteTexture>World/WorldObjects/Sites/RI_RuinsSite_Ruins</siteTexture>
+		<!--站点图标TODO-->
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/RI_RuinsSite_CrackedStone</expandingIconTexture>
+		<!--拉远时的站点图标TODO-->
+		<defaultHidden>false</defaultHidden>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<tags>
+			<li>RI_RuinsSite_CrackedStone</li>
+		</tags>
+		<excludesTags>
+			<li>MechCluster</li>
+			<li>MechClusterForceNoConditionCauser</li>
+			<li>SleepingMechanoids</li>
+			<li>Manhunters</li>
+		</excludesTags>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>RI_GenStep_CrackedStone</defName>
+		<linkWithSite>RI_RuinsSite_CrackedStone</linkWithSite>
+		<order>450</order>
+		<genStep Class="RI_Quest.GenStep_CenterBuiding">
+		</genStep>
+		<modExtensions>
+			<li Class="RI_Quest.ModExtension_RI_GenStep_SpawnBuildingDef">
+				<spawnBuildingDef>RI_Building_BigRock</spawnBuildingDef>
+				<!-- 要生成的建筑 -->
+			</li>
+		</modExtensions>
+	</GenStepDef>
+
+	<!--资源站点（石塔）-->
+	<SitePartDef>
+		<defName>RI_RuinsSite_AncientPagoda</defName>
+		<label>Location of the Pagoda</label>
+		<description>Location of the Pagoda.</description>
+		<!-- <workerClass>SitePartWorker_Ambush</workerClass>-->
+		<siteTexture>World/WorldObjects/Sites/RI_RuinsSite_Ruins</siteTexture>
+		<!--站点图标TODO-->
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/RI_RuinsSite_AncientPagoda</expandingIconTexture>
+		<!--拉远时的站点图标TODO-->
+		<defaultHidden>false</defaultHidden>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<tags>
+			<li>RI_RuinsSite_AncientPagoda</li>
+		</tags>
+		<excludesTags>
+			<li>MechCluster</li>
+			<li>MechClusterForceNoConditionCauser</li>
+			<li>SleepingMechanoids</li>
+			<li>Manhunters</li>
+		</excludesTags>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>RI_RuinsSite_AncientPagoda</defName>
+		<linkWithSite>RI_RuinsSite_AncientPagoda</linkWithSite>
+		<order>450</order>
+		<genStep Class="RI_Quest.GenStep_CenterBuiding">
+		</genStep>
+		<modExtensions>
+			<li Class="RI_Quest.ModExtension_RI_GenStep_SpawnBuildingDef">
+				<spawnBuildingDef>RI_Building_AncientPagoda</spawnBuildingDef>
+				<!-- 要生成的建筑 -->
+			</li>
+		</modExtensions>
+	</GenStepDef>
+
+
+</Defs>

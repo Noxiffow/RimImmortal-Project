@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--土行Base-->
+	<HediffDef Name="RI_EarthMethodHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.79,0.73,0.33)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--坤土功法-->
+	<HediffDef ParentName="RI_EarthMethodHediff_Base">
+		<defName>RI_Hediff_EarthCultivationHediff</defName>
+		<label>Earth cultivation</label>
+		<description>Earth element cultivation technique, enhances the cultivator's defensive strength.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.25</GI_EnergyGainEff>
+					<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+					<ComfyTemperatureMax>5</ComfyTemperatureMax>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_CultivationBase</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- 石甲 -->
+	<HediffDef ParentName="RI_EarthMethodHediff_Base">
+		<defName>RI_Hediff_StoneArmorEffect</defName>
+		<label>Stone armor</label>
+		<description>Fragments of stone infused with Qi wrap around the body, redirecting all incoming impact forces into the ground and greatly enhancing defensive capability, at the cost of reduced movement speed.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.2</IncomingDamageFactor>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>2.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+				</statOffsets>
+				<damageFactors>
+					<Cut>0</Cut>
+					<Stab>0</Stab>
+					<Poke>0</Poke>
+					<Blunt>0</Blunt>
+					<Scratch>0</Scratch>
+					<Bite>0</Bite>
+				</damageFactors>
+			</li>
+		</stages>
+		<!--附加特效-->
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.5</drawSize>
+				<texPath>Things/Mote/EarthElement/RI_Mote_StoneArmor</texPath>
+				<!--<shaderTypeDef>MoteGlow</shaderTypeDef>-->
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!-- 碎岩 -->
+	<HediffDef ParentName="RI_EarthMethodHediff_Base">
+		<defName>RI_Hediff_FlyingSand</defName>
+		<label>Shattered rock</label>
+		<description>Scattered shards of rock cling to the surface of the body, reducing vision.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<MeleeHitChance>-0.5</MeleeHitChance>
+					<ShootingAccuracyPawn>-0.5</ShootingAccuracyPawn>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 镇岳盾 -->
+	<HediffDef ParentName="RI_EarthMethodHediff_Base">
+		<defName>RI_Hediff_WorldSealingShield</defName>
+		<label>World-sealing shield</label>
+		<description>A powerful shield given by the guardian stone tower.</description>
+		<comps>
+			<li Class="RI_FiveElements.HediffCompProperties_WorldSealingShield">
+				<bubbleMatPath>Things/Mote/EarthElement/RI_Mote_Earth_Bubble</bubbleMatPath>
+				<hitSound/>
+				<hitFleck/>
+				<brokenSound/>
+				<brokenFleck/>
+				<baseEnergy>600</baseEnergy>
+				<changeByRootLevel>false</changeByRootLevel>
+				<energyLoosePerDamage>1</energyLoosePerDamage>
+				<keepDisplaying>true</keepDisplaying>
+				<gizmoLabel>镇界护盾</gizmoLabel>
+				<gizmoTip>镇界护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>2.4</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--不会自动恢复-->
+				<energyGainPerSecond>0</energyGainPerSecond>
+				<!--一出石塔范围就开始疯狂掉-->
+				<energyLossPerSecond>10</energyLossPerSecond>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 石化 -->
+	<HediffDef ParentName="RI_EarthMethodHediff_Base">
+		<defName>RI_Hediff_EarthDomainEffect</defName>
+		<label>Petrified</label>
+		<description>Stone erupts from the earth, binding the target firmly in place.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0</MoveSpeed>
+					<MeleeHitChance>0.2</MeleeHitChance>
+					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<!--附加特效-->
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>2.1</drawSize>
+				<texPath>Things/Mote/EarthElement/RI_Mote_EarthDomainEffect</texPath>
+				<!--<shaderTypeDef>MoteGlow</shaderTypeDef>-->
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+</Defs>

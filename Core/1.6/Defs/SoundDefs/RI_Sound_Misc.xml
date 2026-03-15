@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--电饭煲叮一声-->
+	<SoundDef>
+		<defName>RI_Sound_DingDing</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_DingDing</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--劈木头咔一声-->
+	<SoundDef>
+		<defName>RI_Sound_ChopKa</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_ChopKa</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--石磨声音-->
+	<SoundDef>
+		<defName>RI_Sound_Grinder</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxVoices>3</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_Grinder</clipPath>
+					</li>
+				</grains>
+				<volumeRange>10~10</volumeRange>
+				<pitchRange>0.9541177~1.137647</pitchRange>
+				<distRange>10~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--电磨声-->
+	<!--<SoundDef>
+		<defName>RI_Sound_ElectricGrinder</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxVoices>3</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_ElectricGrinder</clipPath>
+					</li>
+				</grains>
+				<volumeRange>7~7</volumeRange>
+				<pitchRange>0.9541177~1.137647</pitchRange>
+				<distRange>10~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>-->
+
+</Defs>

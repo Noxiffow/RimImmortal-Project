@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Elixirs workbench -->
+  <RI_Building_ElixirsWorkbench.label>制药工作台</RI_Building_ElixirsWorkbench.label>
+  <!-- EN: A table for preparing some medicinal materials and herb powders.\n\nAfter researching brewing and psy-leaf products, corresponding items can be crafted at the Elixirs workbench. -->
+  <RI_Building_ElixirsWorkbench.description>一张用来制备药材和药粉的工作台。\n\n在研究完酿酒，精神叶制品后，可以在制药工作台制作对应的物品。</RI_Building_ElixirsWorkbench.description>
+  
+  <!-- EN: Medicinal material cabinet -->
+  <RI_Building_MedicinalMaterialShelf.label>药材柜</RI_Building_MedicinalMaterialShelf.label>
+  <!-- EN: A special cabinet for storing herbs, with many small drawers on it. It can improve work efficiency by placing it near the elixirs workbench. -->
+  <RI_Building_MedicinalMaterialShelf.description>一个专门用来收纳药材的柜子，上面有许多小抽屉。放置在丹药工作台附近可以提高工作效率。</RI_Building_MedicinalMaterialShelf.description>
+  
+</LanguageData>

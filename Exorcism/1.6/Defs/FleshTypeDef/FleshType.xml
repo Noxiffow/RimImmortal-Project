@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--邪祟肉体类型-->
+	<FleshTypeDef>
+		<defName>RI_Aberrant_Flesh</defName>
+		<corpseCategory>RI_Corpses_Aberrant</corpseCategory>
+		<damageEffecter>Damage_HitFlesh</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/RI_Aberrant_WoundsA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/RI_Aberrant_WoundsB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/RI_Aberrant_WoundsC</texture>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+</Defs>

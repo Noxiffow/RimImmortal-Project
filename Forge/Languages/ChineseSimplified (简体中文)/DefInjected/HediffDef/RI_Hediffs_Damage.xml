@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Stabbing pain -->
+  <RI_Hediff_IronThrowingBall.label>刺痛</RI_Hediff_IronThrowingBall.label>
+  <!-- EN: Being hit by a spinning iron ball, there seems to be a Qi drilling into the body, causing pain. -->
+  <RI_Hediff_IronThrowingBall.description>被旋转的铁球命中，似乎有一股灵气钻入体内，引发疼痛。</RI_Hediff_IronThrowingBall.description>
+  
+  <!-- EN: Binding -->
+  <RI_Talisman_BingingImmortalRopeHediff.label>捆绑</RI_Talisman_BingingImmortalRopeHediff.label>
+  <!-- EN: Bind by Immortal-binding rope. -->
+  <RI_Talisman_BingingImmortalRopeHediff.description>被捆仙绳束缚，无法行动。</RI_Talisman_BingingImmortalRopeHediff.description>
+  <RI_Talisman_BingingImmortalRopeHediff.descriptionCached>被捆仙绳束缚，无法行动。</RI_Talisman_BingingImmortalRopeHediff.descriptionCached>
+  <!-- EN: Binding -->
+  <RI_Talisman_BingingImmortalRopeHediff.labelNoun>捆绑</RI_Talisman_BingingImmortalRopeHediff.labelNoun>
+  
+  <!-- EN: Sand shock -->
+  <RI_Talisman_PolyStoneTower_Hediff.label>飞沙走石</RI_Talisman_PolyStoneTower_Hediff.label>
+  <!-- EN: The sand is comming. -->
+  <RI_Talisman_PolyStoneTower_Hediff.description>飞沙走石。</RI_Talisman_PolyStoneTower_Hediff.description>
+  <!-- EN: Sand shock -->
+  <RI_Talisman_PolyStoneTower_Hediff.labelNoun>飞沙走石</RI_Talisman_PolyStoneTower_Hediff.labelNoun>
+  
+  <!-- EN: Ring shock -->
+  <RI_Talisman_WindRing_Hediff.label>白银之环</RI_Talisman_WindRing_Hediff.label>
+  <!-- EN: The shock wave from the wind ring. -->
+  <RI_Talisman_WindRing_Hediff.description>白银戒指产生的冲击波。</RI_Talisman_WindRing_Hediff.description>
+  <!-- EN: Ring shock -->
+  <RI_Talisman_WindRing_Hediff.labelNoun>白银之环</RI_Talisman_WindRing_Hediff.labelNoun>
+  
+</LanguageData>

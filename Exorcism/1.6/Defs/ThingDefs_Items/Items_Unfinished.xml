@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--未完成的符咒-->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_Unfinished_DaoistCharm</defName>
+		<label>unfinished charm</label>
+		<description>An unfinished charm.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/RI_Unfinished_DaoistCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<!--未完成的尸傀-->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_Unfinished_UndeadPuppet</defName>
+		<label>unfinished corpse puppet</label>
+		<description>An unfinished undead puppet creature.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/RI_Unfinished_UndeadPuppet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<!--未完成的纸人-->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_Unfinished_PaperMan</defName>
+		<label>unfinished paper doll</label>
+		<description>An unfinished paper doll.</description>
+		<statBases>
+			<Flammability>1.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/RI_Unfinished_PaperMan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Nz_AoJing_HurtSelf_NoBodyPart>{0} There are no body parts to decompose.</Nz_AoJing_HurtSelf_NoBodyPart>
+  <NzRI_WarningAscendSuccessRate>Ascending:\n\n Mood Pain: {Mood}% \n\n Physical Pain {Pain}% \n\n Overall Success: {Success}%</NzRI_WarningAscendSuccessRate>
+  <NzRI_Ascend_FailMsg> {Caster} tried to ascend, but failed.</NzRI_Ascend_FailMsg>
+  <NzRI_Ascend_OkMsg> {Caster} successfully ascended!</NzRI_Ascend_OkMsg>
+</LanguageData>

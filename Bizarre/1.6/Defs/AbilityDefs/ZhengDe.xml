@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <!-- 禅音 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zw_ZenSound</defName>
+    <label>zen sound</label>
+    <!-- 发出一声蕴含禅意的声音，令人幡然醒悟。\n解除迷茫和狂暴状态，同时略微增加意识和操作 -->
+    <!-- 这会让你更接近 “明心” 路线 -->
+    <description>Emit a sound containing Zen meaning, making people suddenly realize. Removes
+      confusion and berserk state, and slightly increases consciousness and manipulation.\n\n
+      it will make you closer to the "Enlightenment" route</description>
+    <iconPath>Ability/Zd1</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <!-- <category>Sanguophage</category> -->
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <warmupStartSound>NzRI_ZenSound</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>19.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>NzRI_ZenSound</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+        <rEnergy>10</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_ZenSound">
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_PlaceMote">
+        <moteDef>NzRI_Zw_Mote_ZenSound</moteDef>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AddFruition">
+        <buddha>true</buddha>
+      </li>
+      <!-- <li Class="NzRimImmortalBizarre.CompProperties_AbilityRangeExplosion">
+                <targetRange>6.9</targetRange>
+                <explosionRange>5.9</explosionRange>
+                <filthDef>NzRI_BloodGuts</filthDef>
+                <damageTypes>
+                    <li>AcidBurn</li>
+                    <li>Blunt</li>
+                    <li>Bomb</li>
+                    <li>Cut</li>
+                </damageTypes>
+                <damageTimes>5</damageTimes>
+                <damage>49</damage>
+
+                <effecterDef>ArrowSpray_Directional</effecterDef>
+            </li> -->
+
+    </comps>
+  </AbilityDef>
+
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <!-- 布施 -->
+    <defName>NzRI_Zd_Almsgiving</defName>
+    <label>almsgiving</label>
+    <!-- 效仿佛祖，割肉饲鹰\n 补充目标的饱腹和休息，同时增强目标的愈合速度 -->
+    <!-- 这个会让你更接近 “舍身” 路线 -->
+    <description>Imitate the ancestors, cut meat to feed the eagle\n
+      Supplement the target's fullness and rest, while enhancing the target's healing speed.\n\n
+      it will make you closer to the "Sacrifice" route</description>
+    <iconPath>Ability/Zd3</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <displayOrder>400</displayOrder>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <!-- <canTargetBloodfeeders>true</canTargetBloodfeeders> -->
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+        <rEnergy>-10</rEnergy>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <durationSecondsOverride>1500</durationSecondsOverride>
+        <hediffDef>NzRI_Zd_Feed</hediffDef>
+        <psychic>False</psychic>
+        <replaceExisting>True</replaceExisting>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AbilityPlaySound">
+        <soundDef>NzRI_FeedMeat</soundDef>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_Feed">
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AddFruition">
+        <sacrifice>true</sacrifice>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AoJing_HurtSelf">
+        <group>projectile</group>
+        <level>4</level>
+        <damageMin>1</damageMin>
+        <damageMax>3</damageMax>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 参禅 -->
+  <!-- 修炼状态，降低移速 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_ZenMeditation</defName>
+    <label>zen meditation</label>
+    <!-- 在行走坐卧中，参悟禅理，降低移动速度，但是修行进度会随时间上升\n\n 其他特殊能力会随着修行逐渐解锁 -->
+    <description>During walking, sitting and lying, meditate on Zen, reduce movement speed, but the
+      progress of practice will increase over time\n\n Other special abilities will gradually unlock
+      with practice</description>
+    <iconPath>Ability/InternalPellet/RI_Ability_InternalFunction</iconPath>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EffectRadius>10</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <violent>false</violent>
+      <warmupTime>0</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>NzRI_Zd_Cultivation</hediffDef>
+        <durationSecondsOverride>300</durationSecondsOverride>
+        <psychic>False</psychic>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+      <!-- TODO 加点特效 -->
+      <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>10</rEnergy>
+			</li> -->
+    </comps>
+  </AbilityDef>
+
+  <!-- 如来 -->
+  <!-- 短时间化身五智如来，持续时间内，体型增大，普攻带范围伤害，承伤 0%，不可阻挡，心灵敏感度0% -->
+</Defs>

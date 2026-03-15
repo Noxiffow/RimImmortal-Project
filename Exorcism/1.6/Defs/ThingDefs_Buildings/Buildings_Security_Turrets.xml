@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=============== 血煞塔 ===============-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>RI_Turret_CrimsonPagoda</defName>
+    <label>Crimson pagoda</label>
+    <description>This creature of flesh summoned by the Crimson Tyrant through evil spirit power is called the Crimson pagoda. The tower is made of twisted tissues of human flesh and topped with a large eyeball. Eyeball can spit out high-speed blood arrows, very powerful.\n\nWhile the Crimson Tyrant is alive, he will constantly summon the crimson pagoda.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/RI_Turret_CrimsonPagoda</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>-50</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <!--原材料-->
+    <costList>
+      <Meat_Human>18</Meat_Human>
+    </costList>
+    <building>
+      <combatPower>50</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>RI_Gun_BigRedEye</turretGunDef>
+      <turretBurstCooldownTime>5</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+  </ThingDef>
+  <!--血煞塔子弹-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>RI_Bullet_BloodEyeSpot</defName>
+    <label>Blood arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/RI_Bullet_BloodEyeSpot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>BloodArrowDamage</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  <!--血煞塔的枪-->
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>RI_Gun_BigRedEye</defName>
+    <label>Big red eye</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/RI_Gun_BigRedEye</texPath>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>RI_Bullet_BloodEyeSpot</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>30</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <!--血煞塔子弹的伤害def-->
+  <DamageDef ParentName="Bullet">
+    <defName>BloodArrowDamage</defName>
+    <label>Blood Arrow</label>
+    <workerClass>RimZombieGirl.DamageWorker_AddInjury_ImmunityByPawnDef</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+</Defs>

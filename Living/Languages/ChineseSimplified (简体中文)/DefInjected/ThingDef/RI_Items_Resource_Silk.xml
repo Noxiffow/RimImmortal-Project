@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fire rat leather -->
+  <RI_Resource_FireCloth.label>火浣皮</RI_Resource_FireCloth.label>
+  <!-- EN: Fire rat leather comes from the fire rat and is a rare and valuable material.\n\nIt insulates against intense heat while also absorbing impact, providing protection against blunt weapons.\n\nIn ancient times, fire-rinsed hide was offered as tribute to the emperor, and the demand once nearly drove the fire rat to extinction. -->
+  <RI_Resource_FireCloth.description>火浣皮来源于火鼠，是一种珍贵的材料。\n\n这种材料可以阻隔炎热，同时还能吸收冲击力，可以防御钝器。\n\n在古代，火浣皮作为供品进献给皇帝，一度导致火鼠差点灭绝。</RI_Resource_FireCloth.description>
+  
+  <!-- EN: golden silk -->
+  <RI_Resource_GoldenSilk.label>金丝</RI_Resource_GoldenSilk.label>
+  <!-- EN: Golden silk is made by heating gold, drawing it into fine threads, and weaving it into fabric. Generally, only the imperial court and the nobility could afford to use it in this way. -->
+  <RI_Resource_GoldenSilk.description>黄金加热后，拉长，再编织，得到的金丝织物，一般来说只有皇宫贵族才舍得这样用。</RI_Resource_GoldenSilk.description>
+  
+  <!-- EN: ice silk -->
+  <RI_Resource_IceSilk.label>冰蚕丝</RI_Resource_IceSilk.label>
+  <!-- EN: “The ice silkworm knows no cold; the fire rat knows no heat.”\n\nThis soft and cooling fabric is woven from the silk spun by ice silkworms and is considered a precious material.\n\nGarments made from ice silk prevent cold qi from entering the body and also provide good resistance against cutting. -->
+  <RI_Resource_IceSilk.description>冰蚕不知寒，火鼠不知暑。\n\n这种柔软且凉爽的织物用冰蚕吐的丝纺织而成，是一种珍贵的材料。\n\n用冰蚕丝制作的服饰可以防止寒气入体，并且防割性能良好。</RI_Resource_IceSilk.description>
+  
+  <!-- EN: silk -->
+  <RI_Resource_Silk.label>丝绸</RI_Resource_Silk.label>
+  <!-- EN: Silk is a high-quality fabric with a smooth texture and an elegant appearance, woven from silkworm thread.\n\nAs early as the Stone Age, people raised silkworms, reeled silk, and spun thread. This craft eventually gave rise to long-distance international trade routes centered on silk, known as the Silk Road.\n\nToday, the technique has spread with humanity across various star systems. Silkworm eggs are easy to store, and even on remote planets there are those who make their living through sericulture and weaving. -->
+  <RI_Resource_Silk.description>丝绸是一种手感柔顺的优质织物，十分漂亮，用蚕丝织成。\n\n在石器时代，就有了古人养蚕、缫丝、纺丝的历史，并且一度开辟了以丝绸为主要产品的跨国贸易路线，被称为丝绸之路。\n\n如今，这种工艺也随着人类传播到了各个星区。蚕卵方便储存，偏远星球也有人以养蚕纺织为生。</RI_Resource_Silk.description>
+  
+  <!-- EN: silver silk -->
+  <RI_Resource_SilverSilk.label>银丝</RI_Resource_SilverSilk.label>
+  <!-- EN: Silver silk is produced by heating silver, stretching it into threads, and weaving them into cloth.\n\nThere is also a craft that interweaves gold and silver threads into intricate patterns, then embellishes them with gemstones to create lavish decorative designs. -->
+  <RI_Resource_SilverSilk.description>白银加热后，拉长，再编织，得到的银丝织物。\n\n有一种工艺，将金银丝混合编织出各种花纹，再加上珠宝点缀，形成华丽的花纹。</RI_Resource_SilverSilk.description>
+  
+</LanguageData>

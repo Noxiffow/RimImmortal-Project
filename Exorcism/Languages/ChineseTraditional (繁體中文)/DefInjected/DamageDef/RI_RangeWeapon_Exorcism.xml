@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: lightning shot -->
+  <RI_Damage_LightningShot.label>TODO</RI_Damage_LightningShot.label>
+  <!-- EN: {0} was electrocuted by wind thunder drum. -->
+  <RI_Damage_LightningShot.deathMessage>TODO</RI_Damage_LightningShot.deathMessage>
+  
+</LanguageData>

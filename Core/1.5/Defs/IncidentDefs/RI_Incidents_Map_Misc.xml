@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--灵兽聚集-->
+	<IncidentDef>
+		<defName>RI_AnimalCome</defName>
+		<label>Spirit beasts join</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Spirit beasts join</letterLabel>
+		<letterText>A group of spiritual beasts, influenced by the changes in spiritual energy, became friendly and voluntarily joined the colony.</letterText>
+		<workerClass>RIRitualFramework.IncidentWorker_RImAnimalWanderIn</workerClass>
+	</IncidentDef>
+
+	<!--灵兽发狂-->
+	<IncidentDef>
+		<defName>RI_FrenziedAnimal</defName>
+		<label>Spirit beasts go wild</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Spirit beasts go wild</letterLabel>
+		<letterText>A group of spiritual beasts that went crazy for no reason, attracted by the spiritual energy, charged into your colony!</letterText>
+		<workerClass>RIRitualFramework.IncidentWorker_FrenziedAnimals</workerClass>
+	</IncidentDef>
+
+	<!--灵兽加入-->
+	<IncidentDef>
+		<defName>RI_AnimalMigration</defName>
+		<label>Spirit beasts pass</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Spirit beasts pass</letterLabel>
+		<letterText>A group of spiritual beasts were attracted by the Qi and came pass your colony.</letterText>
+		<workerClass>RIRitualFramework.IncidentWorker_AnimalMigration</workerClass>
+	</IncidentDef>
+
+	<!--药草萌芽-->
+	<IncidentDef>
+		<defName>RI_Incident_Sprout</defName>
+		<label>Herbs sprout</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.Incidents.RI_IncidentWorker_RandPlant</workerClass>
+		<baseChance>3.0</baseChance>
+		<letterLabel>Herbs sprout</letterLabel>
+		<letterText>Feel the nourishment of Crystal Vein Soil as several rare herbs awaken from dormancy and begin to grow.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<allowedBiomes>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>AridShrubland</li>
+		</allowedBiomes>
+	</IncidentDef>
+
+	<!--修士陨落-->
+	<IncidentDef>
+		<defName>RI_DropEnergyStone</defName>
+		<label>Cultivator fall to earth</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_DropEnergyStone</workerClass>
+		<baseChance>0.8</baseChance>
+		<letterLabel>Immortal fall</letterLabel>
+		<letterText>A glowing figure streaks across the sky from a distance and explodes in midair. His remains landed impartially near your colony.</letterText>
+		<tale>MeteoriteImpact</tale>
+	</IncidentDef>
+
+	<!--灵脉复苏-->
+	<IncidentDef>
+		<defName>RI_MakeLINGMAI</defName>
+		<label>Crystal vein recovery</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_MakeLINGMAI</workerClass>
+		<baseChance>0.2</baseChance>
+		<letterLabel>Crystal vein recovery</letterLabel>
+		<letterText>A Crystal Vein has been revived, the earth radiates a strange light and a constant flow of energy is nourishing the soil from below, herbs can only grow on this spiritual soil.</letterText>
+		<tale>MeteoriteImpact</tale>
+	</IncidentDef>
+
+	<!--荒冢-->
+	<IncidentDef>
+		<defName>RI_Incident_AbandonedGrave</defName>
+		<label>Ruin of necropolis</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Ruin of necropolis</letterLabel>
+		<questScriptDef>RI_AbandonedGrave_Standard</questScriptDef>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<baseChance>0.1</baseChance>
+		<requireColonistsPresent>False</requireColonistsPresent>
+	</IncidentDef>
+
+	<!--天仙指引-->
+	<!--<IncidentDef>
+		<defName>RI_Incident_OutdoorExercises</defName>
+		<label>Immortal guidance</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>World</li>
+		</targetTags>
+		<letterLabel>Immortal guidance</letterLabel>
+		<questScriptDef>OpportunitySite_OutdoorExercises</questScriptDef>
+		<workerClass>IncidentWorker_GiveQuest_Map</workerClass>
+		<baseChance>2</baseChance>
+		<requireColonistsPresent>True</requireColonistsPresent>
+	</IncidentDef>-->
+
+	<!--过路人-->
+	<IncidentDef>
+		<defName>RI_Incident_Beggars</defName>
+		<label>Passenger</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Passenger arrive</letterLabel>
+		<questScriptDef>RI_Beggars</questScriptDef>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<baseChance>2</baseChance>
+		<requireColonistsPresent>True</requireColonistsPresent>
+	</IncidentDef>
+
+	<!--灵气潮汐-涨潮-->
+	<IncidentDef>
+		<defName>RI_EnergyDecline</defName>
+		<label>Qi tide flood period</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_EnergyDecline</workerClass>
+		<gameCondition>EnergyGrowth</gameCondition>
+		<baseChance>0.8</baseChance>
+		<minRefireDays>15</minRefireDays>
+		<durationDays>5~9</durationDays>
+	</IncidentDef>
+
+	<!--灵气潮汐-退潮-->
+	<IncidentDef>
+		<defName>RI_EnergyGrowth</defName>
+		<label>Qi tide ebb period</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_EnergyGrowth</workerClass>
+		<gameCondition>EnergyDecline</gameCondition>
+		<baseChance>1.2</baseChance>
+		<minRefireDays>15</minRefireDays>
+		<durationDays>7~11</durationDays>
+	</IncidentDef>
+
+	<!--修士加入-->
+	<IncidentDef>
+		<defName>RI_Incident_CultivatorJoin</defName>
+		<label>Cultivator join</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_WandererJoin</workerClass>
+		<letterLabel>Cultivator join</letterLabel>
+		<letterText>A wandering cultivator join.</letterText>
+		<baseChance>1</baseChance>
+		<minRefireDays>50</minRefireDays>
+		<minGreatestPopulation>1</minGreatestPopulation>
+		<pawnKind>RI_Pawn_Seeker</pawnKind>
+		<!--<pawnFixedGender>Male</pawnFixedGender>-->
+		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+	</IncidentDef>
+
+</Defs>

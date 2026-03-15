@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 所有烹饪的菜的前置 -->
+	<RecipeDef Name="RI_MilkRecipe_Base" ParentName="CookMealBase" Abstract="True">
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workSkill>Cooking</workSkill>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>1</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!--制作奶豆腐-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookByaslag</defName>
+		<label>Cook byaslag</label>
+		<description>Make some byaslag through fermentation and boiling milk.</description>
+		<jobString>Cooking byaslag</jobString>
+		<workAmount>600</workAmount>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Byaslag>3</RI_Food_Byaslag>
+		</products>
+	</RecipeDef>
+
+	<!--制作酥油-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookButter</defName>
+		<label>Cook butter</label>
+		<description>Heat milk to make butter.</description>
+		<jobString>Cooking butter</jobString>
+		<workAmount>2000</workAmount>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Butter>3</RI_Food_Butter>
+		</products>
+	</RecipeDef>
+
+	<!--制作酸奶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookYogurt</defName>
+		<label>Cook yogurt</label>
+		<description>Make yogurt through fermentation.</description>
+		<jobString>Cooking yogurt</jobString>
+		<workAmount>800</workAmount>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Yogurt>5</RI_Food_Yogurt>
+		</products>
+	</RecipeDef>
+
+	<!--制作甜莓奶酪-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookSweetBerryYogurt</defName>
+		<label>Cook sweet berry yogurt</label>
+		<description>Add berry jam while fermenting yogurt.</description>
+		<jobString>Cooking sweet berry yogurt</jobString>
+		<workAmount>800</workAmount>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_SweetBerryYogurt>5</RI_Food_SweetBerryYogurt>
+		</products>
+	</RecipeDef>
+
+	<!--制作奶茶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookMilkTea</defName>
+		<label>Cook milk tea</label>
+		<description>Brew milk tea with milk and tea.</description>
+		<jobString>Cooking milk tea</jobString>
+		<workAmount>300</workAmount>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TeaLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_MilkTea>4</RI_Food_MilkTea>
+		</products>
+	</RecipeDef>
+
+	<!--制作珍珠奶茶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookBubbleTea</defName>
+		<label>Cook bubble tea</label>
+		<description>Brew bubble milk tea with milk and tea.</description>
+		<jobString>Cooking bubble tea</jobString>
+		<workAmount>800</workAmount>
+		<researchPrerequisite>RI_Research_BetterFood</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TeaLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_BubbleTea>4</RI_Food_BubbleTea>
+		</products>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Air step exercise -->
+  <RI_Ability_AirStepExercise.label>流云步法</RI_Ability_AirStepExercise.label>
+  <!-- EN: Air step exercise. -->
+  <RI_Ability_AirStepExercise.description>一套行云流水的步法，不仅可以提高移动速度，还能在行走之时唤醒身体，调动周身经脉，提升修炼效率。</RI_Ability_AirStepExercise.description>
+  
+  <!-- EN: Mountain-eating cultivation method -->
+  <RI_Ability_MountainEatingCultivationMethod.label>吞山魔功</RI_Ability_MountainEatingCultivationMethod.label>
+  <!-- EN: Mountain-eating cultivation method. -->
+  <RI_Ability_MountainEatingCultivationMethod.description>一种特殊的修炼之法，会强行增强一个人的食欲，并攫取食物中的一切营养，用于滋养灵芽。\n\n这种功法曾经盛极一时，但由于是一名邪修所发明，并且会导致修炼者终日胡吃海塞，不甚雅观。于是在一批修炼者的鼓动下，这种功法的传承逐渐变少，最终被替代。</RI_Ability_MountainEatingCultivationMethod.description>
+  
+  <!-- EN: Mystic cultivation method -->
+  <RI_Ability_MysticCultivationMethod.label>玄天诀</RI_Ability_MysticCultivationMethod.label>
+  <!-- EN: Mystic cultivation method. -->
+  <RI_Ability_MysticCultivationMethod.description>据说是古修的修炼之法，已经不再适用于现在的修炼者。这种功法过于强横霸道，是以一套特殊的刺激穴位之法，强行令身体吸收过多灵气，然后化为己用。\n\n这种功法在运转之时，会令肌肉经脉产生疼痛，非有大毅力者不可学。</RI_Ability_MysticCultivationMethod.description>
+  
+  <!-- EN: Refinement workspeed method -->
+  <RI_Ability_RefinementWorkspeedMethod.label>巧工速修法</RI_Ability_RefinementWorkspeedMethod.label>
+  <!-- EN: Refinement workspeed method. -->
+  <RI_Ability_RefinementWorkspeedMethod.description>这种修炼之法的来源，乃是一位木匠在制作木盒的时候，过于专注投入，达到浑然忘我，天人一体的境界。此景恰好被路过的一名修炼者看到，于是发明此功法。\n\n在提高工作能力的同时，还能借助高度集中的注意力，小幅提高修炼速度。</RI_Ability_RefinementWorkspeedMethod.description>
+  
+  <!-- EN: Tortoise meditation method -->
+  <RI_Ability_TortoiseMeditationMethod.label>大息龟眠功</RI_Ability_TortoiseMeditationMethod.label>
+  <!-- EN: Tortoise meditation method. -->
+  <RI_Ability_TortoiseMeditationMethod.description>炼药法门在过去曾诞生一名极其长寿之人，据说活了300多年后才因病仙逝。他留下一卷书，记录了他在世记录的风土人情，岁月变化，人文地理，同时还有这种能延长寿命的修炼之法。\n\n他在书中说，文明的长度取决于谁活到最后，而非打赢战争。只要能活得够久，熬死对手，那就是自己的胜利。</RI_Ability_TortoiseMeditationMethod.description>
+  
+</LanguageData>

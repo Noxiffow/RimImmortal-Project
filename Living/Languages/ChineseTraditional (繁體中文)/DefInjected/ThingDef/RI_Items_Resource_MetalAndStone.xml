@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: black brick -->
+  <RI_Resource_BlackBrick.label>青砖</RI_Resource_BlackBrick.label>
+  <!-- EN: Fired bricks, can be turned into black bricks by adjusting the oxygen and oxidation levels during the firing process. -->
+  <RI_Resource_BlackBrick.description>由泥土烧结而成的青砖，控制砖头氧化的时间，就可以产出这种古色古香的青色砖头。</RI_Resource_BlackBrick.description>
+  <RI_Resource_BlackBrick.stuffProps.stuffAdjective>青砖</RI_Resource_BlackBrick.stuffProps.stuffAdjective>
+  
+  <!-- EN: dark corundum -->
+  <RI_Resource_BlackCorundum.label>乌刚玉</RI_Resource_BlackCorundum.label>
+  <!-- EN: Dark corundum is a small amount of emerald-like stone excavated from the mountains. Its hardness is very high, and the appearance is also quite good, but it is relatively rare, so that its price continues to rise. This material is like a piece of inky ice, and it is said that some body-hugging jewelry made with it has a calming effect. -->
+  <RI_Resource_BlackCorundum.description>乌刚玉是一种只能从地下开采出的玉石。其硬度极高，外观也相当不错，但相对稀有，因此价格持续上涨。这种材料宛如一块墨色的冰，据说用它制成的贴身首饰有镇静的效果。</RI_Resource_BlackCorundum.description>
+  
+  <!-- EN: pattern steel -->
+  <RI_Resource_DamascusIron.label>镔铁</RI_Resource_DamascusIron.label>
+  <!-- EN: It is a kind of high-quality steel obtained by repeatedly forging compressed steel and adding other metals to it. The color of iron is snow-white, and the silk pattern is inserted into it. It is very beautiful and has very good elasticity and hardness, suitable for making weapons. -->
+  <RI_Resource_DamascusIron.description>也被称为花纹钢，是一种通过反复锻打压缩钢铁，并且往其中掺入其他金属，得到的一种优质钢材。\n\n镔铁颜色雪白，其中夹入丝丝花纹，十分好看，并且具有非常好的弹性和硬度，适合打造兵器。</RI_Resource_DamascusIron.description>
+  
+  <!-- EN: ice marrow -->
+  <RI_Resource_IceMarrow.label>寒髓</RI_Resource_IceMarrow.label>
+  <!-- EN: Ice marrow is mined from the lightless depths beneath ancient glaciers, a rare and remarkable mineral. It continuously absorbs ambient heat, and an ice cellar built with ice marrow can cool an entire room.\n\nIt is said that ice marrow can be forged into special weapons. Because its origins are scarce and its value high, smuggling incidents involving ice marrow occur frequently. -->
+  <RI_Resource_IceMarrow.description>寒髓开采于日光照射不到的冰川深处，是一种稀少的奇妙石材。寒髓会吸收外界热能，用寒髓制造的冰窖可以让整个房间降温。\n\n据说寒髓可以用于制造特殊的兵器，由于其产地稀少，价格高昂，所以经常有走私寒髓的事件发生。</RI_Resource_IceMarrow.description>
+  
+  <!-- EN: red brick -->
+  <RI_Resource_RedBrick.label>红砖</RI_Resource_RedBrick.label>
+  <!-- EN: Fired bricks, a common building material. -->
+  <RI_Resource_RedBrick.description>由泥土烧结而成的红砖，是一种常见的建材。比起用石头制成的砖头，硬度稍低，但其原材料遍地都是，且可以通过大型窑炉大批量生产，因此其成本非常低。</RI_Resource_RedBrick.description>
+  <RI_Resource_RedBrick.stuffProps.stuffAdjective>红砖</RI_Resource_RedBrick.stuffProps.stuffAdjective>
+  
+</LanguageData>

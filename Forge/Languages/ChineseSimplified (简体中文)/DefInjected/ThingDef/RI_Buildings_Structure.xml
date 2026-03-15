@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator door -->
+  <RI_Building_AncientDoor.label>古修铁门</RI_Building_AncientDoor.label>
+  <!-- EN: An ancient cultivator style door, made of steel. -->
+  <RI_Building_AncientDoor.description>古修风格的门，用钢铁打造。</RI_Building_AncientDoor.description>
+  
+  <!-- EN: Ancient cultivator column -->
+  <RI_Building_AncientPillar.label>古修支撑柱</RI_Building_AncientPillar.label>
+  <!-- EN: Support columns in the ancient cultivator style, made of steel. -->
+  <RI_Building_AncientPillar.description>古修风格的支撑柱，用钢铁打造。</RI_Building_AncientPillar.description>
+  
+  <!-- EN: Ancient cultivator wall -->
+  <RI_Building_AncientWall.label>古修铁墙</RI_Building_AncientWall.label>
+  <!-- EN: An ancient cultivator style walls, made of steel. -->
+  <RI_Building_AncientWall.description>古修风格的墙壁，用钢铁打造。</RI_Building_AncientWall.description>
+  
+</LanguageData>

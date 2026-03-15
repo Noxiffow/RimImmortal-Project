@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RI_Samatha</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_SamathaHediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>止观</label>
+				<description>我只能听见自己的心跳声，我从未如此清晰地感受世界。</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- ======= 等级心情增益 ========= -->
+	<ThoughtDef>
+		<defName>RI_Thought_LevelUp</defName>
+		<durationDays>10</durationDays>
+		<stages>
+			<li>
+				<label>Realm upgrade</label>
+				<description>I became a higher Realm cultivator! Powerful Qi surged within me!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_Level1</defName>
+		<hediff>RI_Hediff_PrimordialSpiritBaby</hediff>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<stages>
+			<li>
+				<label>Spiritual consciousness</label>
+				<description>The consciousness born in your Core is in tune with your mind, but it is not yet in the air.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_Level2</defName>
+		<hediff>RI_Hediff_PrimordialSpiritMaturation</hediff>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<stages>
+			<li>
+				<label>Spiritual consciousness</label>
+				<description>The consciousness born in your Core is in tune with you.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_Level3</defName>
+		<hediff>RI_Hediff_PrimordialSpiritCombine</hediff>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<stages>
+			<li>
+				<label>Spiritual consciousness</label>
+				<description>The consciousness born in your Core is in tune with you，which can help you block out negativity.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_Level4</defName>
+		<hediff>RI_Hediff_Immortal</hediff>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<stages>
+			<li>
+				<label>Spiritual consciousness</label>
+				<description>The strong consciousness born in your Core is in tune with you.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- ======= 突破成功/失败 ========= -->
+	<ThoughtDef>
+		<defName>RI_Thought_Positive</defName>
+		<durationDays>4</durationDays>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Upgrade Sucess!</label>
+				<description>Upgrade Sucess!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_Passion</defName>
+		<durationDays>4</durationDays>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Upgrade Faliure!</label>
+				<description>Upgrade Faliure!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_QingMing</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_QingMing</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>青冥树抚慰</label>
+				<description>我能感受到来自青冥树的心灵抚慰</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

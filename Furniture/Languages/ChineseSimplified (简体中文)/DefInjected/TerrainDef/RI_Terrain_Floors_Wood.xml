@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Bamboo plank floor -->
+  <RI_Floor_BambooPlankFloor.label>竹地板</RI_Floor_BambooPlankFloor.label>
+  <!-- EN: Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable. -->
+  <RI_Floor_BambooPlankFloor.description>TODO</RI_Floor_BambooPlankFloor.description>
+  
+  <!-- EN: Sandalwood floor -->
+  <RI_Floor_SolidWoodPlankFloor.label>檀木地板</RI_Floor_SolidWoodPlankFloor.label>
+  <!-- EN: Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable. -->
+  <RI_Floor_SolidWoodPlankFloor.description>TODO</RI_Floor_SolidWoodPlankFloor.description>
+  
+</LanguageData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Boost morale -->
+  <RI_AxeExcitation.label>破阵斧鸣</RI_AxeExcitation.label>
+  <!-- EN: Wield the axe to inspire nearby comrades in 7 bars, increasing their movement speed, melee hit rate and melee damage. -->
+  <RI_AxeExcitation.description>鼓舞附近7格内的战友,使其提升移速、近战命中率和近战伤害。</RI_AxeExcitation.description>
+  
+</LanguageData>

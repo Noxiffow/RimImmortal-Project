@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--法门书盲盒-->
+	<ThingDef ParentName="RI_BlindBoxBase">
+		<defName>RI_BlindBox_InitialApproachBook</defName>
+		<label>Mysterious initial approach book</label>
+		<description>An ancient book that is unclear needs to be studied on a research table in order to discover what it actually is.</description>
+		<graphicData>
+			<texPath>Things/Item/BlindBox/InitialApproachBook</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
+				<thingDefList>
+					<!--书-->
+					<li>RI_BookA</li>
+					<li>RI_BookB</li>
+					<li>RI_BookC</li>
+					<li>RI_BookD</li>
+					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_FireElement</li>
+					<!--<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_WaterElement</li>
+					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_EarthElement</li>
+					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_WoodElement</li>
+					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_MetalElement</li>-->
+					<!--保底-->
+					<li>Synthread</li>
+				</thingDefList>
+				<thingDefListNum>
+					<!--书-->
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<!--保底-->
+					<li>30</li>
+				</thingDefListNum>
+				<cost>5</cost>
+				<completedLetterTitle>Expose the relic</completedLetterTitle>
+				<completedLetterText>With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing_Batch"/>
+		</comps>
+	</ThingDef>
+
+	<!--功法书盲盒-->
+	<ThingDef ParentName="RI_BlindBoxBase">
+		<defName>RI_BlindBox_SkillBook</defName>
+		<label>Mysterious skill book</label>
+		<description>An ancient book that is unclear needs to be studied on a research table in order to discover what it actually is.</description>
+		<graphicData>
+			<texPath>Things/Item/BlindBox/Book</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
+				<thingDefList>
+					<!--书-->
+					<li>RI_BookAbility_Transport</li>
+					<li>RI_BookAbility_BombBullet</li>
+					<li>RI_BookAbility_Slash</li>
+					<li>RI_BookAbility_QuickJumpWithNosight</li>
+					<li>RI_BookAbility_Invisible</li>
+					<!--保底-->
+					<li>RI_Resource_LiquidJade</li>
+					<li>RI_Resource_LiquidJade</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<!--垃圾-->
+					<li>Synthread</li>
+				</thingDefList>
+				<thingDefListNum>
+					<!--书-->
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<!--保底-->
+					<li>2</li>
+					<li>3</li>
+					<li>5</li>
+					<li>6</li>
+					<!--垃圾-->
+					<li>30</li>
+				</thingDefListNum>
+				<cost>5</cost>
+				<completedLetterTitle>Expose the relic</completedLetterTitle>
+				<completedLetterText>With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing_Batch"/>
+		</comps>
+	</ThingDef>
+
+	<!--武器盲盒-->
+	<ThingDef ParentName="RI_BlindBoxBase">
+		<defName>RI_BlindBox_Weapon</defName>
+		<label>Mysterious ancient weapon</label>
+		<description>A rusted weapon that is unclear needs to be studied on a research table in order to discover what it actually is.</description>
+		<graphicData>
+			<texPath>Things/Item/BlindBox/Weapon</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
+				<thingDefList>
+					<!--兵器-->
+					<li>RI_Weapon_DESword</li>
+					<li>RI_Weapon_JumenAxe</li>
+					<li>RI_Weapon_RatWhiskerSword</li>
+					<li>RI_Weapons_WindDemonBlade</li>
+					<li>RI_Weapon_FlyGrenade</li>
+					<li>RI_Weapon_GhostFireCrossbow</li>
+					<!--保底-->
+					<li>RI_Resource_AncientWeaponRelic</li>
+					<li>RI_Resource_AncientWeaponRelic</li>
+					<li>RI_Resource_AncientWeaponRelic</li>
+					<!--垃圾-->
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+				</thingDefList>
+				<thingDefListNum>
+					<!--兵器-->
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<!--保底-->
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<!--垃圾-->
+					<li>200</li>
+					<li>300</li>
+					<li>100</li>
+					<li>400</li>
+					<li>500</li>
+					<li>600</li>
+				</thingDefListNum>
+				<cost>5</cost>
+				<completedLetterTitle>Expose the relic</completedLetterTitle>
+				<completedLetterText>With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing_Batch"/>
+		</comps>
+	</ThingDef>
+
+	<!--盔甲盲盒-->
+	<ThingDef ParentName="RI_BlindBoxBase">
+		<defName>RI_BlindBox_Armor</defName>
+		<label>Mysterious ancient armor</label>
+		<description>A rusted armor that is unclear needs to be studied on a research table in order to discover what it actually is.</description>
+		<graphicData>
+			<texPath>Things/Item/BlindBox/Armor</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
+				<thingDefList>
+					<!--盔甲-->
+					<li>RI_Apparel_AncientCultivatorArmor</li>
+					<li>RI_Apparel_AncientCultivatorHelmet</li>
+					<!--保底-->
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<li>RI_Resource_AncientArmorRelic</li>
+					<!--垃圾-->
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+				</thingDefList>
+				<thingDefListNum>
+					<!--兵器-->
+					<li>1</li>
+					<li>1</li>
+					<!--保底-->
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>3</li>
+					<li>4</li>
+					<li>4</li>
+					<li>5</li>
+					<!--垃圾-->
+					<li>200</li>
+					<li>150</li>
+					<li>250</li>
+					<li>300</li>
+					<li>100</li>
+					<li>400</li>
+					<li>500</li>
+					<li>550</li>
+					<li>450</li>
+					<li>600</li>
+				</thingDefListNum>
+				<cost>5</cost>
+				<completedLetterTitle>Expose the relic</completedLetterTitle>
+				<completedLetterText>With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing_Batch"/>
+		</comps>
+	</ThingDef>
+
+	<!--储物袋盲盒-->
+	<ThingDef ParentName="RI_BlindBoxBase">
+		<defName>RI_BlindBox_Bag</defName>
+		<label>Unknown storage bag</label>
+		<description>One came from someone else's storage bag, which could have contained something.</description>
+		<graphicData>
+			<texPath>Things/Item/BlindBox/Bag</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
+				<thingDefList>
+					<!--灵石啥的-->
+					<li>RI_Resource_LiquidJade</li>
+					<li>RI_Resource_LiquidJade</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<li>RI_Resource_SpiritualCrystal</li>
+					<!--丹药-->
+					<li>RI_Drug_CultivateEnergyPill</li>
+					<li>RI_Drug_HealBalm</li>
+					<li>RI_Drug_AllCropsPill</li>
+					<li>RI_Drug_StrongPhysiquePowder</li>
+					<li>RI_Drug_ExpelHotPill</li>
+					<li>RI_Drug_ExpelColdPill</li>
+					<li>RI_Drug_CultivateMoreEnergyPill</li>
+					<!--金银-->
+					<li>Gold</li>
+					<li>Gold</li>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+				</thingDefList>
+				<thingDefListNum>
+					<!--灵石啥的-->
+					<li>2</li>
+					<li>1</li>
+					<li>10</li>
+					<li>8</li>
+					<li>5</li>
+					<li>13</li>
+					<!--丹药-->
+					<li>2</li>
+					<li>3</li>
+					<li>3</li>
+					<li>3</li>
+					<li>2</li>
+					<li>2</li>
+					<li>2</li>
+					<!--金银-->
+					<li>50</li>
+					<li>75</li>
+					<li>60</li>
+					<li>300</li>
+					<li>350</li>
+					<li>250</li>
+				</thingDefListNum>
+				<cost>5</cost>
+				<completedLetterTitle>Open the storage bag</completedLetterTitle>
+				<completedLetterText>You injected Qi into the bag and forced it open, which turned it into rags and ashes.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+			<li Class="RI_Talisman.CompProperties_BlindBoxUsing_Batch"/>
+		</comps>
+	</ThingDef>
+
+</Defs>

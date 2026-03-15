@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>RI_Apparel_FireDragonArmorHediff</defName>
+		<label>Light of fire dragon</label>
+		<labelNoun>Light of fire dragon</labelNoun>
+		<description>The light of the fire Dragon protects you from the flames.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<keepOnBodyPartRestoration>False</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>0</Flammability>
+				</statFactors>
+				<damageFactors>
+					<Flame>0</Flame>
+					<Burn>0</Burn>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_Apparel_PoisonViperArmorHediff</defName>
+		<label>Eye of poison viper</label>
+		<labelNoun>Eye of poison viper</labelNoun>
+		<description>The light of the fire Dragon protects you from the flames.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<keepOnBodyPartRestoration>False</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>1</ToxicResistance>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+	</HediffDef>
+
+</Defs>

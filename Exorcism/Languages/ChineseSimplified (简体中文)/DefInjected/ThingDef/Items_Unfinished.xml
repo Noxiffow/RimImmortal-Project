@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: unfinished charm -->
+  <RI_Unfinished_DaoistCharm.label>未完成的符咒</RI_Unfinished_DaoistCharm.label>
+  <!-- EN: An unfinished charm. -->
+  <RI_Unfinished_DaoistCharm.description>未完成的符咒。</RI_Unfinished_DaoistCharm.description>
+  
+  <!-- EN: unfinished paper doll -->
+  <RI_Unfinished_PaperMan.label>未完成的纸人</RI_Unfinished_PaperMan.label>
+  <!-- EN: An unfinished paper doll. -->
+  <RI_Unfinished_PaperMan.description>未完成的纸人。</RI_Unfinished_PaperMan.description>
+  
+  <!-- EN: unfinished corpse puppet -->
+  <RI_Unfinished_UndeadPuppet.label>未完成的尸傀儡</RI_Unfinished_UndeadPuppet.label>
+  <!-- EN: An unfinished undead puppet creature. -->
+  <RI_Unfinished_UndeadPuppet.description>未完成的尸傀儡。</RI_Unfinished_UndeadPuppet.description>
+  
+</LanguageData>

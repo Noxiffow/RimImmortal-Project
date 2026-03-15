@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============================衣服============================-->
+
+	<!--修士内衣-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_CultivatorUnderwear</defName>
+		<label>Cultivator underwear</label>
+		<description>A fabric undergarment, meticulously stitched and dyed using the tie-dye technique. This short-sleeved undergarment, with no discernible origin, is favored by free cultivators.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_CultivatorUnderwear/RI_Apparel_CultivatorUnderwear</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.2</Mass>
+			<EquipDelay>1.5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_CultivatorUnderwear/RI_Apparel_CultivatorUnderwear</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>4</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--武衣-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_ExerciseApparel</defName>
+		<label>Exercise apparel</label>
+		<description>A thick, sleeveless jacket. In order to facilitate activities, the hem is shortened, and the thick cloth pieces are specially sewn in some parts to protect body.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_ExerciseApparel/RI_Apparel_ExerciseApparel</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_ExerciseApparel/RI_Apparel_ExerciseApparel</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<displayPriority>5</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--披风-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_LightCloak</defName>
+		<label>Light cloak</label>
+		<description>An open jacket with large sleeves. Wearing on the body can only play a little wind effect, mainly to play handsome.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_LightCloak/RI_Apparel_LightCloak</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_LightCloak/RI_Apparel_LightCloak</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+		<recipeMaker>
+			<displayPriority>7</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--褴褛衫-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_BeggarClothes</defName>
+		<label>Beggar robe</label>
+		<description>A patched-up long robe, stitched together with many repairs, its appearance will keep the people at bay. However, this robe provides good warmth and also increases carrying capacity slightly.\n\n&lt;color=#FFFF00&gt;【Special effects】Carrying capacity +10.\nGreatly reduces social interactions.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_BeggarClothes/RI_Apparel_BeggarClothes</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1.2</Mass>
+			<EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_BeggarClothes/RI_Apparel_BeggarClothes</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_Beggar</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<recipeMaker>
+			<displayPriority>9</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+		</recipeMaker>
+
+		<!--装备效果-->
+		<equippedStatOffsets>
+			<SocialImpact>-0.5</SocialImpact>
+			<PawnBeauty>-5</PawnBeauty>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--背囊-->
+	<ThingDef ParentName="RI_BasicApparel_Base">
+		<defName>RI_Apparel_Knapsack</defName>
+		<label>Knapsack</label>
+		<description>A small backpack used for carrying a few essentials, equipped with some tools, suitable for those embarking on long journeys.\n\n&lt;color=#FFFF00&gt;【Special effects】Carrying capacity +30.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_Knapsack/RI_Apparel_Knapsack</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_Knapsack/RI_Apparel_Knapsack</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+		<recipeMaker>
+			<displayPriority>10</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+		</recipeMaker>
+
+		<!--装备效果-->
+		<equippedStatOffsets>
+			<CarryingCapacity>30</CarryingCapacity>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--蓑衣——没有基础原料-->
+	<!--孤舟蓑笠翁，独钓寒江雪-->
+	<ThingDef ParentName="RI_ApparelNostuffCategories_Base">
+		<defName>RI_Apparel_RainCape</defName>
+		<label>Rain cape</label>
+		<description>A rain cape made of hay and fiber. It's quite large and thick. It is not very protective, but it can be used with the rain hat to keep the body from getting wet, and it is a necessary rain gear for some workers.\n\n&lt;color=#FFFF00&gt;【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_RainCape/RI_Apparel_RainCape</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<Hay>70</Hay>
+		</costList>
+
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>3</EquipDelay>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_RainCape/RI_Apparel_RainCape</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_Hidden</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<comps>
+			<li Class="WhoXiuXian.RI_RainCoatComp" />
+		</comps>
+		<recipeMaker>
+			<displayPriority>8</displayPriority>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--修士长裤-->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>RI_Apparel_CultivatorPants</defName>
+		<label>Cultivator pants</label>
+		<description>A pair of simple sewn pants.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_CultivatorPants/RI_Apparel_CultivatorPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>RI_Category_NormalClothing</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicClothing</researchPrerequisite>
+			<displayPriority>11</displayPriority>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Purple-fog mushroom -->
+  <RI_Plant_DuskyMushroom.label>紫雾菇</RI_Plant_DuskyMushroom.label>
+  <!-- EN: Purple-fog mushroom is a very slow-growing medicinal mushroom. When it is mature, it will erupt purple spore smoke, so the name purple fog mushroom. This mushroom generally grows in cold places such as caves, and with the continuous improvement of people, it has gradually adapted to the bright environment. -->
+  <RI_Plant_DuskyMushroom.description>紫雾菇是一种生长非常缓慢的药用蘑菇。在成熟的时候会喷发出紫色的孢子烟雾，故得名紫雾菇。这种蘑菇一般长在洞穴等阴寒的地方，随着人们的不断改良，已经逐渐适应了光亮环境。</RI_Plant_DuskyMushroom.description>
+  
+  <!-- EN: Lantern berry -->
+  <RI_Plant_LanternBerry.label>提灯果</RI_Plant_LanternBerry.label>
+  <!-- EN: Lantern berry is a magical plant whose fruit gives off a faint glow, presumably to attract insects for pollination. Many young people look for lanterns to decorate. -->
+  <RI_Plant_LanternBerry.description>提灯果是一种奇妙的植物，其果实会散发淡淡的荧光，据推测是用来吸引昆虫传粉。许多年轻人会寻找提灯果来充当装饰。</RI_Plant_LanternBerry.description>
+  
+  <!-- EN: LingZhi -->
+  <RI_Plant_LingZhi.label>灵芝</RI_Plant_LingZhi.label>
+  <!-- EN: LingZhi is a nutrient-rich fungus. It grows faster in the land of Qi and is a rare herb. -->
+  <RI_Plant_LingZhi.description>灵芝是一种富含营养的真菌。在灵气充盈的土地上能更快的生长，是一种少见的药材。</RI_Plant_LingZhi.description>
+  
+  <!-- EN: Plantain -->
+  <RI_Plant_Plantain.label>车前草</RI_Plant_Plantain.label>
+  <!-- EN: Plantain is a common herb, because it is often found on the roadside, so it is called plantain, and its seeds have a certain healing effect. This herb grows faster in Qi rich soil. -->
+  <RI_Plant_Plantain.description>车前草是一种较为常见的药草，由于经常在路边能发现，所以被称为车前草，其种子具有一定的疗伤效果。这种药草在灵气充盈的土地上能更快的生长。</RI_Plant_Plantain.description>
+  
+  <!-- EN: Silver GinSeng -->
+  <RI_Plant_SilverGinseng.label>银芯参</RI_Plant_SilverGinseng.label>
+  <!-- EN: Silver GinSeng is a mineral-rich plant that absorbs nutrients from the ground and grows faster on Qi filled ground. -->
+  <RI_Plant_SilverGinseng.description>银芯参是一种富含矿物质的植物，能吸收土地中的营养，在灵气充盈的土地上能更快地生长。</RI_Plant_SilverGinseng.description>
+  
+  <!-- EN: Snow flower -->
+  <RI_Plant_SnowLotus.label>雪莲</RI_Plant_SnowLotus.label>
+  <!-- EN: Snow flower is a plant rich in vitality, and the flowers of this plant are a rare medicine. The snow flower can only be found in cold areas, and its flowers have many magical effects and are used as a great tonic. -->
+  <RI_Plant_SnowLotus.description>雪莲是一种富含生命力的植物，这种植物的花朵是一种罕见的药材。雪莲一般只能在寒冷的地区找到，它的花朵具有不少神奇的疗效，被当作大补之物。</RI_Plant_SnowLotus.description>
+  
+  <!-- EN: Tillandsia dragon aloe -->
+  <RI_Plant_TillandsiaDragon.label>火龙草</RI_Plant_TillandsiaDragon.label>
+  <!-- EN: Tillandsia dragon aloe is a special herb that grows faster in the land of Qi, and the central bud of this plant is very valuable as medicine. -->
+  <RI_Plant_TillandsiaDragon.description>火龙草是一种特殊的药草，在灵气充盈的土地上能更快的生长，这种植物的中心嫩芽是非常珍贵的药材。</RI_Plant_TillandsiaDragon.description>
+  
+</LanguageData>

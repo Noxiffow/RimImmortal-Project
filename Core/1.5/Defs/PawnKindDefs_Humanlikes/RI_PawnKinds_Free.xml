@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===========普通散修（没有灵芽的）——前置===========-->
+	<PawnKindDef Name="RI_FreemanNoRoot_Base" Abstract="True">
+		<race>Human</race>
+		<nameMaker>RI_NameRule_NamerPersonChinese</nameMaker>
+		<nameMakerFemale>RI_NameRule_NamerPersonChineseFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">false</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<defaultFactionType>RI_Faction_FreeCultivators</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+
+		<!--背景故事-->
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+
+		<!--禁止特性-->
+		<disallowedTraits>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--假体-->
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>100~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+
+		<!--俘虏抗性-->
+		<initialWillRange>5</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+
+	</PawnKindDef>
+
+	<!--===========普通人散修===========-->
+
+	<!--乞丐-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_Beggar</defName>
+		<label>Beggar</label>
+		<combatPower>30</combatPower>
+		<!--衣服-->
+		<apparelMoney>500~1000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_HeadScarf</li>
+			<li>RI_Apparel_BeggarClothes</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>500~1000</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!--护卫-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_Guard</defName>
+		<label>Cultivator guard</label>
+		<combatPower>50</combatPower>
+		<!--衣服-->
+		<apparelMoney>2000~3000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_PlateArmor</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>Apparel_AdvancedHelmet</li>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.85</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_TradeGood_FamilyLetter</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--猎户-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_Hunter</defName>
+		<label>Hunter</label>
+		<combatPower>60</combatPower>
+		<!--衣服-->
+		<apparelMoney>1500~4000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_RainCape</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_ExerciseBandana</li>
+			<li>Apparel_SmokepopBelt</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<!--携带物资-->
+		<inventoryOptions>
+			<skipChance>0.85</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_TradeGood_CorrodedMedal</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--行者-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_Traveler</defName>
+		<label>Traveler</label>
+		<combatPower>40</combatPower>
+		<!--衣服-->
+		<apparelMoney>1500~4000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_Knapsack</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_RainHat</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+			<li>Spear</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_TradeGood_FamilyLetter</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--赤脚医生-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_BarefootDoctor</defName>
+		<label>Barefoot doctor</label>
+		<combatPower>40</combatPower>
+		<!--衣服-->
+		<apparelMoney>1500~4000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_Knapsack</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_HeadScarf</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>2</min>
+						<max>5</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--商贩-->
+	<PawnKindDef ParentName="RI_FreemanNoRoot_Base">
+		<defName>RI_Pawn_Businessman</defName>
+		<label>Businessman</label>
+		<combatPower>50</combatPower>
+		<trader>true</trader>
+		<!--衣服-->
+		<apparelMoney>5000~8000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_Knapsack</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_HeadScarf</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>10</min>
+						<max>50</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+</Defs>

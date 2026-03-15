@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RI_EatManLabel>In</RI_EatManLabel>
+	<RI_EatManDesc>Select a target and suck it into the gourd</RI_EatManDesc>
+	<RI_OutEatManLabel>Out{0}</RI_OutEatManLabel>
+	<RI_OutEatManDesc>Spit out the {0} inside the gourd</RI_OutEatManDesc>
+	<Expose>Expose</Expose>
+
+	<XXK_Command_TrapExplosive_StartWick_Label>Start golem</XXK_Command_TrapExplosive_StartWick_Label>
+	<XXK_Command_TrapExplosive_StartWick_Desc>Start golem</XXK_Command_TrapExplosive_StartWick_Desc>
+</LanguageData>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- ================================== 炼器法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_BookD</defName>
+		<label>Initial approach book-Forge</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Book of Diverse Crafts".\n\nThe Forge Initial approach studies the use of spiritual Qi in objects, creating things with Qi; controlling objects with Qi; and nurturing objects with Qi. The early stages involve a lot of theory, while the later stages involve more practice. A master of Forge can use their own Qi as raw material to create Spirit core circuit for divine artifacts. The Spirit core circuit themselves already have a certain degree of intelligence, and can be used to create divine machinery.\n\n"Book of Diverse Crafts" derive from the "Rites of Zhou", the original author is unknown. "Book of Diverse Crafts" is a document describing the specifications and manufacturing techniques of various types of work such as official handicrafts in the Spring and Autumn and Warring States periods of China.\n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_WorkFocus</AbilityDef>
+			<AbilityDef>RI_Ability_Repair</AbilityDef>
+			<AbilityDef>RI_Ability_TurretAssemble</AbilityDef>
+			<AbilityDef>RI_Ability_WorkInsentive</AbilityDef>
+			<AbilityDef>RI_Ability_MaterialDecomposition</AbilityDef>
+			<AbilityDef>RI_Ability_ComponentRefine</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_BookD</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>TalismanCreating</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_WorkFocus</li>
+					<li>RI_Ability_Repair</li>
+					<li>RI_Ability_TurretAssemble</li>
+					<li>RI_Ability_WorkInsentive</li>
+					<li>RI_Ability_MaterialDecomposition</li>
+					<li>RI_Ability_ComponentRefine</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_ToolsStrengthen</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Forge Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--古修功法书-->
+	<!--An Ancient book made up of Qi, titled "RUA！！！"-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_RI_AncientCultivatorPlayer</defName>
+		<label>Skill book-Spirit healing armor</label>
+		<description>A book made up of Qi, titled "Spirit healing armor". \n\nThe exercises obtained from the ancient cultivator, it consumed too much Qi, so it was improved and produced a new skill. Can temporarily allow Qi to transform the body, making the whole body like copper skin and iron bones. At the same time, it can also improve human body function, improve melee ability and movement speed.</description>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_AncientSkill</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Spirit healing armor"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

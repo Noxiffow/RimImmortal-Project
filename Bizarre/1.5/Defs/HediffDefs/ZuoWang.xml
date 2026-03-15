@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 非罡 -->
+    <HediffDef>
+        <defName>NzRI_Zw_Fg</defName>
+        <label>FeiGang</label>
+        <hediffClass>NzRimImmortalBizarre.Zw_Fg</hediffClass>
+        <duplicationAllowed>false</duplicationAllowed>
+        <description>#</description>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>3000</maxSeverity>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!-- 麻将牌 -->
+    <HediffDef>
+        <defName>NzRI_Zw_Mahjong</defName>
+        <label>Mahjong tiles</label>
+        <description>Vaguely, a spinning mahjong tile could be seen in his eyes.</description>
+        <defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>10000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+                <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- 美好幻景 -->
+    <HediffDef>
+        <defName>NzRI_Zw_Fantasy</defName>
+        <label>FantasyWorld</label>
+        <description>He script is in a fantasy world.</description>
+        <defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>180000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+                <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- 美好回忆 -->
+    <HediffDef>
+        <defName>NzRI_Zw_FantasyMemory</defName>
+        <label>Memory</label>
+        <description>He is immersed in a beautiful memory.</description>
+        <defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>900000</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+                <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+            </li>
+            <li Class="HediffCompProperties_ThoughtSetter">
+                <thought>NzRI_Thought_Zw_FantasyMemory</thought>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.85</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- 心智残缺(心智被切割) -->
+    <HediffDef>
+        <defName>NzRI_Zw_MentalCutting</defName>
+        <label>MentalCutting</label>
+        <description>Mind cut in half.</description>
+        <defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>2</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-10</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.9</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.5</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.75</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>1</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.5</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>1.5</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

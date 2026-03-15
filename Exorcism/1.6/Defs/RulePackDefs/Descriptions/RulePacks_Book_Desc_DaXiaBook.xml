@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>DaXiaBook_Description</defName>
+    <include>
+      <li>ArtDescriptionUtility_Global</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- Roots -->
+        <li>desc-&gt;这本[writingQualityAdjective]的[bookType][follows]，由一位隐世大侠·[psycaster]SAN的[heOrShe][storyStruggles]所著就。[writingQualitySentence]。[maybe_date]。\n\n低于一定年龄的阅读者阅读后，这本秘籍会教授阅读者绝世武功。它会在阅读完毕后彻底消失。</li>
+        <!-- Root: Story struggle variant -->
+        <li>follows-&gt;分享心法秘笈，揭示绝世武功的奥秘</li>
+        <li>follows-&gt;高屋建瓴，彰显绝世武功的奇特心法</li>
+        <li>follows-&gt;记载独步武林的绝世武功修炼之法</li>
+        <li>follows-&gt;深入探讨绝世武功的修炼秘法</li>
+        <li>follows-&gt;洞悉心境，剖析绝世武功的奥妙</li>
+        <li>follows-&gt;记录大侠过往经历，揭露心法的深层次秘密</li>
+        <li>follows-&gt;揭示独步武林的心法背后原理</li>
+        <li>follows-&gt;指引读者走上武道巅峰之路</li>
+        <li>heOrShe-&gt;他</li>
+        <li>heOrShe-&gt;她</li>
+        <li>storyStruggles-&gt;寻求掌握绝世武功的微妙技巧</li>
+        <li>storyStruggles-&gt;力图揭开绝世武功的神秘面纱</li>
+        <li>storyStruggles-&gt;详细讲解修炼心法中的艰辛与收获</li>
+        <li>storyStruggles-&gt;分享掌握绝世武功的独家见解</li>
+        <li>storyStruggles-&gt;深入探索使用绝世武功的复杂技巧</li>
+        <li>storyStruggles-&gt;总结行走江湖的心法运用策略</li>
+        <li>storyStruggles-&gt;注重心性修炼与专注力的培养</li>
+        <li>storyStruggles-&gt;强调耐心对获取绝世武功真髓的重要性</li>
+        <li>storyStruggles-&gt;记录修炼者从苦修到悟道的过程</li>
+        <li>storyStruggles-&gt;详细解析修炼的心法根基，助你登顶武道巅峰</li>
+        <li>psycaster-&gt;传功前辈</li>
+        <li>psycaster-&gt;远见老者</li>
+        <li>psycaster-&gt;道门修士</li>
+        <li>psycaster-&gt;竹林能者</li>
+        <li>psycaster-&gt;儒道学者</li>
+        <li>psycaster-&gt;大师</li>
+        <!-- Writing quality -->
+        <li>writingQualityAdjective(quality==6)-&gt;巧妙工艺，匠心独运</li>
+        <li>writingQualityAdjective(quality==5)-&gt;聪慧且深刻，独具慧眼</li>
+        <li>writingQualityAdjective(quality==4)-&gt;表达清晰，思路深邃</li>
+        <li>writingQualityAdjective(quality==3)-&gt;结构尚可，语言平实</li>
+        <li>writingQualityAdjective(quality==2)-&gt;勉强凑合，平庸无奇</li>
+        <li>writingQualityAdjective(quality==1)-&gt;草率粗糙，难以读懂</li>
+        <li>writingQualityAdjective(quality==0)-&gt;几乎无法理解，难以忍受</li>
+        <li>writingQualitySentence(quality[greater_than]4)-&gt;这本书是[excellentDesc][excellentExtra]</li>
+        <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)-&gt;这本书是[decentDesc][decentExtra]</li>
+        <li>writingQualitySentence(quality[less_than]2)-&gt;这本书是[awfulDesc][awfulExtra]</li>
+        <li>excellentDesc-&gt;深入探索武道，立意深远</li>
+        <li>excellentDesc-&gt;对如何运用内力进行修炼提供了深刻见解</li>
+        <li>excellentDesc-&gt;紧凑且充满心灵智慧，独具匠心</li>
+        <li>excellentDesc-&gt;创意无限，激发武林中人修炼之灵感</li>
+        <li>excellentDesc-&gt;开创性且手法高超，构思新颖</li>
+        <li>excellentDesc-&gt;充满了来自宗师的修炼实例，深入浅出</li>
+        <li>excellentExtra-&gt;每一页都透露着绝世武功的修炼诀窍，深藏玄机</li>
+        <li>excellentExtra-&gt;令人着迷，启发了深刻的灵性成长</li>
+        <li>excellentExtra-&gt;其中的见解富有可操作性，能产生深远的转变</li>
+        <li>decentDesc-&gt;这是一本扎实的绝世武功入门指南，内容翔实</li>
+        <li>decentDesc-&gt;有趣且富有启发，给出了实用的建议</li>
+        <li>decentDesc-&gt;专注于理解绝世武功的内在奥义</li>
+        <li>decentDesc-&gt;偶尔令人心生向往，举例生动</li>
+        <li>decentDesc-&gt;吸引着有志成为武林高手的读者</li>
+        <li>decentExtra-&gt;但对于更高阶的武者来说缺乏深度</li>
+        <li>decentExtra-&gt;有些技巧已过时，难以适应新时代的武林</li>
+        <li>decentExtra-&gt;部分内容较为模糊，难以捉摸</li>
+        <li>decentExtra-&gt;过于注重理论而忽略了实际应用</li>
+        <li>decentExtra-&gt;有时将简单的方法过于复杂化</li>
+        <li>awfulDesc-&gt;此书由一位缺乏武学修炼知识之人所著</li>
+        <li>awfulDesc-&gt;内容充满了无关痛痒或荒诞的故事</li>
+        <li>awfulDesc-&gt;言辞模糊，解释混乱</li>
+        <li>awfulDesc-&gt;缺乏清晰且可操作的武功技巧</li>
+        <li>awfulDesc-&gt;充斥着自相矛盾或荒谬的建议</li>
+        <li>awfulExtra-&gt;其方法往往事与愿违，徒增困扰</li>
+        <li>awfulExtra-&gt;未能涵盖武功修炼中的关键原则</li>
+        <li>awfulExtra-&gt;其中包含了荒唐或不切实际的建议</li>
+        <!-- Date -->
+        <li>maybe_date-&gt;</li>
+        <li>maybe_date-&gt;此书首次问世于[date_form]。</li>
+        <li>maybe_date-&gt;这篇文字初次刊印于[date_form]。</li>
+        <li>maybe_date-&gt;至今未能明确书籍创作的确切时间。</li>
+        <li>date_form-&gt;近日</li>
+        <li>date_form-&gt;数百年前</li>
+        <li>date_form-&gt;在[date]年</li>
+        <li>date_form-&gt;在[date_season]季节</li>
+        <!-- Misc rules -->
+        <li>bookType(p=4)-&gt;武学秘籍</li>
+        <li>bookType(p=2)-&gt;武学参考书</li>
+        <li>bookType-&gt;盗版武学</li>
+        <li>bookType-&gt;学习资源</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aberrant blood heart -->
+  <RI_ZombieBodyPart_AberrantBloodHeart.label>邪血心脏</RI_ZombieBodyPart_AberrantBloodHeart.label>
+  <!-- EN: A heart sealed with talismans. Ordinary blood is replaced with aberrant blood, significantly increasing cardiac efficiency. -->
+  <RI_ZombieBodyPart_AberrantBloodHeart.description>符咒封印的心脏，用邪血替换了普通血液，使其工作效率更高。</RI_ZombieBodyPart_AberrantBloodHeart.description>
+  
+  <!-- EN: Aberrant blood liver -->
+  <RI_ZombieBodyPart_AberrantBloodLiver.label>邪血肝</RI_ZombieBodyPart_AberrantBloodLiver.label>
+  <!-- EN: A talisman-sealed liver. Ordinary blood is replaced with aberrant blood, enhancing metabolic efficiency. -->
+  <RI_ZombieBodyPart_AberrantBloodLiver.description>符咒封印的肝，用邪血替换了普通血液，使其工作效率更高。</RI_ZombieBodyPart_AberrantBloodLiver.description>
+  
+  <!-- EN: aberrant blood lung -->
+  <RI_ZombieBodyPart_AberrantBloodLung.label>邪血肺</RI_ZombieBodyPart_AberrantBloodLung.label>
+  <!-- EN: A talisman-sealed lung. Aberrant blood replaces ordinary blood, improving respiratory efficiency and providing resistance to toxins. -->
+  <RI_ZombieBodyPart_AberrantBloodLung.description>符咒封印的肺，用邪血替换了普通血液，使其工作效率更高，并且防毒。</RI_ZombieBodyPart_AberrantBloodLung.description>
+  
+  <!-- EN: demon-binding nail -->
+  <RI_ZombieBodyPart_DemonBindingNail.label>封魔钉</RI_ZombieBodyPart_DemonBindingNail.label>
+  <!-- EN: A bronze nail driven into the spine and inscribed with specialized talismans. Slows the onset of bloodthirsty states in revenant corpses. -->
+  <RI_ZombieBodyPart_DemonBindingNail.description>打入脊椎的铜钉，附加了特殊符咒，可以减缓冥尸进入嗜血状态的时间。</RI_ZombieBodyPart_DemonBindingNail.description>
+  
+  <!-- EN: evil-slaying claw -->
+  <RI_ZombieBodyPart_EvilSlayerClaw.label>斩邪爪</RI_ZombieBodyPart_EvilSlayerClaw.label>
+  <!-- EN: Claws forged from bronze. Exceptionally lethal, especially effective against aberrant entities. -->
+  <RI_ZombieBodyPart_EvilSlayerClaw.description>风磨铜打造的利爪，可以发挥出强大的杀伤力，特别是对于邪祟来说。</RI_ZombieBodyPart_EvilSlayerClaw.description>
+  
+  <!-- EN: nail tongue -->
+  <RI_ZombieBodyPart_NailTongue.label>钉舌</RI_ZombieBodyPart_NailTongue.label>
+  <!-- EN: Steel spikes driven through the tongue, permanently embedded. -->
+  <RI_ZombieBodyPart_NailTongue.description>钢铁制造的钉刺，刺穿了舌头。</RI_ZombieBodyPart_NailTongue.description>
+  
+  <!-- EN: steel claw -->
+  <RI_ZombieBodyPart_SteelClaw.label>钢爪</RI_ZombieBodyPart_SteelClaw.label>
+  <!-- EN: Sharpened steel claws embedded into the fingers. -->
+  <RI_ZombieBodyPart_SteelClaw.description>钢铁打磨而成的利爪，嵌入手指中。</RI_ZombieBodyPart_SteelClaw.description>
+  
+  <!-- EN: steel teeth -->
+  <RI_ZombieBodyPart_SteelTeeth.label>钢牙</RI_ZombieBodyPart_SteelTeeth.label>
+  <!-- EN: Teeth forged from steel. Extremely sharp and durable. -->
+  <RI_ZombieBodyPart_SteelTeeth.description>钢铁打造的牙齿，非常锋利。</RI_ZombieBodyPart_SteelTeeth.description>
+  
+</LanguageData>

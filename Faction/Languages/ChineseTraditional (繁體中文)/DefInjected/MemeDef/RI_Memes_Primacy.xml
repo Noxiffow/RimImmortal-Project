@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Thran deviant path -->
+  <RI_Meme_EvilWays.label>邪魔外道</RI_Meme_EvilWays.label>
+  <!-- EN: We follow the path of Thran, the Devouring Immortal. Without war and bloodshed, life would be unbearably dull. In this world, strength reigns supreme—even heaven and earth shall bow before me. -->
+  <RI_Meme_EvilWays.description>我们信奉喰仙之道，没有战争和血液的磨练，生活将枯燥无比。这世上力量为尊，天地亦可为我屈身。</RI_Meme_EvilWays.description>
+  <!-- EN: cultivate -->
+  <RI_Meme_EvilWays.symbolPacks.0.adjective>修炼</RI_Meme_EvilWays.symbolPacks.0.adjective>
+  <!-- EN: cultivator -->
+  <RI_Meme_EvilWays.symbolPacks.0.member>修炼者</RI_Meme_EvilWays.symbolPacks.0.member>
+  <!-- EN: cultivate -->
+  <RI_Meme_EvilWays.symbolPacks.0.theme>修炼</RI_Meme_EvilWays.symbolPacks.0.theme>
+  
+  <!-- EN: Righteous path -->
+  <RI_Meme_FrankAndRighteous.label>正道之途</RI_Meme_FrankAndRighteous.label>
+  <!-- EN: 心如明镜，终成大道。我们始终行走于正道之上，不会偏离。 -->
+  <RI_Meme_FrankAndRighteous.description>心如明镜，终成大道。我们始终行走于正道之上，不会偏离。</RI_Meme_FrankAndRighteous.description>
+  <!-- EN: cultivate -->
+  <RI_Meme_FrankAndRighteous.symbolPacks.0.adjective>修炼</RI_Meme_FrankAndRighteous.symbolPacks.0.adjective>
+  <!-- EN: cultivator -->
+  <RI_Meme_FrankAndRighteous.symbolPacks.0.member>修炼者</RI_Meme_FrankAndRighteous.symbolPacks.0.member>
+  <!-- EN: cultivate -->
+  <RI_Meme_FrankAndRighteous.symbolPacks.0.theme>修炼</RI_Meme_FrankAndRighteous.symbolPacks.0.theme>
+  
+</LanguageData>

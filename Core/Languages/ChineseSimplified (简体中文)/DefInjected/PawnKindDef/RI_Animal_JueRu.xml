@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: JueRu -->
+  <RI_Animal_JueRu.label>玃如</RI_Animal_JueRu.label>
+  <!-- EN: JueRu -->
+  <RI_Animal_JueRu.labelPlural>玃如</RI_Animal_JueRu.labelPlural>
+  <!-- EN: JueRu calf -->
+  <RI_Animal_JueRu.lifeStages.JueRu_calf.label>玃如幼崽</RI_Animal_JueRu.lifeStages.JueRu_calf.label>
+  <!-- EN: JueRu calves -->
+  <RI_Animal_JueRu.lifeStages.JueRu_calf.labelPlural>玃如幼崽</RI_Animal_JueRu.lifeStages.JueRu_calf.labelPlural>
+  
+  <!-- UNUSED -->
+  <RI_Animal_JueRu.lifeStages.elk_calf.label>玃如（幼年）</RI_Animal_JueRu.lifeStages.elk_calf.label>
+  <RI_Animal_JueRu.lifeStages.elk_calf.labelPlural>玃如（幼年）</RI_Animal_JueRu.lifeStages.elk_calf.labelPlural>
+  
+</LanguageData>

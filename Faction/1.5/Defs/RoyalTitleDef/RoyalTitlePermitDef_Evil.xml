@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================= 头衔的能力 前置 ============================= -->
+	<RoyalTitlePermitDef Name="RI_EvilSect_DropResourcesBase" Abstract="True">
+		<workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+		<faction>RI_Faction_EvilSect</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>15</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<royalAid>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!-- ============================= 正道宗门 ============================= -->
+
+	<!--申请药材-->
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_RequestMedicinalHerbs</defName>
+		<label>Request medicinal herbs</label>
+		<description>Request a batch of medicinal herbs from the sect.</description>
+		<minTitle>RI_Sect_Title_C</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,0)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<RI_Resource_JunGouBezoar>10</RI_Resource_JunGouBezoar>
+				<RI_Resource_PiloseAntler>10</RI_Resource_PiloseAntler>
+				<RI_Resource_LingZhi>20</RI_Resource_LingZhi>
+				<RI_Resource_DuskyMushroom>10</RI_Resource_DuskyMushroom>
+				<RI_Resource_PlantainSeed>20</RI_Resource_PlantainSeed>
+				<RI_Resource_SnowLotus>10</RI_Resource_SnowLotus>
+				<RI_Resource_LanternBerries>10</RI_Resource_LanternBerries>
+				<RI_Resource_SilverGinseng>10</RI_Resource_SilverGinseng>
+				<RI_Resource_TillandsiaDragonShoot>10</RI_Resource_TillandsiaDragonShoot>
+			</itemsToDrop>
+			<favorCost>3</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--申请建材-->
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_RequestBuildingMaterials</defName>
+		<label>Request building materials</label>
+		<description>Request a batch of building materials from the sect.</description>
+		<minTitle>RI_Sect_Title_B</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,1)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<Steel>300</Steel>
+				<WoodLog>200</WoodLog>
+				<Cloth>200</Cloth>
+				<Silver>100</Silver>
+			</itemsToDrop>
+			<favorCost>3</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--申请修炼资源-->
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_RequestCultivationResources</defName>
+		<label>Request cultivation resources</label>
+		<description>Request a batch of cultivation resources from the sect.</description>
+		<minTitle>RI_Sect_Title_B</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,3)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<RI_Resource_LiquidJade>5</RI_Resource_LiquidJade>
+				<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			</itemsToDrop>
+			<favorCost>5</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--申请丹药-->
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_RequestPills</defName>
+		<label>Request pills</label>
+		<description>Request a batch of pills from the sect.</description>
+		<minTitle>RI_Sect_Title_C</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,4)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<RI_Drug_ExpelHotPill>3</RI_Drug_ExpelHotPill>
+				<RI_Drug_ExpelColdPill>3</RI_Drug_ExpelColdPill>
+				<RI_Drug_CultivateMoreEnergyPill>3</RI_Drug_CultivateMoreEnergyPill>
+				<RI_Drug_GoldBloodPill>3</RI_Drug_GoldBloodPill>
+				<RI_Drug_HerbPowder>5</RI_Drug_HerbPowder>
+			</itemsToDrop>
+			<favorCost>5</favorCost>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--呼叫仙舟-->
+	<RoyalTitlePermitDef>
+		<defName>RI_EvilSect_Drop_CallCelestialShip</defName>
+		<label>Call celestial ship</label>
+		<description>Call for the sect's celestial ship.</description>
+		<workerClass>RI_Faction.RoyalTitlePermitWorker_RI_CallShuttle</workerClass>
+		<minTitle>RI_Sect_Title_C</minTitle>
+		<faction>RI_Faction_EvilSect</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>5</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(1,0)</uiPosition>
+		<royalAid>
+			<favorCost>5</favorCost>
+			<targetingRange>30</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--呼叫弟子助阵-->
+	<RoyalTitlePermitDef>
+		<defName>RI_EvilSect_CallDisciplesAssistance</defName>
+		<label>Call disciples' assistance</label>
+		<description>Ask the sect to send a batch of battle-experienced cultivators for support.</description>
+		<workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+		<minTitle>RI_Sect_Title_D</minTitle>
+		<faction>RI_Faction_EvilSect</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,1)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<pawnKindDef>RI_Pawn_NormalEvilMember</pawnKindDef>
+			<!--记得修改pawnkind-->
+			<pawnCount>8</pawnCount>
+			<targetingRange>39.9</targetingRange>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+
+	<!--呼叫宗门轨道轰炸-->
+	<RoyalTitlePermitDef>
+		<defName>RI_EvilSect_CallSectOrbitalBombardment</defName>
+		<label>Call sect's orbital bombardment</label>
+		<description>Contact a sect elder to obtain the usage rights for a Heavenly-grade magic weapon, and conduct orbital bombardment on a specific area.</description>
+		<workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+		<minTitle>RI_Sect_Title_E</minTitle>
+		<faction>RI_Faction_EvilSect</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>15</cooldownDays>
+		<uiPosition>(1,2)</uiPosition>
+		<royalAid>
+			<favorCost>3</favorCost>
+			<targetingRange>42.9</targetingRange>
+			<radius>2.4</radius>
+			<explosionRadiusRange>7.4</explosionRadiusRange>
+			<explosionCount>16</explosionCount>
+			<intervalTicks>48</intervalTicks>
+			<warmupTicks>90</warmupTicks>
+		</royalAid>
+	</RoyalTitlePermitDef>
+
+	<!--杂役派遣-->
+	<RoyalTitlePermitDef>
+		<defName>RI_EvilSect_FollowerDispatch</defName>
+		<label>Follower dispatch</label>
+		<description>Ask the sect to dispatch several miscellaneous disciples to handle menial tasks.</description>
+		<workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+		<minTitle>RI_Sect_Title_E</minTitle>
+		<faction>RI_Faction_EvilSect</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,3)</uiPosition>
+		<royalAid>
+			<favorCost>5</favorCost>
+			<pawnKindDef>RI_Pawn_SectBeginner</pawnKindDef>
+			<!--记得修改pawnkind，最好是有百粮丸啥的starthediff，不用吃饭-->
+			<pawnCount>5</pawnCount>
+			<aidDurationDays>15</aidDurationDays>
+			<targetingRange>44.9</targetingRange>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_QingMingWine</defName>
+		<label>Request QingMing jade wine</label>
+		<description>Request an expensive QingMing jade wine.</description>
+		<minTitle>RI_Sect_Title_E</minTitle>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(1,4)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<RI_Things_JadeLiquid>1</RI_Things_JadeLiquid>
+			</itemsToDrop>
+			<favorCost>20</favorCost>
+		</royalAid>
+		<cooldownDays>30</cooldownDays>
+	</RoyalTitlePermitDef>
+
+	<RoyalTitlePermitDef ParentName="RI_EvilSect_DropResourcesBase">
+		<defName>RI_EvilSect_Drop_Nectar</defName>
+		<label>Request Marrow-washing nectar</label>
+		<description>Request an expensive Marrow-washing nectar.</description>
+		<minTitle>RI_Sect_Title_E</minTitle>
+		<permitPointCost>2</permitPointCost>
+		<uiPosition>(1,5)</uiPosition>
+		<royalAid>
+			<itemsToDrop>
+				<RI_Things_JadeLiquidPro>1</RI_Things_JadeLiquidPro>
+			</itemsToDrop>
+			<favorCost>31</favorCost>
+		</royalAid>
+		<cooldownDays>45</cooldownDays>
+	</RoyalTitlePermitDef>
+
+</Defs>

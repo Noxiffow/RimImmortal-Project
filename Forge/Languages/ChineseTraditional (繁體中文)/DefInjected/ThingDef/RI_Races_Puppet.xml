@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient golem-Dark armor -->
+  <RI_Mech_AncientPuppetA.label>古修傀儡-玄甲</RI_Mech_AncientPuppetA.label>
+  <!-- EN: A golem that cannot be understood through its principles, made solely from steel and Qi talisman, can only be found in ancient cultivator's ruins.\n\nThis golem is called Dark armor, and its body is covered in thick armor, making it move slowly. However, its fists swing wildly, making it a dangerous opponent. -->
+  <RI_Mech_AncientPuppetA.description>一种看不透原理，单纯用钢铁和灵气法宝构造成的傀儡，只会在古修者的遗迹中出现。\n\n这种傀儡被称为玄甲，其身体覆盖着厚厚的盔甲，行动较慢，但是双拳挥舞，十分危险。</RI_Mech_AncientPuppetA.description>
+  <!-- EN: head -->
+  <RI_Mech_AncientPuppetA.tools.head.label>头</RI_Mech_AncientPuppetA.tools.head.label>
+  <!-- EN: left fist -->
+  <RI_Mech_AncientPuppetA.tools.left_fist.label>左拳</RI_Mech_AncientPuppetA.tools.left_fist.label>
+  <!-- EN: fist -->
+  <RI_Mech_AncientPuppetA.tools.left_fist.labelNoLocation>拳头</RI_Mech_AncientPuppetA.tools.left_fist.labelNoLocation>
+  <!-- EN: right fist -->
+  <RI_Mech_AncientPuppetA.tools.right_fist.label>右拳</RI_Mech_AncientPuppetA.tools.right_fist.label>
+  <!-- EN: fist -->
+  <RI_Mech_AncientPuppetA.tools.right_fist.labelNoLocation>拳头</RI_Mech_AncientPuppetA.tools.right_fist.labelNoLocation>
+  
+  <!-- EN: Ancient golem-Sword spine -->
+  <RI_Mech_AncientPuppetB.label>古修傀儡-剑脊</RI_Mech_AncientPuppetB.label>
+  <!-- EN: A golem that cannot be understood through its principles, made solely from steel and Qi talisman, can only be found in ancient cultivator's ruins.\n\nThis golem is called Sword spine, with its two forearms forming short swords, coupled with its incredibly fast speed, making it a formidable opponent. -->
+  <RI_Mech_AncientPuppetB.description>一种看不透原理，单纯用钢铁和灵气法宝构造成的傀儡，只会在古修者的遗迹中出现。\n\n这种傀儡被称为剑脊，两只小臂形成的短刀，加上极快的速度，令它成为了难缠的对手。</RI_Mech_AncientPuppetB.description>
+  <!-- EN: head -->
+  <RI_Mech_AncientPuppetB.tools.head.label>头</RI_Mech_AncientPuppetB.tools.head.label>
+  <!-- EN: left blade -->
+  <RI_Mech_AncientPuppetB.tools.left_blade.label>左刃</RI_Mech_AncientPuppetB.tools.left_blade.label>
+  <!-- EN: blade -->
+  <RI_Mech_AncientPuppetB.tools.left_blade.labelNoLocation>刃</RI_Mech_AncientPuppetB.tools.left_blade.labelNoLocation>
+  <!-- EN: right blade -->
+  <RI_Mech_AncientPuppetB.tools.right_blade.label>右刃</RI_Mech_AncientPuppetB.tools.right_blade.label>
+  <!-- EN: blade -->
+  <RI_Mech_AncientPuppetB.tools.right_blade.labelNoLocation>刃</RI_Mech_AncientPuppetB.tools.right_blade.labelNoLocation>
+  
+  <!-- EN: Steel golem -->
+  <RI_SteelPuppet.label>铁傀</RI_SteelPuppet.label>
+  <!-- EN: Made of steel, the golem has good fighting power and defense. -->
+  <RI_SteelPuppet.description>由钢铁铸造的傀儡，具有不俗的战斗力和防御力。</RI_SteelPuppet.description>
+  <!-- EN: head -->
+  <RI_SteelPuppet.tools.head.label>头</RI_SteelPuppet.tools.head.label>
+  <!-- EN: left fist -->
+  <RI_SteelPuppet.tools.left_fist.label>左拳</RI_SteelPuppet.tools.left_fist.label>
+  <!-- EN: fist -->
+  <RI_SteelPuppet.tools.left_fist.labelNoLocation>拳头</RI_SteelPuppet.tools.left_fist.labelNoLocation>
+  <!-- EN: right fist -->
+  <RI_SteelPuppet.tools.right_fist.label>右拳</RI_SteelPuppet.tools.right_fist.label>
+  <!-- EN: fist -->
+  <RI_SteelPuppet.tools.right_fist.labelNoLocation>拳头</RI_SteelPuppet.tools.right_fist.labelNoLocation>
+  
+  <!-- EN: Stone golem -->
+  <RI_StonyPuppet.label>石傀</RI_StonyPuppet.label>
+  <!-- EN: The large golem, composed of stone, is very heavy, so it moves very slowly, but it has great defensive properties. -->
+  <RI_StonyPuppet.description>由石头组成的大型石傀，体型硕大，所以移速很慢，但是其防御能力极强。</RI_StonyPuppet.description>
+  <!-- EN: head -->
+  <RI_StonyPuppet.tools.head.label>头</RI_StonyPuppet.tools.head.label>
+  <!-- EN: left fist -->
+  <RI_StonyPuppet.tools.left_fist.label>左拳</RI_StonyPuppet.tools.left_fist.label>
+  <!-- EN: fist -->
+  <RI_StonyPuppet.tools.left_fist.labelNoLocation>拳头</RI_StonyPuppet.tools.left_fist.labelNoLocation>
+  <!-- EN: right fist -->
+  <RI_StonyPuppet.tools.right_fist.label>右拳</RI_StonyPuppet.tools.right_fist.label>
+  <!-- EN: fist -->
+  <RI_StonyPuppet.tools.right_fist.labelNoLocation>拳头</RI_StonyPuppet.tools.right_fist.labelNoLocation>
+  
+  <!-- EN: Wooden golem -->
+  <RI_WoodenPuppet.label>木傀</RI_WoodenPuppet.label>
+  <!-- EN: It is a simple wooden golem, slow in movement and very low in attack, mostly used as a sandbag for the disciples to exercise. -->
+  <RI_WoodenPuppet.description>结构简单的木傀，移速较慢，攻击力也非常低，大多时候作为给宗门弟子锻炼拳脚的沙包用。</RI_WoodenPuppet.description>
+  <!-- EN: head -->
+  <RI_WoodenPuppet.tools.head.label>头</RI_WoodenPuppet.tools.head.label>
+  <!-- EN: left fist -->
+  <RI_WoodenPuppet.tools.left_fist.label>左拳</RI_WoodenPuppet.tools.left_fist.label>
+  <!-- EN: fist -->
+  <RI_WoodenPuppet.tools.left_fist.labelNoLocation>拳头</RI_WoodenPuppet.tools.left_fist.labelNoLocation>
+  <!-- EN: right fist -->
+  <RI_WoodenPuppet.tools.right_fist.label>右拳</RI_WoodenPuppet.tools.right_fist.label>
+  <!-- EN: fist -->
+  <RI_WoodenPuppet.tools.right_fist.labelNoLocation>拳头</RI_WoodenPuppet.tools.right_fist.labelNoLocation>
+  
+</LanguageData>

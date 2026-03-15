@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 明心相关身体部件 -->
+
+    <!-- 菩提心 -->
+    <!-- 特效：脑后光环佛珠 -->
+    <!-- 光环：菩提: 范围内友方减伤加护甲 -->
+
+    <!-- 梵鸣肺 -->
+    <!-- 狮子吼 范围降低视力听力操作 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_ThunderLung</defName>
+        <label>thunder lung</label>
+        <labelNoun>an thunder lung</labelNoun>
+        <!-- 伴随着每一次呼吸，似乎都有隐隐的佛经念颂声，当大声吼叫时，一定能震慑众生吧。 附加能力：狮子吼 -->
+        <description>With every breath, there seems to be a faint chanting of sutras. When you shout
+            loudly, you can definitely intimidate all living beings.\n\n Additional ability: "lion's
+            roar"</description>
+        <defaultInstallPart>Lung</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <abilities>
+            <li>NzRI_Zd_LionRoar</li>
+        </abilities>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- 怒目 -->
+    <!-- 范围火焰\EMP加爆炸 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_GlaringEye</defName>
+        <label>glaring eye</label>
+        <labelNoun>an glaring eye</labelNoun>
+        <!-- 看似慈眉善目，然而隐隐也有丝丝火光闪烁。"佛虽慈悲亦有怒，三分火性隐心中。" 附加能力：怒目 -->
+        <description>It looks like a kind face, but there are also faint flashes of fire. "Although
+            the Buddha is compassionate, there is also anger, and the fire nature is hidden in the
+            heart."\n\n Additional ability: "stare angrily"</description>
+        <defaultInstallPart>Eye</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <abilities>
+            <li>NzRI_Zd_StareAngrily</li>
+        </abilities>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>        
+    </HediffDef>
+
+    <!-- 无动臂 -->
+    <!-- 触摸目标，添加减伤hediff，套盾 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_UnshakeableArm</defName>
+        <label>unshakeable arm</label>
+        <labelNoun>an unshakeable arm</labelNoun>
+        <!-- 肌肉坚实，如同石头一般，给人以十足的安全感。 附加能力：抚顶 -->
+        <description>The muscles are solid, like stone, giving people a sense of security.
+            Additional
+            ability: "touching head"</description>
+        <defaultInstallPart>Shoulder</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <abilities>
+            <li>NzRI_Zd_TouchingHead</li>
+        </abilities>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>81</power>
+                        <armorPenetration>2.0</armorPenetration>
+                        <cooldownTime>2.75</cooldownTime>
+                        <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+                        <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>        
+    </HediffDef>
+
+    <!-- 金刚臂 -->
+    <!-- 打晕，击倒 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_VajraArm</defName>
+        <label>vajra arm</label>
+        <labelNoun>an vajra arm</labelNoun>
+        <!-- 肌肉虬结，表面隐隐流光闪烁，如同金刚石一般。 附加能力：撼山拳，慈悲掌 -->
+        <description>The muscles are knotted, and the surface is faintly shining, like a diamond.
+            Additional abilities: "shake mountain fist", "merciful hit"</description>
+        <defaultInstallPart>Shoulder</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <abilities>
+            <li>NzRI_Zd_ShakeMountainFist</li>
+            <li>NzRI_Zd_MercyHit</li>
+        </abilities>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>31</power>
+                        <armorPenetration>1.5</armorPenetration>
+                        <cooldownTime>0.75</cooldownTime>
+                        <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+                        <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>        
+    </HediffDef>
+
+    <!-- 圆光腿 -->
+    <!-- 踢出流光,大扇形切割低伤害,stuck, -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_DivineLightLeg</defName>
+        <label>divine light</label>
+        <labelNoun>an divine light</labelNoun>
+        <!-- 踩在地上时，地面仿若水面一样泛出涟漪，仔细一观，似乎又什么都没有。\n\n 附加能力：圆光腿 -->
+        <description>Stepping on the ground, the ground ripples like the surface of the water. Upon
+            closer inspection, it seems like there is nothing there.\n\n Additional ability: "divine
+            light kick"</description>
+        <defaultInstallPart>Leg</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <abilities>
+            <li>Zd_DivineLightKick</li>
+        </abilities>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>        
+    </HediffDef>
+
+    <!-- 莲花腿 -->
+    <!-- 花开见佛，步步生莲。\n\n 附加能力：梵界 -->
+    <!--  -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_LotusLeg</defName>
+        <label>lotus leg</label>
+        <labelNoun>an lotus leg</labelNoun>
+        <description>Flowers bloom to see the Buddha, lotus blossoms with each step。\n\n Additional
+            ability: "brahma area"</description>
+        <defaultInstallPart>Leg</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <abilities>
+            <li>NzRI_Zd_BulletShield</li>
+        </abilities>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.15</NzRI_ZhengDePowerMultiplier>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>        
+    </HediffDef>
+</Defs>

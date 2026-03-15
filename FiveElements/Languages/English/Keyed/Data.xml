@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <RI.Five_NowVitality>Now Vitality</RI.Five_NowVitality>
+    <RI_Wood_Gizmo_Btn_Regenerate>Regenerate</RI_Wood_Gizmo_Btn_Regenerate>
+    <RI_Wood_Gizmo_Btn_Regenerate_Desc>Extract stored vitality to restore life to oneself.</RI_Wood_Gizmo_Btn_Regenerate_Desc>
+    <RI_FiveElements_ActivateAreaShield>Activate Area Shield</RI_FiveElements_ActivateAreaShield>
+    <RI_FiveElements_ActivateAreaShieldDesc>Activate the tower's shield to intercept nearby projectiles and area shield to protect allies. The tower will be destroyed after activation.</RI_FiveElements_ActivateAreaShieldDesc>
+    <RI_FiveElements_WorldSealingTowerStatus>Area Shield</RI_FiveElements_WorldSealingTowerStatus>
+
+</LanguageData>

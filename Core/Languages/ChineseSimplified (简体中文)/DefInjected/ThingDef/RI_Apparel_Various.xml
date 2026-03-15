@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Beggar robe -->
+  <RI_Apparel_BeggarClothes.label>褴褛衫</RI_Apparel_BeggarClothes.label>
+  <!-- EN: A patched-up long robe, stitched together with many repairs, its appearance will keep the people at bay. However, this robe provides good warmth and also increases carrying capacity slightly.\n\n<color=#FFFF00>【Special effects】Carrying capacity +10.\nGreatly reduces social interactions.</color> -->
+  <RI_Apparel_BeggarClothes.description>一件缝缝补补，布满补丁的厚实长衫。这件衣服虽然会让人保持距离，但是保暖效果不错，同时还能增加少许携带能力。\n\n&lt;color=#FFFF00>【特殊效果】\n携带能力+10。\n社交效果-50%。\n魅力-5。&lt;/color></RI_Apparel_BeggarClothes.description>
+  
+  <!-- EN: Cultivator pants -->
+  <RI_Apparel_CultivatorPants.label>修士长绔</RI_Apparel_CultivatorPants.label>
+  <!-- EN: A pair of simple sewn pants. -->
+  <RI_Apparel_CultivatorPants.description>一条普通的修士裤子。</RI_Apparel_CultivatorPants.description>
+  
+  <!-- EN: Cultivator underwear -->
+  <RI_Apparel_CultivatorUnderwear.label>修士内衫</RI_Apparel_CultivatorUnderwear.label>
+  <!-- EN: A fabric undergarment, meticulously stitched and dyed using the tie-dye technique. This short-sleeved undergarment, with no discernible origin, is favored by free cultivators. -->
+  <RI_Apparel_CultivatorUnderwear.description>一件织物内衣，经过扎染处理，针脚细密。这种看不出来源的短袖内衣被散修所喜爱。</RI_Apparel_CultivatorUnderwear.description>
+  
+  <!-- EN: Exercise apparel -->
+  <RI_Apparel_ExerciseApparel.label>武衣</RI_Apparel_ExerciseApparel.label>
+  <!-- EN: A thick, sleeveless jacket. In order to facilitate activities, the hem is shortened, and the thick cloth pieces are specially sewn in some parts to protect body. -->
+  <RI_Apparel_ExerciseApparel.description>一件厚实的无袖外衣。为了方便活动所以改短了下摆，并且特意在一些容易磨损的部位，层叠缝制了加厚布片，以起到更好的防护作用。</RI_Apparel_ExerciseApparel.description>
+  
+  <!-- EN: Knapsack -->
+  <RI_Apparel_Knapsack.label>背囊</RI_Apparel_Knapsack.label>
+  <!-- EN: A small backpack used for carrying a few essentials, equipped with some tools, suitable for those embarking on long journeys.\n\n<color=#FFFF00>【Special effects】Carrying capacity +30.</color> -->
+  <RI_Apparel_Knapsack.description>用来背负少量物资的背囊，挂着一些小工具和水壶，适合出远门的人。\n\n&lt;color=#FFFF00>【特殊效果】\n携带能力+30。&lt;/color></RI_Apparel_Knapsack.description>
+  
+  <!-- EN: Light cloak -->
+  <RI_Apparel_LightCloak.label>披风</RI_Apparel_LightCloak.label>
+  <!-- EN: An open jacket with large sleeves. Wearing on the body can only play a little wind effect, mainly to play handsome. -->
+  <RI_Apparel_LightCloak.description>一件敞开的对襟大袖外套，穿在身上只能起到一点挡风的作用。</RI_Apparel_LightCloak.description>
+  
+  <!-- EN: Rain cape -->
+  <RI_Apparel_RainCape.label>蓑衣</RI_Apparel_RainCape.label>
+  <!-- EN: A rain cape made of hay and fiber. It's quite large and thick. It is not very protective, but it can be used with the rain hat to keep the body from getting wet, and it is a necessary rain gear for some workers.\n\n<color=#FFFF00>【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.</color> -->
+  <RI_Apparel_RainCape.description>一件用干草编制而成的蓑衣，相当宽大厚实。没什么防护能力，但是可以让身体不被雨淋湿，是一些劳动者必备的雨具。\n\n&lt;color=#FFFF00>【特殊效果】\n提供避雨效果。&lt;/color></RI_Apparel_RainCape.description>
+  
+</LanguageData>

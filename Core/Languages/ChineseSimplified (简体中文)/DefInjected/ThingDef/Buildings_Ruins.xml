@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient pagoda -->
+  <RI_Building_AncientPagoda.label>古代石塔</RI_Building_AncientPagoda.label>
+  <!-- EN: An ancient stone pagoda with a history of 100-200 years, exuding dense Qi energy from within. -->
+  <RI_Building_AncientPagoda.description>一座有百年历史的古老石塔，内部散发着浓郁灵气。\n\n如果学习了炼器之法，可以运用功法，从中得到一份修士宝匣。</RI_Building_AncientPagoda.description>
+  
+  <!-- EN: Cracked rock -->
+  <RI_Building_BigRock.label>龟裂巨石</RI_Building_BigRock.label>
+  <!-- EN: A massive cracked rock, emanating dense Qi energy from within. -->
+  <RI_Building_BigRock.description>一块巨大的龟裂巨石，内部散发着浓郁灵气。\n\n如果学习了炼器之法，可以运用功法，从中得到一块玄妙赌石。</RI_Building_BigRock.description>
+  
+</LanguageData>

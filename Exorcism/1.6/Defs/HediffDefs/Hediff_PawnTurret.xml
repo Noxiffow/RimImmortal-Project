@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--骨片发射器-->
+	<HediffDef>
+		<defName>RI_TurretHediff_BoneShoot</defName>
+		<label>bone shooter</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>#</description>
+		<everCurableByItem>false</everCurableByItem>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="RimZombieGirl.HediffCompProperties_PawnTurret">
+				<tickInterval>180</tickInterval>
+				<!-- 每 3 秒 -->
+				<damageAmount>20</damageAmount>
+				<!-- 伤害 20 -->
+				<projectileDef>RI_Bullet_Bonebullet</projectileDef>
+				<!-- 使用现成的子弹 -->
+				<range>25</range>
+				<burstShotCount>3</burstShotCount>
+				<burstShotInterval>10</burstShotInterval>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--骨片子弹-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_Bonebullet</defName>
+		<label>Bone bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_Bonebullet</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--邪火发射器-->
+	<HediffDef>
+		<defName>RI_TurretHediff_EvilFireShoot</defName>
+		<label>evil fire shooter</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>#</description>
+		<everCurableByItem>false</everCurableByItem>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="RimZombieGirl.HediffCompProperties_PawnTurret">
+				<tickInterval>180</tickInterval>
+				<!-- 每 3 秒 -->
+				<damageAmount>20</damageAmount>
+				<!-- 伤害 20 -->
+				<projectileDef>RI_Bullet_Bonebullet</projectileDef>
+				<!-- 使用现成的子弹 -->
+				<range>25</range>
+				<burstShotCount>3</burstShotCount>
+				<burstShotInterval>10</burstShotInterval>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+	
+	<!--蜘蛛丝发射器-->
+	<HediffDef>
+		<defName>RI_TurretHediff_SpiderShoot</defName>
+		<label>spider spit shooter</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>#</description>
+		<everCurableByItem>false</everCurableByItem>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="RimZombieGirl.HediffCompProperties_PawnTurret">
+				<tickInterval>180</tickInterval>
+				<!-- 每 3 秒 -->
+				<damageAmount>20</damageAmount>
+				<!-- 伤害 20 -->
+				<projectileDef>RI_Bullet_SpiderNet</projectileDef>
+				<!-- 使用现成的子弹 -->
+				<range>25</range>
+				<burstShotCount>3</burstShotCount>
+				<burstShotInterval>15</burstShotInterval>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_SpiderNet</defName>
+		<label>spider net</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_SpiderNet</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>30</speed>
+		</projectile>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make charm paper from wood -->
+  <RI_Recipe_ChemfuelFromWood.label>原木制作符纸</RI_Recipe_ChemfuelFromWood.label>
+  <!-- EN: Crush the wood and make charm paper from the wood pulp. -->
+  <RI_Recipe_ChemfuelFromWood.description>捣碎原木，用木浆制作符纸。</RI_Recipe_ChemfuelFromWood.description>
+  <!-- EN: making charm paper -->
+  <RI_Recipe_ChemfuelFromWood.jobString>正在制作符纸</RI_Recipe_ChemfuelFromWood.jobString>
+  
+  <!-- EN: make charm paper from wood x4 -->
+  <RI_Recipe_ChemfuelFromWoodBulk.label>原木制作符纸 x4</RI_Recipe_ChemfuelFromWoodBulk.label>
+  <!-- EN: Crush the wood and make charm paper from the wood pulp. -->
+  <RI_Recipe_ChemfuelFromWoodBulk.description>捣碎原木，用木浆制作符纸。</RI_Recipe_ChemfuelFromWoodBulk.description>
+  <!-- EN: making charm paper -->
+  <RI_Recipe_ChemfuelFromWoodBulk.jobString>正在制作符纸</RI_Recipe_ChemfuelFromWoodBulk.jobString>
+  
+  <!-- EN: purify blood -->
+  <RI_Recipe_PurifyBlood.label>净化邪血</RI_Recipe_PurifyBlood.label>
+  <!-- EN: Crush the wood and make charm paper from the wood pulp. -->
+  <RI_Recipe_PurifyBlood.description>对邪血施以符咒，将其净化为正常血液。</RI_Recipe_PurifyBlood.description>
+  <!-- EN: purifying blood -->
+  <RI_Recipe_PurifyBlood.jobString>正在净化邪血</RI_Recipe_PurifyBlood.jobString>
+  
+</LanguageData>

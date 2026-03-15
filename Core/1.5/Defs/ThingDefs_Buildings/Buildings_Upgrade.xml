@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--雷公柱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_ThunderColumn</defName>
+		<label>Thunder column</label>
+		<description>A column forged from steel, embedded with spiritual crystal components. This pillar possesses the ability to attract thunder, allowing cultivators to upgrade without suffering from its destructive force.\n\nIn ancient cultivation eras, such structures did not exist. Ancient cultivators would endure heavenly tribulation with their own bodies to demonstrate their resilience. However, with the advancement of Qi energy studies, people discovered that thunder was merely drawn to intense spiritual reactions, and there was no so-called divine will obstructing one's ascension to immortality.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>RIRitualFramework.Building_LightingRod</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_ThunderColumn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,3.5)</drawSize>
+		</graphicData>
+
+		<!--制作-->
+		<costList>
+			<Steel>50</Steel>
+			<RI_Resource_SpiritualCrystal>2</RI_Resource_SpiritualCrystal>
+		</costList>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<!--不能造在室内-->
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<comps>
+			<li Class="RIRitualFramework.CompProperties_DefendThunder">
+				<count>2</count>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2020</uiOrder>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>RIRitualFramework.PlaceWorker_NeedsUpgradeSpot</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RI_QiResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--茶树-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_TeaPlant</defName>
+		<label>Tea plant</label>
+		<description>Tea plant can produce tea leaves, tea leaves can be made into tea.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_TeaLeaf</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.75</Nutrition>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_TeaPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growDays>15</growDays>
+			<harvestAfterGrowth>0.15</harvestAfterGrowth>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RI_Resource_TeaLeaf</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<immatureGraphicPath>Things/Plant/RI_Plant_TeaPlant</immatureGraphicPath>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_Planting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--珍珠豆-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_PearlPeaPlant</defName>
+		<label>Pearl pea plant</label>
+		<description>The crop grows quickly and produces pearl pea, a berry that can be ground and used as a spice.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_PearlPea</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.75</Nutrition>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_PearlPeaPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growDays>5.5</growDays>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RI_Resource_PearlPea</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowMinSkill>1</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<immatureGraphicPath>Things/Plant/RI_Plant_PearlPeaPlant_Immature</immatureGraphicPath>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_HighLevelPlanting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--西瓜-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_Watermelon</defName>
+		<label>Watermelon</label>
+		<description>Watermelon originated in the tropics in ancient times and is a crop that can grow large watermelons.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_Watermelon</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>1</Nutrition>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Watermelon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growDays>9</growDays>
+			<harvestAfterGrowth>0.1</harvestAfterGrowth>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RI_Resource_Watermelon</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<sowMinSkill>3</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<immatureGraphicPath>Things/Plant/RI_Plant_Watermelon_Immature</immatureGraphicPath>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_Planting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+</Defs>

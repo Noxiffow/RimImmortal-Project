@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!--电饭煲框架，投料job-->
+	<JobDef>
+		<defName>RI_Fill_RiceCookerFrame</defName>
+		<driverClass>RI_Frame_RiceCooker.JobDriver_FillRiceCookerFrame</driverClass>
+		<reportString>input resource</reportString>
+		<suspendable>true</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<!-- ★ 必须与 C# RI_WineBarrelDefOf.FillWineBarrel 变量名一致 -->
+		<defName>FillWineBarrel</defName>
+		<!-- ★ 指向你的 C# JobDriver 类 -->
+		<driverClass>RI_Frame_Winebarrel.JobDriver_FillWineBarrel</driverClass>
+		<suspendable>false</suspendable>
+		<reportString>fill TargetA</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<!-- ================= 取出产物 (Take Product) ================= -->
+	<JobDef>
+		<!-- ★ 必须与 C# RI_WineBarrelDefOf.TakeProductFromWineBarrel 变量名一致 -->
+		<defName>TakeProductFromWineBarrel</defName>
+		<!-- ★ 指向你的 C# JobDriver 类 -->
+		<driverClass>RI_Frame_Winebarrel.JobDriver_TakeProduct</driverClass>
+		<reportString>harvest TargetA</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

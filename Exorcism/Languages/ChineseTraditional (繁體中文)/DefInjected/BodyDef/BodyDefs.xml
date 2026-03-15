@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: EvilCreature Head Spider -->
+  <RI_EvilCreature_HeadSpider_BodyDef.label>人头蜘蛛</RI_EvilCreature_HeadSpider_BodyDef.label>
+  <!-- EN: left eye -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.left_eye.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.left_eye.customLabel>
+  <!-- EN: right eye -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.right_eye.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.right_eye.customLabel>
+  <!-- EN: left ear -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.left_ear.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.left_ear.customLabel>
+  <!-- EN: right ear -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.right_ear.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_HeadSpider_Head.parts.right_ear.customLabel>
+  <!-- EN: front left leg -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.front_left_leg.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.front_left_leg.customLabel>
+  <!-- EN: front right leg -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.front_right_leg.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.front_right_leg.customLabel>
+  <!-- EN: rear left leg -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.rear_left_leg.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.rear_left_leg.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.rear_right_leg.customLabel>TODO</RI_EvilCreature_HeadSpider_BodyDef.corePart.parts.rear_right_leg.customLabel>
+  
+  <!-- EN: EvilCreature WormMother -->
+  <RI_EvilCreature_WormMother_BodyDef.label>TODO</RI_EvilCreature_WormMother_BodyDef.label>
+  <!-- EN: left eye -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_WormMother_Head.parts.left_eye.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_WormMother_Head.parts.left_eye.customLabel>
+  <!-- EN: right eye -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_WormMother_Head.parts.right_eye.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.Pronotum.parts.RI_EvilCreature_WormMother_Head.parts.right_eye.customLabel>
+  <!-- EN: front right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.front_right_leg.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.front_right_leg.customLabel>
+  <!-- EN: front left leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.front_left_leg.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.front_left_leg.customLabel>
+  <!-- EN: rear left leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_left_leg.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_left_leg.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-0.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-0.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-1.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-1.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-2.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-2.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-3.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-3.customLabel>
+  <!-- EN: rear right leg -->
+  <RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-4.customLabel>TODO</RI_EvilCreature_WormMother_BodyDef.corePart.parts.rear_right_leg-4.customLabel>
+  
+</LanguageData>

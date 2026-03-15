@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 木行法门 -->
+
+    <!-- TODO 纯生 -->
+
+    <!-- TODO 草木成兵(炮台) -->
+    <!-- 选中一个范围内的植物，让它们可以对范围内的敌人发动攻击 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <!-- TODO -->
+        <defName>RI_Ability_Wood_GrassTreesToSoldiers_Building</defName>
+        <!-- TODO -->
+        <label>grass trees to tower</label>
+        <!-- 选中一个范围内的植物，让它们变成炮台 -->
+        <description>#</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>13.9</range>
+            <warmupTime>0.5</warmupTime>
+            <!-- TODO 替换声音 -->
+            <soundCast>RocketswarmLauncher_Fire</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- 回复部分灵气 -->
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> -->
+            <li Class="RI_FiveElements.CompProperties_PlantToThing">
+                <!-- 默认类型的生物 -->
+                <thingDef>Turret_MiniTurret</thingDef>
+                <!-- 树对应的生物 -->
+                <treeThingDef>Turret_MiniTurret</treeThingDef>
+                <!-- 半径 -->
+                <radius>5</radius>
+                <!-- 特效Mote -->
+                <moteDef></moteDef>
+                <!-- 特定植物对应的生物 -->
+                <plantToThings>
+                    <li>
+                        <plantDef>Plant_Corn</plantDef>
+                        <thingDef>Turret_MiniTurret</thingDef>
+                    </li>
+                </plantToThings>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO 草木成兵(小生物) -->
+    <!--  -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <!-- TODO -->
+        <defName>RI_Ability_Wood_GrassTreesToSoldiers_v1</defName>
+        <!-- TODO -->
+        <label>grass trees to soldiers</label>
+        <!-- 选中一个范围内的植物，让它们变成可移动的，生命力有限的小精怪 -->
+        <description>Select a range of plants, transform them into small life spirits with limited
+            vitality.</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>13.9</range>
+            <warmupTime>0.5</warmupTime>
+            <!-- TODO 替换声音 -->
+            <soundCast>RocketswarmLauncher_Fire</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- 回复部分灵气 -->
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> -->
+            <li Class="RI_FiveElements.CompProperties_PlantToPawn">
+                <!-- 默认类型的生物 -->
+                <defaultPawnKindDef>Bear_Grizzly</defaultPawnKindDef>
+                <!-- 树对应的生物 -->
+                <treePawnKindDef>Bear_Grizzly</treePawnKindDef>
+                <!-- 半径 -->
+                <radius>5</radius>
+                <!-- 特效Mote -->
+                <moteDef></moteDef>
+                <!-- 添加Hediff -->
+                <hediffs>
+                    <li>
+                        <def>RI_He_Wood_LimitedLife</def>
+                        <severity>0.16</severity>
+                    </li>
+                </hediffs>
+                <!-- 特定植物对应的生物 -->
+                <plantToPawns>
+                    <li>
+                        <thingDef>Plant_Corn</thingDef>
+                        <pawnKindDef>Bear_Grizzly</pawnKindDef>
+                    </li>
+                </plantToPawns>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO 草木成兵(树人) -->
+    <!-- 选中一颗足年的大树，让它化生成精，它的生存时间有限，但是存活时间越长，力量越强，(两个Hediff，"有限的生命"，“成长”) -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <!-- TODO -->
+        <defName>RI_Ability_Wood_GrassTreesToSoldiers_v2</defName>
+        <!-- TODO -->
+        <label>grass trees to soldiers v2</label>
+        <!-- 选中一个范围内的植物，让它们变成可移动守卫 -->
+        <description>#</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>13.9</range>
+            <warmupTime>0.5</warmupTime>
+            <!-- TODO 替换声音 -->
+            <soundCast>RocketswarmLauncher_Fire</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- 回复部分灵气 -->
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> -->
+            <li Class="RI_FiveElements.CompProperties_PlantToPawn">
+                <!-- 默认类型的生物 -->
+                <defaultPawnKindDef>Bear_Grizzly</defaultPawnKindDef>
+                <!-- 树对应的生物 -->
+                <treePawnKindDef>Bear_Grizzly</treePawnKindDef>
+                <!-- 半径 -->
+                <radius>5</radius>
+                <!-- 特效Mote -->
+                <moteDef></moteDef>
+                <!-- 添加Hediff -->
+                <hediffs>
+                    <li>
+                        <def>RI_He_Wood_LimitedLife</def>
+                        <severity>1</severity>
+                    </li>
+                    <li>
+                        <def>RI_He_Wood_Growth</def>
+                        <severity>0.01</severity>
+                    </li>
+                </hediffs>
+                <!-- 特定植物对应的生物 -->
+                <plantToPawns>
+                    <li>
+                        <thingDef>Plant_Corn</thingDef>
+                        <pawnKindDef>Bear_Grizzly</pawnKindDef>
+                    </li>
+                </plantToPawns>
+            </li>
+        </comps>
+    </AbilityDef> 
+
+    <!-- 供奉生机 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>RI_Ability_Wood_LifeOffer</defName>
+        <label>life offer</label>
+        <!-- 选中一个范围内的植物，摧毁它们以获取生命力 -->
+        <!-- 青茎翠叶竞焚香​​，​​岂识真机在吾掌？​​​​一缕青烟通我座​​，​​诸天星斗尽归藏！ -->
+        <!-- 唔，在外人面前可不能如此得意忘形... -->
+        <description>Select a range of plants, annihilate them to harvest their life essence.
+            "Verdant stems and emerald leaves compete in offering incense,\n
+            Yet know not the true dao resides in my palm?\n
+            A wisp of sacred smoke ascends to my throne,\n
+            All celestial stars and constellations shall be gathered into my treasury!"
+            en... I can't be so arrogant in front of outsiders.</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>13.9</range>
+            <warmupTime>0.5</warmupTime>
+            <!-- TODO 替换声音 -->
+            <soundCast>RocketswarmLauncher_Fire</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- 回复部分灵气 -->
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> -->
+            <li Class="RI_FiveElements.CompProperties_PlantToLife">
+                <!-- 每100%生长的植物转化为X点生机 -->
+                <energyPerGrowed>0.05</energyPerGrowed>
+                <!-- 摧毁植物 -->
+                <destroyPlant>true</destroyPlant>
+                <!-- 半径 -->
+                <radius>5</radius>
+                <!-- 特效Mote -->
+                <moteDef></moteDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO 生命注射 -->
+    <!-- 选中一个pawn，延长它有限的生命 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>RI_Ability_Wood_LifeGive</defName>
+        <label>life give</label>
+        <!-- 选中一个范围内树精，将生命力注入到它们身上,注入的生命将由范围内的单位分担 -->
+        <description>Select a range of tree spirits, infuse them with life essence, which will be shared among the units within the range.</description>
+        <iconPath>UI/Abilities/Base/LG</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <!-- TODO 替换声音 -->
+        <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>13.9</range>
+            <warmupTime>0.5</warmupTime>
+            <!-- TODO 替换声音 -->
+            <soundCast>RocketswarmLauncher_Fire</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <!-- 回复部分灵气 -->
+            <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> -->
+            <li Class="RI_FiveElements.CompProperties_LifeToPawn">
+                <!-- 最小生命值供给 -->
+                <baseLife>0.35</baseLife>
+                <!-- 生机乘数 -->
+                <lifeMultiplier>2</lifeMultiplier>
+                <!-- 生机消耗百分比 -->
+                <useVitality>0.5</useVitality> 
+                <!-- 半径 -->
+                <radius>5</radius>
+                <!-- 特效Mote -->
+                <moteDef></moteDef>
+            </li>
+        </comps>
+    </AbilityDef> 
+
+    <!-- TODO 寄生种子(暂时不做) -->
+    <!-- 选中一个无法反抗的pawn，注入一个种子，这个种子每隔一段时间都会收取生命力给主人 -->
+
+    <!-- TODO 开花(暂时不做) -->
+    <!-- 选中一个被寄生时间足够长的单位，他们的头部会开出一个巨大的花朵，目标的心智会被取代(类似心偶)，(两个Hediff，"有限的生命"，“成长”) -->
+</Defs>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make medicine from aloe vera -->
+  <RI_Recipe_MakeMedicineFromAloeVera.label>芦荟制取医药</RI_Recipe_MakeMedicineFromAloeVera.label>
+  <!-- EN: Extract the medicinal components from aloe vera and combine them with herbal medicine to produce medical. -->
+  <RI_Recipe_MakeMedicineFromAloeVera.description>提取芦荟中的药用成分，结合草药，制作成医药。</RI_Recipe_MakeMedicineFromAloeVera.description>
+  <!-- EN: making medicine from aloe vera -->
+  <RI_Recipe_MakeMedicineFromAloeVera.jobString>制取医药中</RI_Recipe_MakeMedicineFromAloeVera.jobString>
+  
+  <!-- EN: make medicine from aloe vera x4 -->
+  <RI_Recipe_MakeMedicineFromAloeVeraBulk.label>芦荟制取医药 x4</RI_Recipe_MakeMedicineFromAloeVeraBulk.label>
+  <!-- EN: Extract the medicinal components from aloe vera and combine them with herbal medicine to produce medical. -->
+  <RI_Recipe_MakeMedicineFromAloeVeraBulk.description>提取芦荟中的药用成分，结合草药，制作成医药。</RI_Recipe_MakeMedicineFromAloeVeraBulk.description>
+  <!-- EN: making medicine from aloe vera -->
+  <RI_Recipe_MakeMedicineFromAloeVeraBulk.jobString>制取医药中</RI_Recipe_MakeMedicineFromAloeVeraBulk.jobString>
+  
+  <!-- EN: decoct tranquilizing soup -->
+  <RI_Recipe_MakeTranquilizingSoup.label>熬煮安魂汤</RI_Recipe_MakeTranquilizingSoup.label>
+  <!-- EN: decoct tranquilizing soup -->
+  <RI_Recipe_MakeTranquilizingSoup.description>熬煮安魂汤</RI_Recipe_MakeTranquilizingSoup.description>
+  <!-- EN: decocting tranquilizing soup -->
+  <RI_Recipe_MakeTranquilizingSoup.jobString>熬煮安魂汤中</RI_Recipe_MakeTranquilizingSoup.jobString>
+  
+  <!-- EN: decoct tranquilizing soup x4 -->
+  <RI_Recipe_MakeTranquilizingSoupBulk.label>熬煮安魂汤 x4</RI_Recipe_MakeTranquilizingSoupBulk.label>
+  <!-- EN: decoct tranquilizing soup -->
+  <RI_Recipe_MakeTranquilizingSoupBulk.description>熬煮安魂汤</RI_Recipe_MakeTranquilizingSoupBulk.description>
+  <!-- EN: decocting tranquilizing soup -->
+  <RI_Recipe_MakeTranquilizingSoupBulk.jobString>熬煮安魂汤</RI_Recipe_MakeTranquilizingSoupBulk.jobString>
+  
+</LanguageData>

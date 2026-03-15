@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: poison arrow -->
+  <RI_Projectile_PoisonArrow.label>毒箭</RI_Projectile_PoisonArrow.label>
+  
+  <!-- EN: upas blood【Third-rate】 -->
+  <RI_Weapon_BambooPoisonBow.label>见血封喉【三品】</RI_Weapon_BambooPoisonBow.label>
+  <!-- EN: 【Third-rate】range weapon.\n\nA bamboo-crafted bow coated with a toxin refined by wood-element sects. This weapon is highly insidious. While ordinary poisons are ineffective against high-level cultivators, it is more than sufficient against common foes.\n\n<color=#FFFF00>【Special effects】\nThe arrow is poisoned.</color> -->
+  <RI_Weapon_BambooPoisonBow.description>【三品】弓弩兵器。\n\n以竹片制成的弓，涂上了木行宗门特制的毒。这种武器非常阴险，虽然寻常毒素对于高阶修士来说，毫无影响，但对付普通人足够了。\n\n&lt;color=#FFFF00>【特殊效果】\n攻击附带眩晕效果。&lt;/color></RI_Weapon_BambooPoisonBow.description>
+  <!-- EN: limb -->
+  <RI_Weapon_BambooPoisonBow.tools.limb.label>弓身</RI_Weapon_BambooPoisonBow.tools.limb.label>
+  <!-- EN: upas blood【Third-rate】 -->
+  <RI_Weapon_BambooPoisonBow.verbs.Verb_Shoot.label>见血封喉【三品】</RI_Weapon_BambooPoisonBow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: HengYuan quarterstaff【Third-rate】 -->
+  <RI_Weapon_EarthQuarterstaff.label>衡元棍【三品】</RI_Weapon_EarthQuarterstaff.label>
+  <!-- EN: 【Third-rate】blunt weapon.\n\nThe nature of earth is receptive; thus the virtuous bear all things.\n\nA sturdy staff formed by condensing earth and stone with spiritual energy. Well-balanced and durable, it is commonly used by earth-element cultivators for daily staff training.\n\n<color=#FFFF00>【Special effects】\nAttack with vertigo effect.</color> -->
+  <RI_Weapon_EarthQuarterstaff.description>【三品】钝兵器。\n\n地势坤，君子以厚德载物。\n\n一根坚固的棍子，用灵气凝聚土石而来，平衡性很好。土行修士日常会使用这样的棍子训练棍法。\n\n&lt;color=#FFFF00>【特殊效果】\n攻击附带眩晕效果。&lt;/color></RI_Weapon_EarthQuarterstaff.description>
+  <!-- EN: head -->
+  <RI_Weapon_EarthQuarterstaff.tools.head.label>棍头</RI_Weapon_EarthQuarterstaff.tools.head.label>
+  
+  <!-- EN: Yan fire blade【Third-rate】 -->
+  <RI_Weapon_SteelFireBlade.label>燕火刀【三品】</RI_Weapon_SteelFireBlade.label>
+  <!-- EN: 【Third-rate】sword weapon.\n\nSince the discovery of fire through flint, war has followed.\n\nThe Yan fire blade was an early self-defense weapon used by fire sects. Short in length, its blade resembles flowing flames, burning fiercely. This craftsmanship combines spell and tradition, allowing fire-element cultivators to dominate the battlefield.\n\n<color=#FFFF00>【Special effects】\nAttack have a chance to ignite.</color> -->
+  <RI_Weapon_SteelFireBlade.description>【三品】刀剑兵器。\n\n自燧石生火以来，便诞生了战争。\n\n燕火刀是早期火宗的一种防身武器，外形较短，刀身如同流动的烈火，熊熊燃烧，这份工艺融合了法术和传承，使火行修士在战争中无往不利。\n\n&lt;color=#FFFF00>【特殊效果】\n攻击有几率点燃火焰。&lt;/color></RI_Weapon_SteelFireBlade.description>
+  <!-- EN: point -->
+  <RI_Weapon_SteelFireBlade.tools.point.label>刀尖</RI_Weapon_SteelFireBlade.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_SteelFireBlade.tools.edge.label>刀刃</RI_Weapon_SteelFireBlade.tools.edge.label>
+  
+</LanguageData>

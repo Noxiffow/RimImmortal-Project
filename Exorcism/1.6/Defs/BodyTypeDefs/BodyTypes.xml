@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--冥尸体型Body-->
+	<BodyTypeDef Name="RI_Base_ZombieBody" Abstract="True">
+		<headOffset>(0.10, 0.37)</headOffset>
+		<woundAnchors>
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.06)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(0.12,0,-0.34)</offset>
+				<range>0.125</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(-0.12,0,-0.34)</offset>
+				<range>0.125</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(0.12,0,0.01)</offset>
+				<range>0.125</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(-0.12,0,0.01)</offset>
+				<range>0.125</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0)</offset>
+				<range>0.18</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.09, 0, 0.15)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.09, 0, 0.15)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0)</offset>
+				<range>0.2</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.13)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.05,0,-0.35)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.35)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.04, 0, 0.2)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.04, 0, 0.2)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+		</woundAnchors>
+		<attachPoints>
+			<li>
+				<offset>(-0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint0</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint1</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint2</type>
+			</li>
+			<li>
+				<offset>(-0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint3</type>
+			</li>
+		</attachPoints>
+		<attachPointsDessicated>
+			<li>
+				<offset>(-0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint0</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, 0.1)</offset>
+				<type>PlatformRestraint1</type>
+			</li>
+			<li>
+				<offset>(0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint2</type>
+			</li>
+			<li>
+				<offset>(-0.2, 0, -0.5)</offset>
+				<type>PlatformRestraint3</type>
+			</li>
+		</attachPointsDessicated>
+	</BodyTypeDef>
+	
+	<!--冥尸体型女标准-->
+	<BodyTypeDef ParentName="RI_Base_ZombieBody">
+		<defName>RI_ExorcismBodyType_Female</defName>
+		<label>Necrosapiens body female</label>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Female</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneBodyTypeDef">
+				<customBodyGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Female</customBodyGraphicPath>
+				<skeletonGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeletonGraphicPath>
+			</li>
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<!--冥尸体型男标准-->
+	<BodyTypeDef ParentName="RI_Base_ZombieBody">
+		<defName>RI_ExorcismBodyType_Male</defName>
+		<label>Necrosapiens body male</label>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Male</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneBodyTypeDef">
+				<customBodyGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Male</customBodyGraphicPath>
+				<skeletonGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</skeletonGraphicPath>
+			</li>
+		</modExtensions>
+	</BodyTypeDef>
+	
+	<!--冥尸体型纤细-->
+	<BodyTypeDef ParentName="RI_Base_ZombieBody">
+		<defName>RI_ExorcismBodyType_Thin</defName>
+		<label>Necrosapiens body thin</label>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Thin</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneBodyTypeDef">
+				<customBodyGraphicPath>Things/Pawn/Humanlike/RI_ZombieBodies/Naked_Thin</customBodyGraphicPath>
+				<skeletonGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeletonGraphicPath>
+			</li>
+		</modExtensions>
+	</BodyTypeDef>
+
+</Defs>

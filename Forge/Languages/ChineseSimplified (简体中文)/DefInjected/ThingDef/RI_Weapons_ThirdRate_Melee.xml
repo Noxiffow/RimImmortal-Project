@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Splitting axe【Third-rate】 -->
+  <RI_Weapon_BasicAxe.label>劈山斧【三品】</RI_Weapon_BasicAxe.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a armor break effect.\n\nAn axe with a faint Qi. It has a very powerful cutting ability and can even be used to split stones. -->
+  <RI_Weapon_BasicAxe.description>【三品】兵器，攻击敌人会附带破甲效果。\n\n一柄具有微弱灵气的斧头。具有非常强大的切割能力，甚至可以用来劈开石头。</RI_Weapon_BasicAxe.description>
+  <!-- EN: head -->
+  <RI_Weapon_BasicAxe.tools.head.label>斧刃</RI_Weapon_BasicAxe.tools.head.label>
+  
+  <!-- EN: Dragon rock mace【Third-rate】 -->
+  <RI_Weapon_BasicHammer.label>龙岩锤【三品】</RI_Weapon_BasicHammer.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a vertigo effect.\n\nA mace with a faint Qi. Cut with a stone, the heavy hammer can smash the armor, if not, at least can stun the opponent for a while. -->
+  <RI_Weapon_BasicHammer.description>【三品】兵器，攻击敌人会附带眩晕效果。\n\n一柄具有微弱灵气的单手锤。用石头捶打切割而成，厚重的锤头可以砸碎盔甲，如果砸不碎，起码也可以眩晕对手一段时间。</RI_Weapon_BasicHammer.description>
+  <!-- EN: head -->
+  <RI_Weapon_BasicHammer.tools.head.label>锤头</RI_Weapon_BasicHammer.tools.head.label>
+  
+  <!-- EN: Chasing wind blade【Third-rate】 -->
+  <RI_Weapon_BasicSaber.label>追风刀【三品】</RI_Weapon_BasicSaber.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a armor break effect.\n\nA two-handed blade with a faint Qi. Is a center of gravity in the front of the weapon, relatively heavy, only those brave fighters will choose such a weapon, but once skilled, will form a terrible lethality in the battle. -->
+  <RI_Weapon_BasicSaber.description>【三品】兵器，攻击敌人会附带破甲效果。\n\n一把具有微弱灵气的双手刀。是一种重心靠前的武器，比较沉重，只有那些勇猛的斗士才会选择这样的武器，但一旦熟练，将会在战斗中形成恐怖的杀伤力。</RI_Weapon_BasicSaber.description>
+  <!-- EN: edge -->
+  <RI_Weapon_BasicSaber.tools.edge.label>刀刃</RI_Weapon_BasicSaber.tools.edge.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicSaber.tools.point.label>刀尖</RI_Weapon_BasicSaber.tools.point.label>
+  
+  <!-- EN: Heart piercing spear【Third-rate】 -->
+  <RI_Weapon_BasicSpear.label>穿心矛【三品】</RI_Weapon_BasicSpear.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a puncture effect.\n\nA spear with a faint Qi. In the hands of a warrior, the gun can be used to attack like an arm. There was a soldier, a shot through the heart of the enemy, but the spear can not be pulled out, resulting in other enemies killed. Later generations improved the shape of the spear and added guardrails so that it did not go too deep to pull out. -->
+  <RI_Weapon_BasicSpear.description>【三品】兵器，攻击敌人会附带穿刺效果。\n\n一柄具有微弱灵气的长矛。在战士手中，能让枪如臂使指般出击。曾有一名士兵，一枪洞穿了敌人的心脏，但长矛卡住无法拔出，导致被其他敌人杀死。后人改进了这种长矛的形制，加上了护栏，以至于不刺得太深无法拔出。</RI_Weapon_BasicSpear.description>
+  <!-- EN: point -->
+  <RI_Weapon_BasicSpear.tools.point.label>矛尖</RI_Weapon_BasicSpear.tools.point.label>
+  
+  <!-- EN: Mysterious sword【Third-rate】 -->
+  <RI_Weapon_BasicSword.label>玄剑【三品】</RI_Weapon_BasicSword.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a armor break effect. \n\nA one-handed sword with a faint aura. The appearance is simple, but careful observation can see the shallow pattern, with a strong cutting ability. -->
+  <RI_Weapon_BasicSword.description>【三品】兵器，攻击敌人会附带破甲效果。\n\n一把具有微弱灵气的单手剑。外形古朴，但是仔细观察能看到浅浅的花纹图案，具有强大的切割能力。</RI_Weapon_BasicSword.description>
+  <!-- EN: point -->
+  <RI_Weapon_BasicSword.tools.point.label>剑尖</RI_Weapon_BasicSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_BasicSword.tools.edge.label>剑刃</RI_Weapon_BasicSword.tools.edge.label>
+  
+  <!-- EN: Boxing gloves -->
+  <RI_Weapon_BoxingGloves.label>拳套</RI_Weapon_BoxingGloves.label>
+  <!-- EN: Leather gloves, joints and other parts of the additional thick skin, increase durability. The gloves are heavier, but the punch is as penetrating as a cannonball, and enemies who underestimate boxing often lose out. -->
+  <RI_Weapon_BoxingGloves.description>皮质的拳套，在关节等部位额外加装了厚皮片，增加耐用性。这种拳套更加沉重，但是打出的拳头具有炮弹一样的穿透力，低估拳击的敌人往往会吃亏。</RI_Weapon_BoxingGloves.description>
+  <!-- EN: handle -->
+  <RI_Weapon_BoxingGloves.tools.handle.label>拳头</RI_Weapon_BoxingGloves.tools.handle.label>
+  <!-- EN: head -->
+  <RI_Weapon_BoxingGloves.tools.head.label>拳头</RI_Weapon_BoxingGloves.tools.head.label>
+  
+  <!-- EN: Martial artist bandage -->
+  <RI_Weapon_MartialArtistBandage.label>武术绑带</RI_Weapon_MartialArtistBandage.label>
+  <!-- EN: It's a simple gloves. Simply wrapping fabric around the fist to prevent finger fractures was common sense known to the ancients as well. -->
+  <RI_Weapon_MartialArtistBandage.description>一种简单的拳套。只是简单地用织物包裹在拳头上，防止手指骨折，这是古人也知道的常识。</RI_Weapon_MartialArtistBandage.description>
+  <!-- EN: handle -->
+  <RI_Weapon_MartialArtistBandage.tools.handle.label>拳头</RI_Weapon_MartialArtistBandage.tools.handle.label>
+  <!-- EN: head -->
+  <RI_Weapon_MartialArtistBandage.tools.head.label>拳头</RI_Weapon_MartialArtistBandage.tools.head.label>
+  
+  <!-- EN: Thrumbo horn push-dagger【Third-rate】 -->
+  <RI_Weapon_ThrumboHornPushDagger.label>拳刺【三品】</RI_Weapon_ThrumboHornPushDagger.label>
+  <!-- EN: 【Third-rate】melee, attack the enemy will have a puncture effect.\n\nA pair of push-dagger with a faint Qi. A kind of push-dagger weapon. Small and chic, but the attack speed is very fast, contains a powerful lethality. -->
+  <RI_Weapon_ThrumboHornPushDagger.description>【三品】兵器，攻击敌人会附带穿刺效果。\n\n一对具有微弱灵气的拳刺，外形小巧别致，但攻击速度很快，蕴含了强大的杀伤力。</RI_Weapon_ThrumboHornPushDagger.description>
+  <!-- EN: point -->
+  <RI_Weapon_ThrumboHornPushDagger.tools.point.label>拳刺</RI_Weapon_ThrumboHornPushDagger.tools.point.label>
+  
+</LanguageData>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi ebb period -->
+  <EnergyDecline.label>灵气低潮</EnergyDecline.label>
+  <!-- EN: A powerful wave of Qi covered the surface of the planet, and the Qi available in the air became thinner. -->
+  <EnergyDecline.description>一阵强悍无比的灵气波动覆盖了整个星球表面，空气中可获取的灵气都更稀薄了。</EnergyDecline.description>
+  <!-- EN: A constant wave of [energyFluctuationLevel] Qi will continuously affect [map_definite] within [gameConditionDuration_duration] and the speed of practice will decrease for all cultivators. -->
+  <EnergyDecline.descriptionFuture>一阵持续性灵气波动将会在一段时间内不断对殖民地产生影响，所有修炼者的修炼速度都会减少。</EnergyDecline.descriptionFuture>
+  <!-- EN: Qi ebb period is over. -->
+  <EnergyDecline.endMessage>灵气低潮结束了。</EnergyDecline.endMessage>
+  <!-- EN: Every cultivator feels apprehensive!\n\nIt seems that some unknown being is sucking the Qi of the entire planet, making the Qi in the air even denser, an event that only affects the cultivator. Within a few days, the cultivator's speed of cultivation will slow down quite a bit.\n\n The current Qi Low level is {0}. -->
+  <EnergyDecline.letterText>每个修炼者都感觉惴惴不安！\n\n似乎是某个未知存在正吸取着整颗星球的灵气，令空气里的灵气密度更加稀薄，此事件只会影响修炼者。在几天内，修炼者的修炼速度会下降不少。\n\n目前的灵气低潮等级为{0}.</EnergyDecline.letterText>
+  
+  <!-- EN: Qi flood period -->
+  <EnergyGrowth.label>灵气涨潮</EnergyGrowth.label>
+  <!-- EN: A powerful wave of Qi spread across the surface of the planet, and the Qi available in the air became more active. -->
+  <EnergyGrowth.description>一阵强悍无比的灵气波动覆盖了整个星球表面，空气中可获取的灵气都更活跃了。</EnergyGrowth.description>
+  <!-- EN: A constant wave of [energyFluctuationLevel] Qi will continuously affect [map_definite] within [gameConditionDuration_duration] and the speed of practice will increase for all cultivators. -->
+  <EnergyGrowth.descriptionFuture>一阵持续性灵气波动将会在一段时间内不断对殖民地产生影响，所有修炼者的修炼速度都会增加。</EnergyGrowth.descriptionFuture>
+  <!-- EN: Qi flood period is over. -->
+  <EnergyGrowth.endMessage>灵气涨潮结束了。</EnergyGrowth.endMessage>
+  <!-- EN: Every cultivator feels like a spring breeze!\n\nIt seems that some unknown being is stirring up the Qi of the entire planet, making the Qi in the air more dense than normal, an event that only affects the cultivator. Within a few days, the cultivator's speed of cultivation will be increased to a certain extent. \n\n The current Qi flood level is {0}. -->
+  <EnergyGrowth.letterText>每个修炼者都感觉如沐春风！\n\n似乎是某个未知存在正搅动着整颗星球的灵气，令空气里的灵气密度超出寻常，此事件只会影响修炼者。在几天内，修炼者的修炼速度将会得到一定提升。\n\n目前的灵气涨潮等级为{0}.</EnergyGrowth.letterText>
+  
+</LanguageData>

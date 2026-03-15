@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--泥佛-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_ClayBuddha</defName>
+		<label>Clay Buddha</label>
+		<description>A ritual altar with many tools placed on it, which can be used to make exorcism instrument.</description>
+		<thingClass>RimZombieGirl.Building_MudSculpture</thingClass>
+		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_MudSculpture</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<useHitPoints>true</useHitPoints>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!--诅咒荒坟-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_CursedGrave</defName>
+		<label>Cursed grave</label>
+		<description>A ritual altar with many tools placed on it, which can be used to make exorcism instrument.</description>
+		<thingClass>RimZombieGirl.Building_CursedGrave</thingClass>
+		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_Tomb/RI_CursedGrave</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+		<useHitPoints>true</useHitPoints>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_CursedGrave">
+				<!--诅咒增长值-->
+				<curseValue>20</curseValue>
+				<!--最大最小掉落种类-->
+				<minLoot>1</minLoot>
+				<maxLoot>3</maxLoot>
+				<lootTable>
+					<li>
+						<thingDef>Silver</thingDef>
+						<countRange>500~1000</countRange>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<countRange>50~120</countRange>
+					</li>
+					<li>
+						<thingDef>ComponentIndustrial</thingDef>
+						<countRange>5~15</countRange>
+					</li>
+				</lootTable>
+				<darknessTriggerChance>0.25</darknessTriggerChance>
+				<enemySpawnChance>0.25</enemySpawnChance>
+				<enemySpawnCount>
+					<min>1</min>
+					<max>5</max>
+				</enemySpawnCount>
+				<enemyDefs>
+					<li>RI_EvilCreature_Zombie</li>
+				</enemyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

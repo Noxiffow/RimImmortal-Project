@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 所有烹饪的菜的前置 -->
+	<RecipeDef Name="RI_FoodRecipe_Base" ParentName="CookMealBase" Abstract="True">
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>RI_Building_CookTable</li>
+			<li>RI_Building_ModernCookingStove</li>
+		</recipeUsers>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>1</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+	</RecipeDef>
+
+	<!--炒素-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookStirFriedVege</defName>
+		<label>Cook fried vege</label>
+		<description>A simple stir-fry with a variety of vegetables.</description>
+		<jobString>Cooking fried vege</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_StirFriedVege>1</RI_Food_StirFriedVege>
+		</products>
+	</RecipeDef>
+
+	<!--炒肉-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookStirFriedMeat</defName>
+		<label>Cook fried meat</label>
+		<description>Slices meat and make a simple stir-fry.</description>
+		<jobString>Cooking fried meat</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_StirFriedMeat>1</RI_Food_StirFriedMeat>
+		</products>
+	</RecipeDef>
+
+	<!--蛋炒饭-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookEggFriedRice</defName>
+		<label>Fried egg fried rice</label>
+		<description>Fried rice with rice and eggs.</description>
+		<jobString>Fried egg fried rice</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Food_CookedRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>PlantFoodRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_EggFriedRice>1</RI_Food_EggFriedRice>
+		</products>
+	</RecipeDef>
+
+	<!--土豆丝-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookStirFriedShreddedPotato</defName>
+		<label>Fried shredded potato</label>
+		<description>Shred potatoes, add seasoning and stir-fry.</description>
+		<jobString>Fried shredded potato</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_StirFriedShreddedPotato>1</RI_Food_StirFriedShreddedPotato>
+		</products>
+	</RecipeDef>
+
+	<!--白斩鸡-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookBoiledChicken</defName>
+		<label>Boil chicken</label>
+		<description>Cook the chicken in water and cut into pieces.</description>
+		<jobString>Boil chicken</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Chicken</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_BoiledChicken>1</RI_Food_BoiledChicken>
+		</products>
+	</RecipeDef>
+
+	<!--春卷-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookSpringRoll</defName>
+		<label>Fried spring roll</label>
+		<description>Wrap vegetables and meat in spring rolls and fry them in a pan of oil to make spring rolls.</description>
+		<jobString>Fried spring roll</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_SpringRoll>1</RI_Food_SpringRoll>
+		</products>
+	</RecipeDef>
+
+	<!--油条-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookFriedBreadStick</defName>
+		<label>Fried fried bread stick</label>
+		<description>Add baking powder to the dough and fry in the oil until cooked.</description>
+		<jobString>Fried fried bread stick</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_FriedBreadStick>2</RI_Food_FriedBreadStick>
+		</products>
+	</RecipeDef>
+
+	<!--锅贴-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookPanFriedDumpling</defName>
+		<label>Fried fried dumpling</label>
+		<description>Wrap the dough around the meat and fry it in a pan until cooked.</description>
+		<jobString>Fried fried dumpling</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_PanFriedDumpling>1</RI_Food_PanFriedDumpling>
+		</products>
+	</RecipeDef>
+
+	<!--生煎-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookPanFriedBun</defName>
+		<label>Fried fried bun</label>
+		<description>Wrap the dough around the meat and fry it in a pan until cooked.</description>
+		<jobString>Fried fried bun</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_PanFriedBun>1</RI_Food_PanFriedBun>
+		</products>
+	</RecipeDef>
+
+	<!--白饭-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookCookedRice</defName>
+		<label>Cook rice</label>
+		<description>Simply cook the rice.</description>
+		<jobString>Cook rice</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_CookedRice>1</RI_Food_CookedRice>
+		</products>
+	</RecipeDef>
+
+	<!--切西瓜-->
+	<RecipeDef>
+		<defName>RI_Recipe_CutWatermelon</defName>
+		<label>Cut watermelon</label>
+		<description>Cut watermelon.</description>
+		<jobString>Cutting watermelon</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workSkill>Cooking</workSkill>
+		<workAmount>100</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Watermelon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_CutWatermelon>4</RI_Food_CutWatermelon>
+		</products>
+	</RecipeDef>
+
+	<!--煮汤圆-->
+	<RecipeDef ParentName="RI_FoodRecipe_Base">
+		<defName>RI_Recipe_CookSweetSoupBall</defName>
+		<label>Cook sweet soup ball</label>
+		<description>Make and cook a pot of sweet soup ball.</description>
+		<jobString>Cooking sweet soup ball</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_SweetSoupBall>5</RI_Food_SweetSoupBall>
+		</products>
+	</RecipeDef>
+
+</Defs>

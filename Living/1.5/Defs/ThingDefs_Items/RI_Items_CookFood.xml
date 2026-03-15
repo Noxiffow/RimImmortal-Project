@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MealBaseIngredientless" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>FoodMeals</li>
+		</thingCategories>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+		</comps>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>40</allowedArchonexusCount>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+		</ingestible>
+	</ThingDef>
+	
+	<!--最基础的菜，+3心情，无增益-->
+	<ThingDef ParentName="MealCooked" Name="RI_SimpleMealBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<thingCategories>
+			<li>RI_Category_CookFood</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<!--禁止旋转着吃饭！-->
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<tasteThought>RI_AtesimpleMeal</tasteThought>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<!--数字越高越喜欢吃，低于0平时基本不吃-->
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_StirFriedVege</defName>
+		<label>Stir-fried vege</label>
+		<description>A simple dish of fried vegetables, you can eat the original taste of the ingredients.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_StirFriedVege</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_StirFriedMeat</defName>
+		<label>Stir-fried meat</label>
+		<description>A simple dish of fried meat, sliced thinly and then stir-fried, very fragrant.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_StirFriedMeat</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_EggFriedRice</defName>
+		<label>Egg fried rice</label>
+		<description>A plate of egg fried rice, although very humble, but always soothing.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_EggFriedRice</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_StirFriedShreddedPotato</defName>
+		<label>Stir-fried shredded potato</label>
+		<description>A dish of fried potato shreds, sour and spicy taste, very good meal.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_StirFriedShreddedPotato</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<WorkToMake>280</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_BoiledChicken</defName>
+		<label>Boiled chicken</label>
+		<description>A dish of chicken, chicken has chicken taste, crispy meat tender, eating fun.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_BoiledChicken</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_SpringRoll</defName>
+		<label>Spring roll</label>
+		<description>A fried spring roll, the dough wrapped in a variety of seasoning fillings, eat juice everywhere, very fresh.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_SpringRoll</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_FriedBreadStick</defName>
+		<label>Fried bread stick</label>
+		<description>A simple deep-fried fritters, which are made from batter mixed with baking powder and deep-fried in rolling oil. It's very crispy, you can add it to the soup, and it's delicious when you're full.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_FriedBreadStick</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<WorkToMake>100</WorkToMake>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_PanFriedDumpling</defName>
+		<label>Pan-fried dumpling</label>
+		<description>A pan-fried dumpling filled with seasoned minced meat, then partially steamed and pan-fried in a pan, and finally sprinkled with scallions.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_PanFriedDumpling</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_PanFriedBun</defName>
+		<label>Pan-fried bun</label>
+		<description>A pan-fried bun, which looks like a baozi, is filled with seasoned meat and fried until the skin is oily and crispy.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_PanFriedBun</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<!--白饭-->
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_CookedRice</defName>
+		<label>Cooked rice</label>
+		<description>A simple bowl of white rice, nothing more ordinary.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_CookedRice</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+	</ThingDef>
+	
+	<!--汤圆-->
+	<ThingDef ParentName="RI_SimpleMealBase">
+		<defName>RI_Food_SweetSoupBall</defName>
+		<label>Sweet soup ball</label>
+		<description>This food is a type of snack made by wrapping various fillings in glutinous rice and then boiling it in water. Eating a bowl of steaming hot tangyuan, I hope for a reunion and togetherness every Lantern Festival.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_SweetSoupBall</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<!--三角粽子-->
+	<ThingDef ParentName="RI_Dessert_Base">
+		<defName>RI_Food_TriangleZongZi</defName>
+		<label>Triangle ZongZi</label>
+		<description>Zongzi is a traditional food made by steaming glutinous rice wrapped in bamboo or reed leaves. Due to regional differences in culinary habits, the fillings of zongzi vary widely.\n\nIn ancient times, zongzi was used as an offering to deities. Over time, it gradually evolved into a festive delicacy loved by many.\n\nThis type of zongzi is triangular in shape.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_TriangleZongZi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>10</MarketValue>
+			<Mass>0.1</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<optimalityOffsetHumanlikes>21</optimalityOffsetHumanlikes>
+			<!--人类喜好-->
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<!--喂食喜好-->
+			<tasteThought>RI_Thought_EatZongZi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--四角粽子-->
+	<ThingDef ParentName="RI_Dessert_Base">
+		<defName>RI_Food_PillowZongZi</defName>
+		<label>Pillow ZongZi</label>
+		<description>Zongzi is a traditional food made by steaming glutinous rice wrapped in bamboo or reed leaves. Due to regional differences in culinary habits, the fillings of zongzi vary widely.\n\nIn ancient times, zongzi was used as an offering to deities. Over time, it gradually evolved into a festive delicacy loved by many.\n\nThis type of zongzi has four corners and resembles a pillow in shape.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_PillowZongZi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>10</MarketValue>
+			<Mass>0.1</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<!--人类喜好-->
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<!--喂食喜好-->
+			<tasteThought>RI_Thought_EatZongZi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

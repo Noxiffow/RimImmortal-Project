@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Zombie Blood Down Percent -->
+  <RI_Zombie_Stat_BloodDown_Percent.label>冥尸血液下降速率</RI_Zombie_Stat_BloodDown_Percent.label>
+  <!-- EN: Rate at which the zombie's blood level decreases. -->
+  <RI_Zombie_Stat_BloodDown_Percent.description>TODO</RI_Zombie_Stat_BloodDown_Percent.description>
+  
+  <!-- EN: Zombie Suppress Down Rate -->
+  <RI_Zombie_Stat_SuppressDownRate.label>冥尸嗜血速率</RI_Zombie_Stat_SuppressDownRate.label>
+  <!-- EN: Rate at which the zombie's suppress level decreases. -->
+  <RI_Zombie_Stat_SuppressDownRate.description>TODO</RI_Zombie_Stat_SuppressDownRate.description>
+  
+  <!-- EN: Zombie Suppress Speed -->
+  <RI_Zombie_Stat_SuppressSpeed.label>压制冥尸效率</RI_Zombie_Stat_SuppressSpeed.label>
+  <!-- EN: Speed at which the zombie can suppress its hunger. -->
+  <RI_Zombie_Stat_SuppressSpeed.description>TODO</RI_Zombie_Stat_SuppressSpeed.description>
+  
+</LanguageData>

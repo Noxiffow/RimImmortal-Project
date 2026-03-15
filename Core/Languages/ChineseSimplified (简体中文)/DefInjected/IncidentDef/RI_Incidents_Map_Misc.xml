@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spirit beasts join -->
+  <RI_AnimalCome.label>灵兽加入</RI_AnimalCome.label>
+  <!-- EN: Spirit beasts join -->
+  <RI_AnimalCome.letterLabel>灵兽加入</RI_AnimalCome.letterLabel>
+  <!-- EN: A group of spiritual beasts, influenced by the changes in spiritual energy, became friendly and voluntarily joined the colony. -->
+  <RI_AnimalCome.letterText>一群灵兽被灵气所影响，变得亲人，主动加入了你的殖民地。</RI_AnimalCome.letterText>
+  
+  <!-- EN: Spirit beasts pass -->
+  <RI_AnimalMigration.label>灵兽路过</RI_AnimalMigration.label>
+  <!-- EN: Spirit beasts pass -->
+  <RI_AnimalMigration.letterLabel>灵兽路过</RI_AnimalMigration.letterLabel>
+  <!-- EN: A group of spiritual beasts were attracted by the Qi and came pass your colony. -->
+  <RI_AnimalMigration.letterText>一群灵兽被灵气所影响，改变了迁徙路线，路过你的殖民地。</RI_AnimalMigration.letterText>
+  
+  <!-- EN: Cultivator fall to earth -->
+  <RI_DropEnergyStone.label>修士陨落</RI_DropEnergyStone.label>
+  <!-- EN: Immortal fall -->
+  <RI_DropEnergyStone.letterLabel>修士陨落</RI_DropEnergyStone.letterLabel>
+  <!-- EN: A glowing figure streaks across the sky from a distance and explodes in midair. His remains landed impartially near your colony. -->
+  <RI_DropEnergyStone.letterText>一道散发着光芒的人影从远处划过天际，在空中发生了爆炸。他的遗骸不偏不倚地落到了你的殖民地附近。</RI_DropEnergyStone.letterText>
+  
+  <!-- EN: Qi tide flood period -->
+  <RI_EnergyDecline.label>灵气低潮</RI_EnergyDecline.label>
+  
+  <!-- EN: Qi tide ebb period -->
+  <RI_EnergyGrowth.label>灵气涨潮</RI_EnergyGrowth.label>
+  
+  <!-- EN: Spirit beasts go wild -->
+  <RI_FrenziedAnimal.label>发狂灵兽来袭</RI_FrenziedAnimal.label>
+  <!-- EN: Spirit beasts go wild -->
+  <RI_FrenziedAnimal.letterLabel>发狂灵兽来袭</RI_FrenziedAnimal.letterLabel>
+  <!-- EN: A group of spiritual beasts that went crazy for no reason, attracted by the spiritual energy, charged into your colony! -->
+  <RI_FrenziedAnimal.letterText>一群不知为何而发狂的灵兽，被灵气所吸引，冲向你的殖民地！</RI_FrenziedAnimal.letterText>
+  
+  <!-- EN: Ruin of necropolis -->
+  <RI_Incident_AbandonedGrave.label>荒冢</RI_Incident_AbandonedGrave.label>
+  <!-- EN: Ruin of necropolis -->
+  <RI_Incident_AbandonedGrave.letterLabel>荒冢</RI_Incident_AbandonedGrave.letterLabel>
+  
+  <!-- EN: Passenger -->
+  <RI_Incident_Beggars.label>过路人</RI_Incident_Beggars.label>
+  <!-- EN: Passenger arrive -->
+  <RI_Incident_Beggars.letterLabel>过路人抵达</RI_Incident_Beggars.letterLabel>
+  
+  <!-- EN: Cultivator join -->
+  <RI_Incident_CultivatorJoin.label>流浪修士加入</RI_Incident_CultivatorJoin.label>
+  <!-- EN: Cultivator join -->
+  <RI_Incident_CultivatorJoin.letterLabel>流浪修士加入</RI_Incident_CultivatorJoin.letterLabel>
+  <!-- EN: A wandering cultivator join. -->
+  <RI_Incident_CultivatorJoin.letterText>一名流浪修士加入。</RI_Incident_CultivatorJoin.letterText>
+  
+  <!-- EN: 青冥树自然生长 -->
+  <RI_Incident_QingMing.label>青冥树生长</RI_Incident_QingMing.label>
+  <!-- EN: Grow QingMing -->
+  <RI_Incident_QingMing.letterLabel>青冥树生长</RI_Incident_QingMing.letterLabel>
+  <!-- EN: 青冥树自然生长。 -->
+  <RI_Incident_QingMing.letterText>受到灵气波动影响，稀有的青冥树苗破土而出。</RI_Incident_QingMing.letterText>
+  
+  <!-- EN: Herbs sprout -->
+  <RI_Incident_Sprout.label>药草萌芽</RI_Incident_Sprout.label>
+  <!-- EN: Herbs sprout -->
+  <RI_Incident_Sprout.letterLabel>药草萌芽</RI_Incident_Sprout.letterLabel>
+  <!-- EN: Feel the nourishment of Crystal Vein Soil as several rare herbs awaken from dormancy and begin to grow. -->
+  <RI_Incident_Sprout.letterText>感受到灵土的滋养，几种罕见的药草从休眠中苏醒并开始生长。</RI_Incident_Sprout.letterText>
+  
+  <!-- EN: Crystal vein recovery -->
+  <RI_MakeLINGMAI.label>灵脉复苏</RI_MakeLINGMAI.label>
+  <!-- EN: Crystal vein recovery -->
+  <RI_MakeLINGMAI.letterLabel>灵脉复苏</RI_MakeLINGMAI.letterLabel>
+  <!-- EN: A Crystal Vein has been revived, the earth radiates a strange light and a constant flow of energy is nourishing the soil from below, herbs can only grow on this spiritual soil. -->
+  <RI_MakeLINGMAI.letterText>一处灵脉复苏了，大地散发出奇异的光芒，源源不断的能量正从地下滋养着泥土，野生药材只能在这种灵土上生长。</RI_MakeLINGMAI.letterText>
+  
+</LanguageData>

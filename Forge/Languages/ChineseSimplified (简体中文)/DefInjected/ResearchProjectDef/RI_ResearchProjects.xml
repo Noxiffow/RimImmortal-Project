@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator restoration -->
+  <RI_AncientCultivatorRestoration.label>古修技术复原</RI_AncientCultivatorRestoration.label>
+  <!-- EN: With the wisdom of the ancient cultivators, we have mastered their unique forging and engraving techniques. By combining the resilience of steel with the spirituality of spirit stones, we are able to create artifacts in the style of the ancient cultivators. -->
+  <RI_AncientCultivatorRestoration.description>借助古修者的智慧，我们掌握了他们锻造与雕刻的独特工艺。融合钢铁的坚韧与灵石的灵性，我们可以打造出古修风格的造物。</RI_AncientCultivatorRestoration.description>
+  
+  <!-- EN: Black steel synthetic technology -->
+  <RI_BlackSteelSyntheticTechnology.label>庚钢合成</RI_BlackSteelSyntheticTechnology.label>
+  <!-- EN: Based on advanced Qi studies, cultivators have gained deeper insights into Qi energy, leading to the discovery of techniques that fuse spiritual crystals with steel.\n\nBy constructing larger ultra-high-temperature forges and utilizing extreme heat and pressure, they have successfully merged spiritual crystals with steel, creating a unique modern material—Black steel.\n\nUnlock Black steel Synthesis. Unlock Black steel Prosthetic Series. -->
+  <RI_BlackSteelSyntheticTechnology.description>基于高等灵气学，修士们掌握了灵气的更多细节，探索出了将灵石和钢铁结合的技术。\n\n通过打造更大的超高温锻炉，运用高温和高压，将灵石和钢铁糅合，以制造出特殊的现代材料——庚钢。\n\n解锁庚钢合成，解锁庚钢系列假肢。</RI_BlackSteelSyntheticTechnology.description>
+  
+  <!-- EN: Basic talisman -->
+  <RI_CharmResearch.label>法宝制造</RI_CharmResearch.label>
+  <!-- EN: The most basic Grade-Three Artifacts are simple to craft and possess no particularly powerful abilities. As long as one masters the technique of crafting spiritual crystal components, even ordinary people can assemble them with ease.\n\nUnlock Third-rate talismans and the Talisman worktable. -->
+  <RI_CharmResearch.description>基础三品法宝，制作简单，没有特别强大的能力。只要掌握制作灵石构件的技术，寻常人也能简单组装出来。\n\n解锁三品法宝和法宝工作台。</RI_CharmResearch.description>
+  
+  <!-- EN: Master Of Smithing -->
+  <RI_MasterOfSmithing.label>炼器宗师</RI_MasterOfSmithing.label>
+  <!-- EN: On the basis of the ancient cultivator, combined with modern forging technology, we can finally make a modern weapon armor, truly become the master of the Smithing! -->
+  <RI_MasterOfSmithing.description>我们用双手铸造超凡，天纵神机，终将在我们手中诞生。\n\n结合现代庚钢锻造技术，修士们终于能复现出古籍中记载的失传神机，打造出宗师级别的非凡之物！\n\n解锁一品兵器，盔甲，法宝。</RI_MasterOfSmithing.description>
+  
+  <!-- EN: Qi-based military science -->
+  <RI_QiBasedMilitaryScience.label>灵气军事学</RI_QiBasedMilitaryScience.label>
+  <!-- EN: Based on modern military technology, the cultivators have refined their craftsmanship and Qi regulation, utilizing spirit stones as an energy source to advance various military weapons.\n\nWe have developed a series of weapons with greater destructive power. These automated weapons have completely altered the rules of war, making the enemy hesitate in fear.\n\nUnlock automated turrets. -->
+  <RI_QiBasedMilitaryScience.description>基于现代科技和法宝的研究，将灵石作为原料的各种军事技术越发成熟。我们研究出了一系列具有更强杀伤性的制式武装。</RI_QiBasedMilitaryScience.description>
+  
+  <!-- EN: Forge creation -->
+  <RI_Research_BetterWeapon.label>神机造物</RI_Research_BetterWeapon.label>
+  <!-- EN: The cultivators' forging skills have become increasingly refined. They began to explore the microscopic structure of each spirit stone, crafting even sturdier armor, more stable magical tools, and more powerful weapons. No longer content with mere force, they progressively sought the limits of each creation, perfecting the fusion of divine souls with their crafted items.\n\nUnlock second-rate weapons, armor, and talismans. -->
+  <RI_Research_BetterWeapon.description>修士们的炼器技术越发精湛，开始深入探究每一块灵石的微观结构，钻研打造更坚固的盔甲、更稳定的法宝、更强大的兵器。他们不再满足于单纯的力量，而是逐步寻求每一件造物的极限，将神魂与造物完美嵌合。\n\n解锁二品兵器，盔甲，法宝。</RI_Research_BetterWeapon.description>
+  
+  <!-- EN: Basic cultivator weapon -->
+  <RI_Research_CultivatorWeapon.label>修士兵器</RI_Research_CultivatorWeapon.label>
+  <!-- EN: By embedding spiritual crystal components into weapons, even the simplest weapons forged from ordinary iron can unleash additional destructive power. Such weapons are favored by common cultivators.\n\nUnlock Third-rate weapon crafting. -->
+  <RI_Research_CultivatorWeapon.description>通过在兵器内镶嵌灵石构件，即使是最简单的凡铁，都能激发出额外的杀伤力。这样的兵器，被寻常修士所喜爱。\n\n解锁三品兵器制作。</RI_Research_CultivatorWeapon.description>
+  
+  <!-- EN: Basic golem -->
+  <RI_Research_Golem.label>低阶傀儡</RI_Research_Golem.label>
+  <!-- EN: A group of artifact-refining cultivators took a different path, starting to study how to imbue objects with consciousness. They are known as "Spirit Golem Masters."\n\nUnlock Low-tier Spirit Mechanical Golems. -->
+  <RI_Research_Golem.description>一部分炼器修士另辟蹊径，开始研究如何赋予物件思想，他们被称为——灵傀师。\n\n解锁低阶灵械傀儡。</RI_Research_Golem.description>
+  
+  <!-- EN: Modern medicine -->
+  <RI_Research_ModernMedicine.label>造化医典</RI_Research_ModernMedicine.label>
+  <!-- EN: Once, medicine was constrained by numerous factors, but with the advancement of advanced Qi studies, new medical technologies were born. The art of immortality is now within reach, but what lies beyond this?\n\nUnlock the Five Elements Organs. -->
+  <RI_Research_ModernMedicine.description>曾经，医学受限于种种因素，而随着高等灵气学的研究，一项项新医学技术诞生。长生之术触手可及，而在这之上，还有什么呢？\n\n解锁五行器官。</RI_Research_ModernMedicine.description>
+  
+  <!-- EN: Simple prosthetic -->
+  <RI_Research_Prosthetic.label>简易假肢</RI_Research_Prosthetic.label>
+  <!-- EN: People have no choice but to replace their lost limbs with prosthetics, crafting body parts from simple materials. This requires not only skilled medical techniques but also exquisite craftsmanship.\n\nUnlock the Jade Prosthetic Series. -->
+  <RI_Research_Prosthetic.description>人们不得不用假肢来代替失去的肢体，将简易的材料制作成身体部件，这不仅需要熟练的医术，也要精湛的手工技巧。\n\n解锁翠玉系列假肢。</RI_Research_Prosthetic.description>
+  
+</LanguageData>

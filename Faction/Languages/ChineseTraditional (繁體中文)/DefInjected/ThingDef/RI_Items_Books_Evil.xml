@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Skill book-Soul searching -->
+  <RI_BookAbility_ReadingMemory.label>通用功法书-搜魂术</RI_BookAbility_ReadingMemory.label>
+  <!-- EN: A terrifying skill, in which the caster uses modified Qi tendrils to disturb the target's brain, extracting desired information from the cerebral cortex. This spell carries a risk of causing various types of brain damage, but if successful, it can extract the target’s lifelong knowledge from their mind. -->
+  <RI_BookAbility_ReadingMemory.description>一种可怕的法术，施术者以经过调整的灵气触须搅动目标的大脑，从大脑皮层中获取想要的信息。这种法术有概率对人脑造成各种伤害，但如果成功，就能从大脑中提取出目标的毕生所学。</RI_BookAbility_ReadingMemory.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Soul searching"! -->
+  <RI_BookAbility_ReadingMemory.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了搜魂术！</RI_BookAbility_ReadingMemory.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_ReadingMemory.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_ReadingMemory.comps.CompBookStudiable.completedLetterTitle>
+  
+</LanguageData>

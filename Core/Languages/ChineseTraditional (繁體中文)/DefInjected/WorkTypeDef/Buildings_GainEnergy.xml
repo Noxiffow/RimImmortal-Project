@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Get the Qi in the air through meditation -->
+  <RI_OnFuton.description>通过打坐冥想来获取空气中的灵气</RI_OnFuton.description>
+  <!-- EN: cultivation -->
+  <RI_OnFuton.gerundLabel>修炼</RI_OnFuton.gerundLabel>
+  <!-- EN: cultivation -->
+  <RI_OnFuton.labelShort>修炼</RI_OnFuton.labelShort>
+  <!-- EN: cultivator -->
+  <RI_OnFuton.pawnLabel>修炼者</RI_OnFuton.pawnLabel>
+  <!-- EN: cultivate on -->
+  <RI_OnFuton.verb>修炼于</RI_OnFuton.verb>
+  
+</LanguageData>

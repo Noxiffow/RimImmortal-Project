@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <WhoXiuXian.RI_RouteDef>
+        <defName>NzRI_AoJing</defName>
+        <label>ao jing</label>
+        <description>...</description>
+        <routeLevels>
+            <li>
+                <level>1</level>
+                <abilities>
+                    <li>NzRI_AoJing_FingerNail</li>
+                    
+                </abilities>
+            </li>
+            <li>
+                <level>2</level> <!--对应的境界等级-->
+                <abilities>
+                    <li>NzRI_AoJing_Finger</li>
+                    <li>NzRI_AoJing_Ascend</li>
+                </abilities>
+            </li>
+            <li>
+                <level>3</level>
+                <abilities>
+                    <li>NzRI_FireTherapy</li>
+                </abilities>
+            </li>
+            <li>
+                <level>4</level>
+                <abilities>
+                    <li>NzRI_AoJing_Hand</li>
+                </abilities>
+            </li>
+            <li>
+                <level>5</level>
+                <abilities>
+                    <li>NzRI_AoJing_Molt</li>
+                </abilities>
+            </li>
+            <li>
+                <level>6</level>
+                <abilities>
+                    <li>NzRI_AoJing_Arm</li>
+                </abilities>
+            </li>
+            <li>
+                <level>7</level>
+                <abilities>
+                    <li>NzRI_AoJing_Regeneration</li>
+                </abilities>
+            </li>
+        </routeLevels>
+    </WhoXiuXian.RI_RouteDef>
+
+    <WhoXiuXian.RI_RouteDef>
+        <defName>NzRI_ZuoWang</defName>
+        <label>zuo wang</label>
+        <description>...</description>
+        <routeLevels>
+            <li>
+                <level>1</level>
+                <abilities>
+                    <li>NzRI_Zw_GracefulWords</li>
+                    
+                </abilities>
+            </li>
+            <li>
+                <level>3</level>
+                <abilities>
+                    <li>NzRI_Zw_Counterfeit</li>
+                </abilities>
+            </li>
+            <li>
+                <level>4</level>
+                <abilities>
+                    <li>NzRI_Zw_JoinUs</li>
+                </abilities>
+            </li>
+            <li>
+                <level>5</level>
+                <abilities>
+                    <li>NzRI_Zw_FictionReality</li>
+                </abilities>
+            </li>
+            <li>
+                <level>6</level>
+                <abilities>
+                    <li>NzRI_Zw_Scapegoat</li>
+                </abilities>
+            </li>
+            <li>
+                <level>7</level>
+                <abilities>
+                    <li>NzRI_Zw_Therapy</li>
+                </abilities>
+            </li>
+            <li>
+                <level>8</level>
+                <abilities>
+                    <li>NzRI_Zw_ReflectionInMirror</li>
+                </abilities>
+            </li>
+            <li>
+                <level>9</level>
+                <abilities>
+                    <li>NzRI_Zw_InvokeDeity</li>
+                </abilities>
+            </li>                             
+        </routeLevels>
+    </WhoXiuXian.RI_RouteDef>
+
+    
+    <WhoXiuXian.RI_RouteDef>
+        <defName>NzRI_ZhengDe</defName>
+        <label>zheng de</label>
+        <description>...</description>
+        <routeLevels>
+            <li>
+                <level>1</level>
+                <abilities>
+                    <li>NzRI_Zd_ZenMeditation</li>
+                    
+                </abilities>
+            </li>
+            <li>
+                <level>2</level>
+                <abilities>
+                    <li>NzRI_Zw_ZenSound</li>
+                    <li>NzRI_Zd_Almsgiving</li>
+                </abilities>
+            </li>
+            
+            <!-- 
+            如来形态
+            <li>
+                <level>9</level>
+                <abilities>
+                    <li></li>
+                </abilities>
+            </li>-->
+        </routeLevels>
+    </WhoXiuXian.RI_RouteDef>
+
+
+</Defs>

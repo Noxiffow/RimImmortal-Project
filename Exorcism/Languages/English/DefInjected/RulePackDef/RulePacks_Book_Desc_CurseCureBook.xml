@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RI_CurseCureBook_Description.rulePack.rulesStrings>
+&lt;li&gt;desc-&gt;This [writingQualityAdjective] [bookType] [follows], compiled by a [psycaster] after [heOrShe] [storyStruggles]. [writingQualitySentence]. [maybe_date].\n\nAfter finishing this book, the reader can master the art of curse cleansing. It is a one-time inheritance and will vanish once fully read.&lt;/li&gt;
+&lt;li&gt;follows-&gt;systematically explains the principles of purification and curse removal&lt;/li&gt;
+&lt;li&gt;follows-&gt;fully records rites and key techniques for breaking malignant curses&lt;/li&gt;
+&lt;li&gt;follows-&gt;is structured around the four methods: suppress, purify, dispel, and seal&lt;/li&gt;
+&lt;li&gt;follows-&gt;deeply analyzes curse corruption and paths of counteraction&lt;/li&gt;
+&lt;li&gt;follows-&gt;organizes purification procedures and taboos in rigorous detail&lt;/li&gt;
+&lt;li&gt;follows-&gt;summarizes self-protection and curse-cleansing steps in calamity zones&lt;/li&gt;
+&lt;li&gt;heOrShe-&gt;he&lt;/li&gt;
+&lt;li&gt;heOrShe-&gt;she&lt;/li&gt;
+&lt;li&gt;storyStruggles-&gt;traveling through lands afflicted by calamity&lt;/li&gt;
+&lt;li&gt;storyStruggles-&gt;repeatedly validating these techniques in practical purification work&lt;/li&gt;
+&lt;li&gt;storyStruggles-&gt;reconstructing a full curse-breaking framework from ancient records&lt;/li&gt;
+&lt;li&gt;storyStruggles-&gt;revising key rites through firsthand experience&lt;/li&gt;
+&lt;li&gt;storyStruggles-&gt;combining medicine and psychic practice into a unified method&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;Daoist cultivator&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;purification scholar&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;cursebreaker&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;wandering banisher&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;warding mentor&lt;/li&gt;
+&lt;li&gt;psycaster-&gt;master of cleansing arts&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==6)-&gt;meticulously structured and precisely argued&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==5)-&gt;mature in insight and clear in organization&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==4)-&gt;solid in content and clear in expression&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==3)-&gt;complete in structure and plain in style&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==2)-&gt;scattered in points and barely readable&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==1)-&gt;hastily written with many errors&lt;/li&gt;
+&lt;li&gt;writingQualityAdjective(quality==0)-&gt;obscure, chaotic, and nearly unusable&lt;/li&gt;
+&lt;li&gt;writingQualitySentence(quality[greater_than]4)-&gt;This book [excellentDesc][excellentExtra]&lt;/li&gt;
+&lt;li&gt;writingQualitySentence(quality[less_than]5,quality[greater_than]1)-&gt;This book [decentDesc][decentExtra]&lt;/li&gt;
+&lt;li&gt;writingQualitySentence(quality[less_than]2)-&gt;This book [awfulDesc][awfulExtra]&lt;/li&gt;
+&lt;li&gt;excellentDesc-&gt;breaks down complex rites into executable steps&lt;/li&gt;
+&lt;li&gt;excellentDesc-&gt;offers a clear explanation of curse transmission mechanisms&lt;/li&gt;
+&lt;li&gt;excellentDesc-&gt;achieves a strong balance between theory and practice&lt;/li&gt;
+&lt;li&gt;excellentDesc-&gt;uses accurate case references with high reproducibility&lt;/li&gt;
+&lt;li&gt;excellentExtra-&gt;and can almost be used directly as a field manual for purification&lt;/li&gt;
+&lt;li&gt;excellentExtra-&gt;and even provides reliable responses for high-risk cases&lt;/li&gt;
+&lt;li&gt;excellentExtra-&gt;and significantly improves the success rate of curse removal&lt;/li&gt;
+&lt;li&gt;decentDesc-&gt;provides a workable foundation for purification practice&lt;/li&gt;
+&lt;li&gt;decentDesc-&gt;covers identification and handling of common curses&lt;/li&gt;
+&lt;li&gt;decentDesc-&gt;offers clear guidance for beginners&lt;/li&gt;
+&lt;li&gt;decentExtra-&gt;but still lacks depth in extreme situations&lt;/li&gt;
+&lt;li&gt;decentExtra-&gt;while leaving some decisions to the reader’s judgment&lt;/li&gt;
+&lt;li&gt;decentExtra-&gt;and remains somewhat conservative for compound curses&lt;/li&gt;
+&lt;li&gt;awfulDesc-&gt;mixes terminology and breaks logical flow in many places&lt;/li&gt;
+&lt;li&gt;awfulDesc-&gt;is vague about key steps and hard to execute&lt;/li&gt;
+&lt;li&gt;awfulDesc-&gt;selects cases arbitrarily without solid validation&lt;/li&gt;
+&lt;li&gt;awfulExtra-&gt;so following it recklessly may cause purification failure&lt;/li&gt;
+&lt;li&gt;awfulExtra-&gt;and it fails to cover core principles of curse handling&lt;/li&gt;
+&lt;li&gt;awfulExtra-&gt;with some advice presenting obvious risks&lt;/li&gt;
+&lt;li&gt;maybe_date-&gt;&lt;/li&gt;
+&lt;li&gt;maybe_date-&gt;This volume was first transcribed [date_form].&lt;/li&gt;
+&lt;li&gt;maybe_date-&gt;Its compilation can be traced back to [date_form].&lt;/li&gt;
+&lt;li&gt;maybe_date-&gt;No precise date of authorship is recorded.&lt;/li&gt;
+&lt;li&gt;date_form-&gt;recently&lt;/li&gt;
+&lt;li&gt;date_form-&gt;decades ago&lt;/li&gt;
+&lt;li&gt;date_form-&gt;in [date]&lt;/li&gt;
+&lt;li&gt;date_form-&gt;in the [date_season]&lt;/li&gt;
+&lt;li&gt;bookType(p=4)-&gt;grimoire of curse removal&lt;/li&gt;
+&lt;li&gt;bookType(p=3)-&gt;purification handbook&lt;/li&gt;
+&lt;li&gt;bookType(p=2)-&gt;reference on cleansing arts&lt;/li&gt;
+&lt;li&gt;bookType-&gt;record of banishment techniques&lt;/li&gt;
+&lt;li&gt;bookType-&gt;treatise on warding rites&lt;/li&gt;
+  </RI_CurseCureBook_Description.rulePack.rulesStrings>
+</LanguageData>

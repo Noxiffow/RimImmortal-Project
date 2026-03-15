@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef Name="RI_Research_Base" Abstract="True">
+		<tab>RI_ResearchTab</tab>
+	</ResearchProjectDef>
+
+	<!--=============================== 部落到中世纪的科技 ===================================-->
+
+	<!--=====mod列表======-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_Introduction</defName>
+		<label>Cultivation rank</label>
+		<description>The cultivation rank table of the RimImmortal:Catkins\nNoviciate rank\nFoundation rank\nCore formation rank\nCore coagulation rank\nCore consummation rank</description>
+		<baseCost>50</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<!--=====修炼之路======-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_ImmortalStart</defName>
+		<label>Road to cultivate</label>
+		<description>You will embark on the road of cultivation—training, upgrade, and undertaking a series of adventures, ultimately ascending to immortal.\n\nBasic Cultivation Technology, unlocks the most fundamental cultivation facilities.\n\n*To begin Cultivation, a pawn must be implanted with a Spirit Root. Spirit Roots can be obtained through various means: trade, consuming Jade wine, or harvesting them from other Cultivators. Cultivators require a cultivation spot or more advanced cultivation facilities to train, and training tasks must be assigned to them accordingly.\n\nWhen the Cultivation progress reaches 100%, the Realm Transformation hediff will be applied. At this point, a upgrade can be attempted at the Upgrade platform. Be aware, if the upgrade fails, the Cultivator's meridians will suffer severe damage.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+
+	<!--基础药方-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_BasicElixirs</defName>
+		<label>Basic Alchemy</label>
+		<description>In ancient times, there were various complex medical theories, but today, only the most effective formulas have been passed down.\n\nSome ancient herbs were brought to fringe planets by Cultivators, where research led to the unlocking of the Basic Elixirs workbench, Alchemical Furnace, and a small quantity of medicine.\n\nAfter research brewing and psychite feaf, can make Wort and some drugs at the elixirs workbench.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RI_ImmortalStart</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--修士衣冠-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_BasicClothing</defName>
+		<label>Cultivator clothing</label>
+		<description>Ordinary clothing is merely a tool to cover the body, and Cultivators place greater importance on inner cultivation. However, the pursuit of beauty is part of human nature, and Cultivators often compare each other's clothing and patterns.\n\nUnlock Basic Cultivator clothing.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_ImmortalStart</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--修士甲胄-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_BasicArmor</defName>
+		<label>Cultivator armour</label>
+		<description>For low-level cultivators without protective techniques, a good piece of armor is essential.\n\nUnlock basic armour.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_Research_BasicClothing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--药材种植-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_FertileSoil</defName>
+		<label>Medical herb planting</label>
+		<description>The planting technology has been further upgraded, and advanced medicinal herbs are now being grown on a large scale. Cultivators have also created a simple planting box for growing plants indoors.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RI_BasicElixirs</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--极乐奇药-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_ElysiumDrugs</defName>
+		<label>Elysium drugs</label>
+		<description>Once, alchemist adepts engaged in elixir refinement inadvertently created many substances with uncanny effects—some granting blissful euphoria, others casting users into endless, dreamlike stupor.\n\nThese drugs once flourished throughout history, bringing ruin to countless families, and were later universally classified as contraband. Regardless of intent, renewed research into Elysium drugs is believed to erode the true resolve of those who seek the Path.\n\nUnlocks Elysium drugs with special effects.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<!--原始崇拜-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_PrimitiveWorship</defName>
+		<label>Primitive worship</label>
+		<description>The ancients regarded natural phenomena as the embodiment of divine spirits, gradually shaping the socialization and personification of deities. Ritual sacrifices became a crucial part of ancient beliefs, as people believed that only through devout offerings could they earn the favor of the gods.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2.8</researchViewY>
+	</ResearchProjectDef>
+
+	<!--天仙敬奉-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_ImmortalWorship</defName>
+		<label>Immortal worship</label>
+		<description>Faith is not merely an illusion but a bridge capable of altering reality. Through the art of sacrificial rites, cultivators establish connections with ascended Immortals, harnessing their celestial power to exchange offerings for tangible rewards. Worship is no longer blind reverence—it has become a pact.\n\nAmong all cultivators, the legends of the Four Celestial Immortals persist. They are Jade Immortal, Thran Immortal, Rust Immortal, and Enigma Immortal—beings of veneration, devotion, and even fervent worship.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.8</researchViewY>
+		<prerequisites>
+			<li>RI_Research_PrimitiveWorship</li>
+			<li>RI_ImmortalStart</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--法门树-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach</defName>
+		<label>Cultivation path tree</label>
+		<description>Cultivation Path is a shorthand for cultivation approach. It is said that since the earliest Celestial Master invented the method of cultivation, an increasing number of Cultivation Paths have emerged, but in truth, there are only eight original Cultivation Paths.\n\nDue to the significant differences in the Qi circulation logic controlled by each Cultivation Path, a Cultivator can only choose one Cultivation Path to follow. However, some elixirs can be used to forget a Cultivation Path.\n\n*To learn any Cultivation Path, one must first obtain a Cultivation Path Book. The Cultivation Path Book can be randomly acquired from Ruins Tomb quests, or obtained through events. A more reliable method is to build good relations with a large Sect and then summon a merchant caravan to make a purchase.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<prerequisites>
+			<li>RI_ImmortalStart</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--========================================八条法门========================================-->
+	<!--内丹-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_InternalPellet</defName>
+		<label>Internal pellet-Path</label>
+		<description>The Internal Pellet Path is the progenitor of all Cultivation Paths and the foremost of the Eight Primordial Paths. It advocates the dual cultivation of life and essence and pioneered the technique of absorbing Qi energy through meditation.\n\nOver its long evolution, the most significant transformation of the Internal Pellet Path was the shift from techniques originally intended for strengthening the body to the mastery of natural phenomena—ultimately leading to the ability to summon thunder.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--炼体-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_PhysicalStrengthen</defName>
+		<label>Physical-Path</label>
+		<description>Cultivating the Physical Cultivation Path is the fastest way to enhance combat strength, seeking the perfect fusion of the body and Qi. Through rigorous training, cultivators unleash their potential and refine the Eight Extraordinary Meridians. At the same time, the integration of Qi and the body grows ever more intimate, making every inch of skin and every meridian brimming with astonishing power.\n\nDue to its simplicity and practicality, the Physical Cultivation Path has developed its own systems across various religions. However, with the outbreak of sectarian wars, the Physical Cultivation sects had to protect themselves and sever their ties to religious affiliations. Even so, some beneficial aspects were integrated into the Physical Cultivation Path.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--医诀-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_ElixirsStrengthen</defName>
+		<label>Medicine-Path</label>
+		<description>Elixirs Strengthen Initial Approach specializes in Elixir and Healing, and only the Alchemy Technique allows you to learn how to apply Reiki to alchemy to make those elixirs with magical effects. At the same time, there were also some health-improving, healing arts.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--炼器-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_ToolsStrengthen</defName>
+		<label>Forge-Path</label>
+		<description>The Path of Forging emphasizes talent above all else, focusing on the deep understanding and mastery over materials. Forge Masters are the pinnacle of this craft, transforming cold, lifeless raw materials into wondrous creations, even imbuing them with sentience.\n\nSome say that the history of forging predates that of cultivation itself, and that era was truly the golden age where the arts of Qi and technology flourished in full bloom.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.4</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--？-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_A</defName>
+		<label>？</label>
+		<description>？</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.8</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--五行-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_FiveElements</defName>
+		<label>Five elements-Path</label>
+		<description>The Five Elements Path grasps the laws of change in all things and the power of the natural principles. It once experienced a brief period of great prosperity. However, internal strife eventually tore the Five Elements Cultivation Path into five independent paths. Disciples of the sect waged war against one another, resulting in heavy casualties.\n\nWhen a Cultivator learn any one of the Five Elements Paths, their mind will also acquire fragments of the other four paths. This suggests that the Five Elements Cultivation Path may one day be reunited.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--？-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_B</defName>
+		<label>？</label>
+		<description>？</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.2</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--？-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_C</defName>
+		<label>？</label>
+		<description>？</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--========================================上面是八条法门，之后科技树都是中世纪========================================-->
+
+	<!--灵气学-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_QiResearch</defName>
+		<label>Qi-ology</label>
+		<description>Once, we could only sense the flow of Qi through the Spiritual Root, but now, we utilize instruments to precisely measure the fluctuations of Qi and deduce its underlying laws of motion.\n\nThrough deep research into Qi, the cultivators uncovered further uses of materials such as Liquid Jade and Spiritual Crystals, officially founding the discipline of Qi Science. Liquid Jade is drawn toward objects with high concentrations of Qi, amplifying its potency, while Spiritual Crystals steadily and continuously release minute amounts of Qi.\n\nThus, Qi Science has truly become a discipline that can be systematically mastered, and with this revolution, the path of cultivation enters a new era.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--修炼秘法-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_QiTraining</defName>
+		<label>Cultivate secret method</label>
+		<description>In the in-depth exploration of the mysteries of the human body through the Physical Cultivation Path, some training facilities that enhance cultivation speed have been invented.\n\nUnlock advanced cultivation facilities.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach_PhysicalStrengthen</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--丹道妙方-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Cauldrons</defName>
+		<label>Elixir formula</label>
+		<description>As an alchemist, learn how to sense the effects of medicine with Qi and extract herbs with Qi from a giant cauldron that is often difficult to navigate to make Elixir.</description>
+		<baseCost>900</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>RI_InitialApproach_ElixirsStrengthen</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<!--灵气探测-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_UndergroundCrystalVein</defName>
+		<label>Crystal vein detection</label>
+		<description>Through meticulous refinement, Liquid Jade has been crafted into lenses with detection capabilities, allowing cultivators to perceive the flow of spiritual veins deep underground. With the widespread adoption of this technology, cultivators no longer need to rely on spells to locate spiritual veins, significantly enhancing the efficiency of Spiritual Crystal extraction. Cultivation is no longer solely dependent on individual talent and effort—it is steadily advancing toward industrialization.\n\nUnlock Spiritual Vein detector.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>RI_QiResearch</li>
+			<li>Smithing</li>
+			<li MayRequire="RI.RimImmortal.Living">RI_Smithing</li>
+		</prerequisites>
+		<researchViewX>8</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+
+	<!--高等灵气学-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_SpiritMechineTech</defName>
+		<label>Advanced Qi-ology</label>
+		<description>With the advent of the electrical era, the path of cultivation underwent an unprecedented transformation. Early transistor computers became a tremendous aid in the study of Qi, leveraging powerful computational capabilities to record and precisely analyze the flow, fluctuations, and convergence patterns of Qi energy.\n\nBy processing complex algorithms and mathematical models, cultivators can now predict Qi fluctuations and analyze various challenges in cultivation. These groundbreaking technologies have ushered humanity into a new era where data and technology drive the pursuit of cultivation—the dawn of Advanced Qi Science!</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>RI_UndergroundCrystalVein</li>
+			<li MayRequire="RI.RimImmortal.Living">RI_Electric</li>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>12</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+
+	<!--核心（几乎）最后的科技-->
+
+	<!--灵气革命-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_SpiritualRevolution</defName>
+		<label>Spiritual Energy Revolution</label>
+		<description>The widespread adoption of Qi technology has blurred the boundaries between cultivators and ordinary people. Once an exclusive privilege of the few, cultivation is now accompanied by various conveniences accessible to the general populace.\n\nWith advanced Qi studies as its foundation, both workbenches and cultivation facilities have been meticulously refined, greatly freeing cultivators from manual labor and mental strain. All of this marks the dawn of a new era—the Age of Qi Revolution.</description>
+		<baseCost>10000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>RI_SpiritMechineTech</li>
+		</prerequisites>
+		<researchViewX>17</researchViewX>
+		<researchViewY>2.1</researchViewY>
+		<requiredResearchBuilding MayRequire="RI.RimImmortal.Forge">RI_Building_HiTechResearchDesk</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+</Defs>

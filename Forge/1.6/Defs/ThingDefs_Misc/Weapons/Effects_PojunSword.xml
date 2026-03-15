@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--====破阵斧鸣  需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck====-->
+ <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+    <defName>RI_Fleck_PojunSword</defName>
+    <graphicData>
+      <texPath>Effects/JumenAxe/RI_AxeExcitation</texPath>
+	   <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+	<fadeInTime>0.1</fadeInTime>
+    <solidTime>0.0</solidTime>
+    <fadeOutTime>0.6</fadeOutTime>
+	<growthRate>1</growthRate>
+	<RotationAngle>90~90</RotationAngle>
+	<VelocityAngle>0~360</VelocityAngle>
+  </FleckDef>
+
+</Defs>
+

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>RI_HairStyle</defName>
+		<label>Rimimmortal hairstyle</label>
+		<!--仙路-->
+	</StyleItemCategoryDef>
+
+	<!--=============================== 男头发 ================================-->
+
+	<!--发髻系列-->
+	<!--传统-->
+	<HairDef>
+		<defName>RI_HairStyle_ChineseManBun_A</defName>
+		<label>Chinese bun (old)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ChineseManBun_A</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--发簪-->
+	<HairDef>
+		<defName>RI_HairStyle_ChineseManBun_B</defName>
+		<label>Chinese bun (hairpin)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_ChineseManBun_B</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--少年英雄-->
+	<HairDef>
+		<defName>RI_HairStyle_YoungHero</defName>
+		<label>Chinese bun (hero)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_YoungHero</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--长鬓-->
+	<HairDef>
+		<defName>RI_HairStyle_BunOld</defName>
+		<label>Chinese bun (hero)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunOld</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--风流-->
+	<HairDef>
+		<defName>RI_HairStyle_BunRomantic</defName>
+		<label>Chinese bun (romantic)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunRomantic</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--慵懒-->
+	<HairDef>
+		<defName>RI_HairStyle_Lazy</defName>
+		<label>Chinese bun (lazy)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_Lazy</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--帅哥-->
+	<HairDef>
+		<defName>RI_HairStyle_BunHandsome</defName>
+		<label>Chinese bun (handsome)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunHandsome</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--年轻-->
+	<HairDef>
+		<defName>RI_HairStyle_BunYoung</defName>
+		<label>Chinese bun (young)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunYoung</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--普通-->
+	<HairDef>
+		<defName>RI_HairStyle_BunNormal</defName>
+		<label>Chinese bun (normal)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunNormal</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--散发-->
+	<HairDef>
+		<defName>RI_HairStyle_BunSplit</defName>
+		<label>Chinese bun (split)</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_BunSplit</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--野人系列-->
+	<HairDef>
+		<defName>RI_HairStyle_MadMan</defName>
+		<label>Mad man</label>
+		<styleGender>Male</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_MadMan</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--=============================== 女头发 ================================-->
+
+	<HairDef>
+		<defName>RI_HairStyle_MingFemale</defName>
+		<label>Ming female bun A</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_MingFemale</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>RI_HairStyle_MingFemale_B</defName>
+		<label>Ming female bun B</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_MingFemale_B</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>RI_HairStyle_MingFemale_C</defName>
+		<label>Ming Female bun C</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_MingFemale_C</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>RI_HairStyle_LittleGirl</defName>
+		<label>Young girl</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_LittleGirl</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>RI_HairStyle_FemaleBun</defName>
+		<label>Ming rich female A</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_FemaleBun</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>RI_HairStyle_OldLady</defName>
+		<label>Old lady</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_OldLady</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--飞仙发髻-->
+	<HairDef>
+		<defName>RI_HairStyle_FlyingFairy</defName>
+		<label>Female bun (flying)</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_FlyingFairy</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--慵懒-->
+	<HairDef>
+		<defName>RI_HairStyle_FemaleLazy</defName>
+		<label>Female bun (lazy)</label>
+		<styleGender>Female</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/RI_HairStyle_FemaleLazy</texPath>
+		<category>RI_HairStyle</category>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</HairDef>
+
+	<!--=============================== Beards ================================-->
+
+
+	<BeardDef>
+		<defName>RI_Beards_OldMan</defName>
+		<label>Old man</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_OldMan</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0.05)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0.05)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>RI_Beards_Writer</defName>
+		<label>Writer</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Writer</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0.05)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0.05)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>RI_Beards_MadMan</defName>
+		<label>Mad man</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_MadMan</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0.025)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0.03)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>RI_Beards_Businessman</defName>
+		<label>Businessman</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Businessman</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0.025)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0.03)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--新胡子-->
+	<BeardDef>
+		<defName>RI_Beards_Elder</defName>
+		<label>Elder</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Elder</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0.025)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0.03)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--下巴一撮-->
+	<BeardDef>
+		<defName>RI_Beards_PinchOfChin</defName>
+		<label>Pinch of chin</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_PinchOfChin</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--八字胡-->
+	<BeardDef>
+		<defName>RI_Beards_Handlebar</defName>
+		<label>Handle bar</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Handlebar</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--人字胡-->
+	<BeardDef>
+		<defName>RI_Beards_RenMustache</defName>
+		<label>Ren mustache</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_RenMustache</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--不羁-->
+	<BeardDef>
+		<defName>RI_Beards_Unruly</defName>
+		<label>Unruly</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Unruly</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+	<!--武夫-->
+	<BeardDef>
+		<defName>RI_Beards_Fighter</defName>
+		<label>Fighter</label>
+		<texPath>Things/Pawn/Humanlike/Beards/RI_Beards_Fighter</texPath>
+		<styleGender>Male</styleGender>
+		<category>RI_HairStyle</category>
+		<offsetNarrowSouth>(0,0,0)</offsetNarrowSouth>
+		<offsetNarrowEast>(0,0,0)</offsetNarrowEast>
+		<styleTags>
+			<li>RI_HairStyle</li>
+		</styleTags>
+	</BeardDef>
+
+</Defs>

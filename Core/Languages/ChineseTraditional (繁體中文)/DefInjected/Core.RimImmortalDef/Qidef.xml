@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 蓬絮 -->
+  <RI_Sinsack.label>蓬絮</RI_Sinsack.label>
+  
+  <!-- EN: 凝气 -->
+  <RI_Training.label>凝气</RI_Training.label>
+  
+  <!-- EN: 固基 -->
+  <RI_Training1.label>固基</RI_Training1.label>
+  
+  <!-- EN: 化丹 -->
+  <RI_Training2.label>化丹</RI_Training2.label>
+  
+  <!-- EN: 结丹 -->
+  <RI_Training3.label>结丹</RI_Training3.label>
+  
+  <!-- EN: 灵丹 -->
+  <RI_Training4.label>灵丹</RI_Training4.label>
+  
+  <!-- EN: 化神 -->
+  <RI_Training5.label>化神</RI_Training5.label>
+  
+  <!-- EN: 元婴 -->
+  <RI_Training6.label>元婴</RI_Training6.label>
+  
+  <!-- EN: 大成 -->
+  <RI_Training7.label>大成</RI_Training7.label>
+  
+  <!-- EN: 合体 -->
+  <RI_Training8.label>合体</RI_Training8.label>
+  
+  <!-- EN: 登仙 -->
+  <RI_Training9.label>登仙</RI_Training9.label>
+  
+</LanguageData>

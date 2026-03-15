@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================== 邪修功法 ====================================-->
+
+	<!--搜魂术-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_ReadingMemory</defName>
+		<label>Skill book-Soul searching</label>
+		<description>A terrifying skill, in which the caster uses modified Qi tendrils to disturb the target's brain, extracting desired information from the cerebral cortex. This spell carries a risk of causing various types of brain damage, but if successful, it can extract the target’s lifelong knowledge from their mind.</description>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_ReadingMemory</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Soul searching"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

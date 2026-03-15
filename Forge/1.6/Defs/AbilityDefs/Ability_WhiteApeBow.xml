@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--白霜雨-->
+	<AbilityDef>
+		<defName>RI_WhiteApeBow_Ability</defName>
+		<label>Frozen rain</label>
+		<description>Shoot 5 white frost arrows in a row, and the hit enemy will suffer hypothermia.</description>
+		<iconPath>Ability/Weapon/RI_Ability_BowShoot</iconPath>
+		<cooldownTicksRange>890</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<accuracyTouch>0.9</accuracyTouch>
+			<accuracyShort>0.7</accuracyShort>
+			<accuracyMedium>0.55</accuracyMedium>
+			<accuracyLong>0.55</accuracyLong>
+			<range>70</range>
+			<burstShotCount>7</burstShotCount>
+			<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Arrow_WhiteApeBow_Explosion</defaultProjectile>
+			<verbClass>RI_Starch.RI_Ability.RI_Verb_AbilityBurst</verbClass>
+			<warmupTime>2.4</warmupTime>
+			<soundCast>Bow_Large</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<minRange>4.5</minRange>
+			<defaultCooldownTime>2</defaultCooldownTime>
+		</verbProperties>
+	</AbilityDef>
+	
+	<FleckDef ParentName="FleckBase">
+		<defName>RI_WhiteApeBowbomb</defName>
+		<graphicData>
+			<texPath>Effects/Damage/RI_WhiteApeBowbomb</texPath>
+			<drawSize>1.5</drawSize>
+			<shaderType>TransparentPostLight</shaderType>
+			<renderInstanced>true</renderInstanced>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0</solidTime>
+		<fadeOutTime>0.2</fadeOutTime>
+	</FleckDef>
+
+	<DamageDef ParentName="Bomb">
+		<defName>RI_WhiteApeBow</defName>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>5.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>0.1</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>0.1</buildingDamageFactorPassable>
+		<plantDamageFactor>1</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>RI_WhiteApeBowbomb</explosionCellFleck>
+		<explosionColorCenter>(0.8, 0.86, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.8, 0.82, 0.85)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+		<additionalHediffs>
+			<li>
+				<hediff>Hypothermia</hediff>
+				<severityPerDamageDealt>0.1</severityPerDamageDealt>
+				<severityFixed>0.18</severityFixed>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_Missile" ParentName="BaseBullet">
+		<defName>RI_Arrow_WhiteApeBow_Explosion</defName>
+		<label>White frost arrow</label>
+		<graphicData>
+			<drawSize>1.8</drawSize>
+			<texPath>Things/Projectile/RI_Arrow_WhiteApeBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>RI_Starch.RI_Projectile.RI_Projectile_Rot</thingClass>
+		<projectile>
+			<damageDef>RI_WhiteApeBow</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.55</armorPenetrationBase>
+			<speed>48</speed>
+			<arcHeightFactor>4</arcHeightFactor>
+			<explosionRadius>2.3</explosionRadius >
+			<shadowSize>0</shadowSize>
+		</projectile>
+
+		<fleck1>RI_Fleck_Tail_WhiteApeBow</fleck1>
+		<frequency>-2</frequency>
+		<scale1>0.3</scale1>
+		<shaking1>0.15</shaking1>
+		<color1>(0.85,0.98,0.96)</color1>
+
+		<fleck>RI_Fleck_Tail_Long</fleck>
+		<scale>0.5</scale>
+		<shaking>0.13</shaking>
+		<color>(0.8,0.98,0.96,1)</color>
+
+	</ThingDef>
+</Defs>

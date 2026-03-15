@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corpse puppet -->
+  <RI_CorpseCreature_CorpsePuppet_Pawn.label>尸傀</RI_CorpseCreature_CorpsePuppet_Pawn.label>
+  
+  <!-- EN: paper doll -->
+  <RI_CorpseCreature_PaperDoll_Pawn.label>纸人</RI_CorpseCreature_PaperDoll_Pawn.label>
+  
+  <!-- EN: patch man -->
+  <RI_CorpseCreature_PatchMan_Pawn.label>缝合尸</RI_CorpseCreature_PatchMan_Pawn.label>
+  
+  <!-- EN: Zombie buffalo -->
+  <RI_CorpseCreature_ZombieCow_Pawn.label>僵尸牛</RI_CorpseCreature_ZombieCow_Pawn.label>
+  
+  <!-- EN: zombie horse -->
+  <RI_CorpseCreature_ZombieHorse_Pawn.label>僵尸马</RI_CorpseCreature_ZombieHorse_Pawn.label>
+  
+</LanguageData>

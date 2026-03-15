@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--丝丝灵雨-->
+	<ThoughtDef MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Thought_QiEnergyRain</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>spiritual radiance rain</label>
+				<description>The abundant mist carries fine strands of qi energy, and the raindrops streaking across the sky glow faintly. It is truly a wondrous sight, refreshing both mind and spirit.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

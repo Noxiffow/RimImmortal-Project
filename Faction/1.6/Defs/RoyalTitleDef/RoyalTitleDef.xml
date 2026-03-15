@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--头衔Base-->
+	<RoyalTitleDef Abstract="True" Name="RI_Sect_TitleBase">
+		<tags>
+			<li>RI_Sect_Title</li>
+		</tags>
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		<awardThought>RI_Sect_GainedTitle</awardThought>
+		<lostThought>RI_Sect_LostTitle</lostThought>
+	</RoyalTitleDef>
+
+	<!--杂役-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_A</defName>
+		<label>Follower</label>
+		<description>The follower is the lowest rank in a sect, mostly consisting of individuals who are not cultivators but are physically stronger than the average person. They are generally tasked with menial duties such as transporting goods, maintaining sect facilities, and simple errands.</description>
+		<minExpectation>Moderate</minExpectation>
+		<changeHeirQuestPoints>1500</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
+		<canBeInherited>false</canBeInherited>
+		<seniority>150</seniority>
+		<favorCost>1</favorCost>
+		<commonality>3</commonality>
+		<permitPointsAwarded>1</permitPointsAwarded>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+	</RoyalTitleDef>
+
+	<!--外门弟子-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_B</defName>
+		<label>Outer disciple</label>
+		<description>Only those with the best talents and wealth can receive the sect's reward of Lingya (spiritual saplings) and become cultivators. Outer sect disciples, in addition to learning and cultivating, also need to complete various tasks assigned by the sect. Those born with special talents, often referred to as "dragons and phoenixes," generally do not stay in the outer sect for long.</description>
+		<minExpectation>Moderate</minExpectation>
+		<changeHeirQuestPoints>2000</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>30</recruitmentResistanceOffset>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<canBeInherited>false</canBeInherited>
+		<seniority>250</seniority>
+		<favorCost>9</favorCost>
+		<commonality>1</commonality>
+		<permitPointsAwarded>1</permitPointsAwarded>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+	</RoyalTitleDef>
+
+	<!--内门弟子-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_C</defName>
+		<label>Inner disciple</label>
+		<description>Once a cultivator's level reaches a certain stage, they can enter the inner sect. Here, they will no longer be subjected to the rough collective education but will instead receive a personalized educational plan, with supervision from the elders of the sect.</description>
+		<minExpectation>High</minExpectation>
+		<changeHeirQuestPoints>2800</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<canBeInherited>false</canBeInherited>
+		<seniority>300</seniority>
+		<favorCost>10</favorCost>
+		<commonality>0.35</commonality>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+		<permits>
+			<li>TradeSettlement</li>
+		</permits>
+	</RoyalTitleDef>
+
+	<!--亲传弟子-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_D</defName>
+		<label>Direct disciple</label>
+		<description>Among the inner sect disciples, those with exceptional talents who stand out will be promoted to direct disciples under the elders' tutelage. These fortunate individuals will accompany the elders and receive direct teachings from them.</description>
+		<minExpectation>High</minExpectation>
+		<changeHeirQuestPoints>2800</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<canBeInherited>false</canBeInherited>
+		<seniority>300</seniority>
+		<favorCost>20</favorCost>
+		<commonality>0.35</commonality>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+		<permits>
+			<li>TradeSettlement</li>
+		</permits>
+	</RoyalTitleDef>
+
+	<!--长老-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_E</defName>
+		<label>Elder</label>
+		<description>Becoming an elder is a difficult condition, requiring a disciple to undergo years of hard work and make significant contributions to the sect to secure a place in the election. Elders hold immense power, directly answering to the sect leader and receiving generous salaries from the sect's total revenue.</description>
+		<minExpectation>High</minExpectation>
+		<changeHeirQuestPoints>3600</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<canBeInherited>false</canBeInherited>
+		<seniority>400</seniority>
+		<favorCost>40</favorCost>
+		<commonality>0.25</commonality>
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<awardThought>RI_Sect_GainedTitle_B</awardThought>
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+		<permits>
+			<li>TradeSettlement</li>
+		</permits>
+	</RoyalTitleDef>
+
+	<!--掌门-->
+	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
+		<defName>RI_Sect_Title_F</defName>
+		<label>Master</label>
+		<description>The sect leader is the highest-ranking individual in the sect and is often the most powerful fighter. The leader is usually elected from among the elders, although there are other ways to become the sect leader. They are responsible for many administrative affairs and must also strengthen their own cultivation, so the sect leader often remains in seclusion, becoming what disciples refer to as an "old monster."</description>
+		<minExpectation>High</minExpectation>
+		<changeHeirQuestPoints>3600</changeHeirQuestPoints>
+		<recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<canBeInherited>True</canBeInherited>
+		<seniority>400</seniority>
+		<favorCost>80</favorCost>
+		<commonality>0.25</commonality>
+		<permitPointsAwarded>3</permitPointsAwarded>
+		<awardThought>RI_Thought_BeMaster</awardThought>
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+		<permits>
+			<li>TradeSettlement</li>
+		</permits>
+	</RoyalTitleDef>
+
+
+</Defs>

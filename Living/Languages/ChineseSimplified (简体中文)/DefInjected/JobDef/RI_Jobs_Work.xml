@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fill TargetA -->
+  <FillWineBarrel.reportString>填装 TargetA</FillWineBarrel.reportString>
+  
+  <!-- EN: input resource -->
+  <RI_Fill_RiceCookerFrame.reportString>装填原料</RI_Fill_RiceCookerFrame.reportString>
+  
+  <!-- EN: harvest TargetA -->
+  <TakeProductFromWineBarrel.reportString>收获 TargetA</TakeProductFromWineBarrel.reportString>
+  
+</LanguageData>

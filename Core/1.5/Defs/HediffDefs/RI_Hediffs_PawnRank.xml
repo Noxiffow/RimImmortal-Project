@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+<!--===控制境界修为，hediff的disappearsAfterTicks最好不一样，以最后消失的为最终修为===-->
+
+    <HediffDef>
+		<defName>RI_LV10_PhysicalStrengthen</defName>
+		<description>此人是炼体登仙修为</description>
+		<label>修为：炼体登仙</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>10</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV8_PhysicalStrengthen</defName>
+		<description>此人是炼体大成修为</description>
+		<label>修为：炼体大成</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>8</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV6_PhysicalStrengthen</defName>
+		<description>此人是炼体化神修为</description>
+		<label>修为：炼体化神</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>6</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV4_PhysicalStrengthen</defName>
+		<description>此人是炼体结丹修为</description>
+		<label>修为：炼体结丹</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>4</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>4</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV2_PhysicalStrengthen</defName>
+		<description>此人是炼体固基修为</description>
+		<label>修为：炼体固基</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>5</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>2</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV0_PhysicalStrengthen</defName>
+		<description>此人是炼体蓬絮修为</description>
+		<label>修为：炼体蓬絮</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>6</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>0</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>PhysicalStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+	<HediffDef>
+		<defName>RI_LV10_ElixirsStrengthen</defName>
+		<description>此人是炼药登仙修为</description>
+		<label>修为：炼药登仙</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>7</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>10</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV8_ElixirsStrengthen</defName>
+		<description>此人是炼药大成修为</description>
+		<label>修为：炼药大成</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>8</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>8</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV6_ElixirsStrengthen</defName>
+		<description>此人是炼药化神修为</description>
+		<label>修为：炼药化神</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>9</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>6</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV4_ElixirsStrengthen</defName>
+		<description>此人是炼药结丹修为</description>
+		<label>修为：炼药结丹</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>10</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>4</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV2_ElixirsStrengthen</defName>
+		<description>此人是炼药固基修为</description>
+		<label>修为：炼药固基</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>11</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>2</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV0_ElixirsStrengthen</defName>
+		<description>此人是炼药蓬絮修为</description>
+		<label>修为：炼药蓬絮</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>12</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>0</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>ElixirsStrengthen</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+	<HediffDef>
+		<defName>RI_LV10_InternalPellet</defName>
+		<description>此人是内丹登仙修为</description>
+		<label>修为：内丹登仙</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>13</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>10</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV8_InternalPellet</defName>
+		<description>此人是内丹大成修为</description>
+		<label>修为：内丹大成</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>14</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>8</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV6_InternalPellet</defName>
+		<description>此人是内丹化神修为</description>
+		<label>修为：内丹化神</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>6</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV4_InternalPellet</defName>
+		<description>此人是内丹结丹修为</description>
+		<label>修为：内丹结丹</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>16</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>4</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV2_InternalPellet</defName>
+		<description>此人是内丹固基修为</description>
+		<label>修为：内丹固基</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>17</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>2</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV0_InternalPellet</defName>
+		<description>此人是内丹蓬絮修为</description>
+		<label>修为：内丹蓬絮</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>18</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>0</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>InternalPellet</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+
+	<HediffDef>
+		<defName>RI_LV10_Base</defName>
+		<description>此人是登仙修为</description>
+		<label>修为：登仙</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>19</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>10</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV8_Base</defName>
+		<description>此人是大成修为</description>
+		<label>修为：大成</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>20</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>8</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV6_Base</defName>
+		<description>此人是化神修为</description>
+		<label>修为：化神</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>21</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>6</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV4_Base</defName>
+		<description>此人是结丹修为</description>
+		<label>修为：结丹</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>22</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>4</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV2_Base</defName>
+		<description>此人是固基修为</description>
+		<label>修为：固基</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>23</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>2</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_LV0_Base</defName>
+		<description>此人是蓬絮修为</description>
+		<label>修为：蓬絮</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>24</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>False</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>0</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>false</HaveRoute>
+				<!--是否添加法门，实现转职的必要设置-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+</Defs>

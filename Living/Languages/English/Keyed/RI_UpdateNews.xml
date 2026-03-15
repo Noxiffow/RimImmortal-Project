@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- 刚才代码里定义的通用 UI 键 -->
+	<RI_News_Title>Mod Update: {0}</RI_News_Title>
+	<RI_News_Version>Version: {0}</RI_News_Version>
+	<RI_News_Next>Next</RI_News_Next>
+	<RI_News_Close>Close</RI_News_Close>
+
+	<!-- 你在这个公告里自定义的键 -->
+	<RI_RimImmortal_Living>RimImmortal-Living</RI_RimImmortal_Living>
+	<RI_RimImmortal_Living_Text>Major Update:\n-In a few days, the food/recipe content will be removed from this mod. Please subscribe to the new “FarmCraft” mod instead.</RI_RimImmortal_Living_Text>
+</LanguageData>

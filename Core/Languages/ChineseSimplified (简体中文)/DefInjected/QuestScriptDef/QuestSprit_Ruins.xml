@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->We have received word that in a remote area, someone has accidentally unearthed an ancient stone tower, from whose brick seams emanate dense waves of Qi energy. This news has quickly spread across the land, and it is clear that many cultivators, sensing the opportunity, are eagerly preparing to take action.\n\nWith treasures at stake and dangers looming, we must make preparations in advance.</li>
+  -->
+  <RI_OpportunitySite_AncientPagoda.questDescriptionRules.rulesStrings>
+    <li>questDescription->我们收到消息，在某个偏远之地，有人意外发掘出一座古老石塔，从石砖缝隙中散发出浓厚的灵气波动。这条消息已经迅速传遍各地，显然，许多修士嗅到了其中的机缘，纷纷蠢蠢欲动。\n\n宝物争夺，任务凶险，我们应该提前做好准备。</li>
+  </RI_OpportunitySite_AncientPagoda.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Treasure contest-Pagoda</li>
+  -->
+  <RI_OpportunitySite_AncientPagoda.questNameRules.rulesStrings>
+    <li>questName->夺宝之地-石塔</li>
+  </RI_OpportunitySite_AncientPagoda.questNameRules.rulesStrings>
+  <!-- EN: <rulesStrings><li>root->Location of the Pagoda</li></rulesStrings> -->
+  <RI_OpportunitySite_AncientPagoda.root.nodes.GenerateSite.singleSitePartRules.slateRef>
+    <rulesStrings>
+      <li>root->石塔所在之地</li>
+    </rulesStrings>
+  </RI_OpportunitySite_AncientPagoda.root.nodes.GenerateSite.singleSitePartRules.slateRef>
+  <!-- EN: Quest expired:[resolvedQuestName] -->
+  <RI_OpportunitySite_AncientPagoda.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>任务超时：[resolvedQuestName]</RI_OpportunitySite_AncientPagoda.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: We missed the opportunity to compete for the treasure. -->
+  <RI_OpportunitySite_AncientPagoda.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>我们错过了争夺宝物的时机。</RI_OpportunitySite_AncientPagoda.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  
+  <!-- EN:
+    <li>questDescription->We have received news that a massive cracked boulder has been discovered in the wilderness, emitting waves of Qi energy from the cracks. It is surely no ordinary object. This news has quickly spread across the land, and clearly, many cultivators have sensed the opportunity within, eagerly preparing to act.\n\nWith treasures at stake and dangers looming, we must make preparations in advance.</li>
+  -->
+  <RI_OpportunitySite_BigRock.questDescriptionRules.rulesStrings>
+    <li>questDescription->我们收到消息，有人在野外发现一块龟裂巨石，从裂缝中散发出阵阵灵气，想必不是凡物。这条消息已经迅速传遍各地，显然，许多修士嗅到了其中的机缘，纷纷蠢蠢欲动。\n\n宝物争夺，任务凶险，我们应该提前做好准备。</li>
+  </RI_OpportunitySite_BigRock.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Treasure contest-Rock</li>
+  -->
+  <RI_OpportunitySite_BigRock.questNameRules.rulesStrings>
+    <li>questName->夺宝之地-巨石</li>
+  </RI_OpportunitySite_BigRock.questNameRules.rulesStrings>
+  <!-- EN: <rulesStrings><li>root->Location of the Rock</li></rulesStrings> -->
+  <RI_OpportunitySite_BigRock.root.nodes.GenerateSite.singleSitePartRules.slateRef>
+    <rulesStrings>
+      <li>root->巨石所在之地</li>
+    </rulesStrings>
+  </RI_OpportunitySite_BigRock.root.nodes.GenerateSite.singleSitePartRules.slateRef>
+  <!-- EN: Quest expired:[resolvedQuestName] -->
+  <RI_OpportunitySite_BigRock.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>任务超时：[resolvedQuestName]</RI_OpportunitySite_BigRock.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: We missed the opportunity to compete for the treasure. -->
+  <RI_OpportunitySite_BigRock.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>我们错过了争夺宝物的时机。</RI_OpportunitySite_BigRock.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

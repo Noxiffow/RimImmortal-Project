@@ -1,0 +1,60 @@
+Rim Hermit
+Five willow Hermit
+Six One Hermit
+HengShan Hermit
+WenLing Hermit
+WanSong Hermit
+BanQiao Hermit
+QinXi Hermit
+Garden Hermit
+Dust Hermit
+Day bottle Hermit
+KuShi Hermit
+Woodcutter Hermit
+Buddhist Hermit
+InShan Hermit
+
+Rim Taoist
+Hanyong Taoist
+Yellow crown Taoist
+Trinity priest
+Valley priest
+White stone Taoist
+Tiger killer Taoist
+Falling dragon Taoist
+Penguin Taoist
+Rain Taoist
+Flying dust Taoist
+
+Rim Cultivator
+Immortal Cultivator
+XuXuan Cultivator
+Bread Cultivator
+GuYun Cultivator
+ZenLing Cultivator
+Mountain Cultivator
+Cloud Cultivator
+Hyun Cultivator
+ShinJu Cultivator
+Nuke bomb Cultivator
+LingLuo Cultivator
+Corn Cultivator
+Pigeon Cultivator
+
+Green Tzu
+YuYang Tzu
+XiaoYun Tzu
+Empty forest Tzu
+Meat ball Tzu
+FuYang Tzu
+BiXu Tzu
+XinYuan Tzu
+Radiation Tzu
+Guarding Tzu
+DongYang Tzu
+Rice Tzu
+QiuMing Tzu
+TianNing Tzu
+LingYuan Tzu
+Meow meow Tzu
+

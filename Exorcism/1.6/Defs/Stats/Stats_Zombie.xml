@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <StatDef Abstract="True" Name="RI_ZombieStatBase">
+        <category>PawnCombat</category>
+        <!-- 在动物展示 -->
+        <showOnAnimals>true</showOnAnimals>
+        <!-- 在人类展示 -->
+        <showOnHumanlikes>true</showOnHumanlikes>
+        <showIfUndefined>false</showIfUndefined>
+        <defaultBaseValue>1</defaultBaseValue>
+        <hideAtValue>1</hideAtValue>
+        <minValue>0</minValue>
+    </StatDef>
+
+    <!-- 僵尸镇压下降系数 -->
+    <StatDef ParentName="RI_ZombieStatBase">
+        <defName>RI_Zombie_Stat_SuppressDownRate</defName>
+        <label>Zombie Suppress Down Rate</label>
+        <!-- 僵尸镇压下降速率 -->
+        <description>Rate at which the zombie's suppress level decreases.</description>
+        <toStringStyle>PercentZero</toStringStyle>
+        <displayPriorityInCategory>10004</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 镇压僵尸速度 -->
+    <StatDef ParentName="RI_ZombieStatBase">
+        <defName>RI_Zombie_Stat_SuppressSpeed</defName>
+        <label>Zombie Suppress Speed</label>
+        <!-- 僵尸镇压速度 -->
+        <description>Speed at which the zombie can suppress its hunger.</description>
+        <toStringStyle>PercentZero</toStringStyle>
+        <displayPriorityInCategory>10005</displayPriorityInCategory>
+    </StatDef>
+
+    <!-- 冥血下降系数 -->
+    <StatDef ParentName="RI_ZombieStatBase">
+        <defName>RI_Zombie_Stat_BloodDown_Percent</defName>
+        <label>Zombie Blood Down Percent</label>
+        <!-- 僵尸冥血下降速率 -->
+        <description>Rate at which the zombie's blood level decreases.</description>
+        <toStringStyle>PercentZero</toStringStyle>
+        <displayPriorityInCategory>10006</displayPriorityInCategory>
+    </StatDef>
+
+</Defs>

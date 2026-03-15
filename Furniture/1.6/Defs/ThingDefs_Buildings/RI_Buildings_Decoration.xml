@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Ancient_Decoration</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_DryVege</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!--======================= 餐厅装饰 ==============================-->
+
+	<!--吊柜-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_WallCupboard</defName>
+		<label>Wall cupboard</label>
+		<description>A cupboard for storing bowls and chopsticks.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_WallCupboard</texPath>
+			<drawSize>(2.15,2.15)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_WallCupboard</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--======================厨房装饰======================-->
+
+	<!--厨具架-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_KitchenToolShelf</defName>
+		<label>Cooking tool rack</label>
+		<description>A row of kitchen tools—essential tools for any cook.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_KitchenToolShelf</texPath>
+			<drawSize>(2.1,2.1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_KitchenToolShelf</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<Steel>5</Steel>
+			<WoodLog>1</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
+	</ThingDef>
+
+	<!--原木砧板-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_CuttingBoard</defName>
+		<label>Log cutting board</label>
+		<description>A cutting board made from solid logs—sturdy and durable.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_CuttingBoard</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_CuttingBoard</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+
+		<costList>
+			<WoodLog>5</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>1</Mass>
+		</statBases>
+		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
+	</ThingDef>
+
+	<!--酒坛-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_WineJar</defName>
+		<label>Wine jars</label>
+		<description>Several wine jars, though they appear to be empty.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_WineJar</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_WineJar</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+		</statBases>
+		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
+	</ThingDef>
+
+	<!--碗堆-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_StackBowls</defName>
+		<label>Stack of bowls</label>
+		<description>A stack of clean bowls, commonly seen in kitchens.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_StackBowls</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_StackBowls</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+		</statBases>
+		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
+	</ThingDef>
+
+	<!--瓶瓶罐罐-->
+	<ThingDef ParentName="RI_Ming_DecorationBase">
+		<defName>RI_Building_DecorationBottles</defName>
+		<label>Jars and bottles</label>
+		<description>Various jars and bottles—possibly filled with seasonings.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_DecorationBottles</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_DecorationBottles</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+		</statBases>
+		<designatorDropdown>RI_Ancient_Decoration</designatorDropdown>
+	</ThingDef>
+
+	<!--======================节日装饰======================-->
+
+	<!--年红-->
+	<ThingDef ParentName="RI_DecorationBase">
+		<defName>RI_Building_RedPaper</defName>
+		<label>Red paper</label>
+		<description>Some blessing in red letters, couplets.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_RedPaper</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.1</Mass>
+		</statBases>
+		<researchPrerequisites>
+			<li>RI_Research_FestivalFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<!--灯笼（装饰）-->
+	<ThingDef ParentName="RI_DecorationBase">
+		<defName>RI_Building_RedLantern</defName>
+		<label>Red lantern (decoration)</label>
+		<description>A string of cute little red lanterns do not emit light, they are just decorations.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_RedLantern</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_RedLantern</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.1</Mass>
+		</statBases>
+		<researchPrerequisites>
+			<li>RI_Research_FestivalFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<!--灯笼串（装饰）-->
+	<ThingDef ParentName="RI_DecorationBase">
+		<defName>RI_Building_SmallRedLantern</defName>
+		<label>Small red lantern (decoration)</label>
+		<description>A string of cute little red lanterns do not emit light, they are just decorations.\n\nRotate to switch textures.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_SmallRedLantern</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_SmallRedLantern</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.1</Mass>
+		</statBases>
+		<researchPrerequisites>
+			<li>RI_Research_FestivalFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<!--干辣椒-->
+	<ThingDef ParentName="RI_DecorationBase">
+		<defName>RI_Building_DryChili</defName>
+		<label>Dry chili</label>
+		<description>A bunch of dried peppers. Just for decoration.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_DryChili</texPath>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_DryChili</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<WoodLog>5</WoodLog>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+		</statBases>
+		<designatorDropdown>RI_DryVege</designatorDropdown>
+	</ThingDef>
+
+	<!--干玉米-->
+	<ThingDef ParentName="RI_DecorationBase">
+		<defName>RI_Building_DryCorn</defName>
+		<label>Dry corn</label>
+		<description>A bunch of dried corns. Just for decoration.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_DryCorn</texPath>
+			<drawSize>(1.9,1.9)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_DryCorn</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<costList>
+			<RawCorn>2</RawCorn>
+		</costList>
+
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>0.3</Mass>
+		</statBases>
+		<designatorDropdown>RI_DryVege</designatorDropdown>
+	</ThingDef>
+
+	<!--======================= 现代餐厅装饰 ==============================-->
+
+	<!--现代碗柜-->
+	<ThingDef ParentName="RI_ModernDecorationBase">
+		<defName>RI_Building_ModernWallCupboard</defName>
+		<label>Modern wall cupboard</label>
+		<description>A modern dish cabinet for storing bowls and chopsticks.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_ModernWallCupboard</texPath>
+			<drawSize>(2.15,2.15)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_ModernWallCupboard</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>10</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--抽油烟机-->
+	<ThingDef ParentName="RI_ModernDecorationBase">
+		<defName>RI_Building_KitchenHood</defName>
+		<label>Kitchen hood</label>
+		<description>A range hood, purely decorative.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_KitchenHood</texPath>
+			<drawSize>(2.13,2.13)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_KitchenHood</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>12</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--水槽-->
+	<ThingDef ParentName="RI_ModernDecorationBase">
+		<defName>RI_Building_KitchenSink</defName>
+		<label>Kitchen sink</label>
+		<description>A sink, purely decorative.</description>
+		<graphicData>
+			<texPath>Things/Building/Decoration/RI_Building_KitchenSink</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Decoration/RI_Building_KitchenSink</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

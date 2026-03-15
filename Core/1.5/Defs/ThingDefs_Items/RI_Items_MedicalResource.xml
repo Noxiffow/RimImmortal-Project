@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_DrugBase</defName>
+		<label>Drug base</label>
+		<description>The material used to make most pills acts as a binding agent, a flavoring agent, to keep the medicine from being too strong and to make it easy to take.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_DrugBase</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_GoldSand</defName>
+		<label>Gold sand</label>
+		<description>Gold sand, a medicinal substance with properties of metal elements.\n\nAfter grinding the gold into sand powder, mixed with the pill to take. Gold is a stable precious metal and was used as medicine in ancient times, but to no avail. But for cultivators, it can help restore the Qi in the body, the principle of which no one knows.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_GoldSand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.05</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_ElephantTuskPowder</defName>
+		<label>Elephant tusk powder</label>
+		<description>Elephant tusk powder, a medicinal substance with properties of water elements.\n\nElephant tusk powder has a magical effect of absorbing impurities, and in the hands of pharmacists, often only those complex medicines need to use ivory powder to assist.\n\nThe elephant is a rare animal, do not give up humanity for the sake of interests.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_ElephantTuskPowder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.05</Mass>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+  
+</Defs>

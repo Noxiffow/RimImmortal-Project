@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make Condensed spiritual liquid -->
+  <RI_MakeCondensedSpiritualLiquid.label>炼制【二品】浓缩灵液</RI_MakeCondensedSpiritualLiquid.label>
+  <!-- EN: Making Condensed spiritual liquid. -->
+  <RI_MakeCondensedSpiritualLiquid.description>炼制【二品】浓缩灵液。</RI_MakeCondensedSpiritualLiquid.description>
+  <!-- EN: Making Condensed spiritual liquid -->
+  <RI_MakeCondensedSpiritualLiquid.jobString>炼制浓缩灵液中</RI_MakeCondensedSpiritualLiquid.jobString>
+  
+  <!-- EN: Make QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.label>炼制【二品】麒麟丸</RI_MakeQiLinRestorationPill.label>
+  <!-- EN: Making QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.description>炼制【二品】麒麟丸。</RI_MakeQiLinRestorationPill.description>
+  <!-- EN: Making QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.jobString>炼制麒麟丸中</RI_MakeQiLinRestorationPill.jobString>
+  
+  <!-- EN: Make LingLong moonlight elixir -->
+  <RI_Recipe_MakeLingLongMoonlightElixir.label>炼制【一品】玲珑月辉丹</RI_Recipe_MakeLingLongMoonlightElixir.label>
+  <!-- EN: Making LingLong moonlight elixir. -->
+  <RI_Recipe_MakeLingLongMoonlightElixir.description>炼制【一品】玲珑月辉丹。</RI_Recipe_MakeLingLongMoonlightElixir.description>
+  <!-- EN: Making LingLong moonlight elixir -->
+  <RI_Recipe_MakeLingLongMoonlightElixir.jobString>炼制玲珑月辉丹中</RI_Recipe_MakeLingLongMoonlightElixir.jobString>
+  
+  <!-- EN: make LingLong wine -->
+  <RI_Recipe_MakeLingLongWine.label>调配【一品】玲珑仙酿</RI_Recipe_MakeLingLongWine.label>
+  <!-- EN: Making LingLong wine. -->
+  <RI_Recipe_MakeLingLongWine.description>调配【一品】玲珑仙酿。</RI_Recipe_MakeLingLongWine.description>
+  <!-- EN: making LingLong wine -->
+  <RI_Recipe_MakeLingLongWine.jobString>调配玲珑仙酿中</RI_Recipe_MakeLingLongWine.jobString>
+  
+  <!-- EN: Make Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.label>炼制【一品】湮尘忘魂丹</RI_Recipe_MakeOblivionSoulPurgingElixir.label>
+  <!-- EN: Making Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.description>炼制【一品】湮尘忘魂丹。</RI_Recipe_MakeOblivionSoulPurgingElixir.description>
+  <!-- EN: Making Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.jobString>炼制湮尘忘魂丹中</RI_Recipe_MakeOblivionSoulPurgingElixir.jobString>
+  
+</LanguageData>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============================== 宗门科技 ===================================-->
+
+	<!--宗门的科技都在灵气革命之后-->
+
+	<!--电气石科技-->
+	<!--<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_ToramalliTechnology</defName>
+		<label>Toramalli technology</label>
+		<description>No content, just early release.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>RI_Building_HiTechResearchDesk</requiredResearchBuilding>
+		<prerequisites>
+			<li>RI_SpiritMechineTech</li>
+		</prerequisites>
+		<researchViewX>10.0</researchViewX>
+		<researchViewY>2.8</researchViewY>
+	</ResearchProjectDef>
+
+	-->
+	<!--灵气技术爆炸-->
+	<!--
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_AdvancedQiEnergyTechnology</defName>
+		<label>Qi technology explosion</label>
+		<description>No content, just early release.</description>
+		<baseCost>8000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>RI_Building_HiTechResearchDesk</requiredResearchBuilding>
+		<prerequisites>
+			<li>RI_Research_ToramalliTechnology</li>
+		</prerequisites>
+		<researchViewX>12.0</researchViewX>
+		<researchViewY>2.8</researchViewY>
+	</ResearchProjectDef>-->
+
+	<!--宗门科技——需要蓝图解锁，先不做-->
+	<!--<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_Research_SectResearch</defName>
+		<label>Sect </label>
+		<description>Spiritual technology has seeped into the lives of ordinary people to some extent, marking the new era of cultivators and mortals.\n\nBased on advanced Qi energy studies, workbenches have been improved into highly efficient mechanical workbenches, and electricity is widely used.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>RI_Building_HiTechResearchDesk</requiredResearchBuilding>
+		<prerequisites>
+			<li>RI_SpiritMechineTech</li>
+			<li>RI_SpiritMechineTech</li>
+		</prerequisites>
+		<researchViewX>10.0</researchViewX>
+		<researchViewY>2.8</researchViewY>
+	</ResearchProjectDef>-->
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <NzRI_Zw_ReduceFg_NotEnough>没有足够的非罡</NzRI_Zw_ReduceFg_NotEnough>
+
+    <NzRI_Zw_ReduceYq_NotEnough>没有足够的先天一气</NzRI_Zw_ReduceYq_NotEnough>
+
+    <NzRI_Zw_DropTargetItem_Droped>{Pawn} 拿出了自己的物品</NzRI_Zw_DropTargetItem_Droped>
+
+    <NzRI_Zw_DropTargetItem_NoItem>{Pawn} 没有物品可以交易</NzRI_Zw_DropTargetItem_NoItem>
+
+    <NzRI_Zw_Is_Cheater>{Pawn} 回绝了交易并觉得 {Caster} 是个骗子</NzRI_Zw_Is_Cheater>
+
+    <NzRI_Zw_MvIllness_NoDest>没有目标</NzRI_Zw_MvIllness_NoDest>
+
+    <NzRI_Zw_MvIllness_NoPerson>目标处没有人</NzRI_Zw_MvIllness_NoPerson>
+
+    <NzRI_Zw_MvIllness_NoIllness>没有可治愈的</NzRI_Zw_MvIllness_NoIllness>
+
+    <NzRI_Zw_Is_TooPowerful>这个生物 {Pawn} 太强大了</NzRI_Zw_Is_TooPowerful>
+
+    <NzRI_Zw_FictionReality_NoPlace>没有地方可以放置</NzRI_Zw_FictionReality_NoPlace>
+
+    <NzRI_Zw_FictionReality_Success>一个新的 {Thing} 出现了</NzRI_Zw_FictionReality_Success>
+
+    <Zw_CalcuCheatSuccess_Success>你的谎言成功了</Zw_CalcuCheatSuccess_Success>
+
+    <Zw_CalcuCheatSuccess_Fail>对方识破了你，很显然你的言辞(社交)不足以骗过他(智力)</Zw_CalcuCheatSuccess_Fail>
+
+    <Label_FeiGang>非罡</Label_FeiGang>
+
+    <Label_InnateQi>先天一气</Label_InnateQi>
+</LanguageData>

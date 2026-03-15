@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--巨石-->
+	<QuestScriptDef>
+		<defName>RI_OpportunitySite_BigRock</defName>
+		<rootSelectionWeight>1.0</rootSelectionWeight>
+		<!-- 选择权重-->
+		<rootMinPoints>0</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->Treasure contest-Rock</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->We have received news that a massive cracked boulder has been discovered in the wilderness, emitting waves of Qi energy from the cracks. It is surely no ordinary object. This news has quickly spread across the land, and clearly, many cultivators have sensed the opportunity within, eagerly preparing to act.\n\nWith treasures at stake and dangers looming, we must make preparations in advance.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<!--难度星级选择-->
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+					<parms>
+						<pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+						<pointsFactorThreeStar>2</pointsFactorThreeStar>
+					</parms>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_AdjustPointsForDistantFight</def>
+				</li>
+				<li Class="QuestNode_GetMap" />
+
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>siteTile</storeAs>
+					<preferCloserTiles>true</preferCloserTiles>
+				</li>
+
+				<li Class="QuestNode_GetDefaultSitePartsParams">
+					<tile>$siteTile</tile>
+					<sitePartDefs>
+						<li>RI_RuinsSite_CrackedStone</li>
+					</sitePartDefs>
+					<storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+				</li>
+
+				<!-- 地图上站点的label-->
+				<li Class="QuestNode_GenerateSite">
+					<sitePartsParams>$sitePartsParams</sitePartsParams>
+					<hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+					<storeAs>site</storeAs>
+					<faction>$siteFaction</faction>
+					<tile>$siteTile</tile>
+					<singleSitePartRules>
+						<rulesStrings>
+							<li>root->Location of the Rock</li>
+						</rulesStrings>
+					</singleSitePartRules>
+				</li>
+
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+				</li>
+
+				<!--定时器，可选-->
+				<li Class="QuestNode_WorldObjectTimeout">
+					<worldObject>$site</worldObject>
+					<isQuestTimeout>true</isQuestTimeout>
+					<delayTicks>$(randInt(12,28)*60000)</delayTicks>
+					<inSignalDisable>site.MapGenerated</inSignalDisable>
+					<node Class="QuestNode_Sequence">
+						<!--站点超时文字-->
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestExpired">Quest expired:[resolvedQuestName]</label>
+								<text TKey="LetterTextQuestExpired">We missed the opportunity to compete for the treasure.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<node Class="QuestNode_End">
+					</node>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<!--巨塔-->
+	<QuestScriptDef>
+		<defName>RI_OpportunitySite_AncientPagoda</defName>
+		<rootSelectionWeight>1.0</rootSelectionWeight>
+		<!-- 选择权重-->
+		<rootMinPoints>0</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->Treasure contest-Pagoda</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->We have received word that in a remote area, someone has accidentally unearthed an ancient stone tower, from whose brick seams emanate dense waves of Qi energy. This news has quickly spread across the land, and it is clear that many cultivators, sensing the opportunity, are eagerly preparing to take action.\n\nWith treasures at stake and dangers looming, we must make preparations in advance.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<!--难度星级选择-->
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+					<parms>
+						<pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+						<pointsFactorThreeStar>2</pointsFactorThreeStar>
+					</parms>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_AdjustPointsForDistantFight</def>
+				</li>
+				<li Class="QuestNode_GetMap" />
+
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>siteTile</storeAs>
+					<preferCloserTiles>true</preferCloserTiles>
+				</li>
+
+				<li Class="QuestNode_GetDefaultSitePartsParams">
+					<tile>$siteTile</tile>
+					<sitePartDefs>
+						<li>RI_RuinsSite_AncientPagoda</li>
+					</sitePartDefs>
+					<storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+				</li>
+
+				<!-- 地图上站点的label-->
+				<li Class="QuestNode_GenerateSite">
+					<sitePartsParams>$sitePartsParams</sitePartsParams>
+					<hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+					<storeAs>site</storeAs>
+					<faction>$siteFaction</faction>
+					<tile>$siteTile</tile>
+					<singleSitePartRules>
+						<rulesStrings>
+							<li>root->Location of the Pagoda</li>
+						</rulesStrings>
+					</singleSitePartRules>
+				</li>
+
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+				</li>
+
+				<!--定时器，可选-->
+				<li Class="QuestNode_WorldObjectTimeout">
+					<worldObject>$site</worldObject>
+					<isQuestTimeout>true</isQuestTimeout>
+					<delayTicks>$(randInt(12,28)*60000)</delayTicks>
+					<inSignalDisable>site.MapGenerated</inSignalDisable>
+					<node Class="QuestNode_Sequence">
+						<!--站点超时文字-->
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestExpired">Quest expired:[resolvedQuestName]</label>
+								<text TKey="LetterTextQuestExpired">We missed the opportunity to compete for the treasure.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<node Class="QuestNode_End">
+					</node>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+</Defs>

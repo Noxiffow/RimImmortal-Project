@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Earth element cultivation -->
+  <RI_Ability_EarthCultivation.label>坤土</RI_Ability_EarthCultivation.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Noviciate rank of the Earth-element Path\n\n</color>Spiritual energy acquisition efficiency +25%.\n\nEarth is associated with cultivation; it is the foundational cultivation method of the Earth element. It can enhance one’s physical resilience and defensive strength. -->
+  <RI_Ability_EarthCultivation.description>&lt;color=#C9B954>此功法为 土行法门 凝气境界 所学\n\n&lt;/color>灵气获取效率+25%。\n\n土曰稼穑，坤土为土行基础修炼之法，同时可增强自身防御力。</RI_Ability_EarthCultivation.description>
+  
+  <!-- EN: Eight expanse domain -->
+  <RI_Ability_EarthDomain.label>八荒覆地</RI_Ability_EarthDomain.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Primordial-spirit maturity rank of the Earth-element Path\n\n</color>Qi cost: 480\n\nSelects a Guardian Stone Tower as a medium and transforms it into the Earth Domain.\n\nAll enemies within the domain are afflicted with Petrification. -->
+  <RI_Ability_EarthDomain.description>&lt;color=#C9B954>此功法为 土行法门 大成境界 所学\n\n&lt;/color>选中一座镇岳塔作为媒介，将其转化为八荒领域。\n\n领域内的所有敌人，将会被石化影响。</RI_Ability_EarthDomain.description>
+  
+  <!-- EN: Earthquake -->
+  <RI_Ability_Earthquake.label>乾坤震地</RI_Ability_Earthquake.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Primordial-spirit maturity rank of the Earth-element Path\n\n</color>Qi cost: 420\n\nSelects a Guardian Stone tower as a medium, destroying it to trigger a small-scale earthquake.\n\nThe earthquake deals damage to all matter within the affected area. -->
+  <RI_Ability_Earthquake.description>&lt;color=#C9B954>此功法为 土行法门 大成境界 所学\n\n&lt;/color>选中一座镇岳塔作为媒介，将其摧毁，并引发小规模地震。\n\n地震将会令范围内的所有物质受到伤害。</RI_Ability_Earthquake.description>
+  
+  <!-- EN: Earth column -->
+  <RI_Ability_EarthSpiritColumn.label>乾元生柱</RI_Ability_EarthSpiritColumn.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Foundation rank of the Earth-element Path\n\n</color>Qi cost: 50\n\nCreates one Earth Column.\n\nThe Earth Column is a technique unique to Earth cultivation. By resonating with the Qi within the ground, it refines and condenses it into an Earth Column, which serves as a medium for channeling other spells.\n\nThe Earth Column can exist indefinitely and is capable of bearing heavy weight. If destroyed by external force, it leaves nothing behind. Most advanced Earth cultivation techniques require an Earth Column as a triggering medium. -->
+  <RI_Ability_EarthSpiritColumn.description>&lt;color=#C9B954>此功法为 土行法门 固基境界 所学\n\n&lt;/color>灵气消耗：50\n\n生产一根乾元柱。\n\n乾元生柱为土行特有的一种功法，通过共鸣大地中的灵气，将其提炼成乾元柱，作为承载法术的媒介使用。\n\n乾元柱可无限存在，本身可承载重物，人为摧毁则什么都不会留下。后续的土行功法大多需要乾元柱作为触发媒介。</RI_Ability_EarthSpiritColumn.description>
+  
+  <!-- EN: Earth wall -->
+  <RI_Ability_EarthWall.label>土壁</RI_Ability_EarthWall.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Core-formation rank of the Earth-element Path\n\n</color>Qi cost: 120\n\nSelects an Earth Column within the target area as a medium and transforms it into a rising Earth wall.\n\nThe Earth wall forms a 5×5 cross-shaped structure, suitable for rapidly constructing fortifications or controlling enemy movement. -->
+  <RI_Ability_EarthWall.description>&lt;color=#C9B954>此功法为 土行法门 结丹境界 所学\n\n&lt;/color>选中范围内的一根乾元柱作为媒介，将其转化为拔地而起的土壁。\n\n土壁为5x5的十字结构，可以用于快速构建工事。</RI_Ability_EarthWall.description>
+  
+  <!-- EN: Rock crushing -->
+  <RI_Ability_FlyingSand.label>岩碎</RI_Ability_FlyingSand.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Core-formation rank of the Earth-element Path\n\n</color>Qi cost: 160\n\nSelects an Earth Column within the target area as a medium and detonates it. Countless shards of stone and grains of sand scatter outward, striking enemies in the area, clinging to their bodies, obscuring their vision, and slowing their movement speed. -->
+  <RI_Ability_FlyingSand.description>&lt;color=#C9B954>此功法为 土行法门 结丹境界 所学\n\n&lt;/color>选中范围内的一根乾元柱作为媒介，将其引爆。无数飞散的岩石碎片和沙砾将打击范围内的敌人，附着在他们的身体上，遮蔽视野并减慢他们的移速。</RI_Ability_FlyingSand.description>
+  
+  <!-- EN: Quicksand -->
+  <RI_Ability_SandTrap.label>陷地吞沙</RI_Ability_SandTrap.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Core-consummation rank of the Earth-element Path\n\n</color>Qi cost: 240\n\nSelects an Earth column within the target area as a medium and transforms it into a Quicksand trap.\n\nThe Quicksand draws all creatures within its area toward the center, making it extremely dangerous. -->
+  <RI_Ability_SandTrap.description>&lt;color=#C9B954>此功法为 土行法门 灵丹境界 所学\n\n&lt;/color>选中范围内的一根乾元柱作为媒介，将其转化为流沙陷阱。\n\n流沙陷阱将会把一切范围内的生物吸入到中央，非常危险。</RI_Ability_SandTrap.description>
+  
+  <!-- EN: Stone armor -->
+  <RI_Ability_StoneArmor.label>石甲护身</RI_Ability_StoneArmor.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Core-formation rank of the Earth-element Path\n\n</color>Qi cost: 90\n\nSelects an Earth Column within the target area as a medium and shatters it, causing nearby targets to be enveloped by stone fragments that automatically conform to their bodies, forming Stone Armor.\n\nThe Stone Armor redirects all incoming impact forces into the ground, providing powerful defensive protection for a short time. However, its heavy weight significantly reduces movement speed. -->
+  <RI_Ability_StoneArmor.description>&lt;color=#C9B954>此功法为 土行法门 化丹境界 所学\n\n&lt;/color>选中范围内的一根乾元柱作为媒介，将其摧毁，让站在乾元柱周围的目标，被碎石包裹，形成自动贴合身体的石甲。\n\n石甲可以将所有外来冲击力引入地下，短时间内提供强大的防御力，但是其重量将会阻碍人的移动速度。</RI_Ability_StoneArmor.description>
+  
+  <!-- EN: Stone tower guardian -->
+  <RI_Ability_WorldSealingStoneTower.label>石塔镇岳</RI_Ability_WorldSealingStoneTower.label>
+  <!-- EN: <color=#C9B954>This technique is learned by the Primordial-spirit baby rank of the Earth-element Path\n\n</color>Qi cost: 360\n\nSelects an Earth column as a medium and transforms it into a rising stone tower.\n\nThe tower occupies a 2×2 area and provides powerful shields to allied units within its range. -->
+  <RI_Ability_WorldSealingStoneTower.description>&lt;color=#C9B954>此功法为 土行法门 元婴境界 所学\n\n&lt;/color>选中一根乾元柱作为媒介，将其转化为拔地而起的镇界塔。\n\n镇界塔占地2x2格，可以为范围内的友方提供强力护盾。</RI_Ability_WorldSealingStoneTower.description>
+  
+</LanguageData>

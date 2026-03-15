@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!--DaoAscension-->
+	<GameOverDaoAscensionIntro>Under the QingMing tree, the ethereal fluff rises,\nAscend to immortality, reaching the ninth heaven.\nQi gathers, transforming the world,\nTranscending the mundane, gaining freedom.\n\nYou have cast off the shackles of the mortal world and ascended to immortality. The vast universe before you is no longer distant, but a boundless realm awaiting your exploration. Titles like cultivator and immortal hold no meaning for you now. With Qi flowing like a river, every step you take is a journey beyond the mundane.\n</GameOverDaoAscensionIntro>
+	<GameOverDaoAscensionEnding>After ascension, your remnants will remain in place, while the rest of your consciousness transforms into Qi, journeying towards the void.\n\nYou have not perished, but have become a life of another form—immortal.</GameOverDaoAscensionEnding>
+	<GameOverColonistsAscension>These cultivators have ascension:\n\n{0}</GameOverColonistsAscension>
+	<CannotAscension>Can not Ascension</CannotAscension>
+	<NoHediff>not yet reached the Realm of Earth Immortal Ascension</NoHediff>
+	<Ascension>Start Ascension</Ascension>
+
+</LanguageData>

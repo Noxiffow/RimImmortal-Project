@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--原版疾病降低灵气消耗-->
+
+	<!--大脑冲击--><!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="BrainShock"]/stages/li/statOffsets</xpath>
+		<value>
+			<GI_EnergyGainEff>-10</GI_EnergyGainEff>
+		</value>
+	</Operation>-->
+
+	<!--昏睡病-->
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="CryptosleepSickness"]/stages/li</xpath>
+		<value>
+			<statOffsets>
+				<GI_EnergyGainEff>-5</GI_EnergyGainEff>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	-->
+	<!--流感-->
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="CryptosleepSickness"]/stages/li</xpath>
+		<value>
+			<statOffsets>
+				<GI_EnergyGainEff>-3</GI_EnergyGainEff>
+			</statOffsets>
+		</value>
+	</Operation>-->
+
+</Patch>

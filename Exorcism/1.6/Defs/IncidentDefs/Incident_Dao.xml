@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+  <!--分类-->
+  <IncidentCategoryDef>
+    <defName>RI_Incident_Dao</defName>
+    <needsParmsPoints>true</needsParmsPoints>
+    <canUseAnomalyChance>false</canUseAnomalyChance>
+  </IncidentCategoryDef>
+	
+  <!--道门——信件颜色 TODO音效-->
+  <LetterDef Name="RI_Base_DaoLetter">
+    <defName>RI_Incident_Dao_Letter</defName>
+    <color>(12, 128, 122)</color>
+    <flashColor>(24, 180, 168)</flashColor>
+    <flashInterval>16</flashInterval>
+    <bounce>true</bounce>
+    <arriveSound>RI_Sound_ExorcismThreat</arriveSound>
+    <pauseMode>AnyThreat</pauseMode>
+  </LetterDef>
+	
+  <!--中立-道士路过-->
+  <IncidentDef>
+    <defName>RI_Dao_PriestArrived</defName>
+    <label>Priest Arrived</label>
+    <category>RI_Incident_Dao</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimZombieGirl.IncidentWorker_DaoPriestsPassBy</workerClass>
+    <baseChance>0.2</baseChance>
+    <disabledWhen>
+      <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+    </disabledWhen>
+    <tags>
+      <li>RI_DaoIncident</li>
+    </tags>
+  </IncidentDef>
+	
+  <IncidentDef>
+    <defName>RI_DaoFriendlyRaid</defName>
+    <label>Daoist FriendlyRaid</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimZombieGirl.IncidentWorker_GiveDaoFriendlyRaid</workerClass>
+    <baseChance>0.5</baseChance>
+    <tags>
+      <li>RI_DaoIncident</li>
+    </tags>
+  </IncidentDef>
+	
+  <IncidentDef>
+    <defName>RI_DaoTravelPriestJoinIncident</defName>
+    <label>Dao Travel Priest Arriving</label>
+    <category>RI_Incident_Dao</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimZombieGirl.IncidentWorker_DaoTravelPriestJoin</workerClass>
+    <baseChance>0.1</baseChance>
+    <tags>
+      <li>RI_DaoIncident</li>
+    </tags>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>RI_DaoDropBookIncident</defName>
+    <label>Dao Book Drop</label>
+    <category>RI_Incident_Dao</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimZombieGirl.IncidentWorker_DaoDropBook</workerClass>
+    <baseChance>0.05</baseChance>
+    <tags>
+      <li>RI_DaoIncident</li>
+    </tags>
+  </IncidentDef>
+</Defs>

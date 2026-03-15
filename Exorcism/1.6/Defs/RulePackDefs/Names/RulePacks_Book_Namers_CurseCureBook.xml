@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>RI_CurseCureBook_Namer</defName>
+    <include>
+      <li>ArtNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>title-&gt;[titleBasic]</li>
+        <li>title(p=2)-&gt;[titleAuthored]</li>
+        <!-- Basic -->
+        <li>titleBasic(p=6)-&gt;[randAdjective]净咒秘典</li>
+        <li>titleBasic(p=6)-&gt;驱咒手札</li>
+        <li>titleBasic-&gt;太阴祓秽录</li>
+        <li>titleBasic-&gt;玄门解厄经</li>
+        <li>titleBasic-&gt;镇祟真篇</li>
+        <li>titleBasic-&gt;破秽灵章</li>
+        <li>titleBasic-&gt;清魇要术</li>
+        <li>titleBasic-&gt;却咒残编</li>
+        <!-- Authored -->
+        <li>titleAuthored-&gt;[ANYPAWN_nameIndef]道长的解咒心得</li>
+        <li>titleAuthored-&gt;[ANYPAWN_nameIndef]倾注心血的祓秽法门</li>
+        <li>titleAuthored-&gt;[ANYPAWN_nameIndef]闭关十年所著净咒真解</li>
+        <li>titleAuthored-&gt;[ANYPAWN_nameIndef]为破诅咒而写的手记</li>
+        <li>titleAuthored-&gt;[ANYPAWN_nameIndef]为传承解厄之术所创</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

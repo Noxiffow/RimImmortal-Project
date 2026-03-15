@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 灵炳信仰 -->
+
+  <MemeDef>
+    <defName>RI_Structure_QiOriginFaith</defName>
+		<label>Qi origin faith</label>
+		<description>Qi Origin is the source of all qi, where the answers to all things can be found.</description>
+		<iconPath>UI/Structures/RI_Structure_QiOriginFaith</iconPath>
+    <category>Structure</category>
+    <impact>0</impact>
+    <worshipRoomLabel>Main hall</worshipRoomLabel>
+    <randomizationSelectionWeightFactor>1</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
+    <consumableBuildings>
+      <!--解锁独有建筑-->
+    </consumableBuildings>
+    <renderOrder>-1</renderOrder>
+    <generalRules>
+      <rulesStrings>
+        <li>memeHyphenPrefix->道</li>
+        <li>memeLeaderNoun->心魄</li>
+        <li>memeLeaderNoun->决断者</li>
+        <li>memeLeaderNoun->宗主</li>
+        <li>memeLeaderAdjective->正道</li>
+        <li>memeLeaderAdjective->仁义</li>
+        <li>memeLeaderAdjective->悟道</li>
+        <li>memeMoralist->谋士</li>
+        <li>memeMoralist->道学家</li>
+        <li>memeMoralist->德行者</li>
+        <li>memeMoralist->仙家</li>
+        <li>memeMoralist->智者</li>
+        <li>memeMoralist->儒士</li>
+        <li>memeMoralist->辩士</li>
+    </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>AnimistDescription</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_animist</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+			<li>
+				<ideoName>Immoral</ideoName>
+				<adjective>Immoral</adjective>
+				<member>Cultivator</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+    <thingStyleCategories>
+			<li>
+				<category>RI_Style_NeoCultivation</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<weightFactor>0.1</weightFactor>
+			</li>
+		</styleItemTags>
+  </MemeDef>
+
+</Defs>

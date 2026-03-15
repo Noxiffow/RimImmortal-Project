@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: DropSword -->
+  <DropSword.label>落剑</DropSword.label>
+  
+  <!-- EN: Fire bomb -->
+  <RI_Bullet_FireCharm.label>阳炎爆炸</RI_Bullet_FireCharm.label>
+  
+  <!-- EN: Thunder -->
+  <RI_Bullet_ThunderCharm.label>雷电</RI_Bullet_ThunderCharm.label>
+  
+  <!-- EN: Fire bomb charm -->
+  <RI_Weapon_FireCharm.label>阳炎符</RI_Weapon_FireCharm.label>
+  <!-- EN: A special charm with a mysterious incantation engraved on it with a spiritual crystal. The Fire bomb charm can cause a violent explosion when activated. -->
+  <RI_Weapon_FireCharm.description>一种特殊的符咒，上面以灵石刻录着玄妙的咒文。阳炎符可以在激活后，引发剧烈爆炸。</RI_Weapon_FireCharm.description>
+  <!-- EN: barrel -->
+  <RI_Weapon_FireCharm.tools.barrel.label>闪雷符</RI_Weapon_FireCharm.tools.barrel.label>
+  <!-- EN: Fire bomb charm -->
+  <RI_Weapon_FireCharm.verbs.Verb_ShootOneUse.label>阳炎召来</RI_Weapon_FireCharm.verbs.Verb_ShootOneUse.label>
+  
+  <!-- EN: Light Sword -->
+  <RI_Weapon_LightSword.label>光剑</RI_Weapon_LightSword.label>
+  <!-- EN: Evil can never prevail over good! -->
+  <RI_Weapon_LightSword.description>邪不压正！</RI_Weapon_LightSword.description>
+  <!-- EN: point -->
+  <RI_Weapon_LightSword.tools.point.label>剑尖</RI_Weapon_LightSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_LightSword.tools.edge.label>剑刃</RI_Weapon_LightSword.tools.edge.label>
+  
+  <!-- EN: Light sword charm -->
+  <RI_Weapon_SwordCharm.label>光剑符</RI_Weapon_SwordCharm.label>
+  <!-- EN: A special charm with a mysterious incantation engraved on it with a spiritual crystal. The light sword charm can be activated to summon a light sword from the spell, which is powerful, but only for a limited period of time. -->
+  <RI_Weapon_SwordCharm.description>一种特殊的符咒，上面以灵石刻录着玄妙的咒文。光剑符可以在激活后，从符咒中唤出一把光剑，其威力强大，但是只能维持一段时间。</RI_Weapon_SwordCharm.description>
+  <!-- EN: barrel -->
+  <RI_Weapon_SwordCharm.tools.barrel-0.label>剑符</RI_Weapon_SwordCharm.tools.barrel-0.label>
+  <!-- EN: barrel -->
+  <RI_Weapon_SwordCharm.tools.barrel-1.label>剑符</RI_Weapon_SwordCharm.tools.barrel-1.label>
+  <!-- EN: Light sword charm -->
+  <RI_Weapon_SwordCharm.verbs.Verb_LightSwordCharm.label>光剑唤出</RI_Weapon_SwordCharm.verbs.Verb_LightSwordCharm.label>
+  
+  <!-- EN: Thunder charm -->
+  <RI_Weapon_ThunderCharm.label>闪雷符</RI_Weapon_ThunderCharm.label>
+  <!-- EN: A special charm with a mysterious incantation engraved on it with a spiritual crystal. The Thunder charm can release thunder when activated. -->
+  <RI_Weapon_ThunderCharm.description>一种特殊的符咒，上面以灵石刻录着玄妙的咒文。闪雷符可以在激活后，释放滚滚天雷。</RI_Weapon_ThunderCharm.description>
+  <!-- EN: barrel -->
+  <RI_Weapon_ThunderCharm.tools.barrel.label>闪雷符</RI_Weapon_ThunderCharm.tools.barrel.label>
+  <!-- EN: Thunder charm -->
+  <RI_Weapon_ThunderCharm.verbs.Verb_ShootOneUse.label>闪雷召来</RI_Weapon_ThunderCharm.verbs.Verb_ShootOneUse.label>
+  
+</LanguageData>

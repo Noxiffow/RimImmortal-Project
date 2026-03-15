@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--原版一些毒品可以在炼药台配置-->
+
+	<!--大麻烟-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</value>
+	</Operation>
+
+	<!--精神茶-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="PsychiteTea"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</value>
+	</Operation>
+
+	<!--yayo-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Yayo"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</value>
+	</Operation>
+
+	<!--薄片-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Flake"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</value>
+	</Operation>
+
+
+</Patch>

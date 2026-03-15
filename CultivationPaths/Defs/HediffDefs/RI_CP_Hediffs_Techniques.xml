@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Cultivation technique hediffs — applied permanently to a pawn when they
+         study the corresponding technique manual. The manual itself is not consumed.
+         Only one technique per pawn (enforced by CanBeUsedBy checking for duplicate). -->
+
+    <!-- ═══════════════════════ ORTHODOX TECHNIQUES ═══════════════════════ -->
+
+    <!-- Jade Void Breathing Method — foundational qi intake optimization -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_Tech_JadeVoidBreathing</defName>
+        <label>jade void breathing method</label>
+        <description>The cultivator's breath follows a precise ancient cycle that maximizes qi intake per inhalation. Over time the rhythm becomes instinctive — the dantian hums quietly even in sleep.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.15</GI_EnergyGainEff>
+                </statFactors>
+                <capMods>
+                    <li><capacity>Consciousness</capacity><offset>0.04</offset></li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Thousand-Step Circulation — movement-based qi refinement -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_Tech_ThousandStep</defName>
+        <label>thousand-step circulation</label>
+        <description>A qi circulation method developed for cultivators in constant motion. Every step drives qi through the meridians in a fixed pattern. The body becomes its own cultivation engine — the more they move, the more they refine.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.20</GI_EnergyGainEff>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- ═══════════════════════ DEMONIC TECHNIQUES ════════════════════════ -->
+
+    <!-- Blood Furnace Refinement — internal qi purification through dark heat -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_Tech_BloodFurnace</defName>
+        <label>blood furnace refinement</label>
+        <description>A demonic technique that uses the cultivator's own blood as a medium for qi purification. The blood is "burned" — heated internally by dark qi, forced through the body's meridians under pressure. Painful. Effective. The psychic imprint is permanent.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.20</GI_EnergyGainEff>
+                </statFactors>
+                <statOffsets>
+                    <PsychicSensitivity>0.10</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Soul Consumption Method — devouring qi from the environment -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_Tech_SoulConsumption</defName>
+        <label>soul consumption method</label>
+        <description>The most dangerous technique in recorded demonic cultivation. The Soul Consumption Method turns the dantian into a spiritual predator — it does not gather qi, it hunts it. The power surge is significant. So is the pressure on the mind.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>1.25</GI_EnergyGainEff>
+                </statFactors>
+                <statOffsets>
+                    <PsychicSensitivity>0.15</PsychicSensitivity>
+                    <MentalBreakThreshold>0.05</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

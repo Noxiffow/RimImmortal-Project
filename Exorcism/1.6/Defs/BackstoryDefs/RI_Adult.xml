@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--道士成年背景故事-->
+	
+	<!--
+	<Melee>5</Melee>
+	<Shooting>5</Shooting>
+	<Plants>8</Plants>
+	<Mining>3</Mining>
+	<Cooking>7</Cooking>
+	<Construction>-4</Construction>
+	<Crafting>-4</Crafting>
+	<Medicine>1</Medicine>
+	<Animals>4</Animals>
+	-->
+
+	<!--持符道士-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistA</defName>
+		<title>talisman Daoist</title>
+		<titleShort>Daoist</titleShort>
+		<description>[PAWN_nameDef] devoted years to the study of talisman arts, drawing sigils with cinnabar and chanting incantations to ward off evil and cure illness for common folk. [PAWN_nameDef] sought neither fame nor fortune, only peace under heaven.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--丹药道士-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistB</defName>
+		<title>alchemy Daoist</title>
+		<titleShort>Daoist</titleShort>
+		<description>Focusing intently on alchemy, [PAWN_nameDef] became deeply familiar with the nature of herbs and minerals. [PAWN_pronoun] could craft both fortifying elixirs and medicinal remedies. As alchemy demands long hours, [PAWN_pronoun] often remained by the furnace in seclusion, indifferent to the passage of days.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>7</Cooking>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--道门讲师-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistC</defName>
+		<title>Daoist lecturer</title>
+		<titleShort>Daoist</titleShort>
+		<description>As cultivation deepened, [PAWN_nameDef] was entrusted with teaching duties. Each day, [PAWN_pronoun] lectured in the hall, explaining self-cultivation and karmic consequence to villagers. Though not the strongest in battle, [PAWN_nameDef] earned widespread respect.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>7</Melee>
+			<Social>5</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--云游道士-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistD</defName>
+		<title>wandering Daoist</title>
+		<titleShort>Daoist</titleShort>
+		<description>Leaving the mountain sect behind, [PAWN_nameDef] traveled far and wide. Practicing medicine, spreading teachings, and aiding others, [PAWN_pronoun] met all kinds of people along the way. The journey across forests and wastelands served as both cultivation and trial.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+			<Shooting>5</Shooting>
+			<Plants>3</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--清修道士-->
+	<BackstoryDef>
+		<defName>RI_Backstory_DaoistE</defName>
+		<title>talisman Daoist</title>
+		<titleShort>Daoist</titleShort>
+		<description>[PAWN_nameDef] devoted years to the study of talisman arts, drawing sigils with cinnabar and chanting incantations to ward off evil and cure illness for common folk. [PAWN_nameDef] sought neither fame nor fortune, only peace under heaven.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_BackstoryCategory_Daoist</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>

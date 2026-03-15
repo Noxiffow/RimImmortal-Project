@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: disruptive chime -->
+  <RI_ZombieHediff_SanQing.label>三清铃</RI_ZombieHediff_SanQing.label>
+  <!-- EN: The target’s defenses are shattered by the special tones released by the SanQing bell through resonance. The more times the sound waves strike, the stronger the resonance damage becomes. -->
+  <RI_ZombieHediff_SanQing.description>三清铃</RI_ZombieHediff_SanQing.description>
+  <!-- EN: dissonance -->
+  <RI_ZombieHediff_SanQing.stages.dissonance.label>失谐</RI_ZombieHediff_SanQing.stages.dissonance.label>
+  <!-- EN: resonance -->
+  <RI_ZombieHediff_SanQing.stages.resonance.label>共振</RI_ZombieHediff_SanQing.stages.resonance.label>
+  <!-- EN: disintegration -->
+  <RI_ZombieHediff_SanQing.stages.disintegration.label>瓦解</RI_ZombieHediff_SanQing.stages.disintegration.label>
+  
+  <!-- EN: Thermal Cutting -->
+  <ZombieMelee_Weakened.label>热能切割</ZombieMelee_Weakened.label>
+  <!-- EN: Being cut by a thermal weapon weakens even the strongest defenses. -->
+  <ZombieMelee_Weakened.description>热能武器造成切割伤，任凭防御再强也会被削弱。</ZombieMelee_Weakened.description>
+  <ZombieMelee_Weakened.descriptionCached>热能武器造成切割伤，任凭防御再强也会被削弱。</ZombieMelee_Weakened.descriptionCached>
+  
+</LanguageData>

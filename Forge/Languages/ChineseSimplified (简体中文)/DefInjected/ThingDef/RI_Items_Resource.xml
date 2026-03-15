@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient armor relic -->
+  <RI_Resource_AncientArmorRelic.label>古修甲胄残片</RI_Resource_AncientArmorRelic.label>
+  <!-- EN: The fragments of armors left behind by ancient cultivator repair contain wonderful Qi circuits, which can hardly be copied in modern. -->
+  <RI_Resource_AncientArmorRelic.description>古修遗留下来的甲胄残片，内部蕴含着奇妙的灵气回路，现代几乎无法复制。</RI_Resource_AncientArmorRelic.description>
+  
+  <!-- EN: Ancient weapon relic -->
+  <RI_Resource_AncientWeaponRelic.label>古修兵器残片</RI_Resource_AncientWeaponRelic.label>
+  <!-- EN: The fragments of weapons left behind by ancient cultivator repair contain wonderful Qi circuits, which can hardly be copied in modern. -->
+  <RI_Resource_AncientWeaponRelic.description>古修遗留下来的兵器残片，内部蕴含着奇妙的灵气回路，现代几乎无法复制。</RI_Resource_AncientWeaponRelic.description>
+  
+  <!-- EN: Black steel -->
+  <RI_Resource_BlackSteel.label>庚钢</RI_Resource_BlackSteel.label>
+  <!-- EN: A very stable dark blue alloy that has a certain restraining effect on Qi. After a long research on Qi, researchers found a way to combine Qi and steel, through a specific proportion, with ultra-high temperature and high pressure processing, so that Qi and steel into a new alloy material. This alloy is heptyl steel, which has ultra-high durability, sharpness and stability. It is very suitable for making advanced weapons and armor, or raw materials and cutting heads for various chips. In short, this is a new alloy that only modern cultivators can master. -->
+  <RI_Resource_BlackSteel.description>一种性质十分稳定的暗蓝色合金，对灵气具有一定的约束作用。\n\n在对灵气进行长久的科研后，研究者找到了将灵气和钢铁结合的办法，通过特定的比例，用超高温高压的方式进行加工，让灵气和钢铁融合成一种新的合金材料。这种合金就是庚钢，具有超高的耐久度，锋利度，稳定性。非常适合制作高级的武器盔甲，或者各种芯片的原材料和切削刀头。总之，这是一种只有现代修炼者才能掌握的新合金。</RI_Resource_BlackSteel.description>
+  
+  <!-- EN: Device core circuit -->
+  <RI_Resource_DeviceCoreComponent.label>宝器核心构件</RI_Resource_DeviceCoreComponent.label>
+  <!-- EN: A circuit chip made of black steel as raw material can be applied to high-grade weapons, talisman and other items.\n\nThe chip can automatically adjust the behavior mode according to the set scene to fit the needs of the user. The chip is powered by a spirit stone, not a battery, but rather a bullet. The chip will channel the spirit stone into a specific loop, and each use will fully release the power of one spirit stone. -->
+  <RI_Resource_DeviceCoreComponent.description>一种以庚钢为原材料制作的芯片，可以被应用于高级兵器，法宝等物品。\n\n芯片可以按照设定的场景，自动调整行为模式，以贴合使用者的需求。芯片以灵石作为动力，并非是电池，而是类似于子弹。芯片会将灵石导入特定的回路，每次使用将完全释放一颗灵石的力量。</RI_Resource_DeviceCoreComponent.description>
+  
+  <!-- EN: Spirit core circuit -->
+  <RI_Resource_SpiritCoreComponent.label>神魂核心构件</RI_Resource_SpiritCoreComponent.label>
+  <!-- EN: A circuit chip made of Reiki out of thin air, made from the spirit of a top refiner.\n\nThis chip will consume the life of the mixer, is an extremely precious material, according to some refiners say that this chip has been born of its own wisdom, can adjust the details according to the habits of the material and the user, but also has a magical self-repair function. -->
+  <RI_Resource_SpiritCoreComponent.description>以顶尖炼器师的神魂为原材料，凭空以灵气制造的一枚芯片。\n\n这种芯片会消耗炼器师的寿命，是一种极其珍贵的材料，据一些炼器师说，这种芯片已经诞生了自己的神智，可以自行根据材料和使用者的习惯来调整细节，还具有神奇的自我修复功能。</RI_Resource_SpiritCoreComponent.description>
+  
+</LanguageData>

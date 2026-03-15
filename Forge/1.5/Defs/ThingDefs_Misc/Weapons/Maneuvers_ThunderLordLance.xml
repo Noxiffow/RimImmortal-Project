@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ManeuverDef>
+		<defName>RI_Stab_ThunderLordLance</defName>
+		<requiredCapacity>RI_Stab_ThunderLordLance</requiredCapacity>
+		<verb>
+			<verbClass>RI_Starch.RI_Verbs.Verb_MeleeAttack_ThunderLordLance</verbClass>
+			<meleeDamageDef>Stab</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ToolCapacityDef>
+		<defName>RI_Stab_ThunderLordLance</defName>
+		<label>刺伤</label>
+	</ToolCapacityDef>
+
+</Defs>

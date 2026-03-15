@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================== 法门书-父类 ====================================-->
+	<ThingDef Name="RI_BookBase" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>4500</MarketValue>
+			<!--市场价格-->
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Books</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RI_Special_Book</li>
+		</tradeTags>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef Name="RI_BookBase_Common" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Books/Books_Common</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_CommonBooks</li>
+			<!--储存-->
+		</thingCategories>
+		<tradeTags>
+			<li>RI_Common_Book</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================================== 药诀法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_BookA</defName>
+		<label>Initial approach book-Medicine</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Treatise on Febrile diseases".\n\nElixirs Initial approach is not the main medicine, only involves some ancient means of treatment, but the root cause is also inseparable from medicine. The method of refining medicine is the intangible true fire, the heart is the fire storage, the heart has gas, the body into a furnace, through the true fire to strengthen the perception ability, so as to extract the nutrition of medicinal materials, the top pharmacist is able to use the true fire refining reiki, remove Bad part, so as to achieve similar rejuvenation, resurrection of the dead and other mysterious methods. \n\nThis book is by the late Eastern Han Dynasty medical sage Zhang Zhongjing, a collection of his life to learn a book, which contains a large number of diseases detailed explanation and prescription. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_BodyTheory</AbilityDef>
+			<AbilityDef>RI_Ability_Massage</AbilityDef>
+			<AbilityDef>RI_Ability_Acupuncture</AbilityDef>
+			<AbilityDef>RI_Ability_AnestheticNeedle</AbilityDef>
+			<AbilityDef>RI_Ability_ScarHealing</AbilityDef>
+			<AbilityDef>RI_Ability_CreateDanFire</AbilityDef>
+			<AbilityDef>RI_Ability_LimbRepair</AbilityDef>
+			<AbilityDef>RI_Ability_PerfumeBottle</AbilityDef>
+			<AbilityDef>RI_Ability_SpiritProtection</AbilityDef>
+			<AbilityDef>RI_Ability_LotusTreatDomain</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_BookA</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>ElixirsStrengthen</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_BodyTheory</li>
+					<li>RI_Ability_Massage</li>
+					<li>RI_Ability_Acupuncture</li>
+					<li>RI_Ability_AnestheticNeedle</li>
+					<li>RI_Ability_ScarHealing</li>
+					<li>RI_Ability_CreateDanFire</li>
+					<li>RI_Ability_LimbRepair</li>
+					<li>RI_Ability_PerfumeBottle</li>
+					<li>RI_Ability_SpiritProtection</li>
+					<li>RI_Ability_LotusTreatDomain</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_ElixirsStrengthen</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Elixirs Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================================== 内丹法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_BookB</defName>
+		<label>Initial approach book-Internal pellet</label>
+		<description>An ancient book made of Qi condensation, the title of the book written "Internal pellet Scriptures" \n\nThe Internal pellet initial approach is the ancestor of all initial approach, and countless exercises and Qi skills have evolved from the Internal pellet. Qi circulates in the body along a fixed path, so that the body gradually adapts and learns to apply, and the earliest cultivation method was born. Between one breath and one breath, Yin and Yang continue. Then evolved the Zhou Tian operation, the guidance of the spit. The inward and outward Qi is the small ZhouTian, and the big ZhouTian can communicate heaven and earth, heaven and man exchange, borrow the force of nature, and there are endless changes. \n\nThis book is written by Jiran, a strategist in the ChunQiu Period, which contains a variety of knowledge and philosophy from all over the world, and is one of the four sacred texts of Taoism. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach!</description>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_BookB</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>InternalPellet</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_InternalFunction</li>
+					<li>RI_Ability_QiBullet</li>
+					<li>RI_Ability_Samatha</li>
+					<li>RI_Ability_QiProtecting</li>
+					<li>RI_Ability_CycloneLandmine</li>
+					<li>RI_Ability_EnergyGuide</li>
+					<li>RI_Ability_Thunder</li>
+					<li>RI_Ability_EnergyRecovery</li>
+					<li>RI_Ability_DestructiveThunder</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_InternalPellet</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Internal pellet Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================================== 炼体法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_BookC</defName>
+		<label>Initial approach book-Physical</label>
+		<description>An ancient book made of Qi condensation, the title of the book is "Cultivation of the KongFu skills."\n\nPhysical Initial approach is one of the oldest Initial approach, through boxing and kung fu, physical exercise, while strengthening the whole body's meridians and even the organ with Qi, turning itself into a sharp weapon that is indestructible. Entry needs to be cut hair for marrow, reborn, deep also have to open the meridian, five gas Chaoyuan, the whole body Qi operation freely, Cultivators do not hold the sword, can also break out a strong lethality. \n\nThis book is a martial arts book written by Cheng Zongyou, a famous martial artist in the late Ming Dynasty, which contains a large number of martial arts, cudgels, spears and knives. \n\nNote: Once you have fully studied one Initial approach book, the cultivatior will be bound to that Initial approach and will not be able to learn any other Initial approach!</description>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_BookC</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>PhysicalStrengthen</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Activity_LotusPosition</li>
+					<li>RI_Ability_VajraBoxing</li>
+					<li>RI_Ability_StretchingExercise</li>
+					<li>RI_Ability_QuickJump</li>
+					<li>RI_Activity_FJCGS</li>
+					<li>RI_Ability_BloodBoil</li>
+					<li>RI_Ability_OneInchPunch</li>
+					<li>RI_Ability_IncendiarySky</li>
+					<li>RI_NeutronPluse</li>
+					<li>RI_Ability_Asura</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_PhysicalStrengthen</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Physical Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================================== 通用功法 ====================================-->
+
+	<!--百里神行-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_Transport</defName>
+		<label>Skill book-Long range flying</label>
+		<description>A book made up of Qi, titled "Long range flying". \n\nThis skill can make the cultivator pneumatize the whole body Qi, achieve ultra-high-speed low-altitude flight, across the mountains and oceans. \n\nIt is said that this exercise was invented by the Sun general of a certain country.</description>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_Farskip</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--白焰雷-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_BombBullet</defName>
+		<label>Skill book-Luminous bomb</label>
+		<description>A book made up of Qi, titled "Luminous bomb". \n\nThis skill is based on the inner Dan exercises "Qi bullet" and "Cyclone landmine", and is used as the main means of attack by most Free cultivators. Creates an unstable airbomb in your hand, shoots it out, lands and causes a small explosion with considerable force.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_BombBullet</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Luminous bomb"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--三段斩-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_Slash</defName>
+		<label>Skill book-Triple slash</label>
+		<description>A book made up of Qi, titled "Triple slash".\n\nThis skill is based on the improvement of the boxing technique of the body, condensing the Qi around the arm, turning it into a sharp blade, swinging almost three simultaneous strokes in an instant, which is unpredictable. This technique is often taught by cultivators who prefer melee combat, especially those who are no longer satisfied with a variety of martial arts and thus focus on training the physical body.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_Slash</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Triple slash"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--御风术-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_QuickJumpWithNosight</defName>
+		<label>Skill book-Wind flying</label>
+		<description>A book made up of Qi, titled "Wind flying".\n\nThis skill can make the practitioner spray Qi throughout the body, disturb the air flow, and achieve short distance flight. Most cultivators are quite fond of this exercise, so the quantity is quite large and the price is not high. Advanced practitioners can use Qi quite skillfully, soaring and flipping in the air, while lower practitioners are more likely to use Qi to glide. In any case, the feeling of flying is always exhilarating.</description>
+		<statBases>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_QuickJumpWithNosight</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Wind flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--隐形术-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_Invisible</defName>
+		<label>Skill book-Invisible</label>
+		<description>A book made up of Qi, titled "Invisible".\n\nThis skill is a technique suitable for assassins that creates a special Qi shield around the body. The shield is defenseless and refracts light to achieve an almost invisible effect, especially in the dark.</description>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_Invisible</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Invisible"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--4月更新新增通用功法——竭气聚石-->
+
+	<!--灵光-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_QiLantern</defName>
+		<label>Skill book-Qi lantern</label>
+		<description>A book made up of Qi, titled "Qi lantern".</description>
+		<statBases>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_LG</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Qi lantern"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--神魂识-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_SpiritRevelation</defName>
+		<label>Skill book-Spirit revelation</label>
+		<description>A book made up of Qi, titled "Spirit revelation".</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_SHS</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Spirit revelation"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--竭气聚石-->
+	<ThingDef ParentName="RI_BookBase_Common">
+		<defName>RI_BookAbility_CrystalProduction</defName>
+		<label>Skill book-Crystal production</label>
+		<description>A book made up of Qi, titled "Crystal production".</description>
+		<statBases>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_CreateCrystal</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Crystal production"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===============僵尸衣服===============-->
+	<!--前置-->
+	<ThingDef Name="RI_Base_ZombieApparelMake" ParentName="ApparelBase" Abstract="True">
+		<!--可以卖掉-->
+		<tradeability>Sellable</tradeability>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_AberrantWorkbench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+			<li>RI_Tag_ZombieClothing</li>
+		</tradeTags>
+		<!-- 只允许僵尸穿戴 -->
+		<modExtensions>
+			<li Class="RimZombieGirl.ZombieGeneApparelDef">
+				<forcedBodyTypes>
+					<li>RI_ExorcismBodyType_Female</li>
+					<li>RI_ExorcismBodyType_Male</li>
+					<li>RI_ExorcismBodyType_Thin</li>
+				</forcedBodyTypes>
+				<allowedBodyTypes></allowedBodyTypes>
+				<forcedHeadTypes></forcedHeadTypes>
+				<allowedHeadTypes></allowedHeadTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--玄阴术士帽-->
+	<!--
+	-->
+	<!--Gloomy sorcerer hat-->
+	<!--
+	<ThingDef ParentName="RI_Zombie_MakeableHat_Base">
+		<defName>RI_ZombieApparel_GloomySorcererHat</defName>
+		<label>Gloomy sorcerer hat</label>
+		<description>The Gloomy Sorcerers are members of a esoteric cult. Since the spread of aberrations, these figures lurking in the shadows have begun to stir.\n\nThe hat of a Gloomy Sorcerer is finely crafted, with protective talismans sewn into its lining, sufficient to ward off ordinary attacks.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_GloomySorcererHat/RI_ZombieApparel_GloomySorcererHat</texPath>
+		</graphicData>
+
+		-->
+	<!--原料-->
+	<!--
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>10</Plasteel>
+		</costList>
+
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_GloomySorcererHat/RI_ZombieApparel_GloomySorcererHat</wornGraphicPath>
+			-->
+	<!--和发型同时显示-->
+	<!--
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>200</displayPriority>
+			<researchPrerequisite>RI_ExorcismResearch_GloomySpell</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	-->
+	<!--玄阴术士袍-->
+	<!--
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>RI_ZombieApparel_GloomySorcererCheongsam</defName>
+		<label>Gloomy sorcerer cheongsam</label>
+		<description>The Gloomy Sorcerers are members of a esoteric cult. They study materials drawn from aberrations to fuel their spells. Their cheongsams are crafted well, with talismans sewn into the inner layers to shield against common strikes.</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>RI_ExorcismResearch_GloomySpell</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_GloomySorcererCheongsam/RI_ZombieApparel_ColdCheongsam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>10</Plasteel>
+		</costList>
+
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RI_SkullCloth_TradeTag</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_SkullCloth_Tag</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_GloomySorcererCheongsam/RI_ZombieApparel_ColdCheongsam</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+	</ThingDef>-->
+
+
+	<!--镇魄符-->
+	<ThingDef ParentName="RI_Zombie_MakeableHat_Base">
+		<defName>RI_ZombieApparel_SealCharm</defName>
+		<label>soul-suppression charm</label>
+		<description>A talisman affixed to the forehead of a necrocorpse. It carries uncanny effects capable of suppressing the necro.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_SealCharm/RI_ZombieApparel_SealCharm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+			<HemogenPack>2</HemogenPack>
+		</costList>
+
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_SealCharm/RI_ZombieApparel_SealCharm</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>200</displayPriority>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensAlchemy</researchPrerequisite>
+		</recipeMaker>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<SocialImpact>-0.05</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--绷带套装-->
+
+	<!--绷带头-->
+	<ThingDef ParentName="RI_Zombie_MakeableHat_Base">
+		<defName>RI_ZombieApparel_BandageHead</defName>
+		<label>bandage head</label>
+		<description>A simple strip of cloth worn around the head, mainly used to maintain visual consistency with the body wrappings.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_BandageHead/RI_ZombieApparel_BandageHead</texPath>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_BandageHead/RI_ZombieApparel_BandageHead</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>200</displayPriority>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensAlchemy</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>-0.3</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--僵尸绷带-->
+	<ThingDef ParentName="RI_Base_ZombieApparelMake">
+		<defName>RI_ZombieApparel_BandageBody</defName>
+		<label>charm bandage</label>
+		<description>Several strips of cloth wrapped around the body, barely covering one’s privacy. A warding talisman is affixed to the front, slightly suppressing the bloodlust of a necro.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_BandageBody/RI_ZombieApparel_ZombieBandage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>40</Cloth>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+		</costList>
+
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<!--特殊效果-->
+		<equippedStatOffsets>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>RI_Category_NecroApparel</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensAlchemy</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<displayPriority>220</displayPriority>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_BandageBody/RI_ZombieApparel_ZombieBandage</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<!--<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>-->
+		</apparel>
+	</ThingDef>
+
+	<!--镇压僵尸套：-->
+
+	<!--冥魂冠-->
+	<ThingDef ParentName="RI_Zombie_MakeableHat_Base">
+		<defName>RI_ZombieApparel_RestraintHat</defName>
+		<label>necro-restraint crown</label>
+		<description>A special headpiece developed using aberrant techniques. Allows others to more easily restrain and suppress a necro.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintHat/RI_ZombieApparel_RestraintHat</texPath>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>30</Cloth>
+			<RI_Resource_CharmPaper>5</RI_Resource_CharmPaper>
+			<RI_Resource_InkJade>2</RI_Resource_InkJade>
+			<RI_Resource_ErosionBronze>10</RI_Resource_ErosionBronze>
+		</costList>
+
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>1</Mass>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintHat/RI_ZombieApparel_RestraintHat</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--役冥内衣-->
+	<ThingDef ParentName="RI_Base_ZombieApparelMake">
+		<defName>RI_ZombieApparel_RestraintUnder</defName>
+		<label>necro-restraint underwear</label>
+		<description>A specialized undergarment developed using aberrant techniques.Allows others to more easily restrain and suppress a necro.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintUnder/RI_ZombieApparel_RestraintUnder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>40</Cloth>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+			<RI_Resource_ErosionBronze>10</RI_Resource_ErosionBronze>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_NecroApparel</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintUnder/RI_ZombieApparel_RestraintUnder</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<!--<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>-->
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--役冥服-->
+	<ThingDef ParentName="RI_Base_ZombieApparelMake">
+		<defName>RI_ZombieApparel_RestraintClothing</defName>
+		<label>necro-restraint clothing</label>
+		<description>A specialized garment developed using aberrant techniques. Allows others to more easily restrain and suppress a necro.</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintClothing/RI_ZombieApparel_RestraintClothing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>60</Cloth>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+			<RI_Resource_ErosionBronze>20</RI_Resource_ErosionBronze>
+		</costList>
+
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>15</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>RI_Category_NecroApparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RI_SkullCloth_TradeTag</li>
+		</tradeTags>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_SkullCloth_Tag</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintClothing/RI_ZombieApparel_RestraintClothing</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+	</ThingDef>
+
+	<!--役冥袍-->
+	<ThingDef ParentName="RI_Base_ZombieApparelMake">
+		<defName>RI_ZombieApparel_RestraintSuit</defName>
+		<label>necro-restraint suit</label>
+		<description>A specialized robe developed using aberrant techniques. Greatly increases the efficiency of suppressing a necro.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintSuit/RI_ZombieApparel_RestraintSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+
+		<!--原料-->
+		<costList>
+			<Cloth>70</Cloth>
+			<RI_Resource_CharmPaper>15</RI_Resource_CharmPaper>
+			<RI_Resource_ErosionBronze>20</RI_Resource_ErosionBronze>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_NecroApparel</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_ZombieApparel_RestraintSuit/RI_ZombieApparel_RestraintSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<!--<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>-->
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+		<!--特殊效果-减速-->
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+</Defs>

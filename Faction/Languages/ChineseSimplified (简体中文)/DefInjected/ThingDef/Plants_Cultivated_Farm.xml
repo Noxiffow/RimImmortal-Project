@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: LingLong fruit tree -->
+  <RI_Plant_TreeLingLong.label>玲珑果树</RI_Plant_TreeLingLong.label>
+  <!-- EN: A slow-growing fruit tree that bears Linglong fruits. While rare to find in the wild, it has been successfully propagated through grafting techniques. -->
+  <RI_Plant_TreeLingLong.description>一种生长缓慢的果树，可以结出玲珑珍果。这种果树在野外难以寻觅，不过已经用嫁接技术实现了人工繁殖。</RI_Plant_TreeLingLong.description>
+  
+</LanguageData>

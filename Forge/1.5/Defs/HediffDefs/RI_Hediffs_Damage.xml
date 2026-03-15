@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="RI_DamageHediff_Base" Abstract="True">
+		<isBad>true</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.96,0.43,0.38)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<alwaysShowSeverity>false</alwaysShowSeverity>
+	</HediffDef>
+
+	<!--刺痛-->
+	<HediffDef ParentName="RI_DamageHediff_Base">
+		<defName>RI_Hediff_IronThrowingBall</defName>
+		<label>Stabbing pain</label>
+		<description>Being hit by a spinning iron ball, there seems to be a Qi drilling into the body, causing pain.</description>
+		<lethalSeverity>5</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>1.8</painFactor>
+				<statOffsets>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--风沙冲击-->
+	<HediffDef ParentName="RI_DamageHediff_Base">
+		<defName>RI_Talisman_PolyStoneTower_Hediff</defName>
+		<label>Sand shock</label>
+		<labelNoun>Sand shock</labelNoun>
+		<description>The sand is comming.</description>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<painOffset>0.2</painOffset>
+				<statOffsets>
+					<MoveSpeed>-1</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--捆绑-->
+	<HediffDef ParentName="RI_DamageHediff_Base">
+		<defName>RI_Talisman_BingingImmortalRopeHediff</defName>
+		<label>Binding</label>
+		<labelNoun>Binding</labelNoun>
+		<description>Bind by Immortal-binding rope.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RI_Talisman_WindRing_Hediff</defName>
+		<label>Ring shock</label>
+		<labelNoun>Ring shock</labelNoun>
+		<description>The shock wave from the wind ring.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>-1</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healIntervalTicksStanding>60</healIntervalTicksStanding>
+				<healAmount>0.01</healAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

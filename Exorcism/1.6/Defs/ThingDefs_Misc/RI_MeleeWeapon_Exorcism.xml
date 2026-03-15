@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================道士武器====================-->
+
+	<!--祖传桃木剑-->
+	<ThingDef ParentName="BaseWeapon">
+		<defName>RI_MeleeWeapon_AncestralPeachwoodSword</defName>
+		<label>Ancestral peachwood sword</label>
+		<description>A family heirloom peachwood sword, roughly crafted and looking almost like a casual carving. Yet the wood is fine and sturdy, bringing a sense of calm when held.\n\nIt is said that a wandering Taoist once cut a peach branch into this sword and gifted it to the ancestor.\n\n*There is a faint trace of mystery within this blade. Perhaps it holds another purpose, and should be kept with care.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_MeleeWeapon_AncestralPeachwoodSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+
+		<techLevel>Medieval</techLevel>
+		<smeltable>false</smeltable>
+		<!-- 它是木头，不能被熔炼 -->
+		<burnableByRecipe>true</burnableByRecipe>
+		<!-- 可以在篝火烧掉 -->
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<relicChance>0</relicChance>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+
+		<!-- 固定属性：不依赖材料 (Stuff)，无品质 -->
+		<statBases>
+			<Mass>1.2</Mass>
+			<!-- 比铁剑轻 -->
+			<MarketValue>300</MarketValue>
+			<!-- 固定价值 -->
+			<Flammability>1.0</Flammability>
+			<!-- 毕竟是木头 -->
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<!-- 特殊木材，耐久损耗慢 -->
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<!-- 攻击属性：对标 钢铁长剑 (Steel Longsword) -->
+		<!-- 原版钢铁长剑(普通品质): 伤害约为 11~12，冷却 2.0 -->
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<!-- 刺击伤害，等同铁剑 -->
+				<cooldownTime>2.0</cooldownTime>
+				<!-- 桃木剑自带一点点破甲，虽不如钢，但也够用 -->
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<!-- 劈砍伤害 -->
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+		</tools>
+
+		<!-- 标签 -->
+		<!--<weaponTags>
+			<li>MeleeWeapon</li>
+			<li>RI_TaoistStart</li>
+		</weaponTags>-->
+		<modExtensions>
+			<li Class="RI_Frame_ZombieLife.AntiZombieWeaponExtension">
+				<!-- 这把武器专门克制的生物标签 -->
+				<targetTag>RI_Tag_Aberrant</targetTag>
+				<!-- 伤害倍率：1.5 代表 150% 伤害 -->
+				<damageMultiplier>5</damageMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--铜钱剑-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RI_MeleeWeapon_CopperCoinSword</defName>
+		<label>Copper coin sword</label>
+		<description>A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_MeleeWeapon_CopperCoinSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>RI_Tags_DaoMeleeWeapon</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<relicChance>0.5</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<!--合成-->
+		<costList>
+			<RI_Resource_ErosionBronze>50</RI_Resource_ErosionBronze>
+		</costList>
+
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.3</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.3</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismInstrument</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<modExtensions>
+			<li Class="RI_Frame_ZombieLife.AntiZombieWeaponExtension">
+				<!-- 这把武器专门克制的生物标签 -->
+				<targetTag>RI_Tag_Aberrant</targetTag>
+				<!-- 伤害倍率：1.5 代表 150% 伤害 -->
+				<damageMultiplier>50</damageMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ================= 七星法剑 ================= -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RI_MeleeWeapon_SevenStarSword</defName>
+		<label>seven-star sword</label>
+		<description>融合了道门技术打造的特殊单手剑。其内部储存的特殊符咒可以辅助挥出剑气。</description>
+
+		<!-- 使用近战武器的父类属性覆盖 -->
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_MeleeWeapon_SevenStarSword</texPath>
+			<!-- 请替换为你的剑贴图 -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<!--<soundInteract>Interact_MonoSword</soundInteract>-->
+		<!-- 拿出来的声音像单分子剑 -->
+
+		<!-- 属性平衡 -->
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<!-- 制作工时较长 -->
+			<Mass>2.0</Mass>
+
+			<!-- 远程属性 (剑气) -->
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<!-- 贴脸非常准 -->
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<!-- 远了就不准了 -->
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+			<!-- 射击冷却 -->
+		</statBases>
+
+		<!-- 原料 -->
+		<costList>
+			<Plasteel>60</Plasteel>
+			<RI_Resource_ErosionBronze>20</RI_Resource_ErosionBronze>
+			<RI_Resource_InkJade>5</RI_Resource_InkJade>
+		</costList>
+
+		<!-- 制作配方 -->
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+				<!-- 精密装配台 -->
+			</recipeUsers>
+			<researchPrerequisite>RI_Research_BetterExorcismInstrument</researchPrerequisite>
+			<!-- 需要研究电荷武器或你可以改成自己的修仙科技 -->
+		</recipeMaker>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_StarSwordQi</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<!-- 抬手很快 -->
+				<range>14</range>
+				<!-- 射程较短，类似霰弹枪有效射程 -->
+				<soundCast>RI_Sound_SmallBlade</soundCast>
+				<!-- 可以在这里换成挥剑的风声 -->
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>29</power>
+				<!-- 单分子剑级别伤害 -->
+				<armorPenetration>0.55</armorPenetration>
+				<!-- 高穿甲 -->
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>27</power>
+				<armorPenetration>0.55</armorPenetration>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="RI_Frame_ZombieLife.AntiZombieWeaponExtension">
+				<!-- 这把武器专门克制的生物标签 -->
+				<targetTag>RI_Tag_Aberrant</targetTag>
+				<!-- 伤害倍率：1.5 代表 150% 伤害 -->
+				<damageMultiplier>10</damageMultiplier>
+			</li>
+		</modExtensions>
+
+		<!-- 这是一个既能近战又能远程的武器，加上这个标签可以避免一些AI逻辑问题 -->
+		<weaponTags>
+			<li>RI_Tags_DaoBestWeapon</li>
+		</weaponTags>
+	</ThingDef>
+
+	<!-- ================= 剑气实体 ================= -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_StarSwordQi</defName>
+		<label>sword qi</label>
+		<graphicData>
+			<!-- 建议用一张半月形或梭形的贴图 -->
+			<texPath>Things/Projectile/RI_Bullet_StarSwordQi</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>2</drawSize>
+			<!--<shaderType>TransparentPostLight</shaderType>-->
+			<!-- 冰蓝色剑气 -->
+		</graphicData>
+		<projectile>
+			<damageDef>Cut</damageDef>
+			<!-- 剑气造成割伤 -->
+			<!-- 参考泵动霰弹枪(18伤害)，这里加强一点 -->
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>3.0</stoppingPower>
+			<!-- 极高的停止力，能打断敌人 -->
+			<speed>90</speed>
+			<!-- 飞行速度很快 -->
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<!-- 剑气自带穿甲 -->
+		</projectile>
+	</ThingDef>
+
+	<!--<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="RI_ZombieMeleeWeapon_Sharp_Quality" Abstract="True">
+		<possessionCount>1</possessionCount>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Medieval</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags inherit="false">
+		</weaponTags>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+		</statBases>
+		<relicChance>0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		--><!--<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>--><!--
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	--><!--双手刀--><!--
+	<ThingDef ParentName="RI_ZombieMeleeWeapon_Sharp_Quality">
+		<defName>RI_Weapon_Zombie_TwoHandSword</defName>
+		<label>Two-handed sword</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_Zombie_TwoHandSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>RI_ZombieMelee_Poke</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>RI_ZombieMelee_Stab</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RI_ZombieMelee_Cut</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_ZombieMeleeWeapon_Sharp_Quality">
+		<defName>RI_Weapon_Zombie_BigAxe</defName>
+		<label>Great axe</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_Zombie_BigAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RI_ZombieMelee_Cut</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_ZombieMeleeWeapon_Sharp_Quality">
+		<defName>RI_Weapon_Zombie_BigClaw</defName>
+		<label>Claw</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_Zombie_BigClaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>RI_ZombieMelee_Scratch</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_ZombieMeleeWeapon_Sharp_Quality">
+		<defName>RI_Weapon_Zombie_WarAxe</defName>
+		<label>War axe</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_Zombie_WarAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RI_ZombieMelee_Cut</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_ZombieMeleeWeapon_Sharp_Quality">
+		<defName>RI_Weapon_Zombie_Cleaver</defName>
+		<label>Cleaver</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_Zombie_Cleaver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>RI_ZombieMelee_Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>-->
+</Defs>

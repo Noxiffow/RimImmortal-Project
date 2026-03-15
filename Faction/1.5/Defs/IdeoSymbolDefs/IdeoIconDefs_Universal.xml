@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--文化符号，先不写具体meme，之后再补上-->
+
+	<!--古修-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_AncientA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_AncientA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_AncientB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_AncientB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_AncientC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_AncientC</iconPath>
+	</IdeoIconDef>
+	
+	<!--中国文化：一大堆-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureC</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureD</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureD</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureE</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureE</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_CultureF</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_CultureF</iconPath>
+	</IdeoIconDef>
+
+	<!--龙-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_DragonA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DragonA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_DragonB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DragonB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_DragonC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DragonC</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_DragonD</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DragonD</iconPath>
+	</IdeoIconDef>
+	
+	<!--丹药：丹炉，葫芦-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_DrugA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DrugA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_DrugB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DrugB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_DrugC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_DrugC</iconPath>
+	</IdeoIconDef>
+	
+	<!--元素：云，天空，太阳-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_ElementA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_ElementA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_ElementB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_ElementB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_ElementC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_ElementC</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_ElementD</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_ElementD</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_ElementE</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_ElementE</iconPath>
+	</IdeoIconDef>
+	
+	<!--鱼-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_FishA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_FishA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_FishB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_FishB</iconPath>
+	</IdeoIconDef>
+	
+	<!--自然：花，树，草-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_NatureA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_NatureA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_NatureB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_NatureB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_NatureC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_NatureC</iconPath>
+	</IdeoIconDef>
+	
+	<!--掠夺：战争，头骨-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_PirateA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_PirateA</iconPath>
+	</IdeoIconDef>
+
+	<!--灵气：气，修炼-->
+	<IdeoIconDef>
+		<defName>RI_Ideo_QiA</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_QiA</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_QiB</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_QiB</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>RI_Ideo_QiC</defName>
+		<iconPath>UI/Ideoligions/RI_Ideo_QiC</iconPath>
+	</IdeoIconDef>
+
+</Defs>

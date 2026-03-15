@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Justice sect -->
+  <RI_Faction_JusticeSect.label>正道宗门</RI_Faction_JusticeSect.label>
+  <!-- EN: A large intergalactic sect composed of several enclaves scattered across different planets. This sect follows the righteous path, emphasizes inheritance, and has a well-structured and hierarchical organization. Its members study multiple schools of cultivation.\n\nThe sect also places great importance on disciple training. Newly inducted cultivators are continuously guided by elders to learn and cultivate.\n\nBy completing sect missions, they earn contribution points, which can be exchanged for resources and better cultivation environments. -->
+  <RI_Faction_JusticeSect.description>一个跨星系的大型宗门，由多个分散在不同星球的聚集地组成。这个宗门信奉正道，注重传承，宗门内人员结构严谨，等级分明，会学习多个法门。\n\n宗门也注重弟子的培养，刚入门的修士将在长老的带领下不断学习，修炼。\n\n通过完成宗门的任务，以获得贡献点数，来换取物资和更好的修炼环境。</RI_Faction_JusticeSect.description>
+  <!-- EN: Master -->
+  <RI_Faction_JusticeSect.leaderTitle>掌门</RI_Faction_JusticeSect.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <RI_Faction_JusticeSect.messageDefendersAttacking>TODO</RI_Faction_JusticeSect.messageDefendersAttacking>
+  <!-- EN: Cultivator -->
+  <RI_Faction_JusticeSect.pawnSingular>正道修士</RI_Faction_JusticeSect.pawnSingular>
+  <!-- EN: Cultivators -->
+  <RI_Faction_JusticeSect.pawnsPlural>正道修士</RI_Faction_JusticeSect.pawnsPlural>
+  <!-- EN: Contribution -->
+  <RI_Faction_JusticeSect.royalFavorLabel>宗门贡献</RI_Faction_JusticeSect.royalFavorLabel>
+  
+</LanguageData>

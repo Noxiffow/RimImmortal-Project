@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.label>炼制麒麟丸</RI_MakeQiLinRestorationPill.label>
+  <!-- EN: Making QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.description>炼制麒麟丸。</RI_MakeQiLinRestorationPill.description>
+  <!-- EN: Making QiLin restoration pill -->
+  <RI_MakeQiLinRestorationPill.jobString>炼制麒麟丸中</RI_MakeQiLinRestorationPill.jobString>
+  
+  <!-- EN: Make Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.label>炼制湮尘忘魂丹</RI_Recipe_MakeOblivionSoulPurgingElixir.label>
+  <!-- EN: Making Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.description>炼制湮尘忘魂丹。</RI_Recipe_MakeOblivionSoulPurgingElixir.description>
+  <!-- EN: Making Oblivion soul-purging elixir -->
+  <RI_Recipe_MakeOblivionSoulPurgingElixir.jobString>炼制湮尘忘魂丹中</RI_Recipe_MakeOblivionSoulPurgingElixir.jobString>
+  
+</LanguageData>

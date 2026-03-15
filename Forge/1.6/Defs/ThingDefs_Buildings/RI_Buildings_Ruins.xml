@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Abstract="True" Name="RI_AncientRuinsBase">
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<shadowData>
+				<volume>(0.76,0.3,0.15)</volume>
+				<offset>(0,0,-0.39)</offset>
+			</shadowData>
+		</graphicData>
+		<startingHpRange>0.5~1.3</startingHpRange>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<fillPercent>0.25</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_AncientRuinsBase">
+		<defName>RI_Building_AncientShelfRuin</defName>
+		<label>Ancient shelf Ruin A</label>
+		<description>The ancient cultivator ruins, which have weathered and rusted, are easily damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientShelfRuin</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.2,1.2)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_AncientRuinsBase">
+		<defName>RI_Building_AncientTableRuinA</defName>
+		<label>Ancient shelf Ruin A</label>
+		<description>The ancient cultivator ruins, which have weathered and rusted, are easily damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientTableRuinA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.3,2.3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>6</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_AncientRuinsBase">
+		<defName>RI_Building_AncientTableRuinB</defName>
+		<label>Ancient table ruin B</label>
+		<description>The ancient cultivator ruins, which have weathered and rusted, are easily damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientTableRuinB</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.4,2.4)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>12</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_AncientRuinsBase">
+		<defName>RI_Building_AncientChairRuin</defName>
+		<label>Ancient chair ruin</label>
+		<description>The ancient cultivator ruins, which have weathered and rusted, are easily damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientChairRuin</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_AncientRuinsBase">
+		<defName>RI_Building_AncientCryoCapsuleRuin</defName>
+		<label>Ancient cultivator hypothermy cryo capsule ruin</label>
+		<description>The ancient cultivator ruins, which have weathered and rusted, are easily damaged.</description>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientCryoCapsuleRuin</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4.1,4.1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>30</Mass>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+	</ThingDef>
+
+	<!--特殊建筑-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_AncientCultivatorCryptosleepCasket</defName>
+		<label>灵气逸散的建筑</label>
+		<description>建筑中蕴含有极其深厚的灵气，不断向外逸散</description>
+		<thingClass>WhoXiuXian.RI_Building_AncientCultivatorCryptosleepCasket</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Ancient/RI_Building_AncientCultivatorCryptosleepCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.1,4.1)</drawSize>
+			<shadowData>
+				<volume>(0.83, 0.3, 1.7)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>180</Steel>
+			<Uranium>5</Uranium>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+			<Steel>25</Steel>
+			<Uranium>3</Uranium>
+		</killedLeavings>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<comps>
+		</comps>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+
+</Defs>

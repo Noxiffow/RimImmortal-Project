@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--1：请完善文本描述
+2：请完善Incidentpool对应的事件，详细看对应注释
+3：请绘制图标，仪式具体图标，选择pawn执行仪式的图标，取消仪式的图标
+4：请修改突破仪式成功率物品：count为1，有特性，hediff，建筑物
+-->
+	<!--突破-->
+	<RIRitualFramework.RitualDef>
+		<defName>text01</defName>
+		<label>Upgrade</label>
+		<tick>1700</tick>
+		<letterAICompleteLabel>RitualUpgrade</letterAICompleteLabel>
+		<letterAICompleteText>The lightning has cleared, the Upgrade is successful</letterAICompleteText>
+		<letterAICompleteFailureText>The lightning has cleared, the Upgrade is over</letterAICompleteFailureText>
+		<letterAICompleteFailureLabel>Upgrade failure</letterAICompleteFailureLabel>
+		<cooldownHours>1</cooldownHours>
+		<IsUpgradeRitual>True</IsUpgradeRitual>
+		<iconPath></iconPath>
+		<ritualClass>RIRitualFramework.UpgradeRIRitual</ritualClass>
+		<roles>
+			<!--仪式角色-->
+			<li Class="RIRitualFramework.RitualRole_RIUpgrade">
+				<label>Upgrade</label>
+				<role>Officiant</role>
+				<maxCount>1</maxCount>
+			</li>
+		</roles>
+		<stages>
+			<li>
+				<ritualNotify Class="RIRitualFramework.PawnJobTracker">
+					<thinkNodeTag>RItualGoTo</thinkNodeTag>
+					<dutyTag>RItualGoTo</dutyTag>
+					<signal>StartNextStage</signal>
+					<duty>Idle</duty>
+				</ritualNotify>
+				<behaviors>
+					<li>
+						<roleID>Officiant</roleID>
+						<defaultDuty>RI_DutyPrepareUpgrade</defaultDuty>
+						<!--携带物品,并前往spot点-->
+					</li>
+				</behaviors>
+				<endTriggers>
+					<li Class="RIRitualFramework.RIRitualEndTrigger_Signal">
+						<signal>StartNextStage</signal>
+					</li>
+				</endTriggers>
+			</li>
+			<li>
+				<ritualNotify Class="RIRitualFramework.UpgradeRitualNotify"></ritualNotify>
+				<behaviors>
+					<li>
+						<roleID>Officiant</roleID>
+						<defaultDuty>RI_DutyUseItem</defaultDuty>
+						<!--复用丹药-->
+					</li>
+				</behaviors>
+				<endTriggers>
+					<li Class="RIRitualFramework.RIStageEndTrigger_TickPassed">
+						<waitTicks>800</waitTicks>
+					</li>
+				</endTriggers>
+				<comps>
+					<li>
+						<thing>RI_Mote_UpgradeLight</thing>
+						<compClass>RIRitualFramework.RIRitualVisualComp</compClass>
+					</li>
+					<li>
+						<thing>RI_Mote_UpgradeCircle</thing>
+						<compClass>RIRitualFramework.RIRitualVisualComp</compClass>
+					</li>
+				</comps>
+			</li>
+			<li>
+				<ritualNotify Class="RIRitualFramework.UpgradeRitualNotify"></ritualNotify>
+				<behaviors>
+					<li>
+						<roleID>Officiant</roleID>
+						<defaultDuty>RI_DutyWaitThunder</defaultDuty>
+						<!--等待雷劫-->
+					</li>
+				</behaviors>
+				<endTriggers>
+					<li Class="RIRitualFramework.RIStageEndTrigger_TickPassed">
+						<waitTicks>610</waitTicks>
+					</li>
+				</endTriggers>
+				<tickAction Class="RIRitualFramework.RIRitualStageTickAction_Thunder">
+				</tickAction>
+				<comps>
+					<li>
+						<effect>UpgradeLight</effect>
+						<compClass>RIRitualFramework.RIRitualVisualComp</compClass>
+					</li>
+				</comps>
+			</li>
+		</stages>
+		<!--突破成功率影响-->
+		<sucessRates>
+			<!--雷公柱-->
+			<li>
+				<thing>RI_Building_ThunderColumn</thing>
+				<value>0.02</value>
+			</li>
+			<!--特性-->
+			<li>
+				<trait>RI_Trait_Enlightenment</trait>
+				<value>0.05</value>
+			</li>
+			<li>
+				<trait>RI_Trait_SuperQiFeeling</trait>
+				<value>0.07</value>
+			</li>
+			<li>
+				<trait>RI_Trait_StrongMeridians</trait>
+				<value>0.02</value>
+			</li>
+			<!--hediff-->
+			<li>
+				<hediff>RI_SolidEnergyPowderHediff</hediff>
+				<value>0.05</value>
+			</li>
+			<li>
+				<hediff>RI_FoundationBuildingElixirHediff</hediff>
+				<value>0.1</value>
+			</li>			<li>
+				<hediff MayRequire="RI.RimImmortal.Faction">RI_Hediff_LingLongMoonlightElixir</hediff>
+				<value>0.25</value>
+			</li>
+		</sucessRates>
+		<incidentdef>beforeIncidentPool</incidentdef>
+	</RIRitualFramework.RitualDef>
+
+	<!--突破后触发的事件池-->
+	<RIRitualFramework.RIRitualIncidentDef>
+		<defName>beforeIncidentPool</defName>
+		<incidents>
+			<!--好事件-->
+			<li>
+				<!--灵兽来了-->
+				<incident>RI_AnimalCome</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<!--灵兽加入-->
+				<incident>RI_AnimalMigration</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<!--药草-->
+				<incident>RI_Incident_Sprout</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<!--自我驯服-->
+				<incident>SelfTame</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<!--游荡动物加入-->
+				<incident>FarmAnimalsWanderIn</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<incident>RI_AnimalCome</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<!--坏事件-->
+			<li>
+				<incident>RI_RaidInvisibleKiller</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<incident>RI_FrenziedAnimal</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>2</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<incident>RI_RaidBadGuys</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>2500</tick>
+			</li>
+			<li>
+				<incident>Flashstorm</incident>
+				<maxWeight>5</maxWeight>
+				<minWeight>1</minWeight>
+				<tick>10</tick>
+			</li>
+		</incidents>
+	</RIRitualFramework.RIRitualIncidentDef>
+
+	<!--用于实现祈祷仪式所获取的事件：正向事件，可以加任务-->
+	<RIRitualFramework.RIRitualIncidentDef>
+		<defName>GetIncidentPool</defName>
+		<incidents>
+			<li>
+				<incident>RI_Incident_Sprout</incident>
+				<maxWeight>15</maxWeight>
+				<!--第一次选择时的权值-->
+				<minWeight>10</minWeight>
+				<!--触发过一次后的权值，为0则不触发-->
+				<tick>500</tick>
+				<!--延迟激活的时间，要求至少几个小时吧-->
+			</li>
+			<li>
+				<incident>RI_MakeLINGMAI</incident>
+				<maxWeight>10</maxWeight>
+				<minWeight>5</minWeight>
+				<tick>300</tick>
+			</li>
+			<li>
+				<incident>RI_Incident_Beggars</incident>
+				<maxWeight>35</maxWeight>
+				<minWeight>0</minWeight>
+				<tick>300</tick>
+			</li>
+		</incidents>
+	</RIRitualFramework.RIRitualIncidentDef>
+
+	<!--突破的冲天光柱特效！-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_UpgradeLight</defName>
+		<thingClass>RIRitualFramework.MoteUpgradeLight</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>5.2</fadeInTime>
+			<needsMaintenance>False</needsMaintenance>
+		</mote>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Effects/Upgrade/UpgradeLight</texPath>
+			<drawSize>(15,15)</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<modExtensions>
+			<li Class="RIRitualFramework.ModExtension_Mote">
+				<swtichGraphicInterval>30</swtichGraphicInterval>
+				<ritualStartTick>3</ritualStartTick>
+				<!-- 切换贴图间隔 -->
+				<extraGraphics>
+					<!-- 额外贴图 -->
+					<li>
+						<graphicClass>Graphic_Single</graphicClass>
+						<texPath>Effects/Upgrade/UpgradeLight_II</texPath>
+						<drawSize>(15,15)</drawSize>
+						<shaderType>MoteGlow</shaderType>
+					</li>
+					<li>
+						<graphicClass>Graphic_Single</graphicClass>
+						<texPath>Effects/Upgrade/UpgradeLight_III</texPath>
+						<drawSize>(15,15)</drawSize>
+						<shaderType>MoteGlow</shaderType>
+					</li>
+				</extraGraphics>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--突破的台风特效！-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_UpgradeCircle</defName>
+		<thingClass>RIRitualFramework.MoteRotate</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>5.2</fadeInTime>
+			<needsMaintenance>False</needsMaintenance>
+		</mote>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Effects/Upgrade/UpgradeCircle</texPath>
+			<drawSize>(25,25)</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<modExtensions>
+			<li Class="RIRitualFramework.ModExtension_Mote">
+				<rotateSpeed>0.5</rotateSpeed>
+				<!-- 旋转速度 -->
+				<swtichGraphicInterval>500</swtichGraphicInterval>
+				<ritualStartTick>1</ritualStartTick>
+				<!-- 切换贴图间隔 -->
+				<extraGraphics/>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

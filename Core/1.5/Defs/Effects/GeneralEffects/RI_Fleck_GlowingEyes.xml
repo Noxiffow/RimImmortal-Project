@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FleckDef Abstract="True" Name="RI_EyeGlowFleck" ParentName="FleckBase_Thrown">
+    <graphicData>
+      <shaderType>MoteGlow</shaderType>
+	  <!--<visibleNorth>false</visibleNorth>
+      <drawOnEyes>true</drawOnEyes>-->
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0.3</solidTime>
+	<fadeOutTime>0.1</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="RI_EyeGlowFleck">
+    <defName>RI_EyeGlowFleck</defName>
+    <graphicData>
+	  <drawSize>0.28</drawSize>
+      <texPath>Things/Mote/RI_EyeGlow/EyeGlow</texPath>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="RI_EyeGlowFleck">
+    <defName>RI_EyeGlowFleck_south</defName>
+    <graphicData>
+	  <drawSize>0.56</drawSize>
+      <texPath>Things/Mote/RI_EyeGlow/EyeGlow_south</texPath>
+    </graphicData>
+  </FleckDef>
+  
+</Defs>

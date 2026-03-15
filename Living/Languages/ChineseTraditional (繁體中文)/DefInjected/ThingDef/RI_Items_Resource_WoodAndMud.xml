@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Black iron wood -->
+  <RI_Resource_IronWood.label>玄铁木</RI_Resource_IronWood.label>
+  <!-- EN: Black iron wood appears unremarkable but is remarkably tough. It can be used directly in construction, while its inner core serves as a premium material for crafting high-grade weapons. However, it remains wood at its core and is not fire-resistant. -->
+  <RI_Resource_IronWood.description>玄铁木，其貌不扬，坚硬如铁。这种木材可以直接被用于建造，内部的芯材更是打造上等兵器的绝佳材料。但是这毕竟是木材，不能防火。</RI_Resource_IronWood.description>
+  <!-- EN: Black iron wood -->
+  <RI_Resource_IronWood.stuffProps.stuffAdjective>玄铁木</RI_Resource_IronWood.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_IronWood.tools.log.label>玄铁木</RI_Resource_IronWood.tools.log.label>
+  
+  <!-- EN: Green blood bamboo -->
+  <RI_Resource_JadeBloodBamboo.label>苍血竹</RI_Resource_JadeBloodBamboo.label>
+  <!-- EN: Slow growing green blood bamboo is a rare material, its bamboo fibers like jade texture, very dense and strong. The cut weapon has a very high sharpness, but the material cannot withstand the flame. -->
+  <RI_Resource_JadeBloodBamboo.description>生长缓慢的苍血竹是一种少见的材料，其竹子纤维仿佛带有玉石的质地，非常细密坚固。切削之后做成的武器带有非常高的锋利度，但这种材料无法抵挡火焰。</RI_Resource_JadeBloodBamboo.description>
+  <!-- EN: Green blood bamboo -->
+  <RI_Resource_JadeBloodBamboo.stuffProps.stuffAdjective>苍血竹</RI_Resource_JadeBloodBamboo.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_JadeBloodBamboo.tools.log.label>苍血竹</RI_Resource_JadeBloodBamboo.tools.log.label>
+  
+  <!-- EN: Mud -->
+  <RI_Resource_Mud.label>粘土</RI_Resource_Mud.label>
+  <!-- EN: The mud dug out of the ground, with some impurities removed, can be used directly for building walls, or it can be fired into stronger bricks. -->
+  <RI_Resource_Mud.description>从地里挖出来的粘土，已经剔除了些许杂质，可以烧制成更坚固的砖头用。</RI_Resource_Mud.description>
+  
+  <!-- EN: Bamboo -->
+  <RI_Resource_RawBamboo.label>竹子</RI_Resource_RawBamboo.label>
+  <!-- EN: A lightweight, flexible building material that can also be used to make low-damage weapons. -->
+  <RI_Resource_RawBamboo.description>竹子是一种轻便，柔韧的建材，也可以制作伤害不高的武器。</RI_Resource_RawBamboo.description>
+  <!-- EN: Bamboo -->
+  <RI_Resource_RawBamboo.stuffProps.stuffAdjective>竹</RI_Resource_RawBamboo.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_RawBamboo.tools.log.label>竹子</RI_Resource_RawBamboo.tools.log.label>
+  
+  <!-- EN: Sandal wood -->
+  <RI_Resource_SandalWoodLog.label>檀木</RI_Resource_SandalWoodLog.label>
+  <!-- EN: Sandalwood is a fine, fragrant and precious wood. Furniture made of sandalwood is often expensive, and sandalwood can also be made into sandalwood, and people are bathed in incense full of wood smell. -->
+  <RI_Resource_SandalWoodLog.description>檀木是一种质地细密，带有香味的名贵木材。其优异的特性，使得用檀木制作的家具，价格十分高昂。\n\n而檀木经过加工，还能制成用于焚烧的檀香，一些文人雅士往往会在家中点香，沐浴在木质香气中，以达到放松身心的效果。</RI_Resource_SandalWoodLog.description>
+  <!-- EN: Sandal wood -->
+  <RI_Resource_SandalWoodLog.stuffProps.stuffAdjective>檀木</RI_Resource_SandalWoodLog.stuffProps.stuffAdjective>
+  <!-- EN: log -->
+  <RI_Resource_SandalWoodLog.tools.log.label>檀木</RI_Resource_SandalWoodLog.tools.log.label>
+  
+</LanguageData>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--纸钱-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>RI_Filth_PaperCoin</defName>
+		<label>Paper coin</label>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/RI_Filth_PaperCoin</texPath>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>30~40</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<!--旧报纸-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>RI_Filth_OldNewspaper</defName>
+		<label>Old newspaper</label>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/RI_Filth_OldNewspaper</texPath>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>30~40</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<!--旧照片-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>RI_Filth_OldPhotos</defName>
+		<label>Old photos</label>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/RI_Filth_OldPhotos</texPath>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>30~40</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<!--蜘蛛网-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>RI_Filth_SpiderWeb</defName>
+		<label>Spider web</label>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-4</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/RI_Filth_SpiderWeb</texPath>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>30~40</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+
+</Defs>

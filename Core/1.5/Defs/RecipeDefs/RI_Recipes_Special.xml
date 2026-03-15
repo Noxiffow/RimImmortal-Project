@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="RI_RecipeBase_Prayer" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Research_ImmortalWorship</researchPrerequisite>
+	</RecipeDef>
+
+	<!--青玉仙露-->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_MakeJadeLiquid</defName>
+		<label>Make QingMing jade wine</label>
+		<description>A medicinal wine obtained by grinding QingMing marrow and stirring it with some plant juices and fermenting it briefly.</description>
+		<jobString>Making QingMing jade wine</jobString>
+		<workAmount>3400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_QingMingMarrow</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Things_JadeLiquid>1</RI_Things_JadeLiquid>
+		</products>
+	</RecipeDef>
+
+	<!-- 制作洗髓玉液 -->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_MakeJadeLiquidPro</defName>
+		<label>Make Marrow-washing nectar</label>
+		<description>The five elements material is refined into marrow-washing nectar, a kind of wine that can improve the quality of spiritual root.</description>
+		<jobString>Making Marrow-washing nectar</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Things_JadeLiquid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Things_JadeLiquidPro>1</RI_Things_JadeLiquidPro>
+		</products>
+	</RecipeDef>
+
+	<!--合成纯阳真气-->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_MakePureYangSpiritualEnergy</defName>
+		<label>Make Pure-Yang spiritual energy</label>
+		<description>Make Pure-Yang spiritual energy.</description>
+		<jobString>Making Pure-Yang spiritual energy</jobString>
+		<workAmount>20000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_PureYangSpiritualenergy>1</RI_Resource_PureYangSpiritualenergy>
+		</products>
+	</RecipeDef>
+
+	<!--合成仙人手谕-->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_MakeImmortalOracle</defName>
+		<label>Make Immortal oracle</label>
+		<description>A medicinal wine obtained by grinding QingMing marrow and stirring it with some plant juices and fermenting it briefly.</description>
+		<jobString>Making Immortal oracle</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_OracleFragment</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_Oracle>1</RI_Resource_Oracle>
+		</products>
+	</RecipeDef>
+	
+	<!--分解仙人遗蜕为手谕-->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_DisassembleExuviaeOracle</defName>
+		<label>Disassemble Immortal exuviae to oracle</label>
+		<description>Disassemble Immortal exuviae to oracle.</description>
+		<jobString>Disassembling Immortal exuviae</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ImmortalExuviae</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_Oracle>1</RI_Resource_Oracle>
+			<RI_Resource_SpiritualCrystal>250</RI_Resource_SpiritualCrystal>
+		</products>
+	</RecipeDef>
+
+	<!--分解仙人遗蜕为灵石-->
+	<RecipeDef ParentName="RI_RecipeBase_Prayer">
+		<defName>RI_Recipe_DisassembleExuviaeEnergy</defName>
+		<label>Disassemble Immortal exuviae to qi energy</label>
+		<description>Disassemble Immortal exuviae to qi energy.</description>
+		<jobString>Disassembling Immortal exuviae</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ImmortalExuviae</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_SpiritualCrystal>700</RI_Resource_SpiritualCrystal>
+		</products>
+	</RecipeDef>
+	
+
+</Defs>

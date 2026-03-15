@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_Blue.label>灵气护盾</RI_ShieldHediff_Blue.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_Blue.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Blue.description>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_Green.label>灵气护盾</RI_ShieldHediff_Green.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_Green.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Green.description>
+  
+  <!-- EN: Protective energy shield -->
+  <RI_ShieldHediff_InternalShield.label>护体罡气</RI_ShieldHediff_InternalShield.label>
+  <!-- EN: Drive Qi and surround yourself with a highly defensive air shield. -->
+  <RI_ShieldHediff_InternalShield.description>以灵气控制身边的气流，形成厚实的空气护盾环绕自身。</RI_ShieldHediff_InternalShield.description>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_Orange.label>灵气护盾</RI_ShieldHediff_Orange.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_Orange.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Orange.description>
+  <RI_ShieldHediff_Orange.descriptionCached>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Orange.descriptionCached>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_PlayerShield.label>灵气护盾</RI_ShieldHediff_PlayerShield.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_PlayerShield.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_PlayerShield.description>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_Purple.label>灵气护盾</RI_ShieldHediff_Purple.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_Purple.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Purple.description>
+  
+  <!-- EN: Qi shield -->
+  <RI_ShieldHediff_Red.label>灵气护盾</RI_ShieldHediff_Red.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_Red.description>一层保护全身的球形护盾，以灵气形成，可以抵挡远程攻击，但却无法阻止近战。</RI_ShieldHediff_Red.description>
+  
+  <!-- EN: Test shield -->
+  <RI_ShieldHediff_Test.label>灵气护盾</RI_ShieldHediff_Test.label>
+  <!-- EN: Installed Explosive Reactive Armor -->
+  <RI_ShieldHediff_Test.description>灵气护盾测试。</RI_ShieldHediff_Test.description>
+  
+</LanguageData>

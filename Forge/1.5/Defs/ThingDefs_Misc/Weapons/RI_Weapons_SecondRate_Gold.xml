@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--天兵风格武器，新增的-->
+
+	<!--鎏金龙虎剑-->
+	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_GoldSword</defName>
+		<label>Gilded dragon-tiger sword【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA gilded one-handed sword with a luxurious appearance, refined through the method of Forge, granting it formidable lethality.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SecondRate/RI_Weapon_GoldSword</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+		<!--标签-->
+		<weaponTags>
+			<li>RI_Tag_MagicalWeapon_Sword</li>
+			<li>RI_Tag_MagicalWeapon_Second</li>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_Weapon_Gold_Tag</li>
+		    <li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+		<!--武器攻击效果-->
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>4</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!--鎏金鱼尾斧-->
+	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_GoldAxe</defName>
+		<label>Gilded fish-tail axe【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA gilded fish-tail axe with a luxurious appearance, refined through the method of Forge, granting it formidable lethality.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SecondRate/RI_Weapon_GoldAxe</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.8</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+		<!--标签-->
+		<weaponTags>
+			<li>RI_Tag_MagicalWeapon_Second</li>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		<!--武器攻击效果-->
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>2.3</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>4</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!--鎏金八棱锤-->
+	<ThingDef ParentName="RI_MagicalWeapon_Blunt_Base">
+		<defName>RI_Weapon_GoldMace</defName>
+		<label>Gilded octagonal mace【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA gilded one-handed mace with a luxurious appearance, refined through the method of Forge, granting it formidable lethality.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SecondRate/RI_Weapon_GoldMace</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+		<!--标签-->
+		<weaponTags>
+			<li>RI_Tag_MagicalWeapon_Second</li>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		<!--武器攻击效果-->
+		<tools>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Vertigo</def>
+						<amount>4</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<!--鎏金三尖两刃刀-->
+	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_GoldThreeSpear</defName>
+		<label>Gilded three-pointed double-edged spear【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA gilded three-pointed double-edged spear with a luxurious appearance, refined through the method of Forge, granting it formidable lethality.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SecondRate/RI_Weapon_GoldThreeSpear</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+		<!--标签-->
+		<weaponTags>
+			<li>RI_Tag_MagicalWeapon_Second</li>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		<!--武器攻击效果-->
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>45</power>
+				<armorPenetration>0.5</armorPenetration>
+				<cooldownTime>1.5</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>4</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!--鎏金蛇矛-->
+	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_GoldSnakeSpear</defName>
+		<label>Gilded serpent spear【Second-rate】</label>
+		<description>【Second-rate】Melee weapon\n\nA gilded snake spear with a luxurious appearance, refined through the method of Forge, granting it formidable lethality.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SecondRate/RI_Weapon_GoldSnakeSpear</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+
+		<!--原料-->
+		<costList>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+				<li>RI_Building_SpiritForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<displayPriority>410</displayPriority>
+		</recipeMaker>
+		<!--标签-->
+		<weaponTags>
+			<li>RI_Tag_MagicalWeapon_Second</li>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		<!--武器攻击效果-->
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>45</power>
+				<armorPenetration>0.5</armorPenetration>
+				<cooldownTime>1.5</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>4</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>
+

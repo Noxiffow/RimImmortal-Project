@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 死战 -->
+    <HediffDef>
+        <defName>NzRI_He_Bj_DieFighting</defName>
+        <label>die fighting</label>
+        <description>Enter a berserk fighting state, never surrendering or retreating</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <!-- TODO 根据不同境界设计不同的强度 -->
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>99</MeleeHitChance>
+                    <MeleeDodgeChance>50</MeleeDodgeChance>
+                </statOffsets>
+                <painFactor>0.1</painFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+                <requiredMentalState>BerserkTrance</requiredMentalState>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!-- 列阵 -->
+    <HediffDef>
+        <defName>NzRI_He_Bj_Embattle</defName>
+        <label>embattle</label>
+        <description>TODO</description>
+        <isBad>false</isBad>
+        <duplicationAllowed>false</duplicationAllowed>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>15000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+                <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+            </li>
+            <li Class="NzRimImmortalBizarre.HediffCompProperties_GiveHediffsInRangeEx">
+            <!-- <li Class="HediffCompProperties_GiveHediffsInRange"> -->
+                <range>9.9</range>
+                <mote>Mote_WorkCommand</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>true</canTargetAnimals>
+                    <canTargetMechs>true</canTargetMechs>
+                    <canTargetHumans>true</canTargetHumans>
+                    <onlyTargetColonists>false</onlyTargetColonists>
+                </targetingParameters>
+                <onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
+                <hediff>NzRI_He_Bj_Standby</hediff>
+            </li>
+        </comps>
+        <stages>
+            <!-- TODO 根据不同境界设计不同的强度 -->
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>99</MeleeHitChance>
+                    <MeleeDodgeChance>50</MeleeDodgeChance>
+                </statOffsets>
+                <painFactor>0.1</painFactor>
+            </li>
+        </stages>
+    </HediffDef>
+    <!-- 待战 -->
+    <HediffDef>
+        <defName>NzRI_He_Bj_Standby</defName>
+        <label>standby</label>
+        <description>Standby for battle, ready to fight at any moment</description>
+        <duplicationAllowed>false</duplicationAllowed>
+        <isBad>false</isBad>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>5000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+                <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+            </li>
+        </comps>
+        <stages>
+            <!-- TODO 根据不同境界设计不同的强度 -->
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>99</MeleeHitChance>
+                    <MeleeDodgeChance>50</MeleeDodgeChance>
+                </statOffsets>
+                <painFactor>0.1</painFactor>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

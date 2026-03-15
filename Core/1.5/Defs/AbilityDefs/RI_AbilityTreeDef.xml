@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RIAbilityFramework.RIAbilityTreeDef>
+		<defName>RI_TextTree</defName>
+		<label>炼体</label>
+	</RIAbilityFramework.RIAbilityTreeDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Activity_LotusPositionIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Activity_LotusPosition</ability>
+        <level>1</level>
+        <position>0,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_VajraBoxingIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_VajraBoxing</ability>
+        <level>2</level>
+        <position>1,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_StretchingExerciseIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_StretchingExercise</ability>
+        <level>3</level>
+        <position>2,1</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_NeutronPluseIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_NeutronPluse</ability>
+        <level>3</level>
+        <position>2,3</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_QuickJumpIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_QuickJump</ability>
+        <level>4</level>
+        <position>3,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Activity_FJCGSIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Activity_FJCGS</ability>
+        <level>5</level>
+        <position>4,1</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_BloodBoilIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_BloodBoil</ability>
+        <level>5</level>
+        <position>4,3</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_OneInchPunchIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_OneInchPunch</ability>
+        <level>6</level>
+        <position>5,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_IncendiarySkyIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_IncendiarySky</ability>
+        <level>7</level>
+        <position>6,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+
+    <RIAbilityFramework.RIAbilityIconDef>
+		<defName>RI_Ability_AsuraIcon</defName>
+		<label>测试法门</label>
+        <ability>RI_Ability_Asura</ability>
+        <level>8</level>
+        <position>7,2</position>
+        <tree>RI_TextTree</tree>
+	</RIAbilityFramework.RIAbilityIconDef>
+</Defs>

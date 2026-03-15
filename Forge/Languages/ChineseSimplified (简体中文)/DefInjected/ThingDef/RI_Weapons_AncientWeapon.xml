@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi bullet -->
+  <RI_Bullet_AncientGun.label>灵气弹</RI_Bullet_AncientGun.label>
+  
+  <!-- EN: Ancient blade【Second-rate】 -->
+  <RI_Weapon_AncientBlade.label>古修玄铁弯刀【二品】</RI_Weapon_AncientBlade.label>
+  <!-- EN: 【Second-rate】melee, attack the enemy will have a Armor Break effect.\n\nA blade made of iron used by the ancient cultivators is still very sharp, though it has been used for unknown years. -->
+  <RI_Weapon_AncientBlade.description>【二品】近战兵器\n\n古修者使用的一种玄铁打造的弯刀，虽历经不知多少年，但依然十分锋利。</RI_Weapon_AncientBlade.description>
+  <!-- EN: edge -->
+  <RI_Weapon_AncientBlade.tools.edge.label>TODO</RI_Weapon_AncientBlade.tools.edge.label>
+  
+  <!-- EN: Ancient dagger【Second-rate】 -->
+  <RI_Weapon_AncientDagger.label>古修玄铁匕首【二品】</RI_Weapon_AncientDagger.label>
+  <!-- EN: 【Second-rate】melee, attack the enemy will have a puncture effect.\n\nThe ancient cultivator used a dagger made of iron, the energy light fluttered, a glance can be seen to have a good lethality. -->
+  <RI_Weapon_AncientDagger.description>【二品】近战兵器\n\n古修者使用的一种玄铁打造的匕首，内部灵光扇动，一眼便能看出拥有不俗的杀伤力。</RI_Weapon_AncientDagger.description>
+  <!-- EN: point -->
+  <RI_Weapon_AncientDagger.tools.point.label>TODO</RI_Weapon_AncientDagger.tools.point.label>
+  <!-- EN: edge -->
+  <RI_Weapon_AncientDagger.tools.edge.label>TODO</RI_Weapon_AncientDagger.tools.edge.label>
+  
+  <!-- EN: Ancient rifle【Second-rate】 -->
+  <RI_Weapon_AncientGun.label>玄铁灵铳【二品】</RI_Weapon_AncientGun.label>
+  <!-- EN: 【Second-rate】Range weapon\n\nA fire-blaster shaped like a dragon head with a laser firing system. The weapon was said to be a blunderbuss, but its caliber was closer to a cannonball, and it fired hot pellets that were terrifying to kill. At the same time, the weapon can adjust the muzzle to shoot a high-temperature laser through the energy array. -->
+  <RI_Weapon_AncientGun.description>【二品】远程兵器\n\n从古修的技术中，研究出的一种玄铁铳，可以释放大威力的灵气子弹。这种灵铳在多人列装时，会互相感应，产生连携效果。</RI_Weapon_AncientGun.description>
+  <!-- EN: 枪托 -->
+  <RI_Weapon_AncientGun.tools.0.label>枪托</RI_Weapon_AncientGun.tools.0.label>
+  <!-- EN: Ancient rifle【Second-rate】 -->
+  <RI_Weapon_AncientGun.verbs.Verb_Shoot.label>玄铁灵铳【二品】</RI_Weapon_AncientGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Ancient power fist【Second-rate】 -->
+  <RI_Weapon_AncientPowerBoxing.label>古修动力铁拳【二品】</RI_Weapon_AncientPowerBoxing.label>
+  <!-- EN: 【Second-rate】melee, attack the enemy will have a Vertigo effect.\n\nA pair of push-dagger with a faint Qi. A kind of push-dagger weapon made by thrumbo horn. Small and chic, but the attack speed is very fast, contains a powerful lethality. -->
+  <RI_Weapon_AncientPowerBoxing.description>【二品】近战兵器\n\n古修者使用的一种古代拳套，内部含有动力组件，可以爆发出更大的冲击力。</RI_Weapon_AncientPowerBoxing.description>
+  <!-- EN: head -->
+  <RI_Weapon_AncientPowerBoxing.tools.head.label>铁拳</RI_Weapon_AncientPowerBoxing.tools.head.label>
+  
+</LanguageData>

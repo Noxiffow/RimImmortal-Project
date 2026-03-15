@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: YunHua cigarette -->
+  <RI_Drug_YunHuaCigarette.label>云华烟</RI_Drug_YunHuaCigarette.label>
+  <!-- EN: Human relationships are like flowers seen through the mist—impossible to grasp, yet impossible to live without.\n\nYunhua cigarettes are expensive, high-end cigarettes. Whether one actually enjoys smoking them hardly matters. In certain situations, they serve as a token of courtesy—a kind of social pass. -->
+  <RI_Drug_YunHuaCigarette.description>人情往来如雾里看花，摸不着，离不开。\n\n云华烟是价格昂贵的高级烟，不用管抽不抽得惯，在某些场合，这烟是人情的通行证。</RI_Drug_YunHuaCigarette.description>
+  <!-- EN: Smoke {0} -->
+  <RI_Drug_YunHuaCigarette.ingestible.ingestCommandString>抽{0}</RI_Drug_YunHuaCigarette.ingestible.ingestCommandString>
+  <!-- EN: Smoking {0}. -->
+  <RI_Drug_YunHuaCigarette.ingestible.ingestReportString>正在抽{0}</RI_Drug_YunHuaCigarette.ingestible.ingestReportString>
+  <!-- EN: Consuming {0}. -->
+  <RI_Drug_YunHuaCigarette.ingestible.ingestReportStringEat>抽{0}中</RI_Drug_YunHuaCigarette.ingestible.ingestReportStringEat>
+  
+</LanguageData>

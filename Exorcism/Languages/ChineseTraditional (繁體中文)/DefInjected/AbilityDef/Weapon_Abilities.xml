@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 八卦阵 -->
+  <RI_ZombieAbility_DetainGhostFlag.label>八卦旗</RI_ZombieAbility_DetainGhostFlag.label>
+  <!-- EN: 八卦阵 -->
+  <RI_ZombieAbility_DetainGhostFlag.description>八卦旗</RI_ZombieAbility_DetainGhostFlag.description>
+  
+  <!-- EN: 三清铃 -->
+  <RI_ZombieAbility_SanQing.label>三清铃</RI_ZombieAbility_SanQing.label>
+  <!-- EN: 释放一道对周围缓慢扩张的冲击波，只对敌人添加负面效果 -->
+  <RI_ZombieAbility_SanQing.description>以自身为圆心释放一道冲击波，对敌人附加破碎效果。</RI_ZombieAbility_SanQing.description>
+  
+</LanguageData>

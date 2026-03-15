@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--植入冥尸器官Base-->
+	<RecipeDef Name="RI_Base_ZombieSurgeryInstall" ParentName="SurgeryFlesh" Abstract="True">
+		<workAmount>2000</workAmount>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<!--僵尸植入手术worker-->
+		<workerClass>RI_Frame_ZombieLife.Recipe_InstallZombieImplant</workerClass>
+		<modExtensions>
+			<li Class="RI_Frame_ZombieLife.RecipeExtension_GeneCheck">
+				<!-- 只有拥有僵尸核心基因的人，才能在手术列表里看到这个手术 -->
+				<!--<requiredGene>RI_ZombieCore_Aspect_DeadButNotDead</requiredGene>-->
+				<!-- 限制异种类型 -->
+				<requiredXenotype>RI_ExorcismXenotype_Necrosapiens</requiredXenotype>
+			</li>
+		</modExtensions>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<!--植入邪血心脏-->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallAberrantBloodHeart</defName>
+		<label>Install aberrant blood heart</label>
+		<description>Implant the aberrant blood heart; only the Necrosapiens can endure such an organ.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodHeart</ThingDef>
+			<HediffDef>RI_Hediff_AberrantBloodLung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing aberrant blood heart</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_AberrantBloodHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_AberrantBloodHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_AberrantBloodHeart</addsHediff>
+	</RecipeDef>
+
+	<!--植入邪血肺-->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallAberrantBloodLung</defName>
+		<label>Install aberrant blood lung</label>
+		<description>Implant the aberrant blood lung; only the Necrosapiens can endure such an organ.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodLung</ThingDef>
+			<HediffDef>RI_Hediff_AberrantBloodLung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing aberrant blood lung</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_AberrantBloodLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_AberrantBloodLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_AberrantBloodLung</addsHediff>
+	</RecipeDef>
+
+	<!--植入邪血肝-->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallAberrantBloodLiver</defName>
+		<label>Install aberrant blood liver</label>
+		<description>Implant the aberrant blood liver; only the Necrosapiens can endure such an organ.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_ZombieBodyPart_AberrantBloodLiver</ThingDef>
+			<HediffDef>RI_Hediff_AberrantBloodLiver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing aberrant blood liver</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_AberrantBloodLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_AberrantBloodLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_AberrantBloodLiver</addsHediff>
+	</RecipeDef>
+
+	<!-- ================= 安装铁牙 ================= -->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallSteelTeeth</defName>
+		<label>install steel teeth</label>
+		<description>Install steel teeth.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>installing iron teeth</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>2</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_SteelTeeth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_SteelTeeth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<!-- 对应人体部位: Jaw (下颚) -->
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<!-- 对应的 Hediff -->
+		<addsHediff>RI_Hediff_SteelTeeth</addsHediff>
+	</RecipeDef>
+
+	<!-- ================= 安装钉舌 ================= -->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallNailTongue</defName>
+		<label>install nail tongue</label>
+		<description>Install a nail tongue.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>installing nail tongue.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>2</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_NailTongue</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_NailTongue</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<!-- 对应人体部位: Tongue (舌头) -->
+		<appliedOnFixedBodyParts>
+			<li>Tongue</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_NailTongue</addsHediff>
+	</RecipeDef>
+
+	<!-- ================= 安装铁爪 ================= -->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallSteelClaw</defName>
+		<label>install steel claw</label>
+		<description>Install an steel claw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>installing steel claw</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_SteelClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_SteelClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<!-- 对应人体部位: Hand (手) -->
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_SteelClaw</addsHediff>
+	</RecipeDef>
+
+	<!-- ================= 安装斩邪爪 ================= -->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallEvilSlayerClaw</defName>
+		<label>install evil-slaying claw</label>
+		<description>Install an evil-slaying claw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>installing evil-slaying claw</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_EvilSlayerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_EvilSlayerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<!-- 对应人体部位: Hand (手) -->
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RI_Hediff_EvilSlayingClaw</addsHediff>
+	</RecipeDef>
+
+	<!--植入封魔钉-->
+	<RecipeDef ParentName="RI_Base_ZombieSurgeryInstall">
+		<defName>RI_Surgery_InstallSealingNail</defName>
+		<label>implant demon-binding nail</label>
+		<description>Implant a sealing nail. Can be stacked.</description>
+
+		<!-- 特殊融合版worker -->
+		<workerClass>RI_Frame_ZombieLife.Recipe_InstallStackableZombieImplant</workerClass>
+		<jobString>installing demon-binding nail</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_ZombieBodyPart_DemonBindingNail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_ZombieBodyPart_DemonBindingNail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<!-- ★★★ 2. 告诉框架这是什么 Hediff ★★★ -->
+		<addsHediff>RI_Hediff_DemonBindingNail</addsHediff>
+		<!-- ★★★ 3. 配置最大堆叠数 ★★★ -->
+		<modExtensions>
+			<li Class="RI_Frame_StackableImplant.StackableImplantExtension">
+				<maxStacks>6</maxStacks>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

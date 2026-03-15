@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Vitality alocasia -->
+  <RI_Plant_VitalityAlocasia.label>生机海芋</RI_Plant_VitalityAlocasia.label>
+  <!-- EN: Alocasia infused with Vitality arts, faintly glowing. -->
+  <RI_Plant_VitalityAlocasia.description>以生机之术转化而来的海芋，带有淡淡的光芒。</RI_Plant_VitalityAlocasia.description>
+  
+  <!-- EN: Vitality bush -->
+  <RI_Plant_VitalityBush.label>生机灌木</RI_Plant_VitalityBush.label>
+  <!-- EN: A shrub transformed through Vitality arts; harvesting it yields medicinal herbs. -->
+  <RI_Plant_VitalityBush.description>以生机之术转化而来的灌木，收获可以得到草药。</RI_Plant_VitalityBush.description>
+  
+  <!-- EN: Vitality grass -->
+  <RI_Plant_VitalityGrass.label>生机草</RI_Plant_VitalityGrass.label>
+  <!-- EN: Grass infused with Vitality arts, faintly glowing. -->
+  <RI_Plant_VitalityGrass.description>以生机之术转化而来的草，带有淡淡的光芒。</RI_Plant_VitalityGrass.description>
+  
+</LanguageData>

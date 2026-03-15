@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MutantDef Abstract="True" Name="BaseCurseGhostEntity">
+		<workDisables></workDisables>
+		<consideredSubhuman>true</consideredSubhuman>
+		<canCarryPawns>false</canCarryPawns>
+		<canTend>false</canTend>
+		<whitelistedFloatMenuProviders />
+		<preventsMentalBreaks>true</preventsMentalBreaks>
+		<disablesIdeo>true</disablesIdeo>
+		<disableOwnership>true</disableOwnership>
+		<disablePolicies>true</disablePolicies>
+		<disableTitles>true</disableTitles>
+		<disableNeeds>true</disableNeeds>
+		<disableEatingAtTable>true</disableEatingAtTable>
+		<incapableOfSocialInteractions>true</incapableOfSocialInteractions>
+		<canBeCapturedToHoldingPlatform>true</canBeCapturedToHoldingPlatform>
+		<producesBioferrite>true</producesBioferrite>
+		<overrideLabel>true</overrideLabel>
+		<overrideInspectString>true</overrideInspectString>
+		<canBleed>false</canBleed>
+		<terminatePregnancy>true</terminatePregnancy>
+		<isImmuneToInfections>true</isImmuneToInfections>
+		<removeChronicIllnesses>true</removeChronicIllnesses>
+		<removeAddictions>true</removeAddictions>
+		<disableAging>true</disableAging>
+		<clearsEgo>true</clearsEgo>
+		<partsCleanAndDroppable>false</partsCleanAndDroppable>
+		<breathesAir>false</breathesAir>
+		<removesHediffs>
+			<li>CryptosleepSickness</li>
+			<li>LuciferiumHigh</li>
+			<li>LuciferiumAddiction</li>
+			<li>Scaria</li>
+			<li>CorpseTorment</li>
+			<li>CubeInterest</li>
+			<li>CubeWithdrawal</li>
+			<li>CubeComa</li>
+			<li>CubeRage</li>
+			<li>HeartAttack</li>
+			<li>Scaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplified</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+			<li>Inhumanized</li>
+		</removesHediffs>
+		<disablesGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Hemogenic</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+		</disablesGenes>
+	</MutantDef>
+
+	<MutantDef ParentName="BaseCorpsePuppetEntity">
+		<defName>RI_CurseGhost_Mutant</defName>
+		<label>恶鬼</label>
+		<description>恶鬼</description>
+		<!--控制贴图显示的，不要删除-->
+		<hediff>CurseGhost</hediff>
+		<thinkTree>Ghoul</thinkTree>
+		<thinkTreeConstant>GhoulConstant</thinkTreeConstant>
+		<showJobReport>true</showJobReport>
+		<disableApparel>false</disableApparel>
+		<whitelistedFloatMenuProviders>
+			<li>FloatMenuOptionProvider_DraftedAttack</li>
+			<li>FloatMenuOptionProvider_DraftedMove</li>
+			<!--<li>FloatMenuOptionProvider_Ingest</li>-->
+			<li>FloatMenuOptionProvider_EnterMapPortal</li>
+			<li>FloatMenuOptionProvider_FromThing</li>
+			<!--<li>FloatMenuOptionProvider_Equip</li>-->
+			<!--<li>FloatMenuOptionProvider_Wear</li>-->
+		</whitelistedFloatMenuProviders>
+		<!--变成僵尸-->
+		<relativeTurnedThought>BecameGhoul</relativeTurnedThought>
+		<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+		<!--<needWhitelist><li>Food</li></needWhitelist>-->
+		<!--<overrideFoodType>true</overrideFoodType>-->
+		<!--<foodType>CarnivoreAnimalStrict</foodType>-->
+		<!--<allowEatingCorpses>true</allowEatingCorpses>-->
+		<deathOnDownedChance>1</deathOnDownedChance>
+		<disablesGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+		</disablesGenes>
+		<!--<abilityWhitelist><li>MetalbloodInjection</li></abilityWhitelist>-->
+		<deathLetter>One of your ghosts has died.</deathLetter>
+		<!-- Sounds -->
+		<soundAttackChance>0.25</soundAttackChance>
+		<soundCall>Pawn_Ghoul_Call</soundCall>
+		<soundAttack>Pawn_Ghoul_Attack</soundAttack>
+		<soundWounded>Pawn_Ghoul_Pain</soundWounded>
+		<soundDeath>Pawn_Ghoul_Killed</soundDeath>
+		<!-- Rendering -->
+		<!--<skinColorOverride>(0.58, 0.62, 0.55)</skinColorOverride>
+		<hairColorOverride>(0.65, 0.65, 0.65)</hairColorOverride>-->
+		<bodyTypeGraphicPaths>
+			<Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male>
+			<Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
+			<Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk>
+			<Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat>
+			<Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Thin</Child>
+		</bodyTypeGraphicPaths>
+		<!--<forcedHeadTypes><li>Ghoul_Normal</li></forcedHeadTypes>-->
+		<!--<hairTagFilter><whitelist>true</whitelist></hairTagFilter>-->
+		<!--<beardTagFilter><whitelist>true</whitelist></beardTagFilter>-->
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>1.5</chanceFactor>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				<soundMeleeHit>Pawn_Ghoul_Scratch</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>1.5</chanceFactor>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				<soundMeleeHit>Pawn_Ghoul_Scratch</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			</li>
+		</tools>
+		<!--<hediffGivers>
+      <li Class="HediffGiver_MeatHunger">
+        <hediff>MeatHunger</hediff>
+      </li>
+    </hediffGivers>-->
+		<preventIllnesses>true</preventIllnesses>
+		<canTend>false</canTend>
+		<canCarryPawns>true</canCarryPawns>
+		<removePermanentInjuries>true</removePermanentInjuries>
+		<removeAllInjuries>true</removeAllInjuries>
+		<psychicShockUntargetable>true</psychicShockUntargetable>
+		<preventsMentalBreaks>true</preventsMentalBreaks>
+		<disablesIdeo>true</disablesIdeo>
+		<disableOwnership>true</disableOwnership>
+		<disablePolicies>true</disablePolicies>
+		<disableTitles>true</disableTitles>
+		<disableEatingAtTable>true</disableEatingAtTable>
+		<incapableOfSocialInteractions>true</incapableOfSocialInteractions>
+		<canBeCapturedToHoldingPlatform>false</canBeCapturedToHoldingPlatform>
+		<producesBioferrite>false</producesBioferrite>
+		<overrideLabel>true</overrideLabel>
+		<overrideInspectString>true</overrideInspectString>
+		<canBleed>false</canBleed>
+		<isImmuneToInfections>true</isImmuneToInfections>
+		<removeChronicIllnesses>true</removeChronicIllnesses>
+		<removeAddictions>true</removeAddictions>
+		<terminatePregnancy>true</terminatePregnancy>
+		<disableAging>true</disableAging>
+		<hideLabel>True</hideLabel>
+		<canUseDrugs>false</canUseDrugs>
+		<drugWhitelist>
+			<li>VoidsightSerum</li>
+			<li>MetalbloodSerum</li>
+			<li>JuggernautSerum</li>
+			<li>MindNumbSerum</li>
+			<li>SmokeleafJoint</li>
+			<li>Flake</li>
+			<li>GoJuice</li>
+			<li>Yayo</li>
+			<li>WakeUp</li>
+			<li>Luciferium</li>
+			<li>Penoxycyline</li>
+			<li>Beer</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Drug_Psilocap</li>
+		</drugWhitelist>
+		<removesHediffs>
+			<li>CryptosleepSickness</li>
+			<li>LungRot</li>
+			<li>LungRotExposure</li>
+			<li>LuciferiumAddiction</li>
+			<li>Scaria</li>
+			<li>CubeInterest</li>
+			<li>CubeWithdrawal</li>
+			<li>CubeComa</li>
+			<li>CubeRage</li>
+			<li>XenogerminationComa</li>
+			<li>HeartAttack</li>
+			<li>Scaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+			<li>Inhumanized</li>
+			<li>RI_FleshMutation</li>
+		</removesHediffs>
+		<breathesAir>false</breathesAir>
+		<workDisables>
+			<li>AllWork</li>
+		</workDisables>
+	</MutantDef>
+
+	<HediffDef>
+		<defName>CurseGhost</defName>
+		<label>CurseGhost</label>
+		<description>CurseGhost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<showGizmosOnCorpse>false</showGizmosOnCorpse>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<ComfyTemperatureMin>-200</ComfyTemperatureMin>
+					<ComfyTemperatureMax>200</ComfyTemperatureMax>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_AttachPoints" />
+		</comps>
+	</HediffDef>
+
+</Defs>

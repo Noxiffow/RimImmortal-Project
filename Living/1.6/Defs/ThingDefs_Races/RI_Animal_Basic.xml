@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- =========================火鼠============================= -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_FireRat</defName>
+		<label>Fire rat</label>
+		<devNote>Fire rat</devNote>
+		<description>A mouse weighs a hundred pounds, hair more than two feet long, as thin as silk, can be made of cloth. Constant living in the fire, always out and white, with water is dead, take its hair to weave for cloth.\n\nThese amazing rodents are rare, and their fur has the effect of protecting against cold and heat.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>550</MarketValue>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMax>100</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
+			<Wildness>0.5</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.4</power>
+				<cooldownTime>2</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>10</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.4</power>
+				<cooldownTime>2</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>10</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHungerRate>0.225</baseHungerRate>
+			<baseHealthScale>0.7</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>RI_Resource_FireCloth</leatherDef>
+			<roamMtbDays>2</roamMtbDays>
+			<petness>0.08</petness>
+			<gestationPeriodDays>5.6</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.5, 1)</li>
+					<li>(2, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>24</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+					<soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
+					<soundDeath>Pawn_Alphabeaver_Death</soundDeath>
+					<soundCall>Pawn_Alphabeaver_Call</soundCall>
+					<soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Rodent_Eat</soundEating>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.25)</li>
+				<li>(0.26, 0, 0.1)</li>
+				<li>(0, 0, 0)</li>
+				<li>(-0.26, 0, 0.1)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Animal_FireRat</defName>
+		<label>Fire rat</label>
+		<race>RI_Animal_FireRat</race>
+		<combatPower>60</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Animal_FireRat</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Dessicated_FireRat</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Animal_FireRat</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Dessicated_FireRat</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Animal_FireRat</texPath>
+					<drawSize>1.11</drawSize>
+					<shadowData>
+						<volume>(0.35, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.08)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_FireRat/RI_Dessicated_FireRat</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- ==========================天狗============================ -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_TianDog</defName>
+		<label>Tian dog</label>
+		<devNote>Tian dog</devNote>
+		<description>There is a beast, called the Tian dog, whose shape is like a fox with a white head, and whose voice is qute, which can ward off evil.\n\nThis is a medium size dog, its appearance is cute, IQ is not low, very loyal, and its combat effectiveness is slightly higher than ordinary dogs, so it is often raised by some women.</description>
+		<statBases>
+			<MoveSpeed>6.0</MoveSpeed>
+			<MarketValue>480</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<Wildness>0</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<animalType>Canine</animalType>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<petness>1</petness>
+			<baseBodySize>0.86</baseBodySize>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseHealthScale>1.2</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Dog</leatherDef>
+			<nameOnTameChance>1</nameOnTameChance>
+			<trainability>Advanced</trainability>
+			<nuzzleMtbHours>10</nuzzleMtbHours>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<soundEating>PredatorSmall_Eat</soundEating>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(2.5, 0.7)</li>
+					<li>(3, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>80</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Dog_Injured</soundWounded>
+					<soundDeath>Pawn_Dog_Death</soundDeath>
+					<soundCall>Pawn_Dog_Call</soundCall>
+					<soundAngry>Pawn_Dog_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.02, 0, 0.25)</li>
+				<li>(0.24, 0, 0.11)</li>
+				<li>(0.02, 0, -0.16)</li>
+				<li>(-0.24, 0, 0.11)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Animal_TianDog</defName>
+		<label>Tian dog</label>
+		<labelPlural>Tian dogs</labelPlural>
+		<race>RI_Animal_TianDog</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.6</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_TianDog/RI_Animal_TianDog</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_TianDog/RI_Animal_TianDog</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Animal_TianDog/RI_Animal_TianDog</texPath>
+					<drawSize>1.75</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+</Defs>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: rage -->
+  <GameCondition_RageFury_Reason>狂暴</GameCondition_RageFury_Reason>
+  <!-- EN: The map was shrouded in fog and the entrance could not be found. -->
+  <RI_PeachBlossomFogEnterWarning>地图被雾笼罩，找不到入口。</RI_PeachBlossomFogEnterWarning>
+  <!-- EN: Lost in the Peach blossom maze. -->
+  <RI_PeachBlossomFogEnterLost_Letter_Label>迷失在桃花障中</RI_PeachBlossomFogEnterLost_Letter_Label>
+  <!-- EN: Due to the influence of the Peach blossom maze, the creature was lost and failed to reach here. -->
+  <RI_PeachBlossomFogEnterLost_Letter_Desc>由于桃花障的影响，生物迷路了，没能到达这里。</RI_PeachBlossomFogEnterLost_Letter_Desc>
+  <!-- EN: Due to the influence of the Peach blossom maze, the caravan could not be organized. -->
+  <RI_PeachBlossomFogFormCaravanWarning>由于桃花障的影响，无法组建远行队。</RI_PeachBlossomFogFormCaravanWarning>
+  <!-- EN: 
+	  {PAWN} eat the Immoral peach, suddenly feel comfortable, become younger.
+   -->
+  <RI_PanPeach_AgeReduced>{PAWN}吃下了仙桃，顿觉舒适，变得更年轻了。</RI_PanPeach_AgeReduced>
+  <!-- EN: 
+Turtle dancing! -->
+  <RI_XuanTurtle_DanceAfterLotus>旋龟起舞！</RI_XuanTurtle_DanceAfterLotus>
+  <!-- EN: RimImmortal-Biome -->
+  <RimImmortalBiome>边缘仙路-山海灵域</RimImmortalBiome>
+  <!-- EN: Is PeachFogLost Message shown? -->
+  <ShowLostMessage>是否接收桃花障迷失信息</ShowLostMessage>
+  <!-- EN: Out of the fog you hear a voice that seems to be: -->
+  <RI_PeachBlossomFogEnterLost_Letter_Desc2>雾中你听到了呼喊，似乎是：</RI_PeachBlossomFogEnterLost_Letter_Desc2>
+</LanguageData>

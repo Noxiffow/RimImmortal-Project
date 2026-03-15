@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: Harvest: {0} / {1} -->
+  <RI_Living_Harvest>收获: {0} / {1}</RI_Living_Harvest>
+
+	<!-- EN: Breed: {0} / {1} -->
+  <RI_Living_Fill>培育: {0} / {1}</RI_Living_Fill>
+
+	<!-- EN: Already mature -->
+  <RI_Living_Fermented>已经成熟</RI_Living_Fermented>
+
+	<!-- EN: In the breeding: {0}（remaining {1}）。 -->
+  <RI_Living_FermentationProgress>培育进度: {0}（剩余{1}）。</RI_Living_FermentationProgress>
+
+	<!-- EN: Ideal breeding temperature -->
+  <RI_Living_IdealFermentingTemperature>适宜培育温度</RI_Living_IdealFermentingTemperature>
+
+	<!-- UNUSED -->
+	<!-- EN: Abnormal temperature, breed speed: {0} -->
+  <RI_Living_FermentationBarrelOutOfIdealTemperature>异常温度，培育速度: {0}</RI_Living_FermentationBarrelOutOfIdealTemperature>
+
+</LanguageData>

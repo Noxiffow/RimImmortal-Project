@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef Class="RI_Starch.RI_ThingDef.RI_DEV_fleck">
+		<defName>RI_DEV_fleck</defName>
+		<label>仙路特效测试器</label>
+		    <category>Item</category>
+		 <drawerType>MapMeshOnly</drawerType>
+		<thingClass>RI_Starch.RI_ThingClass.RI_DEV_fleck</thingClass>
+		    <graphicData>
+			  <texPath>Effects/general/RI_cyclone</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>TransparentPostLight</shaderType>
+			  <drawSize>0.0</drawSize>
+		</graphicData>
+			<stackLimit>1</stackLimit>
+		    <altitudeLayer>Item</altitudeLayer>
+		    <alwaysHaulable>true</alwaysHaulable>
+			<drawGUIOverlay>true</drawGUIOverlay>
+			<rotatable>false</rotatable>
+		    <statBases>
+			      <MaxHitPoints>60</MaxHitPoints>
+				<Flammability>1.0</Flammability>
+				<DeteriorationRate>6</DeteriorationRate>
+				<Mass>0.03</Mass>
+			</statBases>
+		<tickerType>Normal</tickerType>
+		
+		<RI_fleck>RI_Fleck_SlayinglmmortalSword</RI_fleck>
+		<RI_scale>5</RI_scale>
+		<!--RI_color></RI_color-->
+		
+		<RI_fleck1></RI_fleck1>
+		<RI_scale1>2</RI_scale1>
+		<!--RI_color1></RI_color1-->
+		<RI_intervalTick>0</RI_intervalTick>
+		    <comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+  </ThingDef>
+  
+</Defs>
+

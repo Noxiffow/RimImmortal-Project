@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Fire dragon helmet【First-rate】 -->
+  <Make_FireDragonHelmet.label>制作烛龙吞火盔【一品】</Make_FireDragonHelmet.label>
+  <!-- EN: make Fire dragon helmet. -->
+  <Make_FireDragonHelmet.description>制作烛龙吞火盔【一品】。</Make_FireDragonHelmet.description>
+  <!-- EN: Making Fire dragon helmet -->
+  <Make_FireDragonHelmet.jobString>制作烛龙吞火盔【一品】</Make_FireDragonHelmet.jobString>
+  
+  <!-- EN: make Viper poison armor【First-rate】 -->
+  <Make_PoisonPythonArmor.label>制作相柳白峭甲【一品】</Make_PoisonPythonArmor.label>
+  <!-- EN: make Viper poison armor. -->
+  <Make_PoisonPythonArmor.description>制作相柳白峭甲【一品】。</Make_PoisonPythonArmor.description>
+  <!-- EN: Making Viper poison armor -->
+  <Make_PoisonPythonArmor.jobString>制作相柳白峭甲【一品】</Make_PoisonPythonArmor.jobString>
+  
+  <!-- EN: make Viper poison helmet【First-rate】 -->
+  <Make_PoisonPythonHelmet.label>制作相柳暗毒盔【一品】</Make_PoisonPythonHelmet.label>
+  <!-- EN: make Viper poison helmet. -->
+  <Make_PoisonPythonHelmet.description>制作相柳暗毒盔【一品】。</Make_PoisonPythonHelmet.description>
+  <!-- EN: Making Viper poison helmet -->
+  <Make_PoisonPythonHelmet.jobString>制作相柳暗毒盔【一品】</Make_PoisonPythonHelmet.jobString>
+  
+</LanguageData>

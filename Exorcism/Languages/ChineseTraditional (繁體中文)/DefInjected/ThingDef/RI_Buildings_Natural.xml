@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Grave tree -->
+  <RI_Building_DeathTree.label>坟树</RI_Building_DeathTree.label>
+  <!-- EN: A withered tree found only around graveyards. People hang paper coin and white cloth from its branches—as if by doing so, they could fulfill their filial duty without stepping into the tomb grounds. -->
+  <RI_Building_DeathTree.description>一种只会出现在坟地周围的枯树。人们会在树上挂着纸钱和白布，仿佛这样，不亲自踏入墓地，也可以尽孝了。</RI_Building_DeathTree.description>
+  
+  <!-- EN: Compacted erosion bronze -->
+  <RI_Building_MineableErosionBronze.label>压埋的风磨铜</RI_Building_MineableErosionBronze.label>
+  <!-- EN: Ancient erosion bronze objects long buried underground, which can be mined and used to craft items that ward off evil. -->
+  <RI_Building_MineableErosionBronze.description>被压埋了多年的古代铜物件，可以开采用于制作驱邪之物。</RI_Building_MineableErosionBronze.description>
+  
+  <!-- EN: Ink jade -->
+  <RI_Building_MineableInkJade.label>墨玉矿</RI_Building_MineableInkJade.label>
+  <!-- EN: A vein of ink jade that radiates an eerie, chilling aura. -->
+  <RI_Building_MineableInkJade.description>散发着奇妙凉意的墨玉矿。</RI_Building_MineableInkJade.description>
+  
+</LanguageData>

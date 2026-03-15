@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Focused qi meditation -->
+  <RI_PracticeAreaHediff.label>聚气冥想法</RI_PracticeAreaHediff.label>
+  <!-- EN: Enhancing the cultivation efficiency of those within its range. -->
+  <RI_PracticeAreaHediff.description>提高周围人的修炼效率。</RI_PracticeAreaHediff.description>
+  <RI_PracticeAreaHediff.descriptionCached>提高周围人的修炼效率。</RI_PracticeAreaHediff.descriptionCached>
+  
+  <!-- EN: Meditation guidance -->
+  <RI_PracticeAreaHediffTarget.label>冥想指点</RI_PracticeAreaHediffTarget.label>
+  <!-- EN: Receive guidance from a master to enhance cultivation efficiency. -->
+  <RI_PracticeAreaHediffTarget.description>获得来自高人的指点，提高修炼效率。</RI_PracticeAreaHediffTarget.description>
+  
+</LanguageData>

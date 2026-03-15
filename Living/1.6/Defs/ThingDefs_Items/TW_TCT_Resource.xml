@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<!-- 压缩木板 --><!--
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TW_TCT_HighDensityBoard</defName>
+		<label>压缩木板</label>
+		<description>将原木以高压和高温蒸汽处理之后的压缩木板。这种材料显著提高了木材的密度和阻燃性，也比较美观，非常适合制作家具。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/TW_TCT_HighDensityBoard</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>0.3</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<stuffAdjective>压缩木板</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(92,66,41)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1.5</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>0.6</WorkToMake>
+				<WorkToBuild>0.6</WorkToBuild>
+				<DoorOpenSpeed>2</DoorOpenSpeed>
+			</statFactors>
+			<canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<thingCategories>
+			<li>TW_TCC_Timber</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<allowedArchonexusCount>150</allowedArchonexusCount>
+	</ThingDef>
+
+	--><!-- 木工胶 --><!--
+	<ThingDef ParentName="ResourceBase">
+		<defName>TW_TCT_WoodGlue</defName>
+		<label>木工胶</label>
+		<description>Miscellaneous gears, capacitors, circuit boards, tubes, wheels, sensors, wires, chips, processors, and other electronic and industrial parts. Necessary for assembling complex machines or electronics.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/TW_TCT_WoodGlue</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>32</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>-->
+
+</Defs>

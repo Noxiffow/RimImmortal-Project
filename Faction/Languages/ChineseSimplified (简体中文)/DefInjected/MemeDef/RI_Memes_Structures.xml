@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi origin faith -->
+  <RI_Structure_QiOriginFaith.label>灵炳信仰</RI_Structure_QiOriginFaith.label>
+  <!-- EN: Qi Origin is the source of all qi, where the answers to all things can be found. -->
+  <RI_Structure_QiOriginFaith.description>灵炳乃一切灵气之根源，可从中寻到万物的答案。</RI_Structure_QiOriginFaith.description>
+  <!-- EN:
+    <li>memeHyphenPrefix->道</li>
+    <li>memeLeaderNoun->心魄</li>
+    <li>memeLeaderNoun->决断者</li>
+    <li>memeLeaderNoun->宗主</li>
+    <li>memeLeaderAdjective->正道</li>
+    <li>memeLeaderAdjective->仁义</li>
+    <li>memeLeaderAdjective->悟道</li>
+    <li>memeMoralist->谋士</li>
+    <li>memeMoralist->道学家</li>
+    <li>memeMoralist->德行者</li>
+    <li>memeMoralist->仙家</li>
+    <li>memeMoralist->智者</li>
+    <li>memeMoralist->儒士</li>
+    <li>memeMoralist->辩士</li>
+  -->
+  <RI_Structure_QiOriginFaith.generalRules.rulesStrings />
+  <!-- EN: Immoral -->
+  <RI_Structure_QiOriginFaith.symbolPacks.0.adjective>灵炳</RI_Structure_QiOriginFaith.symbolPacks.0.adjective>
+  <!-- EN: Immoral -->
+  <RI_Structure_QiOriginFaith.symbolPacks.0.ideoName>修仙</RI_Structure_QiOriginFaith.symbolPacks.0.ideoName>
+  <!-- EN: Cultivator -->
+  <RI_Structure_QiOriginFaith.symbolPacks.0.member>修炼者</RI_Structure_QiOriginFaith.symbolPacks.0.member>
+  <!-- EN: Main hall -->
+  <RI_Structure_QiOriginFaith.worshipRoomLabel>宗门大殿</RI_Structure_QiOriginFaith.worshipRoomLabel>
+  
+  <!-- UNUSED -->
+  <RI_Structure_QiOriginFaith.generalRules.rulesStrings />
+  
+</LanguageData>

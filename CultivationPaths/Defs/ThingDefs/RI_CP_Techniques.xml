@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Cultivation technique manuals — persistent items, never consumed on use.
+         Any cultivator of the correct path can study the same original.
+         Path books (sub-path choice) are one-time use; technique manuals are permanent artifacts. -->
+
+    <!-- ═══════════════════════ ORTHODOX TECHNIQUE MANUALS ═══════════════════════ -->
+
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Manual_JadeVoidBreathing</defName>
+        <label>orthodox technique — jade void breathing</label>
+        <description>A foundational breathing technique attributed to the Jade Void Sect. Each breath follows a precise cycle — inhale for seven counts, hold for four, release for nine. The rhythm trains the dantian to receive qi more efficiently while sharpening the mind.
+
+Small in its demands. Significant in its effects.
+
+This manual is a permanent reference — any orthodox cultivator may study it.
+
+Requires an orthodox cultivation path.</description>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_LearnCultivationTechnique">
+                <useJob>UseItem</useJob>
+                <useLabel>Study technique</useLabel>
+                <floatMenuOptionLabel>Study orthodox technique: jade void breathing</floatMenuOptionLabel>
+                <techniqueHediff>Hediff_RI_CP_Tech_JadeVoidBreathing</techniqueHediff>
+                <requiresOrthodox>true</requiresOrthodox>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Manual_ThousandStep</defName>
+        <label>orthodox technique — thousand-step</label>
+        <description>A qi circulation method developed for cultivators who traverse long distances on foot. As the body moves through ten thousand steps, the qi is driven through the meridians in a repeated pattern — the motion itself becomes cultivation.
+
+The mind becomes steady. The dantian becomes efficient. Orthodox cultivators who master this method are rarely at rest for long.
+
+This manual is a permanent reference — any orthodox cultivator may study it.
+
+Requires an orthodox cultivation path.</description>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_LearnCultivationTechnique">
+                <useJob>UseItem</useJob>
+                <useLabel>Study technique</useLabel>
+                <floatMenuOptionLabel>Study orthodox technique: thousand-step</floatMenuOptionLabel>
+                <techniqueHediff>Hediff_RI_CP_Tech_ThousandStep</techniqueHediff>
+                <requiresOrthodox>true</requiresOrthodox>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- ═══════════════════════ DEMONIC TECHNIQUE MANUALS ════════════════════════ -->
+
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Manual_BloodFurnace</defName>
+        <label>demonic technique — blood furnace</label>
+        <description>A demonic refinement technique that uses the cultivator's own blood as a medium for qi purification. The blood is "burned" — heated internally by dark qi, forced through the body's meridians under pressure. The process is painful. The results are dramatic.
+
+Written by the Blood Flame Patriarch. One of three known copies, or so the original owner believed.
+
+This manual is a permanent reference — any demonic cultivator may study it.
+
+Requires a demonic cultivation path.</description>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_LearnCultivationTechnique">
+                <useJob>UseItem</useJob>
+                <useLabel>Study technique</useLabel>
+                <floatMenuOptionLabel>Study demonic technique: blood furnace</floatMenuOptionLabel>
+                <techniqueHediff>Hediff_RI_CP_Tech_BloodFurnace</techniqueHediff>
+                <requiresOrthodox>false</requiresOrthodox>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Manual_SoulConsumption</defName>
+        <label>demonic technique — soul consumption</label>
+        <description>The most dangerous technique in this collection. The Soul Consumption Method does not gather qi from the world — it devours it. The cultivator becomes a spiritual predator, their dantian radiating a subtle hunger that draws qi from the surrounding environment.
+
+The power is significant. The cultivator's mental stability becomes negotiable.
+
+This manual is a permanent reference — any demonic cultivator may study it.
+
+Requires a demonic cultivation path.</description>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_LearnCultivationTechnique">
+                <useJob>UseItem</useJob>
+                <useLabel>Study technique</useLabel>
+                <floatMenuOptionLabel>Study demonic technique: soul consumption</floatMenuOptionLabel>
+                <techniqueHediff>Hediff_RI_CP_Tech_SoulConsumption</techniqueHediff>
+                <requiresOrthodox>false</requiresOrthodox>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

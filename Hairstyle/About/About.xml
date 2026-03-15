@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>边缘仙路-雾鬓风鬟 RimImmortal-Hairstyle[1.6]</name>
+	<author>堂丸(TangW)</author>
+	<packageId>RI.RimImmortals.Hairstyle</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>
+&lt;color=#f8a1c2&gt;&lt;b&gt;【花边雾鬓风鬟满，酒畔云衣月扇香。】&lt;/b&gt;&lt;/color&gt;
+这是一个加入了中国风格发型和胡子的mod。
+*还只是一个非常早期的版本，只包含一些基础发型，以后会逐步加入新发型。
+
+&lt;color=#f8a1c2&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-男式发型。
+-女式发型。
+-胡子。
+
+&lt;color=#f8a1c2&gt;&lt;b&gt;【更新】&lt;/b&gt;&lt;/color&gt;
+2024/07/09 添加一些面纹。
+	</description>
+</ModMetaData>

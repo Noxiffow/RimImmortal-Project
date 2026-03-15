@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--短衫-->
+	<ThingDef ParentName="RI_Living_BasicApparel_Base">
+		<defName>RI_Apparel_InsideApparel</defName>
+		<label>Inside-shirt</label>
+		<description>A simple inside-shirt.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_InsideApparel/RI_Apparel_InsideApparel</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_InsideApparel/RI_Apparel_InsideApparel</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>16</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--直裰-->
+	<ThingDef ParentName="RI_Living_BasicApparel_Base">
+		<defName>RI_Apparel_BasicMiddleClothes</defName>
+		<label>Middle robe</label>
+		<description>A simple middle robe.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_BasicMiddleClothes/RI_Apparel_BasicMiddleClothes</texPath>
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToMake>1900</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_BasicMiddleClothes/RI_Apparel_BasicMiddleClothes</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>16</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--长绔-->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>RI_Apparel_LongPants</defName>
+		<label>Long pants</label>
+		<description>A pair of simple long pants.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_LongPants/RI_Apparel_LongPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>RI_Category_NormalClothing</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<tags>
+				<li>RI_Tag_ApparelBasic</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>16</displayPriority>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

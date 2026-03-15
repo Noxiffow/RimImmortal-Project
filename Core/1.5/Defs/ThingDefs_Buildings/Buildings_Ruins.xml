@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--资源抢夺任务的建筑-->
+
+	<!--龟裂巨石 3x3大小-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_BigRock</defName>
+		<label>Cracked rock</label>
+		<description>A massive cracked rock, emanating dense Qi energy from within.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Misc/RI_Building_BigRock</texPath>
+			<drawSize>(5.2,5.2)</drawSize>
+			<drawOffset>(0,0,0.05)</drawOffset>
+			<shadowData>
+				<volume>(1, 0.3, 1)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,1.9,1.9)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Beauty>10</Beauty>
+		</statBases>
+		<size>(3,3)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<RI_Resource_LiquidJade>10</RI_Resource_LiquidJade>
+			<RI_Resource_SpiritualCrystal>50</RI_Resource_SpiritualCrystal>
+			<RI_BlindBox_Rock MayRequire="RI.RimImmortal.Forge">1</RI_BlindBox_Rock>
+		</costList>
+
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>300</pathCost>
+		<rotatable>false</rotatable>
+		<castEdgeShadows>True</castEdgeShadows>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+			<li Class="RI_Quest.CompProperties_DestroyAction">
+				<destroyIncident>RI_ResourceSnatching_RaidEnemy</destroyIncident>
+				<!--摧毁后 生成incident，可空-->
+				<destroyEffecter/>
+				<!--摧毁后生成effecter，可空-->
+				<incidentTreatsFactor>0.3</incidentTreatsFactor>
+				<!--点数乘数，默认0.8，太低不生成敌人-->
+				<minPoints>100</minPoints>
+				<limitedRaidPoint>3000</limitedRaidPoint>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+
+	<!--古代石塔 4x4大小-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientPagoda</defName>
+		<label>Ancient pagoda</label>
+		<description>An ancient stone pagoda with a history of 100-200 years, exuding dense Qi energy from within.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Misc/RI_Building_AncientPagoda</texPath>
+			<drawSize>(11,11)</drawSize>
+			<drawOffset>(0,0,0.05)</drawOffset>
+			<shadowData>
+				<volume>(1, 0.3, 1)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,1.9,1.9)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Beauty>10</Beauty>
+		</statBases>
+		<size>(4,4)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<RI_Resource_OracleFragment>3</RI_Resource_OracleFragment>
+			<RI_BlindBox_CultivatorBox MayRequire="RI.RimImmortal.Forge">1</RI_BlindBox_CultivatorBox>
+		</costList>
+
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<rotatable>false</rotatable>
+		<castEdgeShadows>True</castEdgeShadows>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+			<li Class="RI_Quest.CompProperties_DestroyAction">
+				<destroyIncident>RI_ResourceSnatching_RaidEnemy</destroyIncident>
+				<!--摧毁后 生成incident，可空-->
+				<destroyEffecter/>
+				<!--摧毁后生成effecter，可空-->
+				<incidentTreatsFactor>0.3</incidentTreatsFactor>
+				<!--点数乘数，默认0.8，太低不生成敌人-->
+				<minPoints>100</minPoints>
+				<limitedRaidPoint>2000</limitedRaidPoint>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+</Defs>

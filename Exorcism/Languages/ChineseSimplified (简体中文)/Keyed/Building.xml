@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: 中断转化 -->
+  <ZombieGizmoAbortTransformLabel>中断转化</ZombieGizmoAbortTransformLabel>
+  <!-- EN: 中断升级 -->
+  <ZombieGizmoAbortLevelUpLabel>中断升级</ZombieGizmoAbortLevelUpLabel>
+  <!-- EN: 中断转化 -->
+  <ZombieGizmoAbortTransformDescription>中断转化</ZombieGizmoAbortTransformDescription>
+  <!-- EN: 中断升级 -->
+  <ZombieGizmoAbortLevelUpDescription>中断升级</ZombieGizmoAbortLevelUpDescription>
+  <!-- EN: 开始升级流程 -->
+  <ZombieGizmoInitLevelUpLabel>开始升级流程</ZombieGizmoInitLevelUpLabel>
+  <!-- EN: 开始转化流程 -->
+  <ZombieGizmoInitTransformLabel>开始转化流程</ZombieGizmoInitTransformLabel>
+  <!-- EN: 开始升级流程 -->
+  <ZombieGizmoInitLevelUpDescription>开始升级流程</ZombieGizmoInitLevelUpDescription>
+  <!-- EN: 开始转化流程 -->
+  <ZombieGizmoInitTransformDescription>开始转化流程</ZombieGizmoInitTransformDescription>
+  <!-- EN: 当前状态: {0} -->
+  <ZombieTransformingStatus>当前状态: {0}</ZombieTransformingStatus>
+  <!-- EN: 等待宿主 -->
+  <ZombieTransformingStatusEnum0>等待宿主</ZombieTransformingStatusEnum0>
+  <!-- EN: 空闲 -->
+  <ZombieTransformingStatusEnum1>空闲</ZombieTransformingStatusEnum1>
+  <!-- EN: 注入材料 -->
+  <ZombieTransformingStatusEnum2>注入材料</ZombieTransformingStatusEnum2>
+  <!-- EN: 转化中 -->
+  <ZombieTransformingStatusEnum3>转化中</ZombieTransformingStatusEnum3>
+  <!-- EN: 转化完成 -->
+  <ZombieTransformingStatusEnum4>转化完成</ZombieTransformingStatusEnum4>
+  <!-- EN: 剩余时间: {0} -->
+  <ZombieTransformingRemainingTime>剩余时间: {0}</ZombieTransformingRemainingTime>
+  <!-- EN: Zombie is hungry! -->
+  <RI_Alert_ZombieHungry>冥尸饿了</RI_Alert_ZombieHungry>
+  <!-- EN: Zombie is feeling hungry and needs food! -->
+  <RI_Alert_ZombieHungryDesc>冥尸饿了，要吃东西</RI_Alert_ZombieHungryDesc>
+  <!-- EN: Zombie needs to suppress! -->
+  <RI_Alert_ZombieNeedSuppress>冥尸需要被压制</RI_Alert_ZombieNeedSuppress>
+  <!-- EN: The zombie is about to go berserk and needs to be suppressed! -->
+  <RI_Alert_ZombieNeedSuppressDesc>冥尸无法压抑嗜血的渴望，需要其他人帮忙压制</RI_Alert_ZombieNeedSuppressDesc>
+  <RI_CurseWardListCommandLabel>防咒名单</RI_CurseWardListCommandLabel>
+  <RI_CurseWardListCommandDesc>打开防咒页面，选择并添加地图上的 Pawn 到全局防咒列表。</RI_CurseWardListCommandDesc>
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: tranquillizer -->
+  <RI_Hediff_DrugTranquilizing.label>安魂镇静</RI_Hediff_DrugTranquilizing.label>
+  <!-- EN: The sedative effects of the drug cause the user to fall into a deep sleep and reduce metabolic consumption. -->
+  <RI_Hediff_DrugTranquilizing.description>药物产生的镇静效果，令人沉沉睡去，并降低代谢消耗。</RI_Hediff_DrugTranquilizing.description>
+  <!-- EN: wearing off -->
+  <RI_Hediff_DrugTranquilizing.stages.wearing_off.label>逐渐苏醒</RI_Hediff_DrugTranquilizing.stages.wearing_off.label>
+  <!-- EN: stable -->
+  <RI_Hediff_DrugTranquilizing.stages.stable.label>稳定</RI_Hediff_DrugTranquilizing.stages.stable.label>
+  <!-- EN: deep coma -->
+  <RI_Hediff_DrugTranquilizing.stages.deep_coma.label>无意识</RI_Hediff_DrugTranquilizing.stages.deep_coma.label>
+  
+</LanguageData>

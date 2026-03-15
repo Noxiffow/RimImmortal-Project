@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ApparelLayerDef>
+		<defName>RI_ApparelLayer_OuterDecoration</defName>
+		<label>outer decoration</label>
+		<!-- 显示名称：外套装饰/罩袍 -->
+
+		<!-- 
+      核心参数：drawOrder (绘制顺序)
+      - OnSkin (贴身): ~400
+      - Middle (中间/防弹衣): ~500
+      - Shell (外套/动力甲): ~600-700
+      
+      我们将这个新层设为 800，确保它绘制在所有普通衣服和盔甲的上面。
+    -->
+		<drawOrder>800</drawOrder>
+	</ApparelLayerDef>
+
+	
+</Defs>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 乾元柱 -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_StoneColumn</defName>
+		<label>earth column</label>
+		<description>Earth Path cultivators resonate with the spiritual energy within the land and refine it into an earth column, which serves as a medium for channeling spells. It can also function as a load-bearing column.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/RI_Building_StoneColumn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.7,2.7)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RI_Building_StoneColumn</uiIconPath>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<pathCost>0</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<uiOrder>2030</uiOrder>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<holdsRoof>true</holdsRoof>
+		<rotatable>false</rotatable>
+		<!--支撑范围-->
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<building>
+			<isInert>true</isInert>
+			<isWall>true</isWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<deconstructible>false</deconstructible>
+		</building>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<constructEffect>ConstructDirt</constructEffect>
+	</ThingDef>
+
+	<!--土壁-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_EarthWall</defName>
+		<label>earth wall</label>
+		<description>A solid earthen wall created by Earth Path cultivators.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<replaceTags>
+			<li>Wall</li>
+		</replaceTags>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall/RI_Building_EarthWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RI_Building_EarthWall_Icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<drawStyleCategory>Walls</drawStyleCategory>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<uiOrder>2000</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isWall>true</isWall>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<isStuffableAirtight>true</isStuffableAirtight>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>OrnateDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+				<li>Cooler</li>
+				<li>Vent</li>
+			</relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+	<!--可建造土壁-->
+	<ThingDef ParentName="BuildingBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Building_EarthWall_Buildable</defName>
+		<label>earth wall</label>
+		<description>A solid earthen wall.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<replaceTags>
+			<li>Wall</li>
+		</replaceTags>
+		<graphicData>
+			<texPath>Things/Building/Linked/Wall/RI_Building_EarthWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RI_Building_EarthWall_Icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+
+		<!--原料-->
+		<costList MayRequire="RI.RimImmortal.Living">
+			<RI_Resource_BlackCorundum MayRequire="RI.RimImmortal.Living">5</RI_Resource_BlackCorundum>
+			<RI_Resource_Mud MayRequire="RI.RimImmortal.Living">5</RI_Resource_Mud>
+		</costList>
+
+		<!--研究完可以造，需要Living-->
+		<researchPrerequisites>
+			<li>RI_InitialApproach_FiveElements_Earth</li>
+		</researchPrerequisites>
+		<designationCategory>Structure</designationCategory>
+
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<drawStyleCategory>Walls</drawStyleCategory>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<uiOrder>2000</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isWall>true</isWall>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<isStuffableAirtight>true</isStuffableAirtight>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>OrnateDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+				<li>Cooler</li>
+				<li>Vent</li>
+			</relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+	<!-- 镇岳塔 -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_WorldSealingStoneTower</defName>
+		<label>guardian stone Tower</label>
+		<description>A mystical stone tower that provides protective shields to nearby allies. It will dissipate after 60 seconds.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/RI_Building_WorldSealingStoneTower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RI_Building_WorldSealingStoneTower</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<pathCost>0</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<uiOrder>2032</uiOrder>
+		<size>(2,2)</size>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>720</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<!-- Building is spawned by ability, not built with stuff -->
+		<holdsRoof>true</holdsRoof>
+		<rotatable>false</rotatable>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<deconstructible>false</deconstructible>
+		</building>
+		<!--显示范围-->
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<!-- designationCategory set to None because building is spawned by ability, not player-built -->
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<constructEffect>ConstructDirt</constructEffect>
+		<comps>
+			<li Class="RI_FiveElements.CompProperties_WorldSealingStoneTower">
+				<lifeDurationTicks>3600</lifeDurationTicks>
+				<shieldRadius>3</shieldRadius>
+				<shieldHediff>RI_Hediff_WorldSealingShield</shieldHediff>
+				<shieldRange>6.9</shieldRange>
+				<areaShieldDuration>1800</areaShieldDuration>
+			</li>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>4.9</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptAirProjectiles>true</interceptAirProjectiles>
+				<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<color>(0.2, 0.8, 1.0)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
+				<drawWithNoSelection>true</drawWithNoSelection>
+				<activated>true</activated>
+				<activeDuration>1800</activeDuration>
+				<cooldownTicks>1200</cooldownTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--流沙陷阱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_SandTrap</defName>
+		<label>quicksand trap</label>
+		<description>A quicksand trap.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_SandTrap</texPath>
+			<drawSize>(18,18)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RI_FiveElements.CompProperties_Quicksand">
+				<!--持续2小时-->
+				<lifeTimeTicks>5000</lifeTimeTicks>
+			</li>
+			<li Class="CompProperties_InspectString">
+				<inspectString>Duration: 2 hours</inspectString>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+</Defs>

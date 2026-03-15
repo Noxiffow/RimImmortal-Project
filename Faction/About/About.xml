@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>边缘仙路-百家争鸣 RimImmortal-Faction[1.6]</name>
+	<author>堂丸(TangW),逍逍客,漆黑之梦,栗花梨雪</author>
+	<packageId>RI.RimImmortal.Faction</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>RI.RimImmortal.Core</packageId>
+			<displayName>边缘仙路-羽化登仙 RimImmortal-Core[1.5]</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3296476341</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>RI.RimImmortal.Core</li>
+		<li>RI.RimImmortal.Forge</li>
+	</loadAfter>
+	<description>
+&lt;color=#70B1FF&gt;&lt;b&gt;【凡诸子百八十九家，蜂出并作，各引一端，崇其所说，以此弛说，取舍诸候】&lt;/b&gt;&lt;/color&gt;
+感谢订阅边缘仙路-百家争鸣！这是一个自羽化登仙，神机天纵之后的第三个大型仙路mod，内容包含新的派系，新的文化，以及其他围绕这两个主题的内容。
+目前还处于早期发布阶段，需要时间测试调整！
+		
+&lt;color=#70B1FF&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-两个互为敌对的大型跨星际门派。
+-宗门头衔系统，获得贡献点数，一路从杂役爬到掌门的地位。
+-新的文化，模因，还有文化武器风格，定制自己的门派。
+-多个新的修炼功法，增进修炼速度。
+-专属于门派的仙舟穿梭机。
+-遗忘法门的丹药。
+-一堆新的背景故事。
+
+&lt;color=#70B1FF&gt;&lt;b&gt;【边缘仙路开发组成员】&lt;/b&gt;&lt;/color&gt;
+-堂丸(TangW)——主要负责人，策划，贴图，xml代码
+-爱新觉罗-派大星——程序
+-漆黑之梦——程序
+-咩咩——程序，策划
+-玖日长弓——程序
+-凌洛(LingLuo)——程序
+-阿米(Amli)——音效，程序
+-骸鸾——程序
+-灵能罐头——程序
+-玉米淀粉——程序
+-尘——程序
+-逍逍客——程序
+-栗花梨雪——程序
+
+&lt;color=#70B1FF&gt;&lt;b&gt;【Mod列表】&lt;/b&gt;&lt;/color&gt;
+-Harmony
+-Core
+-边缘仙路-锦衣玉食
+-边缘仙路-羽化登仙
+-边缘仙路-神机天纵
+-边缘仙路-百家争鸣
+
+&lt;color=#70B1FF&gt;&lt;b&gt;【特别感谢】&lt;/b&gt;&lt;/color&gt;
+-感谢玲珑的善意支持。
+-感谢Liquid的代码支持
+-感谢各位支持的玩家！
+
+	</description>
+</ModMetaData>

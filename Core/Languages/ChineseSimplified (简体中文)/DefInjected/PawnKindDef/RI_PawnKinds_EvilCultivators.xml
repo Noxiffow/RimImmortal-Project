@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Assassin -->
+  <RI_Pawn_Assassin.label>刺客</RI_Pawn_Assassin.label>
+  
+  <!-- EN: Assassin master -->
+  <RI_Pawn_AssassinMaster.label>刺客大师</RI_Pawn_AssassinMaster.label>
+  
+  <!-- EN: Evil blade -->
+  <RI_Pawn_EvilBlade.label>邪剑仙</RI_Pawn_EvilBlade.label>
+  
+  <!-- EN: Evil cultivator -->
+  <RI_Pawn_EvilCultivator.label>邪修</RI_Pawn_EvilCultivator.label>
+  
+  <!-- EN: Old evil cultivator -->
+  <RI_Pawn_OldEvilCultivator.label>年老邪修</RI_Pawn_OldEvilCultivator.label>
+  
+  <!-- EN: Sinister cultivator -->
+  <RI_Pawn_SinisterCultivator.label>歹修</RI_Pawn_SinisterCultivator.label>
+  
+  <!-- EN: Sword madman -->
+  <RI_Pawn_SwordMadMan.label>剑狂</RI_Pawn_SwordMadMan.label>
+  
+  <!-- EN: Parasitic cultivator -->
+  <RI_Pawn_WickedCultivator.label>蠹修</RI_Pawn_WickedCultivator.label>
+  
+</LanguageData>

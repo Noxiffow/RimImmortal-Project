@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AKA_Ability.AKAbilityDef Name="AKA_Base" Abstract="True">
+		<grouped>false</grouped>
+		<displayGizmoUndraft>false</displayGizmoUndraft>
+		<compEffectList>
+			<li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic" />
+		</compEffectList>
+		<abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+		<cooldownProperty>
+			<SPPerCharge>15</SPPerCharge>
+			<SPUnit>rSecond</SPUnit>
+			<initSP>900</initSP>
+			<maxCharge>10</maxCharge>
+		</cooldownProperty>
+	</AKA_Ability.AKAbilityDef>
+
+	<!--==================血煞塔==================-->
+
+	<AKA_Ability.AKAbilityDef ParentName="AKA_Base">
+		<defName>LMA_Ability_Illustrious_SummonDrone</defName>
+		<label>血煞塔</label>
+		<description>desc</description>
+		<icon>UI/TempIcon</icon>
+		<grouped>false</grouped>
+		<displayGizmoUndraft>false</displayGizmoUndraft>
+		<compEffectList>
+			<li Class="FS_SuperiorZombie.AE_SummonBloodTurret">
+				<turretDef>RI_Turret_CrimsonPagoda</turretDef>
+			</li>
+		</compEffectList>
+		<abilityClass>FS_SuperiorZombie.AKAbility_AutoCell_BloodTower</abilityClass>
+		<range>15</range>
+		<targetParams>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+		<cooldownProperty>
+			<SPPerCharge>15</SPPerCharge>
+			<SPUnit>rSecond</SPUnit>
+			<initSP>6000</initSP>
+			<maxCharge>3</maxCharge>
+		</cooldownProperty>
+	</AKA_Ability.AKAbilityDef>
+
+	<!--==================地血爆==================-->
+
+	<AKA_Ability.AKAbilityDef ParentName="AKA_Base">
+		<defName>LMA_Ability_Illustrious_DroneExplode</defName>
+		<label>地血爆</label>
+		<description>desc</description>
+		<icon>UI/TempIcon</icon>
+		<grouped>false</grouped>
+		<displayGizmoUndraft>false</displayGizmoUndraft>
+		<range>15</range>
+		<compEffectList>
+			<li Class="FS_SuperiorZombie.AE_BloodQuake">
+				<radius>6</radius>
+				<damageDef>Flame</damageDef>
+				<damageAmt>20</damageAmt>
+				<seta>1.5</seta>
+				<!-- 弧度制，pi是180度 -->
+			</li>
+		</compEffectList>
+		<abilityClass>FS_SuperiorZombie.AKAbility_AutoClose_Quake</abilityClass>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>true</canTargetBuildings>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+		<cooldownProperty>
+			<SPPerCharge>15</SPPerCharge>
+			<SPUnit>rSecond</SPUnit>
+			<initSP>6000</initSP>
+			<maxCharge>1</maxCharge>
+		</cooldownProperty>
+	</AKA_Ability.AKAbilityDef>
+
+</Defs>

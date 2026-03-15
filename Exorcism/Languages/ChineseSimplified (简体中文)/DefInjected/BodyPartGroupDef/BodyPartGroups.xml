@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: behind left leg -->
+  <RI_BehindLeftLeg.label>TODO</RI_BehindLeftLeg.label>
+  <!-- EN: leg -->
+  <RI_BehindLeftLeg.labelShort>TODO</RI_BehindLeftLeg.labelShort>
+  
+  <!-- EN: behind right leg -->
+  <RI_BehindRightLeg.label>TODO</RI_BehindRightLeg.label>
+  <!-- EN: leg -->
+  <RI_BehindRightLeg.labelShort>TODO</RI_BehindRightLeg.labelShort>
+  
+  <!-- EN: middle front left leg -->
+  <RI_MiddleBehindLeftLeg.label>TODO</RI_MiddleBehindLeftLeg.label>
+  <!-- EN: leg -->
+  <RI_MiddleBehindLeftLeg.labelShort>TODO</RI_MiddleBehindLeftLeg.labelShort>
+  
+  <!-- EN: middle behind right leg -->
+  <RI_MiddleBehindRightLeg.label>TODO</RI_MiddleBehindRightLeg.label>
+  <!-- EN: leg -->
+  <RI_MiddleBehindRightLeg.labelShort>TODO</RI_MiddleBehindRightLeg.labelShort>
+  
+  <!-- EN: middle front left leg -->
+  <RI_MiddleFrontLeftLeg.label>TODO</RI_MiddleFrontLeftLeg.label>
+  <!-- EN: leg -->
+  <RI_MiddleFrontLeftLeg.labelShort>TODO</RI_MiddleFrontLeftLeg.labelShort>
+  
+  <!-- EN: middle front right leg -->
+  <RI_MiddleFrontRightLeg.label>TODO</RI_MiddleFrontRightLeg.label>
+  <!-- EN: leg -->
+  <RI_MiddleFrontRightLeg.labelShort>TODO</RI_MiddleFrontRightLeg.labelShort>
+  
+</LanguageData>

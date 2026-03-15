@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator ruins -->
+  <AncientComplex_Talismaker.label>古修遗迹</AncientComplex_Talismaker.label>
+  <!-- EN: An ancient cultivator ruins, in which you can find some relics and treasures from ancient cultivator, but such ruins often have the presence of ancient cultivator guardians. -->
+  <AncientComplex_Talismaker.description>一个古修者遗迹，你可以在其中发现一些源自古修的遗物和残宝，但这类遗迹中往往有着古修的守护者存在。</AncientComplex_Talismaker.description>
+  <!-- EN: Investigate {0} -->
+  <AncientComplex_Talismaker.approachingReportString>调查{0}</AncientComplex_Talismaker.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AncientComplex_Talismaker.approachOrderString>调查{0}</AncientComplex_Talismaker.approachOrderString>
+  
+  <!-- EN: Ancient cultivator resting place -->
+  <AncientComplex_TalismakerWithCasket.label>古修沉眠之地</AncientComplex_TalismakerWithCasket.label>
+  <!-- EN: A special ruins of the ancient cultivators, exuding a large and dangerous Qi. The ruins may hold treasures yet to be born, but they are accompanied by extraordinary threats. -->
+  <AncientComplex_TalismakerWithCasket.description>一个特殊的古修者遗迹，散发着庞大而危险的灵气。遗迹之中可能有着未出世的宝物，但同时伴随着非同寻常的威胁。</AncientComplex_TalismakerWithCasket.description>
+  <!-- EN: Investigate {0} -->
+  <AncientComplex_TalismakerWithCasket.approachingReportString>调查{0}</AncientComplex_TalismakerWithCasket.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <AncientComplex_TalismakerWithCasket.approachOrderString>调查{0}</AncientComplex_TalismakerWithCasket.approachOrderString>
+  
+</LanguageData>

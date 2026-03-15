@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RI_Dessert_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Mass>0.3</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>RI_Category_Dessert</li>
+		</thingCategories>
+		<rotatable>false</rotatable>
+		<!--禁止旋转着吃饭！-->
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+		</comps>
+		<pathCost>10</pathCost>
+		<allowedArchonexusCount>40</allowedArchonexusCount>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>25</optimalityOffsetHumanlikes>
+			<!--人类喜好-->
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<!--喂食喜好-->
+		</ingestible>
+	</ThingDef>
+
+	<!--切开的西瓜-->
+	<ThingDef ParentName="RI_Dessert_Base">
+		<defName>RI_Food_CutWatermelon</defName>
+		<label>Cut watermelon</label>
+		<description>A freshly cut watermelon is cold and sweet, and the summer without watermelon will be so monotonous.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Plant_Watermelon</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_CutWatermelon</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>5</MarketValue>
+			<Mass>0.3</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>RI_FeelQuenchThirst</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_Relieveheat</hediffDef>
+					<severity>0.6</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--月饼-->
+	<ThingDef ParentName="RI_Dessert_Base">
+		<defName>RI_Food_Mooncake</defName>
+		<label>Mooncake</label>
+		<description>Small cakes such as chewing moon, crisp and sweet.\n\nMooncake is a kind of pastry made of flour and filled with various ingredients. This dessert originated in the emperor's palace at the beginning, and then gradually spread to the people, August 15 called the Mid-Autumn Festival, the folk to moon cake phase feed, take the meaning of reunion.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_Mooncake</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>15</MarketValue>
+			<Mass>0.1</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>RI_EatMooncake</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--鲜肉月饼-->
+	<ThingDef ParentName="RI_Dessert_Base">
+		<defName>RI_Food_Meatmooncake</defName>
+		<label>Meat mooncake</label>
+		<description>Small cakes such as chewing moon, crisp and sweet.\n\nDifferent from traditional mooncakes, the meat mooncake is made of pastry, wrapped in seasoned meat and then roasted. This moon cake got fat but not greasy, the taste is crisp.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_Meatmooncake</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>10</DeteriorationRate>
+			<MarketValue>15</MarketValue>
+			<Mass>0.1</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>RI_EatMooncake</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

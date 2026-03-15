@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Assassin mask -->
+  <RI_Apparel_AssassinMask.label>刺客面巾</RI_Apparel_AssassinMask.label>
+  <!-- EN: A towel that covers the lower part of your face. Loved by people who don't like people to know who they are.\n\n<color=#FFFF00>【Special effects】Toxic environment resistance +50%.\nPain shock threshold +5%.\n</color> -->
+  <RI_Apparel_AssassinMask.description>一条可以遮住脸的下半部分的面巾。被那些隐藏身份的人所喜爱。\n\n&lt;color=#FFFF00>【特殊效果】\n有毒环境抗性+50%。\n疼痛休克阈值+5%。&lt;/color></RI_Apparel_AssassinMask.description>
+  
+  <!-- EN: Exercise head band -->
+  <RI_Apparel_ExerciseBandana.label>汗带</RI_Apparel_ExerciseBandana.label>
+  <!-- EN: It's just a simple fabric band that's tied around your head to keep the sweat from getting into your eyes.\n\n<color=#FFFF00>【Special effects】Pain shock threshold +10%.</color> -->
+  <RI_Apparel_ExerciseBandana.description>只是条简单的织物带，绑在头上，用来防止额头的汗流进眼睛里。这种简单的发饰，意外能起到振奋人心的效果。\n\n&lt;color=#FFFF00>【特殊效果】\n疼痛休克阈值+10%。&lt;/color></RI_Apparel_ExerciseBandana.description>
+  
+  <!-- EN: Head scarf -->
+  <RI_Apparel_HeadScarf.label>裹头巾</RI_Apparel_HeadScarf.label>
+  <!-- EN: A long fabric strip wrapped around the forehead and topknot, providing a small amount of protection. -->
+  <RI_Apparel_HeadScarf.description>一根长长的厚布条，缠绕在前额和发髻上，能提供少量的防护。</RI_Apparel_HeadScarf.description>
+  
+  <!-- EN: Rain Hat -->
+  <RI_Apparel_RainHat.label>斗笠</RI_Apparel_RainHat.label>
+  <!-- EN: A rain hat made of hay and fiber. Although there is no protective ability, it can make the body not get wet from the rain, and it can also hide its face in the crowd, which is the necessary rain gear for some travelers and workers.\n\n<color=#FFFF00>【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.</color> -->
+  <RI_Apparel_RainHat.description>一顶用干草编制成的斗笠。虽然没什么防护能力，但是可以让身体不被雨淋湿，也可以在人群中隐藏面貌，是一些行路的旅人和劳动者必备的雨具。\n\n&lt;color=#FFFF00>【特殊效果】\n提供避雨效果。&lt;/color></RI_Apparel_RainHat.description>
+  
+</LanguageData>

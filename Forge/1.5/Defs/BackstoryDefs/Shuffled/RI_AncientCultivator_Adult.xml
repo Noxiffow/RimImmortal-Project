@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Plants>3</Plants>
+	<Social>-2</Social>
+	<Crafting>3</Crafting>
+	<Construction>3</Construction>
+	<Intellectual>8</Intellectual>
+	<Animals>3</Animals>
+	<Shooting>3</Shooting>
+	<Medicine>2</Medicine>
+	<Artistic>5</Artistic>
+	
+	<requiredWorkTags>
+	<li>Violent</li>
+	<li>Animals</li>
+	</requiredWorkTags>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+	
+			<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	
+	<possessions>
+	<Cloth>10</Cloth>
+	</possessions>
+	
+	-->
+
+	<!--============古修者============-->
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientWarrior</defName>
+		<title>Ancient warrior</title>
+		<titleShort>Warrior</titleShort>
+		<description>In martial arts, [PAWN_nameDef] confidence will not lose to others. [PAWN_pronoun] is a pure martial artist with an integrity heart, but [PAWN_pronoun] is difficult to judge others by himself and always thinks that the people around [PAWN_objective] should also be strict with themselves.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>15</Melee>
+			<Intellectual>7</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_PowerfulAncientCultivator</defName>
+		<title>Powerful ancient cultivator</title>
+		<titleShort>Ancient cultivator</titleShort>
+		<description>[PAWN_nameDef]'s cultivation path has reached a certain level. but [PAWN_pronoun] is stuck, although [PAWN_pronoun] has been proud of the group, but [PAWN_pronoun] knows that there should be a chance to rise. With the spiritual energy of the mainland becomes thinner and slower, [PAWN_pronoun] can only choose to sleep for a while.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>10</Melee>
+			<Social>-3</Social>
+			<Shooting>7</Shooting>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientDoctor</defName>
+		<title>Ancient doctor</title>
+		<titleShort>Doctor</titleShort>
+		<description>[PAWN_nameDef]'s medical skills are far superior to ordinary people, and [PAWN_pronoun] has the name of half immortal in the local area. [PAWN_pronoun] was well versed in medicine and mastered many ways to save his life, but [PAWN_pronoun] was also keenly aware that Qi was thinning with each passing year.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
+			<Medicine>12</Medicine>
+			<Social>5</Social>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Psychopath>0</Psychopath>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientClanElder</defName>
+		<title>Ancient clan elder</title>
+		<titleShort>Clan elder</titleShort>
+		<description>As an elder, [PAWN_nameDef] holds a lot power in his hands, and the younger members of the clan are very afraid [PAWN_pronoun], but they respect the old monster. During [PAWN_possessive] time as an elder, [PAWN_pronoun] was also concerned about the gradual decline of Qi, but he was ultimately unable to solve it.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>10</Melee>
+			<Shooting>3</Shooting>
+			<Intellectual>8</Intellectual>
+			<Social>10</Social>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientClanJunior</defName>
+		<title>Ancient clan junior</title>
+		<titleShort>Clan junior</titleShort>
+		<description>[PAWN_nameDef]'s talent is extremely high, and several elders in the clan have taken [PAWN_objective] as a personal disciple. [PAWN_possessive] clan is one of the most powerful in the region. No one dares to mess with [PAWN_objective]. [PAWN_possessive] life was naturally smooth, which made [PAWN_objective] more and more proud and arrogant.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>7</Melee>
+			<Shooting>3</Shooting>
+			<Social>-5</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_SecretTreasureCarrier</defName>
+		<title>Secret treasure carrier</title>
+		<titleShort>treasure carrier</titleShort>
+		<description>[PAWN_nameDef] takes a treasure from a mysterious place, which leads to a bloody fight. And [PAWN_nameDef] is also guilty of being forced to live deep in the mountains.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>12</Melee>
+			<Shooting>3</Shooting>
+			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>

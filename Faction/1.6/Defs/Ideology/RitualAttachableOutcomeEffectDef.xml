@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--发现柔玉-->
+	<RitualAttachableOutcomeEffectDef>
+		<defName>RI_LiquidJadeSpawn</defName>
+		<label>Find liquid jade</label>
+		<effectDesc>A small amount of liquid jade will emerge from beneath the ground.</effectDesc>
+		<letterInfoText>A small amount of liquid jade will emerge from beneath the ground.</letterInfoText>
+		<workerClass>RI_Faction.RitualAttachableOutcomeEffectWorker_LiquidJadeSpawn</workerClass>
+		<requiredMemeAny>
+
+		</requiredMemeAny>
+	</RitualAttachableOutcomeEffectDef>
+
+	<!--灵气滋养-->
+	<RitualAttachableOutcomeEffectDef>
+		<defName>RI_EnergyRecharge</defName>
+		<label>Qi nourishment</label>
+		<effectDesc>All cultivators restore their Qi and gain a slight improvement in their cultivation progress.</effectDesc>
+		<letterInfoText>All cultivators restore their Qi and gain a slight improvement in their cultivation progress.</letterInfoText>
+		<workerClass>RI_Faction.RitualAttachableOutcomeEffectWorker_RI_EnergyRecharge</workerClass>
+	</RitualAttachableOutcomeEffectDef>
+
+</Defs>

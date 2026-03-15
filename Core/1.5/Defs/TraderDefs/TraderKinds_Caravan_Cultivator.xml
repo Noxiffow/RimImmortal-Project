@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef>
+		<defName>Caravan_Cultivator_BulkGoods</defName>
+		<label>Free-cultivator resource caravan</label>
+		<orbital>true</orbital>
+		<stockGenerators>
+			<!-- 基础材料 -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+				<countRange>5~15</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_LiquidJade</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Tree_QingMingSeed</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<!-- 丹药 -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>RI_Category_Drugs</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>RI_Category_DrugsMaterials</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+
+			<!-- Weapons -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>RI_Category_BoxingGlove</categoryDef>
+				<thingDefCountRange>-1~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- Apparel -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_Apparel</categoryDef>
+				<thingDefCountRange>-1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- 通用功法书 -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_CommonBooks</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- 故事书 -->
+			<li  Class="StockGenerator_Category">
+				<categoryDef>RI_Category_StoryBooks</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- Animals -->
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>AnimalImmortals</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalImmortals</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>2~3</countRange>
+				<createMatingPair>
+					<li>AnimalImmortals</li>
+				</createMatingPair>
+			</li>
+
+			<!-- Cultist apparel -->
+
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

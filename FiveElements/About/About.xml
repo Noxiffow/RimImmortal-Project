@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>边缘仙路-五行流转 RimImmortal-FiveElements[1.6]</name>
+	<author>TangW,漆黑之梦,chitoseMo</author>
+	<packageId>RI.RimImmortal.FiveElements</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>RI.RimImmortal.Core</packageId>
+			<displayName>边缘仙路-羽化登仙 RimImmortal-Core[1.6]</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3296476341</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>RI.RimImmortal.Core</li>
+		<li>RI.RimImmortal.Forge</li>
+	</loadAfter>
+	<description>
+&lt;color=#D6DB6E&gt;&lt;b&gt;【太极本无极，动静生阴阳。阴阳有变合，五行自相当。】&lt;/b&gt;&lt;/color&gt;
+感谢订阅边缘仙路-五行！这是一个包含了五行法门的仙路新拓展mod！
+*请注意，此mod目前完成了五行中的火行，木行与土行，之后将会陆续更新剩下的两个法门！
+
+Thank you for subscribing to RimImmortal-FiveElements!This is a new expansion mod for RimImmortal, featuring the cultivation paths of the Five Elements.
+*Please note: Currently, only the Fire Path, Wood Path and Earth Path have been implemented. The remaining three elemental paths will be added in future updates!
+
+&lt;color=#D6DB6E&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-火行法门。
+-木行法门。
+-土行法门。
+-五行兵器。
+
+&lt;color=#D6DB6E&gt;&lt;b&gt;【边缘仙路开发组成员】&lt;/b&gt;&lt;/color&gt;
+-堂丸(TangW)——主要负责人，策划，贴图，xml代码
+-爱新觉罗-派大星——程序
+-漆黑之梦——程序
+-咩咩——程序，策划
+-玖日长弓——程序
+-凌洛(LingLuo)——程序
+-阿米(Amli)——音效，程序
+-骸鸾——程序
+-灵能罐头——程序
+-玉米淀粉——程序
+-尘——程序
+-逍逍客——程序
+-栗花梨雪——程序
+
+&lt;color=#D6DB6E&gt;&lt;b&gt;【Mod列表】&lt;/b&gt;&lt;/color&gt;
+-Harmony
+-Core
+-边缘仙路-羽化登仙
+-边缘仙路-神机天纵
+-边缘仙路-五行流转
+-边缘仙路-百家争鸣
+
+&lt;color=#D6DB6E&gt;&lt;b&gt;【特别感谢】&lt;/b&gt;&lt;/color&gt;
+-感谢各位支持的玩家！		
+	</description>
+</ModMetaData>

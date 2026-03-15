@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--诅咒抵抗-->
+	<StatDef>
+		<defName>RI_CurseImmunity</defName>
+		<label>Curse immunity</label>
+		<description>Colonists' resistance to curses. The higher this value, the more curse is reduced each day.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<maxValue>100</maxValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<workerClass>RimZombieGirl.StatWorker_CurseImmunity</workerClass>
+	</StatDef>
+
+</Defs>

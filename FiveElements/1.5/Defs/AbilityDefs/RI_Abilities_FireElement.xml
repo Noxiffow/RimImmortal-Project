@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--火行法门-->
+
+	<!-- 离火 -->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_FireCultivation</defName>
+		<label>Fire element cultivation</label>
+		<description>Qi cost: 0\n\nSpiritual energy acquisition efficiency +40%.\n\nThe fire rises, Fire element cultivation is the foundational method of fire cultivation. It can slightly enhance one’s five senses.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_FireCultivation</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<warmupStartSound>RI_Sound_StartFire_A</warmupStartSound>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_He_FireCultivationHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<durationSecondsOverride>99999</durationSecondsOverride>
+			</li>
+
+			<!-- TODO 下面需要处理 -->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_Fire_Cultivation</moteCastDef>
+			</li>
+
+		</comps>
+	</AbilityDef>
+
+	<!-- 心炎 -->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_BurningSoul</defName>
+		<label>Heart flame</label>
+		<description>Qi cost: 6\n\nAdd six layers of Life Fire.\n\nHeart Flame is a secret technique of the Fire method. Only those who pass this trial can continue their cultivation. Heart Flame operates through a special method of spiritual energy, starting from the heart and stirring one’s emotions, causing agitation. However, this stimulation also enhances combat abilities.\n\nIn addition, Heart Flame will create five Life Fires on the body, a product combining spiritual energy and emotions. Future cultivation methods will require consuming Life Fire to fuel their power.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_BurningSoul</iconPath>
+		<targetRequired>False</targetRequired>
+		<cooldownTicksRange>50</cooldownTicksRange>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<warmupStartSound>RI_Sound_StartFire_A</warmupStartSound>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<durationSecondsOverride>750</durationSecondsOverride>
+			</li>
+
+			<!--不消耗灵气-->
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-6</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 吹火 -->
+	<!-- MayRequire="Biotech" -->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_Spew</defName>
+		<label>Flame breath</label>
+		<description>Qi cost: 25\n\nConsume one layer of Life Fire to unleash flames.\n\nUsing one’s own Life Fire as the source and Qi as the fuel, a great burst of flames is expelled from the mouth.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Spew</iconPath>
+		<!--冷却-->
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<warmupStartSound>RI_Sound_StartFire_A</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9.5</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>RI_Sound_FireBall_C</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>13</range>
+				<lineWidthEnd>3</lineWidthEnd>
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>1</useEnergy>
+				<disableReason>Need one Life fire</disableReason>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-25</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 炽飞雀 -->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ab_Fire_FireBall</defName>
+		<label>Blazing sparrow</label>
+		<description>Qi cost: 30\n\nConsume one layer of Life Fire to unleash three Blazing Sparrows.\n\nUsing one’s own Life Fire as the source, combined with precise spiritual energy control, the conjured flames are shaped into several fire sparrows and then released.\n\nThis technique serves as proof of one's mastery over fire manipulation, making it more of a display of skill than a purely practical ability.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ab_Fire_FireBall</iconPath>
+		<cooldownTicksRange>100</cooldownTicksRange>
+		<!-- <category>TODO</category> -->
+		<displayOrder>200</displayOrder>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>		
+			<range>24.9</range>
+			<warmupTime>0.2</warmupTime>
+			<soundCast>RI_Sound_FireBall_A</soundCast>
+			<accuracyTouch>1.0</accuracyTouch>
+			<accuracyShort>1.0</accuracyShort>
+			<accuracyMedium>0.95</accuracyMedium>
+			<accuracyLong>0.9</accuracyLong>
+			<burstShotCount>4</burstShotCount>
+			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Ab_Fire_FireBall_Projectile</defaultProjectile>
+			<verbClass>Verb_AbilityShoot</verbClass>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+			<minRange>1.5</minRange>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-30</rEnergy>
+			</li>
+			<!-- <li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>RI_Ab_Fire_FireBall_Projectile</projectileDef>
+			</li> -->
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>1</useEnergy>
+				<disableReason>Need one Life fire</disableReason>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 炽飞雀小 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Ab_Fire_FireBall_Projectile</defName>
+		<label>fire ball</label>
+		<graphicData>
+			<texPath>Things/Projectile/FireBird</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>35</speed>
+			<extraDamages>
+				<li>
+					<def>Flame</def>
+					<amount>24</amount>
+					<armorPenetration>2.1</armorPenetration>
+					<chance>2</chance>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+
+	<!-- 焚绝 -->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_Impact</defName>
+		<label>Burn off</label>
+		<description>Qi cost: 60\n\nConsume one layer of Life Fire to unleash a flash explosion centered on oneself.\n\nBurn off is a unique skill that consumes one’s own Life Fire to trigger a flash explosion.\n\nThe cultivation process of this technique is rather dangerous and may easily cause self-inflicted harm. However, once mastered, it serves as a vital trump card for survival.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Impact</iconPath>
+		<cooldownTicksRange>900</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<warmupStartSound>RI_Sound_FireBall_B</warmupStartSound>
+		<targetRequired>False</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9.5</range>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RI_FiveElements.CompProperties_AbilityRangeExplosion">
+				<deviationRange>0</deviationRange>
+				<explosionRange>9.5</explosionRange>
+				<damage>19</damage>
+				<damageTimes>2</damageTimes>
+				<damageTypeOrder>1</damageTypeOrder>
+				<armorPenetration>2</armorPenetration>
+				<damageTypes>
+					<li>Burn</li>
+					<li>Flame</li>
+				</damageTypes>
+				<!-- TODO -->
+				<!-- <effecterDef></effecterDef> -->
+				<!-- 声音 -->
+				<!--<explosionsound>RI_Sound_FireBall_C</explosionsound>-->
+			</li>
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>1</useEnergy>
+				<disableReason>Need one Life fire</disableReason>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-60</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 烈日炎威 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_Shield</defName>
+		<label>Majestic flame</label>
+		<description>Qi cost: 150\n\nConsume one layer of Life Fire to enhance one’s combat power.\n\nWhen a Fire cultivator has fully mastered the manipulation of flames, they can use it to strengthen themselves, boosting their combat capabilities.</description>
+		<!--冷却时间-->
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Shield</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<warmupStartSound>RI_Sound_StartFire_A</warmupStartSound>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_He_Fire_Shield</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<durationSecondsOverride>60</durationSecondsOverride>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>1</useEnergy>
+				<disableReason>Need one Life fire</disableReason>
+			</li>
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-150</rEnergy>
+			</li> 
+		</comps>
+	</AbilityDef>
+
+	<!-- 追焰 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_Jump</defName>
+		<label>Flame teleport</label>
+		<description>Qi cost: 50\n\nConsume one layer of Life Fire to teleport flames within the selected range.\n\nFlame teleport is said to be the only technique mastered by the founder of Fire method, and it is a top-tier teleportation art.\n\nThe cultivation of this technique is incredibly tedious, requiring the practitioner to focus on the flames for long periods, entering a state of self-forgetfulness. It also requires learning how to ignite one’s own life force, merging fire and life as one.\n\nOnce mastered, the practitioner can transform their physical body completely into a ball of fire, seamlessly traversing between flames within their line of sight, with extraordinary agility.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Jump</iconPath>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<!-- <category>TODO</category> -->
+		<displayOrder>200</displayOrder>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>38.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>RI_Sound_FireBall_C</soundCast>
+			<targetParams>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetItems>true</canTargetItems>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>1</useEnergy>
+				<disableReason>Need one Life fire</disableReason>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_FireJump"></li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 乾阳焱火决 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Fire_Ring</defName>
+		<label>Qianyang flame field</label>
+		<description>Qi cost: 350\n\nConsume one layer of Life Fire to create a domain centered on oneself, where any living being within the domain will be burned by Life Fire.\n\nQianyang Blazing Fire, the ultimate goal of all Fire cultivators. Mastering this technique allows one to ignite their own Life Fire and create a domain of Life Fire.\n\nWithin this domain, all living beings except the practitioner will have their Life Fire ignited, causing them to suffer from the flames burning them from the inside out.</description>
+		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Ring</iconPath>
+		<!--冷却-->
+		<cooldownTicksRange>3000</cooldownTicksRange>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupEffecter>RI_Effecter_BlockedProjectile</warmupEffecter>
+		<statBases>
+			<Ability_EffectRadius>13</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+			<soundCast>RI_Sound_FireRing_A</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_He_Fire_Ring_Self</hediffDef>
+				<psychic>False</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<durationSecondsOverride>13</durationSecondsOverride>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
+				<hediffDef>RI_He_Fire_BurningSoul</hediffDef>
+				<useEnergy>3</useEnergy>
+				<disableReason>Need three Life fire</disableReason>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-350</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

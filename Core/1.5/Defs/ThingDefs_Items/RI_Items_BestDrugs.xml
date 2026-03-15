@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=================高级丹药前置=================-->
+	<ThingDef Name="RI_BestDrug_Base" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>RI_Cauldrons</researchPrerequisite>
+		</recipeMaker>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>1</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>RI_Category_Drugs</li>
+		</thingCategories>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<chairSearchRadius>8</chairSearchRadius>
+		</ingestible>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+	</ThingDef>
+
+	<!-- ==========================【一品】理髓丹========================== -->
+	<ThingDef ParentName="RI_BestDrug_Base">
+		<defName>RI_Drug_MedullaOblongataElixir</defName>
+		<label>【First-rate】Medulla oblongata elixir</label>
+		<description>First-rate elixir, can quickly heal wound and repair a permanent scar at the same time. Medulla oblongata elixir is a very tempting treasure in any society, because of its powerful drug effect, attracting countless people to fight for it. And many pharmacists are also in order to refine this elixirs to embark on the road of cultivation. Although healing wounds does not solve all problems, it does save the lives of many seriously injured patients.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/Elixir/RI_Drug_MedullaOblongataElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>650</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_RepairAwayHediff</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+		<recipeMaker>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==========================【一品】修罗丹========================== -->
+	<ThingDef ParentName="RI_BestDrug_Base">
+		<defName>RI_Drug_DemonElixir</defName>
+		<label>【First-rate】Thran Demon elixir</label>
+		<description>First-rate elixir, it will permanently increase melee ability, but reduce consciousness. People who have eaten Demon elixir say that they can hear a man's laughter ringing in their ears, at which point their hands shake uncontrollably. But once they hold the weapon, the trembling will disappear magically, as if there is a voice in the ear telling them to fight frantically and kill. Because its effects are so mysterious, some scholars have speculated that the drug was created by a celestial deity called the Thran God, whose purpose was to awaken memories in a person's blood and arouse warlike emotions in them. That is, pure fighting machine.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/Elixir/RI_Drug_DemonElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>550</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_DemonElixirHediff</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+		<recipeMaker>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==========================【一品】五灵丹========================== -->
+	<ThingDef ParentName="RI_BestDrug_Base">
+		<defName>RI_Drug_FiveTreasuresElixir</defName>
+		<label>【First-rate】Celestial spirit Jade elixir</label>
+		<description>First-rate elixir, permanently improves the absorption efficiency of Qi. The magic effect of this elixir can be truly called a miracle medicine, and its secret recipe is only passed on by word of mouth among pharmacist, who are few and far between. Therefore, this kind of elixir directly caused the price of the pharmacist to increase again and again, so that some ordinary pharmacists were sent as guests.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/Elixir/RI_Drug_FiveTreasuresElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>760</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_FiveTreasuresElixirHediff</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+		<recipeMaker>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--通玄筑基丹-->
+	<ThingDef ParentName="RI_BestDrug_Base">
+		<defName>RI_Drug_FoundationBuildingElixir</defName>
+		<label>【First-rate】Foundation building elixir</label>
+		<description>First-rate elixir, essential for upgrade from the Qi Condensation Realm to the Foundation Realm, significantly increasing the success rate of upgrade.\n\nThis elixir requires a variety of rare ingredients and exceptional alchemy skills, making it consistently expensive. Most sizable sects have dedicated alchemists specializing in crafting Foundation Establishment Pills to meet the needs of their young disciples.\n\n*As a necessary item for upgrade, the Foundation elixir does not need to be taken directly. It only needs to be placed near the upgrade point.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/Elixir/RI_Drug_FoundationBuildingElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<possessionCount>1</possessionCount>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>600</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_FoundationBuildingElixirHediff</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+		<recipeMaker>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

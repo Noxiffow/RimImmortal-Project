@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 木行Base -->
+	<HediffDef Name="RI_WoodMethodHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.49,0.80,0.26)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--巽木功法-->
+	<HediffDef ParentName="RI_WoodMethodHediff_Base">
+		<defName>RI_Hediff_WoodCultivationHediff</defName>
+		<label>Wood cultivation</label>
+		<description>Wood element cultivation technique, enhance the ability to perceive vitality, increasing cultivation efficiency.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.25</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<!--<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+				<disappearsAfterTicks>600000</disappearsAfterTicks>
+			</li>-->
+			<li>
+				<compClass>WhoXiuXian.HediffComp_CultivationBase</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- 生机滋养 -->
+	<HediffDef ParentName="RI_WoodMethodHediff_Base">
+		<defName>RI_He_Wood_Vitality</defName>
+		<label>Vitality</label>
+		<!-- 揽草木之生机，滋养己身。引生发之曲直，增其威势。-->
+		<description>Absorb the vitality of plants to nourish oneself, harness the power of growth and expansion to enhance one’s own strength.\n\nBy channeling the vitality of plants to nourish oneself, all attributes are temporarily enhanced.</description>
+		<hediffClass>RI_FiveElements.CachedHediff</hediffClass>
+		<comps>
+			<li Class="RI_FiveElements.CompProperties_WoodRegeneration">
+			</li>
+		</comps>
+		<showGizmosOnCorpse>true</showGizmosOnCorpse>
+		<initialSeverity>0.01</initialSeverity>
+		<stages>
+			<!-- TODO 添加更多层数 -->
+			<li>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+					<MoveSpeed>1.25</MoveSpeed>
+					<MeleeDamageFactor>1.25</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax>
+					<InjuryHealingFactor>2</InjuryHealingFactor>
+					<ImmunityGainSpeed>2</ImmunityGainSpeed>
+					<ToxicResistance>1.0</ToxicResistance>
+					<!--毒性抵抗系数-->
+					<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+					<!--携带-->
+					<CarryingCapacity>50</CarryingCapacity>
+					<!--种植速度-->
+					<PlantWorkSpeed>2</PlantWorkSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<!--附加特效-->
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.6</drawSize>
+				<texPath>Things/Mote/RI_Wood_Shield</texPath>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+			<!--<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(1.0,0.85,0.73,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0.01)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>-->
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!--=============================树灵专有hediff=============================-->
+
+	<!-- 有限生机 -->
+	<HediffDef ParentName="RI_WoodMethodHediff_Base">
+		<defName>RI_He_Wood_LimitedLife</defName>
+		<label>Limited life</label>
+		<!-- 树灵得生机造化而诞生，它们的存在会逐渐消耗有限的生机，直到自然死亡。 -->
+		<description>Verdant creatures are born from the essence of life. Their existence gradually consumes this limited vitality until they naturally perish.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.333</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<!--聪明动物-->
+			<li Class="WhoXiuXian.HediffCompProperties_SmartAnimal">
+				<usingAbility>True</usingAbility>
+			</li>
+		</comps>
+		<!-- 初始存活时间 -->
+		<initialSeverity>1</initialSeverity>
+		<!-- 最长存活时间 -->
+		<maxSeverity>30</maxSeverity>
+		<stages>
+			<li>
+				<!-- 耗尽 -->
+				<label>exhaust</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<!-- 充盈 -->
+				<minSeverity>0.001</minSeverity>
+			</li>
+
+		</stages>
+	</HediffDef>
+
+	<!-- 枝繁叶茂 -->
+	<HediffDef ParentName="RI_WoodMethodHediff_Base">
+		<defName>RI_He_Wood_Growth</defName>
+		<label>Verdant growth</label>
+		<!-- 树灵得生机造化而诞生，它们将在短暂的生命中肆意生长，变得越来越强。 -->
+		<description>Verdant creatures are born from the essence of life. In their brief lifespan, they grow wildly and become increasingly powerful.</description>
+		<!-- 初始存活时间 -->
+		<initialSeverity>0.01</initialSeverity>
+		<!-- 最长存活时间 -->
+		<maxSeverity>100</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!-- 嫩芽 -->
+				<label>sprout</label>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+			<li>
+				<!-- 幼苗 -->
+				<label>youth</label>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MeleeDamageFactor>2</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+			<li>
+				<!-- 新木 -->
+				<label>growth</label>
+				<minSeverity>7</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.65</IncomingDamageFactor>
+					<MoveSpeed>0.65</MoveSpeed>
+					<MeleeDamageFactor>3</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+			<li>
+				<!-- 葱郁 -->
+				<label>lush</label>
+				<minSeverity>15</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.45</IncomingDamageFactor>
+					<MoveSpeed>0.5</MoveSpeed>
+					<MeleeDamageFactor>4</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+			<li>
+				<!-- 苍翠 -->
+				<label>verdant</label>
+				<minSeverity>30</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.3</IncomingDamageFactor>
+					<MoveSpeed>0.5</MoveSpeed>
+					<MeleeDamageFactor>5</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+			<!-- TODO 补充更多 -->
+		</stages>
+	</HediffDef>
+
+	<!--伤害效果-->
+
+	<!--荆棘缠身-->
+	<HediffDef>
+		<defName>RI_Hediff_SlowRoot</defName>
+		<label>Thorn entangled</label>
+		<description>Bound tightly by the flexible thorns!</description>
+		<defaultLabelColor>(0.49,0.80,0.26)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>true</isBad>
+		<initialSeverity>1.0</initialSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+				<!-- 持续时间约 16.6 秒 -->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+					<!-- 移动速度降低50% -->
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

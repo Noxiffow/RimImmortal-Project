@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!--雕梁画栋兼容-->
+
+	<!--把研究的base替换为仙路的--><!--
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Furniture">
+		<xpath>Defs/ResearchProjectDef[@Name="RI_Research_Furniture_Base"]/tab</xpath>
+		<value>
+			<tab>RI_ResearchTab</tab>
+		</value>
+	</Operation>
+
+	--><!--把研究tab替换为仙路--><!--
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Furniture">
+		<xpath>Defs/ResearchTabDef[defName="RI_ResearchTab_Furniture"]/defName</xpath>
+		<value>
+			<defName>RI_ResearchTab</defName>
+		</value>
+	</Operation>-->
+
+	<!--布帛 兼容-->
+
+	<!--把研究的base替换为仙路的-->
+	<!--<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Living">
+		<xpath>Defs/ResearchProjectDef[@Name="RI_Research_Living_Base"]/tab</xpath>
+		<value>
+			<tab>RI_ResearchTab</tab>
+		</value>
+	</Operation>
+
+	--><!--把研究tab替换为仙路--><!--
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Living">
+		<xpath>Defs/ResearchTabDef[defName="RI_ResearchTab_Living"]/defName</xpath>
+		<value>
+			<defName>RI_ResearchTab</defName>
+		</value>
+	</Operation>-->
+
+
+</Patch>

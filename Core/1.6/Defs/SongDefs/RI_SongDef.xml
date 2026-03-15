@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--<SongDef>
+		<defName>ImmortalSong</defName>
+		<playOnMap>false</playOnMap>
+		<clipPath>Kami</clipPath>
+		<volume>1.05</volume>
+	</SongDef>-->
+	<!--增加战斗曲——风雨欲来-->
+	<!--飞升曲固定用这个-->
+	<SongDef>
+		<defName>RI_Songs_AscensionSong</defName>
+		<playOnMap>false</playOnMap>
+		<clipPath>Songs/Tension/RI_Songs_StormBrewing</clipPath>
+		<volume>1.05</volume>
+	</SongDef>
+	<SongDef>
+		<clipPath>Songs/Tension/RI_Songs_StormBrewing</clipPath>
+		<volume>1.0</volume>
+		<tense>true</tense>
+	</SongDef>
+	<SongDef>
+		<defName>RIEntrySong</defName>
+		<playOnMap>false</playOnMap>
+		<clipPath>Songs/Entry/RI_Songs_StartWithTheFirstStep</clipPath>
+		<volume>0.9</volume>
+	</SongDef>
+</Defs>

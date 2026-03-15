@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# RimWorld compiled assemblies (no translatable text, kept for mod functionality)
+# Uncomment to exclude DLLs if desired:
+# **/*.dll
+# **/*.pdb
+
+# RimWorld saves/cache that might leak in
+*.rws
+*.rwf
+
+# Python scripts output
+__pycache__/
+*.pyc

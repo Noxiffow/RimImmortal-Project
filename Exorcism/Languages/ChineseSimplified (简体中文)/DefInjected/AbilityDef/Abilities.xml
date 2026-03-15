@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Exorcism -->
+  <RI_DaoAbility_CurseCure.label>除咒术</RI_DaoAbility_CurseCure.label>
+  <!-- EN: Use at Pawn, will cure the Curse on Pawn.Use at ground ,will cure this map. -->
+  <RI_DaoAbility_CurseCure.description>除咒的法术，对生物使用可以驱除诅咒，对地面使用可以驱除地图诅咒。</RI_DaoAbility_CurseCure.description>
+  <!-- EN: reduce curse -->
+  <RI_DaoAbility_CurseCure.verbProperties.label>除咒</RI_DaoAbility_CurseCure.verbProperties.label>
+  
+  <!-- EN: Dark Blood Curse -->
+  <RI_DarkBloodCurse.label>诅咒</RI_DarkBloodCurse.label>
+  <!-- EN: #TODO -->
+  <RI_DarkBloodCurse.description>给予诅咒</RI_DarkBloodCurse.description>
+  
+  <!-- EN: Bite on -->
+  <RI_ZombieAbility_BiteOn.label>扑咬</RI_ZombieAbility_BiteOn.label>
+  <!-- EN: Rushing towards and biting the target. -->
+  <RI_ZombieAbility_BiteOn.description>扑向目标，啃咬！</RI_ZombieAbility_BiteOn.description>
+  <!-- EN: jump -->
+  <RI_ZombieAbility_BiteOn.verbProperties.label>跳跃中</RI_ZombieAbility_BiteOn.verbProperties.label>
+  
+  <!-- EN: Blood eruption -->
+  <RI_ZombieAbility_BloodEruption.label>血暴</RI_ZombieAbility_BloodEruption.label>
+  <!-- EN: # -->
+  <RI_ZombieAbility_BloodEruption.description>血暴</RI_ZombieAbility_BloodEruption.description>
+  
+  <!-- EN: Blood plume -->
+  <RI_ZombieAbility_BloodPlume.label>血羽</RI_ZombieAbility_BloodPlume.label>
+  <!-- EN: # -->
+  <RI_ZombieAbility_BloodPlume.description>爆发出血雾，大大提升速度。</RI_ZombieAbility_BloodPlume.description>
+  <!-- EN: Speed Rush -->
+  <RI_ZombieAbility_BloodPlume.comps.CompAbilityEffect_ToggleHediff.label>血羽</RI_ZombieAbility_BloodPlume.comps.CompAbilityEffect_ToggleHediff.label>
+  <!-- EN: Toggle the Speed Rush hediff on this pawn. -->
+  <RI_ZombieAbility_BloodPlume.comps.CompAbilityEffect_ToggleHediff.description>爆发出血雾，大大提升速度。</RI_ZombieAbility_BloodPlume.comps.CompAbilityEffect_ToggleHediff.description>
+  
+  <!-- EN: Ghost fire spit -->
+  <RI_ZombieAbility_GhostFireBurst.label>鬼火</RI_ZombieAbility_GhostFireBurst.label>
+  <!-- EN: o -->
+  <RI_ZombieAbility_GhostFireBurst.description>鬼火</RI_ZombieAbility_GhostFireBurst.description>
+  
+  <!-- EN: curse descent -->
+  <RI_ZombieAbility_SoulCapture.label>诅咒降临</RI_ZombieAbility_SoulCapture.label>
+  <!-- EN: Capture the soul of the target, infusing it with dark energy. -->
+  <RI_ZombieAbility_SoulCapture.description>诅咒降临</RI_ZombieAbility_SoulCapture.description>
+  
+  <!-- EN: dirt teleport -->
+  <Zg_DirtTeleport.label>土遁</Zg_DirtTeleport.label>
+  <!-- EN: Drill into the earth and out of the target position. -->
+  <Zg_DirtTeleport.description>土遁</Zg_DirtTeleport.description>
+  <!-- EN: teleport -->
+  <Zg_DirtTeleport.verbProperties.label>土遁</Zg_DirtTeleport.verbProperties.label>
+  
+</LanguageData>

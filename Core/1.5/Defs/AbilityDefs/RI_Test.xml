@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef ParentName="RI_PsycastBase">
+		<defName>test1</defName>
+		<label>test</label>
+		<description>#TODO</description>
+		<cooldownTicksRange>6</cooldownTicksRange>
+		<iconPath>UI/Abilities/Base/LG</iconPath>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EffectRadius>2</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>45</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityBoom">
+				<growth>99</growth>
+			</li>
+			<!-- <li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging"> -->
+			<!--     <moteCastDef>#TODO</moteCastDef> -->
+			<!-- </li> -->
+			<!-- <li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting"> -->
+			<!--     <moteCastDef>#TODO</moteCastDef> -->
+			<!-- </li> -->
+			<!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy"> -->
+			<!--     <rEnergy>-50</rEnergy> -->
+			<!-- </li> -->
+		</comps>
+	</AbilityDef>
+
+	<!--复活，砍了-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Resurrect</defName>
+		<label>Resurrect</label>
+		<description>&lt;color=#28BD75&gt;This technique is learned by the ElixirsStrengthen method in the Master Realm\n\n&lt;/color&gt;Qi cost440\n\nA feat that only top-level alchemists could master, using Qi to perfectly replicate a freshly dead corpse, even the cells were completely reorganized to bring the dead back to life.</description>
+		<cooldownTicksRange>50000</cooldownTicksRange>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<iconPath>UI/Abilities/ElixirsStrengthen/RI_Ability_Resurrect</iconPath>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>5</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>10</warmupTime>
+			<range>50</range>
+			<targetParams>
+				<canTargetCorpses>True</canTargetCorpses>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityResurrect">
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_Resurrect_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_Resurrect_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-440</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

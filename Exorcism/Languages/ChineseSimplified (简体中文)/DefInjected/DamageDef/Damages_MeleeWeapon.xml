@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heavenly fire -->
+  <RI_Damage_HeavenlyFire.label>TODO</RI_Damage_HeavenlyFire.label>
+  <!-- EN: {0} 已在天火中灰飞烟灭。 -->
+  <RI_Damage_HeavenlyFire.deathMessage>TODO</RI_Damage_HeavenlyFire.deathMessage>
+  
+  <!-- EN: Cut -->
+  <RI_ZombieMelee_Cut.label>TODO</RI_ZombieMelee_Cut.label>
+  <!-- EN: {0} has been cut to death. -->
+  <RI_ZombieMelee_Cut.deathMessage>TODO</RI_ZombieMelee_Cut.deathMessage>
+  
+  <!-- EN: blunt -->
+  <RI_ZombieMelee_Poke.label>TODO</RI_ZombieMelee_Poke.label>
+  <!-- EN: {0} has been beaten to death. -->
+  <RI_ZombieMelee_Poke.deathMessage>TODO</RI_ZombieMelee_Poke.deathMessage>
+  
+  <!-- EN: Scratch -->
+  <RI_ZombieMelee_Scratch.label>TODO</RI_ZombieMelee_Scratch.label>
+  <!-- EN: {0} has been torn to death. -->
+  <RI_ZombieMelee_Scratch.deathMessage>TODO</RI_ZombieMelee_Scratch.deathMessage>
+  
+  <!-- EN: Stab -->
+  <RI_ZombieMelee_Stab.label>TODO</RI_ZombieMelee_Stab.label>
+  <!-- EN: {0} has been stabbed to death. -->
+  <RI_ZombieMelee_Stab.deathMessage>TODO</RI_ZombieMelee_Stab.deathMessage>
+  
+</LanguageData>

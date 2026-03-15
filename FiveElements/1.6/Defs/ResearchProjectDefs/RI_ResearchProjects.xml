@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<ResearchProjectDef Name="RI_Research_Base" Abstract="True">
+		<tab>RI_ResearchTab</tab>
+	</ResearchProjectDef>-->
+
+	<!--=============================== 五行科技树 ===================================-->
+
+	<!--=====离火======-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_FiveElements_Fire</defName>
+		<label>Fire element</label>
+		<description>Fire Path, fierce in nature, intertwined with blazing vitality. Spiritual energy serves as fuel, and the heart-fire burns without restraint.\n\nUnlocks a series of items related to the Fire Path.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach_FiveElements</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--=====巽木======-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_FiveElements_Wood</defName>
+		<label>Wood element</label>
+		<description>Wood Path allows one to sense the flowing vitality within grass and trees.\n\nThe Five Elements Sect was once the foremost sect in the cultivation world. Its Wood Path branch excelled at shaping vitality, creating wondrous spirit plants and rare trees, and enjoyed great prestige. However, after the sectarian wars, the Wood Path was targeted by the other four paths. In the end, it crippled its own cultivation methods, sacrificing its legacy so that a small number of descendants might survive.\n\nUnlocks a series of items related to the Wood Path.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach_FiveElements</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--=====坤土======-->
+	<ResearchProjectDef ParentName="RI_Research_Base">
+		<defName>RI_InitialApproach_FiveElements_Earth</defName>
+		<label>Earth element</label>
+		<description>Earth Path focuses on steady accumulation and restrained release. It bears all things and can resonate with the planet's ley lines.\n\nWhen the sectarian wars erupted, the Earth sects did not choose to engage in direct combat. They were never known for killing or slaughter. A small number of cultivators voluntarily joined the war, while the rest withdrew into the mountains. The sects constructed massive fortified settlements and military works to defend against threats that might come. Centered on clan structures, they enforced strict internal discipline.\n\nUnlocks a series of items related to the Earth Path.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>8</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>RI_InitialApproach_FiveElements</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

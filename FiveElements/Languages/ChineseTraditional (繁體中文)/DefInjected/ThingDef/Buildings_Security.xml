@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Agave-spike -->
+  <RI_Trap_AgaveSpike.label>绞杀荆棘</RI_Trap_AgaveSpike.label>
+  <!-- EN: A trap conjured through a Wood path technique, transformed from an agave plant.\n\nAgave-spike is a ground spike that deals minor damage to enemies who step on it. Under the influence of vitality techniques, the transformed agave leaves harden like steel, easily piercing through the sole of a foot. -->
+  <RI_Trap_AgaveSpike.description>以木行法门的法术制造的陷阱，由龙舌兰转化而来。\n\n龙刺，一种地刺陷阱，对踩到的敌人造成些许伤害。龙舌兰转化的叶片变得硬如钢铁，可轻易刺穿脚掌。</RI_Trap_AgaveSpike.description>
+  
+  <!-- EN: Strangle-thorn -->
+  <RI_Trap_StrangleThorn.label>龙刺</RI_Trap_StrangleThorn.label>
+  <!-- EN: Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forth and strike the victim. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <RI_Trap_StrangleThorn.description>以木行法门的法术制造的陷阱，由荆棘转化而来。\n\n绞杀荆棘，一种陷阱，对踩到的敌人造成少量伤害，同时可以缠绕拖延敌人。</RI_Trap_StrangleThorn.description>
+  
+</LanguageData>

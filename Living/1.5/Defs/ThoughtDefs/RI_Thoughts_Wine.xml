@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--喝酒心情加成-->
+
+	<!--竹叶青-->
+	<ThoughtDef>
+		<defName>RI_Thought_BambooLeafWine</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_BambooLeafWine</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Drink bamboo leaf wine</label>
+				<description>Bamboo Leaf Wine — mellow and smooth, truly a rare delight.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--稻酿-->
+	<ThoughtDef>
+		<defName>RI_Thought_GrainLiquor</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_GrainLiquor</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Drink grain liquor</label>
+				<description>Tonight, we drink to our heart’s content!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--猴儿酿-->
+	<ThoughtDef>
+		<defName>RI_Thought_MonkeyWine</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_MonkeyWine</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Drink monkey’s wine</label>
+				<description>A wondrous fruit wine, with a refreshing hint of citrus.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

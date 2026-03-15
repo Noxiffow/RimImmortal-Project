@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Dig mud -->
+  <RI_DigMud.label>挖泥</RI_DigMud.label>
+  <!-- EN: Dig the mud out of the mud pit. -->
+  <RI_DigMud.description>从泥坑里挖出泥土。</RI_DigMud.description>
+  <!-- EN: Digging mud -->
+  <RI_DigMud.jobString>挖泥中</RI_DigMud.jobString>
+  
+  <!-- EN: Dig mud x4 -->
+  <RI_DigMudBulk.label>挖泥 x4</RI_DigMudBulk.label>
+  <!-- EN: Dig the mud out of the mud pit. -->
+  <RI_DigMudBulk.description>从泥坑里挖出泥土。</RI_DigMudBulk.description>
+  <!-- EN: Digging mud -->
+  <RI_DigMudBulk.jobString>挖泥中</RI_DigMudBulk.jobString>
+  
+  <!-- EN: make Black brick -->
+  <RI_MakeBlackBrick.label>烧制青砖</RI_MakeBlackBrick.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeBlackBrick.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeBlackBrick.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeBlackBrick.jobString>烧制青砖中</RI_MakeBlackBrick.jobString>
+  
+  <!-- EN: make Black brick x4 -->
+  <RI_MakeBlackBrickBulk.label>烧制青砖 x4</RI_MakeBlackBrickBulk.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeBlackBrickBulk.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeBlackBrickBulk.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeBlackBrickBulk.jobString>烧制青砖中</RI_MakeBlackBrickBulk.jobString>
+  
+  <!-- EN: make Black brick x10 -->
+  <RI_MakeBlackBrickTen.label>烧制青砖 x10</RI_MakeBlackBrickTen.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeBlackBrickTen.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeBlackBrickTen.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeBlackBrickTen.jobString>烧制青砖中</RI_MakeBlackBrickTen.jobString>
+  
+  <!-- EN: Extract steel from iron wood -->
+  <RI_MakeIronWoodToSteel.label>提炼铁木</RI_MakeIronWoodToSteel.label>
+  <!-- EN: The iron wood is fired slowly at a specific temperature to remove the fibers, leaving some metal that resembles steel. -->
+  <RI_MakeIronWoodToSteel.description>用特定的温度缓慢烧制铁木，去除其中的纤维，剩下一些类似于钢铁的金属。</RI_MakeIronWoodToSteel.description>
+  <!-- EN: Extracting steel -->
+  <RI_MakeIronWoodToSteel.jobString>提炼铁木中</RI_MakeIronWoodToSteel.jobString>
+  
+  <!-- EN: make Red brick -->
+  <RI_MakeRedBrick.label>烧制红砖</RI_MakeRedBrick.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeRedBrick.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeRedBrick.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeRedBrick.jobString>烧制红砖中</RI_MakeRedBrick.jobString>
+  
+  <!-- EN: make Red brick x4 -->
+  <RI_MakeRedBrickBulk.label>烧制红砖 x4</RI_MakeRedBrickBulk.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeRedBrickBulk.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeRedBrickBulk.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeRedBrickBulk.jobString>烧制红砖中</RI_MakeRedBrickBulk.jobString>
+  
+  <!-- EN: make Red brick x10 -->
+  <RI_MakeRedBrickTen.label>烧制红砖 x10</RI_MakeRedBrickTen.label>
+  <!-- EN: Bricks are made by pressing clay into bricks and firing them at high temperatures. -->
+  <RI_MakeRedBrickTen.description>将泥土压成砖坯，用高温烧制，以制作砖头。</RI_MakeRedBrickTen.description>
+  <!-- EN: Baking brick -->
+  <RI_MakeRedBrickTen.jobString>烧制红砖中</RI_MakeRedBrickTen.jobString>
+  
+  <!-- EN: Forge pattern steel -->
+  <RI_MakeSteelToIron.label>锻打镔铁</RI_MakeSteelToIron.label>
+  <!-- EN: Fold and forge steel, remove impurities, and finally wrought pattern steel. -->
+  <RI_MakeSteelToIron.description>将钢铁折叠锻打，排除杂质，最后打造成镔铁。</RI_MakeSteelToIron.description>
+  <!-- EN: Forging pattern steel -->
+  <RI_MakeSteelToIron.jobString>锻打镔铁中</RI_MakeSteelToIron.jobString>
+  
+  <!-- EN: Forge pattern steel x4 -->
+  <RI_MakeSteelToIronBulk.label>锻打镔铁 x4</RI_MakeSteelToIronBulk.label>
+  <!-- EN: Fold and forge steel, remove impurities, and finally wrought pattern steel. -->
+  <RI_MakeSteelToIronBulk.description>将钢铁折叠锻打，排除杂质，最后打造成镔铁。</RI_MakeSteelToIronBulk.description>
+  <!-- EN: Forging pattern steel -->
+  <RI_MakeSteelToIronBulk.jobString>锻打镔铁中</RI_MakeSteelToIronBulk.jobString>
+  
+  <!-- EN: Cultivate more ice silkworm -->
+  <RI_Recipe_CultivateIceSilkworm.label>培育冰蚕</RI_Recipe_CultivateIceSilkworm.label>
+  <!-- EN: After the cocoons hatch into moths, feed them mulberry leaves to allow them to mate and lay eggs, so as to expand the population. -->
+  <RI_Recipe_CultivateIceSilkworm.description>等待蚕茧孵化出蛾蛾后，喂食桑叶让其交配产卵，以扩大种群。</RI_Recipe_CultivateIceSilkworm.description>
+  <!-- EN: Cultivating silkworm -->
+  <RI_Recipe_CultivateIceSilkworm.jobString>正在培育蚕</RI_Recipe_CultivateIceSilkworm.jobString>
+  
+  <!-- EN: Cultivate more silkworm -->
+  <RI_Recipe_CultivateSilkworm.label>培育蚕</RI_Recipe_CultivateSilkworm.label>
+  <!-- EN: After the cocoons hatch into moths, feed them mulberry leaves to allow them to mate and lay eggs, so as to expand the population. -->
+  <RI_Recipe_CultivateSilkworm.description>等待蚕茧孵化出蛾蛾后，喂食桑叶让其交配产卵，以扩大种群。</RI_Recipe_CultivateSilkworm.description>
+  <!-- EN: Cultivating silkworm -->
+  <RI_Recipe_CultivateSilkworm.jobString>正在培育蚕</RI_Recipe_CultivateSilkworm.jobString>
+  
+</LanguageData>

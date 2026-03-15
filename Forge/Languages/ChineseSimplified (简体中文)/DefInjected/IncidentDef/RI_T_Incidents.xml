@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Black steel from space -->
+  <RI_DropBlackSteelChuck.label>天外庚钢</RI_DropBlackSteelChuck.label>
+  <!-- EN: Black steel from space -->
+  <RI_DropBlackSteelChuck.letterLabel>天外庚钢</RI_DropBlackSteelChuck.letterLabel>
+  <!-- EN: A piece of a ship falls on your colony, and unlike other ship fragments, this piece can be found in the form of a hard steel - Black steel. -->
+  <RI_DropBlackSteelChuck.letterText>一块飞船碎片掉落于你的殖民地，与其他飞船碎片不同，这块碎片中可以发现一种坚硬的钢材——庚钢的身影。</RI_DropBlackSteelChuck.letterText>
+  
+  <!-- EN: Inspiration of forge -->
+  <RI_IncentiveTalisman.label>炼器灵感</RI_IncentiveTalisman.label>
+  <!-- EN: Inspiration of forge -->
+  <RI_IncentiveTalisman.letterLabel>炼器灵感</RI_IncentiveTalisman.letterLabel>
+  <!-- EN: While crafting the object, one colonist's mind suddenly became clear, and he fell into a state of self-oblivion. The process at hand suddenly became orderly and beautiful, which directly inspired him. -->
+  <RI_IncentiveTalisman.letterText>在打造物品时，一位殖民者的大脑突然明晰起来，他陷入了一种忘我的境界。手头的工序突然变得有序而美妙，这直接激发了他的灵感。</RI_IncentiveTalisman.letterText>
+  
+</LanguageData>

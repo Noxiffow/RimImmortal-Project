@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] is born with spirit root, and [PAWN_nameDef] arrived at Foundation rank in [PAWN_possessive] teens. Not afraid of fire and water, free to move a hundred jin stone lock,[PAWN_pronoun] was regarded as a genius by the clan, thus carefully cultivated. -->
+  <RI_Backstory_AncientCultivatorChild1.description>[PAWN_nameDef]从一出生就带有灵芽，[PAWN_pronoun]十多岁便成功筑基。可不惧水火，随意搬弄百斤石锁，[PAWN_pronoun]被宗族视为天才，从而精心栽培。</RI_Backstory_AncientCultivatorChild1.description>
+  <!-- EN: Ancient spiritual child -->
+  <RI_Backstory_AncientCultivatorChild1.title>古代先天灵童</RI_Backstory_AncientCultivatorChild1.title>
+  <!-- EN: Spiritual child -->
+  <RI_Backstory_AncientCultivatorChild1.titleShort>先天灵童</RI_Backstory_AncientCultivatorChild1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] born in a small clan, [PAWN_pronoun] did not have any special talents or outstanding advantages, and spent [PAWN_possessive] childhood smoothly. -->
+  <RI_Backstory_AncientCultivatorChild2.description>[PAWN_nameDef]出生在一个不大的宗族内，并未有任何特长和突出优点，[PAWN_pronoun]顺风顺水地度过了童年。</RI_Backstory_AncientCultivatorChild2.description>
+  <!-- EN: Ancient clan child -->
+  <RI_Backstory_AncientCultivatorChild2.title>古代宗族孩童</RI_Backstory_AncientCultivatorChild2.title>
+  <!-- EN: Ancient clan child -->
+  <RI_Backstory_AncientCultivatorChild2.titleShort>宗族孩童</RI_Backstory_AncientCultivatorChild2.titleShort>
+  
+  <!-- EN: When [PAWN_nameDef] was a child, because [PAWN_pronoun] contradicted the cultivators, [PAWN_pronoun] was punished to join the cultivators' clan and become a servant. However, a few years later, [PAWN_pronoun] revealed [PAWN_possessive] eloquence, and was liked by many people in the clan, [PAWN_pronoun] also broke away from the servant identity and became a member of the clan. -->
+  <RI_Backstory_AncientCultivatorChild3.description>[PAWN_nameDef]在小时候因为顶撞了修炼者，被罚进入修炼者宗族成为下人。不过数年后，[PAWN_pronoun]显露出过人的口才，在宗族内受到了不少人喜欢，也脱离了下人身份，成为了族内的一员。</RI_Backstory_AncientCultivatorChild3.description>
+  <!-- EN: Ancient restless child -->
+  <RI_Backstory_AncientCultivatorChild3.title>古代不安分的孩童</RI_Backstory_AncientCultivatorChild3.title>
+  <!-- EN: Restless child -->
+  <RI_Backstory_AncientCultivatorChild3.titleShort>不安分的孩童</RI_Backstory_AncientCultivatorChild3.titleShort>
+  
+</LanguageData>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aberrant blood heart -->
+  <RI_Hediff_AberrantBloodHeart.label>邪血心脏</RI_Hediff_AberrantBloodHeart.label>
+  <!-- EN: An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. -->
+  <RI_Hediff_AberrantBloodHeart.description>符咒封印的心脏，用邪血替换了普通血液，使其工作效率更高。</RI_Hediff_AberrantBloodHeart.description>
+  <!-- EN: a Aberrant blood heart -->
+  <RI_Hediff_AberrantBloodHeart.labelNoun>一个邪血心脏</RI_Hediff_AberrantBloodHeart.labelNoun>
+  
+  <!-- EN: Aberrant blood liver -->
+  <RI_Hediff_AberrantBloodLiver.label>邪血肝</RI_Hediff_AberrantBloodLiver.label>
+  <!-- EN: An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. -->
+  <RI_Hediff_AberrantBloodLiver.description>符咒封印的肝，用邪血替换了普通血液，使其工作效率更高。</RI_Hediff_AberrantBloodLiver.description>
+  <!-- EN: a Aberrant blood liver -->
+  <RI_Hediff_AberrantBloodLiver.labelNoun>一个邪血肝</RI_Hediff_AberrantBloodLiver.labelNoun>
+  
+  <!-- EN: Aberrant blood lung -->
+  <RI_Hediff_AberrantBloodLung.label>邪血肺</RI_Hediff_AberrantBloodLung.label>
+  <!-- EN: An installed bionic heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. -->
+  <RI_Hediff_AberrantBloodLung.description>符咒封印的肺，用邪血替换了普通血液，使其工作效率更高，并且防毒。</RI_Hediff_AberrantBloodLung.description>
+  <!-- EN: a Aberrant blood lung -->
+  <RI_Hediff_AberrantBloodLung.labelNoun>一个邪血肺</RI_Hediff_AberrantBloodLung.labelNoun>
+  
+  <!-- EN: demon-binding nail -->
+  <RI_Hediff_DemonBindingNail.label>封魔钉</RI_Hediff_DemonBindingNail.label>
+  <!-- EN: A bronze nail driven into the spine and inscribed with specialized talismans. Slows the onset of bloodthirsty states in revenant corpses. -->
+  <RI_Hediff_DemonBindingNail.description>打入脊椎的铜钉，附加了特殊符咒，可以减缓冥尸进入嗜血状态的时间。</RI_Hediff_DemonBindingNail.description>
+  <!-- EN: demon sealing nails -->
+  <RI_Hediff_DemonBindingNail.labelNoun>封魔钉</RI_Hediff_DemonBindingNail.labelNoun>
+  <!-- EN: x1 -->
+  <RI_Hediff_DemonBindingNail.stages.x1.label>x1</RI_Hediff_DemonBindingNail.stages.x1.label>
+  <!-- EN: x2 -->
+  <RI_Hediff_DemonBindingNail.stages.x2.label>x2</RI_Hediff_DemonBindingNail.stages.x2.label>
+  <!-- EN: x3 -->
+  <RI_Hediff_DemonBindingNail.stages.x3.label>x3</RI_Hediff_DemonBindingNail.stages.x3.label>
+  <!-- EN: x4 -->
+  <RI_Hediff_DemonBindingNail.stages.x4.label>x4</RI_Hediff_DemonBindingNail.stages.x4.label>
+  <!-- EN: x5 -->
+  <RI_Hediff_DemonBindingNail.stages.x5.label>x5</RI_Hediff_DemonBindingNail.stages.x5.label>
+  <!-- EN: x6 (Max) -->
+  <RI_Hediff_DemonBindingNail.stages.x6_Max.label>x6</RI_Hediff_DemonBindingNail.stages.x6_Max.label>
+  
+  <!-- EN: evil-slaying claw -->
+  <RI_Hediff_EvilSlayingClaw.label>斩邪爪</RI_Hediff_EvilSlayingClaw.label>
+  <!-- EN: Claws forged from bronze. Exceptionally lethal, especially effective against aberrant entities. -->
+  <RI_Hediff_EvilSlayingClaw.description>风磨铜打造的利爪，可以发挥出强大的杀伤力，特别是对于邪祟来说。</RI_Hediff_EvilSlayingClaw.description>
+  <!-- EN: evil-slaying claw -->
+  <RI_Hediff_EvilSlayingClaw.comps.HediffComp_VerbGiver.tools.evilslaying_claw.label>斩邪爪</RI_Hediff_EvilSlayingClaw.comps.HediffComp_VerbGiver.tools.evilslaying_claw.label>
+  <!-- EN: a evil-slaying claw -->
+  <RI_Hediff_EvilSlayingClaw.labelNoun>一个斩邪爪</RI_Hediff_EvilSlayingClaw.labelNoun>
+  
+  <!-- EN: nail tongue -->
+  <RI_Hediff_NailTongue.label>钉舌</RI_Hediff_NailTongue.label>
+  <!-- EN: Steel spikes driven through the tongue, permanently embedded. -->
+  <RI_Hediff_NailTongue.description>钢铁制造的钉刺，刺穿了舌头。</RI_Hediff_NailTongue.description>
+  <!-- EN: a nail tongue -->
+  <RI_Hediff_NailTongue.labelNoun>一根钉舌</RI_Hediff_NailTongue.labelNoun>
+  
+  <!-- EN: steel claw -->
+  <RI_Hediff_SteelClaw.label>钢爪</RI_Hediff_SteelClaw.label>
+  <!-- EN: An installed power claw consisting of a mechanical hand with a hooked claw on each finger. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. The claws can be retracted, making it as useful as a natural hand for non-combat tasks, however its overall ungainliness slows down movement slightly. -->
+  <RI_Hediff_SteelClaw.description>钢铁打磨而成的利爪，嵌入手指中。</RI_Hediff_SteelClaw.description>
+  <!-- EN: steel claw -->
+  <RI_Hediff_SteelClaw.comps.HediffComp_VerbGiver.tools.steel_claw.label>钢爪</RI_Hediff_SteelClaw.comps.HediffComp_VerbGiver.tools.steel_claw.label>
+  <!-- EN: a steel claw -->
+  <RI_Hediff_SteelClaw.labelNoun>一套钢爪</RI_Hediff_SteelClaw.labelNoun>
+  
+  <!-- EN: steel teeth -->
+  <RI_Hediff_SteelTeeth.label>钢牙</RI_Hediff_SteelTeeth.label>
+  <!-- EN: Teeth forged from steel. Extremely sharp and durable. -->
+  <RI_Hediff_SteelTeeth.description>钢铁打造的牙齿，非常锋利。</RI_Hediff_SteelTeeth.description>
+  <!-- EN: steel bite -->
+  <RI_Hediff_SteelTeeth.comps.HediffComp_VerbGiver.tools.steel_bite.label>钢牙</RI_Hediff_SteelTeeth.comps.HediffComp_VerbGiver.tools.steel_bite.label>
+  <!-- EN: a steel teeth -->
+  <RI_Hediff_SteelTeeth.labelNoun>一副钢牙</RI_Hediff_SteelTeeth.labelNoun>
+  
+  <!-- UNUSED -->
+  <RI_Hediff_SteelTeeth.comps.HediffComp_VerbGiver.tools.iron_bite.label>钢牙</RI_Hediff_SteelTeeth.comps.HediffComp_VerbGiver.tools.iron_bite.label>
+  
+</LanguageData>

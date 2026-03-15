@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GameConditionDef>
+		<defName>EnergyDecline</defName>
+		<conditionClass>WhoXiuXian.GameCondition_EnergyFluctuation</conditionClass>
+		<label>Qi ebb period</label>
+		<description>A powerful wave of Qi covered the surface of the planet, and the Qi available in the air became thinner.</description>
+		<descriptionFuture>A constant wave of [energyFluctuationLevel] Qi will continuously affect [map_definite] within [gameConditionDuration_duration] and the speed of practice will decrease for all cultivators.</descriptionFuture>
+		<defaultDroneLevel>BadMedium</defaultDroneLevel>
+		<endMessage>Qi ebb period is over.</endMessage>
+		<letterText>Every cultivator feels apprehensive!\n\nIt seems that some unknown being is sucking the Qi of the entire planet, making the Qi in the air even denser, an event that only affects the cultivator. Within a few days, the cultivator's speed of cultivation will slow down quite a bit.\n\n The current Qi Low level is {0}.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<exclusiveConditions>
+			<li>EnergyGrowth</li>
+		</exclusiveConditions>
+		<canBePermanent>true</canBePermanent>
+		<natural>false</natural>
+	</GameConditionDef>
+
+	<GameConditionDef>
+		<defName>EnergyGrowth</defName>
+		<conditionClass>WhoXiuXian.GameCondition_EnergyFluctuation</conditionClass>
+		<label>Qi flood period</label>
+		<description>A powerful wave of Qi spread across the surface of the planet, and the Qi available in the air became more active.</description>
+		<descriptionFuture>A constant wave of [energyFluctuationLevel] Qi will continuously affect [map_definite] within [gameConditionDuration_duration] and the speed of practice will increase for all cultivators.</descriptionFuture>
+		<defaultDroneLevel>GoodMedium</defaultDroneLevel>
+		<endMessage>Qi flood period is over.</endMessage>
+		<letterText>Every cultivator feels like a spring breeze!\n\nIt seems that some unknown being is stirring up the Qi of the entire planet, making the Qi in the air more dense than normal, an event that only affects the cultivator. Within a few days, the cultivator's speed of cultivation will be increased to a certain extent. \n\n The current Qi flood level is {0}.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<exclusiveConditions>
+			<li>EnergyDecline</li>
+		</exclusiveConditions>
+		<canBePermanent>true</canBePermanent>
+		<natural>false</natural>
+	</GameConditionDef>
+
+</Defs>

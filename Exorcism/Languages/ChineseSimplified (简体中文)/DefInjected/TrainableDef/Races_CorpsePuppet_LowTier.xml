@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: clean -->
+  <RI_Clean.label>打扫</RI_Clean.label>
+  <!-- EN: The paperman will randomly clean the floor. -->
+  <RI_Clean.description>这个生物可能会随机的扫地。</RI_Clean.description>
+  
+</LanguageData>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RI_BetterMeatMeal_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_AteSatiety</HediffDef>
+		</descriptionHyperlinks>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<rotatable>false</rotatable>
+		<!--禁止旋转着吃饭！-->
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>1</Nutrition>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.5</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>RI_Category_FineMeal</li>
+		</thingCategories>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+		</comps>
+		<pathCost>10</pathCost>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>RI_AteFeastMeatMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<foodType>Meal</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>21</optimalityOffsetHumanlikes>
+			<!--吃大餐的buff-->
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_AteSatiety</hediffDef>
+					<severity>0.6</severity>
+				</li>
+			</outcomeDoers>
+			<!--吃大餐的buff-->
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!--东坡肉-->
+	<ThingDef ParentName="RI_BetterMeatMeal_Base">
+		<defName>RI_Food_DongPoPork</defName>
+		<label>Soysauced DongPo pork</label>
+		<description>Soysauced DongPo pork is said to have been created by the Song Dynasty poet Su Shi. It uses pork belly, cut into cubes, and then slowly cooked with soy sauce, rock sugar, rice wine, etc. The finished dish has thin skin and tender meat, a red and bright color, a rich and thick flavor, is tender but not crumbly, and is fragrant and not greasy.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_DongPoPork</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!--小鸡炖蘑菇-->
+	<ThingDef ParentName="RI_BetterMeatMeal_Base">
+		<defName>RI_Food_ChickenWithMushroom</defName>
+		<label>Chicken with mushroom</label>
+		<description>Braised Chicken with Mushrooms is a popular dish in Northeastern Chinese cuisine. It is a hearty dish that requires careful selection of ingredients. The chicken used should be a free-range chicken raised by local farmers, which is then cut into pieces and fried to release the chicken fat. The mushrooms, which are soaked and then cooked, are then stir-fried with the chicken fat. When the chicken is 70 or 80 percent done, add the vermicans and simmer until the vermicans are soft enough to serve.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_ChickenWithMushroom</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!--八宝鸭-->
+	<ThingDef ParentName="RI_BetterMeatMeal_Base">
+		<defName>RI_Food_StuffedRoastDuck</defName>
+		<label>Stuffed roast duck</label>
+		<description>Stuffed roast duck production is complex, need to use the whole duck and remove all bones, and the skin must not be broken, after the neck is filled with various ingredients and rice, buckle in a large bowl steamed, keep the duck shape, the original juice outstanding, out of the steam pot and then poured with steamed duck original brine mixed with shrimp and green beans, smells good.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_StuffedRoastDuck</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!--煨肘子-->
+	<ThingDef ParentName="RI_BetterMeatMeal_Base">
+		<defName>RI_Food_StewedPorkHock</defName>
+		<label>Stewed pork knuckle</label>
+		<description>Stewed pork knuckle production is not difficult, the most need is patience, slow cooking. Clean up the elbow, put soy sauce and spices into the pot, add boiling water to stew, cook until the knuckle tender like jelly, eat into the mouth, fell sticky but not greasy, excellent taste.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_StewedPorkHock</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!--红烧牛肉-->
+	<ThingDef ParentName="RI_BetterMeatMeal_Base">
+		<defName>RI_Food_BraisedBeef</defName>
+		<label>Braised beef</label>
+		<description>Braised beef is a traditional dish, and it is best to use gelatinous, fatty cuts of beef, such as tail or brisket. Stir-fry beef with dried chilli, sesame pepper and bean paste. Stir fry radish, then add boiling water and simmer until beef is fragrant. This dish is very homely, but also important, each family has its own way, very classic.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/RI_Food_BraisedBeef</texPath>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

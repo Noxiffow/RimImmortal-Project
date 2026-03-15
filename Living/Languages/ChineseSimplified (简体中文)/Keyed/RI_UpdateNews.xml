@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!-- 刚才代码里定义的通用 UI 键 -->
+	<!-- EN: Mod Update: {0} -->
+  <RI_News_Title>Mod更新：{0}</RI_News_Title>
+	<!-- EN: Version: {0} -->
+  <RI_News_Version>版本：{0}</RI_News_Version>
+	<!-- EN: Next -->
+  <RI_News_Next>下一条</RI_News_Next>
+	<!-- EN: Close -->
+  <RI_News_Close>关闭</RI_News_Close>
+
+	<!-- 你在这个公告里自定义的键 -->
+	<!-- EN: RimImmortal-Living -->
+  <RI_RimImmortal_Living>边缘仙路-俗世仙工</RI_RimImmortal_Living>
+	<!-- EN: Major Update:\n-In a few days, the food/recipe content will be removed from this mod. Please subscribe to the new “FarmCraft” mod instead. -->
+  <RI_RimImmortal_Living_Text>重大更新：\n-锦衣玉食改名为俗世仙工。\n-几天后将移除mod内的食谱mod，请移步订阅新的“炊耕百味”mod。</RI_RimImmortal_Living_Text>
+</LanguageData>

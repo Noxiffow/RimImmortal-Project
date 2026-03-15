@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Hi-tech research desk -->
+  <RI_Building_HiTechResearchDesk.label>灵气研究台</RI_Building_HiTechResearchDesk.label>
+  <!-- EN: After mastering electric power and early computer technology, the cultivators also use the computer as an analytical tool to study more effects of Qi, and can perform some preliminary testing work on the documents and various raw materials.\n\nHi-tech research desk can also use to study initial approach book and skill book. -->
+  <RI_Building_HiTechResearchDesk.description>在掌握了电力和早期计算机技术之后，修炼者们还将计算机作为分析工具，用来研究灵气的更多效果，还能够对文献和各种原材料进行一些初步的测试工作。\n\n高科技研究桌也可以用来研究法门书和功法书。</RI_Building_HiTechResearchDesk.description>
+  
+  <!-- EN: Reading research desk -->
+  <RI_Building_StudyDesk.label>经书研究台</RI_Building_StudyDesk.label>
+  <!-- EN: A desk dedicated to study initial approach book, can also be used as an ordinary research desk. -->
+  <RI_Building_StudyDesk.description>一个专门研读法门书和功法书的工作台，也可以作为普通的研究台使用。</RI_Building_StudyDesk.description>
+  
+</LanguageData>

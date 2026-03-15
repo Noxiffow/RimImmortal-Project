@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Direct disciple -->
+  <RI_Pawn_DirectDisciple.label>亲传弟子</RI_Pawn_DirectDisciple.label>
+  
+  <!-- EN: Inner disciple -->
+  <RI_Pawn_InnerDisciple.label>内门弟子</RI_Pawn_InnerDisciple.label>
+  
+  <!-- EN: Outer disciple -->
+  <RI_Pawn_OuterDisciple.label>外门弟子</RI_Pawn_OuterDisciple.label>
+  
+  <!-- EN: Deacon -->
+  <RI_Pawn_SectDeacon.label>执事</RI_Pawn_SectDeacon.label>
+  
+  <!-- EN: Elder -->
+  <RI_Pawn_SectElder.label>宗门长老</RI_Pawn_SectElder.label>
+  
+  <!-- EN: Sect follower -->
+  <RI_Pawn_SectFollower.label>杂役</RI_Pawn_SectFollower.label>
+  
+  <!-- EN: Guard -->
+  <RI_Pawn_SectGuard.label>护法</RI_Pawn_SectGuard.label>
+  
+  <!-- EN: Master -->
+  <RI_Pawn_SectMaster.label>掌门</RI_Pawn_SectMaster.label>
+  
+</LanguageData>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Blazing sparrow -->
+  <RI_Ab_Fire_FireBall.label>炽飞雀</RI_Ab_Fire_FireBall.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Core-consummation rank of the Fire-element Path\n\n</color>Qi cost: 30\n\nConsume one layer of Life Fire to unleash three Blazing Sparrows.\n\nUsing one’s own Life Fire as the source, combined with precise spiritual energy control, the conjured flames are shaped into several fire sparrows and then released.\n\nThis technique serves as proof of one's mastery over fire manipulation, making it more of a display of skill than a purely practical ability. -->
+  <RI_Ab_Fire_FireBall.description>灵气消耗：30\n\n消耗一层心炎，射出三只炽飞雀。\n\n以自身命火作为火源，再辅以精细的灵气操控，将制造出的火焰捏为几只飞雀后射出。\n\n这种功法证明了自身对控火之术的掌握更加得心应手，属于炫技的产物。</RI_Ab_Fire_FireBall.description>
+  <!-- EN: Need one Life fire -->
+  <RI_Ab_Fire_FireBall.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要一层心炎</RI_Ab_Fire_FireBall.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Heart flame -->
+  <RI_Ability_Fire_BurningSoul.label>心炎</RI_Ability_Fire_BurningSoul.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Core-formation rank of the Fire-element Path\n\n</color>Qi cost: 50\n\nAdd six layers of Life Fire.\n\nHeart Flame is a secret technique of the Fire method. Only those who pass this trial can continue their cultivation. Heart Flame operates through a special method of spiritual energy, starting from the heart and stirring one’s emotions, causing agitation. However, this stimulation also enhances combat abilities.\n\nIn addition, Heart Flame will create five Life Fires on the body, a product combining spiritual energy and emotions. Future cultivation methods will require consuming Life Fire to fuel their power. -->
+  <RI_Ability_Fire_BurningSoul.description>灵气消耗：6\n\n提供六层心炎。\n\n心炎是火行法门的秘法，跨过此关者，方才能继续修炼。心炎是以特殊的灵气运行方式，自心脏开始，拨动修炼者的情绪，令人变得心浮气躁，但同时，这种刺激也会带来战斗能力的提升。\n\n心炎会在修炼者的心中制造出五团命火，往后修行的功法，都需要消耗命火来催动。</RI_Ability_Fire_BurningSoul.description>
+  
+  <!-- EN: Burn off -->
+  <RI_Ability_Fire_Impact.label>焚绝</RI_Ability_Fire_Impact.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Core-consummation rank of the Fire-element Path\n\n</color>Qi cost: 60\n\nConsume one layer of Life Fire to unleash a flash explosion centered on oneself.\n\nBurn off is a unique skill that consumes one’s own Life Fire to trigger a flash explosion.\n\nThe cultivation process of this technique is rather dangerous and may easily cause self-inflicted harm. However, once mastered, it serves as a vital trump card for survival. -->
+  <RI_Ability_Fire_Impact.description>灵气消耗：60\n\n消耗一层心炎，以自身为中心释放闪爆。\n\n焚决是一种特殊的法术，消耗自身命火，引发一次闪爆。\n\n这种功法修炼过程较为危险，容易伤到自身，不过学成之后，将拥有一张保命的底牌。</RI_Ability_Fire_Impact.description>
+  <!-- EN: Need one Life fire -->
+  <RI_Ability_Fire_Impact.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要一层心炎</RI_Ability_Fire_Impact.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Flame teleport -->
+  <RI_Ability_Fire_Jump.label>追焰</RI_Ability_Fire_Jump.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Primordial-spirit maturity rank of the Fire-element Path\n\n</color>Qi cost: 50\n\nConsume one layer of Life Fire to teleport flames within the selected range.\n\nFlame teleport is said to be the only technique mastered by the founder of Fire method, and it is a top-tier teleportation art.\n\nThe cultivation of this technique is incredibly tedious, requiring the practitioner to focus on the flames for long periods, entering a state of self-forgetfulness. It also requires learning how to ignite one’s own life force, merging fire and life as one.\n\nOnce mastered, the practitioner can transform their physical body completely into a ball of fire, seamlessly traversing between flames within their line of sight, with extraordinary agility. -->
+  <RI_Ability_Fire_Jump.description>灵气消耗：50\n\n消耗一层心炎，选中范围内的火焰进行传送。\n\n追焰据说是火行的开创者擅长的唯一功法，是一门顶级的遁术。\n\n这种功法的修行极其枯燥，需要修炼者长时间盯着火焰，进入忘我境界，同时还需要学习如何点燃自身性命，人火合一。\n\n修成之后，可以把自身完全化为一团火，穿遁于视野可及的火焰之间，灵动非凡。</RI_Ability_Fire_Jump.description>
+  <!-- EN: Need one Life fire -->
+  <RI_Ability_Fire_Jump.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要一层心炎</RI_Ability_Fire_Jump.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Qianyang flame field -->
+  <RI_Ability_Fire_Ring.label>乾阳焱火诀</RI_Ability_Fire_Ring.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Primordial-spirit combine rank of the Fire-element Path\n\n</color>Qi cost: 350\n\nConsume one layer of Life Fire to create a domain centered on oneself, where any living being within the domain will be burned by Life Fire.\n\nQianyang Blazing Fire, the ultimate goal of all Fire cultivators. Mastering this technique allows one to ignite their own Life Fire and create a domain of Life Fire.\n\nWithin this domain, all living beings except the practitioner will have their Life Fire ignited, causing them to suffer from the flames burning them from the inside out. -->
+  <RI_Ability_Fire_Ring.description>灵气消耗：350\n\n消耗三层心炎，以自身为中心制造一个领域，领域内任何生物都会受到命火的焚烧。\n\n乾阳焱火，所有火行修炼者的终极目标，修得这种功法，将可以点燃自身命火，创造一片命火领域。\n\n在领域内，所有除自己以外的任何生命体，命火都会被一起点燃，从而受到自内而外的命火焚烧。</RI_Ability_Fire_Ring.description>
+  <!-- EN: Need three Life fire -->
+  <RI_Ability_Fire_Ring.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要三层心炎</RI_Ability_Fire_Ring.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Majestic flame -->
+  <RI_Ability_Fire_Shield.label>烈日炎威</RI_Ability_Fire_Shield.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Spirit-constraint rank of the Fire-element Path\n\n</color>Qi cost: 150\n\nConsume one layer of Life Fire to enhance one’s combat power.\n\nWhen a Fire cultivator has fully mastered the manipulation of flames, they can use it to strengthen themselves, boosting their combat capabilities. -->
+  <RI_Ability_Fire_Shield.description>灵气消耗：150\n\n消耗一层心炎，加强自身战斗力。\n\n当火行修炼者完全掌控了对火焰的变化，便可以将其用于自身，提高作战能力。</RI_Ability_Fire_Shield.description>
+  <!-- EN: Need one Life fire -->
+  <RI_Ability_Fire_Shield.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要一层心炎</RI_Ability_Fire_Shield.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Flame breath -->
+  <RI_Ability_Fire_Spew.label>吹火</RI_Ability_Fire_Spew.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Core-coagulation rank of the Fire-element Path\n\n</color>Qi cost: 30\n\nConsume one layer of Life Fire to unleash flames.\n\nUsing one’s own Life Fire as the source and Qi as the fuel, a great burst of flames is expelled from the mouth. -->
+  <RI_Ability_Fire_Spew.description>灵气消耗：25\n\n消耗一层心炎，喷吐火焰。\n\n以自身命火为火源，以灵气为燃料，自口中喷吐出大团火焰。</RI_Ability_Fire_Spew.description>
+  <!-- EN: Need one Life fire -->
+  <RI_Ability_Fire_Spew.comps.CompAbilityEffect_HediffAsEnergy.disableReason>需要一层心炎</RI_Ability_Fire_Spew.comps.CompAbilityEffect_HediffAsEnergy.disableReason>
+  
+  <!-- EN: Fire element cultivation -->
+  <RI_Ability_FireCultivation.label>离火</RI_Ability_FireCultivation.label>
+  <!-- EN: <color=#FF5832>This technique is learned by the Noviciate rank of the Fire-element Path\n\n</color>Spiritual energy acquisition efficiency +40%.\n\nThe fire rises, Fire element cultivation is the foundational method of fire cultivation. It can slightly enhance one’s five senses. -->
+  <RI_Ability_FireCultivation.description>&lt;color=#FF6633>此功法为 火行法门 凝气境界 所学\n\n&lt;/color>灵气获取效率+40%。\n\n火曰炎上，离火为火行基础修炼之法，可以略微提高自身的五感。</RI_Ability_FireCultivation.description>
+  
+</LanguageData>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--新增两个职位-->
+
+	<!--太上长老-->
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>RI_IdeoRole_GrandElder</defName>
+		<label>Grand elder</label>
+		<description>A highly important position within the sect, responsible for the education and guidance of disciples from other sects, possessing a unique meditation technique.</description>
+		<iconPath>UI/Roles/RI_IdeoRole_GrandElder</iconPath>
+		<nameMaker>NamerRoleShooter</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Intellectual>7</Intellectual>
+				</skills>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Intellectual</li>
+		</roleRequiredWorkTags>
+		<roleTags>
+			<li>RI_IdeoRole_GrandElder</li>
+		</roleTags>
+		<requiredMemes>
+			<li>RI_Meme_FrankAndRighteous</li>
+			<li>RI_Meme_EvilWays</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>ResearchSpeed</statDef>
+				<modifier>0.5</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>HackingSpeed</statDef>
+				<modifier>0.5</modifier>
+			</li>
+		</roleEffects>
+		<!--给予的能力-->
+		<grantedAbilities>
+			<li>RI_Ability_PracticeArea</li>
+			<li>WorkDrive</li>
+			<li>ResearchCommand</li>
+		</grantedAbilities>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleDisabledWorkTags>
+			<li>Mining</li>
+			<li>Constructing</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>RI_Apparel_FlonneCrown</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+	</PreceptDef>
+
+	<!--首席护法-->
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>RI_IdeoRole_ChiefGuard</defName>
+		<label>Chief guard</label>
+		<description>A specialized sect position dedicated to safeguarding the sect. Held by the most skilled combatant, it unlocks both ranged and melee abilities.</description>
+		<iconPath>UI/Roles/RI_IdeoRole_ChiefGuard</iconPath>
+		<nameMaker>NamerRoleBrawler</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Melee>7</Melee>
+				</skills>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Violent</li>
+		</roleRequiredWorkTags>
+		<roleTags>
+			<li>MeleeSpecialist</li>
+		</roleTags>
+		<requiredMemes>
+			<li>RI_Meme_FrankAndRighteous</li>
+			<li>RI_Meme_EvilWays</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>MeleeHitChance</statDef>
+				<modifier>5</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>MeleeDodgeChance</statDef>
+				<modifier>5</modifier>
+			</li>
+		</roleEffects>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<!--给予的能力-->
+		<grantedAbilities>
+			<li>BerserkTrance</li>
+			<li>MarksmanCommand</li>
+			<li>CombatCommand</li>
+		</grantedAbilities>
+		<!--无法工作-->
+		<roleDisabledWorkTags>
+			<li>ManualDumb</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Constructing</li>
+		</roleDisabledWorkTags>
+	</PreceptDef>
+
+</Defs>

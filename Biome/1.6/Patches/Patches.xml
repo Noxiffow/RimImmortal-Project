@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--燃料转化，已废弃-->
+	
+	<!--<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"]</xpath>
+		<value>
+			<li>TWRL_Resource_FairyWood</li>
+		</value>
+	</Operation>-->
+
+</Patch>

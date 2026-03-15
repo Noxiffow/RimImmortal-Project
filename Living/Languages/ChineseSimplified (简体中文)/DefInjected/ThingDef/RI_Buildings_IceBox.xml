@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ice marrow box -->
+  <RI_Building_IceMarrowBox.label>寒髓冰鉴</RI_Building_IceMarrowBox.label>
+  <!-- EN: An intricately crafted metal ice box. Unlike ordinary ice boxes, it absorbs heat from the surrounding environment, lowering room temperature and enabling the creation of cold storage. -->
+  <RI_Building_IceMarrowBox.description>用金属制成的冰鉴，外形精巧。不同于寻常冰鉴，寒髓冰鉴可以吸收外部热量，降低室温，用于制造冷库。</RI_Building_IceMarrowBox.description>
+  
+</LanguageData>

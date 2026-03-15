@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--岩石冲击-->
+	<SoundDef>
+		<defName>RI_Sound_RockShock</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_RockShock</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

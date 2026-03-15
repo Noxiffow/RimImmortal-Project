@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <EffecterDef>
+    <defName>Effecter_WindThunder</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_CameraShakeSingle</subEffecterClass>
+        <cameraShake>0.3</cameraShake>
+        <distanceAttenuationScale>1</distanceAttenuationScale>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>

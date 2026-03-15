@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Orthodox Title — severity 0.0-1.0 maps to realm LV0-LV10.
+         Synced automatically by HediffComp_CultivationTitle.
+         Each stage adds a small consciousness buff reflecting growing mental clarity. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_OrthodoxTitle</defName>
+        <label>orthodox rank</label>
+        <description>The orthodox rank of this cultivator on the path of righteousness.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1</maxSeverity>
+        <defaultLabelColor>(0.6, 0.9, 1.0)</defaultLabelColor>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_CultivationTitle"/>
+        </comps>
+        <stages>
+            <li>
+                <label>Qi Condensation</label>
+            </li>
+            <li>
+                <minSeverity>0.095</minSeverity>
+                <label>Early Foundation</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.01</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.195</minSeverity>
+                <label>Foundation Establishment</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.02</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.295</minSeverity>
+                <label>Core Formation</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.03</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.395</minSeverity>
+                <label>Golden Core</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.04</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.495</minSeverity>
+                <label>Nascent Soul</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.05</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.595</minSeverity>
+                <label>Void Refinement</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.06</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.695</minSeverity>
+                <label>Body Integration</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.07</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.795</minSeverity>
+                <label>Mahayana</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.08</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.895</minSeverity>
+                <label>Tribulation Crossing</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.09</offset></li></capMods>
+            </li>
+            <li>
+                <minSeverity>0.995</minSeverity>
+                <label>True Immortal</label>
+                <capMods><li><capacity>Consciousness</capacity><offset>0.10</offset></li></capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Demonic Title — severity 0.0-1.0 maps to realm LV0-LV10.
+         Each stage adds growing PsychicSensitivity — raw power that cuts both ways. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_DemonicTitle</defName>
+        <label>demonic rank</label>
+        <description>The demonic rank of this cultivator on the path of the demon.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <minSeverity>0</minSeverity>
+        <maxSeverity>1</maxSeverity>
+        <defaultLabelColor>(0.85, 0.1, 0.1)</defaultLabelColor>
+        <comps>
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_CultivationTitle"/>
+        </comps>
+        <stages>
+            <li>
+                <label>Third Rate</label>
+            </li>
+            <li>
+                <minSeverity>0.095</minSeverity>
+                <label>Second Rate</label>
+                <statOffsets><PsychicSensitivity>0.02</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.195</minSeverity>
+                <label>First Rate</label>
+                <statOffsets><PsychicSensitivity>0.04</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.295</minSeverity>
+                <label>Zenith</label>
+                <statOffsets><PsychicSensitivity>0.06</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.395</minSeverity>
+                <label>Supreme Master</label>
+                <statOffsets><PsychicSensitivity>0.08</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.495</minSeverity>
+                <label>Pinnacle</label>
+                <statOffsets><PsychicSensitivity>0.10</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.595</minSeverity>
+                <label>Peak Demon</label>
+                <statOffsets><PsychicSensitivity>0.12</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.695</minSeverity>
+                <label>Advance Demon</label>
+                <statOffsets><PsychicSensitivity>0.14</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.795</minSeverity>
+                <label>Supreme Demon</label>
+                <statOffsets><PsychicSensitivity>0.16</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.895</minSeverity>
+                <label>Ultimate Demon</label>
+                <statOffsets><PsychicSensitivity>0.18</PsychicSensitivity></statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.995</minSeverity>
+                <label>Heavenly Demon</label>
+                <statOffsets><PsychicSensitivity>0.20</PsychicSensitivity></statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

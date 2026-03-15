@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 土行法门 -->
+
+	<!-- 凝气境界——坤土 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EarthCultivation</defName>
+		<label>Earth element cultivation</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Noviciate rank of the Earth-element Path\n\n&lt;/color&gt;Spiritual energy acquisition efficiency +25%.\n\nEarth is associated with cultivation; it is the foundational cultivation method of the Earth element. It can enhance one’s physical resilience and defensive strength.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_EarthCultivation</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.1</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_EarthCultivationHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_BodyTheory_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Cultivation</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 凝气境界——乾元生柱 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EarthSpiritColumn</defName>
+		<label>Earth column</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Foundation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 50\n\nCreates one Earth Column.\n\nThe Earth Column is a technique unique to Earth cultivation. By resonating with the Qi within the ground, it refines and condenses it into an Earth Column, which serves as a medium for channeling other spells.\n\nThe Earth Column can exist indefinitely and is capable of bearing heavy weight. If destroyed by external force, it leaves nothing behind. Most advanced Earth cultivation techniques require an Earth Column as a triggering medium.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_EarthSpiritColumn</iconPath>
+		<!--1小时-->
+		<cooldownTicksRange>2500</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>100</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilitySpawnOnNaturalTerrain">
+				<thingDef>RI_Building_StoneColumn</thingDef>
+				<allowOnBuildings>false</allowOnBuildings>
+				<sendSkipSignal>true</sendSkipSignal>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 化丹境界——石甲护身 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_StoneArmor</defName>
+		<label>Stone armor</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Core-formation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 90\n\nSelects an Earth Column within the target area as a medium and shatters it, causing nearby targets to be enveloped by stone fragments that automatically conform to their bodies, forming Stone Armor.\n\nThe Stone Armor redirects all incoming impact forces into the ground, providing powerful defensive protection for a short time. However, its heavy weight significantly reduces movement speed.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_StoneArmor</iconPath>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>200</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>6.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_EffectRadius>1.5</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-90</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityDetonateColumn">
+				<thingDef>RI_Building_StoneColumn</thingDef>
+				<radius>1.5</radius>
+				<hediff>RI_Hediff_StoneArmorEffect</hediff>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>true</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 结丹境界——岩碎 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_FlyingSand</defName>
+		<label>Rock crushing</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Core-formation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 160\n\nSelects an Earth Column within the target area as a medium and detonates it. Countless shards of stone and grains of sand scatter outward, striking enemies in the area, clinging to their bodies, obscuring their vision, and slowing their movement speed.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_FlyingSand</iconPath>
+		<cooldownTicksRange>2500</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-160</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityDetonateAllColumns">
+				<thingDef>RI_Building_StoneColumn</thingDef>
+				<selectionRadius>14</selectionRadius>
+				<explosionRadius>6.9</explosionRadius>
+				<damage>5</damage>
+				<damageDef>Blunt</damageDef>
+				<armorPenetration>0.2</armorPenetration>
+				<hediff>RI_Hediff_FlyingSand</hediff>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>true</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+					<onlyTargetColonists>false</onlyTargetColonists>
+				</targetingParameters>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 结丹境界——土壁 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EarthWall</defName>
+		<label>Earth wall</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Core-formation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 120\n\nSelects an Earth Column within the target area as a medium and transforms it into a rising Earth wall.\n\nThe Earth wall forms a 5×5 cross-shaped structure, suitable for rapidly constructing fortifications or controlling enemy movement.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_EarthWall</iconPath>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>400</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>21</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-120</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityCreateWall">
+				<targetThingDef>RI_Building_StoneColumn</targetThingDef>
+				<wallThingDef>RI_Building_EarthWall</wallThingDef>
+				<width>5</width>
+				<height>1</height>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 灵丹境界——陷地吞沙 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_SandTrap</defName>
+		<label>Quicksand</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Core-consummation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 240\n\nSelects an Earth column within the target area as a medium and transforms it into a Quicksand trap.\n\nThe Quicksand draws all creatures within its area toward the center, making it extremely dangerous.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_SandTrap</iconPath>
+		<!--4小时冷却-->
+		<cooldownTicksRange>10000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>500</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9999</range>
+			<warmupTime>2.5</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-240</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityTransformToTower">
+				<targetThingDef>RI_Building_StoneColumn</targetThingDef>
+				<towerThingDef>RI_Building_SandTrap</towerThingDef>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--婴后-->
+
+	<!-- 灵丹境界——石塔镇界 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_WorldSealingStoneTower</defName>
+		<label>Stone tower guardian</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Primordial-spirit baby rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 360\n\nSelects an Earth column as a medium and transforms it into a rising stone tower.\n\nThe tower occupies a 2×2 area and provides powerful shields to allied units within its range.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_WorldSealingStoneTower</iconPath>
+		<!--24小时一个-->
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>500</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9999</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-360</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityTransformToTower">
+				<targetThingDef>RI_Building_StoneColumn</targetThingDef>
+				<towerThingDef>RI_Building_WorldSealingStoneTower</towerThingDef>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Earthquake</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 元婴境界——乾坤震地 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Earthquake</defName>
+		<label>Earthquake</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Primordial-spirit maturity rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 420\n\nSelects a Guardian Stone tower as a medium, destroying it to trigger a small-scale earthquake.\n\nThe earthquake deals damage to all matter within the affected area.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_Earthquake</iconPath>
+		<cooldownTicksRange>12000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>600</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9999</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_EffectRadius>17</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-420</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityEarthquake">
+				<thingDef>RI_Building_WorldSealingStoneTower</thingDef>
+				<radius>6.9</radius>
+				<damage>45</damage>
+				<damageDef>Blunt</damageDef>
+				<armorPenetration>0.9</armorPenetration>
+				<explosionSound>RI_Sound_RockShock</explosionSound>
+				<screenShakeFactor>2</screenShakeFactor>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_Earthquake</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 合体境界大招——八荒磐岩 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EarthDomain</defName>
+		<label>Eight expanse domain</label>
+		<description>&lt;color=#C9B954&gt;This technique is learned by the Primordial-spirit maturity rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 480\n\nSelects a Guardian Stone Tower as a medium and transforms it into the Earth Domain.\n\nAll enemies within the domain are afflicted with Petrification.</description>
+		<iconPath>UI/Abilities/EarthElement/RI_Ability_EarthDomain</iconPath>
+		<cooldownTicksRange>14000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>700</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<warmupStartSound>RI_Sound_EnergyPreparationA</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>9999</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>RI_Sound_RockShock</soundCast>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_EffectRadius>21</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-480</rEnergy>
+			</li>
+			<li Class="RI_FiveElements.CompProperties_AbilityEarthDomain">
+				<thingDef>RI_Building_WorldSealingStoneTower</thingDef>
+				<radius>6.9</radius>
+				<hediff>RI_Hediff_EarthDomainEffect</hediff>
+				<stunDuration>300</stunDuration>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>true</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+					<onlyTargetColonists>false</onlyTargetColonists>
+				</targetingParameters>
+			</li>
+			<!--技能准备特效-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Mote_Earth_EarthDomain</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 古修遗迹分布 -->
+	<GenStepDef>
+		<defName>RI_GenStep_AncientCultivatorRuins</defName>
+		<order>450</order>
+		<genStep Class="RI_PeachBlossomLand.GenStep_PlaceItem">
+			<!-- 要散布的粉精物品列表及其权重 -->
+			<itemsToScatter>
+				<li Class="RI_PeachBlossomLand.ThingItem">
+					<def>RI_Building_AncientCultivatorRuinsA</def>
+					<score>10</score>
+					<count>20~30</count>
+					<!-- 金子放置 10-20 个 -->
+				</li>
+				<li Class="RI_PeachBlossomLand.ThingItem">
+					<def>RI_Building_AncientCultivatorLampRuinsA</def>
+					<score>15</score>
+					<count>10~25</count>
+					<!-- 银子放置 50-100 个 -->
+				</li>
+				<!--<li Class="RI_PeachBlossomLand.ThingItem">
+                    <def>Steel</def>
+                    <score>20</score>
+                    <count>25</count> -->
+				<!-- 钢材固定放置 25 个 -->
+				<!--
+                </li>
+                <li Class="RI_PeachBlossomLand.ThingItem">
+                    <def>ComponentIndustrial</def>
+                    <score>10</score>
+                    -->
+				<!-- 没有 count 字段，会使用默认的 1-5 个 -->
+				<!--
+                </li>-->
+				<!--<li Class="RI_PeachBlossomLand.ThingItem" MayRequire="Ludeon.RimWorld.Odyssey">
+                    <def>GravEngine</def>
+                    <score>10</score>
+                    -->
+				<!-- 测试放置建筑 -->
+				<!--
+                </li>-->
+			</itemsToScatter>
+
+			<!-- 物品生成控制参数 -->
+			<stackCountRange>1~3</stackCountRange>
+			<!-- 已废弃：原本用于控制堆叠数量，现在由每个物品的count字段控制 -->
+			<minDistanceBetweenItems>2</minDistanceBetweenItems>
+			<!-- 物品之间的最小距离，防止物品过于密集 -->
+			<maxItemsInRadius>5</maxItemsInRadius>
+			<!-- 在指定半径内最多允许放置的同类物品数量 -->
+			<itemCountCheckRadius>5</itemCountCheckRadius>
+			<!-- 检查同类物品数量时的搜索半径 -->
+			<placementChance>0.8</placementChance>
+			<!-- 物品放置成功率（0-1），用于控制稀有度 -->
+
+			<!-- 基础散布参数 -->
+			<thingDef>Gold</thingDef>
+			<!-- 占位符别动，实际使用itemsToScatter -->
+			<createUsedRect>true</createUsedRect>
+			<!-- 是否创建已使用区域，防止其他生成器在此区域生成内容 -->
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<!-- 是否允许在水域生物群系中生成 -->
+			<minSpacing>3</minSpacing>
+			<!-- 每个散布位置之间的最小间距 -->
+			<extraNoBuildEdgeDist>2</extraNoBuildEdgeDist>
+			<!-- 距离地图边缘的额外禁建距离 -->
+			<!-- 这个控制生成总量 -->
+			<countPer10kCellsRange>11~28</countPer10kCellsRange>
+			<!-- 每10000个地图格子生成的物品数量范围 -->
+			<clearSpaceSize>3</clearSpaceSize>
+			<!-- 在放置物品前清理的区域大小 -->
+			<terrainValidationRadius>2</terrainValidationRadius>
+			<!-- 地形验证的半径范围 -->
+			<terrainValidationDisallowed>
+				<!-- 禁止生成的地形类型列表 -->
+				<li>WaterShallow</li>
+				<!-- 浅水区 -->
+				<li>WaterDeep</li>
+				<!-- 深水区 -->
+				<li>Marsh</li>
+				<!-- 沼泽地 -->
+			</terrainValidationDisallowed>
+
+			<!-- 验证器 - 用于确保物品能被正确放置 -->
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<!-- 验证位置是否可建造 -->
+					<radius>2</radius>
+					<!-- 检查半径 -->
+					<affordance>Light</affordance>
+					<!-- 需要的地基类型：Light=轻型地基 -->
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<!-- 确保附近没有非自然建筑物 -->
+					<radius>2</radius>
+					<!-- 检查半径 -->
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings" />
+				<!-- 避开特殊物品 -->
+			</validators>
+		</genStep>
+	</GenStepDef>
+</Defs>

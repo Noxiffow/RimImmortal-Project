@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Effect of acupuncture -->
+  <RI_AcupunctureHediff.label>针灸术效果</RI_AcupunctureHediff.label>
+  <!-- EN: An ancient medical technique that uses a Qi needle to cut off blood flow from a wound, stopping infection for a while. -->
+  <RI_AcupunctureHediff.description>一种古老的医术，能够用灵气化为针刺入体内阻断血液流出伤口，一段时间内阻止感染。</RI_AcupunctureHediff.description>
+  <!-- EN: ExhaleTheOldAndInhaleTheNew -->
+  <RI_AcupunctureHediff.labelNoun>针灸术效果</RI_AcupunctureHediff.labelNoun>
+  
+  <!-- EN: Asura -->
+  <RI_AsuraHediff.label>修罗</RI_AsuraHediff.label>
+  <!-- EN: Enter Asura state, greatly improve melee combat, most health states, reduce skill cost, almost unstoppable. But when the Asura state disappears, it becomes extremely weak. -->
+  <RI_AsuraHediff.description>进入修罗状态，极大提高近战，大多数健康状态，减少技能消耗，几乎不可阻挡。但是当修罗状态消失，就会变得极度虚弱。</RI_AsuraHediff.description>
+  <RI_AsuraHediff.labelNoun>修罗</RI_AsuraHediff.labelNoun>
+  
+  <!-- EN: Body exercise -->
+  <RI_BodyTheoryHediff.label>养形</RI_BodyTheoryHediff.label>
+  <!-- EN: The unique practice of the Elixirs, through a specific set of movements to improve the body's absorption of Qi, but also to improve the speed of work. -->
+  <RI_BodyTheoryHediff.description>药诀法门独有修炼功法，通过特殊的灵气运行线路，来提高身体对灵气的吸收效果，还能提升治疗能力。</RI_BodyTheoryHediff.description>
+  <RI_BodyTheoryHediff.labelNoun>养形</RI_BodyTheoryHediff.labelNoun>
+  
+  <!-- EN: brain overload -->
+  <RI_BrainOverload.label>大脑过载</RI_BrainOverload.label>
+  <!-- EN: Due to the extremely high energy flowing through the brain, the brain was severely impacted. -->
+  <RI_BrainOverload.description>由于超高的能量注入大脑，现在大脑已经是一团浆糊了。</RI_BrainOverload.description>
+  <!-- EN: brain overload -->
+  <RI_BrainOverload.labelNoun>大脑过载</RI_BrainOverload.labelNoun>
+  
+  <!-- EN: Special breathing -->
+  <RI_ExhaleTheOldAndInhaleTheNew.label>吐故纳新</RI_ExhaleTheOldAndInhaleTheNew.label>
+  <!-- EN: With special breathing method to wake up the meridians of the body, accelerate the operation of Qi, in order to assist the adjustment of breathing, improve the shooting speed. In addition, it has the effect of prolonging life and strengthening physical strength. -->
+  <RI_ExhaleTheOldAndInhaleTheNew.description>以特殊的呼吸法来唤醒身体的经脉，加速催动丹田的灵气运转，以此辅助调整呼吸，提高射击速度。除此之外还有延年益寿增强体力的效果。</RI_ExhaleTheOldAndInhaleTheNew.description>
+  <RI_ExhaleTheOldAndInhaleTheNew.labelNoun>吐故纳新</RI_ExhaleTheOldAndInhaleTheNew.labelNoun>
+  
+  <!-- EN: Injury of joint -->
+  <RI_FJCG.label>关节锁</RI_FJCG.label>
+  <!-- EN: The joint is immobilized, causing excruciating pain. -->
+  <RI_FJCG.description>关节被固定，产生剧痛。</RI_FJCG.description>
+  <RI_FJCG.labelNoun>关节锁</RI_FJCG.labelNoun>
+  
+  <!-- EN: Primordial spirit separation -->
+  <RI_GenShinHediff.label>出元神</RI_GenShinHediff.label>
+  <!-- EN: Primordial spirit have separated and become a separate body. -->
+  <RI_GenShinHediff.description>一道元神已经分离而出，成为修炼者的分身。</RI_GenShinHediff.description>
+  <!-- EN: GSH -->
+  <RI_GenShinHediff.labelNoun>出元神</RI_GenShinHediff.labelNoun>
+  
+  <!-- EN: Smart animal -->
+  <RI_He_SmartAnimal.label>TODO</RI_He_SmartAnimal.label>
+  <!-- EN: This animal is very smart. -->
+  <RI_He_SmartAnimal.description>TODO</RI_He_SmartAnimal.description>
+  
+  <!-- EN: Lotus rebirth -->
+  <RI_Hediff_TreatDomainHediff.label>莲华化生</RI_Hediff_TreatDomainHediff.label>
+  <!-- EN: Using one's own life force as fuel, a vast amount of Qi is released to create a lotus domain where only allies are healed. -->
+  <RI_Hediff_TreatDomainHediff.description>以自身生机为薪柴，释放大量灵气，制造出一片莲华领域，区域内只有友方会被治愈。</RI_Hediff_TreatDomainHediff.description>
+  <RI_Hediff_TreatDomainHediff.descriptionCached>以自身生机为薪柴，释放大量灵气，制造出一片莲华领域，区域内只有友方会被治愈。</RI_Hediff_TreatDomainHediff.descriptionCached>
+  
+  <!-- EN: Lotus healing -->
+  <RI_Hediff_TreatDomainHediff_Buff.label>治愈莲光</RI_Hediff_TreatDomainHediff_Buff.label>
+  <!-- EN: Healing Qi flows into the body, like a gentle spring breeze, greatly enhancing recovery. -->
+  <RI_Hediff_TreatDomainHediff_Buff.description>治愈性的灵气入体，令人如沐春风，恢复能力大大提升。</RI_Hediff_TreatDomainHediff_Buff.description>
+  
+  <!-- EN: Breathing exercise -->
+  <RI_InternalFunctionHediff.label>周天功法</RI_InternalFunctionHediff.label>
+  <!-- EN: Internal pellet unique practice to control the frequency of breathing and fixed movements to adjust the posture, so that the body is in a better state to absorb Qi. -->
+  <RI_InternalFunctionHediff.description>内丹法门独有修炼功法，以控制呼吸的频率和固定的动作来调整体态，令身体处于更好吸收灵气的状态。</RI_InternalFunctionHediff.description>
+  <RI_InternalFunctionHediff.labelNoun>周天功法</RI_InternalFunctionHediff.labelNoun>
+  
+  <!-- EN: Mental rage -->
+  <RI_KY.label>狂意</RI_KY.label>
+  <!-- EN: Fall into rage, melee ability is greatly improved, but will fall into a weak state after the buff ends. -->
+  <RI_KY.description>陷入狂怒中，近战能力大大提高，但buff结束后会陷入虚弱状态。</RI_KY.description>
+  <RI_KY.labelNoun>狂意</RI_KY.labelNoun>
+  
+  <!-- EN: Qi Lantern -->
+  <RI_LG.label>灵光</RI_LG.label>
+  <!-- EN: A lantern of light, condensed from Qi, moves with you, it dispels any darkness. -->
+  <RI_LG.description>一颗以灵气凝结而成的光球，跟随你移动，可以驱散任何黑暗。</RI_LG.description>
+  <!-- EN: LG -->
+  <RI_LG.labelNoun>灵光</RI_LG.labelNoun>
+  
+  <!-- EN: Lotus position -->
+  <RI_LotusPositionHediff.label>禅定坐莲</RI_LotusPositionHediff.label>
+  <!-- EN: The unique cultivation method of the Physical, accelerates the speed of Qi cultivation. -->
+  <RI_LotusPositionHediff.description>炼体法门独有修炼功法，加快灵气修炼速度。</RI_LotusPositionHediff.description>
+  <RI_LotusPositionHediff.labelNoun>禅定坐莲</RI_LotusPositionHediff.labelNoun>
+  
+  <!-- EN: Effect of massage -->
+  <RI_ManipulationHediff.label>推拿术效果</RI_ManipulationHediff.label>
+  <!-- EN: An ancient massage technique that reduces pain, speeds recovery and heals a bandaged wound. -->
+  <RI_ManipulationHediff.description>一种古老的按摩手法，可以减少疼痛，加快恢复速度，治愈一个包扎好的伤口。</RI_ManipulationHediff.description>
+  <RI_ManipulationHediff.labelNoun>推拿术效果</RI_ManipulationHediff.labelNoun>
+  
+  <!-- EN: Meridian damaged -->
+  <RI_MeridianDamage.label>经脉受损</RI_MeridianDamage.label>
+  <!-- EN: Qi is empty, the meridians are damaged, try use skills again may result in death! -->
+  <RI_MeridianDamage.description>灵气已尽，强行运功导致经脉受损，再次运功可能导致死亡！</RI_MeridianDamage.description>
+  <RI_MeridianDamage.labelNoun>经脉受损</RI_MeridianDamage.labelNoun>
+  
+  <!-- EN: Spiritual root removed -->
+  <RI_NoRoot.label>灵芽丧失</RI_NoRoot.label>
+  <!-- EN: The loss of the spiritual root caused a massive brain shock, falling into near-death. -->
+  <RI_NoRoot.description>失去灵芽带来巨大的大脑冲击，陷入濒死。</RI_NoRoot.description>
+  <RI_NoRoot.labelNoun>灵芽丧失</RI_NoRoot.labelNoun>
+  
+  <!-- EN: Samatha -->
+  <RI_SamathaHediff.label>止观</RI_SamathaHediff.label>
+  <!-- EN: Through the special breathing method to stimulate the core, the Qi sent to the whole body and brain, so that they calm down, cut off the sensibility of emotions, increase the shooting accuracy. At the same time, it can improve the efficiency of the use of Qi. -->
+  <RI_SamathaHediff.description>通过特殊的呼吸法催动丹田，将灵气送往全身和大脑，使得自己平静下来，切断对情绪的感受力，增加射击精度。与此同时还能提高灵气的使用效率。</RI_SamathaHediff.description>
+  <RI_SamathaHediff.labelNoun>止观</RI_SamathaHediff.labelNoun>
+  
+  <!-- EN: Marvellously speed -->
+  <RI_ShadowWithMove.label>神速</RI_ShadowWithMove.label>
+  <!-- EN: Marvellously speed. -->
+  <RI_ShadowWithMove.description>神速</RI_ShadowWithMove.description>
+  <!-- EN: ShadowWithMove -->
+  <RI_ShadowWithMove.labelNoun>神速</RI_ShadowWithMove.labelNoun>
+  
+  <!-- EN: Spirit pulse surging -->
+  <RI_SpiritualPulseSurging.label>灵脉翻涌</RI_SpiritualPulseSurging.label>
+  <!-- EN: Temporarily reduces pain, bandages all wounds, and continuously restores Qi at 1 point per second, improving shooting accuracy. -->
+  <RI_SpiritualPulseSurging.description>暂时减少疼痛,给所有伤口包扎，持续恢复灵气，每秒1点，提高射击准确度。</RI_SpiritualPulseSurging.description>
+  <RI_SpiritualPulseSurging.labelNoun>灵脉翻涌</RI_SpiritualPulseSurging.labelNoun>
+  
+  <!-- EN: Stretching exercise -->
+  <RI_StretchingExerciseHediff.label>撑筋拔骨</RI_StretchingExerciseHediff.label>
+  <!-- EN: Briefly improves recovery and increases melee hit rate. -->
+  <RI_StretchingExerciseHediff.description>短暂提高回复能力，提高近战命中率。</RI_StretchingExerciseHediff.description>
+  <RI_StretchingExerciseHediff.labelNoun>撑筋拔骨</RI_StretchingExerciseHediff.labelNoun>
+  
+  <!-- EN: Meridian extreme weakness -->
+  <RI_VeryXR.label>极度虚弱</RI_VeryXR.label>
+  <!-- EN: A state of extreme weakness, with significant loss of consciousness and ability to operate. -->
+  <RI_VeryXR.description>极度虚弱状态，减少大量意识和操作能力。</RI_VeryXR.description>
+  <!-- EN: VeryXR -->
+  <RI_VeryXR.labelNoun>极度虚弱</RI_VeryXR.labelNoun>
+  
+  <!-- EN: Meridian weakness -->
+  <RI_XR.label>虚弱</RI_XR.label>
+  <!-- EN: Fall into a state of weakness, reduced consciousness and ability to operate. -->
+  <RI_XR.description>陷入虚弱状态，减少意识和操作能力。</RI_XR.description>
+  <RI_XR.labelNoun>虚弱</RI_XR.labelNoun>
+  
+  <!-- EN: Qi Armor -->
+  <ThunderShield_Weak.label>灵气护体</ThunderShield_Weak.label>
+  <!-- EN: A thin layer of Qi armor covers the whole body without affecting movement. -->
+  <ThunderShield_Weak.description>一层薄薄的灵气软铠覆盖全身，不会影响行动。</ThunderShield_Weak.description>
+  <!-- EN: ThunderShield_Weak -->
+  <ThunderShield_Weak.labelNoun>灵气护体</ThunderShield_Weak.labelNoun>
+  
+</LanguageData>

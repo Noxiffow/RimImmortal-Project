@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Iron ball -->
+  <RI_Arrow_IronThrowingBall_Ability.label>铁球</RI_Arrow_IronThrowingBall_Ability.label>
+  <!-- EN: {0} has been shot to death. -->
+  <RI_Arrow_IronThrowingBall_Ability.deathMessage>{0}被铁球砸死了。</RI_Arrow_IronThrowingBall_Ability.deathMessage>
+  
+</LanguageData>

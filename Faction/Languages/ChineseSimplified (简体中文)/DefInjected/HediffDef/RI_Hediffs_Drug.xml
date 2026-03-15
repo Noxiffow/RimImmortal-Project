@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Effect of condensed spiritual liquid -->
+  <RI_Hediff_CondensedSpiritualLiquidHediff.label>浓缩灵液效果</RI_Hediff_CondensedSpiritualLiquidHediff.label>
+  <!-- EN: Directly restore some Qi and automatically restore Qi over a period of time. -->
+  <RI_Hediff_CondensedSpiritualLiquidHediff.description>直接恢复一些灵气，并在一段时间内自动恢复灵气。</RI_Hediff_CondensedSpiritualLiquidHediff.description>
+  
+  <!-- EN: 删除法门 -->
+  <RI_Hediff_DeleteIA.label>删除法门</RI_Hediff_DeleteIA.label>
+  <!-- EN: 删除法门 -->
+  <RI_Hediff_DeleteIA.description>删除法门</RI_Hediff_DeleteIA.description>
+  
+  <!-- EN: Effect of LingLong moonlight elixir -->
+  <RI_Hediff_LingLongMoonlightElixir.label>玲珑月辉丹效果</RI_Hediff_LingLongMoonlightElixir.label>
+  <!-- EN: LingLong Fruit is rich in the qi of heaven and earth, allowing the body to harmonize with nature and greatly increasing the chance of a successful upgrade. -->
+  <RI_Hediff_LingLongMoonlightElixir.description>玲珑珍果富含天地灵气，可让肉身融于自然，大大提升突破成功率。</RI_Hediff_LingLongMoonlightElixir.description>
+  
+  <!-- EN: LingLong regeneration -->
+  <RI_Hediff_LingLongRegeneration.label>玲珑疗愈</RI_Hediff_LingLongRegeneration.label>
+  <!-- EN: The spiritual energy of Linglong fruit condenses into a nourishing essence, seeping into the body to mend flesh and heal wounds. -->
+  <RI_Hediff_LingLongRegeneration.description>玲珑珍果的天地灵气化为液体，滋润肉身，修复伤口。</RI_Hediff_LingLongRegeneration.description>
+  
+  <!-- EN: Effect of QiLin restoration pill -->
+  <RI_Hediff_QiLinRestorationPill.label>麒麟丸效果</RI_Hediff_QiLinRestorationPill.label>
+  <!-- EN: Heals a scar and grants long-lasting regenerative ability. -->
+  <RI_Hediff_QiLinRestorationPill.description>在15天内治疗一个伤疤并提升些许自愈能力。</RI_Hediff_QiLinRestorationPill.description>
+  
+</LanguageData>

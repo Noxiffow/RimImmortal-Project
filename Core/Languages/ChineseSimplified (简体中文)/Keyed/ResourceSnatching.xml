@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- 资源抢夺 -->
+
+	<!-- EN: Cultivators from various sects arrived! -->
+  <RI_ResourceSnatching_Label>各派修士抵达</RI_ResourceSnatching_Label>
+	<!-- EN: Upon seeing the treasure manifest, the cultivators watching from all sides rushed forward to fight for it, and a chaotic battle ensued! -->
+  <RI_ResourceSnatching_Desc>在四周观战的各派修士，看见宝物出世，一齐上来争抢，打成一团！</RI_ResourceSnatching_Desc>
+
+</LanguageData>

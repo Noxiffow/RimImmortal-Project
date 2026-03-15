@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="RI_addedPartAdvanced" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<isBad>false</isBad>
+		<defaultLabelColor>(100,190,110)</defaultLabelColor>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+	</HediffDef>
+
+	<HediffDef Name="RI_addedPartAdvancedImplant" Abstract="True">
+		<hediffClass>Hediff_Implant</hediffClass>
+		<isBad>false</isBad>
+		<defaultLabelColor>(100,190,110)</defaultLabelColor>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+	</HediffDef>
+
+	<!-- 翠玉系列 -->
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_JadeFakeArm</defName>
+		<label>Jade hand</label>
+		<labelNoun>Jade hand</labelNoun>
+		<description>A prosthetic hand made of jade.</description>
+		<spawnThingOnRemoved>RI_Prostheses_JadeFakeArm</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>0.9</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_JadeFakeHand</defName>
+		<label>Jade arm</label>
+		<labelNoun>Jade arm</labelNoun>
+		<description>A prosthetic arm made of jade.</description>
+		<spawnThingOnRemoved>RI_Prostheses_JadeFakeHand</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeHand</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_JadeFakeFoot</defName>
+		<label>Jade foot</label>
+		<labelNoun>Jade foot</labelNoun>
+		<description>A prosthetic foot made of jade.</description>
+		<spawnThingOnRemoved>RI_Prostheses_JadeFakeFoot</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeFoot</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvancedImplant">
+		<defName>RI_Hediff_JadeFakeEye</defName>
+		<label>Jade eye</label>
+		<labelNoun>Jade eye</labelNoun>
+		<description>A prosthetic eye made of jade.</description>
+		<spawnThingOnRemoved>RI_Prostheses_JadeFakeEye</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_JadeFakeEye</ThingDef>
+		</descriptionHyperlinks>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<addedPartProps>
+			<partEfficiency>0.8</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--庚钢系列-->
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_BlackSteelArm</defName>
+		<label>Black steel arm</label>
+		<labelNoun>Black steel arm</labelNoun>
+		<description>A prosthetic arm made of black steel.</description>
+		<spawnThingOnRemoved>RI_Prostheses_BlackSteelArm</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelArm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.8</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.25</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>25</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_BlackSteelLeg</defName>
+		<label>Black steel leg</label>
+		<labelNoun>Black steel leg</labelNoun>
+		<description>A prosthetic arm made of black steel.</description>
+		<spawnThingOnRemoved>RI_Prostheses_BlackSteelLeg</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelLeg</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.25</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.8</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_BlackSteelFoot</defName>
+		<label>Black steel foot</label>
+		<labelNoun>Black steel foot</labelNoun>
+		<description>A prosthetic arm made of black steel.</description>
+		<spawnThingOnRemoved>RI_Prostheses_BlackSteelFoot</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelFoot</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.2</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.8</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvanced">
+		<defName>RI_Hediff_BlackSteelHand</defName>
+		<label>Black steel hand</label>
+		<labelNoun>Black steel hand</labelNoun>
+		<description>A prosthetic arm made of black steel.</description>
+		<spawnThingOnRemoved>RI_Prostheses_BlackSteelHand</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelHand</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.8</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.2</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>22</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_addedPartAdvancedImplant">
+		<defName>RI_Hediff_BlackSteelSpine</defName>
+		<label>Black steel spine</label>
+		<labelNoun>Black steel spine</labelNoun>
+		<description>A prosthetic arm made of black steel.</description>
+		<spawnThingOnRemoved>RI_Prostheses_BlackSteelSpine</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Prostheses_BlackSteelSpine</ThingDef>
+		</descriptionHyperlinks>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.5</GI_EnergyGainEff>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<MeleeHitChance>5</MeleeHitChance>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>BadBack</li>
+				</makeImmuneTo>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>2</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--五行系列-->
+
+	<!--胃-->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RI_Hediff_EarthBionicStomach</defName>
+		<label>Bionic stomach-Earth</label>
+		<labelNoun>Bionic stomach-Earth</labelNoun>
+		<description>An installed prosthetic heart. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</description>
+		<spawnThingOnRemoved>RI_Prostheses_EarthBionicStomach</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.3</GI_EnergyGainEff>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>GutWorms</li>
+				</makeImmuneTo>
+				<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!--心-->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RI_Hediff_FireBionicHeart</defName>
+		<label>Bionic heart-Fire</label>
+		<labelNoun>Bionic heart-Fire</labelNoun>
+		<description>An installed prosthetic heart. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</description>
+		<spawnThingOnRemoved>RI_Prostheses_FireBionicHeart</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>1.5</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<GI_EnergyGainEff>0.25</GI_EnergyGainEff>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>HeartAttack</li>
+					<li>HeartArteryBlockage</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RI_Hediff_WaterBionicKidney</defName>
+		<label>Bionic kidney-Water</label>
+		<labelNoun>Bionic kidney-Water</labelNoun>
+		<description>This ingenious bionic kidney can replace the original kidney and enhance the filtration system.</description>
+		<spawnThingOnRemoved>RI_Prostheses_WaterBionicKidney</spawnThingOnRemoved>
+		<!--<stages>
+			<li>
+				<makeImmuneTo>
+					<li>ToxicBuildup</li>
+				</makeImmuneTo>
+			</li>
+		</stages>-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RI_Hediff_WoodBionicLiver</defName>
+		<label>Bionic liver-Wood</label>
+		<labelNoun>Bionic liver-Wood</labelNoun>
+		<description>This exquisite bionic liver built by a clever machine can expel toxins from the body faster, wash the marrow and forge the body, and enhance immunity.</description>
+		<spawnThingOnRemoved>RI_Prostheses_WoodBionicLiver</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<makeImmuneTo>
+					<li>ToxicBuildup</li>
+				</makeImmuneTo>
+				<statOffsets>
+					<ToxicResistance>0.7</ToxicResistance>
+					<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>RI_Hediff_MetalBionicLung</defName>
+		<label>Bionic lung-Metal</label>
+		<labelNoun>Bionic lung-Metal</labelNoun>
+		<description>This exquisitely crafted artificial lung, created with divine skill and precision, can accommodate the spirit of heaven and earth, one breath and one breath, heaven and earth are connected.</description>
+		<spawnThingOnRemoved>RI_Prostheses_MetalBionicLung</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.15</GI_EnergyGainEff>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>Asthma</li>
+					<li>LungRotExposure</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

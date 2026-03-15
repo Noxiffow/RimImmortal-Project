@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RI_Talisman_Base" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<generateCommonality>0</generateCommonality>
+		<thingCategories>
+			<li>RI_Category_Talisman</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>5</Beauty>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<!--<tickerType>Normal</tickerType>-->
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<tags>
+				<li>RI_SuperApparel</li>
+			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>RI_Layer_Talisman</li>
+			</layers>
+		</apparel>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<tradeTags>
+			<li>RI_TalismanTag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ApparelLayerDef>
+		<defName>RI_Layer_Talisman</defName>
+		<label>Talisman</label>
+		<drawOrder>301</drawOrder>
+	</ApparelLayerDef>
+
+	<ApparelLayerDef>
+		<defName>RI_TODO_Shield</defName>
+		<label>Shield</label>
+		<drawOrder>302</drawOrder>
+	</ApparelLayerDef>
+
+	<!--==============三品法宝==============-->
+
+	<!--玉如意-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_JadeRuyi</defName>
+		<label>Jade Ruyi【Third-rate】</label>
+		<description>【Third-rate】Talisman.\n\nJade production of Ruyi. Wearing it on the body can provide some healing effects, but the Ruyi itself is more delicate and needs to be avoided.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_JadeRuyi</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>240</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_JadeRuyi</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--铜钱吊坠-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_CoinsPendant</defName>
+		<label>Coin pendant【Third-rate】</label>
+		<description>【Third-rate】Talisman.\n\nA red rope pendant with coins. The design source of the coin pendant is heard to be an ancient Taoist school handed down the talisman. They imprinted a kind of body protection exercises and spiritual stones called golden mantra on specially treated copper coins, so that ordinary people wearing copper coins can temporarily use a small part of the power of the body protection gold. After many years of iteration and upgrading, coin pendants have become synonymous with cheap shields, and are loved by many free-cultivators.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_CoinsPendant</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>250</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>3</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+			<li Class="RI_Talisman_Item.CompProperties_ExOneHediff">
+				<hediffDef>RI_ShieldHediff_CoinShield</hediffDef>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_RI_Talisman_GetHediff</verbClass>
+				<label>Golden shield</label>
+				<commandIcon>Ability/Talisman/RI_Talisman_CoinsPendant_Shield</commandIcon>
+				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>1</range>
+				<burstShotCount>1</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--象牙项链-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_TuskPendant</defName>
+		<label>Tusk pendant【Third-rate】</label>
+		<description>【Third-rate】Talisman.\n\nAn tusk pendant with copper hoops and covered with finely carved ornamentations made a slight whimper as the wind blew through its crevices. This pendant allows the wearer to move faster than normal.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_TuskPendant</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_TuskPendant</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--毒铃-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_ToxicBell</defName>
+		<label>Toxic bell【Third-rate】</label>
+		<description>【Third-rate】Talisman.\n\nAn antique, emitting green light of the bell, shaking the bell can feel, as if from the eyes of the bell spy. This bell can emit a special Qi, a hundred poison can not be penetrated.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_ToxicBell</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_ToxicBell</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--檀木令牌-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_SandalwoodToken</defName>
+		<label>Wooden token【Third-rate】</label>
+		<description>【Third-rate】Talisman.\n\nThe antique bell emits a green light and, when shaken, gives the impression of being spied upon by its eyes. It exudes a unique Qi that is impervious to even the deadliest poisons.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_SandalwoodToken</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_SandalwoodToken</hediff>
+				<part>Head</part>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<!--==============二品法宝==============-->
+
+	<!--储物袋-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_StorageBag</defName>
+		<label>Storage bag【Second-rate】</label>
+		<description>【Second-rate】Talisman.\n\nAlthough unverifiable by reliable sources, this enchanted tool is widely recognized for its exceptional utility. Its remarkable capacity to hold much more than its own volume attracts numerous practitioners seeking its benefits. Contrary to popular belief, any storage device functions not as an interdimensional conduit but rather as a key unlocking access to specific repositories. Each container corresponds uniquely with an individual repository situated within an eternal spatial realm. According to legend, there exists a microcosm fashioned by celestial beings specifically designed for storing personal effects—referred colloquially as 'the black box world'. Rumors suggest that this enigmatic realm may even possess something akin to managerial oversight over these repositories; should complications arise due to commingling within them necessitating intervention or clearance procedures—individuals have recourse through destruction of their magical receptacle followed by complete evacuation of their repository contents if required—all powered endlessly via what's purportedly sourced from wormhole cores within 'the black box world'."</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_StorageBag</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<RI_MassCarryCapacity>30</RI_MassCarryCapacity>
+			<!--30Kg偏移值-->
+			<CarryingCapacity>150</CarryingCapacity>
+		</equippedStatOffsets>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>550</MarketValue>
+			<MaxHitPoints>750</MaxHitPoints>
+		</statBases>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--聚石塔-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_PolyStoneTower</defName>
+		<label>Poly stone tower【Second-rate】</label>
+		<description>【Second-rate】Talisman.\n\nA heavy stone tower, unattractive, even some cracks above.When the wearer holds the stone tower tightly, a powerful shock wave is unleashed.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_PolyStoneTower</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>7</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>1.2</Mass>
+			<MarketValue>650</MarketValue>
+			<MaxHitPoints>700</MaxHitPoints>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_RI_Talisman_PolyStoneTower</verbClass>
+				<label>Flying sand and stone</label>
+				<!--飞沙走石-->
+				<commandIcon>Ability/Talisman/RI_Talisman_CoinsPendant_Shield</commandIcon>
+				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>1</range>
+				<burstShotCount>5</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+	<DamageDef>
+		<defName>RI_Talisman_PolyStoneTower_Damage</defName>
+		<label>聚石</label>
+		<workerClass>DamageWorker_AddGlobal</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0}被击碎了.</deathMessage>
+		<hediff>RI_Talisman_PolyStoneTower_Hediff</hediff>
+		<!--<armorCategory>Sharp</armorCategory>-->
+		<makesBlood>false</makesBlood>
+		<isRanged>true</isRanged>
+	</DamageDef>
+
+	<!--风戒-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_WindRing</defName>
+		<label>Wind ring【Second-rate】</label>
+		<description>【Second-rate】Talisman.\n\nA ring of silver, engraved with stately lines, and set with a red stone in the middle. This small ring can emit a powerful wind, only the wearer will not be affected.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_WindRing</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>450</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>9</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<defaultCooldownTime>1</defaultCooldownTime>
+				<verbClass>RI_Starch.RI_Verbs.Verb_WindRing</verbClass>
+				<commandIcon>Ability/Talisman/RI_Talisman_WindRing</commandIcon>
+				<label>Silver ring</label>
+				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>12</range>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RI_WindRing_Tornado</defName>
+		<label>ring wind</label>
+		<thingClass>RI_Starch.RI_ThingClass.RI_Tornado_WindRing</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+		<alwaysFlee>true</alwaysFlee>
+		<comps>
+			<li Class="CompProperties_WindSource" />
+		</comps>
+	</ThingDef>
+
+	<SoundDef>
+		<defName>RI_Tornado_WindRing</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Misc/Tornado/TornadoLoop</clipPath>
+					</li>
+				</grains>
+				<volumeRange>8~10</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+				<distRange>
+					<min>40</min>
+					<max>80</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<DamageDef>
+		<defName>RI_Talisman_WindRing_Damage</defName>
+		<label>狂风</label>
+		<workerClass>DamageWorker_AddGlobal</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0}被撕裂了.</deathMessage>
+		<hediff>RI_Talisman_WindRing_Hediff</hediff>
+		<!--<armorCategory>Sharp</armorCategory>-->
+		<makesBlood>false</makesBlood>
+		<isRanged>true</isRanged>
+	</DamageDef>
+
+	<!--纳火珠-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_Firefighter</defName>
+		<label>Fire pearl【Second-rate】</label>
+		<description>【Second-rate】Talisman.\n\nA fiery red pearl, look carefully can find a flame pattern in its beating, radiating warmth. The pearl makes the wearer immune to the flame.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_Firefighter</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_Firefighter</hediff>
+				<!--<part>Head</part>-->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--青囊葫芦-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_Greengourd</defName>
+		<label>Medical gourd【Second-rate】</label>
+		<description>【Second-rate】Talisman.\n\nA smooth jade green gourd, with a light medicinal fragrance. The gourd can enhance the wearer's medical skills.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_GreenCucurbit</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Talisman_GreenGourd</hediff>
+				<!--<part>Head</part>-->
+			</li>
+		</comps>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<RI_MassCarryCapacity>3</RI_MassCarryCapacity>
+			<!--3Kg偏移值-->
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<!--<li>RewardStandardQualitySuper</li>-->
+			<li>RewardStandardLowFreq</li>
+			<!--罕见任务奖励-->
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--一品-紫金葫芦-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_PurpleGoldenGourd</defName>
+		<label>Purple golden gourd【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA gourd made of metal cast and tempered, carved with strange patterns, it feels like the eye is sucked into it. It is said to be a weapon invented by a celestial being to use against his own kind. There are also rumors that someone once found a long-buried purple and gold gourd in some ancient ruins, and released the ancient people held in it.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_PurpleGoldenCucurbit</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2.3</Mass>
+			<MarketValue>3250</MarketValue>
+			<MaxHitPoints>1850</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<RI_MassCarryCapacity>10</RI_MassCarryCapacity>
+			<!--3Kg偏移值-->
+		</equippedStatOffsets>
+		<comps>
+			<li Class="RI_Talisman_Item.CompProperties_RIEatMan">
+				<Ri_EatManIcon>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</Ri_EatManIcon><!--这个就是吸入的贴图-->
+				<Ri_OutEatManIcon>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</Ri_OutEatManIcon>
+			</li><!--提供一个翻译Keyed:<RI_NoSeePawn>无法吸入装备者不可见的目标</RI_NoSeePawn>-->
+		</comps>
+	</ThingDef>
+
+	<!--金钵-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_GoldenBowl</defName>
+		<label>Golden bowl【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA bowl made of pure gold covered with pattern and fine engraving, gently tapped, you can hear the sound of waves coming from the bowl. The shock wave produced by the knock of the gold bowl can hold people in place, which is a very powerful talisman.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_GoldenBowl</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>1.5</Mass>
+			<MarketValue>2500</MarketValue>
+			<MaxHitPoints>2050</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>7</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>5</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_LaunchProjectileStaticWithIcon</verbClass>
+				<label>Golden Mantra</label>
+				<commandIcon>Ability/Talisman/RI_Talisman_GoldenBowl</commandIcon>
+				<defaultProjectile>RI_Talisman_GoldenBowl_Bullet</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>15</range>
+				<burstShotCount>1</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>ThrowGrenade</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Talisman_GoldenBowl_Bullet</defName>
+		<label>Golden bowl field</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Talisman_GoldenBowl_Bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_SpawnsThing</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<spinRate>1</spinRate>
+			<spawnsThingDef>RI_Talisman_GoldenBowl_Shield</spawnsThingDef>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Talisman_GoldenBowl_Shield</defName>
+		<label>Golden bowl field</label>
+		<description>Golden bowl field.</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<pathCost>0</pathCost>
+		<passability>Standable</passability>
+		<fillPercent>0.35</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Special/RI_Talisman_GoldenBowl_Shield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<killedLeavings/>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<useHitPoints>false</useHitPoints>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<repairEffect>ConstructMetal</repairEffect>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<building>
+			<claimable>false</claimable>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isEdifice>false</isEdifice>
+			<destroyEffecter>Broadshield_Burnout</destroyEffecter>
+		</building>
+		<comps>
+			<li Class="RI_Talisman_Item.CompProperties_RingOfStun"/>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>1800</delayTicks>
+				<destroyMode>KillFinalize</destroyMode>
+				<countdownLabel>消散于</countdownLabel>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--一品-白玉瓶-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_WhiteJadeVase</defName>
+		<label>White jade vase【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA white jade vase, reinforced and carved with turquoise, seems to contain a never-ending supply of healing liquid.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_WhiteJadeVase</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>1.5</Mass>
+			<MarketValue>3200</MarketValue>
+			<MaxHitPoints>600</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>5</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_LaunchProjectileStaticWithIcon</verbClass>
+				<label>White jade shield</label>
+				<commandIcon>Ability/Talisman/RI_Talisman_WhiteJadeVase</commandIcon>
+				<!--白玉露-->
+				<defaultProjectile>RI_Talisman_WhiteJadeVase_Bullet</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>15</range>
+				<burstShotCount>1</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>ThrowGrenade</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Talisman_WhiteJadeVase_Bullet</defName>
+		<label>Jade dew</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Jadedew</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<thingClass>Projectile_SpawnsThing</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<spinRate>1</spinRate>
+			<spawnsThingDef>RI_Talisman_WhiteJadeVase_Shield</spawnsThingDef>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Talisman_WhiteJadeVase_Shield</defName>
+		<label>White jade shield</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_JadedewField</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>13</drawSize>
+		</graphicData>
+		<description>The faint shield.</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<pathCost>0</pathCost>
+		<passability>Standable</passability>
+		<fillPercent>0.35</fillPercent>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<killedLeavings/>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<useHitPoints>false</useHitPoints>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<repairEffect>ConstructMetal</repairEffect>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<building>
+			<claimable>false</claimable>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isEdifice>false</isEdifice>
+			<destroyEffecter>Broadshield_Burnout</destroyEffecter>
+		</building>
+		<comps>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>6</radius>
+				<interceptAirProjectiles>true</interceptAirProjectiles>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+				<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+				<color>(0.7, 0.7, 0.9)</color>
+				<idlePulseSpeed>3</idlePulseSpeed>
+				<minIdleAlpha>0.05</minIdleAlpha>
+				<disarmedByEmpForTicks>600</disarmedByEmpForTicks>
+				<activeSound>Broadshield_Ambience</activeSound>
+			</li>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>1800</delayTicks>
+				<destroyMode>KillFinalize</destroyMode>
+				<countdownLabel>消散于</countdownLabel>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--一品-玲珑塔-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_ThreeKingTower</defName>
+		<label>Three king tower【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA gold-plated tower refracts a colorful light, from different angles to see the past, can see its brilliant changing colors.When the wearer holds the tower in his hand, a strong shield is created to protect the wearer.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_ThreeKingTower</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>3.4</Mass>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>950</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>7</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+			<li Class="RI_Talisman_Item.CompProperties_ExOneHediff">
+				<hediffDef>RI_ShieldHediff_PagodaShield</hediffDef>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_RI_Talisman_GetHediff</verbClass>
+				<label>Three king shield</label>
+				<commandIcon>Ability/Talisman/RI_Talisman_ThreeKingTower</commandIcon>
+				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>1</range>
+				<burstShotCount>1</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--一品-乾坤袋-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_QiankunStorageBag</defName>
+		<label>QianKun bag【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA pocket made of a rather soft material.This is an upgraded version of the storage bag, because of its gorgeous appearance and very easy to use ability, it is called by some practitioners as a necessity for advanced practitioners.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_QiankunStorageBag</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.7</Mass>
+			<MarketValue>2100</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<RI_MassCarryCapacity>1000</RI_MassCarryCapacity>
+			<!--500Kg偏移值-->
+			<CarryingCapacity>370</CarryingCapacity>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--一品-捆仙索-->
+	<ThingDef ParentName="RI_Talisman_Base">
+		<defName>RI_Talisman_ImmortalBindingRope</defName>
+		<label>Immortal-binding rope【First-rate】</label>
+		<description>【First-rate】Talisman.\n\nA stretch of gold wire about three meters long, emitting a light gold. This magical rope can bind any creature and force it to the ground.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Talisman/RI_Talisman_ImmortalBindingRope</texPath>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<hotKey>Misc4</hotKey>
+				<soundReload>Standard_Reload</soundReload>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<maxCharges>3</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>9</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<chargeNoun>flare</chargeNoun>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>2</Mass>
+			<MarketValue>3500</MarketValue>
+			<MaxHitPoints>950</MaxHitPoints>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>RI_Talisman_Item.Verb_RI_Talisman_BingingImmortalRope</verbClass>
+				<label>Immortal-binding rope</label>
+				<commandIcon>Ability/Talisman/RI_Talisman_ImmortalBindingRope</commandIcon>
+				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>20</range>
+				<burstShotCount>5</burstShotCount>
+				<onlyManualCast>true</onlyManualCast>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<violent>false</violent>
+				<targetParams>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

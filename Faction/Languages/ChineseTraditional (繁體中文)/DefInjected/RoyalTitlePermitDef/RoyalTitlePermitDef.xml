@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Call disciples' assistance -->
+  <RI_Sect_CallDisciplesAssistance.label>呼叫弟子助阵</RI_Sect_CallDisciplesAssistance.label>
+  <!-- EN: Ask the sect to send a batch of battle-experienced cultivators for support. -->
+  <RI_Sect_CallDisciplesAssistance.description>让宗门提供一批有战斗经验的修士前来助阵。</RI_Sect_CallDisciplesAssistance.description>
+  
+  <!-- EN: Call sect's orbital bombardment -->
+  <RI_Sect_CallSectOrbitalBombardment.label>呼叫宗门轨道轰炸</RI_Sect_CallSectOrbitalBombardment.label>
+  <!-- EN: Contact a sect elder to obtain the usage rights for a Heavenly-grade magic weapon, and conduct orbital bombardment on a specific area. -->
+  <RI_Sect_CallSectOrbitalBombardment.description>联系宗门长老获得天基法器的使用权，对某区域进行轨道轰炸。</RI_Sect_CallSectOrbitalBombardment.description>
+  
+  <!-- EN: Call celestial ship -->
+  <RI_Sect_Drop_CallCelestialShip.label>呼叫仙舟</RI_Sect_Drop_CallCelestialShip.label>
+  <!-- EN: Call for the sect's celestial ship. -->
+  <RI_Sect_Drop_CallCelestialShip.description>呼叫宗门的仙舟。</RI_Sect_Drop_CallCelestialShip.description>
+  
+  <!-- EN: Request Marrow-washing nectar -->
+  <RI_Sect_Drop_Nectar.label>申请洗髓玉液</RI_Sect_Drop_Nectar.label>
+  <!-- EN: Request an expensive Marrow-washing nectar. -->
+  <RI_Sect_Drop_Nectar.description>申请一份昂贵的洗髓玉液。</RI_Sect_Drop_Nectar.description>
+  
+  <!-- EN: Request QingMing jade wine -->
+  <RI_Sect_Drop_QingMingWine.label>申请青玉仙露</RI_Sect_Drop_QingMingWine.label>
+  <!-- EN: Request an expensive QingMing jade wine. -->
+  <RI_Sect_Drop_QingMingWine.description>申请一份昂贵的青玉仙露。</RI_Sect_Drop_QingMingWine.description>
+  
+  <!-- EN: Request building materials -->
+  <RI_Sect_Drop_RequestBuildingMaterials.label>申请建材</RI_Sect_Drop_RequestBuildingMaterials.label>
+  <!-- EN: Request a batch of building materials from the sect. -->
+  <RI_Sect_Drop_RequestBuildingMaterials.description>从宗门申请一批建材。</RI_Sect_Drop_RequestBuildingMaterials.description>
+  
+  <!-- EN: Request cultivation resources -->
+  <RI_Sect_Drop_RequestCultivationResources.label>申请修炼资源</RI_Sect_Drop_RequestCultivationResources.label>
+  <!-- EN: Request a batch of cultivation resources from the sect. -->
+  <RI_Sect_Drop_RequestCultivationResources.description>从宗门申请一批修炼资源。</RI_Sect_Drop_RequestCultivationResources.description>
+  
+  <!-- EN: Request medicinal herbs -->
+  <RI_Sect_Drop_RequestMedicinalHerbs.label>申请药材</RI_Sect_Drop_RequestMedicinalHerbs.label>
+  <!-- EN: Request a batch of medicinal herbs from the sect. -->
+  <RI_Sect_Drop_RequestMedicinalHerbs.description>从宗门申请一批药材。</RI_Sect_Drop_RequestMedicinalHerbs.description>
+  
+  <!-- EN: Request pills -->
+  <RI_Sect_Drop_RequestPills.label>申请丹药</RI_Sect_Drop_RequestPills.label>
+  <!-- EN: Request a batch of pills from the sect. -->
+  <RI_Sect_Drop_RequestPills.description>从宗门申请一批丹药。</RI_Sect_Drop_RequestPills.description>
+  
+  <!-- EN: Follower dispatch -->
+  <RI_Sect_FollowerDispatch.label>杂役派遣</RI_Sect_FollowerDispatch.label>
+  <!-- EN: Ask the sect to dispatch several miscellaneous disciples to handle menial tasks. -->
+  <RI_Sect_FollowerDispatch.description>让宗门派遣几位杂役弟子，前来干粗活。</RI_Sect_FollowerDispatch.description>
+  
+</LanguageData>

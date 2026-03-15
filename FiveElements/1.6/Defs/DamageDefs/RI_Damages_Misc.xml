@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--荆棘伤害-->
+	<DamageArmorCategoryDef>
+		<defName>RI_ThornDamage_Category</defName>
+		<multStat>SharpDamageMultiplier</multStat>
+		<armorRatingStat>ArmorRating_Sharp</armorRatingStat>
+	</DamageArmorCategoryDef>
+
+	<DamageDef>
+		<defName>TrapSlowDamage</defName>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<hediff>RI_Hediff_SlowRoot</hediff>
+		<!-- 下面定义的 Hediff -->
+		<externalViolence>true</externalViolence>
+	</DamageDef>
+
+	<DamageDef ParentName="Scratch">
+		<defName>RI_ThornDamage</defName>
+		<label>thorn scratch</label>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_SlowRoot</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<!--<victimSeverityScaling>ToxicResistance</victimSeverityScaling>-->
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
+</Defs>

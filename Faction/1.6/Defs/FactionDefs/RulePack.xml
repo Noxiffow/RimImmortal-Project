@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- =============================== 正道 派系名字 =============================== -->
+	<RulePackDef>
+		<defName>RI_Namer_JusticeSect</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>FactionLast->Names/FactionName_Last</li>
+				<li>JusticeFaction->Names/JusticeFactionName_First</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name(p=10)->[JusticeFaction][FactionLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- =============================== 外道 派系名字 =============================== -->
+	<RulePackDef>
+		<defName>RI_Namer_EvilSect</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>FactionLast->Names/FactionName_Last</li>
+				<li>EvilFaction->Names/EvilFactionName_First</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name(p=10)->[JusticeFaction][FactionLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- =============================== 派系基地名字 =============================== -->
+	<RulePackDef>
+		<defName>RI_Namer_SectSettlement</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>SettlementLast->Names/SettlementName_Last</li>
+				<li>SettlementFirst->Names/SettlementName_First</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>RI_Namer_SectSettlementPack</defName>
+		<include>
+			<li>RI_Namer_SectSettlement</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=10)->[SettlementFirst] [SettlementLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

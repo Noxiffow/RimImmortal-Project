@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Bone-horns -->
+  <RI_Gene_BoneHorns.label>骨角</RI_Gene_BoneHorns.label>
+  <!-- EN: Carriers of this gene grow two small horns protruding from the forehead. -->
+  <RI_Gene_BoneHorns.description>TODO</RI_Gene_BoneHorns.description>
+  <!-- EN: horn -->
+  <RI_Gene_BoneHorns.symbolPack.prefixSymbols.0.symbol>TODO</RI_Gene_BoneHorns.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: horn -->
+  <RI_Gene_BoneHorns.symbolPack.suffixSymbols.0.symbol>TODO</RI_Gene_BoneHorns.symbolPack.suffixSymbols.0.symbol>
+  
+  <!-- EN: furry tail -->
+  <RI_Gene_BoneTail.label>TODO</RI_Gene_BoneTail.label>
+  <!-- EN: Carriers of this gene grow a fluffy tail which partially protects them from cold temperatures. -->
+  <RI_Gene_BoneTail.description>TODO</RI_Gene_BoneTail.description>
+  
+  <!-- EN: red eyes -->
+  <RI_Gene_ZombieRedEyes.label>冥尸-红眼</RI_Gene_ZombieRedEyes.label>
+  <!-- EN: Carriers of this gene have deeply red-pigmented eyes. -->
+  <RI_Gene_ZombieRedEyes.description>TODO</RI_Gene_ZombieRedEyes.description>
+  <!-- EN: red-eyed -->
+  <RI_Gene_ZombieRedEyes.labelShortAdj>TODO</RI_Gene_ZombieRedEyes.labelShortAdj>
+  
+  <!-- EN: Necrosapiens skin (green) -->
+  <RI_Gene_ZombieSkinA.label>冥尸-肤色（浅绿）</RI_Gene_ZombieSkinA.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe skin takes on a green hue, drained of blood, with veins becoming strikingly visible. -->
+  <RI_Gene_ZombieSkinA.description>TODO</RI_Gene_ZombieSkinA.description>
+  <!-- EN: cyan -->
+  <RI_Gene_ZombieSkinA.labelShortAdj>TODO</RI_Gene_ZombieSkinA.labelShortAdj>
+  
+  <!-- EN: Necrosapiens skin (pink) -->
+  <RI_Gene_ZombieSkinB.label>冥尸-肤色（淡粉）</RI_Gene_ZombieSkinB.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe skin takes on a faint pink hue, drained of blood, with veins becoming strikingly visible. -->
+  <RI_Gene_ZombieSkinB.description>TODO</RI_Gene_ZombieSkinB.description>
+  <!-- EN: pink -->
+  <RI_Gene_ZombieSkinB.labelShortAdj>TODO</RI_Gene_ZombieSkinB.labelShortAdj>
+  
+  <!-- EN: Necrosapiens skin (blue) -->
+  <RI_Gene_ZombieSkinC.label>冥尸-肤色（天青）</RI_Gene_ZombieSkinC.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe skin takes on a blue hue, drained of blood, with veins becoming strikingly visible. -->
+  <RI_Gene_ZombieSkinC.description>TODO</RI_Gene_ZombieSkinC.description>
+  <!-- EN: blue -->
+  <RI_Gene_ZombieSkinC.labelShortAdj>TODO</RI_Gene_ZombieSkinC.labelShortAdj>
+  
+  <!-- EN: Necrosapiens skin (pale) -->
+  <RI_Gene_ZombieSkinD.label>冥尸-肤色（苍白）</RI_Gene_ZombieSkinD.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe skin takes on a pale hue, drained of blood, with veins becoming strikingly visible. -->
+  <RI_Gene_ZombieSkinD.description>TODO</RI_Gene_ZombieSkinD.description>
+  <!-- EN: pale -->
+  <RI_Gene_ZombieSkinD.labelShortAdj>TODO</RI_Gene_ZombieSkinD.labelShortAdj>
+  
+  <!-- EN: Necrosapiens body (standard) -->
+  <RI_Gene_ZombieStandard.label>冥尸-体型（标准）</RI_Gene_ZombieStandard.label>
+  <!-- EN: Unique gene of Necrosapiens.\nStandard male and female physique. -->
+  <RI_Gene_ZombieStandard.description>冥尸特有基因。\n标准的男女体型。</RI_Gene_ZombieStandard.description>
+  <!-- EN: Zombie -->
+  <RI_Gene_ZombieStandard.symbolPack.prefixSymbols.0.symbol>僵尸</RI_Gene_ZombieStandard.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: Necro -->
+  <RI_Gene_ZombieStandard.symbolPack.prefixSymbols.1.symbol>冥</RI_Gene_ZombieStandard.symbolPack.prefixSymbols.1.symbol>
+  
+  <!-- EN: Necrosapiens body (thin) -->
+  <RI_Gene_ZombieThin.label>冥尸-体型（纤细）</RI_Gene_ZombieThin.label>
+  <!-- EN: Unique gene of Necrosapiens.\nSlender male and female physique. -->
+  <RI_Gene_ZombieThin.description>冥尸特有基因。\n纤细的男女体型。</RI_Gene_ZombieThin.description>
+  <!-- EN: Zombie -->
+  <RI_Gene_ZombieThin.symbolPack.prefixSymbols.0.symbol>僵尸</RI_Gene_ZombieThin.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: Necro -->
+  <RI_Gene_ZombieThin.symbolPack.prefixSymbols.1.symbol>冥</RI_Gene_ZombieThin.symbolPack.prefixSymbols.1.symbol>
+  
+  <!-- EN: Necrosapiens head -->
+  <RI_GeneHead_NecrosapiensHead.label>冥尸-头部</RI_GeneHead_NecrosapiensHead.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe face is slightly thin and the veins are obvious. -->
+  <RI_GeneHead_NecrosapiensHead.description>冥尸特有基因。\n\n面部略显瘦削，静脉明显。</RI_GeneHead_NecrosapiensHead.description>
+  <!-- EN: Zombie -->
+  <RI_GeneHead_NecrosapiensHead.symbolPack.prefixSymbols.0.symbol>TODO</RI_GeneHead_NecrosapiensHead.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: Necro -->
+  <RI_GeneHead_NecrosapiensHead.symbolPack.prefixSymbols.1.symbol>TODO</RI_GeneHead_NecrosapiensHead.symbolPack.prefixSymbols.1.symbol>
+  
+</LanguageData>

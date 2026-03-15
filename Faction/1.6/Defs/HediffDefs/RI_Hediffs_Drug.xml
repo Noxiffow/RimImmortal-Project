@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 药剂效果 -->
+	<!--<postFactor>乘算
+		<offset>加算-->
+	<!--60000tick=24小时-->
+	<!--<statFactors>
+	<GI_EnergyGainEff>1.3</GI_EnergyGainEff>
+	</statFactors>-->
+
+	<!--==================================二品==================================-->
+
+	<!--麒麟复元丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_Hediff_QiLinRestorationPill</defName>
+		<label>Effect of QiLin restoration pill</label>
+		<description>Heals a scar and grants long-lasting regenerative ability.</description>
+		<comps>
+			<li Class="HediffCompProperties_HealPermanentWounds" />
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<!--15天-->
+				<disappearsAfterTicks>1800000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================================一品==================================-->
+
+	<!--吃了忘魂丹之后的效果——删除法门！-->
+	<HediffDef>
+		<defName>RI_Hediff_DeleteIA</defName>
+		<description>删除法门</description>
+		<label>删除法门</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏hediff-->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1</disappearsAfterTicks>
+				<!--必须，这个功能是hediff消失时触发的-->
+			</li>
+			<li Class="RI_Transfer.HediffCompProperties_RI_Transfer">
+				<IsTransfer>true</IsTransfer>
+				<!--判断是不是转职，为true就是保留原来的修为，下面的level将不生效，可以删掉-->
+				<level>8</level>
+				<!--修改其境界，如果IsTransfer是true，那这个设置就不需要了-->
+				<HaveRoute>true</HaveRoute>
+				<!--是否进行法门操作，实现转职的必要设置-->
+				<AddRoute>false</AddRoute>
+				<!--默认为true，填false就是遗忘当前法门而不添加新法门-->
+				<RouteDef>Base</RouteDef>
+				<!--添加法门的种类，写route的defname-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--玲珑月辉丹效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_Hediff_LingLongMoonlightElixir</defName>
+		<label>Effect of LingLong moonlight elixir</label>
+		<description>LingLong Fruit is rich in the qi of heaven and earth, allowing the body to harmonize with nature and greatly increasing the chance of a successful upgrade.</description>
+		<comps>
+			<li Class="HediffCompProperties_HealPermanentWounds" />
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<!--15天-->
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+					<GI_EnergyGainEff>0.25</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--浓缩灵液效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_Hediff_CondensedSpiritualLiquidHediff</defName>
+		<label>Effect of condensed spiritual liquid</label>
+		<description>Directly restore some Qi and automatically restore Qi over a period of time.</description>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_RI_CultivateMoreEnergyHediff</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--玲珑疗愈-->
+	<HediffDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>RI_Hediff_LingLongRegeneration</defName>
+		<label>LingLong regeneration</label>
+		<description>The spiritual energy of Linglong fruit condenses into a nourishing essence, seeping into the body to mend flesh and heal wounds.</description>
+		<isBad>false</isBad>
+		<defaultLabelColor>(0.49,1,0.48)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<!--15天-->
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>1</ImmunityGainSpeed>
+				</statOffsets>
+				<regeneration>100</regeneration>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

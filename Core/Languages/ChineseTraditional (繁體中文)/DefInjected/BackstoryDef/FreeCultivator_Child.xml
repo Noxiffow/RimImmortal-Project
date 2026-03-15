@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: The Yun family fell into decline during the Sect Wars, but under the leadership of Master Tianyun, they rose to prominence once more. However, in the end, they could not overcome time and gradually faded into obscurity.\n[PAWN_nameDef] was born into a humble family, only discovering [PAWN_possessive] family's history many years later. Determined, [PAWN_pronoun] set his sights on entering the cultivation world to continue the glorious legacy of [PAWN_possessive] ancestors. -->
+  <RI_Backstory_Child_Yun1.description>云家于门派战争时期没落，之后在天云真人的带领下再次强盛起来，但最后他们也没战胜时间，逐渐销声匿迹。\n[PAWN_nameDef]诞生于一个朴素的家庭，直到多年后[PAWN_pronoun]才知道[PAWN_possessive]家族历史。于是[PAWN_pronoun]立志要踏入修仙界，延续前人辉煌。</RI_Backstory_Child_Yun1.description>
+  <!-- EN: Yun family survivor's child -->
+  <RI_Backstory_Child_Yun1.title>云家遗族孩童</RI_Backstory_Child_Yun1.title>
+  <!-- EN: Yun family child -->
+  <RI_Backstory_Child_Yun1.titleShort>云家孩童</RI_Backstory_Child_Yun1.titleShort>
+  
+  <!-- EN: After the fall of the Yun family, a portion of the surviving descendants fled to distant lands. After parting ways, they established new families. While perusing old books in his family’s collection, [PAWN_nameDef] stumbled upon this forgotten history. Although [PAWN_possessive] family had changed its name and abandoned all ties to the past, [PAWN_nameDef] made the resolute decision to venture into the cultivation world, seeking out other surviving members of the Yun family. -->
+  <RI_Backstory_Child_Yun2.description>在云家没落之后，一部分幸存云家子弟逃亡外地，分道扬镳后建立了新家庭。[PAWN_nameDef]在翻阅家中古书的时候，偶然知道了这段历史。虽然[PAWN_possessive]家庭已经更名改姓，抛弃了一切，但[PAWN_nameDef]依然决定前往修仙界，寻找其他云家人。</RI_Backstory_Child_Yun2.description>
+  <!-- EN: Yun family foreign's child -->
+  <RI_Backstory_Child_Yun2.title>云家外族孩童</RI_Backstory_Child_Yun2.title>
+  <!-- EN: Yun family child -->
+  <RI_Backstory_Child_Yun2.titleShort>云家孩童</RI_Backstory_Child_Yun2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] 's family is very poor, [PAWN_possessive]' s hands have long rubbed out blisters in the work, and people around him all say [PAWN_pronoun] is a sensible child. -->
+  <RI_Backstory_Child1.description>[PAWN_nameDef]的家庭十分贫穷，[PAWN_possessive]的手早就在劳动中磨出了水泡，周围的人都说[PAWN_pronoun]是个懂事的孩子。</RI_Backstory_Child1.description>
+  <!-- EN: Young adulthood -->
+  <RI_Backstory_Child1.title>少年老成的孩童</RI_Backstory_Child1.title>
+  <!-- EN: Young adulthood -->
+  <RI_Backstory_Child1.titleShort>少年老成</RI_Backstory_Child1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef's] brain circuits are different from those of ordinary people, and [PAWN_pronoun] has lost its reverence for all earthly things. -->
+  <RI_Backstory_Child2.description>[PAWN_nameDef]的脑回路与常人不同，[PAWN_pronoun]失去了对一切俗世之物的敬畏。</RI_Backstory_Child2.description>
+  <!-- EN: Evil child -->
+  <RI_Backstory_Child2.title>邪恶的孩童</RI_Backstory_Child2.title>
+  <!-- EN: Evil child -->
+  <RI_Backstory_Child2.titleShort>魔童</RI_Backstory_Child2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had a very happy childhood, and [PAWN_nameDef] was possessive of [PAWN_pronoun] by his family, and he was able to feed himself well from childhood, which helped [Pawn_namedef] develop an optimistic personality. -->
+  <RI_Backstory_Child3.description>[PAWN_nameDef]的童年十分快乐，[PAWN_possessive]家人将[PAWN_pronoun]捧在掌心，从小便衣食无忧，这让[PAWN_nameDef]养成了乐观的性格。</RI_Backstory_Child3.description>
+  <!-- EN: Innocent child -->
+  <RI_Backstory_Child3.title>天真无邪的孩童</RI_Backstory_Child3.title>
+  <!-- EN: Innocent child -->
+  <RI_Backstory_Child3.titleShort>天真无邪</RI_Backstory_Child3.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is an eccentric child who never cried at birth. But [PAWN_pronoun] learns everything quickly, and occasionally spouts off comments that no one can understand. -->
+  <RI_Backstory_Child4.description>[PAWN_nameDef]将[PAWN_possessive]整个童年都用在了学习上，周围的人都知道[PAWN_possessive]存在，但却没法详细描述[PAWN_pronoun]这个人，于是只能将[PAWN_pronoun]称为“别人家的孩子”。</RI_Backstory_Child4.description>
+  <!-- EN: Unassuming child -->
+  <RI_Backstory_Child4.title>神秘的孩童</RI_Backstory_Child4.title>
+  <!-- EN: Unassuming child -->
+  <RI_Backstory_Child4.titleShort>神秘孩童</RI_Backstory_Child4.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] lost his family when he was a child, and due to [PAWN_pronoun's] good physical quality, he was selected by an organization and trained as an assassin. -->
+  <RI_Backstory_Child5.description>[PAWN_nameDef]在童年的时候失去了家人，由于[PAWN_pronoun]的身体素质不错，被一个组织选中，当作刺客培养。</RI_Backstory_Child5.description>
+  <!-- EN: Homeless child -->
+  <RI_Backstory_Child5.title>无家可归的孩童</RI_Backstory_Child5.title>
+  <!-- EN: Homeless child -->
+  <RI_Backstory_Child5.titleShort>无家可归</RI_Backstory_Child5.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was seen as an anomaly during his childhood, due to [PAWN_pronoun]'s ability to control his Qi having been revealed as an infant. This was kept hidden from [PAWN_possessive]'s family until [PAWN_pronoun] reached adulthood. -->
+  <RI_Backstory_CultivatorChild1.description>[PAWN_nameDef]在童年的时候被视为异类，由于[PAWN_pronoun]在婴儿时期就显露过控制灵气的能力。这件事一直被[PAWN_possessive]家人隐瞒，直到[PAWN_pronoun]成年。</RI_Backstory_CultivatorChild1.description>
+  <!-- EN: Innate energy root -->
+  <RI_Backstory_CultivatorChild1.title>天生灵芽的孩童</RI_Backstory_CultivatorChild1.title>
+  <!-- EN: Innate energy root -->
+  <RI_Backstory_CultivatorChild1.titleShort>先天灵芽</RI_Backstory_CultivatorChild1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]Born into a large family. The [PAWN_possessive] family spent a lot of money to get a spirit bud, and after a minor surgery, [PAWN_pronoun] had the power to control his Qi. -->
+  <RI_Backstory_CultivatorChild2.description>[PAWN_nameDef]出生于大户人家。[PAWN_possessive]家人花费重金弄来了一颗灵芽，在一场小手术后，[PAWN_pronoun]拥有了控制灵气的力量。</RI_Backstory_CultivatorChild2.description>
+  <!-- EN: Artificial energy root -->
+  <RI_Backstory_CultivatorChild2.title>后天灵芽的孩童</RI_Backstory_CultivatorChild2.title>
+  <!-- EN: Artificial energy root -->
+  <RI_Backstory_CultivatorChild2.titleShort>后天灵芽</RI_Backstory_CultivatorChild2.titleShort>
+  
+  <!-- EN: For as long as he can remember, [PAWN_nameDef]'s world has consisted of nurses in white coats and glass walls. [PAWN_pronoun] developed a deep friendship with a nurse who secretly let [PAWN_nameDef] go. -->
+  <RI_Backstory_CultivatorChild3.description>从有记忆开始，[PAWN_nameDef]的世界就只有穿白大褂的护士和玻璃墙。[PAWN_pronoun]和一位护士建立起了深厚的友谊，那位护士偷偷放走了[PAWN_nameDef]。</RI_Backstory_CultivatorChild3.description>
+  <!-- EN: Experimental material -->
+  <RI_Backstory_CultivatorChild3.title>灵芽实验品</RI_Backstory_CultivatorChild3.title>
+  <!-- EN: Experimental material -->
+  <RI_Backstory_CultivatorChild3.titleShort>灵芽实验品</RI_Backstory_CultivatorChild3.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is an eccentric child who never cried at birth. But [PAWN_pronoun] learns everything quickly, and occasionally spouts off comments that no one can understand. -->
+  <RI_Backstory_CultivatorChild4.description>[PAWN_nameDef]是个古怪的孩子，一出生就不会哭泣。但[PAWN_pronoun]学什么东西都很快，并偶尔吐露一些没人能理解的言论。</RI_Backstory_CultivatorChild4.description>
+  <!-- EN: Nobody child -->
+  <RI_Backstory_CultivatorChild4.title>毫不起眼的孩童</RI_Backstory_CultivatorChild4.title>
+  <!-- EN: Nobody child -->
+  <RI_Backstory_CultivatorChild4.titleShort>无名小辈</RI_Backstory_CultivatorChild4.titleShort>
+  
+</LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 坐忘道 心素 身体部件 -->
+    <NzRimImmortalBizarre.TagDef>
+        <defName>NzRI_XinSuBodyPart</defName>
+    </NzRimImmortalBizarre.TagDef>
+
+    <!-- 正德寺 身体部件 -->
+    <NzRimImmortalBizarre.TagDef>
+        <defName>NzRI_ZhengDe_BodyPart</defName>
+    </NzRimImmortalBizarre.TagDef>
+    <!-- 正德寺 克己 -->
+    <NzRimImmortalBizarre.TagDef>
+        <defName>NzRI_ZhengDe_Restraint</defName>
+    </NzRimImmortalBizarre.TagDef>
+    <!-- 正德寺 明心 -->
+    <NzRimImmortalBizarre.TagDef>
+        <defName>NzRI_ZhengDe_Enlightenment</defName>
+    </NzRimImmortalBizarre.TagDef>
+    <!-- 正德寺 舍身 -->
+    <NzRimImmortalBizarre.TagDef>
+        <defName>NzRI_ZhengDe_Sacrifice</defName>
+    </NzRimImmortalBizarre.TagDef>
+</Defs>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--挥棒子咻一声-->
+	<SoundDef>
+		<defName>RI_Sound_WaveSoundA</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_WaveSoundA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>7~12</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--劈木头咔一声-->
+	<SoundDef>
+		<defName>RI_Sound_ChopKaA</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_ChopKaA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--锯木头声音-->
+	<SoundDef>
+		<defName>RI_Sound_SawOffWoodA</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_SawOffWoodA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>7~12</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--劈木头声音-->
+	<SoundDef>
+		<defName>RI_Sound_ChopWoodA</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_ChopWoodA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>7~12</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

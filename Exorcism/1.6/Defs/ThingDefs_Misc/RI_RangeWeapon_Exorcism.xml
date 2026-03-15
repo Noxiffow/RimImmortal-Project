@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================道士远程武器====================-->
+
+	<!--八卦旗-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RI_RangeWeapon_DetainGhostFlag</defName>
+		<label>BaGua flag</label>
+		<description>八卦旗，道门的一种法器。挥动旗帜可以引动天地正气化作金色光球射向敌人，令其神魂震荡无法动弹。同时可以令周围的队友进入更专注的状态。</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_RangeWeapon_DetainGhostFlag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<!-- 改为更柔和的挥舞声 -->
+		<tickerType>Normal</tickerType>
+		<techLevel>Industrial</techLevel>
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.5</Mass>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<!-- 稍微调快一点 -->
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+		</statBases>
+
+		<costList>
+			<Cloth>30</Cloth>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+			<RI_Resource_ErosionBronze>10</RI_Resource_ErosionBronze>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismInstrument</researchPrerequisite>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<!-- ★ 改为枪械射击逻辑 -->
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_GoldenSphere</defaultProjectile>
+				<!-- 指向金色光球 -->
+				<warmupTime>1.2</warmupTime>
+				<range>18</range>
+				<!-- 射程大幅提升，不再是手榴弹那种短距离 -->
+				<soundCast>RI_Sound_Bell</soundCast>
+				<!-- 保留你的铃铛音效 -->
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<!--技能-->
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>RI_ZombieAbility_DetainGhostFlag</abilityDef>
+			</li>
+		</comps>
+
+		<weaponTags>
+			<li>RI_Tags_DaoistFlag</li>
+		</weaponTags>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--八卦旗子弹-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_GoldenSphere</defName>
+		<label>金色光球</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_GoldenSphere</texPath>
+			<!-- 借用电荷弹贴图 -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--三清铃-->
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>RI_RangeWeapon_SanQingBell</defName>
+		<label>SanQing bell</label>
+		<description>Originally a ritual instrument used in sacrificial rites, the SanQing bell was believed to summon divine forces and exorcism. As time passed, its function gradually shifted, eventually evolving into a specialized artifact designed to break defenses.\n\nThe bell’s body is engraved with talisman and fitted with a specially crafted clapper within. When gently shaken, the clapper strikes the talisman patterns, producing an unusual, ordered tone rather than an ordinary chime. This sound wave can be directed toward a target, inducing resonance within its internal structure, progressively destabilizing its equilibrium and causing defensive systems to falter—or even collapse entirely.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_RangeWeapon_SanQingBell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.99</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		<costList>
+			<RI_Resource_ErosionBronze>70</RI_Resource_ErosionBronze>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismInstrument</researchPrerequisite>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RI_Tags_DaoBestWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<smeltable>true</smeltable>
+		<verbs>
+			<li>
+				<label>release disruptive chime</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14</range>
+				<!--<forcedMiss>true</forcedMiss>-->
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>RI_Sound_Bell</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>RI_Bullet_SanQingBell</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>RI_ZombieAbility_SanQing</abilityDef>
+			</li>
+			<!-- <li Class="CompProperties_Explosive">
+				<wickTicks>0</wickTicks>
+				<explosiveRadius>30.9</explosiveRadius>
+				<explodeOnKilled>true</explodeOnKilled>
+				<explosiveDamageType>RI_MechBandShockwave</explosiveDamageType>
+				<propagationSpeed>0.5</propagationSpeed>
+				<chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+				<extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+			</li> -->
+		</comps>
+	</ThingDef>
+
+	<!--三清铃子弹-->
+	<ThingDef ParentName="RI_Base_DaoistCharmBullet">
+		<defName>RI_Bullet_SanQingBell</defName>
+		<label>disruptive chime</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_SanQingBell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_ZombieMelee_SanQingBell</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- 三清铃技能子弹 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Projectile_SanQingBell</defName>
+		<label>SanQing bell shockwave</label>
+		<thingClass>RimZombieGirl.RI_Projectile_SanQingBell</thingClass>
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_ZombieMelee_SanQingBell</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>60</speed>
+			<explosionRadius>8</explosionRadius>
+			<explosionDelay>0</explosionDelay>
+			<!-- <doExplosionVFX>False</doExplosionVFX> -->
+			<!--<propagationSpeed>0.5</propagationSpeed>-->
+		</projectile>
+	</ThingDef>
+
+	<!--天火镇邪旗-->
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>RI_RangeWeapon_HeavenlyFireFlag</defName>
+		<label>天火镇邪旗</label>
+		<description>一面绣有烈日符咒的长旗。挥舞时，旗面震荡空气产生炙热的红色声波，能够点燃敌人的灵魂。</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_RangeWeapon_HeavenlyFireFlag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<tickerType>Normal</tickerType>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>
+			<li>RI_Tags_DaoistFlag</li>
+		</weaponTags>
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+
+		<statBases>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Cloth>60</Cloth>
+			<RI_Resource_CharmPaper>20</RI_Resource_CharmPaper>
+			<RI_Resource_ErosionBronze>20</RI_Resource_ErosionBronze>
+			<Gold>5</Gold>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<researchPrerequisite>RI_Research_BetterExorcismInstrument</researchPrerequisite>
+		</recipeMaker>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_FireWave</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>38</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<!-- 4连射 -->
+				<burstShotCount>4</burstShotCount>
+				<soundCast>Shot_ChargeBlaster</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<!-- ★★★ 复用之前的框架：对邪祟伤害加成 ★★★ -->
+		<modExtensions>
+			<li Class="RI_Frame_ZombieLife.AntiZombieWeaponExtension">
+				<targetTag>Zombie</targetTag>
+				<damageMultiplier>1.8</damageMultiplier>
+				<!-- 对僵尸类造成 180% 伤害 -->
+			</li>
+		</modExtensions>
+
+		<tools>
+			<li>
+				<label>flagpole</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!--火焰-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_FireWave</defName>
+		<label>heavenly fire wave</label>
+		<graphicData>
+			<!-- 建议用一个圆弧形或波纹状的贴图 -->
+			<texPath>Things/Projectile/RI_Bullet_FireArrowCharm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<!-- 发光效果 -->
+			<!-- 明亮的橙黄色 -->
+			<drawSize>(3,3)</drawSize>
+			<!-- ★ 核心：让子弹看起来像扩散的声波 ★ -->
+		</graphicData>
+		<projectile>
+			<damageDef>RI_Damage_HeavenlyFire</damageDef>
+			<damageAmountBase>21</damageAmountBase>
+			<!-- 单发伤害较高 -->
+			<speed>45</speed>
+			<!-- 声波飞行速度略慢，增加压迫感 -->
+		</projectile>
+	</ThingDef>
+
+	<!-- ================= 1. 伤害类型 (链接 C#) ================= -->
+	<DamageDef ParentName="StunBase">
+		<defName>RI_Damage_LightningShot</defName>
+		<label>lightning shot</label>
+		<!-- 引用我们写的 C# Worker -->
+		<workerClass>RI_Frame_ZombieLife.DamageWorker_LightningShot</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} was electrocuted by wind thunder drum.</deathMessage>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<hediff>Crush</hediff>
+		<defaultDamage>50</defaultDamage>
+		<!-- 造成烧伤效果 -->
+		<hediffSolid>Crack</hediffSolid>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+		<impactSoundType>Electric</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<!-- 能量伤害 -->
+		<!--emp stun效果-->
+		<causeStun>true</causeStun>
+		<stunResistStat MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">EMPResistance</stunResistStat>
+		<stunAdaptationTicks>5000</stunAdaptationTicks>
+	</DamageDef>
+
+	<!-- 风雷鼓 -->
+	<ThingDef ParentName="BaseWeapon">
+		<defName>RI_RangeWeapon_WindThunderDrum</defName>
+		<label>wind thunder drum</label>
+		<description>很强的鼓</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_RangeWeapon_WindThunderDrum</texPath>
+			<!-- 请替换你的鼓贴图 -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tickerType>Normal</tickerType>
+		<!-- ★★★ 负面效果：降低移速 ★★★ -->
+		<equippedStatOffsets>
+			<MoveSpeed>-0.40</MoveSpeed>
+			<!-- 降低 0.4 格/秒 -->
+		</equippedStatOffsets>
+		<!--旋转-->
+		<equippedAngleOffset>0</equippedAngleOffset>
+
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.0</Mass>
+			<!-- 比较重 -->
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.9</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Cloth>50</Cloth>
+			<RI_Resource_ErosionBronze>30</RI_Resource_ErosionBronze>
+			<RI_Resource_InkJade>10</RI_Resource_InkJade>
+		</costList>
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>RI_Building_ExorcismInstrumentBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<researchPrerequisite>RI_Research_BetterExorcismInstrument</researchPrerequisite>
+		</recipeMaker>
+		
+		<thingCategories>
+			<li>RI_Category_DaoistWeapons</li>
+		</thingCategories>
+		<!-- 远程射击参数 -->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_WindThunder</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>23</range>
+				<soundCast>RI_Sound_ThunderDrumA</soundCast>
+				<!--三连射-->
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+				<!-- 可以换成雷声 -->
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+			</li>
+		</verbs>
+		<!--近战鼓槌-->
+		<tools>
+			<li>
+				<label>drum stick</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<!-- 伤害很低 -->
+				<cooldownTime>2</cooldownTime>
+				<!-- 攻速很慢 -->
+			</li>
+		</tools>
+
+		<!-- 技能 -->
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>RI_ZombieAbility_WindThunder</abilityDef>
+			</li>
+		</comps>
+
+		<!--<comps>
+			-->
+		<!-- ★★★ 主动技能组件 ★★★ -->
+		<!--
+			<li Class="RI_Frame_ZombieLife.CompProperties_WindThunderSkill">
+				-->
+		<!-- 施法音效：这里用了“护盾破碎”的声音，类似电流滋滋声 -->
+		<!--
+				<castSound>RI_Sound_ThunderDrumA</castSound>
+				-->
+		<!-- 爆炸音效：原版 EMP 爆炸声 -->
+		<!--
+				<explosionSound>Explosion_EMP</explosionSound>
+			</li>
+		</comps>-->
+	</ThingDef>
+
+	<!-- ================= 2. 雷电子弹 ================= -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_WindThunder</defName>
+		<label>lightning bolt</label>
+		<graphicData>
+			<!-- 建议找一个闪电形状的贴图 -->
+			<texPath>Things/Projectile/RI_Bullet_WindThunder</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_Damage_LightningShot</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<!-- 基础物理伤害 -->
+			<stoppingPower>1.5</stoppingPower>
+			<speed>50</speed>
+			<!-- 雷电速度很快 -->
+		</projectile>
+	</ThingDef>
+
+</Defs>

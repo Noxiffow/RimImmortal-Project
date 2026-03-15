@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 飞剑化形 -->
+  <ActiveDropPod_RI_Sect_Faction.label>剑光</ActiveDropPod_RI_Sect_Faction.label>
+  
+  <!-- EN: 飞剑化形：飞行中 -->
+  <DropPodIncoming_RI_Sect_Faction.label>剑光：飞行中</DropPodIncoming_RI_Sect_Faction.label>
+  
+</LanguageData>

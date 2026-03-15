@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Energy gain efficiency -->
+  <GI_EnergyGainEff.label>灵气增长效率</GI_EnergyGainEff.label>
+  <!-- EN: The efficiency with which a cultivator acquires Qi while practicing. -->
+  <GI_EnergyGainEff.description>修炼者修炼时获取灵气的效率。</GI_EnergyGainEff.description>
+  
+  <!-- EN: 灵气增长效率乘数 -->
+  <GI_EnergyGainEffFactor.label>TODO</GI_EnergyGainEffFactor.label>
+  <!-- EN: 灵气增长效率乘数 -->
+  <GI_EnergyGainEffFactor.description>TODO</GI_EnergyGainEffFactor.description>
+  
+  <!-- EN: Energy lose efficiency -->
+  <GI_EnergyLoseEff.label>灵气消耗效率</GI_EnergyLoseEff.label>
+  <!-- EN: The multiplier of Qi that the cultivator consumes when using the sorcery. -->
+  <GI_EnergyLoseEff.description>修炼者使用术法时消耗灵气的倍率。</GI_EnergyLoseEff.description>
+  
+  <!-- EN: Energy recover efficiency -->
+  <GI_EnergyReGainEff.label>灵气恢复效率</GI_EnergyReGainEff.label>
+  <!-- EN: The multiplier of the speed at which a cultivator regenerates after using a skill. -->
+  <GI_EnergyReGainEff.description>修炼者使用技能后灵力恢复速度的倍率。</GI_EnergyReGainEff.description>
+  
+</LanguageData>

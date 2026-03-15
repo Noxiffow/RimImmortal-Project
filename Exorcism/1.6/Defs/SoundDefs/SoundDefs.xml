@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--哭坟-->
+	<SoundDef>
+		<defName>CursedGraveSpawn_Sound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CursedGraveSound</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50</volumeRange>
+				<distRange>20~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--僵尸吼叫-->
+	<SoundDef>
+		<defName>GraveZombieSpawn_Sound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ZombieEnemySound</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50</volumeRange>
+				<distRange>20~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--捡起符咒-->
+	<SoundDef>
+		<defName>RI_Sound_TakeCharm</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Drop/RI_Sound_DropHerb</clipPath>
+					</li>
+				</grains>
+				<volumeRange>25~25</volumeRange>
+				<pitchRange>0.9311765~1.091765</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

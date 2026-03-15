@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--明朝灯具Base-->
+	<ThingDef Name="RI_LightMing_Base" ParentName="RI_Furniture_BuildingBase" Abstract="True">
+		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<passability>PassThroughOnly</passability>
+		<graphicData>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>5</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<researchPrerequisites>
+			<li>RI_Research_Lighting</li>
+		</researchPrerequisites>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li MayRequire="RI.RimImmortal.Living">RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>20</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<clearBuildingArea>false</clearBuildingArea>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<building>
+			<isEdifice>false</isEdifice>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+	</ThingDef>
+
+	<!--灯具，没有明火的-->
+
+	<!--镂空罩灯-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_OpenworkCoveredLamp</defName>
+		<label>Hood lamp</label>
+		<description>A hood lamp designed to prevent the flame from spreading. The ornate, hollowed-out patterns on the cover create a dreamlike atmosphere—clearly a piece of great value.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_OpenworkCoveredLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>1</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--宫女侍奉灯-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_PalaceMaidLamp</defName>
+		<label>Palace maid lamp</label>
+		<description>A finely crafted lamp in the form of a lifelike palace maid kneeling with a lantern in hand. The smoke vent is cleverly concealed within her sleeve, and the lamp itself features a movable opening that can be toggled to turn it off.\n\nThis lamp is a rare treasure, affordable only to nobles and royals.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_PalaceMaidLamp</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>1</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--==========================================烛台类==========================================-->
+
+	<!--烛台一类-->
+	<DesignatorDropdownGroupDef>
+		<defName>RI_DropdownGroup_Candlestick</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!--两种低级的-->
+
+	<!--小烛台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_SmallCandlestick</defName>
+		<label>Small candlestick</label>
+		<description>An antique-style candlestick used for lighting. Simple in design and commonly seen.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_SmallCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>0.3</Mass>
+			<Beauty>1</Beauty>
+		</statBases>
+
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.7,0.45)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--花口烛台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_FloralCandlestick</defName>
+		<label>Floral candlestick</label>
+		<description>An antique-style candlestick used for lighting. Its simple structure takes the shape of a flower petal.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_FloralCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>0.3</Mass>
+			<Beauty>1</Beauty>
+		</statBases>
+
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.46)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--高级一点的-->
+
+	<!--莲座烛台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_LotusPedestalCandlestick</defName>
+		<label>Lotus pedestal candlestick</label>
+		<description>An antique-style candlestick used for lighting. This type is adorned with lotus petal motifs.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_LotusPedestalCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.7)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--立杯烛台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_GobletStyleCandlestick</defName>
+		<label>Goblet-style candlestick</label>
+		<description>An antique-style candlestick used for lighting. Its form resembles a large cup stacked with a smaller one, cleverly designed to prevent melted wax from staining the table.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_GobletStyleCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.7)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--长枝灯台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_LongBranchedCandlestick</defName>
+		<label>Long-branched candlestick</label>
+		<description>An antique-style candlestick used for lighting. This tall and slender candlestick resembles a graceful branch.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_LongBranchedCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.8,1.8)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.86)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--兽首灯台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_BeastHeadCandlestick</defName>
+		<label>Beast-head candlestick</label>
+		<description>An antique-style candlestick used for lighting. The base is carved with the lively head of a small beast, both whimsical and charming.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_BeastHeadCandlestick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>0.5</Mass>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.7)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<!--更加高级一点的-->
+
+	<!--辟邪烛台-->
+	<ThingDef ParentName="RI_LightMing_Base">
+		<defName>RI_Building_LionShapedCandlestick</defName>
+		<label>Lion-shaped candlestick</label>
+		<description>An antique-style candlestick used for lighting. This one is shaped into a Pixie, a mythical beast with the body of a lion and wings. Known for warding off evil and bringing wealth, the Pixie makes this piece both decorative and symbolic.</description>
+		<graphicData>
+			<texPath>Things/Building/Torch/RI_Building_LionShapedCandlestick</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.3,1.3)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<WorkToBuild>550</WorkToBuild>
+			<Mass>1</Mass>
+			<Beauty>2</Beauty>
+		</statBases>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0.5,0.56)</offset>
+			</li>
+		</comps>
+		<designatorDropdown>RI_DropdownGroup_Candlestick</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="TorchLamp">
+		<defName>TorchWallLamp</defName>
+		<label>wall torch lamp</label>
+		<description>A wall-mounted wooden torch for lighting an area. It is not as bright as a regular torch lamp, but it can be mounted on walls. Produces a small amount of heat.</description>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Misc/WallTorch/WallTorch</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Misc/WallTorch/WallTorch_MenuIcon</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+		</building>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(184,136,83,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offsetNorth>(0,0,0)</offsetNorth>
+				<offsetSouth>(0,0,0.55)</offsetSouth>
+				<offsetWest>(0.45,0,0.35)</offsetWest>
+				<offsetEast>(-0.45,0,0.35)</offsetEast>
+			</li>
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

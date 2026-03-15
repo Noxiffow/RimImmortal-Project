@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================= Thoughts related to royal titles ============================= -->
+
+	<ThoughtDef>
+		<defName>RI_Thought_BeMaster</defName>
+		<durationDays>30</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<stages>
+			<li>
+				<label>成为掌门</label>
+				<description>我现在已经是掌门了</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Sect_GainedTitle</defName>
+		<durationDays>30</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<nullifyingTraits>
+
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>获得 {TITLE} 头衔</label>
+				<description>我现在已经是{TITLE}中的一员了, 这能让我更接近修仙之路！</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Sect_LostTitle</defName>
+		<durationDays>15</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<nullifyingTraits>
+
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>失去 {TITLE} 头衔</label>
+				<description>我不再是{TITLE}了，可恶啊！</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Sect_GainedTitle_B</defName>
+		<durationDays>30</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<nullifyingTraits>
+
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>获得 {TITLE} 头衔</label>
+				<description>换句话说......我现在门派的核心了？我现在是真正的修仙者了吗？我是吗？！</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+		</stages>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	</ThoughtDef>
+
+</Defs>

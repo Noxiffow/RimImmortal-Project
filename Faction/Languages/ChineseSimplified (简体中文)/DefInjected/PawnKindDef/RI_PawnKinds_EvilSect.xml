@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cadre member -->
+  <RI_Pawn_CadreMember.label>骨干成员</RI_Pawn_CadreMember.label>
+  
+  <!-- EN: Middle manager -->
+  <RI_Pawn_MiddleManager.label>小头目</RI_Pawn_MiddleManager.label>
+  
+  <!-- EN: Normal member -->
+  <RI_Pawn_NormalEvilMember.label>外道修士</RI_Pawn_NormalEvilMember.label>
+  
+  <!-- EN: Beginner -->
+  <RI_Pawn_SectBeginner.label>入门者</RI_Pawn_SectBeginner.label>
+  
+  <!-- EN: Leader -->
+  <RI_Pawn_SectLeader.label>外道头领</RI_Pawn_SectLeader.label>
+  
+</LanguageData>

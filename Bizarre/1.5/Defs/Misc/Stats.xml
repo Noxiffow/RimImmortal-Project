@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <StatDef ParentName="RI_RimImmortalStatBase">
+        <defName>NzRI_AoJingPowerMultiplier</defName>
+        <label>AoJing Power Multiplier</label>
+        <description>Multiplier of damage AoJing power</description>
+        <defaultBaseValue>1</defaultBaseValue>
+        <hideAtValue>1</hideAtValue>
+        <minValue>1</minValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <displayPriorityInCategory>10002</displayPriorityInCategory>
+    </StatDef>
+
+    <StatDef ParentName="RI_RimImmortalStatBase">
+        <defName>NzRI_ZhengDePowerMultiplier</defName>
+        <label>ZhengDe Power Multiplier</label>
+        <description>Multiplier of damage ZhengDe power</description>
+        <defaultBaseValue>1</defaultBaseValue>
+        <hideAtValue>1</hideAtValue>
+        <minValue>1</minValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <displayPriorityInCategory>10003</displayPriorityInCategory>
+    </StatDef>
+</Defs>

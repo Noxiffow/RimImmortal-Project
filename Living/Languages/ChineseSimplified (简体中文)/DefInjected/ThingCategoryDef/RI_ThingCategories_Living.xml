@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Animal product -->
+  <RI_Category_AnimalProductRaw.label>畜牧</RI_Category_AnimalProductRaw.label>
+  
+  <!-- EN: RI-Apparel -->
+  <RI_Category_Apparel.label>仙路-衣着</RI_Category_Apparel.label>
+  
+  <!-- EN: Drug material -->
+  <RI_Category_DrugsMaterials.label>药材</RI_Category_DrugsMaterials.label>
+  
+  <!-- EN: Fabric -->
+  <RI_Category_Fabric.label>布帛</RI_Category_Fabric.label>
+  
+  <!-- EN: RI manufactured -->
+  <RI_Category_Manufactured.label>仙路-成品</RI_Category_Manufactured.label>
+  
+  <!-- EN: Clothing -->
+  <RI_Category_NormalClothing.label>衣冠</RI_Category_NormalClothing.label>
+  
+  <!-- EN: Ore and Metal -->
+  <RI_Category_Ore.label>金石</RI_Category_Ore.label>
+  
+  <!-- EN: RI-Resource -->
+  <RI_Category_Resource.label>仙路-原料</RI_Category_Resource.label>
+  
+  <!-- EN: Wood and Clay -->
+  <RI_Category_WoodStone.label>土木</RI_Category_WoodStone.label>
+  
+</LanguageData>

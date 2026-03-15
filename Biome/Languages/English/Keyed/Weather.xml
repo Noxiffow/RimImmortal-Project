@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GameCondition_RageFury_Reason>rage</GameCondition_RageFury_Reason>
+  <RI_PeachBlossomFogEnterWarning>The map was shrouded in fog and the entrance could not be found.</RI_PeachBlossomFogEnterWarning>
+  <RI_PeachBlossomFogEnterLost_Letter_Label>Lost in the Peach blossom maze.</RI_PeachBlossomFogEnterLost_Letter_Label>
+  <RI_PeachBlossomFogEnterLost_Letter_Desc>Due to the influence of the Peach blossom maze, the creature was lost and failed to reach here.</RI_PeachBlossomFogEnterLost_Letter_Desc>
+  <RI_PeachBlossomFogFormCaravanWarning>Due to the influence of the Peach blossom maze, the caravan could not be organized.</RI_PeachBlossomFogFormCaravanWarning>
+  <RI_PanPeach_AgeReduced>
+	  {PAWN} eat the Immoral peach, suddenly feel comfortable, become younger.
+  </RI_PanPeach_AgeReduced>
+  <RI_XuanTurtle_DanceAfterLotus>
+Turtle dancing!</RI_XuanTurtle_DanceAfterLotus>
+  <RimImmortalBiome>RimImmortal-Biome</RimImmortalBiome>
+  <ShowLostMessage>Is PeachFogLost Message shown?</ShowLostMessage>
+  <RI_PeachBlossomFogEnterLost_Letter_Desc2>Out of the fog you hear a voice that seems to be:</RI_PeachBlossomFogEnterLost_Letter_Desc2>
+</LanguageData>

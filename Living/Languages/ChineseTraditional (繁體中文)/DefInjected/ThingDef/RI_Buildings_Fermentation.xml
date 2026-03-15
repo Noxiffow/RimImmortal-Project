@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ice silkworm rearing box -->
+  <RI_Building_IceSilkwormRearingBox.label>冰蚕箱</RI_Building_IceSilkwormRearingBox.label>
+  <!-- EN: An old-fashioned rice cooker. Simply add rice, and it will automatically cook fragrant, freshly made rice. -->
+  <RI_Building_IceSilkwormRearingBox.description>一个木质结构的冰蚕箱，经过一段时间的培育后，将会产出冰蚕茧。冰蚕茧进一步加工就成了冰蚕丝。\n\n蚕箱需要装填桑叶作为养料。</RI_Building_IceSilkwormRearingBox.description>
+  
+  <!-- EN: Silkworm rearing box -->
+  <RI_Building_SilkwormRearingBox.label>蚕箱</RI_Building_SilkwormRearingBox.label>
+  <!-- EN: An old-fashioned rice cooker. Simply add rice, and it will automatically cook fragrant, freshly made rice. -->
+  <RI_Building_SilkwormRearingBox.description>一个木质结构的蚕箱，经过一段时间的培育后，将会产出蚕茧。蚕茧进一步加工就成了丝绸。\n\n蚕箱需要装填桑叶作为养料。</RI_Building_SilkwormRearingBox.description>
+  
+</LanguageData>

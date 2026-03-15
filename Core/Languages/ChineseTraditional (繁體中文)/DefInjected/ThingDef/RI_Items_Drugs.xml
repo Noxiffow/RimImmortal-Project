@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 【Third-rate】All-grain pill -->
+  <RI_Drug_AllCropsPill.label>【三品】百粮丸</RI_Drug_AllCropsPill.label>
+  <!-- EN: Third-rate pill，It has an extremely bitter and slightly sour flavor and can eliminate hunger. According to the history books, it was a pill that a city lord researched alone and used to fill the stomachs of soldiers marching to war by drying and grinding mushrooms and ganoderma lucidum, adding grease, and pressing them into small pills with a heavy object. These pills would gradually expand after entering the stomach, and soldiers on the march would be able to fill their stomachs after eating two of them. After a period of time, soldiers realized that the pills caused constipation, so they gradually stopped taking them and turned them into emergency food for earthquake relief. -->
+  <RI_Drug_AllCropsPill.description>三品药丸，味道极苦微酸，可以消除饥饿。根据史书记载，是一名城主独自研究出来，用来给行军打仗的士兵填饱肚子的药丸，将菇和灵芝烘干磨碎，加入油脂，以重物压成小丸。这种药丸入腹后会逐渐膨胀，行军的士兵吃上两颗，便能饱腹。一段时日后士兵们陆续发现这种药丸会导致便秘，所以逐渐停止服用，而转变成抗震救灾的应急食物。</RI_Drug_AllCropsPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_AllCropsPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_AllCropsPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_AllCropsPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_AllCropsPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Blood-saving pill -->
+  <RI_Drug_BloodSavingPill.label>【三品】保血丸</RI_Drug_BloodSavingPill.label>
+  <!-- EN: Third-rate pill，It has a slightly bitter flavor, and when taken, it enhances blood circulation and accelerates healing. Legend has it that an ancient physician was searching for herbs in the mountains when he came across a group of stragglers living in the mountains. The drifters taught the physician the recipe for making pills by pounding and boiling ganoderma lucidum and psyllium. The physician learned the recipe and passed it on to generations of descendants until more advanced medicines replaced it. -->
+  <RI_Drug_BloodSavingPill.description>三品药丸，味道微苦，服用后可以增强血液循环，加速治愈，并能防止感染。相传，古代一名医师在进山寻找草药时，遇到一群生活在山中的流民。流民们将这种灵芝和车前子捣碎熬制成丸的药方教给了医师。医师学会后，将这药方传给了一代代后人，一直流传到更加先进的医药将之代替为止。</RI_Drug_BloodSavingPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_BloodSavingPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_BloodSavingPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_BloodSavingPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_BloodSavingPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Cultivate-energy pill -->
+  <RI_Drug_CultivateEnergyPill.label>【三品】归灵丸</RI_Drug_CultivateEnergyPill.label>
+  <!-- EN: Third-rate pill, it containing concentrated Qi with a sweet flavor. The Qi contained in the pill immediately enters the meridians after taking it, replenishing the body's lack of Qi. This pill is very common in the circle of cultivator, after all, no one knows whether a little Qi recovery can turn the situation around in a critical moment. -->
+  <RI_Drug_CultivateEnergyPill.description>三品药丸，一种蕴含浓缩灵气的药丸，味道甜甜的。服用后药丸内蕴藏的灵气会马上进入经脉，补充身体缺少的灵气。这种药丸在修炼者圈子中十分常见，毕竟谁也不知道，一点灵气的恢复，是否就能在危急时刻逆转局面。</RI_Drug_CultivateEnergyPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_CultivateEnergyPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_CultivateEnergyPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_CultivateEnergyPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_CultivateEnergyPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Second-rate】Spirit jade pill -->
+  <RI_Drug_CultivateMoreEnergyPill.label>【二品】灵玉丸</RI_Drug_CultivateMoreEnergyPill.label>
+  <!-- EN: Second-rate pills, taste slightly bitter, can directly restore the Qi at the same time, let the Qi slow automatic recovery. This is a pill that uses spiritual stone as a material, and the Qi in the spiritual stone must be extracted by a pharmacist and concentrated into a small pill. This elixis is relatively rare, because it wastes more on Qi, so it will only be circulated among some schools and large drug manufacturers. -->
+  <RI_Drug_CultivateMoreEnergyPill.description>二品药丸，味道略苦，可以在直接恢复灵气的同时，让灵气缓慢自动恢复。这是一种使用了灵石作为材料的药丸，必须通过炼药师将灵石内的灵气提炼出来后，浓缩到小小的药丸中。这种丹药比较少见，因为其对灵气的浪费较多，所以只会在一些门派和大型药商之间流通。</RI_Drug_CultivateMoreEnergyPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_CultivateMoreEnergyPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_CultivateMoreEnergyPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_CultivateMoreEnergyPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_CultivateMoreEnergyPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Second-rate】Scorching-Wind pill -->
+  <RI_Drug_ExpelColdPill.label>【二品】炙风丸</RI_Drug_ExpelColdPill.label>
+  <!-- EN: Second-rate Elixir，It has a pungent, slightly sweet flavor that clears hypothermia. Balancing the strong medicinal properties of Tillandsia Dragon Shoot with the Fairy Delicacy Fruit, it is eaten like a hint of spirits in the throat, burning all the way to the stomach. The heat seeps into the limbs, enabling one to temporarily ward off the cold. -->
+  <RI_Drug_ExpelColdPill.description>二品丹药，味道辛辣微甜，可以清除低温症。以仙馐果来平衡火龙芽的强烈药性，吃下后如有一丝烈酒入喉，一路烧到胃里。热力渗入四肢，使人能暂时抵御严寒。</RI_Drug_ExpelColdPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_ExpelColdPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_ExpelColdPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_ExpelColdPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_ExpelColdPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Second-rate】Cold-frost pill -->
+  <RI_Drug_ExpelHotPill.label>【二品】玄寒丸</RI_Drug_ExpelHotPill.label>
+  <!-- EN: Second-rate Elixir，It has a cool and slightly bitter flavor and can clear up heatstroke. Legend has it that during the Great Drought, a merchant used Snow Lotus, which he brought with him from the coldest place in the north, and a rare delicacy fruit as the raw materials to make a pill. After eating it, the cool air enters the body and removes the heatstroke, saving many people's lives, and the businessman also made a lot of money from it. -->
+  <RI_Drug_ExpelHotPill.description>二品丹药，味道清凉微苦，可以清除中暑。相传是在大旱年间，一名行商以随身携带来自北方极寒之地的雪莲和少见的仙馐果为原材料，调制出的一种药丸。吃下去后凉气入体，清除酷暑，挽救了许多人的生命，行商也以此赚得盆满钵满。</RI_Drug_ExpelHotPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_ExpelHotPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_ExpelHotPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_ExpelHotPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_ExpelHotPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Second-rate】Gold blood pill -->
+  <RI_Drug_GoldBloodPill.label>【二品】金血丸</RI_Drug_GoldBloodPill.label>
+  <!-- EN: Second-rate pills, almost tasteless, can increase defense. After taking the pill into the human body, it will form a flexible gas film on the body surface with human metabolism, which plays the role of protecting the body, but it will reduce some movement speed. It was developed by accident, is a famous pharmacist in the production of Guyuan powder, the wrong dosage, but found it was too late, so try to refine it into a pill, but did not expect to succeed, so a new pill was born. -->
+  <RI_Drug_GoldBloodPill.description>二品药丸，几乎没有味道，可以增加防御力。吃下后丹药进入人体，会随着人体代谢在体表形成一层柔韧的气膜，起到护体的作用，但是会减少一些移速。其被研发出来是一种意外，是一名著名炼药师在制作固元散的时候，搞错了用量，但发现后已经晚了，于是尝试着将其炼制成丹药，但没想到竟然成功了，于是一种新的丹药就此诞生。</RI_Drug_GoldBloodPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_GoldBloodPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_GoldBloodPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_GoldBloodPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_GoldBloodPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Green balm -->
+  <RI_Drug_GreenBalm.label>【三品】清风膏</RI_Drug_GreenBalm.label>
+  <!-- EN: Third-rate balm，It is a green ointment with a cool odor and extremely bitter taste that clears fatigue. It is an ointment made by soaking Snow Lotus and mushrooms in oil, adding a variety of spices, and finally extracting them. If taken, it can also clear heat and remove toxins, but because of its overly spicy and pungent odor, people always use it to dispel drowsiness and refresh the mind. -->
+  <RI_Drug_GreenBalm.description>三品药膏，是一种绿色油膏，气味清凉，味道极苦，可以清除疲劳。这是一种用油浸泡雪莲和蘑菇，加入多种香料，最后萃取出来的油膏。如果服用，也可以清热解毒，但因其过于辛辣刺鼻的气味，人们总是将其用来驱散困意，提神醒脑。</RI_Drug_GreenBalm.description>
+  <!-- EN: rub {0} -->
+  <RI_Drug_GreenBalm.ingestible.ingestCommandString>涂抹 {0}</RI_Drug_GreenBalm.ingestible.ingestCommandString>
+  <!-- EN: rubbing {0} -->
+  <RI_Drug_GreenBalm.ingestible.ingestReportString>涂抹 {0} 中</RI_Drug_GreenBalm.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Pain-relieving balm -->
+  <RI_Drug_HealBalm.label>【三品】跌打膏</RI_Drug_HealBalm.label>
+  <!-- EN: Third-rate balm，A brown balm with a cool flavor that can be applied to wounds and has a better healing effect than herbs. At one time the efficacy of this medicine was always criticized, but there was no denying that it was also effective in treating many bruises and injuries. As later generations continued to improve it and added psyllium to the formula, this poultice eventually became a superior topical compress to herbs and was accepted by the public. -->
+  <RI_Drug_HealBalm.description>三品药膏，一种棕黑的膏药，气味清凉，可以敷在伤口上，有比草药更好的治疗效果。曾经这种药的药效一直受到人的诟病，但无法否认的是，它同时也对许多跌打损伤有治疗效果。随着后人的不断改良，并在配方中加入车前子，这种膏药最终成为优于草药的外敷药，并被大众接受。</RI_Drug_HealBalm.description>
+  
+  <!-- EN: 【Second-rate】Herb powder -->
+  <RI_Drug_HerbPowder.label>【二品】回春散</RI_Drug_HerbPowder.label>
+  <!-- EN: Second-rate powder，A light green medicinal powder that boosts immunity to various diseases and stops pain. The secret to the effectiveness of this powder lies in drying all the raw materials into powder and mixing them together. Because of its high price, but high efficacy, it is often used by the rich and powerful as a medicine for pregnant women to protect their fetuses. -->
+  <RI_Drug_HerbPowder.description>二品药散，一种淡绿色的药粉，可以增强对各种疾病的免疫力，止痛。这种药粉的效果很好，秘诀就在于将所有的原材料都烘干成粉后混合，由于其价格高昂，但药效很好，经常被富贵人家用来作为孕妇的保胎药。</RI_Drug_HerbPowder.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_HerbPowder.ingestible.ingestCommandString>服用 {0}</RI_Drug_HerbPowder.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_HerbPowder.ingestible.ingestReportString>服用 {0} 中</RI_Drug_HerbPowder.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】LingYun pill -->
+  <RI_Drug_LingYunPill.label>【三品】凌云丸</RI_Drug_LingYunPill.label>
+  <!-- EN: Third-rate pill，it tastes strangely sweet, like honey, and can briefly increase movement speed. The origin of this pill is a mystery, and it has been in circulation since an unknown time. However, most people agree that it is not illogical to use the stimulation of Tillandsia Dragon Shoot and the nourishment of Silver Ginseng to dehydrate the body for a short period of time and maintain the muscles to improve athletic ability. -->
+  <RI_Drug_LingYunPill.description>三品药丸，味道奇甜无比，宛若蜜糖，可以短暂提升移速。这种药丸的来源成谜，不知何时起便流传于民间。但大部分人都认为，以火龙芽的刺激和银芯参的滋补，让人体在短时间内脱水并且维持肌肉，来提高运动能力，也并非毫无逻辑。</RI_Drug_LingYunPill.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_LingYunPill.ingestible.ingestCommandString>服用 {0}</RI_Drug_LingYunPill.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_LingYunPill.ingestible.ingestReportString>服用 {0} 中</RI_Drug_LingYunPill.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Solid-foundation powder -->
+  <RI_Drug_StrongPhysiquePowder.label>【三品】固元散</RI_Drug_StrongPhysiquePowder.label>
+  <!-- EN: Third-rate powder, a powder with gold sand as the main material, can improve the absorption efficiency of Qi in the long term when taken with water, which is helpful for cultivators who are ready to upgrade, and can be taken before the breakthrough. The effect of this medicine is a mystery, because only cultivatorss who have successfully broken through will praise its effects. -->
+  <RI_Drug_StrongPhysiquePowder.description>三品药散，一种以金砂为主要材料的粉剂，兑水服用后可以长期提高灵气的吸收效率，对准备突破的修炼者有帮助，可以在突破前服用。这种药的效果成谜，因为只有成功突破的修炼者才会夸奖它的效果。</RI_Drug_StrongPhysiquePowder.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_StrongPhysiquePowder.ingestible.ingestCommandString>服用 {0}</RI_Drug_StrongPhysiquePowder.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_StrongPhysiquePowder.ingestible.ingestReportString>服用 {0} 中</RI_Drug_StrongPhysiquePowder.ingestible.ingestReportString>
+  
+  <!-- EN: 【Third-rate】Three-rock powder -->
+  <RI_Drug_ThreeRockPowder.label>【三品】三石散</RI_Drug_ThreeRockPowder.label>
+  <!-- EN: Third-rate powder，A gray medicinal powder with a slightly sour taste. It is a highly revered medicinal powder amongst the martial arts community, made with small amounts of Tillandsia Dragon Shoot and LingZhi, mixed with stone powder. When taken, it will stimulate the heart, making one's blood run hot and improving combat performance. But also because of its properties, it is sought after by men as a miracle drug. This has also led to fakes and many instances of poisoning. -->
+  <RI_Drug_ThreeRockPowder.description>三品药散，一种灰色药粉，味道微酸。是一种在武行间非常受推崇的药粉，以少量火龙草和灵芝，加入石粉调制而成。服用后会刺激心脏，使人热血上涌，提高战斗表现。但也是因为其特性，被男人追捧为神药。这也导致了假货频出，有许多人吃三石散中毒的事例。</RI_Drug_ThreeRockPowder.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_ThreeRockPowder.ingestible.ingestCommandString>服用 {0}</RI_Drug_ThreeRockPowder.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_ThreeRockPowder.ingestible.ingestReportString>服用 {0} 中</RI_Drug_ThreeRockPowder.ingestible.ingestReportString>
+  
+</LanguageData>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 蜕皮 -->
+	<HediffDef>
+		<defName>NzRI_AoJing_Molt</defName>
+		<label>molt</label>
+		<description>You are covered in a hard epidermis with a vague blood light and aura flowing
+			through it.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+		<stages>
+			<li>
+				<painOffset>-0.35</painOffset>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>1.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+				<canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+			</li>
+		</comps>
+	</HediffDef>
+	<!-- 剧痛 -->
+	<HediffDef>
+		<defName>NzRI_AoJing_Agony</defName>
+		<label>Agony</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Acidic remnants of flesh and blood try to burrow into your body like maggots, and you nearly faint from the pain.</description>
+		<initialSeverity>0.001</initialSeverity>
+		<defaultLabelColor>(0.6, 0, 0, 1)</defaultLabelColor>
+		<stages>
+			<li>
+				<painOffset>0.65</painOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>12000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+				<canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+			</li>
+		</comps>
+	</HediffDef>
+	<!-- 登阶 -->
+	<HediffDef>
+		<defName>NzRI_AoJing_Ascend</defName>
+		<label>CangQiang Ascend</label>
+		<hediffClass>NzRimImmortalBizarre.AoJing_Ascend</hediffClass>
+		<duplicationAllowed>false</duplicationAllowed>
+		<description>You're watched by Ba-Hui, your skill power is increased, and your recovery
+			speed is increased.</description>
+		<stages>
+			<li>
+				<label>lv1</label>
+				<painOffset>-0.05</painOffset>
+				<painFactor>0.9</painFactor>
+				<statFactors>
+					<InjuryHealingFactor>1.5</InjuryHealingFactor>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>1.25</NzRI_AoJingPowerMultiplier>
+					
+				</statFactors>
+			</li>
+			<li>
+				<label>lv2</label>
+				<painOffset>-0.1</painOffset>
+				<painFactor>0.8</painFactor>
+				<minSeverity>0.19</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>2.0</InjuryHealingFactor>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>1.5</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv3</label>
+				<painOffset>-0.15</painOffset>
+				<painFactor>0.7</painFactor>
+				<minSeverity>0.29</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>3</InjuryHealingFactor>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>1.75</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv4</label>
+				<painOffset>-0.2</painOffset>
+				<painFactor>0.6</painFactor>
+				<minSeverity>0.39</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>3.5</InjuryHealingFactor>
+					<IncomingDamageFactor>0.6</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>2.0</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv5</label>
+				<painOffset>-0.3</painOffset>
+				<painFactor>0.5</painFactor>
+				<minSeverity>0.49</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>4.5</InjuryHealingFactor>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>2.5</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv6</label>
+				<painOffset>-0.35</painOffset>
+				<painFactor>0.45</painFactor>
+				<minSeverity>0.59</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>5</InjuryHealingFactor>
+					<IncomingDamageFactor>0.45</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>3</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv7</label>
+				<painOffset>-0.4</painOffset>
+				<painFactor>0.43</painFactor>
+				<minSeverity>0.69</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>6</InjuryHealingFactor>
+					<IncomingDamageFactor>0.45</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>3.5</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv7</label>
+				<painOffset>-0.4</painOffset>
+				<painFactor>0.4</painFactor>
+				<minSeverity>0.79</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>6.5</InjuryHealingFactor>
+					<IncomingDamageFactor>0.42</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>4</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv8</label>
+				<painOffset>-0.45</painOffset>
+				<painFactor>0.4</painFactor>
+				<minSeverity>0.89</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>7</InjuryHealingFactor>
+					<IncomingDamageFactor>0.39</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>4.5</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+			<li>
+				<label>lv9</label>
+				<painOffset>-0.45</painOffset>
+				<painFactor>0.4</painFactor>
+				<minSeverity>0.99</minSeverity>
+				<statFactors>
+					<InjuryHealingFactor>8</InjuryHealingFactor>
+					<IncomingDamageFactor>0.35</IncomingDamageFactor>
+					<NzRI_AoJingPowerMultiplier>5</NzRI_AoJingPowerMultiplier>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+</Defs>

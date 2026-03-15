@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crimson halberd -->
+  <RI_MeleeWeapon_CrimsonHalberd.label>血煞戟</RI_MeleeWeapon_CrimsonHalberd.label>
+  <!-- EN: A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure. -->
+  <RI_MeleeWeapon_CrimsonHalberd.description>血煞枪</RI_MeleeWeapon_CrimsonHalberd.description>
+  <!-- EN: point -->
+  <RI_MeleeWeapon_CrimsonHalberd.tools.point.label>枪尖</RI_MeleeWeapon_CrimsonHalberd.tools.point.label>
+  <!-- EN: edge -->
+  <RI_MeleeWeapon_CrimsonHalberd.tools.edge.label>枪刃</RI_MeleeWeapon_CrimsonHalberd.tools.edge.label>
+  
+  <!-- EN: Crimson spear -->
+  <RI_MeleeWeapon_CrimsonSpear.label>血煞枪</RI_MeleeWeapon_CrimsonSpear.label>
+  <!-- EN: A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure. -->
+  <RI_MeleeWeapon_CrimsonSpear.description>血煞枪</RI_MeleeWeapon_CrimsonSpear.description>
+  <!-- EN: point -->
+  <RI_MeleeWeapon_CrimsonSpear.tools.point.label>枪尖</RI_MeleeWeapon_CrimsonSpear.tools.point.label>
+  <!-- EN: edge -->
+  <RI_MeleeWeapon_CrimsonSpear.tools.edge.label>枪刃</RI_MeleeWeapon_CrimsonSpear.tools.edge.label>
+  
+</LanguageData>

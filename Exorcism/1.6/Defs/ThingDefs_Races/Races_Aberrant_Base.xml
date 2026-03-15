@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===============所有邪异的基本前置===============-->
+
+	<ThingDef Abstract="True" ParentName="BasePawn" Name="RI_ThingBase_Aberrant">
+		<devNote>Aberrant</devNote>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<!--野性-->
+			<Wildness>1</Wildness>
+			<!--皮肉数量0-->
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<race>
+			<!--没有性别-->
+			<hasGenders>false</hasGenders>
+			<!--不需要睡觉-->
+			<needsRest>false</needsRest>
+			<bleedRateFactor>-0.8</bleedRateFactor>
+			<!--血迹，肉类型-->
+			<fleshType>RI_Aberrant_Flesh</fleshType>
+			<!--无法驯服-->
+			<trainability>None</trainability>
+			<bloodDef>RI_Filth_AberrantBlood</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.1</meatMarketValue>
+			<foodType>Corpse</foodType>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<soundEating>Insectoid_Eat</soundEating>
+			<!--不会变成蹒跚怪-->
+			<canBecomeShambler>false</canBecomeShambler>
+			<!--反击率-->
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<!--逻辑树-->
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<renderTree>Animal</renderTree>
+			<!--野生刷新，不会在极端地形刷出，例如极端沙漠，冰盖-->
+			<wildBiomes>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<ColdBog>0</ColdBog>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+		</race>
+		<thingCategories>
+			<li>Animals</li>
+		</thingCategories>
+		<recipes>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+		</recipes>
+		<!--休眠之类的comp-->
+		<!--<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<onlySendSignalOnce>false</onlySendSignalOnce>
+			</li>
+		</comps>-->
+		<!--不会逃跑-->
+		<modExtensions>
+			<li Class="RI.ModExtesion_NoFleeing">
+				<NoFleeing>true</NoFleeing>
+			</li>
+			<li Class="RI_Frame_ZombieLife.ZombieTagExtension">
+				<!-- 定义这个生物的标签，被特殊武器攻击造成更多伤害 -->
+				<tag>RI_Tag_Aberrant</tag>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 蜘蛛基类 -->
+	<ThingDef Abstract="True" ParentName="AnimalThingBase" Name="RI_Base_EvilCreatureSpider">
+		<devNote>RI_EvilCreatureBase</devNote>
+		<statBases>
+			<ToxicResistance>0.5</ToxicResistance>
+			<ComfyTemperatureMax>85</ComfyTemperatureMax>
+			<!-- 舒适温度-->
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<!-- 最高舒适温度-->
+			<MarketValue>100</MarketValue>
+			<!-- 市场价值-->
+			<LeatherAmount>0</LeatherAmount>
+			<!-- 皮革-->
+		</statBases>
+		<race>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<baseHungerRate>0.10</baseHungerRate>
+			<meatMarketValue>0.5</meatMarketValue>
+			<foodType>CarnivoreAnimal</foodType>
+			<soundEating>Insectoid_Eat</soundEating>
+			<!--反击率-->
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<!--逻辑树-->
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<renderTree>Animal</renderTree>
+			<!--野生刷新，不会在极端地形刷出，例如极端沙漠，冰盖-->
+			<wildBiomes>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.3</TemperateSwamp>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<ColdBog>0</ColdBog>
+				<TropicalRainforest>0.3</TropicalRainforest>
+				<TropicalSwamp>0.3</TropicalSwamp>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<receivesSignals>true</receivesSignals>
+	</ThingDef>
+
+</Defs>

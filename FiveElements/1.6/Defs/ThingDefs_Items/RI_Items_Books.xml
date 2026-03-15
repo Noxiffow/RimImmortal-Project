@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================== 火行法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_Book_FireElement</defName>
+		<label>Initial approach book-Fire element</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Art of Flame".\n\nThe Fire Method is fierce in nature—unyielding, ever-burning, its force both violent and resolute. Yet, at its core, it is intertwined with the vitality of Yang, a fusion of destruction and renewal. Those who walk this path temper their hearts in flame, where spiritual energy serves as kindling, and Heartfire blazes unceasingly.\n\nUpon initiation, the Heartfire stirs one’s nature, causing restlessness and emotional turmoil. One’s temperament wavers, unstable as flickering embers. Yet this trial must be overcome, for only those who master their inner fire may grasp the true essence of the Departing Flame. In the end, those who reach the pinnacle of this path can ignite the Heartfire within others, reducing all illusions to ashes.\n\nWarning: Once a cultivator fully comprehends a tome of a given path, they become bound to its teachings and can no longer pursue any other cultivation method!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_FireCultivation</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_BurningSoul</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Spew</AbilityDef>
+			<AbilityDef>RI_Ab_Fire_FireBall</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Impact</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Shield</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Jump</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Ring</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_Book_FireElement</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>RI_FiveElements_Fire</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_FireCultivation</li>
+					<li>RI_Ability_Fire_BurningSoul</li>
+					<li>RI_Ability_Fire_Spew</li>
+					<li>RI_Ab_Fire_FireBall</li>
+					<li>RI_Ability_Fire_Impact</li>
+					<li>RI_Ability_Fire_Shield</li>
+					<li>RI_Ability_Fire_Jump</li>
+					<li>RI_Ability_Fire_Ring</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_FiveElements_Fire</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Fire element Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================================== 木行法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_Book_WoodElement</defName>
+		<label>Initial approach book-Wood element</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Incomplete scroll of Xun wood".\n\nThe Wood Path Method is a cultivation technique focused on the power of vitality. Cultivator of the Wood Path perceive the flowing vitality within plants and trees and learn to manipulate it. Those who attain mastery can refine this vitality within their own core, strengthening their blood and nourishing their spirit.\n\nThe Five Elements Sect was once the foremost sect in the cultivation world. Its Wood Path division had the power to freely command life force, creating wondrous flowers and magical trees, and enjoying unmatched prestige. However, after a devastating sect war, the Wood Path became the target of the other four elemental branches. In the end, to ensure the survival of a few disciples, the Wood Path was sealed away and its teachings voluntarily abolished.\n\nWarning: Once a cultivator fully comprehends a tome of a given path, they become bound to its teachings and can no longer pursue any other cultivation method!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_WoodCultivation</AbilityDef>
+			<AbilityDef>RI_Ability_EverythingGrow</AbilityDef>
+			<AbilityDef>RI_Ability_VitalityAbsorption</AbilityDef>
+			<AbilityDef>RI_Ability_VerdantBind</AbilityDef>
+			<AbilityDef>RI_Ability_GardenArmy</AbilityDef>
+			<AbilityDef>RI_Ability_ForestGuardian</AbilityDef>
+			<AbilityDef>RI_Ability_WoodLifeGive</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_Book_WoodElement</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>RI_FiveElements_Wood</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_WoodCultivation</li>
+					<li>RI_Ability_EverythingGrow</li>
+					<li>RI_Ability_VerdantBind</li>
+					<li>RI_Ability_GardenArmy</li>
+					<li>RI_Ability_ForestGuardian</li>
+					<li>RI_Ability_VitalityAbsorption</li>
+					<li>RI_Ability_WoodLifeGive</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_FiveElements_Wood</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Wood element Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================================== 土行法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_Book_EarthElement</defName>
+		<label>Initial approach book-Earth element</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Qian Kun".\n\nStrength born of accumulation, heaven and earth as its burden. Earth cultivation is the art of resonating with the land itself. Qi sinks like roots into the soil; walking, standing, and resting are all forms of practice. As a result, most Earth cultivators do not rely on their senses to perceive the world, but instead link themselves to the ground, refining Earth Columns to serve as anchors through which their techniques are realized.Those of profound attainment can draw the power of Kun Earth into their bodies, stir the deep earth veins, and carve out a world of their own.\n\nWarning: Once a cultivator fully comprehends a tome of a given path, they become bound to its teachings and can no longer pursue any other cultivation method!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_EarthCultivation</AbilityDef>
+			<AbilityDef>RI_Ability_EarthSpiritColumn</AbilityDef>
+			<AbilityDef>RI_Ability_StoneArmor</AbilityDef>
+			<AbilityDef>RI_Ability_FlyingSand</AbilityDef>
+			<AbilityDef>RI_Ability_EarthWall</AbilityDef>
+			<AbilityDef>RI_Ability_SandTrap</AbilityDef>
+			<AbilityDef>RI_Ability_WorldSealingStoneTower</AbilityDef>
+			<AbilityDef>RI_Ability_Earthquake</AbilityDef>
+			<AbilityDef>RI_Ability_EarthDomain</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_Book_EarthElement</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>RI_FiveElements_Earth</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_EarthCultivation</li>
+					<li>RI_Ability_EarthSpiritColumn</li>
+					<li>RI_Ability_StoneArmor</li>
+					<li>RI_Ability_FlyingSand</li>
+					<li>RI_Ability_EarthWall</li>
+					<li>RI_Ability_SandTrap</li>
+					<li>RI_Ability_WorldSealingStoneTower</li>
+					<li>RI_Ability_Earthquake</li>
+					<li>RI_Ability_EarthDomain</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach_FiveElements_Earth</researchProjectDef>
+				<completedLetterTitle>{PARENT_label} becomes some dirt and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Earth element Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

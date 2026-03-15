@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <IncidentDef>
+        <defName>Nz_XinSuWandersIn</defName>
+        <label>a XinSu wanders in</label>
+        <category>Misc</category>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>NzRimImmortalBizarre.IncidentWorker_XinSuWandersIn</workerClass>
+        <baseChance>1.0</baseChance>
+        <populationEffect>IncreaseMedium</populationEffect>
+        <letterLabel>lost XinSu</letterLabel>
+        <letterText>A lost {1} has wandered into the area, {PAWN_pronoun} is called {0}.\n\nCapture {PAWN_objective} before {PAWN_pronoun} causes more trouble.</letterText>
+        <letterDef>NeutralEvent</letterDef>
+      </IncidentDef>
+</Defs>

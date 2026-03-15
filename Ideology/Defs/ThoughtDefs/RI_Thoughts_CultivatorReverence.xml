@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Thought 1: Know a cultivator
+         Observer: any ideology member with CultivatorReverence_Revered
+         Subject:  any pawn with Spiritual Root (Hediff_RI_EnergyRoot)
+         Effect:   +15 opinion -->
+    <ThoughtDef>
+        <defName>RI_Thought_KnowACultivator</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_Ideology.ThoughtWorker_Precept_KnowACultivator</workerClass>
+        <stages>
+            <li>
+                <label>know a cultivator</label>
+                <labelSocial>on the immortal path</labelSocial>
+                <baseOpinionOffset>15</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- Thought 2: Fellow cultivator
+         Observer: ideology member with CultivatorReverence_Revered who also has a Spiritual Root
+         Subject:  any pawn who also has a Spiritual Root
+         Effect:   +20 opinion (stacks with Thought 1 for +35 total) -->
+    <ThoughtDef>
+        <defName>RI_Thought_FellowCultivator</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_Ideology.ThoughtWorker_Precept_FellowCultivator</workerClass>
+        <stages>
+            <li>
+                <label>fellow cultivator</label>
+                <labelSocial>fellow cultivator</labelSocial>
+                <baseOpinionOffset>20</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

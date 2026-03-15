@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make black steel -->
+  <Make_BlackSteel.label>炼造庚钢</Make_BlackSteel.label>
+  <!-- EN: By high temperature and high pressure synthesis of black steel. -->
+  <Make_BlackSteel.description>用高温高压来锻造庚钢。</Make_BlackSteel.description>
+  <!-- EN: Making black steel. -->
+  <Make_BlackSteel.jobString>炼造庚钢</Make_BlackSteel.jobString>
+  
+  <!-- EN: make black steel x5 -->
+  <Make_BlackSteelBulk.label>炼造庚钢 x5</Make_BlackSteelBulk.label>
+  <!-- EN: By high temperature and high pressure synthesis of black steel. -->
+  <Make_BlackSteelBulk.description>用高温高压来锻造庚钢。</Make_BlackSteelBulk.description>
+  <!-- EN: Making black steel. -->
+  <Make_BlackSteelBulk.jobString>炼造庚钢 x5</Make_BlackSteelBulk.jobString>
+  
+  <!-- EN: make Device core circuit -->
+  <Make_DeviceCoreComponent.label>合成宝器核心构件</Make_DeviceCoreComponent.label>
+  <!-- EN: Make a Device core circuit. -->
+  <Make_DeviceCoreComponent.description>制作宝器核心构件。</Make_DeviceCoreComponent.description>
+  <!-- EN: Making Device core circuit. -->
+  <Make_DeviceCoreComponent.jobString>合成宝器核心构件中</Make_DeviceCoreComponent.jobString>
+  
+  <!-- EN: make liquid jade -->
+  <Make_LiquidJade.label>合成柔玉</Make_LiquidJade.label>
+  <!-- EN: By combining spiritual crystal and jade for a long time into a small amount of liquid jade, this method will waste a lot of material. -->
+  <Make_LiquidJade.description>合成柔玉</Make_LiquidJade.description>
+  <!-- EN: Making liquid jade. -->
+  <Make_LiquidJade.jobString>合成柔玉</Make_LiquidJade.jobString>
+  
+</LanguageData>

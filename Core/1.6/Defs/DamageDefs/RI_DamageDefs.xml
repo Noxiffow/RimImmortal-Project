@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--仙路特殊攻击-->
+
+	<DamageDef Name="RI_Cut">
+		<defName>RI_Cut</defName>
+		<label>Cut</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} chopped to pieces.</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>1</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>MeleeHit_Metal_Sharp</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+	<!--破甲-->
+	<DamageDef>
+		<defName>RI_Damage_ArmorBreakCut</defName>
+		<label>Armor break cut</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} chopped to pieces.</deathMessage>
+		<hediff>Cut</hediff>
+		<hediffSkin>Cut</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>false</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_CultivateEnergyHediff</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				<!--<victimSeverityScaling>AbsoluteForce</victimSeverityScaling>-->
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<!--===================增加Hediff==========================-->
+	<DamageDef>
+		<defName>RI_Damage_ArmorBreak</defName>
+		<label>Armor break</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_ArmorBreak</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<damageEffecter>RI_Effecter_ArmorBreak</damageEffecter>
+	</DamageDef>
+
+	<!--增加Hediff-->
+	<!--破甲-->
+	<DamageDef>
+		<defName>RI_Damage_ArmorBreak_breakBuilding</defName>
+		<label>Armor break</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<buildingDamageFactorPassable>6</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_ArmorBreak</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<damageEffecter>RI_Effecter_ArmorBreak</damageEffecter>
+	</DamageDef>
+
+	<!--穿刺-->
+	<DamageDef>
+		<defName>RI_Damage_Puncture</defName>
+		<label>Puncture</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_Puncture</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<damageEffecter>RI_Effecter_Puncture</damageEffecter>
+	</DamageDef>
+
+	<!-- 香水瓶 -->
+	<DamageDef>
+		<defName>RI_PerfumeToxGas</defName>
+		<label>overwhelming aroma</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(0.706, 0.839, 0.09, 0.05)</explosionColorEdge>
+		<harmsHealth>false</harmsHealth>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+	</DamageDef>
+
+	<!--眩晕-->
+	<DamageDef>
+		<defName>RI_Damage_Vertigo</defName>
+		<label>Vertigo</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Cut</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_Vertigo</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<damageEffecter>RI_Effecter_Vertigo</damageEffecter>
+	</DamageDef>
+
+	<!-- 麻醉钉刺 -->
+	<DamageDef ParentName="Bite">
+		<defName>RI_Dm_AnestheticNeedle</defName>
+		<label>anesthetic needle</label>
+		<deathMessage>{0} was paralyzed to death</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_Anesthetic</hediff>
+				<severityPerDamageDealt>0.9</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<hediff>RI_Dm_AnestheticSpikeWound</hediff>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+</Defs>

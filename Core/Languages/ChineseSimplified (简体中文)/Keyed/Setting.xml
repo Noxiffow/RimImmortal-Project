@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	
+    <!-- EN: Rim Immortal - Core -->
+  <RimImmortalCore>边缘仙路-核心</RimImmortalCore>
+    
+    <!-- EN: Global Cultivate Speed Multiplier -->
+  <RI_CultivateMultiplier>修炼速度全局倍率</RI_CultivateMultiplier>
+
+	<!-- EN: Whether to enable the Upgrade incidents -->
+  <UpgradeIncidentsCome>是否启用突破事件</UpgradeIncidentsCome>
+	
+</LanguageData>

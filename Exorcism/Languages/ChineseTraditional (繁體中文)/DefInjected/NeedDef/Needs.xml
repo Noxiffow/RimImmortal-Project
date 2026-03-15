@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: suppress -->
+  <RI_Zombie_Suppress.label>压制</RI_Zombie_Suppress.label>
+  <!-- EN: # -->
+  <RI_Zombie_Suppress.description>冥尸的特殊中枢神经会令他们无法克制嗜血的本能，而利用各种手段可以对其精神进行压制。</RI_Zombie_Suppress.description>
+  
+</LanguageData>

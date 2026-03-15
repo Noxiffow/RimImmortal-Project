@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ═══════════════════════ ORTHODOX PATH BOOKS ═══════════════════════ -->
+
+    <!-- Martial Orthodoxy Scripture -->
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Book_MartialOrthodoxy</defName>
+        <label>orthodox path — martial scripture</label>
+        <description>Written by an unnamed war-cultivator of the Sword Veil Sect, this text describes a cultivation method that channels qi as a cutting, precise force. Every breath is a blade. Every heartbeat, a decisive strike.
+
+Those who walk this path do not simply cultivate — they sharpen. Their qi flows not as a river but as an edge: clean, directed, unstoppable.
+
+Your strikes will carry the weight of heaven's will. Your body will not know doubt.
+
+The choice, once made, cannot be undone.
+
+Requires an awakened Spiritual Root.</description>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Commit to martial orthodoxy path</useLabel>
+                <floatMenuOptionLabel>Commit to martial orthodoxy path</floatMenuOptionLabel>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_GiveCultivationPath">
+                <pathHediff>Hediff_RI_CP_OrthodoxPath</pathHediff>
+                <subPathHediff>Hediff_RI_CP_MartialOrthodoxy</subPathHediff>
+                <titleHediff>Hediff_RI_CP_OrthodoxTitle</titleHediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Jade Void Meditation (Tranquil Sage) -->
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Book_TranquilSage</defName>
+        <label>orthodox path — sage scripture</label>
+        <description>Attributed to a hermit who spent forty years meditating beneath a jade waterfall, this text teaches cultivation through absolute stillness. The mind is a lake. Disturbances pass over it but do not disturb the depths.
+
+Those who master this method cultivate at a measured pace — but their foundation is unshakeable. Their clarity of mind borders on divine. They do not break.
+
+The choice, once made, cannot be undone.
+
+Requires an awakened Spiritual Root.</description>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Commit to tranquil sage path</useLabel>
+                <floatMenuOptionLabel>Commit to tranquil sage path</floatMenuOptionLabel>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_GiveCultivationPath">
+                <pathHediff>Hediff_RI_CP_OrthodoxPath</pathHediff>
+                <subPathHediff>Hediff_RI_CP_TranquilSage</subPathHediff>
+                <titleHediff>Hediff_RI_CP_OrthodoxTitle</titleHediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- ═══════════════════════ DEMONIC PATH BOOKS ════════════════════════ -->
+
+    <!-- Merciless Demon Scripture -->
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Book_MercilessDemon</defName>
+        <label>demonic path — merciless scripture</label>
+        <description>A bloodstained text of unknown origin, written in a hand that grew steadier as the pages continued — as if the author's body was hardening as they wrote. The method described refines the body through sustained pain and aggression.
+
+The flesh becomes stone. The blood becomes oil. A Merciless Demon does not die easily.
+
+The choice, once made, cannot be undone.
+
+Requires an awakened Spiritual Root.</description>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Commit to merciless demon path</useLabel>
+                <floatMenuOptionLabel>Commit to merciless demon path</floatMenuOptionLabel>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_GiveCultivationPath">
+                <pathHediff>Hediff_RI_CP_DemonicPath</pathHediff>
+                <subPathHediff>Hediff_RI_CP_MercilessDemon</subPathHediff>
+                <titleHediff>Hediff_RI_CP_DemonicTitle</titleHediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Abyssal Void Devouring Method -->
+    <ThingDef ParentName="RI_BookBase_Common">
+        <defName>RI_CP_Book_AbyssalDemon</defName>
+        <label>demonic path — abyssal scripture</label>
+        <description>A scroll that hums faintly when held. Its words describe the void as an infinite appetite — the cultivator does not gather qi, they become a hunger that draws qi in from everything around them.
+
+The power is staggering. The cost to sanity is real.
+
+The choice, once made, cannot be undone.
+
+Requires an awakened Spiritual Root.</description>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Commit to abyssal demon path</useLabel>
+                <floatMenuOptionLabel>Commit to abyssal demon path</floatMenuOptionLabel>
+            </li>
+            <li Class="RimImmortal_CultivationPaths.CompProperties_GiveCultivationPath">
+                <pathHediff>Hediff_RI_CP_DemonicPath</pathHediff>
+                <subPathHediff>Hediff_RI_CP_AbyssalDemon</subPathHediff>
+                <titleHediff>Hediff_RI_CP_DemonicTitle</titleHediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

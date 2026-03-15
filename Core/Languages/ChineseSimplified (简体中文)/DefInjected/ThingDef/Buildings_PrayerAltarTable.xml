@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Prayer altar table -->
+  <RI_Building_PrayerAltarTable.label>供案</RI_Building_PrayerAltarTable.label>
+  <!-- EN: A table dedicated to the Immortals, upon which spiritual crystals and other materials are placed.\n\nCultivators can sincerely pray at the offering table, using certain materials to communicate with the Celestial Immortals. With the power of the Immortals, special items can be synthesized using the offering table. Additionally, crafting talismans and drawing runes can only be done on the offering table. -->
+  <RI_Building_PrayerAltarTable.description>一座供奉着仙人的案桌，上面摆放着灵石等材料。\n\n修炼者可以在供案上诚心祈祷，用一些原料来沟通天仙。借助仙人之力，可以用供案来合成一些特殊物品。而请箓画符，也只能在供案上完成。</RI_Building_PrayerAltarTable.description>
+  
+</LanguageData>

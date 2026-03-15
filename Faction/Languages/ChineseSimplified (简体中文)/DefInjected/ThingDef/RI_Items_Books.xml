@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Skill book-Air step exercise -->
+  <RI_BookAbility_AirStepExercise.label>修炼功法书《流云步法》</RI_BookAbility_AirStepExercise.label>
+  <!-- EN: A seamless and fluid footwork technique not only enhances movement speed but also invigorates the body during motion, stimulating the meridians throughout and improving cultivation efficiency. -->
+  <RI_BookAbility_AirStepExercise.description>一套行云流水的步法，不仅可以提高移动速度，还能在行走之时唤醒身体，调动周身经脉，提升修炼效率。</RI_BookAbility_AirStepExercise.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_AirStepExercise.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了流云步法！</RI_BookAbility_AirStepExercise.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_AirStepExercise.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_AirStepExercise.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Mountain-eating cultivation method -->
+  <RI_BookAbility_MountainEating.label>修炼功法书《吞山魔功》</RI_BookAbility_MountainEating.label>
+  <!-- EN: A unique cultivation method designed to forcibly enhance a person's appetite, extracting all nutrients from consumed food to nourish the spiritual seed within.\n\nThis technique was once incredibly popular but fell out of favor due to its origins as a creation of a demonic cultivator. Moreover, it caused practitioners to indulge in excessive and unrefined eating habits, which were deemed improper and unsightly. As a result, under the influence of a group of cultivators advocating for its replacement, this method gradually lost its legacy and was eventually supplanted by other practices. -->
+  <RI_BookAbility_MountainEating.description>一种特殊的修炼之法，会强行增强一个人的食欲，并攫取食物中的一切营养，用于滋养灵芽。\n\n这种功法曾经盛极一时，但由于是一名邪修所发明，并且会导致修炼者终日胡吃海塞，不甚雅观。于是在一批修炼者的鼓动下，这种功法的传承逐渐变少，最终被替代。</RI_BookAbility_MountainEating.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_MountainEating.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了吞山魔功！</RI_BookAbility_MountainEating.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_MountainEating.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_MountainEating.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Mystic cultivation method -->
+  <RI_BookAbility_MysticCultivation.label>修炼功法书《玄天诀》</RI_BookAbility_MysticCultivation.label>
+  <!-- EN: It is said to be an ancient cultivation method that is no longer suitable for modern practitioners. This technique is excessively domineering, relying on a unique method of stimulating acupoints to forcibly absorb an overwhelming amount of qi and convert it for personal use.\n\nDuring its operation, this method causes pain in the muscles and meridians, making it impossible to master without extraordinary willpower. -->
+  <RI_BookAbility_MysticCultivation.description>据说是古修的修炼之法，已经不再适用于现在的修炼者。这种功法过于强横霸道，是以一套特殊的刺激穴位之法，强行令身体吸收过多灵气，然后化为己用。\n\n这种功法在运转之时，会令肌肉经脉产生剧烈疼痛，不建议低阶修炼者学习。</RI_BookAbility_MysticCultivation.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_MysticCultivation.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了玄天诀！</RI_BookAbility_MysticCultivation.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_MysticCultivation.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_MysticCultivation.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Refinement workspeed method -->
+  <RI_BookAbility_RefinementWorkspeed.label>修炼功法书《巧工速修法》</RI_BookAbility_RefinementWorkspeed.label>
+  <!-- EN: The origin of this cultivation method can be traced back to a carpenter who, while crafting a wooden box, became so deeply focused and immersed in his work that he reached a state of complete unity between himself and nature. This scene was witnessed by a passing cultivator, who was inspired to create the technique.\n\nThis method not only enhances work efficiency but also leverages the heightened state of concentration to slightly improve the practitioner's cultivation speed. -->
+  <RI_BookAbility_RefinementWorkspeed.description>这种修炼之法的来源，乃是一位木匠在制作木盒的时候，过于专注投入，达到浑然忘我，天人一体的境界。此景恰好被路过的一名修炼者看到，于是发明此功法。\n\n在提高工作能力的同时，还能借助高度集中的注意力，小幅提高修炼速度。</RI_BookAbility_RefinementWorkspeed.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_RefinementWorkspeed.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了巧工速修法！</RI_BookAbility_RefinementWorkspeed.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_RefinementWorkspeed.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_RefinementWorkspeed.comps.CompBookStudiable.completedLetterTitle>
+  
+  <!-- EN: Skill book-Tortoise meditation method -->
+  <RI_BookAbility_TortoiseMeditation.label>修炼功法书《大息龟眠功》</RI_BookAbility_TortoiseMeditation.label>
+  <!-- EN: A method of alchemy once produced an individual of remarkable longevity, reportedly living over 300 years before passing away due to illness. Before his departure, he left behind a book, chronicling his observations of local customs, changes over time, cultural geography, and the cultivation technique he claimed could extend one’s lifespan.\n\nIn his writings, he asserted, "The endurance of a civilization depends on who outlives the others, not who wins the wars. As long as one can live long enough to outlast their rivals, that in itself is the ultimate victory." -->
+  <RI_BookAbility_TortoiseMeditation.description>炼药法门在过去曾诞生一名极其长寿之人，据说活了300多年后才因病仙逝。他留下一卷书，记录了他在世记录的风土人情，岁月变化，人文地理，同时还有这种能延长寿命的修炼之法。\n\n他在书中说，文明的长度取决于谁活到最后，而非打赢战争。只要能活得够久，熬死对手，那就是自己的胜利。</RI_BookAbility_TortoiseMeditation.description>
+  <!-- EN: After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"! -->
+  <RI_BookAbility_TortoiseMeditation.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}学会了大息龟眠功！</RI_BookAbility_TortoiseMeditation.comps.CompBookStudiable.completedLetterText>
+  <!-- EN: {PARENT_label} becomes some sparks of Qi and disappears. -->
+  <RI_BookAbility_TortoiseMeditation.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}化为点点灵光，消散了。</RI_BookAbility_TortoiseMeditation.comps.CompBookStudiable.completedLetterTitle>
+  
+</LanguageData>

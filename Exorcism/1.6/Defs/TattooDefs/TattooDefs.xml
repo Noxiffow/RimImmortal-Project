@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--冥尸-->
+	
+	<StyleItemCategoryDef>
+		<defName>RI_Zombie_TattooStyle</defName>
+		<label>zombie tattoo</label>
+	</StyleItemCategoryDef>
+
+	<!--面纹-->
+	
+	<!--缝合线A-->
+	<!--<TattooDef>
+		<defName>RI_Zombie_Tattoo_FaceSutureLineA</defName>
+		<label>Suture line A</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_A</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_TattooStyle</li>
+		</styleTags>
+	</TattooDef>
+	
+	--><!--缝合线B--><!--
+	<TattooDef>
+		<defName>RI_Zombie_Tattoo_FaceSutureLineB</defName>
+		<label>Suture line B</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_A</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_TattooStyle</li>
+		</styleTags>
+	</TattooDef>
+
+	--><!--缝合线C--><!--
+	<TattooDef>
+		<defName>RI_Zombie_Tattoo_FaceSutureLineC</defName>
+		<label>Suture line C</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_A</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_ZombieHairStyle</category>
+		<styleTags>
+			<li>RI_Zombie_TattooStyle</li>
+		</styleTags>
+	</TattooDef>-->
+
+</Defs>

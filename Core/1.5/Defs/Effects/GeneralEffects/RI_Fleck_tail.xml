@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--通用拖尾-->
+	<FleckDef Name="RI_Fleck_Tail" ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_Tail</defName>
+		<graphicData>
+			<texPath>Effects/general/RI_tail</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>0.03</solidTime>
+		<fadeOutTime>0.45</fadeOutTime>
+		<growthRate>-0.9</growthRate>
+	</FleckDef>
+
+	<!--通用拖尾长-->
+	<FleckDef Name="RI_Fleck_Tail_Long" ParentName="RI_Fleck_Tail">
+		<defName>RI_Fleck_Tail_Long</defName>
+		<graphicData>
+			<texPath>Effects/general/RI_tail</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>0.04</solidTime>
+		<fadeOutTime>0.75</fadeOutTime>
+		<growthRate>-0.9</growthRate>
+	</FleckDef>
+
+</Defs>

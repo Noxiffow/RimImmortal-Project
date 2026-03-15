@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- MOOD THOUGHTS (single-pawn) -->
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_OrthodoxMood</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_OrthodoxMood</workerClass>
+        <stages>
+            <li>
+                <label>inner peace of the orthodox path</label>
+                <description>Your qi flows in alignment with heaven and earth. The path is clear, the foundation solid. There is a quiet harmony in every breath — the kind that only comes from walking a principled road.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_DemonicMood</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_DemonicMood</workerClass>
+        <stages>
+            <li>
+                <label>dark pull of demonic qi</label>
+                <description>Dark qi gnaws at the mind from within. The power is real. The cost is real. A demonic cultivator does not walk in peace — they walk in hunger, always aware of the void at their core.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_DemonicDissonance</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_DemonicDissonance</workerClass>
+        <stages>
+            <li>
+                <label>walking the wrong path</label>
+                <description>Your dark qi churns against the righteous teachings of this sect. Every prayer, every proclamation of virtue grates against what you are. You do not belong here — and you know it.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_DemonicAlignment</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_DemonicAlignment</workerClass>
+        <stages>
+            <li>
+                <label>my sect walks the same road</label>
+                <description>The sect acknowledges the demon's road. There is no need to hide what you are here. The darkness in you is understood — perhaps even respected.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_OrthodoxAlignment</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_OrthodoxAlignment</workerClass>
+        <stages>
+            <li>
+                <label>righteous path, righteous sect</label>
+                <description>This sect's teachings resonate with your cultivation. Their values align with your qi. Heaven is with you, and you are with heaven — and among those who understand what that means.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_OrthodoxDissonance</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_OrthodoxDissonance</workerClass>
+        <stages>
+            <li>
+                <label>my path opposes this sect</label>
+                <description>Your righteous qi stands in direct opposition to the corruption cultivated here. To live among those who walk the demon's road is its own kind of spiritual contamination. Every day is a test of resolve.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!-- SOCIAL THOUGHTS (two-pawn, opinion) -->
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_DemonicFear</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_DemonicFear</workerClass>
+        <stages>
+            <li>
+                <label>unsettled by demonic qi</label>
+                <description>There is something wrong about them. The qi they carry feels like a void — like standing next to something that is always hungry. You cannot name it. You cannot ignore it.</description>
+                <labelSocial>demonic cultivator</labelSocial>
+                <baseOpinionOffset>-15</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_OrthodoxRespect</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_OrthodoxRespect</workerClass>
+        <stages>
+            <li>
+                <label>respect for the orthodox path</label>
+                <description>Their qi is clean and steady. There is something trustworthy about a cultivator who walks the righteous road — a reliability that goes deeper than words or reputation.</description>
+                <labelSocial>orthodox cultivator</labelSocial>
+                <baseOpinionOffset>10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_SharedDarkness</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_SharedDarkness</workerClass>
+        <stages>
+            <li>
+                <label>shared darkness</label>
+                <description>You recognize what they are. And they recognize what you are. No explanation needed. The void inside you resonates with the void inside them — and in that resonance, there is a strange comfort.</description>
+                <labelSocial>fellow demon cultivator</labelSocial>
+                <baseOpinionOffset>15</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>RI_CP_Thought_OpposingPath</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>RimImmortal_CultivationPaths.ThoughtWorker_OpposingPath</workerClass>
+        <stages>
+            <li>
+                <label>opposing cultivation paths</label>
+                <description>Orthodox and demonic qi are fundamentally incompatible. Being near someone who walks the opposite road is a constant, quiet reminder of the choice you made — and the choice they made. One of you is wrong.</description>
+                <labelSocial>walks the opposite path</labelSocial>
+                <baseOpinionOffset>-20</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

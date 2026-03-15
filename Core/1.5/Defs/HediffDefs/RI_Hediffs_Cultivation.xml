@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--灵芽hediff-->
+	<HediffDef>
+		<defName>Hediff_RI_EnergyRoot</defName>
+		<label>Spiritual root</label>
+		<hediffClass>Core.Hediff_RI_EnergyRoot</hediffClass>
+		<description>This spiritual root is the basis for opening the path of cultivation, and its quality determines the speed of cultivation of the cultivator.</description>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<defaultLabelColor>(0.7, 1.0, 0.8)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<label>【Low quality】</label>
+				<statFactors>
+					<GI_EnergyGainEff>0.7</GI_EnergyGainEff>
+				</statFactors>
+			</li>
+			<li>
+				<label>【Medium quality】</label>
+				<minSeverity>0.49</minSeverity>
+			</li>
+			<li>
+				<label>【Best quality】</label>
+				<minSeverity>0.99</minSeverity>
+				<statFactors>
+					<GI_EnergyGainEff>2.5</GI_EnergyGainEff>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--境界圆满-->
+	<HediffDef>
+		<defName>RI_CanGrade</defName>
+		<label>Perfect rank</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>With a perfected mind and full Qi, a single thought clears the way, The winds rise and the clouds surge, and spirit forms on its own.\nYour current rank has reached completion, and the spiritual root swells with pain. A transformation is about to occur.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.8)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(1.0,1.0,1.0)</EyeColor>
+			</li>
+		</comps>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(1,1,1.0,1)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!--突破成功率提升-->
+	<HediffDef>
+		<defName>RI_SucessRate</defName>
+		<label>Increase Upgrade success rate</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The success rate of upgrade has improved slightly.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--突破成功率下降-->
+	<HediffDef>
+		<defName>RI_EnSucessRate</defName>
+		<label>Reduce Upgrade success rate</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The success rate of upgrade has decreased slightly.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--经脉错乱-->
+	<HediffDef>
+		<defName>QI_Deviation</defName>
+		<label>Meridians disorder</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The failure of the upgrade caused a disturbance in the meridians! The meridians and Spiritual roots carried an overwhelming amount of Qi energy from heaven and earth, heading toward collapse!\n\nFor the following several days, cultivate will be impossible, and consciousness will be greatly diminished.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactor>3</hungerRateFactor>
+				<statOffsets>
+					<GI_EnergyGainEff>-10</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--羽化hediff-->
+	<HediffDef>
+		<defName>RI_ascension</defName>
+		<label>Eclosion</label>
+		<description>You have reached the top of Earth Immortal, your qualification for Ascension is already in place.\n\nThe stars hang above your head, the road of Eternal Life spreads beneath your feet, and now, all that remains is for you to take action.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(0.7, 1.0, 0.8)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<GI_EnergyGainEff>1</GI_EnergyGainEff>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

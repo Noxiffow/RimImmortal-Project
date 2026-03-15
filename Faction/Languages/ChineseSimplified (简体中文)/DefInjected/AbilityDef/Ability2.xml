@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Qi domain -->
+  <RI_Ability_PracticeArea.label>聚气灵域</RI_Ability_PracticeArea.label>
+  <!-- EN: Qi domain is a meditative technique that focuses the mind, enhancing the cultivation efficiency of those within its range. -->
+  <RI_Ability_PracticeArea.description>聚气灵域是一种令精神集中的冥想之法，可以提升周围人的修炼效率。</RI_Ability_PracticeArea.description>
+  
+  <!-- EN: Soul searching -->
+  <RI_Ability_ReadingMemory.label>搜魂术</RI_Ability_ReadingMemory.label>
+  <!-- EN: A terrifying skill, in which the caster uses modified Qi tendrils to disturb the target's brain, extracting desired information from the cerebral cortex. This spell carries a risk of causing various types of brain damage, but if successful, it can extract the target’s lifelong knowledge from their mind. -->
+  <RI_Ability_ReadingMemory.description>一种可怕的法术，施术者以经过调整的灵气触须搅动目标的大脑，从大脑皮层中获取想要的信息。这种法术有概率对人脑造成各种伤害，但如果成功，就能从大脑中提取出目标的毕生所学。</RI_Ability_ReadingMemory.description>
+  
+</LanguageData>

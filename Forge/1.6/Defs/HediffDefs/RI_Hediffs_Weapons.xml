@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="RI_WeaponHediff_Base" Abstract="True">
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.45,0.78,0.56)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<alwaysShowSeverity>false</alwaysShowSeverity>
+	</HediffDef>
+
+	<!--雷霆激发-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_ThunderMinigun</defName>
+		<label>Spark of thunder</label>
+		<labelNoun>Spark of thunder</labelNoun>
+		<description>The gunman's hands are wrapped in thunder, which improves his ability to operate.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--白霜灵视-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_WhiteApeBow</defName>
+		<label>White frost vision</label>
+		<labelNoun>White frost vision</labelNoun>
+		<description>The spirit is attached to you, which greatly improves the visual ability.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--蚩尤神力-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_ChiYouFlameHalberd</defName>
+		<label>Divine power of Chiyou</label>
+		<description>Chiyou's divine power attached to himself, bringing great power.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>0.0</Flammability>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--势如破竹-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_PojunSword</defName>
+		<label>Unstoppable</label>
+		<labelNoun>Unstoppable</labelNoun>
+		<description>When a target with this effect is attacked, the attacker accelerates wound healing for a short time.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Effects/general/RI_exercise_1</texPath>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-6</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_HitGiveHediff">
+				<hediffDef>RI_Hediff_PojunSword_Ability</hediffDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--赐福-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_PojunSword_Ability</defName>
+		<label>Divine blessing</label>
+		<labelNoun>Divine blessing</labelNoun>
+		<description>Heal the wound in a short time.</description>
+		<stages>
+			<li>
+				<painFactor>0.8</painFactor>
+				<statFactors>
+					<InjuryHealingFactor>500</InjuryHealingFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-22</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--琉璃珠光-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_GlassPearlUmbrella</defName>
+		<label>Pearl light</label>
+		<labelNoun>Pearl light</labelNoun>
+		<description>The Qi of the umbrella protects the body and improves the healing ability.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+					<SurgerySuccessChanceFactor>1.5</SurgerySuccessChanceFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--珠光疗愈-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_GlassPearlUmbrella_Ability</defName>
+		<label>Glaze pearl</label>
+		<labelNoun>Glaze pearl</labelNoun>
+		<description>A faint Qi envelop itself, mending the wound.</description>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<InjuryHealingFactor>500</InjuryHealingFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-6</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--破军-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_PojunSword</defName>
+		<label>Army destroyer</label>
+		<labelNoun>Army destroyer</labelNoun>
+		<description>The sword bearer is like a divine aid, as if opening the eye of heaven, so that the melee hit rate is greatly improved.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeHitChance>1.5</MeleeHitChance>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--斩仙-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_SlayinglmmortalSword</defName>
+		<label>God slayer</label>
+		<labelNoun>God slayer</labelNoun>
+		<description>The sword bearer exudes a powerful force that makes the hearts of those around him succumb.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<SocialImpact>1.5</SocialImpact>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.5</SocialIdeoSpreadFrequencyFactor>
+					<ArrestSuccessChance>2</ArrestSuccessChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--龙鸣急速-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_DragonPatternStick</defName>
+		<label>Dragon haste</label>
+		<labelNoun>Dragon haste</labelNoun>
+		<description>Holding the stick will give you great power, your whole body will burst out, and your movement speed will be significantly increased.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.5</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--鼠眼-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_Weapon_RatWhiskerSword</defName>
+		<label>Rat eye</label>
+		<labelNoun>Rat eye</labelNoun>
+		<description>Qi infusion improves vision and improves accuracy. At the same time, it improves its healing ability.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>1</InjuryHealingFactor>
+				</statOffsets>
+				<statFactors>
+					<MeleeHitChance>1.5</MeleeHitChance>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--金光剑-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_LightSword</defName>
+		<label>Light sword</label>
+		<labelNoun>Light sword</labelNoun>
+		<description>The light sword drawn from the light sword charm, made of pure Qi condensation, it's powerful.</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+					<MeleeHitChance>2</MeleeHitChance>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-24</severityPerDay>
+				<showHoursToRecover>false</showHoursToRecover>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.HediffCompProperties_WeaponDying">
+				<ThingDef>RI_Weapon_LightSword</ThingDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--破阵斧鸣-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_AxeExcitation</defName>
+		<label>Boost morale</label>
+		<labelNoun>Boost morale</labelNoun>
+		<description>Morale was greatly boosted, and combat effectiveness increased.</description>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<statFactors>
+					<MeleeDamageFactor>1.8</MeleeDamageFactor>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeHitChance>1.5</MeleeHitChance>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>0.75</drawSize>
+				<color>(1,1,1,0.7)</color>
+				<texPath>Effects/JumenAxe/RI_AxeExcitation_1</texPath>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-6</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--鼠须疗愈-->
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_RatWhiskerSword</defName>
+		<label>Unstoppable</label>
+		<labelNoun>Unstoppable</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>When a target with this effect is attacked, the attacker accelerates wound healing for a short time.</description>
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(0.96,0.2,0.2)</defaultLabelColor>
+		<isBad>true</isBad>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<useGraphic>true</useGraphic>
+				<drawSize>1</drawSize>
+				<color>(1,1,1,0.75)</color>
+				<texPath>Effects/RatWhiskerSword/RI_RatWhiskerSword_1</texPath>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 2, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-6</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_HitGiveHediff">
+				<hediffDef>RI_Hediff_RatWhiskerSword_Ability</hediffDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_WeaponHediff_Base">
+		<defName>RI_Hediff_RatWhiskerSword_Ability</defName>
+		<label>Heal spark</label>
+		<labelNoun>Heal spark</labelNoun>
+		<defaultLabelColor>(0.65,0.95,0.63)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Heal the wound in a short time.</description>
+		<initialSeverity>1</initialSeverity>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.8</painFactor>
+				<statFactors>
+					<InjuryHealingFactor>800</InjuryHealingFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-22</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--与子偕作-->
+	<HediffDef>
+		<defName>RI_Hediff_AncientGun</defName>
+		<label>Qi connection</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.37,0.65,0.46)</defaultLabelColor>
+		<description>The Qi attached to the rifle creates a link between the same guns. The more people that line up this gun, the stronger the connection effect will be.</description>
+		<stages>
+			<li>
+				<label>Single</label>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>Trinity</label>
+				<minSeverity>0.3</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<AimingDelayFactor>-0.3</AimingDelayFactor>
+					<RangedCooldownFactor>-0.3</RangedCooldownFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Sextet</label>
+				<minSeverity>0.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<AimingDelayFactor>-0.5</AimingDelayFactor>
+					<RangedCooldownFactor>-0.5</RangedCooldownFactor>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_AncientGunHediff</compClass>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+
+</Defs>

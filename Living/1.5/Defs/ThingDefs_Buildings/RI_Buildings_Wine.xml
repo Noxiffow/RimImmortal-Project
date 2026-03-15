@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--酿造桶分类-->
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Building_Wine_Group</defName>
+		<label>酿造桶系列</label>
+	</DesignatorDropdownGroupDef>
+
+	<!--酿造桶前置-->
+	<ThingDef Name="RI_Building_WineBase"  ParentName="BuildingBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>-->
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.9,0.3,0.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0,0.6,0.1)</rect>
+			</damageData>
+		</graphicData>
+		<thingClass>RI_Living.Building_Fermentation</thingClass>
+		<designatorDropdown>RI_Building_Wine_Group</designatorDropdown>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2010</uiOrder>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>30</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>3</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>RI_Research_Brewing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- 竹叶青酿造桶 -->
+	<ThingDef ParentName="RI_Building_WineBase">
+		<defName>RI_Building_BambooLeafWineBarrel</defName>
+		<label>Bamboo leaf wine barrel</label>
+		<description>A brewing barrel used for crafting Bamboo Leaf Wine.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Alcohol_BambooLeafWine</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_GrainLiquorBarrel</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>15</minSafeTemperature>
+				<maxSafeTemperature>35</maxSafeTemperature>
+				<progressPerDegreePerTick>0.000005</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Alcohol_BambooLeafWine</GetThingDef>
+				<MaxCapacity>20</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>25</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 稻酿酿造桶 -->
+	<ThingDef ParentName="RI_Building_WineBase">
+		<defName>RI_Building_GrainLiquorBarrel</defName>
+		<label>Grain liquor barrel</label>
+		<description>A brewing barrel used for crafting Grain Liquor.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Alcohol_GrainLiquor</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_GrainLiquorBarrel</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>15</minSafeTemperature>
+				<maxSafeTemperature>35</maxSafeTemperature>
+				<progressPerDegreePerTick>0.000008</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Alcohol_GrainLiquor</GetThingDef>
+				<MaxCapacity>20</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>25</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 醉春风酿造桶 -->
+	<ThingDef ParentName="RI_Building_WineBase">
+		<defName>RI_Building_DrunkenSpringBreezeBarrel</defName>
+		<label>Drunken spring breeze barrel</label>
+		<description>A brewing barrel used for crafting Drunken Spring Breeze.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Alcohol_DrunkenSpringBreeze</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_BambooLeafWineBarrel</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>15</minSafeTemperature>
+				<maxSafeTemperature>35</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Alcohol_DrunkenSpringBreeze</GetThingDef>
+				<MaxCapacity>20</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>25</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 银芝药酒酿造桶 -->
+	<ThingDef ParentName="RI_Building_WineBase" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Building_LingzhiBrandyBarrel</defName>
+		<label>Lingzhi brandy barrel</label>
+		<description>A brewing barrel used for crafting Lingzhi Brandy.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Alcohol_LingzhiBrandy</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_BambooLeafWineBarrel</texPath>
+		</graphicData>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>30</maxSafeTemperature>
+				<progressPerDegreePerTick>0.000005</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Alcohol_LingzhiBrandy</GetThingDef>
+				<MaxCapacity>20</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>15</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

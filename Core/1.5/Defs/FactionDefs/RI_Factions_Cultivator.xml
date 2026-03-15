@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--散修派系-->
+	<FactionDef ParentName="FactionBase">
+		<defName>RI_Faction_FreeCultivators</defName>
+		<label>Free cultivator</label>
+		<!--散修-->
+		<pawnSingular>Free cultivator</pawnSingular>
+		<pawnsPlural>Free cultivator</pawnsPlural>
+		<categoryTag>FreeCultivator</categoryTag>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>2000</configurationListOrderPriority>
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<fixedName>Free cultivator</fixedName>
+		<!--派系中文名-->
+		<factionIconPath>UI/Icons/FreeCultivator</factionIconPath>
+		<techLevel>Industrial</techLevel>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>true</autoFlee>
+		<caravanTraderKinds>
+			<li>Caravan_Cultivator_BulkGoods</li>
+		</caravanTraderKinds>
+
+		<!--背景故事-->
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RI_Backstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+
+		<!--文化-->
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+
+		<!--人员组成-->
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RI_Pawn_Cultivator>3</RI_Pawn_Cultivator>
+					<RI_Pawn_FreeCultivator>1</RI_Pawn_FreeCultivator>
+					<RI_Pawn_SwordCultivator>2</RI_Pawn_SwordCultivator>
+					<RI_Pawn_HalfImmortal>1</RI_Pawn_HalfImmortal>
+					<RI_Pawn_OldCultivator>1</RI_Pawn_OldCultivator>
+
+					<RI_Pawn_Hunter>10</RI_Pawn_Hunter>
+					<RI_Pawn_Guard>10</RI_Pawn_Guard>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RI_Pawn_Cultivator>3</RI_Pawn_Cultivator>
+					<RI_Pawn_FreeCultivator>1</RI_Pawn_FreeCultivator>
+					<RI_Pawn_SwordCultivator>2</RI_Pawn_SwordCultivator>
+					<RI_Pawn_HalfImmortal>1</RI_Pawn_HalfImmortal>
+					<RI_Pawn_OldCultivator>1</RI_Pawn_OldCultivator>
+
+					<RI_Pawn_Hunter>5</RI_Pawn_Hunter>
+					<RI_Pawn_Guard>5</RI_Pawn_Guard>
+					<RI_Pawn_Beggar>5</RI_Pawn_Beggar>
+					<RI_Pawn_Traveler>5</RI_Pawn_Traveler>
+					<RI_Pawn_BarefootDoctor>5</RI_Pawn_BarefootDoctor>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RI_Pawn_Businessman>1</RI_Pawn_Businessman>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+				</carriers>
+				<guards>
+					<RI_Pawn_Cultivator>2</RI_Pawn_Cultivator>
+					<RI_Pawn_SwordCultivator>2</RI_Pawn_SwordCultivator>
+					<RI_Pawn_FreeCultivator>10</RI_Pawn_FreeCultivator>
+					<RI_Pawn_OldCultivator>1</RI_Pawn_OldCultivator>
+
+					<RI_Pawn_Hunter>10</RI_Pawn_Hunter>
+					<RI_Pawn_Guard>10</RI_Pawn_Guard>
+					<RI_Pawn_Traveler>5</RI_Pawn_Traveler>
+					<RI_Pawn_BarefootDoctor>5</RI_Pawn_BarefootDoctor>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RI_Pawn_Cultivator>3</RI_Pawn_Cultivator>
+					<RI_Pawn_FreeCultivator>3</RI_Pawn_FreeCultivator>
+					<RI_Pawn_SwordCultivator>3</RI_Pawn_SwordCultivator>
+					<RI_Pawn_HalfImmortal>1</RI_Pawn_HalfImmortal>
+					<RI_Pawn_OldCultivator>1</RI_Pawn_OldCultivator>
+
+					<RI_Pawn_Businessman>1</RI_Pawn_Businessman>
+					<RI_Pawn_Guard>5</RI_Pawn_Guard>
+					<RI_Pawn_Beggar>5</RI_Pawn_Beggar>
+					<RI_Pawn_BarefootDoctor>5</RI_Pawn_BarefootDoctor>
+				</options>
+			</li>
+		</pawnGroupMakers>
+
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+	</FactionDef>
+
+	<!--歹修派系-->
+	<FactionDef ParentName="FactionBase">
+		<defName>RI_Faction_WickedCultivators</defName>
+		<label>Wicked cultivator</label>
+		<pawnSingular>Wicked cultivator</pawnSingular>
+		<pawnsPlural>Wicked cultivator</pawnsPlural>
+		<factionIconPath>UI/Icons/WickedCultivator</factionIconPath>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>2000</configurationListOrderPriority>
+		<techLevel>Industrial</techLevel>
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<fixedName>Wicked cultivator</fixedName>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>true</autoFlee>
+
+		<!--永久敌对-->
+		<permanentEnemy>true</permanentEnemy>
+
+		<!--背景故事-->
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RI_Backstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+
+		<!--文化-->
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+
+		<!--人员组成-->
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat_InvisibleKiller</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<RI_Pawn_Outlaw>8</RI_Pawn_Outlaw>
+					<RI_Pawn_HeavyArmoredCriminal>8</RI_Pawn_HeavyArmoredCriminal>
+
+					<RI_Pawn_SwordMadMan>4</RI_Pawn_SwordMadMan>
+					<RI_Pawn_EvilBlade>4</RI_Pawn_EvilBlade>
+					<RI_Pawn_OldEvilCultivator>1</RI_Pawn_OldEvilCultivator>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat_Assassin</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<RI_Pawn_Thief>10</RI_Pawn_Thief>
+
+					<RI_Pawn_Assassin>4</RI_Pawn_Assassin>
+					<RI_Pawn_AssassinMaster>1</RI_Pawn_AssassinMaster>
+					<RI_Pawn_OldEvilCultivator>1</RI_Pawn_OldEvilCultivator>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RI_Pawn_Outlaw>5</RI_Pawn_Outlaw>
+					<RI_Pawn_HumanTrafficker>5</RI_Pawn_HumanTrafficker>
+					<RI_Pawn_ShooterBendit>3</RI_Pawn_ShooterBendit>
+					<RI_Pawn_HeavyArmoredCriminal>3</RI_Pawn_HeavyArmoredCriminal>
+
+					<RI_Pawn_WickedCultivator>3</RI_Pawn_WickedCultivator>
+					<RI_Pawn_SinisterCultivator>3</RI_Pawn_SinisterCultivator>
+					<RI_Pawn_EvilCultivator>1</RI_Pawn_EvilCultivator>
+					<RI_Pawn_SwordMadMan>2</RI_Pawn_SwordMadMan>
+					<RI_Pawn_EvilBlade>2</RI_Pawn_EvilBlade>
+					<RI_Pawn_OldEvilCultivator>1</RI_Pawn_OldEvilCultivator>
+				</options>
+			</li>
+		</pawnGroupMakers>
+
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+	</FactionDef>
+
+	<!--======================================新的pawn group======================================-->
+
+	<PawnGroupKindDef>
+		<defName>Combat_InvisibleKiller</defName>
+		<workerClass>PawnGroupKindWorker_Normal</workerClass>
+	</PawnGroupKindDef>
+
+	<PawnGroupKindDef>
+		<defName>Combat_Assassin</defName>
+		<workerClass>PawnGroupKindWorker_Normal</workerClass>
+	</PawnGroupKindDef>
+
+	<!--======================================派系小人命名======================================-->
+
+	<RulePackDef>
+		<defName>ImmortalNameUtility</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>FirstMale->Names/FirstMale</li>
+				<li>FirstFemale->Names/FirstFemale</li>
+				<li>Lastname->Names/HundredLast</li>
+				<li>TaoTitle->Names/TaoTitle</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!--男人名，带道号-->
+	<RulePackDef>
+		<defName>NamerPersonImmortal</defName>
+		<include>
+			<li>ImmortalNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[Lastname] '[TaoTitle]' [FirstMale]</li>
+				<li>r_name(p=7)->[Lastname] [FirstMale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!--女人名，带道号-->
+	<RulePackDef>
+		<defName>NamerPersonImmortalFemale</defName>
+		<include>
+			<li>ImmortalNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[Lastname] '[TaoTitle]' [FirstFemale]</li>
+				<li>r_name(p=7)->[Lastname] [FirstFemale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!--男人名，不带道号-->
+	<RulePackDef>
+		<defName>RI_NameRule_NamerPersonChinese</defName>
+		<include>
+			<li>ImmortalNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[Lastname] '[TaoTitle]' [FirstMale]</li>
+				<li>r_name(p=7)->[Lastname] [FirstMale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!--女人名，不带道号-->
+	<RulePackDef>
+		<defName>RI_NameRule_NamerPersonChineseFemale</defName>
+		<include>
+			<li>ImmortalNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[Lastname] '[TaoTitle]' [FirstFemale]</li>
+				<li>r_name(p=7)->[Lastname] [FirstFemale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

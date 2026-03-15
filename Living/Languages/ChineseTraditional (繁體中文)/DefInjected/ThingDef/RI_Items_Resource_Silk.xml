@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fire-proof cloth -->
+  <RI_Resource_FireCloth.label>火浣布</RI_Resource_FireCloth.label>
+  <!-- EN: A cloth made from the wool of an animal called a fire rat is a very rare material. It is said that the material can be made into a fire-resistant clothing, which itself can block the heat, while having ultra-high blunt force defense. -->
+  <RI_Resource_FireCloth.description>火浣布是从一种叫做火鼠的动物身上取的毛织成的布，是一种非常少见的材料。\n\n据说这种材料可以制成一种不怕火的衣服，本身可以阻隔炎热，同时具有超高的钝器防御。</RI_Resource_FireCloth.description>
+  
+  <!-- EN: Golden silk -->
+  <RI_Resource_GoldenSilk.label>金丝</RI_Resource_GoldenSilk.label>
+  <!-- EN: The golden silk, which is gradually elongated after being heated by gold, is a very gorgeous raw material, and only the royal palace and nobles can afford it. -->
+  <RI_Resource_GoldenSilk.description>由黄金加热后逐渐拉长得到的金丝，是一种非常华丽的原料，只有皇宫贵族用得起。</RI_Resource_GoldenSilk.description>
+  
+  <!-- EN: Ice silk -->
+  <RI_Resource_IceSilk.label>冰蚕丝</RI_Resource_IceSilk.label>
+  <!-- EN: An ice silkworm knows no cold.\n\nThis soft, cool silk comes from the silk of the ice silkworm, and is a very rare material. Clothing made of ice silk can prevent the cold from entering the body, while having ultra-high sharp weapon defense, and is very lightweight. -->
+  <RI_Resource_IceSilk.description>冰蚕不知寒。\n\n这种柔软且凉爽的丝绸来自于冰蚕吐的丝，是一种非常少见的材料。\n\n用冰蚕丝制作的服饰，可以防止寒气入体，同时具有超高的利器防御，并且十分轻便。</RI_Resource_IceSilk.description>
+  
+  <!-- EN: Silk -->
+  <RI_Resource_Silk.label>丝绸</RI_Resource_Silk.label>
+  <!-- EN: Silk is a very beautiful, soft, high-quality fabric. It's made of natural fibers from silkworm cocoons.\n\nToday, this process is also scattered in various star regions with human activities. The convenient storage of silkworm eggs, so that silk even in some remote planets, do not worry about finding buyers, with its production of clothing, has always been the preference of the rich and powerful. -->
+  <RI_Resource_Silk.description>丝绸是一种十分美观，手感柔顺的优质织物。由来自蚕茧的天然纤维织成。\n\n在石器时代，就有了古人养蚕、缫丝、纺丝的历史遗迹，并且一度开辟了以丝绸为主要产品的跨国贸易路线，也被称为丝绸之路。\n\n而如今，这种工艺也随着人类活动，分散在各个星区。蚕卵方便储存的特性，令丝绸即使在一些偏远星球，也不愁找不到买家。用其制作服饰，一直都是权贵的喜好。</RI_Resource_Silk.description>
+  
+  <!-- EN: Silver silk -->
+  <RI_Resource_SilverSilk.label>银丝</RI_Resource_SilverSilk.label>
+  <!-- EN: The silver silk gradually elongated after heating by silver is a very gorgeous raw material, which is generally woven with golden silk into various patterns and embellished with jewelry, and only the royal palace and nobles can afford it. -->
+  <RI_Resource_SilverSilk.description>由白银加热后逐渐拉长得到的银丝，是一种非常华丽的原料，一般会和金丝编织出各种花纹，加上珠宝点缀，只有皇宫贵族用得起。</RI_Resource_SilverSilk.description>
+  
+</LanguageData>

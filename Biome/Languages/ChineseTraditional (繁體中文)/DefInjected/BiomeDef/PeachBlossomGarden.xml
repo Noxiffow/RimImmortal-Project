@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Peach blossom garden -->
+  <RI_Biome_PeachBlossomGarden.label>芳草桃源</RI_Biome_PeachBlossomGarden.label>
+  <!-- EN: Peach blossom garden is a blessed land where spiritual energy converges. Its terrain forms a natural cycle of spiritual flow, creating a self-sustaining ecosystem in which countless rare medicinal herbs and extraordinary spirit beasts dwell.\n\nPeach blossom garden is also home to the unique Immortal Peach Trees, hidden deep within vast peach groves. The Immortal Peaches they bear grant longevity when consumed. However, this biome is shaped by a distinctive Peach Blossom Barrier climate: whenever the peach mist descends, the land becomes a natural labyrinth, preventing any creature from entering or leaving. -->
+  <RI_Biome_PeachBlossomGarden.description>芳草桃源为一片灵气汇聚的福地，地貌形成一个天然的灵气循环生态，无数珍贵药草和奇特灵兽在这里栖息。\n\n芳草桃源还有独特的仙桃树，隐藏在众多桃花林之中，仙桃吃下后有延年益寿之功效。不过这片生态也有独特的桃花障气候，每当桃花迷雾出现，这片天然迷宫将会让任何生物都无法出入。</RI_Biome_PeachBlossomGarden.description>
+  
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blow a cloud -->
+  <RI_Thought_ChunghwaHigh.stages.blow_a_cloud.label>吞云吐雾</RI_Thought_ChunghwaHigh.stages.blow_a_cloud.label>
+  <!-- EN: After a cigarette, than live immortal. -->
+  <RI_Thought_ChunghwaHigh.stages.blow_a_cloud.description>事后一根烟，赛过活神仙。</RI_Thought_ChunghwaHigh.stages.blow_a_cloud.description>
+  
+  <!-- EN: Just one cigarette -->
+  <SmokeleafWithdrawal.stages.Just_one_cigarette.label>就一口</SmokeleafWithdrawal.stages.Just_one_cigarette.label>
+  <!-- EN: I really need one cigarette. -->
+  <SmokeleafWithdrawal.stages.Just_one_cigarette.description>我只需要一口烟，一口。</SmokeleafWithdrawal.stages.Just_one_cigarette.description>
+  
+</LanguageData>

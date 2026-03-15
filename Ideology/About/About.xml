@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>RimImmortal - Cultivator Reverence (Local)</name>
+    <author>Local</author>
+    <packageId>local.rimimmort.cultivatorreverence</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>Adds a "Cultivator Reverence" belief to the ideology system for RimImmortal games.
+
+Any ideology can adopt this belief. When active:
+- All believers show respect toward those with an awakened Spiritual Root (+15 opinion).
+- Cultivators share a deep bond with fellow cultivators (+20 additional opinion, +35 total).
+
+No negative opinion toward non-cultivators — only respect for those on the path.
+
+Add the belief to your ideology via the Reform Beliefs dialog (Cultivator Reverence > Cultivators Are Revered).</description>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Ideology</packageId>
+            <displayName>Ideology</displayName>
+        </li>
+        <li>
+            <packageId>RI.RimImmortal.Core</packageId>
+            <displayName>RimImmortal Core</displayName>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>RI.RimImmortal.Core</li>
+        <li>RI.RimImmortal.Faction</li>
+    </loadAfter>
+</ModMetaData>

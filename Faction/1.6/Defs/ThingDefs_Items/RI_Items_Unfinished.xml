@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!--苍穹商旅呼叫器-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Thing_OrbitalShipCaller</defName>
+		<label>"Celestial Caravan" orbital pager</label>
+		<description>A commercial orbital pager. Upon completing a single transmission, the device immediately triggers cryptographic key self-destruction and full memory wipe, rendering it impossible to reuse or reverse-engineer.\n\nIt is used to summon Celestial Caravan orbital trade vessels. In most cases, these pagers are sold directly by the ships themselves, serving as a standard means for establishing anonymous and secure contact with clients.\n\n*Note that you still need a communication station to trade with orbital ships.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Thing_OrbitalShipCaller</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.2</Mass>
+		</statBases>
+		<category>Item</category>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<comps>
+			<!-- 允许使用 -->
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Call trader</useLabel>
+			</li>
+			<li Class="SpecialTraderCall.CompProperties_UseEffect_CallOrbitalTrader">
+				<!-- 指定商船 -->
+				<traderKind>RI_Trader_CelestialCaravanOrbital_BulkGoods</traderKind>
+				<minTicks>3000</minTicks>
+				<!-- 1 天 -->
+				<maxTicks>6000</maxTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

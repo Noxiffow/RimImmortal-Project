@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--1:要求绘制icon，用于大地图显示
+2：自己填写文本信息
+3：调节一些参数-->
+
+	<!--<QuestScriptDef>
+		<defName>RI_EndGame_Immortal</defName>
+		<isRootSpecial>true</isRootSpecial>
+		<autoAccept>true</autoAccept>
+		<defaultCharity>true</defaultCharity>
+		<hideInvolvedFactionsInfo>true</hideInvolvedFactionsInfo>
+		<defaultChallengeRating>4</defaultChallengeRating>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName-> 羽化登仙</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->你神功大成了，飞吧</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<questContentRules>
+			<rulesStrings>
+				<li>letterLabelImmortal-> 羽化登仙任务</li>
+				<li>letterTextImmortal-> 羽化登仙任务内容</li>
+			</rulesStrings>
+		</questContentRules>
+		<root Class="QuestNode_Sequence">
+		</root>
+	</QuestScriptDef>-->
+
+	<!--外出历练任务-->
+	<QuestScriptDef>
+		<defName>OpportunitySite_OutdoorExercises</defName>
+		<rootSelectionWeight>0</rootSelectionWeight>
+		<defaultChallengeRating>0</defaultChallengeRating>
+		<autoAccept>true</autoAccept>
+		<!--自动接收-->
+		<questNameRules>
+			<rulesStrings>
+				<!--任务标题-->
+				<li>questName->Immortal guidance</li>
+				<li>questName->Immortal experience</li>
+				<li>questName->Immortal show the way</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<!--任务具体描述-->
+				<li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, a green orb floats in the dazzling starry sky. An elderly figure with white hair, dressed in simple robes, appears before him, smiling warmly. He takes a jade talisman from his sleeve, and the talisman transforms into spiritual energy, rushing into the cultivator's mind.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+				<li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, the clang of metal and the sound of battle filled the air. A red-haired warrior, with a fierce gaze, stared into the distance. His bare chest gleamed, and in his hand, spiritual energy shaped a massive axe, which he swung toward the far horizon.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+				<li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, countless giant machines rose from the ground, their gears clashing endlessly, while currents of energy flowed like rushing blood. A copper-skinned statue materialized out of thin air. It opened its mouth, spitting out a series of numbers, as if revealing a coordinate.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+				<li>questDescription->A cultivator unknowingly enters a mysterious dreamlike state, and a scene unfurls before his eyes like a scroll.\n\nIn the dream, an androgynous scholar, his face hidden behind a fan, shifted through dozens of different appearances, finally settling into the form of a cultivator. With a seductive smile, he lightly tapped the fan, and an image began to materialize before him.\n\nWhen the cultivator regains his senses, a new memory has appeared in his mind, pointing to a location not far away. Clearly, there is something worth seeking there.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_Set">
+					<name>siteDistRange</name>
+					<value>7~15</value>
+					<!--生成的距离，距离玩家据点-->
+				</li>
+
+				<li Class="QuestNode_GetMap" />
+				<!-- <li Class="QuestNode_GetFaction">
+          <storeAs>faction</storeAs>
+          <allowEnemy>true</allowEnemy>
+          <allowPermanentEnemy>false</allowPermanentEnemy>
+          <playerCantBeAttackingCurrently>true</playerCantBeAttackingCurrently>
+          <peaceTalksCantExist>true</peaceTalksCantExist>
+          <leaderMustBeSafe>true</leaderMustBeSafe>
+          <mustHaveGoodwillRewardsEnabled>true</mustHaveGoodwillRewardsEnabled>
+        </li>-->
+
+				<li Class="QuestNode_GetPlayerFaction">
+					<storeAs>playerFaction</storeAs>
+				</li>
+
+				<li Class="QuestNode_QuestUnique">
+					<tag>RI_WorldObject_OutdoorExercises</tag>
+				</li>
+
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>tile</storeAs>
+				</li>
+
+				<li Class="QuestNode_GenerateWorldObject">
+					<def>RI_WorldObject_OutdoorExercises</def>
+					<tile>$tile</tile>
+					<storeAs>RI_WorldObject_OutdoorExercises</storeAs>
+				</li>
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$RI_WorldObject_OutdoorExercises</worldObjects>
+					<tile>$tile</tile>
+				</li>
+
+				<li Class="QuestNode_Delay">
+					<delayTicks>$(randInt(12,28)*60000)</delayTicks>
+					<!--任务存在时间-->
+					<outSignalComplete>OutdoorExercisesTimeOut</outSignalComplete>
+				</li>
+
+				<li Class="QuestNode_DestroyWorldObject">
+					<inSignal>OutdoorExercisesTimeOut</inSignal>
+					<worldObject>$RI_WorldObject_OutdoorExercises</worldObject>
+				</li>
+				<li Class="QuestNode_Signal">
+					<inSignal>OutdoorExercisesTimeOut</inSignal>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<!--任务因超时而失败的信封-->
+								<label TKey="LetterLabelQuestExpired">The illusion disappears</label>
+								<text TKey="LetterTextQuestExpired">The realm of spiritual illusions, after sustaining itself for a time, gradually dissipated on its own.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+				<li Class="QuestNode_End">
+					<inSignal>OutdoorExercises.Resolved</inSignal>
+					<outcome>Success</outcome>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<WorldObjectDef>
+		<defName>RI_WorldObject_OutdoorExercises</defName>
+		<label>Immortal illusion</label>
+		<description>A place that seems no different from its surroundings, but only cultivators are drawn to the spiritual energy within, entering the illusion.</description>
+		<worldObjectClass>RIRitualFramework.OutdoorExercises</worldObjectClass>
+		<texture>World/WorldObjects/PeaceTalks</texture>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/RI_WorldObject_OutdoorExercises</expandingIconTexture>
+		<expandingIconPriority>70</expandingIconPriority>
+		<comps>
+			<li Class="WorldObjectCompProperties_Timeout" />
+		</comps>
+	</WorldObjectDef>
+
+</Defs>

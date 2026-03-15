@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--八卦旗Base-->
+
+	<!--拘鬼旗改名八卦旗，对友军生效啦-->
+	<HediffDef Name="RI_Base_GhostFlagHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.15,0.74,0.45)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--八卦旗hediff-->
+	<HediffDef ParentName="RI_Base_GhostFlagHediff">
+		<defName>RI_ZombieHediff_DetainGhostFlag</defName>
+		<label>八卦旗</label>
+		<description>拘鬼旗主要hediff</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="RIHediffFramework.RIHediffCompProperties_GiveHediffsInRange">
+				<!-- <li Class="RIHediffFramework.RIHediffCompProperties_GiveHediffsInRange"> -->
+				<range>5</range>
+				<mote>RI_ZombieMote_DetainGhostFlagRange</mote>
+				<onlyApplyEnemy>false</onlyApplyEnemy>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<onlyPawnsInSameFaction>false</onlyPawnsInSameFaction>
+				<targetingParameters>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>true</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+					<canTargetEntities>true</canTargetEntities>
+				</targetingParameters>
+				<motes>
+					<li>RI_ZombieMote_DetainGhostFlagFlashFlag</li>
+				</motes>
+				<hediff>RI_ZombieHediff_DetainGhostFlag_Buff</hediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!-- 能力修正 (CapMods) -->
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.02</offset>
+						<!-- 提升 5% 意识，这会间接带动所有能力 -->
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+						<!-- 提升 10% 视力 -->
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 八卦旗施加在友军身上的的hediff -->
+	<HediffDef ParentName="RI_Base_GhostFlagHediff">
+		<defName>RI_ZombieHediff_DetainGhostFlag_Buff</defName>
+		<label>集中精神</label>
+		<description>集中精神</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>5</maxDistance>
+				<customMote>Mote_CombatCommandLinkLine</customMote>
+			</li>
+		</comps>
+
+		<stages>
+			<li>
+				<statOffsets>
+					<!-- 远程：略微提升精度和缩短瞄准时间 -->
+					<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<!-- 原版射击指令是-0.20 -->
+
+					<!-- 近战：提升命中和闪避 -->
+					<MeleeHitChance>1.5</MeleeHitChance>
+					<MeleeDodgeChance>1.5</MeleeDodgeChance>
+				</statOffsets>
+
+				<!-- 能力修正 (CapMods) -->
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+						<!-- 提升 5% 意识，这会间接带动所有能力 -->
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.10</offset>
+						<!-- 提升 10% 视力 -->
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 三清铃的hediff -->
+	<!--<HediffDef ParentName="RI_Base_GhostFlagHediff">
+		<defName>RI_ZombieHediff_SanQing</defName>
+		<label>三清铃</label>
+		<description>三清铃的hediff</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.5</painOffset>
+				-->
+	<!--疼痛-->
+	<!--
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				</statOffsets>
+				<statFactors>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+					-->
+	<!-- 愈合系数-->
+	<!--
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>-->
+
+	<HediffDef>
+		<defName>RI_ZombieHediff_WindThunder</defName>
+		<label>风雷鼓</label>
+		<description>风雷鼓大幅提高远程战斗能力</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<!-- 远程瞄准提升20%（瞄准时间缩短20%） -->
+					<AimingDelayFactor>0.2</AimingDelayFactor>
+
+					<!-- 远程冷却减少20% -->
+					<RangedCooldownFactor>0.3</RangedCooldownFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

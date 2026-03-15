@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spiritual rock -->
+  <RI_SpiritualRock.label>灵岩</RI_SpiritualRock.label>
+  <!-- EN: A large rock embedded with Spiritual crystal allows Qi to slowly permeate the surrounding air, which is refreshing and can slightly increase the speed of cultivation.\n\nMood and Qi growth rates cannot be superimposed by placing multiple Spiritual rocks. -->
+  <RI_SpiritualRock.description>一块在内部镶入了灵石的巨大岩石，让灵气可以缓慢地渗透到周围的空气中，令人神清气爽，并且能略微提升修炼速度。\n\n心情和灵气增长率无法通过摆放多个灵岩来叠加。</RI_SpiritualRock.description>
+  
+</LanguageData>

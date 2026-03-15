@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--眼睛发光效果-->
+	
+	<!-- 内丹 -->
+	<HediffDef>
+		<defName>RI_eyesGlow</defName>
+		<label>Eyes glow A</label>
+		<labelNoun>Eyes glow A</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Glow!</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(0.56,0.78,1.0)</EyeColor>
+			</li>
+		</comps>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(0.78,0.9,1.0,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+	
+	<!-- 炼体 -->
+	<HediffDef>
+		<defName>RI_eyesGlow1</defName>
+		<label>Eyes glow B</label>
+		<labelNoun>Eyes glow B</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Glow!</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(1.0,0.45,0.25)</EyeColor>
+			</li>
+		</comps>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(1.0,0.85,0.73,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+</Defs>

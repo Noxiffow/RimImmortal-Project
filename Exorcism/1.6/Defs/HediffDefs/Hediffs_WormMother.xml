@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--卵胎生-->
+	<HediffDef>
+		<defName>RI_WormMotherHediff</defName>
+		<label>Ovoviviparity</label>
+		<description>The eggs of this creature develop into new individuals inside the mother’s body before being laid.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="RimZombieGirl.HediffCompProperties_WormMother">
+				<onceCount>1</onceCount>
+				<onceTime>2000</onceTime>
+				<pawnKindDef>RI_EvilCreature_CorpseEater_Pawn</pawnKindDef>
+			</li>
+			<!--死后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+</Defs>

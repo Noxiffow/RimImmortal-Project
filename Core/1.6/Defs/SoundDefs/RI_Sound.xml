@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--药材放地上的音效-->
+	<SoundDef>
+		<defName>RI_Sound_DropHerb</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Drop/RI_Sound_DropHerb</clipPath>
+					</li>
+				</grains>
+				<volumeRange>25~25</volumeRange>
+				<pitchRange>0.9311765~1.091765</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--吃药音效-->
+	<SoundDef>
+		<defName>RI_Sound_EatPill</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ingest/RI_Sound_EatPill</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~40</volumeRange>
+				<pitchRange>0.8~1.2</pitchRange>
+				<distRange>0~51.86047</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--喝药音效-->
+	<SoundDef>
+		<defName>RI_Sound_DrinkLiquid</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ingest/RI_Sound_DrinkLiquid</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35~40</volumeRange>
+				<pitchRange>0.8~1.2</pitchRange>
+				<distRange>0~51.86047</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

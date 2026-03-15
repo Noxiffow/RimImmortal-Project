@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_UnfinishedManuscript</defName>
+		<label>unfinished manuscript</label>
+		<description>An unfinished piece of an manuscript.</description>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_UnfinishedManuscript</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!--滴血令-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Thing_SpecialRaidCaller</defName>
+		<label>blood mark</label>
+		<description>A strip of hide leather paper tainted with blood curses. When burned, it draws the attention of rogue cultivators.\n\nOn rim worlds where spiritual energy is scarce, evil cultivators require clear coordinates to conduct their raids. Thus, the bloodmark art was devised: blood is dripped onto the leather and imbued with a spell, allowing any wicked cultivators within dozens of Li to clearly perceive the mark’s location.\n\nThis positioning skill is crude and primitive, but its low cost makes it widespread. Even unaffiliated Daoists and free cultivators may learn it as a means of contacting allies.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Special/RI_Thing_SpecialRaidCaller</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>32</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>burn out</useLabel>
+			</li>
+			<li Class="SpecialRaidCall.CompProperties_UseEffect_CallCenterDropRaid">
+				<incidentDef>RI_RaidBadGuys</incidentDef>
+				<minTicks>9000</minTicks>
+				<!-- 最早 20 秒后触发 -->
+				<maxTicks>50000</maxTicks>
+				<!-- 最晚 2 分钟触发 -->
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

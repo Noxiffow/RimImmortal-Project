@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+    <!-- 尸卷虫母 -->
+	<ThingDef ParentName="RI_Base_EvilCreatureSpider">
+		<defName>RI_EvilCreature_WormMother_Race</defName>
+		<label>worm mother</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nThe human head on the Human-Head Spider is not real but a form of mimicry. These massive spiders dwell in ancient battlefields and graveyards, gradually evolving to resemble human heads over time.\n\nSingle Human-head Spider is easy for an ordinary person to kill, but they often move in swarms, posing a threat that should not be underestimated.</description>
+		<statBases>
+			<MoveSpeed>3.1</MoveSpeed>
+			<!-- 移动速度-->
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<!-- 护甲-->
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<!-- 护甲-->
+			<MarketValue>1400</MarketValue>
+			<!-- 市场价值-->
+		</statBases>
+		<tools>
+			<!--攻击方式：第一对足，头撞-->
+			<li>
+				<label>first pair of legs</label>
+				<labelNoLocation>legs</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+					<!-- 伤害类型-->
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>first pair of legs</label>
+				<labelNoLocation>legs</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+					<!-- 伤害类型-->
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_RaceGiveHediff">
+				<hediffDef>RI_WormMotherHediff</hediffDef>
+			</li>
+		</comps>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<body>RI_EvilCreature_WormMother_BodyDef</body>
+			<baseBodySize>3.5</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>200</lifeExpectancy>
+			<!-- 预期寿命-->
+			<lifeStageAges>
+				<li>
+					<def>RI_EvilCreature_HeadSpider_Adult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.12)</li>
+				<li>(0.07, 0, -0.05)</li>
+				<li>(0.0, 0, -0.08)</li>
+				<li>(-0.07, 0, -0.05)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>RI_EvilCreature_TradeTag</li>
+		</tradeTags>
+		<!--屠宰产物-->
+		<!--<butcherProducts>
+			<Meat_Megaspider>50</Meat_Megaspider>
+		</butcherProducts>-->
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_WormMother_PawnKindDef</defName>
+		<label>worm mother</label>
+		<race>RI_EvilCreature_WormMother_Race</race>
+		<combatPower>900</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<alternateGraphicChance>0.5</alternateGraphicChance>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_WormMother/RI_EvilCreature_WormMotherB</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_WormMother/RI_EvilCreature_WormMother</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_WormMother/Dessicated_RI_EvilCreature_WormMother</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

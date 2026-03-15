@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicAxe.tools.handle.label>斧柄</RI_Weapon_BasicAxe.tools.handle.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicHammer.tools.handle.label>锤柄</RI_Weapon_BasicHammer.tools.handle.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicSaber.tools.handle.label>刀柄</RI_Weapon_BasicSaber.tools.handle.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicSpear.tools.shaft.label>矛刃</RI_Weapon_BasicSpear.tools.shaft.label>
+  
+  <!-- UNUSED -->
+  <RI_Weapon_BasicSword.tools.handle.label>剑柄</RI_Weapon_BasicSword.tools.handle.label>
+  
+</LanguageData>

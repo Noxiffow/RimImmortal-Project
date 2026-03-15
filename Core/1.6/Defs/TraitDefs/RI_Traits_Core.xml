@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--====================比较特殊的玩意====================-->
+	<TraitDef>
+		<defName>RI_Trait_NoRain</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Shelter from rain&lt;/color&gt;</label>
+				<description>Wear rainproof clothing and keep body dry.</description>
+				<disallowedThoughtsFromIngestion>
+					<li>
+						<thoughts>
+							<li>SoakingWet</li>
+						</thoughts>
+					</li>
+				</disallowedThoughtsFromIngestion>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<!--====================基础特性====================-->
+	<TraitDef>
+		<defName>RI_Trait_StrongMeridians</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Strong Meridians&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} was born with stronger meridians than the average person. Their immune speed is slightly higher than that of an ordinary individual.</description>
+				<statOffsets>
+					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+					<GI_EnergyGainEff>0.05</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_WeakMeridians</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Weak Meridians&lt;/color&gt;</label>
+				<description>{PAWN_nameDef}'s meridians are weaker than those of the average person. They have been physically frail since childhood, with an immune speed slightly slower than that of an ordinary person.</description>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+					<GI_EnergyGainEff>-0.05</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Sthenia</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Super strength&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} possesses extraordinary physical strength. For someone with excessive energy like them, tasks like throwing boulders or carrying cauldrons are never a challenge.</description>
+				<statOffsets>
+					<CarryingCapacity>10</CarryingCapacity>
+					<MeleeHitChance>0.2</MeleeHitChance>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>0.9</RestFallRateFactor>
+				</statFactors>
+				<skillGains>
+					<Melee>5</Melee>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_FleetFeet</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Scud&lt;/color&gt;</label>
+				<description>With long and well-developed calf muscles, {PAWN_nameDef} can run faster than most, making them a prime candidate for sprinting competitions.</description>
+				<statOffsets>
+					<MoveSpeed>2.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Rhizotomist</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Herbs hobby&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} has been fascinated by various herbs since childhood. This interest has laid a solid foundation for {PAWN_pronoun} in both planting skills and alchemical abilities.</description>
+				<statOffsets>
+					<MedicalTendQuality>0.2</MedicalTendQuality>
+					<FoodPoisonChance>-1.0</FoodPoisonChance>
+				</statOffsets>
+				<statFactors>
+					<ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+				</statFactors>
+				<disallowedMentalStates>
+					<li>Binging_DrugMajor</li>
+				</disallowedMentalStates>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Beatable</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Resist Beating&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} is tough as nails. Having endured constant bullying and beatings since childhood, {PAWN_pronoun} has developed a high tolerance for pain over time.</description>
+				<statOffsets>
+					<InjuryHealingFactor>0.1</InjuryHealingFactor>
+					<PainShockThreshold>0.2</PainShockThreshold>
+					<Flammability>-0.5</Flammability>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+				</statFactors>
+				<hungerRateFactor>1.5</hungerRateFactor>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Handsome</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Handsome scholar&lt;/color&gt;</label>
+				<description>With a face as handsome as a peach blossom, {PAWN_nameDef} naturally stands out wherever {PAWN_pronoun} goes. Not only does {PAWN_pronoun} possess good looks, but {PAWN_pronoun} is also highly skilled in learning and research, making {PAWN_objective} the center of attention.</description>
+				<statOffsets>
+					<PawnBeauty>3</PawnBeauty>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+				</statOffsets>
+				<skillGains>
+					<Intellectual>3</Intellectual>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Emaciation</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Withered face&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} experienced a famine in childhood, leaving {PAWN_objective} with permanent dark circles and wrinkles. While {PAWN_pronoun} may appear older than peers, {PAWN_pronoun} has also gained invaluable communication skills from this experience.</description>
+				<statOffsets>
+					<PawnBeauty>-1</PawnBeauty>
+				</statOffsets>
+				<skillGains>
+					<Social>3</Social>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_BookWorm</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#baffe3&gt;Erudite&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} experienced a famine in childhood, leaving {PAWN_objective} with permanent dark circles and wrinkles. While {PAWN_pronoun} may appear older than peers, {PAWN_pronoun} has also gained invaluable communication skills from this experience.</description>
+				<statOffsets>
+					<GlobalLearningFactor>0.5</GlobalLearningFactor>
+					<MentalBreakThreshold>-0.3</MentalBreakThreshold>
+				</statOffsets>
+				<skillGains>
+					<Intellectual>6</Intellectual>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<!--====================高级特性====================-->
+	<TraitDef>
+		<defName>RI_Trait_MartialArtistSpirit</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Martial soul&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} has shown martial arts talent since childhood. By the age of ten, {PAWN_pronoun} had independently developed a set of practical combat techniques, and {PAWN_pronoun} strength and reflexes surpass those of ordinary individuals.</description>
+				<statOffsets>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MeleeDodgeChance>0.3</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				</statFactors>
+				<skillGains>
+					<Melee>9</Melee>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Emperor</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Emperor&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} is well-versed in the ways of an emperor, emitting an aura of majesty without anger.</description>
+				<statOffsets>
+					<NegotiationAbility>0.5</NegotiationAbility>
+					<TradePriceImprovement>0.2</TradePriceImprovement>
+					<SocialImpact>0.3</SocialImpact>
+					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</ConversionPower>
+					<ArrestSuccessChance>0.4</ArrestSuccessChance>
+				</statOffsets>
+				<skillGains>
+					<Social>7</Social>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Shennong</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Divine farmer&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} has diligently worked since childhood to feed {PAWN_pronoun} fellow villagers. From a young age, {PAWN_pronoun} has been gathering unknown medicinal herbs and experimenting with them, becoming familiar with various medicinal plants and excelling in farming and cultivation.</description>
+				<statOffsets>
+					<FoodPoisonChance>-1</FoodPoisonChance>
+					<ToxicResistance>0.5</ToxicResistance>
+					<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+				</statOffsets>
+				<statFactors>
+					<ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+				</statFactors>
+				<skillGains>
+					<Plants>7</Plants>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_SuperQiFeeling</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Marrow-cleansing spirit body&lt;/color&gt;</label>
+				<description>{PAWN_nameDef}'s body possesses mysterious power. While practicing cultivation, it seems like spiritual energy automatically washes through {PAWN_pronoun} body repeatedly, greatly enhancing {PAWN_pronoun} absorption efficiency beyond that of ordinary cultivators. Additionally, this nourishes {PAWN_pronoun} flesh, making {PAWN_pronoun} tendons and bones stronger than usual.</description>
+				<statOffsets>
+					<PawnBeauty>3</PawnBeauty>
+					<InjuryHealingFactor>0.2</InjuryHealingFactor>
+					<Flammability>-0.5</Flammability>
+					<GI_EnergyGainEff>0.15</GI_EnergyGainEff>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_Enlightenment</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Enlightenment of the Dao&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} once had a significant dream. In this dream, {PAWN_pronoun} encountered a blue-robed elder. Upon awakening, {PAWN_nameDef} found many concepts became much easier to comprehend.</description>
+				<statOffsets>
+					<GlobalLearningFactor>2</GlobalLearningFactor>
+					<GI_EnergyGainEff>0.2</GI_EnergyGainEff>
+				</statOffsets>
+				<statFactors>
+					<LifespanFactor>1.5</LifespanFactor>
+					<RestFallRateFactor>0.7</RestFallRateFactor>
+				</statFactors>
+				<skillGains>
+					<Intellectual>7</Intellectual>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_SuperVision</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Fiery eyes&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} once suffered from an eye ailment, cured by a barefoot doctor. Since then, {PAWN_pronoun} discovered {PAWN_pronoun} vision became extraordinarily sharp, effortlessly hitting targets from a hundred paces.</description>
+				<statOffsets>
+					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+				</statOffsets>
+				<statFactors>
+					<AimingDelayFactor>0.8</AimingDelayFactor>
+					<RangedCooldownFactor>0.8</RangedCooldownFactor>
+				</statFactors>
+				<skillGains>
+					<Shooting>9</Shooting>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_BodyMaker</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Human butcher&lt;/color&gt;</label>
+				<description>{PAWN_nameDef}'s mental processes are different from ordinary individuals; {PAWN_pronoun} feels no remorse for killing. {PAWN_pronoun} is a natural killer, learning various killing techniques and military strategies on {PAWN_pronoun} own without any formal training.</description>
+				<statOffsets>
+					<MoveSpeed>0.05</MoveSpeed>
+					<PainShockThreshold>1</PainShockThreshold>
+					<MeleeDamageFactor>0.3</MeleeDamageFactor>
+					<ArrestSuccessChance>1</ArrestSuccessChance>
+					<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1</SuppressionPower>
+					<MentalBreakThreshold>-0.5</MentalBreakThreshold>
+					<HuntingStealth>0.5</HuntingStealth>
+				</statOffsets>
+				<skillGains>
+					<Shooting>4</Shooting>
+					<Melee>4</Melee>
+				</skillGains>
+			</li>
+
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RI_Trait_SuperDoctor</defName>
+		<commonality>0.02</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Salvation doctor&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} is determined to save life. {PAWN_pronoun} dedicates {PAWN_pronoun} life to the study of medicine, mastering the human body's organs and meridians, and has successfully performed many complex surgeries.</description>
+				<statOffsets>
+					<MedicalSurgerySuccessChance>0.3</MedicalSurgerySuccessChance>
+					<MedicalTendQuality>0.3</MedicalTendQuality>
+				</statOffsets>
+				<skillGains>
+					<Medicine>9</Medicine>
+				</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<!--====================修仙特性====================-->
+	<TraitDef>
+		<defName>RI_Trait_CultivationOfImmortals</defName>
+		<commonality>0.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#8cffd1&gt;Strong spiritual roots&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] is good at feeling Qi.</description>
+				<degree>2</degree>
+				<statOffsets>
+					<GI_EnergyGainEff>0.15</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+			<li>
+				<label>&lt;color=#baffe3&gt;Great spiritual roots&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] can feel more Qi than the average cultivator.</description>
+				<degree>1</degree>
+				<statOffsets>
+					<GI_EnergyGainEff>0.2</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+			<li>
+				<label>&lt;color=#baffe3&gt;Weak spiritual roots&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] can feel less Qi than the average cultivator.</description>
+				<degree>-1</degree>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.12</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+			<li>
+				<label>&lt;color=#baffe3&gt;Poor spiritual roots&lt;/color&gt;</label>
+				<description>[PAWN_nameDef]'s body is weak, maybe he is not fit to be a cultivator.</description>
+				<degree>-2</degree>
+				<statOffsets>
+					<GI_EnergyGainEff>-0.18</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Businessman -->
+  <RI_Beards_Businessman.label>商人</RI_Beards_Businessman.label>
+  
+  <!-- EN: Elder -->
+  <RI_Beards_Elder.label>长老</RI_Beards_Elder.label>
+  
+  <!-- EN: Fighter -->
+  <RI_Beards_Fighter.label>武夫</RI_Beards_Fighter.label>
+  
+  <!-- EN: Pinch of chin -->
+  <RI_Beards_Handlebar.label>八字胡</RI_Beards_Handlebar.label>
+  
+  <!-- EN: Mad man -->
+  <RI_Beards_MadMan.label>狂人</RI_Beards_MadMan.label>
+  
+  <!-- EN: Old man -->
+  <RI_Beards_OldMan.label>老人</RI_Beards_OldMan.label>
+  
+  <!-- EN: Pinch of chin -->
+  <RI_Beards_PinchOfChin.label>下巴一撮</RI_Beards_PinchOfChin.label>
+  
+  <!-- EN: Ren mustache -->
+  <RI_Beards_RenMustache.label>人字胡</RI_Beards_RenMustache.label>
+  
+  <!-- EN: Unruly -->
+  <RI_Beards_Unruly.label>不羁</RI_Beards_Unruly.label>
+  
+  <!-- EN: Writer -->
+  <RI_Beards_Writer.label>作家</RI_Beards_Writer.label>
+  
+</LanguageData>

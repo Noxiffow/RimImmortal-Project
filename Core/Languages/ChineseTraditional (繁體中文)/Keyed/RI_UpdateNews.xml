@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!-- 刚才代码里定义的通用 UI 键 -->
+	<!-- EN: Mod Update: {0} -->
+  <RI_News_Title>Mod更新：{0}</RI_News_Title>
+	<!-- EN: Version: {0} -->
+  <RI_News_Version>版本：{0}</RI_News_Version>
+	<!-- EN: Next -->
+  <RI_News_Next>下一条</RI_News_Next>
+	<!-- EN: Close -->
+  <RI_News_Close>关闭</RI_News_Close>
+
+	<!-- 你在这个公告里自定义的键 -->
+	<!-- EN: RimImmortal-Core -->
+	<RI_RimImmortal_Core>边缘仙路-羽化登仙</RI_RimImmortal_Core>
+	<!-- EN: update test -->
+	<RI_RimImmortal_Core_Text>-修复一个配方bug。\n-新增公告系统。</RI_RimImmortal_Core_Text>
+</LanguageData>

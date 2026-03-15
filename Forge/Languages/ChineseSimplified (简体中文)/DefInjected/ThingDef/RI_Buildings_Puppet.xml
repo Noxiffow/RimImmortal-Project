@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Golem trap -->
+  <RI_SteelPuppetEgg.label>傀儡机关</RI_SteelPuppetEgg.label>
+  <!-- EN: Golem trap. -->
+  <RI_SteelPuppetEgg.description>傀儡机关</RI_SteelPuppetEgg.description>
+  
+  <!-- EN: Steel golem box -->
+  <RI_SteelPuppetTrap.label>铁傀机关箱</RI_SteelPuppetTrap.label>
+  <!-- EN: Low-level steel golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth. -->
+  <RI_SteelPuppetTrap.description>以法宝构件和原材料合成的低等铁制傀儡，只能遵循一条规则，那就是诞生起就攻击一切活动的生物。</RI_SteelPuppetTrap.description>
+  
+  <!-- EN: Golem trap -->
+  <RI_StonyPuppetEgg.label>傀儡机关</RI_StonyPuppetEgg.label>
+  <!-- EN: Golem trap. -->
+  <RI_StonyPuppetEgg.description>傀儡机关</RI_StonyPuppetEgg.description>
+  
+  <!-- EN: Stony golem box -->
+  <RI_StonyPuppetTrap.label>石傀机关箱</RI_StonyPuppetTrap.label>
+  <!-- EN: Low-level stony golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth. -->
+  <RI_StonyPuppetTrap.description>以法宝构件和原材料合成的低等石制傀儡，只能遵循一条规则，那就是诞生起就攻击一切活动的生物。</RI_StonyPuppetTrap.description>
+  
+  <!-- EN: Golem trap -->
+  <RI_WoodenPuppetEgg.label>傀儡机关</RI_WoodenPuppetEgg.label>
+  <!-- EN: Golem trap. -->
+  <RI_WoodenPuppetEgg.description>傀儡机关</RI_WoodenPuppetEgg.description>
+  
+  <!-- EN: Wooden golem box -->
+  <RI_WoodenPuppetTrap.label>木傀机关箱</RI_WoodenPuppetTrap.label>
+  <!-- EN: Low-level wooden golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth. -->
+  <RI_WoodenPuppetTrap.description>以法宝构件和原材料合成的低等木制傀儡，只能遵循一条规则，那就是诞生起就攻击一切活动的生物。</RI_WoodenPuppetTrap.description>
+  
+</LanguageData>

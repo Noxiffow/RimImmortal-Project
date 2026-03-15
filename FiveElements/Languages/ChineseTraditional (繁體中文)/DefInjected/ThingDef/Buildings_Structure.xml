@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: earth wall -->
+  <RI_Building_EarthWall.label>土壁</RI_Building_EarthWall.label>
+  <!-- EN: A solid earthen wall created by Earth Path cultivators. -->
+  <RI_Building_EarthWall.description>土行修炼者制造的坚硬土壁。</RI_Building_EarthWall.description>
+  
+  <!-- EN: earth wall -->
+  <RI_Building_EarthWall_Buildable.label>土壁</RI_Building_EarthWall_Buildable.label>
+  <!-- EN: A solid earthen wall created by Earth Path cultivators. -->
+  <RI_Building_EarthWall_Buildable.description>乌刚玉制造的坚硬土壁。</RI_Building_EarthWall_Buildable.description>
+  
+  <!-- EN: quicksand trap -->
+  <RI_Building_SandTrap.label>流沙</RI_Building_SandTrap.label>
+  <!-- EN: A quicksand trap. -->
+  <RI_Building_SandTrap.description>一个流沙陷阱</RI_Building_SandTrap.description>
+  <!-- EN: Duration: 2 hours -->
+  <RI_Building_SandTrap.comps.CompInspectString.inspectString>持续时间：2小时</RI_Building_SandTrap.comps.CompInspectString.inspectString>
+  
+  <!-- EN: earth column -->
+  <RI_Building_StoneColumn.label>乾元柱</RI_Building_StoneColumn.label>
+  <!-- EN: Earth Path cultivators resonate with the spiritual energy within the land and refine it into an earth column, which serves as a medium for channeling spells. It can also function as a load-bearing column. -->
+  <RI_Building_StoneColumn.description>土行修炼者通过共鸣大地中的灵气，将其提炼成乾元柱，作为承载法术的媒介。本身也可作为承重柱。</RI_Building_StoneColumn.description>
+  
+  <!-- EN: guardian stone Tower -->
+  <RI_Building_WorldSealingStoneTower.label>镇岳塔</RI_Building_WorldSealingStoneTower.label>
+  <!-- EN: A mystical stone tower that provides protective shields to nearby allies. It will dissipate after 60 seconds. -->
+  <RI_Building_WorldSealingStoneTower.description>由乾元柱转化而来的高大石塔，可以产生灵气护盾，还能作为承载法术的媒介。</RI_Building_WorldSealingStoneTower.description>
+  
+</LanguageData>

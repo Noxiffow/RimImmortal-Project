@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--地砖-->
+	<TerrainDef ParentName="TileStoneBase" >
+		<defName>RI_TileRedBrick</defName>
+		<label>red brick tile</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>4</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>RI_TileBlackBrick</defName>
+		<label>black brick tile</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>4</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--石板-->
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>RI_FlagstoneRedBrick</defName>
+		<label>red brick flagstone</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>4</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>RI_FlagstoneBlackBrick</defName>
+		<label>black brick flagstone</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>4</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+</Defs>

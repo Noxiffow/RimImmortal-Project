@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--修仙版本的穿梭机-->
+	<ThingDef Name="RI_ShuttleBase" ParentName="BuildingBase">
+		<defName>RI_Shuttle</defName>
+		<label>仙舟</label>
+		<description>仙舟</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>1.0</fillPercent>
+		<size>(5,3)</size>
+		<drawHighlight>true</drawHighlight>
+		<highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
+			<!--记得修改贴图-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6.5,6.5)</drawSize>
+			<color>(255,255,255)</color>
+			<shadowData>
+				<volume>(4.1, 1.0, 1.8)</volume>
+				<offset>(0, 0, -0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>true</canOverlapZones>
+		<killedLeavings>
+			<Plasteel>50</Plasteel>
+			<RI_Resource_SpiritualCrystal>50</RI_Resource_SpiritualCrystal>
+			<RI_Resource_LiquidJade>4</RI_Resource_LiquidJade>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</killedLeavings>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<drawerType>RealtimeOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<uiIconScale>1.4</uiIconScale>
+		<building>
+			<claimable>false</claimable>
+			<soundAmbient>ShuttleIdle_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<inspectorTabs>
+			<li>ITab_ContentsTransporter</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Shuttle" />
+			<li Class="CompProperties_Transporter">
+				<massCapacity>32000</massCapacity>
+				<max1PerGroup>true</max1PerGroup>
+				<canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+				<showOverallStats>false</showOverallStats>
+				<pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+				<pawnExitSound>Shuttle_PawnExit</pawnExitSound>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<WorldObjectDef>
+    <defName>RI_TravelingShuttle</defName>
+    <label>仙舟</label>
+    <description>仙舟行于高空</description>
+    <worldObjectClass>TravelingTransportPods</worldObjectClass>
+    <texture>Things/Building/Misc/RI_Shuttle</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>Things/Building/Misc/RI_Shuttle</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <expandingIconColor>(162,164,149)</expandingIconColor>
+    <expandingIconDrawSize>1.6</expandingIconDrawSize>
+    <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+    <rotateGraphicWhenTraveling>true</rotateGraphicWhenTraveling>
+    </WorldObjectDef>
+
+	<TransportShipDef>
+		<defName>Ship_RI_Shuttle</defName>
+		<label>仙舟</label>
+		<shipThing>RI_Shuttle</shipThing>
+		<arrivingSkyfaller>RI_ShuttleIncoming</arrivingSkyfaller>
+		<leavingSkyfaller>RI_ShuttleLeaving</leavingSkyfaller>
+		<worldObject>RI_TravelingShuttle</worldObject>
+		<maxLaunchDistance>70</maxLaunchDistance>
+	</TransportShipDef>
+
+	<ThingDef ParentName="ShuttleSkyfallerBase">
+		<defName>RI_ShuttleIncoming</defName>
+		<label>仙舟 (incoming)</label>
+		<thingClass>ShuttleIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
+			<!--记得修改贴图-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(6.5,6.5)</drawSize>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<skyfaller>
+			<anticipationSound>Shuttle_Landing</anticipationSound>
+			<anticipationSoundTicks>250</anticipationSoundTicks>
+			<ticksToImpactRange>200~250</ticksToImpactRange>
+			<angleCurve>
+				<points>
+					<li>(0,-60)</li>
+					<li>(1,-90)</li>
+				</points>
+			</angleCurve>
+			<rotationCurve>
+				<points>
+					<li>(0,30)</li>
+					<li>(0.5,5)</li>
+					<li>(0.9,-5)</li>
+					<li>(0.95,0)</li>
+				</points>
+			</rotationCurve>
+			<zPositionCurve>
+				<points>
+					<li>(0.95,2.5)</li>
+					<li>(1,0)</li>
+				</points>
+			</zPositionCurve>
+			<speedCurve>
+				<points>
+					<li>(0.6,0.6)</li>
+					<li>(0.95,0.1)</li>
+				</points>
+			</speedCurve>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShuttleSkyfallerBase">
+		<defName>RI_ShuttleLeaving</defName>
+		<label>仙舟 (leaving)</label>
+		<thingClass>FlyShipLeaving</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
+			<!--记得修改贴图-->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(6.5,6.5)</drawSize>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<skyfaller>
+			<reversed>true</reversed>
+			<anticipationSound>Shuttle_Leaving</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>-40~-15</ticksToImpactRange>
+			<moteSpawnTime>0.05</moteSpawnTime>
+			<shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+			<shadowSize>(5.5,3.5)</shadowSize>
+			<motesPerCell>1</motesPerCell>
+			<angleCurve>
+				<points>
+					<li>(0,90)</li>
+					<li>(1,70)</li>
+				</points>
+			</angleCurve>
+			<rotationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.15,10)</li>
+					<li>(0.5,-5)</li>
+				</points>
+			</rotationCurve>
+			<zPositionCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.08,2)</li>
+				</points>
+			</zPositionCurve>
+			<speedCurve>
+				<points>
+					<li>(0,0.2)</li>
+					<li>(0.4,0.7)</li>
+				</points>
+			</speedCurve>
+		</skyfaller>
+	</ThingDef><!---->
+
+</Defs>

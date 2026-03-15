@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blood eruption -->
+  <RI_He_BloodEruption.label>TODO</RI_He_BloodEruption.label>
+  <!-- EN: #. -->
+  <RI_He_BloodEruption.description>TODO</RI_He_BloodEruption.description>
+  
+  <!-- EN: speed rush -->
+  <RI_He_SpeedRush.label>TODO</RI_He_SpeedRush.label>
+  <!-- EN: #. -->
+  <RI_He_SpeedRush.description>TODO</RI_He_SpeedRush.description>
+  
+  <!-- EN: amulet soup -->
+  <RI_Hediff_AmuletProtection.label>符水效果</RI_Hediff_AmuletProtection.label>
+  <!-- EN: Having consumed amulet soup, wounds will not worsen into infection, and the stomach remains free of discomfort. -->
+  <RI_Hediff_AmuletProtection.description>饮用了符水，伤口不会恶化感染，肠胃也不会感到不适。</RI_Hediff_AmuletProtection.description>
+  
+  <!-- EN: Crimson flesh -->
+  <RI_Hediff_CrimsonFlesh.label>血煞魔体</RI_Hediff_CrimsonFlesh.label>
+  <!-- EN: The Crimson Tyrant's powerful body makes him immune to some attacks. At the same time, it has considerable resistance to various negative effects. -->
+  <RI_Hediff_CrimsonFlesh.description>血蛄侯的强大肉体，使得他可以免疫一部分攻击，同时对各种负面效果有着相当的抗性。</RI_Hediff_CrimsonFlesh.description>
+  
+  <!-- EN: crushing bone -->
+  <RI_Hediff_CrushingBone.label>蚀骨</RI_Hediff_CrushingBone.label>
+  <!-- EN: The ominous shouting emitted by the Crimson Tyrant, causes all surrounding creatures to feel panic and pain from within, as if bones were rubbing against each other. This effect is more psychic, people with higher mental sensitivity will experience more panic. -->
+  <RI_Hediff_CrushingBone.description>血蛄侯散发出的不详威压，会让所有周围的生物感到恐慌和来自于体内的疼痛，仿佛骨头互相摩擦挤压一般。</RI_Hediff_CrushingBone.description>
+  
+  <!-- EN: corpse poison -->
+  <RI_Hediff_ZombiePoison.label>尸毒</RI_Hediff_ZombiePoison.label>
+  <!-- EN: A necrotic toxin. It stiffens muscles and coagulates blood without clouding the mind. -->
+  <RI_Hediff_ZombiePoison.description>一种产生于邪祟体内的生物毒素，沾染到身上，会感染炎症，产生疼痛，头晕，视力模糊等负面效果。</RI_Hediff_ZombiePoison.description>
+  <!-- EN: minor -->
+  <RI_Hediff_ZombiePoison.stages.minor.label>轻度</RI_Hediff_ZombiePoison.stages.minor.label>
+  <!-- EN: moderate -->
+  <RI_Hediff_ZombiePoison.stages.moderate.label>中度</RI_Hediff_ZombiePoison.stages.moderate.label>
+  <!-- EN: severe -->
+  <RI_Hediff_ZombiePoison.stages.severe.label>重度</RI_Hediff_ZombiePoison.stages.severe.label>
+  
+</LanguageData>

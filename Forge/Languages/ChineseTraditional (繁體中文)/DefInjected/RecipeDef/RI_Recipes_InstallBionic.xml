@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Black steel arm -->
+  <Make_BlackSteelArm.label>制作庚钢义臂</Make_BlackSteelArm.label>
+  <!-- EN: Make a Black steel arm. -->
+  <Make_BlackSteelArm.description>制作庚钢义臂。</Make_BlackSteelArm.description>
+  <!-- EN: Making Black steel arm. -->
+  <Make_BlackSteelArm.jobString>制作庚钢义臂</Make_BlackSteelArm.jobString>
+  
+  <!-- EN: make Black steel foot -->
+  <Make_BlackSteelFoot.label>制作庚钢义足</Make_BlackSteelFoot.label>
+  <!-- EN: Make a Black steel foot. -->
+  <Make_BlackSteelFoot.description>制作庚钢义足。</Make_BlackSteelFoot.description>
+  <!-- EN: Making Black steel foot. -->
+  <Make_BlackSteelFoot.jobString>制作庚钢义足</Make_BlackSteelFoot.jobString>
+  
+  <!-- EN: make Black steel hand -->
+  <Make_BlackSteelHand.label>制作庚钢义手</Make_BlackSteelHand.label>
+  <!-- EN: Make a Black steel hand. -->
+  <Make_BlackSteelHand.description>制作庚钢义手。</Make_BlackSteelHand.description>
+  <!-- EN: Making Black steel hand. -->
+  <Make_BlackSteelHand.jobString>制作庚钢义手</Make_BlackSteelHand.jobString>
+  
+  <!-- EN: make Black steel leg -->
+  <Make_BlackSteelLeg.label>制作庚钢义腿</Make_BlackSteelLeg.label>
+  <!-- EN: Make a Black steel leg. -->
+  <Make_BlackSteelLeg.description>制作庚钢义腿。</Make_BlackSteelLeg.description>
+  <!-- EN: Making Black steel leg. -->
+  <Make_BlackSteelLeg.jobString>制作庚钢义腿</Make_BlackSteelLeg.jobString>
+  
+  <!-- EN: make Black steel spine -->
+  <Make_BlackSteelSpine.label>制作庚钢脊椎</Make_BlackSteelSpine.label>
+  <!-- EN: Make a Black steel spine. -->
+  <Make_BlackSteelSpine.description>制作庚钢脊椎。</Make_BlackSteelSpine.description>
+  <!-- EN: Making Black steel spine. -->
+  <Make_BlackSteelSpine.jobString>制作庚钢脊椎</Make_BlackSteelSpine.jobString>
+  
+  <!-- EN: make Bionic stomach-Earth -->
+  <Make_EarthBionicStomach.label>制作戍土鼎胃</Make_EarthBionicStomach.label>
+  <!-- EN: Make a Bionic stomach-Earth. -->
+  <Make_EarthBionicStomach.description>制作戍土鼎胃。</Make_EarthBionicStomach.description>
+  <!-- EN: Making Bionic stomach-Earth -->
+  <Make_EarthBionicStomach.jobString>制作戍土鼎胃</Make_EarthBionicStomach.jobString>
+  
+  <!-- EN: make Bionic heart-Fire -->
+  <Make_FireBionicHeart.label>制作千壶焱心</Make_FireBionicHeart.label>
+  <!-- EN: Make a Bionic heart-Fire. -->
+  <Make_FireBionicHeart.description>制作千壶焱心。</Make_FireBionicHeart.description>
+  <!-- EN: Making Bionic heart-Fire -->
+  <Make_FireBionicHeart.jobString>制作千壶焱心</Make_FireBionicHeart.jobString>
+  
+  <!-- EN: make Jade arm -->
+  <Make_JadeFakeArm.label>制作翠玉臂</Make_JadeFakeArm.label>
+  <!-- EN: Make a Jade arm. -->
+  <Make_JadeFakeArm.description>制作翠玉臂。</Make_JadeFakeArm.description>
+  <!-- EN: Making Jade arm. -->
+  <Make_JadeFakeArm.jobString>制作翠玉臂</Make_JadeFakeArm.jobString>
+  
+  <!-- EN: make Jade eye -->
+  <Make_JadeFakeEye.label>制作翠玉眼</Make_JadeFakeEye.label>
+  <!-- EN: Make a Jade eye. -->
+  <Make_JadeFakeEye.description>制作翠玉眼。</Make_JadeFakeEye.description>
+  <!-- EN: Making Jade eye. -->
+  <Make_JadeFakeEye.jobString>制作翠玉眼</Make_JadeFakeEye.jobString>
+  
+  <!-- EN: make Jade foot -->
+  <Make_JadeFakeFoot.label>制作翠玉足</Make_JadeFakeFoot.label>
+  <!-- EN: Make a Jade foot. -->
+  <Make_JadeFakeFoot.description>制作翠玉足。</Make_JadeFakeFoot.description>
+  <!-- EN: Making Jade foot. -->
+  <Make_JadeFakeFoot.jobString>制作翠玉足</Make_JadeFakeFoot.jobString>
+  
+  <!-- EN: make Jade hand -->
+  <Make_JadeFakeHand.label>制作翠玉手</Make_JadeFakeHand.label>
+  <!-- EN: Make a Jade hand. -->
+  <Make_JadeFakeHand.description>制作翠玉手。</Make_JadeFakeHand.description>
+  <!-- EN: Making Jade hand. -->
+  <Make_JadeFakeHand.jobString>制作翠玉手</Make_JadeFakeHand.jobString>
+  
+  <!-- EN: make Bionic lung-Metal -->
+  <Make_MetalBionicLung.label>制作肃金御肺</Make_MetalBionicLung.label>
+  <!-- EN: Make a Bionic lung-Metal. -->
+  <Make_MetalBionicLung.description>制作肃金御肺。</Make_MetalBionicLung.description>
+  <!-- EN: Making Bionic lung-Metal -->
+  <Make_MetalBionicLung.jobString>制作肃金御肺</Make_MetalBionicLung.jobString>
+  
+  <!-- EN: make Bionic kidney-Water -->
+  <Make_WaterBionicKidney.label>制作寒灵水肾</Make_WaterBionicKidney.label>
+  <!-- EN: Make a Bionic kidney-Water. -->
+  <Make_WaterBionicKidney.description>制作寒灵水肾。</Make_WaterBionicKidney.description>
+  <!-- EN: Making Bionic kidney-Water -->
+  <Make_WaterBionicKidney.jobString>制作寒灵水肾</Make_WaterBionicKidney.jobString>
+  
+  <!-- EN: make Bionic liver-Wood -->
+  <Make_WoodBionicLiver.label>制作棠木枝肝</Make_WoodBionicLiver.label>
+  <!-- EN: Make a Bionic liver-Wood. -->
+  <Make_WoodBionicLiver.description>制作棠木枝肝。</Make_WoodBionicLiver.description>
+  <!-- EN: Making Bionic liver-Wood -->
+  <Make_WoodBionicLiver.jobString>制作棠木枝肝</Make_WoodBionicLiver.jobString>
+  
+</LanguageData>

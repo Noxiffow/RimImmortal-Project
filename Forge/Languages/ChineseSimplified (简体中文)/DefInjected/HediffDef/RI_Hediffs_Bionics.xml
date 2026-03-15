@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Black steel arm -->
+  <RI_Hediff_BlackSteelArm.label>庚钢义臂</RI_Hediff_BlackSteelArm.label>
+  <!-- EN: A prosthetic arm made of black steel. -->
+  <RI_Hediff_BlackSteelArm.description>庚钢打造的假臂。</RI_Hediff_BlackSteelArm.description>
+  <!-- EN: fist -->
+  <RI_Hediff_BlackSteelArm.comps.HediffComp_VerbGiver.tools.fist.label>庚钢拳头</RI_Hediff_BlackSteelArm.comps.HediffComp_VerbGiver.tools.fist.label>
+  <!-- EN: Black steel arm -->
+  <RI_Hediff_BlackSteelArm.labelNoun>庚钢臂</RI_Hediff_BlackSteelArm.labelNoun>
+  
+  <!-- EN: Black steel foot -->
+  <RI_Hediff_BlackSteelFoot.label>庚钢义足</RI_Hediff_BlackSteelFoot.label>
+  <!-- EN: A prosthetic arm made of black steel. -->
+  <RI_Hediff_BlackSteelFoot.description>庚钢打造的假足。</RI_Hediff_BlackSteelFoot.description>
+  <!-- EN: Black steel foot -->
+  <RI_Hediff_BlackSteelFoot.labelNoun>庚钢足</RI_Hediff_BlackSteelFoot.labelNoun>
+  
+  <!-- EN: Black steel hand -->
+  <RI_Hediff_BlackSteelHand.label>庚钢义手</RI_Hediff_BlackSteelHand.label>
+  <!-- EN: A prosthetic arm made of black steel. -->
+  <RI_Hediff_BlackSteelHand.description>庚钢打造的假手。</RI_Hediff_BlackSteelHand.description>
+  <!-- EN: fist -->
+  <RI_Hediff_BlackSteelHand.comps.HediffComp_VerbGiver.tools.fist.label>庚钢拳头</RI_Hediff_BlackSteelHand.comps.HediffComp_VerbGiver.tools.fist.label>
+  <!-- EN: Black steel hand -->
+  <RI_Hediff_BlackSteelHand.labelNoun>庚钢义手</RI_Hediff_BlackSteelHand.labelNoun>
+  
+  <!-- EN: Black steel leg -->
+  <RI_Hediff_BlackSteelLeg.label>庚钢义腿</RI_Hediff_BlackSteelLeg.label>
+  <!-- EN: A prosthetic arm made of black steel. -->
+  <RI_Hediff_BlackSteelLeg.description>庚钢打造的假腿。</RI_Hediff_BlackSteelLeg.description>
+  <!-- EN: Black steel leg -->
+  <RI_Hediff_BlackSteelLeg.labelNoun>庚钢义腿</RI_Hediff_BlackSteelLeg.labelNoun>
+  
+  <!-- EN: Black steel spine -->
+  <RI_Hediff_BlackSteelSpine.label>庚钢脊椎</RI_Hediff_BlackSteelSpine.label>
+  <!-- EN: A prosthetic arm made of black steel. -->
+  <RI_Hediff_BlackSteelSpine.description>庚钢打造的脊椎。</RI_Hediff_BlackSteelSpine.description>
+  <!-- EN: Black steel spine -->
+  <RI_Hediff_BlackSteelSpine.labelNoun>庚钢脊椎</RI_Hediff_BlackSteelSpine.labelNoun>
+  
+  <!-- EN: Bionic stomach-Earth -->
+  <RI_Hediff_EarthBionicStomach.label>戍土鼎胃</RI_Hediff_EarthBionicStomach.label>
+  <!-- EN: An installed prosthetic heart. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative. -->
+  <RI_Hediff_EarthBionicStomach.description>脾胃为气血生化之源、后天之本，藏意，在五行属土。\n\n这颗以神工巧机打造的精妙仿生胃，可以在胃部开辟第二金丹，辅助吸收灵气。</RI_Hediff_EarthBionicStomach.description>
+  <!-- EN: Bionic stomach-Earth -->
+  <RI_Hediff_EarthBionicStomach.labelNoun>戍土鼎胃</RI_Hediff_EarthBionicStomach.labelNoun>
+  
+  <!-- EN: Bionic heart-Fire -->
+  <RI_Hediff_FireBionicHeart.label>千壶焱心</RI_Hediff_FireBionicHeart.label>
+  <!-- EN: An installed prosthetic heart. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative. -->
+  <RI_Hediff_FireBionicHeart.description>心为神之居、血之主、脉之宗，在五行属火。\n\n这颗以神工巧机打造的精妙仿生心脏，可以代替原有心脏，迸发强大活力，令全身血液循环与灵气交融，提升修炼速度。</RI_Hediff_FireBionicHeart.description>
+  <!-- EN: Bionic heart-Fire -->
+  <RI_Hediff_FireBionicHeart.labelNoun>千壶焱心</RI_Hediff_FireBionicHeart.labelNoun>
+  
+  <!-- EN: Jade hand -->
+  <RI_Hediff_JadeFakeArm.label>翠玉手</RI_Hediff_JadeFakeArm.label>
+  <!-- EN: A prosthetic hand made of jade. -->
+  <RI_Hediff_JadeFakeArm.description>翡翠制作的假手。</RI_Hediff_JadeFakeArm.description>
+  <!-- EN: fist -->
+  <RI_Hediff_JadeFakeArm.comps.HediffComp_VerbGiver.tools.fist.label>翠玉拳头</RI_Hediff_JadeFakeArm.comps.HediffComp_VerbGiver.tools.fist.label>
+  <!-- EN: Jade hand -->
+  <RI_Hediff_JadeFakeArm.labelNoun>翠玉手</RI_Hediff_JadeFakeArm.labelNoun>
+  
+  <!-- EN: Jade eye -->
+  <RI_Hediff_JadeFakeEye.label>翠玉眼</RI_Hediff_JadeFakeEye.label>
+  <!-- EN: A prosthetic eye made of jade. -->
+  <RI_Hediff_JadeFakeEye.description>翡翠制作的假眼。</RI_Hediff_JadeFakeEye.description>
+  <!-- EN: Jade eye -->
+  <RI_Hediff_JadeFakeEye.labelNoun>翠玉眼</RI_Hediff_JadeFakeEye.labelNoun>
+  
+  <!-- EN: Jade foot -->
+  <RI_Hediff_JadeFakeFoot.label>翠玉足</RI_Hediff_JadeFakeFoot.label>
+  <!-- EN: A prosthetic foot made of jade. -->
+  <RI_Hediff_JadeFakeFoot.description>翡翠制作的假足。</RI_Hediff_JadeFakeFoot.description>
+  <!-- EN: Jade foot -->
+  <RI_Hediff_JadeFakeFoot.labelNoun>翠玉足</RI_Hediff_JadeFakeFoot.labelNoun>
+  
+  <!-- EN: Jade arm -->
+  <RI_Hediff_JadeFakeHand.label>翠玉臂</RI_Hediff_JadeFakeHand.label>
+  <!-- EN: A prosthetic arm made of jade. -->
+  <RI_Hediff_JadeFakeHand.description>翡翠制作的假臂。</RI_Hediff_JadeFakeHand.description>
+  <!-- EN: fist -->
+  <RI_Hediff_JadeFakeHand.comps.HediffComp_VerbGiver.tools.fist.label>翠玉拳头</RI_Hediff_JadeFakeHand.comps.HediffComp_VerbGiver.tools.fist.label>
+  <!-- EN: Jade arm -->
+  <RI_Hediff_JadeFakeHand.labelNoun>翠玉臂</RI_Hediff_JadeFakeHand.labelNoun>
+  
+  <!-- EN: Bionic lung-Metal -->
+  <RI_Hediff_MetalBionicLung.label>肃金御肺</RI_Hediff_MetalBionicLung.label>
+  <!-- EN: This exquisitely crafted artificial lung, created with divine skill and precision, can accommodate the spirit of heaven and earth, one breath and one breath, heaven and earth are connected. -->
+  <RI_Hediff_MetalBionicLung.description>肺为魄之处、气之主。在五行属金。\n\n这颗以神工巧机打造的精妙仿生肺，可以容纳天地灵气，一呼一吸间，天地相通。</RI_Hediff_MetalBionicLung.description>
+  <!-- EN: Bionic lung-Metal -->
+  <RI_Hediff_MetalBionicLung.labelNoun>肃金御肺</RI_Hediff_MetalBionicLung.labelNoun>
+  
+  <!-- EN: Bionic kidney-Water -->
+  <RI_Hediff_WaterBionicKidney.label>寒灵水肾</RI_Hediff_WaterBionicKidney.label>
+  <!-- EN: This ingenious bionic kidney can replace the original kidney and enhance the filtration system. -->
+  <RI_Hediff_WaterBionicKidney.description>肾为先天之本，藏志，腰为肾之腑，在五行属水。\n\n这颗以神工巧机打造的精妙仿生肾脏，可以代替原有肾脏，加强过滤系统。</RI_Hediff_WaterBionicKidney.description>
+  <!-- EN: Bionic kidney-Water -->
+  <RI_Hediff_WaterBionicKidney.labelNoun>寒灵水肾</RI_Hediff_WaterBionicKidney.labelNoun>
+  
+  <!-- EN: Bionic liver-Wood -->
+  <RI_Hediff_WoodBionicLiver.label>棠木枝肝</RI_Hediff_WoodBionicLiver.label>
+  <!-- EN: This exquisite bionic liver built by a clever machine can expel toxins from the body faster, wash the marrow and forge the body, and enhance immunity. -->
+  <RI_Hediff_WoodBionicLiver.description>肝为魂之处，血之藏，筋之宗。在五行属木，主升主动。\n\n这颗以神工巧机打造的精妙仿生肝，可以将毒素更快地排出体外，洗髓锻体，增强免疫力。</RI_Hediff_WoodBionicLiver.description>
+  <!-- EN: Bionic liver-Wood -->
+  <RI_Hediff_WoodBionicLiver.labelNoun>棠木枝肝</RI_Hediff_WoodBionicLiver.labelNoun>
+  
+</LanguageData>

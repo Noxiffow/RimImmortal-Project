@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>Fleck_SanQingRedLine</defName>
+    <altitudeLayer>LightingOverlay</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>0.28</fadeOutTime>
+    <solidTime>1.7</solidTime>
+    <growthRate>11</growthRate>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/RedLineGlow</texPath>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MoteMultiplyAddCircular</shaderType>
+      <shaderParameters>
+        <_DistortionTex>/Things/Mote/RadiationDistortion_A</_DistortionTex>
+        <_texAScale>0.5</_texAScale>
+        <_texBScale>2</_texBScale>
+        <_texAScrollSpeed>0</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_Intensity>0.5</_Intensity>
+        <_InnerFadeAmount>0</_InnerFadeAmount>
+        <_DistortionIntensity>0.5</_DistortionIntensity>
+        <_TexAScaleDivisorPerProgress>1.5</_TexAScaleDivisorPerProgress>
+      </shaderParameters>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <!-- 三清铃冲击波特效 -->
+  <EffecterDef>
+    <defName>BlastSanQingShockwave</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>Fleck_SanQingRedLine</fleckDef>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <rotation>0~0</rotation>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>

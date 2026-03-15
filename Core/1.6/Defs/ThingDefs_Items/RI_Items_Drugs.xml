@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--仙路的药前置-->
+	<ThingDef ParentName="ResourceBase" Name="RI_MedicineBase" Abstract="True">
+		<thingClass>Medicine</thingClass>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<soundInteract>RI_Sound_DropHerb</soundInteract>
+		<soundDrop>RI_Sound_DropHerb</soundDrop>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Drugs</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--=================药品前置=================-->
+	<ThingDef Name="RI_BasicDrug_Base" ParentName="RI_MedicineBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<possessionCount>3</possessionCount>
+		<rotatable>false</rotatable>
+		<techLevel>Neolithic</techLevel>
+		<soundInteract>RI_Sound_DropHerb</soundInteract>
+		<soundDrop>RI_Sound_DropHerb</soundDrop>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<Mass>0.05</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>RI_Sound_EatPill</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<!--服用-->
+			<ingestCommandString>take {0}</ingestCommandString>
+			<!--服用中-->
+			<ingestReportString>taking {0}</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<chairSearchRadius>7</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+		</ingestible>
+		<!--携带分类-->
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--=================膏药前置=================-->
+	<ThingDef Name="RI_BalmDrug_Base" ParentName="RI_BasicDrug_Base" Abstract="True">
+		<ingestible>
+			<ingestSound>RI_Sound_EatPill</ingestSound>
+			<ingestCommandString>rub {0}</ingestCommandString>
+			<ingestReportString>rubbing {0}</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+		</ingestible>
+	</ThingDef>
+
+	<!--=================药粉前置=================-->
+	<ThingDef Name="RI_PowderDrug_Base" ParentName="RI_BasicDrug_Base" Abstract="True">
+		<ingestible>
+			<baseIngestTicks>300</baseIngestTicks>
+			<ingestSound>RI_Sound_DrinkLiquid</ingestSound>
+		</ingestible>
+	</ThingDef>
+
+	<!--=================以下为丹药=================-->
+	<!--=================三品丹药=================-->
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_CultivateEnergyPill</defName>
+		<label>【Third-rate】Cultivate-energy pill</label>
+		<description>Third-rate pill, it containing concentrated Qi with a sweet flavor. The Qi contained in the pill immediately enters the meridians after taking it, replenishing the body's lack of Qi. This pill is very common in the circle of cultivator, after all, no one knows whether a little Qi recovery can turn the situation around in a critical moment.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_CultivateEnergyPill</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>95</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_CultivateEnergyHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<!--跌打膏-->
+	<ThingDef ParentName="RI_MedicineBase">
+		<defName>RI_Drug_HealBalm</defName>
+		<label>【Third-rate】Pain-relieving balm</label>
+		<description>Third-rate balm，A brown balm with a cool flavor that can be applied to wounds and has a better healing effect than herbs. At one time the efficacy of this medicine was always criticized, but there was no denying that it was also effective in treating many bruises and injuries. As later generations continued to improve it and added psyllium to the formula, this poultice eventually became a superior topical compress to herbs and was accepted by the public.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_HealBalm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>1.00</MedicalPotency>
+			<MedicalQualityMax>1.00</MedicalQualityMax>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>700</WorkToMake>
+		</statBases>
+		<costList>
+			<MedicineHerbal>2</MedicineHerbal>
+			<RI_Resource_PlantainSeed>1</RI_Resource_PlantainSeed>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>RI_Building_LittleCauldrons</li>
+				<li>RI_Building_Cauldrons</li>
+			</recipeUsers>
+			<researchPrerequisite>RI_BasicElixirs</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<bulkRecipeCount>4</bulkRecipeCount>
+		</recipeMaker>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_BloodSavingPill</defName>
+		<label>【Third-rate】Blood-saving pill</label>
+		<description>Third-rate pill，It has a slightly bitter flavor, and when taken, it enhances blood circulation and accelerates healing. Legend has it that an ancient physician was searching for herbs in the mountains when he came across a group of stragglers living in the mountains. The drifters taught the physician the recipe for making pills by pounding and boiling ganoderma lucidum and psyllium. The physician learned the recipe and passed it on to generations of descendants until more advanced medicines replaced it.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_BloodSavingPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>85</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_GreenBalmHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_LingYunPill</defName>
+		<label>【Third-rate】LingYun pill</label>
+		<description>Third-rate pill，it tastes strangely sweet, like honey, and can briefly increase movement speed. The origin of this pill is a mystery, and it has been in circulation since an unknown time. However, most people agree that it is not illogical to use the stimulation of Tillandsia Dragon Shoot and the nourishment of Silver Ginseng to dehydrate the body for a short period of time and maintain the muscles to improve athletic ability.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_LingYunPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>83</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_FloatingCloudHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_PowderDrug_Base">
+		<defName>RI_Drug_ThreeRockPowder</defName>
+		<label>【Third-rate】Three-rock powder</label>
+		<description>Third-rate powder，A gray medicinal powder with a slightly sour taste. It is a highly revered medicinal powder amongst the martial arts community, made with small amounts of Tillandsia Dragon Shoot and LingZhi, mixed with stone powder. When taken, it will stimulate the heart, making one's blood run hot and improving combat performance. But also because of its properties, it is sought after by men as a miracle drug. This has also led to fakes and many instances of poisoning.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_ThreeRockPowder</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>80</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_ThreeRockPowderHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_PowderDrug_Base">
+		<defName>RI_Drug_StrongPhysiquePowder</defName>
+		<label>【Third-rate】Solid-foundation powder</label>
+		<description>Third-rate powder, a powder with gold sand as the main material, can improve the absorption efficiency of Qi in the long term when taken with water, which is helpful for cultivators who are ready to upgrade, and can be taken before the breakthrough. The effect of this medicine is a mystery, because only cultivatorss who have successfully broken through will praise its effects.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_StrongPhysiquePowder</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>80</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_SolidEnergyPowderHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_AllCropsPill</defName>
+		<label>【Third-rate】All-grain pill</label>
+		<description>Third-rate pill，It has an extremely bitter and slightly sour flavor and can eliminate hunger. According to the history books, it was a pill that a city lord researched alone and used to fill the stomachs of soldiers marching to war by drying and grinding mushrooms and ganoderma lucidum, adding grease, and pressing them into small pills with a heavy object. These pills would gradually expand after entering the stomach, and soldiers on the march would be able to fill their stomachs after eating two of them. After a period of time, soldiers realized that the pills caused constipation, so they gradually stopped taking them and turned them into emergency food for earthquake relief.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_AllCropsPill</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>5</Nutrition>
+			<!--有营养-->
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>83</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_StomachFillHediff</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BalmDrug_Base">
+		<defName>RI_Drug_GreenBalm</defName>
+		<label>【Third-rate】Green balm</label>
+		<description>Third-rate balm，It is a green ointment with a cool odor and extremely bitter taste that clears fatigue. It is an ointment made by soaking Snow Lotus and mushrooms in oil, adding a variety of spices, and finally extracting them. If taken, it can also clear heat and remove toxins, but because of its overly spicy and pungent odor, people always use it to dispel drowsiness and refresh the mind.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_GreenBalm</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>85</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_GreenPowderHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>1.0</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<!--=================二品丹药=================-->
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_ExpelHotPill</defName>
+		<label>【Second-rate】Cold-frost pill</label>
+		<description>Second-rate Elixir，It has a cool and slightly bitter flavor and can clear up heatstroke. Legend has it that during the Great Drought, a merchant used Snow Lotus, which he brought with him from the coldest place in the north, and a rare delicacy fruit as the raw materials to make a pill. After eating it, the cool air enters the body and removes the heatstroke, saving many people's lives, and the businessman also made a lot of money from it.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_ExpelHotPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>155</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_HypothermiaGoAwayHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_ExpelColdPill</defName>
+		<label>【Second-rate】Scorching-Wind pill</label>
+		<description>Second-rate Elixir，It has a pungent, slightly sweet flavor that clears hypothermia. Balancing the strong medicinal properties of Tillandsia Dragon Shoot with the Fairy Delicacy Fruit, it is eaten like a hint of spirits in the throat, burning all the way to the stomach. The heat seeps into the limbs, enabling one to temporarily ward off the cold.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_ExpelColdPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>155</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_SunstrokeGoAwayHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<!--灵玉丸-->
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_CultivateMoreEnergyPill</defName>
+		<label>【Second-rate】Spirit jade pill</label>
+		<description>Second-rate pills, taste slightly bitter, can directly restore the Qi at the same time, let the Qi slow automatic recovery. This is a pill that uses spiritual stone as a material, and the Qi in the spiritual stone must be extracted by a pharmacist and concentrated into a small pill. This elixis is relatively rare, because it wastes more on Qi, so it will only be circulated among some schools and large drug manufacturers.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_CultivateMoreEnergyPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>155</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Drug_CultivateMoreEnergyPillHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_GoldBloodPill</defName>
+		<label>【Second-rate】Gold blood pill</label>
+		<description>Second-rate pills, almost tasteless, can increase defense. After taking the pill into the human body, it will form a flexible gas film on the body surface with human metabolism, which plays the role of protecting the body, but it will reduce some movement speed. It was developed by accident, is a famous pharmacist in the production of Guyuan powder, the wrong dosage, but found it was too late, so try to refine it into a pill, but did not expect to succeed, so a new pill was born.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_GoldBloodPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>155</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Drug_GoldBloodPillHediff</hediffDef>
+					<severity>3</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_PowderDrug_Base">
+		<defName>RI_Drug_HerbPowder</defName>
+		<label>【Second-rate】Herb powder</label>
+		<description>Second-rate powder，A light green medicinal powder that boosts immunity to various diseases and stops pain. The secret to the effectiveness of this powder lies in drying all the raw materials into powder and mixing them together. Because of its high price, but high efficacy, it is often used by the rich and powerful as a medicine for pregnant women to protect their fetuses.</description>
+		<graphicData>
+			<texPath>Things/Item/Drugs/RI_Drug_HerbPowder</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>155</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_HerbPowderHediff</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+</Defs>
+
+

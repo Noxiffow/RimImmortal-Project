@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="RI_Base_MakeZombieImplant" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<!--邪术工作台-->
+		<recipeUsers>
+			<li>RI_Building_AberrantWorkbench</li>
+		</recipeUsers>
+		<displayPriority>500</displayPriority>
+	</RecipeDef>
+
+	<!--=========================基础植入体=========================-->
+
+	<!--合成钢牙-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeSteelTeeth</defName>
+		<label>make steel teeth</label>
+		<description>Craft a set of teeth forged from steel.</description>
+		<jobString>making steel teeth</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_SteelTeeth>1</RI_ZombieBodyPart_SteelTeeth>
+		</products>
+	</RecipeDef>
+
+	<!--合成钉舌-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeNailTongue</defName>
+		<label>make nail tongue</label>
+		<description>Craft steel spikes designed to be embedded into the tongue.</description>
+		<jobString>making nail tongue</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_NailTongue>1</RI_ZombieBodyPart_NailTongue>
+		</products>
+	</RecipeDef>
+
+	<!--合成钢爪-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeSteelClaw</defName>
+		<label>make steel claw</label>
+		<description>Craft a set of steel claws embedded into the fingers.</description>
+		<jobString>making steel claw</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensSurgery</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_SteelClaw>1</RI_ZombieBodyPart_SteelClaw>
+		</products>
+	</RecipeDef>
+
+	<!--合成斩邪爪-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeEvilSlayerClaw</defName>
+		<label>make evil-slaying claw</label>
+		<description>Craft an evil-slaying claw using erosion bronze.</description>
+		<jobString>making evil-slaying claw</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensOrgan</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ErosionBronze</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ErosionBronze</li>
+				<li>RI_Resource_CharmPaper</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_EvilSlayerClaw>1</RI_ZombieBodyPart_EvilSlayerClaw>
+		</products>
+	</RecipeDef>
+
+	<!--合成封魔钉-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeDemonBindingNail</defName>
+		<label>make demon-binding nail</label>
+		<description>Craft a demon-binding nail using erosion bronze.</description>
+		<jobString>making demon-binding nail</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensOrgan</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ErosionBronze</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_InkJade</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ErosionBronze</li>
+				<li>RI_Resource_CharmPaper</li>
+				<li>RI_Resource_InkJade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_DemonBindingNail>1</RI_ZombieBodyPart_DemonBindingNail>
+		</products>
+	</RecipeDef>
+
+	<!--=========================高级植入体=========================-->
+
+	<!--合成邪血心脏-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeAberrantBloodHeart</defName>
+		<label>make aberrant blood heart</label>
+		<description>Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ.</description>
+		<jobString>making aberrant blood heart</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensOrgan</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ConcentrateAberrantBlood</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ConcentrateAberrantBlood</li>
+				<li>RI_Resource_CharmPaper</li>
+				<li>Heart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_AberrantBloodHeart>1</RI_ZombieBodyPart_AberrantBloodHeart>
+		</products>
+	</RecipeDef>
+
+	<!--合成邪血肺-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeAberrantBloodLung</defName>
+		<label>make aberrant blood lung</label>
+		<description>Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ.</description>
+		<jobString>making aberrant blood lung</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensOrgan</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ConcentrateAberrantBlood</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Lung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ConcentrateAberrantBlood</li>
+				<li>RI_Resource_CharmPaper</li>
+				<li>Lung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_AberrantBloodLung>1</RI_ZombieBodyPart_AberrantBloodLung>
+		</products>
+	</RecipeDef>
+
+	<!--合成邪血肝-->
+	<RecipeDef ParentName="RI_Base_MakeZombieImplant">
+		<defName>RI_Recipe_MakeAberrantBloodLiver</defName>
+		<label>make aberrant blood liver</label>
+		<description>Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ.</description>
+		<jobString>making aberrant blood liver</jobString>
+		<researchPrerequisite>RI_ExorcismResearch_NecrosapiensOrgan</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ConcentrateAberrantBlood</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Liver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ConcentrateAberrantBlood</li>
+				<li>RI_Resource_CharmPaper</li>
+				<li>Liver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_ZombieBodyPart_AberrantBloodLiver>1</RI_ZombieBodyPart_AberrantBloodLiver>
+		</products>
+	</RecipeDef>
+
+</Defs>

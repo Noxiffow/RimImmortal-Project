@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Sect experience -->
+  <SectExperience.label>宗门历练</SectExperience.label>
+  <!-- EN: You three belong to a large interstellar sect that spans across the galaxy, serving as low-level disciples. Recently, interstellar wars have been frequent, and most of the sect's disciples have gone out to fight. The sect has sent you three to an unexplored edge planet to establish a branch colony.\n\nThe sect has provided you with a small amount of treasures and raw materials, allowing you to quickly develop.\n\n*This starting wealth will be high, and you need to quickly develop. -->
+  <SectExperience.description>你们三人隶属于一个跨星际的大型宗门，属于其中的杂役。最近星际战争频繁，宗门内弟子大多外出参战，而宗门让你们三人前往一处未经开发的边缘星球，在星球上开辟出分支殖民地。\n\n宗门给予了你们少量法宝和原材料，让你们可以迅速发展。\n\n*这个开局财富值将会较高，需要快速发育。</SectExperience.description>
+  <!-- EN: You three belong to a large interstellar sect that spans across the galaxy, serving as low-level disciples. Recently, interstellar wars have been frequent, and most of the sect's disciples have gone out to fight. The sect has sent you three to an unexplored edge planet to establish a branch colony.\n\nThe sect has provided you with a small amount of treasures and raw materials, allowing you to quickly develop.\n\n*This starting wealth will be high, and you need to quickly develop. -->
+  <SectExperience.scenario.description>你们三人隶属于一个跨星际的大型宗门，属于其中的杂役。最近星际战争频繁，宗门内弟子大多外出参战，而宗门让你们三人前往一处未经开发的边缘星球，在星球上开辟出分支殖民地。\n\n宗门给予了你们少量法宝和原材料，让你们可以迅速发展。\n\n*这个开局财富值将会较高，需要快速发育。</SectExperience.scenario.description>
+  <!-- EN: Sect experience -->
+  <SectExperience.scenario.name>宗门历练</SectExperience.scenario.name>
+  <!-- EN: Three sect follower woke up from their sleeping pods, carrying a large amount of raw materials and some protective talismans with them, eager to show off their skills and abilities. -->
+  <SectExperience.scenario.parts.GameStartDialog.text>三人从休眠舱中醒来，携带着大量原材料和一些护身法宝到达此地，摩拳擦掌，做好了大展拳脚的准备。</SectExperience.scenario.parts.GameStartDialog.text>
+  <!-- EN: Three sect follower from a sect arrived at rimworld with a large amount of supplies for training. -->
+  <SectExperience.scenario.summary>三位宗门杂役，带着大量物资来到边缘星球历练。</SectExperience.scenario.summary>
+  
+</LanguageData>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--鬼火-->
+	<!--<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RI_Gun_GhostFire</defName>
+		<label>autopistol</label>
+		<description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>405</displayPriority>
+		</recipeMaker>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Autopistol</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_SmallGhostFire</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<range>25.9</range>
+				<soundCast>Shot_Autopistol</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_SmallGhostFire</defName>
+		<label>autopistol bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_SmallGhostFire</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>-->
+
+</Defs>

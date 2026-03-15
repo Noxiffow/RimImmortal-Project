@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Copy book -->
+  <RI_DoBillsCopyBook.label>拷贝书籍</RI_DoBillsCopyBook.label>
+  <!-- EN: copy at -->
+  <RI_DoBillsCopyBook.gerund>拷贝于</RI_DoBillsCopyBook.gerund>
+  <!-- EN: copy -->
+  <RI_DoBillsCopyBook.verb>拷贝</RI_DoBillsCopyBook.verb>
+  
+</LanguageData>

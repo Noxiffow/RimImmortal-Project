@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="RI_Wine_HighBase" Abstract="True">
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(0.58,0.8,0.45)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--竹叶青-->
+	<HediffDef ParentName="RI_Wine_HighBase">
+		<defName>RI_Hediff_BambooLeafWine</defName>
+		<label>High on Bamboo leaf wine</label>
+		<labelNoun>A BambooLeafWine high</labelNoun>
+		<description>As a high-proof liquor, it may dull consciousness, but it greatly relaxes the mind and restores both body and spirit.</description>
+		<stages>
+			<li>
+				<painFactor>0.8</painFactor>
+				<statFactors>
+					<RestFallRateFactor>1.3</RestFallRateFactor>
+					<MentalBreakThreshold>0.5</MentalBreakThreshold>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--稻酿-->
+	<HediffDef ParentName="RI_Wine_HighBase">
+		<defName>RI_Hediff_GrainLiquor</defName>
+		<label>High on Grain liquor</label>
+		<labelNoun>A GrainLiquor high</labelNoun>
+		<description>Though it slightly dampens consciousness, grain liquor ignites fighting spirit and enhances combat strength.</description>
+		<stages>
+			<li>
+				<painFactor>0.7</painFactor>
+				<statOffsets>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<MeleeHitChance>10</MeleeHitChance>
+				</statOffsets>
+				<statFactors>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--醉春风-->
+	<HediffDef ParentName="RI_Wine_HighBase">
+		<defName>RI_Hediff_DrunkenSpringBreeze</defName>
+		<label>High on Drunken spring breeze</label>
+		<labelNoun>A Drunken spring breeze high</labelNoun>
+		<description>A mild liquor that enhances meditation.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+					<MeditationFocusStrength MayRequire="Ludeon.RimWorld.Royalty">1.2</MeditationFocusStrength>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--银芝药酒-->
+	<HediffDef ParentName="RI_Wine_HighBase" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Hediff_LingzhiBrandy</defName>
+		<label>High on Lingzhi brandy</label>
+		<labelNoun>A Lingzhi brandy high</labelNoun>
+		<description>Infused with medicinal herbs, it sharpens the mind, improves cultivation focus and awareness, and aids in wound recovery.</description>
+		<stages>
+			<li>
+				<hungerRateFactor>1.5</hungerRateFactor>
+				<statFactors>
+					<GI_EnergyGainEff MayRequire="RI.RimImmortal.Core">1.25</GI_EnergyGainEff>
+					<InjuryHealingFactor>1.5</InjuryHealingFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--猴儿酿-->
+	<HediffDef ParentName="RI_Wine_HighBase">
+		<defName>RI_Hediff_MonkeyWine</defName>
+		<label>High on Monkey's wine</label>
+		<labelNoun>A Monkey's wine high</labelNoun>
+		<description>A peculiar fruit wine that boosts work efficiency and increases one's carrying capacity.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<RI_MassCarryCapacity MayRequire="RI.RimImmortal.Core">30</RI_MassCarryCapacity>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+					<WorkSpeedGlobal>1.3</WorkSpeedGlobal>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+</Defs>

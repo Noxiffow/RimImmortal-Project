@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 【Third-rate】Tranquilizing soup -->
+  <RI_Drug_TranquilizingSoup.label>【三品】安魂汤</RI_Drug_TranquilizingSoup.label>
+  <!-- EN: Third-rate liquid, made by phantom gold lotus. A brown medicinal decoction with little to no pungent odor; drinking it will cause the consumer to fall into a deep sleep. -->
+  <RI_Drug_TranquilizingSoup.description>三品药汤，由幻金莲制成。一种棕色药汤，没什么刺鼻的气味，喝下后会令人陷入昏睡。</RI_Drug_TranquilizingSoup.description>
+  <!-- EN: take {0} -->
+  <RI_Drug_TranquilizingSoup.ingestible.ingestCommandString>服用{0}</RI_Drug_TranquilizingSoup.ingestible.ingestCommandString>
+  <!-- EN: taking {0} -->
+  <RI_Drug_TranquilizingSoup.ingestible.ingestReportString>正在服用{0}</RI_Drug_TranquilizingSoup.ingestible.ingestReportString>
+  
+</LanguageData>

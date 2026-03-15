@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--RI_ReadableBook_Base在核心-->
+
+	<ThingDef ParentName="RI_ReadableBook_Base" Name="RI_Notebook_base" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Books/RI_Book_SectBook</texPath>
+		</graphicData>
+		<!--只有宗门的书籍商队才卖这个-->
+		<tradeTags>
+			<li>RI_Sect_NoteBook_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--苍穹商旅传单-->
+	<ThingDef ParentName="RI_ReadableBook_Base">
+		<defName>RI_Book_CelestialCaravanNote</defName>
+		<label>Celestial Caravan flyer</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Books/RI_Book_SectBook</texPath>
+		</graphicData>
+		<!--只有宗门的书籍商队才卖这个-->
+		<!--<tradeTags>
+			<li>RI_Sect_NoteBook_Tag</li>
+		</tradeTags>-->
+		<description>Greetings, my friend, want to do some business?\n\nThe Immortal Path is harsh, and Crystal are hard to come by?\nThen you’re welcome to visit Celestial Caravan!\nWe don’t ask where you’re from.\nWe don’t offer after-sales promises. We deal only in contracts and credit!\nWe belong to no sect and no regime.\nWe pass no moral judgment on our clients, gold and spirit stones are our only companions!\n\n*We take no part in faction wars, but any attempt to seize Caravan assets will be met with retaliation.</description>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Notebook_base">
+		<defName>RI_Book_SectBookA</defName>
+		<label>Xuantian Sect—Part one</label>
+		<description>The mountain mist swirled like a dragon, inhaling and exhaling the essence of the world. At the cliff’s edge stood Xu Tianming, once the son of a humble woodcutter. As a child, he found a fragment of an ancient text, though he knew nothing of spiritual energy. Blessed with innate talent, he studied the text and soon felt his mind flooded with memories, revealing a path to the Dao.\n\nAfter thirty years of hard work, he reached the Yuanying realm. He had battled demons and faced countless life-or-death trials.Focusing his mind, Xu Tianming’s body crackled with energy, and he attempted to withstand the heavenly lightning with his flesh. The lightning tore through him, breaking ancient bonds. He closed his eyes, feeling spiritual energy surge through him like a river. In that moment, he glimpsed the truth, and the lightning exploded into nothing.\n\nHe climbed to the peak, took his sword, and carved three words into the stone—"Xuantian Sect."</description>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Notebook_base">
+		<defName>RI_Book_SectBookB</defName>
+		<label>Story of An</label>
+		<description>My name is An, a humble servant at Xuantian Sect, tasked with mundane duties like fetching water, chopping wood, and sweeping the grounds. Never did I dare to dream of cultivating the Dao, for my only wish was to live in peace, ensuring my daily survival. The sect, having stood for several decades, occupies seven islands in the East Sea and boasts great renown. Yet, the spiritual veins are scarce, making cultivation arduous for many of the disciples. As for us common servants, even the faintest trace of spiritual energy is beyond our reach. We endure only through hard work and perseverance.\n\nOne day, the Sect Master, Xu Zhenren, emerged from his retreat, leading the elders and disciples to the Northern Sea. There, they battled eight evil serpents for three days and nights, ultimately seizing the spiritual vein hidden beneath the sea. When the news returned, the entire sect was stirred, and even servants like me dared to hope for change.\n\nIn the following months, rumors of this victory spread both within and outside the sect. Yet, from a disciple I knew, I learned that the returning master and his disciples had closed themselves off in seclusion. He tried to eavesdrop on them, but the wards had been set up, and he returned empty-handed. I am at peace with myself, but each night, as I gaze at the sky, I feel an ominous chill in the air, and even the candles flicker uneasily.</description>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Notebook_base">
+		<defName>RI_Book_SectBookC</defName>
+		<label>Master's Secret Letter #1</label>
+		<description>To: Master Chai Yu,\n\nI am Xu Tianming, the Sect Master of Xuantian Sect. I recently returned to the sect and wish to report what I have seen and heard. Several years ago, I led the disciples of our sect aboard a starship, crossing the vast expanse of the void, in search of the spiritual source known as Lingbing. Over the course of several years, we encountered countless barren planets, their spiritual energy scarce. Despite consuming a large amount of spiritual stones, we found nothing.\n\nOn our return journey, the starship made a stop at an ancient planet, its surface covered in endless yellow sand, with only a few scattered villages. Here, one of my disciples encountered a young cultivator, garbed in blue, with a strikingly handsome appearance. With a smile, he said, "Lingbing has appeared, and the Great Yu shall rise. You children would be wise not to inquire further."\n\nAt his words, the disciples grew angry, and we left swiftly. However, doubts clouded my mind. Several years ago, I had already touched the threshold of the Earth Immortal realm, yet I felt that this man’s cultivation was far beyond my understanding. Thus, I write this letter to inform all of you, esteemed Sect Masters. Take a moment to reflect, and the rest I shall discuss when we meet.\n\nRespectfully,\nXu Tianming\n21st day of the Cold Moon, Bingyin Year</description>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Notebook_base">
+		<defName>RI_Book_SectBookD</defName>
+		<label>Xuantian Sect—Part eight</label>
+		<description>On this day, Sect Master Xu Tianming summoned the heroes to the main hall. The flickering candlelight cast long shadows, revealing the solemn expressions on the faces of all present. Xu Tianming held a secret letter, sealed with the stamps of the seven sect masters. The handwriting was hurried, almost illegible, as if written in haste. The letter read: "The strength of the Great Yu is not something a single sect can oppose."\n\nXu Tianming looked up, his gaze sweeping over the hundred death warriors gathered in the hall. These cultivators had been specially selected from various sects, each at the peak of the Nascent Soul stage, with three Earth Immortals leading them. Dressed in dark armor and carrying the sect's treasured artifacts, their eyes burned with determination. All knew the dangers that lay ahead.\n\nBefore they departed, Xu Tianming personally tied a Qinghun talisman around each warrior’s wrist. The talisman could summon a bird to carry messages across the stars. In a deep voice, he said, "This journey is perilous. May your martial fortunes be prosperous."\n\nThree months passed, and no bird returned. I write this now with a heavy heart, uncertain of the sect’s future. May future disciples read this record and understand the might of the Great Yu, proceeding with caution and care.</description>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Notebook_base">
+		<defName>RI_Book_SectBookE</defName>
+		<label>Master's Secret Letter #2</label>
+		<description>To Sect Master Lin Miao of the Canglong Sect:\n\nThe truth of the Lingbing, we have pieced together. It is the source of all spiritual energy in the world, meant to flow endlessly and nourish all realms. Yet now, its energy has run dry, showing signs of exhaustion. Even more troubling, the Great Yu Empire has already seized vast amounts of this spiritual energy. Their national power is immense, and their cultivators’ realms far exceed our own — they are no longer a force we can contend with.\n\nAfter much thought, I fear that the future of the Xuantian Sect, and all other sects, may require a new strategy. If we cling to old methods, we will never overcome the might of the Great Yu. Therefore, I request that all sect masters convene at the Xuantian Sect to discuss countermeasures. Whether we join forces or find a new path, it must be decided together.\n\nI look forward to your swift arrival, to discuss the fate of our future.\n\nYours sincerely,\nXu Tianming\nJuly 3rd, Ji Chou Year</description>
+	</ThingDef>
+
+</Defs>

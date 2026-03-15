@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_CrystalVeinDetector</defName>
+		<label>Spiritual crystal vein detector</label>
+		<description>Spiritual crystal vein detector is a kind of gear machine used to detect the underground spiritual crystal vein, and the inside is very precise. The lens made of liquid jade is turned by the coordination of gears, which acts like a compass to reveal the orientation of the spiritual crystal vein.</description>
+		<graphicData>
+			<texPath>Things/Building/CrystalVeinDetector/RI_Building_CrystalVeinDetector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5.1,5.1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<drawOffset>(0,0,-0.05)</drawOffset>
+			<shadowData>
+				<volume>(1.6875, 0.375, 2.125)</volume>
+				<offset>(0,0,-0.12)</offset>
+			</shadowData>
+		</graphicData>
+
+		<costStuffCount>175</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<RI_Resource_LiquidJade>5</RI_Resource_LiquidJade>
+			<RI_Resource_SpiritualCrystal>3</RI_Resource_SpiritualCrystal>
+		</costList>
+		
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="WhoXiuXian.RI_Ability.Comps.CompProperties_Detection">
+				<detectionPath>UI/Icons/RI_Icon_FindCrystal</detectionPath>
+			</li>
+			<li Class="WhoXiuXian.RI_Ability.Comps.CompProperties_LZScaner">
+				<scanSpeedStat>ResearchSpeed</scanSpeedStat>
+				<scanFindMtbDays>3</scanFindMtbDays>
+				<scanFindGuaranteedDays>4</scanFindGuaranteedDays>
+				<soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<interactionCellIcon>DiningChair</interactionCellIcon>
+		<interactionCellIconReverse>true</interactionCellIconReverse>
+		<fillPercent>0.40</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<rotatable>true</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(3,3)</size>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<!-- to match long range mineral scanner -->
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>RI_UndergroundCrystalVein</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+  </Defs>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: chop woodlog -->
+  <RI_Recipe_ChopWoodLog.label>劈开原木</RI_Recipe_ChopWoodLog.label>
+  <!-- EN: Chop raw logs. This requires a bit of technique. -->
+  <RI_Recipe_ChopWoodLog.description>劈开原木，这需要一点技巧。</RI_Recipe_ChopWoodLog.description>
+  <!-- EN: chopping wood -->
+  <RI_Recipe_ChopWoodLog.jobString>正在劈开原木</RI_Recipe_ChopWoodLog.jobString>
+  
+  <!-- EN: saw off ironwood -->
+  <RI_Recipe_SawOffIronWood.label>锯开玄铁木</RI_Recipe_SawOffIronWood.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffIronWood.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffIronWood.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffIronWood.jobString>正在锯木头</RI_Recipe_SawOffIronWood.jobString>
+  
+  <!-- EN: saw off ironwood x4 -->
+  <RI_Recipe_SawOffIronWoodBulk.label>锯开玄铁木 x4</RI_Recipe_SawOffIronWoodBulk.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffIronWoodBulk.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffIronWoodBulk.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffIronWoodBulk.jobString>正在锯木头</RI_Recipe_SawOffIronWoodBulk.jobString>
+  
+  <!-- EN: saw off sandalwood -->
+  <RI_Recipe_SawOffSandalWood.label>锯开檀木</RI_Recipe_SawOffSandalWood.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffSandalWood.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffSandalWood.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffSandalWood.jobString>正在锯木头</RI_Recipe_SawOffSandalWood.jobString>
+  
+  <!-- EN: saw off sandalwood x4 -->
+  <RI_Recipe_SawOffSandalWoodBulk.label>锯开檀木 x4</RI_Recipe_SawOffSandalWoodBulk.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffSandalWoodBulk.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffSandalWoodBulk.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffSandalWoodBulk.jobString>正在锯木头</RI_Recipe_SawOffSandalWoodBulk.jobString>
+  
+  <!-- EN: saw off wood -->
+  <RI_Recipe_SawOffThinWood.label>锯开原木</RI_Recipe_SawOffThinWood.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffThinWood.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffThinWood.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffThinWood.jobString>正在锯木头</RI_Recipe_SawOffThinWood.jobString>
+  
+  <!-- EN: saw off wood x4 -->
+  <RI_Recipe_SawOffThinWoodBulk.label>锯开原木 x4</RI_Recipe_SawOffThinWoodBulk.label>
+  <!-- EN: Saw timber into flat wood planks. Different types of wood yield different amounts of planks. -->
+  <RI_Recipe_SawOffThinWoodBulk.description>将木料锯成平整的薄木板，不同的木料获得的木板数量不同。</RI_Recipe_SawOffThinWoodBulk.description>
+  <!-- EN: sawing wood -->
+  <RI_Recipe_SawOffThinWoodBulk.jobString>正在锯木头</RI_Recipe_SawOffThinWoodBulk.jobString>
+  
+</LanguageData>

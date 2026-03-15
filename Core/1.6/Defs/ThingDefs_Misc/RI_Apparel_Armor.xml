@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--\n\n&lt;color=#FFFF00&gt;【Special effects】&lt;/color&gt;-->
+
+	<!--金属斗笠-->
+	<ThingDef ParentName="RI_MakeableHelmet_Base">
+		<defName>RI_Apparel_IronHat</defName>
+		<label>Metallic rain hat【third-rate】</label>
+		<description>【Third-rate】armor\n\nRaindrops slid off the iron rain hat, the sword energy retracted, and blood splattered onto the earth, severing the enemy's soul. The man, holding the blood-stained wooden box, stroked his sword and sighed, "The grievance has been avenged, and I seek nothing more."\n\n——The Tale of the Broken Sword\n\nA strange metallic rain hat. Most of them are made from fragments of helmets found on the battlefield and some iron pieces, reinforced with iron bars. Some of the aesthetic strange, but afraid of rain wet body, but also want to balance the defense of the walkers, may choose this helmet.\n\n&lt;color=#FFFF00&gt;【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_IronHat/RI_Apparel_IronHat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>700</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1.2</Mass>
+			<EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_Tag_Hidden</li>
+				<li>RI_Tag_ArmorBasic</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_IronHat/RI_Apparel_IronHat</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<comps>
+			<li Class="WhoXiuXian.RI_RainCoatComp" />
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_BasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_ThirdRateArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--刺客半身甲-->
+	<ThingDef ParentName="RI_BasicArmor_Base">
+		<defName>RI_Apparel_HalfArmor</defName>
+		<label>Assassin half armor【third-rate】</label>
+		<description>【Third-rate】armor\n\nA piece of armor cobbled together from different pieces of armor. The armor is very draftable and only provides a little protection to key areas, but the advantage is that it does not affect the action, and it helps some assassins to accurately kill enemies in the dark.\n\n&lt;color=#FFFF00&gt;【Special effects】Hunting stealth +10%.\nMeleeDodgeChance+1\nMove speed+0.1.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_HalfArmor/RI_Apparel_HalfArmor</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>50</Cloth>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>900</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2.1</Mass>
+			<EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_HalfArmor/RI_Apparel_HalfArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>RI_Tag_Assassin</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>220</displayPriority>
+			<researchPrerequisite>RI_Research_BasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--装备效果-->
+		<equippedStatOffsets>
+			<HuntingStealth>0.1</HuntingStealth>
+			<MoveSpeed>0.1</MoveSpeed>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_ThirdRateArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

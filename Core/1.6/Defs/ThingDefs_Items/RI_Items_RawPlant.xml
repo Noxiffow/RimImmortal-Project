@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================药材=================-->
+	
+	<!--灵芝-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_LingZhi</defName>
+		<label>LingZhi</label>
+		<description>LingZhi, a medicinal substance with properties of earth elements.\n\nMature LingZhi is ochre-red in color, exudes a light glow, and has a slightly bitter taste. This herb is extremely nutritious and cleanses the body of internal wastes, so it is often used to harmonize stimulating herbs.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_LingZhi</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+
+	<!--紫雾菇-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_DuskyMushroom</defName>
+		<label>Purple-fog mushroom</label>
+		<description>Purple-fog mushroom, a medicinal substance with properties of water elements.\n\nThere were very few records about this medicinal herb, but because of its rich nutritional content, some special pills would use this mushroom, so there were still countless people who were attracted to it.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_DuskyMushroom</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+
+	<!--车前子-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_PlantainSeed</defName>
+		<label>Plantain seed</label>
+		<description>Plantain seed, a medicinal substance with properties of wood elements.\n\nPlantain seed is the seed of plantain, ground and used as a medicinal herb. Psyllium carries a healing effect that promotes wound healing and carries a slight antiseptic effect that is often used in a variety of healing remedies.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_PlantainSeed</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>25</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Seed</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--雪莲-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_SnowLotus</defName>
+		<label>Snow flower</label>
+		<description>Snow flower, a medicinal substance with properties of water elements.\n\nSnow flower in full bloom is yellow with white and crystal clear. This herb is extremely rich in trace elements and has an extremely strong medicinal effect, while clearing heat and removing toxins, it is also said to be able to open up the human body's meridians and cure stubborn diseases.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_SnowLotus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--提灯果-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_LanternBerries</defName>
+		<label>Lantern berry</label>
+		<description>Lantern berry, a medicinal substance with properties of fire elements.\n\nThis fruit is like a lantern, emitting a faint light. But there is no flavor, and its medicinal effect is very mild, and it can be found by plucking the skin, glowing because the kernel of the fruit in it is like a small lamp, emitting a bright light. But a few days after the fruit is picked, the core will gradually not glow and become dim.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_LanternBerries</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>65</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<tasteThought>RI_Thought_AteLanternBerries</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--银芯参-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_SilverGinseng</defName>
+		<label>Silver GinSeng</label>
+		<description>Silver GinSeng, a medicinal substance with properties of metal elements.\n\nSilver Ginseng that has been grown over many years reflects a metallic color inside like silver. The longer it grows, the more silver-colored parts it has, the shinier it is, and the stronger its medicinal effect is. It is rich in minerals and nutrients, and just slicing it and using it to brew water can refresh and energize the body.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_SilverGinseng</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>55</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--火龙芽-->
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_TillandsiaDragonShoot</defName>
+		<label>Tillandsia dragon shoot</label>
+		<description>Tillandsia dragon shoot, a medicinal substance with properties of fire elements.\n\nTillandsia Dragon Shoot is pinched from the softest shoots in the center of the Tillandsia Dragon Weed, which is the most potent of the herbs and has an incredibly spicy flavor. The herb contains extremely potent stimulants that act directly on the human nervous system and is often used as a stimulant, and public consumption of Tillandsia Dragon Shoot has been banned in some areas.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_TillandsiaDragonShoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<ingestible>
+			<tasteThought>RI_Thought_AteTillandsiaDragonShoot</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

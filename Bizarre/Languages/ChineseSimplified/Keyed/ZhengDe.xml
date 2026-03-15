@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Zd_Cultivation_LostEnergyRoot>{pawnName} 失去灵根，修行停止</Zd_Cultivation_LostEnergyRoot>
+    <Zd_Cultivation_NotEnoughEnergy>{pawnName} 灵气不足，修行停止</Zd_Cultivation_NotEnoughEnergy>
+
+    <!-- 精进 "克己" 之法 -->
+    <Zd_Fruition_LevelUp>精进 "克己" 之法</Zd_Fruition_LevelUp>
+    <Zd_Fruition_LevelUp_Desc>克己之法，不求法门神通，专注修持自身</Zd_Fruition_LevelUp_Desc>
+
+    <!-- 精进 "明心" 之法 -->
+    <Zd_Fruition_LevelUp_BuddhaNature>精进 "明心" 之法</Zd_Fruition_LevelUp_BuddhaNature>
+    <Zd_Fruition_LevelUp_BuddhaNature_Desc>明心之法，主旨为向众生阐明佛理，普渡众生</Zd_Fruition_LevelUp_BuddhaNature_Desc>
+
+    <!-- 精进 "舍身" 之法 -->
+    <Zd_Fruition_LevelUp_SelfSacrifice>精进 "舍身" 之法</Zd_Fruition_LevelUp_SelfSacrifice>
+    <Zd_Fruition_LevelUp_SelfSacrifice_Desc>舍身之法，以身殉道，为众生解难\n\n但是，也要小心，这里不是'大傩'，回应你的也不一定是'司命'</Zd_Fruition_LevelUp_SelfSacrifice_Desc>
+
+    <!-- Hediff Label -->
+    <Zd_Fruition_Label>果位</Zd_Fruition_Label>
+    <Zd_Fruition_Label_Pre>修行</Zd_Fruition_Label_Pre>
+    <Zd_Fruition_Restraint>克己</Zd_Fruition_Restraint>
+    <Zd_Fruition_BuddhaNature>明心</Zd_Fruition_BuddhaNature>
+    <Zd_Fruition_SelfSacrifice>舍身</Zd_Fruition_SelfSacrifice>
+
+    <!-- Hediff Desc -->
+    <Zd_Fruition_Desc>修行之路</Zd_Fruition_Desc>
+
+    <NzRI_CompAbilityEffect_ReduceEnergy_NotEnough>灵气不足</NzRI_CompAbilityEffect_ReduceEnergy_NotEnough>
+
+    <NzRI_Zd_LevelUpJob_NoNewBodyPart>无法再继续精进了</NzRI_Zd_LevelUpJob_NoNewBodyPart>
+
+    <NzRI_Zd_LevelUpJob_Success>{pawnName} 精进成功</NzRI_Zd_LevelUpJob_Success>
+</LanguageData>

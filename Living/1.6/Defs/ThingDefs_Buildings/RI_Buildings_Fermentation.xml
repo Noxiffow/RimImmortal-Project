@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--蚕箱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_SilkwormRearingBox</defName>
+		<label>Silkworm rearing box</label>
+		<description>A box used to raise silkworms. After a period of time, it produces cocoons, which can be further processed into silk.\n\nThe box must be supplied with mulberry leaves as feed.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_SilkwormRearingBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.75,1.75)</drawSize>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<RI_Resource_SilkwormEgg>10</RI_Resource_SilkwormEgg>
+		</costList>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<!--没有ticker建筑就不会运行-->
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Mass>5</Mass>
+			<Cleanliness>1</Cleanliness>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<comps>
+			<li Class="RI_Frame_RiceCooker.CompProperties_RiceCookerFrame">
+				<!-- 空闲状态 -->
+				<idleGraphicData>
+					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1,1)</drawSize>
+				</idleGraphicData>
+
+				<!-- 工作状态 -->
+				<workingGraphicData>
+					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker_Finish</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,2)</drawSize>
+				</workingGraphicData>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>RI_Resource_MulberryLeaf</li>
+							</thingDefs>
+						</filter>
+						<count>20</count>
+					</li>
+				</ingredients>
+				<!--产出产物-->
+				<outputThing>RI_Resource_SilkwormCocoon</outputThing>
+				<outputCount>25</outputCount>
+				<!--完成的音效-->
+				<finishSound>RI_Sound_WaveSoundA</finishSound>
+				<!--工作需要的tick_5天-->
+				<workTicks>300000</workTicks>
+				<!--下雨是否摧毁产物-->
+				<!--<destroyByRain>false</destroyByRain>-->
+				<!--需不需要电力-->
+				<requirePower>false</requirePower>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--冰蚕箱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_IceSilkwormRearingBox</defName>
+		<label>Ice silkworm rearing box</label>
+		<description>A box used to raise ice silkworms. After a period of time, it produces ice silkworm cocoons, which can be further processed into ice silkworm silk.\n\nThe box must be supplied with ice marrow as feed.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_IceSilkwormRearingBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.75,1.75)</drawSize>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<RI_Resource_IceSilkwormEgg>10</RI_Resource_IceSilkwormEgg>
+		</costList>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<!--没有ticker建筑就不会运行-->
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Mass>5</Mass>
+			<Cleanliness>1</Cleanliness>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<comps>
+			<li Class="RI_Frame_RiceCooker.CompProperties_RiceCookerFrame">
+				<!-- 空闲状态 -->
+				<idleGraphicData>
+					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1,1)</drawSize>
+				</idleGraphicData>
+
+				<!-- 工作状态 -->
+				<workingGraphicData>
+					<texPath>Things/Building/Production/RI_Building_RiceCooker/RI_Building_RiceCooker_Finish</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,2)</drawSize>
+				</workingGraphicData>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>RI_Resource_IceMarrow</li>
+							</thingDefs>
+						</filter>
+						<count>5</count>
+					</li>
+				</ingredients>
+				<!--产出产物-->
+				<outputThing>RI_Resource_IceSilkwormCocoon</outputThing>
+				<outputCount>25</outputCount>
+				<!--完成的音效-->
+				<finishSound>RI_Sound_WaveSoundA</finishSound>
+				<!--工作需要的tick_5天-->
+				<workTicks>300000</workTicks>
+				<!--下雨是否摧毁产物-->
+				<!--<destroyByRain>false</destroyByRain>-->
+				<!--需不需要电力-->
+				<requirePower>false</requirePower>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

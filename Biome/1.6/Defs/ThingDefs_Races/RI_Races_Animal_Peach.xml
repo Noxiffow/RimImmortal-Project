@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==============狸力LiLi================ -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_LiLi</defName>
+		<label>Li Li</label>
+		<devNote>sheep-1</devNote>
+		<description>“There is a beast known as Li Li. It resembles a pig, has prominent claws, and its cry sounds like a dog’s bark. When it appears, extensive earthworks are sure to follow.”\n\nLi Li is a small pig-like creature with a timid nature, feeding on insects in the soil as well as melons and fruits. It has sharp claws and a strong instinct for burrowing, spending most of its life in tunnels it digs itself. Whenever humans engage in large-scale construction, Li Li are driven out by the disturbance, bursting from the ground and fleeing in panic.\n\nIn some cultures, Li Li have been trained to assist in digging and mining, a practice that has drawn strong condemnation from animal protection groups.</description>
+		<statBases>
+			<MoveSpeed>3.5</MoveSpeed>
+			<MarketValue>400</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
+			<Wildness>0.5</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<!--群居动物-->
+			<herdAnimal>true</herdAnimal>
+			<petness>0.50</petness>
+			<!--亲昵间隔-->
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<baseBodySize>2.6</baseBodySize>
+			<baseHealthScale>2.7</baseHealthScale>
+			<baseHungerRate>0.7</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<body>QuadrupedAnimalWithPaws</body>
+			<leatherDef>Leather_Light</leatherDef>
+			<roamMtbDays>2</roamMtbDays>
+			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<waterCellCost>10</waterCellCost>
+			<trainability>Advanced</trainability>
+			<!--特殊能力-->
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+			</specialTrainables>
+			<!--用的肉-->
+			<useMeatFrom>Pig</useMeatFrom>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.5, 1)</li>
+					<li>(2, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>21</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
+					<soundDeath>Pawn_Alphabeaver_Death</soundDeath>
+					<soundCall>Pawn_Alphabeaver_Call</soundCall>
+					<soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Rodent_Eat</soundEating>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.25)</li>
+				<li>(0.26, 0, 0.1)</li>
+				<li>(0, 0, 0)</li>
+				<li>(-0.26, 0, 0.1)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Pawn_LiLi</defName>
+		<label>Li Li</label>
+		<race>RI_Animal_LiLi</race>
+		<combatPower>45</combatPower>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<wildGroupSize>4~7</wildGroupSize>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_B</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_C</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</swimmingGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/Dessicated_RI_Pawn_LiLi</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<drawSize>1.25</drawSize>
+				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.25</drawSize>
+				</swimmingGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/Dessicated_RI_Pawn_LiLi</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.35, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.08)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/RI_Pawn_LiLi_A</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LiLi/Dessicated_RI_Pawn_LiLi</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- ==============鹿蜀LuShu================ -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_LuShu</defName>
+		<label>Lu Shu</label>
+		<devNote>Lu Shu</devNote>
+		<description>“On Mount Niuyang there is a beast. It resembles a horse with a white head, bears patterns like those of a tiger, and has a red tail. Its cry sounds like a chant. Its name is Lu Shu, and wearing its talisman is said to bring prosperity to one’s descendants.”\n\nLu Shu is a small, even-toed ungulate with beautiful markings and remarkable speed. They usually live and move in small groups led by a single male Lu Shu.\n\nLu Shu can be milked, and once domesticated, they may be used as pack animals. However, their carrying capacity is limited, making them unsuitable for long-distance travel.</description>
+		<statBases>
+			<MoveSpeed>7.5</MoveSpeed>
+			<MarketValue>650</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>13</FilthRate>
+			<CaravanRidingSpeedFactor>2.4</CaravanRidingSpeedFactor>
+			<Wildness>0.6</Wildness>
+		</statBases>
+		<uiIconScale>0.9</uiIconScale>
+		<!--产奶-->
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>2.3</baseBodySize>
+			<baseHealthScale>1.8</baseHealthScale>
+			<baseHungerRate>0.7</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Plain</leatherDef>
+			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<roamMtbDays>2</roamMtbDays>
+			<petness>0.6</petness>
+			<trainability>Intermediate</trainability>
+			<!--用的肉-->
+			<useMeatFrom>Horse</useMeatFrom>
+			<!--受伤反击-->
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>60</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.33)</li>
+				<li>(0.31, 0, 0.21)</li>
+				<li>(0.0, 0, 0.08)</li>
+				<li>(-0.31, 0, 0.21)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>left hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7.5</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7.5</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef Name="Horse" ParentName="AnimalKindBase">
+		<defName>RI_Animal_LuShu</defName>
+		<label>Lu Shu</label>
+		<labelMale>Lu Shu</labelMale>
+		<labelFemale>Lu Shu</labelFemale>
+		<race>RI_Animal_LuShu</race>
+		<combatPower>160</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>Lu Shu calf</label>
+				<labelPlural>Lu Shu calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu_Female</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/Dessicated_RI_Animal_LuShu</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.375, 0.375, 0.375)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.375, 0.375, 0.375)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/Dessicated_RI_Animal_LuShu</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/Dessicated_RI_Animal_LuShu</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.5, 0.5)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu_Female</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.5, 0.5)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/Dessicated_RI_Animal_LuShu</texPath>
+					<drawSize>1.9</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/Dessicated_RI_Animal_LuShu</texPath>
+					<drawSize>1.8</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<!--<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LuShu/RI_Animal_LuShu</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>-->
+	</PawnKindDef>
+
+	<!-- ==============长右ChangYou================ -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_ChangYou</defName>
+		<label>Chang You</label>
+		<devNote>cat-1</devNote>
+		<description>“There is a beast called Chang You. It resembles a monkey and has four ears. Its cry sounds like chanting, and when it appears, great floods will strike the surrounding commanderies and counties.”\n\nChang You is a small monkey-like creature with four ears and a highly agile body, capable of climbing tall trees with ease. According to scientific studies, its four ears are a form of genetic redundancy and do not provide any additional auditory advantage.</description>
+		<statBases>
+			<MoveSpeed>5.6</MoveSpeed>
+			<MarketValue>450</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<Wildness>0.55</Wildness>
+		</statBases>
+		<uiIconScale>1.3</uiIconScale>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.8</power>
+				<cooldownTime>1.3</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.8</power>
+				<cooldownTime>1.3</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Monkey</body>
+			<petness>0.5</petness>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.7</baseBodySize>
+			<baseHungerRate>0.3</baseHungerRate>
+			<baseHealthScale>0.75</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Leather_Light</leatherDef>
+			<trainability>Advanced</trainability>
+			<!--特殊能力-->
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<lifeExpectancy>30</lifeExpectancy>
+			<!--受伤反击-->
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
+			<soundEating>Herbivore_Eat</soundEating>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.266</minAge>
+					<soundWounded>Pawn_Monkey_Wounded</soundWounded>
+					<soundDeath>Pawn_Monkey_Death</soundDeath>
+					<soundCall>Pawn_Monkey_Call</soundCall>
+					<soundAngry>Pawn_Monkey_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.09)</li>
+				<li>(0.21, 0, -0.04)</li>
+				<li>(0.0, 0, -0.18)</li>
+				<li>(-0.21, 0, -0.04)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Pawn_ChangYou</defName>
+		<label>Chang You</label>
+		<race>RI_Animal_ChangYou</race>
+		<combatPower>150</combatPower>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/RI_Pawn_ChangYou</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/Dessicated_RI_Pawn_ChangYou</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/RI_Pawn_ChangYou</texPath>
+					<drawSize>1.1</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.2, 0.2)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/Dessicated_RI_Pawn_ChangYou</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/RI_Pawn_ChangYou</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_ChangYou/Dessicated_RI_Pawn_ChangYou</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- ==============旋龟Xuan turtle================ -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_XuanTurtle</defName>
+		<label>Xuan turtle</label>
+		<devNote>misc</devNote>
+		<description>“The Xuan turtle resembles a tortoise, yet bears the head of a bird and the tail of a viper. Its name is Xuan turtle; its sounds like wood being split. Wearing it wards off deafness, and it may also serve as a foundation.”\n\nXuan turtles favor quiet stretches of forest streams and still waters. Far more aggressive than ordinary turtles, their sharp, curved beaks can easily tear flesh, while their powerful limbs allow them to traverse rugged terrain and even climb rock faces. Xuan turtles are averse to heat; during summer, their flattened bodies slip into crevices between streambed stones to escape the high temperatures.</description>
+		<statBases>
+			<MoveSpeed>2.8</MoveSpeed>
+			<MarketValue>700</MarketValue>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<Wildness>0.7</Wildness>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<tools>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<!--下蛋-->
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>RI_Thing_EggXuanTurtleUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>RI_Thing_EggXuanTurtleFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>7</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~3</eggCountRange>
+			</li>
+			<li Class="RI_PeachBlossomLand.ThingComps.CompProperties_XuanTurtleLotusDance" />
+		</comps>
+		<race>
+			<body>TurtleLike</body>
+			<baseBodySize>0.7</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>0.7</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<lifeExpectancy>180</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
+					<soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+					<soundDeath>Pawn_Tortoise_Death</soundDeath>
+					<soundCall>Pawn_Tortoise_Call</soundCall>
+					<soundAngry>Pawn_Tortoise_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Reptile_Eat</soundEating>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.11)</li>
+				<li>(0.25, 0, 0.02)</li>
+				<li>(0.01, 0, -0.02)</li>
+				<li>(-0.52, 0, 0.02)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Pawn_XuanTurtle</defName>
+		<label>Xuan turtle</label>
+		<race>RI_Animal_XuanTurtle</race>
+		<combatPower>120</combatPower>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/RI_Pawn_XuanTurtle</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/Dessicated_RI_Pawn_XuanTurtle</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/RI_Pawn_XuanTurtle</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/Dessicated_RI_Pawn_XuanTurtle</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/RI_Pawn_XuanTurtle</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.45, 0.45, 0.45)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_XuanTurtle/Dessicated_RI_Pawn_XuanTurtle</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--旋龟蛋受精-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>RI_Thing_EggXuanTurtleFertilized</defName>
+		<label>Xuan turtle egg (fert.)</label>
+		<description>A fertilized Xuan turtle egg. If all goes well, it should hatch into a baby Xuan turtle.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(245,245,245)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>45</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>RI_Pawn_XuanTurtle</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--旋龟蛋未受精-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>RI_Thing_EggXuanTurtleUnfertilized</defName>
+		<label>Xuan turtle (unfert.)</label>
+		<description>An unfertilized Xuan turtle egg.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(228,185,135)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<!-- ==============类Lei cat================ -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>RI_Animal_LeiCat</defName>
+		<label>Lei cat</label>
+		<description>The Lei Cat resembles a slightly larger domestic cat. It has longer fur on its head, a nimble body, and smooth, supple fur marked with dark patterns.\n\nThese animals are solitary by nature and are only occasionally spotted in the mountains and wilderness. Local residents refer to similar creatures as “Xiangmao” (literally “fragrant-furred”).</description>
+		<statBases>
+			<!-- 移动速度：比普通猫稍微快一点点 -->
+			<MoveSpeed>5.2</MoveSpeed>
+			<MarketValue>270</MarketValue>
+			<!-- 价值较高，是很稀有的宠物 -->
+			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<Wildness>0</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<!--捕食者-->
+			<predator>true</predator>
+			<maxPreyBodySize>0.4</maxPreyBodySize>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.6</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Light</leatherDef>
+			<!-- nuzzleMtbHours 越小，亲昵越频繁。8代表平均每8个游戏小时蹭人一次，会频繁给小人加心情！ -->
+			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<petness>1</petness>
+			<!-- 无法训练 -->
+			<trainability>None</trainability>
+			<lifeExpectancy>18</lifeExpectancy>
+			<!-- 生命阶段对应的属性变化 -->
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<!-- 借用原版猫的叫声 -->
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+
+			<!-- 动物特有音效和特效 -->
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<!-- 动物的近战攻击方式：抓挠和咬 -->
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+
+
+	<!-- ==================== 2. Lei cat 生成与贴图定义 (PawnKindDef) ==================== -->
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_Pawn_LeiCat</defName>
+		<label>Lei cat</label>
+		<race>RI_Animal_LeiCat</race>
+
+		<!-- 战斗力评分，较弱，不用担心触发高强度袭击 -->
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+
+		<!-- 三个生命阶段的贴图设置 (幼体、青少年、成年) -->
+		<lifeStages>
+			<!-- 幼体 (Baby) -->
+			<li>
+				<label>Lei kitten</label>
+				<!-- 幼崽的称呼 -->
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/TWCR_LeiCat</texPath>
+					<drawSize>0.7</drawSize>
+					<!-- 幼崽体型缩小 -->
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/Dessicated_RI_Pawn_LeiCat</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<!-- 成年 (Adult) -->
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/RI_Pawn_LeiCat</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_LeiCat/Dessicated_RI_Pawn_LeiCat</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

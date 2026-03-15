@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <!-- EN: questName->Moe Lotl alchemist passing -->
+  <RI_AxoMedicineShopper.questNameRules.rulesStrings>questName->萌螈炼药师路过</RI_AxoMedicineShopper.questNameRules.rulesStrings>
+  <!-- EN: groupLabelSingle->炼药师groupLabelPlural->炼药师们groupLabelPlural(allChildren==true,priority=1)->孩子们groupLabelSingle(childCount>=1,priority=1)->孩子travelerInfo(beggarCount==1)->这[groupLabelSingle]是travelerInfo(beggarCount>=2)->这些[groupLabelPlural]是beggingForInfo->交换 x[requestedThingCount] [requestedThing_label]traverObjective(beggarCount==1)->[beggars0_objective]traverObjective(beggarCount>=2)->她们questDescription->一名瘦小的萌螈炼药师路过，她摘下兜帽，说道：\n\n“我正好有一批新炼制的丹药，可以低价卖给你们。”\n\n她的身上滑溜溜的，散发出甜味。 -->
+  <RI_AxoMedicineShopper.questDescriptionRules.rulesStrings>groupLabelSingle->炼药师groupLabelPlural->炼药师们groupLabelPlural(allChildren==true,priority=1)->孩子们groupLabelSingle(childCount>=1,priority=1)->孩子travelerInfo(beggarCount==1)->这[groupLabelSingle]是travelerInfo(beggarCount>=2)->这些[groupLabelPlural]是beggingForInfo->交换 x[requestedThingCount] [requestedThing_label]traverObjective(beggarCount==1)->[beggars0_objective]traverObjective(beggarCount>=2)->她们questDescription->一名瘦小的萌螈炼药师路过，她摘下兜帽，说道：\n\n“我正好有一批新炼制的丹药，可以低价卖给你们。”\n\n她的身上滑溜溜的，散发出甜味。</RI_AxoMedicineShopper.questDescriptionRules.rulesStrings>
+  <!-- EN: letterLabelBeggarsBetrayed->萌螈炼药师任务letterTextBeggarsBetrayed->萌螈炼药师任务内容 -->
+  <RI_AxoMedicineShopper.questContentRules.rulesStrings>letterLabelBeggarsBetrayed->萌螈炼药师任务letterTextBeggarsBetrayed->萌螈炼药师任务内容</RI_AxoMedicineShopper.questContentRules.rulesStrings>
+  <!-- EN: 萌螈王朝袭击 -->
+  <RI_RaidLotProtectors.label>萌螈王朝袭击</RI_RaidLotProtectors.label>
+  <!-- EN: 萌螈王朝袭击 -->
+  <RI_RaidLotProtectors.letterLabel>萌螈王朝袭击</RI_RaidLotProtectors.letterLabel>
+  <!-- EN: 萌螈的王朝听说了修炼者的存在，于是派出一支部队前来探探虚实。 -->
+  <RI_RaidLotProtectors.letterText>萌螈的王朝听说了修炼者的存在，于是派出一支部队前来探探虚实。</RI_RaidLotProtectors.letterText>
+  
+</LanguageData>

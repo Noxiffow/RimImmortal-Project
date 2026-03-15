@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_Unfinished_Prosthesis</defName>
+		<label>Unfinished prosthesis</label>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/UnfinishedProsthesis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<RecipeDef Abstract="True" Name="RI_MakeBionicBase" ParentName="SurgeryFlesh">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>5000</workAmount>
+		<unfinishedThingDef>RI_Unfinished_Prosthesis</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+
+	<!--===============================庚钢===============================-->
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_BlackSteelArm</defName>
+		<label>make Black steel arm</label>
+		<description>Make a Black steel arm.</description>
+		<jobString>Making Black steel arm.</jobString>
+		<researchPrerequisite>RI_BlackSteelSyntheticTechnology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_BlackSteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_BlackSteelArm>1</RI_Prostheses_BlackSteelArm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_BlackSteelLeg</defName>
+		<label>make Black steel leg</label>
+		<description>Make a Black steel leg.</description>
+		<jobString>Making Black steel leg.</jobString>
+		<researchPrerequisite>RI_BlackSteelSyntheticTechnology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_BlackSteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_BlackSteelLeg>1</RI_Prostheses_BlackSteelLeg>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_BlackSteelFoot</defName>
+		<label>make Black steel foot</label>
+		<description>Make a Black steel foot.</description>
+		<jobString>Making Black steel foot.</jobString>
+		<researchPrerequisite>RI_BlackSteelSyntheticTechnology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_BlackSteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_BlackSteelFoot>1</RI_Prostheses_BlackSteelFoot>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_BlackSteelHand</defName>
+		<label>make Black steel hand</label>
+		<description>Make a Black steel hand.</description>
+		<jobString>Making Black steel hand.</jobString>
+		<researchPrerequisite>RI_BlackSteelSyntheticTechnology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_BlackSteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_BlackSteelHand>1</RI_Prostheses_BlackSteelHand>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_BlackSteelSpine</defName>
+		<label>make Black steel spine</label>
+		<description>Make a Black steel spine.</description>
+		<jobString>Making Black steel spine.</jobString>
+		<researchPrerequisite>RI_BlackSteelSyntheticTechnology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DeviceCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_BlackSteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_DeviceCoreComponent</li>
+				<li>RI_Resource_BlackSteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_BlackSteelSpine>1</RI_Prostheses_BlackSteelSpine>
+		</products>
+	</RecipeDef>
+
+	<!--===============================翠玉===============================-->
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_JadeFakeHand</defName>
+		<label>make Jade hand</label>
+		<description>Make a Jade hand.</description>
+		<jobString>Making Jade hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_JadeFakeHand>1</RI_Prostheses_JadeFakeHand>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_JadeFakeArm</defName>
+		<label>make Jade arm</label>
+		<description>Make a Jade arm.</description>
+		<jobString>Making Jade arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_JadeFakeArm>1</RI_Prostheses_JadeFakeArm>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_JadeFakeFoot</defName>
+		<label>make Jade foot</label>
+		<description>Make a Jade foot.</description>
+		<jobString>Making Jade foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_JadeFakeFoot>1</RI_Prostheses_JadeFakeFoot>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_JadeFakeEye</defName>
+		<label>make Jade eye</label>
+		<description>Make a Jade eye.</description>
+		<jobString>Making Jade eye.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_JadeFakeEye>1</RI_Prostheses_JadeFakeEye>
+		</products>
+	</RecipeDef>
+
+	<!--五行器官-->
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_EarthBionicStomach</defName>
+		<label>make Bionic stomach-Earth</label>
+		<description>Make a Bionic stomach-Earth.</description>
+		<jobString>Making Bionic stomach-Earth</jobString>
+		<researchPrerequisite>RI_Research_ModernMedicine</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Steel</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_EarthBionicStomach>1</RI_Prostheses_EarthBionicStomach>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_FireBionicHeart</defName>
+		<label>make Bionic heart-Fire</label>
+		<description>Make a Bionic heart-Fire.</description>
+		<researchPrerequisite>RI_Research_ModernMedicine</researchPrerequisite>
+		<jobString>Making Bionic heart-Fire</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Gold</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_FireBionicHeart>1</RI_Prostheses_FireBionicHeart>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_WaterBionicKidney</defName>
+		<label>make Bionic kidney-Water</label>
+		<description>Make a Bionic kidney-Water.</description>
+		<researchPrerequisite>RI_Research_ModernMedicine</researchPrerequisite>
+		<jobString>Making Bionic kidney-Water</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Jade</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_WaterBionicKidney>1</RI_Prostheses_WaterBionicKidney>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_WoodBionicLiver</defName>
+		<label>make Bionic liver-Wood</label>
+		<description>Make a Bionic liver-Wood.</description>
+		<researchPrerequisite>RI_Research_ModernMedicine</researchPrerequisite>
+		<jobString>Making Bionic liver-Wood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_WoodBionicLiver>1</RI_Prostheses_WoodBionicLiver>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_MakeBionicBase">
+		<defName>Make_MetalBionicLung</defName>
+		<label>make Bionic lung-Metal</label>
+		<description>Make a Bionic lung-Metal.</description>
+		<researchPrerequisite>RI_Research_ModernMedicine</researchPrerequisite>
+		<jobString>Making Bionic lung-Metal</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritCoreComponent</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SpiritCoreComponent</li>
+				<li>Gold</li>
+				<li>Silver</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Prostheses_MetalBionicLung>1</RI_Prostheses_MetalBionicLung>
+		</products>
+	</RecipeDef>
+
+</Defs>

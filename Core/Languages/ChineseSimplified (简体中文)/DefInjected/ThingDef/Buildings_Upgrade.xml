@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Thunder column -->
+  <RI_Building_ThunderColumn.label>雷公柱</RI_Building_ThunderColumn.label>
+  <!-- EN: A column forged from steel, embedded with spiritual crystal components. This pillar possesses the ability to attract thunder, allowing cultivators to upgrade without suffering from its destructive force.\n\nIn ancient cultivation eras, such structures did not exist. Ancient cultivators would endure heavenly tribulation with their own bodies to demonstrate their resilience. However, with the advancement of Qi energy studies, people discovered that thunder was merely drawn to intense spiritual reactions, and there was no so-called divine will obstructing one's ascension to immortality. -->
+  <RI_Building_ThunderColumn.description>一种以钢铁制作而成的柱子，内部镶嵌有灵石部件。这种柱子具有吸引天雷的作用，可以令修炼者在突破时免受天雷的伤害。\n\n古修时期并没有这种设施，古修们往往会以肉身抵抗天雷，以彰显自身的强悍。但随着灵气学进步，人们发现，天雷只是会被强烈的灵气反应所聚集，并没有所谓的天道阻止人成仙。</RI_Building_ThunderColumn.description>
+  
+</LanguageData>

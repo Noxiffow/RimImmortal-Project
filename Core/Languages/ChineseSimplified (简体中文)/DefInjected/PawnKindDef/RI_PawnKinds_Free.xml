@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Barefoot doctor -->
+  <RI_Pawn_BarefootDoctor.label>赤脚医生</RI_Pawn_BarefootDoctor.label>
+  
+  <!-- EN: Beggar -->
+  <RI_Pawn_Beggar.label>乞丐</RI_Pawn_Beggar.label>
+  
+  <!-- EN: Businessman -->
+  <RI_Pawn_Businessman.label>商贩</RI_Pawn_Businessman.label>
+  
+  <!-- EN: Cultivator guard -->
+  <RI_Pawn_Guard.label>护卫</RI_Pawn_Guard.label>
+  
+  <!-- EN: Hunter -->
+  <RI_Pawn_Hunter.label>猎户</RI_Pawn_Hunter.label>
+  
+  <!-- EN: Traveler -->
+  <RI_Pawn_Traveler.label>行者</RI_Pawn_Traveler.label>
+  
+</LanguageData>

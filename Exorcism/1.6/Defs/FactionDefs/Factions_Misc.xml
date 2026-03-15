@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--邪异——派系-->
+	<FactionDef ParentName="FactionBase">
+		<defName>RI_Faction_Aberrant</defName>
+		<label>Aberrant</label>
+		<description>They descended one day, bringing nightmares with them. — The Book of a Hundred Evils\n\nThese beings cannot be classified under any known branch of biology. They include the reanimated dead, creatures of legend, horrific beasts, and even inexplicable supernatural phenomena. For this reason, they are collectively called the Aberrant.\n\nDespite their vast differences, Aberrant creatures do not turn on one another. Scholars speculate their origin may lie in a form of psychic phenomenon. Whatever the truth, they spread from world to world, leaving trails of uncanny and terrifying events in their wake.</description>
+		<pawnSingular>Aberrant creature</pawnSingular>
+		<pawnsPlural>Aberrant creatures</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Aberrant</fixedName>
+		<factionIconPath>World/WorldObjects/Expanding/RI_Faction_Aberrant</factionIconPath>
+		<colorSpectrum>
+			<li>(0.42, 0.65, 0.55)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(300,  0)</li>
+				<li>(700,  1)</li>
+				<li>(1400, 1.8)</li>
+				<li>(2800, 2.2)</li>
+				<li>(4000, 2.6)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<earliestRaidDays>10</earliestRaidDays>
+		<permanentEnemy>true</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-10~75</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+		<!--邪异组成队伍-->
+		<pawnGroupMakers>
+			<li>
+				<!--寻常袭击——低级邪异队伍-->
+				<kindDef>Combat</kindDef>
+				<options>
+					<RI_EvilCreature_HeadSpider>2</RI_EvilCreature_HeadSpider>
+					<RI_EvilCreature_Zombie>5</RI_EvilCreature_Zombie>
+					<RI_EvilCreature_ZombieArmor>2</RI_EvilCreature_ZombieArmor>
+					<RI_EvilCreature_ZombieBoomer>2</RI_EvilCreature_ZombieBoomer>
+				</options>
+			</li>
+			<li>
+				<!--寻常袭击——人头蜘蛛海-->
+				<kindDef>Combat</kindDef>
+				<options>
+					<RI_EvilCreature_HeadSpider>1</RI_EvilCreature_HeadSpider>
+				</options>
+			</li>
+			<li>
+				<!--寻常袭击——蜘蛛-->
+				<kindDef>Combat</kindDef>
+				<options>
+					<RI_EvilCreature_SuperBigSpider>2</RI_EvilCreature_SuperBigSpider>
+				</options>
+			</li>
+			<li>
+				<!--高级袭击-->
+				<kindDef>Combat</kindDef>
+				<options>
+					<RI_EvilCreature_Zombie>5</RI_EvilCreature_Zombie>
+					<RI_EvilCreature_DeadShoot>3</RI_EvilCreature_DeadShoot>
+					<RI_EvilCreature_ZombieArmor>2</RI_EvilCreature_ZombieArmor>
+					<RI_EvilCreature_ZombieBoomer>2</RI_EvilCreature_ZombieBoomer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+	</FactionDef>
+	<!--道门-->
+	<FactionDef ParentName="FactionBase">
+		<defName>RI_Faction_Dao</defName>
+		<label>Daoist sect</label>
+		<pawnSingular>Daoist</pawnSingular>
+		<pawnsPlural>Daoists</pawnsPlural>
+		<categoryTag>Ancient</categoryTag>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>5000</configurationListOrderPriority>
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<fixedName>Daoist sect</fixedName>
+		<canGenerateQuestSites>true</canGenerateQuestSites>
+		<factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>false</autoFlee>
+		<!--衣物材质限制-->
+		<!--<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>-->
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(100,100)</li>
+				<li>(10000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidsForbidden>true</raidsForbidden>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<messageDefendersAttacking>Daoists are attacking.</messageDefendersAttacking>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<!--Pawn组成-->
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<RI_DaoPawn_Priest>7</RI_DaoPawn_Priest>
+					<RI_DaoPawn_Disciple>14</RI_DaoPawn_Disciple>
+					<RI_DaoPawn_Alchemist>3</RI_DaoPawn_Alchemist>
+					<RI_DaoPawn_Patriarch>2</RI_DaoPawn_Patriarch>
+				</options>
+			</li>
+			<li>
+				<kindDef>RI_Dao_FriendlyRaid</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<RI_DaoPawn_Priest>7</RI_DaoPawn_Priest>
+					<RI_DaoPawn_Disciple>14</RI_DaoPawn_Disciple>
+					<RI_DaoPawn_Alchemist>3</RI_DaoPawn_Alchemist>
+					<RI_DaoPawn_Patriarch>2</RI_DaoPawn_Patriarch>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RI_DaoPawn_Priest>2</RI_DaoPawn_Priest>
+					<RI_DaoPawn_Disciple>4</RI_DaoPawn_Disciple>
+					<RI_DaoPawn_Acolyte>3</RI_DaoPawn_Acolyte>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RI_DaoPawn_Priest>1</RI_DaoPawn_Priest>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+				</carriers>
+				<guards>
+					<RI_DaoPawn_Disciple>6</RI_DaoPawn_Disciple>
+					<RI_DaoPawn_Priest>2</RI_DaoPawn_Priest>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RI_DaoPawn_Acolyte>20</RI_DaoPawn_Acolyte>
+					<RI_DaoPawn_Disciple>15</RI_DaoPawn_Disciple>
+					<RI_DaoPawn_Priest>6</RI_DaoPawn_Priest>
+					<RI_DaoPawn_Alchemist>3</RI_DaoPawn_Alchemist>
+					<RI_DaoPawn_Patriarch>2</RI_DaoPawn_Patriarch>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<PawnGroupKindDef>
+		<defName>RI_Dao_FriendlyRaid</defName>
+		<workerClass>PawnGroupKindWorker_Normal</workerClass>
+	</PawnGroupKindDef>
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_AoJing_FingerNail.label>指甲</NzRI_AoJing_FingerNail.label>
+    <NzRI_AoJing_FingerNail.description>将自己的指甲附着灵气，发射出去，对敌人造成少量伤害。</NzRI_AoJing_FingerNail.description>
+
+    <NzRI_SmallBloodGuts.label>血糜</NzRI_SmallBloodGuts.label>
+    <NzRI_SmallBloodGuts.description>一小块血肉骨骼混合物</NzRI_SmallBloodGuts.description>
+
+    <NzRI_AoJing_Finger.label>手指</NzRI_AoJing_Finger.label>
+    <NzRI_AoJing_Finger.description>献祭自己的手指，喷射出酸性液体对敌人造成伤害。</NzRI_AoJing_Finger.description>
+
+    <NzRI_AoJing_Hand.label>手掌</NzRI_AoJing_Hand.label>
+    <NzRI_AoJing_Hand.description>将灵气注入自己的手掌，发射出去，造成小范围的爆炸。</NzRI_AoJing_Hand.description>
+
+    <NzRI_BloodGuts.label>血肉</NzRI_BloodGuts.label>
+    <NzRI_BloodGuts.description>一块血肉骨骼混合物</NzRI_BloodGuts.description>
+
+    <NzRI_AoJing_Arm.label>手臂</NzRI_AoJing_Arm.label>
+    <NzRI_AoJing_Arm.description>使用自己的手臂作为媒介，在目标地点造成多次大爆炸，对范围内的敌人造成高额伤害。</NzRI_AoJing_Arm.description>
+
+    <NzRI_FireTherapy.label>火疗术</NzRI_FireTherapy.label>
+    <NzRI_FireTherapy.description>向目标射出一小团火焰，使其伤口会快速愈合，但是也会造成少量烧伤。似乎是从《火袄箴经》上面摘抄而来。</NzRI_FireTherapy.description>
+
+    <NzRI_AoJing_Regeneration.label>再生</NzRI_AoJing_Regeneration.label>
+    <NzRI_AoJing_Regeneration.description>使用秘法，修复目标的缺失部位，但是会对自己的内脏造成损伤。</NzRI_AoJing_Regeneration.description>
+
+    <NzRI_AoJing_Molt.label>蜕皮</NzRI_AoJing_Molt.label>
+    <NzRI_AoJing_Molt.description>剥离自己的皮肤，将大量灵气注入其中，化作盔甲</NzRI_AoJing_Molt.description>
+
+    <NzRI_AoJing_Ascend.label>苍羌登阶</NzRI_AoJing_Ascend.label>
+    <NzRI_AoJing_Ascend.description>润置五行, 换取巴虺的注视，内心和身体越痛苦，成功率越高，会对内脏造成大量伤害</NzRI_AoJing_Ascend.description>
+</LanguageData>

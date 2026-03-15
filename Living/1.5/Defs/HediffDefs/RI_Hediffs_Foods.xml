@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===================吃了肉，饱食====================-->
+	<HediffDef>
+		<defName>RI_Hediff_AteSatiety</defName>
+		<label>Satiety</label>
+		<description>You are so full that you are filled with power!</description>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(0.58,0.8,0.45)</defaultLabelColor>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<hungerRateFactor>0.8</hungerRateFactor>
+				<painFactor>0.9</painFactor>
+				<statOffsets>
+					<MoveSpeed>-0.3</MoveSpeed>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+				<statFactors>
+					<ResearchSpeed>0.5</ResearchSpeed>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+					<MeleeDodgeChance>0.7</MeleeDodgeChance>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--消暑-->
+	<HediffDef>
+		<defName>RI_Hediff_Relieveheat</defName>
+		<label>Relieve heat</label>
+		<description>The cool watermelon eliminates the heat.</description>
+		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(0.58,0.8,0.45)</defaultLabelColor>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

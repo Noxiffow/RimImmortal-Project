@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=====================血蛄侯=====================-->
+	<ThingDef ParentName="BasePawn">
+		<defName>RI_Race_CrimsonTyrant</defName>
+		<label>Crimson Tyrant</label>
+		<description>Crimson Tyrant was a renowned general of a nation before his death in a war, filled with endless anger and regret. After his death, his corpse was secretly transformed into a zombie. From then on, he spent hundreds of years in a cycle of slumber and killing, grinding his teeth and sucking blood, killing countless people.\n\nAfter a long time, the Crimson Tyrant's body had become as hard as steel, comparable to a powerful weapon. The eternal flames of anger burning in his eyes, and the third eye embedded on his forehead was a powerful weapon inted, capable of releasing destructive lasers that terrified the enemy. The most terrifying thing was that the king of blood could not be truly destroyed. His existence had been deeply etched into the river of time. Every time Crimson Tyrant died, a new figure would emerge from the sea of corpses, inheriting his strength and anger, and reappearing in the world.\n\nIt is said that by placing a specially made bell on a blood altar, one can wake Crimson Tyrant.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="AKA_Ability.TCP_AKATracker">
+				<abilities>
+					<!--地血爆-->
+					<li>LMA_Ability_Illustrious_DroneExplode</li>
+					<!--血煞塔-->
+					<li>LMA_Ability_Illustrious_SummonDrone</li>
+				</abilities>
+			</li>
+			<!--赤目光-->
+			<li Class="CompProperties_TurretGun">
+				<turretDef>RI_Weapon_ZombieBloodBeam</turretDef>
+				<angleOffset>-90</angleOffset>
+				<renderNodeProperties>
+					<li>
+						<shaderTypeDef>MoteGlow</shaderTypeDef>
+						<nodeClass>PawnRenderNode_TurretGun</nodeClass>
+						<workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+						<parentTagDef>Body</parentTagDef>
+						<overrideMeshSize>(7.5, 7.5)</overrideMeshSize>
+						<baseLayer>20</baseLayer>
+						<pawnType>Any</pawnType>
+						<drawData>
+							<dataWest>
+								<rotationOffset>180</rotationOffset>
+							</dataWest>
+						</drawData>
+					</li>
+				</renderNodeProperties>
+			</li>
+		</comps>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<fleshType>RI_Aberrant_Flesh</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<body>Human</body>
+			<baseBodySize>3.1</baseBodySize>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<bleedRateFactor>-1</bleedRateFactor>
+			<nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+			<trainability>None</trainability>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+					<soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>近战</label>
+				<labelNoLocation>近战</labelNoLocation>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10.0</power>
+				<armorPenetration>0.23</armorPenetration>
+				<cooldownTime>4</cooldownTime>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_CrimsonEye>1</RI_Resource_CrimsonEye>
+			<RI_Resource_BloodElixir>1</RI_Resource_BloodElixir>
+			<RI_Resource_ConcentrateAberrantBlood>50</RI_Resource_ConcentrateAberrantBlood>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>FS_PawnKind_SuperiorZombie</defName>
+		<label>Crimson Tyrant</label>
+		<race>RI_Race_CrimsonTyrant</race>
+		<combatPower>999</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Boss/CrimsonTyrant/FS_PawnKind_SuperiorZombie</texPath>
+					<!--maskPath>black</maskPath-->
+					<shaderType>Cutout</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>10000~20000</weaponMoney>
+		<weaponTags>
+			<li>RI_MeleeTag_Crimson</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<initialResistanceRange>999~9999</initialResistanceRange>
+		<initialWillRange>999~9999</initialWillRange>
+	</PawnKindDef>
+
+
+	<ThingDef ParentName="BaseGun">
+		<defName>RI_Weapon_ZombieBloodBeam</defName>
+		<label>Blood beam</label>
+		<description>A high-energy gamma ray laser which fires a sweeping beam that pierces thick armor and burns targets. Because of the health risks, grasers are usually only used by mechanoids. This one was made to interface directly with a mechanoid wielder and draw from its power source.</description>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_ZombieBloodBeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<defaultCooldownTime>7.1</defaultCooldownTime>
+				<verbClass>Verb_ShootBeam</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>0</warmupTime>
+				<range>24.9</range>
+				<minRange>3.9</minRange>
+				<beamFullWidthRange>6.9</beamFullWidthRange>
+				<burstShotCount>5</burstShotCount>
+				<showBurstShotStats>false</showBurstShotStats>
+				<beamWidth>6</beamWidth>
+				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+				<beamDamageDef>Beam</beamDamageDef>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+				<beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+				<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+				<beamMaxDeviation>1.5</beamMaxDeviation>
+				<beamCurvature>0.6</beamCurvature>
+				<beamMoteDef>Mote_GraserBeamBase</beamMoteDef>
+				<beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+				<beamChanceToStartFire>0.85</beamChanceToStartFire>
+				<beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+				<beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+				<beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+				<beamStartOffset>0.8</beamStartOffset>
+				<beamLineFleckChanceCurve>
+					<points>
+						<li>(0, 0)</li>
+						<li>(0.65, 0.4)</li>
+						<li>(1, 0.75)</li>
+					</points>
+				</beamLineFleckChanceCurve>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>RI_Tags_Nospawn</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

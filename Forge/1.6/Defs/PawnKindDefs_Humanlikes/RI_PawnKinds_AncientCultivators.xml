@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--古修者boss-->
+	<!--耐打，记得加上功法hediff啥的-->
+	<PawnKindDef>
+		<defName>RI_Pawn_AncientCultivator</defName>
+		<label>Ancient cultivator</label>
+		<combatPower>700</combatPower>
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>999</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<defaultFactionType>RI_Faction_WickedCultivators</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<itemQuality>Legendary</itemQuality>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.40</techHediffsChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_AncientCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>2550~100000</apparelMoney>
+		<apparelTags>
+			<li>RI_AncientCultivatorArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_FlakPants</li>
+			<li>RI_Apparel_AncientCultivatorArmor</li>
+			<li>RI_Apparel_AncientCultivatorHelmet</li>
+			<li>Apparel_ShieldBelt</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+		</apparelRequired>
+		<weaponMoney>2550~100000</weaponMoney>
+		<weaponTags>
+			<li>RI_AncientWeapon</li>
+		</weaponTags>
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

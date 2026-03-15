@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Necrosapiens body female -->
+  <RI_ExorcismBodyType_Female.label>冥尸女体</RI_ExorcismBodyType_Female.label>
+  
+  <!-- EN: Necrosapiens body male -->
+  <RI_ExorcismBodyType_Male.label>冥尸男体</RI_ExorcismBodyType_Male.label>
+  
+  <!-- EN: Necrosapiens body thin -->
+  <RI_ExorcismBodyType_Thin.label>冥尸纤细</RI_ExorcismBodyType_Thin.label>
+  
+</LanguageData>

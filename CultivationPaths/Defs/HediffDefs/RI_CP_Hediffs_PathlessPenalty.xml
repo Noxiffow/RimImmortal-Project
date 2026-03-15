@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Applied automatically to any cultivator who has awakened a Spiritual Root
+         but has not yet chosen a cultivation path.
+         Managed by HediffComp_PathlessMonitor (added to Hediff_RI_EnergyRoot via patch).
+         Removed automatically the moment the cultivator commits to a path. -->
+    <HediffDef>
+        <defName>Hediff_RI_CP_PathlessPenalty</defName>
+        <label>untethered qi</label>
+        <description>This cultivator has awakened a Spiritual Root but walks without a path to guide their cultivation. Without a foundation — without a school, a method, a way — their qi wanders without direction.
+
+Those who reach great heights without guidance are one in a millennia. For all others, a path must be chosen.</description>
+        <hediffClass>Hediff</hediffClass>
+        <isBad>true</isBad>
+        <defaultLabelColor>(0.65, 0.65, 0.65)</defaultLabelColor>
+        <stages>
+            <li>
+                <statFactors>
+                    <GI_EnergyGainEff>0.10</GI_EnergyGainEff>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

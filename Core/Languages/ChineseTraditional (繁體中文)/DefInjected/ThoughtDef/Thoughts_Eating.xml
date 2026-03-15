@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Thran spirit haunt -->
+  <RI_Thought_AteDemonPill.stages.Thran_spirit_haunt.label>喰仙缠身</RI_Thought_AteDemonPill.stages.Thran_spirit_haunt.label>
+  <!-- EN: Bursts of low laughter ring in your ears, and in an instant, extreme happiness, pain, jealousy, and anger rush into your brain. -->
+  <RI_Thought_AteDemonPill.stages.Thran_spirit_haunt.description>一阵低低的笑声在你耳边回荡，刹那间，极度的快乐、痛苦、嫉妒和愤怒涌入你的脑海。</RI_Thought_AteDemonPill.stages.Thran_spirit_haunt.description>
+  
+  <!-- EN: Ate raw medicinal herbs -->
+  <RI_Thought_AteHerb.stages.Ate_raw_medicinal_herbs.label>服用未经加工的药材</RI_Thought_AteHerb.stages.Ate_raw_medicinal_herbs.label>
+  <!-- EN: Ingesting raw medicinal herbs. Bitter... hard to swallow, perhaps it wasn't worth wasting this medicinal herb. -->
+  <RI_Thought_AteHerb.stages.Ate_raw_medicinal_herbs.description>苦涩...难以下咽，或许不该浪费这药材。</RI_Thought_AteHerb.stages.Ate_raw_medicinal_herbs.description>
+  
+  <!-- EN: Ate lantern berries -->
+  <RI_Thought_AteLanternBerries.stages.Ate_lantern_berries.label>服用灯笼果</RI_Thought_AteLanternBerries.stages.Ate_lantern_berries.label>
+  <!-- EN: The flesh is sweet and mildly euphoric, which shouldn't be addictive, right? -->
+  <RI_Thought_AteLanternBerries.stages.Ate_lantern_berries.description>果肉有点甜，吃下后带有轻微欣快感，这应该不会上瘾，对吧？</RI_Thought_AteLanternBerries.stages.Ate_lantern_berries.description>
+  
+  <!-- EN: Ate tillandsia dragon shoot -->
+  <RI_Thought_AteTillandsiaDragonShoot.stages.Ate_tillandsia_dragon_shoot.label>服用火龙芽</RI_Thought_AteTillandsiaDragonShoot.stages.Ate_tillandsia_dragon_shoot.label>
+  <!-- EN: My throat is burning! Why am I eating this?! -->
+  <RI_Thought_AteTillandsiaDragonShoot.stages.Ate_tillandsia_dragon_shoot.description>我的喉咙在燃烧！为什么我要吃这个！</RI_Thought_AteTillandsiaDragonShoot.stages.Ate_tillandsia_dragon_shoot.description>
+  
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ZombieGizmoAbortTransformLabel>中断转化</ZombieGizmoAbortTransformLabel>
+  <ZombieGizmoAbortLevelUpLabel>中断升级</ZombieGizmoAbortLevelUpLabel>
+  <ZombieGizmoAbortTransformDescription>中断转化</ZombieGizmoAbortTransformDescription>
+  <ZombieGizmoAbortLevelUpDescription>中断升级</ZombieGizmoAbortLevelUpDescription>
+  <ZombieGizmoInitLevelUpLabel>开始升级流程</ZombieGizmoInitLevelUpLabel>
+  <ZombieGizmoInitTransformLabel>开始转化流程</ZombieGizmoInitTransformLabel>
+  <ZombieGizmoInitLevelUpDescription>开始升级流程</ZombieGizmoInitLevelUpDescription>
+  <ZombieGizmoInitTransformDescription>开始转化流程</ZombieGizmoInitTransformDescription>
+  <ZombieTransformingStatus>当前状态: {0}</ZombieTransformingStatus>
+  <ZombieTransformingStatusEnum0>等待宿主</ZombieTransformingStatusEnum0>
+  <ZombieTransformingStatusEnum1>空闲</ZombieTransformingStatusEnum1>
+  <ZombieTransformingStatusEnum2>注入材料</ZombieTransformingStatusEnum2>
+  <ZombieTransformingStatusEnum3>转化中</ZombieTransformingStatusEnum3>
+  <ZombieTransformingStatusEnum4>转化完成</ZombieTransformingStatusEnum4>
+  <ZombieTransformingRemainingTime>剩余时间: {0}</ZombieTransformingRemainingTime>
+  <RI_Alert_ZombieHungry>Zombie is hungry!</RI_Alert_ZombieHungry>
+  <RI_Alert_ZombieHungryDesc>Zombie is feeling hungry and needs food!</RI_Alert_ZombieHungryDesc>
+  <RI_Alert_ZombieNeedSuppress>Zombie needs to suppress!</RI_Alert_ZombieNeedSuppress>
+  <RI_Alert_ZombieNeedSuppressDesc>The zombie is about to go berserk and needs to be suppressed!</RI_Alert_ZombieNeedSuppressDesc>
+  <RI_CurseWardListCommandLabel>Curse Ward List</RI_CurseWardListCommandLabel>
+  <RI_CurseWardListCommandDesc>Open the CurseWard page, select and add the Pawn on the map to the global CurseWard list.</RI_CurseWardListCommandDesc>
+</LanguageData>

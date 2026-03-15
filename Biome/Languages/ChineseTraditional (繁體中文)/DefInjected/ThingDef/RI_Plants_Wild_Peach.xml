@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aloe vera -->
+  <RI_Plant_AloeVera.label>芦荟</RI_Plant_AloeVera.label>
+  <!-- EN: Aloe vera is a medicinal plant with thick, fleshy leaves. -->
+  <RI_Plant_AloeVera.description>芦荟是一种药用植物，叶片宽厚。</RI_Plant_AloeVera.description>
+  
+  <!-- EN: bone fern -->
+  <RI_Plant_BoneFern.label>骨蕨</RI_Plant_BoneFern.label>
+  <!-- EN: A fern that grows in humid, ventilated environments. Its stems are unusually rigid, almost skeletal—earning it the name “Bone Fern.” -->
+  <RI_Plant_BoneFern.description>一种蕨类，喜好湿润且通风的环境。这种蕨类的茎干十分坚硬，宛如有骨骼一般，所以被称为骨蕨。</RI_Plant_BoneFern.description>
+  
+  <!-- EN: immortal peach tree -->
+  <RI_Plant_ImmortalPeachTree.label>仙桃树</RI_Plant_ImmortalPeachTree.label>
+  <!-- EN: The Immortal peach tree appears only within the peach garden, bearing the legendary Immortal Peaches. It is said that consuming one can restore youth and turn back the years. Thriving in areas rich with spiritual energy, its trunk is smooth and jade-like in luster. Each tree produces only one or two Immortal peaches, making them exceedingly rare and precious. -->
+  <RI_Plant_ImmortalPeachTree.description>仙桃树只会在芳草桃源出现，结出仙桃，据说吃下可以返老还童。此树喜好灵气充沛之地，其树干苍润如玉，每棵树只会结出一两颗仙桃，十分珍贵。</RI_Plant_ImmortalPeachTree.description>
+  
+  <!-- EN: inch heart fern -->
+  <RI_Plant_InchHeartFern.label>寸心蕨</RI_Plant_InchHeartFern.label>
+  <!-- EN: A fern that grows in humid, ventilated environments. Its mature fronds grow into a heart-shaped form. -->
+  <RI_Plant_InchHeartFern.description>一种蕨类，喜好湿润且通风的环境，这种蕨类叶片为心形。</RI_Plant_InchHeartFern.description>
+  
+  <!-- EN: peach tree -->
+  <RI_Plant_PeachTree.label>桃树</RI_Plant_PeachTree.label>
+  <!-- EN: People have cultivated peach trees for a long history. When the fruit ripens, peaches can be harvested. In spring, soft pink blossoms cover the branches, and in autumn the trees bear fruit. -->
+  <RI_Plant_PeachTree.description>人们种植桃树已有悠久的历史。这种果树成熟后可以收获桃子，春天粉色桃花盛开，秋天结果。</RI_Plant_PeachTree.description>
+  
+  <!-- EN: phantom gold lotus -->
+  <RI_Plant_PhantomGoldLotus.label>幻金莲</RI_Plant_PhantomGoldLotus.label>
+  <!-- EN: The Phantom Gold Lotus prefers shade and grows in deep forests and streamside wetlands. Its petals are golden, and the stamens carry a faint, lingering fragrance. -->
+  <RI_Plant_PhantomGoldLotus.description>幻金莲喜阴，多生于幽密林间或溪涧湿地。花瓣金黄，花蕊散发着淡淡香气。</RI_Plant_PhantomGoldLotus.description>
+  
+  <!-- EN: purple fern -->
+  <RI_Plant_PurpleFern.label>紫彩蕨</RI_Plant_PurpleFern.label>
+  <!-- EN: A fern that grows in humid, ventilated environments. As it matures, its fronds turn a deep purple and develop a subtle metallic sheen. -->
+  <RI_Plant_PurpleFern.description>一种蕨类，喜好湿润且通风的环境。成长后，叶片颜色会变为紫色，带有金属光泽。</RI_Plant_PurpleFern.description>
+  
+</LanguageData>

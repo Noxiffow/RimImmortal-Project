@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: black brick plastered floor -->
+  <RI_FinePlasteredFloorBlackBrick.label>青砖细墁地面</RI_FinePlasteredFloorBlackBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorBlackBrick.description>TODO</RI_FinePlasteredFloorBlackBrick.description>
+  
+  <!-- EN: granite plastered floor -->
+  <RI_FinePlasteredFloorGranite.label>花岗岩细墁地面</RI_FinePlasteredFloorGranite.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorGranite.description>TODO</RI_FinePlasteredFloorGranite.description>
+  
+  <!-- EN: limestone plastered floor -->
+  <RI_FinePlasteredFloorLimestone.label>石灰岩细墁地面</RI_FinePlasteredFloorLimestone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorLimestone.description>TODO</RI_FinePlasteredFloorLimestone.description>
+  
+  <!-- EN: marble plastered floor -->
+  <RI_FinePlasteredFloorMarble.label>大理石细墁地面</RI_FinePlasteredFloorMarble.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorMarble.description>TODO</RI_FinePlasteredFloorMarble.description>
+  
+  <!-- EN: red brick plastered floor -->
+  <RI_FinePlasteredFloorRedBrick.label>红砖细墁地面</RI_FinePlasteredFloorRedBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorRedBrick.description>TODO</RI_FinePlasteredFloorRedBrick.description>
+  
+  <!-- EN: sandstone plastered floor -->
+  <RI_FinePlasteredFloorSandstone.label>砂岩细墁地面</RI_FinePlasteredFloorSandstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorSandstone.description>TODO</RI_FinePlasteredFloorSandstone.description>
+  
+  <!-- EN: slate plastered floor -->
+  <RI_FinePlasteredFloorSlate.label>板岩细墁地面</RI_FinePlasteredFloorSlate.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FinePlasteredFloorSlate.description>TODO</RI_FinePlasteredFloorSlate.description>
+  
+  <!-- EN: black brick diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileBlackBrick.label>青砖斜墁</RI_Floor_DiagonalSquareTileBlackBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileBlackBrick.description>TODO</RI_Floor_DiagonalSquareTileBlackBrick.description>
+  
+  <!-- EN: granite diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileGranite.label>花岗岩斜墁</RI_Floor_DiagonalSquareTileGranite.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileGranite.description>TODO</RI_Floor_DiagonalSquareTileGranite.description>
+  
+  <!-- EN: limestone diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileLimestone.label>石灰岩斜墁</RI_Floor_DiagonalSquareTileLimestone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileLimestone.description>TODO</RI_Floor_DiagonalSquareTileLimestone.description>
+  
+  <!-- EN: marble diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileMarble.label>大理石斜墁</RI_Floor_DiagonalSquareTileMarble.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileMarble.description>TODO</RI_Floor_DiagonalSquareTileMarble.description>
+  
+  <!-- EN: red brick diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileRedBrick.label>红砖斜墁</RI_Floor_DiagonalSquareTileRedBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileRedBrick.description>TODO</RI_Floor_DiagonalSquareTileRedBrick.description>
+  
+  <!-- EN: sandstone diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileSandstone.label>砂岩斜墁</RI_Floor_DiagonalSquareTileSandstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileSandstone.description>TODO</RI_Floor_DiagonalSquareTileSandstone.description>
+  
+  <!-- EN: slate diagonal square tile -->
+  <RI_Floor_DiagonalSquareTileSlate.label>板岩斜墁</RI_Floor_DiagonalSquareTileSlate.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_Floor_DiagonalSquareTileSlate.description>TODO</RI_Floor_DiagonalSquareTileSlate.description>
+  
+  <!-- EN: black brick ice-crack brick tile -->
+  <RI_IceCrackStoneBrickBlackBrick.label>青砖冰裂纹石板</RI_IceCrackStoneBrickBlackBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickBlackBrick.description>TODO</RI_IceCrackStoneBrickBlackBrick.description>
+  
+  <!-- EN: granite ice-crack brick tile -->
+  <RI_IceCrackStoneBrickGranite.label>花岗岩冰裂纹石板</RI_IceCrackStoneBrickGranite.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickGranite.description>TODO</RI_IceCrackStoneBrickGranite.description>
+  
+  <!-- EN: limestone ice-crack brick tile -->
+  <RI_IceCrackStoneBrickLimestone.label>石灰岩冰裂纹石板</RI_IceCrackStoneBrickLimestone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickLimestone.description>TODO</RI_IceCrackStoneBrickLimestone.description>
+  
+  <!-- EN: marble ice-crack brick tile -->
+  <RI_IceCrackStoneBrickMarble.label>大理石冰裂纹石板</RI_IceCrackStoneBrickMarble.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickMarble.description>TODO</RI_IceCrackStoneBrickMarble.description>
+  
+  <!-- EN: red brick ice-crack brick tile -->
+  <RI_IceCrackStoneBrickRedBrick.label>红砖冰裂纹石板</RI_IceCrackStoneBrickRedBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickRedBrick.description>TODO</RI_IceCrackStoneBrickRedBrick.description>
+  
+  <!-- EN: sandstone ice-crack brick tile -->
+  <RI_IceCrackStoneBrickSandstone.label>砂岩冰裂纹石板</RI_IceCrackStoneBrickSandstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickSandstone.description>TODO</RI_IceCrackStoneBrickSandstone.description>
+  
+  <!-- EN: slate ice-crack brick tile -->
+  <RI_IceCrackStoneBrickSlate.label>板岩冰裂纹石板</RI_IceCrackStoneBrickSlate.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_IceCrackStoneBrickSlate.description>TODO</RI_IceCrackStoneBrickSlate.description>
+  
+  <!-- EN: black brick flake floor -->
+  <RI_Tile_FlakeFloorBlackBrick.label>青砖石片铺地</RI_Tile_FlakeFloorBlackBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorBlackBrick.description>TODO</RI_Tile_FlakeFloorBlackBrick.description>
+  
+  <!-- EN: granite flake floor -->
+  <RI_Tile_FlakeFloorGranite.label>花岗岩石片铺地</RI_Tile_FlakeFloorGranite.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorGranite.description>TODO</RI_Tile_FlakeFloorGranite.description>
+  
+  <!-- EN: limestone flake floor -->
+  <RI_Tile_FlakeFloorLimestone.label>石灰岩石片铺地</RI_Tile_FlakeFloorLimestone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorLimestone.description>TODO</RI_Tile_FlakeFloorLimestone.description>
+  
+  <!-- EN: marble flake floor -->
+  <RI_Tile_FlakeFloorMarble.label>大理石石片铺地</RI_Tile_FlakeFloorMarble.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorMarble.description>TODO</RI_Tile_FlakeFloorMarble.description>
+  
+  <!-- EN: red brick flake floor -->
+  <RI_Tile_FlakeFloorRedBrick.label>红砖石片铺地</RI_Tile_FlakeFloorRedBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorRedBrick.description>TODO</RI_Tile_FlakeFloorRedBrick.description>
+  
+  <!-- EN: sandstone flake floor -->
+  <RI_Tile_FlakeFloorSandstone.label>砂岩石片铺地</RI_Tile_FlakeFloorSandstone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorSandstone.description>TODO</RI_Tile_FlakeFloorSandstone.description>
+  
+  <!-- EN: slate flake floor -->
+  <RI_Tile_FlakeFloorSlate.label>板岩石片铺地</RI_Tile_FlakeFloorSlate.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_Tile_FlakeFloorSlate.description>TODO</RI_Tile_FlakeFloorSlate.description>
+  
+</LanguageData>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- 克己 -->
+    <Zd_DiligenceArm.label>勤工臂</Zd_DiligenceArm.label>
+    <Zd_DiligenceArm.labelNoun>勤工臂</Zd_DiligenceArm.labelNoun>
+    <Zd_DiligenceArm.description>修行非一蹴而就之事，需以勤劳之心，持续不断地耕耘。\n\n增加采矿和务农技能和效率</Zd_DiligenceArm.description>
+
+    <Zd_CraftsmanshipArm.label>匠心臂</Zd_CraftsmanshipArm.label>
+    <Zd_CraftsmanshipArm.labelNoun>匠心臂</Zd_CraftsmanshipArm.labelNoun>
+    <Zd_CraftsmanshipArm.description>"心如工画师，能画诸世间。五蕴悉从生，无法而不造。"\n我们的心如同画师，能够绘制出世间万象，而修行正是要描绘出内心的清净与智慧。\n\n增加艺术和手工效率</Zd_CraftsmanshipArm.description>
+
+    <Zd_PrajnaLeg.label>般若腿</Zd_PrajnaLeg.label>
+    <Zd_PrajnaLeg.labelNoun>般若腿</Zd_PrajnaLeg.labelNoun>
+    <Zd_PrajnaLeg.description>般若的含义是辨识智慧、辨识才智\n影响研究速度</Zd_PrajnaLeg.description>
+
+    <Zd_DevoteLeg.label>笃行腿</Zd_DevoteLeg.label>
+    <Zd_DevoteLeg.labelNoun>笃行腿</Zd_DevoteLeg.labelNoun>
+    <Zd_DevoteLeg.description>"欲速则不达。"\n修行如同攀登高峰，需一步一个脚印，稳健前行。若贪图捷径，往往会导致根基不稳</Zd_DevoteLeg.description>
+
+    <Zd_AsceticismStomach.label>斋藏胃</Zd_AsceticismStomach.label>
+    <Zd_AsceticismStomach.labelNoun>斋藏胃</Zd_AsceticismStomach.labelNoun>
+    <Zd_AsceticismStomach.description>一切有为法，如梦幻泡影，如露亦如电，应作如是观</Zd_AsceticismStomach.description>
+
+    <Zd_EloquenceTongue.label>辩才舌</Zd_EloquenceTongue.label>
+    <Zd_EloquenceTongue.labelNoun>辩才舌</Zd_EloquenceTongue.labelNoun>
+    <Zd_EloquenceTongue.description>"菩提本无树，明镜亦非台"</Zd_EloquenceTongue.description>
+
+    <Zd_KeenEyes.label>慧眼</Zd_KeenEyes.label>
+    <Zd_KeenEyes.labelNoun>慧眼</Zd_KeenEyes.labelNoun>
+    <Zd_KeenEyes.description>“得慧眼，不见众生，尽灭一异相。”\n\n增加射击和瞄准效率</Zd_KeenEyes.description>
+
+    <!-- 明心 -->
+    <Zd_ThunderLung.label>梵鸣肺</Zd_ThunderLung.label>
+    <Zd_ThunderLung.labelNoun>梵鸣肺</Zd_ThunderLung.labelNoun>
+    <Zd_ThunderLung.description>伴随着每一次呼吸，似乎都有隐隐的佛经念颂声，当大声吼叫时，定能震慑众生。 \n\n附加能力：狮子吼</Zd_ThunderLung.description>
+
+    <Zd_GlaringEye.label>怒目</Zd_GlaringEye.label>
+    <Zd_GlaringEye.labelNoun>怒目</Zd_GlaringEye.labelNoun>
+    <Zd_GlaringEye.description>看似慈眉善目，然而隐隐也有丝丝火光闪烁。"佛虽慈悲亦有怒，三分火性隐心中。" \n\n附加能力：怒目</Zd_GlaringEye.description>
+
+    <Zd_UnshakeableArm.label>不动臂</Zd_UnshakeableArm.label>
+    <Zd_UnshakeableArm.labelNoun>不动臂</Zd_UnshakeableArm.labelNoun>
+    <Zd_UnshakeableArm.description>肌肉坚实，如同石头一般，给人以十足的安全感。 附加能力：抚顶</Zd_UnshakeableArm.description>
+
+    <Zd_VajraArm.label>金刚臂</Zd_VajraArm.label>
+    <Zd_VajraArm.labelNoun>金刚臂</Zd_VajraArm.labelNoun>
+    <Zd_VajraArm.description>肌肉虬结，表面隐隐流光闪烁，如同金刚石一般。 附加能力：撼山拳，慈悲掌</Zd_VajraArm.description>
+
+    <Zd_DivineLightLeg.label>圆光腿</Zd_DivineLightLeg.label>
+    <Zd_DivineLightLeg.labelNoun>圆光腿</Zd_DivineLightLeg.labelNoun>
+    <Zd_DivineLightLeg.description>踩在地上时，地面仿若水面一样泛出涟漪，仔细一观，似乎又什么都没有。\n\n 附加能力：圆光腿</Zd_DivineLightLeg.description>
+
+    <Zd_LotusLeg.label>莲花腿</Zd_LotusLeg.label>
+    <Zd_LotusLeg.labelNoun>莲花腿</Zd_LotusLeg.labelNoun>
+    <Zd_LotusLeg.description>花开见佛，步步生莲。\n\n 附加能力：梵界</Zd_LotusLeg.description>
+
+    <!-- 舍身 -->
+    <NzRI_Zd_CrimsonEyes.label>猩红眼</NzRI_Zd_CrimsonEyes.label>
+    <NzRI_Zd_CrimsonEyes.labelNoun>猩红眼</NzRI_Zd_CrimsonEyes.labelNoun>
+    <NzRI_Zd_CrimsonEyes.description>闪烁着猩红的光芒，这与你在那座古怪的巨石上看到的条纹几乎一致</NzRI_Zd_CrimsonEyes.description>
+
+    <NzRI_Zd_StrangeTongue.label>怪异舌</NzRI_Zd_StrangeTongue.label>
+    <NzRI_Zd_StrangeTongue.labelNoun>怪异舌</NzRI_Zd_StrangeTongue.labelNoun>
+    <NzRI_Zd_StrangeTongue.description>上面覆盖了诡异的纹路，扭曲仿若蛇舌，隐隐还有眼球连接在其上</NzRI_Zd_StrangeTongue.description>
+
+    <NzRI_Zd_HypertrophyLiver.label>增生肝</NzRI_Zd_HypertrophyLiver.label>
+    <NzRI_Zd_HypertrophyLiver.labelNoun>增生肝</NzRI_Zd_HypertrophyLiver.labelNoun>
+    <NzRI_Zd_HypertrophyLiver.description>时不时传来隐隐的胀痛</NzRI_Zd_HypertrophyLiver.description>
+
+    <NzRI_Zd_AbscessArm.label>脓疮臂</NzRI_Zd_AbscessArm.label>
+    <NzRI_Zd_AbscessArm.labelNoun>脓疮臂</NzRI_Zd_AbscessArm.labelNoun>
+    <NzRI_Zd_AbscessArm.description>你的手臂上面覆盖着脓疱，其他部分也呈现半腐烂状态，打击生物目标，会让目标感到恶心</NzRI_Zd_AbscessArm.description>
+
+    <NzRI_Zd_CoiledArm.label>盘卷臂</NzRI_Zd_CoiledArm.label>
+    <NzRI_Zd_CoiledArm.labelNoun>盘卷臂</NzRI_Zd_CoiledArm.labelNoun>
+    <NzRI_Zd_CoiledArm.description>一条真正的触须，在坚硬和柔软之间快速变动着，\n\n在'大傩'以外的世界，似乎司命'五智如来'的回应被某种可怕的东西截取了</NzRI_Zd_CoiledArm.description>
+
+    <NzRI_Zd_TwistedLeg.label>扭结腿</NzRI_Zd_TwistedLeg.label>
+    <NzRI_Zd_TwistedLeg.labelNoun>扭结腿</NzRI_Zd_TwistedLeg.labelNoun>
+    <NzRI_Zd_TwistedLeg.description>这条腿扭结错乱，几乎没有骨骼，如触须一般，缺格外坚韧灵活</NzRI_Zd_TwistedLeg.description>
+
+    <NzRI_Zd_WitheredLeg.label>枯败腿</NzRI_Zd_WitheredLeg.label>
+    <NzRI_Zd_WitheredLeg.labelNoun>枯败腿</NzRI_Zd_WitheredLeg.labelNoun>
+    <NzRI_Zd_WitheredLeg.description>这条腿黑瘦枯干，却格外结实有力，上面覆满了丑陋的疤痕和螺纹，还散发出腐肉般的臭味，还有一种奇异的兼具有机物与金属的特性的纤维物质点缀其中</NzRI_Zd_WitheredLeg.description>
+
+</LanguageData>

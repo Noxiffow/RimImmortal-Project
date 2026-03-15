@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Light bullet -->
+  <RI_Bullet_BigSniperTurrent.label>光弹</RI_Bullet_BigSniperTurrent.label>
+  
+  <!-- EN: Light bullet -->
+  <RI_Bullet_SmallCrossbowTurret.label>光弹</RI_Bullet_SmallCrossbowTurret.label>
+  
+  <!-- EN: Light bullet -->
+  <RI_Bullet_SmallShotgunTurret.label>光弹</RI_Bullet_SmallShotgunTurret.label>
+  
+  <!-- EN: "Flood Dragon" turrent -->
+  <RI_Gun_BigSniperTurrent.label>“怒蛟”炮台</RI_Gun_BigSniperTurrent.label>
+  <!-- EN: "Flood Dragon" turrent. -->
+  <RI_Gun_BigSniperTurrent.description>“怒蛟”炮台。</RI_Gun_BigSniperTurrent.description>
+  <!-- EN: "Flood Dragon" turrent -->
+  <RI_Gun_BigSniperTurrent.verbs.Verb_Shoot.label>“怒蛟”炮台</RI_Gun_BigSniperTurrent.verbs.Verb_Shoot.label>
+  
+  <!-- EN: "Crane Cry" auto-turret gun -->
+  <RI_Gun_SmallCrossbowTurrent.label>“鹤鸣”炮台</RI_Gun_SmallCrossbowTurrent.label>
+  <!-- EN: "Crane Cry" auto-turret gun. -->
+  <RI_Gun_SmallCrossbowTurrent.description>“鹤鸣”炮台。</RI_Gun_SmallCrossbowTurrent.description>
+  <!-- EN: "Crane Cry" auto-turret gun -->
+  <RI_Gun_SmallCrossbowTurrent.verbs.Verb_Shoot.label>“鹤鸣”炮台</RI_Gun_SmallCrossbowTurrent.verbs.Verb_Shoot.label>
+  
+  <!-- EN: "Whale Gulp" auto-turret gun -->
+  <RI_Gun_SmallShotgunTurret.label>“鲸吞”炮台</RI_Gun_SmallShotgunTurret.label>
+  <!-- EN: "Whale Gulp" auto-turret gun. -->
+  <RI_Gun_SmallShotgunTurret.description>“鲸吞”炮台。</RI_Gun_SmallShotgunTurret.description>
+  <!-- EN: "Whale Gulp" auto-turret gun -->
+  <RI_Gun_SmallShotgunTurret.verbs.Verb_Shoot.label>“鲸吞”炮台</RI_Gun_SmallShotgunTurret.verbs.Verb_Shoot.label>
+  
+  <!-- EN: "Flood Dragon" sniper turret -->
+  <RI_Turret_BigSniperTurrent.label>“怒蛟”狙击炮</RI_Turret_BigSniperTurrent.label>
+  <!-- EN: "Flood Dragon" sniper turret is a highly effective yet logistically demanding large turret. Built upon advanced firearm technology, it boasts an exceptionally long range while maintaining deadly accuracy and firepower.\n\nThis turret consumes Spiritual crystal as ammunition but also contains power-consuming components, requiring electricity. -->
+  <RI_Turret_BigSniperTurrent.description>怒蛟狙击炮是一种性能优秀，但同时也令后勤头疼的一种大型炮台。这种狙击炮基于先进的枪械科技改进而来，射程极远的同时，还确保了可怕的精度和杀伤性。\n\n这种炮台以灵石作为弹药消耗，但内部也有耗电元件，所以需要充电。</RI_Turret_BigSniperTurrent.description>
+  <!-- EN: Crystal durability -->
+  <RI_Turret_BigSniperTurrent.comps.CompRefuelable.fuelGizmoLabel>灵石剩余</RI_Turret_BigSniperTurrent.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <RI_Turret_BigSniperTurrent.comps.CompRefuelable.fuelLabel>装填灵石前的发射</RI_Turret_BigSniperTurrent.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Needs crystal -->
+  <RI_Turret_BigSniperTurrent.comps.CompRefuelable.outOfFuelMessage>需要灵石</RI_Turret_BigSniperTurrent.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: "Crane Cry" auto-turret -->
+  <RI_Turret_SmallCrossbowTurret.label>“鹤鸣”连射弩炮</RI_Turret_SmallCrossbowTurret.label>
+  <!-- EN: "Crane Cry" auto-turret is an automatic defense turret developed from basic magical treasure technology with military improvements. This turret boasts high firing speed and long range while being easy to maintain and not exploding upon destruction.\n\nThis turret consumes Spiritual crystal as ammunition but also contains power-consuming components, requiring electricity. -->
+  <RI_Turret_SmallCrossbowTurret.description>鹤鸣连射弩炮是基于基础法宝技术，在现有的自动炮技术上改进而来的一种防卫炮台。这种炮台具有射速高，距离远的优点，同时维护简单，损毁后并不会爆炸。\n\n这种炮台以灵石作为弹药消耗，但内部也有耗电元件，所以需要充电。</RI_Turret_SmallCrossbowTurret.description>
+  <!-- EN: Crystal durability -->
+  <RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.fuelGizmoLabel>灵石剩余</RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.fuelLabel>装填灵石前的发射</RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Needs crystal -->
+  <RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.outOfFuelMessage>需要灵石</RI_Turret_SmallCrossbowTurret.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: "Whale Gulp" auto-turret -->
+  <RI_Turret_SmallShotgunTurret.label>“鲸吞”防卫炮</RI_Turret_SmallShotgunTurret.label>
+  <!-- EN: "Whale Gulp" auto-turret is a close-range turret with an improved firing port and reinforced armor. It unleashes devastating firepower at close distances but is ineffective against distant enemies.\n\nThis turret consumes Spiritual crystal as ammunition but also contains power-consuming components, requiring electricity. -->
+  <RI_Turret_SmallShotgunTurret.description>鲸吞防卫炮是一种改进了发射口，同时加强了护甲的近距离炮台，这种防卫炮可以在近距离倾泻恐怖的火力，但无法应对远距离的敌人。\n\n这种炮台以灵石作为弹药消耗，但内部也有耗电元件，所以需要充电。</RI_Turret_SmallShotgunTurret.description>
+  <!-- EN: Crystal durability -->
+  <RI_Turret_SmallShotgunTurret.comps.CompRefuelable.fuelGizmoLabel>灵石剩余</RI_Turret_SmallShotgunTurret.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <RI_Turret_SmallShotgunTurret.comps.CompRefuelable.fuelLabel>装填灵石前的发射</RI_Turret_SmallShotgunTurret.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Needs crystal -->
+  <RI_Turret_SmallShotgunTurret.comps.CompRefuelable.outOfFuelMessage>需要灵石</RI_Turret_SmallShotgunTurret.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

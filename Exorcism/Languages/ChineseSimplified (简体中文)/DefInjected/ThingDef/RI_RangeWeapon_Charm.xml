@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: control light -->
+  <RI_Bullet_ControlLight.label>定身金光</RI_Bullet_ControlLight.label>
+  
+  <!-- EN: flame arrow -->
+  <RI_Bullet_FireArrowCharm.label>火矢</RI_Bullet_FireArrowCharm.label>
+  
+  <!-- EN: flash blade -->
+  <RI_Bullet_FlashBlade.label>锋芒</RI_Bullet_FlashBlade.label>
+  
+  <!-- EN: Flash blade charms -->
+  <RI_CharmWeapon_BladeCharm.label>神锋符</RI_CharmWeapon_BladeCharm.label>
+  <!-- EN: A stack of inscribed charms, reusable.\n\nThe Flash blade charm unleashes a blinding slash at high speed, often reducing foes to fragments before they even realize what has happened.\n\nIts destructive force is so great that the Daoist sect strictly forbids its use during sparring among fellow disciples. -->
+  <RI_CharmWeapon_BladeCharm.description>一叠绘制好的符，可以多次使用。\n\n神锋符以高速射出闪光锋芒，往往敌人还不知发生何事就被斩为碎片。\n\n这种符咒威力强大，在道门内部禁止对同门切磋时使用。</RI_CharmWeapon_BladeCharm.description>
+  <!-- EN: Flash blade charms -->
+  <RI_CharmWeapon_BladeCharm.verbs.Verb_Shoot.label>神锋符</RI_CharmWeapon_BladeCharm.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Flame arrow charm -->
+  <RI_CharmWeapon_FireArrowCharm.label>火矢符</RI_CharmWeapon_FireArrowCharm.label>
+  <!-- EN: A stack of inscribed charms, reusable.\n\nThe Flame arrow charm fires a flame arrow of considerable power—but one must take care not to set the surroundings ablaze. -->
+  <RI_CharmWeapon_FireArrowCharm.description>一叠绘制好的符，可以多次使用。\n\n火矢符可以射出威力不俗的火矢，不过也要小心不要引发大火。</RI_CharmWeapon_FireArrowCharm.description>
+  <!-- EN: Flame arrow charm -->
+  <RI_CharmWeapon_FireArrowCharm.verbs.Verb_Shoot.label>火矢符</RI_CharmWeapon_FireArrowCharm.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Spirit control charms -->
+  <RI_CharmWeapon_SpiritControlCharm.label>定魂符</RI_CharmWeapon_SpiritControlCharm.label>
+  <!-- EN: A stack of inscribed charms, reusable.\n\nThe Spirit control charm releases a burst of golden light that briefly restrains the target’s movements. Whether attacking or retreating, it proves extremely handy. -->
+  <RI_CharmWeapon_SpiritControlCharm.description>一叠绘制好的符，可以多次使用。\n\n定魂符可以射出金光，短暂束缚目标的行动。无论是进攻还是逃跑，都十分好用。</RI_CharmWeapon_SpiritControlCharm.description>
+  <!-- EN: Spirit control charms -->
+  <RI_CharmWeapon_SpiritControlCharm.verbs.Verb_Shoot.label>定魂符</RI_CharmWeapon_SpiritControlCharm.verbs.Verb_Shoot.label>
+  
+</LanguageData>

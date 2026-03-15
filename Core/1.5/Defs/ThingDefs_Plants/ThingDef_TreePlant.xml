@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TreeBase" Name="TreeAnima">
+		<defName>RI_Tree_QingMing</defName>
+		<label>QingMing tree</label>
+		<description>The blue sky shakes the smoke tree, the sky crosses the negative stone.\n\nQingMing tree has the ability to gather Qi, the trunk is strong, the branches and leaves are lush, and the precious heartwood can be harvested for the production of QingMing jade wine. It is said that this tree comes from an ancient five-element Initial approach, the wood element, which they created to expand the population of cultivators.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Tree_QingMing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.21, 0.6, 0.21)</volume>
+			</shadowData>
+		</graphicData>
+		<drawGUIOverlay>True</drawGUIOverlay>
+		<minifiedDef IsNull="True" />
+		<statBases>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<MeditationFocusStrength>0.28</MeditationFocusStrength>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<ingestible />
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<canScatterOver>false</canScatterOver>
+		<plant>
+			<growDays>15</growDays>
+			<visualSizeRange>1.8~2.5</visualSizeRange>
+			<sowMinSkill>0</sowMinSkill>
+			<sowTags Inherit="False"/>
+			<sowWork>400</sowWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>1</harvestYield>
+			<harvestedThingDef>RI_Resource_QingMingMarrow</harvestedThingDef>
+			<harvestFailable>false</harvestFailable>
+			<dieIfNoSunlight>False</dieIfNoSunlight>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<fertilityMin>0.02</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False" />
+			<treeCategory>Super</treeCategory>
+			<allowAutoCut>true</allowAutoCut>
+			<warnIfMarkedForCut>true</warnIfMarkedForCut>
+			<choppedThingDef>ChoppedStump_Anima</choppedThingDef>
+			<smashedThingDef>SmashedStump_Anima</smashedThingDef>
+			<immatureGraphicPath>Things/Plant/RI_Tree_QingMing_Grow</immatureGraphicPath>
+		</plant>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Natural</li>
+				</focusTypes>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(110,116,125,0)</glowColor>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal>
+			</li>
+			<li Class="CompProperties_CauseHediff_AoE">
+				<!--心情部分-->
+				<range>250</range>
+				<ignoreMechs>true</ignoreMechs>
+				<hediff>RI_Hediff_QingMing</hediff>
+				<activeSound>MechBooster_Working</activeSound>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>RI_Hediff_QingMing</defName>
+		<label>青冥树抚慰</label>
+		<labelNoun>青冥树抚慰</labelNoun>
+		<description>青冥树抚慰</description>
+		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<!--隐藏-->
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

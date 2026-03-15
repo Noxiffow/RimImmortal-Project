@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase" Name="RI_Base_EatMedicine" Abstract="True">
+		<thingClass>Medicine</thingClass>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<soundInteract>RI_Sound_DropHerb</soundInteract>
+		<soundDrop>RI_Sound_DropHerb</soundDrop>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Drugs</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--=================药品前置=================-->
+	<ThingDef Name="RI_Base_Drug" ParentName="RI_Base_EatMedicine" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<possessionCount>3</possessionCount>
+		<rotatable>false</rotatable>
+		<techLevel>Neolithic</techLevel>
+		<soundInteract>RI_Sound_DropHerb</soundInteract>
+		<soundDrop>RI_Sound_DropHerb</soundDrop>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<Mass>0.05</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<!--服用-->
+			<ingestCommandString>take {0}</ingestCommandString>
+			<!--服用中-->
+			<ingestReportString>taking {0}</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<chairSearchRadius>7</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+		</ingestible>
+		<!--携带分类-->
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--安魂汤-->
+	<ThingDef ParentName="RI_Base_Drug">
+		<defName>RI_Drug_TranquilizingSoup</defName>
+		<label>【Third-rate】Tranquilizing soup</label>
+		<description>Third-rate liquid, made by phantom gold lotus. A brown medicinal decoction with little to no pungent odor; drinking it will cause the consumer to fall into a deep sleep.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Drug_TranquilizingSoup</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>70</MarketValue>
+		</statBases>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_DrugTranquilizing</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+
+</Defs>

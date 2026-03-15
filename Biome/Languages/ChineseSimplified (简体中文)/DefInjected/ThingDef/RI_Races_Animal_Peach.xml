@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chang You -->
+  <RI_Animal_ChangYou.label>长右</RI_Animal_ChangYou.label>
+  <!-- EN: “There is a beast called Chang You. It resembles a monkey and has four ears. Its cry sounds like chanting, and when it appears, great floods will strike the surrounding commanderies and counties.”\n\nChang You is a small monkey-like creature with four ears and a highly agile body, capable of climbing tall trees with ease. According to scientific studies, its four ears are a form of genetic redundancy and do not provide any additional auditory advantage. -->
+  <RI_Animal_ChangYou.description>有兽焉，其状如禺而四耳，其名长右，其音如吟，见则郡县大水。\n\n长右是一种体型不大的猴子，有四只耳朵，身形灵活，能够攀爬高大的树木。据科学家研究，长右的四只耳朵属于一类基因冗余，并没有对听力产生什么额外影响。</RI_Animal_ChangYou.description>
+  <!-- EN: left fist -->
+  <RI_Animal_ChangYou.tools.left_fist.label>左爪</RI_Animal_ChangYou.tools.left_fist.label>
+  <!-- EN: fist -->
+  <RI_Animal_ChangYou.tools.left_fist.labelNoLocation>爪</RI_Animal_ChangYou.tools.left_fist.labelNoLocation>
+  <!-- EN: right fist -->
+  <RI_Animal_ChangYou.tools.right_fist.label>右爪</RI_Animal_ChangYou.tools.right_fist.label>
+  <!-- EN: fist -->
+  <RI_Animal_ChangYou.tools.right_fist.labelNoLocation>爪</RI_Animal_ChangYou.tools.right_fist.labelNoLocation>
+  
+  <!-- EN: Lei cat -->
+  <RI_Animal_LeiCat.label>类</RI_Animal_LeiCat.label>
+  <!-- EN: The Lei Cat resembles a slightly larger domestic cat. It has longer fur on its head, a nimble body, and smooth, supple fur marked with dark patterns.\n\nThese animals are solitary by nature and are only occasionally spotted in the mountains and wilderness. Local residents refer to similar creatures as “Xiangmao” (literally “fragrant-furred”). -->
+  <RI_Animal_LeiCat.description>类的样子像较大的猫，脑袋上有较长的毛发，身形灵巧，皮毛柔顺，身上有深色花纹。\n\n它们是独居动物，偶尔在山野间被发现，当地居民将类似生物称作“香髦”。</RI_Animal_LeiCat.description>
+  <!-- EN: left claw -->
+  <RI_Animal_LeiCat.tools.left_claw.label>左爪</RI_Animal_LeiCat.tools.left_claw.label>
+  <!-- EN: right claw -->
+  <RI_Animal_LeiCat.tools.right_claw.label>右爪</RI_Animal_LeiCat.tools.right_claw.label>
+  <!-- EN: teeth -->
+  <RI_Animal_LeiCat.tools.teeth.label>牙</RI_Animal_LeiCat.tools.teeth.label>
+  
+  <!-- EN: Li Li -->
+  <RI_Animal_LiLi.label>狸力</RI_Animal_LiLi.label>
+  <!-- EN: “There is a beast known as Li Li. It resembles a pig, has prominent claws, and its cry sounds like a dog’s bark. When it appears, extensive earthworks are sure to follow.”\n\nLi Li is a small pig-like creature with a timid nature, feeding on insects in the soil as well as melons and fruits. It has sharp claws and a strong instinct for burrowing, spending most of its life in tunnels it digs itself. Whenever humans engage in large-scale construction, Li Li are driven out by the disturbance, bursting from the ground and fleeing in panic.\n\nIn some cultures, Li Li have been trained to assist in digging and mining, a practice that has drawn strong condemnation from animal protection groups. -->
+  <RI_Animal_LiLi.description>有兽焉，其状如豚，有距，其音如狗吠，其名曰狸力，见则其县多土功。\n\n狸力是一种外形酷似小猪的动物，生性胆小，以泥土中的昆虫和瓜果为食。他们爪子锋利，喜好打洞，平日居住在挖掘的隧道中。每当人类大兴土木之时，狸力便不堪其扰，纷纷破土而出，惊慌逃跑。\n\n在一些文化中，有训练狸力用来挖掘开采矿石的事迹，这受到了动物保护组织的严厉谴责。</RI_Animal_LiLi.description>
+  <!-- EN: left claw -->
+  <RI_Animal_LiLi.tools.left_claw.label>左爪</RI_Animal_LiLi.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_LiLi.tools.left_claw.labelNoLocation>爪</RI_Animal_LiLi.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_Animal_LiLi.tools.right_claw.label>右爪</RI_Animal_LiLi.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_LiLi.tools.right_claw.labelNoLocation>爪</RI_Animal_LiLi.tools.right_claw.labelNoLocation>
+  
+  <!-- EN: Lu Shu -->
+  <RI_Animal_LuShu.label>鹿蜀</RI_Animal_LuShu.label>
+  <!-- EN: “On Mount Niuyang there is a beast. It resembles a horse with a white head, bears patterns like those of a tiger, and has a red tail. Its cry sounds like a chant. Its name is Lu Shu, and wearing its talisman is said to bring prosperity to one’s descendants.”\n\nLu Shu is a small, even-toed ungulate with beautiful markings and remarkable speed. They usually live and move in small groups led by a single male Lu Shu.\n\nLu Shu can be milked, and once domesticated, they may be used as pack animals. However, their carrying capacity is limited, making them unsuitable for long-distance travel. -->
+  <RI_Animal_LuShu.description>扭阳之山，有兽焉，其状如马而白首，其文如虎而赤尾，其音如谣，其名日鹿蜀，佩之宜子孙。\n\n鹿蜀是一种有着美丽花纹的偶蹄目动物，体型较小，奔跑速度极快。它们通常以小团体活动，由一只雄性鹿蜀带领。\n\n鹿蜀可以产奶，驯服后还能作为驮运动物，不过载重量较少，无法适应长途旅行。</RI_Animal_LuShu.description>
+  <RI_Animal_LuShu.race.meatLabel>鹿蜀肉</RI_Animal_LuShu.race.meatLabel>
+  <!-- EN: left hoof -->
+  <RI_Animal_LuShu.tools.left_hoof.label>左蹄</RI_Animal_LuShu.tools.left_hoof.label>
+  <!-- EN: hoof -->
+  <RI_Animal_LuShu.tools.left_hoof.labelNoLocation>蹄</RI_Animal_LuShu.tools.left_hoof.labelNoLocation>
+  <!-- EN: right hoof -->
+  <RI_Animal_LuShu.tools.right_hoof.label>右蹄</RI_Animal_LuShu.tools.right_hoof.label>
+  <!-- EN: hoof -->
+  <RI_Animal_LuShu.tools.right_hoof.labelNoLocation>蹄</RI_Animal_LuShu.tools.right_hoof.labelNoLocation>
+  
+  <!-- EN: Xuan turtle -->
+  <RI_Animal_XuanTurtle.label>旋龟</RI_Animal_XuanTurtle.label>
+  <!-- EN: “The Xuan turtle resembles a tortoise, yet bears the head of a bird and the tail of a viper. Its name is Xuan turtle; its sounds like wood being split. Wearing it wards off deafness, and it may also serve as a foundation.”\n\nXuan turtles favor quiet stretches of forest streams and still waters. Far more aggressive than ordinary turtles, their sharp, curved beaks can easily tear flesh, while their powerful limbs allow them to traverse rugged terrain and even climb rock faces. Xuan turtles are averse to heat; during summer, their flattened bodies slip into crevices between streambed stones to escape the high temperatures. -->
+  <RI_Animal_XuanTurtle.description>玄龟，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。\n\n旋龟喜欢生活在森林溪流静水区域。比起寻常龟类，它们更有攻击性，尖锐弯曲的喙部可以轻松撕开皮肉，粗壮的四肢让它们能够跋山涉水，甚至是攀爬岩壁。旋龟害怕炎热，在夏季，旋龟扁平的身子可以藏在溪流石缝中躲避高温。</RI_Animal_XuanTurtle.description>
+  <!-- EN: beak -->
+  <RI_Animal_XuanTurtle.tools.beak.label>喙</RI_Animal_XuanTurtle.tools.beak.label>
+  
+  <!-- EN: Xuan turtle egg (fert.) -->
+  <RI_Thing_EggXuanTurtleFertilized.label>旋龟蛋（已受精）</RI_Thing_EggXuanTurtleFertilized.label>
+  <!-- EN: A fertilized Xuan turtle egg. If all goes well, it should hatch into a baby Xuan turtle. -->
+  <RI_Thing_EggXuanTurtleFertilized.description>一枚受精的旋龟蛋。如果一切顺利，它应该会孵化出一只旋龟宝宝。</RI_Thing_EggXuanTurtleFertilized.description>
+  
+  <!-- EN: Xuan turtle (unfert.) -->
+  <RI_Thing_EggXuanTurtleUnfertilized.label>旋龟蛋（未受精）</RI_Thing_EggXuanTurtleUnfertilized.label>
+  <!-- EN: An unfertilized Xuan turtle egg. -->
+  <RI_Thing_EggXuanTurtleUnfertilized.description>一枚未受精的旋龟蛋。</RI_Thing_EggXuanTurtleUnfertilized.description>
+  
+</LanguageData>

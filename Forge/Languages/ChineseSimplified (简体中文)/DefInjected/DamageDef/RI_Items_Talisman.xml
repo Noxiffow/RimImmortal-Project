@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 聚石 -->
+  <RI_Talisman_PolyStoneTower_Damage.label>聚石</RI_Talisman_PolyStoneTower_Damage.label>
+  <!-- EN: {0}被击碎了. -->
+  <RI_Talisman_PolyStoneTower_Damage.deathMessage>{0}被击碎了。</RI_Talisman_PolyStoneTower_Damage.deathMessage>
+  
+  <!-- EN: 狂风 -->
+  <RI_Talisman_WindRing_Damage.label>狂风</RI_Talisman_WindRing_Damage.label>
+  <!-- EN: {0}被撕裂了. -->
+  <RI_Talisman_WindRing_Damage.deathMessage>{0}被狂风撕裂了。</RI_Talisman_WindRing_Damage.deathMessage>
+  
+</LanguageData>

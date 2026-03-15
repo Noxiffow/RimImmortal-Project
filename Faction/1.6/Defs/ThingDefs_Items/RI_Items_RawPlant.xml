@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--玲珑珍果-->
+	<ThingDef Abstract="True" Name="RI_Base_OrganicProductBase" ParentName="ResourceBase">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>0.03</Mass>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RI_Base_APlantFoodRawBase" ParentName="RI_Base_OrganicProductBase">
+		<ingestible>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<optimalityOffsetFeedingAnimals>0</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<statBases>
+			<Nutrition>0.35</Nutrition>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>RI_Category_DrugsMaterials</li>
+		</thingCategories>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--<ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+		<chairSearchRadius>8</chairSearchRadius>
+	</ingestible>-->
+
+	<!--玲珑珍果-->
+	<ThingDef ParentName="RI_Base_APlantFoodRawBase">
+		<defName>RI_Resource_LingLongFruit</defName>
+		<label>LingLong fruit</label>
+		<description>Rarely is the Linglong Fruit found in this world, Enduring frost, wind, rain, and dew through countless trials.\nNot meant for mortal tongues craving sweetness, It is bestowed only upon those fated to tread the path of cultivation.\n\nA rare and precious fruit that requires many seasonal cycles to mature, yielding only a small harvest. When ripe, it is enclosed in a shell as hard as jade, which must be carefully opened to preserve the flesh within. The fruit is crisp and sweet, with a pear-like flavor that brings a gentle sense of comfort. Rich in spiritual energy, it nourishes qi and blood, making it particularly beneficial for those recovering from long-standing injuries.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Drug_LingLongMoonlightElixir</ThingDef>
+			<ThingDef>RI_Drug_LingLongWine</ThingDef>
+		</descriptionHyperlinks>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_LingLongFruit</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought>RI_Thought_AteLingLongFruit</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+
+	<!--吃了玲珑珍果-->
+	<ThoughtDef>
+		<defName>RI_Thought_AteLingLongFruit</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate LingLong fruit</label>
+				<description>The flesh is sweet and mildly euphoric, which shouldn't be addictive, right?</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

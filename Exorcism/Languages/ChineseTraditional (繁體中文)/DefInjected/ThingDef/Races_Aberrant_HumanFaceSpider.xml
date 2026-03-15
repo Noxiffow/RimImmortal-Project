@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Human head spider -->
+  <RI_EvilCreature_HeadSpider_Race.label>人面蜘蛛</RI_EvilCreature_HeadSpider_Race.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nThe human head on the Human-Head Spider is not real but a form of mimicry. These massive spiders dwell in ancient battlefields and graveyards, gradually evolving to resemble human heads over time.\n\nSingle Human-head Spider is easy for an ordinary person to kill, but they often move in swarms, posing a threat that should not be underestimated. -->
+  <RI_EvilCreature_HeadSpider_Race.description>丁级邪异，威胁系数低。\n\n人面蜘蛛身上的人头并非真人，而是一种拟态。这种体型巨大的节肢动物常年生活于古战场和坟堆，久而久之，身体变得和人头越来越像。\n\n寻常人能轻易杀死落单的人头蜘蛛，但它们往往成群结队出动，形成一股不容忽视的威胁。</RI_EvilCreature_HeadSpider_Race.description>
+  
+  <!-- UNUSED -->
+  <RI_EvilCreature_HeadSpider_Race.tools.first_pair_of_legs.label>前足</RI_EvilCreature_HeadSpider_Race.tools.first_pair_of_legs.label>
+  <RI_EvilCreature_HeadSpider_Race.tools.first_pair_of_legs.labelNoLocation>足</RI_EvilCreature_HeadSpider_Race.tools.first_pair_of_legs.labelNoLocation>
+  <RI_EvilCreature_HeadSpider_Race.tools.head.label>头部</RI_EvilCreature_HeadSpider_Race.tools.head.label>
+  
+</LanguageData>

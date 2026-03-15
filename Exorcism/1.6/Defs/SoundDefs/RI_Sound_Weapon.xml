@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--火矢-->
+	<SoundDef>
+		<defName>RI_Sound_FireArrow</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_FireBall_C</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--铃铛-->
+	<SoundDef>
+		<defName>RI_Sound_Bell</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_Bell</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--刀剑出鞘-->
+	<SoundDef>
+		<defName>RI_Sound_BladeOut</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_BladeOut</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--剑气A-->
+	<SoundDef>
+		<defName>RI_Sound_SmallBlade</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_SmallBlade</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.58</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--鼓声-->
+	<SoundDef>
+		<defName>RI_Sound_ThunderDrumA</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_ThunderDrumA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.58</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <!-- 怒视 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_StareAngrily</defName>
+    <label>stare angrily</label>
+    <!-- 愤怒的注释目标，造成火与电伤害。 “怒目金刚瞋目视，恶刹妖魔皆胆裂。” -->
+    <description>Angry comment on the target, causing fire and electric damage. "The angry eyes of
+      the Vajra, the evil temple demons are all frightened."</description>
+    <iconPath>Ability/ZdE1</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>22.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-70</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AbilityRangeExplosion">
+        <deviationRange>1</deviationRange>
+        <explosionRange>5</explosionRange>
+        <damage>13</damage>
+        <damageTimes>3</damageTimes>
+        <damageTypeOrder>1</damageTypeOrder>
+        <damageTypes>
+          <li>Flame</li>
+          <li>EMP</li>
+          <li>Bomb</li>
+        </damageTypes>
+        <!-- TODO -->
+        <!-- <effecterDef></effecterDef> -->
+        <!-- TODO 替换声音 -->
+        <!-- <explosionSound></explosionSound> -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 狮子吼 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_LionRoar</defName>
+    <label>lion's roar</label>
+    <!-- 发出一声洪亮的吼叫，震慑对方，让对方瑟瑟发抖，甚至无法握住自己的武器 -->
+    <description>Make a loud roar, intimidate the opponent, make the opponent tremble, and even
+      unable to hold their own weapon.</description>
+    <iconPath>Ability/ZdE2</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <!-- <warmupStartSound>NzRI_SoundCall</warmupStartSound> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>22.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-90</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_AbilityRangeExplosion">
+        <deviationRange>1</deviationRange>
+        <explosionRange>4</explosionRange>
+        <damageType>Bomb</damageType>
+        <damage>21</damage>
+        <damageFactorStat>NzRI_ZhengDePowerMultiplier</damageFactorStat>
+        <explosionSound>NzRI_SoundCall</explosionSound>
+        <addHediffDefs>
+          <!-- 武器脱手 操作清零 3秒 -->
+          <li>NzRI_Zd_WeaponDrop</li>
+          <!-- 头晕耳鸣 降低视力听力操作 一小时 -->
+          <li>NzRI_Zd_Dizzy</li>
+        </addHediffDefs>
+        <!-- TODO -->
+        <!-- <effecterDef></effecterDef> -->
+        <!-- TODO 替换声音(复制近战专家吼叫) -->
+        <!-- <explosionSound></explosionSound> -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 慧眼 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_DebunkingMyths</defName>
+    <label>debunking myths</label>
+    <description>the keen eye can see through all falsehoods.\n\nRemove invisible effect</description>
+    <iconPath>Ability/Zd2</iconPath>
+    <cooldownTicksRange>5000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <!-- <category>Sanguophage</category> -->
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <targetRequired>False</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <!-- TODO -->
+      <soundCast>NzRI_ZenSound</soundCast>
+      <range>-1</range>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-15</rEnergy>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <durationSecondsOverride>85</durationSecondsOverride>
+        <hediffDef>NzRI_Zd_KeenEyes</hediffDef>
+        <psychic>False</psychic>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <!-- 之后加上金属异形的检测机制 -->
+
+    </comps>
+  </AbilityDef>
+
+  <!-- 梵界 -->
+  <!-- 盾包 -->
+  <!-- 技能：轻踏地面，撑起一片保护性的领域。"轻踏坤舆展妙场，护持信众意悠长。佛心化作遮灾域，不见兵戈入此疆" -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_BulletShield</defName>
+    <label>brahma area</label>
+    <description>Step on the ground lightly and hold up a protective field. "Lightly stepping on the
+      ground, showing a wonderful field, protecting the minds of the believers for a long time. The
+      Buddha's heart turns into a disaster area, and no weapons enter this territory."</description>
+    <!-- TODO -->
+    <iconPath>Ability/ZdE6</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_EffectRadius>4.9</Ability_EffectRadius>
+      <Ability_Duration>19</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-100</rEnergy>
+      </li>
+      <!-- 生成指定物体 -->
+      <li Class="CompProperties_AbilitySpawn">
+        <!-- TODO -->
+        <thingDef>NzRI_Zd_BulletShield</thingDef>
+      </li>
+      <!-- TODO -->
+      <!-- 播放特效 -->
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BulletShieldAreaEffect</fleckDef>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 圆光腿 -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>Zd_DivineLightKick</defName>
+    <label>divine light kick</label>
+    <!-- 踢出一道流光，惩戒命中的目标，被击中的目标会被注入一道法力，这道法力会干扰目标的身体动作 -->
+    <description>Kick out a stream of light, punish the target hit, and inject qi into the target
+      hit, which will interfere with the target's body movements.</description>
+    <iconPath>Ability/ZdE3</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+    <!-- TODO 修改声音 -->
+    <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>13.9</range>
+      <warmupTime>1</warmupTime>
+      <!-- <soundCast>FireSpew_Resolve</soundCast> -->
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>60</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-80</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_DivineLightKick">
+        <range>13.9</range>
+        <damAmount>11</damAmount>
+        <lineWidthEnd>11</lineWidthEnd>
+        <damageType>Blunt</damageType>
+        <damMultiplierStat>NzRI_ZhengDePowerMultiplier</damMultiplierStat>
+        <!-- TODO 修改为专有特效 -->
+        <effecterDef>NzRI_Ef_DivineLightKick</effecterDef>
+        <stunTime>6</stunTime>
+        <canHitFilledCells>true</canHitFilledCells>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 慈悲掌 -->
+  <!-- ParentName="AbilityTouchBase" -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_MercyHit</defName>
+    <label>merciful hit</label>
+    <!-- 使用巧劲攻击对方，尝试打晕目标 -->
+    <description>Use skill to attack the opponent, trying to stun the target.</description>
+    <iconPath>Ability/ZdE5</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <range>-1</range>
+      <warmupTime>0.5</warmupTime>
+      <!-- <soundCast>FireSpew_Resolve</soundCast> -->
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>600</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-130</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_Hit">
+        <damageAmountBase>1</damageAmountBase>
+        <hitPart>Head</hitPart>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <durationSecondsOverride>127</durationSecondsOverride>
+        <hediffDef>NzRI_Zd_Imprisonment</hediffDef>
+        <psychic>False</psychic>
+        <replaceExisting>true</replaceExisting>
+      </li>
+
+
+    </comps>
+  </AbilityDef>
+
+  <!-- 撼山拳 -->
+  <!-- ParentName="AbilityTouchBase" -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_ShakeMountainFist</defName>
+    <label>shake mountain fist</label>
+    <!-- 蓄力并打出重如山岳的一拳，对敌人造成大量伤害 -->
+    <description>Charge and hit a punch as heavy as a mountain, causing a lot of damage to the
+      enemy.</description>
+    <iconPath>Ability/ZdE4</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <!-- TODO -->
+    <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <!-- <soundCast>FireSpew_Resolve</soundCast> -->
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetAnimals>true</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>600</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-100</rEnergy>
+      </li>
+      <li Class="NzRimImmortalBizarre.CompProperties_Hit">
+        <damageDef>Blunt</damageDef>
+        <damageAmountBase>202</damageAmountBase>
+        <armorPenetrationBase>2</armorPenetrationBase>
+        <damageMultiplierStat>NzRI_ZhengDePowerMultiplier</damageMultiplierStat>
+        <stunTicks>60</stunTicks>
+        <hitPart>Body</hitPart>
+      </li>
+
+    </comps>
+  </AbilityDef>
+
+  <!-- 抚顶 -->
+  <!-- ParentName="AbilityTouchBase" -->
+  <AbilityDef ParentName="RI_PsycastBase">
+    <defName>NzRI_Zd_TouchingHead</defName>
+    <label>touch head</label>
+    <!-- 抚摸对方的头部，使用法力庇护对方 -->
+    <description>Touch the opponent head, use Qi to protect the opponent.</description>
+    <iconPath>Ability/ZdE7</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <!-- TODO -->
+      <!-- <soundCast>FireSpew_Resolve</soundCast> -->
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>600</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+        <rEnergy>-110</rEnergy>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <durationSecondsOverride>300</durationSecondsOverride>
+        <hediffDef>NzRI_Zd_Unshakeable</hediffDef>
+        <psychic>False</psychic>
+        <replaceExisting>true</replaceExisting>
+      </li>
+
+    </comps>
+  </AbilityDef>
+</Defs>

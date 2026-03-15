@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Plants>3</Plants>
+	<Medicine>2</Medicine>
+	<Social>-2</Social>
+	<Construction>3</Construction>建造
+	<Animals>3</Animals>
+	<Crafting>3</Crafting>
+	<Mining>8</Mining>
+	<Cooking>-4</Cooking>
+	<Shooting>3</Shooting>
+	<Intellectual>2</Intellectual>
+	
+	<requiredWorkTags>
+	<li>Violent</li>
+	<li>Animals</li>
+	<li>ManualDumb</li>
+	</requiredWorkTags>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	
+	<possessions>
+	<Cloth>10</Cloth>
+	</possessions>
+	-->
+
+	<!--所有成年修炼者 背景故事 前置-->
+	<!--都能干暴力工作和研究-->
+	<BackstoryDef Name="RI_Backstory_Base" Abstract="True">
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<!--============散修成年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_FreeCultivator_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Adult_FreeCultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--散修丹师-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator5</defName>
+		<title>Free cultivator alchemist</title>
+		<titleShort>Alchemist</titleShort>
+		<description>Although [PAWN_nameDef] had little experience in alchemy, [PAWN_pronoun] learned some knowledge of herb cultivation and healing through ancient books and years of exploration. [PAWN_nameDef] was originally a servant disciple in a small sect, and when the sect was destroyed, no one cared for [PAWN_pronoun], giving [PAWN_pronoun] the opportunity to escape.</description>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Plants>3</Plants>
+			<Medicine>5</Medicine>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--逍遥散修-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator6</defName>
+		<title>Carefree independent cultivator</title>
+		<titleShort>Carefree cultivator</titleShort>
+		<description>[PAWN_nameDef] is a solitary cultivator, existing outside the sects. With [PAWN_possessive] intelligence and wit, [PAWN_nameDef] found a place in the cultivation world. Despite lacking the protection of a sect, [PAWN_nameDef] still maintains [PAWN_possessive] passion and pursuit of immortality. [PAWN_nameDef] believes that as long as [PAWN_possessive] perseverance endures, one day [PAWN_nameDef] will find [PAWN_possessive] own path.</description>
+		<skillGains>
+			<Melee>3</Melee>
+			<Medicine>2</Medicine>
+			<Shooting>2</Shooting>
+			<Social>5</Social>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--善良散修-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator7</defName>
+		<title>Kind free cultivator</title>
+		<titleShort>Kind-heart</titleShort>
+		<description>[PAWN_nameDef]'s life was neither exceptionally prosperous nor miserably poor. [PAWN_pronoun] enjoyed a free and unrestrained lifestyle, refusing to be bound by any constraints. Whenever someone needed help, [PAWN_pronoun] was always willing to lend a hand.</description>
+		<skillGains>
+			<Social>2</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--海之祀民-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator8</defName>
+		<title>People of the sea</title>
+		<titleShort>People of the sea</titleShort>
+		<description>[PAWN_nameDef] is a survivor of a great tsunami, firmly believing [PAWN_pronoun] saw a strange figure amidst the massive waves. After recovering, [PAWN_pronoun] felt [PAWN_possessive] body had become extraordinarily strong.</description>
+		<skillGains>
+			<Animals>7</Animals>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--荒原旅者-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator9</defName>
+		<title>Wasteland traveler</title>
+		<titleShort>Traveler</titleShort>
+		<description>After arriving the wasteland, [PAWN_nameDef] wandered the wastelands. The ruthless law of the jungle sharpened [PAWN_pronoun] extensive combat skills and equipped [PAWN_pronoun] with exceptional wilderness survival techniques.</description>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Shooting>5</Shooting>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--宗门幸存者-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
+		<defName>RI_BackStory_Adult_FreeCultivator10</defName>
+		<title>Sect survivor</title>
+		<titleShort>Survivor</titleShort>
+		<description>[PAWN_nameDef] was originally a disciple in a small sect, essentially just doing menial tasks. Therefore, when the sect was destroyed, no one cared about [PAWN_possessive] life, allowing [PAWN_pronoun] to escape successfully.</description>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Social>-5</Social>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--============歹修成年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_EvilCultivator_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Adult_EvilCultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--灵芽偷猎者-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
+		<defName>RI_BackStory_Adult_EvilCultivator5</defName>
+		<title>Energy root poacher</title>
+		<titleShort>Poacher</titleShort>
+		<description>[PAWN_nameDef] has been employed by an underground organization to poach Energy roots from free cultivators. Years of killing and surgical extraction have honed [PAWN_pronoun] skills in martial arts and medicine.</description>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Medicine>7</Medicine>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--夺舍之人-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
+		<defName>RI_BackStory_Adult_EvilCultivator6</defName>
+		<title>Occupy the soul</title>
+		<titleShort>Occupy soul</titleShort>
+		<description>Due to [PAWN_nameDef]'s early mastery of soul magic, [PAWN_possessive] soul remained undying after death. [PAWN_nameDef] found a suitable body and successfully performed a soul possession.</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--流亡邪修-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
+		<defName>RI_BackStory_Adult_EvilCultivator7</defName>
+		<title>Exiled evil cultivator</title>
+		<titleShort>Exiled evil cultivator</titleShort>
+		<description>[PAWN_nameDef] is someone being hunted by various powerful factions, and from a distance, one can smell the bloodlust that emanates from [PAWN_possessive] very bones.</description>
+		<skillGains>
+			<Melee>10</Melee>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--深陷魔道-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
+		<defName>RI_BackStory_Adult_EvilCultivator8</defName>
+		<title>Deeply consumed in evil</title>
+		<titleShort>Evil cultivator</titleShort>
+		<description>[PAWN_nameDef] is an evil rogue cultivator, making a living by murder and pillaging. Cold and ruthless, [PAWN_nameDef] believes that only the strong can survive. [PAWN_nameDef] constantly improves [PAWN_possessive] cultivation, swearing to reach the peak of the cultivation world. When [PAWN_nameDef]’s name is mentioned, it strikes fear into the hearts of all.</description>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>7</Melee>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--黑暗之人-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
+		<defName>RI_BackStory_Adult_EvilCultivator9</defName>
+		<title>Hidden in the Darkness</title>
+		<titleShort>Hidden in the Darkness</titleShort>
+		<description>[PAWN_nameDef] excelled in stealth and assassination, often appearing under the cover of night to hunt lone cultivators. [PAWN_pronoun] methods were brutal, frequently leaving no remains of the victims. Despite this, [PAWN_pronoun] was never caught, moving like a phantom—silent, invisible, and untraceable.</description>
+		<skillGains>
+			<Melee>10</Melee>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--============特殊成年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_Special_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Adult_Special</li>
+			<li>RI_BackStory_Special</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--仙人杀手-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special1</defName>
+		<title>Immortals slayer</title>
+		<titleShort>Immortals slayer</titleShort>
+		<description>[PAWN_nameDef] was originally an ordinary person with a happy family. On one Lantern Festival, [PAWN_nameDef] planned to give gifts to [PAWN_possessive] wife and daughter, but unexpectedly, [PAWN_nameDef]'s family perished in a fire caused by a battle between immortals.In a fit of rage, [PAWN_nameDef] killed an immortal at the Dan Transformation stage. Three quarters of the hour later, rainwater streamed down [PAWN_possessive] cheek, making it impossible to tell whether [PAWN_pronoun] was crying, but the vicious expression on [PAWN_possessive] face spoke volumes."Long time no see, I am the immortal slayer."</description>
+		<skillGains>
+			<Melee>8</Melee>
+			<Shooting>5</Shooting>
+			<Construction>1</Construction>
+			<Medicine>4</Medicine>
+			<Social>-4</Social>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--仙桃大亨-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special2</defName>
+		<title>Immortal peach tycoon</title>
+		<titleShort>Peach tycoon</titleShort>
+		<description>After leaving [PAWN_nameDef]'s master, [PAWN_nameDef] suffered greatly in order to make a living. Eventually, [PAWN_nameDef] turned to a life of crime, becoming wealthy by selling counterfeit goods.</description>
+		<skillGains>
+			<Social>11</Social>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--陨落天才-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special3</defName>
+		<title>Fallen genius</title>
+		<titleShort>Fallen genius</titleShort>
+		<description>[PAWN_nameDef] was once a genius in the sect, but after losing [PAWN_possessive] spiritual bud in a martial arts competition, [PAWN_possessive] cultivation was lost, and [PAWN_nameDef] was abandoned by the sect. Just as [PAWN_nameDef] was about to fall into despair, [PAWN_possessive] childhood sweetheart, [PAWN_possessive] junior sister, stole the spiritual bud to save [PAWN_nameDef]. However, she was killed by the sect elders during the transfer. Carrying the hope and unwillingness of [PAWN_possessive] junior sister, [PAWN_nameDef] began a life of wandering.</description>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>3</Social>
+			<Medicine>3</Medicine>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<possessions>
+			<EnergyRootHigh>1</EnergyRootHigh>
+		</possessions>
+	</BackstoryDef>
+
+	<!--大爱仙尊-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special4</defName>
+		<title>Great-love immorals</title>
+		<titleShort>Great-love immorals</titleShort>
+		<description>
+			Under the righteous sect's siege, the Great Love Immortal [PAWN_nameDef] was forced to self-destruct and reincarnate with a rebirth worm. [PAWN_nameDef] was reborn into the body of a young man in the marginal world. Quickly adapting to the new environment, [PAWN_nameDef] concealed [PAWN_possessive] identity, secretly cultivated, and sought opportunities to increase [PAWN_possessive] strength.In the marginal world, [PAWN_nameDef] discovered that the cultivation system here was completely different from [PAWN_possessive] original world. [PAWN_nameDef] began to explore the spiritual energy and methods of this world, searching for rare herbs and magical artifacts, refining pills with various effects. Using [PAWN_possessive] wisdom and experience, [PAWN_nameDef] gradually made a name for [PAWN_possessive] self in this world.Despite being in a foreign realm, [PAWN_nameDef] remained determined to pursue immortality. Cold-hearted and ruthless, [PAWN_nameDef] viewed human life as worthless. As long as there were benefits to be gained, [PAWN_nameDef] would not hesitate to take action. Relying on [PAWN_possessive] past life’s memories and experiences, [PAWN_nameDef] quickly rose in the marginal world, becoming a terrifying figure. When asked why [PAWN_possessive] didn’t choose another way of living, [PAWN_nameDef] left only a verse: “Fate is predestined, in my destiny's defeat, the Immortal regrets but I do not!”
+		</description>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Animals</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Animals>15</Animals>
+			<Social>5</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<forcedTraits>
+			<Psychopath />
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!--酒中仙-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special5</defName>
+		<title>Immortal in wine</title>
+		<titleShort>Immortal in wine</titleShort>
+		<description>
+			[PAWN_nameDef] was known as the "Immortal of Wine." He was once an ambitious cultivator, pursuing immortality alongside [PAWN_possessive] Dao companion. However, fate was cruel, and [PAWN_possessive] Dao companion tragically perished in a conflict. Devastated, [PAWN_nameDef] swore to avenge [PAWN_possessive] companion. After years of hard cultivation, [PAWN_nameDef] finally avenged [PAWN_possessive] fallen companion.After completing the revenge, [PAWN_nameDef] felt an emptiness in [PAWN_possessive] heart and no longer engaged in matters of the immortal realm. [PAWN_nameDef] retreated into the mountains, focusing on cultivating rice and brewing fine wine. Every quiet night, [PAWN_nameDef] would drink alone, reminiscing about the beautiful moments shared with [PAWN_possessive] Dao companion."Unfeeling time urges relentlessly, the limited moments never return. Life is seldom drunk, regardless of right or wrong."
+		</description>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>2</Social>
+			<Plants>6</Plants>
+			<Cooking>6</Cooking>
+		</skillGains>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--赤面鬼-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special6</defName>
+		<title>Red-faced demon</title>
+		<titleShort>Red-faced demon</titleShort>
+		<description>Due to [PAWN_nameDef]'s traumatic childhood, [PAWN_pronoun] joined the Da Li Temple to cultivate. During a journey down the mountain to gain experience, [PAWN_pronoun] was asked five thousand times why [PAWN_pronoun] wasn’t a monk. Embarrassed and enraged, [PAWN_pronoun] unleashed a barrage of five thousand slaps, wreaking havoc and causing widespread devastation. Having caused a death, [PAWN_pronoun] fled in panic, accidentally boarding a passing colony ship that took [PAWN_pronoun] to an unknown RimWorld.</description>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>-12</Social>
+			<Shooting>8</Shooting>
+			<Plants>2</Plants>
+			<Medicine>4</Medicine>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--敛尸人-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
+		<defName>RI_BackStory_Adult_Special7</defName>
+		<title>Corpse collector</title>
+		<titleShort>Corpse collector</titleShort>
+		<description>[PAWN_nameDef] was once a general who defended the homeland, renowned for [PAWN_possessive] military prowess. In one battle, [PAWN_pronoun] led [PAWN_possessive] troops to annihilate an entire enemy force. However, when [PAWN_pronoun] hurried to escort the captured evil cultivators back, the fleeing evildoers made an offering to a dark transcendent intelligence with the unburied corpses from the battlefield. The flesh-eating beasts devoured the capital, leaving only the general alive.[PAWN_nameDef] turned gray overnight. Alone, [PAWN_pronoun] set out on a path of vengeance, slaying all the evil cultivators in three days. Yet, after the revenge, [PAWN_pronoun] was left with nothing but an endless emptiness and sorrow in [PAWN_pronoun] heart.In order to give peace to the souls of the fallen people, [PAWN_nameDef] decided to return to the homeland and gather the scattered bodies from the wilderness. Every day, [PAWN_pronoun] walked through the desolation, silently finding a resting place for each body, preserving the last dignity of the people."How can one conquer all armies yet exchange it for countless solitary graves?"</description>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<skillGains>
+			<Melee>8</Melee>
+			<Construction>4</Construction>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--============正道门派修士成年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_SectMember_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Adult_SectMember</li>
+			<li>RI_BackStory_Sect</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--健康的门派修士-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_SectMember_Base">
+		<defName>RI_BackStory_Adult_SectMember1</defName>
+		<title>Healthy sect cultivator</title>
+		<titleShort>Sect cultivator</titleShort>
+		<description>[PAWN_nameDef] was born into a local family of cultivators. From a young age, [PAWN_pronoun] was well-regarded by the family due to [PAWN_pronoun] natural talent and grew up healthy, eventually becoming a member of the sect.</description>
+		<skillGains>
+			<Melee>5</Melee>
+			<Construction>2</Construction>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--优秀的门派修士-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_SectMember_Base">
+		<defName>RI_BackStory_Adult_SectMember2</defName>
+		<title>Outstanding Sect Cultivator</title>
+		<titleShort>Good sect cultivator</titleShort>
+		<description>[PAWN_nameDef] is a member of a righteous sect. Not only is [PAWN_pronoun] exceptionally powerful, but [PAWN_pronoun] also enjoys helping those weaker than [PAWN_pronoun]. Among the fellow disciples, [PAWN_pronoun] has an excellent reputation.</description>
+		<skillGains>
+			<Melee>7</Melee>
+			<Shooting>7</Shooting>
+			<Construction>5</Construction>
+			<Medicine>5</Medicine>
+			<Intellectual>7</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<!--============外道门派修士成年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_EvilSect_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Adult_EvilSect</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--炉鼎爱好者-->
+	<BackstoryDef ParentName="RI_Backstory_Adult_EvilSect_Base">
+		<defName>RI_BackStory_Adult_EvilSect1</defName>
+		<title>Furnaces lover</title>
+		<titleShort>Furnaces lover</titleShort>
+		<description>[PAWN_nameDef] once joined an unorthodox sect called the "Heavenly Society," where the disciples mainly used people of different races as cauldrons. Whenever they wanted to kill or use someone, they had to seek approval from the elders.</description>
+		<skillGains>
+			<Melee>5</Melee>
+			<Medicine>5</Medicine>
+			<Social>5</Social>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--合成玄天诀-->
+
+	<RecipeDef>
+		<defName>RI_MakeMysticCultivationMethod</defName>
+		<label>make Mystic cultivation method</label>
+		<description>Use the spiritual crystal to print the power on the paper and draw the charm.</description>
+		<jobString>Making Mystic cultivation method</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_SpiritualRevolution</researchPrerequisite>
+		<recipeUsers>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Building_CharmWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Book_SectBookA</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Book_SectBookB</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Book_SectBookC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Book_SectBookD</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Book_SectBookE</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Book_SectBookA</li>
+				<li>RI_Book_SectBookB</li>
+				<li>RI_Book_SectBookC</li>
+				<li>RI_Book_SectBookD</li>
+				<li>RI_Book_SectBookE</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_BookAbility_MysticCultivation>1</RI_BookAbility_MysticCultivation>
+		</products>
+	</RecipeDef>
+
+	<!--合成商船呼叫器-->
+	<RecipeDef>
+		<defName>RI_Recipe_Make_OrbitalPager</defName>
+		<label>produce "Celestial Caravan" orbital pager</label>
+		<description>produce "Celestial Caravan" orbital pager.</description>
+		<jobString>producing "Celestial Caravan" orbital pager</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Thing_OrbitalShipCaller>1</RI_Thing_OrbitalShipCaller>
+		</products>
+		<researchPrerequisite>RI_SpiritMechineTech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>10</displayPriority>
+	</RecipeDef>
+
+</Defs>

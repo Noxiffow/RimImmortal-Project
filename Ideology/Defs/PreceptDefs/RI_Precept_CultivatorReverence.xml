@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Issue: how an ideology regards those on the path of cultivation -->
+    <IssueDef>
+        <defName>RI_Issue_CultivatorReverence</defName>
+        <label>cultivator reverence</label>
+    </IssueDef>
+
+    <!-- Stance 1: No special regard (neutral default) -->
+    <PreceptDef>
+        <defName>RI_Precept_CultivatorReverence_Neutral</defName>
+        <issue>RI_Issue_CultivatorReverence</issue>
+        <label>no cultivator reverence</label>
+        <description>Those on the path of cultivation hold no special place in this ideology.</description>
+        <impact>Low</impact>
+        <iconPath>UI/Memes/RI_Meme_FrankAndRighteous</iconPath>
+        <enabledForNPCFactions>false</enabledForNPCFactions>
+        <selectionWeight>1</selectionWeight>
+    </PreceptDef>
+
+    <!-- Stance 2: Cultivators are revered.
+         Members respect those with a Spiritual Root (+15 opinion).
+         Cultivators respect one another even more (+20 extra, +35 total). -->
+    <PreceptDef>
+        <defName>RI_Precept_CultivatorReverence_Revered</defName>
+        <issue>RI_Issue_CultivatorReverence</issue>
+        <label>cultivators are revered</label>
+        <description>Those who have awakened a Spiritual Root and walk the path of cultivation are held in high esteem. All believers show respect toward cultivators, and cultivators share a profound kinship with one another.</description>
+        <impact>Low</impact>
+        <iconPath>UI/Memes/RI_Meme_FrankAndRighteous</iconPath>
+        <enabledForNPCFactions>false</enabledForNPCFactions>
+        <selectionWeight>1</selectionWeight>
+        <comps>
+            <!-- Everyone with this precept toward a cultivator: +15 opinion -->
+            <li Class="PreceptComp_SituationalThought">
+                <thought>RI_Thought_KnowACultivator</thought>
+            </li>
+            <!-- Cultivator toward fellow cultivator: +20 additional opinion -->
+            <li Class="PreceptComp_SituationalThought">
+                <thought>RI_Thought_FellowCultivator</thought>
+            </li>
+        </comps>
+    </PreceptDef>
+
+</Defs>

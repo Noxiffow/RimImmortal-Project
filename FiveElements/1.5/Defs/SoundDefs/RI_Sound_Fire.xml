@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--火球A-->
+	<SoundDef>
+		<defName>RI_Sound_FireBall_A</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_FireBall_A</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--火球B-->
+	<SoundDef>
+		<defName>RI_Sound_FireBall_B</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_FireBall_B</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--火球C-->
+	<SoundDef>
+		<defName>RI_Sound_FireBall_C</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_FireBall_C</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--火焰启动-->
+	<SoundDef>
+		<defName>RI_Sound_StartFire_A</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_StartFire_A</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.78</min>
+					<max>0.85</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--火行大招A-->
+	<SoundDef>
+		<defName>RI_Sound_FireRing_A</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RI_Sound_FireRing_A</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~65</volumeRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

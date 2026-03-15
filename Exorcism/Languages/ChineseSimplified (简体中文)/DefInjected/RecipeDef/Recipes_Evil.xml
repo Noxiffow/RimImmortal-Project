@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 炼制血丹 -->
+  <RI_Recipe_MakeBloodPill.label>TODO</RI_Recipe_MakeBloodPill.label>
+  <!-- EN: 利用大量的邪血与皮革纤维，浓缩提炼而成的血丹，蕴含诅咒。 -->
+  <RI_Recipe_MakeBloodPill.description>TODO</RI_Recipe_MakeBloodPill.description>
+  <!-- EN: 正在炼制血丹 -->
+  <RI_Recipe_MakeBloodPill.jobString>TODO</RI_Recipe_MakeBloodPill.jobString>
+  
+  <!-- EN: make aberrant components -->
+  <RI_Recipe_MakeEvilComponent.label>制作邪术零件</RI_Recipe_MakeEvilComponent.label>
+  <!-- EN: Make aberrant components from human flesh. -->
+  <RI_Recipe_MakeEvilComponent.description>用人体组织来制作邪术零件。</RI_Recipe_MakeEvilComponent.description>
+  <!-- EN: making aberrant components -->
+  <RI_Recipe_MakeEvilComponent.jobString>正在制作邪术零件</RI_Recipe_MakeEvilComponent.jobString>
+  
+  <!-- EN: make aberrant components -->
+  <RI_Recipe_MakeEvilComponentBulk.label>制作邪术零件 x4</RI_Recipe_MakeEvilComponentBulk.label>
+  <!-- EN: Make aberrant components from human flesh. -->
+  <RI_Recipe_MakeEvilComponentBulk.description>用人体组织来制作邪术零件。</RI_Recipe_MakeEvilComponentBulk.description>
+  <!-- EN: making aberrant components -->
+  <RI_Recipe_MakeEvilComponentBulk.jobString>正在制作邪术零件</RI_Recipe_MakeEvilComponentBulk.jobString>
+  
+  <!-- EN: 合成异构肉 -->
+  <RI_Recipe_MakeHeteromorphMeat.label>TODO</RI_Recipe_MakeHeteromorphMeat.label>
+  <!-- EN: 将人肉与其他生物组织在阴脂的粘合下强行拼接，形成充满诅咒的肉块。 -->
+  <RI_Recipe_MakeHeteromorphMeat.description>TODO</RI_Recipe_MakeHeteromorphMeat.description>
+  <!-- EN: 正在合成异构肉 -->
+  <RI_Recipe_MakeHeteromorphMeat.jobString>TODO</RI_Recipe_MakeHeteromorphMeat.jobString>
+  
+  <!-- EN: 制作冥尸缝合包 -->
+  <RI_Recipe_MakeMedicineCorpse.label>TODO</RI_Recipe_MakeMedicineCorpse.label>
+  <!-- EN: 用邪术构件和一些原料制作冥尸缝合包。 -->
+  <RI_Recipe_MakeMedicineCorpse.description>TODO</RI_Recipe_MakeMedicineCorpse.description>
+  <!-- EN: making aberrant components -->
+  <RI_Recipe_MakeMedicineCorpse.jobString>TODO</RI_Recipe_MakeMedicineCorpse.jobString>
+  
+  <!-- EN: 制作冥尸缝合包 x4 -->
+  <RI_Recipe_MakeMedicineCorpseBulk.label>TODO</RI_Recipe_MakeMedicineCorpseBulk.label>
+  <!-- EN: 用邪术构件和一些原料制作冥尸缝合包。 -->
+  <RI_Recipe_MakeMedicineCorpseBulk.description>TODO</RI_Recipe_MakeMedicineCorpseBulk.description>
+  <!-- EN: making aberrant components -->
+  <RI_Recipe_MakeMedicineCorpseBulk.jobString>TODO</RI_Recipe_MakeMedicineCorpseBulk.jobString>
+  
+  <!-- EN: Prepare aberrant blood -->
+  <RI_Recipe_PrepareAberrantBlood.label>合成邪血</RI_Recipe_PrepareAberrantBlood.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_PrepareAberrantBlood.description>用普通的血浆合成浓缩邪血。</RI_Recipe_PrepareAberrantBlood.description>
+  <!-- EN: Preparing aberrant blood -->
+  <RI_Recipe_PrepareAberrantBlood.jobString>正在合成邪血</RI_Recipe_PrepareAberrantBlood.jobString>
+  
+  <!-- EN: Prepare aberrant blood x4 -->
+  <RI_Recipe_PrepareAberrantBloodBulk.label>合成邪血 x4</RI_Recipe_PrepareAberrantBloodBulk.label>
+  <!-- EN: Use ordinary blood to synthesize concentrated aberrant blood. -->
+  <RI_Recipe_PrepareAberrantBloodBulk.description>用普通的血浆合成浓缩邪血。</RI_Recipe_PrepareAberrantBloodBulk.description>
+  <!-- EN: Preparing aberrant blood -->
+  <RI_Recipe_PrepareAberrantBloodBulk.jobString>正在合成邪血</RI_Recipe_PrepareAberrantBloodBulk.jobString>
+  
+  <!-- EN: Separate Yin oil -->
+  <RI_Recipe_SeparateCorpseOil.label>分离尸油</RI_Recipe_SeparateCorpseOil.label>
+  <!-- EN: Separate the Yin oil from fat. -->
+  <RI_Recipe_SeparateCorpseOil.description>从肉类脂肪中分离出尸油。</RI_Recipe_SeparateCorpseOil.description>
+  <!-- EN: Separating Yin oil -->
+  <RI_Recipe_SeparateCorpseOil.jobString>正在分离尸油</RI_Recipe_SeparateCorpseOil.jobString>
+  
+  <!-- EN: Separate Yin oil x4 -->
+  <RI_Recipe_SeparateCorpseOilBulk.label>分离尸油 x4</RI_Recipe_SeparateCorpseOilBulk.label>
+  <!-- EN: Separate the Yin oil from fat. -->
+  <RI_Recipe_SeparateCorpseOilBulk.description>从肉类脂肪中分离出尸油</RI_Recipe_SeparateCorpseOilBulk.description>
+  <!-- EN: Separating Yin oil -->
+  <RI_Recipe_SeparateCorpseOilBulk.jobString>正在分离尸油</RI_Recipe_SeparateCorpseOilBulk.jobString>
+  
+  <!-- EN: Split aberrant -->
+  <RI_Recipe_SplitAberrant.label>分解邪祟</RI_Recipe_SplitAberrant.label>
+  <!-- EN: Decompose the aberrant's corpse to obtain materials. -->
+  <RI_Recipe_SplitAberrant.description>分解邪祟的尸体，以获取材料。</RI_Recipe_SplitAberrant.description>
+  <!-- EN: Spliting -->
+  <RI_Recipe_SplitAberrant.jobString>正在分解邪祟</RI_Recipe_SplitAberrant.jobString>
+  
+</LanguageData>

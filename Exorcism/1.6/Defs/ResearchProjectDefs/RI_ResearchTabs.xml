@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 邪祟新开的科技树——镇邪 -->
+
+	<ResearchTabDef>
+		<defName>RI_ExorcismResearchTab</defName>
+		<label>Exorcism</label>
+		<generalTitle>Exorcism</generalTitle>
+		<generalDescription>Exorcism</generalDescription>
+	</ResearchTabDef>
+
+	<!-- 泰南，你好贴心 -->
+
+</Defs>

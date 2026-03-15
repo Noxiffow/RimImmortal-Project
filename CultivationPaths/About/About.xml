@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>RimImmortal - Cultivation Paths (Local)</name>
+    <author>Local</author>
+    <packageId>local.rimimmort.cultivationpaths</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>Adds Orthodox and Demonic cultivation paths to RimImmortal.
+
+After awakening a Spiritual Root, a cultivator must choose their path by studying one of two books before their first breakthrough:
+
+ORTHODOX PATH — steady cultivation, inner peace, social respect. Slower energy gain, higher mental stability, respected by all.
+
+DEMONIC PATH — volatile power, faster realm advancement. Corrupted qi warps the mind; others sense something wrong. Crimson eyes mark those who walk this road.
+
+Each path shows a title in the health tab that reflects the cultivator's current realm (Qi Condensation → True Immortal for orthodox; Third Rate → Heavenly Demon for demonic).</description>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Ideology</packageId>
+            <displayName>Ideology</displayName>
+        </li>
+        <li>
+            <packageId>RI.RimImmortal.Core</packageId>
+            <displayName>RimImmortal Core</displayName>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>RI.RimImmortal.Core</li>
+        <li>RI.RimImmortal.Faction</li>
+        <li>RI.RimImmortal.FiveElements</li>
+    </loadAfter>
+</ModMetaData>

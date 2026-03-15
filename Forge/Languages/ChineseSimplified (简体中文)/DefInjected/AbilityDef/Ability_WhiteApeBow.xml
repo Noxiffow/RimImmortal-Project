@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Frozen rain -->
+  <RI_WhiteApeBow_Ability.label>急冻箭雨</RI_WhiteApeBow_Ability.label>
+  <!-- EN: Shoot 5 white frost arrows in a row, and the hit enemy will suffer hypothermia. -->
+  <RI_WhiteApeBow_Ability.description>连续射出5枚白霜箭，被命中的敌人会受到低温症的影响。</RI_WhiteApeBow_Ability.description>
+  
+</LanguageData>

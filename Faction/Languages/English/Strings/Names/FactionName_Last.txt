@@ -1,0 +1,9 @@
+Sect
+Faction
+School
+Palace
+Hall
+Alliance
+Temple
+Dao
+Religion

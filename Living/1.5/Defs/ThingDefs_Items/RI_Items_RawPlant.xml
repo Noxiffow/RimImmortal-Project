@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="RI_PlantFoodRawBase" ParentName="OrganicProductBase">
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+		</ingestible>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--茶叶-->
+	<ThingDef ParentName="RI_PlantFoodRawBase">
+		<defName>RI_Resource_TeaLeaf</defName>
+		<label>Tea leaf</label>
+		<description>The buds picked from the tea plant are simply dried. Tea is a complex and deep historical element and a best-selling drink throughout the galaxy. After the tea leaves are dried, green tea is brewed. After fermentation, the tea that darkens the tea leaves is black tea. Tea contains tannins, tea polyphenols, caffeine and other trace elements, so that tea has a certain medical effect, so that different tea, the taste is also very different.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Food_GreenTea</ThingDef>
+			<ThingDef>RI_Food_BlackTea</ThingDef>
+			<ThingDef>RI_Food_SpiritHealTea</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_TeaLeaf</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<optimalityOffsetHumanlikes>-20</optimalityOffsetHumanlikes>
+		</ingestible>
+		<thingCategories>
+			<li>RI_Category_RawFood</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--珍珠豆-->
+	<ThingDef ParentName="RI_PlantFoodRawBase">
+		<defName>RI_Resource_PearlPea</defName>
+		<label>Pearl pea</label>
+		<description>The buds picked from the tea plant are simply dried. Tea is a complex and deep historical element and a best-selling drink throughout the galaxy. After the tea leaves are dried, green tea is brewed. After fermentation, the tea that darkens the tea leaves is black tea. Tea contains tannins, tea polyphenols, caffeine and other trace elements, so that tea has a certain medical effect, so that different tea, the taste is also very different.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_PearlSpice</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_PearlPea</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.2</MarketValue>
+			<Flammability>1</Flammability>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<optimalityOffsetHumanlikes>-20</optimalityOffsetHumanlikes>
+		</ingestible>
+		<thingCategories>
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--珍珠香料-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_PearlSpice</defName>
+		<label>Pearl spice</label>
+		<description>A piece of paper with an egg attached. These eggs are easy to store, so they are often found in trading caravans.\n\nAfter it is placed in the silkworm box, it will automatically hatch into a silkworm. As time goes on, the silkworm will develop a large cocoon.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_PearlPea</ThingDef>
+		</descriptionHyperlinks>
+		<possessionCount>5</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_PearlSpice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tickerType>Rare</tickerType>
+		<tradeability>All</tradeability>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>0.5</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingCategories>
+			<li>RI_Category_RawFood</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--西瓜-->
+	<ThingDef ParentName="RI_PlantFoodRawBase">
+		<defName>RI_Resource_Watermelon</defName>
+		<label>Watermelon</label>
+		<description>Assorted berries. Nice to eat, even when raw.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Food_CutWatermelon</ThingDef>
+		</descriptionHyperlinks>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_Watermelon</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>1</Mass>
+			<MarketValue>3</MarketValue>
+			<Nutrition>0.7</Nutrition>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>RI_FeelQuenchThirst</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+		<thingCategories>
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--桑叶-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>RI_Resource_MulberryLeaf</defName>
+		<label>Mulberry leaf</label>
+		<description>Mulberry leaves are the primary product of the mulberry tree and have been used in traditional sericulture since ancient times. Rich in nutrients and highly palatable, they can also serve as an alternative to hay and be used as animal feed.</description>
+		<stackLimit>200</stackLimit>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_MulberryLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.75</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<allowedArchonexusCount>400</allowedArchonexusCount>
+		<thingCategories>
+			<li>RI_Category_RawFood</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

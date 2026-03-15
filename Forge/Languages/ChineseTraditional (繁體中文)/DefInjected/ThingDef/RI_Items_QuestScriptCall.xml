@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator compass-Ruins -->
+  <RI_Items_Quest_AncientComplex_Talismaker.label>古修罗盘-遗迹</RI_Items_Quest_AncientComplex_Talismaker.label>
+  <!-- EN: The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction ofancient cultivator relic sites. -->
+  <RI_Items_Quest_AncientComplex_Talismaker.description>将古修遗迹里的灵气，以灵气分析仪研究后，发明了一种可以分辨出古修灵气的特殊探测罗盘，其内部包含一套复杂的芯片结构，在探测一次之后就会烧毁。\n\n这个罗盘对古修遗迹的方位非常敏锐。</RI_Items_Quest_AncientComplex_Talismaker.description>
+  <!-- EN: Activate the compass, reveal the location of a relic -->
+  <RI_Items_Quest_AncientComplex_Talismaker.comps.CompUseableDatacore.useLabel>启动罗盘，揭示一个遗迹的方位</RI_Items_Quest_AncientComplex_Talismaker.comps.CompUseableDatacore.useLabel>
+  
+  <!-- EN: Ancient cultivator compass-Ancient boss -->
+  <RI_Items_Quest_AncientComplexWithCasket_Talismaker.label>古修罗盘-寻龙</RI_Items_Quest_AncientComplexWithCasket_Talismaker.label>
+  <!-- EN: The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass has a special sensitivity to the ancient cryogenic sleep chambers, allowing for precise location of a functioning ancient cultivator cryogenic sleep chamber. -->
+  <RI_Items_Quest_AncientComplexWithCasket_Talismaker.description>将古修遗迹里的灵气，以灵气分析仪研究后，发明了一种可以分辨出古修灵气的特殊探测罗盘，其内部包含一套复杂的芯片结构，在探测一次之后就会烧毁。\n\n这个罗盘对古修者的低温休眠舱有着特殊的感应，可以精确定位一个依然工作中的休眠舱。</RI_Items_Quest_AncientComplexWithCasket_Talismaker.description>
+  <!-- EN: Activate the compass, reveal the location of a relic with an ancient cultivator -->
+  <RI_Items_Quest_AncientComplexWithCasket_Talismaker.comps.CompUseableDatacore.useLabel>启动罗盘，揭示一个带有古修者的遗迹方位</RI_Items_Quest_AncientComplexWithCasket_Talismaker.comps.CompUseableDatacore.useLabel>
+  
+  <!-- EN: Cultivator compass-Graves -->
+  <RI_Items_Quest_AncientGrave_Talismaker.label>探位罗盘-荒冢</RI_Items_Quest_AncientGrave_Talismaker.label>
+  <!-- EN: The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction of cultivator's grave. -->
+  <RI_Items_Quest_AncientGrave_Talismaker.description>这是一种基于古修罗盘仿制而成的现代罗盘，可以分辨出荒冢中散发的微量灵气，这种罗盘消耗更少的材料，但还是在探测一次之后就会烧毁。\n\n这个罗盘对荒冢的方位非常敏锐。</RI_Items_Quest_AncientGrave_Talismaker.description>
+  <!-- EN: Activate the compass, reveal the location of a grave -->
+  <RI_Items_Quest_AncientGrave_Talismaker.comps.CompUseableDatacore.useLabel>启动罗盘，揭示荒冢的方位</RI_Items_Quest_AncientGrave_Talismaker.comps.CompUseableDatacore.useLabel>
+  
+</LanguageData>

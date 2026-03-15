@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: miragold -->
+  <RI_Drug_Miragold.label>弭金砂</RI_Drug_Miragold.label>
+  <!-- EN: Miragold is a paste-like narcotic refined from a blend of cannabis and the medicinal properties of the Illusory Golden Lotus, consumed by igniting it in a pipe. It rapidly relieves pain, induces intense euphoria, and can slightly increase cultivation efficiency, but it is extremely addictive.\n\nIt's highly dangerous, Miragold ensnares even cultivators with ease. Through traffickers and complicit intermediaries, it is repackaged as a gold-inlaid luxury item. While strictly banned in most regions, it remains popular in borderlands where law enforcement is weak. -->
+  <RI_Drug_Miragold.description>弥金砂是由大麻与幻金莲药性混合提炼成的膏状毒品，通过烟枪焚吸。这种毒品能迅速止痛，令人感受到极度愉悦，并能少量提升修炼效率，但成瘾性极高。\n\n这种毒品十分危险，即使是修炼者也难以抵挡成瘾，然而在药贩子和部分人的运作下，弥金砂被包装成了镶金的奢侈品。大部分地区都严令禁止贩卖这种毒品，不过在执法力度薄弱的边境等地区，这种毒品仍然很受欢迎。</RI_Drug_Miragold.description>
+  <!-- EN: Smoke {0} -->
+  <RI_Drug_Miragold.ingestible.ingestCommandString>吸食{0}</RI_Drug_Miragold.ingestible.ingestCommandString>
+  <!-- EN: Smoking {0}. -->
+  <RI_Drug_Miragold.ingestible.ingestReportString>正在吸{0}</RI_Drug_Miragold.ingestible.ingestReportString>
+  <!-- EN: Consuming {0}. -->
+  <RI_Drug_Miragold.ingestible.ingestReportStringEat>消耗{0}</RI_Drug_Miragold.ingestible.ingestReportStringEat>
+  
+</LanguageData>

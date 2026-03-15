@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="BookBase">
+		<defName>RI_CurseCureBook</defName>
+		<label>除咒术</label>
+		<description>减少全局诅咒值，或者减少某个生物的诅咒度。</description>
+		<thingClass>RimZombieGirl.Book_AbilityLimitSkill</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/CurseCureBook/RI_CurseCureBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/CurseCureBook/RI_CurseCureBook</uiIconPath>
+		<statBases>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>RI_CurseCureBook_Namer</nameMaker>
+				<descriptionMaker>RI_CurseCureBook_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Textbook/Textbook_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Textbook/Textbook_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="RimZombieGirl.BookOutcomeProperties_GainAbilityLimitedSkill">
+						<skillLevelLimit>12</skillLevelLimit>
+						<abilityDef>RI_DaoAbility_CurseCure</abilityDef>
+						<skillDef>Intellectual</skillDef>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="RimZombieGirl.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>RimZombieGirl.LearnAbilityLimitedSkill</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

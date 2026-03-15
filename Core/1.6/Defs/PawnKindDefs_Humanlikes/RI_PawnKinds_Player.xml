@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--求道者-->
+	<PawnKindDef>
+		<defName>RI_Pawn_Seeker</defName>
+		<label>Seeker</label>
+		<race>Human</race>
+		<nameMaker>RI_NameRule_NamerPersonChinese</nameMaker>
+		<nameMakerFemale>RI_NameRule_NamerPersonChineseFemale</nameMakerFemale>
+		<combatPower>50</combatPower>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<apparelMoney>500~2500</apparelMoney>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_FlakVest</li>
+			<li>RI_Apparel_RainHat</li>
+			<li>Apparel_CollarShirt</li>
+			<li>Apparel_Pants</li>
+			<li>RI_Apparel_RainCape</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+			<li>Gun_BoltActionRifle</li>
+		</weaponTags>
+		<techHediffsMoney>110~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		
+		<!--禁止特性，没有一些原版垃圾特性-->
+		<disallowedTraits>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--必须能干的工作-->
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+		<trader>true</trader>
+	</PawnKindDef>
+
+	<!--加入的流浪修士-->
+	<PawnKindDef>
+		<defName>RI_Pawn_WanderingCultivator</defName>
+		<label>Wandering cultivator</label>
+		<combatPower>200</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<isFighter>true</isFighter>
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<itemQuality>Good</itemQuality>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>0~2</initialResistanceRange>
+		<!--衣服-->
+		<apparelMoney>1500~3000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_RainHat</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_RainCape</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1000~3500</weaponMoney>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.01</severity>
+			</li>
+			<li>
+				<def>RI_LV4_Base</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+
+		<!--背景故事-->
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_Cultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+
+		<!--禁止特性，没有一些原版垃圾特性-->
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>Brawler</li>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>Wimp</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--必须能干的工作-->
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+
+		<!--携带物资-->
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_Drug_FoundationBuildingElixir</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+</Defs>

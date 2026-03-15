@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartDef>
+		<defName>RI_Puppet_Torso</defName>
+		<label>Golem torso</label>
+		<hitPoints>75</hitPoints>
+		<solid>true</solid>
+		<alive>false</alive>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<bleedRate>0</bleedRate>
+		<skinCovered>true</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<tags>
+			
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RI_Puppet_Core</defName>
+		<label>Golem core</label>
+		<hitPoints>30</hitPoints>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<skinCovered>false</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>TalkingSource</li>
+			<li>HearingSource</li>
+			<li>BreathingSource</li>
+            <li>MovingLimbCore</li>
+            <li>SightSource</li>
+			<li>ManipulationLimbCore</li>
+			<li>BloodPumpingSource</li>
+            <li>BloodFiltrationSource</li>
+            <li>MetabolismSource</li>
+			<li>EatingSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+        <frostbiteVulnerability>0.1</frostbiteVulnerability>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>RI_Puppet_Shell</defName>
+		<label>Golem armor</label>
+		<hitPoints>5</hitPoints>
+		<solid>false</solid>
+		<bleedRate>0</bleedRate>
+		<skinCovered>true</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<tags>
+			<!--null-->
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+</Defs>

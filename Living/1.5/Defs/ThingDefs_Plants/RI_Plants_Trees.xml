@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase" Name="RI_TreeBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>3.0</Nutrition>
+			<Mass>100</Mass>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.25</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(0,0,-0.42)</offset>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<harvestTag>Wood</harvestTag>
+			<harvestMinGrowth>0.40</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<burnedThingDef>BurnedTree</burnedThingDef>
+			<choppedThingDef>ChoppedStump</choppedThingDef>
+			<smashedThingDef>SmashedStump</smashedThingDef>
+			<treeCategory>Full</treeCategory>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.25</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>24</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<interferesWithRoof>true</interferesWithRoof>
+		</plant>
+	</ThingDef>
+
+	<!--毛竹-->
+	<ThingDef ParentName="RI_TreeBase">
+		<defName>RI_Plant_MosoBamboo</defName>
+		<label>Moso bamboo</label>
+		<description>Moso bamboo is a fast-growing species of bamboo, which is cut down after maturity and is a lightweight building material.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_RawBamboo</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_MosoBamboo</texPath>
+		</graphicData>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<growDays>3</growDays>
+			<harvestWork>150</harvestWork>
+			<harvestYield>30</harvestYield>
+			<harvestedThingDef>RI_Resource_RawBamboo</harvestedThingDef>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>15</wildClusterWeight>
+			<leaflessGraphicPath>Things/Plant/TreeBamboo_Leafless</leaflessGraphicPath>
+			<visualSizeRange>1.7~2.1</visualSizeRange>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestFailable>true</harvestFailable>
+			<forceIsTree>true</forceIsTree>
+		</plant>
+	</ThingDef>
+
+	<!--檀木树-->
+	<ThingDef ParentName="RI_TreeBase">
+		<defName>RI_Plant_SandalwoodTree</defName>
+		<label>Sandalwood tree</label>
+		<description>Sandalwood tree can produce expensive sandalwood, a fine, fragrant wood that can make beautiful furniture.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_SandalWoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_SandalwoodTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<plant>
+			<growDays>25</growDays>
+			<harvestWork>500</harvestWork>
+			<harvestYield>25</harvestYield>
+			<harvestedThingDef>RI_Resource_SandalWoodLog</harvestedThingDef>
+			<sowMinSkill>2</sowMinSkill>
+			<wildClusterRadius>1</wildClusterRadius>
+			<wildClusterWeight>1</wildClusterWeight>
+			<visualSizeRange>1.7~2.1</visualSizeRange>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestFailable>true</harvestFailable>
+			<forceIsTree>true</forceIsTree>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_Planting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--苍血竹-->
+	<ThingDef ParentName="RI_TreeBase">
+		<defName>RI_Plant_GreenBloodBamboo</defName>
+		<label>Green blood bamboo</label>
+		<description>Green blood bamboo is a wonderful bamboo, its growth is slow, but when mature bamboo will turn emerald green, and very strong, is a good material for making weapons.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_JadeBloodBamboo</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_GreenBloodBamboo</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<plant>
+			<growDays>28</growDays>
+			<harvestWork>500</harvestWork>
+			<harvestYield>25</harvestYield>
+			<harvestedThingDef>RI_Resource_JadeBloodBamboo</harvestedThingDef>
+			<sowMinSkill>5</sowMinSkill>
+			<wildClusterRadius>1</wildClusterRadius>
+			<wildClusterWeight>1</wildClusterWeight>
+			<visualSizeRange>1.7~2.1</visualSizeRange>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestFailable>true</harvestFailable>
+			<forceIsTree>true</forceIsTree>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_HighLevelPlanting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--铁木树-->
+	<ThingDef ParentName="RI_TreeBase">
+		<defName>RI_Plant_IronWoodTree</defName>
+		<label>Iron wood tree</label>
+		<description>Iron wood tree is a wonderfully genetically edited wood whose roots absorb metals from the soil, gradually giving the wood the hardness of steel. When mature, ironwood can be produced, which is a material with properties similar to steel.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_IronWood</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_IronWoodTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<minifiedDef IsNull="True" />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<growDays>22</growDays>
+			<harvestWork>500</harvestWork>
+			<harvestYield>45</harvestYield>
+			<harvestedThingDef>RI_Resource_IronWood</harvestedThingDef>
+			<sowMinSkill>5</sowMinSkill>
+			<wildClusterRadius>1</wildClusterRadius>
+			<wildClusterWeight>1</wildClusterWeight>
+			<visualSizeRange>1.7~2.1</visualSizeRange>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestFailable>true</harvestFailable>
+			<forceIsTree>true</forceIsTree>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_HighLevelPlanting</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--沙糖桔树-->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>RI_Plant_SugarTangerine</defName>
+		<label>Sugar tangerine tree</label>
+		<description>Sugar tangerine tree grow more slowly and require more fertilizer, but they can produce these sweet fruits.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Food_SugarTangerine</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_SugarTangerine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.5</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<growDays>15</growDays>
+			<visualSizeRange>1~2</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites Inherit="False">
+				<li>RI_Planting</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plant/RI_Plant_SugarTangerine_Immature</immatureGraphicPath>
+			<harvestWork>310</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>8</harvestYield>
+			<harvestedThingDef>RI_Food_SugarTangerine</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+
+	<!--桑树——收获得到桑叶-->
+	<ThingDef ParentName="RI_TreeBase">
+		<defName>RI_Plant_MulberryTree</defName>
+		<label>Mulberry tree</label>
+		<description>The mulberry tree is a deciduous tree, and its leaves are the primary food source for silkworms. In addition to this, various parts of the mulberry tree can be used in traditional medicine, making it an important economic crop.</description>
+		<!--描述超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>RI_Resource_MulberryLeaf</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_MulberryTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<growDays>8</growDays>
+			<visualSizeRange>1~2</visualSizeRange>
+			<sowMinSkill>3</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestWork>310</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>45</harvestYield>
+			<harvestedThingDef>RI_Resource_MulberryLeaf</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+		</plant>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>terrain_word(p=5)->graveyard</li>
+    <li>terrain_word(p=4)->cemetery</li>
+    <li>terrain_word(p=3)->necropolis</li>
+    <li>terrain_word(p=3)->burial ground</li>
+    <li>terrain_word(p=2)->tombfield</li>
+    <li>terrain_word(p=2)->sepulcher</li>
+    <li>terrain_word->catacomb</li>
+    <li>terrain_word->mausoleum</li>
+    <li>terrain_word->crypt</li>
+    <li>terrain_word->ossuary</li>
+  -->
+  <NamerLandmark_Graveyard.rulePack.rulesStrings>TODO</NamerLandmark_Graveyard.rulePack.rulesStrings>
+  
+</LanguageData>

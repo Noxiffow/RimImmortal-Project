@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 删除法门 -->
+  <RI_Hediff_DeleteIA.label>删除法门</RI_Hediff_DeleteIA.label>
+  <!-- EN: 删除法门 -->
+  <RI_Hediff_DeleteIA.description>删除法门</RI_Hediff_DeleteIA.description>
+  
+  <!-- EN: Effect of QiLin restoration pill -->
+  <RI_Hediff_QiLinRestorationPill.label>麒麟丸效果</RI_Hediff_QiLinRestorationPill.label>
+  <!-- EN: Heals a scar and grants long-lasting regenerative ability. -->
+  <RI_Hediff_QiLinRestorationPill.description>在15天内治疗一个伤疤并提升些许自愈能力。</RI_Hediff_QiLinRestorationPill.description>
+  
+</LanguageData>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--新房间类型-->
+
+	<!--祠堂-->
+	<RoomRoleDef>
+		<defName>RI_Room_PrayerAltarTable</defName>
+		<label>Ancestral shrine</label>
+		<workerClass>WhoXiuXian.RI_RoomRoleWorker_PrayerAltarTable</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+			<li>Cleanliness</li>
+			<li>Wealth</li>
+			<li>Space</li>
+			<li>Impressiveness</li>
+		</relatedStats>
+	</RoomRoleDef>
+
+	<!--炼丹-->
+	<RoomRoleDef>
+		<defName>RI_Room_ElixirsRoom</defName>
+		<label>Alchemy lab</label>
+		<workerClass>WhoXiuXian.RI_RoomRoleWorker_ElixirsRoom</workerClass>
+	</RoomRoleDef>
+
+	<!--炼器-->
+	<RoomRoleDef>
+		<defName>RI_Room_CraftsmanRoom</defName>
+		<label>Forging workshop</label>
+		<workerClass>WhoXiuXian.RI_RoomRoleWorker_CraftsmanRoom</workerClass>
+	</RoomRoleDef>
+
+	<!--修炼-->
+	<RoomRoleDef>
+		<defName>RI_Room_CultivationRoom</defName>
+		<label>Cultivation room</label>
+		<workerClass>WhoXiuXian.RI_RoomRoleWorker_CultivationRoom</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+			<li>Cleanliness</li>
+			<li>Wealth</li>
+			<li>Space</li>
+			<li>Impressiveness</li>
+		</relatedStats>
+	</RoomRoleDef>
+</Defs>

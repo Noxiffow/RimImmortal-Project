@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--资源抢夺袭击，各路修士抵达-->
+	<IncidentDef>
+		<defName>RI_ResourceSnatching_RaidEnemy</defName>
+		<label>Cultivators arrived</label>
+		<!--事件label-->
+		<workerClass>RI_Quest.IncidentWorker_ResourceSnatching_RaidEnemy</workerClass>
+		<baseChance>0</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>Raid</tale>
+		<ignoreRecentSelectionWeighting>true</ignoreRecentSelectionWeighting>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+		</targetTags>
+		<modExtensions>
+			<!--若fixedFactions只有一个元素，则会自动抽取一个黑名单外与其敌对的派系；若没有元素则随机抽俩不在黑名单上的派系；若元素大于一，会只刷固定派系-->
+			<li Class="RI_Quest.ModExtension_RI_RaidFactionSelecter">
+				<fixedFactions>
+					<li>RI_Faction_WickedCultivators</li>
+				</fixedFactions>
+				<excludedFactions>
+					<!--抽取派系黑名单-->
+					<li>Mechanoid</li>
+					<li>Insect</li>
+					<li>AncientsHostile</li>
+					<li>Ancients</li>
+				</excludedFactions>
+				<raidCount>2</raidCount>
+				<!--袭击轮次-->
+			</li>
+		</modExtensions>
+	</IncidentDef>
+
+</Defs>

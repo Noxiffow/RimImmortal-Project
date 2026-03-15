@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <EnergyFluctuationLevel_None>0 level：calm</EnergyFluctuationLevel_None>
+  <EnergyFluctuationLevel_GoodLow>1 level：wave</EnergyFluctuationLevel_GoodLow>
+  <EnergyFluctuationLevel_GoodMedium>2 level：tide surge</EnergyFluctuationLevel_GoodMedium>
+  <EnergyFluctuationLevel_GoodHigh>3 level：full tide</EnergyFluctuationLevel_GoodHigh>
+  <EnergyFluctuationLevel_BadLow>-1 level：fall back</EnergyFluctuationLevel_BadLow>
+  <EnergyFluctuationLevel_BadMedium>-2 level：turmoil</EnergyFluctuationLevel_BadMedium>
+  <EnergyFluctuationLevel_BadHigh>-3 level：Dry</EnergyFluctuationLevel_BadHigh>
+  
+</LanguageData>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mortise and tenon -->
+  <RI_Research_Carpentry.label>榫卯</RI_Research_Carpentry.label>
+  <!-- EN: Mortise-and-tenon joints are a traditional woodworking technique used by ancient Chinese carpenters. By interlocking protruding and recessed parts of wood, they achieved strong structural connections without the need for nails or glue.\n\nUnlock basic furniture and decorations. -->
+  <RI_Research_Carpentry.description>榫卯技术是一种古代木匠使用的工艺，通过木料凹凸结合，实现构件间的牢固连接。无需使用钉子或胶水，就能实现复杂的建筑结构。\n\n解锁基础家具和装饰品。</RI_Research_Carpentry.description>
+  
+  <!-- EN: Dynasty furniture -->
+  <RI_Research_DynastyFurniture.label>王朝家具</RI_Research_DynastyFurniture.label>
+  <!-- EN: Modern Chinese furniture incorporates elements from various styles, shedding the heaviness and complexity of ancient furniture. It is now more open, lightweight, and primarily made of wood and metal, emphasizing restraint, simplicity, and practicality.\n\nUnlock modern Chinese furniture. -->
+  <RI_Research_DynastyFurniture.description>古代封建王朝贵族所使用的各种家具，选料讲究精致，外形华丽。\n\n解锁王朝家具。</RI_Research_DynastyFurniture.description>
+  
+  <!-- EN: Festival furniture -->
+  <RI_Research_FestivalFurniture.label>节日家具</RI_Research_FestivalFurniture.label>
+  <!-- EN: Lantern Festival, Spring Festival, Dragon Boat Festival—these traditional Chinese holidays are accompanied by abundant related furniture and customs.\n\nUnlock holiday-themed furniture and decorations. -->
+  <RI_Research_FestivalFurniture.description>元宵节，春节，端午节，这些中国传统节日有大量相关的家具和习俗。\n\n解锁节日家具，装饰。</RI_Research_FestivalFurniture.description>
+  
+  <!-- EN: Floor tile -->
+  <RI_Research_FloorTile.label>地砖铺设</RI_Research_FloorTile.label>
+  <!-- EN: Paving roads with floor tiles facilitated travel for pedestrians, horses, and carts. Beyond practicality, arranging tiles into intricate patterns also became an artistic pursuit.\n\nUnlock various floor tiles and decorative patterns. -->
+  <RI_Research_FloorTile.description>用地砖铺设道路，方便行人车马行走，除此以外，用地砖摆出各种花纹，也成为了一种艺术追求。\n\n解锁各种地板，地砖装饰。</RI_Research_FloorTile.description>
+  
+  <!-- EN: Lighting -->
+  <RI_Research_Lighting.label>古代照明</RI_Research_Lighting.label>
+  <!-- EN: Various lighting fixtures are indispensable tools for human illumination. Ever since the discovery of fire, different types of lighting devices have been continuously invented.\n\nIn ancient times, lighting mainly relied on various styles of candlesticks, which burned animal or plant oils to preserve light.\n\nUnlock various candlesticks and oil lamps. -->
+  <RI_Research_Lighting.description>灯具是人类不可或缺的照明工具，当人类发现火焰，各种照明灯具就不断地被发明出来。\n\n古代的灯具往往以各种样式的烛台为主，燃烧动物或植物油脂，将光芒保存下去。\n\n解锁各种烛台，油灯。</RI_Research_Lighting.description>
+  
+  <!-- EN: Ming style furniture -->
+  <RI_Research_MingDynastyFurniture.label>明式家具</RI_Research_MingDynastyFurniture.label>
+  <!-- EN: Ming-style furniture represents a pinnacle in the history of Chinese furniture. With its graceful, flowing lines, elegant proportions, and simple silhouettes, each piece reflects exquisite craftsmanship.\n\nUnlock Ming-style furniture. -->
+  <RI_Research_MingDynastyFurniture.description>明式家具是中国家具史上的一座高峰，其造型流畅大方，比例优美，轮廓简练，每一件家具都是匠心之作。\n\n解锁明式家具。</RI_Research_MingDynastyFurniture.description>
+  
+  <!-- EN: Modern Chinese furniture -->
+  <RI_Research_ModernChineseFurniture.label>现代中式家具</RI_Research_ModernChineseFurniture.label>
+  <!-- EN: Furniture used by nobility in ancient feudal dynasties featured refined materials and luxurious appearances.\n\nUnlock dynasty furniture. -->
+  <RI_Research_ModernChineseFurniture.description>现代中式家具吸收了诸多家具的风格，抛弃了古代家具的笨重和复杂，变得更加通透，轻盈。材料以木材和金属为主，追求内敛、质朴、实用的设计风格。\n\n解锁现代中式家具。</RI_Research_ModernChineseFurniture.description>
+  
+</LanguageData>

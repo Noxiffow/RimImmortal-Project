@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--初级药材，高级药材，各5个，五行-->
+
+	<ThingDef Name="RI_PlantBase" Abstract="True">
+		<category>Plant</category>
+		<thingClass>Plant</thingClass>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<MaxHitPoints>155</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<tickerType>Long</tickerType>
+		<selectable>true</selectable>
+		<neverMultiSelect>False</neverMultiSelect>
+		<drawerType>MapMeshOnly</drawerType>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<pathCost>15</pathCost>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+		</graphicData>
+		<plant>
+			<wildOrder>2</wildOrder>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+				<li>SoilSpiritual</li>
+			</sowTags>
+			<purpose>Food</purpose>
+			<fertilityMin>1.3</fertilityMin>
+			<harvestTag>Standard</harvestTag>
+			<soundHarvesting>Harvest_Standard</soundHarvesting>
+			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+			<sowWork>170</sowWork>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<visualSizeRange>0.3~1.00</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+		<thingCategories>
+			<li>Plants</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+	</ThingDef>
+
+	<!--灵芝-初级药材，不需要研究，土-->
+	<ThingDef Name="LZPlant" ParentName="RI_PlantBase">
+		<defName>RI_Plant_LingZhi</defName>
+		<label>LingZhi</label>
+		<description>LingZhi is a nutrient-rich fungus. It grows faster in the land of Qi and is a rare herb.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_LingZhi</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<sowMinSkill>3</sowMinSkill>
+			<harvestedThingDef>RI_Resource_LingZhi</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<growDays>10</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!--车前草-初级药材，不需要研究，木-->
+	<ThingDef ParentName="RI_PlantBase">
+		<defName>RI_Plant_Plantain</defName>
+		<label>Plantain</label>
+		<description>Plantain is a common herb, because it is often found on the roadside, so it is called plantain, and its seeds have a certain healing effect. This herb grows faster in Qi rich soil.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Plantain</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<sowMinSkill>3</sowMinSkill>
+			<harvestedThingDef>RI_Resource_PlantainSeed</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<growDays>8</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!--雪莲花，初级药材，水-->
+	<ThingDef Name="XZPlant" ParentName="RI_PlantBase">
+		<defName>RI_Plant_SnowLotus</defName>
+		<label>Snow flower</label>
+		<description>Snow flower is a plant rich in vitality, and the flowers of this plant are a rare medicine. The snow flower can only be found in cold areas, and its flowers have many magical effects and are used as a great tonic.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_SnowLotus</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<sowMinSkill>3</sowMinSkill>
+			<harvestedThingDef>RI_Resource_SnowLotus</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<growDays>12</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!--提灯果，低级药材，火-->
+	<ThingDef ParentName="RI_PlantBase">
+		<defName>RI_Plant_LanternBerry</defName>
+		<label>Lantern berry</label>
+		<description>Lantern berry is a magical plant whose fruit gives off a faint glow, presumably to attract insects for pollination. Many young people look for lanterns to decorate.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_LanternBerry</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<sowMinSkill>3</sowMinSkill>
+			<harvestedThingDef>RI_Resource_LanternBerries</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/RI_Plant_LanternBerry_Immature</immatureGraphicPath>
+			<harvestYield>2</harvestYield>
+			<growDays>10</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!--==============高级药材==============-->
+
+	<!--银芯参，高级药材，金-->
+	<ThingDef ParentName="RI_PlantBase">
+		<defName>RI_Plant_SilverGinseng</defName>
+		<label>Silver GinSeng</label>
+		<description>Silver GinSeng is a mineral-rich plant that absorbs nutrients from the ground and grows faster on Qi filled ground.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_SilverGinseng</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<sowMinSkill>8</sowMinSkill>
+			<harvestedThingDef>RI_Resource_SilverGinseng</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/StrawberryPlant_Immature</immatureGraphicPath>
+			<harvestYield>2</harvestYield>
+			<growDays>15</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>RI_FertileSoil</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--紫雾菇，高级药材，水-->
+	<ThingDef ParentName="RI_PlantBase">
+		<defName>RI_Plant_DuskyMushroom</defName>
+		<label>Purple-fog mushroom</label>
+		<description>Purple-fog mushroom is a very slow-growing medicinal mushroom. When it is mature, it will erupt purple spore smoke, so the name purple fog mushroom. This mushroom generally grows in cold places such as caves, and with the continuous improvement of people, it has gradually adapted to the bright environment.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_DuskyMushroom</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<sowMinSkill>8</sowMinSkill>
+			<harvestedThingDef>RI_Resource_DuskyMushroom</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/RI_Plant_DuskyMushroom</immatureGraphicPath>
+			<harvestYield>1</harvestYield>
+			<growDays>18</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>RI_FertileSoil</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+	<!--火龙芽，高级药材，火-->
+	<ThingDef ParentName="RI_PlantBase">
+		<defName>RI_Plant_TillandsiaDragon</defName>
+		<label>Tillandsia dragon aloe</label>
+		<description>Tillandsia dragon aloe is a special herb that grows faster in the land of Qi, and the central bud of this plant is very valuable as medicine.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_TillandsiaDragon</texPath>
+		</graphicData>
+		<statBases>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<sowMinSkill>8</sowMinSkill>
+			<harvestedThingDef>RI_Resource_TillandsiaDragonShoot</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<growDays>16</growDays>
+			<visualSizeRange>0.9~1.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>RI_FertileSoil</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+
+</Defs>

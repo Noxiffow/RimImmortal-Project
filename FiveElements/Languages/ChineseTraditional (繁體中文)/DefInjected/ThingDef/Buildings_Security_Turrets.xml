@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corn bomb -->
+  <RI_Bullet_Rocket.label>TODO</RI_Bullet_Rocket.label>
+  
+  <!-- EN: Berry-shooter -->
+  <RI_Gun_BerryShooter.label>莓果塔</RI_Gun_BerryShooter.label>
+  <!-- EN: 0 -->
+  <RI_Gun_BerryShooter.description>TODO</RI_Gun_BerryShooter.description>
+  <!-- EN: Berry-shooter -->
+  <RI_Gun_BerryShooter.verbs.Verb_Shoot.label>莓果塔</RI_Gun_BerryShooter.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Cactus-spitter -->
+  <RI_Gun_CactusSpitter.label>多棱刺</RI_Gun_CactusSpitter.label>
+  <!-- EN: 。 -->
+  <RI_Gun_CactusSpitter.description>TODO</RI_Gun_CactusSpitter.description>
+  <!-- EN: Cactus-spitter -->
+  <RI_Gun_CactusSpitter.verbs.Verb_Shoot.label>多棱刺</RI_Gun_CactusSpitter.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Corn cannon -->
+  <RI_Gun_CornCannon.label>玉米炮</RI_Gun_CornCannon.label>
+  <!-- EN: A rocketswarm tube of the type usually mounted on a rocketswarm launcher turret. -->
+  <RI_Gun_CornCannon.description>TODO</RI_Gun_CornCannon.description>
+  <!-- EN: Corn cannon -->
+  <RI_Gun_CornCannon.verbs.Verb_Shoot.label>玉米炮</RI_Gun_CornCannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: berry bullet -->
+  <RI_Projectile_BerryBullet.label>莓果弹</RI_Projectile_BerryBullet.label>
+  
+  <!-- EN: cactus spike -->
+  <RI_Projectile_CactusSpike.label>仙人掌刺</RI_Projectile_CactusSpike.label>
+  
+  <!-- EN: Berry-shooter -->
+  <RI_Turret_BerryShooter.label>莓果塔</RI_Turret_BerryShooter.label>
+  <!-- EN: A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel. -->
+  <RI_Turret_BerryShooter.description>以木行法门的法术制造的炮台，由莓果转化而来。\n\n莓果塔，可以射出一连串莓果，威力较低。</RI_Turret_BerryShooter.description>
+  <!-- EN: Life percentage left -->
+  <RI_Turret_BerryShooter.comps.CompRefuelable.fuelLabel>剩余生机</RI_Turret_BerryShooter.comps.CompRefuelable.fuelLabel>
+  
+  <!-- EN: Cactus-spitter -->
+  <RI_Turret_CactusSpitter.label>多棱刺</RI_Turret_CactusSpitter.label>
+  <!-- EN: A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel. -->
+  <RI_Turret_CactusSpitter.description>以木行法门的法术制造的炮台，由仙人掌转化而来。\n\n可以射出距离较远的尖刺，威力一般，但是命中率很高。</RI_Turret_CactusSpitter.description>
+  <!-- EN: Life percentage left -->
+  <RI_Turret_CactusSpitter.comps.CompRefuelable.fuelLabel>剩余生机</RI_Turret_CactusSpitter.comps.CompRefuelable.fuelLabel>
+  
+  <!-- EN: Corn-cannon -->
+  <RI_Turret_CornCannon.label>玉米炮</RI_Turret_CornCannon.label>
+  <!-- EN: A small organic sentry that fires rapid volleys of tiny thorns. Does not require power or fuel. -->
+  <RI_Turret_CornCannon.description>以木行法门的法术制造的炮台，由玉米转化而来。\n\n玉米炮，可以射出爆炸范围很小的玉米炮弹。</RI_Turret_CornCannon.description>
+  <!-- EN: Life percentage left -->
+  <RI_Turret_CornCannon.comps.CompRefuelable.fuelLabel>剩余生机</RI_Turret_CornCannon.comps.CompRefuelable.fuelLabel>
+  
+</LanguageData>

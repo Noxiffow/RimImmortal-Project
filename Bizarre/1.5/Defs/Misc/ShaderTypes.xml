@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ShaderTypeDef>
+    <defName>NzRI_Zd_BulletShield</defName>
+    <shaderPath>Map/BulletShieldPsychic</shaderPath>
+  </ShaderTypeDef>
+  
+</Defs>

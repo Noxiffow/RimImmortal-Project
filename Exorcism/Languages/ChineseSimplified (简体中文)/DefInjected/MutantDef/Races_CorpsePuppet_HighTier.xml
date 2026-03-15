@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 铁浮屠 -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.label>TODO</RI_CorpseCreature_ZombieArmor_Mutant.label>
+  <!-- EN: A complex and powerful corpse creature. Its massive body is assembled from two or more human corpses, implanted with aberrant components, encased in heavy armor, and finally reanimated through forbidden rituals.\n\nIts combat capability is unquestionable—possessing immense strength and formidable defensive power. -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.description>TODO</RI_CorpseCreature_ZombieArmor_Mutant.description>
+  <!-- EN: One of your ZOMBIEs has died. -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.deathLetter>TODO</RI_CorpseCreature_ZombieArmor_Mutant.deathLetter>
+  <!-- EN: Unlike regular colonists, ghouls do not need to be buried and their death will not upset others. You may choose to bury them should you wish. -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.deathLetterExtra>TODO</RI_CorpseCreature_ZombieArmor_Mutant.deathLetterExtra>
+  <!-- EN: teeth -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.tools.teeth.label>TODO</RI_CorpseCreature_ZombieArmor_Mutant.tools.teeth.label>
+  <!-- EN: left claw -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.tools.left_claw.label>TODO</RI_CorpseCreature_ZombieArmor_Mutant.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.tools.left_claw.labelNoLocation>TODO</RI_CorpseCreature_ZombieArmor_Mutant.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.tools.right_claw.label>TODO</RI_CorpseCreature_ZombieArmor_Mutant.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_CorpseCreature_ZombieArmor_Mutant.tools.right_claw.labelNoLocation>TODO</RI_CorpseCreature_ZombieArmor_Mutant.tools.right_claw.labelNoLocation>
+  
+</LanguageData>

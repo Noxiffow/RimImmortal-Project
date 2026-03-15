@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 地血爆 -->
+  <LMA_Ability_Illustrious_DroneExplode.label>地血爆</LMA_Ability_Illustrious_DroneExplode.label>
+  <!-- EN: desc -->
+  <LMA_Ability_Illustrious_DroneExplode.description>地血爆</LMA_Ability_Illustrious_DroneExplode.description>
+  
+  <!-- EN: 血煞塔 -->
+  <LMA_Ability_Illustrious_SummonDrone.label>血煞塔</LMA_Ability_Illustrious_SummonDrone.label>
+  <!-- EN: desc -->
+  <LMA_Ability_Illustrious_SummonDrone.description>血煞塔</LMA_Ability_Illustrious_SummonDrone.description>
+  
+</LanguageData>

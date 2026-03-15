@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--东坡肉 x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookDongPoPorkBulk</defName>
+		<label>Cook soysauced DongPo pork x4</label>
+		<description>Use pork, pearls and spices to braise DongPo pork, a brilliant red and fragrant meat dish.</description>
+		<jobString>Cook soysauced DongPo pork</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Pig</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_DongPoPork>4</RI_Food_DongPoPork>
+		</products>
+	</RecipeDef>
+
+	<!--小鸡炖蘑菇 x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookChickenWithMushroomBulk</defName>
+		<label>Cook chicken with mushroom x4</label>
+		<description>Braised with chicken and mushrooms, a classic meat dish, delicious.</description>
+		<jobString>Cook chicken with mushroom</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Chicken</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_ChickenWithMushroom>4</RI_Food_ChickenWithMushroom>
+		</products>
+	</RecipeDef>
+
+	<!--八宝鸭 x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookStuffedRoastDuckBulk</defName>
+		<label>Cook stuffed roast duck x4</label>
+		<description>Duck meat, pearl spices and rice are used to make stuffed duck, a steamed meat dish filled with ingredients in the duck, which is very luxurious.</description>
+		<jobString>Cook stuffed roast duck</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Duck</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Food_CookedRice</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_StuffedRoastDuck>4</RI_Food_StuffedRoastDuck>
+		</products>
+	</RecipeDef>
+
+	<!--煨肘子 x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookStewedPorkHockBulk</defName>
+		<label>Cook stewed pork knuckle x4</label>
+		<description>Simmer the pork, pearl spices.</description>
+		<jobString>Cook stewed pork knuckle</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Pig</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_StewedPorkHock>4</RI_Food_StewedPorkHock>
+		</products>
+	</RecipeDef>
+
+	<!--红烧牛肉 x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookBraisedBeefBulk</defName>
+		<label>Cook braised beef x4</label>
+		<description>Use beef, pearls spices to make a braised beef, a classic home cooked dish.</description>
+		<jobString>Cook braised beef</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Cow</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_BraisedBeef>4</RI_Food_BraisedBeef>
+		</products>
+	</RecipeDef>
+
+	<!--制作月饼x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookMooncakeBulk</defName>
+		<label>Cook mooncake x4</label>
+		<description>The dough and ingredients are made into cakes and then baked to get mooncakes.</description>
+		<jobString>Cook mooncake</jobString>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_Mooncake>16</RI_Food_Mooncake>
+		</products>
+	</RecipeDef>
+
+	<!--制作鲜肉月饼x4-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookMeatMooncakeBulk</defName>
+		<label>Cook meat mooncake x4</label>
+		<description>The pastry and meat are made into fresh meat cakes and then baked to get meat mooncakes.</description>
+		<jobString>Cook meat mooncake</jobString>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>1.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_Meatmooncake>16</RI_Food_Meatmooncake>
+		</products>
+	</RecipeDef>
+
+</Defs>

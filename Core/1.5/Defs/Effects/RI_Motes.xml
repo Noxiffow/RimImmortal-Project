@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_ThunderBall</defName>
+		<graphicData>
+			<texPath>Ability/InternalPellet/RI_Ability_DestructiveThunder</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.5</fadeInTime>
+			<solidTime>2.3</solidTime>
+			<fadeOutTime>1.0</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_LG</defName>
+		<graphicData>
+			<texPath>Effects/Normal/LG</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<solidTime>0</solidTime>
+			<fadeOutTime>0</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+	<!--莲华化生mote-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_TreatDomain</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+		  <solidTime>9999999</solidTime>
+		  <needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+		  <graphicClass>Graphic_Mote</graphicClass>
+		  <texPath>Things/Mote/RI_Mote_LotusTreatDomain</texPath>
+		  <shaderType>MoteGlow</shaderType>
+		  <drawSize>12</drawSize>
+		</graphicData>
+	  </ThingDef>
+</Defs>

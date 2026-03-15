@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--如果有核心，把建筑分类patch成核心的-->
+	
+	<!--<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Core">
+		<xpath>Defs/DesignationCategoryDef[defName="RI_RimImmortals_Living_Group"]/defName</xpath>
+		<value>
+			<defName>RI_RimImmortals_Group</defName>
+		</value>
+	</Operation>-->
+
+</Patch>

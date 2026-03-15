@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Priest Arrived -->
+  <RI_Dao_PriestArrived.label>道士抵达</RI_Dao_PriestArrived.label>
+  
+  <!-- EN: Dao Book Drop -->
+  <RI_DaoDropBookIncident.label>经书掉落</RI_DaoDropBookIncident.label>
+  
+  <!-- EN: Daoist FriendlyRaid -->
+  <RI_DaoFriendlyRaid.label>道士援助</RI_DaoFriendlyRaid.label>
+  
+  <!-- EN: Dao Travel Priest Arriving -->
+  <RI_DaoTravelPriestJoinIncident.label>云游道士路过</RI_DaoTravelPriestJoinIncident.label>
+  
+</LanguageData>

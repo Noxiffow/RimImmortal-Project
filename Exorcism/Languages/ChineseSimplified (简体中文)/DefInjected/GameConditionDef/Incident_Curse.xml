@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Blood moon -->
+  <RI_Exorcism_BloodMoonHaze.label>血月</RI_Exorcism_BloodMoonHaze.label>
+  <!-- EN: Blood Moon rises, and the aberrants emerge.\n\nBlood moon is a rare and strange climate. Once the balance of Yin and Yang is disrupted, curses will run rampant. Accompanied by the wanton spread of blood mist.\n\nIt endures for several days, during which the aberrants grow violently frenzied.\nNormally, a Blood Moon occurs only once every {MTB} days. -->
+  <RI_Exorcism_BloodMoonHaze.description>血月见，邪祟现。\n\n血月是一种少见的诡异气候，一旦阴阳失去平衡，诅咒将会猖獗，并伴随着红雾肆意传播。\n\n血月会持续数天，在血月期间，邪祟将会变得格外疯狂。\n正常来说，血月每{MTB}天才会发生一次。</RI_Exorcism_BloodMoonHaze.description>
+  <!-- EN: The moon has returned to normal. -->
+  <RI_Exorcism_BloodMoonHaze.endMessage>月亮恢复了正常。</RI_Exorcism_BloodMoonHaze.endMessage>
+  <!-- EN: The Blood Moon descends, the mist with the stench of blood, as aberrant creatures stir restlessly... -->
+  <RI_Exorcism_BloodMoonHaze.startMessage>血月降临，空气中弥漫着不详的红雾，邪祟之物正在蠢蠢欲动…</RI_Exorcism_BloodMoonHaze.startMessage>
+  
+  <!-- EN: cursed fog -->
+  <RI_Exorcism_CursedFog.label>诅咒之雾</RI_Exorcism_CursedFog.label>
+  <!-- EN: test -->
+  <RI_Exorcism_CursedFog.description>诅咒之雾</RI_Exorcism_CursedFog.description>
+  <!-- EN: The acidic smog is lifting. -->
+  <RI_Exorcism_CursedFog.endMessage>诅咒之雾</RI_Exorcism_CursedFog.endMessage>
+  <!-- EN: Acidic smog has begun due to pollution in this region of the world. -->
+  <RI_Exorcism_CursedFog.startMessage>诅咒之雾</RI_Exorcism_CursedFog.startMessage>
+  
+</LanguageData>

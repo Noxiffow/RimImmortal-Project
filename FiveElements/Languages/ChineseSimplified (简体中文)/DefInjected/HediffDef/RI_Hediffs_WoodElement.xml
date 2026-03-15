@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Verdant growth -->
+  <RI_He_Wood_Growth.label>枝繁叶茂</RI_He_Wood_Growth.label>
+  <!-- EN: Verdant creatures are born from the essence of life. In their brief lifespan, they grow wildly and become increasingly powerful. -->
+  <RI_He_Wood_Growth.description>树灵得生机造化而诞生，它们将在短暂的生命中肆意生长，变得越来越强。</RI_He_Wood_Growth.description>
+  <!-- EN: sprout -->
+  <RI_He_Wood_Growth.stages.sprout.label>嫩芽</RI_He_Wood_Growth.stages.sprout.label>
+  <!-- EN: youth -->
+  <RI_He_Wood_Growth.stages.youth.label>幼苗</RI_He_Wood_Growth.stages.youth.label>
+  <!-- EN: growth -->
+  <RI_He_Wood_Growth.stages.growth.label>新木</RI_He_Wood_Growth.stages.growth.label>
+  <!-- EN: lush -->
+  <RI_He_Wood_Growth.stages.lush.label>葱郁</RI_He_Wood_Growth.stages.lush.label>
+  <!-- EN: verdant -->
+  <RI_He_Wood_Growth.stages.verdant.label>苍翠</RI_He_Wood_Growth.stages.verdant.label>
+  
+  <!-- EN: Limited life -->
+  <RI_He_Wood_LimitedLife.label>有限生机</RI_He_Wood_LimitedLife.label>
+  <!-- EN: Verdant creatures are born from the essence of life. Their existence gradually consumes this limited vitality until they naturally perish. -->
+  <RI_He_Wood_LimitedLife.description>树灵得生机造化而诞生，它们的存在会逐渐消耗有限的生机，直到自然死亡。</RI_He_Wood_LimitedLife.description>
+  <!-- EN: exhaust -->
+  <RI_He_Wood_LimitedLife.stages.exhaust.label>耗尽</RI_He_Wood_LimitedLife.stages.exhaust.label>
+  
+  <!-- EN: Vitality -->
+  <RI_He_Wood_Vitality.label>生机</RI_He_Wood_Vitality.label>
+  <!-- EN: Absorb the vitality of plants to nourish oneself, harness the power of growth and expansion to enhance one’s own strength.\n\nBy channeling the vitality of plants to nourish oneself, all attributes are temporarily enhanced. -->
+  <RI_He_Wood_Vitality.description>汲取植物的生机以滋养自身，借助生长与扩张之力，强化自身力量。\n\n通过引导植物的生机来滋养自身，所有属性将在短时间内获得提升。</RI_He_Wood_Vitality.description>
+  
+  <!-- EN: Thorn entangled -->
+  <RI_Hediff_SlowRoot.label>荆棘缠身</RI_Hediff_SlowRoot.label>
+  <!-- EN: Bound tightly by the flexible thorns! -->
+  <RI_Hediff_SlowRoot.description>被柔韧的荆棘紧紧束缚！</RI_Hediff_SlowRoot.description>
+  
+  <!-- EN: Wood cultivation -->
+  <RI_Hediff_WoodCultivationHediff.label>巽木</RI_Hediff_WoodCultivationHediff.label>
+  <!-- EN: Wood element cultivation technique, enhance the ability to perceive vitality, increasing cultivation efficiency. -->
+  <RI_Hediff_WoodCultivationHediff.description>木行修炼功法，增强对生机的感知能力，提升修炼效率。</RI_Hediff_WoodCultivationHediff.description>
+  
+</LanguageData>

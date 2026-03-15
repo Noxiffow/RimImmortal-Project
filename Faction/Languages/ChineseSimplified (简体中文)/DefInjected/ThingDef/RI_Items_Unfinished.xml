@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: "Celestial Caravan" orbital pager -->
+  <RI_Thing_OrbitalShipCaller.label>“苍穹商旅”轨道呼叫器</RI_Thing_OrbitalShipCaller.label>
+  <!-- EN: A commercial orbital pager. Upon completing a single transmission, the device immediately triggers cryptographic key self-destruction and full memory wipe, rendering it impossible to reuse or reverse-engineer.\n\nIt is used to summon Celestial Caravan orbital trade vessels. In most cases, these pagers are sold directly by the ships themselves, serving as a standard means for establishing anonymous and secure contact with clients.\n\n*Note that you still need a communication station to trade with orbital ships. -->
+  <RI_Thing_OrbitalShipCaller.description>一部商船呼叫器，设备在完成一次通信后会立即触发密钥自毁与存储擦除，无法再次使用或逆向解析。\n\n可以用于呼叫苍穹商旅的轨道商船。多数情况下，这类呼叫器本身也由商船对外出售，作为与客户建立匿名，安全的联络手段。</RI_Thing_OrbitalShipCaller.description>
+  <!-- EN: Call trader -->
+  <RI_Thing_OrbitalShipCaller.comps.CompUsable.useLabel>呼叫商船</RI_Thing_OrbitalShipCaller.comps.CompUsable.useLabel>
+  
+</LanguageData>

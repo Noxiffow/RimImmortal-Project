@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: black brick flagstone -->
+  <RI_FlagstoneBlackBrick.label>青砖石板</RI_FlagstoneBlackBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FlagstoneBlackBrick.description>粗糙切割的岩石地砖。不太好看，但非常适合铺设道路和室外的走道。拆除石板无法回收资源。</RI_FlagstoneBlackBrick.description>
+  
+  <!-- EN: red brick flagstone -->
+  <RI_FlagstoneRedBrick.label>红砖石板</RI_FlagstoneRedBrick.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <RI_FlagstoneRedBrick.description>粗糙切割的岩石地砖。不太好看，但非常适合铺设道路和室外的走道。拆除石板无法回收资源。</RI_FlagstoneRedBrick.description>
+  
+  <!-- EN: black brick tile -->
+  <RI_TileBlackBrick.label>青砖地砖</RI_TileBlackBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_TileBlackBrick.description>坚固的石质地砖给人以城堡样的感觉。看起来很漂亮，就是铺设速度较慢。</RI_TileBlackBrick.description>
+  
+  <!-- EN: red brick tile -->
+  <RI_TileRedBrick.label>红砖地砖</RI_TileRedBrick.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <RI_TileRedBrick.description>坚固的石质地砖给人以城堡样的感觉。看起来很漂亮，就是铺设速度较慢。</RI_TileRedBrick.description>
+  
+</LanguageData>

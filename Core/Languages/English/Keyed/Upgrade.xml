@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- UNUSED -->
+	<NoBeginUpgrade>Can not Upgrade</NoBeginUpgrade>
+	<BeginUpgrade>Upgrade</BeginUpgrade>
+	<RitualInProgress> Upgrade is in progress</RitualInProgress>
+	<NoSpiritualBud> No spiritual root</NoSpiritualBud>
+	<NotAtBottleneck> rank not perfect</NotAtBottleneck>
+	<RitualCanBeCastAgain>Upgrade cooldown over</RitualCanBeCastAgain>
+	<RitualStarted>Upgrade start</RitualStarted>
+	<RitualCanceled>Upgrade canceled</RitualCanceled>
+	<TimeForUpgrade>Time for Upgrade</TimeForUpgrade>
+	<NeedUpgradeSpot>It must be placed near the upgrade platform</NeedUpgradeSpot>
+	<CountMax>Count max</CountMax>
+	<VisitOutdoorExercises>Outdoor exercises</VisitOutdoorExercises>
+	<OutdoorExercisesNotion>Outdoor exercises</OutdoorExercisesNotion>
+	<OutdoorExercisesXPGain>gain progress in cultivation</OutdoorExercisesXPGain>
+
+</LanguageData>

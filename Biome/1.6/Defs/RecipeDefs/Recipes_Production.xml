@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--切割白瑶砖-->
+	<!--<RecipeDef>
+		<defName>RI_Recipe_MistAgateBlocksAny</defName>
+		<label>make mist agate blocks</label>
+		<description>Cut mist agate into usable blocks.</description>
+		<jobString>Cutting blocks from mist agate</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<workSkill>Crafting</workSkill>
+		--><!--<workSkillLearnFactor>0</workSkillLearnFactor>--><!--
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_MistAgate</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_MistAgate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_MistAgateBrick>20</RI_Resource_MistAgateBrick>
+		</products>
+	</RecipeDef>-->
+
+	<!--芦荟搓医药-->
+	<RecipeDef>
+		<defName>RI_Recipe_MakeMedicineFromAloeVera</defName>
+		<label>make medicine from aloe vera</label>
+		<description>Extract the medicinal components from aloe vera and combine them with herbal medicine to produce medical.</description>
+		<jobString>making medicine from aloe vera</jobString>
+		<!--<effectWorking>Cremate</effectWorking>-->
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>DrugLab</li>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_InitialApproach_ElixirsStrengthen</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_AloeVera</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_AloeVera</li>
+				<li>MedicineHerbal</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineIndustrial>1</MedicineIndustrial>
+		</products>
+	</RecipeDef>
+
+	<!--芦荟搓医药x4-->
+	<RecipeDef>
+		<defName>RI_Recipe_MakeMedicineFromAloeVeraBulk</defName>
+		<label>make medicine from aloe vera x4</label>
+		<description>Extract the medicinal components from aloe vera and combine them with herbal medicine to produce medical.</description>
+		<jobString>making medicine from aloe vera</jobString>
+		<!--<effectWorking>Cremate</effectWorking>-->
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>7000</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>DrugLab</li>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_InitialApproach_ElixirsStrengthen</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_AloeVera</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_AloeVera</li>
+				<li>MedicineHerbal</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineIndustrial>4</MedicineIndustrial>
+		</products>
+	</RecipeDef>
+
+	<!--煮安魂汤x1-->
+	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Recipe_MakeTranquilizingSoup</defName>
+		<label>decoct tranquilizing soup</label>
+		<description>decoct tranquilizing soup</description>
+		<jobString>decocting tranquilizing soup</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PhantomGoldLotus</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_TranquilizingSoup>4</RI_Drug_TranquilizingSoup>
+		</products>
+	</RecipeDef>
+
+	<!--煮安魂汤x4-->
+	<RecipeDef ParentName="RI_RecipeBase_MakeSomePowder" MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Recipe_MakeTranquilizingSoupBulk</defName>
+		<label>decoct tranquilizing soup x4</label>
+		<description>decoct tranquilizing soup</description>
+		<jobString>decocting tranquilizing soup</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TillandsiaDragonShoot</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PhantomGoldLotus</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_TranquilizingSoup>16</RI_Drug_TranquilizingSoup>
+		</products>
+	</RecipeDef>
+
+</Defs>

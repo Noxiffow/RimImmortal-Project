@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--邪祟肉-->
+	<ThingDef>
+		<defName>RI_Meat_Aberrant</defName>
+		<label>aberrant meat</label>
+		<description>The flesh of an aberrant creature, exuding a damp, putrid stench. Is it truly necessary to eat this?\n\nPerhaps certain unique cook techniques can turn decay into something remarkable…</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Meat_Aberrant</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<selectable>true</selectable>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Item</altitudeLayer>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<stackLimit>75</stackLimit>
+		<alwaysHaulable>true</alwaysHaulable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tradeability>Sellable</tradeability>
+		<pathCost>14</pathCost>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Beauty>-9</Beauty>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Mass>0.05</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<!--容易中毒-->
+			<FoodPoisonChanceFixedHuman>0.4</FoodPoisonChanceFixedHuman>
+			<MarketValue>0.2</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		<ingredient>
+			<!--文化相关-->
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<specialThoughtDirect>RI_Thought_AteAberrantMeat</specialThoughtDirect>
+			<specialThoughtAsIngredient>RI_Thought_AteAberrantMeatAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li>
+				<compClass>CompHarbingerTreeConsumable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--邪异皮，材料属性较差，主要拿来合成-->
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>RI_Leather_Aberrant</defName>
+		<label>aberrant leather</label>
+		<description>The leather from an aberrant creature, carrying the scent of rot that unsettles the senses.\n\nAberrant leather is ill-suited for ordinary crafting, but certain specialized ritual implements may require it.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Leather_Aberrant</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.4</MarketValue>
+			<StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(90,75,60)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<MaxHitPoints>0.6</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>

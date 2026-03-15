@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	
+	<!--DaoAscension-->
+	<!-- EN: Under the QingMing tree, the ethereal fluff rises,\nAscend to immortality, reaching the ninth heaven.\nQi gathers, transforming the world,\nTranscending the mundane, gaining freedom.\n\nYou have cast off the shackles of the mortal world and ascended to immortality. The vast universe before you is no longer distant, but a boundless realm awaiting your exploration. Titles like cultivator and immortal hold no meaning for you now. With Qi flowing like a river, every step you take is a journey beyond the mundane.\n -->
+  <GameOverDaoAscensionIntro>青冥树下蓬絮起，羽化登仙上九重。\n灵气汇聚天地变，超凡脱俗得自由。\n\n你已脱去尘世束缚，羽化登仙。眼前的宇宙不再遥不可及，而是等待你去探索的辽阔疆域。修士，仙人，这样的称号对于你来说再无意义，灵气汇聚如河，你的每一步，皆为超凡脱俗之路。\n</GameOverDaoAscensionIntro>
+	<!-- EN: After ascension, your remnants will remain in place, while the rest of your consciousness transforms into Qi, journeying towards the void.\n\nYou have not perished, but have become a life of another form—immortal. -->
+  <GameOverDaoAscensionEnding>飞升后，你的残留遗蜕将留在原地，其余意识化为灵气，去往太虚。\n\n你并没有消逝，而是变为了另一种形式的生命，永生。</GameOverDaoAscensionEnding>
+	<!-- EN: These cultivators have ascension:\n\n{0} -->
+  <GameOverColonistsAscension>这些修炼者飞升了：\n\n{0}</GameOverColonistsAscension>
+	<!-- EN: Can not Ascension -->
+  <CannotAscension>无法飞升</CannotAscension>
+	<!-- EN: not yet reached the Realm of Earth Immortal Ascension -->
+  <NoHediff>未达到地仙羽化之境</NoHediff>
+	<!-- EN: Start Ascension -->
+  <Ascension>开始飞升</Ascension>
+
+  <!-- UNUSED -->
+  <TimeForAscension>可以飞升了</TimeForAscension>
+
+</LanguageData>

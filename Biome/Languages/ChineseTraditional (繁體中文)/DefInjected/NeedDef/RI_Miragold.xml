@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Miragold -->
+  <RI_ChemicalNeed_Miragold.label>弭金砂</RI_ChemicalNeed_Miragold.label>
+  <!-- EN: Because of a miragold dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms. -->
+  <RI_ChemicalNeed_Miragold.description>由于对弭金砂的依赖，这个人需要定期吸食这种毒品以避免戒断症状。</RI_ChemicalNeed_Miragold.description>
+  
+</LanguageData>

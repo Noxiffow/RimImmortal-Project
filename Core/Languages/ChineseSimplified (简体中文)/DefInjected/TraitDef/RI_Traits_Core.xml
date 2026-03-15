@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: <color=#baffe3>Resist Beating</color> -->
+  <RI_Trait_Beatable.degreeDatas.colorbaffe3Resist_Beatingcolor.label>&lt;color=#baffe3>耐揍&lt;/color></RI_Trait_Beatable.degreeDatas.colorbaffe3Resist_Beatingcolor.label>
+  <!-- EN: {PAWN_nameDef} is tough as nails. Having endured constant bullying and beatings since childhood, {PAWN_pronoun} has developed a high tolerance for pain over time. -->
+  <RI_Trait_Beatable.degreeDatas.colorbaffe3Resist_Beatingcolor.description>{PAWN_nameDef}皮糙肉厚。{PAWN_pronoun}从小就受到欺凌，被不断殴打，好消息是{PAWN_pronoun}越来越耐揍了。</RI_Trait_Beatable.degreeDatas.colorbaffe3Resist_Beatingcolor.description>
+  
+  <!-- EN: <color=#8cffd1>Human butcher</color> -->
+  <RI_Trait_BodyMaker.degreeDatas.color8cffd1Human_butchercolor.label>&lt;color=#8cffd1>人屠&lt;/color></RI_Trait_BodyMaker.degreeDatas.color8cffd1Human_butchercolor.label>
+  <!-- EN: {PAWN_nameDef}'s mental processes are different from ordinary individuals; {PAWN_pronoun} feels no remorse for killing. {PAWN_pronoun} is a natural killer, learning various killing techniques and military strategies on {PAWN_pronoun} own without any formal training. -->
+  <RI_Trait_BodyMaker.degreeDatas.color8cffd1Human_butchercolor.description>{PAWN_nameDef}的脑回路异于常人，{PAWN_pronoun}对杀人没有任何负罪感。{PAWN_pronoun}是天生的屠杀者，无师自通学会了各种杀人技和兵法。</RI_Trait_BodyMaker.degreeDatas.color8cffd1Human_butchercolor.description>
+  
+  <!-- EN: <color=#baffe3>Erudite</color> -->
+  <RI_Trait_BookWorm.degreeDatas.colorbaffe3Eruditecolor.label>&lt;color=#baffe3>学识渊博&lt;/color></RI_Trait_BookWorm.degreeDatas.colorbaffe3Eruditecolor.label>
+  <!-- EN: {PAWN_nameDef} experienced a famine in childhood, leaving {PAWN_objective} with permanent dark circles and wrinkles. While {PAWN_pronoun} may appear older than peers, {PAWN_pronoun} has also gained invaluable communication skills from this experience. -->
+  <RI_Trait_BookWorm.degreeDatas.colorbaffe3Eruditecolor.description>{PAWN_nameDef}从小热爱学习，熟读各种书籍。{PAWN_pronoun}在研究上有着独到的见解，并且这让他很难在精神上被打倒。</RI_Trait_BookWorm.degreeDatas.colorbaffe3Eruditecolor.description>
+  
+  <!-- EN: <color=#8cffd1>Strong spiritual roots</color> -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.color8cffd1Strong_spiritual_rootscolor.label>&lt;color=#8cffd1>灵脉强健&lt;/color></RI_Trait_CultivationOfImmortals.degreeDatas.color8cffd1Strong_spiritual_rootscolor.label>
+  <!-- EN: [PAWN_nameDef] is good at feeling Qi. -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.color8cffd1Strong_spiritual_rootscolor.description>[PAWN_nameDef]先天就有很强的气感。</RI_Trait_CultivationOfImmortals.degreeDatas.color8cffd1Strong_spiritual_rootscolor.description>
+  <!-- EN: <color=#baffe3>Great spiritual roots</color> -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Great_spiritual_rootscolor.label>&lt;color=#baffe3>灵脉运转&lt;/color></RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Great_spiritual_rootscolor.label>
+  <!-- EN: [PAWN_nameDef] can feel more Qi than the average cultivator. -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Great_spiritual_rootscolor.description>[PAWN_nameDef]比寻常修炼者对灵气更加敏感。</RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Great_spiritual_rootscolor.description>
+  <!-- EN: <color=#baffe3>Weak spiritual roots</color> -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Weak_spiritual_rootscolor.label>&lt;color=#baffe3>灵脉虚浮&lt;/color></RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Weak_spiritual_rootscolor.label>
+  <!-- EN: [PAWN_nameDef] can feel less Qi than the average cultivator. -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Weak_spiritual_rootscolor.description>[PAWN_nameDef]比一般修炼者感受到更少的灵气。</RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Weak_spiritual_rootscolor.description>
+  <!-- EN: <color=#baffe3>Poor spiritual roots</color> -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Poor_spiritual_rootscolor.label>&lt;color=#baffe3>灵脉羸弱&lt;/color></RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Poor_spiritual_rootscolor.label>
+  <!-- EN: [PAWN_nameDef]'s body is weak, maybe he is not fit to be a cultivator. -->
+  <RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Poor_spiritual_rootscolor.description>[PAWN_nameDef]的气感不佳，或许不适合当修炼者。</RI_Trait_CultivationOfImmortals.degreeDatas.colorbaffe3Poor_spiritual_rootscolor.description>
+  
+  <!-- EN: <color=#baffe3>Withered face</color> -->
+  <RI_Trait_Emaciation.degreeDatas.colorbaffe3Withered_facecolor.label>&lt;color=#baffe3>面容枯槁&lt;/color></RI_Trait_Emaciation.degreeDatas.colorbaffe3Withered_facecolor.label>
+  <!-- EN: {PAWN_nameDef} experienced a famine in childhood, leaving {PAWN_objective} with permanent dark circles and wrinkles. While {PAWN_pronoun} may appear older than peers, {PAWN_pronoun} has also gained invaluable communication skills from this experience. -->
+  <RI_Trait_Emaciation.degreeDatas.colorbaffe3Withered_facecolor.description>{PAWN_nameDef}在小时候经历过一场饥荒。这带给{PAWN_pronoun}的脸无法抹平的黑眼圈和皱纹，让{PAWN_pronoun}看起来比同龄人更老一些，但也让他掌握了和人交流的技巧。</RI_Trait_Emaciation.degreeDatas.colorbaffe3Withered_facecolor.description>
+  
+  <!-- EN: <color=#8cffd1>Emperor</color> -->
+  <RI_Trait_Emperor.degreeDatas.color8cffd1Emperorcolor.label>&lt;color=#8cffd1>帝王&lt;/color></RI_Trait_Emperor.degreeDatas.color8cffd1Emperorcolor.label>
+  <!-- EN: {PAWN_nameDef} is well-versed in the ways of an emperor, emitting an aura of majesty without anger. -->
+  <RI_Trait_Emperor.degreeDatas.color8cffd1Emperorcolor.description>{PAWN_nameDef}深谙帝王之道，{PAWN_pronoun}身上有一种不怒自威的气场。</RI_Trait_Emperor.degreeDatas.color8cffd1Emperorcolor.description>
+  
+  <!-- EN: <color=#8cffd1>Enlightenment of the Dao</color> -->
+  <RI_Trait_Enlightenment.degreeDatas.color8cffd1Enlightenment_of_the_Daocolor.label>&lt;color=#8cffd1>开悟造化&lt;/color></RI_Trait_Enlightenment.degreeDatas.color8cffd1Enlightenment_of_the_Daocolor.label>
+  <!-- EN: {PAWN_nameDef} once had a significant dream. In this dream, {PAWN_pronoun} encountered a blue-robed elder. Upon awakening, {PAWN_nameDef} found many concepts became much easier to comprehend. -->
+  <RI_Trait_Enlightenment.degreeDatas.color8cffd1Enlightenment_of_the_Daocolor.description>{PAWN_nameDef}曾经做过一场大梦。在梦里，{PAWN_pronoun}见到了一位蓝袍老者。醒来后，{PAWN_nameDef}发现许多知识瞬间变得容易理解了。</RI_Trait_Enlightenment.degreeDatas.color8cffd1Enlightenment_of_the_Daocolor.description>
+  
+  <!-- EN: <color=#baffe3>Scud</color> -->
+  <RI_Trait_FleetFeet.degreeDatas.colorbaffe3Scudcolor.label>&lt;color=#baffe3>飞毛腿&lt;/color></RI_Trait_FleetFeet.degreeDatas.colorbaffe3Scudcolor.label>
+  <!-- EN: With long and well-developed calf muscles, {PAWN_nameDef} can run faster than most, making them a prime candidate for sprinting competitions. -->
+  <RI_Trait_FleetFeet.degreeDatas.colorbaffe3Scudcolor.description>{PAWN_nameDef}的双腿修长，跟腱发达。{PAWN_pronoun}的奔跑速度超出常人，是当飞毛腿的好苗子。</RI_Trait_FleetFeet.degreeDatas.colorbaffe3Scudcolor.description>
+  
+  <!-- EN: <color=#baffe3>Handsome scholar</color> -->
+  <RI_Trait_Handsome.degreeDatas.colorbaffe3Handsome_scholarcolor.label>&lt;color=#baffe3>白净书生&lt;/color></RI_Trait_Handsome.degreeDatas.colorbaffe3Handsome_scholarcolor.label>
+  <!-- EN: With a face as handsome as a peach blossom, {PAWN_nameDef} naturally stands out wherever {PAWN_pronoun} goes. Not only does {PAWN_pronoun} possess good looks, but {PAWN_pronoun} is also highly skilled in learning and research, making {PAWN_objective} the center of attention. -->
+  <RI_Trait_Handsome.degreeDatas.colorbaffe3Handsome_scholarcolor.description>{PAWN_nameDef}面若桃花，貌比潘安。{PAWN_pronoun}天生长了张好面孔，不仅如此也十分擅长学习和钻研，到哪都会成为焦点。</RI_Trait_Handsome.degreeDatas.colorbaffe3Handsome_scholarcolor.description>
+  
+  <!-- EN: <color=#8cffd1>Martial soul</color> -->
+  <RI_Trait_MartialArtistSpirit.degreeDatas.color8cffd1Martial_soulcolor.label>&lt;color=#8cffd1>武魂&lt;/color></RI_Trait_MartialArtistSpirit.degreeDatas.color8cffd1Martial_soulcolor.label>
+  <!-- EN: {PAWN_nameDef} has shown martial arts talent since childhood. By the age of ten, {PAWN_pronoun} had independently developed a set of practical combat techniques, and {PAWN_pronoun} strength and reflexes surpass those of ordinary individuals. -->
+  <RI_Trait_MartialArtistSpirit.degreeDatas.color8cffd1Martial_soulcolor.description>{PAWN_nameDef}从小便显露出武学天赋。{PAWN_pronoun}在十多岁时，就独自钻研出一套实战拳法，并且{PAWN_pronoun}的力量和反应能力也超出常人。</RI_Trait_MartialArtistSpirit.degreeDatas.color8cffd1Martial_soulcolor.description>
+  
+  <!-- EN: <color=#baffe3>Shelter from rain</color> -->
+  <RI_Trait_NoRain.degreeDatas.colorbaffe3Shelter_from_raincolor.label>&lt;color=#baffe3>避雨&lt;/color></RI_Trait_NoRain.degreeDatas.colorbaffe3Shelter_from_raincolor.label>
+  <!-- EN: Wear rainproof clothing and keep body dry. -->
+  <RI_Trait_NoRain.degreeDatas.colorbaffe3Shelter_from_raincolor.description>穿上防雨衣物，保持身体干爽。</RI_Trait_NoRain.degreeDatas.colorbaffe3Shelter_from_raincolor.description>
+  
+  <!-- EN: <color=#baffe3>Herbs hobby</color> -->
+  <RI_Trait_Rhizotomist.degreeDatas.colorbaffe3Herbs_hobbycolor.label>&lt;color=#baffe3>药草喜好&lt;/color></RI_Trait_Rhizotomist.degreeDatas.colorbaffe3Herbs_hobbycolor.label>
+  <!-- EN: {PAWN_nameDef} has been fascinated by various herbs since childhood. This interest has laid a solid foundation for {PAWN_pronoun} in both planting skills and alchemical abilities. -->
+  <RI_Trait_Rhizotomist.degreeDatas.colorbaffe3Herbs_hobbycolor.description>{PAWN_nameDef}从小便对各种药材产生了兴趣。这为{PAWN_pronoun}的种植技巧和炼药能力都打下了良好的基础。</RI_Trait_Rhizotomist.degreeDatas.colorbaffe3Herbs_hobbycolor.description>
+  
+  <!-- EN: <color=#8cffd1>Divine farmer</color> -->
+  <RI_Trait_Shennong.degreeDatas.color8cffd1Divine_farmercolor.label>&lt;color=#8cffd1>神农&lt;/color></RI_Trait_Shennong.degreeDatas.color8cffd1Divine_farmercolor.label>
+  <!-- EN: {PAWN_nameDef} has diligently worked since childhood to feed {PAWN_pronoun} fellow villagers. From a young age, {PAWN_pronoun} has been gathering unknown medicinal herbs and experimenting with them, becoming familiar with various medicinal plants and excelling in farming and cultivation. -->
+  <RI_Trait_Shennong.degreeDatas.color8cffd1Divine_farmercolor.description>{PAWN_nameDef}自小发奋努力，要填饱同乡人的肚子。{PAWN_pronoun}从小就去采摘未知的药材，并以身试药，这让{PAWN_pronoun}熟悉各种药草，而且更擅长农耕播种。</RI_Trait_Shennong.degreeDatas.color8cffd1Divine_farmercolor.description>
+  
+  <!-- EN: <color=#baffe3>Super strength</color> -->
+  <RI_Trait_Sthenia.degreeDatas.colorbaffe3Super_strengthcolor.label>&lt;color=#baffe3>膂力过人&lt;/color></RI_Trait_Sthenia.degreeDatas.colorbaffe3Super_strengthcolor.label>
+  <!-- EN: {PAWN_nameDef} possesses extraordinary physical strength. For someone with excessive energy like them, tasks like throwing boulders or carrying cauldrons are never a challenge. -->
+  <RI_Trait_Sthenia.degreeDatas.colorbaffe3Super_strengthcolor.description>{PAWN_nameDef}有一身蛮力。对精力过剩的{PAWN_pronoun}来说，抛石锁，扛鼎，从来不是什么难事。</RI_Trait_Sthenia.degreeDatas.colorbaffe3Super_strengthcolor.description>
+  
+  <!-- EN: <color=#baffe3>Strong Meridians</color> -->
+  <RI_Trait_StrongMeridians.degreeDatas.colorbaffe3Strong_Meridianscolor.label>&lt;color=#baffe3>经脉强健&lt;/color></RI_Trait_StrongMeridians.degreeDatas.colorbaffe3Strong_Meridianscolor.label>
+  <!-- EN: {PAWN_nameDef} was born with stronger meridians than the average person. Their immune speed is slightly higher than that of an ordinary individual. -->
+  <RI_Trait_StrongMeridians.degreeDatas.colorbaffe3Strong_Meridianscolor.description>{PAWN_nameDef}生来就比常人有更强的经脉。{PAWN_pronoun}的免疫速度略微高于一般人。</RI_Trait_StrongMeridians.degreeDatas.colorbaffe3Strong_Meridianscolor.description>
+  
+  <!-- EN: <color=#8cffd1>Salvation doctor</color> -->
+  <RI_Trait_SuperDoctor.degreeDatas.color8cffd1Salvation_doctorcolor.label>&lt;color=#8cffd1>悬壶济世&lt;/color></RI_Trait_SuperDoctor.degreeDatas.color8cffd1Salvation_doctorcolor.label>
+  <!-- EN: {PAWN_nameDef} is determined to save life. {PAWN_pronoun} dedicates {PAWN_pronoun} life to the study of medicine, mastering the human body's organs and meridians, and has successfully performed many complex surgeries. -->
+  <RI_Trait_SuperDoctor.degreeDatas.color8cffd1Salvation_doctorcolor.description>{PAWN_nameDef}立志要救死扶伤。{PAWN_pronoun}将一辈子都用在研究医术上，并且通晓人体五脏经脉，解决过许多高难度的手术。</RI_Trait_SuperDoctor.degreeDatas.color8cffd1Salvation_doctorcolor.description>
+  
+  <!-- EN: <color=#8cffd1>Marrow-cleansing spirit body</color> -->
+  <RI_Trait_SuperQiFeeling.degreeDatas.color8cffd1Marrowcleansing_spirit_bodycolor.label>&lt;color=#8cffd1>洗髓灵体&lt;/color></RI_Trait_SuperQiFeeling.degreeDatas.color8cffd1Marrowcleansing_spirit_bodycolor.label>
+  <!-- EN: {PAWN_nameDef}'s body possesses mysterious power. While practicing cultivation, it seems like spiritual energy automatically washes through {PAWN_pronoun} body repeatedly, greatly enhancing {PAWN_pronoun} absorption efficiency beyond that of ordinary cultivators. Additionally, this nourishes {PAWN_pronoun} flesh, making {PAWN_pronoun} tendons and bones stronger than usual. -->
+  <RI_Trait_SuperQiFeeling.degreeDatas.color8cffd1Marrowcleansing_spirit_bodycolor.description>{PAWN_nameDef}的身体具有神秘的力量。{PAWN_pronoun}在修炼时，仿佛灵气会自动在{PAWN_pronoun}体内被一遍遍洗练，令{PAWN_pronoun}的吸收效率远超一般修炼者。同时，这也能滋养肉身，令{PAWN_pronoun}的筋骨强度超出常人。</RI_Trait_SuperQiFeeling.degreeDatas.color8cffd1Marrowcleansing_spirit_bodycolor.description>
+  
+  <!-- EN: <color=#8cffd1>Fiery eyes</color> -->
+  <RI_Trait_SuperVision.degreeDatas.color8cffd1Fiery_eyescolor.label>&lt;color=#8cffd1>火眼金睛&lt;/color></RI_Trait_SuperVision.degreeDatas.color8cffd1Fiery_eyescolor.label>
+  <!-- EN: {PAWN_nameDef} once suffered from an eye ailment, cured by a barefoot doctor. Since then, {PAWN_pronoun} discovered {PAWN_pronoun} vision became extraordinarily sharp, effortlessly hitting targets from a hundred paces. -->
+  <RI_Trait_SuperVision.degreeDatas.color8cffd1Fiery_eyescolor.description>{PAWN_nameDef}曾经患过一场眼疾，被赤脚医生医好。之后{PAWN_pronoun}发现，自己的视力变得奇好无比，百步穿杨对于{PAWN_pronoun}来说就是信手拈来。</RI_Trait_SuperVision.degreeDatas.color8cffd1Fiery_eyescolor.description>
+  
+  <!-- EN: <color=#baffe3>Weak Meridians</color> -->
+  <RI_Trait_WeakMeridians.degreeDatas.colorbaffe3Weak_Meridianscolor.label>&lt;color=#baffe3>经脉虚弱&lt;/color></RI_Trait_WeakMeridians.degreeDatas.colorbaffe3Weak_Meridianscolor.label>
+  <!-- EN: {PAWN_nameDef}'s meridians are weaker than those of the average person. They have been physically frail since childhood, with an immune speed slightly slower than that of an ordinary person. -->
+  <RI_Trait_WeakMeridians.degreeDatas.colorbaffe3Weak_Meridianscolor.description>{PAWN_nameDef}的经脉比常人更弱。{PAWN_pronoun}从小就体虚多病，免疫速度略慢于一般人。</RI_Trait_WeakMeridians.degreeDatas.colorbaffe3Weak_Meridianscolor.description>
+  
+</LanguageData>

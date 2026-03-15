@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ancient cultivator lamp ruin -->
+  <RI_Building_AncientCultivatorLampRuinsA.label>古修路灯遗迹</RI_Building_AncientCultivatorLampRuinsA.label>
+  <!-- EN: The street lamp remains left by ancient cultivators are still glowing. -->
+  <RI_Building_AncientCultivatorLampRuinsA.description>古修留下的路灯遗迹，还在发光。</RI_Building_AncientCultivatorLampRuinsA.description>
+  <!-- EN: Deconstruct for valuable resources. -->
+  <RI_Building_AncientCultivatorLampRuinsA.comps.CompInspectString.inspectString>拆除以获得资源</RI_Building_AncientCultivatorLampRuinsA.comps.CompInspectString.inspectString>
+  
+  <!-- EN: ancient cultivator building ruin -->
+  <RI_Building_AncientCultivatorRuinsA.label>古修建筑遗迹</RI_Building_AncientCultivatorRuinsA.label>
+  <!-- EN: The architectural remains left by ancient cultivators were forged with heavy steel. -->
+  <RI_Building_AncientCultivatorRuinsA.description>古修留下的建筑遗迹，以沉重的玄铁打造而成。</RI_Building_AncientCultivatorRuinsA.description>
+  <!-- EN: Deconstruct for valuable resources. -->
+  <RI_Building_AncientCultivatorRuinsA.comps.CompInspectString.inspectString>拆除以获得资源</RI_Building_AncientCultivatorRuinsA.comps.CompInspectString.inspectString>
+  
+</LanguageData>

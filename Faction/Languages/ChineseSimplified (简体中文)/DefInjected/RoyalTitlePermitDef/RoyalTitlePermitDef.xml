@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Call disciples' assistance -->
+  <RI_Sect_CallDisciplesAssistance.label>呼叫弟子助阵</RI_Sect_CallDisciplesAssistance.label>
+  <!-- EN: Ask the sect to send a batch of battle-experienced cultivators for support.\n\nEight sect guards will protect you, they have signed Death Pact, it is not your responsibility to protect them. -->
+  <RI_Sect_CallDisciplesAssistance.description>让宗门提供一批有战斗经验的修士前来助阵。\n\n8名签下生死契的宗门护法前来护卫，他们誓死相随，而你无须为他们担责。</RI_Sect_CallDisciplesAssistance.description>
+  
+  <!-- EN: Call sect's orbital bombardment -->
+  <RI_Sect_CallSectOrbitalBombardment.label>呼叫宗门轨道轰炸</RI_Sect_CallSectOrbitalBombardment.label>
+  <!-- EN: Contact a sect elder to obtain the usage rights for a Heavenly-grade magic weapon, and conduct orbital bombardment on a specific area. -->
+  <RI_Sect_CallSectOrbitalBombardment.description>联系宗门长老获得天基法器的使用权，对某区域进行轨道轰炸。</RI_Sect_CallSectOrbitalBombardment.description>
+  
+  <!-- EN: Call celestial ship -->
+  <RI_Sect_Drop_CallCelestialShip.label>呼叫仙舟</RI_Sect_Drop_CallCelestialShip.label>
+  <!-- EN: Call for the sect's celestial ship. -->
+  <RI_Sect_Drop_CallCelestialShip.description>呼叫宗门的仙舟。</RI_Sect_Drop_CallCelestialShip.description>
+  
+  <!-- EN: Request Marrow-washing nectar -->
+  <RI_Sect_Drop_Nectar.label>申请洗髓玉液</RI_Sect_Drop_Nectar.label>
+  <!-- EN: Request an expensive Marrow-washing nectar. -->
+  <RI_Sect_Drop_Nectar.description>申请一份昂贵的洗髓玉液。</RI_Sect_Drop_Nectar.description>
+  
+  <!-- EN: Request QingMing jade wine -->
+  <RI_Sect_Drop_QingMingWine.label>申请青玉仙露</RI_Sect_Drop_QingMingWine.label>
+  <!-- EN: Request an expensive QingMing jade wine. -->
+  <RI_Sect_Drop_QingMingWine.description>申请一份昂贵的青玉仙露。</RI_Sect_Drop_QingMingWine.description>
+  
+  <!-- EN: Request building materials -->
+  <RI_Sect_Drop_RequestBuildingMaterials.label>申请建材</RI_Sect_Drop_RequestBuildingMaterials.label>
+  <!-- EN: Request a batch of building materials from the sect.\n\nList of building materials:\nSteel x 300\nWood log x 300\nCloth x 200\nSilver x 100 -->
+  <RI_Sect_Drop_RequestBuildingMaterials.description>从宗门申请一批建材。\n\n建材清单：\n钢铁x300\n原木x300\n布料x300\n白银x100</RI_Sect_Drop_RequestBuildingMaterials.description>
+  
+  <!-- EN: Request little cultivation resources -->
+  <RI_Sect_Drop_RequestCultivationResources.label>申请修炼资源</RI_Sect_Drop_RequestCultivationResources.label>
+  <!-- EN: Request a batch of cultivation resources from the sect.\n\nList of cultivation resources:\nSpiritual crystal x 20 -->
+  <RI_Sect_Drop_RequestCultivationResources.description>从宗门申请一批修炼资源。\n\n资源清单：\n灵石x20</RI_Sect_Drop_RequestCultivationResources.description>
+  
+  <!-- EN: Request medicinal herbs -->
+  <RI_Sect_Drop_RequestMedicinalHerbs.label>申请药材</RI_Sect_Drop_RequestMedicinalHerbs.label>
+  <!-- EN: Request a batch of medicinal herbs from the sect.\n\nList of herbs:\nLingZhi x 20\nPlantain seed x 20\nSnow lotus x 5\nLantern berries x 5\nSilver ginseng x 5\nTillandsia dragon shoot x 5\nPurple-fog mushroom x 5\n -->
+  <RI_Sect_Drop_RequestMedicinalHerbs.description>从宗门申请一批药材。\n\n药材清单：\n灵芝x20\n车前子x20\n雪莲x5\n提灯果x5\n银芯参x5\n火龙芽x5\n紫雾菇x5</RI_Sect_Drop_RequestMedicinalHerbs.description>
+  
+  <!-- EN: Request pills -->
+  <RI_Sect_Drop_RequestPills.label>申请丹药</RI_Sect_Drop_RequestPills.label>
+  <!-- EN: Request a batch of pills from the sect.\n\nList of pills:\n【Second-rate】Herb powder x 4\n【Second-rate】Spirit jade pill x 3\n【Second-rate】Gold blood pill x 3\n【Second-rate】Cold-frost pill x 2\n【Second-rate】Scorching-Wind pill x 2 -->
+  <RI_Sect_Drop_RequestPills.description>从宗门申请一批丹药。\n\n丹药清单：\n【二品】回春散x5\n【二品】灵玉丸x3\n【二品】金血丸x3\n【二品】炙风丸x2\n【二品】玄寒丸x2</RI_Sect_Drop_RequestPills.description>
+  
+  <!-- EN: Follower dispatch -->
+  <RI_Sect_FollowerDispatch.label>杂役派遣</RI_Sect_FollowerDispatch.label>
+  <!-- EN: Ask the sect to dispatch several miscellaneous disciples to handle menial tasks.\n\nFive Sect follower will come to help you finish the work. -->
+  <RI_Sect_FollowerDispatch.description>让宗门派遣几位杂役弟子，前来干粗活。\n\n5名杂役弟子前来协助你完成工作。</RI_Sect_FollowerDispatch.description>
+  
+</LanguageData>

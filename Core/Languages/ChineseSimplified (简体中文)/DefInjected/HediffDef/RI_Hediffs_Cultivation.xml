@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spiritual root -->
+  <Hediff_RI_EnergyRoot.label>灵芽</Hediff_RI_EnergyRoot.label>
+  <!-- EN: This spiritual root is the basis for opening the path of cultivation, and its quality determines the speed of cultivation of the cultivator. -->
+  <Hediff_RI_EnergyRoot.description>这颗灵芽是开启修炼之路的基础，其品质决定了修炼者的修炼速度。</Hediff_RI_EnergyRoot.description>
+  <!-- EN: 【Low quality】 -->
+  <Hediff_RI_EnergyRoot.stages.Low_quality.label>【下品】</Hediff_RI_EnergyRoot.stages.Low_quality.label>
+  <!-- EN: 【Medium quality】 -->
+  <Hediff_RI_EnergyRoot.stages.Medium_quality.label>【中品】</Hediff_RI_EnergyRoot.stages.Medium_quality.label>
+  <!-- EN: 【Best quality】 -->
+  <Hediff_RI_EnergyRoot.stages.Best_quality.label>【上品】</Hediff_RI_EnergyRoot.stages.Best_quality.label>
+  
+  <!-- EN: Meridians disorder -->
+  <QI_Deviation.label>经脉错乱</QI_Deviation.label>
+  <!-- EN: The failure of the upgrade caused a disturbance in the meridians! The meridians and Spiritual roots carried an overwhelming amount of Qi energy from heaven and earth, heading toward collapse!\n\nFor the following several days, cultivate will be impossible, and consciousness will be greatly diminished. -->
+  <QI_Deviation.description>突破失败导致的经脉错乱！经脉与灵芽承载了大量无法驾驭的天地灵气，走向崩溃！\n\n在接下来的数天时间内，将无法进行修炼，并且意识大大降低。</QI_Deviation.description>
+  
+  <!-- EN: Eclosion -->
+  <RI_ascension.label>羽化</RI_ascension.label>
+  <!-- EN: You have reached the top of Earth Immortal, your qualification for Ascension is already in place.\n\nThe stars hang above your head, the road of Eternal Life spreads beneath your feet, and now, all that remains is for you to take action. -->
+  <RI_ascension.description>你已臻地仙圆满之境，飞升资格已然具备。\n\n群星悬于头顶，长生大道铺于脚下，而现在，你只需要行动。</RI_ascension.description>
+  
+  <!-- EN: Perfect rank -->
+  <RI_CanGrade.label>境界圆满</RI_CanGrade.label>
+  <!-- EN: With a perfected mind and full Qi, a single thought clears the way, The winds rise and the clouds surge, and spirit forms on its own.\nYour current rank has reached completion, and the spiritual root swells with pain. A transformation is about to occur. -->
+  <RI_CanGrade.description>神完气足一念清，风起云涌自成灵。\n当前境界达到了圆满，灵芽鼓涨作痛，一场蜕变即将到来。</RI_CanGrade.description>
+  
+  <!-- EN: Reduce Upgrade success rate -->
+  <RI_EnSucessRate.label>突破成功率下降</RI_EnSucessRate.label>
+  <!-- EN: The success rate of upgrade has decreased slightly. -->
+  <RI_EnSucessRate.description>突破成功率有了小幅度下降。</RI_EnSucessRate.description>
+  
+  <!-- EN: Increase Upgrade success rate -->
+  <RI_SucessRate.label>突破成功率提升</RI_SucessRate.label>
+  <!-- EN: The success rate of upgrade has improved slightly. -->
+  <RI_SucessRate.description>突破成功率有了小幅度提升。</RI_SucessRate.description>
+  
+</LanguageData>

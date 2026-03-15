@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Thunder ball -->
+  <Energyball.label>雷球</Energyball.label>
+  <!-- EN: Thunder ball. -->
+  <Energyball.description>雷球。</Energyball.description>
+  
+  <!-- EN: Qi bullet -->
+  <QiBullet.label>气弹</QiBullet.label>
+  
+</LanguageData>

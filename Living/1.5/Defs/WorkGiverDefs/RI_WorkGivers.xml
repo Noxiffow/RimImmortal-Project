@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--烧制粘土-->
+	<WorkGiverDef>
+		<defName>RI_DoBillsFireBrick</defName>
+		<label>Bake clay</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_BrickKiln</li>
+		</fixedBillGiverDefs>
+		<verb>Bake</verb>
+		<gerund>Bake at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--挖掘-->
+	<WorkGiverDef>
+		<defName>RI_DoBillsDiggingSth</defName>
+		<label>Digging</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_MudDigWhole</li>
+		</fixedBillGiverDefs>
+		<verb>dig</verb>
+		<gerund>dig at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--煮制饮品-->
+	<WorkGiverDef>
+		<defName>RI_DoBillsBoilSth</defName>
+		<label>Boil drink</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_TeaStove</li>
+		</fixedBillGiverDefs>
+		<verb>boil</verb>
+		<gerund>boiling at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--制作奶制品-->
+	<WorkGiverDef>
+		<defName>RI_DoBillsMakeMilk</defName>
+		<label>Making dairy product</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>98</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_DairyWorkBench</li>
+		</fixedBillGiverDefs>
+		<verb>boil</verb>
+		<gerund>boiling at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

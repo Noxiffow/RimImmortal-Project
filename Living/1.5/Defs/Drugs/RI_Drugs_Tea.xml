@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RI_DrugBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<tradeTags>
+			<li>Drugs</li>
+		</tradeTags>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<pathCost>14</pathCost>
+		<burnableByRecipe>true</burnableByRecipe>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<chairSearchRadius>8</chairSearchRadius>
+		</ingestible>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_DrugBase" Name="RI_TeaBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>3</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Tea</li>
+		</thingCategories>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_FoodRecipe</researchPrerequisite>
+			<recipeUsers>
+				<li>RI_Building_TeaStove</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+			<displayPriority>10</displayPriority>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<bulkRecipeCount>4</bulkRecipeCount>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_TeaBase">
+		<defName>RI_Food_GreenTea</defName>
+		<label>Green tea</label>
+		<description>A cup of green tea, emitting a light tea fragrance.</description>
+		<descriptionHyperlinks>
+			<!--<HediffDef>PsychiteTeaHigh</HediffDef>-->
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_GreenTea</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>13</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.1</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_GreenTea</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<toleranceChemical>Psychite</toleranceChemical>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<RI_Resource_TeaLeaf>3</RI_Resource_TeaLeaf>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_TeaBase">
+		<defName>RI_Food_BlackTea</defName>
+		<label>Black tea</label>
+		<description>A cup of black tea, emitting a thick black tea aroma.</description>
+		<descriptionHyperlinks>
+			<!--<HediffDef>PsychiteTeaHigh</HediffDef>-->
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_BlackTea</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.1</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_BlackTea</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<toleranceChemical>Psychite</toleranceChemical>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<RI_Resource_TeaLeaf>4</RI_Resource_TeaLeaf>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--<ThingDef ParentName="RI_TeaBase">
+		<defName>RI_Food_GinsengTea</defName>
+		<label>Ginseng tea</label>
+		<description>A fragrant tea infused with leaves of the psychoid plant. Drinking it induces a subtle psychite euphoria. This tea is easy to produce at cooking facilities, but can produce psychite addiction if consumed too often.\n\nMany tribes use psychoid tea, both as a daily energizer and as part of social and religious rituals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>PsychiteTeaHigh</HediffDef>
+			<HediffDef>PsychiteTolerance</HediffDef>
+			<HediffDef>PsychiteAddiction</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_GinsengTea</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_GinsengTea</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<toleranceChemical>Psychite</toleranceChemical>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<RI_Resource_SilverGinseng>1</RI_Resource_SilverGinseng>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_TeaBase">
+		<defName>RI_Food_LingZhiTea</defName>
+		<label>LingZhi tea</label>
+		<description>A fragrant tea infused with leaves of the psychoid plant. Drinking it induces a subtle psychite euphoria. This tea is easy to produce at cooking facilities, but can produce psychite addiction if consumed too often.\n\nMany tribes use psychoid tea, both as a daily energizer and as part of social and religious rituals.</description>
+		<descriptionHyperlinks>
+			<HediffDef>PsychiteTeaHigh</HediffDef>
+			<HediffDef>PsychiteTolerance</HediffDef>
+			<HediffDef>PsychiteAddiction</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_LingZhiTea</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_LingZhiTea</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<toleranceChemical>Psychite</toleranceChemical>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<RI_Resource_LingZhi>2</RI_Resource_LingZhi>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>-->
+
+	<ThingDef ParentName="RI_TeaBase">
+		<defName>RI_Food_SpiritHealTea</defName>
+		<label>Spiritual healing tea</label>
+		<description>A cup of spiced tea has a very complex taste.</description>
+		<descriptionHyperlinks>
+			<!--<HediffDef>PsychiteTeaHigh</HediffDef>-->
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Food_SpiritHealTea</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.15</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_SpiritHealTea</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<toleranceChemical>Psychite</toleranceChemical>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<RI_Resource_TeaLeaf>3</RI_Resource_TeaLeaf>
+			<PsychoidLeaves>1</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.02</addictiveness>
+				<minToleranceToAddict>0.10</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>110</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

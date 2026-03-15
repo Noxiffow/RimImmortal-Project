@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========生存类法宝前置=========-->
+	<HediffDef Name="RI_TalismanCarry_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<!--脱下法宝消失-->
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<defaultLabelColor>(0.45,0.78,0.56)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--如意庇护-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_JadeRuyi</defName>
+		<label>Ruyi protection</label>
+		<description>Jade Ruyi's halo accelerates the wearer's healing.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<InjuryHealingFactor>3</InjuryHealingFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--毒铃庇护-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_ToxicBell</defName>
+		<label>Toxic protection</label>
+		<description>The bell emits a special Qi and enters the human body, making the wearer not invaded.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>1</ToxicResistance>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--令牌熏香-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_SandalwoodToken</defName>
+		<label>Wood incense</label>
+		<description>The faint fragrance emitted by the token makes the whole person seem to be enveloped in a layer of fairy air, which makes the people around him feel more favorable.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>0.3</SocialImpact>
+					<NegotiationAbility>0.3</NegotiationAbility>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--速之牙-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_TuskPendant</defName>
+		<label>Elephant king speed</label>
+		<description>When an tusk pendant is held in the palm of your hand, a thin Qi appears around you, speeding up the wearer.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+					<MoveSpeed>0.3</MoveSpeed>
+					<MeleeCooldownFactor>-0.3</MeleeCooldownFactor>
+					<AimingDelayFactor>-0.3</AimingDelayFactor>
+					<RangedCooldownFactor>-0.3</RangedCooldownFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--避火-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_Firefighter</defName>
+		<label>Flame shelter</label>
+		<description>Pearl protect the wearer from flame damage.</description>
+		<defaultLabelColor>(0.74, 0.4, 0.27)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>0</Flammability>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--青囊妙药-->
+	<HediffDef ParentName="RI_TalismanCarry_Base">
+		<defName>RI_Talisman_GreenGourd</defName>
+		<label>Elixir of green gourd</label>
+		<description>The light Qi wave emitted in the green gourd makes the wearer's attention very concentrated, and the eyes penetrate the human body to see the viscera.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+					<MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+					<MedicalTendQuality>0.1</MedicalTendQuality>
+					<MedicalTendSpeed>0.1</MedicalTendSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--铜钱护体-->
+	<HediffDef>
+		<defName>RI_ShieldHediff_CoinShield</defName>
+		<label>Coin shield</label>
+		<description>A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--一段时间后消失-->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>6000~8000</disappearsAfterTicks>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--护盾comp-->
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Things/Mote/Shield/RI_ShieldHediff_CoinShield</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>70</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.5</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>铜钱护体</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--宝塔护盾-->
+	<HediffDef>
+		<defName>RI_ShieldHediff_PagodaShield</defName>
+		<label>Pagoda shield</label>
+		<description>A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<!--一段时间后消失-->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>6000~8000</disappearsAfterTicks>
+			</li>
+			<!--死亡后消失-->
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--护盾comp-->
+			<li Class="RI_Shield_System.HediffCompProperties_RIShield">
+				<bubbleMatPath>Things/Mote/Shield/RI_ShieldHediff_PagodaShield</bubbleMatPath>
+				<hitSound/>
+				<!--受击音效-->
+				<hitFleck/>
+				<!--受击fleck-->
+				<brokenSound/>
+				<!--破盾音效-->
+				<brokenFleck/>
+				<!--破盾fleck-->
+				<energyMax>500</energyMax>
+				<!--最大盾容-->
+				<energyLoosePerDamage>0.1</energyLoosePerDamage>
+				<keepDisplaying/>
+				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
+				<gizmoLabel>铜钱护体</gizmoLabel>
+				<gizmoTip>灵气护盾容量</gizmoTip>
+				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
+				<drawBubbleSize>1.6</drawBubbleSize>
+				<rotateRandonly>false</rotateRandonly>
+				<!--材质随机旋转-->
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

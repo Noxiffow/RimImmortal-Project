@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->You receive news that a strange wave of Qi energy has erupted from an abandoned grave not far from here.\n\nThe corpses inside the abandoned grave must carry valuable treasures, which are sure to aid in our development.</li>
+    <li>questDescription->A wave of Qi energy erupts from an uninhabited abandoned grave not far from here, as if guiding you toward it.\n\nThe corpses inside the abandoned grave must carry valuable treasures, which are sure to aid in our development.</li>
+  -->
+  <RI_AbandonedGrave_Standard.questDescriptionRules.rulesStrings>
+    <li>questDescription->你收到一条消息，在不远处的一座荒冢内，爆发了奇异的灵气波动。\n\n荒冢内的尸骸身上想必带有宝贵财富，一定能为我们的发展提供助力。</li>
+    <li>questDescription->一股灵气波动在不远处的一座无人荒冢爆发，似乎在指引你前往。\n\n荒冢内的尸骸身上想必带有宝贵财富，一定能为我们的发展提供助力。</li>
+  </RI_AbandonedGrave_Standard.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Hidden abandoned grave</li>
+    <li>questName->Dilapidated abandoned grave</li>
+    <li>questName->Deserted abandoned grave</li>
+  -->
+  <RI_AbandonedGrave_Standard.questNameRules.rulesStrings>
+    <li>questName->隐蔽荒冢</li>
+    <li>questName->破败荒冢</li>
+    <li>questName->无人荒冢</li>
+  </RI_AbandonedGrave_Standard.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <RI_AbandonedGrave_Standard.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>任务超时：[resolvedQuestName]</RI_AbandonedGrave_Standard.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: Someone has already gotten there before us and taken the treasures from the abandoned grave. -->
+  <RI_AbandonedGrave_Standard.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>有人先我们一步取走了荒冢的宝物。</RI_AbandonedGrave_Standard.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  
+  <!-- EN:
+    <li>letterLabelBeggarsBetrayed->Passer quest</li>
+    <li>letterTextBeggarsBetrayed->Passer quest content</li>
+  -->
+  <RI_Beggars.questContentRules.rulesStrings>
+    <li>letterLabelBeggarsBetrayed->过路人任务</li>
+    <li>letterTextBeggarsBetrayed->过路人任务描述</li>
+  </RI_Beggars.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>groupLabelSingle->passer</li>
+    <li>groupLabelPlural->passers</li>
+    <li>groupLabelPlural(allChildren==true,priority=1)->children</li>
+    <li>groupLabelSingle(childCount>=1,priority=1)->child</li>
+    <li>travelerInfo(beggarCount==1)->This [groupLabelSingle] is</li>
+    <li>travelerInfo(beggarCount>=2)->These [groupLabelPlural] are</li>
+    <li>beggingForInfo->for x[requestedThingCount] [requestedThing_label]</li>
+    <li>traverObjective(beggarCount==1)->[beggars0_objective]</li>
+    <li>traverObjective(beggarCount>=2)->them</li>
+    <li>questDescription->A group of people, temporarily gathered from various backgrounds, passed by. The leader of the group stepped forward slowly and spoke respectfully:\n\n"Esteemed fellow, we are but passers-by, seeking the Heavenly Immortal’s edict, but the path ahead seems uncertain, and we are in urgent need of travel funds. We have some soft jade, which is beneficial to cultivation. Might we exchange it for some silver?"\n\nHis tone was earnest, and his eyes gleamed with intensity.\n\nSeveral passers requested 700 silver in exchange for a small amount of soft jade. This was not a small sum, but the soft jade was indeed a rare material.</li>
+    <li>questDescription->A group of passers paused as they passed through the area, and the leader stepped forward, cupping his hands in a respectful greeting:\n\n"Esteemed fellow, we are on our way to a cultivator’s gathering, intending to purchase several Foundation Establishment Pills for the younger generation of our family, to aid in their cultivation on the road ahead. However, our funds are lacking, and it is difficult to proceed."\nHe took out a few pieces of soft jade and continued:\n\n"These pieces of soft jade are few in number, but they are rare materials. May I ask, would you be willing to exchange them for silver?"\n\nSeveral passers were asking for 700 silver in exchange for a small amount of soft jade. This was not a small sum, but the soft jade was indeed a rare and valuable material.</li>
+  -->
+  <RI_Beggars.questDescriptionRules.rulesStrings>
+    <li>groupLabelSingle->过路人</li>
+    <li>groupLabelPlural->过路人们</li>
+    <li>groupLabelPlural(allChildren==true,priority=1)->孩子们</li>
+    <li>groupLabelSingle(childCount>=1,priority=1)->孩子</li>
+    <li>travelerInfo(beggarCount==1)->这些 [groupLabelSingle] 是</li>
+    <li>travelerInfo(beggarCount>=2)->这些 [groupLabelPlural] 是</li>
+    <li>beggingForInfo->交换 x[requestedThingCount] [requestedThing_label]</li>
+    <li>traverObjective(beggarCount==1)->[beggars0_objective]</li>
+    <li>traverObjective(beggarCount>=2)->他们</li>
+    <li>questDescription->一支由不同身份的人临时组成的队伍路过，领头之人缓步上前，恭声道：\n\n"这位道友，吾等从此路过，想寻找那天仙手谕，然而前途渺茫，急需路费。这里有些对修炼大有脾益的柔玉，能否以此交换些银子？"\n他语气恳切，目光炯炯。\n\n几名过路人向你讨要700白银以换取些许柔玉，这不是一笔小数目，但柔玉确是一种稀有材料。</li>
+    <li>questDescription->一支过路人路过此地停顿，上前作揖道：\n\n“这位道友，吾等正欲前往修士集会，为家中小辈购买数枚筑基丹，以备后途修行。只奈囊中羞涩，银两短缺，实难成事。”\n他掏出几枚柔玉：\n\n“这些柔玉数量不多，但也是少见的材料，敢问道友，愿以白银换之？”\n\n几名过路人向你讨要700白银以换取些许柔玉，这不是一笔小数目，但柔玉确是一种稀有材料。</li>
+  </RI_Beggars.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Eager passers</li>
+    <li>questName->Hurried passers</li>
+    <li>questName->A group of passers</li>
+    <li>questName->A few passers</li>
+    <li>questName->Weary passers</li>
+  -->
+  <RI_Beggars.questNameRules.rulesStrings>
+    <li>questName->急切的过路人</li>
+    <li>questName->匆忙的过路人</li>
+    <li>questName->一支过路人队伍</li>
+    <li>questName->几名过路人</li>
+    <li>questName->风尘仆仆的过路人</li>
+  </RI_Beggars.questNameRules.rulesStrings>
+  
+  <!-- EN:
+    <li>questDescription->A pursued cultivator begs for your protection, but a group of chasing cultivators is close behind, and they will kill anyone who stands in their way!</li>
+  -->
+  <RI_BeHuntedWandererJoinsQuest.questDescriptionRules.rulesStrings>
+    <li>questDescription->一名被追捕的修炼者请求你的保护，但后面紧随着一支追杀而来的修士队伍，他们将会杀死一切阻碍他们的人！</li>
+  </RI_BeHuntedWandererJoinsQuest.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->The pursued cultivator</li>
+  -->
+  <RI_BeHuntedWandererJoinsQuest.questNameRules.rulesStrings>
+    <li>questName->被追捕的修炼者</li>
+  </RI_BeHuntedWandererJoinsQuest.questNameRules.rulesStrings>
+  
+</LanguageData>

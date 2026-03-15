@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Luminous bomb -->
+  <RI_Ability_BombBullet.label>白焰雷</RI_Ability_BombBullet.label>
+  <!-- EN: Qi cost: 30.\n\nCondense the Qi into an unstable balloon, pop it out, and cause a small explosion. -->
+  <RI_Ability_BombBullet.description>此功法为 通用 结丹境界 所学\n\n灵气消耗：30\n\n。将灵气凝结成不稳定气球，弹飞出去，引发小范围爆炸。</RI_Ability_BombBullet.description>
+  
+  <!-- EN: Crystal production -->
+  <RI_Ability_CreateCrystal.label>竭气聚石</RI_Ability_CreateCrystal.label>
+  <!-- EN: Overdraft all Qi to produce a large amount of spiritual crystals in one go.\n\nThis technique will cause damage to the meridians. -->
+  <RI_Ability_CreateCrystal.description>透支所有灵气，来一次性产出大量灵石。\n\n此功法将会导致经脉受损。</RI_Ability_CreateCrystal.description>
+  
+  <!-- EN: Long range flying -->
+  <RI_Ability_Farskip.label>百里神行</RI_Ability_Farskip.label>
+  <!-- EN: Qi cost: 250\n\n. Fly at super speed by consuming large amounts of Qi. -->
+  <RI_Ability_Farskip.description>灵气消耗：250\n\n。通过大量消耗灵气来超高速飞行。</RI_Ability_Farskip.description>
+  
+  <!-- EN: Invisible -->
+  <RI_Ability_Invisible.label>隐身术</RI_Ability_Invisible.label>
+  <!-- EN: Qi cost: 110.\n\nInvisibility is achieved by using Qi to create a shield around the body that reflects light. -->
+  <RI_Ability_Invisible.description>灵气消耗：110\n\n。通过用灵气在周身制造出一层反射光线的护盾，来达到隐形的效果。</RI_Ability_Invisible.description>
+  
+  <!-- EN: Qi lantern -->
+  <RI_Ability_LG.label>灵光</RI_Ability_LG.label>
+  <!-- EN: <color=#82FFCD>This skill is learned by those in the Enlightenment Realm\n\n</color>Qi Cost: 15\n\nAfter a simple adjustment, Qi can emit a faint glow. Spirit Light, on the other hand, creates multiple lenses above the head to refract and amplify light. This is considered a more efficient design approach that many cultivators see as an introductory cultivation technique. -->
+  <RI_Ability_LG.description>灵光</RI_Ability_LG.description>
+  
+  <!-- EN: Wind flying -->
+  <RI_Ability_QuickJumpWithNosight.label>御风术</RI_Ability_QuickJumpWithNosight.label>
+  <!-- EN: Qi cost: 20.\n\nFly short distances by disturbing the air flow around you with Qi. -->
+  <RI_Ability_QuickJumpWithNosight.description>&lt;color=#64AEF5>此功法为 通用 结丹境界 所学\n\n&lt;/color>灵气消耗：20\n\n。通过用灵气扰动周身气流，实现短距离飞行。</RI_Ability_QuickJumpWithNosight.description>
+  <!-- EN: Wind flying -->
+  <RI_Ability_QuickJumpWithNosight.verbProperties.label>御风</RI_Ability_QuickJumpWithNosight.verbProperties.label>
+  
+  <!-- EN: Spirit revelation -->
+  <RI_Ability_SHS.label>神魂识</RI_Ability_SHS.label>
+  <!-- EN: <color=#82FFCD>his skill is learned by those in the Innate Refine Soul Realm\n\n</color>Qi Cost: 150\n\nPerception Injection cannot be said to be a technique, but rather an inherent ability of cultivators. When a cultivator has a flash of inspiration in their mind, they can consciously blend this inspiration into a special spiritual thought, and through hypnosis, send this spiritual thought into the subconscious of others, enabling them to connect complex memories in their minds and thereby gain some unique inspirations. -->
+  <RI_Ability_SHS.description>&lt;color=#82FFCD>此功法为 先天 化神境界 所学\n\n&lt;/color>灵气消耗：150\n\n神魂识不能说是技术，更像是修炼者与生俱来的一种能力。当修炼者大脑中跳出灵感的时候，他可以有意识地将这种灵感糅合成一种特殊的灵念，并通过催眠的方式，将这道灵念送入其他人的潜意识中，让他们能联系起脑中复杂的记忆，从而获得一些独一无二的灵感。</RI_Ability_SHS.description>
+  
+  <!-- EN: Triple slash -->
+  <RI_Ability_Slash.label>三段斩</RI_Ability_Slash.label>
+  <!-- EN: Qi cost: 35.\n\nBy condensing the blade with Qi on both arms, it delivers three strokes in an instant, unpredictable. -->
+  <RI_Ability_Slash.description>此功法为 通用 凝气境界 所学\n\n灵气消耗：35\n\n。通过在双臂上用灵气凝结出刀刃，在一瞬间挥出三次斩击，变幻莫测。</RI_Ability_Slash.description>
+  
+</LanguageData>

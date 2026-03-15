@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="RI_TeaDrugBase" Abstract="True">
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(0.58,0.8,0.45)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-3.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--绿茶-->
+	<HediffDef ParentName="RI_TeaDrugBase">
+		<defName>RI_Hediff_GreenTea</defName>
+		<label>High on green tea</label>
+		<labelNoun>A green tea high</labelNoun>
+		<description>Drinking green tea, the whole body relaxed, feel happy.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.9</RestFallRateFactor>
+					<MeditationFocusStrength>1.2</MeditationFocusStrength>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--红茶-->
+	<HediffDef ParentName="RI_TeaDrugBase">
+		<defName>RI_Hediff_BlackTea</defName>
+		<label>High on black tea</label>
+		<labelNoun>A black tea high</labelNoun>
+		<description>Drinking black tea, the whole body is comfortable, slightly easier to become more sleepy.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>1.1</RestFallRateFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>1.1</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_TeaDrugBase">
+		<defName>RI_Hediff_GinsengTea</defName>
+		<label>High on ginseng tea</label>
+		<labelNoun>A ginseng tea high</labelNoun>
+		<description>Drinking ginseng tea, help heal wounds.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.2</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<painFactor>0.9</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_TeaDrugBase">
+		<defName>RI_Hediff_LingZhiTea</defName>
+		<label>High on LingZhi tea</label>
+		<labelNoun>A LingZhi tea high</labelNoun>
+		<description>Drinking LingZhi tea, gives you a boost of energy.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.7</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_TeaDrugBase">
+		<defName>RI_Hediff_SpiritHealTea</defName>
+		<label>High on spiritual healing tea</label>
+		<labelNoun>A spiritual healing tea high</labelNoun>
+		<description>Drinking spiritual healing tea, active meridians, improve the efficiency of cultivation.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--沙糖桔-->
+	<HediffDef>
+		<defName>RI_Hediff_SugarTangerineHigh</defName>
+		<label>Sweet sugar tangerine</label>
+		<description>Juicy sweet sugar tangerine, delicious!</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li/>
+		</stages>
+	</HediffDef>
+
+	<!--沙糖桔耐受-->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>RI_Hediff_SugarTangerineTolerance</defName>
+		<label>Sugar tangerine tolerance</label>
+		<description>A built-up tolerance to SugarTangerine. The more severe this tolerance is, the more SugarTangerine it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.020</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>RI_Chemical_SugarTangerine</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--沙糖桔上瘾-->
+	<HediffDef ParentName="AddictionBase">
+		<defName>RI_Hediff_SugarTangerineAddiction</defName>
+		<label>SugarTangerine addiction</label>
+		<description>These sugar tangerine, really make me happy!</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<chemicalNeed>RI_Need_SugarTangerine</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.2</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>withdrawal</label>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

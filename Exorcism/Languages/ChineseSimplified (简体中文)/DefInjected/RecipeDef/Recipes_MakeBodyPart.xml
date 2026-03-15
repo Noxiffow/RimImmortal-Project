@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make aberrant blood heart -->
+  <RI_Recipe_MakeAberrantBloodHeart.label>制作邪血心脏</RI_Recipe_MakeAberrantBloodHeart.label>
+  <!-- EN: Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ. -->
+  <RI_Recipe_MakeAberrantBloodHeart.description>将邪血输入血液循环，再用符咒封印，制造出邪血器官。</RI_Recipe_MakeAberrantBloodHeart.description>
+  <!-- EN: making aberrant blood heart -->
+  <RI_Recipe_MakeAberrantBloodHeart.jobString>正在制作邪血心脏</RI_Recipe_MakeAberrantBloodHeart.jobString>
+  
+  <!-- EN: make aberrant blood liver -->
+  <RI_Recipe_MakeAberrantBloodLiver.label>制作邪血肝</RI_Recipe_MakeAberrantBloodLiver.label>
+  <!-- EN: Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ. -->
+  <RI_Recipe_MakeAberrantBloodLiver.description>将邪血输入血液循环，再用符咒封印，制造出邪血器官。</RI_Recipe_MakeAberrantBloodLiver.description>
+  <!-- EN: making aberrant blood liver -->
+  <RI_Recipe_MakeAberrantBloodLiver.jobString>正在制作邪血肝</RI_Recipe_MakeAberrantBloodLiver.jobString>
+  
+  <!-- EN: make aberrant blood lung -->
+  <RI_Recipe_MakeAberrantBloodLung.label>制作邪血肺</RI_Recipe_MakeAberrantBloodLung.label>
+  <!-- EN: Infuse concentrated aberrant blood into the circulatory system and seal it with charms to create an aberrant organ. -->
+  <RI_Recipe_MakeAberrantBloodLung.description>将邪血输入血液循环，再用符咒封印，制造出邪血器官。</RI_Recipe_MakeAberrantBloodLung.description>
+  <!-- EN: making aberrant blood lung -->
+  <RI_Recipe_MakeAberrantBloodLung.jobString>正在制作邪血肺</RI_Recipe_MakeAberrantBloodLung.jobString>
+  
+  <!-- EN: make demon-binding nail -->
+  <RI_Recipe_MakeDemonBindingNail.label>制作封魔钉</RI_Recipe_MakeDemonBindingNail.label>
+  <!-- EN: Craft a demon-binding nail using erosion bronze. -->
+  <RI_Recipe_MakeDemonBindingNail.description>用风磨铜制作封魔钉。</RI_Recipe_MakeDemonBindingNail.description>
+  <!-- EN: making demon-binding nail -->
+  <RI_Recipe_MakeDemonBindingNail.jobString>正在制作封魔钉</RI_Recipe_MakeDemonBindingNail.jobString>
+  
+  <!-- EN: make evil-slaying claw -->
+  <RI_Recipe_MakeEvilSlayerClaw.label>制作斩邪爪</RI_Recipe_MakeEvilSlayerClaw.label>
+  <!-- EN: Craft an evil-slaying claw using erosion bronze. -->
+  <RI_Recipe_MakeEvilSlayerClaw.description>用风磨铜制作斩邪爪。</RI_Recipe_MakeEvilSlayerClaw.description>
+  <!-- EN: making evil-slaying claw -->
+  <RI_Recipe_MakeEvilSlayerClaw.jobString>正在制作斩邪爪</RI_Recipe_MakeEvilSlayerClaw.jobString>
+  
+  <!-- EN: make nail tongue -->
+  <RI_Recipe_MakeNailTongue.label>制作钉舌</RI_Recipe_MakeNailTongue.label>
+  <!-- EN: Craft steel spikes designed to be embedded into the tongue. -->
+  <RI_Recipe_MakeNailTongue.description>制作嵌入舌头的钢钉。</RI_Recipe_MakeNailTongue.description>
+  <!-- EN: making nail tongue -->
+  <RI_Recipe_MakeNailTongue.jobString>正在制作钉舌</RI_Recipe_MakeNailTongue.jobString>
+  
+  <!-- EN: make steel claw -->
+  <RI_Recipe_MakeSteelClaw.label>制作钢爪</RI_Recipe_MakeSteelClaw.label>
+  <!-- EN: Craft a set of steel claws embedded into the fingers. -->
+  <RI_Recipe_MakeSteelClaw.description>制作一具钢爪。</RI_Recipe_MakeSteelClaw.description>
+  <!-- EN: making steel claw -->
+  <RI_Recipe_MakeSteelClaw.jobString>正在制作钢爪</RI_Recipe_MakeSteelClaw.jobString>
+  
+  <!-- EN: make steel teeth -->
+  <RI_Recipe_MakeSteelTeeth.label>制作钢牙</RI_Recipe_MakeSteelTeeth.label>
+  <!-- EN: Craft a set of teeth forged from steel. -->
+  <RI_Recipe_MakeSteelTeeth.description>制作一副钢牙。</RI_Recipe_MakeSteelTeeth.description>
+  <!-- EN: making steel teeth -->
+  <RI_Recipe_MakeSteelTeeth.jobString>正在制作钢牙</RI_Recipe_MakeSteelTeeth.jobString>
+  
+</LanguageData>

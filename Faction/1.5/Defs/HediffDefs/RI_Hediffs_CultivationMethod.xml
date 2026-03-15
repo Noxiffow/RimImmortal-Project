@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="PsycastHediffBase" Name="RI_CultivationMethodHediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_InternalFunction</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--大息龟眠功 龟眠之法-->
+	<HediffDef ParentName="RI_CultivationMethodHediffBase">
+		<defName>RI_Hediff_TortoiseMeditationMethod</defName>
+		<label>Cultivation method: Tortoise meditation</label>
+		<description>A cultivation technique designed to enhance qi absorption efficiency. It requires practitioners to sleep longer while also slowing their metabolism.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.35</GI_EnergyGainEff>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--吞山魔功 吞山魔功-->
+	<HediffDef ParentName="RI_CultivationMethodHediffBase">
+		<defName>RI_Hediff_MountainEatingCultivationMethod</defName>
+		<label>Cultivation method: Mountain eating</label>
+		<description>A cultivation technique designed to enhance qi absorption efficiency. This method makes people feel hungry much more quickly.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.45</GI_EnergyGainEff>
+				</statOffsets>
+				<hungerRateFactor>2.5</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--玄天诀 玄天秘法-->
+	<HediffDef ParentName="RI_CultivationMethodHediffBase">
+		<defName>RI_Hediff_MysticCultivationMethod</defName>
+		<label>Cultivation method: Mystic</label>
+		<description>A cultivation technique designed to enhance qi absorption efficiency. However, it causes the practitioner to experience physical pain.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.7</GI_EnergyGainEff>
+				</statOffsets>
+				<painOffset>0.7</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--百炼速修 精研细工-->
+	<HediffDef ParentName="RI_CultivationMethodHediffBase">
+		<defName>RI_Hediff_RefinementWorkspeedMethod</defName>
+		<label>Cultivation method: Refinement handwork</label>
+		<description>A cultivation technique designed to enhance qi absorption efficiency. It provides a modest boost to the practitioner's work efficiency.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.15</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--流云步法 流云步法-->
+	<HediffDef ParentName="RI_CultivationMethodHediffBase">
+		<defName>RI_Hediff_AirStepExercise</defName>
+		<label>Cultivation method: Air step</label>
+		<description>A cultivation technique designed to enhance qi absorption efficiency. This method slightly increases movement speed.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.3</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+
+</Defs>
+

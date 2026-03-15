@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RI_Living_Harvest>Harvest: {0} / {1}</RI_Living_Harvest>
+
+	<RI_Living_Fill>Breed: {0} / {1}</RI_Living_Fill>
+
+	<RI_Living_Fermented>Already mature</RI_Living_Fermented>
+
+	<RI_Living_FermentationProgress>In the breeding: {0}（remaining {1}）。</RI_Living_FermentationProgress>
+
+	<RI_Living_IdealFermentingTemperature>Ideal breeding temperature</RI_Living_IdealFermentingTemperature>
+
+	<!-- UNUSED -->
+	<RI_Living_FermentationBarrelOutOfIdealTemperature>Abnormal temperature, breed speed: {0}</RI_Living_FermentationBarrelOutOfIdealTemperature>
+
+</LanguageData>

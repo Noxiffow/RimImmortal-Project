@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>Job_Zd_LevelUp</defName>
+		<driverClass>NzRimImmortalBizarre.JobDriver_Zd_LevelUp</driverClass>
+		<reportString>Upgrading.</reportString>
+		<playerInterruptible>false</playerInterruptible>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+</Defs>

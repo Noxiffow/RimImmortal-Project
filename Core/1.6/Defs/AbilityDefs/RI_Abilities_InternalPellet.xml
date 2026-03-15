@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——测试-->
+	<!--Noviciate
+	-->
+	<!--2固基境界——测试-->
+	<!--Foundation
+	-->
+	<!--3化丹境界——测试-->
+	<!--Core formation
+	-->
+	<!--4结丹境界——测试-->
+	<!--Core coagulation
+	-->
+	<!--5灵丹境界——测试-->
+	<!--Core consummation
+	-->
+	<!--6化神境界——测试-->
+	<!--Spirit constraint
+	-->
+	<!--7元婴境界——测试-->
+	<!--Primordial spirit baby
+	-->
+	<!--8大成境界——测试-->
+	<!--Primordial spirit maturity
+	-->
+	<!--9合体境界——测试-->
+	<!--Primordial spirit combine-->
+
+	<!--====================内丹法门InternalPellet====================-->
+
+	<!--凝气境界——周天功法-->
+	<AbilityDef  ParentName="RI_PsycastBase">
+		<defName>RI_Ability_InternalFunction</defName>
+		<label>Breathing exercise</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Enlightenment Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：0.33/s\n\nThe Internal Pellet Initial Approachunique cultivation gong method to control the frequency of breathing and fixed movements to adjust the body posture, so that the body is in a better state to absorb the spiritual qi. \n\nThis technique can be turned on and off freely, and when it is on, it will slowly consume the Qi.</description>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_InternalFunction</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>99999</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_InternalFunctionHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--固基境界——气弹-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_QiBullet</defName>
+		<label>Qi bullet</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Strengthening foundation Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：5\n\nOne of the most basic outward-projecting techniques, it condenses a Qi bullet at the fingertip and then shoots it out.\n\n(Hint: Can be used with hotkey P for rapid fire)</description>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_QiBullet</iconPath>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hotKey>Misc12</hotKey>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.1</warmupTime>
+			<range>35</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>QiBullet</projectileDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_QiBullet_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-5</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>QiBullet</defName>
+		<label>Qi bullet</label>
+		<thingClass>WhoXiuXian.RI_projectile_Firefly</thingClass>
+		<graphicData>
+			<texPath>Effects/InternalPellet/QiBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--化丹境界——止观-->
+	<AbilityDef ParentName="RI_PsycastBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>RI_Ability_Samatha</defName>
+		<label>Samatha</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Core Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：30\n\nThrough special breathing techniques to activate the elixir field, sending spiritual energy throughout the body and brain to calm oneself down, cutting off the sensitivity to emotions, while also improving the efficiency of spiritual energy usage.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_Samatha</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>200</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>5</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_SamathaHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_Samatha_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-30</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--结丹境界——护体罡气-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_QiProtecting</defName>
+		<label>Qi shield protecting</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Core Formation Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：40\n\nBy continuously outputting spiritual power to create positive and negative charges swirling around the body and controlling them to rotate at high speed within a certain distance, a shield that can resist bullets is formed. Any incoming bullets will be ionized and vaporized.</description>
+		<level>0</level>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_QiProtecting</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>200</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>3</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ShieldHediff_InternalShield</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_ElectricShield_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-40</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--灵丹境界——气旋雷-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_CycloneLandmine</defName>
+		<label>Cyclone landmine</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Spirit Alchemy Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：30\n\nBy creating a violent and chaotic compressed spiritual energy ball, shooting it out, and quietly waiting near the ground for prey. Once anything touches the spiritual energy ball, its stability will be completely destroyed, causing the release of internally raging spiritual energy like razor blades, with astonishing destructive power.</description>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_CycloneLandmine</iconPath>
+		<hotKey></hotKey>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<targetRequired>True</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.5</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_RI_AbilitySpawn">
+				<thingDef>RI_Building_CycloneLandmine</thingDef>
+				<allowOnBuildings>False</allowOnBuildings>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>RI_blueVortex</li>
+				</fleckDefs>
+				<scale>3</scale>
+				<sound>RI_Sound_Electric</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_CycloneLandmine_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-30</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化神境界——导引-->
+	<AbilityDef  ParentName="RI_PsycastBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>RI_Ability_EnergyGuide</defName>
+		<label>Energy guide</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Refine Soul Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：30\n\nContinuous consumption of spiritual energy, approximately 5 points consumed per hour, provides the "Exhale the Old and Inhale the New" buff, accelerating wound recovery. The technique can be closed at any time.</description>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_EnergyGuide</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!--技能准备音效-->
+		<warmupStartSound>RI_Sound_Electric</warmupStartSound>
+		<statBases>
+			<Ability_Duration>180</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>5</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ExhaleTheOldAndInhaleTheNew</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_EnergyGuide_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-30</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化神境界——惊雷-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Thunder</defName>
+		<label>Thunder</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Refine Soul Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：40\n\nActivate the spiritual energy in the elixir field and condense it into a charge released at the location of the mind. This is similar to an artificial lightning rod. It can attract lightning from distant thunderclouds to instantly strike a small area, creating extremely strong lethality.</description>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_Thunder</iconPath>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<!--技能准备音效-->
+		<warmupStartSound>RI_Sound_Electric</warmupStartSound>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EffectRadius>1</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>45</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityCallThunder">
+				<range>29.9</range>
+				<goodwillImpact>-35</goodwillImpact>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_Thunder_Mote</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-50</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--元婴境界——存神-->
+	<AbilityDef  ParentName="RI_PsycastBase" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>RI_Ability_EnergyRecovery</defName>
+		<label>Energy recovery</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Spiritual Formation Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：50\n\nAdds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy.</description>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_EnergyRecovery</iconPath>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!--技能准备音效-->
+		<warmupStartSound>RI_Sound_Electric</warmupStartSound>
+		<statBases>
+			<Ability_Duration>240</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>1</warmupTime>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_SpiritualPulseSurging</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_EnergyRecovery_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-40</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--大成境界——玉虎鸣-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_DestructiveThunder</defName>
+		<label>Jade tiger thunder</label>
+		<description>&lt;color=#64AEF5&gt;This technique is learned by the Master Realm of the Internal Pellet Initial Approach\n\n&lt;/color&gt;Qi cost：200\n\nAdds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy.Adds the "Spiritual Pulse Surging" buff, lasting for 3 hours. Temporarily reduces pain, bandaging all wounds, and increases shooting accuracy.</description>
+		<cooldownTicksRange>1000</cooldownTicksRange>
+		<iconPath>UI/Abilities/InternalPellet/RI_Ability_DestructiveThunder</iconPath>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<statBases>
+		</statBases>
+		<verbProperties>
+			<warmupTime>5</warmupTime>
+			<range>60</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Energyball</projectileDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_DestructiveThunder_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-200</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Energyball</defName>
+		<label>Thunder ball</label>
+		<description>Thunder ball.</description>
+		<thingClass>WhoXiuXian.RI_projectile_ThunderStorm</thingClass>
+		<graphicData>
+			<texPath>Effects/InternalPellet/Energyball</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius>8</explosionRadius>
+			<damageDef>Stun</damageDef>
+			<speed>30</speed>
+			<arcHeightFactor>50</arcHeightFactor>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+
+	<GameConditionDef>
+		<defName>EnergyThunder</defName>
+		<conditionClass>WhoXiuXian.GameCondition_Energystorm</conditionClass>
+		<label>Jade tiger thunder</label>
+		<description>Powerful thunderstorms.</description>
+		<endMessage>The thunderstorm subsided.</endMessage>
+		<letterText>A freak localized flashstorm is striking a small area with lightning. This can cause massive fires</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<preventRain>true</preventRain>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+
+</Defs>
+

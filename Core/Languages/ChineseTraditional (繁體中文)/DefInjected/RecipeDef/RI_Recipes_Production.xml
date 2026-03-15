@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make Drug base -->
+  <Make_DrugBase.label>制作丹辅</Make_DrugBase.label>
+  <!-- EN: Extracts from some food ingredients that can become drug base. -->
+  <Make_DrugBase.description>从一些食物原料中提取出可以成为丹辅的材料。</Make_DrugBase.description>
+  <!-- EN: Making Drug base -->
+  <Make_DrugBase.jobString>正在制作丹辅</Make_DrugBase.jobString>
+  
+  <!-- EN: Make Drug base x4 -->
+  <Make_DrugBaseBulk.label>制作丹辅 x4</Make_DrugBaseBulk.label>
+  <!-- EN: Extracts from some food ingredients that can become drug base. -->
+  <Make_DrugBaseBulk.description>从一些食物原料中提取出可以成为丹辅的材料。</Make_DrugBaseBulk.description>
+  <!-- EN: Making Drug base -->
+  <Make_DrugBaseBulk.jobString>正在制作丹辅</Make_DrugBaseBulk.jobString>
+  
+  <!-- EN: Cut spiritual root -->
+  <RemoveEnergyRoot.label>切除灵芽</RemoveEnergyRoot.label>
+  <!-- EN: The spiritual root are removed and extracted. -->
+  <RemoveEnergyRoot.description>将灵芽切除并且提取出来。</RemoveEnergyRoot.description>
+  <!-- EN: Removing EnergyRoot. -->
+  <RemoveEnergyRoot.jobString>正在切除灵芽</RemoveEnergyRoot.jobString>
+  
+  <!-- EN: Make Elephant tusk powder -->
+  <RI_MakeElephantTuskPowder.label>磨制象牙粉</RI_MakeElephantTuskPowder.label>
+  <!-- EN: Grind the elephant tusk into powder. -->
+  <RI_MakeElephantTuskPowder.description>将象牙磨成粉。</RI_MakeElephantTuskPowder.description>
+  <!-- EN: Making Elephant tusk powder -->
+  <RI_MakeElephantTuskPowder.jobString>正在磨制象牙粉</RI_MakeElephantTuskPowder.jobString>
+  
+  <!-- EN: Make Elephant tusk powder x4 -->
+  <RI_MakeElephantTuskPowderBulk.label>磨制象牙粉 x4</RI_MakeElephantTuskPowderBulk.label>
+  <!-- EN: Grind the elephant tusk into powder. -->
+  <RI_MakeElephantTuskPowderBulk.description>将象牙磨成粉。</RI_MakeElephantTuskPowderBulk.description>
+  <!-- EN: Making Elephant tusk powder -->
+  <RI_MakeElephantTuskPowderBulk.jobString>正在磨制象牙粉</RI_MakeElephantTuskPowderBulk.jobString>
+  
+  <!-- EN: Make Gold sand -->
+  <RI_MakeGoldSand.label>磨制金砂</RI_MakeGoldSand.label>
+  <!-- EN: Grinding gold into gold sand. -->
+  <RI_MakeGoldSand.description>将黄金磨成金砂。</RI_MakeGoldSand.description>
+  <!-- EN: Making Gold sand -->
+  <RI_MakeGoldSand.jobString>正在磨制金砂</RI_MakeGoldSand.jobString>
+  
+  <!-- EN: Make Gold sand x4 -->
+  <RI_MakeGoldSandBulk.label>磨制金砂 x4</RI_MakeGoldSandBulk.label>
+  <!-- EN: Grinding gold into gold sand. -->
+  <RI_MakeGoldSandBulk.description>将黄金磨成金砂。</RI_MakeGoldSandBulk.description>
+  <!-- EN: Making Gold sand -->
+  <RI_MakeGoldSandBulk.jobString>正在磨制金砂</RI_MakeGoldSandBulk.jobString>
+  
+  <!-- EN: make blood mark -->
+  <RI_Recipe_MakeBloodMarkFromLeather.label>制作滴血令</RI_Recipe_MakeBloodMarkFromLeather.label>
+  <!-- EN: Making blood mark. -->
+  <RI_Recipe_MakeBloodMarkFromLeather.description>正在制作滴血令</RI_Recipe_MakeBloodMarkFromLeather.description>
+  <!-- EN: Making blood mark. -->
+  <RI_Recipe_MakeBloodMarkFromLeather.jobString>正在制作滴血令</RI_Recipe_MakeBloodMarkFromLeather.jobString>
+  
+</LanguageData>

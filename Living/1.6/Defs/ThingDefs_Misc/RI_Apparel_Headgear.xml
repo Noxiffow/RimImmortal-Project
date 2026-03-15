@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--瓦楞帽-->
+	<ThingDef ParentName="RI_Living_MakeableHat_Base">
+		<defName>RI_Apparel_WaiterHat</defName>
+		<label>Waiter hat</label>
+		<description>Waiter hat is a popular hat that originated among nomads and was later loved by the common people.\n\nSquare shape and flat top, hat body made by four pieces of fabric stitched together, the brim such as a gentle slope, extended to the forehead, can shade the sun.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_WaiterHat/RI_Apparel_WaiterHat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_WaiterHat/RI_Apparel_WaiterHat</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>100</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--帷帽-->
+	<ThingDef ParentName="RI_Living_MakeableHat_Base">
+		<defName>RI_Apparel_VeilHat</defName>
+		<label>Veil hat</label>
+		<description>Veil hat is a kind of hat that is favored by women. It has a wide eaves around it. Under the eaves there is a hanging silk screen or thin silk, which grows to the neck to cover the face and resist the effect of wind and sand.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_VeilHat/RI_Apparel_VeilHat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_VeilHat/RI_Apparel_VeilHat</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>100</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--三山帽-->
+	<ThingDef ParentName="RI_Living_MakeableHat_Base">
+		<defName>RI_Apparel_SanShanHat</defName>
+		<label>SanShan hat</label>
+		<description>This is a type of official hat worn by eunuchs in ancient imperial palaces.\n\nIt is made of bamboo strips as the framework and sewn with fabric, with a domed top and a raised section behind the crown, while the sides have a wavy design, hence the name "Three-Mountain Hat."\n\nOver the years, this hat has undergone considerable evolution and has a variety of distinctive features.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SanShanHat/RI_Apparel_SanShanHat</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.3</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SanShanHat/RI_Apparel_SanShanHat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>100</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--小冠-->
+	<ThingDef ParentName="RI_Living_MakeableHat_Base">
+		<defName>RI_Apparel_SmallCrown</defName>
+		<label>Small crown</label>
+		<description>Small crown is a type of hair-bun crown, mostly made of leather or gold and jade.\n\nThe method of wearing it is simple, just put it on the bun and fix it with a hairpin horizontally.\n\nThis type of crown is loved by officials, civil servants, and scholars, and is usually worn as a decoration rather than for formal occasions.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SmallCrown/RI_Apparel_SmallCrown</texPath>
+		</graphicData>
+
+		<!--原料-->
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Leathery</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_SmallCrown/RI_Apparel_SmallCrown</wornGraphicPath>
+			<!--和发型同时显示-->
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--嵌金三山帽——没有原料--><!--
+	<ThingDef ParentName="RI_Living_MakeableHatNostuffCategories_Base">
+		<defName>RI_Apparel_GoldenSanShanHat</defName>
+		<label>Golden SanShan hat</label>
+		<description>The golden SanShan hat is an extremely luxurious official hat based on the SanShan hat, which only the powerful people in the palace have the right to wear.\n\nIts production is complex, the need to use gold silk to insert various textures, and to achieve perfection in details, in order to make this hat that represents power.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_GoldenSanShanHat/RI_Apparel_GoldenSanShanHat</texPath>
+		</graphicData>
+
+		--><!--原料--><!--
+		<costList>
+			<Cloth>10</Cloth>
+			<RI_Resource_GoldenSilk>30</RI_Resource_GoldenSilk>
+		</costList>
+
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_GoldenSanShanHat/RI_Apparel_GoldenSanShanHat</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RI_CarpentryAndCrafting</researchPrerequisite>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+	</ThingDef>-->
+
+</Defs>

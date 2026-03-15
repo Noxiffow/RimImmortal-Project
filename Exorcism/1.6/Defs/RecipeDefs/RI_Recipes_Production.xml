@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--原木制作符纸-->
+	<RecipeDef>
+		<defName>RI_Recipe_ChemfuelFromWood</defName>
+		<label>make charm paper from wood</label>
+		<description>Crush the wood and make charm paper from the wood pulp.</description>
+		<jobString>making charm paper</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_CharmPaper>10</RI_Resource_CharmPaper>
+		</products>
+	</RecipeDef>
+
+	<!--原木制作符纸x4-->
+	<RecipeDef>
+		<defName>RI_Recipe_ChemfuelFromWoodBulk</defName>
+		<label>make charm paper from wood x4</label>
+		<description>Crush the wood and make charm paper from the wood pulp.</description>
+		<jobString>making charm paper</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_CharmPaper>40</RI_Resource_CharmPaper>
+		</products>
+		<!--研究-->
+		<researchPrerequisite>RI_ExorcismResearch_DaoInherit</researchPrerequisite>
+	</RecipeDef>
+	
+    <!--净化邪血-->
+	<RecipeDef>
+		<defName>RI_Recipe_PurifyBlood</defName>
+		<label>purify blood</label>
+		<description>Crush the wood and make charm paper from the wood pulp.</description>
+		<jobString>purifying blood</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ConcentrateAberrantBlood</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_InkJade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ConcentrateAberrantBlood</li>
+				<li>RI_Resource_InkJade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HemogenPack>5</HemogenPack>
+		</products>
+	</RecipeDef>
+
+</Defs>

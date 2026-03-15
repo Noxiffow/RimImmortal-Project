@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Free cultivator -->
+  <RI_Faction_FreeCultivators.label>散修</RI_Faction_FreeCultivators.label>
+  <!-- EN: Free cultivator -->
+  <RI_Faction_FreeCultivators.fixedName>散修</RI_Faction_FreeCultivators.fixedName>
+  <!-- EN: leader -->
+  <RI_Faction_FreeCultivators.leaderTitle>散修</RI_Faction_FreeCultivators.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <RI_Faction_FreeCultivators.messageDefendersAttacking>TODO</RI_Faction_FreeCultivators.messageDefendersAttacking>
+  <!-- EN: Free cultivator -->
+  <RI_Faction_FreeCultivators.pawnSingular>散修者</RI_Faction_FreeCultivators.pawnSingular>
+  <!-- EN: Free cultivator -->
+  <RI_Faction_FreeCultivators.pawnsPlural>散修者们</RI_Faction_FreeCultivators.pawnsPlural>
+  
+  <!-- EN: Wicked cultivator -->
+  <RI_Faction_WickedCultivators.label>歹修</RI_Faction_WickedCultivators.label>
+  <!-- EN: Wicked cultivator -->
+  <RI_Faction_WickedCultivators.fixedName>歹修</RI_Faction_WickedCultivators.fixedName>
+  <!-- EN: leader -->
+  <RI_Faction_WickedCultivators.leaderTitle>歹修</RI_Faction_WickedCultivators.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <RI_Faction_WickedCultivators.messageDefendersAttacking>TODO</RI_Faction_WickedCultivators.messageDefendersAttacking>
+  <!-- EN: Wicked cultivator -->
+  <RI_Faction_WickedCultivators.pawnSingular>歹修者</RI_Faction_WickedCultivators.pawnSingular>
+  <!-- EN: Wicked cultivator -->
+  <RI_Faction_WickedCultivators.pawnsPlural>歹修者们</RI_Faction_WickedCultivators.pawnsPlural>
+  
+</LanguageData>

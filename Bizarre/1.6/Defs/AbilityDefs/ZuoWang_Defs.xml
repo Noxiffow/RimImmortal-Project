@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 仙路物品 -->
+    <NzRimImmortalBizarre.ItemList>
+        <defName>Immortal</defName>
+        <things>
+            <li>EnergyRoot</li>
+            <li>EnergyRootHigh</li>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 神机天纵 -->
+    <NzRimImmortalBizarre.ItemList MayRequire="RI.RimImmortal.Forge">
+        <defName>Forge</defName>
+        <things>
+            <!-- 蚩尤怒炎戟【一品】 -->
+            <li>RI_Weapon_ChiYouFlameHalberd</li>
+            <!-- 盘龙通天棍【一品】 -->
+            <li>RI_Weapon_DragonPatternStick</li>
+            <!-- 琉璃珍珠伞【一品】 -->
+            <li>RI_Weapon_GlassPearlUmbrella</li>
+            <!-- 破军剑【一品】 -->
+            <li>RI_Weapon_PojunSword</li>
+            <!-- 斩仙剑【一品】 -->
+            <li>RI_Weapon_SlayinglmmortalSword</li>
+            <!-- 雷霆连珠铳【一品】 -->
+            <li>RI_Weapon_ThunderMinigun</li>
+            <!-- 霜华弓【一品】 -->
+            <li>RI_Weapon_WhiteApeBow</li>
+            <!-- 金钵【一品】 -->
+            <li>RI_Talisman_GoldenBowl</li>
+            <!-- 捆仙绳【一品】 -->
+            <li>RI_Talisman_ImmortalBindingRope</li>
+            <!-- 紫金葫芦【一品】 -->
+            <li>RI_Talisman_PurpleGoldenGourd</li>
+            <!-- 三王玲珑塔【一品】 -->
+            <li>RI_Talisman_ThreeKingTower</li>
+            <!-- 白玉瓶【一品】 -->
+            <li>RI_Talisman_WhiteJadeVase</li>
+
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 原版物品 -->
+    <NzRimImmortalBizarre.ItemList>
+        <defName>Core</defName>
+        <things>
+            <!-- 护盾腰带 -->
+            <li>Apparel_ShieldBelt</li>
+            <!-- 启灵装置 -->
+            <li>PsychicAmplifier</li>
+            <!-- 魔鬼素 -->
+            <li>Luciferium</li>
+            <!-- 心灵抚慰脉冲发生器 -->
+            <li>PsychicSoothePulser</li>
+            <!-- 动物心灵脉冲发生器 -->
+            <li>PsychicAnimalPulser</li>
+            <!-- 人格核心 -->
+            <li>AIPersonaCore</li>
+            <!-- 科技核心 -->
+            <li>TechprofSubpersonaCore</li>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 文化物品 -->
+    <NzRimImmortalBizarre.ItemList MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>Ideology</defName>
+        <things>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 皇权物品 -->
+    <NzRimImmortalBizarre.ItemList MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>Royalty</defName>
+        <things>
+            <!-- 心灵权杖 -->
+            <li>MeleeWeapon_PsyfocusStaff</li>
+            <!-- 单分子剑 -->
+            <li>MeleeWeapon_MonoSword</li>
+            <!-- 等离子剑 -->
+            <li>MeleeWeapon_PlasmaSword</li>
+            <!-- 骑士装甲 -->
+            <li>Apparel_ArmorCataphract</li>
+            <!-- 肘刃 -->
+            <li>ElbowBlade</li>
+            <!-- 心灵同调装置 -->
+            <li>PsychicHarmonizer</li>
+            <!-- 心灵敏化装置 -->
+            <li>PsychicSensitizer</li>
+            <!-- 护盾核心 -->
+            <li>BroadshieldCore</li>
+            <!-- 便携盾包 -->
+            <li>Apparel_PackBroadshield</li>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 生物科技 -->
+    <NzRimImmortalBizarre.ItemList MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Biotech</defName>
+        <things>
+            <!-- 超凡胶囊 -->
+            <li>ArchiteCapsule</li>
+            <!-- 集成头套 -->
+            <li>Apparel_IntegratorHeadset</li>
+            <!-- 远程修复机械体 -->
+            <li>RemoteRepairer</li>
+            <!-- 机控中枢 -->
+            <li>Mechlink</li>
+            <!-- 机械指挥官头盔 -->
+            <li>Apparel_ArmorHelmetMechCommander</li>
+            <!-- 地狱球炮 -->
+            <li>Gun_HellsphereCannon</li>
+            <!-- 高级次元核心 -->
+            <li>SubcoreHigh</li>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+
+    <!-- 异象 -->
+    <NzRimImmortalBizarre.ItemList MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>Anomaly</defName>
+        <things>
+            <!-- 超凡食尸鬼复活血清胶囊 -->
+            <li>GhoulResurrectionSerum</li>
+            <!-- 古代心灵。。。 -->
+            <li>ShardAnimalPulser</li>
+            <!-- 死灵背包 -->
+            <li>Shell_Deadlife</li>
+        </things>
+    </NzRimImmortalBizarre.ItemList>
+</Defs>

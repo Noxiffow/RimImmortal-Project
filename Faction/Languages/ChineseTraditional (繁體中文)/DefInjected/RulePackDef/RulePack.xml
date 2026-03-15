@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[JusticeFaction][FactionLast]</li>
+  -->
+  <RI_Namer_EvilSect.rulePack.rulesStrings>
+    <li>r_name(p=7)->[EvilFaction] [FactionLast]</li>
+  </RI_Namer_EvilSect.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[JusticeFaction][FactionLast]</li>
+  -->
+  <RI_Namer_JusticeSect.rulePack.rulesStrings>
+    <li>r_name(p=10)->[JusticeFaction] [FactionLast]</li>
+  </RI_Namer_JusticeSect.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[SettlementFirst] [SettlementLast]</li>
+  -->
+  <RI_Namer_SectSettlementPack.rulePack.rulesStrings>
+    <li>r_name(p=10)->[SettlementFirst] [SettlementLast]</li>
+  </RI_Namer_SectSettlementPack.rulePack.rulesStrings>
+  
+</LanguageData>

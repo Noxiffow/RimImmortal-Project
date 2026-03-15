@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Auto defence tech -->
+  <RI_PuppetFightHediff.label>机关偏转</RI_PuppetFightHediff.label>
+  <!-- EN: An ancient martial art, modified and encoded into data stored in the golem's talisman components, that automatically blocks incoming attacks. -->
+  <RI_PuppetFightHediff.description>一种远古的武功，改进并编码成数据存进傀儡的法宝构件之中，能自动对前来的攻击做出格挡。</RI_PuppetFightHediff.description>
+  
+</LanguageData>

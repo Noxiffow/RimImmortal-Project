@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 克己相关身体部件 -->
+
+    <!-- 无量心 -->
+    <!-- 特效：脑后光环 -->
+    <!-- 光环: 实干:范围内加工作效率,苦行:降低饥饿休息需求 -->
+
+    <!-- 慧眼 -->
+    <!-- 夜视，技能，移除隐形，若有DLC，顺便移除黑暗灵能隐形 -->
+    <!-- 得慧眼，不见众生，尽灭一异相 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_KeenEyes</defName>
+        <label>keen eyes</label>
+        <labelNoun>an keen eyes</labelNoun>
+        <description>"With discerning eyes, do not see all beings, extinguish all different
+            appearances."</description>
+        <defaultInstallPart>Eye</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+            <li>NzRI_ZhengDe_Enlightenment</li>
+        </tags>
+        <abilities>
+            <li>NzRI_Zd_DebunkingMyths</li>
+        </abilities>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <ShootingAccuracyFactor_Long>1.2</ShootingAccuracyFactor_Long>
+                    <ShootingAccuracyFactor_Medium>1.5</ShootingAccuracyFactor_Medium>
+                    <MeleeHitChance>1.2</MeleeHitChance>
+                </statFactors>
+            </li>
+        </stages>
+        <!-- TODO Patch System.Boolean RimWorld.StatPart_Glow::ActiveFor(Verse.Thing) -->
+        <!-- TODO 不受黑暗影响 -->
+        <aptitudes>
+            <Social>8</Social>
+        </aptitudes>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 辩才舌 -->
+    <!-- 交易、传教相关系数 -->
+    <!-- “菩提本无树，明镜亦非台” -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_EloquenceTongue</defName>
+        <label>eloquence tongue</label>
+        <labelNoun>an asceticism leg</labelNoun>
+        <description>"Bodhi is not a tree, Mirror has no stand"</description>
+        <defaultInstallPart>Tongue</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <ArrestSuccessChance>2.0</ArrestSuccessChance>
+                    <NegotiationAbility>2.0</NegotiationAbility>
+                    <SocialImpact>2.0</SocialImpact>
+                    <TradePriceImprovement>2.0</TradePriceImprovement>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <aptitudes>
+            <Social>8</Social>
+        </aptitudes>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 斋藏胃 -->
+    <!-- 免疫食物中毒，毒素hediff免疫，成瘾免疫 -->
+    <!-- 一切有为法，如梦幻泡影，如露亦如电，应作如是观 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_AsceticismStomach</defName>
+        <label>asceticism stomach</label>
+        <labelNoun>an asceticism leg</labelNoun>
+        <description>All material things are like dreams and bubbles, like dew and lightning, and
+            should be viewed as such.</description>
+        <defaultInstallPart>Stomach</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <stages>
+            <li>
+                <!-- 食物中毒几率 -->
+                <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <!-- 毒素抵抗 -->
+                    <ToxicResistance>1.0</ToxicResistance>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+                <makeImmuneTo>
+                    <!-- 免疫原版成瘾品 -->
+                    <li>GutWorms</li>
+                    <li>AlcoholAddiction</li>
+                    <li>AmbrosiaAddiction</li>
+                    <li>GoJuiceAddiction</li>
+                    <li>LuciferiumAddiction</li>
+                    <li>PsychiteAddiction</li>
+                    <li>SmokeleafAddiction</li>
+                    <li>WakeUpAddiction</li>
+                </makeImmuneTo>
+            </li>
+        </stages>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 笃行腿 -->
+    <!-- 不可阻挡 -->
+    <!-- “欲速则不达。”修行如同攀登高峰，需一步一个脚印，稳健前行。若贪图捷径，往往会导致根基不稳 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_DevoteLeg</defName>
+        <label>devote leg</label>
+        <labelNoun>an devote leg</labelNoun>
+        <description>"If you want to go fast, you can't go fast enough." Cultivation was like
+            climbing a peak, one step at a time was needed to move forward steadily. If one is
+            greedy for shortcuts, it often leads to unstable foundations.</description>
+        <defaultInstallPart>Leg</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <!-- 不可阻挡 -->
+                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 般若腿 -->
+    <!-- 般若的含义是辨识智慧、辨识才智 -->
+    <!-- 影响研究速度 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_PrajnaLeg</defName>
+        <label>prajna leg</label>
+        <labelNoun>an prajna leg</labelNoun>
+        <description>The meaning of prajna is to recognize wisdom and intelligence, which affects
+            research speed.</description>
+        <defaultInstallPart>Leg</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <!-- 普通工作速度 -->
+                    <ResearchSpeed>2.0</ResearchSpeed>
+                    <!-- 破解速度 -->
+                    <HackingSpeed>2.0</HackingSpeed>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+        <aptitudes>
+            <Intellectual>8</Intellectual>
+        </aptitudes>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 匠心臂 -->
+    <!-- 加质量偏移(见手工大师) -->
+    <!-- 心如工画师，能画诸世间。五蕴悉从生，无法而不造。 -->
+    <!-- 我们的心如同画师，能够绘制出世间万象，而修行正是要描绘出内心的清净与智慧。 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_CraftsmanshipArm</defName>
+        <label>craftsmanship arm</label>
+        <labelNoun>an craftsmanship arm</labelNoun>
+        <description>Our mind is like a painter, capable of painting all the images of the world,
+            and the practice of meditation is precisely to paint the purity and wisdom of the heart.</description>
+        <defaultInstallPart>Shoulder</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>23</power>
+                        <cooldownTime>1.8</cooldownTime>
+                        <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+                        <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+            <!-- 制造质量偏移 -->
+            <li Class="NzRimImmortalBizarre.CompProperties_ProductionQualityOffset">
+                <offset>2</offset>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <!-- 普通工作速度 -->
+                    <GeneralLaborSpeed>2.1</GeneralLaborSpeed>
+                    <!-- 建造速度 -->
+                    <ConstructionSpeed>2.0</ConstructionSpeed>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+        <aptitudes>
+            <Crafting>8</Crafting>
+            <Artistic>8</Artistic>
+        </aptitudes>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <!-- 勤工臂 -->
+    <!-- 全局工作效率，操作 -->
+    <!-- 修行非一蹴而就之事，需以勤劳之心，持续不断地耕耘。 -->
+    <HediffDef ParentName="ZdBodyPartBase">
+        <defName>Zd_DiligenceArm</defName>
+        <label>diligence arm</label>
+        <labelNoun>an diligence arm</labelNoun>
+        <description>Cultivation is not something that can be accomplished overnight, but requires
+            continuous cultivation with a diligent heart.\n\nIncrease in mining and farming skills
+            and efficiency</description>
+        <defaultInstallPart>Shoulder</defaultInstallPart>
+        <tags>
+            <li>NzRI_ZhengDe_BodyPart</li>
+            <li>NzRI_ZhengDe_Restraint</li>
+        </tags>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>21</power>
+                        <cooldownTime>2</cooldownTime>
+                        <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+                        <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                    <!-- 全局工作速度 -->
+                    <WorkSpeedGlobal>1.3</WorkSpeedGlobal>
+                    <!-- 种植速度 -->
+                    <PlantWorkSpeed>3</PlantWorkSpeed>
+                    <!-- 挖掘速度 -->
+                    <MiningSpeed>3</MiningSpeed>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+        <aptitudes>
+            <Plants>6</Plants>
+            <Mining>6</Mining>
+        </aptitudes>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+</Defs>

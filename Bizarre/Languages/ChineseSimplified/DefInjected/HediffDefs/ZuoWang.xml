@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_XinSu_Eye.label>心素之眼</NzRI_XinSu_Eye.label>
+    <NzRI_XinSu_Eye.description>从心素身上取下的眼睛，似乎有什么特殊的能力，但是也可能引起迷惘</NzRI_XinSu_Eye.description>
+
+    <NzRI_Zw_Fg.label>非罡</NzRI_Zw_Fg.label>
+    <NzRI_Zw_Fg.description>##由于不少人反馈能量条有bug, 暂时显示在这里了</NzRI_Zw_Fg.description>
+
+    <NzRI_Zw_Mahjong.label>麻将牌</NzRI_Zw_Mahjong.label>
+    <NzRI_Zw_Mahjong.description>在他的眼中，隐约可以看到一个旋转的麻将牌。</NzRI_Zw_Mahjong.description>
+
+    <NzRI_Zw_Fantasy.label>美好幻景</NzRI_Zw_Fantasy.label>
+    <NzRI_Zw_Fantasy.description>沉浸在一个绮丽的幻象中。</NzRI_Zw_Fantasy.description>
+
+    <NzRI_Zw_FantasyMemory.label>美好回忆</NzRI_Zw_FantasyMemory.label>
+    <NzRI_Zw_FantasyMemory.description>仍然在回忆迷梦中的美好。</NzRI_Zw_FantasyMemory.description>
+
+    <NzRI_Zw_MentalCutting.label>心灵残缺</NzRI_Zw_MentalCutting.label>
+    <NzRI_Zw_MentalCutting.description>心智被一分为二</NzRI_Zw_MentalCutting.description>
+</LanguageData>

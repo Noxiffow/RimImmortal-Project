@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 舌灿莲花 (群体花言巧语) -->
+    <!-- 花言巧语 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_GracefulWords</defName>
+        <label>graceful words</label>
+        <description>Subtle compliments that make the heart grow fonder, success will generate a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <iconPath>Ability/Zw1</iconPath>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_EntropyGain>0</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+            <Ability_Duration>500</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <violent>false</violent>
+            <warmupTime>0.3</warmupTime>
+            <range>50</range>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>False</canTargetSelf>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetItems>False</canTargetItems>
+                <canTargetHumans>True</canTargetHumans>
+                <canTargetMutants>False</canTargetMutants>
+                <neverTargetHostileFaction>True</neverTargetHostileFaction>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-30</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_CalcuCheatSuccess">
+                <min>20</min>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_SetImpression">
+                <onSuccess>NzRI_T_GracefulWords</onSuccess>
+                <onFail>NzRI_T_NonsenseWords</onFail>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_FactionFavorability">
+                <onSuccess>11</onSuccess>
+                <onFail>-7</onFail>
+            </li>
+            <li Class="CompProperties_AbilitySocialInteraction">
+                <interactionDef>WordOfJoy</interactionDef>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg2">
+                <change>17</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_ProbabilityIncidents">
+                <probability>6</probability>
+                <maxProbability>1000</maxProbability>
+                <incidentDef>Nz_XinSuWandersIn</incidentDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 混珠诳取 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_Counterfeit</defName>
+        <label>Counterfeit trade</label>
+        <description>Consume a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt; and transform into the target's coveted treasure, which the target will use their own items in exchange for, and success will yield a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <iconPath>Ability/Zw2</iconPath>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_EntropyGain>0</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+        </statBases>
+        <verbProperties>
+            <violent>false</violent>
+            <warmupTime>0.3</warmupTime>
+            <range>50</range>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>False</canTargetSelf>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetItems>False</canTargetItems>
+                <canTargetHumans>True</canTargetHumans>
+                <canTargetMutants>False</canTargetMutants>
+                <neverTargetHostileFaction>True</neverTargetHostileFaction>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-40</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg">
+                <change>-30</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_CalcuCheatSuccess">
+                <min>20</min>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_DropTargetItem">
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg2">
+                <change>40</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_ProbabilityIncidents">
+                <probability>9</probability>
+                <maxProbability>1000</maxProbability>
+                <incidentDef>Nz_XinSuWandersIn</incidentDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 李代桃僵 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_Scapegoat</defName>
+        <label>scapegoat</label>
+        <description>Consume a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt; to transfer negative effects from one person to another, success yields a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <iconPath>Ability/Zw3</iconPath>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <warmupMote>Mote_CoagulateStencil</warmupMote>
+        <warmupEffecter>Coagulate</warmupEffecter>
+        <statBases>
+            <Ability_EntropyGain>0</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+            <Ability_Duration>500</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <violent>false</violent>
+            <warmupTime>1</warmupTime>
+            <range>50</range>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>False</canTargetSelf>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetItems>False</canTargetItems>
+                <canTargetHumans>True</canTargetHumans>
+                <canTargetMutants>False</canTargetMutants>
+                <neverTargetHostileFaction>True</neverTargetHostileFaction>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-100</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg">
+                <change>-72</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_CalcuCheatSuccess">
+                <min>30</min>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_SetImpression">
+                <onSuccess>NzRI_T_DoWhatForMe</onSuccess>
+                <onFail>NzRI_T_DoWhatForMe</onFail>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_MvIllness">
+                <range>9.9</range>
+                <clamorType>Ability</clamorType>
+                <clamorRadius>3</clamorRadius>
+                <stunTicks>300</stunTicks>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg2">
+                <change>33</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_ProbabilityIncidents">
+                <probability>21</probability>
+                <maxProbability>1000</maxProbability>
+                <incidentDef>Nz_XinSuWandersIn</incidentDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 迷阵布施 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_JoinUs</defName>
+        <label>join us</label>
+        <description>spend a little &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;, let the target
+            produce false memories, the other party may join you because of this, and success will
+            produce a small amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
+        <iconPath>Ability/Zw4</iconPath>
+        <cooldownTicksRange>60</cooldownTicksRange>
+        <displayOrder>200</displayOrder>
+        <aiCanUse>true</aiCanUse>
+        <statBases>
+            <Ability_EntropyGain>0</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+            <Ability_Duration>500</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>10.9</range>
+            <warmupTime>0.5</warmupTime>
+            <soundCast>PiercingSpine_Launch</soundCast>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>110</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg">
+                <change>-99</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_CalcuCheatSuccess">
+                <min>30</min>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_JoinFaction">
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg2">
+                <change>59</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_ProbabilityIncidents">
+                <probability>28</probability>
+                <maxProbability>1000</maxProbability>
+                <incidentDef>Nz_XinSuWandersIn</incidentDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 罔天宝诰 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_InvokeDeity</defName>
+        <label>Invoke deity</label>
+        <cooldownTicksRange>120000</cooldownTicksRange>
+        <description>Consume a large amount of &lt;color=#28BD75&gt;FeiGang&lt;/color&gt; to
+            temporarily bring the fate "DouLao" into the world, your enemies will fall into the
+            illusion of success because they see the fate, and their bodies will fall to the ground
+            due to loss of control.</description>
+        <iconPath>Ability/Zw5</iconPath>
+        <!-- TODO 声音是皇权的 -->
+        <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+        <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+        <aiCanUse>false</aiCanUse>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>True</showPsycastEffects>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>8</warmupTime>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-1</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg">
+                <change>-499</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_AreaAddHediff">
+                <hediffDef>
+                    <li>NzRI_Zw_Fantasy</li>
+                    <li>NzRI_Zw_FantasyMemory</li>
+                </hediffDef>
+                <compClass>NzRimImmortalBizarre.CompAbilityEffect_Zw_InvokeDeity</compClass>
+                <target>map</target>
+                <noSelf>true</noSelf>
+                <toEnemies>true</toEnemies>
+                <toAllies>true</toAllies>
+                <toNeutral>true</toNeutral>
+                <toColonists>false</toColonists>
+                <toAnimals>false</toAnimals>
+                <toHuman>true</toHuman>
+                <toMechanoids>false</toMechanoids>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_ProbabilityIncidents">
+                <probability>1</probability>
+                <maxProbability>2</maxProbability>
+                <incidentDef>Nz_XinSuWandersIn</incidentDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 灵丹妙药 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_Therapy</defName>
+        <label>Miraculous cure</label>
+        <description>#TODO</description>
+        <iconPath>Ability/Zwx3</iconPath>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupMote>Mote_CoagulateStencil</warmupMote>
+        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <displayOrder>400</displayOrder>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetCorpses>true</canTargetCorpses>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-299</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddYq">
+                <change>-49</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_Therapy">
+                <canRevive>true</canRevive>
+                <therapyTimes>3</therapyTimes>
+            </li>
+
+        </comps>
+    </AbilityDef>
+
+    <!-- 化虚为实 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_FictionReality</defName>
+        <label>fiction to reality</label>
+        <cooldownTicksRange>1200</cooldownTicksRange>
+        <description>Consume a large amount of &lt;color=#FFD700&gt;CongenitalQi&lt;/color&gt; to
+            bring an imagined item to life, but this spell is unstable and doesn't always produce
+            any items, success will yield a large amount of &lt;color=#28BD75&gt;FeiGang&lt;
+            /color&gt;.</description>
+        <iconPath>Ability/Zwx1</iconPath>
+        <!-- TODO 声音是皇权的 -->
+        <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <aiCanUse>false</aiCanUse>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>True</showPsycastEffects>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>2</warmupTime>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-299</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddYq">
+                <change>-49</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg">
+                <change>99</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.FictionReality">
+                <itemLists>
+                    <li>Core</li>
+                    <li>Immortal</li>
+                    <li MayRequire="RI.RimImmortal.Forge">Forge</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Ideology</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Royalty</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Biotech</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Anomaly</li>
+                </itemLists>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 镜中之物 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zw_ReflectionInMirror</defName>
+        <label>Reflection in a mirror</label>
+        <cooldownTicksRange>120000</cooldownTicksRange>
+        <description>Consume a large amount of &lt;color=#FFD700&gt;CongenitalQi&lt;/color&gt; to
+            take the target's shadow from the mirror of illusion and reality, because the mirror
+            only reflects half, the target will be incomplete, and will produce a large amount of
+            &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
+        <iconPath>Ability/Zwx2</iconPath>
+        <!-- TODO 声音是皇权的 -->
+        <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+        <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+        <!-- <warmupEffecter>Implant_Xenogerm</warmupEffecter> -->
+        <aiCanUse>false</aiCanUse>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>True</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>True</showPsycastEffects>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3.9</range>
+            <warmupTime>6</warmupTime>
+            <drawAimPie>True</drawAimPie>
+            <requireLineOfSight>True</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+                <canTargetPawns>True</canTargetPawns>
+                <canTargetHumans>True</canTargetHumans>
+                <canTargetAnimals>True</canTargetAnimals>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>True</canTargetMechs>
+                <canTargetItems>True</canTargetItems>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-299</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddYq">
+                <change>-49</change>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_CopyTarget">
+                <allowHuman>true</allowHuman>
+                <allowAnimal>true</allowAnimal>
+                <allowMech>true</allowMech>
+                <allowItem>true</allowItem>
+                <allowBoss>false</allowBoss>
+                <NewPawnHediff>NzRI_Zw_MentalCutting</NewPawnHediff>
+                <copyJunk>true</copyJunk>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Zw_AddFg2">
+                <change>89</change>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--初出茅庐的道士-->
+	<PawnKindDef>
+		<defName>RI_DaoPawn_NewDaoist</defName>
+		<label>Novice taoist</label>
+		<race>Human</race>
+		<!--<nameMaker>RI_NameRule_NamerPersonChinese</nameMaker>
+		<nameMakerFemale>RI_NameRule_NamerPersonChineseFemale</nameMakerFemale>-->
+		<combatPower>50</combatPower>
+		<!--年龄-->
+		<minGenerationAge>15</minGenerationAge>
+		<maxGenerationAge>24</maxGenerationAge>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<apparelMoney>500~2500</apparelMoney>
+		<apparelTags>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_DaoistPants</li>
+			<li>RI_Apparel_DaoistShirt</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+			<li>Gun_BoltActionRifle</li>
+		</weaponTags>
+		<techHediffsMoney>110~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<!--自带营养值-->
+		<invNutrition>5</invNutrition>
+
+		<!--禁止特性，没有一些原版垃圾特性-->
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>Brawler</li>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>Wimp</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--必须能干的工作-->
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+		<trader>true</trader>
+
+		<!--携带物资-->
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Kibble</thingDef>
+					<countRange>30</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--加入的流浪修士-->
+
+
+</Defs>

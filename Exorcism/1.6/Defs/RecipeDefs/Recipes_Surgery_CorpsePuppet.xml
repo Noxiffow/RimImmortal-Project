@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--修复肢体-->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>RI_RepairCorpsePuppetBodyPart</defName>
+    <label>修复冥尸肢体</label>
+    <description>Repair all the injury on corpse puppet.</description>
+    <workerClass>RimZombieGirl.Recipe_RemoveAllInjuries</workerClass>
+    <jobString>Repairing the puppet</jobString>
+    <workAmount>1000</workAmount>
+    <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>RI_CorpsePuppetRepairKit</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>RI_CorpsePuppetRepairKit</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

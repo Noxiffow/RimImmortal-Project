@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================================仙路储存====================================-->
+
+	<!--====================================二级分类====================================-->
+
+	<!--仙路-兵器-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Weapon</defName>
+		<label>RI-Weapons</label>
+		<parent>Weapons</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Weapon</iconPath>
+	</ThingCategoryDef>
+
+	<!--拳套武器-->
+	<ThingCategoryDef>
+		<defName>RI_Category_BoxingGlove</defName>
+		<label>Boxing glove</label>
+		<parent>RI_Category_Weapon</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Weapon</iconPath>
+	</ThingCategoryDef>
+
+	<!--仙路-衣着（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Apparel</defName>
+		<label>RI-Apparel</label>
+		<parent>Apparel</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
+	</ThingCategoryDef>
+
+	<!--甲胄-->
+	<ThingCategoryDef>
+		<defName>RI_Category_HelmetAndArmor</defName>
+		<label>Armour</label>
+		<parent>RI_Category_Apparel</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
+	</ThingCategoryDef>
+	
+	<!--衣冠（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_NormalClothing</defName>
+		<label>Clothing</label>
+		<parent>RI_Category_Apparel</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路原料====================================-->
+
+	<!--仙路-原料（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Resource</defName>
+		<label>RI-Resources</label>
+		<parent>ResourcesRaw</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--畜牧（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_AnimalProductRaw</defName>
+		<label>Animal product</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--药材（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_DrugsMaterials</defName>
+		<label>Drug material</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--土木（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_WoodStone</defName>
+		<label>Wood and Clay</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--金石（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Ore</defName>
+		<label>Ore and Metal</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路成品====================================-->
+
+	<!--仙路-成品（重复）-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Manufactured</defName>
+		<label>RI manufactured</label>
+		<parent>Manufactured</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--书籍-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Books</defName>
+		<label>Books</label>
+		<parent>RI_Category_Manufactured</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--功法书-->
+	<ThingCategoryDef>
+		<defName>RI_Category_CommonBooks</defName>
+		<label>Common books</label>
+		<parent>RI_Category_Books</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+	
+	<!--故事书信-->
+	<ThingCategoryDef>
+		<defName>RI_Category_StoryBooks</defName>
+		<label>Story books</label>
+		<parent>RI_Category_Books</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--药品-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Drugs</defName>
+		<label>Drugs</label>
+		<parent>RI_Category_Manufactured</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路-仙物====================================-->
+
+	<!--仙路-仙物-->
+	<ThingCategoryDef>
+		<defName>RI_Category_ImmortalThings</defName>
+		<label>RI-Immortal stuff</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+
+	<!--残宝-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Relic</defName>
+		<label>Relic</label>
+		<parent>RI_Category_ImmortalThings</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--贸易品-->
+	<ThingCategoryDef>
+		<defName>RI_Category_TradeGood</defName>
+		<label>Trade good</label>
+		<parent>RI_Category_ImmortalThings</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+</Defs>

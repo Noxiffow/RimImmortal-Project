@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Find liquid jade -->
+  <RI_LiquidJadeSpawn.label>发现柔玉</RI_LiquidJadeSpawn.label>
+  <!-- EN: Find liquid jade -->
+  <RI_LiquidJadeSpawn.letterLabel>发现柔玉</RI_LiquidJadeSpawn.letterLabel>
+  <!-- EN: Unusual qi fluctuations have been detected emanating from the depths of the earth's crust, bringing precious liquid jade hidden deep underground to the surface. -->
+  <RI_LiquidJadeSpawn.letterText>地壳深处传来不寻常的灵气波动，蕴藏在地下深处的珍贵柔玉随之被带到了地表。</RI_LiquidJadeSpawn.letterText>
+  
+</LanguageData>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--=================外道门派的商队=================-->
+
+	<!--暗坊-->
+	<TraderKindDef>
+		<defName>RI_Sect_Caravan_ShadowTrader</defName>
+		<label>Shadow trader</label>
+		<stockGenerators>
+			<!--========出售========-->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>40~80</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>2~8</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<thingDefCountRange>5~9</thingDefCountRange>
+				<totalPriceRange>1600~3000</totalPriceRange>
+			</li>
+
+			<!-- Techprints -->
+			<li Class="StockGenerator_Techprints">
+				<countChances>
+					<li>
+						<count>3</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+
+			<!-- Books -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TextBook</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Schematic</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Novel</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+				<countRange>0~1</countRange>
+			</li>
+
+			<!-- Weapons -->
+			<!-- none -->
+
+			<!-- Apparel -->
+			<!-- none -->
+
+			<!-- Implants -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<thingDefCountRange>5</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- Exotic -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>ExoticMisc</tradeTag>
+				<thingDefCountRange>3~3</thingDefCountRange>
+				<countRange>1~1</countRange>
+				<excludedThingDefs>
+					<li>MedicineUltratech</li>
+					<!-- already handled by single def -->
+					<li>ComponentSpacer</li>
+					<!-- already handled by single def -->
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
+					<!-- no anomaly technology on basic traders -->
+				</excludedThingDefs>
+				<customCountRanges>
+					<Luciferium>7~25</Luciferium>
+					<Hyperweave>40~120</Hyperweave>
+				</customCountRanges>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>2~2</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+
+			<!-- Genepacks -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+
+			<!-- Serums -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+				<tradeTag>Serum</tradeTag>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>-3~1</countRange>
+				<!-- 20% chance of appearing -->
+				<excludedThingDefs>
+					<li>VoidsightSerum</li>
+				</excludedThingDefs>
+			</li>
+
+			<!-- Slaves -->
+			<!-- none -->
+
+			<!-- Archite capsule -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>ArchiteCapsule</thingDef>
+				<countRange>-8~1</countRange>
+				<!-- 10% chance -->
+			</li>
+
+			<!-- Deathrest capacity serum -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>DeathrestCapacitySerum</thingDef>
+				<countRange>0~1</countRange>
+			</li>
+			
+			<!--========购买========-->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<!--黄金-->
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+			<!--灵石-->
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+			</li>
+			<!--仙路的兵器盔甲，什么商队都收-->
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RI_AllWeapon_AllArmor_Tag</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!--贩奴人-->
+	<TraderKindDef>
+		<defName>RI_Sect_Caravan_SlaveTraffickingCaravan</defName>
+		<label>Slave trafficking caravan</label>
+		<commonalityMultFromPopulationIntent>
+			<points>
+				<li>(0.2, 0)</li>
+				<li>(1,   1)</li>
+				<li>(2,   3)</li>
+			</points>
+		</commonalityMultFromPopulationIntent>
+		<stockGenerators>
+			<!--========出售========-->
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>2~5</countRange>
+			</li>
+
+			<!-- Slaves -->
+			<li Class="StockGenerator_Slaves">
+				<countRange>10~20</countRange>
+			</li>
+
+			<!-- Cultist apparel -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_CultistMask</thingDef>
+				<countRange>-1~2</countRange>
+				<!-- 50% chance for 1~2 -->
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_CeremonialCultistMask</thingDef>
+				<countRange>-1~2</countRange>
+				<!-- 50% chance for 1~2 -->
+			</li>
+
+			<!--========购买========-->
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<!--黄金-->
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+			<!--灵石-->
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+			</li>
+			<!--仙路的兵器盔甲，什么商队都收-->
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RI_AllWeapon_AllArmor_Tag</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

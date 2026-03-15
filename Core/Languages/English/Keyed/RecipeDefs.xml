@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!-- EN: Copy "{Name}" book -->
+	<RI_Recipe_CopyBook_Label>Copy " {Name} "</RI_Recipe_CopyBook_Label>
+	<RI_Recipe_CopyBook_Description>Using liquid jade as the pen and spiritual crystal as the ink, copying the text of the book "{Name}", it will take a long time.</RI_Recipe_CopyBook_Description>
+</LanguageData>

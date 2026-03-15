@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Black steel arm -->
+  <RI_Prostheses_BlackSteelArm.label>庚钢义臂</RI_Prostheses_BlackSteelArm.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_BlackSteelArm.description>由庚钢和零部件制作而成的假肢，非常坚固，同时能发挥出比肉身更强的力量。但是庚钢假体会屏蔽灵气，令修炼速度略微下降。</RI_Prostheses_BlackSteelArm.description>
+  
+  <!-- EN: Black steel foot -->
+  <RI_Prostheses_BlackSteelFoot.label>庚钢义足</RI_Prostheses_BlackSteelFoot.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_BlackSteelFoot.description>由庚钢和零部件制作而成的假肢，非常坚固，同时能发挥出比肉身更强的力量。但是庚钢假体会屏蔽灵气，令修炼速度略微下降。</RI_Prostheses_BlackSteelFoot.description>
+  
+  <!-- EN: Black steel hand -->
+  <RI_Prostheses_BlackSteelHand.label>庚钢义手</RI_Prostheses_BlackSteelHand.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_BlackSteelHand.description>由庚钢和零部件制作而成的假肢，非常坚固，同时能发挥出比肉身更强的力量。但是庚钢假体会屏蔽灵气，令修炼速度略微下降。</RI_Prostheses_BlackSteelHand.description>
+  
+  <!-- EN: Black steel leg -->
+  <RI_Prostheses_BlackSteelLeg.label>庚钢义腿</RI_Prostheses_BlackSteelLeg.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_BlackSteelLeg.description>由庚钢和零部件制作而成的假肢，非常坚固，同时能发挥出比肉身更强的力量。但是庚钢假体会屏蔽灵气，令修炼速度略微下降。</RI_Prostheses_BlackSteelLeg.description>
+  
+  <!-- EN: Black steel spine -->
+  <RI_Prostheses_BlackSteelSpine.label>庚钢脊椎</RI_Prostheses_BlackSteelSpine.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_BlackSteelSpine.description>由庚钢和零部件制作而成的假肢，非常坚固，同时能发挥出比肉身更强的力量。但是庚钢假体会屏蔽灵气，令修炼速度略微下降。</RI_Prostheses_BlackSteelSpine.description>
+  
+  <!-- EN: Bionic stomach-Earth -->
+  <RI_Prostheses_EarthBionicStomach.label>戍土鼎胃</RI_Prostheses_EarthBionicStomach.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_EarthBionicStomach.description>脾胃为气血生化之源、后天之本，藏意，在五行属土。\n\n这颗以神工巧机打造的精妙仿生胃，可以在胃部开辟第二金丹，辅助吸收灵气。</RI_Prostheses_EarthBionicStomach.description>
+  
+  <!-- EN: Bionic heart-Fire -->
+  <RI_Prostheses_FireBionicHeart.label>千壶焱心</RI_Prostheses_FireBionicHeart.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_FireBionicHeart.description>心为神之居、血之主、脉之宗，在五行属火。\n\n这颗以神工巧机打造的精妙仿生心脏，可以代替原有心脏，迸发强大活力，令全身血液循环与灵气交融，提升修炼速度。</RI_Prostheses_FireBionicHeart.description>
+  
+  <!-- EN: Jade arm -->
+  <RI_Prostheses_JadeFakeArm.label>翠玉臂</RI_Prostheses_JadeFakeArm.label>
+  <!-- EN: Using the jade as the shell, the movable arm of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much. -->
+  <RI_Prostheses_JadeFakeArm.description>用翡翠作为外壳，内部隐藏着木制机关的可活动假臂，由于材料和人体相性良好，加上灵巧的机关，这种假体并不会减少太多活动性。</RI_Prostheses_JadeFakeArm.description>
+  
+  <!-- EN: Jade eye -->
+  <RI_Prostheses_JadeFakeEye.label>翠玉眼</RI_Prostheses_JadeFakeEye.label>
+  <!-- EN: A fake eyeball, carved with jade, is merely decorative and looks very evil under certain angles of light. -->
+  <RI_Prostheses_JadeFakeEye.description>一颗用翡翠精雕细琢的假眼球，仅仅只有装饰作用，某些角度的灯光下看上去十分邪恶。</RI_Prostheses_JadeFakeEye.description>
+  
+  <!-- EN: Jade foot -->
+  <RI_Prostheses_JadeFakeFoot.label>翠玉足</RI_Prostheses_JadeFakeFoot.label>
+  <!-- EN: Using the jade as the shell, the movable foot of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much. -->
+  <RI_Prostheses_JadeFakeFoot.description>用翡翠作为外壳，内部隐藏着木制机关的可活动假足，由于材料和人体相性良好，加上灵巧的机关，这种假体并不会减少太多活动性。</RI_Prostheses_JadeFakeFoot.description>
+  
+  <!-- EN: Jade hand -->
+  <RI_Prostheses_JadeFakeHand.label>翠玉手</RI_Prostheses_JadeFakeHand.label>
+  <!-- EN: Using the jade as the shell, the movable hand of the wooden organ is hidden inside. Due to the good material and the human body phase, coupled with the smart organ, this prosthetics does not reduce the movement too much. -->
+  <RI_Prostheses_JadeFakeHand.description>用翡翠作为外壳，内部隐藏着木制机关的可活动假手，由于材料和人体相性良好，加上灵巧的机关，这种假体并不会减少太多活动性。</RI_Prostheses_JadeFakeHand.description>
+  
+  <!-- EN: Bionic lung-Metal -->
+  <RI_Prostheses_MetalBionicLung.label>肃金御肺</RI_Prostheses_MetalBionicLung.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_MetalBionicLung.description>肺为魄之处、气之主。在五行属金。\n\n这颗以神工巧机打造的精妙仿生肺，可以容纳天地灵气，一呼一吸间，天地相通。</RI_Prostheses_MetalBionicLung.description>
+  
+  <!-- EN: Bionic kidney-Water -->
+  <RI_Prostheses_WaterBionicKidney.label>寒灵水肾</RI_Prostheses_WaterBionicKidney.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_WaterBionicKidney.description>肾为先天之本，藏志，腰为肾之腑，在五行属水。\n\n这颗以神工巧机打造的精妙仿生肾脏，可以代替原有肾脏，加强过滤系统。</RI_Prostheses_WaterBionicKidney.description>
+  
+  <!-- EN: Bionic liver-Wood -->
+  <RI_Prostheses_WoodBionicLiver.label>棠木枝肝</RI_Prostheses_WoodBionicLiver.label>
+  <!-- EN: Prosthetic limbs made of black steel and component are very strong and can exert more strength than the physical body. However, the black steel prosthesis will block the Qi, so that the cultivation speed is slightly reduced. -->
+  <RI_Prostheses_WoodBionicLiver.description>肝为魂之处，血之藏，筋之宗。在五行属木，主升主动。\n\n这颗以神工巧机打造的精妙仿生肝，可以将毒素更快地排出体外，洗髓锻体，增强免疫力。</RI_Prostheses_WoodBionicLiver.description>
+  
+</LanguageData>

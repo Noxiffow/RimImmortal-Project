@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 八卦旗的技能 -->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_DetainGhostFlag</defName>
+		<label>八卦阵</label>
+		<description>八卦阵</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_DetainGhostFlag</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<statBases>
+			<Ability_Duration>250</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>RimZombieGirl.Verb_Ability</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>6</range>
+			<warmupTime>8</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ZombieHediff_DetainGhostFlag</hediffDef>
+				<onlyBrain>true</onlyBrain>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="RimZombieGirl.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_ZombieMote_SpiritFlag</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 三清铃技能 -->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_SanQing</defName>
+		<label>三清铃</label>
+		<description>释放一道对周围缓慢扩张的冲击波，只对敌人添加负面效果</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_SanQing</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>false</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<statBases>
+			<Ability_Duration>250</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>6.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>RI_Projectile_SanQingBell</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 风雷鼓技能 -->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_WindThunder</defName>
+		<label>风雷鼓</label>
+		<description>释放雷声对周围敌人造成一段时间眩晕，并大幅提高自身远程战斗能力</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_SanQing</iconPath>
+		<aiCanUse>false</aiCanUse>
+		<ai_IsIncendiary>false</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<targetRequired>False</targetRequired>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>12.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_ZombieHediff_WindThunder</hediffDef>
+				<onlyBrain>true</onlyBrain>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			
+			<li Class="RimZombieGirl.CompProperties_AbilityAreaStun">
+				<stunDamage>20</stunDamage>
+			</li>
+			
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Effecter_WindThunder</effecterDef>
+			</li>
+			
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+				<scale>9.9</scale>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

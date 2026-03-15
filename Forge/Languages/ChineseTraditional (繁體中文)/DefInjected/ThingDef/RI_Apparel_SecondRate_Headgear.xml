@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ancient cultivator helmet -->
+  <RI_Apparel_AncientCultivatorHelmet.label>古修玄铁盔【二品】</RI_Apparel_AncientCultivatorHelmet.label>
+  <!-- EN: Ancient cultivators crafted helmets from steel and spirit stones, which had powerful protective abilities. It seems that they embedded thin and delicate talisman inside the helmets, allowing them to protect psychic waves. Due to the passage of time, it is difficult to analyze the principles involved. -->
+  <RI_Apparel_AncientCultivatorHelmet.description>【二品】头盔\n\n古代修炼者以钢铁和灵石打造的头盔，具有强大的防护能力。似乎在内部镶嵌了薄如蝉翼的法宝，令头盔可以起到防护心灵冲击的作用。由于年代久远，难以分析其中的原理。</RI_Apparel_AncientCultivatorHelmet.description>
+  
+  <!-- EN: Gilded general helmet【Second-rate】 -->
+  <RI_Apparel_GoldBestHelmet.label>鎏金天王盔【二品】</RI_Apparel_GoldBestHelmet.label>
+  <!-- EN: 【Second-rate】helmet\n\nA gilded helmet with a magnificent appearance, refined through the method of forge, exuding a faint aura of spiritual might. -->
+  <RI_Apparel_GoldBestHelmet.description>【二品】头盔\n\n一副鎏金风格的头盔，外形华丽，经过炼器之法的处理，具有淡淡的灵气威压。</RI_Apparel_GoldBestHelmet.description>
+  
+  <!-- EN: Gilded general helmet (mask)【Second-rate】 -->
+  <RI_Apparel_GoldBestHelmet_Mask.label>鎏金天王盔（面甲）【二品】</RI_Apparel_GoldBestHelmet_Mask.label>
+  <!-- EN: 【Second-rate】helmet\n\nA gilded helmet with a magnificent appearance, refined through the method of forge, exuding a faint aura of spiritual might.\nThis helmet with a face mask armor. -->
+  <RI_Apparel_GoldBestHelmet_Mask.description>【二品】头盔\n\n一副鎏金风格的头盔，外形华丽，经过炼器之法的处理，具有淡淡的灵气威压。\n这幅头盔带有面甲</RI_Apparel_GoldBestHelmet_Mask.description>
+  
+  <!-- EN: Liquid jade headband【Third-rate】 -->
+  <RI_Apparel_LiquidJadeHeadband.label>柔玉抹额【三品】</RI_Apparel_LiquidJadeHeadband.label>
+  <!-- EN: A headband with liquid jade and set in the center. This kind of headband can have a calming effect on the spirit and slightly increase the speed of cultivation. -->
+  <RI_Apparel_LiquidJadeHeadband.description>【三品】头冠\n\n一种将柔玉打磨镶嵌于正中心的头巾。这种抹额可以起到宁神的作用，并且略微提升修炼速度。</RI_Apparel_LiquidJadeHeadband.description>
+  
+  <!-- EN: Tiger guard helmet【Second-rate】 -->
+  <RI_Apparel_TigerGuardHelmet.label>精铁虎卫盔【二品】</RI_Apparel_TigerGuardHelmet.label>
+  <!-- EN: 【Second-rate】helmet\n\nA helmet forged from refined iron through the method of Forge, engraved with a tiger head, exuding an imposing presence. -->
+  <RI_Apparel_TigerGuardHelmet.description>【二品】头盔\n\n一副以精铁和炼器之法打造而成的头盔，上面雕刻着虎头，非常威风。</RI_Apparel_TigerGuardHelmet.description>
+  
+  <!-- EN: WuQu hat【Second-rate】 -->
+  <RI_Apparel_WuQuHat.label>武曲纯阳巾【二品】</RI_Apparel_WuQuHat.label>
+  <!-- EN: A hat embroidered with gold wire, this turban has the blessing of a charm inside, which can make the wearer's mind clear. -->
+  <RI_Apparel_WuQuHat.description>一顶绣着金丝的头巾，这条头巾内部有着符咒的加持，可以令佩戴者头脑清醒。</RI_Apparel_WuQuHat.description>
+  
+</LanguageData>

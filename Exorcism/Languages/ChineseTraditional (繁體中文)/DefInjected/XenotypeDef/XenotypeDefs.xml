@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Necrosapiens -->
+  <RI_ExorcismXenotype_Necrosapiens.label>冥尸</RI_ExorcismXenotype_Necrosapiens.label>
+  <!-- EN: It is said that when a soul is denied entry into the nether world, the body resists decay and the spirit lingers, giving rise to what is known as the Necrosapiens.\n\nNeither fully human nor truly inhuman, they do not fear corruption; their bodies hold formidable strength, yet they shun sunlight and think with dull minds. Legends claim that by devouring vast amounts of human flesh, a Necrosapiens may grow ever stronger—until it approaches an immortal state.\n\nSince the rise of aberrant beings, cases of human corpses being deliberately refined into Necrosapiens have occasionally surfaced. The refinement techniques appear so sophisticated that one cannot fathom how many innocents must have fallen victim to such atrocities. -->
+  <RI_ExorcismXenotype_Necrosapiens.description>曾有人说，亡魂未被冥府收录，导致肉身不腐，精神不灭，称为冥尸。\n\n他们类人而非人，夹在生与死之间，肉体蕴含强大力量，却惧怕阳光，思维迟钝。据说，在吞食大量人肉后，冥尸将会变得越发强大，乃至成为不死的存在。\n\n在邪祟横行之后，将人类尸体炼成冥尸之事，偶有发生。他们所用的技术之成熟，令人难以想象背后有多少无辜之人，遭遇毒手。</RI_ExorcismXenotype_Necrosapiens.description>
+  <!-- EN: A life returned from the nether world—its body long dead, yet untouched by decay. -->
+  <RI_ExorcismXenotype_Necrosapiens.descriptionShort>冥府归来的生命，肉身已死，却不畏腐朽。</RI_ExorcismXenotype_Necrosapiens.descriptionShort>
+  
+</LanguageData>

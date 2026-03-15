@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Curse protect armor -->
+  <RI_Apparel_CurseProtectArmor.label>铜钱护胸</RI_Apparel_CurseProtectArmor.label>
+  <!-- EN: Crafted from copper coins and inscribed with talismans, this chest armor provides strong resistance against curses while offering solid physical protection. -->
+  <RI_Apparel_CurseProtectArmor.description>用铜币和辟邪符咒制作而成的护胸，对诅咒有很好的抵抗能力，并且本身也具有一定的防御力。</RI_Apparel_CurseProtectArmor.description>
+  
+  <!-- EN: Daoist pants -->
+  <RI_Apparel_DaoistArmorPants.label>辟邪甲裤</RI_Apparel_DaoistArmorPants.label>
+  <!-- EN: Daoist trousers made from reinforced fabric, with copper armor plates attached externally to protect vital areas. -->
+  <RI_Apparel_DaoistArmorPants.description>用加固布料制作的道士裤子，外面附加了风磨铜甲片，可以防护关键部位。</RI_Apparel_DaoistArmorPants.description>
+  
+  <!-- EN: Daoist crown -->
+  <RI_Apparel_DaoistCrown.label>道士冠</RI_Apparel_DaoistCrown.label>
+  <!-- EN: An artistically terrifying war mask. It hides the wearer's face and makes them more confident. -->
+  <RI_Apparel_DaoistCrown.description>道门道士佩戴的头冠。下面为方形，上部成三角形，状如屋顶。</RI_Apparel_DaoistCrown.description>
+  
+  <!-- EN: Daoist pants -->
+  <RI_Apparel_DaoistPants.label>道士裤</RI_Apparel_DaoistPants.label>
+  <!-- EN: Carefully stitched Daoist pants with gaiters for easy movement. -->
+  <RI_Apparel_DaoistPants.description>缝制仔细的道士裤子，下有绑腿，方便活动。</RI_Apparel_DaoistPants.description>
+  
+  <!-- EN: exorcism prayer beads -->
+  <RI_Apparel_DaoistPrayerBeads.label>镇邪念珠</RI_Apparel_DaoistPrayerBeads.label>
+  <!-- EN: The coming and going of the true thread, its twists and turns, its ascent and descent, and the exchange between humanity and heaven — all of these may be called a zhou tian (cosmic cycle).\n\nHandling the beads helps to calm the mind and gather the spirit. The practice of Daoists wearing prayer beads dates back to early times. Such strands typically consist of 81 or 108 beads, including a larger head bead. Upon reaching the head bead, one should reverse direction and continue, symbolizing the cyclical flow of the zhou tian. -->
+  <RI_Apparel_DaoistPrayerBeads.description>真线之来去、曲折之往复、上下之接续、人天之交换，皆可称之为周天。\n\n拨弄念珠有助于梳理心情，内敛精神。道教佩戴念珠的历史较早，其珠子数量一般为81颗或108颗，包含一颗头珠。转到头珠的时候，应当掉转过来往回继续拨，此乃周天循环之意。</RI_Apparel_DaoistPrayerBeads.description>
+  
+  <!-- EN: Daoist robe -->
+  <RI_Apparel_DaoistShirt.label>三清领道袍</RI_Apparel_DaoistShirt.label>
+  <!-- EN: A Daoist robe without any belts or fastenings. Its collar bears three layers of patterns, symbolizing the "The Three Pristine Ones".\n\nThis collar is a unique upright design, and only Daoists who have formally received knowledge from their master within the Sect are qualified to wear it. -->
+  <RI_Apparel_DaoistShirt.description>一件道士穿的道袍，并无腰带一类的束缚。其领口有三重纹饰，象征“三清尊神”。\n\n三清领是一种独特的立领设计，只有在道门内获得了师父传度的道士才有资格穿。</RI_Apparel_DaoistShirt.description>
+  
+  <!-- EN: exorcism crown -->
+  <RI_Apparel_ExorcismCrown.label>镇邪冠</RI_Apparel_ExorcismCrown.label>
+  <!-- EN: An artistically terrifying war mask. It hides the wearer's face and makes them more confident. -->
+  <RI_Apparel_ExorcismCrown.description>镶入墨玉的头冠，对邪祟有抵抗作用，被道士所喜爱。</RI_Apparel_ExorcismCrown.description>
+  
+</LanguageData>

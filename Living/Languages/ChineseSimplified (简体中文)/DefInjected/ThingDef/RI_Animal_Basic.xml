@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fire rat -->
+  <RI_Animal_FireRat.label>火鼠</RI_Animal_FireRat.label>
+  <!-- EN: A mouse weighs a hundred pounds, hair more than two feet long, as thin as silk, can be made of cloth. Constant living in the fire, always out and white, with water is dead, take its hair to weave for cloth.\n\nThese amazing rodents are rare, and their fur has the effect of protecting against cold and heat. -->
+  <RI_Animal_FireRat.description>有鼠重百斤，毛长二尺余，细如丝，可以作布。恒居火中，时时出外而白，以水逐而沃之乃死，取其毛缉织以为布。\n\n这种神奇的啮齿动物较为少见，它们的皮毛具有抵御严寒和酷暑的效果。</RI_Animal_FireRat.description>
+  <!-- EN: left claw -->
+  <RI_Animal_FireRat.tools.left_claw.label>左爪</RI_Animal_FireRat.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_FireRat.tools.left_claw.labelNoLocation>爪</RI_Animal_FireRat.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_Animal_FireRat.tools.right_claw.label>右爪</RI_Animal_FireRat.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_FireRat.tools.right_claw.labelNoLocation>爪</RI_Animal_FireRat.tools.right_claw.labelNoLocation>
+  
+  <!-- EN: Tian dog -->
+  <RI_Animal_TianDog.label>天狗</RI_Animal_TianDog.label>
+  <!-- EN: There is a beast, called the Tian dog, whose shape is like a fox with a white head, and whose voice is qute, which can ward off evil.\n\nThis is a medium size dog, its appearance is cute, IQ is not low, very loyal, and its combat effectiveness is slightly higher than ordinary dogs, so it is often raised by some women. -->
+  <RI_Animal_TianDog.description>有兽焉，曰天狗，其状如狸而白首，其音如榴榴，可以御凶。\n\n这是一种体型不大的犬科动物，其外表较为可爱，智商不低，非常忠诚，并且其战斗力也略高于普通的犬类，所以经常被一些女性饲养。</RI_Animal_TianDog.description>
+  <!-- EN: left claw -->
+  <RI_Animal_TianDog.tools.left_claw.label>左爪</RI_Animal_TianDog.tools.left_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_TianDog.tools.left_claw.labelNoLocation>爪</RI_Animal_TianDog.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <RI_Animal_TianDog.tools.right_claw.label>右爪</RI_Animal_TianDog.tools.right_claw.label>
+  <!-- EN: claw -->
+  <RI_Animal_TianDog.tools.right_claw.labelNoLocation>爪</RI_Animal_TianDog.tools.right_claw.labelNoLocation>
+  
+</LanguageData>

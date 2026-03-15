@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RI_Alert_ZombieHungry>Zombie is hungry!</RI_Alert_ZombieHungry>
+  <RI_Alert_ZombieHungryDesc>Zombie is feeling hungry and needs food!</RI_Alert_ZombieHungryDesc>
+  <RI_Alert_ZombieNeedSuppress>Zombie needs to suppress!</RI_Alert_ZombieNeedSuppress>
+  <RI_Alert_ZombieNeedSuppressDesc>The zombie is about to go berserk and needs to be suppressed!</RI_Alert_ZombieNeedSuppressDesc>
+  <RI_CurseGhost_CannotAddSurgeryBill>Nothing inside the ghost!</RI_CurseGhost_CannotAddSurgeryBill>
+  <RI_Letter_FleshMutationLabel>{PAWN_nameDef} has undergone flesh mutation</RI_Letter_FleshMutationLabel>
+  <RI_Letter_FleshMutationText>{PAWN_nameDef}'s {1} has been corrupted by the curse, resulting in flesh mutation.</RI_Letter_FleshMutationText>
+  <RI_Curse_FirstWarningLabel>Curse Spread Warning</RI_Curse_FirstWarningLabel>
+  <RI_Curse_FirstWarningText>A curse has appeared on the current map. It can cause colonists to undergo flesh mutation and increases the chance of cursed incidents.\n\nIt is recommended to build warding towers as soon as possible, or equip key personnel with protective talismans to reduce the curse's effects.\n\n\n\n\n\nEVEN IF YOU FLEE ELSEWHERE, WE WILL STILL FIND YOU.</RI_Curse_FirstWarningText>
+<!-- English -->
+<RI_Settings_CurseSources_Title>Curse Source Values</RI_Settings_CurseSources_Title>
+<RI_Settings_Curse_ZombieDaily>Daily curse per zombie present: {0}</RI_Settings_Curse_ZombieDaily>
+<RI_Settings_Curse_OrganHarvest>Curse added per organ harvest: {0}</RI_Settings_Curse_OrganHarvest>
+<RI_Settings_Curse_HumanButcher>Curse added per human corpse butchered: {0}</RI_Settings_Curse_HumanButcher>
+<RI_Settings_Curse_CorpseMultiplier>Unburied corpse curse multiplier: {0}</RI_Settings_Curse_CorpseMultiplier>
+<RI_Settings_Curse_GraveMultiplier>Cursed grave dig curse multiplier: {0}</RI_Settings_Curse_GraveMultiplier>
+<RI_Settings_Curse_ResetDefaults>Reset to defaults</RI_Settings_Curse_ResetDefaults>
+</LanguageData>

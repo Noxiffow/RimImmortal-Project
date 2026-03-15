@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- <StatDef>
+        <defName>RI_MakeElixirsFactor</defName>
+        <label>炼丹速度系数</label>
+        <description>这个将影响炼丹速度.</description>
+        <category>Building</category>
+        <defaultBaseValue>1</defaultBaseValue>
+        <minValue>0.25</minValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+        <parts>
+            <li Class="StatPart_Outdoors">
+                <factorIndoors>1.00</factorIndoors>
+                <factorOutdoors>0.6</factorOutdoors>
+            </li>
+            <li Class="WhoXiuXian.StatPart_RI_InRoom">
+                <factorInRoom>1.00</factorInRoom>
+                <factorOutRoom>0.8</factorOutRoom>
+                <roomRoleDef>RI_Room_ElixirsRoom</roomRoleDef>
+            </li>
+            <li Class="StatPart_WorkTableRoomRole" />
+            <li Class="StatPart_WorkTableTemperature" />
+            <li Class="StatPart_RoomStat">
+                <roomStat>RI_MakeElixirsFactor</roomStat>
+                <customLabel>炼丹速度清洁系数</customLabel>
+            </li>
+        </parts>
+        <displayPriorityInCategory>1000</displayPriorityInCategory>
+    </StatDef>
+
+    <StatDef>
+        <defName>RI_PrayerAltarFactor</defName>
+        <label>供奉效率</label>
+        <description>影响供奉效率。</description>
+        <category>Building</category>
+        <defaultBaseValue>1</defaultBaseValue>
+        <minValue>0.1</minValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+        <parts>
+            <li Class="StatPart_Outdoors">
+                <factorIndoors>1.00</factorIndoors>
+                <factorOutdoors>0.3</factorOutdoors>
+            </li>
+            <li Class="StatPart_WorkTableRoomRole" />
+            <li Class="StatPart_WorkTableTemperature" />
+            <li Class="StatPart_RoomStat">
+                <roomStat>RI_PrayerAltarFactor</roomStat>
+                <customLabel>供奉效率清洁系数</customLabel>
+            </li>
+        </parts>
+        <displayPriorityInCategory>1000</displayPriorityInCategory>
+    </StatDef> -->
+</Defs>

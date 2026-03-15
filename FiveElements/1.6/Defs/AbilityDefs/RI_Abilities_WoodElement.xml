@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 木行法门 -->
+
+	<!--凝气境界——巽木-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_WoodCultivation</defName>
+		<label>Wood element cultivation</label>
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Noviciate rank of the Wood-element Path\n\n&lt;/color&gt;Spiritual energy acquisition efficiency +25%.\n\nA cultivation method unique to the Wood Path.\n\nBy using Qi to enhance one's sensitivity to life, it increases the efficiency of cultivation.</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_WoodCultivation</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>99999</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<violent>false</violent>
+			<warmupTime>0.1</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_Hediff_WoodCultivationHediff</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<moteCastDef>RI_Ability_BodyTheory_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Mote_Wood_Cultivation</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--固基境界——春生-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_EverythingGrow</defName>
+		<label>Spring grow</label>
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Foundation rank of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 100\n\nAccelerates the growth of plants in an instant.\n\nBy nourishing the soil with Qi energy, this spell stimulates the potential within plant cells, causing them to grow rapidly. Though highly effective, it comes with a long cooldown.</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_EverythingGrow</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<!--冷却12小时-->
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+			<Ability_EffectRadius>5.8</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<warmupTime>1</warmupTime>
+			<range>5.8</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilityBoom">
+				<growth>0.5</growth>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Mote_Wood_EverythingGrow</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-100</rEnergy>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 生机予夺 -->
+	<!-- 选中一个范围内的植物，摧毁它们以获取生命力 -->
+	<!-- 青茎翠叶竞焚香​​，​​岂识真机在吾掌？​​​​一缕青烟通我座​​，​​诸天星斗尽归藏！ -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_VitalityAbsorption</defName>
+		<label>Vitality absorption</label>
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Core-formation rank of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 150\n\nDrains the vitality from plants.\n\nThrough a unique technique, this spell extracts the life energy of growing plants and converts it into a special form of Qi known as Vitality, nourishing the caster in return.\n\nOnce forbidden by the Wood-path sects, this technique was reluctantly reclaimed after their near-destruction during the Sect Wars.</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_VitalityAbsorption</iconPath>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!-- TODO 替换声音 -->
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3</range>
+			<warmupTime>0.5</warmupTime>
+			<!-- TODO 替换声音 -->
+			<soundCast>RocketswarmLauncher_Fire</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-150</rEnergy>
+            </li> 
+			<li Class="RI_FiveElements.CompProperties_PlantToLife">
+				<!-- 每100%生长的植物转化为X点生机 -->
+				<energyPerGrowed>0.05</energyPerGrowed>
+				<!-- 摧毁植物 -->
+				<destroyPlant>true</destroyPlant>
+				<!-- 半径 -->
+				<radius>5</radius>
+				<!-- 特效Mote -->
+				<moteDef>RI_Mote_Wood_VitalityAbsorption</moteDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 化丹——结草缚藤 -->
+	<!-- 选中一个范围内的植物，让它们转变为陷阱，地雷 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_VerdantBind</defName>
+		<label>Verdant bind</label>
+		<!-- 选中一个范围内的植物，让它们变成炮台 -->
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Core-formation rank of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 100\n\nTransform plants into functional structures.\n\nUsing the Wood Path’s Vitality spells, plants are infused with vitality and transformed into functional buildings.\n\nBrambles——Strangle-thorn\nAgave——Agave-spike</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_VerdantBind</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!-- TODO 替换声音 -->
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3</range>
+			<warmupTime>0.5</warmupTime>
+			<!-- TODO 替换声音 -->
+			<soundCast>RI_Sound_PlantsGrowing</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>350</rEnergy>
+            </li> 
+			<li Class="RI_FiveElements.CompProperties_PlantToThing">
+				<!-- 默认类型的生物 -->
+				<thingDef>RI_Plant_VitalityGrass</thingDef>
+				<!-- 树对应的生物 -->
+				<treeThingDef>RI_Plant_VitalityGrass</treeThingDef>
+				<!-- 半径 -->
+				<radius>5</radius>
+				<!-- 特效Mote -->
+				<moteDef>RI_Mote_Wood_CreatePlantsBuilding</moteDef>
+				<!-- 特定植物对应的生物 -->
+				<plantToThings>
+					<!--生机草-->
+					<li>
+						<plantDef>Plant_Grass</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<li>
+						<plantDef>Plant_TallGrass</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<li>
+						<plantDef>Plant_Moss</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<!--生机灌木-->
+					<li>
+						<plantDef>Plant_Bush</plantDef>
+						<thingDef>RI_Plant_VitalityBush</thingDef>
+					</li>
+					<!--生机海芋-->
+					<li>
+						<plantDef>Plant_Alocasia</plantDef>
+						<thingDef>RI_Plant_VitalityAlocasia</thingDef>
+					</li>
+					<!--绞杀荆棘-->
+					<li>
+						<plantDef>Plant_Brambles</plantDef>
+						<thingDef>RI_Trap_StrangleThorn</thingDef>
+					</li>
+					<!--龙刺-->
+					<li>
+						<plantDef>Plant_Agave</plantDef>
+						<thingDef>RI_Trap_AgaveSpike</thingDef>
+					</li>
+				</plantToThings>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 结丹——草木列阵 -->
+	<!-- 选中一个范围内的植物，让它们变成炮台 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_GardenArmy</defName>
+		<label>Garden army</label>
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Core-coagulation rank of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 300\n\nTransform plants into turret-type structures.\n\nUsing the Wood Path’s Vitality spells, various plants are granted life and reshaped into different turrets.\n\nCorn——Corn-cannon\nBerry——Berry-shooter\nCactus——Cactus-spitter</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_GardenArmy</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!-- TODO 替换声音 -->
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3</range>
+			<warmupTime>0.5</warmupTime>
+			<!-- TODO 替换声音 -->
+			<soundCast>RI_Sound_PlantsGrowing</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-300</rEnergy>
+            </li> 
+			<li Class="RI_FiveElements.CompProperties_PlantToThing">
+				<!-- 默认类型的生物 -->
+				<thingDef>RI_Plant_VitalityGrass</thingDef>
+				<!-- 树对应的生物 -->
+				<treeThingDef>RI_Plant_VitalityGrass</treeThingDef>
+				<!-- 半径 -->
+				<radius>5</radius>
+				<!-- 特效Mote -->
+				<moteDef>RI_Mote_Wood_CreatePlantsBuilding</moteDef>
+				<!-- 特定植物对应的生物 -->
+				<plantToThings>
+					<!--生机草-->
+					<li>
+						<plantDef>Plant_Grass</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<li>
+						<plantDef>Plant_TallGrass</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<li>
+						<plantDef>Plant_Moss</plantDef>
+						<thingDef>RI_Plant_VitalityGrass</thingDef>
+					</li>
+					<!--生机灌木-->
+					<li>
+						<plantDef>Plant_Bush</plantDef>
+						<thingDef>RI_Plant_VitalityBush</thingDef>
+					</li>
+					<!--生机海芋-->
+					<li>
+						<plantDef>Plant_Alocasia</plantDef>
+						<thingDef>RI_Plant_VitalityAlocasia</thingDef>
+					</li>
+					<!--莓果-->
+					<li>
+						<plantDef>Plant_Strawberry</plantDef>
+						<thingDef>RI_Turret_BerryShooter</thingDef>
+					</li>
+					<li>
+						<plantDef>Plant_Berry</plantDef>
+						<thingDef>RI_Turret_BerryShooter</thingDef>
+					</li>
+					<!--刺球-->
+					<li>
+						<plantDef>Plant_SaguaroCactus</plantDef>
+						<thingDef>RI_Turret_CactusSpitter</thingDef>
+					</li>
+					<!--玉米-->
+					<li>
+						<plantDef>Plant_Corn</plantDef>
+						<thingDef>RI_Turret_CornCannon</thingDef>
+					</li>
+				</plantToThings>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 灵丹——森灵护卫 -->
+	<!-- 选中一个范围内的植物，让它们变成可移动守卫 -->
+	<!-- 选中一颗足年的大树，让它化生成精，它的生存时间有限，但是存活时间越长，力量越强，(两个Hediff，"有限的生命"，“成长”) -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_ForestGuardian</defName>
+		<label>Forest guardian</label>
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Strengthening foundation Realm of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 500\n\nTransform Tree into Verdant creature.\n\nThrough the Vitality arts of the Wood Path, ordinary trees are granted vitality and transformed into powerful Verdant creatures.\n\nOrdinary tree——Verdant guard\nQingMing tree——QingMing dryad</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_ForestGuardian</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!-- TODO 替换声音 -->
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3</range>
+			<warmupTime>0.5</warmupTime>
+			<!-- TODO 替换声音 -->
+			<soundCast>RI_Sound_PlantsGrowing</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!-- 回复部分灵气 -->
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-500</rEnergy>
+            </li> 
+			<li Class="RI_FiveElements.CompProperties_PlantToPawn">
+				<!-- 默认类型的生物——树精 -->
+				<defaultPawnKindDef>Dryad_Basic</defaultPawnKindDef>
+				<!-- 树对应的生物 -->
+				<treePawnKindDef>RI_Pawn_VerdantGuard</treePawnKindDef>
+				<treeOnly>true</treeOnly>
+				<!-- 半径 -->
+				<radius>5</radius>
+				<!-- 特效Mote -->
+				<moteDef>RI_Mote_Wood_CreatePlantsBuilding</moteDef>
+				<!-- 添加Hediff -->
+				<hediffs>
+					<li>
+						<def>RI_He_Wood_LimitedLife</def>
+						<severity>1</severity>
+					</li>
+					<li>
+						<def>RI_He_Wood_Growth</def>
+						<severity>0.01</severity>
+					</li>
+				</hediffs>
+				<!-- 特定植物对应的生物 -->
+				<plantToPawns>
+					<li>
+						<thingDef>RI_Tree_QingMing</thingDef>
+						<pawnKindDef>RI_Pawn_QingMingDryad</pawnKindDef>
+					</li>
+				</plantToPawns>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 化神—— 生机嫁接 -->
+	<!-- 选中一个pawn，延长它有限的生命 -->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_WoodLifeGive</defName>
+		<label>Vitality grafting</label>
+		<!-- 选中一个范围内树精，将生命力注入到它们身上,注入的生命将由范围内的单位分担 -->
+		<description>&lt;color=#7FCD44&gt;This technique is learned by the Spirit constraint rank of the Wood-element Path\n\n&lt;/color&gt;Qi cost: 350\n\nGraft vitality into a Verdant Creature to extend its life.\n\nA secret technique of the Wood-Element Path, this method allows a cultivator to graft their own vitality into another being. Once a source of pride among practitioners, the art was lost due to the break in its lineage—its brilliance fading into silence. In the end, only flora most deeply bonded with a Wood-Element cultivator can still receive vitality through this method.\n\nThis once-legendary technique was created by Daoist Qingyu during the era of the sect wars. Tragically, it was also this very art that eventually led to his untimely death.</description>
+		<iconPath>UI/Abilities/WoodElement/RI_Ability_WoodLifeGive</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<!-- TODO 替换声音 -->
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3</range>
+			<warmupTime>0.5</warmupTime>
+			<!-- TODO 替换声音 -->
+			<soundCast>RocketswarmLauncher_Fire</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!-- 回复部分灵气 -->
+			 <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+                <rEnergy>-350</rEnergy>
+            </li> 
+			<li Class="RI_FiveElements.CompProperties_LifeToPawn">
+				<!-- 最小生命值供给 -->
+				<baseLife>0.35</baseLife>
+				<!-- 生机乘数 -->
+				<lifeMultiplier>1</lifeMultiplier>
+				<!-- 生机消耗百分比 -->
+				<useVitality>2</useVitality>
+				<!-- 半径 -->
+				<radius>3</radius>
+				<!-- 特效Mote -->
+				<moteDef></moteDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Mote_WoodLifeGive</moteCastDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- TODO 寄生种子(暂时不做) -->
+	<!-- 选中一个无法反抗的pawn，注入一个种子，这个种子每隔一段时间都会收取生命力给主人 -->
+
+	<!-- TODO 开花(暂时不做) -->
+	<!-- 选中一个被寄生时间足够长的单位，他们的头部会开出一个巨大的花朵，目标的心智会被取代(类似心偶)，(两个Hediff，"有限的生命"，“成长”) -->
+
+
+</Defs>

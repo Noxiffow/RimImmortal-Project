@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= 吃了药材 ========= -->
+	<ThoughtDef>
+		<defName>RI_Thought_AteHerb</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>Ate raw medicinal herbs</label>
+				<description>Ingesting raw medicinal herbs. Bitter... hard to swallow, perhaps it wasn't worth wasting this medicinal herb.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_AteLanternBerries</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>Ate lantern berries</label>
+				<description>The flesh is sweet and mildly euphoric, which shouldn't be addictive, right?</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RI_Thought_AteTillandsiaDragonShoot</defName>
+		<durationDays>0.3</durationDays>
+		<stages>
+			<li>
+				<label>Ate tillandsia dragon shoot</label>
+				<description>My throat is burning! Why am I eating this?!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--=======================吃了丹药啥的=======================-->
+
+	<ThoughtDef>
+		<defName>RI_Thought_AteDemonPill</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_DemonElixirHediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>Thran spirit haunt</label>
+				<!--喰仙缠身-->
+				<description>Bursts of low laughter ring in your ears, and in an instant, extreme happiness, pain, jealousy, and anger rush into your brain.</description>
+				<baseMoodEffect>-100</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

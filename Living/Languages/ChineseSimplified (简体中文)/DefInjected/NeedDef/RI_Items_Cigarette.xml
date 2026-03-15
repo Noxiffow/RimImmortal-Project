@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cigarette -->
+  <RI_Need_PremiumTobacco.label>烟草</RI_Need_PremiumTobacco.label>
+  <!-- EN: Because of a cigarette addiction, this person needs to smoke regularly to avoid withdrawal symptoms. -->
+  <RI_Need_PremiumTobacco.description>由于对烟草的依赖，这个人需要定期吸烟以避免出现戒断症状。</RI_Need_PremiumTobacco.description>
+  
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Corpse bug -->
+  <RI_EvilCreature_CorpseEater.label>尸卷虫</RI_EvilCreature_CorpseEater.label>
+  <!-- EN: Grade D Aberrant, Low Threat Level.\n\nCorpse bugs are carrion-eating pill bugs, often acting as natural cleaners on battlefields.\n\nSome eccentric individuals keep them as pets, though their exact purpose remains unknown. -->
+  <RI_EvilCreature_CorpseEater.description>丁级邪异，威胁系数低。\n\n尸卷虫是一种喜好吞食尸体的卷壳虫，常常以清理工的身份出现在战场。有不少奇人会饲养这种动物，具体用来做什么就不得而知了。</RI_EvilCreature_CorpseEater.description>
+  <!-- EN: head claw -->
+  <RI_EvilCreature_CorpseEater.tools.head_claw.label>牙齿</RI_EvilCreature_CorpseEater.tools.head_claw.label>
+  <!-- EN: head -->
+  <RI_EvilCreature_CorpseEater.tools.head.label>头部</RI_EvilCreature_CorpseEater.tools.head.label>
+  
+</LanguageData>

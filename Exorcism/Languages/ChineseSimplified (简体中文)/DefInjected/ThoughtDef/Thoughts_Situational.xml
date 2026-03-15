@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 噩梦 -->
+  <RI_Nightmare.label>TODO</RI_Nightmare.label>
+  <!-- EN: 这个殖民者做了一个可怕的噩梦。 -->
+  <RI_Nightmare.description>TODO</RI_Nightmare.description>
+  <!-- EN: 噩梦 -->
+  <RI_Nightmare.stages.0.label>TODO</RI_Nightmare.stages.0.label>
+  <!-- EN: I'm covered in this horrible stuff. -->
+  <RI_Nightmare.stages.0.description>TODO</RI_Nightmare.stages.0.description>
+  
+  <!-- EN: Aberrant leather {0} -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather.label>邪祟皮{0}</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather.label>
+  <!-- EN: I hate this stuff. It stinks. -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather.description>我恨这件东西，有股怪味。</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather.description>
+  <!-- EN: Aberrant leather {0} (+1) -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_1.label>邪祟皮{0} (+1)</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_1.label>
+  <!-- EN: Two dread leather items. These make me uncomfortable. -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_1.description>TODO</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_1.description>
+  <!-- EN: Aberrant leather {0} (+2) -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_2.label>TODO</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_2.label>
+  <!-- EN: These three dread leather items make me squirm. They smell awful. -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_2.description>TODO</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_2.description>
+  <!-- EN: Aberrant leather {0} etc -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_etc.label>TODO</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_etc.label>
+  <!-- EN: I'm covered in this horrible stuff. -->
+  <RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_etc.description>TODO</RI_Thought_WearingAberrantLeather.stages.Aberrant_leather_etc.description>
+  
+  <!-- EN: sun! -->
+  <RI_Thought_ZombieAfraidSun.stages.sun.label>啊啊阳光！</RI_Thought_ZombieAfraidSun.stages.sun.label>
+  <!-- EN: The sunlight! it's burning! -->
+  <RI_Thought_ZombieAfraidSun.stages.sun.description>太阳！它在燃烧！</RI_Thought_ZombieAfraidSun.stages.sun.description>
+  
+  <!-- EN: disturbing mumble -->
+  <RI_Thought_ZombieMumbleReceived.stages.disturbing_mumble.label>冥尸叽里咕噜</RI_Thought_ZombieMumbleReceived.stages.disturbing_mumble.label>
+  <!-- EN: That thing tried to talk to me...terrifying. -->
+  <RI_Thought_ZombieMumbleReceived.stages.disturbing_mumble.description>那玩意正在试图和我说话吗？有点吓人</RI_Thought_ZombieMumbleReceived.stages.disturbing_mumble.description>
+  
+</LanguageData>

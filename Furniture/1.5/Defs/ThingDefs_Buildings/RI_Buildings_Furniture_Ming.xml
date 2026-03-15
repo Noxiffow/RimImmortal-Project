@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================================明式家具================================-->
+
+	<!--杌凳-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_SquareChair</defName>
+		<label>Square stool</label>
+		<description>Square stool is a backless seat—small, simple, and commonly found everywhere.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_SquareChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.70</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+
+		<fillPercent>0.35</fillPercent>
+		<uiOrder>1</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--坐墩-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_RoundChair</defName>
+		<label>Drum stool</label>
+		<description>A drum stool features a design without legs, crafted using a traditional "joined drum" technique that creates a waist-drum shape—narrow at the ends and wider in the middle.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_RoundChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>1.2</Mass>
+			<Flammability>0.5</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.7</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+
+		<designationHotKey>Misc7</designationHotKey>
+		<fillPercent>0.35</fillPercent>
+		<uiOrder>2</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--条凳-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_LongBench</defName>
+		<label>Long bench</label>
+		<description>Long bench is a traditional type of seat that can accommodate two people sitting side by side.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_LongBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.90</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<fillPercent>0.35</fillPercent>
+		<uiOrder>1</uiOrder>
+		<size>(2,1)</size>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--酒桌（1x2）-->
+	<ThingDef ParentName="RI_OldCulture_TableBase">
+		<defName>RI_Building_MingBasicTable</defName>
+		<label>Basic table (1x2)</label>
+		<description>A small and compact table, commonly seen in households.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_Table1x2</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<!--画案（2x3）-->
+	<ThingDef ParentName="RI_OldCulture_TableBase">
+		<defName>RI_Building_MingDrawTable</defName>
+		<label>Painting table (2x3)</label>
+		<description>A large table for painting and poetry — an essential piece for any scholar’s study.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_Table2x3</texPath>
+			<drawSize>(3.1,4.5)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<size>(2,3)</size>
+		<costStuffCount>60</costStuffCount>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+	</ThingDef>
+
+	<!--八仙桌（2x2）-->
+	<ThingDef ParentName="RI_OldCulture_TableBase">
+		<defName>RI_Building_EightManSquareTable</defName>
+		<label>Eight immortal table (2x2)</label>
+		<description>The Eight Immortals table refers to a square table with equal-length sides and a relatively wide surface, traditionally used to seat eight people—hence its elegant name.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_EightManSquareTable</texPath>
+			<drawSize>(3.25,3.25)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<costStuffCount>60</costStuffCount>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+	</ThingDef>
+
+	<!--月牙桌（1x1）-->
+	<ThingDef ParentName="RI_OldCulture_TableBase">
+		<defName>RI_Building_HalfRoundTable</defName>
+		<label>Half-round table (1x1)</label>
+		<description>A semicircular table, usually used in pairs. This kind of table can be attached to the wall as a display shelf. When there are guests in the home, two semicircular tables can be put together as a round table.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_HalfRoundTable</texPath>
+			<drawSize>(2.12,2.12)</drawSize>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>6</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>30</costStuffCount>
+	</ThingDef>
+
+	<!--围屏-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_FoldingScreen</defName>
+		<label>Folding screen</label>
+		<description>A pierced screen panel is placed on one side, used to divide space and provide visual privacy.</description>
+		<graphicData>
+			<drawSize>(3.65,3.65)</drawSize>
+			<texPath>Things/Building/Furniture/RI_Building_FoldingScreen</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(2,0.5,0.3)</volume>
+				<offset>(0,0,-0.2</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<canOverlapZones>true</canOverlapZones>
+		<rotatable>true</rotatable>
+		<size>(2,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<filthLeaving>Filth_Trash</filthLeaving>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+	</ThingDef>
+
+	<!--三层架格-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_TallShelf</defName>
+		<label>Book shelf</label>
+		<description>This kind of shelf is usually used to hold books and is an indispensable piece of furniture for decorating a study. Its shapes are diverse and the patterns are complex, and it is often regarded as the embodiment of the owner's aesthetic sense.\n\nSlightly increases research speed.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_TallShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.3,3.3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>42</pathCost>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>12</Mass>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<uiOrder>2900</uiOrder>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps Inherit="False">
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--四件柜-->
+	<ThingDef ParentName="RI_OldCulture_FurnitureBase">
+		<defName>RI_Building_StorageShelf</defName>
+		<label>Large cabinet</label>
+		<description>This kind of cabinet can usually reach more than 2 meters, which is composed of the top box and the bottom cabinet, known as the top box cabinet. Since this kind of cabinet is usually placed in pairs, four cabinets form a huge storage space, so it is called four cabinets.\n\nSlightly increases rest efficiency.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RI_Building_StorageShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.2,3.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>42</pathCost>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>45</Mass>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<designationHotKey>Misc12</designationHotKey>
+		<uiOrder>2900</uiOrder>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.1</Comfort>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--罗汉床-->
+	<ThingDef ParentName="RI_Ming_Furniture_SleepingBedBase">
+		<defName>RI_Building_SleepingBed</defName>
+		<label>Arhat bed</label>
+		<description>A long wooden bed, according to legend, was first used by monks to sit meditation, and later through constant changes, became a classic furniture. It can be used for sitting and sleeping, surrounded by a fence.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/RI_Building_SleepingBed</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.35,2.35)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+
+		<costStuffCount>45</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>20</Mass>
+			<Comfort>0.1</Comfort>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+		</building>
+	</ThingDef>
+
+	<!--架子床-->
+	<ThingDef ParentName="RI_Ming_Furniture_SleepingBedBase">
+		<defName>RI_Building_MingDoubleBed</defName>
+		<label>Double shelf bed</label>
+		<description>A long wooden bed, according to legend, was first used by monks to sit meditation, and later through constant changes, became a classic furniture. It can be used for sitting and sleeping, surrounded by a fence.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/RI_Building_MingDoubleBed</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.8,3.6)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<costStuffCount>110</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>60</Mass>
+			<Comfort>0.90</Comfort>
+			<BedRestEffectiveness>1.1</BedRestEffectiveness>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+		</building>
+
+		<!--多层贴图要加-->
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<comps>
+			<!--多层贴图-->
+			<li Class="RI_MultiLayer.CompProperties_LayerDrawer">
+				<graphics>
+					<li>
+						<graphicData>
+							<texPath>Things/Building/Furniture/Bed/RI_Building_MingDoubleBed_Top</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<!--<shaderType>CutoutComplex</shaderType>-->
+							<drawSize>(3.8,3.6)</drawSize>
+						</graphicData>
+						<altitudeLayer>PawnUnused</altitudeLayer>
+					</li>
+				</graphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

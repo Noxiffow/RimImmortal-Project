@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--填充-->
+	<JobDef>
+		<defName>FillRI_Building_SilkwormRearingBox</defName>
+		<driverClass>RI_Living.JobDriver_FillRI_Building_SilkwormRearingBox</driverClass>
+		<reportString>Fill TargetA</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<!--取出-->
+	<JobDef>
+		<defName>TakeCocoonOutOfRI_Building_SilkwormRearingBox</defName>
+		<driverClass>RI_Living.JobDriver_TakeCocoonOutOfRI_Building_SilkwormRearingBox</driverClass>
+		<reportString>Take TargetA</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<!--这俩job是通用的，不需要再添加；TargetA在游戏内会自动改变成建筑的名字，不要改-->
+
+</Defs>

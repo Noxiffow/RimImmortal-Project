@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mysterious cultivator box -->
+  <RI_BlindBox_CultivatorBox.label>修士宝匣</RI_BlindBox_CultivatorBox.label>
+  <!-- EN: An antique lacquer treasure box, contains precious cultivation materials. -->
+  <RI_BlindBox_CultivatorBox.description>一件古色古香的宝匣，上面被其他修士下了灵气禁制，需要花时间破解。\n\n这种宝匣的形制古老，但却散发出浓郁的灵气，想必其中一定有不少好东西。</RI_BlindBox_CultivatorBox.description>
+  <!-- EN: With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance. -->
+  <RI_BlindBox_CultivatorBox.comps.CompBlindBoxUsing.completedLetterText>用灵气解开禁制，打开宝匣</RI_BlindBox_CultivatorBox.comps.CompBlindBoxUsing.completedLetterText>
+  <!-- EN: Expose the box -->
+  <RI_BlindBox_CultivatorBox.comps.CompBlindBoxUsing.completedLetterTitle>揭秘宝匣</RI_BlindBox_CultivatorBox.comps.CompBlindBoxUsing.completedLetterTitle>
+  
+  <!-- EN: Gambling stone -->
+  <RI_BlindBox_Rock.label>赌石</RI_BlindBox_Rock.label>
+  <!-- EN: A mysterious gambling stone, which can reveal some cultivation resources when examined. -->
+  <RI_BlindBox_Rock.description>一块神秘的赌石，散发出淡淡的灵气波动，可以切开看看里面有什么。</RI_BlindBox_Rock.description>
+  <!-- EN: With Qi, you slowly opened the shell of this fragile relic, revealing its original appearance. -->
+  <RI_BlindBox_Rock.comps.CompBlindBoxUsing.completedLetterText>切开赌石，看看其中物品</RI_BlindBox_Rock.comps.CompBlindBoxUsing.completedLetterText>
+  <!-- EN: Expose the stone -->
+  <RI_BlindBox_Rock.comps.CompBlindBoxUsing.completedLetterTitle>切开赌石</RI_BlindBox_Rock.comps.CompBlindBoxUsing.completedLetterTitle>
+  
+</LanguageData>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================== 火行法门书 ====================================-->
+	<ThingDef ParentName="RI_BookBase">
+		<defName>RI_Book_FireElement</defName>
+		<label>Initial approach book-Fire element</label>
+		<description>An ancient book made of Qi condensation, the title of which is "Art of Flame".\n\nThe Fire Method is fierce in nature—unyielding, ever-burning, its force both violent and resolute. Yet, at its core, it is intertwined with the vitality of Yang, a fusion of destruction and renewal. Those who walk this path temper their hearts in flame, where spiritual energy serves as kindling, and Heartfire blazes unceasingly.\n\nUpon initiation, the Heartfire stirs one’s nature, causing restlessness and emotional turmoil. One’s temperament wavers, unstable as flickering embers. Yet this trial must be overcome, for only those who master their inner fire may grasp the true essence of the Departing Flame. In the end, those who reach the pinnacle of this path can ignite the Heartfire within others, reducing all illusions to ashes.\n\nWarning: Once a cultivator fully comprehends a tome of a given path, they become bound to its teachings and can no longer pursue any other cultivation method!</description>
+		<descriptionHyperlinks>
+			<AbilityDef>RI_Ability_FireCultivation</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_BurningSoul</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Spew</AbilityDef>
+			<AbilityDef>RI_Ab_Fire_FireBall</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Impact</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Shield</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Jump</AbilityDef>
+			<AbilityDef>RI_Ability_Fire_Ring</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_Book_FireElement</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>RI_FiveElements_Fire</route>
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_FireCultivation</li>
+					<li>RI_Ability_Fire_BurningSoul</li>
+					<li>RI_Ability_Fire_Spew</li>
+					<li>RI_Ab_Fire_FireBall</li>
+					<li>RI_Ability_Fire_Impact</li>
+					<li>RI_Ability_Fire_Shield</li>
+					<li>RI_Ability_Fire_Jump</li>
+					<li>RI_Ability_Fire_Ring</li>
+				</abilities>
+				<!--<researchProjectDef>RI_InitialApproach_ElixirsStrengthen</researchProjectDef>-->
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator{STUDIER_labelShort} takes the Fire element Initial approach as his cultivation direction!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

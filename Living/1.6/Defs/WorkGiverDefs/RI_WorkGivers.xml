@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--烧制粘土-->
+	<WorkGiverDef>
+		<defName>RI_WorkGiver_BakeBrick</defName>
+		<label>bake clay</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_BrickKiln</li>
+			<li>RI_Building_ElectricKiln</li>
+		</fixedBillGiverDefs>
+		<verb>bake</verb>
+		<gerund>bake at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--挖掘-->
+	<WorkGiverDef>
+		<defName>RI_WorkGiver_Digging</defName>
+		<label>digging</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_MudDigWhole</li>
+		</fixedBillGiverDefs>
+		<verb>dig</verb>
+		<gerund>dig at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--电饭煲框架，投料work-->
+	<WorkGiverDef>
+		<defName>RI_WorkGiver_FillRiceCooker</defName>
+		<label>input resource</label>
+		<giverClass>RI_Frame_RiceCooker.WorkGiver_FillRiceCookerFrame</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>50</priorityInType>
+		<verb>input resource</verb>
+		<gerund>input</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<scanThings>true</scanThings>
+	</WorkGiverDef>
+
+	<!--木材加工-->
+	<WorkGiverDef>
+		<defName>RI_WorkGiver_Timber</defName>
+		<label>timber</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>405</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_SawHorse</li>
+			<li>RI_Building_HotPressMachine</li>
+		</fixedBillGiverDefs>
+		<verb>process</verb>
+		<gerund>process at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--热压原料-->
+	<WorkGiverDef>
+		<defName>RI_WorkGiver_HeatPress</defName>
+		<label>heat press resource</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<workTags>
+			<li>Intellectual</li>
+		</workTags>
+		<priorityInType>406</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_HotPressMachine</li>
+		</fixedBillGiverDefs>
+		<verb>heat press at</verb>
+		<gerund>heat pressing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--操作工业钻机-->
+	<WorkGiverDef Class="RI_Framework_LivingPack.LivingWorkGiverDef">
+		<defName>RI_WorkGiver_IndustrialDrill</defName>
+		<label>Operate industrial drilling</label>
+		<!-- 使用你刚才写的 C# 类 -->
+		<giverClass>RI_Framework_LivingPack.WorkGiver_LivingDrill</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>50</priorityInType>
+		<verb>drill</verb>
+		<gerund>drilling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<!-- 关键！在这里填入你的工业钻机的 defName -->
+		<drills>
+			<li>RI_Building_IndustrialDrilling</li>
+		</drills>
+		<canBeDoneByMechs>true</canBeDoneByMechs>
+	</WorkGiverDef>
+
+</Defs>

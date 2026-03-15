@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Coin shield -->
+  <RI_ShieldHediff_CoinShield.label>TODO</RI_ShieldHediff_CoinShield.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_CoinShield.description>TODO</RI_ShieldHediff_CoinShield.description>
+  
+  <!-- EN: Pagoda shield -->
+  <RI_ShieldHediff_PagodaShield.label>TODO</RI_ShieldHediff_PagodaShield.label>
+  <!-- EN: A spherical shield that protects the entire body, formed from qi. It can withstand attacks from ranged weapons, but cannot stop melee attacks. -->
+  <RI_ShieldHediff_PagodaShield.description>TODO</RI_ShieldHediff_PagodaShield.description>
+  
+  <!-- EN: Flame shelter -->
+  <RI_Talisman_Firefighter.label>火焰庇护</RI_Talisman_Firefighter.label>
+  <!-- EN: Pearl protect the wearer from flame damage. -->
+  <RI_Talisman_Firefighter.description>珠子令佩戴者不会受到火焰伤害。</RI_Talisman_Firefighter.description>
+  
+  <!-- EN: Elixir of green gourd -->
+  <RI_Talisman_GreenGourd.label>青囊妙药</RI_Talisman_GreenGourd.label>
+  <!-- EN: The light Qi wave emitted in the green gourd makes the wearer's attention very concentrated, and the eyes penetrate the human body to see the viscera. -->
+  <RI_Talisman_GreenGourd.description>青囊葫芦中散发的淡淡灵气波动，令佩戴者的注意力十分集中，目光穿透人体，窥见五脏六腑。</RI_Talisman_GreenGourd.description>
+  
+  <!-- EN: Ruyi protection -->
+  <RI_Talisman_JadeRuyi.label>玉如意</RI_Talisman_JadeRuyi.label>
+  <!-- EN: Jade Ruyi's halo accelerates the wearer's healing. -->
+  <RI_Talisman_JadeRuyi.description>玉如意的光环可以令佩戴者加速治愈。</RI_Talisman_JadeRuyi.description>
+  
+  <!-- EN: Wood incense -->
+  <RI_Talisman_SandalwoodToken.label>令牌木香</RI_Talisman_SandalwoodToken.label>
+  <!-- EN: The faint fragrance emitted by the token makes the whole person seem to be enveloped in a layer of fairy air, which makes the people around him feel more favorable. -->
+  <RI_Talisman_SandalwoodToken.description>令牌散发出的淡淡香味，令整个人似乎笼罩在一层仙气中，使得周围的人不禁多了几分好感。</RI_Talisman_SandalwoodToken.description>
+  
+  <!-- EN: Toxic protection -->
+  <RI_Talisman_ToxicBell.label>毒铃庇护</RI_Talisman_ToxicBell.label>
+  <!-- EN: The bell emits a special Qi and enters the human body, making the wearer not invaded. -->
+  <RI_Talisman_ToxicBell.description>毒铃散发出特殊的灵气，进入人体，使得佩戴者百毒不侵。</RI_Talisman_ToxicBell.description>
+  
+  <!-- EN: Elephant king speed -->
+  <RI_Talisman_TuskPendant.label>象王神速</RI_Talisman_TuskPendant.label>
+  <!-- EN: When an tusk pendant is held in the palm of your hand, a thin Qi appears around you, speeding up the wearer. -->
+  <RI_Talisman_TuskPendant.description>当把象牙项链握在手心的时候，自身周围会出现一层稀薄的灵气，加快佩戴者的速度。</RI_Talisman_TuskPendant.description>
+  
+</LanguageData>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aberrant -->
+  <RI_Faction_Aberrant.label>邪祟</RI_Faction_Aberrant.label>
+  <!-- EN: They descended one day, bringing nightmares with them. — The Book of a Hundred Evils\n\nThese beings cannot be classified under any known branch of biology. They include the reanimated dead, creatures of legend, horrific beasts, and even inexplicable supernatural phenomena. For this reason, they are collectively called the Aberrant.\n\nDespite their vast differences, Aberrant creatures do not turn on one another. Scholars speculate their origin may lie in a form of psychic phenomenon. Whatever the truth, they spread from world to world, leaving trails of uncanny and terrifying events in their wake. -->
+  <RI_Faction_Aberrant.description>它们在某日降临，为我们带来噩梦。——《百邪录》\n\n这些生物无法被归类到任何已知的生物学范畴。它们包括死而复生的尸体、传说中的妖怪、恐怖的野兽，甚至是无法解释的超自然现象。因此，它们被统称为邪异。\n\n尽管邪异之间存在巨大的差异，但它们并不会彼此攻击。学者们推测，它们与超凡智能存在联系。但无论如何，这些生物正在一个又一个星球上引发诡异的事件。</RI_Faction_Aberrant.description>
+  <!-- EN: Aberrant -->
+  <RI_Faction_Aberrant.fixedName>邪祟</RI_Faction_Aberrant.fixedName>
+  <!-- EN: leader -->
+  <RI_Faction_Aberrant.leaderTitle>邪祟</RI_Faction_Aberrant.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <RI_Faction_Aberrant.messageDefendersAttacking>{0}来自{1}正在攻击你的{2}。</RI_Faction_Aberrant.messageDefendersAttacking>
+  <!-- EN: Aberrant creature -->
+  <RI_Faction_Aberrant.pawnSingular>邪祟</RI_Faction_Aberrant.pawnSingular>
+  <!-- EN: Aberrant creatures -->
+  <RI_Faction_Aberrant.pawnsPlural>邪祟</RI_Faction_Aberrant.pawnsPlural>
+  
+  <!-- EN: Daoist sect -->
+  <RI_Faction_Dao.label>道门</RI_Faction_Dao.label>
+  <!-- EN: Daoist sect -->
+  <RI_Faction_Dao.fixedName>道门</RI_Faction_Dao.fixedName>
+  <!-- EN: leader -->
+  <RI_Faction_Dao.leaderTitle>道门宗师</RI_Faction_Dao.leaderTitle>
+  <!-- EN: Daoists are attacking. -->
+  <RI_Faction_Dao.messageDefendersAttacking>道士正在进攻。</RI_Faction_Dao.messageDefendersAttacking>
+  <!-- EN: Daoist -->
+  <RI_Faction_Dao.pawnSingular>道士</RI_Faction_Dao.pawnSingular>
+  <!-- EN: Daoists -->
+  <RI_Faction_Dao.pawnsPlural>多名道士</RI_Faction_Dao.pawnsPlural>
+  
+</LanguageData>

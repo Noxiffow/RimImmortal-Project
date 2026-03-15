@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Plants>3</Plants>
+	<Social>-2</Social>
+	<Crafting>3</Crafting>
+	<Construction>3</Construction>
+	<Intellectual>8</Intellectual>
+	<Animals>3</Animals>
+	<Shooting>3</Shooting>
+	<Medicine>2</Medicine>
+	<Artistic>5</Artistic>
+	
+	<requiredWorkTags>
+	<li>Violent</li>
+	<li>Animals</li>
+	</requiredWorkTags>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+	
+			<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+	
+	<possessions>
+	<Cloth>10</Cloth>
+	</possessions>-->
+
+	<!--============古修者小孩儿============-->
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientCultivatorChild1</defName>
+		<title>Ancient spiritual child</title>
+		<titleShort>Spiritual child</titleShort>
+		<description>[PAWN_nameDef] is born with spirit root, and [PAWN_nameDef] arrived at Foundation rank in [PAWN_possessive] teens. Not afraid of fire and water, free to move a hundred jin stone lock,[PAWN_pronoun] was regarded as a genius by the clan, thus carefully cultivated.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Animals>3</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientCultivatorChild2</defName>
+		<title>Ancient clan child</title>
+		<titleShort>Ancient clan child</titleShort>
+		<description>[PAWN_nameDef] born in a small clan, [PAWN_pronoun] did not have any special talents or outstanding advantages, and spent [PAWN_possessive] childhood smoothly.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>3</Social>
+			<Intellectual>3</Intellectual>
+			<Plants>-3</Plants>
+			<Crafting>-3</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RI_Backstory_AncientCultivatorChild3</defName>
+		<title>Ancient restless child</title>
+		<titleShort>Restless child</titleShort>
+		<description>When [PAWN_nameDef] was a child, because [PAWN_pronoun] contradicted the cultivators, [PAWN_pronoun] was punished to join the cultivators' clan and become a servant. However, a few years later, [PAWN_pronoun] revealed [PAWN_possessive] eloquence, and was liked by many people in the clan, [PAWN_pronoun] also broke away from the servant identity and became a member of the clan.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>5</Social>
+			<Plants>2</Plants>
+			<Crafting>-3</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>RI_Pawn_AncientCultivator</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="BaseRI_Puppet" ParentName="BaseMechanoid" Abstract="True">
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MoveSpeed>4</MoveSpeed>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+		</statBases>
+		<race>
+			<body>RI_Puppet_BodyDef</body>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef Name="BaseRI_PuppetKind" ParentName="BaseMechanoidKind" Abstract="True">
+		<weaponMoney>9999~9999</weaponMoney>
+		<combatPower>100</combatPower>
+		<weaponTags></weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<allowInMechClusters>false</allowInMechClusters>
+	</PawnKindDef>
+
+	<HediffDef>
+		<defName>RI_PuppetFightHediff</defName>
+		<label>Auto defence tech</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<defaultLabelColor>(0, 255, 255)</defaultLabelColor>
+		<description>An ancient martial art, modified and encoded into data stored in the golem's talisman components, that automatically blocks incoming attacks.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+
+	<!--====================木制傀儡===================-->
+
+
+	<ThingDef ParentName="BaseRI_Puppet">
+		<defName>RI_WoodenPuppet</defName>
+		<label>Wooden golem</label>
+		<description>It is a simple wooden golem, slow in movement and very low in attack, mostly used as a sandbag for the disciples to exercise.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MoveSpeed>2.5</MoveSpeed>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<race>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps  Inherit="False">
+			<li Class="RI_Puppet.CompProperties_HitDefend">
+				<hediffToAdd>RI_PuppetFightHediff</hediffToAdd>
+				<duration>60</duration>
+			</li>
+			<li Class="CompProperties_CanBeDormant" />
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpOnDamage>true</wakeUpOnDamage>
+                <wakeUpCheckRadius>30</wakeUpCheckRadius>
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+            <li Class="CompProperties_MechPowerCell">
+                <totalPowerTicks>72000</totalPowerTicks>
+            </li>
+		</comps>
+		<butcherProducts>
+			<WoodLog>30</WoodLog>
+		</butcherProducts>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.0</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.0</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseRI_PuppetKind">
+		<defName>RI_WoodenPuppet</defName>
+		<label>Wooden golem</label>
+		<race>RI_WoodenPuppet</race>
+		<combatPower>100</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Golem/WoodenGolem/RI_WoodenGolem</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!--====================石制傀儡===================-->
+
+
+	<ThingDef ParentName="BaseRI_Puppet">
+		<defName>RI_StonyPuppet</defName>
+		<label>Stone golem</label>
+		<description>The large golem, composed of stone, is very heavy, so it moves very slowly, but it has great defensive properties.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MoveSpeed>2</MoveSpeed>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statBases>
+		<race>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+		</race>
+		<comps  Inherit="False">
+			<li Class="RI_Puppet.CompProperties_HitDefend">
+				<hediffToAdd>RI_PuppetFightHediff</hediffToAdd>
+				<duration>60</duration>
+			</li>
+			<li Class="CompProperties_CanBeDormant" />
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpOnDamage>true</wakeUpOnDamage>
+                <wakeUpCheckRadius>30</wakeUpCheckRadius>
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+            <li Class="CompProperties_MechPowerCell">
+                <totalPowerTicks>72000</totalPowerTicks>
+            </li>
+		</comps>
+		<butcherProducts>
+			<ChunkMarble>2</ChunkMarble>
+		</butcherProducts>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.0</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.0</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseRI_PuppetKind">
+		<defName>RI_StonyPuppet</defName>
+		<label>Stone golem</label>
+		<race>RI_StonyPuppet</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Golem/RI_StonyPuppet/RI_StonyPuppet</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+		</weaponTags>
+	</PawnKindDef>
+
+
+	<!--====================铁制傀儡===================-->
+
+
+	<ThingDef ParentName="BaseRI_Puppet">
+		<defName>RI_SteelPuppet</defName>
+		<label>Steel golem</label>
+		<description>Made of steel, the golem has good fighting power and defense.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+			<MoveSpeed>5.5</MoveSpeed>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+		</statBases>
+		<race>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+		</race>
+		<comps  Inherit="False">
+			<li Class="RI_Puppet.CompProperties_HitDefend">
+				<hediffToAdd>RI_PuppetFightHediff</hediffToAdd>
+				<duration>60</duration>
+			</li>
+			<li Class="CompProperties_CanBeDormant" />
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpOnDamage>true</wakeUpOnDamage>
+                <wakeUpCheckRadius>30</wakeUpCheckRadius>
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+            <li Class="CompProperties_MechPowerCell">
+                <totalPowerTicks>72000</totalPowerTicks>
+            </li>
+		</comps>
+		<butcherProducts>
+			<Steel>50</Steel>
+		</butcherProducts>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21.0</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21.0</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseRI_PuppetKind">
+		<defName>RI_SteelPuppet</defName>
+		<label>Steel golem</label>
+		<race>RI_SteelPuppet</race>
+		<combatPower>250</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Golem/RI_SteelPuppet/RI_SteelPuppet</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!--================古修傀儡================-->
+	<!--出现在古修遗迹的傀儡，无法被玩家制作-->
+
+	<ThingDef ParentName="BaseRI_Puppet">
+		<defName>RI_Mech_AncientPuppetA</defName>
+		<label>Ancient golem-Dark armor</label>
+		<description>A golem that cannot be understood through its principles, made solely from steel and Qi talisman, can only be found in ancient cultivator's ruins.\n\nThis golem is called Dark armor, and its body is covered in thick armor, making it move slowly. However, its fists swing wildly, making it a dangerous opponent.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MoveSpeed>2</MoveSpeed>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+		</statBases>
+		<butcherProducts>
+			<Steel>100</Steel>
+		</butcherProducts>
+		<race>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+		</race>
+		<comps>
+			<li Class="RI_Puppet.CompProperties_HitDefend">
+				<hediffToAdd>RI_PuppetFightHediff</hediffToAdd>
+				<duration>60</duration>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.0</power>
+				<cooldownTime>2.8</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.0</power>
+				<cooldownTime>2.8</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseRI_PuppetKind">
+		<defName>RI_AncientPuppetA</defName>
+		<label>Ancient golem-Dark armor</label>
+		<race>RI_Mech_AncientPuppetA</race>
+		<combatPower>300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Golem/Ancient/RI_AncientPuppetA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+		</weaponTags>
+	</PawnKindDef>
+
+	<ThingDef ParentName="BaseRI_Puppet">
+		<defName>RI_Mech_AncientPuppetB</defName>
+		<label>Ancient golem-Sword spine</label>
+		<description>A golem that cannot be understood through its principles, made solely from steel and Qi talisman, can only be found in ancient cultivator's ruins.\n\nThis golem is called Sword spine, with its two forearms forming short swords, coupled with its incredibly fast speed, making it a formidable opponent.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+			<MoveSpeed>6.5</MoveSpeed>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		</statBases>
+		<butcherProducts>
+			<Steel>70</Steel>
+		</butcherProducts>
+		<race>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+		</race>
+		<comps>
+			<li Class="RI_Puppet.CompProperties_HitDefend">
+				<hediffToAdd>RI_PuppetFightHediff</hediffToAdd>
+				<duration>60</duration>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>left blade</label>
+				<labelNoLocation>blade</labelNoLocation>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right blade</label>
+				<labelNoLocation>blade</labelNoLocation>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseRI_PuppetKind">
+		<defName>RI_AncientPuppetB</defName>
+		<label>Ancient golem-Sword spine</label>
+		<race>RI_Mech_AncientPuppetB</race>
+		<combatPower>300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Golem/Ancient/RI_AncientPuppetB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

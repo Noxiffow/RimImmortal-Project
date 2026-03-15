@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--爆裂光束-->
+	<AbilityDef>
+		<defName>RI_DragonCannon_Ability</defName>
+		<label>Buster beam</label>
+		<description>Fire a hot ray beam that creates an explosion at a focal point and can burn enemies in its path.\n\nWill not hit friendly troops.</description>
+		<iconPath>Ability/Weapon/RI_Ability_BusterBeam</iconPath>
+		<cooldownTicksRange>800</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<minRange>2.5</minRange>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<range>38</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Laser_DragonCannon</defaultProjectile>
+			<verbClass>RI_Starch.RI_Ability.RI_Verb_AbilityBurst</verbClass>
+			<warmupTime>1.3</warmupTime>
+			<soundCast>RI_Laser</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<defaultCooldownTime>2.3</defaultCooldownTime>
+		</verbProperties>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet" >
+		<defName>RI_Laser_DragonCannon</defName>
+		<label>Buster beam</label>
+		<graphicData>
+			<texPath>Ability/Weapon/RI_Ability_BusterBeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>RI_Starch.RI_Projectile.RI_Bullet_DragonCannon</thingClass>
+		<projectile>
+			<damageDef>Crush</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_DragonCannon</defName>
+		<graphicData>
+			<texPath>Things/Projectile/Laser/RI_Fleck_DragonCannon</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.74</solidTime>
+		<fadeOutTime>1.2</fadeOutTime>
+		<landSound>RI_Sound_LaserGunShot_A</landSound>
+		<fadeInTime>0.08</fadeInTime>
+		<growthRate>-0.36</growthRate>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_DragonCannon_Glow</defName>
+		<graphicData>
+			<texPath>Things/Projectile/Laser/RI_Fleck_DragonCannon_Glow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<landSound>RI_Sound_LaserGunShot_A</landSound>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>0.74</solidTime>
+		<fadeOutTime>1.2</fadeOutTime>
+	</FleckDef>
+
+	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_DragonCannon_Hit</defName>
+		<graphicData>
+			<drawSize>1.2</drawSize>
+			<texPath>Things/Projectile/Laser/RI_Fleck_DragonCannon_Hit</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<landSound>RI_Sound_LaserGunShot_A</landSound>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.03</fadeInTime>
+		<solidTime>0.7</solidTime>
+		<fadeOutTime>1.1</fadeOutTime>
+		<growthRate>-0.2</growthRate>
+		<RotationAngle>90</RotationAngle>
+		<VelocityAngle>360</VelocityAngle>
+	</FleckDef>
+
+	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_DragonCannon_Launch</defName>
+		<graphicData>
+			<drawSize>1.2</drawSize>
+			<texPath>Things/Projectile/Laser/RI_Fleck_DragonCannon_Launch</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<landSound>RI_Sound_LaserGunShot_A</landSound>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.03</fadeInTime>
+		<solidTime>0.7</solidTime>
+		<fadeOutTime>1.1</fadeOutTime>
+		<growthRate>-0.2</growthRate>
+		<RotationAngle>-90</RotationAngle>
+		<VelocityAngle>360</VelocityAngle>
+	</FleckDef>
+
+
+</Defs>

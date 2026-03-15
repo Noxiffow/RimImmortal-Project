@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===========冥尸Base===========-->
+	<PawnKindDef Name="RI_ZombiePawn_Base" Abstract="True">
+		<race>Human</race>
+		<!--冥尸种-->
+		<xenotypeSet>
+			<xenotypeChances>
+				<RI_ExorcismXenotype_Necrosapiens>999</RI_ExorcismXenotype_Necrosapiens>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<combatPower>100</combatPower>
+		<backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<isFighter>true</isFighter>
+		<chronologicalAgeRange>70~350</chronologicalAgeRange>
+		<initialResistanceRange>10~80</initialResistanceRange>
+		<initialWillRange>5~15</initialWillRange>
+		<apparelRequired>
+			<li>Apparel_Duster</li>
+			<li>Apparel_CollarShirt</li>
+			<li>Apparel_Pants</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<!--禁止特性-->
+		<disallowedTraits>
+			<li>Greedy</li>
+			<li>Immunity</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RI_ZombiePawn_Base">
+		<defName>RI_Pawn_Zombie</defName>
+		<label>necro</label>
+		<!--玩家僵尸-->
+		<defaultFactionDef>PlayerColony</defaultFactionDef>
+		<invNutrition>0.8</invNutrition>
+		<invFoodDef>HemogenPack</invFoodDef>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<apparelMoney>500~700</apparelMoney>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>0~1800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<weaponMoney>600~800</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Apparel_Pants</li>
+		</apparelRequired>
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+		<styleItemTags>
+			<li>
+				<!-- 引用刚才定义的标签 -->
+				<tag>RI_Zombie_HairStyle</tag>
+				<!-- 权重，如果没其他标签，写1即可 -->
+				<baseWeight>1</baseWeight>
+				<!-- 强制覆盖率：如果不写这个，可能会混入默认发型 -->
+				<weightFactor>100</weightFactor>
+			</li>
+
+			<!-- 你甚至可以顺便规定胡须 -->
+			<li>
+				<tag>BeardRural</tag>
+				<!-- 原版胡须标签 -->
+				<baseWeight>1</baseWeight>
+			</li>
+		</styleItemTags>
+	</PawnKindDef>
+
+</Defs>

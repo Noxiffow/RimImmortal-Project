@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Earth element -->
+  <RI_InitialApproach_FiveElements_Earth.label>坤土</RI_InitialApproach_FiveElements_Earth.label>
+  <!-- EN: Earth Path focuses on steady accumulation and restrained release. It bears all things and can resonate with the planet's ley lines.\n\nWhen the sectarian wars erupted, the Earth sects did not choose to engage in direct combat. They were never known for killing or slaughter. A small number of cultivators voluntarily joined the war, while the rest withdrew into the mountains. The sects constructed massive fortified settlements and military works to defend against threats that might come. Centered on clan structures, they enforced strict internal discipline.\n\nUnlocks a series of items related to the Earth Path. -->
+  <RI_InitialApproach_FiveElements_Earth.description>土行法门，厚积薄发，承载万物，可与地脉共鸣。\n\n门派战争爆发时，土行宗门没有选择正面参战。他们本就不以杀伐见长，少数修士主动加入战争，其余人选择隐居群山。宗门建造了巨大的屯堡和军事工事，防御着可能到来的威胁。他们以宗族为核心，实行严格的内部管理。\n\n解锁土行法门的一系列物品。</RI_InitialApproach_FiveElements_Earth.description>
+  
+  <!-- EN: Fire element -->
+  <RI_InitialApproach_FiveElements_Fire.label>离火</RI_InitialApproach_FiveElements_Fire.label>
+  <!-- EN: Fire Path, fierce in nature, intertwined with blazing vitality. Spiritual energy serves as fuel, and the heart-fire burns without restraint.\n\nUnlocks a series of items related to the Fire Path. -->
+  <RI_InitialApproach_FiveElements_Fire.description>火行法门，个性炽烈，与阳刚生机交织难分。灵气为薪柴，心火熊燃。\n\n解锁火行法门的一系列物品。</RI_InitialApproach_FiveElements_Fire.description>
+  
+  <!-- EN: Wood element -->
+  <RI_InitialApproach_FiveElements_Wood.label>巽木</RI_InitialApproach_FiveElements_Wood.label>
+  <!-- EN: Wood Path allows one to sense the flowing vitality within grass and trees.\n\nThe Five Elements Sect was once the foremost sect in the cultivation world. Its Wood Path branch excelled at shaping vitality, creating wondrous spirit plants and rare trees, and enjoyed great prestige. However, after the sectarian wars, the Wood Path was targeted by the other four paths. In the end, it crippled its own cultivation methods, sacrificing its legacy so that a small number of descendants might survive.\n\nUnlocks a series of items related to the Wood Path. -->
+  <RI_InitialApproach_FiveElements_Wood.description>木行法门，可感悟草木之中流动的生机。\n\n五行宗曾是修仙界第一门派，其木行分支擅长调配生机，制造奇花灵木，风光无限。然而门派战争后，木行遭到其余四行针对，最终以自废法门的方式为少量后人换来生存的机会。\n\n解锁木行法门的一系列物品。</RI_InitialApproach_FiveElements_Wood.description>
+  
+</LanguageData>

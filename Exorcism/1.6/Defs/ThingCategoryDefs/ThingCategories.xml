@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--======================储存分类======================-->
+
+	<!--邪异尸体-->
+	<ThingCategoryDef>
+		<defName>RI_Corpses_Aberrant</defName>
+		<label>Aberrant corpses</label>
+		<parent>Corpses</parent>
+	</ThingCategoryDef>
+
+	<!--冥尸植入体-->
+	<ThingCategoryDef>
+		<defName>RI_Category_BodyPartsNecrosapiens</defName>
+		<label>Necrosapiens</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+	
+	<!--镇邪原料-->
+	<ThingCategoryDef>
+		<defName>RI_Category_ExorcismResource</defName>
+		<label>exorcism resource</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/StoneBlocks</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+
+	<!--邪术原料-->
+	<ThingCategoryDef>
+		<defName>RI_Category_AberrantResource</defName>
+		<label>aberrant resource</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/StoneBlocks</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+
+	<!--邪术制成品-->
+	<ThingCategoryDef>
+		<defName>RI_Category_EvilManufactured</defName>
+		<label>evil manufactured</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Icons/ThingCategories/Textiles</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+
+	<!--道士衣冠-->
+	<ThingCategoryDef>
+		<defName>RI_Category_DaoistApparel</defName>
+		<label>Daoist clothes</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<!--冥尸衣冠-->
+	<ThingCategoryDef>
+		<defName>RI_Category_NecroApparel</defName>
+		<label>necro clothes</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<!--道门武器-->
+	<ThingCategoryDef>
+		<defName>RI_Category_DaoistWeapons</defName>
+		<label>Daoist weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<!--分类：尸傀治疗包-->
+	<ThingCategoryDef>
+		<defName>RI_Category_CorpsePuppetRepairKit</defName>
+		<label>necro repair</label>
+	</ThingCategoryDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Spirit healing armor -->
+  <RI_AncientCultivatorHediff.label>天罡灵愈铠</RI_AncientCultivatorHediff.label>
+  <!-- EN: An ancient cultivator's unique skill that automatically restores a layer of body armor to wounds while increasing movement speed and attack speed. Because of the thin Qi in modern times, the ancient cultivator cannot hold for too long. -->
+  <RI_AncientCultivatorHediff.description>古修者独有功法，可以自动恢复伤口的一层护体盔甲，同时增加移速和攻速。\n\n由于现代灵气稀薄，古修功法无法坚持太长时间。</RI_AncientCultivatorHediff.description>
+  <!-- EN: Spirit healing armor -->
+  <RI_AncientCultivatorHediff.labelNoun>天罡灵愈铠</RI_AncientCultivatorHediff.labelNoun>
+  
+  <!-- EN: Spirit healing armor -->
+  <RI_AncientCultivatorPlayerHediff.label>天罡灵愈铠</RI_AncientCultivatorPlayerHediff.label>
+  <!-- EN: The whole body becomes copper iron bone general, enhances the protection ability, but also improves the melee ability and speed. -->
+  <RI_AncientCultivatorPlayerHediff.description>可以暂时让灵气改造肉体，使得周身如铜皮铁骨一般。与此同时还能提升人体机能，提高近战能力和移速。</RI_AncientCultivatorPlayerHediff.description>
+  <!-- EN: Spirit healing armor -->
+  <RI_AncientCultivatorPlayerHediff.labelNoun>天罡灵愈铠</RI_AncientCultivatorPlayerHediff.labelNoun>
+  
+  <!-- EN: Concentration -->
+  <RI_WorkDrive.label>工作专注</RI_WorkDrive.label>
+  <!-- EN: A special Qi wrapped around themselves, so that concentration greatly improved, work efficiency increased. -->
+  <RI_WorkDrive.description>一阵特殊的灵气缠绕于自身，令专注力大大提高，工作效率增加。</RI_WorkDrive.description>
+  
+  <!-- EN: Work motivation -->
+  <RI_WorkDriveCommand.label>工作激励</RI_WorkDriveCommand.label>
+  <!-- EN: A wide range of Qi enveloped themselves, greatly increasing work efficiency. -->
+  <RI_WorkDriveCommand.description>大范围的灵气笼罩自身，令专注力大大提高，工作效率增加。</RI_WorkDriveCommand.description>
+  
+</LanguageData>

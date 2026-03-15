@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================传统花卉==================-->
+
+	<!--花卉前置-->
+	<ThingDef ParentName="PlantBase" Name="RI_Flower_PlantBase" Abstract="True">
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<wildOrder>0.2</wildOrder>
+			<topWindExposure>0.1</topWindExposure>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+	<!--兰花-->
+	<ThingDef ParentName="RI_Flower_PlantBase">
+		<defName>RI_Plant_Orchid</defName>
+		<label>orchid</label>
+		<description>The orchid grows in secluded mountains and quiet forests, with elegant branches and leaves, and a subtle fragrance. Though the Orchidaceae family is vast, Eastern cultures especially cherish those with a fresh and graceful temperament. These orchids may lack vivid colors, but they possess a quiet, unadorned charm and refined elegance.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>17</Beauty>
+			<BeautyOutdoors>12</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Orchid</texPath>
+		</graphicData>
+		<plant>
+			<!--种植特点-->
+			<sowWork>750</sowWork>
+			<growMinGlow>0.3</growMinGlow>
+			<growDays>3</growDays>
+			<lifespanDaysPerGrowDays>7</lifespanDaysPerGrowDays>
+			<visualSizeRange>0.3~1.2</visualSizeRange>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<!--水仙-->
+	<ThingDef ParentName="RI_Flower_PlantBase">
+		<defName>RI_Plant_Narcissus</defName>
+		<label>narcissus</label>
+		<description>The narcissus, a plant of the Amaryllidaceae family, is beloved for its emerald-green leaves, yellow and white flowers, and refreshing fragrance. It has long been favored by scholars for its graceful charm.</description>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Beauty>12</Beauty>
+			<BeautyOutdoors>12</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Narcissus</texPath>
+		</graphicData>
+		<plant>
+			<!--种植特点-->
+			<sowWork>750</sowWork>
+			<growMinGlow>0.3</growMinGlow>
+			<growDays>1.5</growDays>
+			<lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<!--牡丹-->
+	<ThingDef ParentName="RI_Flower_PlantBase">
+		<defName>RI_Plant_Peony</defName>
+		<label>peony</label>
+		<description>"Only the peony is the true national beauty; when it blooms, the whole capital is stirred."\n\nKnown as the king of flowers, the peony is celebrated for its full and substantial petals, varied forms, and rich colors. It offers a breathtaking visual feast, like a splendid sea of blossoms.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>18</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Peony</texPath>
+		</graphicData>
+		<plant>
+			<!--种植特点-->
+			<sowWork>750</sowWork>
+			<growMinGlow>0.3</growMinGlow>
+			<growDays>3</growDays>
+			<lifespanDaysPerGrowDays>10</lifespanDaysPerGrowDays>
+			<visualSizeRange>0.3~1.1</visualSizeRange>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<!--菊花-->
+	<ThingDef ParentName="RI_Flower_PlantBase">
+		<defName>RI_Plant_Chrysanthemum</defName>
+		<label>chrysanthemum</label>
+		<description>"Picking chrysanthemums by the eastern fence, I leisurely gaze toward the southern hills."\n\nThe chrysanthemum endures frost without withering and carries a noble aura. Since ancient times, its unique spirit has captivated scholars and poets, inspiring countless verses.</description>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Beauty>18</Beauty>
+			<BeautyOutdoors>18</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_Chrysanthemum</texPath>
+		</graphicData>
+		<plant>
+			<!--种植特点-->
+			<sowWork>750</sowWork>
+			<growMinGlow>0.3</growMinGlow>
+			<growDays>4</growDays>
+			<lifespanDaysPerGrowDays>15</lifespanDaysPerGrowDays>
+			<visualSizeRange>0.3~1.1</visualSizeRange>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--烛龙盔-->
+	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
+		<defName>RI_Apparel_FireDragonHelmet</defName>
+		<label>Fire dragon helmet</label>
+		<description>A thin helmet containing finely-tuned sheets of psychically-absorptive foil. Reduces the impact of psychic waves.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FireDragonHelmet/RI_Apparel_FireDragonHelmet</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>100</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>250</Insulation_Heat>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_BestHelmetTag</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FireDragonHelmet/RI_Apparel_FireDragonHelmet</wornGraphicPath>
+		</apparel>
+
+		<!--喷火技能-->
+		<verbs>
+			<li>
+				<label>Flame</label>
+				<verbClass>RI_Starch.RI_Verbs.Verb_SpewFireStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>19.9</range>
+				<warmupTime>1</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<meleeDamageBaseAmount>30</meleeDamageBaseAmount>
+				<!--喷火伤害-->
+				<meleeArmorPenetrationBase>3</meleeArmorPenetrationBase>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>7</maxCharges>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>Flame</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--相柳盔-->
+	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
+		<defName>RI_Apparel_PoisonPythonHelmet</defName>
+		<label>Viper poison helmet【First-rate】</label>
+		<description>A thin helmet containing finely-tuned sheets of psychically-absorptive foil. Reduces the impact of psychic waves.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Python/RI_Apparel_PoisonPythonHelmet</texPath>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>4</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>RI_BestHelmetTag</li>
+			</tags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Python/RI_Apparel_PoisonPythonHelmet</wornGraphicPath>
+		</apparel>
+
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>RI_Apparel_PoisonViperArmorHediff</hediff>
+				<part>Torso</part>
+			</li>
+		</comps>
+		<!--贸易标签-->
+		<tradeTags>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

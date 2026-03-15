@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ripping claws -->
+  <Nzflm_Ev_RippingClaws.label>TODO</Nzflm_Ev_RippingClaws.label>
+  <!-- EN: A claw made of chitin and hardened bones, replacing the hands, the force contained in it can even tear the enemy in half. -->
+  <Nzflm_Ev_RippingClaws.description>TODO</Nzflm_Ev_RippingClaws.description>
+  
+  <!-- EN: nether marrow -->
+  <RI_ZombieCore_Aspect_DeadButNotDead.label>TODO</RI_ZombieCore_Aspect_DeadButNotDead.label>
+  <!-- EN: Unique gene of Necrosapiens.\nThe Necrosapiens relies on the unique Necro-plasm contained within its blood and bone marrow as its primary energy source, forming an entirely novel and extraordinarily efficient metabolic system. Due to genetic and physiological constraints, they are incapable of digesting most plant-based nutrients and can only consume raw flesh and blood.\n\nAt the same time, the Necro-plasm reinforces the Necrosapiens’s body, granting its cells exceptional anti-aging capabilities and completely halting decay, rendering it a unique existence that straddles the boundary between life and death.\n\n*The Nether marrow gene serves as the core gene of the Necrosapiens and cannot be removed or extracted. -->
+  <RI_ZombieCore_Aspect_DeadButNotDead.description>TODO</RI_ZombieCore_Aspect_DeadButNotDead.description>
+  
+  <!-- EN: bone scale -->
+  <RI_ZombieGene_BoneScale.label>TODO</RI_ZombieGene_BoneScale.label>
+  <!-- EN: Carriers of this gene have tough, bony scales that provide extra protection. -->
+  <RI_ZombieGene_BoneScale.description>TODO</RI_ZombieGene_BoneScale.description>
+  
+  <!-- EN: sun phobia -->
+  <RI_ZombieGene_SunSuperSensitivity.label>TODO</RI_ZombieGene_SunSuperSensitivity.label>
+  <!-- EN: zombie afraid sun. -->
+  <RI_ZombieGene_SunSuperSensitivity.description>TODO</RI_ZombieGene_SunSuperSensitivity.description>
+  
+  <!-- EN: zombie diet -->
+  <RI_ZombieGene_ZombieDiet.label>TODO</RI_ZombieGene_ZombieDiet.label>
+  <!-- EN: This carrier's digestive system has mutated. They can only digest raw meat and corpses. They refuse to eat cooked meals or plant matter. -->
+  <RI_ZombieGene_ZombieDiet.description>TODO</RI_ZombieGene_ZombieDiet.description>
+  <!-- EN: Restricts diet to raw meat and corpses. -->
+  <RI_ZombieGene_ZombieDiet.customEffectDescriptions.0>TODO</RI_ZombieGene_ZombieDiet.customEffectDescriptions.0>
+  
+  <!-- EN: unstoppable -->
+  <RI_ZombieGene_ZombieUnstoppable.label>TODO</RI_ZombieGene_ZombieUnstoppable.label>
+  <!-- EN: Carriers of this gene are not slowed down when taking damage. -->
+  <RI_ZombieGene_ZombieUnstoppable.description>TODO</RI_ZombieGene_ZombieUnstoppable.description>
+  
+</LanguageData>

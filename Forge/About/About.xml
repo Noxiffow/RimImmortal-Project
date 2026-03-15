@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>边缘仙路-神机天纵 RimImmortal-Forge[1.6]</name>
+	<author>堂丸(TangW),羊肉罐头(Cannon Mutton),雾雨龛灯(Anxie),凌洛(LingLuo),西伯利亚玉米淀粉(Starch)</author>
+	<packageId>RI.RimImmortal.Forge</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>RI.RimImmortal.Living</packageId>
+			<displayName>边缘仙路-锦衣玉食 RimImmortal-Living[1.6]</displayName>
+		</li>
+		<li>
+			<packageId>RI.RimImmortal.Core</packageId>
+			<displayName>边缘仙路-羽化登仙 RimImmortal-Core[1.6]</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3296476341</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>RI.RimImmortal.Living</li>
+		<li>RI.RimImmortal.Core</li>
+	</loadAfter>
+	<description>
+&lt;color=#edad56&gt;&lt;b&gt;【神机阴闭，剞劂无迹，人巧之妙也】&lt;/b&gt;&lt;/color&gt;
+感谢订阅边缘仙路-神机天纵！这是在核心之后，第一个大型拓展mod。
+此mod添加了一条新法门——炼器法门，除此以外，添加了大量的武器，盔甲，法宝。
+还添加了新的遗迹，和新的角色——古修者。
+
+Thank you for subscribing our mod - RimImmortal-Forge! This is the first major expansion mod after the core.
+This mod adds a new initial approach - the Forge, in addition to adding a large number of weapons, armor, talismans.
+New relics have also been added, and new character, the ancient cultivator.
+
+&lt;color=#edad56&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-一条法门树：炼器。
+-大量的新武器，盔甲，法宝。
+-新的功法。
+-新的开局-宗门历练。
+-新的叙事者。
+-多个新事件，庚钢飞船碎片坠落，炼器灵感等等。
+-新的遗迹，古修遗迹。
+-新的敌人——古修者boss。
+
+&lt;color=#edad56&gt;&lt;b&gt;【排序】&lt;/b&gt;&lt;/color&gt;
+-Harmony
+-Core
+-Dlc
+-羽化登仙(Core)
+-神机天纵(Forge)
+
+&lt;color=#edad56&gt;&lt;b&gt;【边缘仙路开发组成员】&lt;/b&gt;&lt;/color&gt;
+-堂丸(TangW)——主要负责人，策划，贴图，xml代码
+-羊肉罐头(Cannon Mutton)——次要负责人，策划，贴图
+-爱新觉罗-派大星——程序
+-玖日长弓——程序
+-凌洛(LingLuo)——程序
+-阿米(Amli)——音效，程序
+-骸鸾——程序
+-灵能罐头——程序
+-玉米淀粉——程序
+-尘——程序
+-咩咩——程序
+
+&lt;color=#edad56&gt;&lt;b&gt;【特别感谢】&lt;/b&gt;&lt;/color&gt;
+-八命——反馈了大量bug。
+-天才少年金杜汩——贡献了任务代码。
+
+最后，也感谢各位支持的玩家！
+	</description>
+</ModMetaData>

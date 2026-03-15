@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Disassemble Immortal exuviae to qi energy -->
+  <RI_Recipe_DisassembleExuviaeEnergy.label>分解仙人遗蜕为灵石</RI_Recipe_DisassembleExuviaeEnergy.label>
+  <!-- EN: Disassemble Immortal exuviae to qi energy. -->
+  <RI_Recipe_DisassembleExuviaeEnergy.description>分解仙人遗蜕为灵石。</RI_Recipe_DisassembleExuviaeEnergy.description>
+  <!-- EN: Disassembling Immortal exuviae -->
+  <RI_Recipe_DisassembleExuviaeEnergy.jobString>分解仙人遗蜕中</RI_Recipe_DisassembleExuviaeEnergy.jobString>
+  
+  <!-- EN: Disassemble Immortal exuviae to oracle -->
+  <RI_Recipe_DisassembleExuviaeOracle.label>分解仙人遗蜕为手谕</RI_Recipe_DisassembleExuviaeOracle.label>
+  <!-- EN: Disassemble Immortal exuviae to oracle. -->
+  <RI_Recipe_DisassembleExuviaeOracle.description>分解仙人遗蜕为手谕。</RI_Recipe_DisassembleExuviaeOracle.description>
+  <!-- EN: Disassembling Immortal exuviae -->
+  <RI_Recipe_DisassembleExuviaeOracle.jobString>分解仙人遗蜕中</RI_Recipe_DisassembleExuviaeOracle.jobString>
+  
+  <!-- EN: Make Immortal oracle -->
+  <RI_Recipe_MakeImmortalOracle.label>合成仙人手谕</RI_Recipe_MakeImmortalOracle.label>
+  <!-- EN: A medicinal wine obtained by grinding QingMing marrow and stirring it with some plant juices and fermenting it briefly. -->
+  <RI_Recipe_MakeImmortalOracle.description>供奉仙人以合成仙人手谕。</RI_Recipe_MakeImmortalOracle.description>
+  <!-- EN: Making Immortal oracle -->
+  <RI_Recipe_MakeImmortalOracle.jobString>合成仙人手谕中</RI_Recipe_MakeImmortalOracle.jobString>
+  
+  <!-- EN: Make QingMing jade wine -->
+  <RI_Recipe_MakeJadeLiquid.label>供奉仙人以合成青玉仙露</RI_Recipe_MakeJadeLiquid.label>
+  <!-- EN: A medicinal wine obtained by grinding QingMing marrow and stirring it with some plant juices and fermenting it briefly. -->
+  <RI_Recipe_MakeJadeLiquid.description>供奉仙人以合成青玉仙露</RI_Recipe_MakeJadeLiquid.description>
+  <!-- EN: Making QingMing jade wine -->
+  <RI_Recipe_MakeJadeLiquid.jobString>合成青玉仙露中</RI_Recipe_MakeJadeLiquid.jobString>
+  
+  <!-- EN: Make Marrow-washing nectar -->
+  <RI_Recipe_MakeJadeLiquidPro.label>供奉仙人以合成洗髓玉液</RI_Recipe_MakeJadeLiquidPro.label>
+  <!-- EN: The five elements material is refined into marrow-washing nectar, a kind of wine that can improve the quality of spiritual root. -->
+  <RI_Recipe_MakeJadeLiquidPro.description>供奉仙人以合成洗髓玉液</RI_Recipe_MakeJadeLiquidPro.description>
+  <!-- EN: Making Marrow-washing nectar -->
+  <RI_Recipe_MakeJadeLiquidPro.jobString>合成洗髓玉液中</RI_Recipe_MakeJadeLiquidPro.jobString>
+  
+  <!-- EN: Make Pure-Yang spiritual energy -->
+  <RI_Recipe_MakePureYangSpiritualEnergy.label>合成纯阳真气</RI_Recipe_MakePureYangSpiritualEnergy.label>
+  <!-- EN: Make Pure-Yang spiritual energy. -->
+  <RI_Recipe_MakePureYangSpiritualEnergy.description>合成纯阳真气。</RI_Recipe_MakePureYangSpiritualEnergy.description>
+  <!-- EN: Making Pure-Yang spiritual energy -->
+  <RI_Recipe_MakePureYangSpiritualEnergy.jobString>合成纯阳真气中</RI_Recipe_MakePureYangSpiritualEnergy.jobString>
+  
+</LanguageData>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <!-- EN: 0 level：calm -->
+  <EnergyFluctuationLevel_None>0级：平静</EnergyFluctuationLevel_None>
+  <!-- EN: 1 level：wave -->
+  <EnergyFluctuationLevel_GoodLow>1级：波澜</EnergyFluctuationLevel_GoodLow>
+  <!-- EN: 2 level：tide surge -->
+  <EnergyFluctuationLevel_GoodMedium>2级：潮涌</EnergyFluctuationLevel_GoodMedium>
+  <!-- EN: 3 level：full tide -->
+  <EnergyFluctuationLevel_GoodHigh>3级：满潮</EnergyFluctuationLevel_GoodHigh>
+  <!-- EN: -1 level：fall back -->
+  <EnergyFluctuationLevel_BadLow>-1级：回落</EnergyFluctuationLevel_BadLow>
+  <!-- EN: -2 level：turmoil -->
+  <EnergyFluctuationLevel_BadMedium>-2级：动荡</EnergyFluctuationLevel_BadMedium>
+  <!-- EN: -3 level：Dry -->
+  <EnergyFluctuationLevel_BadHigh>-3级：干涸</EnergyFluctuationLevel_BadHigh>
+  
+</LanguageData>

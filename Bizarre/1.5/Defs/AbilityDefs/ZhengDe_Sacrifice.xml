@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 拉拽 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_Drag</defName>
+        <label>drag</label>
+        <!-- 让腿部扭曲变长，拖拽一个人到自己面前 -->
+        <description>let the legs twist and elongate, dragging a person in front of you</description>
+        <iconPath>Ability/ZdS1</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <!-- <category>TODO</category> -->
+        <displayOrder>200</displayOrder>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>16.9</range>
+            <warmupTime>0.5</warmupTime>
+            <soundCast>NzRI_Jump</soundCast>
+            <targetParams>
+                <canTargetAnimals>True</canTargetAnimals>
+                <canTargetHumans>True</canTargetHumans>
+                <canTargetMechs>True</canTargetMechs>
+                <canTargetMutants>True</canTargetMutants>
+            </targetParams>
+            <!-- <soundCast>PiercingSpine_Launch</soundCast> -->
+        </verbProperties>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-30</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Drag">
+            </li>
+        </comps>
+    </AbilityDef>
+    <!-- 扫堂腿 -->
+    <!-- 枯败腿伸展延长，并在周围造成一次切割伤害，由于位置较低，更大概率对敌人的腿部造成伤害,甚至可能会切断它们 -->
+    <AbilityDef
+        ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_LegSweep</defName>
+        <label>leg sweep</label>
+        <description>#</description>
+        <iconPath>Ability/ZdS2</iconPath>
+        <cooldownTicksRange>1000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <warmupStartSound>NzRI_CutMeat</warmupStartSound>
+        <targetRequired>False</targetRequired>
+        <verbProperties>
+            <violent>false</violent>
+            <warmupTime>0.5</warmupTime>
+            <range>0</range>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-60</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_LegSweep">
+                <radius>3</radius>
+                <damage>37</damage>
+                <damageMultiplierStat>NzRI_ZhengDePowerMultiplier</damageMultiplierStat>
+                <damageDef>Cut</damageDef>
+                <stunTicks>90</stunTicks>
+                <armorPenetration>0.5</armorPenetration>
+                <preferredAttackBodyParts>
+                    <li>Leg</li>
+                </preferredAttackBodyParts>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 恐怖嘶吼 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_TerrorScream</defName>
+        <label>terror scream</label>
+        <!-- 发出一声恐怖的吼叫，恐吓敌人，降低其移动和攻击速度 -->
+        <description>emit a terrifying scream to scare enemies, reducing their movement and attack
+            speed</description>
+        <iconPath>Ability/ZdS3</iconPath>
+        <cooldownTicksRange>1000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <!-- TODO 替换为吼叫 -->
+        <warmupStartSound>NzRI_Scream</warmupStartSound>
+        <targetRequired>True</targetRequired>
+        <verbProperties>
+            <violent>True</violent>
+            <warmupTime>0.5</warmupTime>
+            <range>19</range>
+            <requireLineOfSight>True</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>True</canTargetLocations>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetAnimals>True</canTargetAnimals>
+                <canTargetSelf>False</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-120</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_AbilityRangeHediff">
+                <radius>6</radius>
+                <hediffDef>NzRI_Zd_He_TerrorScream</hediffDef>
+                <effectMote></effectMote>
+                <targetParams>
+                    <canTargetLocations>True</canTargetLocations>
+                    <canTargetBuildings>False</canTargetBuildings>
+                    <canTargetMechs>False</canTargetMechs>
+                    <canTargetAnimals>True</canTargetAnimals>
+                    <canTargetSelf>False</canTargetSelf>
+                </targetParams>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 噩梦凝视 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_NightmareGaze</defName>
+        <label>nighmare gaze</label>
+        <!-- 冰冷的凝视，将扭曲与疯狂注入目标的心灵与处理器，即使是机器都会发疯 -->
+        <description>the cold gaze that injects distortion and madness into the target's mind and
+            processor, even machines will go crazy</description>
+        <iconPath>Ability/ZdS4</iconPath>
+        <cooldownTicksRange>1000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <displayOrder>300</displayOrder>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <warmupStartSound>NzRI_TerrifyingGaze</warmupStartSound>
+        <targetRequired>True</targetRequired>
+        <verbProperties>
+            <violent>True</violent>
+            <warmupTime>0.5</warmupTime>
+            <range>16</range>
+            <requireLineOfSight>True</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>True</canTargetLocations>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetMechs>True</canTargetMechs>
+                <canTargetAnimals>True</canTargetAnimals>
+                <canTargetMutants>False</canTargetMutants>
+                <canTargetSelf>False</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-110</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_AbilityRangeHediff">
+                <radius>4</radius>
+                <hediffDef>NzRI_Zd_He_NightmareGaze</hediffDef>
+                <effectMote></effectMote>
+                <targetParams>
+                    <canTargetLocations>True</canTargetLocations>
+                    <canTargetBuildings>False</canTargetBuildings>
+                    <canTargetMechs>True</canTargetMechs>
+                    <canTargetAnimals>True</canTargetAnimals>
+                    <canTargetMutants>False</canTargetMutants>
+                    <canTargetSelf>False</canTargetSelf>
+                </targetParams>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 触须突刺 -->
+    <!-- ParentName="AbilityTouchBase" -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_TentacleStab</defName>
+        <label>tentacle stab</label>
+        <!-- 让触须中的活铁瞬间硬化，对敌人的心脏造成致命一击 -->
+        <description>let the bioferrite in the tentacles harden instantly, causing a fatal blow to
+            the enemy's heart</description>
+        <iconPath>Ability/ZdS5</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <!-- TODO -->
+        <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <range>-1</range>
+            <warmupTime>0</warmupTime>
+            <soundCast>NzRI_CutMeat</soundCast>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetMechs>true</canTargetMechs>
+                <canTargetAnimals>true</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+        <statBases>
+            <Ability_Duration>600</Ability_Duration>
+        </statBases>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-60</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_Hit">
+                <damageDef>Poke</damageDef>
+                <damageAmountBase>111</damageAmountBase>
+                <armorPenetrationBase>2</armorPenetrationBase>
+                <damageMultiplierStat>NzRI_ZhengDePowerMultiplier</damageMultiplierStat>
+                <stunTicks>60</stunTicks>
+                <hitPart>Heart</hitPart>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 触须挥砍 -->
+    <AbilityDef ParentName="RI_PsycastBase">
+        <defName>NzRI_Zd_TentacleSlash</defName>
+        <label>tentacle slash</label>
+        <!-- 让触须中的活铁瞬间硬化，对范围内的敌人进行一次挥砍 -->
+        <description>let the bioferrite in the tentacles harden instantly, and make a slash on the
+            enemies in the area</description>
+        <iconPath>Ability/ZdS6</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>4.9</range>
+            <warmupTime>1</warmupTime>
+            <soundCast>NzRI_CutMeat</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <statBases>
+            <Ability_Duration>60</Ability_Duration>
+        </statBases>
+        <comps>
+            <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
+                <rEnergy>-90</rEnergy>
+            </li>
+            <li Class="NzRimImmortalBizarre.CompProperties_AbilitySpew">
+                <compClass>NzRimImmortalBizarre.CompAbilityEffect_TentacleSlash</compClass>
+                <range>4.9</range>
+                <damAmount>61</damAmount>
+                <lineWidthEnd>11</lineWidthEnd>
+                <damageType>Cut</damageType>
+                <damMultiplierStat>NzRI_ZhengDePowerMultiplier</damMultiplierStat>
+                <!-- TODO 修改为专有特效 -->
+                <effecterDef>NzRI_Ef_TentacleSlash</effecterDef>
+                <canHitFilledCells>true</canHitFilledCells>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

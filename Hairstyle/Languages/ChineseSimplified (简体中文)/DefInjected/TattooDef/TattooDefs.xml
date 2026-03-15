@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cultivator A -->
+  <Face_Cultivators_A.label>修炼者A</Face_Cultivators_A.label>
+  
+  <!-- EN: Cultivator B -->
+  <Face_Cultivators_B.label>修炼者B</Face_Cultivators_B.label>
+  
+  <!-- EN: Cultivator C -->
+  <Face_Cultivators_C.label>皱纹</Face_Cultivators_C.label>
+  
+  <!-- EN: Cultivator D -->
+  <Face_Cultivators_D.label>修炼者C</Face_Cultivators_D.label>
+  
+  <!-- EN: Snake A -->
+  <Face_WickedCultivators_A.label>蛇纹A</Face_WickedCultivators_A.label>
+  
+  <!-- EN: Snake B -->
+  <Face_WickedCultivators_B.label>蛇纹B</Face_WickedCultivators_B.label>
+  
+  <!-- EN: Snake C -->
+  <Face_WickedCultivators_C.label>蛇纹C</Face_WickedCultivators_C.label>
+  
+  <!-- EN: Snake D -->
+  <Face_WickedCultivators_D.label>蛇纹D</Face_WickedCultivators_D.label>
+  
+</LanguageData>

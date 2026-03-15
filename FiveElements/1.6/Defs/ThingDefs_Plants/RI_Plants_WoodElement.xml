@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================================== 木行制造的植物 ======================================== -->
+
+	<!--生机草-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RI_Plant_VitalityGrass</defName>
+		<label>Vitality grass</label>
+		<description>Grass infused with Vitality arts, faintly glowing.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_VitalityGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>1</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>0</wildOrder>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.5</glowRadius>
+				<glowColor>(193,255,161,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--生机灌木-->
+	<ThingDef ParentName="BushBase">
+		<defName>RI_Plant_VitalityBush</defName>
+		<label>Vitality bush</label>
+		<description>A shrub transformed through Vitality arts; harvesting it yields medicinal herbs.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_VitalityBush</texPath>
+			<drawSize>1.3</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growDays>1.5</growDays>
+			<!--收获得到草药-->
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.5</glowRadius>
+				<glowColor>(193,255,161,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--生机海芋-->
+	<ThingDef ParentName="BushBase">
+		<defName>RI_Plant_VitalityAlocasia</defName>
+		<label>Vitality alocasia</label>
+		<description>Alocasia infused with Vitality arts, faintly glowing.</description>
+		<graphicData>
+			<texPath>Things/Plant/RI_Plant_VitalityAlocasia</texPath>
+			<drawSize>2</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.5</glowRadius>
+				<glowColor>(193,255,161,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

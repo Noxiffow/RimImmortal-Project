@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--树精前置-->
+	<ThingDef ParentName="AnimalThingBase" Name="RI_DryadBase" Abstract="True">
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0</Wildness>
+			<FilthRate>0</FilthRate>
+		</statBases>
+		<uiIconScale>1.5</uiIconScale>
+		<!--超链接-->
+		<descriptionHyperlinks>
+			<ThingDef>Plant_TreeGauranlen</ThingDef>
+		</descriptionHyperlinks>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<labelNoLocation>claw</labelNoLocation>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>RI_Animal_None</li>
+		</tradeTags>
+		<race>
+			<!--无性别-->
+			<hasGenders>false</hasGenders>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<!--虫子Ai-->
+			<thinkTreeMain>Insect</thinkTreeMain>
+			<thinkTreeConstant>InsectConstant</thinkTreeConstant>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<!-- <animalType>Dryad</animalType> -->
+			<allowedOnCaravan>false</allowedOnCaravan>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<lifeExpectancy>80</lifeExpectancy>
+			<baseBodySize>0.667</baseBodySize>
+			<baseHealthScale>1.5</baseHealthScale>
+			<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+			<canReleaseToWild>false</canReleaseToWild>
+			<trainability>Advanced</trainability>
+			<showTrainables>true</showTrainables>
+			<playerCanChangeMaster>true</playerCanChangeMaster>
+			<hideTrainingTab>false</hideTrainingTab>
+			<disableAreaControl>true</disableAreaControl>
+			<!--DLC动物能力-->
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+			</specialTrainables>
+
+			<petness>0</petness>
+			<!--给予hediff-->
+			<hediffGiverSets Inherit="False"/>
+			<foodType>None</foodType>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!--树精物种前置-->
+	<PawnKindDef Name="RI_DryadKindBase" ParentName="AnimalKindBase" Abstract="True">
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+	</PawnKindDef>
+
+	<!-- 森林护卫 Verdant guard -->
+	<!--由一般的树木转变而成-->
+	<ThingDef ParentName="RI_DryadBase">
+		<defName>RI_Animal_VerdantGuard</defName>
+		<label>Verdant guardian</label>
+		<description>Verdant creatures are intelligent lifeforms created through Wood-Element Path Vitality Tech. Their lifespan depends on the amount of vitality they receive, and their strength lies in their ability to continuously grow and evolve.\n\nVerdant guardian is the most basic form of Verdant creature, typically transformed from deciduous trees or pines.</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+		</statBases>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Barkskin_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>2.5</baseBodySize>
+			<baseHealthScale>0.9</baseHealthScale>
+			<trainability>Advanced</trainability>
+			<trainableTags>
+				<li>Basic</li>
+				<li>Combat</li>
+				<li>Help</li>
+			</trainableTags>
+			<untrainableTags>
+				<li>Work</li>
+			</untrainableTags>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.16)</li>
+				<li>(0.15, 0, 0.03)</li>
+				<li>(0, 0, 0)</li>
+				<li>(-0.15, 0, 0.03)</li>
+			</headPosPerRotation>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<WoodLog>50</WoodLog>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="RI_DryadKindBase">
+		<defName>RI_Pawn_VerdantGuard</defName>
+		<label>Verdant guardian</label>
+		<race>RI_Animal_VerdantGuard</race>
+		<alternateGraphicChance>0.5</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_Pawn_VerdantGuard/RI_Pawn_VerdantGuard1</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_VerdantGuard/RI_Pawn_VerdantGuard</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.5, 0.4)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Barkskin/Dessicated_DryadBarkskin</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- 青冥树灵 QingMing dryad -->
+	<!--由青冥树转变而成-->
+	<ThingDef ParentName="RI_DryadBase">
+		<defName>RI_Animal_QingMingDryad</defName>
+		<label>QingMing dryad</label>
+		<description>Verdant creatures are intelligent lifeforms created through Wood-Element Path Vitality Tech. Their lifespan depends on the amount of vitality they receive, and their strength lies in their ability to continuously grow and evolve.\n\nQingMing dryads are formed from Qingming Trees and possess the ability to absorb ambient Qi energy from the environment, periodically producing Spiritual Crystals. In addition, QingMing dryads come with a natural bio-shield, capable of protecting nearby cultivators from harm.</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>RI_Resource_SpiritualCrystal</thingToSpawn>
+				<spawnCount>5</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+			<!-- <li Class="CompProperties_Shield">
+				<startingTicksToReset>3600</startingTicksToReset>
+				<minDrawSize>2.5</minDrawSize>
+				<maxDrawSize>2.8</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>4.0</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li> -->
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>5</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<color>(0.4, 0.4, 0.4)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>6000</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<chargeDurationTicks>5400</chargeDurationTicks>
+				<!-- 90s -->
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+				<gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_SmartAnimal">
+			</li>
+		</comps>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Barkskin_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Barkskin_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<baseBodySize>2.8</baseBodySize>
+			<baseHealthScale>0.9</baseHealthScale>
+			<trainability>Advanced</trainability>
+			<trainableTags>
+				<li>Basic</li>
+				<li>Help</li>
+				<li>Combat</li>
+			</trainableTags>
+			<untrainableTags>
+				<li>Work</li>
+			</untrainableTags>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.16)</li>
+				<li>(0.15, 0, 0.03)</li>
+				<li>(0, 0, 0)</li>
+				<li>(-0.15, 0, 0.03)</li>
+			</headPosPerRotation>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_QingMingMarrow>2</RI_Resource_QingMingMarrow>
+			<WoodLog>50</WoodLog>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="RI_DryadKindBase">
+		<defName>RI_Pawn_QingMingDryad</defName>
+		<label>QingMing dryad</label>
+		<race>RI_Animal_QingMingDryad</race>
+		<!--<alternateGraphicChance>0.5</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_Pawn_QingMingDryad/RI_Pawn_VerdantGuard1</texPath>
+			</li>
+		</alternateGraphics>-->
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_Pawn_QingMingDryad/RI_Pawn_QingMingDryad</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.5, 0.4)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Barkskin/Dessicated_DryadBarkskin</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

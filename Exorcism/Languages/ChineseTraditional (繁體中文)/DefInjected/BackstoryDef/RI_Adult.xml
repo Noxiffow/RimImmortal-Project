@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] devoted years to the study of talisman arts, drawing sigils with cinnabar and chanting incantations to ward off evil and cure illness for common folk. [PAWN_nameDef] sought neither fame nor fortune, only peace under heaven. -->
+  <RI_Backstory_DaoistA.description>多年修行后，[PAWN_nameDef]退居山林，静养身心。少与世人交往，[PAWN_pronoun]只在弟子迷惘时偶有指点。[PAWN_pronoun]虽行事淡泊，却常是一派的精神支柱。</RI_Backstory_DaoistA.description>
+  <!-- EN: talisman Daoist -->
+  <RI_Backstory_DaoistA.title>清修道长</RI_Backstory_DaoistA.title>
+  <!-- EN: Daoist -->
+  <RI_Backstory_DaoistA.titleShort>道士</RI_Backstory_DaoistA.titleShort>
+  
+  <!-- EN: Focusing intently on alchemy, [PAWN_nameDef] became deeply familiar with the nature of herbs and minerals. [PAWN_pronoun] could craft both fortifying elixirs and medicinal remedies. As alchemy demands long hours, [PAWN_pronoun] often remained by the furnace in seclusion, indifferent to the passage of days. -->
+  <RI_Backstory_DaoistB.description>[PAWN_nameDef]潜心炼丹之道，熟稔草木矿石的性情，[PAWN_pronoun]既能制出强身健体的丹药，也能配制疗伤之剂。因炼丹需时日，[PAWN_pronoun]常闭关炉前，不计日夜。</RI_Backstory_DaoistB.description>
+  <!-- EN: alchemy Daoist -->
+  <RI_Backstory_DaoistB.title>丹药道士</RI_Backstory_DaoistB.title>
+  <!-- EN: Daoist -->
+  <RI_Backstory_DaoistB.titleShort>道士</RI_Backstory_DaoistB.titleShort>
+  
+  <!-- EN: As cultivation deepened, [PAWN_nameDef] was entrusted with teaching duties. Each day, [PAWN_pronoun] lectured in the hall, explaining self-cultivation and karmic consequence to villagers. Though not the strongest in battle, [PAWN_nameDef] earned widespread respect. -->
+  <RI_Backstory_DaoistC.description>[PAWN_nameDef]修为渐深后，被师门委以讲经任务。[PAWN_pronoun]每日在殿中开坛说法，向乡民讲解修身养性、因果报应。虽不是战斗中最强的一员，[PAWN_nameDef]却深得众人敬重。</RI_Backstory_DaoistC.description>
+  <!-- EN: Daoist lecturer -->
+  <RI_Backstory_DaoistC.title>道门讲师</RI_Backstory_DaoistC.title>
+  <!-- EN: Daoist -->
+  <RI_Backstory_DaoistC.titleShort>道士</RI_Backstory_DaoistC.titleShort>
+  
+  <!-- EN: Leaving the mountain sect behind, [PAWN_nameDef] traveled far and wide. Practicing medicine, spreading teachings, and aiding others, [PAWN_pronoun] met all kinds of people along the way. The journey across forests and wastelands served as both cultivation and trial. -->
+  <RI_Backstory_DaoistD.description>[PAWN_nameDef]离开山门，云游四方。行医布道，渡人济世。[PAWN_pronoun]一路上结识各色人等，足迹踏遍山林荒野，既是修行，也是历练。</RI_Backstory_DaoistD.description>
+  <!-- EN: wandering Daoist -->
+  <RI_Backstory_DaoistD.title>云游道士</RI_Backstory_DaoistD.title>
+  <!-- EN: Daoist -->
+  <RI_Backstory_DaoistD.titleShort>道士</RI_Backstory_DaoistD.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] devoted years to the study of talisman arts, drawing sigils with cinnabar and chanting incantations to ward off evil and cure illness for common folk. [PAWN_nameDef] sought neither fame nor fortune, only peace under heaven. -->
+  <RI_Backstory_DaoistE.description>[PAWN_nameDef]长年研习符箓之术，能绘符、口诵咒诀，为百姓驱邪祛病。[PAWN_nameDef]不求名利，只求天下太平。</RI_Backstory_DaoistE.description>
+  <!-- EN: talisman Daoist -->
+  <RI_Backstory_DaoistE.title>持符道士</RI_Backstory_DaoistE.title>
+  <!-- EN: Daoist -->
+  <RI_Backstory_DaoistE.titleShort>道士</RI_Backstory_DaoistE.titleShort>
+  
+</LanguageData>

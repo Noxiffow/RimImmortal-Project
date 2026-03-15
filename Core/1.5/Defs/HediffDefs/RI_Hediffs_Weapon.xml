@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--破甲-->
+	<HediffDef>
+		<defName>RI_Hediff_ArmorBreak</defName>
+		<label>Armor break</label>
+		<description>Some of the preset Qi is attached to the weapon, and when hit, the Qi invades the body, causing a decrease in defense.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<lethalSeverity>5</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<!--<taleOnVisible>ToxicityRevealed</taleOnVisible>-->
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Mild</label>
+				<minSeverity>0.2</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.2</IncomingDamageFactor>
+					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				</statFactors>
+			</li>
+			<li>
+				<label>Moderate</label>
+				<minSeverity>0.5</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.2</IncomingDamageFactor>
+					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+				</statFactors>
+			</li>
+			<li>
+				<label>Severe</label>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.5</IncomingDamageFactor>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!--贯穿-->
+	<HediffDef>
+		<defName>RI_Hediff_Puncture</defName>
+		<label>Puncture</label>
+		<description>Some of the Qi is programmed to attach to the weapon, and when hit, the Qi penetrates the body, causing a piercing effect.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<lethalSeverity>5</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<!--<taleOnVisible>ToxicityRevealed</taleOnVisible>-->
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Mild</label>
+				<minSeverity>0.2</minSeverity>
+				<painFactor>1.1</painFactor>
+				<statFactors>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+			</li>
+			<li>
+				<label>Moderate</label>
+				<minSeverity>0.5</minSeverity>
+				<painFactor>1.25</painFactor>
+				<statFactors>
+					<MoveSpeed>0.4</MoveSpeed>
+				</statFactors>
+			</li>
+			<li>
+				<label>Severe</label>
+				<minSeverity>1</minSeverity>
+				<painFactor>1.45</painFactor>
+				<statFactors>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!--眩晕-->
+	<HediffDef>
+		<defName>RI_Hediff_Vertigo</defName>
+		<label>Vertigo</label>
+		<description>Some of the preset aura is attached to the weapon, and when it is hit, waves of aura pass into the brain, causing a dizzy effect.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<lethalSeverity>5</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<!--<taleOnVisible>ToxicityRevealed</taleOnVisible>-->
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Mild</label>
+				<minSeverity>0.2</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.7</ShootingAccuracyPawn>
+					<MeleeHitChance>0.8</MeleeHitChance>
+				</statFactors>
+			</li>
+			<li>
+				<label>Moderate</label>
+				<minSeverity>0.5</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<MeleeHitChance>0.7</MeleeHitChance>
+				</statFactors>
+			</li>
+			<li>
+				<label>Severe</label>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+					<MeleeHitChance>0.6</MeleeHitChance>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+</Defs>

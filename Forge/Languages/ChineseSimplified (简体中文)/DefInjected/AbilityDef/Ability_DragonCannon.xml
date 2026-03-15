@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Buster beam -->
+  <RI_DragonCannon_Ability.label>龙头激光</RI_DragonCannon_Ability.label>
+  <!-- EN: Fire a hot ray beam that creates an explosion at a focal point and can burn enemies in its path.\n\nWill not hit friendly troops. -->
+  <RI_DragonCannon_Ability.description>发射一道热射线光束，在聚焦点制造爆炸，并且可以灼烧沿途的敌人。\n\n不会误伤友军。</RI_DragonCannon_Ability.description>
+  
+</LanguageData>

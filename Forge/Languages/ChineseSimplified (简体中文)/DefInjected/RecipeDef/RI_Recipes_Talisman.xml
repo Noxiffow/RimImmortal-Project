@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Coin pendant【Third-rate】 -->
+  <Make_CoinsPendant.label>制作铜钱吊坠【三品】</Make_CoinsPendant.label>
+  <!-- EN: make Coin pendant. -->
+  <Make_CoinsPendant.description>制作铜钱吊坠【三品】。</Make_CoinsPendant.description>
+  <!-- EN: Making Coin pendant. -->
+  <Make_CoinsPendant.jobString>制作铜钱吊坠【三品】</Make_CoinsPendant.jobString>
+  
+  <!-- EN: make Fire pearl【Second-rate】 -->
+  <Make_Firefighter.label>制作避火珠【二品】</Make_Firefighter.label>
+  <!-- EN: make Fire pearl. -->
+  <Make_Firefighter.description>制作避火珠【二品】。</Make_Firefighter.description>
+  <!-- EN: Making Fire pearl. -->
+  <Make_Firefighter.jobString>制作避火珠【二品】</Make_Firefighter.jobString>
+  
+  <!-- EN: make Golden bowl【First-rate】 -->
+  <Make_GoldenBowl.label>制作金钵【一品】</Make_GoldenBowl.label>
+  <!-- EN: make Golden bowl. -->
+  <Make_GoldenBowl.description>制作金钵【一品】。</Make_GoldenBowl.description>
+  <!-- EN: Making Golden bowl. -->
+  <Make_GoldenBowl.jobString>制作金钵【一品】</Make_GoldenBowl.jobString>
+  
+  <!-- EN: make Medical gourd【Second-rate】 -->
+  <Make_Greengourd.label>制作青囊葫芦【二品】</Make_Greengourd.label>
+  <!-- EN: make Medical gourd. -->
+  <Make_Greengourd.description>制作青囊葫芦【二品】。</Make_Greengourd.description>
+  <!-- EN: Making Medical gourd. -->
+  <Make_Greengourd.jobString>制作青囊葫芦【二品】</Make_Greengourd.jobString>
+  
+  <!-- EN: make Immortal-binding rope【First-rate】 -->
+  <Make_ImmortalBindingRope.label>制作捆仙绳【一品】</Make_ImmortalBindingRope.label>
+  <!-- EN: make Immortal-binding rope. -->
+  <Make_ImmortalBindingRope.description>制作捆仙绳【一品】。</Make_ImmortalBindingRope.description>
+  <!-- EN: Making Immortal-binding rope. -->
+  <Make_ImmortalBindingRope.jobString>制作捆仙绳【一品】</Make_ImmortalBindingRope.jobString>
+  
+  <!-- EN: make Jade Ruyi【Third-rate】 -->
+  <Make_JadeRuyi.label>制作玉如意【三品】</Make_JadeRuyi.label>
+  <!-- EN: Make Jade Ruyi. -->
+  <Make_JadeRuyi.description>制作玉如意【三品】。</Make_JadeRuyi.description>
+  <!-- EN: Making Jade Ruyi. -->
+  <Make_JadeRuyi.jobString>制作玉如意【三品】</Make_JadeRuyi.jobString>
+  
+  <!-- EN: make Poly stone tower【Second-rate】 -->
+  <Make_PolyStoneTower.label>制作聚石塔【二品】</Make_PolyStoneTower.label>
+  <!-- EN: make Poly stone tower. -->
+  <Make_PolyStoneTower.description>制作聚石塔【二品】。</Make_PolyStoneTower.description>
+  <!-- EN: Making Poly stone tower. -->
+  <Make_PolyStoneTower.jobString>制作聚石塔【二品】</Make_PolyStoneTower.jobString>
+  
+  <!-- EN: make Purple golden gourd【First-rate】 -->
+  <Make_PurpleGoldenGourd.label>制作紫金葫芦【一品】</Make_PurpleGoldenGourd.label>
+  <!-- EN: make Wind ring. -->
+  <Make_PurpleGoldenGourd.description>制作紫金葫芦【一品】。</Make_PurpleGoldenGourd.description>
+  <!-- EN: Making Wind ring. -->
+  <Make_PurpleGoldenGourd.jobString>制作紫金葫芦【一品】</Make_PurpleGoldenGourd.jobString>
+  
+  <!-- EN: make QianKun bag【First-rate】 -->
+  <Make_QiankunStorageBag.label>制作乾坤袋【一品】</Make_QiankunStorageBag.label>
+  <!-- EN: make QianKun bag. -->
+  <Make_QiankunStorageBag.description>制作乾坤袋【一品】。</Make_QiankunStorageBag.description>
+  <!-- EN: Making QianKun bag. -->
+  <Make_QiankunStorageBag.jobString>制作乾坤袋【一品】</Make_QiankunStorageBag.jobString>
+  
+  <!-- EN: make Wooden token【Third-rate】 -->
+  <Make_SandalwoodToken.label>制作木制令牌【三品】</Make_SandalwoodToken.label>
+  <!-- EN: make Wooden token. -->
+  <Make_SandalwoodToken.description>制作木制令牌【三品】。</Make_SandalwoodToken.description>
+  <!-- EN: Making Wooden token. -->
+  <Make_SandalwoodToken.jobString>制作木制令牌【三品】</Make_SandalwoodToken.jobString>
+  
+  <!-- EN: make Storage bag【Second-rate】 -->
+  <Make_StorageBag.label>制作储物袋【二品】</Make_StorageBag.label>
+  <!-- EN: make Storage bag. -->
+  <Make_StorageBag.description>制作储物袋【二品】。</Make_StorageBag.description>
+  <!-- EN: Making Storage bag. -->
+  <Make_StorageBag.jobString>制作储物袋【二品】</Make_StorageBag.jobString>
+  
+  <!-- EN: make Three king tower【First-rate】 -->
+  <Make_ThreeKingTower.label>制作三王玲珑塔【一品】</Make_ThreeKingTower.label>
+  <!-- EN: make Three king tower. -->
+  <Make_ThreeKingTower.description>制作三王玲珑塔【一品】。</Make_ThreeKingTower.description>
+  <!-- EN: Making Three king tower. -->
+  <Make_ThreeKingTower.jobString>制作三王玲珑塔【一品】</Make_ThreeKingTower.jobString>
+  
+  <!-- EN: make Toxic bell【Third-rate】 -->
+  <Make_ToxicBell.label>制作驱毒铃【三品】</Make_ToxicBell.label>
+  <!-- EN: make Toxic bell. -->
+  <Make_ToxicBell.description>制作驱毒铃【三品】。</Make_ToxicBell.description>
+  <!-- EN: Making Toxic bell. -->
+  <Make_ToxicBell.jobString>制作驱毒铃【三品】</Make_ToxicBell.jobString>
+  
+  <!-- EN: make Tusk pendant【Third-rate】 -->
+  <Make_TuskPendant.label>制作象牙项链【三品】</Make_TuskPendant.label>
+  <!-- EN: make Tusk pendant. -->
+  <Make_TuskPendant.description>制作象牙项链【三品】。</Make_TuskPendant.description>
+  <!-- EN: Making Tusk pendant. -->
+  <Make_TuskPendant.jobString>制作象牙项链【三品】</Make_TuskPendant.jobString>
+  
+  <!-- EN: make White jade vase【First-rate】 -->
+  <Make_WhiteJadeVase.label>制作白玉瓶【一品】</Make_WhiteJadeVase.label>
+  <!-- EN: make White jade vase. -->
+  <Make_WhiteJadeVase.description>制作白玉瓶【一品】。</Make_WhiteJadeVase.description>
+  <!-- EN: Making White jade vase. -->
+  <Make_WhiteJadeVase.jobString>制作白玉瓶【一品】</Make_WhiteJadeVase.jobString>
+  
+  <!-- EN: make Wind ring【Second-rate】 -->
+  <Make_WindRing.label>制作风戒【二品】</Make_WindRing.label>
+  <!-- EN: make Wind ring. -->
+  <Make_WindRing.description>制作风戒【二品】。</Make_WindRing.description>
+  <!-- EN: Making Wind ring. -->
+  <Make_WindRing.jobString>制作风戒【二品】</Make_WindRing.jobString>
+  
+</LanguageData>

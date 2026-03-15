@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cultivator -->
+  <RI_Pawn_Cultivator.label>散修</RI_Pawn_Cultivator.label>
+  
+  <!-- EN: Free cultivator -->
+  <RI_Pawn_FreeCultivator.label>逍遥散修</RI_Pawn_FreeCultivator.label>
+  
+  <!-- EN: Half immortal -->
+  <RI_Pawn_HalfImmortal.label>半仙</RI_Pawn_HalfImmortal.label>
+  
+  <!-- EN: Old cultivator -->
+  <RI_Pawn_OldCultivator.label>年老散修</RI_Pawn_OldCultivator.label>
+  
+  <!-- EN: Sword cultivator -->
+  <RI_Pawn_SwordCultivator.label>剑修</RI_Pawn_SwordCultivator.label>
+  
+</LanguageData>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chinese bun (handsome) -->
+  <RI_HairStyle_BunHandsome.label>发髻（帅哥）</RI_HairStyle_BunHandsome.label>
+  
+  <!-- EN: Chinese bun (normal) -->
+  <RI_HairStyle_BunNormal.label>发髻（寻常）</RI_HairStyle_BunNormal.label>
+  
+  <!-- EN: Chinese bun (hero) -->
+  <RI_HairStyle_BunOld.label>发髻（少年英雄）</RI_HairStyle_BunOld.label>
+  
+  <!-- EN: Chinese bun (romantic) -->
+  <RI_HairStyle_BunRomantic.label>发髻（风流）</RI_HairStyle_BunRomantic.label>
+  
+  <!-- EN: Chinese bun (split) -->
+  <RI_HairStyle_BunSplit.label>发髻（散发）</RI_HairStyle_BunSplit.label>
+  
+  <!-- EN: Chinese bun (young) -->
+  <RI_HairStyle_BunYoung.label>发髻（幼年）</RI_HairStyle_BunYoung.label>
+  
+  <!-- EN: Chinese bun (old) -->
+  <RI_HairStyle_ChineseManBun_A.label>发髻（古老）</RI_HairStyle_ChineseManBun_A.label>
+  
+  <!-- EN: Chinese bun (hairpin) -->
+  <RI_HairStyle_ChineseManBun_B.label>发髻（带发簪）</RI_HairStyle_ChineseManBun_B.label>
+  
+  <!-- EN: Ming rich female A -->
+  <RI_HairStyle_FemaleBun.label>狄髻</RI_HairStyle_FemaleBun.label>
+  
+  <!-- EN: Chinese bun (lazy) -->
+  <RI_HairStyle_Lazy.label>发髻（慵懒）</RI_HairStyle_Lazy.label>
+  
+  <!-- EN: Young girl -->
+  <RI_HairStyle_LittleGirl.label>女孩</RI_HairStyle_LittleGirl.label>
+  
+  <!-- EN: Mad man -->
+  <RI_HairStyle_MadMan.label>狂人</RI_HairStyle_MadMan.label>
+  
+  <!-- EN: Ming female bun A -->
+  <RI_HairStyle_MingFemale.label>三绺头（简易）</RI_HairStyle_MingFemale.label>
+  
+  <!-- EN: Ming female bun B -->
+  <RI_HairStyle_MingFemale_B.label>三绺头</RI_HairStyle_MingFemale_B.label>
+  
+  <!-- EN: Ming female bun C -->
+  <RI_HairStyle_MingFemale_C.label>三绺头（正式）</RI_HairStyle_MingFemale_C.label>
+  
+  <!-- EN: Old lady -->
+  <RI_HairStyle_OldLady.label>老妪</RI_HairStyle_OldLady.label>
+  
+  <!-- EN: Chinese bun (hero) -->
+  <RI_HairStyle_YoungHero.label>发髻（悬头穗）</RI_HairStyle_YoungHero.label>
+  
+</LanguageData>

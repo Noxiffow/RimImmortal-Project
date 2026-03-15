@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make things at altar table -->
+  <RI_DoBillsUseAltarTable.label>供奉天仙以合成物品</RI_DoBillsUseAltarTable.label>
+  <!-- EN: crafting at -->
+  <RI_DoBillsUseAltarTable.gerund>合成于</RI_DoBillsUseAltarTable.gerund>
+  <!-- EN: craft -->
+  <RI_DoBillsUseAltarTable.verb>合成</RI_DoBillsUseAltarTable.verb>
+  
+</LanguageData>

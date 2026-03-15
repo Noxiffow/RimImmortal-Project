@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--白瑶原石-->
+	<!--<ThingDef ParentName="RockBase">
+		<defName>RI_Rock_MineableMistAgate</defName>
+		<label>mist agate</label>
+		<description>Rock containing bits of mist agate.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(68,83,68)</color>
+			<colorTwo>(30,173,25)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>2100</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>RI_Resource_MistAgate</mineableThing>
+			<mineableYield>30</mineableYield>
+			<mineableScatterCommonality>0.065</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
+		</building>
+	</ThingDef>-->
+
+	<!--古修建筑遗迹——装了仙路才会掉灵石-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientCultivatorRuinsA</defName>
+		<label>ancient cultivator building ruin</label>
+		<description>The architectural remains left by ancient cultivators were forged with heavy steel.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_AncientCultivatorRuinsA</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<rect>(0.1,0.1,1.8,1.8)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.7,0.5,0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<RI_Resource_SpiritualCrystal MayRequire="RI.RimImmortal.Core">3</RI_Resource_SpiritualCrystal>
+			<Steel>25</Steel>
+		</killedLeavings>
+		<costList>
+			<RI_Resource_SpiritualCrystal MayRequire="RI.RimImmortal.Core">6</RI_Resource_SpiritualCrystal>
+			<Steel>50</Steel>
+		</costList>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<inspectString>Deconstruct for valuable resources.</inspectString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--古修路灯遗迹——装了仙路才会掉灵石-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AncientCultivatorLampRuinsA</defName>
+		<label>ancient cultivator lamp ruin</label>
+		<description>The street lamp remains left by ancient cultivators are still glowing.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_AncientCultivatorLampRuinsA</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4.3,4.3)</drawSize>
+			<damageData>
+				<rect>(0.1,0.1,1.8,1.8)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.7,0.5,0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<RI_Resource_SpiritualCrystal MayRequire="RI.RimImmortal.Core">4</RI_Resource_SpiritualCrystal>
+			<Steel>10</Steel>
+		</killedLeavings>
+		<costList>
+			<RI_Resource_SpiritualCrystal MayRequire="RI.RimImmortal.Core">8</RI_Resource_SpiritualCrystal>
+			<Steel>30</Steel>
+		</costList>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<inspectString>Deconstruct for valuable resources.</inspectString>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(126,247,200)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

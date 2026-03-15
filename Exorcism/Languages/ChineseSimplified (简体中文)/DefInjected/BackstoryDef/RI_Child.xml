@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] was sent into the Daoist order by [PAWN_possessive] parents at a young age and lived under the guidance of a master. Each day, [PAWN_pronoun] hauled water, chopped firewood, and swept the courtyards, earning the chance to cultivate through hard labor. -->
+  <RI_Backstory_DaoistChildA.description>[PAWN_nameDef]自幼被父母送入道门，跟随师父生活。[PAWN_pronoun]每日挑水劈柴，扫洒庭院，以辛劳换取修行的机会。</RI_Backstory_DaoistChildA.description>
+  <!-- EN: diligent acolyte -->
+  <RI_Backstory_DaoistChildA.title>辛勤童子</RI_Backstory_DaoistChildA.title>
+  <!-- EN: acolyte -->
+  <RI_Backstory_DaoistChildA.titleShort>童子</RI_Backstory_DaoistChildA.titleShort>
+  
+  <!-- EN: After entering the Daoist order, [PAWN_nameDef] spent days and nights copying scriptures, wearing calluses into [PAWN_possessive] fingers. The monotonous routine laid a solid foundation in literacy and fostered a calm, steady temperament. -->
+  <RI_Backstory_DaoistChildB.description>[PAWN_nameDef]进入道门后，日夜抄写经书，手指都磨出了茧。枯燥的生活让[PAWN_pronoun]打下了坚实的文学基础和平稳的心性。</RI_Backstory_DaoistChildB.description>
+  <!-- EN: scribe apprentice -->
+  <RI_Backstory_DaoistChildB.title>抄经学徒</RI_Backstory_DaoistChildB.title>
+  <!-- EN: apprentice -->
+  <RI_Backstory_DaoistChildB.titleShort>学徒</RI_Backstory_DaoistChildB.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was assigned to tend the herb gardens from an early age, caring for plants and learning to identify medicinal herbs. Through planting in spring, harvesting in summer and autumn, and storing in winter, [PAWN_pronoun] gradually acquired basic knowledge of herbal medicine and decoctions. -->
+  <RI_Backstory_DaoistChildC.description>[PAWN_nameDef]从小被分派到药园照料草木，辨识草药。春耕夏采，秋收冬藏，[PAWN_pronoun]耳濡目染间，学会了些基础的炼药煎汤知识。</RI_Backstory_DaoistChildC.description>
+  <!-- EN: herb garden novice -->
+  <RI_Backstory_DaoistChildC.title>药园童子</RI_Backstory_DaoistChildC.title>
+  <!-- EN: novice -->
+  <RI_Backstory_DaoistChildC.titleShort>童子</RI_Backstory_DaoistChildC.titleShort>
+  
+  <!-- EN: Joining the Daoist order in childhood, [PAWN_nameDef] was tasked with striking the morning bell and evening drum. Amid the resonant chimes, [PAWN_pronoun] gradually developed habits of discipline and regularity. -->
+  <RI_Backstory_DaoistChildD.description>[PAWN_nameDef]童年便加入道门，以击响晨钟暮鼓为职责。在悠扬钟声中，[PAWN_pronoun]逐渐养成了规律与自律的习惯。</RI_Backstory_DaoistChildD.description>
+  <!-- EN: disciplined novice -->
+  <RI_Backstory_DaoistChildD.title>自律童子</RI_Backstory_DaoistChildD.title>
+  <!-- EN: novice -->
+  <RI_Backstory_DaoistChildD.titleShort>童子</RI_Backstory_DaoistChildD.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] lived a life of memorizing precepts, where even minor mistakes would invite reprimands from senior disciples. In the quiet atmosphere of the mountains, [PAWN_pronoun] seemed to grasp a faint sense of the Dao’s direction. -->
+  <RI_Backstory_DaoistChildE.description>[PAWN_nameDef]过着每日背诵戒律的生活，稍有差错便会受师兄训诫。在山上清静的氛围中，[PAWN_pronoun]似乎摸到了一点道的方向。</RI_Backstory_DaoistChildE.description>
+  <!-- EN: Daoist apprentice -->
+  <RI_Backstory_DaoistChildE.title>道门学徒</RI_Backstory_DaoistChildE.title>
+  <!-- EN: apprentice -->
+  <RI_Backstory_DaoistChildE.titleShort>学徒</RI_Backstory_DaoistChildE.titleShort>
+  
+</LanguageData>

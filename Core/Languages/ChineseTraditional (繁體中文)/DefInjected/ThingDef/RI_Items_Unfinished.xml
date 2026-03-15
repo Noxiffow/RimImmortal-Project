@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blood mark -->
+  <RI_Thing_SpecialRaidCaller.label>滴血令</RI_Thing_SpecialRaidCaller.label>
+  <!-- EN: A strip of hide leather paper tainted with blood curses. When burned, it draws the attention of rogue cultivators.\n\nOn rim worlds where spiritual energy is scarce, evil cultivators require clear coordinates to conduct their raids. Thus, the bloodmark art was devised: blood is dripped onto the leather and imbued with a spell, allowing any wicked cultivators within dozens of Li to clearly perceive the mark’s location.\n\nThis positioning skill is crude and primitive, but its low cost makes it widespread. Even unaffiliated Daoists and free cultivators may learn it as a means of contacting allies. -->
+  <RI_Thing_SpecialRaidCaller.description>一块浸染血咒的皮纸，燃烧后会吸引歹修的目光。\n\n在灵气稀薄的边缘世界，歹修们需要明确的坐标进行劫掠。于是有人研究出了滴血定位法术，将血液滴在皮上，施加法术后，方圆数十里的歹修都可以清楚看见滴血令的方位。\n\n这种定位法术野蛮而落后，但胜在成本低廉，所以即使是一些散修野道，也会为了联系朋友而学习此法。</RI_Thing_SpecialRaidCaller.description>
+  <!-- EN: burn out -->
+  <RI_Thing_SpecialRaidCaller.comps.CompUsable.useLabel>焚烧</RI_Thing_SpecialRaidCaller.comps.CompUsable.useLabel>
+  
+  <!-- EN: unfinished manuscript -->
+  <RI_UnfinishedManuscript.label>未完成的书简</RI_UnfinishedManuscript.label>
+  <!-- EN: An unfinished piece of an manuscript. -->
+  <RI_UnfinishedManuscript.description>一份未完成的书简。</RI_UnfinishedManuscript.description>
+  
+</LanguageData>

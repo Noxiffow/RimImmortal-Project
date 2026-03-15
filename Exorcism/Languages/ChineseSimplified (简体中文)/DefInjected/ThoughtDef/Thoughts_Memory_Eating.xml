@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ate aberrant meat -->
+  <RI_Thought_AteAberrantMeat.stages.ate_aberrant_meat.label>TODO</RI_Thought_AteAberrantMeat.stages.ate_aberrant_meat.label>
+  <!-- EN: I feel sick... This meat... it’s disgusting... -->
+  <RI_Thought_AteAberrantMeat.stages.ate_aberrant_meat.description>TODO</RI_Thought_AteAberrantMeat.stages.ate_aberrant_meat.description>
+  
+  <!-- EN: ate cooked aberrant meat -->
+  <RI_Thought_AteAberrantMeatAsIngredient.stages.ate_cooked_aberrant_meat.label>TODO</RI_Thought_AteAberrantMeatAsIngredient.stages.ate_cooked_aberrant_meat.label>
+  <!-- EN: It tastes like chewing a strip of leather soaked in rotten egg. Did we really have no other choice? -->
+  <RI_Thought_AteAberrantMeatAsIngredient.stages.ate_cooked_aberrant_meat.description>TODO</RI_Thought_AteAberrantMeatAsIngredient.stages.ate_cooked_aberrant_meat.description>
+  
+</LanguageData>

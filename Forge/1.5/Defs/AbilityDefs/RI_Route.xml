@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<!--==========测试法门==========-->
+	<!--1凝气境界——Noviciate rank测试-->
+	<!--2固基境界——Foundation rank测试-->
+	<!--3化丹境界——Core formation rank测试-->
+	<!--4结丹境界——Core coagulation rank测试-->
+	<!--5灵丹境界——Core consummation rank测试-->
+	<!--6化神境界——Spirit constraint rank测试-->
+	<!--7元婴境界——Primordial spirit baby rank测试-->
+	<!--8大成境界——Primordial spirit maturity rank测试-->
+	<!--9合体境界——Primordial spirit combine rank测试-->
+
+	<!-- 炼器 -->
+	<WhoXiuXian.RI_RouteDef>
+		<defName>TalismanCreating</defName>
+		<label>炼器法门</label>
+		<description>...</description>
+		<routeLevels>
+			<li>
+				<level>1</level>
+				<abilities>
+					<li>RI_Ability_WorkFocus</li>
+				</abilities>
+			</li>
+			<li>
+				<levelDef>RI_Training2</levelDef>
+				<!--对应的境界等级-->
+				<abilities>
+					<li>RI_Ability_Repair</li>
+				</abilities>
+			</li>
+			<!-- 上面两种写法只要保证level和ability都有一个就行了 -->
+			<li>
+				<levelDef>RI_Training3</levelDef>
+				<abilities>
+					<li>RI_Ability_TurretAssemble</li>
+				</abilities>
+			</li>
+			<li>
+				<levelDef>RI_Training5</levelDef>
+				<abilities>
+					<li>RI_Ability_WorkInsentive</li>
+				</abilities>
+			</li>
+			<li>
+				<levelDef>RI_Training6</levelDef>
+				<abilities>
+					<li>RI_Ability_MaterialDecomposition</li>
+				</abilities>
+			</li>
+			<li>
+				<levelDef>RI_Training7</levelDef>
+				<abilities>
+					<li>RI_Ability_ComponentRefine</li>
+				</abilities>
+			</li>
+		</routeLevels>
+	</WhoXiuXian.RI_RouteDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Healing needle -->
+  <RI_Ability_Acupuncture.label>治神针</RI_Ability_Acupuncture.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Core-formation rank of the Medicine Path\n\n</color>Qi cost: 90\n\nShoot a healing needle.\n\nThe Healing Needle is one of the core techniques relied upon by most doctors, having saved countless lives. Its principle lies in embedding specially refined Qi into a flying needle. Once the needle pierces the body, it stimulates muscle contraction, halts bleeding, and provides pain relief and anti-inflammatory effects. -->
+  <RI_Ability_Acupuncture.description>&lt;color=#28BD75>此功法为 药诀法门 化丹境界 所学\n\n&lt;/color>灵气消耗：60\n\n射出一枚治疗针。\n\n治神针是大多数医生依赖的重要治疗功法之一，挽救了无数生命。其原理是在灵气飞针中，装入经过调配的特制灵气，一旦射入体内，就会刺激人体，让肌肉收缩，阻断失血，并具有止痛消炎的效果。</RI_Ability_Acupuncture.description>
+  
+  <!-- EN: Anesthetic needle -->
+  <RI_Ability_AnestheticNeedle.label>乌麻针</RI_Ability_AnestheticNeedle.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Core-formation rank of the Medicine Path\n\n</color>Qi cost: 60\n\nShoot an anesthetic needle.\n\nThe Dark Anesthetic Needle is a technique requiring cultivators of the Medical Path to prepare a unique anesthetic medicine, nurturing it with Qi until they can skillfully launch it as a flying needle.\n\nIt embodies the dual nature of medicine — capable of saving lives, yet equally capable of taking them. -->
+  <RI_Ability_AnestheticNeedle.description>&lt;color=#28BD75>此功法为 药诀法门 化丹境界 所学\n\n&lt;/color>灵气消耗：60\n\n射出一枚麻醉针。\n\n乌麻针这种功法，需要药诀法门修士自己配置独特的麻醉药，用灵气喂养，直到可以熟练射出灵气飞针为止。\n\n乌麻针代表了医的两面性，既可以救人，也可以杀人。</RI_Ability_AnestheticNeedle.description>
+  
+  <!-- EN: Body exercise -->
+  <RI_Ability_BodyTheory.label>养形</RI_Ability_BodyTheory.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Noviciate rank of the Medicine Path\n\n</color>Spiritual energy acquisition efficiency +25%.\n\nThe unique cultivation method of the Medical Path, enhances the body's absorption of Qi through special circulation routes and strengthens healing abilities. -->
+  <RI_Ability_BodyTheory.description>&lt;color=#28BD75>此功法为 药诀法门 凝气境界 所学\n\n&lt;/color>灵气增长效率+25%。\n\n药诀法门独有修炼功法，通过特殊的灵气运行线路，来提高身体对灵气的吸收效果，还能提升治疗能力。</RI_Ability_BodyTheory.description>
+  
+  <!-- EN: Create dan-fire -->
+  <RI_Ability_CreateDanFire.label>元阳丹火</RI_Ability_CreateDanFire.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Spirit constraint rank of the Medicine Path\n\n</color>Qi cost: 300\n\nGenerate a Spirit fire.\n\nSpirit fire is the fire of Yuan Yang, which is a special product unique to the Elixir method. This fire is refined by the original spirit, with Qi as firewood, it has a trace of spirituality, which can assist in refining and extracting medicinal materials. -->
+  <RI_Ability_CreateDanFire.description>&lt;color=#28BD75>此功法为 药诀法门 灵丹境界 所学\n\n&lt;/color>灵气消耗：300\n\n生成一颗丹魄真火。\n\n丹魄真火乃元阳之火，也被称为先天之火，是药诀法门独有的特殊产物。此火以元神淬炼，以灵气为薪柴，带有一丝灵性，可以辅助炼化药材，萃取其中的药性。</RI_Ability_CreateDanFire.description>
+  
+  <!-- EN: Limb restoration -->
+  <RI_Ability_LimbRepair.label>妙手还形</RI_Ability_LimbRepair.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n</color>Qi cost: 500\n\nLimb restoration is regarded as an advanced form of the Scar healing, demanding far greater skill from the healer.\n\nIt uses Qi to stimulate muscle growth and directly regrow lost parts, allowing bones, meridians, and blood vessels to be fully reborn.Such a feat not only requires an enormous amount of Qi but also demands a thorough understanding of the human body's internal structure.Without such mastery, a single mistake could lead to catastrophic medical disasters. -->
+  <RI_Ability_LimbRepair.description>&lt;color=#28BD75>此功法为 药诀法门 元婴境界 所学\n\n&lt;/color>灵气消耗：60\n\n妙手还形这种功法，可以看作愈痕术的上位，但对医生也有了更高的要求。\n\n使用灵气催动肌肉生长，并且直接用来填补失去的部位，让骨骼，经脉，血管，彻底重生。这不仅需要巨量的灵气，还需要医生彻底理解人体内部，否则，可能造成可怕的医疗事故。</RI_Ability_LimbRepair.description>
+  
+  <!-- EN: Lotus rebirth field -->
+  <RI_Ability_LotusTreatDomain.label>莲华化生</RI_Ability_LotusTreatDomain.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Primordial-spirit combine rank of the Medicine Path\n\n</color>Qi cost: 800\n\nThis technique creates a healing domain in which the flow of life never ceases.\n\nUsing one's own Qi as fuel, the alchemist ignites the flame of vitality through internal fire. Lotus bloom between heaven and earth, dispelling pain and granting rebirth. -->
+  <RI_Ability_LotusTreatDomain.description>&lt;color=#28BD75>此功法为 药诀法门 元婴境界 所学\n\n&lt;/color>灵气消耗：800\n\n此功法可制造一片治疗区域，区域内生机不会断绝。\n\n以自身灵气为柴，催动丹火，点燃生机。荷花绽放于天地之间，化去痛苦，重获新生。</RI_Ability_LotusTreatDomain.description>
+  
+  <!-- EN: Massage hand -->
+  <RI_Ability_Massage.label>推拿手</RI_Ability_Massage.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Foundation rank of the Medicine Path\n\n</color>Qi cost: 50\n\nThis technique originates from ancient massage arts. By stimulating acupoints and channeling healing Qi into them, it accelerates wound recovery and enhances physical functions.\n\nIt is said that doctors of higher rank can massage meridians and muscles from a distance using Qi alone. However, most choose not to do so, perhaps out of concern that it may weaken the effectiveness of the treatment. -->
+  <RI_Ability_Massage.description>&lt;color=#28BD75>此功法为 药诀法门 固基境界 所学\n\n&lt;/color>灵气消耗：80\n\n这种功法源自古老的推拿技巧，通过按摩穴位，往其中注入带有治疗效果的灵气，就可以起到加速伤口恢复，提高身体机能的效果。\n\n据说境界较高的医生，可以隔空用灵气按摩经脉和肌肉，但他们大多不会选择这样做，可能是担心影响推拿效果。</RI_Ability_Massage.description>
+  
+  <!-- EN: Psychedelic perfume -->
+  <RI_Ability_PerfumeBottle.label>幻浮香</RI_Ability_PerfumeBottle.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n</color>Qi cost: 180\n\nThrows a Qi-infused orb that applies negative effects to all targets within an area.\n\nHealers are not limited to curing illnesses—in the study of pharmacology, various hallucinogenic substances were also developed. Psychedelic perfume is a technique born from such research. Its unique Qi is blended with psychoactive compounds that, once inhaled, directly affect the nervous system—causing dizziness, shortness of breath, and in some cases, inducing madness or disorientation. -->
+  <RI_Ability_PerfumeBottle.description>&lt;color=#28BD75>此功法为 药诀法门 元婴境界 所学\n\n&lt;/color>灵气消耗：180\n\n投掷出灵气球，对一片区域内的目标施加负面效果。\n\n医师并非只能治病，在研究药理的过程中，各种迷幻药物也一并研发诞生。幻浮香就是基于迷幻药开发的功法，其特殊的灵气混合了药物，在被人吸入后，将会直接作用于中枢系统，令人感到头晕目眩，呼吸不畅。在一些情况下，还会令人陷入疯狂或者迷茫的状态。</RI_Ability_PerfumeBottle.description>
+  
+  <!-- EN: Scar healing -->
+  <RI_Ability_ScarHealing.label>愈痕术</RI_Ability_ScarHealing.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Core-coagulation rank of the Medicine Path\n\n</color>Qi cost: 150\n\nScar healing is a technique built upon a simple principle: by releasing a large amount of Qi in a short time, it fills the gaps in flesh and accelerates recovery, making scars seemingly vanish in an instant.\n\nThis technique has become highly sought after in the female market. However, its heavy Qi consumption has left many doctors overwhelmed and weary. -->
+  <RI_Ability_ScarHealing.description>&lt;color=#28BD75>此功法为 药诀法门 结丹境界 所学\n\n&lt;/color>灵气消耗：60\n\n愈痕术是一种原理简单的功法，只需要在短时间内释放大量灵气，用灵气来填补肉体上的缺失，并加速恢复，令伤疤仿佛在一瞬间消失一般。\n\n这种功法受到了女性市场的追捧，但由于消耗过多灵气，也让诸多医生苦不堪言。</RI_Ability_ScarHealing.description>
+  
+  <!-- EN: Age reversing -->
+  <RI_Ability_SpiritProtection.label>倒转年华</RI_Ability_SpiritProtection.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the Primordial-spirit baby rank of the Medicine Path\n\n</color>Qi cost: 700\n\nThis technique can reverse a person’s age by five years.\n\nExamines every weakness within the body, then releases specially refined healing Qi into each part: unblocking meridians, repairing blood vessels, cleansing organs, and replacing aged cells.Through this process, a small degree of rejuvenation is achieved.\n\nOnce hailed as a path to immortality, this technique ultimately fell short of such dreams — for the brain’s cells cannot be restored. -->
+  <RI_Ability_SpiritProtection.description>&lt;color=#28BD75>此功法为 药诀法门 大成境界 所学\n\n&lt;/color>灵气消耗：550\n\n此功法可以将年龄逆转五岁。\n\n检视人体内的所有薄弱之处，再针对各个部位释放经过调配的特殊治愈灵气，打通经脉，修复血管，清理器官，替换老化的细胞，从而实现小小的返老还童效果。\n\n这种功法曾经被视为可以令人永生，但实际并不可能，因为脑细胞无法被修复。</RI_Ability_SpiritProtection.description>
+  
+</LanguageData>

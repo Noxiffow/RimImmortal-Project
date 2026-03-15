@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================================仙路储存====================================-->
+
+	<!--================一级分类（已经无了）=====================-->
+	<!--<ThingCategoryDef\>-->
+
+	<!--====================================二级分类====================================-->
+
+	<!--仙路-衣着-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Apparel</defName>
+		<label>RI-Apparel</label>
+		<parent>Apparel</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
+	</ThingCategoryDef>
+	
+	<!--衣冠-->
+	<ThingCategoryDef>
+		<defName>RI_Category_NormalClothing</defName>
+		<label>Clothing</label>
+		<parent>RI_Category_Apparel</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Apparel</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路原料====================================-->
+
+	<!--仙路-原料-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Resource</defName>
+		<label>RI-Resource</label>
+		<parent>ResourcesRaw</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--畜牧-->
+	<ThingCategoryDef>
+		<defName>RI_Category_AnimalProductRaw</defName>
+		<label>Animal product</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--药材-->
+	<ThingCategoryDef>
+		<defName>RI_Category_DrugsMaterials</defName>
+		<label>Drug material</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--土木-->
+	<ThingCategoryDef>
+		<defName>RI_Category_WoodStone</defName>
+		<label>Wood and Clay</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--金石-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Ore</defName>
+		<label>Ore and Metal</label>
+		<parent>RI_Category_Resource</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路成品====================================-->
+
+	<!--仙路-成品-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Manufactured</defName>
+		<label>RI manufactured</label>
+		<parent>Manufactured</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+	</ThingCategoryDef>
+
+	<!--布帛-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Fabric</defName>
+		<label>Fabric</label>
+		<parent>RI_Category_Manufactured</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_DrugsMaterials</iconPath>
+	</ThingCategoryDef>
+
+</Defs>

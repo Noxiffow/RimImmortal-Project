@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--===================芳草桃源===================-->
+	<BiomeDef>
+		<defName>RI_Biome_PeachBlossomGarden</defName>
+		<label>Peach blossom garden</label>
+		<description>Peach blossom garden is a blessed land where spiritual energy converges. Its terrain forms a natural cycle of spiritual flow, creating a self-sustaining ecosystem in which countless rare medicinal herbs and extraordinary spirit beasts dwell.\n\nPeach blossom garden is also home to the unique Immortal Peach Trees, hidden deep within vast peach groves. The Immortal Peaches they bear grant longevity when consumed. However, this biome is shaped by a distinctive Peach Blossom Barrier climate: whenever the peach mist descends, the land becomes a natural labyrinth, preventing any creature from entering or leaving.</description>
+		<!-- 新Class -->
+		<workerClass>RI_PeachBlossomLand.BiomeWorker_PeachBlossomLand</workerClass>
+		<!--<settleWarning>This ecosystem harbors unknowable dangers and is ill-suited for those who come unprepared.</settleWarning>-->
+		<!--动物密度-->
+		<animalDensity>3.8</animalDensity>
+		<!--植物密度-->
+		<plantDensity>0.65</plantDensity>
+		<settlementSelectionWeight>0.4</settlementSelectionWeight>
+		<campSelectionWeight>0.5</campSelectionWeight>
+		<movementDifficulty>4</movementDifficulty>
+		<lakeBeachTerrain>Marsh</lakeBeachTerrain>
+		<mudTerrain>Marsh</mudTerrain>
+		<riverbankTerrain>Riverbank</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<texture>World/Biomes/RI_Biome_PeachBlossomGarden</texture>
+		<forageability>1</forageability>
+		<!--远行队采摘桃子-->
+		<foragedFood>RI_Resource_RawPeach</foragedFood>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<maxFishPopulation>1400</maxFishPopulation>
+		<noGravel>true</noGravel>
+		<!-- 鱼 -->
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common>
+				<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
+				<Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+			</freshwater_Uncommon>
+			<saltwater_Common>
+				<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+				<Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+			</saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>60</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_OrganDecay</diseaseInc>
+				<commonality>10</commonality>
+			</li>
+		</diseases>
+		<!--地砖-->
+		<terrainsByFertility>
+			<li>
+				<terrain>Soil</terrain>
+				<min>-999</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<!--复杂地形生成-->
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MarshyTerrain</terrain>
+						<min>0.7</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<!--灵脉土地-->
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>RI_LingMai</terrain>
+						<min>0.6</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MarshyTerrain</terrain>
+						<min>0.64</min>
+						<max>0.87</max>
+					</li>
+					<li>
+						<terrain>Marsh</terrain>
+						<min>0.87</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<!--天气-->
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>0.5</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>0.2</DryThunderstorm>
+			<RainyThunderstorm>1.2</RainyThunderstorm>
+			<FoggyRain>0.8</FoggyRain>
+			<SnowGentle>3</SnowGentle>
+			<SnowHard>1.5</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">0.1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">0.2</Overcast>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.1</TorrentialRain>
+			<!--依赖仙路核心-->
+			<RI_QiEnergyRain MayRequire="RI.RimImmortal.Core">1.0</RI_QiEnergyRain>
+			<RI_PeachBlossomFog>1.5</RI_PeachBlossomFog>
+		</baseWeatherCommonalities>
+		<!--植物-->
+		<wildPlants>
+			<!--原版草-->
+			<Plant_Grass>3</Plant_Grass>
+			<Plant_TallGrass>1.8</Plant_TallGrass>
+			<Plant_ShrubLow>0.6</Plant_ShrubLow>
+			<Plant_Dandelion>1.0</Plant_Dandelion>
+			<Plant_Bush>0.25</Plant_Bush>
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
+			<!--草-->
+			<RI_Plant_PurpleFern>0.5</RI_Plant_PurpleFern>
+			<RI_Plant_BoneFern>0.5</RI_Plant_BoneFern>
+			<RI_Plant_InchHeartFern>0.6</RI_Plant_InchHeartFern>
+			<RI_Plant_AloeVera>0.15</RI_Plant_AloeVera>
+			<RI_Plant_PhantomGoldLotus>0.1</RI_Plant_PhantomGoldLotus>
+			<!--仙路联动药草-->
+			<RI_Plant_LingZhi MayRequire="RI.RimImmortal.Core">0.05</RI_Plant_LingZhi>
+			<RI_Plant_Plantain MayRequire="RI.RimImmortal.Core">0.05</RI_Plant_Plantain>
+			<RI_Plant_LanternBerry MayRequire="RI.RimImmortal.Core">0.05</RI_Plant_LanternBerry>
+			<!--树-->
+			<!--仙路-->
+			<RI_Plant_PeachTree>0.7</RI_Plant_PeachTree>
+			<RI_Plant_ImmortalPeachTree>0.01</RI_Plant_ImmortalPeachTree>
+			<!--俗世仙工联动-->
+			<RI_Plant_MulberryTree MayRequire="RI.RimImmortal.Living">0.05</RI_Plant_MulberryTree>
+			<RI_Plant_SandalwoodTree MayRequire="RI.RimImmortal.Living">0.05</RI_Plant_SandalwoodTree>
+			<!--原版，提供原木-->
+			<Plant_TreePoplar>0.25</Plant_TreePoplar>
+			<Plant_TreePine>0.25</Plant_TreePine>
+		</wildPlants>
+		<!--动物-->
+		<wildAnimals>
+			<!--原版——猪牛羊等田园动物-->
+			<Chicken>0.1</Chicken>
+			<Duck>0.1</Duck>
+			<Goose>0.1</Goose>
+			<Pig>0.05</Pig>
+			<Sheep>0.05</Sheep>
+			<Rat>0.1</Rat>
+			<Squirrel>0.1</Squirrel>
+			<!--森林狼，少有的捕食动物-->
+			<Wolf_Timber>0.15</Wolf_Timber>
+			<!--mod-->
+			<RI_Pawn_LiLi>0.3</RI_Pawn_LiLi>
+			<RI_Pawn_ChangYou>0.3</RI_Pawn_ChangYou>
+			<RI_Animal_LuShu>0.3</RI_Animal_LuShu>
+			<RI_Pawn_XuanTurtle>0.2</RI_Pawn_XuanTurtle>
+			<RI_Pawn_LeiCat>0.15</RI_Pawn_LeiCat>
+		</wildAnimals>
+		<!--污染地形生物-->
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<Rat>1</Rat>
+			<Boomalope>0.1</Boomalope>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Seal MayRequire="Ludeon.RimWorld.Odyssey">0.1</Seal>
+			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+			<SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+		</allowedPackAnimals>
+		<!--<biomeMapConditions>
+			-->
+		<!-- <li>DarkenedSkies</li> -->
+		<!--
+		</biomeMapConditions>
+		<preventGenSteps>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AnimaTrees</li>
+		</preventGenSteps>-->
+		<extraGenSteps>
+			<li>SteamGeysers</li>
+			<li>RI_GenStep_AncientCultivatorRuins</li>
+			<!-- <li>GeothermalVents</li> -->
+		</extraGenSteps>
+	</BiomeDef>
+
+</Defs>

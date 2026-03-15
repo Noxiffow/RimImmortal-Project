@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ascension War -->
+  <RI_DaoThunderStorm.label>飞升之战</RI_DaoThunderStorm.label>
+  <!-- EN: A cultivator who had reached the perfection of the Earth Immortal realm began their ascension. A massive influx of spiritual energy descended from the sky, sweeping across the land and stirring the clouds, causing countless bolts of lightning to strike down from above.\n\nSuch a celestial phenomenon attracted countless cultivators, who would stop at nothing to interrupt the ascension process. -->
+  <RI_DaoThunderStorm.description>地仙圆满的修炼者开启了飞升大道，从天而降的巨量灵气冲刷大地，搅动云层，使得无数落雷从天而降。\n\n这等天地异象吸引了无数修炼者，他们将不惜一切代价前来打断飞升进程。</RI_DaoThunderStorm.description>
+  <!-- EN: Ascension War is over -->
+  <RI_DaoThunderStorm.endMessage>飞升之战结束了</RI_DaoThunderStorm.endMessage>
+  <!-- EN: The heavens and earth were torn apart, thunder rumbled, and a storm was imminent. -->
+  <RI_DaoThunderStorm.letterText>天地撕裂，雷声滚滚，风雨欲来。</RI_DaoThunderStorm.letterText>
+  
+</LanguageData>

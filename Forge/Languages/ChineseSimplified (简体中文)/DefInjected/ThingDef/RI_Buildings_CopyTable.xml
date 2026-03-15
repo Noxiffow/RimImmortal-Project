@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Book duplicator -->
+  <RI_Building_CopyTable.label>功法拷贝机</RI_Building_CopyTable.label>
+  <!-- EN: This machine was developed after the study of Advanced Qi-ology, and was initially invented by some scholars to reproduce damaged ancient skill scrolls for research purposes.\n\nThe technology used to manufacture this machine was later made public and used to reproduce skill books, which resulted in a huge impact on the book market, with prices plummeting. This was a huge surprise for those poor free cultivators. -->
+  <RI_Building_CopyTable.description>这台机器的原型是在高级灵气学之后诞生的，最初由一些学者发明，用于复制损坏的古代功法书，以供研究之用。\n\n之后，制造这台机器的技术被公开，并被用于复制功法书，这对书籍市场产生了巨大影响，价格暴跌。对于贫穷的散修来说，简直是个巨大的惊喜。</RI_Building_CopyTable.description>
+  
+  <!-- EN: Spirit analyzer -->
+  <RI_Building_SpiritAnalyzer.label>灵气分析仪</RI_Building_SpiritAnalyzer.label>
+  <!-- EN: An analyzer that continuously stimulates the transformation of spiritual crystal into Qi, records the fluctuations of Qi through a computer to obtain more scientific inspiration, thereby increasing the speed of scientific research. -->
+  <RI_Building_SpiritAnalyzer.description>一种不断刺激灵石转化为灵气的分析仪，通过计算机记录灵气的波动，以获得更多的科学灵感，从而提高科学研究的速度。</RI_Building_SpiritAnalyzer.description>
+  
+</LanguageData>

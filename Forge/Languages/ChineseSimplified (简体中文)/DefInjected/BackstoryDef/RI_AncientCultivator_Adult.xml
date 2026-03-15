@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: As an elder, [PAWN_nameDef] holds a lot power in his hands, and the younger members of the clan are very afraid [PAWN_pronoun], but they respect the old monster. During [PAWN_possessive] time as an elder, [PAWN_pronoun] was also concerned about the gradual decline of Qi, but he was ultimately unable to solve it. -->
+  <RI_Backstory_AncientClanElder.description>作为长老，[PAWN_nameDef]可谓是手握大权，宗族内的小辈都十分惧怕[PAWN_pronoun]，但是又尊重这位老怪物。[PAWN_pronoun]在担任长老期间，也关心过灵气逐渐减少的事，但终究无力解决。</RI_Backstory_AncientClanElder.description>
+  <!-- EN: Ancient clan elder -->
+  <RI_Backstory_AncientClanElder.title>古代宗族长老</RI_Backstory_AncientClanElder.title>
+  <!-- EN: Clan elder -->
+  <RI_Backstory_AncientClanElder.titleShort>宗族长老</RI_Backstory_AncientClanElder.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s talent is extremely high, and several elders in the clan have taken [PAWN_objective] as a personal disciple. [PAWN_possessive] clan is one of the most powerful in the region. No one dares to mess with [PAWN_objective]. [PAWN_possessive] life was naturally smooth, which made [PAWN_objective] more and more proud and arrogant. -->
+  <RI_Backstory_AncientClanJunior.description>[PAWN_nameDef]的天赋极高，曾被宗族内几名长老抢着收为亲传弟子。其宗族是当地一霸，没人敢惹到[PAWN_pronoun]。[PAWN_possessive]生活自然是一马平川，令[PAWN_pronoun]越发自视甚高，不可一世起来。</RI_Backstory_AncientClanJunior.description>
+  <!-- EN: Ancient clan junior -->
+  <RI_Backstory_AncientClanJunior.title>古代宗族子弟</RI_Backstory_AncientClanJunior.title>
+  <!-- EN: Clan junior -->
+  <RI_Backstory_AncientClanJunior.titleShort>宗族子弟</RI_Backstory_AncientClanJunior.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s medical skills are far superior to ordinary people, and [PAWN_pronoun] has the name of half immortal in the local area. [PAWN_pronoun] was well versed in medicine and mastered many ways to save his life, but [PAWN_pronoun] was also keenly aware that Qi was thinning with each passing year. -->
+  <RI_Backstory_AncientDoctor.description>[PAWN_nameDef]的医术远超常人，在当地有半仙的名号。[PAWN_pronoun]熟读医术，并掌握许多救命之法，作为医师，[PAWN_pronoun]敏锐地意识到，灵气的逐年稀薄。</RI_Backstory_AncientDoctor.description>
+  <!-- EN: Ancient doctor -->
+  <RI_Backstory_AncientDoctor.title>古代医师</RI_Backstory_AncientDoctor.title>
+  <!-- EN: Doctor -->
+  <RI_Backstory_AncientDoctor.titleShort>医师</RI_Backstory_AncientDoctor.titleShort>
+  
+  <!-- EN: In martial arts, [PAWN_nameDef] confidence will not lose to others. [PAWN_pronoun] is a pure martial artist with an integrity heart, but [PAWN_pronoun] is difficult to judge others by himself and always thinks that the people around [PAWN_objective] should also be strict with themselves. -->
+  <RI_Backstory_AncientWarrior.description>论武艺，[PAWN_nameDef]自信不会输给别人。[PAWN_pronoun]是纯粹的武道家，有着一颗正直的心，但[PAWN_pronoun]很难以己度人，总是认为周围的人也应当严于律己。</RI_Backstory_AncientWarrior.description>
+  <!-- EN: Ancient warrior -->
+  <RI_Backstory_AncientWarrior.title>古武者</RI_Backstory_AncientWarrior.title>
+  <!-- EN: Warrior -->
+  <RI_Backstory_AncientWarrior.titleShort>古武者</RI_Backstory_AncientWarrior.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s cultivation path has reached a certain level. but [PAWN_pronoun] is stuck, although [PAWN_pronoun] has been proud of the group, but [PAWN_pronoun] knows that there should be a chance to rise. With the spiritual energy of the mainland becomes thinner and slower, [PAWN_pronoun] can only choose to sleep for a while. -->
+  <RI_Backstory_PowerfulAncientCultivator.description>[PAWN_nameDef]的修炼之路到了某个境界就卡住了。虽然已经傲视群雄，但[PAWN_pronoun]自知应该还有上升的机会。但随着大陆的灵气越发稀薄，修炼速度变慢，[PAWN_pronoun]只能选择暂时沉眠。</RI_Backstory_PowerfulAncientCultivator.description>
+  <!-- EN: Powerful ancient cultivator -->
+  <RI_Backstory_PowerfulAncientCultivator.title>强大的古修者</RI_Backstory_PowerfulAncientCultivator.title>
+  <!-- EN: Ancient cultivator -->
+  <RI_Backstory_PowerfulAncientCultivator.titleShort>古修者</RI_Backstory_PowerfulAncientCultivator.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] takes a treasure from a mysterious place, which leads to a bloody fight. And [PAWN_nameDef] is also guilty of being forced to live deep in the mountains. -->
+  <RI_Backstory_SecretTreasureCarrier.description>[PAWN_nameDef]从一处洞天福地中取得一枚宝物，这枚宝物一不注意就引发了一场腥风血雨的争斗。而[PAWN_nameDef]也是怀璧其罪，被逼得不得不深居山中。</RI_Backstory_SecretTreasureCarrier.description>
+  <!-- EN: Secret treasure carrier -->
+  <RI_Backstory_SecretTreasureCarrier.title>秘宝携带之人</RI_Backstory_SecretTreasureCarrier.title>
+  <!-- EN: treasure carrier -->
+  <RI_Backstory_SecretTreasureCarrier.titleShort>持宝人</RI_Backstory_SecretTreasureCarrier.titleShort>
+  
+</LanguageData>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] was once an innocent child, living in a small village. One night, an injured rogue cultivator broke into the village and infused [PAWN_possessive] soul into [PAWN_nameDef]'s body. From that moment on, [PAWN_nameDef] became violent, exhibiting abilities that ordinary people could not comprehend. -->
+  <RI_BackStory_Child_Evil1.description>[PAWN_nameDef]原是一位天真无邪的孩子，生活在一个小村庄中。一天夜里，一名重伤的歹修闯入村庄，将自己的灵魂注入[PAWN_nameDef]体内。从此，[PAWN_possessive]性格变得冷酷而深沉，并且会展现出一些常人无法理解的能力。</RI_BackStory_Child_Evil1.description>
+  <!-- EN: Child occupy by a soul -->
+  <RI_BackStory_Child_Evil1.title>被夺舍的幼童</RI_BackStory_Child_Evil1.title>
+  <!-- EN: Occupy soul -->
+  <RI_BackStory_Child_Evil1.titleShort>夺舍幼童</RI_BackStory_Child_Evil1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] possesses exceptional talent and an outstanding character. During a sect competition, [PAWN_pronoun] outshone all others and earned the appreciation of the elders. Under the guidance of renowned mentors and through [PAWN_possessive] own diligent efforts, [PAWN_pronoun] grew rapidly, becoming a prominent rising star within the sect. Despite [PAWN_possessive] achievements, [PAWN_nameDef] remained humble and continued to work tirelessly. -->
+  <RI_BackStory_Child_Sect1.description>[PAWN_nameDef]具有绝佳的天赋和优良的品格，[PAWN_pronoun]在一次门派竞技大会上力压群雄，得到了长老的赏识。之后在名师的指点和自身努力下，[PAWN_possessive]成长越发迅速，成为了宗门中响当当的新星。而这也并没有让[PAWN_nameDef]变得骄傲自满，[PAWN_pronoun]依旧勤勤恳恳地努力着。</RI_BackStory_Child_Sect1.description>
+  <!-- EN: Rising star of the sect -->
+  <RI_BackStory_Child_Sect1.title>宗门新星</RI_BackStory_Child_Sect1.title>
+  <!-- EN: Rising star -->
+  <RI_BackStory_Child_Sect1.titleShort>新星</RI_BackStory_Child_Sect1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] may have average talent, but [PAWN_possessive] privileged background ensures [PAWN_pronoun] thrives within the sect. [PAWN_pronoun] is never short of glittering spirit stones in [PAWN_possessive] pockets, nor lacking in attendants among the sect's laborers. For [PAWN_nameDef], sect life is merely a way to add a touch of prestige to [PAWN_possessive] name. -->
+  <RI_BackStory_Child_Sect2.description>[PAWN_nameDef]天赋一般，但优渥的家境足以让[PAWN_pronoun]在门派中混得风生水起。[PAWN_possessive]口袋中永远不缺闪亮的灵石，身边也不缺跑腿的杂役。门派生活对于[PAWN_pronoun]来说，只是一种镀金的方式罢了。</RI_BackStory_Child_Sect2.description>
+  <!-- EN: Rich disciple -->
+  <RI_BackStory_Child_Sect2.title>宗门纨绔弟子</RI_BackStory_Child_Sect2.title>
+  <!-- EN: Rich disciple -->
+  <RI_BackStory_Child_Sect2.titleShort>纨绔弟子</RI_BackStory_Child_Sect2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s personality is impulsive and aggressive, often bullying the surrounding disciples because of [PAWN_pronoun] strength. [PAWN_nameDef] always has boundless energy and is extremely active. [PAWN_nameDef] has a natural advantage in cultivating body techniques, but [PAWN_pronoun]’s personality causes a significant number of people to dislike [PAWN_pronoun]. -->
+  <RI_BackStory_Child_Sect3.description>[PAWN_nameDef]性格粗暴、霸道，总是仗着[PAWN_possessive]身强体壮，欺负周围的弟子。尽管如此，[PAWN_possessive]天赋使得[PAWN_pronoun]在身法修炼上展现出不小的潜力，只是因为性格上的缺陷，导致[PAWN_possessive]人际关系较为紧张，很多人对[PAWN_pronoun]心生厌恶。</RI_BackStory_Child_Sect3.description>
+  <!-- EN: Rude and dominant disciple -->
+  <RI_BackStory_Child_Sect3.title>粗鲁霸道的弟子</RI_BackStory_Child_Sect3.title>
+  <!-- EN: Rude disciple -->
+  <RI_BackStory_Child_Sect3.titleShort>霸道弟子</RI_BackStory_Child_Sect3.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] has an honest personality and some talent, but opportunities to showcase [PAWN_pronoun] abilities have always been scarce. Watching the smooth-talking disciples win the favor of the elders, [PAWN_nameDef] can only stand aside and observe from a far. -->
+  <RI_BackStory_Child_Sect4.description>[PAWN_nameDef]性格老实，虽然有些天赋，但一直没什么机会让[PAWN_pronoun]展露头角。眼看着那些口齿伶俐的弟子得到了长老的垂青，[PAWN_nameDef]只能远远地看着。</RI_BackStory_Child_Sect4.description>
+  <!-- EN: Honest sect disciple -->
+  <RI_BackStory_Child_Sect4.title>老实的宗门弟子</RI_BackStory_Child_Sect4.title>
+  <!-- EN: Honest disciple -->
+  <RI_BackStory_Child_Sect4.titleShort>老实弟子</RI_BackStory_Child_Sect4.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born with a natural spiritual bud, leading [PAWN_pronoun] family to recommend [PAWN_pronoun] to a local sect at an early age. However, encountering countless prodigies in cultivation made [PAWN_nameDef] keenly aware of the gap in innate talent. Over time, [PAWN_pronoun] began to shirk responsibilities and neglect cultivation, mastering the art of idling and avoiding effort. -->
+  <RI_BackStory_Child_Sect5.description>[PAWN_nameDef]因为天生灵芽，早早就被家人送入了当地门派。但无数修炼天才让[PAWN_nameDef]意识到了天赋的鸿沟。于是[PAWN_pronoun]逐渐学会了偷懒耍滑，疏于修炼。</RI_BackStory_Child_Sect5.description>
+  <!-- EN: Mediocre disciple -->
+  <RI_BackStory_Child_Sect5.title>碌碌无为的弟子</RI_BackStory_Child_Sect5.title>
+  <!-- EN: Mediocre disciple -->
+  <RI_BackStory_Child_Sect5.titleShort>碌碌无为</RI_BackStory_Child_Sect5.titleShort>
+  
+  <!-- EN: A sudden disaster swept across the planet, leaving countless lives in ruin. [PAWN_nameDef] made the decision to split a portion of [PAWN_nameDef]'s primordial spirit to descend once more, using [PAWN_pronoun]'s mortal body to save the suffering people. However, once [PAWN_nameDef]'s primordial spirit descended, [PAWN_pronoun] would lose all divine power and would have to start from scratch in cultivation. -->
+  <RI_BackStory_Child_Special1.description>眼见灾难席卷星球，无数生灵涂炭。玉仙决心分化一部分元神重新下凡，以肉身解救苍生。但祂的元神一旦下凡，就会失去所有灵气和记忆，只能从头开始。</RI_BackStory_Child_Special1.description>
+  <!-- EN: Reincarnation of the Jade Immortal -->
+  <RI_BackStory_Child_Special1.title>玉仙转世</RI_BackStory_Child_Special1.title>
+  <!-- EN: Reincarnation -->
+  <RI_BackStory_Child_Special1.titleShort>玉仙转世</RI_BackStory_Child_Special1.titleShort>
+  
+  <!-- EN: After a century of cultivation, [PAWN_nameDef] gained consciousness in the body of a demon beast and transformed into a human form, though [PAWN_possessive] body still differed from that of ordinary humans. -->
+  <RI_BackStory_Child_Special2.description>经过百年的修炼，[PAWN_nameDef]的妖兽的身体中诞生了意识，变成了人类的模样，只是[PAWN_possessive]一些微小细节上与常人有所不同。</RI_BackStory_Child_Special2.description>
+  <!-- EN: Beast transformation -->
+  <RI_BackStory_Child_Special2.title>妖兽化形</RI_BackStory_Child_Special2.title>
+  <!-- EN: Transformation -->
+  <RI_BackStory_Child_Special2.titleShort>妖兽化形</RI_BackStory_Child_Special2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was a very short-tempered child, living on a planet where technology was still stuck in the feudal era. Due to [PAWN_possessive] father's name being the same as a famous monk's Dharma name, [PAWN_pronoun] was often asked if [PAWN_pronoun] was the monk's illegitimate child. Whenever this happened, [PAWN_pronoun]'s face would turn bright red with anger. -->
+  <RI_BackStory_Child_Special3.description>[PAWN_nameDef]是一个非常容易生气的孩子，从小生活在一个科技停留在封建时代的星球上。因为[PAWN_possessive]父亲名字和一位著名僧人的法号相同，经常被人问是不是僧人的私生子，每当此时，[PAWN_possessive]脸部都会因为生气而赤红一片。</RI_BackStory_Child_Special3.description>
+  <!-- EN: Red boy -->
+  <RI_BackStory_Child_Special3.title>红孩儿</RI_BackStory_Child_Special3.title>
+  <!-- EN: Red boy -->
+  <RI_BackStory_Child_Special3.titleShort>红孩儿</RI_BackStory_Child_Special3.titleShort>
+  
+  <!-- EN: While guarding the immortal peach orchard, [PAWN_nameDef] accidentally allowed a monkey to eat all the immortal peaches. As a result, [PAWN_pronoun]'s master expelled [PAWN_nameDef] from the sect, leaving [PAWN_pronoun] to fend for [PAWN_pronoun]'s self. -->
+  <RI_BackStory_Child_Special4.description>在看管仙桃林时，[PAWN_nameDef]不小心让一只猴子吃光了仙桃，师父因此把[PAWN_pronoun]逐出了宗门，让[PAWN_pronoun]自生自灭。</RI_BackStory_Child_Special4.description>
+  <!-- EN: The dreaming child -->
+  <RI_BackStory_Child_Special4.title>睡梦童子</RI_BackStory_Child_Special4.title>
+  <!-- EN: Dreaming child -->
+  <RI_BackStory_Child_Special4.titleShort>睡梦童子</RI_BackStory_Child_Special4.titleShort>
+  
+  <!-- EN: An accident should have ended [PAWN_nameDef]'s life, but when [PAWN_pronoun] woke up, [PAWN_pronoun] found [PAWN_pronoun]'s self in an unfamiliar place, with [PAWN_pronoun]'s hands now looking youthful. -->
+  <RI_BackStory_Child_Special5.description>一场意外本应结束[PAWN_nameDef]的生命，但当[PAWN_pronoun]醒来时，发现[PAWN_pronoun]身处一个陌生的地方，眼前的双手也变得稚嫩无比。</RI_BackStory_Child_Special5.description>
+  <!-- EN: Traverser -->
+  <RI_BackStory_Child_Special5.title>穿越之人</RI_BackStory_Child_Special5.title>
+  <!-- EN: Traverser -->
+  <RI_BackStory_Child_Special5.titleShort>穿越之人</RI_BackStory_Child_Special5.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] fell off a cliff but was fortunate to survive. Even more unexpectedly, [PAWN_nameDef] obtained the complete inheritance of a martial arts grandmaster. -->
+  <RI_BackStory_Child_Universal5.description>[PAWN_nameDef]幼年时期曾坠下悬崖，好在侥幸存活，[PAWN_pronoun]在谷底更意外获得一屡炼体仙人之魂的全部传承。</RI_BackStory_Child_Universal5.description>
+  <!-- EN: Adventure child -->
+  <RI_BackStory_Child_Universal5.title>幼年奇遇</RI_BackStory_Child_Universal5.title>
+  <!-- EN: Adventure -->
+  <RI_BackStory_Child_Universal5.titleShort>奇遇</RI_BackStory_Child_Universal5.titleShort>
+  
+  <!-- EN: As an infant, [PAWN_nameDef] was abandoned by [PAWN_possessive] parents by the seaside but miraculously survived. Although [PAWN_pronoun] had lived alone in the wild for as long as [PAWN_pronoun] could remember, [PAWN_pronoun] vaguely recalled a woman appearing from the sea to help [PAWN_pronoun] whenever danger arose. -->
+  <RI_BackStory_Child_Universal6.description>[PAWN_nameDef]在婴儿时期被父母遗弃在海边，但[PAWN_pronoun]奇迹般活了下来。\n\n尽管从有记忆开始，[PAWN_pronoun]就独自生活在野外，但[PAWN_pronoun]模糊地记得，每当有危险时海中便会出现一位女性帮助[PAWN_pronoun]。</RI_BackStory_Child_Universal6.description>
+  <!-- EN: Abandoned child by the sea -->
+  <RI_BackStory_Child_Universal6.title>海边弃子</RI_BackStory_Child_Universal6.title>
+  <!-- EN: Abandoned child -->
+  <RI_BackStory_Child_Universal6.titleShort>海边弃子</RI_BackStory_Child_Universal6.titleShort>
+  
+  <!-- EN: From a young age, [PAWN_nameDef] could hear whispers from the depths of the ocean. As [PAWN_pronoun] grew older, the voices became clearer, and [PAWN_pronoun] learned to receive guidance from them. -->
+  <RI_BackStory_Child_Universal7.description>[PAWN_nameDef]从小就能听到海洋深处的低语，而随着年岁增长，这种声音逐渐清晰，[PAWN_pronoun]学会了从声音中获得某些指引。</RI_BackStory_Child_Universal7.description>
+  <!-- EN: Spirit-communing child -->
+  <RI_BackStory_Child_Universal7.title>通灵大海的孩童</RI_BackStory_Child_Universal7.title>
+  <!-- EN: Spirit-communing -->
+  <RI_BackStory_Child_Universal7.titleShort>通灵孩童</RI_BackStory_Child_Universal7.titleShort>
+  
+  <!-- EN: When [PAWN_nameDef] was born, [PAWN_pronoun] fell gravely ill. Although the doctor barely managed to save [PAWN_pronoun]'s life, the medication took away [PAWN_possessive] voice. -->
+  <RI_BackStory_Child_Universal8.description>[PAWN_nameDef]出生的时候生了一场大病，医生虽然勉强救回了[PAWN_possessive]性命，但药物也夺走了[PAWN_possessive]声音。</RI_BackStory_Child_Universal8.description>
+  <!-- EN: Mute child -->
+  <RI_BackStory_Child_Universal8.title>哑巴孩子</RI_BackStory_Child_Universal8.title>
+  <!-- EN: Mute -->
+  <RI_BackStory_Child_Universal8.titleShort>哑巴</RI_BackStory_Child_Universal8.titleShort>
+  
+</LanguageData>

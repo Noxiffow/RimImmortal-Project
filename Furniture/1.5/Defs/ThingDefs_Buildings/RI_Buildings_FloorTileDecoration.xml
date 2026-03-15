@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--======================= 地板装饰 ==============================-->
+
+	<!--地板装饰-->
+	<DesignatorDropdownGroupDef>
+		<defName>RI_DropdownGroup_PatternFloor</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!--莲花纹铺地-->
+	<ThingDef ParentName="RI_BuildingFloor_Base">
+		<defName>RI_Building_LotusPatternFloor</defName>
+		<label>Lotus pattern tile</label>
+		<graphicData>
+			<texPath>Things/Building/FloorCoverings/RI_Building_LotusPatternFloor</texPath>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<size>(3,3)</size>
+		<statBases>
+			<Beauty>15</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<uiIconPath>Things/Building/FloorCoverings/RI_Building_LotusPatternFloor</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+
+	<!--寿字纹铺地-->
+	<ThingDef ParentName="RI_BuildingFloor_Base">
+		<defName>RI_Building_LongevityPatternFloor</defName>
+		<label>Longevity pattern tile</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/RI_Building_LongevityPatternFloor</texPath>
+			<drawSize>(4.5,4.5)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<size>(3,3)</size>
+		<statBases>
+			<Beauty>15</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<uiIconPath>Things/Building/FloorCoverings/RI_Building_LongevityPatternFloor</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+
+	<!--太极纹铺地-->
+	<ThingDef ParentName="RI_BuildingFloor_Base">
+		<defName>RI_Building_TaiChiPatternFloor</defName>
+		<label>Tai-chi pattern tile</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/RI_Building_TaiChiPatternFloor</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<size>(3,3)</size>
+		<statBases>
+			<Beauty>15</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<uiIconPath>Things/Building/FloorCoverings/RI_Building_TaiChiPatternFloor</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+
+	<!--花园铺地-->
+	<ThingDef ParentName="RI_BuildingFloor_Base">
+		<defName>RI_Building_BasicPatternFloor</defName>
+		<label>Garden pattern tile</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/RI_Building_BasicPatternFloor</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<costStuffCount>15</costStuffCount>
+		<size>(3,3)</size>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>100</Mass>
+		</statBases>
+		<uiIconPath>Things/Building/FloorCoverings/RI_Building_BasicPatternFloor</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+	</ThingDef>
+
+</Defs>

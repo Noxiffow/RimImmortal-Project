@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: amulet soup -->
+  <RI_Drug_TalismanWater.label>符水</RI_Drug_TalismanWater.label>
+  <!-- EN: A bowl of clear water infused with the ashes of a burned charm. Fine sediment lingers at the bottom, and it emits a faintly calming presence.\n\nWhen consumed, it grants immunity to wound infections and intestinal illnesses for one day, non-addictive. -->
+  <RI_Drug_TalismanWater.description>一碗加入烧尽符纸的清水，有少许沉淀，散发着令人心安的气息。\n\n饮用后在一天内可免疫伤口感染和肠道疾病，没有成瘾性。</RI_Drug_TalismanWater.description>
+  
+  <!-- EN: corpse puppet -->
+  <RI_SpawnEgg_CorpsePuppet.label>尸傀</RI_SpawnEgg_CorpsePuppet.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_CorpsePuppet.description>尸傀</RI_SpawnEgg_CorpsePuppet.description>
+  
+  <!-- EN: iron pagoda -->
+  <RI_SpawnEgg_IronPagoda.label>铁浮屠</RI_SpawnEgg_IronPagoda.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_IronPagoda.description>铁浮屠</RI_SpawnEgg_IronPagoda.description>
+  
+  <!-- EN: paper doll -->
+  <RI_SpawnEgg_PaperDoll.label>纸人</RI_SpawnEgg_PaperDoll.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_PaperDoll.description>纸人</RI_SpawnEgg_PaperDoll.description>
+  
+  <!-- EN: patch man -->
+  <RI_SpawnEgg_PatchMan.label>缝合尸</RI_SpawnEgg_PatchMan.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_PatchMan.description>缝合尸</RI_SpawnEgg_PatchMan.description>
+  
+  <!-- EN: zombie buffalo -->
+  <RI_SpawnEgg_ZombieCow.label>僵尸牛</RI_SpawnEgg_ZombieCow.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_ZombieCow.description>僵尸牛</RI_SpawnEgg_ZombieCow.description>
+  
+  <!-- EN: zombie horse -->
+  <RI_SpawnEgg_ZombieHorse.label>僵尸马</RI_SpawnEgg_ZombieHorse.label>
+  <!-- EN: NONE -->
+  <RI_SpawnEgg_ZombieHorse.description>僵尸马</RI_SpawnEgg_ZombieHorse.description>
+  
+</LanguageData>

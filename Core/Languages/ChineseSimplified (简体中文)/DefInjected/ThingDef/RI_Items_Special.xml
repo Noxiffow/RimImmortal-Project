@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 【Medium quality】Spiritual root -->
+  <EnergyRoot.label>【中品】灵芽</EnergyRoot.label>
+  <!-- EN: A Medium quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×100%. -->
+  <EnergyRoot.description>一颗装在铜匣内的中品灵芽，需要冷藏保存。\n\n灵芽是一颗绿豆大小的良性神经瘤，位于前额叶内部。拥有灵芽之人，可感受到大气中灵气的存在，吸收灵气进行修炼。\n\n灵芽按照其活跃性，分为上中下三个品级，品级越高，灵气增长效率也越高。\n\n中品灵芽-灵气增长效率x100%</EnergyRoot.description>
+  <!-- EN: Inject Spiritual root to become a cultivator -->
+  <EnergyRoot.comps.CompUsableRoot.useLabel>植入灵芽，变成修炼者</EnergyRoot.comps.CompUsableRoot.useLabel>
+  
+  <!-- EN: 【Best quality】Spiritual root -->
+  <EnergyRootHigh.label>【上品】灵芽</EnergyRootHigh.label>
+  <!-- EN: A Best quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×250%. -->
+  <EnergyRootHigh.description>一颗装在铜匣内的上品灵芽，需要冷藏保存。\n\n灵芽是一颗绿豆大小的良性神经瘤，位于前额叶内部。拥有灵芽之人，可感受到大气中灵气的存在，吸收灵气进行修炼。\n\n灵芽按照其活跃性，分为上中下三个品级，品级越高，灵气增长效率也越高。\n\n上品灵芽-灵气增长效率x250%</EnergyRootHigh.description>
+  <!-- EN: Inject Spiritual root to become a cultivator -->
+  <EnergyRootHigh.comps.CompUsableRoot.useLabel>植入灵芽，变成修炼者</EnergyRootHigh.comps.CompUsableRoot.useLabel>
+  
+  <!-- EN: 【Low quality】Spiritual root -->
+  <EnergyRootLow.label>【下品】灵芽</EnergyRootLow.label>
+  <!-- EN: A Low quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×70%. -->
+  <EnergyRootLow.description>一颗装在铜匣内的下品灵芽，需要冷藏保存。\n\n灵芽是一颗绿豆大小的良性神经瘤，位于前额叶内部。拥有灵芽之人，可感受到大气中灵气的存在，吸收灵气进行修炼。\n\n灵芽按照其活跃性，分为上中下三个品级，品级越高，灵气增长效率也越高。\n\n下品灵芽-灵气增长效率x70%</EnergyRootLow.description>
+  <!-- EN: Inject Spiritual root to become a cultivator -->
+  <EnergyRootLow.comps.CompUsableRoot.useLabel>植入灵芽，变成修炼者</EnergyRootLow.comps.CompUsableRoot.useLabel>
+  
+  <!-- EN: Immortal exuviae -->
+  <RI_Resource_ImmortalExuviae.label>仙人遗蜕</RI_Resource_ImmortalExuviae.label>
+  <!-- EN: The Immortal exuviae is the item left behind by an Immortal during their ascension, containing a trace of the Immortal's soul and excess spiritual energy. -->
+  <RI_Resource_ImmortalExuviae.description>仙人遗蜕乃是仙人飞升所留之物，包含一丝仙人神魂和多余灵气。</RI_Resource_ImmortalExuviae.description>
+  
+  <!-- EN: Immortal oracle -->
+  <RI_Resource_Oracle.label>仙人手谕</RI_Resource_Oracle.label>
+  <!-- EN: The Immortal Touched My Crown, Binding My Hair to Grant Eternal Life.\n\nIt is said that a Celestial Master once wandered the Vast Void, seeking enlightenment amidst the ruins of dying stars. One fateful day, he glimpsed a revelation beyond mortal comprehension and ascended, becoming the Jade Immortal. From this fateful encounter, he inscribed countless edicts, each bearing the essence of his newfound wisdom, and scattered them across the mortal world.\n\nAs the ages passed and Qi grew thin, cultivators waged relentless battles over these sacred texts, weaving a web of bloodstained grudges. Yet, the question remains—what did the Jade Immortal witness in the Vast Void that granted him the path to ascension? This mystery endures, unsolved to this day.\n\nThis artifact is essential for upgrade to the Earth Immortal realm. -->
+  <RI_Resource_Oracle.description>仙人抚我顶，结发受长生。\n\n传说，一名龙师曾行走于太虚，从星球寂灭之中感悟大道。而在某日，他顿悟成仙之法，成为玉仙。他将这段奇遇中得到的感悟记忆，刻录于无数份手谕之上，流传凡间。\n\n岁月荏苒，灵气日渐稀薄，修士们为争夺这些手谕，纷争不断，恩怨交织。然而，玉仙当年在太虚中看到了什么，得以参透成仙之道？​这一谜团，至今无人能解。\n\n此物品为突破至地仙境界的必须品。</RI_Resource_Oracle.description>
+  
+  <!-- EN: Pure-Yang spiritual energy -->
+  <RI_Resource_PureYangSpiritualenergy.label>纯阳真气</RI_Resource_PureYangSpiritualenergy.label>
+  <!-- EN: The pellet enters the abdomen, unlike any ordinary, as Yin and Yang are stripped away, transforming into Pure Yang.\n\nPure Yang True Qi is a special type of Qi, formed from the essence of heaven and earth. When a Cultivator reaches the Transformation Realm, and the Golden Pellet in the Dantian reaches full maturation, progress becomes extremely difficult. At this point, one must use Pure Yang True Qi, transforming it into a shadowless sword edge, slaying the Yin God, thus giving birth to the Pure Yang Yuan Ying.\n\nIt is said that during his cultivation, Tianyun, the Immortal and ancestor of the Internal Pellet Path, once encountered a bottleneck. One day, he became trapped in the ruins of an ancient cultivator, unable to escape for several days. While searching for scriptures within the ruins, he stumbled upon the method to refine Pure Yang True Qi. With this, he had an epiphany, broke through his limitations, and ascended to the Yuan Ying stage, ultimately escaping the ruins. Immortal Tianyun recorded this secret method in his heart and passed it down to future generations, ensuring it would be remembered for centuries. -->
+  <RI_Resource_PureYangSpiritualenergy.description>丹入腹，非寻常，阴阳剥尽化纯阳。\n\n纯阳真气乃是一种集天地精华而生的特殊灵气。当修炼者达到了化神境界，位于丹田的金丹大成之后，便难以寸进。此时便需要以纯阳真气，化为无影剑锋，自斩阴神，从而诞生纯阳元婴。\n\n据传，内丹道祖天云真人修行时，曾遭遇瓶颈。某日困于古修遗迹，数日未能脱身。天云真人于遗迹中探寻经文，偶得纯阳真气炼制之法。于是自悟突破，晋升元婴，脱困而出。天云真人将此秘法铭记心间，传于后人，流芳百世。</RI_Resource_PureYangSpiritualenergy.description>
+  
+  <!-- EN: QingMing jade wine -->
+  <RI_Things_JadeLiquid.label>青玉仙露</RI_Things_JadeLiquid.label>
+  <!-- EN: A special medicinal wine formulated using Jade Marrow as its primary ingredient. Upon consumption, one will establish a brief connection with the Thran Immortal and endure a powerful spiritual shock. This forcibly condenses a Low-quality Spiritual Root within the brain using Qi energy, transforming the drinker into a Cultivator.\n\nThe origins of this wine are said to trace back to the Sect War of the past. A sect specializing in Wood-element Path once struck a secret pact with the Thran Immortal, exchanging their allegiance for the formula of Jade Wine, in a desperate bid to mass-produce Cultivators. This agreement, however, ignited the internal strife among the Five-Element Sects.\n\nIn the end, the Wood-element Sect was besieged and nearly eradicated by other sects. Yet, Jade Wine survived, and over time, it gradually gained acceptance among the world. -->
+  <RI_Things_JadeLiquid.description>一种以青玉髓作为原料，调配的特殊药酒，喝下后会获得与喰仙的短暂链接，并受到强烈的神识冲击。这将在人脑中强行以灵气制造一颗下品灵芽，成为修炼者。\n\n这种药酒的来源据说可以追溯到过去的门派战争，一支修炼木行法门的宗门为了大批量制造修士，和喰仙达成了一项秘密协议，以换取青玉仙露的配方，而这也成为了五行宗门内斗的导火索。\n\n最终木行法门被各个门派围剿，几乎灭亡，但青玉仙露却保留下来，逐渐被世人接受。</RI_Things_JadeLiquid.description>
+  <!-- EN: Drink wine to please the Thran immortal and become a cultivator -->
+  <RI_Things_JadeLiquid.comps.CompUsableRoot.useLabel>喝下青玉仙露，沟通喰仙，成为修炼者</RI_Things_JadeLiquid.comps.CompUsableRoot.useLabel>
+  
+  <!-- EN: Marrow-washing nectar -->
+  <RI_Things_JadeLiquidPro.label>洗髓玉液</RI_Things_JadeLiquidPro.label>
+  <!-- EN: Wine is the flame of bone-burning sulfur, sex is the steel blade of cutting flesh, wealth attracts jealousy and harms others, and anger is the smokeless gunpowder.\nFour things in the future will be combined, and there will be no shortage of even the slightest bit.\nI advise you not to be attached to these stuff, which is the right way to cultivate oneself.\n\nThis rare Immortal Wine is brewed using the essence of Five-Element materials, infused with the purest Qi energy of heaven and earth. Upon consumption, it enhances the activity of one's Spiritual Root.\n\nMarrow-washing Nectar is an invaluable elixir, reserved even within major Factions for only a select few inner disciples. With advancements in technology, many precious medicinal herbs have been improved through grafting and cultivation, making some ingredients more affordable. However, the core formula remains tightly controlled by powerful Factions, and many Free Cultivators are unaware of the existence of this mystical wine. -->
+  <RI_Things_JadeLiquidPro.description>酒是烧骨硝焰，色是割肉钢刀。\n财多招忌损人，气是无烟火药。\n四件将来合就，相当不欠分毫。\n劝君莫恋最为高，才是修身正道。\n\n这种特殊的仙酒提取了五行原料之精华，集天地灵气酿造而成。喝下后，可以提升灵芽的活性。\n\n洗髓玉液非常宝贵，即使在大型宗门也只特供少数内门弟子服用。随着科技的进步，一些名贵的药材经过嫁接育种，有了更优秀的品种，这也让洗髓玉液的原料成本大大降低。但是，核心配方依然掌握在大型宗门手里，甚至有诸多散修不知道这种仙酒的存在。</RI_Things_JadeLiquidPro.description>
+  <!-- EN: Drink nectar to improve the quality of spiritual root -->
+  <RI_Things_JadeLiquidPro.comps.CompUsableRoot.useLabel>喝下洗髓玉液，提升灵芽品级</RI_Things_JadeLiquidPro.comps.CompUsableRoot.useLabel>
+  
+</LanguageData>

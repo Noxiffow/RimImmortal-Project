@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<AbilityDef>
+		<defName>RI_Arrow_IronThrowingBall_Ability</defName>
+		<label>Iron ball dartle</label>
+		<description>Shoots out 5 iron balls to deal massive damage.</description>
+		<iconPath>Ability/Weapon/RI_Arrow_IronThrowingBall_Ability</iconPath>
+		<cooldownTicksRange>520</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<accuracyTouch>0.9</accuracyTouch>
+			<accuracyShort>0.9</accuracyShort>
+			<accuracyMedium>0.9</accuracyMedium>
+			<accuracyLong>0.9</accuracyLong>
+			<range>15</range>
+			<burstShotCount>5</burstShotCount>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Bullet_IronThrowingBall</defaultProjectile>
+			<verbClass>RI_Starch.RI_Ability.RI_Verb_AbilityBurst</verbClass>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>Bow_Large</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+		</verbProperties>
+	</AbilityDef>
+
+	<DamageDef ParentName="Bullet">
+		<defName>RI_Arrow_IronThrowingBall_Ability</defName>
+		<label>Iron ball</label>
+		<additionalHediffs>
+			<li>
+				<hediff>RI_Hediff_IronThrowingBall</hediff>
+				<severityPerDamageDealt>0</severityPerDamageDealt>
+				<severityFixed>1</severityFixed>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Bullet</impactSoundType>
+	</DamageDef>
+
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>RI_Bullet_IronThrowingBall</defName>
+		<label>Iron ball</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Arrow_IronThrowingBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_Arrow_IronThrowingBall_Ability</damageDef>
+			<damageAmountBase>27</damageAmountBase>
+			<stoppingPower>8.5</stoppingPower>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<speed>49</speed>
+			<arcHeightFactor>4</arcHeightFactor>
+			<shadowSize>1</shadowSize>
+		</projectile>
+	</ThingDef>
+</Defs>

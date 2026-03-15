@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="RI_BookBase">
+		<defName>NzRI_BookAoJing</defName>
+		<label>Initial approach book-AoJing</label>
+		<description>An ancient book in tatters, pieced together from different materials, with even half of the cover missing, leaving only the characters "Ao Jing" on it.\n\n The main content of this book seems to be about how to manipulate one's flesh and blood to inflict harm on enemies.\n\n There also seem to be annotations from many cultivators who have practiced this book, describing several methods for rapidly healing oneself.\n\n Note: Once you have fully studied one Initial Approach book, the cultivator will be bound to that Initial Approach and will not be able to learn any other Initial Approach!</description>
+		<graphicData>
+			<texPath>Things/Item/Books/AoJingBook</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>NzRI_AoJing</route>
+				<cost>13</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>NzRI_AoJing_FingerNail</li>
+					<li>NzRI_AoJing_Finger</li>
+					<li>NzRI_FireTherapy</li>
+					<li>NzRI_AoJing_Hand</li>
+					<li>NzRI_AoJing_Molt</li>
+					<li>NzRI_AoJing_Arm</li>
+					<li>NzRI_AoJing_Regeneration</li>
+					<li>NzRI_AoJing_Ascend</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach</researchProjectDef>
+				<completedLetterTitle>Put on the {PARENT_label}</completedLetterTitle>
+				<completedLetterText>The moment {STUDIER_labelShort} puts on {PARENT_label}, he is horrified to find that it blends in with his face and takes on the appearance of his own face. {STUDIER_labelShort} realizes that he seems to have some strange abilities.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BookBase">
+		<defName>NzRI_BookZuowang</defName>
+		<label>Strange masks.</label>
+		<description>A strangely patterned mask that, the moment you see it, you can't help but want to wear it</description>
+		<graphicData>
+			<texPath>Things/Item/Books/ZuoWangMask</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>NzRI_ZuoWang</route>
+				<cost>13</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>NzRI_Zw_GracefulWords</li>
+					<li>NzRI_Zw_Counterfeit</li>
+					<li>NzRI_Zw_Scapegoat</li>
+					<li>NzRI_Zw_JoinUs</li>
+					<li>NzRI_Zw_InvokeDeity</li>
+					<li>NzRI_Zw_Therapy</li>
+					<li>NzRI_Zw_FictionReality</li>
+					<li>NzRI_Zw_ReflectionInMirror</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach</researchProjectDef>
+				<completedLetterTitle>The moment you put on {PARENT_label}, you are horrified to discover that it has fused with your face, transforming into the likeness of your own face.</completedLetterTitle>
+				<completedLetterText>After putting on {PARENT_label}, {STUDIER_labelShort} found that they seemed to possess some strange abilities.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_BookBase">
+		<defName>NzRI_BookZhengDe</defName>
+		<label>a Buddhist scripture</label>
+		<description>An old and unremarkable Buddhist scripture</description>
+		<graphicData>
+			<!-- <texPath>Things/Item/Books/ZuoWangMask</texPath> -->
+			<texPath>Things/Item/Books/ZhengDeBook</texPath>
+		</graphicData>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<route>NzRI_ZhengDe</route>
+				<cost>13</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>NzRI_Zd_ZenMeditation</li>
+					<li>NzRI_Zw_ZenSound</li>
+					<li>NzRI_Zd_Almsgiving</li>
+				</abilities>
+				<researchProjectDef>RI_InitialApproach</researchProjectDef>
+				<completedLetterTitle>The moment you put on {PARENT_label}, you are horrified to discover that it has fused with your face, transforming into the likeness of your own face.</completedLetterTitle>
+				<completedLetterText>After putting on {PARENT_label}, {STUDIER_labelShort} found that they seemed to possess some strange abilities.</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

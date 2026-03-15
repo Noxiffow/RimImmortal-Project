@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_BookAoJing.label>破烂的法门书《袄景...》</NzRI_BookAoJing.label>
+    <NzRI_BookAoJing.description>一本破破烂烂的书籍，由不同材质拼接而成，甚至封面都只剩下一半，上面仅剩袄景两个字。\n\n 这本书上的主要内容似乎是，如何操纵自己的血肉，以对敌人造成杀伤。\n\n 上面似乎还有不少修炼过这本书的人的注解，描述了几篇快速愈合自身的法门\n\n 注：一旦你完全学习了一本初始法门书籍，修炼者将被绑定在该初始法门上，无法学习其他初始法门！</NzRI_BookAoJing.description>
+    <NzRI_BookAoJing.comps.CompBookStudiable.completedLetterTitle>{PARENT_label}经不住岁月洗礼，破碎了。</NzRI_BookAoJing.comps.CompBookStudiable.completedLetterTitle>
+    <NzRI_BookAoJing.comps.CompBookStudiable.completedLetterText>阅读了{PARENT_label}后, 修炼者{STUDIER_labelShort}将袄景教法门作为了自己的修炼方向</NzRI_BookAoJing.comps.CompBookStudiable.completedLetterText>
+
+    <NzRI_BookZuowang.label>奇异的面具</NzRI_BookZuowang.label>
+    <NzRI_BookZuowang.description>一只奇异图案的面具，一看到它，你就忍不住想戴上它</NzRI_BookZuowang.description>
+    <NzRI_BookZuowang.comps.CompBookStudiable.completedLetterTitle>戴上 {PARENT_label}</NzRI_BookZuowang.comps.CompBookStudiable.completedLetterTitle>
+    <NzRI_BookZuowang.comps.CompBookStudiable.completedLetterText>当 {STUDIER_labelShort} 戴上{PARENT_label}的瞬间，惊恐地发现它和自己的脸融为一体，并且变成了自己脸的模样。{STUDIER_labelShort}发现自己似乎拥有了一些奇异的能力。</NzRI_BookZuowang.comps.CompBookStudiable.completedLetterText>
+
+    <NzRI_BookZhengDe.label>旧经书</NzRI_BookZhengDe.label>
+    <NzRI_BookZhengDe.description>一本平平无奇的老旧经书</NzRI_BookZhengDe.description>
+    <NzRI_BookZhengDe.comps.CompBookStudiable.completedLetterTitle>阅读 {PARENT_label}</NzRI_BookZhengDe.comps.CompBookStudiable.completedLetterTitle>
+    <NzRI_BookZhengDe.comps.CompBookStudiable.completedLetterText>{STUDIER_labelShort} 阅读了 {PARENT_label}，他死记硬背下了正德寺最基础的功法</NzRI_BookZhengDe.comps.CompBookStudiable.completedLetterText>
+
+</LanguageData>

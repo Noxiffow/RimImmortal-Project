@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--把仙路家具替换为核心的-->
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Core">
+		<xpath>Defs/DesignationCategoryDef[defName="RI_RimImmortals_Living_Furniture"]/defName</xpath>
+		<value>
+			<defName>RI_RimImmortals_Furniture</defName>
+		</value>
+	</Operation>
+
+	<!--把仙路家具base替换为仙路的-->
+	<Operation Class="PatchOperationReplace" MayRequire="RI.RimImmortal.Core">
+		<xpath>Defs/ThingDef[@Name="RI_Furniture_BuildingBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>RI_RimImmortals_Furniture</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

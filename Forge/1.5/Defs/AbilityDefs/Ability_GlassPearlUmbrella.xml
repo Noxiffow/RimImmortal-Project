@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AbilityDef>
+		<defName>RI_Ability_GlassPearlUmbrella</defName>
+		<label>Glass pearl light</label>
+		<description>Release 6 light balls to heal 6 teammates within range.</description>
+		<iconPath>Ability/Weapon/RI_Ability_GlassPearlUmbrella</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>820</cooldownTicksRange>
+		<!--RangedWeapon_Cooldown>4.10</RangedWeapon_Cooldown-->
+		<verbProperties>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<defaultCooldownTime>2</defaultCooldownTime>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>24</range>
+			<warmupTime>0.8</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0.2, 0)</li>
+					<li>(1, 1)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_GlassPearlUmbrella">
+				<range>4</range>
+				<projectileDef>RI_Projectile_GlassPearlUmbrella</projectileDef>
+				<number>6</number>
+				<cooldownTicks>1600</cooldownTicks>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_BesselFleckBullet" ParentName="BaseBullet">
+		<defName>RI_Projectile_GlassPearlUmbrella</defName>
+		<label>琉璃珠</label>
+		<thingClass>RI_Starch.RI_Projectile.RI_BesselFleckBullet_Cure</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RI_GlassPearlUmbrella</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<fleck>RI_Fleck_Tail_Ability_GlassPearlUmbrella</fleck>
+		<frequency>1</frequency>
+		<scale>0.45</scale>
+		<shaking>0.3</shaking>
+		<straightShoot>false</straightShoot>
+		<RI_hediff>RI_Hediff_GlassPearlUmbrella_Ability</RI_hediff>
+		<projectile>
+			<soundImpact>Psycast_Skip_Entry</soundImpact>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>8.3</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>17</speed>
+		</projectile>
+	</ThingDef>
+
+	<FleckDef ParentName="RI_Fleck_Tail">
+		<defName>RI_Fleck_Tail_Ability_GlassPearlUmbrella</defName>
+		<graphicData>
+			<texPath>Effects/WhiteApeBow/RI_tail_WhiteApeBow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(0.65,0.95,0.63)</color>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.02</fadeInTime>
+		<solidTime>0.01</solidTime>
+		<fadeOutTime>0.28</fadeOutTime>
+		<growthRate>-0.9</growthRate>
+	</FleckDef>
+
+	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_Hit_Ability_GlassPearlUmbrella</defName>
+		<graphicData>
+			<texPath>Effects/GlassPearlUmbrella/RI_hit</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>0.7</fadeOutTime>
+		<growthRate>-1.3</growthRate>
+		<RotationAngle>180~180</RotationAngle>
+		<VelocityAngle>0~360</VelocityAngle>
+	</FleckDef>
+	
+</Defs>
+

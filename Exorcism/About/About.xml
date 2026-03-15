@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>边缘仙路-镇邪诛鬼 RimImmortal-Exorcism[1.6]</name>
+	<author>堂丸(TangW),莫鱼,漆黑之梦,栗花梨雪,逍逍客,</author>
+	<packageId>RI.RimImmortal.Exorcism</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://github.com/pardeike/HarmonyRimWorld</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Anomaly</packageId>
+			<displayName>Anomaly</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+	</loadAfter>
+	<description>
+&lt;color=#B484D9&gt;&lt;b&gt;【旧俗存祠庙，空山立鬼神】&lt;/b&gt;&lt;/color&gt;
+感谢订阅边缘仙路-镇邪诛鬼！这是一个将邪祟，道术等元素引入边缘世界的mod！
+***目前还处于Beta测试阶段，可能会有不少bug，正在修复中！***
+
+Thank you for subscribing to RimImmortal-Exorcism!
+This mod introduces elements such as evil spirits and Taoist arts into RimWorld.
+
+***The mod is currently in the Beta testing. There may still be a number of bugs, which are actively being fixed!***
+
+&lt;color=#B484D9&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-新的敌人：邪祟，它们由僵尸，山怪，以及各种传说中的恐怖生物组成。
+-新的异种：冥尸/冥娘，一种由尸体炼制而来的特殊人类。
+-克敌之法：新的道士武器，服饰等。
+-新地标，乱葬岗。
+-新事件。
+-其他内容！
+
+&lt;color=#B484D9&gt;&lt;b&gt;【边缘仙路开发组成员】&lt;/b&gt;&lt;/color&gt;
+-堂丸(TangW)——主要负责人，策划，贴图，xml代码
+-爱新觉罗-派大星——主程序
+-漆黑之梦——程序
+-chitoseMo——程序
+-逍逍客——程序
+-術滅——策划，程序
+-玖日长弓——程序
+-凌洛(LingLuo)——程序
+-骸鸾——程序
+-灵能罐头——程序
+-玉米淀粉——程序
+-尘——程序
+
+&lt;color=#B484D9&gt;&lt;b&gt;【特别感谢】&lt;/b&gt;&lt;/color&gt;
+
+最后，也感谢各位支持的玩家！
+	</description>
+</ModMetaData>

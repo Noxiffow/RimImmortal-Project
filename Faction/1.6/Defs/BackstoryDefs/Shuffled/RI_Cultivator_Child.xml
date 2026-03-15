@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--[PAWN_nameDef]
+	[PAWN_pronoun]他/她
+	[PAWN_possessive]他/她的
+	[PAWN_objective]宾格？
+	
+	<workDisables>
+	<li>ManualDumb</li>
+	</workDisables>
+	
+	<Melee>3</Melee>
+	<Plants>3</Plants>
+	<Medicine>2</Medicine>
+	<Social>-2</Social>
+	<Construction>3</Construction>建造
+	<Animals>3</Animals>
+	<Crafting>3</Crafting>
+	<Cooking>-4</Cooking>
+	<Mining>8</Mining>
+	<Shooting>3</Shooting>
+	<Intellectual>2</Intellectual>
+	
+	<requiredWorkTags>
+	<li>Violent</li>
+	<li>Animals</li>
+	<li>ManualDumb</li>
+	</requiredWorkTags>
+	
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	
+	<possessions>
+	<Cloth>10</Cloth>
+	</possessions>
+	-->
+
+	<!--所有童年修炼者 背景故事 前置-->
+	<!--都能干暴力工作和研究-->
+	<BackstoryDef Name="RI_Backstory_Child_Base" Abstract="True">
+		<slot>Childhood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+
+	<!--============通用幼年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Child_Base" Name="RI_Backstory_Child_Universal_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Child_Universal</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--奇遇-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Universal_Base">
+		<defName>RI_BackStory_Child_Universal5</defName>
+		<title>Adventure child</title>
+		<titleShort>Adventure</titleShort>
+		<description>[PAWN_nameDef] fell off a cliff but was fortunate to survive. Even more unexpectedly, [PAWN_nameDef] obtained the complete inheritance of a martial arts grandmaster.</description>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--海边的弃儿-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Universal_Base">
+		<defName>RI_BackStory_Child_Universal6</defName>
+		<title>Abandoned child by the sea</title>
+		<titleShort>Abandoned child</titleShort>
+		<description>As an infant, [PAWN_nameDef] was abandoned by [PAWN_possessive] parents by the seaside but miraculously survived. Although [PAWN_pronoun] had lived alone in the wild for as long as [PAWN_pronoun] could remember, [PAWN_pronoun] vaguely recalled a woman appearing from the sea to help [PAWN_pronoun] whenever danger arose.</description>
+		<skillGains>
+			<Melee>1</Melee>
+			<Mining>2</Mining>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--通灵孩童-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Universal_Base">
+		<defName>RI_BackStory_Child_Universal7</defName>
+		<title>Spirit-communing child</title>
+		<titleShort>Spirit-communing</titleShort>
+		<description>From a young age, [PAWN_nameDef] could hear whispers from the depths of the ocean. As [PAWN_pronoun] grew older, the voices became clearer, and [PAWN_pronoun] learned to receive guidance from them.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>1</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--哑巴-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Universal_Base">
+		<defName>RI_BackStory_Child_Universal8</defName>
+		<title>Mute child</title>
+		<titleShort>Mute</titleShort>
+		<description>When [PAWN_nameDef] was born, [PAWN_pronoun] fell gravely ill. Although the doctor barely managed to save [PAWN_pronoun]'s life, the medication took away [PAWN_possessive] voice.</description>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+		<skillGains>
+			<Animals>3</Animals>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============特殊幼年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Child_Base" Name="RI_Backstory_Child_Special_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Child_Special</li>
+			<li>RI_BackStory_Special</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--玉仙转世-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Special_Base">
+		<defName>RI_BackStory_Child_Special1</defName>
+		<title>Reincarnation of the Jade Immortal</title>
+		<titleShort>Reincarnation</titleShort>
+		<description>A sudden disaster swept across the planet, leaving countless lives in ruin. [PAWN_nameDef] made the decision to split a portion of [PAWN_nameDef]'s primordial spirit to descend once more, using [PAWN_pronoun]'s mortal body to save the suffering people. However, once [PAWN_nameDef]'s primordial spirit descended, [PAWN_pronoun] would lose all divine power and would have to start from scratch in cultivation.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--妖兽化形-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Special_Base">
+		<defName>RI_BackStory_Child_Special2</defName>
+		<title>Beast transformation</title>
+		<titleShort>Transformation</titleShort>
+		<description>After a century of cultivation, [PAWN_nameDef] gained consciousness in the body of a demon beast and transformed into a human form, though [PAWN_possessive] body still differed from that of ordinary humans.</description>
+		<skillGains>
+			<Animals>10</Animals>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--红孩儿-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Special_Base">
+		<defName>RI_BackStory_Child_Special3</defName>
+		<title>Red boy</title>
+		<titleShort>Red boy</titleShort>
+		<description>[PAWN_nameDef] was a very short-tempered child, living on a planet where technology was still stuck in the feudal era. Due to [PAWN_possessive] father's name being the same as a famous monk's Dharma name, [PAWN_pronoun] was often asked if [PAWN_pronoun] was the monk's illegitimate child. Whenever this happened, [PAWN_pronoun]'s face would turn bright red with anger.</description>
+		<skillGains>
+			<Social>-4</Social>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--睡梦童子-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Special_Base">
+		<defName>RI_BackStory_Child_Special4</defName>
+		<title>The dreaming child</title>
+		<titleShort>Dreaming child</titleShort>
+		<description>While guarding the immortal peach orchard, [PAWN_nameDef] accidentally allowed a monkey to eat all the immortal peaches. As a result, [PAWN_pronoun]'s master expelled [PAWN_nameDef] from the sect, leaving [PAWN_pronoun] to fend for [PAWN_pronoun]'s self.</description>
+		<skillGains>
+			<Plants>2</Plants>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--穿越之人-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Special_Base">
+		<defName>RI_BackStory_Child_Special5</defName>
+		<title>Traverser</title>
+		<titleShort>Traverser</titleShort>
+		<description>An accident should have ended [PAWN_nameDef]'s life, but when [PAWN_pronoun] woke up, [PAWN_pronoun] found [PAWN_pronoun]'s self in an unfamiliar place, with [PAWN_pronoun]'s hands now looking youthful.</description>
+		<skillGains>
+			<Social>3</Social>
+			<Intellectual>4</Intellectual>
+			<Crafting>2</Crafting>
+			<Cooking>2</Cooking>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============歹修幼年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Child_Base" Name="RI_Backstory_Child_Evil_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Child_Evil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--被夺舍的幼童-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Evil_Base">
+		<defName>RI_BackStory_Child_Evil1</defName>
+		<title>Child occupy by a soul</title>
+		<titleShort>Occupy soul</titleShort>
+		<description>[PAWN_nameDef] was once an innocent child, living in a small village. One night, an injured rogue cultivator broke into the village and infused [PAWN_possessive] soul into [PAWN_nameDef]'s body. From that moment on, [PAWN_nameDef] became violent, exhibiting abilities that ordinary people could not comprehend.</description>
+		<skillGains>
+			<Social>-4</Social>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============宗门幼年 前置============-->
+
+	<BackstoryDef ParentName="RI_Backstory_Child_Base" Name="RI_Backstory_Child_Sect_Base" Abstract="True">
+		<spawnCategories>
+			<li>RI_BackStory_Child_Sect</li>
+			<li>RI_BackStory_Sect</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<!--宗门新星-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Sect_Base">
+		<defName>RI_BackStory_Child_Sect1</defName>
+		<title>Rising star of the sect</title>
+		<titleShort>Rising star</titleShort>
+		<description>[PAWN_nameDef] possesses exceptional talent and an outstanding character. During a sect competition, [PAWN_pronoun] outshone all others and earned the appreciation of the elders. Under the guidance of renowned mentors and through [PAWN_possessive] own diligent efforts, [PAWN_pronoun] grew rapidly, becoming a prominent rising star within the sect. Despite [PAWN_possessive] achievements, [PAWN_nameDef] remained humble and continued to work tirelessly.</description>
+		<skillGains>
+			<Social>3</Social>
+			<Shooting>3</Shooting>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--宗门纨绔弟子-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Sect_Base">
+		<defName>RI_BackStory_Child_Sect2</defName>
+		<title>Rich disciple</title>
+		<titleShort>Rich disciple</titleShort>
+		<description>[PAWN_nameDef] may have average talent, but [PAWN_possessive] privileged background ensures [PAWN_pronoun] thrives within the sect. [PAWN_pronoun] is never short of glittering spirit stones in [PAWN_possessive] pockets, nor lacking in attendants among the sect's laborers. For [PAWN_nameDef], sect life is merely a way to add a touch of prestige to [PAWN_possessive] name.</description>
+		<skillGains>
+			<Social>3</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--粗鲁霸道的弟子-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Sect_Base">
+		<defName>RI_BackStory_Child_Sect3</defName>
+		<title>Rude and dominant disciple</title>
+		<titleShort>Rude disciple</titleShort>
+		<description>[PAWN_nameDef]'s personality is impulsive and aggressive, often bullying the surrounding disciples because of [PAWN_pronoun] strength. [PAWN_nameDef] always has boundless energy and is extremely active. [PAWN_nameDef] has a natural advantage in cultivating body techniques, but [PAWN_pronoun]’s personality causes a significant number of people to dislike [PAWN_pronoun].</description>
+		<skillGains>
+			<Melee>5</Melee>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--老实的宗门弟子-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Sect_Base">
+		<defName>RI_BackStory_Child_Sect4</defName>
+		<title>Honest sect disciple</title>
+		<titleShort>Honest disciple</titleShort>
+		<description>[PAWN_nameDef] has an honest personality and some talent, but opportunities to showcase [PAWN_pronoun] abilities have always been scarce. Watching the smooth-talking disciples win the favor of the elders, [PAWN_nameDef] can only stand aside and observe from a far.</description>
+		<skillGains>
+			<Plants>3</Plants>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--碌碌无为的弟子-->
+	<BackstoryDef ParentName="RI_Backstory_Child_Sect_Base">
+		<defName>RI_BackStory_Child_Sect5</defName>
+		<title>Mediocre disciple</title>
+		<titleShort>Mediocre disciple</titleShort>
+		<description>[PAWN_nameDef] was born with a natural spiritual bud, leading [PAWN_pronoun] family to recommend [PAWN_pronoun] to a local sect at an early age. However, encountering countless prodigies in cultivation made [PAWN_nameDef] keenly aware of the gap in innate talent. Over time, [PAWN_pronoun] began to shirk responsibilities and neglect cultivation, mastering the art of idling and avoiding effort.</description>
+		<skillGains>
+			<Social>-3</Social>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+
+
+</Defs>

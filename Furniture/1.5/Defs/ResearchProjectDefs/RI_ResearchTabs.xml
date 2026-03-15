@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--雕梁画栋特有介绍-->
+
+	<ResearchTabDef>
+		<defName>RI_ResearchTab</defName>
+		<label>RimImmortal</label>
+		<generalTitle>RimImmortal</generalTitle>
+		<generalDescription>Hello, and welcome to RimImmortal-Furniture!\n\nThis is an independent furniture pack mod in the RimImmortal universe, featuring a wide range of ancient Chinese-style and modern furniture.</generalDescription>
+	</ResearchTabDef>
+
+	<!-- 仙路生活系列科技树，如果没有装核心，就用这个，装了就patch核心 -->
+
+</Defs>

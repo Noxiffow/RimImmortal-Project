@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RoomRoleDef>
+		<defName>Ri_Room_ExerciseRoom</defName>
+		<label>炼体室</label>
+		<workerClass>RoomRoleWorker_PrisonCell</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+			<li>Cleanliness</li>
+			<li>Impressiveness</li>
+		</relatedStats>
+	</RoomRoleDef>
+
+	<RoomRoleDef>
+		<defName>Ri_Room_ElixirsRoom</defName>
+		<label>炼丹房</label>
+		<workerClass>RoomRoleWorker_PrisonCell</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+			<li>Cleanliness</li>
+			<li>Impressiveness</li>
+		</relatedStats>
+	</RoomRoleDef>
+
+	<RoomRoleDef>
+		<defName>Ri_Room_CultivationRoom</defName>
+		<label>修炼室</label>
+		<workerClass>RoomRoleWorker_PrisonCell</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+			<li>Cleanliness</li>
+			<li>Impressiveness</li>
+		</relatedStats>
+	</RoomRoleDef>
+
+</Defs>

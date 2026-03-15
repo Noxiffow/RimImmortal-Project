@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--冰蚕箱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_IceSilkwormRearingBox</defName>
+		<label>Ice silkworm rearing box</label>
+		<description>A wooden structure for cultivating ice silkworms. After a period of growth, it yields ice cocoons, which are then refined into ice silk.\n\nSilkworm boxes must be filled with mulberry leaves as feed.</description>
+		<thingClass>RI_Living.Building_Fermentation</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_IceSilkwormRearingBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<drawSize>(1.75,1.75)</drawSize>
+			<shadowData>
+				<volume>(0.9,0.3,0.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0,0.6,0.1)</rect>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>30</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>3</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<RI_Resource_IceSilkwormEgg>10</RI_Resource_IceSilkwormEgg>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-60</minSafeTemperature>
+				<maxSafeTemperature>0</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>RI_Weaving</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Resource_IceSilkwormCocoon</GetThingDef>
+				<MaxCapacity>10</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>0.2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>-40</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--蚕箱-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_SilkwormRearingBox</defName>
+		<label>Silkworm rearing box</label>
+		<description>A wooden structure designed for raising silkworms. After a period of cultivation, it produces cocoons, which can be further processed into silk.\n\nSilkworm boxes must be filled with mulberry leaves as feed.</description>
+		<thingClass>RI_Living.Building_Fermentation</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_SilkwormRearingBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<drawSize>(1.75,1.75)</drawSize>
+			<shadowData>
+				<volume>(0.9,0.3,0.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0,0.6,0.1)</rect>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>30</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>3</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<RI_Resource_SilkwormEgg>10</RI_Resource_SilkwormEgg>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>10</minSafeTemperature>
+				<maxSafeTemperature>30</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+				<!--6天-->
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>RI_Weaving</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<!--通过这个modExtensions设置收获物是什么，还有收获和填充的比例-->
+			<li Class="RI_Living.Building_FermentationDefMod">
+				<GetThingDef>RI_Resource_SilkwormCocoon</GetThingDef>
+				<MaxCapacity>10</MaxCapacity>
+				<!--填充的最大值-->
+				<Proportion>0.2</Proportion>
+				<!--填充：收获==1：1，值越大，收获的量越少，向下取整，如果收获的量小于1就会取1-->
+				<MinIdealTemperature>20</MinIdealTemperature>
+				<!--最极限的理想温度，超过了会影响速率，其数值不应该超出"CompProperties_TemperatureRuinable"的min和max的范围-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

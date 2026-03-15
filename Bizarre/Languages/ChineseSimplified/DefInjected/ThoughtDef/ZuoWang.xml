@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_SaveMe.stages.saved_my_life.label>救过我的命</NzRI_SaveMe.stages.saved_my_life.label>
+    <NzRI_SaveMe.stages.saved_my_life.description>这个人曾经救过我的命。</NzRI_SaveMe.stages.saved_my_life.description>
+
+    <NzRI_CheatMe.stages.cheat_me.label>欺骗过我</NzRI_CheatMe.stages.cheat_me.label>
+    <NzRI_CheatMe.stages.cheat_me.description>这个人曾经欺骗过我。</NzRI_CheatMe.stages.cheat_me.description>
+
+    <NzRI_T_GracefulWords.stages.speaks_eloquently.label>说话好优雅</NzRI_T_GracefulWords.stages.speaks_eloquently.label>
+    <NzRI_T_GracefulWords.stages.speaks_eloquently.description>听这个人说话真是一种享受。</NzRI_T_GracefulWords.stages.speaks_eloquently.description>
+    
+    <NzRI_T_NonsenseWords.stages.talking_nonsense.label>耳边聒噪</NzRI_T_NonsenseWords.stages.talking_nonsense.label>
+    <NzRI_T_NonsenseWords.stages.talking_nonsense.description>听这个人说话真是让人烦躁和困惑。</NzRI_T_NonsenseWords.stages.talking_nonsense.description>
+
+    <NzRI_Thought_Zw_FantasyMemory.label>绮丽记忆</NzRI_Thought_Zw_FantasyMemory.label>
+    <NzRI_Thought_Zw_FantasyMemory.description>这个人还沉浸在绮丽的幻想中。</NzRI_Thought_Zw_FantasyMemory.description>
+    <NzRI_Thought_Zw_FantasyMemory.stages.fantasy_memory.label>绮丽记忆</NzRI_Thought_Zw_FantasyMemory.stages.fantasy_memory.label>
+    <NzRI_Thought_Zw_FantasyMemory.stages.fantasy_memory.description>这个人还沉浸在绮丽的幻想中。</NzRI_Thought_Zw_FantasyMemory.stages.fantasy_memory.description>
+
+    <NzRI_T_DoWhatForMe.stages.wtf.label>WTF</NzRI_T_DoWhatForMe.stages.wtf.label>
+    <NzRI_T_DoWhatForMe.stages.wtf.description>你都对我做了什么!!!</NzRI_T_DoWhatForMe.stages.wtf.description>
+</LanguageData>

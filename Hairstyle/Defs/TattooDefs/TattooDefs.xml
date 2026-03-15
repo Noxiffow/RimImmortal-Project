@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>RI_WickedCultivators</defName>
+		<label>Wicked cultivator</label>
+	</StyleItemCategoryDef>
+
+	<StyleItemCategoryDef>
+		<defName>RI_Cultivators</defName>
+		<label>Cultivator</label>
+	</StyleItemCategoryDef>
+
+	<!--散修——面纹-->
+	
+	<TattooDef>
+		<defName>Face_Cultivators_A</defName>
+		<label>Cultivator A</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_A</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_Cultivators</category>
+		<styleTags>
+			<li>Tattoo_Cultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_Cultivators_B</defName>
+		<label>Cultivator B</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_B</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_Cultivators</category>
+		<styleTags>
+			<li>Tattoo_Cultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_Cultivators_C</defName>
+		<label>Cultivator C</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_C</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_Cultivators</category>
+		<styleTags>
+			<li>Tattoo_Cultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_Cultivators_D</defName>
+		<label>Cultivator D</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_Cultivators/Face_Cultivators_D</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_Cultivators</category>
+		<styleTags>
+			<li>Tattoo_Cultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<!--歹修——面纹-->
+	
+	<TattooDef>
+		<defName>Face_WickedCultivators_A</defName>
+		<label>Snake A</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_WickedCultivators/Face_WickedCultivators_A</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_WickedCultivators</category>
+		<styleTags>
+			<li>Tattoo_WickedCultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_WickedCultivators_B</defName>
+		<label>Snake B</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_WickedCultivators/Face_WickedCultivators_B</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_WickedCultivators</category>
+		<styleTags>
+			<li>Tattoo_WickedCultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_WickedCultivators_C</defName>
+		<label>Snake C</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_WickedCultivators/Face_WickedCultivators_C</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_WickedCultivators</category>
+		<styleTags>
+			<li>Tattoo_WickedCultivators</li>
+		</styleTags>
+	</TattooDef>
+
+	<TattooDef>
+		<defName>Face_WickedCultivators_D</defName>
+		<label>Snake D</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/Face_WickedCultivators/Face_WickedCultivators_D</texPath>
+		<tattooType>Face</tattooType>
+		<category>RI_WickedCultivators</category>
+		<styleTags>
+			<li>Tattoo_WickedCultivators</li>
+		</styleTags>
+	</TattooDef>
+
+</Defs>

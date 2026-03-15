@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>SectExperience</defName>
+		<label>Sect experience</label>
+		<description>You three belong to a large interstellar sect that spans across the galaxy, serving as low-level disciples. Recently, interstellar wars have been frequent, and most of the sect's disciples have gone out to fight. The sect has sent you three to an unexplored edge planet to establish a branch colony.\n\nThe sect has provided you with a small amount of treasures and raw materials, allowing you to quickly develop.\n\n*This starting wealth will be high, and you need to quickly develop.</description>
+		<scenario>
+			<summary>Three sect follower from a sect arrived at rimworld with a large amount of supplies for training.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Three sect follower woke up from their sleeping pods, carrying a large amount of raw materials and some protective talismans with them, eager to show off their skills and abilities.</text>
+				</li>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>9</pawnChoiceCount>
+					<leftBehindPawnKind>RI_Pawn_Follower</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>RI_Pawn_Follower</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+				<!-- 开局物资 -->
+				<!--基础物资-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>2000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WoodLog</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>30</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_Tree_QingMingSeed</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="RI.RimImmortal.Forge">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_BookD</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="RI.RimImmortal.Forge">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_Weapon_BasicBow</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="RI.RimImmortal.Forge">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_Weapon_Harquebus</thingDef>
+					<count>1</count>
+				</li>
+
+				<!--装备-->
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="RI.RimImmortal.Forge">
+					<def>StartingThing_Defined</def>
+					<thingDef>RI_Weapon_JumenAxe</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakPants</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakVest</thingDef>
+				</li>
+
+				<!--开局科技-->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>RI_ImmortalStart</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Pemmican</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Smithing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>GunTurrets</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Electricity</project>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>WoodLog</thingDef>
+					<count>350</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>RI_MakeLINGMAI</incident>
+					<intervalDays>32.45815</intervalDays>
+					<minDays>3</minDays>
+					<maxDays>5</maxDays>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/DutyDef[defName="AssaultColony"]/constantThinkNode</xpath>
+		<value>
+			<!-- BombBullet -->
+			<constantThinkNode  Class="ThinkNode_Tagger">
+				<subNodes>
+					<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasRootAndEnergy">
+						<subNodes>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_BombBullet</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_BombBullet</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Invisible</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_Invisible</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Slash</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>20</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_Slash</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QuickJumpWithNosight</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QuickJumpWithNosight</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_LG</ability>
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_LG</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_LG</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>-->
+							<!--<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_HT</ability>
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ShieldHediff_PlayerShield</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_HT</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>-->
+							<!--内丹-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_EnergyRecovery</ability><!--元婴境界——存神-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_SpiritualPulseSurging</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_EnergyRecovery</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Thunder</ability><!--化神境界——惊雷-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>600</interval><!--每10秒尝试释放一次-->
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_Thunder</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_EnergyGuide</ability><!--化神境界——导引-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ExhaleTheOldAndInhaleTheNew</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_EnergyGuide</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QiProtecting</ability><!--结丹境界——护体罡气-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ShieldHediff_InternalShield</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_QiProtecting</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Samatha</ability><!--化丹境界——止观-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_SamathaHediff</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_Samatha</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--ai不会用气旋雷-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QiBullet</ability><!--固基境界——气弹-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>310</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QiBullet</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--炼体-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_IncendiarySky</ability><!--元婴境界——焚天-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>610</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_IncendiarySky</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_OneInchPunch</ability><!--化神境界——寸拳-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval><!--间隔高点，给其他技能一点表现-->
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_OneInchPunch</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_BloodBoil</ability><!--灵丹境界——气血翻涌-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_KY</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_BloodBoil</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Activity_FJCGS</ability><!--灵丹境界——分筋错骨手-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>160</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Activity_FJCGS</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QuickJump</ability><!--结丹境界——一苇轻功-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>110</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QuickJump</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_NeutronPluse</ability><!--化丹境界——十峰掌-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>180</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_NeutronPluse</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_StretchingExercise</ability><!--化丹境界——撑筋拔骨-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_StretchingExerciseHediff</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_StretchingExercise</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_VajraBoxing</ability><!--固基境界——金刚拳-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>35</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_VajraBoxing</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--炼药-->
+							<!--暂无-->
+						</subNodes>
+					</li>
+				</subNodes>
+			</constantThinkNode>
+
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/DutyDef[defName="Defend"]</xpath>
+		<value>
+			<constantThinkNode Class="ThinkNode_Tagger">
+				<subNodes>
+					<!-- BombBullet -->
+					<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasRootAndEnergy">
+						<subNodes>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_BombBullet</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_BombBullet</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Invisible</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_Invisible</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Slash</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>20</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_Slash</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QuickJumpWithNosight</ability>
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QuickJumpWithNosight</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_LG</ability>
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_LG</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_LG</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>-->
+							<!--<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_HT</ability>
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ShieldHediff_PlayerShield</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_HT</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>-->
+							<!--内丹-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_EnergyRecovery</ability><!--元婴境界——存神-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_SpiritualPulseSurging</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_EnergyRecovery</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Thunder</ability><!--化神境界——惊雷-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>600</interval><!--每10秒尝试释放一次-->
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_Thunder</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_EnergyGuide</ability><!--化神境界——导引-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ExhaleTheOldAndInhaleTheNew</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_EnergyGuide</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QiProtecting</ability><!--结丹境界——护体罡气-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_ShieldHediff_InternalShield</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_QiProtecting</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_Samatha</ability><!--化丹境界——止观-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_SamathaHediff</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_Samatha</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--ai不会用气旋雷-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QiBullet</ability><!--固基境界——气弹-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>310</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QiBullet</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--炼体-->
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_IncendiarySky</ability><!--元婴境界——焚天-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>610</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_IncendiarySky</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_OneInchPunch</ability><!--化神境界——寸拳-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>300</interval><!--间隔高点，给其他技能一点表现-->
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_OneInchPunch</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_BloodBoil</ability><!--灵丹境界——气血翻涌-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_KY</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_BloodBoil</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Activity_FJCGS</ability><!--灵丹境界——分筋错骨手-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>160</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Activity_FJCGS</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_QuickJump</ability><!--结丹境界——一苇轻功-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>110</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_Ability_QuickJump</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_NeutronPluse</ability><!--化丹境界——十峰掌-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>180</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Shooting">
+												<ability>RI_NeutronPluse</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_StretchingExercise</ability><!--化丹境界——撑筋拔骨-->
+								<subNodes>
+									<li Class="WhoXiuXian.RI_ThinkNode_ConditionalHasNotHediff">
+										<hediff>RI_StretchingExerciseHediff</hediff>
+										<subNodes>
+											<li Class="JobGiver_AICastAbilityOnSelf">
+												<ability>RI_Ability_StretchingExercise</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="ThinkNode_ConditionalHasAbility">
+								<ability>RI_Ability_VajraBoxing</ability><!--固基境界——金刚拳-->
+								<subNodes>
+									<li Class="ThinkNode_ConditionalHashIntervalTick">
+										<interval>35</interval>
+										<subNodes>
+											<li Class="WhoXiuXian.RI_JobGiver_AICastAbility_Melee">
+												<ability>RI_Ability_VajraBoxing</ability>
+											</li>
+										</subNodes>
+									</li>
+								</subNodes>
+							</li>
+							<!--炼药-->
+							<!--暂无-->
+						</subNodes>
+					</li>
+				</subNodes>
+			</constantThinkNode>
+		</value>
+	</Operation>
+</Patch>

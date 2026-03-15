@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RI_CurseCureBook_Namer.rulePack.rulesStrings>
+&lt;li&gt;title-&gt;[titleBasic]&lt;/li&gt;
+&lt;li&gt;title(p=2)-&gt;[titleAuthored]&lt;/li&gt;
+&lt;li&gt;titleBasic(p=6)-&gt;[randAdjective] Grimoire of Curse Purging&lt;/li&gt;
+&lt;li&gt;titleBasic(p=6)-&gt;Handbook of Curse Dispelling&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;Record of Lunar Purification&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;Scripture of Mystical Deliverance&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;True Chapters on Banishing Evil&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;Arcane Notes on Cleansing Defilement&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;Essential Arts of Nightmare Purge&lt;/li&gt;
+&lt;li&gt;titleBasic-&gt;Fragments of Curse Removal&lt;/li&gt;
+&lt;li&gt;titleAuthored-&gt;[ANYPAWN_nameIndef]'s Notes on Curse Removal&lt;/li&gt;
+&lt;li&gt;titleAuthored-&gt;[ANYPAWN_nameIndef]'s Purification Method, Written with Great Effort&lt;/li&gt;
+&lt;li&gt;titleAuthored-&gt;[ANYPAWN_nameIndef]'s Decade-Long Treatise on Curse Cleansing&lt;/li&gt;
+&lt;li&gt;titleAuthored-&gt;[ANYPAWN_nameIndef]'s Handbook for Breaking Curses&lt;/li&gt;
+&lt;li&gt;titleAuthored-&gt;[ANYPAWN_nameIndef]'s Work on Passing Down the Art of Deliverance&lt;/li&gt;
+  </RI_CurseCureBook_Namer.rulePack.rulesStrings>
+  <RI_CurseCureUnlock>Gain Exorcism</RI_CurseCureUnlock>
+</LanguageData>

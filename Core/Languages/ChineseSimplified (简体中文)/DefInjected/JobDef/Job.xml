@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 祈祷中. -->
+  <RI_Job_BeginRitual.reportString>突破中</RI_Job_BeginRitual.reportString>
+  
+  <!-- EN: Eat Drug. -->
+  <RI_Job_EatDrug.reportString>服用丹药</RI_Job_EatDrug.reportString>
+  
+  <!-- EN: GoToSpot. -->
+  <RI_Job_FindObjectAndGotoSpot.reportString>TODO</RI_Job_FindObjectAndGotoSpot.reportString>
+  
+  <!-- EN: Praying. -->
+  <RI_Job_GetIncident.reportString>祈祷中</RI_Job_GetIncident.reportString>
+  
+  <!-- EN: PrepareUpgrad. -->
+  <RI_Job_GetObjectToSpot.reportString>准备突破中</RI_Job_GetObjectToSpot.reportString>
+  
+  <!-- EN: PrepareUpgrad. -->
+  <RI_Job_GetWindow.reportString>准备突破中</RI_Job_GetWindow.reportString>
+  
+  <!-- EN: GoToSpot. -->
+  <RI_Job_GoToSpot.reportString>TODO</RI_Job_GoToSpot.reportString>
+  
+  <!-- EN: GoTo! -->
+  <RI_Job_GotoSpotAround.reportString>TODO</RI_Job_GotoSpotAround.reportString>
+  
+  <!-- EN: GoToSpot. -->
+  <RI_Job_GotoUpgradeSpot.reportString>TODO</RI_Job_GotoUpgradeSpot.reportString>
+  
+  <!-- EN: Realease. -->
+  <RI_Job_ReleaseLantern.reportString>TODO</RI_Job_ReleaseLantern.reportString>
+  
+  <!-- EN: Studying. -->
+  <RI_Job_StudyBook.reportString>学习中</RI_Job_StudyBook.reportString>
+  
+  <!-- EN: 祈祷中. -->
+  <RI_Job_Upgrade.reportString>突破中</RI_Job_Upgrade.reportString>
+  
+  <!-- EN: WaitThunder. -->
+  <RI_Job_WaitThunder.reportString>等待天雷中</RI_Job_WaitThunder.reportString>
+  
+</LanguageData>

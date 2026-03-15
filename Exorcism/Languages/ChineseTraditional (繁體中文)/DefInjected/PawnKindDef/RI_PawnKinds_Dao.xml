@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Dao acolyte -->
+  <RI_DaoPawn_Acolyte.label>道童</RI_DaoPawn_Acolyte.label>
+  
+  <!-- EN: Dao alchemist -->
+  <RI_DaoPawn_Alchemist.label>道门炼师</RI_DaoPawn_Alchemist.label>
+  
+  <!-- EN: Dao disciple -->
+  <RI_DaoPawn_Disciple.label>道门弟子</RI_DaoPawn_Disciple.label>
+  
+  <!-- EN: Dao patriarch -->
+  <RI_DaoPawn_Patriarch.label>道门祖师</RI_DaoPawn_Patriarch.label>
+  
+  <!-- EN: Daoist -->
+  <RI_DaoPawn_Priest.label>道士</RI_DaoPawn_Priest.label>
+  
+  <!-- EN: travel Daoist -->
+  <RI_DaoPawn_TravelPriest.label>云游道士</RI_DaoPawn_TravelPriest.label>
+  
+</LanguageData>

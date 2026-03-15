@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: In -->
+  <RI_EatManLabel>吸入</RI_EatManLabel>
+	<!-- EN: Select a target and suck it into the gourd -->
+  <RI_EatManDesc>选择一个目标将其吸入葫芦</RI_EatManDesc>
+	<!-- EN: Out{0} -->
+  <RI_OutEatManLabel>吐出{0}</RI_OutEatManLabel>
+	<!-- EN: Spit out the {0} inside the gourd -->
+  <RI_OutEatManDesc>将葫芦内的{0}吐出</RI_OutEatManDesc>
+	<!-- EN: Expose -->
+  <Expose>揭秘</Expose>
+
+	<!-- EN: Start golem -->
+  <XXK_Command_TrapExplosive_StartWick_Label>激活傀儡</XXK_Command_TrapExplosive_StartWick_Label>
+	<!-- EN: Start golem -->
+  <XXK_Command_TrapExplosive_StartWick_Desc>傀儡激活</XXK_Command_TrapExplosive_StartWick_Desc>
+  <!-- UNUSED -->
+  <RI_Talisman_Command_CompBlindBoxUsing_StartWick_Label>揭秘</RI_Talisman_Command_CompBlindBoxUsing_StartWick_Label>
+  <RI_Talisman_Command_CompBlindBoxUsing_StartWick_Desc>揭秘</RI_Talisman_Command_CompBlindBoxUsing_StartWick_Desc>
+
+</LanguageData>

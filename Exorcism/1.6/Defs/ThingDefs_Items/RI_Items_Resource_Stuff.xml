@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--风磨铜Erosion bronze-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_ErosionBronze</defName>
+		<label>erosion bronze</label>
+		<description>Erosion bronze is a special copper alloy. Its exact smelting formula has been lost, and today it can only be obtained by excavating ancient artifacts made from it deep underground.\n\nLegends say that ancient craftsmen mixed specific minerals into the alloy, giving it unique chemical properties that suppress aberrant entities.\n\nIn modern times, these bronze artifacts are often purchased and reforged into ritual tools and talismans.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_ErosionBronze</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.6</MarketValue>
+			<Mass>1.5</Mass>
+			<StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>RI_Category_ExorcismResource</li>
+		</thingCategories>
+		<!--地下产出-->
+		<deepCommonality>1.5</deepCommonality>
+		<deepCountPerPortion>20</deepCountPerPortion>
+		<deepLumpSizeRange>8~18</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.01</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<isAirtight>true</isAirtight>
+			<color>(105,105,105)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0.4</Flammability>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_ExorcismBasic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--墨玉Ink jade-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_InkJade</defName>
+		<label>ink jade</label>
+		<description>Ink jade is a deep green jade with a smooth and warm texture, usually found buried underground.\n\nIt has fine patterns and a calm, heavy color, and gives off a faint cold aura. Ancient people believed that wearing ink jade could ward off impurity, calm the mind, and resist misfortune. Some scholars speculate that it contains a weak form of energy that can resonate with the human body.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_InkJade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_ExorcismResource</li>
+		</thingCategories>
+		<deepCommonality>0.1</deepCommonality>
+		<deepCountPerPortion>5</deepCountPerPortion>
+		<deepLumpSizeRange>1~3</deepLumpSizeRange>
+		<!--<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>-->
+		<!--<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>-->
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_ExorcismBasic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--符纸-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_CharmPaper</defName>
+		<label>charm paper</label>
+		<description>Ordinary paper used for writing charms. By itself, charm paper has no supernatural power.Once a charm is written on it, however, it becomes a medium for communicating with heaven and earth.\n\nCharm paper is easy to produce, inexpensive, and can be purchased in large quantities from Daoist sects.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_CharmPaper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.2</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_ExorcismResource</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--浓缩邪血-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_ConcentrateAberrantBlood</defName>
+		<label>concentrated aberrant blood</label>
+		<description>A small amount of refined blood extracted from aberrant entities. It is dark red, thick in texture, and radiates an ominous presence.\n\nScholars have found that this blood can resist natural decay, allowing corpses to remain active for long periods. Since aberrant entities began to spread, alchemists, folklorists, and wandering occult practitioners have all sought after it—whether for forbidden rituals, crafting cursed artifacts, or even attempting to reanimate the dead.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_ConcentrateAberrantBlood</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>5</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_AberrantResource</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_EvilPowerBasic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--阴脂-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_CorpseOil</defName>
+		<label>Yin oil</label>
+		<description>When solid, it is called fat; when melted, it is called oil.\n\nYin oil is refined from biological corpses. Unlike ordinary oils, it does not easily spoil, which is why candles made from it are known as everlasting lamps. The flame of yin oil burns with a dim green light, and the principle behind it remains unknown.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_CorpseOil</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>3.5</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_AberrantResource</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_EvilPowerBasic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--凶人骨-->
+	<!--<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_MurderBone</defName>
+		<label>Murder bone</label>
+		<description>Murder bone, a rare type of bone extracted from human corpses. It is incredibly sturdy, exuding a chilling aura of murderous intent.\n\nThe joints of corpse puppets are fragile and prone to wear, but murder bone can serve as their literal backbone, greatly enhancing their durability.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_MurderBone</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		-->
+	<!--研究-->
+	<!--
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_EvilPowerBasic</li>
+		</researchPrerequisites>
+	</ThingDef>-->
+
+	<!--古朴铃铛——召唤血蛄侯用的-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_AncientBell</defName>
+		<label>ancient bell</label>
+		<description>The rare ancient bell, covered with twisted lines, has been around for an unknown amount of time.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Resource_AncientBell</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_ExorcismResource</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_ExorcismBasic</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--血丹-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_BloodElixir</defName>
+		<label>blood elixir</label>
+		<description>冥尸从【冥血】进化到【魇肉】的必备素材，需要提前吃下后，躺入炼冥棺的血池中进化。</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Resource_BloodElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_EvilManufactured</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<humanlikeOnly>true</humanlikeOnly>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Ingest {0}</ingestCommandString>
+			<ingestReportString>Ingesting {0}.</ingestReportString>
+			<showIngestFloatOption>false</showIngestFloatOption>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_UseThing" />
+			</outcomeDoers>
+		</ingestible>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Industrial</techLevel>
+		<!--暂不能卖出-->
+		<tradeTags>
+			<li>RI_NoExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>RI_BloodDrugAte</hediffDef>
+				<allowRepeatedUse>false</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>Ingest</useJob>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>1200</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--异肉-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_UpgradeMeat</defName>
+		<label>Heteromorph meat</label>
+		<description>冥尸从【魇肉】进化到【不化骨】的必备素材，需要提前吃下后，躺入炼冥棺的血池中进化。</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Resource_UpgradeMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_EvilManufactured</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<humanlikeOnly>true</humanlikeOnly>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Ingest {0}</ingestCommandString>
+			<ingestReportString>Ingesting {0}.</ingestReportString>
+			<showIngestFloatOption>false</showIngestFloatOption>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_UseThing" />
+			</outcomeDoers>
+		</ingestible>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Industrial</techLevel>
+		<!--暂不能卖出-->
+		<tradeTags>
+			<li>RI_NoExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>RI_UpgradeMeatAte</hediffDef>
+				<allowRepeatedUse>false</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>Ingest</useJob>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>1200</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--血魔眼——打死血蛄侯掉落-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_CrimsonEye</defName>
+		<label>crimson eye</label>
+		<description>AA</description>
+		<graphicData>
+			<texPath>Things/Item/Special/RI_Resource_CrimsonEye</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_AberrantResource</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Industrial</techLevel>
+		<!--暂不能卖出-->
+		<tradeTags>
+			<li>RI_NoExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--邪术零件-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_AberrantComponents</defName>
+		<label>aberrant components</label>
+		<description>邪术的扭曲产物，仿佛以血肉和风磨铜打造的引擎和心脏的结合体。</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_AberrantComponents</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>28</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_EvilManufactured</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--尸傀治疗包-->
+	<ThingDef ParentName="MedicineBase">
+		<defName>RI_MedicineCorpse</defName>
+		<label>冥尸缝合包</label>
+		<description>治疗冥尸的物品。冥尸在受伤后，无法自我修复，于是只能用特制的丝线和有机物来缝合填补伤口。</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/Medicine/RI_MedicineCorpse</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>30</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>1.60</MedicalPotency>
+			<MedicalQualityMax>1.30</MedicalQualityMax>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<thingCategories>
+			<li>RI_Category_CorpsePuppetRepairKit</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

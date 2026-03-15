@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Imperial tribute -->
+  <RI_Drug_ImperialWine.label>御贡酒</RI_Drug_ImperialWine.label>
+  <!-- EN: A long-established sauce-aroma baijiu with a rich heritage. It is expensive, and in ancient times it was typically presented as tribute for the emperor's enjoyment. The liquor is mellow and full-bodied, with a deep aroma that lingers—truly a premium among baijiu.\n\nA bottle like this, placed in the home, speaks more about the owner's taste than any decoration ever could. -->
+  <RI_Drug_ImperialWine.description>TODO</RI_Drug_ImperialWine.description>
+  <!-- EN: 饮用 {0} -->
+  <RI_Drug_ImperialWine.ingestible.ingestCommandString>饮用 {0}</RI_Drug_ImperialWine.ingestible.ingestCommandString>
+  <!-- EN: 正在饮用 {0}。 -->
+  <RI_Drug_ImperialWine.ingestible.ingestReportString>正在饮用 {0}</RI_Drug_ImperialWine.ingestible.ingestReportString>
+  
+</LanguageData>

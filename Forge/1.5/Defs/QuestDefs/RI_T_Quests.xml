@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--无古修 -->
+	<QuestScriptDef>
+		<defName>RI_OpportunitySite_AncientComplex_Talismaker</defName>
+		<rootSelectionWeight>0.4</rootSelectionWeight>
+		<rootMinPoints>350</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<defaultChallengeRating>1</defaultChallengeRating>
+		<isRootSpecial>true</isRootSpecial>
+		<questNameRules>
+			<rulesStrings>
+				<!-- quest name -->
+				<li>questName(p=3)->[complexAdj] Ancient cultivator [complex]</li>
+				<li>questName->Ancient cultivator [complex]</li>
+				<li>complexAdj->Secret</li>
+				<li>complex->ruin</li>
+				<li>complex->ruins</li>
+				<li>complex->relic</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->You [discoveryDesc] an ancient cultivator ruins nearby. You can find some ancient relics in it, such relics often have ancient guardians.</li>
+				<!-- Snippets -->
+				<li>discoveryDesc(discovered==false)->learned</li>
+				<li>discoveryDesc(discovered==true)->determined the location</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<questDescriptionAndNameRules>
+			<rulesStrings>
+			</rulesStrings>
+		</questDescriptionAndNameRules>
+		<root Class="WhoXiuXian.RI_QuestNode_Root_Loot_AncientComplex_Talismaker" />
+	</QuestScriptDef>
+
+	<SitePartDef>
+		<defName>AncientComplex_Talismaker</defName>
+		<label>Ancient cultivator ruins</label>
+		<description>An ancient cultivator ruins, in which you can find some relics and treasures from ancient cultivator, but such ruins often have the presence of ancient cultivator guardians.</description>
+		<workerClass>SitePartWorker</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/AncientMechanitorComplex</expandingIconTexture>
+		<approachOrderString>Investigate {0}</approachOrderString>
+		<approachingReportString>Investigate {0}</approachingReportString>
+		<arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<minMapSize>(200, 1, 200)</minMapSize>
+	</SitePartDef>
+
+	<ComplexLayoutDef>
+		<defName>AncientComplex_Talismaker_Loot</defName>
+		<workerClass>WhoXiuXian.RI_LayoutWorkerComplex_Talisman</workerClass>
+		<roomRewardCrateFactor>0</roomRewardCrateFactor>
+		<roomDefs>
+			<li>AncientTalismakerRoom</li>
+			<li>AncientTalisResearchRoom</li>
+			<li>AncientTalisDailyRoom</li>
+			<li>AncintTalisRestraunt</li>
+		</roomDefs>
+		<threats>
+			<li>
+				<def>SleepingMechanoids</def>
+			</li>
+			<!--<li>
+				<def>SleepingInsects</def>
+			</li>-->
+		</threats>
+	</ComplexLayoutDef>
+
+	<!--有古修 -->
+
+	<QuestScriptDef>
+		<defName>RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom</defName>
+		<rootSelectionWeight>0</rootSelectionWeight>
+		<rootMinPoints>350</rootMinPoints>
+		<autoAccept>true</autoAccept>
+		<defaultChallengeRating>1</defaultChallengeRating>
+		<isRootSpecial>true</isRootSpecial>
+		<questNameRules>
+			<rulesStrings>
+				<!-- quest name -->
+				<li>questName(p=3)->[complexAdj] Ancient cultivator [complex]</li>
+				<li>questName->Ancient cultivator [complex]</li>
+				<li>complexAdj->Dangerous</li>
+				<li>complex->resting place</li>
+				<li>complex->resting ruins</li>
+				<li>complex->resting relic</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->You [discoveryDesc] is an ancient ruins.\n\nThere is a large and stable reserve of Reiki, which may contain unusual treasures, and unusual threats.</li>
+				<!-- Snippets -->
+				<li>discoveryDesc(discovered==false)->learned</li>
+				<li>discoveryDesc(discovered==true)->determined the location</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<questDescriptionAndNameRules>
+			<rulesStrings>
+			</rulesStrings>
+		</questDescriptionAndNameRules>
+		<root Class="WhoXiuXian.RI_QuestNode_Root_Loot_AncientComplex_TalismakerWithCasket" />
+	</QuestScriptDef>
+
+	<SitePartDef>
+		<defName>AncientComplex_TalismakerWithCasket</defName>
+		<label>Ancient cultivator resting place</label>
+		<description>A special ruins of the ancient cultivators, exuding a large and dangerous Qi. The ruins may hold treasures yet to be born, but they are accompanied by extraordinary threats.</description>
+		<workerClass>SitePartWorker</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/AncientMechanitorComplex</expandingIconTexture>
+		<approachOrderString>Investigate {0}</approachOrderString>
+		<approachingReportString>Investigate {0}</approachingReportString>
+		<arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<minMapSize>(200, 1, 200)</minMapSize>
+	</SitePartDef>
+
+	<ComplexLayoutDef>
+		<defName>AncientComplex_Talismaker_LootWithCasket</defName>
+		<workerClass>WhoXiuXian.RI_LayoutWorkerComplex_Talisman</workerClass>
+		<roomRewardCrateFactor>0</roomRewardCrateFactor>
+		<roomDefs>
+			<li>AncientTalismakerRoom</li>
+			<li>AncientTalisResearchRoom</li>
+			<li>AncientTalisDailyRoom</li>
+			<li>AncintTalisRestraunt</li>
+			<li>AncintTalisCryptosleepCasketRoom</li>
+		</roomDefs>
+		<threats>
+			<li>
+				<def>SleepingMechanoids</def>
+			</li>
+			<!--<li>
+				<def>SleepingInsects</def>
+			</li>-->
+		</threats>
+	</ComplexLayoutDef>
+	<!--组件 -->
+	<GenStepDef>
+		<defName>AncientComplex_Talismaker</defName>
+		<linkWithSite>AncientComplex_Talismaker</linkWithSite>
+		<order>310</order>
+		<genStep Class="WhoXiuXian.GenStep_RandomAncientComplex" />
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>AncientComplex_TalismakerWithCasket</defName>
+		<linkWithSite>AncientComplex_TalismakerWithCasket</linkWithSite>
+		<order>311</order>
+		<genStep Class="WhoXiuXian.GenStep_RandomAncientComplex" />
+	</GenStepDef>
+
+	<RuleDef>
+		<defName>AncientRandomComplex</defName>
+		<symbol>ancientRandomComplex</symbol>
+		<resolvers>
+			<li Class="WhoXiuXian.SymbolResolver_Main">
+				<minRectSize>(30, 30)</minRectSize>
+			</li>
+		</resolvers>
+	</RuleDef>
+
+	<RuleDef>
+		<defName>RI_TalisAncientCryptosleepCasket</defName>
+		<symbol>RI_TalisancientCryptosleepCasket</symbol>
+		<resolvers>
+			<li Class="WhoXiuXian.SymbolResolver_RI_TalisAncientCryptosleepCasket" />
+		</resolvers>
+	</RuleDef>
+
+	<!--房屋部分-->
+
+	<LayoutRoomDef>
+		<defName>AncientTalismakerRoom</defName>
+		<sketchResolverDef>AncientTalismakerRoom</sketchResolverDef>
+		<floorTypes>
+			<li>RI_Building_AncientFloorA</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>AncientTalismakerRoom</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="WhoXiuXian.RI_SketchResolver_AncientTalismakerRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>AncientTalisResearchRoom</defName>
+		<minSingleRectWidth>7</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<sketchResolverDef>AncientTalisResearchRoom</sketchResolverDef>
+		<floorTypes>
+			<li>RI_Building_AncientFloorB</li>
+		</floorTypes>
+		<countRange>1~2</countRange>
+		<selectionWeight>2</selectionWeight>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>AncientTalisResearchRoom</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="WhoXiuXian.RI_SketchResolver_AncientTalisResearchRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>AncientTalisDailyRoom</defName>
+		<sketchResolverDef>AncientTalisDailyRoom</sketchResolverDef>
+		<floorTypes>
+			<li>RI_Building_AncientFloorA</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>AncientTalisDailyRoom</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="WhoXiuXian.RI_SketchResolver_AncientTalisDailyRoom" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>AncintTalisRestraunt</defName>
+		<sketchResolverDef>AncintTalisRestraunt</sketchResolverDef>
+		<minSingleRectWidth>5</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<countRange>1</countRange>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<floorTypes>
+			<li>RI_Building_AncientFloorA</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>AncintTalisRestraunt</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="WhoXiuXian.RI_SketchResolver_Restraunt" />
+	</SketchResolverDef>
+
+	<LayoutRoomDef>
+		<defName>AncintTalisCryptosleepCasketRoom</defName>
+		<sketchResolverDef>AncintTalisCryptosleepCasketRoom</sketchResolverDef>
+		<minSingleRectWidth>5</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<countRange>1</countRange>
+		<canBeInMixedRoom>false</canBeInMixedRoom>
+		<floorTypes>
+			<li>RI_Building_AncientFloorA</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<SketchResolverDef>
+		<defName>AncintTalisCryptosleepCasketRoom</defName>
+		<isRoot>true</isRoot>
+		<resolver Class="WhoXiuXian.RI_SketchResolver_CryptosleepCasketRoomt" />
+	</SketchResolverDef>
+
+	<JobDef>
+		<defName>RI_JobDriver_ActivateAncientCultivatorCryptosleepCasket</defName>
+		<driverClass>WhoXiuXian.RI_JobDriver_ActivateAncientCultivatorCryptosleepCasket</driverClass>
+		<reportString>invoking...</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+
+</Defs>

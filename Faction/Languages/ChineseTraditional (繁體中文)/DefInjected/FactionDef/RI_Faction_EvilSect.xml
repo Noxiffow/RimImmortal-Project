@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Outer sect -->
+  <RI_Faction_EvilSect.label>外道宗门</RI_Faction_EvilSect.label>
+  <!-- EN: A cross-galaxy outer sect, founded by a group of evil cultivators seeking immortality. The sect predominantly worships the Thran and actively expands its territory by any means necessary.\n\nThe disciples of the heretical sect are indoctrinated with evil doctrines from a young age to wear down their morality. Afterward, they are led by core members and the sect leader to raid surrounding areas.\n\nDue to its numerous nefarious deeds, the heretical sect is despised by most factions. However, once one joins, they can increase their cultivation efficiency by earning contribution points. -->
+  <RI_Faction_EvilSect.description>一个跨星系的外道宗门，被一群追求永生的修士们建立。外道宗门大多信仰喰仙，并积极地通过任何手段扩张地盘。\n\n外道宗门的弟子从小被灌输各种洗脑教义，来消磨他们的道德，之后就会在骨干成员和头目的带领下劫掠周边地区。\n\n外道宗门因为其种种恶行被大部分的派系所厌恶，但加入后，也能通过获得贡献点来提高修炼效率。</RI_Faction_EvilSect.description>
+  <!-- EN: Master -->
+  <RI_Faction_EvilSect.leaderTitle>掌门</RI_Faction_EvilSect.leaderTitle>
+  <!-- EN: Cultivator -->
+  <RI_Faction_EvilSect.pawnSingular>外道修士</RI_Faction_EvilSect.pawnSingular>
+  <!-- EN: Cultivators -->
+  <RI_Faction_EvilSect.pawnsPlural>外道修士</RI_Faction_EvilSect.pawnsPlural>
+  <!-- EN: Contribution -->
+  <RI_Faction_EvilSect.royalFavorLabel>宗门贡献</RI_Faction_EvilSect.royalFavorLabel>
+  
+</LanguageData>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 人面蜘蛛 -->
+	<ThingDef ParentName="RI_Base_EvilCreatureSpider">
+		<defName>RI_EvilCreature_HeadSpider_Race</defName>
+		<label>Human head spider</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nThe human head on the Human-Head Spider is not real but a form of mimicry. These massive spiders dwell in ancient battlefields and graveyards, gradually evolving to resemble human heads over time.\n\nSingle Human-head Spider is easy for an ordinary person to kill, but they often move in swarms, posing a threat that should not be underestimated.</description>
+		<statBases>
+			<MoveSpeed>4.1</MoveSpeed>
+			<!-- 移动速度-->
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<!-- 护甲-->
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<!-- 护甲-->
+			<MarketValue>140</MarketValue>
+			<!-- 市场价值-->
+		</statBases>
+		<tools>
+			<!--攻击方式：第一对足，头撞-->
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>0.7</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<!--尸毒-->
+						<def>RI_Damage_ZombieInfection</def>
+						<amount>1</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<hasGenders>false</hasGenders>
+			<intelligence>ToolUser</intelligence>
+			<body>RI_EvilCreature_HeadSpider_BodyDef</body>
+			<baseBodySize>0.65</baseBodySize>
+			<baseHealthScale>1.2</baseHealthScale>
+			<lifeExpectancy>10</lifeExpectancy>
+			<!-- 预期寿命-->
+			<lifeStageAges>
+				<li>
+					<def>RI_EvilCreature_HeadSpider_Adult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>RI_EvilCreature_TradeTag</li>
+		</tradeTags>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_ConcentrateAberrantBlood>2</RI_Resource_ConcentrateAberrantBlood>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_HeadSpider</defName>
+		<label>Human head spider</label>
+		<race>RI_EvilCreature_HeadSpider_Race</race>
+		<combatPower>120</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<alternateGraphicChance>0.5</alternateGraphicChance>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_HeadSpider/RI_EvilCreature_HeadSpider1</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_HeadSpider/RI_EvilCreature_HeadSpider2</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_HeadSpider/RI_EvilCreature_HeadSpider</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_HeadSpider/Dessicated_RI_EvilCreature_HeadSpider</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

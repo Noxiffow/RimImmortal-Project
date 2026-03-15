@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--雕梁画栋地砖——石块类的-->
+
+	<!--石片铺地-->
+	<!--Flake floor-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_FlakeFloor_Base">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_FlakeFloor</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+			<Beauty>3</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_Floor_FlakeFloor</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>3999</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Floor_FlakeFloor</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base">
+		<defName>RI_Tile_FlakeFloorSandstone</defName>
+		<label>sandstone flake floor</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>6</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base">
+		<defName>RI_Tile_FlakeFloorGranite</defName>
+		<label>granite flake floor</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>6</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base">
+		<defName>RI_Tile_FlakeFloorLimestone</defName>
+		<label>limestone flake floor</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>6</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base">
+		<defName>RI_Tile_FlakeFloorSlate</defName>
+		<label>slate flake floor</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>6</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base">
+		<defName>RI_Tile_FlakeFloorMarble</defName>
+		<label>marble flake floor</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>6</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Tile_FlakeFloorRedBrick</defName>
+		<label>red brick flake floor</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>6</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_Floor_FlakeFloor_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Tile_FlakeFloorBlackBrick</defName>
+		<label>black brick flake floor</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>6</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--方砖斜墁-->
+	<!--Diagonal-laid square tile-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_Floor_DiagonalSquareTile_Base">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<texturePath>Terrain/Surfaces/RI_Floor_DiagonalSquareTile</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_Floor_DiagonalSquareTile</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Road</li>
+		</tags>
+		<uiOrder>3888</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_Floor_DiagonalSquareTile</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base">
+		<defName>RI_Floor_DiagonalSquareTileSandstone</defName>
+		<label>sandstone diagonal square tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base">
+		<defName>RI_Floor_DiagonalSquareTileGranite</defName>
+		<label>granite diagonal square tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base">
+		<defName>RI_Floor_DiagonalSquareTileLimestone</defName>
+		<label>limestone diagonal square tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base">
+		<defName>RI_Floor_DiagonalSquareTileSlate</defName>
+		<label>slate diagonal square tile</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base">
+		<defName>RI_Floor_DiagonalSquareTileMarble</defName>
+		<label>marble diagonal square tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_DiagonalSquareTileRedBrick</defName>
+		<label>red brick diagonal square tile</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>4</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_Floor_DiagonalSquareTile_Base" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Floor_DiagonalSquareTileBlackBrick</defName>
+		<label>black brick diagonal square tile</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>4</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--细墁地砖-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_FinePlasteredFloorBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<texturePath>Terrain/Surfaces/RI_FinePlasteredFloor</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_FinePlasteredFloor</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Road</li>
+		</tags>
+		<uiOrder>3889</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_FinePlasteredFloor</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase">
+		<defName>RI_FinePlasteredFloorSandstone</defName>
+		<label>sandstone plastered floor</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase">
+		<defName>RI_FinePlasteredFloorGranite</defName>
+		<label>granite plastered floor</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase">
+		<defName>RI_FinePlasteredFloorLimestone</defName>
+		<label>limestone plastered floor</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase">
+		<defName>RI_FinePlasteredFloorSlate</defName>
+		<label>slate plastered floor</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase">
+		<defName>RI_FinePlasteredFloorMarble</defName>
+		<label>marble plastered floor</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_FinePlasteredFloorRedBrick</defName>
+		<label>red brick plastered floor</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>4</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_FinePlasteredFloorBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_FinePlasteredFloorBlackBrick</defName>
+		<label>black brick plastered floor</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>4</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--冰裂纹石砖-->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RI_IceCrackStoneBrickBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<texturePath>Terrain/Surfaces/RI_IceCrackStoneBrick</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>RI_IceCrackStoneBrick</designatorDropdown>
+		<researchPrerequisites>
+			<li>RI_Research_FloorTile</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Road</li>
+		</tags>
+		<uiOrder>3890</uiOrder>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RI_IceCrackStoneBrick</defName>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase">
+		<defName>RI_IceCrackStoneBrickSandstone</defName>
+		<label>sandstone ice-crack brick tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>3</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase">
+		<defName>RI_IceCrackStoneBrickGranite</defName>
+		<label>granite ice-crack brick tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>3</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase">
+		<defName>RI_IceCrackStoneBrickLimestone</defName>
+		<label>limestone ice-crack brick tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>3</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase">
+		<defName>RI_IceCrackStoneBrickSlate</defName>
+		<label>slate ice-crack brick tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>3</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase">
+		<defName>RI_IceCrackStoneBrickMarble</defName>
+		<label>marble ice-crack brick tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>3</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!--红砖-->
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_IceCrackStoneBrickRedBrick</defName>
+		<label>red brick ice-crack brick tile</label>
+		<color>(176,103,81)</color>
+		<costList>
+			<RI_Resource_RedBrick>3</RI_Resource_RedBrick>
+		</costList>
+	</TerrainDef>
+
+	<!--青砖-->
+	<TerrainDef ParentName="RI_IceCrackStoneBrickBase" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_IceCrackStoneBrickBlackBrick</defName>
+		<label>black brick ice-crack brick tile</label>
+		<color>(72,82,92)</color>
+		<costList>
+			<RI_Resource_BlackBrick>3</RI_Resource_BlackBrick>
+		</costList>
+	</TerrainDef>
+
+
+</Defs>

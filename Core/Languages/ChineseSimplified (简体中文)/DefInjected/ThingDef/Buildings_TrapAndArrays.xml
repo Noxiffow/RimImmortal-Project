@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cyclone landmine -->
+  <RI_Building_CycloneLandmine.label>气旋球</RI_Building_CycloneLandmine.label>
+  <!-- EN: A mass of translucent air sacs, filled with raging blades spinning. -->
+  <RI_Building_CycloneLandmine.description>一团半透明的气囊，里面有无数狂暴的风刃旋转着。</RI_Building_CycloneLandmine.description>
+  
+</LanguageData>

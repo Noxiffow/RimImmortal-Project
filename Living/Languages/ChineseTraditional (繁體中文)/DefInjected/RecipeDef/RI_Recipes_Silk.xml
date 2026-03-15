@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Twist gold silk -->
+  <RI_MakeGoldSilk.label>捻制金丝</RI_MakeGoldSilk.label>
+  <!-- EN: The gold is forged into long strips, then hammered into gold foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into gold silk. -->
+  <RI_MakeGoldSilk.description>将黄金锻打成长条，然后捶打成金箔，再剪成细丝，缠绕在棉线之外，最后纺织成金丝绸。</RI_MakeGoldSilk.description>
+  <!-- EN: Twisting gold silk -->
+  <RI_MakeGoldSilk.jobString>捻制金丝中</RI_MakeGoldSilk.jobString>
+  
+  <!-- EN: Twist gold silk x4 -->
+  <RI_MakeGoldSilkBulk.label>捻制金丝 x4</RI_MakeGoldSilkBulk.label>
+  <!-- EN: The gold is forged into long strips, then hammered into gold foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into gold silk. -->
+  <RI_MakeGoldSilkBulk.description>将黄金锻打成长条，然后捶打成金箔，再剪成细丝，缠绕在棉线之外，最后纺织成金丝绸。</RI_MakeGoldSilkBulk.description>
+  <!-- EN: Twisting gold silk -->
+  <RI_MakeGoldSilkBulk.jobString>捻制金丝中</RI_MakeGoldSilkBulk.jobString>
+  
+  <!-- EN: Melt gold silk -->
+  <RI_MakeGoldSilktoGold.label>熔炼金丝</RI_MakeGoldSilktoGold.label>
+  <!-- EN: Use the spiritual crystal to print the power on the paper and draw the charm. -->
+  <RI_MakeGoldSilktoGold.description>以炉子的高温熔化金丝，还原成黄金。</RI_MakeGoldSilktoGold.description>
+  <!-- EN: Melting gold silk -->
+  <RI_MakeGoldSilktoGold.jobString>熔炼金丝中</RI_MakeGoldSilktoGold.jobString>
+  
+  <!-- EN: Weave ice silk -->
+  <RI_MakeIceSilk.label>织造冰蚕丝</RI_MakeIceSilk.label>
+  <!-- EN: Make ice silk from ice silkworm cocoons. -->
+  <RI_MakeIceSilk.description>用冰蚕茧抽制生丝，然后织成冰蚕丝。</RI_MakeIceSilk.description>
+  <!-- EN: Weaving ice silk -->
+  <RI_MakeIceSilk.jobString>织造冰蚕丝中</RI_MakeIceSilk.jobString>
+  
+  <!-- EN: Weave ice silk x4 -->
+  <RI_MakeIceSilkBulk.label>织造冰蚕丝 x4</RI_MakeIceSilkBulk.label>
+  <!-- EN: Make ice silk from ice silkworm cocoons. -->
+  <RI_MakeIceSilkBulk.description>用冰蚕茧抽制生丝，然后织成冰蚕丝。</RI_MakeIceSilkBulk.description>
+  <!-- EN: Weaving ice silk -->
+  <RI_MakeIceSilkBulk.jobString>织造冰蚕丝中</RI_MakeIceSilkBulk.jobString>
+  
+  <!-- EN: Weave silk -->
+  <RI_MakeSilk.label>织造丝绸</RI_MakeSilk.label>
+  <!-- EN: Make silk from silkworm cocoons. -->
+  <RI_MakeSilk.description>用蚕茧抽制生丝，然后织成丝绸。</RI_MakeSilk.description>
+  <!-- EN: Weaving silk -->
+  <RI_MakeSilk.jobString>织造丝绸中</RI_MakeSilk.jobString>
+  
+  <!-- EN: Weave silk x4 -->
+  <RI_MakeSilkBulk.label>织造丝绸 x4</RI_MakeSilkBulk.label>
+  <!-- EN: Make silk from silkworm cocoons. -->
+  <RI_MakeSilkBulk.description>用蚕茧抽制生丝，然后织成丝绸。</RI_MakeSilkBulk.description>
+  <!-- EN: Weaving silk -->
+  <RI_MakeSilkBulk.jobString>织造丝绸中</RI_MakeSilkBulk.jobString>
+  
+  <!-- EN: Twist silver silk -->
+  <RI_MakeSilverSilk.label>捻制银丝</RI_MakeSilverSilk.label>
+  <!-- EN: The silver is forged into long strips, then hammered into silver foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into silver silk. -->
+  <RI_MakeSilverSilk.description>将白银锻打成长条，然后捶打成银箔，再剪成细丝，缠绕在棉线之外，最后纺织成银丝绸。</RI_MakeSilverSilk.description>
+  <!-- EN: Twisting silver silk -->
+  <RI_MakeSilverSilk.jobString>捻制银丝中</RI_MakeSilverSilk.jobString>
+  
+  <!-- EN: Twist Silver silk x4 -->
+  <RI_MakeSilverSilkBulk.label>捻制银丝 x4</RI_MakeSilverSilkBulk.label>
+  <!-- EN: The silver is forged into long strips, then hammered into silver foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into silver silk. -->
+  <RI_MakeSilverSilkBulk.description>将白银锻打成长条，然后捶打成银箔，再剪成细丝，缠绕在棉线之外，最后纺织成银丝绸。</RI_MakeSilverSilkBulk.description>
+  <!-- EN: Twisting silver silk -->
+  <RI_MakeSilverSilkBulk.jobString>捻制银丝中</RI_MakeSilverSilkBulk.jobString>
+  
+  <!-- EN: Melt silver silk -->
+  <RI_MakeSilverSilktoSilver.label>熔炼银丝</RI_MakeSilverSilktoSilver.label>
+  <!-- EN: Melt the silver silk in the heat of the furnace and restore it into silver. -->
+  <RI_MakeSilverSilktoSilver.description>以炉子的高温熔化银丝，还原成白银。</RI_MakeSilverSilktoSilver.description>
+  <!-- EN: Melting silver silk -->
+  <RI_MakeSilverSilktoSilver.jobString>熔炼银丝中</RI_MakeSilverSilktoSilver.jobString>
+  
+</LanguageData>

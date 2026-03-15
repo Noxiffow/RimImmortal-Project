@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>RI_UnfinishedManuscript</defName>
+		<label>unfinished manuscript</label>
+		<description>An unfinished piece of an manuscript.</description>
+		<graphicData>
+			<texPath>Things/Item/Books/RI_UnfinishedManuscript</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Drug base -->
+  <RI_Resource_DrugBase.label>丹辅</RI_Resource_DrugBase.label>
+  <!-- EN: The material used to make most pills acts as a binding agent, a flavoring agent, to keep the medicine from being too strong and to make it easy to take. -->
+  <RI_Resource_DrugBase.description>制作大部分药丸所需的材料，充当粘合剂，调味剂，让药材的药效不至于过于强烈，方便服用。</RI_Resource_DrugBase.description>
+  
+  <!-- EN: Elephant tusk powder -->
+  <RI_Resource_ElephantTuskPowder.label>象牙粉</RI_Resource_ElephantTuskPowder.label>
+  <!-- EN: Elephant tusk powder, a medicinal substance with properties of water elements.\n\nElephant tusk powder has a magical effect of absorbing impurities, and in the hands of pharmacists, often only those complex medicines need to use ivory powder to assist.\n\nThe elephant is a rare animal, do not give up humanity for the sake of interests. -->
+  <RI_Resource_ElephantTuskPowder.description>象牙粉，一种具有药效的动物药材。\n\n象牙粉有着吸附杂质的神奇作用，在炼药师手中，往往只有那些复杂的丹药需要用到象牙粉来辅助。\n\nMod只是游戏设定，大象是珍稀动物，不要为了利益，放弃人性。</RI_Resource_ElephantTuskPowder.description>
+  
+  <!-- EN: Gold sand -->
+  <RI_Resource_GoldSand.label>金砂</RI_Resource_GoldSand.label>
+  <!-- EN: Gold sand, a medicinal substance with properties of metal elements.\n\nAfter grinding the gold into sand powder, mixed with the pill to take. Gold is a stable precious metal and was used as medicine in ancient times, but to no avail. But for cultivators, it can help restore the Qi in the body, the principle of which no one knows. -->
+  <RI_Resource_GoldSand.description>金砂，一种具有药效的金属药材。\n\n将黄金磨碎成砂粉后，混入丹药服用。黄金是一种稳定的贵金属，在古代也曾被当作药材使用，但其实并无效果。但对于修炼者来说，却可以帮助体内的灵气恢复，其原理无人知晓。</RI_Resource_GoldSand.description>
+  
+</LanguageData>

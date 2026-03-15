@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Armor break -->
+  <RI_Hediff_ArmorBreak.label>破甲</RI_Hediff_ArmorBreak.label>
+  <!-- EN: Some of the preset Qi is attached to the weapon, and when hit, the Qi invades the body, causing a decrease in defense. -->
+  <RI_Hediff_ArmorBreak.description>一些设定好的灵气附着在武器上，被命中时，灵气侵入身体，造成了防御力的下降。</RI_Hediff_ArmorBreak.description>
+  <!-- EN: Mild -->
+  <RI_Hediff_ArmorBreak.stages.Mild.label>轻度</RI_Hediff_ArmorBreak.stages.Mild.label>
+  <!-- EN: Moderate -->
+  <RI_Hediff_ArmorBreak.stages.Moderate.label>中度</RI_Hediff_ArmorBreak.stages.Moderate.label>
+  <!-- EN: Severe -->
+  <RI_Hediff_ArmorBreak.stages.Severe.label>重度</RI_Hediff_ArmorBreak.stages.Severe.label>
+  
+  <!-- EN: Puncture -->
+  <RI_Hediff_Puncture.label>穿刺</RI_Hediff_Puncture.label>
+  <!-- EN: Some of the Qi is programmed to attach to the weapon, and when hit, the Qi penetrates the body, causing a piercing effect. -->
+  <RI_Hediff_Puncture.description>一些设定好的灵气附着在武器上，被命中时，灵气穿透身体，造成了穿刺效果。</RI_Hediff_Puncture.description>
+  <!-- EN: Mild -->
+  <RI_Hediff_Puncture.stages.Mild.label>轻度</RI_Hediff_Puncture.stages.Mild.label>
+  <!-- EN: Moderate -->
+  <RI_Hediff_Puncture.stages.Moderate.label>中度</RI_Hediff_Puncture.stages.Moderate.label>
+  <!-- EN: Severe -->
+  <RI_Hediff_Puncture.stages.Severe.label>重度</RI_Hediff_Puncture.stages.Severe.label>
+  
+  <!-- EN: Vertigo -->
+  <RI_Hediff_Vertigo.label>眩晕</RI_Hediff_Vertigo.label>
+  <!-- EN: Some of the preset aura is attached to the weapon, and when it is hit, waves of aura pass into the brain, causing a dizzy effect. -->
+  <RI_Hediff_Vertigo.description>一些设定好的灵气附着在武器上，被命中时，一阵阵灵气传入大脑，造成晕眩效果。</RI_Hediff_Vertigo.description>
+  <!-- EN: Mild -->
+  <RI_Hediff_Vertigo.stages.Mild.label>轻度</RI_Hediff_Vertigo.stages.Mild.label>
+  <!-- EN: Moderate -->
+  <RI_Hediff_Vertigo.stages.Moderate.label>中度</RI_Hediff_Vertigo.stages.Moderate.label>
+  <!-- EN: Severe -->
+  <RI_Hediff_Vertigo.stages.Severe.label>重度</RI_Hediff_Vertigo.stages.Severe.label>
+  
+</LanguageData>

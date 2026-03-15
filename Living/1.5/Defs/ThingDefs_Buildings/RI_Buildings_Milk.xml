@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 奶制品加工台 -->
+
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_DairyWorkBench</defName>
+		<label>Dairy workbench</label>
+		<description>A basic processing table, including a cooking pot and a filtering barrel, capable of making a variety of dairy products. This workstation can also prepare some simple foods.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_DairyWorkBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.95,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+
+		<!--原料-->
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2120</uiOrder>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+
+		<recipes>
+			<!--能做点简单的原版食物-->
+			<li>CookMealSimple</li>
+			<li>CookMealSimpleBulk</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
+			<!--奶制品-->
+			<li>RI_Recipe_CookByaslag</li>
+			<li>RI_Recipe_CookByaslagBulk</li>
+			<li>RI_Recipe_CookButter</li>
+			<li>RI_Recipe_CookButterBulk</li>
+			<li>RI_Recipe_CookYogurt</li>
+			<li>RI_Recipe_CookYogurtBulk</li>
+			<li>RI_Recipe_CookSweetBerryYogurt</li>
+			<li>RI_Recipe_CookSweetBerryYogurtBulk</li>
+			<li>RI_Recipe_CookMilkTea</li>
+			<li>RI_Recipe_CookMilkTeaBulk</li>
+			<li>RI_Recipe_CookBubbleTea</li>
+			<li>RI_Recipe_CookBubbleTeaBulk</li>
+		</recipes>
+
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>30.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>2</heatPerSecond>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites>
+			<li>RI_Research_FoodRecipe</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

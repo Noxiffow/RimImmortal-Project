@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blood crucible -->
+  <RI_Building_BloodCrucible.label>血坩埚</RI_Building_BloodCrucible.label>
+  <!-- EN: A crucible forged from erosion bronze. It can heat aberrant blood and enhance its activity.\n\nWhen connected to a Necro-resurrect coffin, it reduces the consumption of aberrant blood. -->
+  <RI_Building_BloodCrucible.description>风磨铜制成的坩埚，可以给邪血加温，提升活性。\n\n连接上炼冥棺之后，可以减少邪血的消耗。</RI_Building_BloodCrucible.description>
+  
+  <!-- EN: Necro-resurrect coffin -->
+  <RI_Building_ZombieTransformationCoffin.label>炼冥棺</RI_Building_ZombieTransformationCoffin.label>
+  <!-- EN: A massive mechanical coffin used for refining Nether Corpses, its interior densely packed with intricate occult mechanisms.\n\nWhether dead or alive, a human body may be placed within the coffin and submerged in aberrant blood. Through an array of needles and mechanical apparatus, evil circuits are implanted into the body, then refined by secret rites. In the end, a Necro will emerge from within the coffin. -->
+  <RI_Building_ZombieTransformationCoffin.description>炼制冥尸用的机械棺材，外形巨大，内部布满复杂的邪术机关。\n\n无论是死人还是活人，都可以装入炼冥棺，浸泡于邪血中。通过针管和机械结构为人类注入邪术回路，再以秘法炼制，最终冥尸将从棺材内诞生。</RI_Building_ZombieTransformationCoffin.description>
+  <!-- EN: Aberrant blood -->
+  <RI_Building_ZombieTransformationCoffin.comps.CompRefuelable.fuelGizmoLabel>浓缩邪血</RI_Building_ZombieTransformationCoffin.comps.CompRefuelable.fuelGizmoLabel>
+  
+  <!-- EN: necro node -->
+  <RI_TransformAccelerator.label>邪术节点</RI_TransformAccelerator.label>
+  <!-- EN: A mechanical malediction trigger that operates evil curse, 24 hours a day.\n\nWhen connected to a Necro-resurrect coffin, it can accelerate the transformation process of a Nether Corpse. -->
+  <RI_TransformAccelerator.description>一种机械式的邪咒触发器，24小时不间断工作。连接上炼冥棺后，可以加速冥尸转化的过程。</RI_TransformAccelerator.description>
+  
+</LanguageData>

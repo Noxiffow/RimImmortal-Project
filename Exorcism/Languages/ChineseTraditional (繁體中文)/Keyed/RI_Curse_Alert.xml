@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RI_Alert_Curse_Label>诅咒值</RI_Alert_Curse_Label>
+  <RI_Alert_Curse_LabelWithValue>诅咒值：{0}</RI_Alert_Curse_LabelWithValue>
+
+  <RI_Curse_Alert_CurrentValue>当前诅咒值: {0}</RI_Curse_Alert_CurrentValue>
+  <RI_Curse_Alert_TargetValue>目标诅咒值: {0}</RI_Curse_Alert_TargetValue>
+  <RI_Curse_Alert_TowerCount>防护塔数量: {0}</RI_Curse_Alert_TowerCount>
+  <RI_Curse_Alert_ProtectedPawnCount>受护目标数量: {0}</RI_Curse_Alert_ProtectedPawnCount>
+  <RI_Curse_Alert_CleansePerDay>每日净化量: {0}</RI_Curse_Alert_CleansePerDay>
+
+  <RI_Curse_Alert_TrendIncrease>增长</RI_Curse_Alert_TrendIncrease>
+  <RI_Curse_Alert_TrendDecrease>回落</RI_Curse_Alert_TrendDecrease>
+  <RI_Curse_Alert_EstimatedToTarget>预计 {0} 至目标需要: {1}</RI_Curse_Alert_EstimatedToTarget>
+  <RI_Curse_Alert_AtTarget>已到达目标诅咒值</RI_Curse_Alert_AtTarget>
+
+  <RI_Curse_Alert_IncidentInterval>邪祟事件触发间隔（平均）: {0}</RI_Curse_Alert_IncidentInterval>
+  <RI_Curse_Alert_Suggestion>建议：建造防护塔、给关键人员配备辟邪铜镜、使用防护塔增强携带辟邪铜镜的人员压低诅咒值。</RI_Curse_Alert_Suggestion>
+</LanguageData>
+

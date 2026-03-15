@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--麒麟丹-->
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeQiLinRestorationPill</defName>
+		<label>Make QiLin restoration pill</label>
+		<description>Making QiLin restoration pill</description>
+		<jobString>Making QiLin restoration pill</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PlantainSeed</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingZhi</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_QiLinRestorationPill>2</RI_Drug_QiLinRestorationPill>
+		</products>
+	</RecipeDef>
+
+	<!--=============================一品丹=============================-->
+
+	<!--忘魂丹-->
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeOblivionSoulPurgingElixir</defName>
+		<label>Make Oblivion soul-purging elixir</label>
+		<description>Making Oblivion soul-purging elixir</description>
+		<jobString>Making Oblivion soul-purging elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldSand</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DuskyMushroom</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_OblivionSoulPurgingElixir>1</RI_Drug_OblivionSoulPurgingElixir>
+		</products>
+	</RecipeDef>
+
+	<!--玲珑月辉丹-->
+	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
+		<defName>RI_Recipe_MakeLingLongMoonlightElixir</defName>
+		<label>Make LingLong moonlight elixir</label>
+		<description>Making LingLong moonlight elixir.</description>
+		<jobString>Making LingLong moonlight elixir</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingLongFruit</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_DrugBase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SnowLotus</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LanternBerries</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_LingLongMoonlightElixir>1</RI_Drug_LingLongMoonlightElixir>
+		</products>
+	</RecipeDef>
+
+	<!--炼制浓缩灵液-->
+	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
+		<defName>RI_MakeCondensedSpiritualLiquid</defName>
+		<label>Make Condensed spiritual liquid</label>
+		<description>Making Condensed spiritual liquid.</description>
+		<jobString>Making Condensed spiritual liquid</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritualCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SpiritFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_CondensedSpiritualLiquid>2</RI_Drug_CondensedSpiritualLiquid>
+		</products>
+	</RecipeDef>
+
+	<!--制作玲珑仙酿-->
+	<RecipeDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>RI_Recipe_MakeLingLongWine</defName>
+		<label>make LingLong wine</label>
+		<description>Making LingLong wine.</description>
+		<jobString>making LingLong wine</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>RI_Building_ElixirsWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>RI_Cauldrons</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LingLongFruit</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_LiquidJade</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Drug_CondensedSpiritualLiquid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Drug_LingLongWine>1</RI_Drug_LingLongWine>
+		</products>
+	</RecipeDef>
+
+</Defs>

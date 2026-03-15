@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 仙路的信息分类 -->
+  <StatCategoryDef>
+    <defName>RI_RimImmortal</defName>
+    <label>RimImmortal</label>
+    <displayOrder>160</displayOrder>
+    <displayAllByDefault>true</displayAllByDefault>
+  </StatCategoryDef>
+
+  <StatDef Abstract="True" Name="RI_RimImmortalStatBase">
+    <workerClass>WhoXiuXian.RI_StatWorker.RI_StatWorker_RimImmortal</workerClass>
+    <category>RI_RimImmortal</category>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnHumanlikes>true</showOnHumanlikes>
+    <showOnMechanoids>true</showOnMechanoids>
+    <showIfUndefined>true</showIfUndefined>
+  </StatDef>
+
+  <StatDef ParentName = "RI_RimImmortalStatBase">
+    <defName>GI_EnergyGainEff</defName>
+    <label>Energy gain efficiency</label>
+    <description>The efficiency with which a cultivator acquires Qi while practicing.</description>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>0</hideAtValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+	  <parts>
+		  <li Class="WhoXiuXian.StatPart_RI_EnvironmentalEffects">
+			  <factorIndoors>0.3</factorIndoors><!-- 室内-->
+			  <factorOutdoors>1</factorOutdoors><!-- 室外-->
+			  <terrain>RI_LingMai</terrain><!-- 灵脉土地-->
+        <factorInRange>0.5</factorInRange><!-- 灵岩-->
+			  <extraDeteriorationFactor>1.5</extraDeteriorationFactor><!-- 灵脉土地的增益率-->
+			  <buildings>
+				  <li>RI_Building_FuTon</li><!-- 提灵气的建筑-->
+				  <li>RI_Building_StoneSittingPlatform</li>
+			  </buildings>
+			  <buildingFactor>
+				  <li>0.5</li><!-- 建筑对应的增益-->
+				  <li>1.5</li>
+			  </buildingFactor>
+        <factorTotal>GI_EnergyGainEffFactor</factorTotal>
+		  </li>
+	  </parts>
+    <!-- <statFactors>
+      <li>GI_EnergyGainEffFactor</li>
+    </statFactors> -->
+    <displayPriorityInCategory>10000</displayPriorityInCategory>
+  </StatDef>
+  <!-- 灵气吸收效率乘数 -->
+  <StatDef ParentName = "RI_RimImmortalStatBase">
+    <defName>GI_EnergyGainEffFactor</defName>
+    <label>灵气增长效率乘数</label>
+    <description>灵气增长效率乘数</description>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>1</hideAtValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>10001</displayPriorityInCategory>
+    <parts>
+      <li Class="WhoXiuXian.StatPart_RI_InRoom">
+        <factorInRoom>1.00</factorInRoom>
+        <factorOutRoom>0.9</factorOutRoom>
+        <roomRoleDef>RI_Room_CultivationRoom</roomRoleDef>
+      </li>
+	  </parts>
+  </StatDef>
+
+  <StatDef ParentName = "RI_RimImmortalStatBase">
+    <defName>GI_EnergyLoseEff</defName>
+    <label>Energy lose efficiency</label>
+    <description>The multiplier of Qi that the cultivator consumes when using the sorcery.</description>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>1</hideAtValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>10001</displayPriorityInCategory>
+  </StatDef>
+
+  <StatDef ParentName = "RI_RimImmortalStatBase">
+    <defName>GI_EnergyReGainEff</defName>
+    <label>Energy recover efficiency</label>
+    <description>The multiplier of the speed at which a cultivator regenerates after using a skill.</description>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>1</hideAtValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>10002</displayPriorityInCategory>
+  </StatDef>
+	
+</Defs>

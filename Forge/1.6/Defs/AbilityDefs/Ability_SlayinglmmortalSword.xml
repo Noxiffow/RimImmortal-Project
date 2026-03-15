@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>RI_SlayinglmmortalSword</defName>
+		<label>God slay</label>
+		<description>Unleash a mortal strike on a living creature.</description>
+		<iconPath>Ability/Weapon/RI_SlayinglmmortalSword</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>320</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<writeCombatLog>true</writeCombatLog>
+		<verbProperties>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<verbClass>RI_Starch.RI_Verbs.Verb_AbilityTouch</verbClass>
+			<warmupTime>2</warmupTime>
+			<range>-1</range>
+			<defaultCooldownTime>4</defaultCooldownTime>
+			<requireLineOfSight>True</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_SlayinglmmortalSword">
+				<cooldownTicks>60000</cooldownTicks>
+				<fleck>RI_Fleck_SlayinglmmortalSword</fleck>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
+		<defName>RI_Fleck_SlayinglmmortalSword</defName>
+		<graphicData>
+			<texPath>Effects/Normal/Slash_SLS</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.05</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.78</fadeOutTime>
+		<growthRate>8.7</growthRate>
+		<RotationAngle>0</RotationAngle>
+		<rotation>0~360</rotation>
+	</FleckDef>
+</Defs>
+

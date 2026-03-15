@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>InstallEnergyRoot</defName>
+		<driverClass>JobDriver_UseItem</driverClass>
+		<reportString>installing TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>RemoveEnergyRoot</defName>
+		<driverClass>JobDriver_RemoveMechlink</driverClass>
+	</JobDef>
+
+	<!--灵芽，核心灵芽会腐烂，之后合成封装灵芽，不会烂掉-->
+
+	<!--灵芽植入物base-->
+	<ThingDef Abstract="True" Name="RI_RootImplantBase">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<techLevel>Archotech</techLevel>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>14</pathCost>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Rare</tickerType>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<alwaysHaulable>true</alwaysHaulable>
+		<stackLimit>10</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<thingCategories>
+			<li>RI_Category_ImmortalThings</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
+	</ThingDef>
+
+	<!--下品灵芽-->
+	<ThingDef ParentName="RI_RootImplantBase">
+		<defName>EnergyRootLow</defName>
+		<label>【Low quality】Spiritual root</label>
+		<description>A Low quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×70%.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_EnergyRootLow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<Mass>1</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.15</RoyalFavorValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>WhoXiuXian.CompUsableRoot</compClass>
+				<useJob>InstallEnergyRoot</useJob>
+				<useLabel>Inject Spiritual root to become a cultivator</useLabel>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_UseEffectInstallRoot">
+				<hediffDef>Hediff_RI_EnergyRoot</hediffDef>
+				<Severity>0.3</Severity>
+				<bodyPart>Brain</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<!--会腐烂-->
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--中品灵芽-->
+	<ThingDef ParentName="RI_RootImplantBase">
+		<defName>EnergyRoot</defName>
+		<label>【Medium quality】Spiritual root</label>
+		<description>A Medium quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×100%.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_EnergyRootMedium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<Mass>1</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.3</RoyalFavorValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>WhoXiuXian.CompUsableRoot</compClass>
+				<useJob>InstallEnergyRoot</useJob>
+				<useLabel>Inject Spiritual root to become a cultivator</useLabel>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_UseEffectInstallRoot">
+				<hediffDef>Hediff_RI_EnergyRoot</hediffDef>
+				<Severity>0.5</Severity>
+				<bodyPart>Brain</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<!--会腐烂-->
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--上品灵芽-->
+	<ThingDef ParentName="RI_RootImplantBase">
+		<defName>EnergyRootHigh</defName>
+		<label>【Best quality】Spiritual root</label>
+		<description>A Best quality Spiritual root stored in a copper box, requiring refrigeration.\n\nA Spiritual Root is a benign neurotumor, about the size of a mung bean, located within the prefrontal cortex. Those who possess a Spiritual Root can perceive the presence of Qi energy in the atmosphere and absorb it for Cultivation.\n\nBased on its activity level, a Spiritual Root is classified into three grades: low, medium, and best. The higher the grade, the more efficient the absorption of Qi energy.\n\nMedium quality Spiritual root – Qi energy absorption efficiency ×250%.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_EnergyRootHigh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<Mass>1</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.8</RoyalFavorValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>WhoXiuXian.CompUsableRoot</compClass>
+				<useJob>InstallEnergyRoot</useJob>
+				<useLabel>Inject Spiritual root to become a cultivator</useLabel>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_UseEffectInstallRoot">
+				<hediffDef>Hediff_RI_EnergyRoot</hediffDef>
+				<bodyPart>Brain</bodyPart>
+				<Severity>1</Severity>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<!--会腐烂-->
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--青玉仙露-->
+	<ThingDef ParentName="RI_RootImplantBase">
+		<defName>RI_Things_JadeLiquid</defName>
+		<label>QingMing jade wine</label>
+		<description>A special medicinal wine formulated using Jade Marrow as its primary ingredient. Upon consumption, one will establish a brief connection with the Thran Immortal and endure a powerful spiritual shock. This forcibly condenses a Low-quality Spiritual Root within the brain using Qi energy, transforming the drinker into a Cultivator.\n\nThe origins of this wine are said to trace back to the Sect War of the past. A sect specializing in Wood-element Path once struck a secret pact with the Thran Immortal, exchanging their allegiance for the formula of Jade Wine, in a desperate bid to mass-produce Cultivators. This agreement, however, ignited the internal strife among the Five-Element Sects.\n\nIn the end, the Wood-element Sect was besieged and nearly eradicated by other sects. Yet, Jade Wine survived, and over time, it gradually gained acceptance among the world.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_Things_JadeLiquid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>900</MarketValue>
+			<Mass>0.8</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.15</RoyalFavorValue>
+		</statBases>
+		<!--稀有贸易品-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>WhoXiuXian.CompUsableRoot</compClass>
+				<useJob>InstallEnergyRoot</useJob>
+				<useLabel>Drink wine to please the Thran immortal and become a cultivator</useLabel>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_UseEffectInstallRoot">
+				<hediffDef>Hediff_RI_EnergyRoot</hediffDef>
+				<Severity>0.3</Severity>
+				<bodyPart>Brain</bodyPart>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+			<!--会腐烂-->
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--洗髓玉液-->
+	<ThingDef ParentName="RI_RootImplantBase">
+		<defName>RI_Things_JadeLiquidPro</defName>
+		<label>Marrow-washing nectar</label>
+		<description>Wine is the flame of bone-burning sulfur, sex is the steel blade of cutting flesh, wealth attracts jealousy and harms others, and anger is the smokeless gunpowder.\nFour things in the future will be combined, and there will be no shortage of even the slightest bit.\nI advise you not to be attached to these stuff, which is the right way to cultivate oneself.\n\nThis rare Immortal Wine is brewed using the essence of Five-Element materials, infused with the purest Qi energy of heaven and earth. Upon consumption, it enhances the activity of one's Spiritual Root.\n\nMarrow-washing Nectar is an invaluable elixir, reserved even within major Factions for only a select few inner disciples. With advancements in technology, many precious medicinal herbs have been improved through grafting and cultivation, making some ingredients more affordable. However, the core formula remains tightly controlled by powerful Factions, and many Free Cultivators are unaware of the existence of this mystical wine.</description>
+		<graphicData>
+			<texPath>Things/Item/Health/RI_Things_JadeLiquidPro</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2300</MarketValue>
+			<Mass>0.8</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.5</RoyalFavorValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Usable">
+				<compClass>WhoXiuXian.CompUsableRoot</compClass>
+				<useJob>InstallEnergyRoot</useJob>
+				<useLabel>Drink nectar to improve the quality of spiritual root</useLabel>
+			</li>
+			<li Class="WhoXiuXian.CompProperties_UseEffectInstallRoot">
+				<hediffDef>Hediff_RI_EnergyRoot</hediffDef>
+				<Severity>0.5</Severity>
+				<bodyPart>Brain</bodyPart>
+				<canUpgrade>true</canUpgrade>
+				<requiresExistingHediff>true</requiresExistingHediff>
+				<requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--纯阳真气-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_PureYangSpiritualenergy</defName>
+		<label>Pure-Yang spiritual energy</label>
+		<description>The pellet enters the abdomen, unlike any ordinary, as Yin and Yang are stripped away, transforming into Pure Yang.\n\nPure Yang True Qi is a special type of Qi, formed from the essence of heaven and earth. When a Cultivator reaches the Transformation Realm, and the Golden Pellet in the Dantian reaches full maturation, progress becomes extremely difficult. At this point, one must use Pure Yang True Qi, transforming it into a shadowless sword edge, slaying the Yin God, thus giving birth to the Pure Yang Yuan Ying.\n\nIt is said that during his cultivation, Tianyun, the Immortal and ancestor of the Internal Pellet Path, once encountered a bottleneck. One day, he became trapped in the ruins of an ancient cultivator, unable to escape for several days. While searching for scriptures within the ruins, he stumbled upon the method to refine Pure Yang True Qi. With this, he had an epiphany, broke through his limitations, and ascended to the Yuan Ying stage, ultimately escaping the ruins. Immortal Tianyun recorded this secret method in his heart and passed it down to future generations, ensuring it would be remembered for centuries.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_PureYangSpiritualenergy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>10000</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<orderedTakeGroup>RitualRequireThing</orderedTakeGroup>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(166,236,255)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--仙人手谕-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_Oracle</defName>
+		<label>Immortal oracle</label>
+		<description>The Immortal Touched My Crown, Binding My Hair to Grant Eternal Life.\n\nIt is said that a Celestial Master once wandered the Vast Void, seeking enlightenment amidst the ruins of dying stars. One fateful day, he glimpsed a revelation beyond mortal comprehension and ascended, becoming the Jade Immortal. From this fateful encounter, he inscribed countless edicts, each bearing the essence of his newfound wisdom, and scattered them across the mortal world.\n\nAs the ages passed and Qi grew thin, cultivators waged relentless battles over these sacred texts, weaving a web of bloodstained grudges. Yet, the question remains—what did the Jade Immortal witness in the Vast Void that granted him the path to ascension? This mystery endures, unsolved to this day.\n\nThis artifact is essential for upgrade to the Earth Immortal realm.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_Oracle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>		
+		<!--无法被摧毁-->
+		<useHitPoints>False</useHitPoints>
+		<statBases>
+			<MarketValue>20000</MarketValue>
+			<Mass>1</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>1.5</RoyalFavorValue>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<orderedTakeGroup>RitualRequireThing</orderedTakeGroup>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(255,226,158)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--仙人遗蜕-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_ImmortalExuviae</defName>
+		<label>Immortal exuviae</label>
+		<description>The Immortal exuviae is the item left behind by an Immortal during their ascension, containing a trace of the Immortal's soul and excess spiritual energy.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_ImmortalExuviae</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<MarketValue>7000</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(165,249,215)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

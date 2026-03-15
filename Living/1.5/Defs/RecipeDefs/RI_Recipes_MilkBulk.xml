@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--制作奶豆腐-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookByaslagBulk</defName>
+		<label>Cook byaslag x4</label>
+		<description>Make some byaslag through fermentation and boiling milk.</description>
+		<jobString>Cooking byaslag</jobString>
+		<workAmount>2400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Byaslag>12</RI_Food_Byaslag>
+		</products>
+	</RecipeDef>
+
+	<!--制作酥油-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookButterBulk</defName>
+		<label>Cook butter x4</label>
+		<description>Heat milk to make butter.</description>
+		<jobString>Cooking butter</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Butter>12</RI_Food_Butter>
+		</products>
+	</RecipeDef>
+
+	<!--制作酸奶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookYogurtBulk</defName>
+		<label>Cook yogurt x4</label>
+		<description>Make yogurt through fermentation.</description>
+		<jobString>Cooking yogurt</jobString>
+		<workAmount>3200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_Yogurt>20</RI_Food_Yogurt>
+		</products>
+	</RecipeDef>
+
+	<!--制作甜莓奶酪-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookSweetBerryYogurtBulk</defName>
+		<label>Cook sweet berry yogurt x4</label>
+		<description>Add berry jam while fermenting yogurt.</description>
+		<jobString>Cooking sweet berry yogurt</jobString>
+		<workAmount>3200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_SweetBerryYogurt>20</RI_Food_SweetBerryYogurt>
+		</products>
+	</RecipeDef>
+
+	<!--制作奶茶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookMilkTeaBulk</defName>
+		<label>Cook milk tea x4</label>
+		<description>Brew milk tea with milk and tea.</description>
+		<jobString>Cooking milk tea</jobString>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TeaLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_MilkTea>16</RI_Food_MilkTea>
+		</products>
+	</RecipeDef>
+
+	<!--制作珍珠奶茶-->
+	<RecipeDef ParentName="RI_MilkRecipe_Base">
+		<defName>RI_Recipe_CookBubbleTeaBulk</defName>
+		<label>Cook bubble tea x4</label>
+		<description>Brew bubble milk tea with milk and tea.</description>
+		<jobString>Cooking bubble tea</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_TeaLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_BubbleTea>16</RI_Food_BubbleTea>
+		</products>
+	</RecipeDef>
+
+</Defs>

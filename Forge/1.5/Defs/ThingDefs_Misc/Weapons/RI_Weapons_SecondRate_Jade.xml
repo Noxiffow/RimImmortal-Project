@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--苍血竹武器前置-->
+	<ThingDef ParentName="BaseGunWithQuality" Name="RI_WeaponBase_JadeBamboo" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>RI_InitialApproach_ToolsStrengthen</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>RI_Building_EnergyForge</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<displayPriority>500</displayPriority>
+		</recipeMaker>
+		<weaponTags>
+			<li>RI_MagicalWeapon</li>
+			<li>RI_JadeBambooWeapons_Base</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tradeTags>
+			<li>RI_Weapon_Jade_Tag</li>
+			<li>RI_AllWeapon_AllArmor_Tag</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--苍血竹剑-->
+	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Weapon_JadeBambooSword</defName>
+		<label>Jade bamboo sword【Third-rate】</label>
+		<description>【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo sword, can release a continuous energy blade.\n\n&lt;color=#FFFF00&gt;【Special effects】Basic projectile armor penetration +25%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_JadeBambooSword</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<RI_Resource_JadeBloodBamboo>40</RI_Resource_JadeBloodBamboo>
+			<RI_Resource_SpiritualCrystal>3</RI_Resource_SpiritualCrystal>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_JadeBambooSwordBlade</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>15</range>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>RI_SoundShot_EnergyBlade</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!--额外的tag，给剑狂用-->
+		<weaponTags>
+			<li>RI_MagicalWeapon_Sword</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_JadeBambooSwordBlade</defName>
+		<label>Bamboo energy slash</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_JadeBambooSwordBlade</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--苍血竹刀-->
+	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Weapon_JadeBambooBlade</defName>
+		<label>Jade bamboo blade【Third-rate】</label>
+		<description>【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo blade, can release a powerful long-distance energy cut, cut the enemy.\n\n&lt;color=#FFFF00&gt;【Special effects】Basic projectile armor penetration +25%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_JadeBambooBlade</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<RI_Resource_JadeBloodBamboo>40</RI_Resource_JadeBloodBamboo>
+			<RI_Resource_SpiritualCrystal>3</RI_Resource_SpiritualCrystal>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_JadeBambooBlade</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>15</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>RI_SoundShot_EnergyBlade</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>RI_MagicalWeapon_Sword</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_JadeBambooBlade</defName>
+		<label>Bamboo energy blade</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_JadeBambooBlade</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>19</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--苍血竹飞刀-->
+	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Weapon_JadeBambooFlyKnife</defName>
+		<label>Jade bamboo throw-knife【Third-rate】</label>
+		<description>【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo throw-knife, destruction is not strong, but win in the number.\n\n&lt;color=#FFFF00&gt;【Special effects】Basic projectile armor penetration +25%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_JadeBambooFlyKnife</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<RI_Resource_JadeBloodBamboo>30</RI_Resource_JadeBloodBamboo>
+			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_JadeBambooFlyingKnife</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>15</range>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>RI_SoundShot_EnergyBlade</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_JadeBambooFlyingKnife</defName>
+		<label>Bamboo energy knife</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_JadeBambooFlyingKnife</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--苍血竹枪-->
+	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
+		<defName>RI_Weapon_JadeBambooSpear</defName>
+		<label>Jade bamboo spear【Third-rate】</label>
+		<description>【Third-rate】Range weapon\n\nGreen blood bamboo is a material that can carry spiritual energy very well. Weapons made of green blood bamboo and spiritual stone have limited damage in melee combat, but can trigger the energy blade to kill the enemy at long range.\n\nJade bamboo spear, can release a strong piercing energy spear, but the attack distance is close.\n\n&lt;color=#FFFF00&gt;【Special effects】Basic projectile armor penetration +25%.&lt;/color&gt;</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RI_Weapon_JadeBambooSpear</texPath>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.5</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<RI_Resource_JadeBloodBamboo>45</RI_Resource_JadeBloodBamboo>
+			<RI_Resource_SpiritualCrystal>3</RI_Resource_SpiritualCrystal>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RI_Bullet_JadeBambooSpearShoot</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>RI_SoundShot_EnergyBlade</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Bullet_JadeBambooSpearShoot</defName>
+		<label>Bamboo energy spear</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Bullet_JadeBambooSpearShoot</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stab</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>85</speed>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>
+

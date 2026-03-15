@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityCategoryDef>
+		<defName>Zombie</defName>
+		<displayOrder>1020</displayOrder>
+	</AbilityCategoryDef>
+	<!--扑咬-->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_BiteOn</defName>
+		<label>Bite on</label>
+		<description>Rushing towards and biting the target.</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_BiteOn</iconPath>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<hostile>true</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<category>Zombie</category>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>RimZombieGirl.Verb_CastAbilityJumpExt</verbClass>
+			<!-- <verbClass>Verb_CastAbilityJump</verbClass> -->
+			<warmupTime>0.5</warmupTime>
+			<range>4.9</range>
+			<label>jump</label>
+			<violent>true</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<!-- <jobDef>CastJump</jobDef> -->
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_Bite">
+				<damageMin>7</damageMin>
+				<damageMax>13</damageMax>
+				<armorPenetration>0.5</armorPenetration>
+				<chanceMin>1</chanceMin>
+				<chanceMax>2</chanceMax>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!--遁地术-->
+	<AbilityDef>
+		<defName>Zg_DirtTeleport</defName>
+		<label>dirt teleport</label>
+		<description>Drill into the earth and out of the target position.</description>
+		<iconPath>UI/Abilities/Longjump</iconPath>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<category>Zombie</category>
+		<!-- 放技能读条时的声音和特效, 可空 -->
+		<!-- <warmupStartSound>技能声音</warmupStartSound> -->
+		<!-- <warmupEffecter>技能特效</warmupEffecter>  -->
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>14.9</range>
+			<label>teleport</label>
+			<violent>true</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<requireLineOfSight>true</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+			<!-- 放技能读条时目标处的声音和特效, 可空 -->
+			<!-- <soundCast>播放声音</soundCast> -->
+			<!-- <warmupEffecter>起始特效</warmupEffecter> -->
+		</verbProperties>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_DirtTeleport">
+				<!-- 传送完之后,落点的声音和特效, 可空 -->
+				<!-- <targetMote>落点特效</targetMote> -->
+				<!-- <SoundDef>落点声音</SoundDef> -->
+				<!-- <targetEffecter>路径特效</targetEffecter> -->
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- 火焰呼吸 -->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_GhostFireBurst</defName>
+		<label>Ghost fire spit</label>
+		<!-- 经由一种相比 Impid 更好的，基于生物技术优化过的腺体，喷洒出高温易燃的液体。以迅速点燃目标 -->
+		<description>o</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_GhostFireBurst</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_AbilitySpew">
+				<compClass>RimZombieGirl.CompAbilityEffect_Spew</compClass>
+				<damageType>Flame</damageType>
+				<damageAmount>17</damageAmount>
+				<armorPenetration>1.0</armorPenetration>
+				<range>5.9</range>
+				<lineWidthEnd>4.3</lineWidthEnd>
+				<!-- <rangeStat>NzFlm_SkillRangeMultiplierHalf</rangeStat> -->
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- 速度爆发 血羽-->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_BloodPlume</defName>
+		<label>Blood plume</label>
+		<description>#</description>
+		<abilityClass>RimZombieGirl.Ability_NoCastGizmo</abilityClass>
+		<!-- TODO 图标 -->
+		<iconPath>UI/Abilities/RI_ZombieAbility_BloodPlume</iconPath>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<verbProperties>
+			<!-- TODO 声音 -->
+			<warmupTime>0.2</warmupTime>
+			<onlyManualCast>True</onlyManualCast>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!--<li Class="CompProperties_AbilityGiveHediff"><compClass>CompAbilityEffect_GiveHediff</compClass><hediffDef>RI_He_SpeedRush</hediffDef><severity>0.3</severity><psychic>False</psychic></li>-->
+			<!-- <li Class="CompProperties_AbilityFleckOnTarget">
+            <fleckDef>PsycastPsychicEffect</fleckDef>
+        </li> -->
+			<li Class="RimZombieGirl.CompProperties_AbilityToggleHediff">
+				<hediffDef>RI_He_SpeedRush</hediffDef>
+				<severity>0.3</severity>
+				<label>Speed Rush</label>
+				<description>Toggle the Speed Rush hediff on this pawn.</description>
+				<iconPath>UI/Icons/Abilities/Spy/AdrenalGland</iconPath>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- 邪血诅咒 -->
+	<AbilityDef>
+		<defName>RI_DarkBloodCurse</defName>
+		<label>Dark Blood Curse</label>
+		<description>#TODO</description>
+		<iconPath>UI/Abilities/RI_ZombieAbility_BiteOn</iconPath>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<targetRequired>True</targetRequired>
+		<cooldownTicksRange>1200</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.2</warmupTime>
+			<onlyManualCast>True</onlyManualCast>
+			<range>8.9</range>
+			<targetParams>
+				<canTargetSelf>False</canTargetSelf>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetMechs>False</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>RI_Porj_BloodCurse</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- 邪血诅咒 子弹 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_Porj_BloodCurse</defName>
+		<label>Blood Curse</label>
+		<thingClass>RimZombieGirl.Projectile_HediffOnly</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/PiercingSpine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(0, 1, 0.6, 1)</color>
+			<!-- 碧绿色 -->
+		</graphicData>
+		<projectile>
+			<!-- 麻醉针 -->
+			<damageDef>RI_Dm_BloodCurse</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>2.0</armorPenetrationBase>
+			<stoppingPower>0</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<!-- 哭 -->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_SoulCapture</defName>
+		<label>curse descent</label>
+		<description>Capture the soul of the target, infusing it with dark energy.</description>
+		<!-- TODO 图标 -->
+		<iconPath>UI/Abilities/RI_ZombieAbility_SoulCapture</iconPath>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<cooldownTicksRange>3000</cooldownTicksRange>
+		<verbProperties>
+			<!-- TODO 声音 -->
+			<warmupTime>0.2</warmupTime>
+			<verbClass>Verb_CastAbility</verbClass>
+			<onlyManualCast>True</onlyManualCast>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_SoulCapture">
+				<compClass>RimZombieGirl.CompAbilityEffect_SoulCapture</compClass>
+				<stunDurationTicks>6000</stunDurationTicks>
+				<soundCast>CursedGraveSpawn_Sound</soundCast>
+			</li>
+			<li Class="RimZombieGirl.CompProperties_CostBlood">
+				<amount>10</amount>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- 冥血爆发-->
+	<AbilityDef>
+		<defName>RI_ZombieAbility_BloodEruption</defName>
+		<label>Blood eruption</label>
+		<description>#</description>
+		<abilityClass>RimZombieGirl.Ability_NoCastGizmo</abilityClass>
+		<!-- TODO 图标 -->
+		<iconPath>UI/Abilities/RI_ZombieAbility_BloodEruption</iconPath>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<targetRequired>False</targetRequired>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<verbProperties>
+			<!-- TODO 声音 -->
+			<warmupTime>0.2</warmupTime>
+			<onlyManualCast>True</onlyManualCast>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!--<li Class="CompProperties_AbilityGiveHediff"><compClass>CompAbilityEffect_GiveHediff</compClass><hediffDef>RI_He_SpeedRush</hediffDef><severity>0.3</severity><psychic>False</psychic></li>-->
+			<!-- <li Class="CompProperties_AbilityFleckOnTarget">
+            <fleckDef>PsycastPsychicEffect</fleckDef>
+        </li> -->
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<psychic>False</psychic>
+				<hediffDef>RI_He_BloodEruption</hediffDef>
+				<severity>0.3</severity>
+			</li>
+			<li Class="RimZombieGirl.CompProperties_CostBlood">
+				<amount>10</amount>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!--除咒术-->
+	<AbilityDef>
+		<defName>RI_DaoAbility_CurseCure</defName>
+		<label>Exorcism</label>
+		<description>Use at Pawn, will cure the Curse on Pawn.Use at ground ,will cure this map.</description>
+		<!-- TODO 图标 -->
+		<iconPath>UI/Abilities/RI_DaoAbility_CurseCure</iconPath>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>11.9</range>
+			<label>reduce curse</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<requireLineOfSight>true</requireLineOfSight>
+			<!-- TODO 音效 -->
+			<soundCast>Longjump_Jump</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="RimZombieGirl.CompProperties_CureCurse">
+				<cureCurseMin>5</cureCurseMin>
+				<cureCurseMax>15</cureCurseMax>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

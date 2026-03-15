@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase" Name="RI_ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<Beauty>3</Beauty>
+		</statBases>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+		<thingCategories>
+			<li>RI_Category_Ore</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--灵石-->
+	<ThingDef ParentName="RI_ResourceBase">
+		<defName>RI_Resource_SpiritualCrystal</defName>
+		<label>Spiritual crystal</label>
+		<description>A translucent stone solidified with Qi and colored. Not very hard, but with a plastic-like flexibility, and completely fire-resistant. Cultivators can produce spiritual crystals from within themselves, and because of their diverse functions and stable nature, they are often used as currency among cultivators. After a cultivator dies, the parts of his body filled with spirit will slowly gather into spiritual crystals because of the surrounding pressure, which is why later generations can dig some spiritual crystal veins from the ground.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_SpiritualCrystal</texPath>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<!--无法被摧毁-->
+		<useHitPoints>False</useHitPoints>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.01</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.05</RoyalFavorValue>
+		</statBases>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepCountPerCell>10</deepCountPerCell>
+		<deepLumpSizeRange>4~15</deepLumpSizeRange>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(165,249,215)</glowColor>
+			</li>
+		</comps>
+		<!--可以拾取-->
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+	</ThingDef>
+	
+	<!--柔玉-->
+	<ThingDef ParentName="RI_ResourceBase">
+		<defName>RI_Resource_LiquidJade</defName>
+		<label>Liquid jade</label>
+		<description>Liquid jade is a wonderful mineral that absorbs the spirit of heaven and earth. This non-Newtonian fluid, a mysterious substance that senses and absorbs Qi, can only be found in small amounts in underground rock formations near water flows. When the surface is struck hard, the mineral falls apart, but then slowly softens, like crystal clear, smooth tar. Because of its valuable properties and difficult to store form, this mineral is almost impossible to find on the market.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_LiquidJade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>true</healthAffectsPrice>
+		<!--无法被摧毁-->
+		<useHitPoints>False</useHitPoints>
+		<statBases>
+			<MarketValue>180</MarketValue>
+			<Mass>0.2</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.1</RoyalFavorValue>
+		</statBases>
+		<intricate>true</intricate>
+	</ThingDef>
+
+
+	<!--我超，元！——元神-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Things_GS</defName>
+		<label>Primordial spirit</label>
+		<!--无法被摧毁-->
+		<useHitPoints>False</useHitPoints>
+		<description>A translucent ball of light, it seems to emit thousands of light and attract light at the same time. This orb stores all the memories of a cultivator and enough Qi, and when the cultivator dies, the Primordial spirit will activate, transform the Qi into the body, and create another person exactly like the cultivator to achieve resurrection.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Things_GS</texPath>
+			<drawSize>2</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<!--建筑层级在一般建筑上面-->
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>5</pathCost>
+		<drawerType>RealtimeOnly</drawerType>
+		<allowedArchonexusCount>0</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(255,101,5)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--青冥树种-->
+	<ThingDef ParentName="RI_ResourceBase">
+		<defName>RI_Tree_QingMingSeed</defName>
+		<label>QingMing tree seed</label>
+		<description>The seed can be used to grow the QingMing tree. It is said that this seed is a strange seed developed by an ancient faction to give ordinary people the opportunity to cultivate.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_QingMingTreeSeed</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>RI_Tree_QingMing</ThingDef>
+		</descriptionHyperlinks>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<MarketValue>350</MarketValue>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.1</RoyalFavorValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Plantable">
+				<plantDefToSpawn>RI_Tree_QingMing</plantDefToSpawn>
+			</li>
+		</comps>
+		<!--稀有贸易品-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--青玉髓-->
+	<ThingDef ParentName="RI_ResourceBase">
+		<defName>RI_Resource_QingMingMarrow</defName>
+		<label>QingMing marrow</label>
+		<description>The heart wood of the QingMing tree, almost jade tree pith, full of Qi, can be used to make QingMing jade wine.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_QingMingMarrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<MarketValue>750</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.15</RoyalFavorValue>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<!--稀有贸易品-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--丹火-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_SpiritFire</defName>
+		<label>Spirit fire</label>
+		<description>The spirit fire, also known as the Primordial Fire.\n\nMost cultivators have Yuanyang in their bodies, but only the cultivators of the Elixir method pay attention to the cultivation of Yuanyang.Once the realm is reached, it will be able to turn the Qi into a furnace, and the Yuanyang of its own will be led out of the body to form the spirit fire for the quenching of medicinal materials.This fire is not very hot, but it is not very stable, and if an external force breaks the enclose Qi shell, it will cause an explosion.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_SpiritFire</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>2</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(255,101,5)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>300</wickTicks>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>BombSuper</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<chanceToStartFire>1</chanceToStartFire>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>10</heatPerSecond>
+			</li>
+		</comps>
+		<!--稀有贸易品-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--仙人手谕残片-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_OracleFragment</defName>
+		<label>oracle fragment</label>
+		<description>A fragment of an Immortal oracle, made of jade-like material. To decipher the information within, the fragment must be reassembled on an altar.\n\nThis rare material is possessed by only a few cultivators. Whenever news of a fragment appears, it always causes a stir in the cultivation world.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_OracleFragment</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<!--无法被摧毁-->
+		<useHitPoints>False</useHitPoints>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<Mass>0.01</Mass>
+			<!--价值多少贡献点-->
+			<RoyalFavorValue>0.5</RoyalFavorValue>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>RI_Category_Resource</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<possessionCount>1</possessionCount>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,226,158)</glowColor>
+			</li>
+		</comps>
+		<!--稀有贸易品-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

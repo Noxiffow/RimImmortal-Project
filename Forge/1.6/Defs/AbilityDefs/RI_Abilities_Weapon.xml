@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>RI_Ability_ChiYouFlameHalberd</defName>
+		<label>Cross flame</label>
+		<description>Creates a cross-shaped flame that burns around the target.</description>
+		<iconPath>Ability/Weapon/RI_Ability_ChiYouFlameHalberd</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<!--RangedWeapon_Cooldown>4.10</RangedWeapon_Cooldown-->
+		<verbProperties>
+			<defaultCooldownTime>3</defaultCooldownTime>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>20</range>
+			<warmupTime>1.1</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0.2, 0)</li>
+					<li>(1, 1)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_ChiYouFlameHalberd">
+				<range>20</range>
+				<damageAmount>46</damageAmount>
+				<cooldownTicks>1100</cooldownTicks>
+				<DamageDef>Flame</DamageDef>
+
+				<Hediff>RI_Hediff_ChiYouFlameHalberd</Hediff>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>RI_DragonPatternStick</defName>
+		<label>Mountain break</label>
+		<description>It hits the ground in one direction, unleashing a powerful explosion.</description>
+		<iconPath>Ability/Weapon/RI_DragonPatternStick</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>320</cooldownTicksRange>
+		<!--RangedWeapon_Cooldown>4.10</RangedWeapon_Cooldown-->
+		<verbProperties>
+			<defaultCooldownTime>2.8</defaultCooldownTime>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>19</range>
+			<warmupTime>0.9</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0.2, 0)</li>
+					<li>(1, 1)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_DragonPatternStick">
+				<range>19</range>
+				<damageAmount>57</damageAmount>
+				<cooldownTicks>500</cooldownTicks>
+				<DamageDef>RI_Bomb_DragonPatternStick</DamageDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>RI_FlyGrenade_Ability</defName>
+		<label>Smoke grenade</label>
+		<description>Fire a smoke grenade.</description>
+		<iconPath>Ability/Weapon/RI_FlyGrenade_Ability</iconPath>
+		<cooldownTicksRange>170</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<accuracyTouch>0.79</accuracyTouch>
+			<accuracyShort>0.8</accuracyShort>
+			<accuracyMedium>0.8</accuracyMedium>
+			<accuracyLong>0.8</accuracyLong>
+			<range>18.9</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Projectile_FlyGrenade_Smoke</defaultProjectile>
+			<verbClass>RI_Starch.RI_Ability.RI_Verb_AbilityBurst</verbClass>
+			<warmupTime>0.7</warmupTime>
+			<soundCast>ThrowGrenade</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+		</verbProperties>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>RI_Projectile_FlyGrenade_Smoke</defName>
+		<label>Smoke grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_Projectile_FlyGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>27</speed>
+			<damageDef>Smoke</damageDef>
+			<explosionRadius>4</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			<explosionDelay>20</explosionDelay>
+			<!-- Use default damage from explosion def -->
+		</projectile>
+	</ThingDef>
+
+
+	<AbilityDef>
+		<defName>RI_Weapon_CyanogenJadeSword_Ability</defName>
+		<label>Broken jade</label>
+		<description>Concentrate the force of the hammer, jump, hit the ground hard, and create a powerful shock wave.</description>
+		<iconPath>Ability/Weapon/RI_Weapon_CyanogenJadeSword_Ability</iconPath>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>420</cooldownTicksRange>
+		<verbProperties>
+			<defaultCooldownTime>3.5</defaultCooldownTime>
+			<verbClass>RI_XXK.Verb_CastAbilityCyanogenJadeSwordJump</verbClass>
+			<label>jump</label>
+			<violent>false</violent>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>false</onlyManualCast>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<range>29.9</range>
+			<warmupEffecter>JumpWarmupEffect</warmupEffecter>
+			<requireLineOfSight>true</requireLineOfSight>
+			<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+			<soundLanding>JumpPackLand</soundLanding>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<jobDef>CastJump</jobDef>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<!--li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li-->
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_Cooldown">
+				<cooldownTicks>300</cooldownTicks>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- 新的Flyer实体，对应dll里Verb的jumpFlyerDef -->
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RI_CyanogenJadeSwordFlyer</defName>
+		<label>青玉摧破</label>
+		<thingClass>RI_XXK.PawnRectilinearFlyer</thingClass>
+		<!-- 对应dll里thingClass ，如果改了Dll这个也要改-->
+		<useHitPoints>false</useHitPoints>
+		<drawOffscreen>true</drawOffscreen>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Skyfaller</altitudeLayer>
+		<drawerType>RealtimeOnly</drawerType>
+		<pawnFlyer>
+			<flightDurationMin>0.5</flightDurationMin>
+			<flightSpeed>48</flightSpeed>
+			<workerClass>PawnFlyerWorker</workerClass>
+			<!-- 对应原版里workerClass，想改也可以，没必要 -->
+			<heightFactor>3</heightFactor>
+			<progressCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(1, 1)</li>
+				</points>
+			</progressCurve>
+		</pawnFlyer>
+		<modExtensions>
+			<li Class="RI_XXK.XXK_ChangePawnFly">
+				<DamageDef>RI_Bomb_CyanogenJadeSword</DamageDef>
+				<DamAmount>25</DamAmount>
+				<Radius>6.9</Radius>
+				<ArmorPenetration>6</ArmorPenetration>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>
+

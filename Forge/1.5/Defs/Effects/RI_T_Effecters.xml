@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!--=====================内丹法门技能特效===========================-->
+
+	<!--技能选中特效——炼器——匠心-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_WorkFocus_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/WorkFocus</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——炼器——修复-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_Repair_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/Repair</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——炼器——铳铁再造-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_TurretAssemble_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/TurretAssemble</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——炼器——工匠激励-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_WorkInsentive_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/WorkInsentive</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——炼器——神机-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_MaterialDecompositione_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/MaterialDecomposition</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能选中特效——炼器——分解-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_ComponentRefine_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/ComponentRefine</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能释放特效——炼器——铳铁-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_TurretAssembleActive_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/TurretAssemble_Mote</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--技能释放特效——炼器——修复-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Ability_RepairActive_Mote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.01</solidTime>
+			<fadeInTime>0.5</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Ability/Motes/Repair_Mote</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!--武器特效——古修枪-->
+	<ThingDef ParentName="MoteBase">
+		<defName>RI_Mote_AncientGun</defName>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Special/RI_AncientGunHalo</texPath>
+			<drawSize>(1.3,1.3)</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<solidTime>0</solidTime>
+			<fadeOutTime>0</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+</Defs>

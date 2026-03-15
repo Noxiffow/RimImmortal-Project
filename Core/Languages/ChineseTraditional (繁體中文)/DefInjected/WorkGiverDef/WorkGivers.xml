@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Refining Elixir -->
+  <RI_DanMake.label>炼制丹药</RI_DanMake.label>
+  <!-- EN: Refining Elixir -->
+  <RI_DanMake.gerund>炼制丹药于</RI_DanMake.gerund>
+  <!-- EN: cook -->
+  <RI_DanMake.verb>炼制</RI_DanMake.verb>
+  
+  <!-- EN: Make medicinal materials -->
+  <RI_MedicalMake.label>炮制药材</RI_MedicalMake.label>
+  <!-- EN: Make medicinal materials on -->
+  <RI_MedicalMake.gerund>炮制药材于</RI_MedicalMake.gerund>
+  <!-- EN: cook -->
+  <RI_MedicalMake.verb>炮制</RI_MedicalMake.verb>
+  
+  <!-- EN: operate spiritual crystal scanner -->
+  <RI_Resource_SpiritualCrystalScan.label>操作灵脉透镜</RI_Resource_SpiritualCrystalScan.label>
+  <!-- EN: scanning at -->
+  <RI_Resource_SpiritualCrystalScan.gerund>操作灵脉透镜于</RI_Resource_SpiritualCrystalScan.gerund>
+  <!-- EN: scan -->
+  <RI_Resource_SpiritualCrystalScan.verb>扫描</RI_Resource_SpiritualCrystalScan.verb>
+  
+  <!-- EN: study new route -->
+  <RI_StudyRoute.label>学习书本</RI_StudyRoute.label>
+  <!-- EN: studying -->
+  <RI_StudyRoute.gerund>学习中</RI_StudyRoute.gerund>
+  <!-- EN: study -->
+  <RI_StudyRoute.verb>学习</RI_StudyRoute.verb>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Blood bell altar -->
+  <RI_Building_BloodBellAltar.label>血铃祭台</RI_Building_BloodBellAltar.label>
+  <!-- EN: An altar which can only be used once. As long as you ring the blood bell, then you will wake the Crimson Tyrant.\n\n Before the battle, be prepared. -->
+  <RI_Building_BloodBellAltar.description>一座用于召唤血蛄侯的祭台，只能使用一次。\n\n战斗之前，请做好准备。</RI_Building_BloodBellAltar.description>
+  <!-- EN: summon Crimson Tyrant -->
+  <RI_Building_BloodBellAltar.comps.TC_SummonSuperiorZombie.gizmoLabel>召唤血蛄侯</RI_Building_BloodBellAltar.comps.TC_SummonSuperiorZombie.gizmoLabel>
+  
+</LanguageData>

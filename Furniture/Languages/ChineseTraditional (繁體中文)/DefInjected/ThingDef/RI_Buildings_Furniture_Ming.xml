@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Eight immortal table (2x2) -->
+  <RI_Building_EightManSquareTable.label>八仙桌（2x2）</RI_Building_EightManSquareTable.label>
+  <!-- EN: The Eight Immortals table refers to a square table with equal-length sides and a relatively wide surface, traditionally used to seat eight people—hence its elegant name. -->
+  <RI_Building_EightManSquareTable.description>八仙桌指桌面四边长度相等的、桌面较宽的方桌，可供八人入座，雅称八仙桌。</RI_Building_EightManSquareTable.description>
+  
+  <!-- EN: Folding screen -->
+  <RI_Building_FoldingScreen.label>围屏</RI_Building_FoldingScreen.label>
+  <!-- EN: A pierced screen panel is placed on one side, used to divide space and provide visual privacy. -->
+  <RI_Building_FoldingScreen.description>一面有着镂空的围屏，用于分割房间，遮蔽视线。</RI_Building_FoldingScreen.description>
+  
+  <!-- EN: Half-round table (1x1) -->
+  <RI_Building_HalfRoundTable.label>月牙桌（2x2）</RI_Building_HalfRoundTable.label>
+  <!-- EN: A semicircular table, usually used in pairs. This kind of table can be attached to the wall as a display shelf. When there are guests in the home, two semicircular tables can be put together as a round table. -->
+  <RI_Building_HalfRoundTable.description>一种半圆形桌子，通常成对使用。这种桌子可以靠墙摆放，作为展示架。家里来客人时，两张月牙桌可以拼在一起，当作一张圆桌。</RI_Building_HalfRoundTable.description>
+  
+  <!-- EN: Long bench -->
+  <RI_Building_LongBench.label>条凳</RI_Building_LongBench.label>
+  <!-- EN: Long bench is a traditional type of seat that can accommodate two people sitting side by side. -->
+  <RI_Building_LongBench.description>一种传统凳子，可供二人并坐。</RI_Building_LongBench.description>
+  
+  <!-- EN: Basic table (1x2) -->
+  <RI_Building_MingBasicTable.label>酒桌（1x2）</RI_Building_MingBasicTable.label>
+  <!-- EN: A small and compact table, commonly seen in households. -->
+  <RI_Building_MingBasicTable.description>TODO</RI_Building_MingBasicTable.description>
+  
+  <!-- EN: Double shelf bed -->
+  <RI_Building_MingDoubleBed.label>架子床</RI_Building_MingDoubleBed.label>
+  <!-- EN: A long wooden bed, according to legend, was first used by monks to sit meditation, and later through constant changes, became a classic furniture. It can be used for sitting and sleeping, surrounded by a fence. -->
+  <RI_Building_MingDoubleBed.description>架子床是一种设置了帷幕的双人床，四周有立柱，顶上有顶盖，正面没有遮拦，方便人上下床。\n\n其样式复杂，工艺精细，按照柱子数量有四柱，六柱的区别，还有各种开门洞的款式。</RI_Building_MingDoubleBed.description>
+  
+  <!-- EN: Painting table (2x3) -->
+  <RI_Building_MingDrawTable.label>画案（2x3）</RI_Building_MingDrawTable.label>
+  <!-- EN: A large table for painting and poetry — an essential piece for any scholar’s study. -->
+  <RI_Building_MingDrawTable.description>TODO</RI_Building_MingDrawTable.description>
+  
+  <!-- EN: Drum stool -->
+  <RI_Building_RoundChair.label>坐墩</RI_Building_RoundChair.label>
+  <!-- EN: A drum stool features a design without legs, crafted using a traditional "joined drum" technique that creates a waist-drum shape—narrow at the ends and wider in the middle. -->
+  <RI_Building_RoundChair.description>坐墩的特点是没有四足，而采用攒鼓的做法，形成两端小中间大的腰鼓型。</RI_Building_RoundChair.description>
+  
+  <!-- EN: Arhat bed -->
+  <RI_Building_SleepingBed.label>罗汉床</RI_Building_SleepingBed.label>
+  <!-- EN: A long wooden bed, according to legend, was first used by monks to sit meditation, and later through constant changes, became a classic furniture. It can be used for sitting and sleeping, surrounded by a fence. -->
+  <RI_Building_SleepingBed.description>一张长木床，据传最初由僧侣用于打坐冥想，后来经过不断变化，成为了一种经典家具。它既可坐又可卧，三面有围栏。</RI_Building_SleepingBed.description>
+  
+  <!-- EN: Square stool -->
+  <RI_Building_SquareChair.label>杌凳</RI_Building_SquareChair.label>
+  <!-- EN: Square stool is a backless seat—small, simple, and commonly found everywhere. -->
+  <RI_Building_SquareChair.description>杌凳是不带靠背的坐具，小巧简单，随处可见。</RI_Building_SquareChair.description>
+  
+  <!-- EN: Large cabinet -->
+  <RI_Building_StorageShelf.label>四件柜</RI_Building_StorageShelf.label>
+  <!-- EN: This kind of cabinet can usually reach more than 2 meters, which is composed of the top box and the bottom cabinet, known as the top box cabinet. Since this kind of cabinet is usually placed in pairs, four cabinets form a huge storage space, so it is called four cabinets.\n\nSlightly increases rest efficiency. -->
+  <RI_Building_StorageShelf.description>这种柜子通常能超过两米高，由上部的顶箱和下部的柜子组成。由于这种柜子通常成对摆放，四个柜子便形成了一个巨大的储物空间，因此被称为四件柜。</RI_Building_StorageShelf.description>
+  
+  <!-- EN: Book shelf -->
+  <RI_Building_TallShelf.label>三层架格</RI_Building_TallShelf.label>
+  <!-- EN: This kind of shelf is usually used to hold books and is an indispensable piece of furniture for decorating a study. Its shapes are diverse and the patterns are complex, and it is often regarded as the embodiment of the owner's aesthetic sense.\n\nSlightly increases research speed. -->
+  <RI_Building_TallShelf.description>这种架子通常用来放书，是装饰书房必不可少的家具。其造型多样，图案复杂，常被视为主人审美的体现。</RI_Building_TallShelf.description>
+  
+</LanguageData>

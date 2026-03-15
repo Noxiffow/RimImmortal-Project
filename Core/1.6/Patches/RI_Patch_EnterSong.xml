@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--替换主界面背景音乐-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/SongDef[defName="EntrySong"]/clipPath</xpath>
+		<value>
+			<clipPath>Songs/Entry/RI_Songs_StartWithTheFirstStep</clipPath>
+		</value>
+	</Operation>
+	
+</Patch>

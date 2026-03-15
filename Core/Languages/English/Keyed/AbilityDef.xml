@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<CannotStudy>Can not study</CannotStudy>
+    <RI_WarnNoPlantInRadius>No plants in the radius</RI_WarnNoPlantInRadius>
+
+    <RI_Ability_StealingGongRoute_Success>Successfully obtained the gong route</RI_Ability_StealingGongRoute_Success>
+    <RI_Ability_StealingGongRoute_Fail>Failed</RI_Ability_StealingGongRoute_Fail>
+
+    <RI_Ability_StealingGongRoute_NoRoot>No energy root</RI_Ability_StealingGongRoute_NoRoot>
+</LanguageData>

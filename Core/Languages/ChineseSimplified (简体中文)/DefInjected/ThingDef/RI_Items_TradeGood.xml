@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Bloodstained wooden effigy -->
+  <RI_TradeGood_BloodstainedWoodenEffigy.label>染血木人像</RI_TradeGood_BloodstainedWoodenEffigy.label>
+  <!-- EN: A wooden figurine, stained with blood and worn smooth from years of touch. Few are born wicked; most who stray down the dark path have their own stories. Yet life is like a game of chess—once a piece is placed, there is no turning back.\n\nTo steady their wavering hearts, evil cultivators hold their own beliefs, with Thran Immortal being the most revered. Such wooden figurines serve as objects of their devotion.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it. -->
+  <RI_TradeGood_BloodstainedWoodenEffigy.description>沾染了血迹的木雕像，摩挲得没有了棱角。天生恶人乃是少数，走上邪路各有各的故事，但人生如棋，落子无悔。\n\n为了避免道心动摇，歹修们也有各自信仰，大多以喰仙为主，这种木雕像就是他们的信仰之物。\n\n此物属于贸易品，没有什么实际作用，但一些商队可能对其感兴趣。</RI_TradeGood_BloodstainedWoodenEffigy.description>
+  
+  <!-- EN: Corroded medal -->
+  <RI_TradeGood_CorrodedMedal.label>锈蚀勋章</RI_TradeGood_CorrodedMedal.label>
+  <!-- EN: A small military medal, corroded beyond recognition, yet highly sought after by antique collectors. This medal appears to trace back to the distant era of the Founder's War, a time when cultivators had yet to call themselves Immortals and instead served as soldiers, following orders.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it. -->
+  <RI_TradeGood_CorrodedMedal.description>一枚小小的军功勋章，已经锈蚀得看不出样子，但在古玩行家之中人气颇高。这种勋章似乎能追溯到遥远的方圆战争时期，当时的修炼者还未以仙人自居，都是听从命令的士兵。\n\n此物属于贸易品，没有什么实际作用，但一些商队可能对其感兴趣。</RI_TradeGood_CorrodedMedal.description>
+  
+  <!-- EN: Family letter -->
+  <RI_TradeGood_FamilyLetter.label>家书</RI_TradeGood_FamilyLetter.label>
+  <!-- EN: "A child leaves home young, returns old, His accent unchanged, though hair turns grey."\n\nAn aged bamboo slip, its inscriptions now faded. Some free cultivators, having drifted to the outer rim planets, found themselves unwelcomed by the locals. But do they still have a chance to regret?\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it. -->
+  <RI_TradeGood_FamilyLetter.description>“少儿离家老大回，乡音无改鬓毛衰。”\n\n一封有些年代的竹简，字迹已经模糊不清。流落到边缘星球的散修们，部分人并未受到当地人接受，但他们还有机会后悔吗？\n\n此物属于贸易品，没有什么实际作用，但一些商队可能对其感兴趣。</RI_TradeGood_FamilyLetter.description>
+  
+  <!-- EN: Shimmering spiritual crystal -->
+  <RI_TradeGood_ShimmeringSpiritualCrystal.label>闪光的灵石切割体</RI_TradeGood_ShimmeringSpiritualCrystal.label>
+  <!-- EN: A small, perfectly cut Spiritual Crystal refracts dazzling light under illumination. The artisan who crafted it must have been incredibly patient, as Spiritual Crystals are fragile and prone to breaking with the slightest mistake, making them rare as decorative pieces. However, even when cut and polished, the crystal’s essence remains unchanged—it can still provide cultivators with a trace of Qi energy.\n\nThis item is a trade good with no practical use, though certain merchant caravans may take interest in it.\n\nThis crystal can not control the role of life. -->
+  <RI_TradeGood_ShimmeringSpiritualCrystal.description>一小颗经过完美切割的灵石，在光线下折射出绚丽光芒。制作它的人想必十分耐心，灵石这种硬度很低的石头稍不注意就会断裂，所以很少有人将其做成工艺品。不过即使是经过切割的灵石，也能为修炼者提供些许灵气，本质并未改变。\n\n此物属于贸易品，没有什么实际作用，但一些商队可能对其感兴趣。\n\n这块宝石并没有操控人生的作用。</RI_TradeGood_ShimmeringSpiritualCrystal.description>
+  
+</LanguageData>

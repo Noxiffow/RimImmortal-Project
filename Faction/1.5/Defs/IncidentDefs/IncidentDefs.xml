@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>RI_LiquidJadeSpawn</defName>
+		<label>Find liquid jade</label>
+		<category>Special</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>RI_Faction.IncidentWorker_LiquidJadeSpawn</workerClass>
+		<letterLabel>Find liquid jade</letterLabel>
+		<letterText>Unusual qi fluctuations have been detected emanating from the depths of the earth's crust, bringing precious liquid jade hidden deep underground to the surface.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<disallowedBiomes>
+
+		</disallowedBiomes>
+	</IncidentDef>
+
+</Defs>

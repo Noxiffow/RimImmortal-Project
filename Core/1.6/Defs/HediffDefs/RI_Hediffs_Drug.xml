@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 药剂效果 -->
+	<!--<postFactor>乘算
+		<offset>加算-->
+	<!--60000tick=24小时-->
+	<!--<statFactors>
+	<GI_EnergyGainEff>1.3</GI_EnergyGainEff>
+	</statFactors>-->
+
+	<!--==================================三品==================================-->
+
+	<!--丹药Base-->
+	<HediffDef Name="RI_DrugHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.49,1,0.48)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<!--归灵丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_CultivateEnergyHediff</defName>
+		<label>Effect of cultivate-energy pill</label>
+		<description>Recover a little Qi.</description>
+		<comps>
+			<li Class="WhoXiuXian.HediffCompProperties_RI_CultivateEnergyHediff">
+				<energy>50</energy>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>1</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--保血丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_GreenBalmHediff</defName>
+		<label>Effect of blood-saving pill</label>
+		<labelNoun>GreenBalm</labelNoun>
+		<description>Pain relief, slightly faster recovery, and protection against infection.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>420000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>1</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+				<makeImmuneTo>
+					<li>WoundInfection</li>
+				</makeImmuneTo>
+				<painFactor>0.7</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--凌云丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_FloatingCloudHediff</defName>
+		<label>Effect of LingYun pill</label>
+		<description>It makes you run faster in a short amount of time.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>2.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>7000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--三石散效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_ThreeRockPowderHediff</defName>
+		<label>Effect of three-rock powder</label>
+		<description>Improve blood circulation, temporarily enhance combat effectiveness.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>50</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+				<painFactor>0.7</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--固元散效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_SolidEnergyPowderHediff</defName>
+		<label>Effect of solid-foundation powder</label>
+		<description>Awaken the meridians and slightly increase the success rate of upgrade over a period of time.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>20000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--百粮丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_StomachFillHediff</defName>
+		<label>Effect of all-grain pill</label>
+		<description>It feels like the stomach is full and won't be hungry for a while.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactor>0</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_GreenPowderHediff</defName>
+		<label>Effect of green balm</label>
+		<description>After applying, it keeps you awake for a long time.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>45000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<makeImmuneTo>
+					<li>SleepingSickness</li>
+				</makeImmuneTo>
+				<statFactors>
+					<RestFallRateFactor>0</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================================二品==================================-->
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_HypothermiaGoAwayHediff</defName>
+		<label>Effect of cold-frost pill</label>
+		<description>Removes heat stroke effects and increases temperature resistance over a period of time.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>36000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_RemoveHeatstroke</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>50</ComfyTemperatureMax>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>Heatstroke</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_SunstrokeGoAwayHediff</defName>
+		<label>Effect of scorching-Wind pill</label>
+		<description>Removes hypothermia effects and increases temperature resistance over a period of time.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>36000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_RemoveHypothermia</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>Hypothermia</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--回春散效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_HerbPowderHediff</defName>
+		<label>Effect of herb powder</label>
+		<labelNoun>HerbPowder</labelNoun>
+		<description>For a period of time to speed up wound recovery, analgesia, provide immunity to some diseases.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>300000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<InjuryHealingFactor>1.5</InjuryHealingFactor>
+				</statFactors>
+				<makeImmuneTo>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>Plague</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--灵玉丸-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_Drug_CultivateMoreEnergyPillHediff</defName>
+		<label>Effect of spirit jade pill</label>
+		<description>Directly restore some Qi and automatically restore Qi over a period of time.</description>
+		<comps>
+			<li Class="WhoXiuXian.HediffCompProperties_RI_CultivateEnergyHediff">
+				<energy>200</energy>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--金血丸效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_Drug_GoldBloodPillHediff</defName>
+		<label>Effect of gold blood pill</label>
+		<description>The skin of the whole body is like an iron wall, which increases the defense force, but reduces the movement speed.</description>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsDisableable">
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================================一品==================================-->
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_RepairAwayHediff</defName>
+		<label>Effect of medulla oblongata elixir</label>
+		<description>Within 12 hours, the healing capacity is greatly enhanced, infection is resisted, and severely injured patients can stabilize their wounds in a few breaths without any sequelae.</description>
+		<!--<maxSeverity>1.0</maxSeverity>-->
+		<comps>
+			<!--<li>
+				<compClass>WhoXiuXian.RI_Hediff.HediffComp_Coalescence</compClass>
+			</li>-->
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_HealPermanentWounds" />
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>15</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+				<makeImmuneTo>
+					<li>WoundInfection</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_DemonElixirHediff</defName>
+		<label>Effect of demon elixir</label>
+		<description>In 24 hours to stimulate the potential and physical activity, greatly enhance the ability to melee combat, but accompanied by the ear around the whisper of the Thran, it is disturbing, unable to work.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.9</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.9</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.9</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>-1</WorkSpeedGlobal>
+					<MeleeDodgeChance>100</MeleeDodgeChance>
+					<MeleeHitChance>100</MeleeHitChance>
+				</statOffsets>
+				<statFactors>
+					<MeleeDamageFactor>2</MeleeDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_FiveTreasuresElixirHediff</defName>
+		<label>Effect of celestial spirit elixir</label>
+		<description>In 10 days, greatly increase the efficiency of Qi absorption.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>600000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>1.5</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--通玄筑基丹效果-->
+	<HediffDef ParentName="RI_DrugHediff_Base">
+		<defName>RI_FoundationBuildingElixirHediff</defName>
+		<label>Effect of foundation building elixir</label>
+		<description>In one days, increase the efficiency of Qi absorption.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.25</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

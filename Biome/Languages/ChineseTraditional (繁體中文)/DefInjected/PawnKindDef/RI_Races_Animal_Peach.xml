@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Lu Shu -->
+  <RI_Animal_LuShu.label>鹿蜀</RI_Animal_LuShu.label>
+  <!-- EN: Lu Shu -->
+  <RI_Animal_LuShu.labelFemale>雌性鹿蜀</RI_Animal_LuShu.labelFemale>
+  <!-- EN: Lu Shu -->
+  <RI_Animal_LuShu.labelMale>雄性鹿蜀</RI_Animal_LuShu.labelMale>
+  <!-- EN: Lu Shu calf -->
+  <RI_Animal_LuShu.lifeStages.Lu_Shu_calf.label>鹿蜀幼崽</RI_Animal_LuShu.lifeStages.Lu_Shu_calf.label>
+  <!-- EN: Lu Shu calves -->
+  <RI_Animal_LuShu.lifeStages.Lu_Shu_calf.labelPlural>鹿蜀幼崽</RI_Animal_LuShu.lifeStages.Lu_Shu_calf.labelPlural>
+  
+  <!-- EN: Chang You -->
+  <RI_Pawn_ChangYou.label>长右</RI_Pawn_ChangYou.label>
+  
+  <!-- EN: Lei cat -->
+  <RI_Pawn_LeiCat.label>类</RI_Pawn_LeiCat.label>
+  <!-- EN: Lei kitten -->
+  <RI_Pawn_LeiCat.lifeStages.Lei_kitten.label>小类</RI_Pawn_LeiCat.lifeStages.Lei_kitten.label>
+  
+  <!-- EN: Li Li -->
+  <RI_Pawn_LiLi.label>狸力</RI_Pawn_LiLi.label>
+  
+  <!-- EN: Xuan turtle -->
+  <RI_Pawn_XuanTurtle.label>旋龟</RI_Pawn_XuanTurtle.label>
+  
+</LanguageData>

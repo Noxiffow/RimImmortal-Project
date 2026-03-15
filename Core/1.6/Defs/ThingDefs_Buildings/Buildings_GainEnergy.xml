@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--修炼点前置-->
+	<ThingDef ParentName="BuildingBase" Abstract="True" Name="RI_Cultivation_BuildingBase">
+		<thingClass>Core.Building_RI_Futon</thingClass>
+	</ThingDef>
+
+	<!--修炼点-->
+	<!--可以随便放，没有房间要求-->
+	<ThingDef ParentName="RI_Cultivation_BuildingBase">
+		<defName>RI_Building_CultivationSpot</defName>
+		<label>Cultivation spot</label>
+		<description>Just a place for meditation.</description>
+		<drawerType>MapMeshOnly</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Cultivation/RI_Building_CultivationSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<WorkToBuild>5</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<researchPrerequisites>
+			<li>RI_ImmortalStart</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--蒲团-->
+	<ThingDef ParentName="RI_Cultivation_BuildingBase">
+		<defName>RI_Building_FuTon</defName>
+		<label>Cultivation cushion</label>
+		<description>A cushion for meditation, on which the cultivator can meditate to better absorb Qi.\n\nSpecial buildings can be placed nearby to improve the efficiency of Qi acquisition.</description>
+		<drawerType>MapMeshOnly</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Cultivation/RI_Building_CultivationCushion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<!--可以搬运-->
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>150</WorkToBuild>
+			<Beauty>2</Beauty>
+			<Comfort>0.7</Comfort>
+			<Mass>2</Mass>
+			<JoyGainFactor>0.05</JoyGainFactor>
+		</statBases>
+		<rotatable>false</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<!--需要的房间类型-->
+			<workTableRoomRole>RI_Room_CultivationRoom</workTableRoomRole>
+			<!--<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>-->
+		</building>
+		<researchPrerequisites>
+			<li>RI_InitialApproach</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--聚灵台-->
+	<ThingDef ParentName="RI_Cultivation_BuildingBase">
+		<defName>RI_Building_StoneSittingPlatform</defName>
+		<label>Cultivation platform</label>
+		<description>A large platform for meditation, it is a high-level cultivation platform that requires a lot of materials to build. The platform can greatly speed up the acquisition of Qi, which is an essential treasure for cultivators.\n\nSpecial buildings can be placed nearby to improve the efficiency of Qi acquisition.</description>
+		<drawerType>MapMeshOnly</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Cultivation/RI_Building_StoneSittingPlatform</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costStuffCount>200</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_LiquidJade>5</RI_Resource_LiquidJade>
+			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
+		</costList>
+		<size>(3,3)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToBuild>300</WorkToBuild>
+			<Comfort>5</Comfort>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>0.05</JoyGainFactor>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<rotatable>false</rotatable>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<!--需要的房间类型-->
+			<workTableRoomRole>RI_Room_CultivationRoom</workTableRoomRole>
+			<!--<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>-->
+		</building>
+		<researchPrerequisites>
+			<li>RI_QiResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--突破点-->
+	<ThingDef ParentName="RI_Cultivation_BuildingBase">
+		<defName>RI_Building_UpgradeSpot</defName>
+		<label>Upgrade spot</label>
+		<description>A upgrade spot, the cultivator must upgrade by the upgrade point.</description>
+		<thingClass>RIRitualFramework.Building_Upgrade</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Cultivation/RI_Building_UpgradeSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<WorkToBuild>5</WorkToBuild>
+		</statBases>
+		<rotatable>false</rotatable>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="RIRitualFramework.CompProperties_LinkedUpgrade">
+				<building>RI_Building_ThunderColumn</building>
+				<count>5</count>
+				<radious>5</radious>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_ThunderColumn</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RI_ImmortalStart</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--突破台-->
+	<ThingDef ParentName="RI_Cultivation_BuildingBase">
+		<defName>RI_Building_BetterUpgradePlatform</defName>
+		<label>Upgrade platform</label>
+		<description>A upgrade platform, which can be used as an alternative to a upgrade point for cultivation.\n\nThis platform has no special effects but is extremely sturdy, capable of withstanding heavenly tribulations or damage from cultivators.</description>
+		<thingClass>RIRitualFramework.Building_Upgrade</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/Cultivation/RI_Building_BetterUpgradePlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.4,3.4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<!--制作-->
+		<costStuffCount>200</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<interactionCellOffset>(1,0,1)</interactionCellOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToBuild>200</WorkToBuild>
+			<Comfort>100</Comfort>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<JoyGainFactor>0.05</JoyGainFactor>
+		</statBases>
+		<size>(3,3)</size>
+		<rotatable>false</rotatable>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>True</useHitPoints>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="RIRitualFramework.CompProperties_LinkedUpgrade">
+				<building>RI_Building_ThunderColumn</building>
+				<count>5</count>
+				<radious>5</radious>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_ThunderColumn</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<researchPrerequisites>
+			<li>RI_QiResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--三个修炼工作-->
+	<WorkGiverDef>
+		<defName>RI_OnFuton</defName>
+		<label>cultivation on futon</label>
+		<giverClass>Core.WorkGiver_RI_OnFuton</giverClass>
+		<workType>RI_OnFuton</workType>
+		<priorityInType>20</priorityInType>
+		<verb>cultivation</verb>
+		<gerund>cultivation</gerund>
+		<!-- <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities> -->
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RI_OnStoneSittingPlatform</defName>
+		<label>cultivation on platform</label>
+		<giverClass>Core.WorkGiver_RI_OnStoneSittingPlatform</giverClass>
+		<workType>RI_OnFuton</workType>
+		<priorityInType>30</priorityInType>
+		<verb>cultivation</verb>
+		<gerund>cultivation</gerund>
+		<!-- <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities> -->
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>RI_OnCultivationSpot</defName>
+		<label>cultivation on spot</label>
+		<giverClass>Core.WorkGiver_RI_OnCultivationSpot</giverClass>
+		<workType>RI_OnFuton</workType>
+		<priorityInType>10</priorityInType>
+		<verb>cultivation</verb>
+		<gerund>cultivation</gerund>
+		<!-- <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities> -->
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!--工作类型-->
+	<WorkTypeDef>
+		<defName>RI_OnFuton</defName>
+		<labelShort>cultivation</labelShort>
+		<pawnLabel>cultivator</pawnLabel>
+		<gerundLabel>cultivation</gerundLabel>
+		<description>Get the Qi in the air through meditation</description>
+		<verb>cultivate on</verb>
+		<naturalPriority>3</naturalPriority>
+		<workTags>
+			<li>AllWork</li>
+		</workTags>
+	</WorkTypeDef>
+
+	<JobDef>
+		<defName>RI_OnFuton</defName>
+		<driverClass>Core.JobDriver_RI_OnFuton</driverClass>
+		<reportString>meditating</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+
+</Defs>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--聚气灵域-->
+
+	<AbilityDef>
+    <defName>RI_Ability_PracticeArea</defName>
+    <label>Qi domain</label>
+    <description>Qi domain is a meditative technique that focuses the mind, enhancing the cultivation efficiency of those within its range.</description>
+    <iconPath>Ability/InternalPellet/RI_Ability_InternalFunction</iconPath>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <warmupMoteSocialSymbol>Ability/InternalPellet/RI_Ability_InternalFunction</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>Leader</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+      <Ability_EffectRadius>9.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>9.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>RI_PracticeAreaHediff</hediffDef>
+            <durationSecondsOverride>300</durationSecondsOverride>
+            <psychic>False</psychic>
+            <replaceExisting>True</replaceExisting>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+     </li>
+    </comps>
+  </AbilityDef>
+
+	<!--搜魂术-->
+    <AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_ReadingMemory</defName>
+		<label>Soul searching</label>
+		<description>A terrifying skill, in which the caster uses modified Qi tendrils to disturb the target's brain, extracting desired information from the cerebral cortex. This spell carries a risk of causing various types of brain damage, but if successful, it can extract the target’s lifelong knowledge from their mind.</description>
+		<iconPath>UI/Abilities/CultivationMethod/RI_Ability_ReadingMemory</iconPath>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hotKey>Misc12</hotKey>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>false</aiCanUse>
+		<statBases>
+		</statBases>
+		<verbProperties>
+			<warmupTime>1</warmupTime>
+			<range>5</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>200</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_StealingGongRoute">
+				<successRate>0.99</successRate>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

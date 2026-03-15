@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: The hunted cultivator -->
+  <RI_BeHuntedWandererJoin.label>被追捕的修炼者</RI_BeHuntedWandererJoin.label>
+  
+  <!-- EN: Assassin raid -->
+  <RI_RaidAssassin.label>刺客入室</RI_RaidAssassin.label>
+  <!-- EN: Assassin raid -->
+  <RI_RaidAssassin.letterLabel>刺客入室</RI_RaidAssassin.letterLabel>
+  <!-- EN: There are assassins! Several assassins have emerged to kill your colonists! -->
+  <RI_RaidAssassin.letterText>有刺客！几名刺客现出身形，只为刺杀你的殖民者！</RI_RaidAssassin.letterText>
+  
+  <!-- EN: Cultivator raid -->
+  <RI_RaidBadGuys.label>歹修袭击</RI_RaidBadGuys.label>
+  <!-- EN: Cultivator raid -->
+  <RI_RaidBadGuys.letterLabel>歹修突袭</RI_RaidBadGuys.letterLabel>
+  <!-- EN: A group of cultivators has arrived in your colony, and they're up to no good! -->
+  <RI_RaidBadGuys.letterText>一股歹修者到达你的殖民地，他们不怀好意！</RI_RaidBadGuys.letterText>
+  
+  <!-- EN: Sword madman raid -->
+  <RI_RaidInvisibleKiller.label>剑狂挑战</RI_RaidInvisibleKiller.label>
+  <!-- EN: Sword mad man raid -->
+  <RI_RaidInvisibleKiller.letterLabel>剑狂挑战</RI_RaidInvisibleKiller.letterLabel>
+  <!-- EN: Edge of the horizon, the blade is coming! Several sword mad man have heard of your colony and come to challenge you. -->
+  <RI_RaidInvisibleKiller.letterText>地平线边缘，刀锋袭来！几位剑狂听闻了你的殖民地，前来向你挑战。</RI_RaidInvisibleKiller.letterText>
+  
+</LanguageData>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--供案-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_PrayerAltarTable</defName>
+		<label>Prayer altar table</label>
+		<description>A table dedicated to the Immortals, upon which spiritual crystals and other materials are placed.\n\nCultivators can sincerely pray at the offering table, using certain materials to communicate with the Celestial Immortals. With the power of the Immortals, special items can be synthesized using the offering table. Additionally, crafting talismans and drawing runes can only be done on the offering table.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/PrayerAltarTable/RI_Building_PrayerAltarTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5.5,3.7)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
+			<Cloth>20</Cloth>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<recipes>
+			<li>RI_Recipe_MakeImmortalOracle</li>
+			<li>RI_Recipe_MakePureYangSpiritualEnergy</li>
+			<li>RI_Recipe_MakeJadeLiquid</li>
+			<li>RI_Recipe_MakeJadeLiquidPro</li>
+			<li>RI_Recipe_DisassembleExuviaeOracle</li>
+			<li>RI_Recipe_DisassembleExuviaeEnergy</li>
+		</recipes>
+		<size>(3,2)</size>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<!--需要的房间类型-->
+			<workTableRoomRole>RI_Room_PrayerAltarTable</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
+		<comps Inherit="False">
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>RI_Building_MedicinalMaterialShelf</li>
+				</linkableFacilities>
+			</li>
+			<!-- <li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>RI_PrayerAltarFactor</workSpeedStat>
+			</li> -->
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RI_Research_ImmortalWorship</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--工作-->
+	<WorkGiverDef>
+		<defName>RI_DoBillsUseAltarTable</defName>
+		<label>make things at altar table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>200</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RI_Building_PrayerAltarTable</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

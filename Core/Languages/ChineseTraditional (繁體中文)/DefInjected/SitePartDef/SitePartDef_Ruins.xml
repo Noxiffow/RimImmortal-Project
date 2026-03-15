@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Location of the Pagoda -->
+  <RI_RuinsSite_AncientPagoda.label>石塔所在之地</RI_RuinsSite_AncientPagoda.label>
+  <!-- EN: Location of the Pagoda. -->
+  <RI_RuinsSite_AncientPagoda.description>石塔所在之地。</RI_RuinsSite_AncientPagoda.description>
+  
+  <!-- EN: Location of the Rock -->
+  <RI_RuinsSite_CrackedStone.label>巨石所在之地</RI_RuinsSite_CrackedStone.label>
+  <!-- EN: Location of the Rock. -->
+  <RI_RuinsSite_CrackedStone.description>巨石所在之地。</RI_RuinsSite_CrackedStone.description>
+  
+</LanguageData>

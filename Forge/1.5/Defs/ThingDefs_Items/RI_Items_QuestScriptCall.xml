@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<!--地图-->
+		<defName>RI_Items_Quest_AncientComplex_Talismaker</defName>
+		<label>Ancient cultivator compass-Ruins</label>
+		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction ofancient cultivator relic sites.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Items_Quest_AncientComplex_Talismaker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<selectable>true</selectable>
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUseableDatacore</compClass>
+				<useJob>ReadDatacore</useJob>
+				<useLabel>Activate the compass, reveal the location of a relic</useLabel>
+				<userMustHaveHediff>Hediff_RI_EnergyRoot</userMustHaveHediff>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>DatacoreRead</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_UseEffectGiveQuest">
+				<quest>RI_OpportunitySite_AncientComplex_Talismaker</quest>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<!--地图-->
+		<defName>RI_Items_Quest_AncientGrave_Talismaker</defName>
+		<label>Cultivator compass-Graves</label>
+		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction of cultivator's grave.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Items_Quest_AncientGrave_Talismaker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<selectable>true</selectable>
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUseableDatacore</compClass>
+				<useJob>ReadDatacore</useJob>
+				<useLabel>Activate the compass, reveal the location of a grave</useLabel>
+				<userMustHaveHediff>Hediff_RI_EnergyRoot</userMustHaveHediff>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>DatacoreRead</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_UseEffectGiveQuest">
+				<quest>RI_AbandonedGrave_Standard</quest>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<!--地图-->
+		<defName>RI_Items_Quest_AncientComplexWithCasket_Talismaker</defName>
+		<label>Ancient cultivator compass-Ancient boss</label>
+		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass has a special sensitivity to the ancient cryogenic sleep chambers, allowing for precise location of a functioning ancient cultivator cryogenic sleep chamber.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Items_Quest_AncientComplexWithCasket_Talismaker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<thingCategories>
+			<li>RI_Category_Manufactured</li>
+		</thingCategories>
+		<selectable>true</selectable>
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>CompUseableDatacore</compClass>
+				<useJob>ReadDatacore</useJob>
+				<useLabel>Activate the compass, reveal the location of a relic with an ancient cultivator</useLabel>
+				<userMustHaveHediff>Hediff_RI_EnergyRoot</userMustHaveHediff>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>DatacoreRead</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_UseEffectGiveQuest">
+				<quest>RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom</quest>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

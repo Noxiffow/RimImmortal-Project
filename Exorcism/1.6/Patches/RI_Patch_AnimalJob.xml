@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThinkTreeDef[defName="Animal"]/thinkRoot//li[@Class="ThinkNode_ConditionalOfPlayerFaction"]/subNodes</xpath>
+    <value>
+      <li Class="ThinkNode_ChancePerHour_Constant">
+        <mtbHours>1.5</mtbHours>
+        <subNodes>
+          <li Class="ThinkNode_ConditionalRequireCapacities">
+            <requiredCapacities>
+              <li>Manipulation</li>
+            </requiredCapacities>
+            <subNodes>
+              <li Class="ThinkNode_ConditionalTrainableCompleted">
+                <trainable>RI_Clean</trainable>
+                <subNodes>
+                  <li Class="ThinkNode_Tagger">
+                    <tagToGive>TrainedAnimalBehavior</tagToGive>
+                    <subNodes>
+                      <li Class="RimZombieGirl.JobGiver_Cleaning" />
+                    </subNodes>
+                  </li>
+                </subNodes>
+              </li>
+            </subNodes>
+          </li>
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--金丝银丝Base-->
+	<RecipeDef Name="RI_RecipeBase_MetalSilk" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_CarpentryAndCrafting</researchPrerequisite>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!--丝绸Base-->
+	<RecipeDef Name="RI_RecipeBase_Silk" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Weaving</researchPrerequisite>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!--织造丝绸-->
+	<RecipeDef ParentName="RI_RecipeBase_Silk">
+		<defName>RI_MakeSilk</defName>
+		<label>Weave silk</label>
+		<description>Make silk from silkworm cocoons.</description>
+		<jobString>Weaving silk</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SilkwormCocoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Silk>20</RI_Resource_Silk>
+		</products>
+	</RecipeDef>
+
+	<!--织造冰蚕丝-->
+	<RecipeDef ParentName="RI_RecipeBase_Silk">
+		<defName>RI_MakeIceSilk</defName>
+		<label>Weave ice silk</label>
+		<description>Make ice silk from ice silkworm cocoons.</description>
+		<jobString>Weaving ice silk</jobString>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IceSilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IceSilkwormCocoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_IceSilk>15</RI_Resource_IceSilk>
+		</products>
+	</RecipeDef>
+
+	<!--织造丝绸 x4-->
+	<RecipeDef ParentName="RI_RecipeBase_Silk">
+		<defName>RI_MakeSilkBulk</defName>
+		<label>Weave silk x4</label>
+		<description>Make silk from silkworm cocoons.</description>
+		<jobString>Weaving silk</jobString>
+		<workAmount>8000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SilkwormCocoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Silk>80</RI_Resource_Silk>
+		</products>
+	</RecipeDef>
+
+	<!--织造冰蚕丝 x4-->
+	<RecipeDef ParentName="RI_RecipeBase_Silk">
+		<defName>RI_MakeIceSilkBulk</defName>
+		<label>Weave ice silk x4</label>
+		<description>Make ice silk from ice silkworm cocoons.</description>
+		<jobString>Weaving ice silk</jobString>
+		<workAmount>16000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IceSilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IceSilkwormCocoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_IceSilk>60</RI_Resource_IceSilk>
+		</products>
+	</RecipeDef>
+
+	<!--捻制金丝-->
+	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
+		<defName>RI_MakeGoldSilk</defName>
+		<label>Twist gold silk</label>
+		<description>The gold is forged into long strips, then hammered into gold foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into gold silk.</description>
+		<jobString>Twisting gold silk</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_GoldenSilk>5</RI_Resource_GoldenSilk>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
+		<defName>RI_MakeGoldSilkBulk</defName>
+		<label>Twist gold silk x4</label>
+		<description>The gold is forged into long strips, then hammered into gold foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into gold silk.</description>
+		<jobString>Twisting gold silk</jobString>
+		<workAmount>12000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_GoldenSilk>20</RI_Resource_GoldenSilk>
+		</products>
+	</RecipeDef>
+
+	<!--捻制银丝-->
+	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
+		<defName>RI_MakeSilverSilk</defName>
+		<label>Twist silver silk</label>
+		<description>The silver is forged into long strips, then hammered into silver foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into silver silk.</description>
+		<jobString>Twisting silver silk</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_SilverSilk>5</RI_Resource_SilverSilk>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RI_RecipeBase_MetalSilk">
+		<defName>RI_MakeSilverSilkBulk</defName>
+		<label>Twist Silver silk x4</label>
+		<description>The silver is forged into long strips, then hammered into silver foil, then cut into thin silk, wrapped around the cotton thread, and finally weave into silver silk.</description>
+		<jobString>Twisting silver silk</jobString>
+		<workAmount>12000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_SilverSilk>20</RI_Resource_SilverSilk>
+		</products>
+	</RecipeDef>
+
+	<!--熔炼Base-->
+	<RecipeDef Name="RI_RecipeBase_MeltMetalSilk" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Smithing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!--金丝熔炼回金子-->
+	<RecipeDef ParentName="RI_RecipeBase_MeltMetalSilk">
+		<defName>RI_MakeGoldSilktoGold</defName>
+		<label>Melt gold silk</label>
+		<description>Use the spiritual crystal to print the power on the paper and draw the charm.</description>
+		<jobString>Melting gold silk</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_GoldenSilk</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_GoldenSilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gold>4</Gold>
+		</products>
+	</RecipeDef>
+
+	<!--银丝熔炼回银子-->
+	<RecipeDef ParentName="RI_RecipeBase_MeltMetalSilk">
+		<defName>RI_MakeSilverSilktoSilver</defName>
+		<label>Melt silver silk</label>
+		<description>Melt the silver silk in the heat of the furnace and restore it into silver.</description>
+		<jobString>Melting silver silk</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilverSilk</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SilverSilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silver>4</Silver>
+		</products>
+	</RecipeDef>
+
+</Defs>

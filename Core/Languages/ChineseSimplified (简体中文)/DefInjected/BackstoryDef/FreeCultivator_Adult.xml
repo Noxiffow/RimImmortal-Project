@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] has been quietly playing bystander in the world, and with each new place, [PAWN_pronoun] lives under a different identity. -->
+  <RI_Backstory_Adult1.description>[PAWN_nameDef]一直默默无闻地在世界中扮演旁观者，每到一个新地方，[PAWN_pronoun]就换一个身份活下去。</RI_Backstory_Adult1.description>
+  <!-- EN: Nobody -->
+  <RI_Backstory_Adult1.title>无名</RI_Backstory_Adult1.title>
+  <!-- EN: Nobody -->
+  <RI_Backstory_Adult1.titleShort>无名</RI_Backstory_Adult1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is not only miserly, but greedy. [PAWN_pronoun] won't let any lucrative business go by, nor will he let any scrap of silver slip through [PAWN_possessive]'s fingers. -->
+  <RI_Backstory_Adult2.description>[PAWN_nameDef]不仅吝啬，而且贪婪。[PAWN_pronoun]不会放过任何有利可图的生意，也不会让任何一点碎银从[PAWN_possessive]指缝中溜走。</RI_Backstory_Adult2.description>
+  <!-- EN: Dishonest businessman -->
+  <RI_Backstory_Adult2.title>利欲熏心的商人</RI_Backstory_Adult2.title>
+  <!-- EN: Businessman -->
+  <RI_Backstory_Adult2.titleShort>奸商</RI_Backstory_Adult2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to infiltrate a faction and kill its leader, so [Pawn_namedef] gained self-confidence. -->
+  <RI_Backstory_Assassin1.description>[PAWN_nameDef]曾经潜入了某个派系，刺杀了其中的领导人，这让[PAWN_possessive]自信心膨胀了起来。</RI_Backstory_Assassin1.description>
+  <!-- EN: Successful assassin -->
+  <RI_Backstory_Assassin1.title>成功的刺客</RI_Backstory_Assassin1.title>
+  <!-- EN: Assassin -->
+  <RI_Backstory_Assassin1.titleShort>刺客</RI_Backstory_Assassin1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] did not like to kill people, [PAWN_pronoun] just to make money, went down this road. -->
+  <RI_Backstory_Assassin2.description>[PAWN_nameDef]并不喜欢杀人，[PAWN_pronoun]只是为了赚钱，走上了这条路。</RI_Backstory_Assassin2.description>
+  <!-- EN: Unknown assassin -->
+  <RI_Backstory_Assassin2.title>默默无闻的刺客</RI_Backstory_Assassin2.title>
+  <!-- EN: Assassin -->
+  <RI_Backstory_Assassin2.titleShort>刺客</RI_Backstory_Assassin2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]Learned the art of cultivation in adulthood. With the support of his family, [PAWN_pronoun] took the path of immortal cultivation. -->
+  <RI_Backstory_CultivatorAdult1.description>[PAWN_nameDef]在成年后学会了修炼之法。在家族的支持下，[PAWN_pronoun]走上了修仙的道路。</RI_Backstory_CultivatorAdult1.description>
+  <!-- EN: Cultivator -->
+  <RI_Backstory_CultivatorAdult1.title>修炼者</RI_Backstory_CultivatorAdult1.title>
+  <!-- EN: Cultivator -->
+  <RI_Backstory_CultivatorAdult1.titleShort>修炼者</RI_Backstory_CultivatorAdult1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s cultivation path was not smooth. After many years of hard work, [PAWN_nameDef] chose to travel the world in the clouds and live without restraints. -->
+  <RI_Backstory_CultivatorAdult2.description>[PAWN_nameDef]的修炼之路并不顺利。在许多年的努力后，[PAWN_nameDef]选择了云游天下，无拘无束的生活。</RI_Backstory_CultivatorAdult2.description>
+  <!-- EN: Free cultivator -->
+  <RI_Backstory_CultivatorAdult2.title>散修者</RI_Backstory_CultivatorAdult2.title>
+  <!-- EN: Free cultivator -->
+  <RI_Backstory_CultivatorAdult2.titleShort>散修者</RI_Backstory_CultivatorAdult2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] Once a cultivator, [PAWN_pronoun] was severely wounded in a siege against the cultivators. All of [PAWN_possessive]'s companions were killed, but [PAWN_pronoun] managed to escape. From that moment on, revenge became [PAWN_possessive]'s main goal. -->
+  <RI_Backstory_CultivatorAdult3.description>[PAWN_nameDef]曾经是一名修炼者，[PAWN_pronoun]在一次针对修炼者的围剿中被重伤。[PAWN_possessive]同伴全部被杀，但[PAWN_pronoun]侥幸逃走。从那一刻开始，复仇便成了[PAWN_possessive]主要目标。</RI_Backstory_CultivatorAdult3.description>
+  <!-- EN: Revenge cultivator -->
+  <RI_Backstory_CultivatorAdult3.title>复仇的修炼者</RI_Backstory_CultivatorAdult3.title>
+  <!-- EN: Revenger -->
+  <RI_Backstory_CultivatorAdult3.titleShort>复仇者</RI_Backstory_CultivatorAdult3.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] has experienced a walk-in, which has irreversibly altered [PAWN_possessive]'s brain. [PAWN_pronoun] became incapable of using long range weapons and has a short and irritable temper. -->
+  <RI_Backstory_CultivatorAdult4.description>[PAWN_nameDef]曾经经历过一次走火入魔，这对[PAWN_possessive]大脑产生了不可逆的改变。[PAWN_pronoun]变得无法使用远程武器，脾气暴躁易怒。</RI_Backstory_CultivatorAdult4.description>
+  <!-- EN: Bad cultivator -->
+  <RI_Backstory_CultivatorAdult4.title>走火入魔的修炼者</RI_Backstory_CultivatorAdult4.title>
+  <!-- EN: Bad cultivator -->
+  <RI_Backstory_CultivatorAdult4.titleShort>走火入魔</RI_Backstory_CultivatorAdult4.titleShort>
+  
+  <!-- EN: Kidnapping, stealing, robbing, [PAWN_nameDef] has never cared to gain profit through normal means. -->
+  <RI_Backstory_CultivatorAdult5.description>绑架，偷窃，抢劫，[PAWN_nameDef]从来不屑于通过正常手段获取利益，[PAWN_possessive]座右铭是“人人为我，我为人人”。</RI_Backstory_CultivatorAdult5.description>
+  <!-- EN: Wicked cultivator -->
+  <RI_Backstory_CultivatorAdult5.title>歹修者</RI_Backstory_CultivatorAdult5.title>
+  <!-- EN: Wicked cultivator -->
+  <RI_Backstory_CultivatorAdult5.titleShort>歹修者</RI_Backstory_CultivatorAdult5.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] went further and further in his study of kendo, and [PAWN_pronoun] once killed a man in the street who despised [PAWN_pronoun's] swordsmanship, and then fled the scene. -->
+  <RI_Backstory_SwordMan1.description>[PAWN_nameDef]在钻研剑道的路上越走越远，[PAWN_pronoun]曾在大街上斩杀了一名看不起[PAWN_pronoun]的剑术的人，之后逃离了现场。</RI_Backstory_SwordMan1.description>
+  <!-- EN: Sword mad man -->
+  <RI_Backstory_SwordMan1.title>癫狂剑客</RI_Backstory_SwordMan1.title>
+  <!-- EN: Sword mad man -->
+  <RI_Backstory_SwordMan1.titleShort>剑狂</RI_Backstory_SwordMan1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] has a very high talent for kendo, but [PAWN_pronoun] lost a duel to a swordsman who was younger than [PAWN_pronoun], so [PAWN_pronoun] gradually exceeded the ordinary people's training, and eventually became a sword-lover. But [PAWN_pronoun] doesn't care, [PAWN_pronoun] just wants to wield the sword! -->
+  <RI_Backstory_SwordMan2.description>[PAWN_nameDef]对于剑道有着极高的天赋，但是[PAWN_pronoun]在一次决斗中输给了比[PAWN_pronoun]年纪还小的剑客，于是[PAWN_pronoun]的训练逐渐超出常人，最终落得一个剑痴的名号。但[PAWN_pronoun]并不理会这些，[PAWN_pronoun]只想挥剑！</RI_Backstory_SwordMan2.description>
+  <!-- EN: Sword mad man -->
+  <RI_Backstory_SwordMan2.title>疯癫剑客</RI_Backstory_SwordMan2.title>
+  <!-- EN: Sword mad man -->
+  <RI_Backstory_SwordMan2.titleShort>剑狂</RI_Backstory_SwordMan2.titleShort>
+  
+</LanguageData>

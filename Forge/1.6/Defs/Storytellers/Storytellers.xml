@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>RI_Storytellers_ThranShuJiu</defName>
+		<label>「Head of Thran Sect」Mo ShuJiu</label>
+		<description>Mo ShuJiu is the leader of the Thran Sect, whose own cultivation has reached the rank of a transcendent immortal, with deep and unpredictable strength. She is a ruthless and cool narrator who will slowly and methodically apply a pattern of threats to wear down your nerves. And for her of the Master Forge, forging colonies and knocking out "impurities" is also a pleasure.\n\nNote: Her attacks will be more difficult, and are not suitable for players who seek peaceful development.</description>
+		<portraitLarge>UI/HeroArt/Storytellers/RI_Storytellers_ThranShuJiu</portraitLarge>
+		<portraitTiny>UI/HeroArt/Storytellers/RI_Storytellers_ThranShuJiu_Tiny</portraitTiny>
+		<listOrder>45</listOrder>
+		<comps>
+			<!-- ✦ Events -->
+			<li Class="StorytellerCompProperties_RandomMain">
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>0</minDaysPassed>
+				<mtbDays>2</mtbDays>
+				<maxThreatBigIntervalDays>12</maxThreatBigIntervalDays>
+				<!-- Longer maximum interval. -->
+				<minIncChancePopulationIntentFactor>0.25</minIncChancePopulationIntentFactor>
+				<randomPointsFactorRange>0.80~1.80</randomPointsFactorRange>
+				<skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
+				<categoryWeights>
+					<Misc>2</Misc>
+					<OrbitalVisitor>2.0</OrbitalVisitor>
+					<FactionArrival>2.0</FactionArrival>
+					<ShipChunkDrop>1.5</ShipChunkDrop>
+					<ThreatSmall>2.0</ThreatSmall>
+					<ThreatBig>3.5</ThreatBig>
+				</categoryWeights>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<minDaysPassed>2.5</minDaysPassed>
+				<mtbDays>2.5</mtbDays>
+			</li>
+			<!-- Ally/neutral interaction -->
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RaidFriendly</incident>
+				<baseIncidentsPerYear>10</baseIncidentsPerYear>
+				<minSpacingDays>0.4</minSpacingDays>
+				<fullAlliesOnly>true</fullAlliesOnly>
+				<minDanger>High</minDanger>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>TraderCaravanArrival</incident>
+				<minDaysPassed>5</minDaysPassed>
+				<baseIncidentsPerYear>4</baseIncidentsPerYear>
+				<minSpacingDays>6</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>VisitorGroup</incident>
+				<minDaysPassed>3</minDaysPassed>
+				<baseIncidentsPerYear>3</baseIncidentsPerYear>
+				<minSpacingDays>5</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>TravelerGroup</incident>
+				<minDaysPassed>1</minDaysPassed>
+				<baseIncidentsPerYear>6</baseIncidentsPerYear>
+				<minSpacingDays>1</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<!-- Raids -->
+			<li Class="StorytellerCompProperties_ThreatsGenerator">
+				<allowedTargetTags>
+					<li>Map_RaidBeacon</li>
+				</allowedTargetTags>
+				<parms>
+					<allowedThreats>Raids</allowedThreats>
+					<onDays>1.0</onDays>
+					<offDays>0.5</offDays>
+					<minSpacingDays>0.5</minSpacingDays>
+					<numIncidentsRange>8</numIncidentsRange>
+					<minThreatPoints>120</minThreatPoints>
+				</parms>
+			</li>
+			<li Class="StorytellerCompProperties_ThreatsGenerator">
+				<allowedTargetTags>
+					<li>Map_RaidBeacon</li>
+				</allowedTargetTags>
+				<parms>
+					<allowedThreats>Raids</allowedThreats>
+					<onDays>1.0</onDays>
+					<offDays>0.5</offDays>
+					<minSpacingDays>0.5</minSpacingDays>
+					<numIncidentsRange>8</numIncidentsRange>
+					<minThreatPoints>600</minThreatPoints>
+				</parms>
+			</li>
+			<!-- ✦ Plagues -->
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseHuman</category>
+				<minDaysPassed>30</minDaysPassed>
+			</li>
+			<li Class="StorytellerCompProperties_Disease">
+				<category>DiseaseAnimal</category>
+				<minDaysPassed>30</minDaysPassed>
+			</li>
+			<!-- ✦ Friendly Faction Supports -->
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RaidFriendly</incident>
+				<baseIncidentsPerYear>20</baseIncidentsPerYear>
+				<minSpacingDays>0.8</minSpacingDays>
+				<fullAlliesOnly>true</fullAlliesOnly>
+				<minDanger>High</minDanger>
+			</li>
+			<!-- ✦ Quests -->
+			<li Class="StorytellerCompProperties_RandomQuest">
+				<category>GiveQuest</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<onDays>10</onDays>
+				<numIncidentsRange>1~13</numIncidentsRange>
+				<acceptFractionByDaysPassedCurve>
+					<points>
+						<li>(10, 0)</li>
+						<li>(20, 1)</li>
+					</points>
+				</acceptFractionByDaysPassedCurve>
+				<minSpacingDays>0.2</minSpacingDays>
+				<disableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</disableIfAnyModActive>
+			</li>
+			<li Class="StorytellerCompProperties_RandomQuest">
+				<category>GiveQuest</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<onDays>12</onDays>
+				<numIncidentsRange>1~13</numIncidentsRange>
+				<acceptFractionByDaysPassedCurve>
+					<points>
+						<li>(10, 0)</li>
+						<li>(20, 1)</li>
+					</points>
+				</acceptFractionByDaysPassedCurve>
+				<minSpacingDays>0.2</minSpacingDays>
+				<enableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</enableIfAnyModActive>
+			</li>
+			<!-- ✦ World Events -->
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+				<minDaysPassed>0</minDaysPassed>
+				<mtbDays>4</mtbDays>
+			</li>
+			<!-- ✦ Out Home -->
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>Misc</category>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatSmall</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+				<category>ThreatBig</category>
+				<applyCaravanVisibility>true</applyCaravanVisibility>
+				<allowedTargetTags>
+					<li>Caravan</li>
+					<li>Map_TempIncident</li>
+				</allowedTargetTags>
+			</li>
+			<!-- ✦ Misc -->
+			<!-- Infestations From Deep Drilling -->
+			<li Class="StorytellerCompProperties_DeepDrillInfestation">
+				<baseMtbDaysPerDrill>45</baseMtbDaysPerDrill>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+					<li>Map_TempIncident</li>
+					<li>Map_Misc</li>
+					<li>Map_RaidBeacon</li>
+				</allowedTargetTags>
+			</li>
+			<!-- Reliquary Pilgrims -->
+			<li Class="StorytellerCompProperties_OnOffCycle" MayRequire="Ludeon.RimWorld.Ideology">
+				<incident MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_ReliquaryPilgrims</incident>
+				<onDays>30</onDays>
+				<offDays>0</offDays>
+				<minSpacingDays>0.6</minSpacingDays>
+				<numIncidentsRange>1</numIncidentsRange>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+				<enableIfAnyModActive>
+					<li>Ludeon.RimWorld.Ideology</li>
+				</enableIfAnyModActive>
+			</li>
+			<!-- ✦ Special -->
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RI_Incident_Beggars</incident>
+				<minDaysPassed>5</minDaysPassed>
+				<baseIncidentsPerYear>2</baseIncidentsPerYear>
+				<minSpacingDays>5</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>RI_Incident_AbandonedGrave</incident>
+				<minDaysPassed>0</minDaysPassed>
+				<baseIncidentsPerYear>1</baseIncidentsPerYear>
+				<minSpacingDays>90</minSpacingDays>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+			<!-- Man In Black -->
+			<li Class="StorytellerCompProperties_Triggered">
+				<incident>StrangerInBlackJoin</incident>
+				<delayTicks>420</delayTicks>
+			</li>
+		</comps>
+	</StorytellerDef>
+</Defs>

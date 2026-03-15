@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Zombie is hungry! -->
+  <RI_Alert_ZombieHungry>冥尸饿了</RI_Alert_ZombieHungry>
+  <!-- EN: Zombie is feeling hungry and needs food! -->
+  <RI_Alert_ZombieHungryDesc>冥尸饿了，要吃东西</RI_Alert_ZombieHungryDesc>
+  <!-- EN: Zombie needs to suppress! -->
+  <RI_Alert_ZombieNeedSuppress>冥尸需要被压制</RI_Alert_ZombieNeedSuppress>
+  <!-- EN: The zombie is about to go berserk and needs to be suppressed! -->
+  <RI_Alert_ZombieNeedSuppressDesc>冥尸无法压抑嗜血的渴望，需要其他人帮忙压制</RI_Alert_ZombieNeedSuppressDesc>
+  <RI_CurseGhost_CannotAddSurgeryBill>恶鬼里面什么都没有！</RI_CurseGhost_CannotAddSurgeryBill>
+  <RI_Letter_FleshMutationText>{PAWN_nameDef} 的 {1} 受到诅咒侵蚀，出现了血肉异变。</RI_Letter_FleshMutationText>
+  <RI_Letter_FleshMutationLabel>{PAWN_nameDef} 发生了血肉异变</RI_Letter_FleshMutationLabel>
+  <RI_Curse_FirstWarningLabel>诅咒蔓延警告</RI_Curse_FirstWarningLabel>
+  <RI_Curse_FirstWarningText>当前地图已出现诅咒。诅咒会导致殖民者发生血肉异变，并提高邪祟事件触发概率。\n\n建议尽快建造防护塔，或为关键人员配备护身符，以降低诅咒影响。\n\n\n\n\n\n即 使 逃 到 其 他 地 方 我 们 也 能 找 到 你</RI_Curse_FirstWarningText>
+<!-- Chinese -->
+<RI_Settings_CurseSources_Title>诅咒来源数值</RI_Settings_CurseSources_Title>
+<RI_Settings_Curse_ZombieDaily>僵尸存在每人每日诅咒: {0}</RI_Settings_Curse_ZombieDaily>
+<RI_Settings_Curse_OrganHarvest>摘取器官增加诅咒: {0}</RI_Settings_Curse_OrganHarvest>
+<RI_Settings_Curse_HumanButcher>屠宰人类尸体增加诅咒: {0}</RI_Settings_Curse_HumanButcher>
+<RI_Settings_Curse_CorpseMultiplier>未安葬尸体诅咒倍率: {0}</RI_Settings_Curse_CorpseMultiplier>
+<RI_Settings_Curse_GraveMultiplier>挖掘乱葬岗诅咒倍率: {0}</RI_Settings_Curse_GraveMultiplier>
+<RI_Settings_Curse_ResetDefaults>恢复默认值</RI_Settings_Curse_ResetDefaults>
+</LanguageData>

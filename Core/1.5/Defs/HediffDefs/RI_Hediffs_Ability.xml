@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================================先天功法-技能效果================================-->
+
+	<HediffDef>
+		<defName>RI_LG</defName>
+		<label>Qi Lantern</label>
+		<labelNoun>LG</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A lantern of light, condensed from Qi, moves with you, it dispels any darkness.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_LG</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>ThunderShield_Weak</defName>
+		<label>Qi Armor</label>
+		<labelNoun>ThunderShield_Weak</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A thin layer of Qi armor covers the whole body without affecting movement.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>RI_GenShinHediff</defName>
+		<label>Primordial spirit separation</label>
+		<labelNoun>GSH</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Primordial spirit have separated and become a separate body.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>300000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_GenShinHediff</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--================================内丹法门-技能效果================================-->
+
+	<!--内丹Base-->
+	<HediffDef Name="RI_InternalpelletHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.39,0.68,0.96)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--周天功法-->
+	<HediffDef ParentName="RI_InternalpelletHediff_Base">
+		<defName>RI_InternalFunctionHediff</defName>
+		<label>Breathing exercise</label>
+		<description>Internal pellet unique practice to control the frequency of breathing and fixed movements to adjust the posture, so that the body is in a better state to absorb Qi.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.2</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>600000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_InternalFunction</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--止观-->
+	<HediffDef ParentName="RI_InternalpelletHediff_Base">
+		<defName>RI_SamathaHediff</defName>
+		<label>Samatha</label>
+		<description>Through the special breathing method to stimulate the core, the Qi sent to the whole body and brain, so that they calm down, cut off the sensibility of emotions, increase the shooting accuracy. At the same time, it can improve the efficiency of the use of Qi.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<GI_EnergyGainEff>0.5</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--吐故纳新-->
+	<HediffDef ParentName="RI_InternalpelletHediff_Base">
+		<defName>RI_ExhaleTheOldAndInhaleTheNew</defName>
+		<label>Special breathing</label>
+		<description>With special breathing method to wake up the meridians of the body, accelerate the operation of Qi, in order to assist the adjustment of breathing, improve the shooting speed. In addition, it has the effect of prolonging life and strengthening physical strength.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.8</AimingDelayFactor>
+					<RangedCooldownFactor>0.1</RangedCooldownFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_ExhaleTheOldAndInhaleTheNew</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--灵脉翻涌-->
+	<HediffDef ParentName="RI_InternalpelletHediff_Base">
+		<defName>RI_SpiritualPulseSurging</defName>
+		<label>Spirit pulse surging</label>
+		<description>Temporarily reduces pain, bandages all wounds, and continuously restores Qi at 1 point per second, improving shooting accuracy.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<AimingDelayFactor>0.5</AimingDelayFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+				<painFactor>0.5</painFactor>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(0.78,0.9,1.0,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_HealOnce</compClass>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_ExhaleTheOldAndInhaleTheNew</compClass>
+			</li>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(0.56,0.78,1.0)</EyeColor>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--================================炼体法门-技能效果================================-->
+
+	<!--炼体Base-->
+	<HediffDef Name="RI_PhysicalHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.92,0.45,0.20)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--莲花坐-->
+	<HediffDef ParentName="RI_PhysicalHediff_Base">
+		<defName>RI_LotusPositionHediff</defName>
+		<label>Lotus position</label>
+		<description>The unique cultivation method of the Physical, accelerates the speed of Qi cultivation.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<GI_EnergyGainEff>0.2</GI_EnergyGainEff>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_LotusPosition</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--撑筋拔骨-->
+	<HediffDef ParentName="RI_PhysicalHediff_Base">
+		<defName>RI_StretchingExerciseHediff</defName>
+		<label>Stretching exercise</label>
+		<description>Briefly improves recovery and increases melee hit rate.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>30</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--狂意-->
+	<HediffDef ParentName="RI_PhysicalHediff_Base">
+		<defName>RI_KY</defName>
+		<label>Mental rage</label>
+		<description>Fall into rage, melee ability is greatly improved, but will fall into a weak state after the buff ends.</description>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_KY</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MoveSpeed>5</MoveSpeed>
+					<MeleeDodgeChance>30</MeleeDodgeChance>
+					<MeleeHitChance>30</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--修罗-->
+	<HediffDef ParentName="RI_PhysicalHediff_Base">
+		<defName>RI_AsuraHediff</defName>
+		<label>Asura</label>
+		<description>Enter Asura state, greatly improve melee combat, most health states, reduce skill cost, almost unstoppable. But when the Asura state disappears, it becomes extremely weak.</description>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_Asura</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>10000</disappearsAfterTicks>
+			</li>
+			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
+				<EyeColor>(1.0,0.45,0.25)</EyeColor>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeDamageFactor>2.5</MeleeDamageFactor>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+				</statFactors>
+				<statOffsets>
+					<MoveSpeed>12</MoveSpeed>
+					<MeleeDodgeChance>100</MeleeDodgeChance>
+					<MeleeHitChance>100</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<useGraphic>true</useGraphic>
+				<drawSize>1.125</drawSize>
+				<texPath>Things/Pawn/Wounds/EyeGlow/eyeGlow</texPath>
+				<color>(1.0,0.85,0.73,0.9)</color>
+				<shaderTypeDef>MoteGlow</shaderTypeDef>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!--================================炼药法门-技能效果================================-->
+
+	<!--炼药Base-->
+	<HediffDef Name="RI_ElixirHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.15,0.74,0.45)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+	<!--养形-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_BodyTheoryHediff</defName>
+		<label>Body exercise</label>
+		<description>The unique practice of the Elixirs, through a specific set of movements to improve the body's absorption of Qi, but also to improve the speed of work.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+					<MedicalTendQuality>0.1</MedicalTendQuality>
+					<FoodPoisonChance>-1.0</FoodPoisonChance>
+					<GI_EnergyGainEff>0.15</GI_EnergyGainEff>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>600000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_BodyTheory</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--针灸术-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_AcupunctureHediff</defName>
+		<label>Effect of acupuncture</label>
+		<labelNoun>ExhaleTheOldAndInhaleTheNew</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>An ancient medical technique that uses a Qi needle to cut off blood flow from a wound, stopping infection for a while.</description>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<makeImmuneTo>
+					<li>WoundInfection</li>
+				</makeImmuneTo>
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>12500</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--推拿术-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_ManipulationHediff</defName>
+		<label>Effect of massage</label>
+		<description>An ancient massage technique that reduces pain, speeds recovery and heals a bandaged wound.</description>
+		<stages>
+			<li>
+				<painFactor>0.9</painFactor>
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+					<InjuryHealingFactor>1</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+			</li>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_HealTendedOnce</compClass>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--治疗领域主hediff——莲华化生-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_Hediff_TreatDomainHediff</defName>
+		<label>Lotus rebirth</label>
+		<description>Using one's own life force as fuel, a vast amount of Qi is released to create a lotus domain where only allies are healed.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>5</range>
+				<mote>RI_Mote_TreatDomain</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>RI_Hediff_TreatDomainHediff_Buff</hediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.5</painOffset>
+				<!--疼痛-->
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+					<GI_EnergyGainEff>-10</GI_EnergyGainEff>
+				</statOffsets>
+				<statFactors>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+					<!-- 愈合系数-->
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--治疗领域副hediff——治愈莲光-->
+	<HediffDef ParentName="RI_ElixirHediff_Base">
+		<defName>RI_Hediff_TreatDomainHediff_Buff</defName>
+		<label>Lotus healing</label>
+		<description>Healing Qi flows into the body, like a gentle spring breeze, greatly enhancing recovery.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>5</maxDistance>
+				<customMote>Mote_CombatCommandLinkLine</customMote>
+			</li>
+			<li Class="WhoXiuXian.Source.RI_Hediff.HediffCompProperties_TreatDomainCoagulate">
+				<tendQualityRange>0.4~0.8</tendQualityRange>
+				<!-- 治疗治疗范围-->
+				<coldTime>120</coldTime>
+				<!-- 效果冷却时间-->
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<!--疼痛0-->
+				<statOffsets>
+					<ImmunityGainSpeed>5</ImmunityGainSpeed>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<!-- 利器护甲-->
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<!-- 钝器护甲-->
+					<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				</statOffsets>
+				<statFactors>
+					<InjuryHealingFactor>50</InjuryHealingFactor>
+					<!-- 愈合系数-->
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--================================特殊特效效果================================-->
+
+	<HediffDef>
+		<defName>RI_ShadowWithMove</defName>
+		<label>Marvellously speed</label>
+		<labelNoun>ShadowWithMove</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Marvellously speed.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li>
+				<compClass>WhoXiuXian.HediffComp_ShadowWithMove</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>4000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!--==============================负面效果==============================-->
+
+	<!--负面效果base-->
+	<HediffDef Name="RI_BadEffectHediff_Base" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+	</HediffDef>
+
+	<!--虚弱-->
+	<HediffDef ParentName="RI_BadEffectHediff_Base">
+		<defName>RI_XR</defName>
+		<label>Meridian weakness</label>
+		<description>Fall into a state of weakness, reduced consciousness and ability to operate.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>15000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.3</postFactor>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--极度虚弱-->
+	<HediffDef ParentName="RI_BadEffectHediff_Base">
+		<defName>RI_VeryXR</defName>
+		<label>Meridian extreme weakness</label>
+		<labelNoun>VeryXR</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>A state of extreme weakness, with significant loss of consciousness and ability to operate.</description>
+		<defaultLabelColor>(1,0.3,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>50000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.7</painOffset>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.1</postFactor>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--灵芽丧失-->
+	<HediffDef ParentName="RI_BadEffectHediff_Base">
+		<defName>RI_NoRoot</defName>
+		<label>Spiritual root removed</label>
+		<description>The loss of the spiritual root caused a massive brain shock, falling into near-death.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>800000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--经脉受损-->
+	<HediffDef ParentName="RI_BadEffectHediff_Base">
+		<defName>RI_MeridianDamage</defName>
+		<label>Meridian damaged</label>
+		<description>Qi is empty, the meridians are damaged, try use skills again may result in death!</description>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.3</painOffset>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--关节锁-->
+	<HediffDef ParentName="RI_BadEffectHediff_Base">
+		<defName>RI_FJCG</defName>
+		<label>Injury of joint</label>
+		<description>The joint is immobilized, causing excruciating pain.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>1</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 大脑过载 -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>RI_BrainOverload</defName>
+		<label>brain overload</label>
+		<labelNoun>brain overload</labelNoun>
+		<description>Due to the extremely high energy flowing through the brain, the brain was severely impacted.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<opinionOfOthersFactor>0</opinionOfOthersFactor>
+				<partIgnoreMissingHP>true</partIgnoreMissingHP>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- 灵性十足 -->
+	<HediffDef>
+		<defName>RI_He_SmartAnimal</defName>
+		<label>Smart animal</label>
+		<!-- 这只动物十分聪明 -->
+		<description>This animal is very smart.</description>
+		<duplicationAllowed>false</duplicationAllowed>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="WhoXiuXian.HediffCompProperties_SmartAnimal">
+				<usingAbility>False</usingAbility>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

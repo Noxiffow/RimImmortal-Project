@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Taoist comes down the mountain -->
+  <RI_Scenario_MonkComeDownMountain.label>道士下山</RI_Scenario_MonkComeDownMountain.label>
+  <!-- EN: After years of cultivation on the mountain, your master looked at the emptied rice sacks and sighed. Since your arrival, the sect’s food expenses had nearly doubled, as if even the stove itself was complaining.\n\nOne day, he finally called you over, his gaze both gentle and deliberate. He pressed a heavy bundle into your arms and said, “I see your bones are sturdy enough. It’s time for you to descend into the mortal world, cultivate yourself, and undergo proper trials.”\n\nYou lowered your eyes to the package, feeling the weight of your master’s care. Silently, you vowed to make the Daoist sect renowned—and perhaps, along the way, help them recover some of the lost rice. -->
+  <RI_Scenario_MonkComeDownMountain.description>在山上修行多年，师父看着被吃得干干净净的米袋，摇头叹气。自从你上山以来，道门的伙食开销，几乎比以往翻了一倍。\n\n终于有一日，师父将你叫到面前，眼神慈祥，把一个包裹塞到你怀里，口中说道：“为师看你根骨尚可，该去滚滚红尘中修身养性、好好磨练一番了。”\n\n你低头一看，包裹沉甸甸的，凝聚着师父的一片真心，心中暗暗发誓，一定要打响道门的名头。</RI_Scenario_MonkComeDownMountain.description>
+  <!-- EN: After years of cultivation on the mountain, your master looked at the emptied rice sacks and sighed. Since your arrival, the sect’s food expenses had nearly doubled, as if even the stove itself was complaining.\n\nOne day, he finally called you over, his gaze both gentle and deliberate. He pressed a heavy bundle into your arms and said, “I see your bones are sturdy enough. It’s time for you to descend into the mortal world, cultivate yourself, and undergo proper trials.”\n\nYou lowered your eyes to the package, feeling the weight of your master’s care. Silently, you vowed to make the Daoist sect renowned—and perhaps, along the way, help them recover some of the lost rice. -->
+  <RI_Scenario_MonkComeDownMountain.scenario.description>在山上修行多年，师父看着被吃得干干净净的米袋，摇头叹气。自从你上山以来，道门的伙食开销，几乎比以往翻了一倍。\n\n终于有一日，师父将你叫到面前，眼神慈祥，把一个包裹塞到你怀里，口中说道：“为师看你根骨尚可，该去滚滚红尘中修身养性、好好磨练一番了。”\n\n你低头一看，包裹沉甸甸的，凝聚着师父的一片真心，心中暗暗发誓，一定要打响道门的名头。</RI_Scenario_MonkComeDownMountain.scenario.description>
+  <!-- EN: Taoist comes down the mountain -->
+  <RI_Scenario_MonkComeDownMountain.scenario.name>道士下山</RI_Scenario_MonkComeDownMountain.scenario.name>
+  <!-- EN: "So this is the place Master marked on the map… why isn’t it a town?" — You sit astride your donkey, looking utterly bewildered. Glancing down at the heavy bundle in your arms, you untie it, only to have a pile of dried meat cakes spill onto the ground.\n\nThere is no town here, no tavern, no granary—only empty land, waiting for someone to cultivate it.\n\nAt your side rests an ancestral peachwood sword. Though its power is modest, it carries a strange presence that makes it impossible to part with. -->
+  <RI_Scenario_MonkComeDownMountain.scenario.parts.GameStartDialog.text>“师父给的地图就是这了......怎么不是城镇啊？”——你骑着毛驴，一脸迷茫。低头看看包裹，沉甸甸的，打开包裹，一地干肉饼滚了出来。\n\n这里不是城镇，没有酒馆与粮仓，只有空荡荡的土地，等着人来开垦。\n\n陪伴你的只有一柄祖传桃木剑，虽然威力不强，但似乎有神奇的力量，令你不愿丢弃。</RI_Scenario_MonkComeDownMountain.scenario.parts.GameStartDialog.text>
+  <!-- EN: A novice Taoist, confronting the stories of an unknown world. -->
+  <RI_Scenario_MonkComeDownMountain.scenario.summary>一个初出茅庐的道士，面对未知世界的故事。</RI_Scenario_MonkComeDownMountain.scenario.summary>
+  
+</LanguageData>

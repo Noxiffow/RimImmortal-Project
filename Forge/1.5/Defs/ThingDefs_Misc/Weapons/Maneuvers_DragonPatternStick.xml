@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ManeuverDef>
+    <defName>RI_Stab_DragonPatternStick</defName>
+    <requiredCapacity>RI_Stab_DragonPatternStick</requiredCapacity>
+    <verb>
+      <verbClass>RI_Starch.RI_Verbs.Verb_MeleeAttack_DragonPatternStick</verbClass>
+      <meleeDamageDef>Blunt</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+    <ToolCapacityDef>
+    <defName>RI_Stab_DragonPatternStick</defName>
+    <label>棍击</label>
+  </ToolCapacityDef>
+</Defs>

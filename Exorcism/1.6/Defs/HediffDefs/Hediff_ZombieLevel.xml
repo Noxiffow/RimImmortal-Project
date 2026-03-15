@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--冥尸等级-->
+	<RimZombieGirl.RI_ZombieLevelsDef>
+		<defName>ZombieLevels</defName>
+		<levels>
+			<li>
+				<label>Level 1</label>
+				<level>1</level>
+				<branch></branch>
+				<bloodLimit>70</bloodLimit>
+				<hediff>RI_ZombieLevel1</hediff>
+			</li>
+			<li>
+				<label>Level 2</label>
+				<level>2</level>
+				<branch></branch>
+				<bloodLimit>130</bloodLimit>
+				<hediff>RI_ZombieLevel2</hediff>
+			</li>
+			<li>
+				<label>Level 3</label>
+				<level>3</level>
+				<branch></branch>
+				<bloodLimit>180</bloodLimit>
+				<hediff>RI_ZombieLevel3</hediff>
+			</li>
+		</levels>
+	</RimZombieGirl.RI_ZombieLevelsDef>
+
+	<!--冥尸等级前置-->
+	<HediffDef Name="RI_Base_ZombieLevelBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.59, 0.44, 0.70)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>true</priceImpact>
+	</HediffDef>
+
+	<!--================【冥血】================-->
+
+	<HediffDef ParentName="RI_Base_ZombieLevelBase">
+		<defName>RI_ZombieLevel1</defName>
+		<label>【Nether blood】</label>
+		<description>#</description>
+		<priceOffset>1000</priceOffset>
+		<abilities>
+			<li>RI_ZombieAbility_BiteOn</li>
+		</abilities>
+		<stages>
+			<li>
+				<disablesNeeds>
+					<li>Rest</li>
+				</disablesNeeds>
+				<statFactors>
+					<Flammability>5</Flammability>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+					<MeleeDamageFactor>2</MeleeDamageFactor>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+					<!--学不了技能，也不会衰减-->
+					<GlobalLearningFactor>0</GlobalLearningFactor>
+				</statFactors>
+				<statOffsets>
+					<!--<RI_MassCarryCapacity>30</RI_MassCarryCapacity>-->
+					<ToxicResistance>0.5</ToxicResistance>
+					<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+					<MeleeHitChance>5</MeleeHitChance>
+					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+					<LifespanFactor>5</LifespanFactor>
+				</statOffsets>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Flu</li>
+					<li>BadBack</li>
+				</makeImmuneTo>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.5</offset>
+						<!-- 操作 -->
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--================【魇肉】================-->
+
+	<HediffDef ParentName="RI_Base_ZombieLevelBase">
+		<defName>RI_ZombieLevel2</defName>
+		<label>【Nightmare flesh】</label>
+		<description>#</description>
+		<priceOffset>1000</priceOffset>
+		<abilities>
+			<li>RI_ZombieAbility_BiteOn</li>
+		</abilities>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>3</Flammability>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<MeleeDamageFactor>3.5</MeleeDamageFactor>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+					<!--学不了技能，也不会衰减-->
+					<GlobalLearningFactor>0</GlobalLearningFactor>
+				</statFactors>
+				<statOffsets>
+					<!--<RI_MassCarryCapacity>30</RI_MassCarryCapacity>-->
+					<ToxicResistance>0.8</ToxicResistance>
+					<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<MeleeHitChance>8</MeleeHitChance>
+					<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ComfyTemperatureMax>30</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+					<LifespanFactor>7</LifespanFactor>
+				</statOffsets>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Flu</li>
+					<li>BadBack</li>
+				</makeImmuneTo>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+						<!-- 操作 -->
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.6</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--================【不化骨】================-->
+
+	<HediffDef ParentName="RI_Base_ZombieLevelBase">
+		<defName>RI_ZombieLevel3</defName>
+		<label>【Eternal bone】</label>
+		<description>#</description>
+		<priceOffset>1000</priceOffset>
+		<abilities>
+			<li>RI_ZombieAbility_BiteOn</li>
+		</abilities>
+		<stages>
+			<li>
+				<statFactors>
+					<Flammability>1</Flammability>
+					<IncomingDamageFactor>0.35</IncomingDamageFactor>
+					<MeleeDamageFactor>5.5</MeleeDamageFactor>
+					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+					<!--学不了技能，也不会衰减-->
+					<GlobalLearningFactor>0</GlobalLearningFactor>
+				</statFactors>
+				<statOffsets>
+					<!--<RI_MassCarryCapacity>30</RI_MassCarryCapacity>-->
+					<ToxicResistance>1</ToxicResistance>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<MeleeDodgeChance>15</MeleeDodgeChance>
+					<MeleeHitChance>15</MeleeHitChance>
+					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+					<ComfyTemperatureMax>50</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+					<LifespanFactor>99</LifespanFactor>
+				</statOffsets>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Flu</li>
+					<li>BadBack</li>
+				</makeImmuneTo>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+						<!-- 操作 -->
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.5</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.4</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.7</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.4</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

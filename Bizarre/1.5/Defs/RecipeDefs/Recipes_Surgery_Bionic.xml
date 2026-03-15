@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>NzRI_InstallXinSuEye</defName>
+        <label>install xinsu's eye</label>
+        <description>Install a xinsu's eye.</description>
+        <descriptionHyperlinks>
+          <ThingDef>NzRI_XinSu_Eye</ThingDef>
+          <HediffDef>NzRI_XinSu_Eye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing eye.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>NzRI_XinSu_Eye</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>NzRI_XinSu_Eye</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+          <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NzRI_XinSu_Eye</addsHediff>
+      </RecipeDef>
+</Defs>

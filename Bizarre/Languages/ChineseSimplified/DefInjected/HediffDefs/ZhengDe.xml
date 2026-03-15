@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_Zd_Fruition.label>果位</NzRI_Zd_Fruition.label>
+
+    <NzRI_Zd_Cultivation.label>修行</NzRI_Zd_Cultivation.label>
+
+    <NzRI_Zd_ZenSound.label>禅音</NzRI_Zd_ZenSound.label>
+    <NzRI_Zd_ZenSound.description>听到了禅音, 感到内心平静</NzRI_Zd_ZenSound.description>
+
+    <NzRI_Zd_Feed.label>喂养</NzRI_Zd_Feed.label>
+    <NzRI_Zd_Feed.description>接收了喂养</NzRI_Zd_Feed.description>
+
+    <NzRI_Zd_KeenEyes.label>慧眼</NzRI_Zd_KeenEyes.label>
+    <NzRI_Zd_KeenEyes.description>开启慧眼</NzRI_Zd_KeenEyes.description>
+
+    <NzRI_Zd_RecognizeTruth.label>识真</NzRI_Zd_RecognizeTruth.label>
+    <NzRI_Zd_RecognizeTruth.description>识破真相</NzRI_Zd_RecognizeTruth.description>
+
+    <NzRI_Zd_Imprisonment.label>禁锢</NzRI_Zd_Imprisonment.label>
+    <NzRI_Zd_Imprisonment.description>被禁锢</NzRI_Zd_Imprisonment.description>
+
+    <NzRI_Zd_Unshakeable.label>不动如山</NzRI_Zd_Unshakeable.label>
+    <NzRI_Zd_Unshakeable.description>佛法护佑，似有神庇，邪祟难侵</NzRI_Zd_Unshakeable.description>
+
+    <NzRI_Zd_Dizzy.label>头晕耳鸣</NzRI_Zd_Dizzy.label>
+    <NzRI_Zd_Dizzy.description>被巨大的声音震得头晕耳鸣，难以集中精神</NzRI_Zd_Dizzy.description>
+
+    <NzRI_Zd_WeaponDrop.label>兵器脱手</NzRI_Zd_WeaponDrop.label>
+    <NzRI_Zd_WeaponDrop.description>几乎无法握住兵器</NzRI_Zd_WeaponDrop.description>
+
+    <NzRI_Zd_He_TerrorScream.label>恐怖嘶吼</NzRI_Zd_He_TerrorScream.label>
+    <NzRI_Zd_He_TerrorScream.description>听到了恐怖的吼叫，感到恐惧</NzRI_Zd_He_TerrorScream.description>
+
+    <NzRI_Zd_He_NightmareGaze.label>噩梦凝视</NzRI_Zd_He_NightmareGaze.label>
+    <NzRI_Zd_He_NightmareGaze.description>感觉被一个恐怖的存在盯上，眼中/传感器中传来的一切，都变成了扭曲的幻象</NzRI_Zd_He_NightmareGaze.description>
+
+    <NzRI_Zd_He_PustuleCorrosion.label>脓疮腐蚀</NzRI_Zd_He_PustuleCorrosion.label>
+    <NzRI_Zd_He_PustuleCorrosion.description>被脓疮覆盖，感到剧烈的恶心</NzRI_Zd_He_PustuleCorrosion.description>
+
+    
+</LanguageData>

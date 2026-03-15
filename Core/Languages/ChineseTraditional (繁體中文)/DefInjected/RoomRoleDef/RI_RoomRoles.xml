@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Forging workshop -->
+  <RI_Room_CraftsmanRoom.label>炼器室</RI_Room_CraftsmanRoom.label>
+  
+  <!-- EN: Cultivation room -->
+  <RI_Room_CultivationRoom.label>修炼房</RI_Room_CultivationRoom.label>
+  
+  <!-- EN: Alchemy lab -->
+  <RI_Room_ElixirsRoom.label>炼丹房</RI_Room_ElixirsRoom.label>
+  
+  <!-- EN: Ancestral shrine -->
+  <RI_Room_PrayerAltarTable.label>祠堂</RI_Room_PrayerAltarTable.label>
+  
+</LanguageData>

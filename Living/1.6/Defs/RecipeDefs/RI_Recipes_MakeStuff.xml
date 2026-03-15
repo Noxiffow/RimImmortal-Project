@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--挖泥-->
+	<RecipeDef>
+		<defName>RI_DigMud</defName>
+		<label>dig soil</label>
+		<description>Dig soil from a digging pit.</description>
+		<jobString>digging soil</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<researchPrerequisite>RI_BasicTechnology</researchPrerequisite>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_Mud</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Mud>15</RI_Resource_Mud>
+		</products>
+		<!--学不到东西-->
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+	</RecipeDef>
+
+	<!--挖泥 x4-->
+	<RecipeDef>
+		<defName>RI_DigMudBulk</defName>
+		<label>dig soil x4</label>
+		<description>Dig soil from a digging pit.</description>
+		<jobString>digging soil</jobString>
+		<workAmount>6000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<researchPrerequisite>RI_BasicTechnology</researchPrerequisite>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_Mud</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Mud>60</RI_Resource_Mud>
+		</products>
+		<!--学不到东西-->
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+	</RecipeDef>
+
+	<!--烧砖Base-->
+	<RecipeDef Name="RI_RecipeBase_Bricks" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_BasicTechnology</researchPrerequisite>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_Mud</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<description>Bricks are made by pressing clay into bricks and firing them at high temperatures.</description>
+		<jobString>Baking brick</jobString>
+	</RecipeDef>
+
+	<!--烧制青砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeBlackBrick</defName>
+		<label>make Black brick</label>
+		<workAmount>3500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_BlackBrick>10</RI_Resource_BlackBrick>
+		</products>
+	</RecipeDef>
+
+	<!--烧制青砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeBlackBrickBulk</defName>
+		<label>make Black brick x4</label>
+		<workAmount>3500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>48</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_BlackBrick>40</RI_Resource_BlackBrick>
+		</products>
+	</RecipeDef>
+
+	<!--烧制青砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeBlackBrickTen</defName>
+		<label>make Black brick x10</label>
+		<workAmount>3500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_BlackBrick>100</RI_Resource_BlackBrick>
+		</products>
+	</RecipeDef>
+
+
+	<!--烧制红砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeRedBrick</defName>
+		<label>make Red brick</label>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_RedBrick>10</RI_Resource_RedBrick>
+		</products>
+	</RecipeDef>
+
+	<!--烧制红砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeRedBrickBulk</defName>
+		<label>make Red brick x4</label>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>48</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_RedBrick>40</RI_Resource_RedBrick>
+		</products>
+	</RecipeDef>
+
+	<!--烧制红砖-->
+	<RecipeDef ParentName="RI_RecipeBase_Bricks">
+		<defName>RI_MakeRedBrickTen</defName>
+		<label>make Red brick x10</label>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Mud</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Resource_RedBrick>100</RI_Resource_RedBrick>
+		</products>
+	</RecipeDef>
+
+	<!--把铁木整成钢铁？-->
+	<RecipeDef>
+		<defName>RI_MakeIronWoodToSteel</defName>
+		<label>Extract steel from iron wood</label>
+		<description>The iron wood is fired slowly at a specific temperature to remove the fibers, leaving some metal that resembles steel.</description>
+		<jobString>Extracting steel</jobString>
+		<workAmount>8000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Smithing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IronWood</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IronWood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>30</Steel>
+		</products>
+	</RecipeDef>
+
+	<!--锻打镔铁-->
+	<RecipeDef>
+		<defName>RI_MakeSteelToIron</defName>
+		<label>Forge pattern steel</label>
+		<description>Fold and forge steel, remove impurities, and finally wrought pattern steel.</description>
+		<jobString>Forging pattern steel</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Smithing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_DamascusIron>20</RI_Resource_DamascusIron>
+		</products>
+	</RecipeDef>
+
+	<!--锻打镔铁x4-->
+	<RecipeDef>
+		<defName>RI_MakeSteelToIronBulk</defName>
+		<label>Forge pattern steel x4</label>
+		<description>Fold and forge steel, remove impurities, and finally wrought pattern steel.</description>
+		<jobString>Forging pattern steel</jobString>
+		<workAmount>12000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RI_Smithing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_DamascusIron>80</RI_Resource_DamascusIron>
+		</products>
+	</RecipeDef>
+
+	<!--培养蚕Cultivate more silkworm-->
+	<RecipeDef>
+		<defName>RI_Recipe_CultivateSilkworm</defName>
+		<label>Cultivate more silkworm</label>
+		<description>After the cocoons hatch into moths, feed them mulberry leaves to allow them to mate and lay eggs, so as to expand the population.</description>
+		<jobString>Cultivating silkworm</jobString>
+		<workAmount>5000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_SilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_MulberryLeaf</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_SilkwormCocoon</li>
+				<li>RI_Resource_MulberryLeaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_SilkwormEgg>10</RI_Resource_SilkwormEgg>
+		</products>
+	</RecipeDef>
+
+	<!--培养冰蚕Cultivate more silkworm-->
+	<RecipeDef>
+		<defName>RI_Recipe_CultivateIceSilkworm</defName>
+		<label>Cultivate more ice silkworm</label>
+		<description>After the cocoons hatch into moths, feed them mulberry leaves to allow them to mate and lay eggs, so as to expand the population.</description>
+		<jobString>Cultivating silkworm</jobString>
+		<workAmount>5000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IceSilkwormCocoon</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IceMarrow</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IceSilkwormCocoon</li>
+				<li>RI_Resource_IceMarrow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_IceSilkwormEgg>10</RI_Resource_IceSilkwormEgg>
+		</products>
+	</RecipeDef>
+
+	<!--======================热压机配方======================-->
+
+	<!--热压Base-->
+	<RecipeDef Name="RI_RecipeBase_HeatPress" Abstract="True">
+		<workAmount>2400</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!--制作合成纤维-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_PressSynthread</defName>
+		<label>heat pressed synthread</label>
+		<description>By means of heat pressing, silk fibers are tightly bonded with chemical compounds to produce synthetic fiber.</description>
+		<jobString>heat pressing synthread</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Silk</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_Silk</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Synthread>20</Synthread>
+		</products>
+	</RecipeDef>
+
+	<!--制作纤维x4-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_PressSynthreadBulk</defName>
+		<label>heat pressed synthread x4</label>
+		<description>By means of heat pressing, silk fibers are tightly bonded with chemical compounds to produce synthetic fiber.</description>
+		<jobString>heat pressing synthread</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_Silk</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_Silk</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Synthread>80</Synthread>
+		</products>
+	</RecipeDef>
+
+	<!--木板制作胶合板-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakePlywood</defName>
+		<label>wood plank heat pressed plywood</label>
+		<description>Wood planks are crushed into particles, mixed with adhesive, and heat-pressed into plywood.</description>
+		<jobString>heat pressing plywood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ThinWood</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ThinWood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Plywood>10</RI_Resource_Plywood>
+		</products>
+	</RecipeDef>
+
+	<!--木板制作胶合板 x4-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakePlywoodBulk</defName>
+		<label>wood plank heat pressed plywood x4</label>
+		<description>Wood planks are crushed into particles, mixed with adhesive, and heat-pressed into plywood.</description>
+		<jobString>heat pressing plywood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_ThinWood</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_ThinWood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Plywood>40</RI_Resource_Plywood>
+		</products>
+	</RecipeDef>
+
+	<!--竹子制作胶合板-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakePlywoodBamboo</defName>
+		<label>bamboo heat pressed plywood</label>
+		<description>Bamboo is crushed into particles, combined with adhesive, and heat-pressed into plywood.</description>
+		<jobString>heat pressing plywood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_RawBamboo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Plywood>10</RI_Resource_Plywood>
+		</products>
+	</RecipeDef>
+
+	<!--竹子制作胶合板 x4-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakePlywoodBambooBulk</defName>
+		<label>bamboo heat pressed plywood x4</label>
+		<description>Bamboo is crushed into particles, combined with adhesive, and heat-pressed into plywood.</description>
+		<jobString>heat pressing plywood</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_RawBamboo</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_RawBamboo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Resource_Plywood>40</RI_Resource_Plywood>
+		</products>
+	</RecipeDef>
+
+	<!--铁木热压钢铁-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakeIronWoodSteel</defName>
+		<label>ironwood heat pressed steel</label>
+		<description>Ironwood is ground into powder and then heat-pressed to extract steel.</description>
+		<jobString>heat pressing steel</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IronWood</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IronWood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>20</Steel>
+		</products>
+	</RecipeDef>
+
+	<!--铁木热压钢铁 x4-->
+	<RecipeDef ParentName="RI_RecipeBase_HeatPress">
+		<defName>RI_Recipe_MakeIronWoodSteelBulk</defName>
+		<label>ironwood heat pressed steel x4</label>
+		<description>Ironwood is ground into powder and then heat-pressed to extract steel.</description>
+		<jobString>heat pressing steel</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_IronWood</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RI_Resource_IronWood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>80</Steel>
+		</products>
+	</RecipeDef>
+
+</Defs>

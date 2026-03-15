@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Qi Deviation — disrupted energy flow caused by improper or excessive cultivation.
+         Symptoms range from physical (pain, fatigue, spasms) to mental (anxiety, insomnia, hallucinations).
+         Demonic cultivators recover more slowly; orthodox recover more quickly.
+         Three stages: Unstable Qi → Qi Deviation → Qi Rampage. -->
+
+    <HediffDef>
+        <defName>Hediff_RI_CP_QiDeviation</defName>
+        <label>qi deviation</label>
+        <description>This cultivator's qi has been disrupted — flowing wild through the wrong meridians and tearing the body from within. The cause may be injury sustained during cultivation, emotional collapse, or a technique far beyond the cultivator's current realm.
+
+Without treatment the body will slowly recover on its own, though demonic cultivators struggle more to regain control. A fellow cultivator can help stabilize the flow more quickly.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>true</isBad>
+        <maxSeverity>1.0</maxSeverity>
+        <defaultLabelColor>(0.9, 0.4, 0.1)</defaultLabelColor>
+        <tendable>true</tendable>
+        <comps>
+            <!-- Base natural recovery: ~12 days from full severity -->
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.08</severityPerDay>
+            </li>
+            <!-- Path-specific recovery modifier + stage notification -->
+            <li Class="RimImmortal_CultivationPaths.HediffCompProperties_QiDeviation"/>
+        </comps>
+        <stages>
+
+            <!-- Stage 1 — Unstable Qi (0.0+): Mild disruption. Pawn is impaired but functional. -->
+            <li>
+                <label>unstable qi</label>
+                <painOffset>0.15</painOffset>
+                <capMods>
+                    <li><capacity>Consciousness</capacity><offset>-0.10</offset></li>
+                    <li><capacity>Moving</capacity><offset>-0.10</offset></li>
+                </capMods>
+            </li>
+
+            <!-- Stage 2 — Qi Deviation (0.35+): Significant disruption. Heavily impaired. -->
+            <li>
+                <minSeverity>0.35</minSeverity>
+                <label>qi deviation</label>
+                <painOffset>0.35</painOffset>
+                <capMods>
+                    <li><capacity>Consciousness</capacity><offset>-0.25</offset></li>
+                    <li><capacity>Moving</capacity><offset>-0.30</offset></li>
+                    <li><capacity>Manipulation</capacity><offset>-0.20</offset></li>
+                </capMods>
+            </li>
+
+            <!-- Stage 3 — Qi Rampage (0.70+): Severe disruption. Near incapacitation.
+                 Hallucinations and violent internal qi surges. -->
+            <li>
+                <minSeverity>0.70</minSeverity>
+                <label>qi rampage</label>
+                <painOffset>0.65</painOffset>
+                <capMods>
+                    <li><capacity>Consciousness</capacity><offset>-0.50</offset></li>
+                    <li><capacity>Moving</capacity><offset>-0.65</offset></li>
+                    <li><capacity>Manipulation</capacity><offset>-0.45</offset></li>
+                </capMods>
+            </li>
+
+        </stages>
+    </HediffDef>
+
+</Defs>

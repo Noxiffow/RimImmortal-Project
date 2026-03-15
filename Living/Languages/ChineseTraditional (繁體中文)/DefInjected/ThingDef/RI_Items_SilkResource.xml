@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ice silkworm cocoon -->
+  <RI_Resource_IceSilkwormCocoon.label>冰蚕茧</RI_Resource_IceSilkwormCocoon.label>
+  <!-- EN: The cocoon woven by the ice silkworm is cool to the touch. The processing of ice silk is very time-consuming and laborious, so often as soon as ice silkworms cocoon, craftsmen will immediately light the lamp all night and work overtime to make ice silk. -->
+  <RI_Resource_IceSilkwormCocoon.description>冰蚕织成的蚕茧，摸上去凉凉的。冰蚕丝的加工非常费时费力，所以往往冰蚕一结茧，工匠们就马上通宵点灯，加班加点地制作冰蚕丝。</RI_Resource_IceSilkwormCocoon.description>
+  
+  <!-- EN: Ice silkworm egg -->
+  <RI_Resource_IceSilkwormEgg.label>冰蚕卵</RI_Resource_IceSilkwormEgg.label>
+  <!-- EN: A piece of paper attached to the egg of ice silkworm, a rare genetic modification of this wonderful silkworm.\n\nIce silkworms grow slowly, but the ice silk they spit out is very flexible and has the effect of absorbing heat, so the fabric made of ice silk feels very cold. -->
+  <RI_Resource_IceSilkwormEgg.description>一张附着冰蚕卵的纸片，这种奇妙的蚕是基因改造的产物，比较少见。\n\n冰蚕生长缓慢，但其吐出的冰蚕丝十分柔韧，并且带有吸收热量的效果，所以以冰蚕丝制作的织物，摸上去十分冰凉。</RI_Resource_IceSilkwormEgg.description>
+  
+  <!-- EN: mulberry leaf -->
+  <RI_Resource_MulberryLeaf.label>桑叶</RI_Resource_MulberryLeaf.label>
+  <!-- EN: Mulberry leaves are the primary product of the mulberry tree and have been used in traditional sericulture since ancient times. Rich in nutrients and highly palatable, they can also serve as an alternative to hay and be used as animal feed. -->
+  <RI_Resource_MulberryLeaf.description>桑叶是桑树的主要产物，自古以来用于传统养蚕业。桑叶含有丰富的营养物质以及良好的适口性，所以也可以替代干草，作为动物饲料。</RI_Resource_MulberryLeaf.description>
+  
+  <!-- EN: Silkworm cocoon -->
+  <RI_Resource_SilkwormCocoon.label>蚕茧</RI_Resource_SilkwormCocoon.label>
+  <!-- EN: The cocoon woven by the silkworm, the silkworm emerges into a moth in the cocoon. But most of them are made into raw silk before they break the cocoon, and only some are turned into moths, which mate and leave behind young to continue making silk. -->
+  <RI_Resource_SilkwormCocoon.description>蚕织成的蚕茧，蚕就在蚕茧中羽化成蛾。但它们大多数都会在破茧之前就被制作成生蚕丝，只有一部分会令其变成蛾，交配后留下后代，以继续制作丝绸。</RI_Resource_SilkwormCocoon.description>
+  
+  <!-- EN: Silkworm egg -->
+  <RI_Resource_SilkwormEgg.label>蚕卵</RI_Resource_SilkwormEgg.label>
+  <!-- EN: A piece of paper with an egg attached. These eggs are easy to store, so they are often found in trading caravans.\n\nAfter it is placed in the silkworm box, it will automatically hatch into a silkworm. As time goes on, the silkworm will develop a large cocoon. -->
+  <RI_Resource_SilkwormEgg.description>一张附着蚕卵的纸片。这种蚕卵方便储存，所以经常能在贸易商队中见到。\n\n将其放入蚕箱后，会自动孵化成蚕。随着时间推移，蚕将会长大结茧。</RI_Resource_SilkwormEgg.description>
+  
+</LanguageData>

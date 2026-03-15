@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: entered transformation coffin -->
+  <EnteredZombieTransformationCoffin.label>进入炼冥棺</EnteredZombieTransformationCoffin.label>
+  <!-- EN:
+    <li>tale_noun->[PAWN_nameDef] entering a transformation coffin</li>
+    <li>image->[PAWN_nameFull] lying still inside a transformation coffin [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] stepping into the transformation coffin [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] sealed in a transformation coffin, body twitching [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] screaming silently as the coffin closes [circumstance_group]</li>
+    <li>image->a green glow leaking from the transformation coffin as [PAWN_nameFull] lies within [circumstance_group]</li>
+    <li>circumstance_phrase->with vacant eyes</li>
+    <li>circumstance_phrase->while whispering forgotten words</li>
+    <li>circumstance_phrase->as their humanity slips away</li>
+    <li>circumstance_phrase->with a final look at the world</li>
+    <li>desc_sentence->[PAWN_nameDef]'s skin begins to pale and flake.</li>
+    <li>desc_sentence>A mechanical hum surrounds the coffin.</li>
+    <li>desc_sentence>The air smells of ozone and rot.</li>
+    <li>desc_sentence>[PAWN_nameDef] lets out a guttural breath before silence.</li>
+    <li>desc_sentence>Other coffins nearby pulse with green light.</li>
+  -->
+  <EnteredZombieTransformationCoffin.rulePack.rulesStrings>TODO</EnteredZombieTransformationCoffin.rulePack.rulesStrings>
+  
+</LanguageData>

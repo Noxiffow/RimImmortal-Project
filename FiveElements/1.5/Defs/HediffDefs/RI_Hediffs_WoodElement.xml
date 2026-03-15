@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 木行Base -->
+    <HediffDef Name="RI_WoodMethodHediff_Base" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.25,0.7,0.25)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!-- 有限的生命 -->
+    <HediffDef ParentName="RI_WoodMethodHediff_Base">
+        <defName>RI_He_Wood_LimitedLife</defName>
+        <label>Limited Life</label>
+        <!-- 这个生物的剩余生命十分有限，需要持续输入生机才能存活 -->
+        <description>Limited life, this creature's remaining life is very limited, and it needs to
+            be continuously input with vitality to survive.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <!-- 初始存活时间 -->
+        <initialSeverity>1</initialSeverity>
+        <!-- 最长存活时间 -->
+        <maxSeverity>30</maxSeverity>
+        <stages>
+            <li>
+                <!-- 耗尽 -->
+                <label>exhaust</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <!-- 充盈 -->
+                <minSeverity>0.001</minSeverity>
+            </li>
+
+        </stages>
+    </HediffDef>
+
+    <!-- 成长 -->
+    <HediffDef ParentName="RI_WoodMethodHediff_Base">
+        <defName>RI_He_Wood_Growth</defName>
+        <label>Growth</label>
+        <!-- 这个生物正在逐渐成长，随着它存活时间越来越长，它会变得更强 -->
+        <description>Growth, this creature is gradually growing and needs to be continuously input
+            with vitality to accelerate its growth.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <!-- 初始存活时间 -->
+        <initialSeverity>0.01</initialSeverity>
+        <!-- 最长存活时间 -->
+        <maxSeverity>100</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>1</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <!-- TODO 补充更多 -->
+            <li>
+                <minSeverity>1</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.7</IncomingDamageFactor>
+                    <MoveSpeed>1.1</MoveSpeed>
+                    <MeleeDamageFactor>1.3</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>3</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.5</IncomingDamageFactor>
+                    <MoveSpeed>1.15</MoveSpeed>
+                    <MeleeDamageFactor>1.7</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>7</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.3</IncomingDamageFactor>
+                    <MoveSpeed>1.3</MoveSpeed>
+                    <MeleeDamageFactor>3</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>15</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.2</IncomingDamageFactor>
+                    <MoveSpeed>1.5</MoveSpeed>
+                    <MeleeDamageFactor>7</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>30</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.1</IncomingDamageFactor>
+                    <MoveSpeed>2</MoveSpeed>
+                    <MeleeDamageFactor>19</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+            <!-- TODO 补充更多 -->
+        </stages>
+    </HediffDef>
+
+    <!-- 生机 -->
+    <HediffDef ParentName="RI_WoodMethodHediff_Base">
+        <defName>RI_He_Wood_Vitality</defName>
+        <label>Fertility</label>
+        <!-- 揽万物之丰饶，藏于己身。施为之时，引生机入术，增其威势。若不幸身死，生机尚存，便可瞬间回生。 -->
+        <description>#</description>
+        <hediffClass>RI_FiveElements.CachedHediff</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="RI_FiveElements.CompProperties_WoodRegeneration">
+                <minEnergy>3</minEnergy>
+            </li>
+        </comps>
+        <showGizmosOnCorpse>true</showGizmosOnCorpse>
+        <initialSeverity>0.01</initialSeverity>
+        <stages>
+            <!-- TODO 添加更多层数 -->
+            <li>
+                <minSeverity>1</minSeverity>
+                <statFactors>
+                    <IncomingDamageFactor>0.95</IncomingDamageFactor>
+                    <MoveSpeed>1.1</MoveSpeed>
+                    <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ArmorRating_Heat>0.3</ArmorRating_Heat>
+                    <MentalBreakThreshold>0.1</MentalBreakThreshold>
+                    <ComfyTemperatureMax>30</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+
+        </stages>
+        <!--附加特效-->
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties">
+                <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+                <useGraphic>true</useGraphic>
+                <drawSize>1</drawSize>
+                <!-- TODO 替换 -->
+                <texPath>Things/Mote/RI_He_Fire_BurningSoul</texPath>
+                <shaderTypeDef>MoteGlow</shaderTypeDef>
+                <drawData>
+                    <defaultData>
+                        <layer>56</layer>
+                        <offset>(0, 2, 0)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </HediffDef>
+</Defs>

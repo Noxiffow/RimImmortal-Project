@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--蚩尤戟-->
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_ChiYouFlameHalberd</defName>
+		<label>ChiYou flame halberd【First-rate】</label>
+		<description>【First-rate】Melee weapon\n\nA long halberd with violent power, the whole body constantly spewing fire. The halberd is said to have been inspired by the ancient myth of Chiyou, the warrior master, whose anger still burns bright and gushes out through the halberd.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_ChiYouFlameHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<weaponTags>
+			<li>RI_BestWeapon_Tag</li>
+		</weaponTags>
+		<ShockAngle>10</ShockAngle>
+		<ShockLength>9</ShockLength>
+		<ShockDamageDef>Flame</ShockDamageDef>
+		<ShockPR>0.85</ShockPR>
+		<ShockStun>0</ShockStun>
+		<ShockAmount>10</ShockAmount>
+
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>4500</MarketValue>
+			<!--<WorkToMake>10600</WorkToMake>-->
+			<Mass>4.6</Mass>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>戟刃</label>
+				<capacities>
+					<li>RI_Cut_ChiYouFlameHalberd</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>12</amount>
+						<chance>0.7</chance>
+					</li>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>5</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>戟尖</label>
+				<capacities>
+					<li>Stab</li>
+					<li>RI_Cut_ChiYouFlameHalberd</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>9929</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>5</amount>
+						<chance>1</chance>
+
+					</li>
+					<li>
+						<def>Flame</def>
+						<amount>12</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_ChiYouFlameHalberd_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.7</drawSize>
+					<color>(0.8,0.8,0.8,0.9)</color>
+				</graphicData>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_ChiYouFlameHalberd</hediffDef>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_Ability_ChiYouFlameHalberd</abilityDef>
+				<maxCharges>7</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>蚩尤怒炎</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>210</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--破军剑-->
+	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_PojunSword</defName>
+		<label>PoJun sword【First-rate】</label>
+		<description>【First-rate】Melee weapon\n\nThis sword is a replica of a famous sword from ancient times.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_PojunSword</texPath>
+			<drawSize>1.15</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<Mass>4.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>剑刃</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>65</power>
+				<cooldownTime>2.0</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>2</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>剑尖</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>1.6</cooldownTime>
+				<chanceFactor>5999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_PojunSword_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.15</drawSize>
+					<color>(1,1,1,0.5)</color>
+				</graphicData>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_Ability_PojunSword</abilityDef>
+				<maxCharges>7</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>破军飞剑</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>150</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_Weapon_PojunSword</hediffDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--斩仙剑-->
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_SlayinglmmortalSword</defName>
+		<label>God slayer sword【First-rate】</label>
+		<description>【First-rate】Melee weapon\n\nA mysterious sword, which is said to be the first weapon used by the celestial gods to kill their own kind. After loading the spiritual crystal, you can unleash a strike that will kill any creature.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_SlayinglmmortalSword</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<ShockLength>5</ShockLength>
+		<ShockDamageDef>RI_Bomb_DragonPatternStick</ShockDamageDef>
+		<ShockPR>0.7</ShockPR>
+		<statBases>
+			<MarketValue>6700</MarketValue>
+			<Mass>6.66</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<weaponTags>
+			<li>RI_BestWeapon_Tag</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>剑刃</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>29</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>6</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>剑尖</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>1.5</cooldownTime>
+				<chanceFactor>1999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_ArmorBreak</def>
+						<amount>7</amount>
+						<chance>0.8</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_SlayinglmmortalSword_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.2</drawSize>
+					<color>(1,1,1,0.7)</color>
+				</graphicData>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_Weapon_SlayinglmmortalSword</hediffDef>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_SlayinglmmortalSword</abilityDef>
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>诛仙斩</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>10</ammoCountPerCharge>
+				<baseReloadTicks>250</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--盘龙棍-->
+	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Blunt_Base">
+		<defName>RI_Weapon_DragonPatternStick</defName>
+		<label>Dragon pattern stick【First-rate】</label>
+		<description>【First-rate】Melee weapon\n\nA long stick with the power of god, although this stick can not be free to grow or shrink, but with each stroke, it can make the earth tremble, and with each sweep, it can tear the air.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_DragonPatternStick</texPath>
+			<drawSize>1.26</drawSize>
+		</graphicData>
+		<ShockLength>5</ShockLength>
+		<ShockDamageDef>RI_Bomb_DragonPatternStick</ShockDamageDef>
+		<ShockPR>0.5</ShockPR>
+		<ShockAmount>15</ShockAmount>
+		<statBases>
+			<MarketValue>4800</MarketValue>
+			<Mass>25</Mass>
+		</statBases>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>棍箍</label>
+				<capacities>
+					<li>RI_Stab_DragonPatternStick</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>1.7</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Vertigo</def>
+						<amount>6</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>棍箍</label>
+				<capacities>
+					<li>RI_Stab_DragonPatternStick</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>1.5</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_DragonPatternStick_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>1.26</drawSize>
+					<color>(0.8,0.8,0.8,0.7)</color>
+				</graphicData>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_Weapon_DragonPatternStick</hediffDef>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_DragonPatternStick</abilityDef>
+				<maxCharges>7</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>千钧断岳</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>150</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--珍珠伞-->
+	<ThingDef  ParentName="RI_MagicalWeapon_Sharp_Base">
+		<defName>RI_Weapon_GlassPearlUmbrella</defName>
+		<label>Glass pearl umbrella【First-rate】</label>
+		<description>【First-rate】Melee weapon\n\nThis is not a weapon of great destructive power, but it has powerful healing abilities. It is said that a practitioner once walked the earth, holding her umbrella aloft. The faint green light that emanated from the umbrella healed all the people who had been tortured by war into unrecognizable shapes. She was revered as a goddess and a temple was built in her honor.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_GlassPearlUmbrella</texPath>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<Mass>4.6</Mass>
+		</statBases>
+		<weaponTags>
+			<li>RI_BestWeapon_Tag</li>
+		</weaponTags>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>伞柄</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.1</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Puncture</def>
+						<amount>8</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>伞面</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>0.9</cooldownTime>
+				<chanceFactor>9999</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>RI_Damage_Vertigo</def>
+						<amount>1</amount>
+						<chance>0.7</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+
+		<comps Inherit="False">
+			<li Class="RI_MoteDraw.RI_CompPropertiesDrawExtra">
+				<graphicData>
+					<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_GlassPearlUmbrella_de</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+					<drawSize>2.4</drawSize>
+					<color>(0.9,0.9,0.9,0.7)</color>
+				</graphicData>
+			</li>
+			<li Class="RI_Starch.RI_WeaponHediffComp.RI_CompProperties_WeaponHediff">
+				<hediffDef>RI_Hediff_GlassPearlUmbrella</hediffDef>
+			</li>
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>RI_Ability_GlassPearlUmbrella</abilityDef>
+				<maxCharges>7</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>琉璃珠光术</chargeNoun>
+				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>150</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>
+

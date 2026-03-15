@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aberrant leather -->
+  <RI_Leather_Aberrant.label>邪异皮</RI_Leather_Aberrant.label>
+  <!-- EN: The leather from an aberrant creature, carrying the scent of rot that unsettles the senses.\n\nAberrant leather is ill-suited for ordinary crafting, but certain specialized ritual implements may require it. -->
+  <RI_Leather_Aberrant.description>从邪异身上剥下来的皮，有腐烂的味道。这种皮的属性一般，但可以用于制作一些特殊物件。</RI_Leather_Aberrant.description>
+  
+  <!-- EN: aberrant meat -->
+  <RI_Meat_Aberrant.label>TODO</RI_Meat_Aberrant.label>
+  <!-- EN: The flesh of an aberrant creature, exuding a damp, putrid stench. Is it truly necessary to eat this?\n\nPerhaps certain unique cook techniques can turn decay into something remarkable… -->
+  <RI_Meat_Aberrant.description>TODO</RI_Meat_Aberrant.description>
+  
+</LanguageData>

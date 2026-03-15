@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<AbilityDef>
+		<defName>RI_ThunderMinigun_Ability</defName>
+		<label>Thunder pierces cloud</label>
+		<description>It shoots out a huge beam of lightning, creating an electric field.</description>
+		<cooldownTicksRange>1060</cooldownTicksRange>
+		<iconPath>Ability/Weapon/RI_ThunderMinigun_Ability</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<minRange>7.3</minRange>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<range>37</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+			<defaultProjectile>RI_Bullet_Ability_ThunderMinigun</defaultProjectile>
+			<verbClass>RI_Starch.RI_Ability.RI_Verb_AbilityBurst</verbClass>
+			<warmupTime>1.9</warmupTime>
+			<soundCast>Explosion_EMP</soundCast>
+			<ai_IsWeapon>false</ai_IsWeapon>
+			<defaultCooldownTime>2</defaultCooldownTime>
+		</verbProperties>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet" >
+		<defName>RI_Bullet_Ability_ThunderMinigun</defName>
+		<label>Cloud piercing bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/RI_lightningStrike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>0.01</drawSize>
+			<drawOffset>(0,5,0)</drawOffset>
+		</graphicData>
+		<thingClass>RI_Starch.RI_Projectile.RI_Bullet_ThunderMinigun</thingClass>
+		<projectile>
+			<soundImpact>Explosion_Bomb</soundImpact>
+			<explosionRadius>7</explosionRadius>
+			<damageDef>Crush</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>200</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RI_ThunderLordLance_ThunderMinigun_Bullet</defName>
+		<label>Thunder</label>
+		<thingClass>RI_Starch.RI_Projectile.Projectile_lightningStrike</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RI_lightningStrike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+			<shaderType>MoteGlow</shaderType>
+			<drawOffset>(0,5,0)</drawOffset>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>9.3</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>9</speed>
+		</projectile>
+	</ThingDef>
+
+	<FleckDef ParentName="RI_Fleck_Tail">
+		<defName>RI_Fleck_Tail_Ability_ThunderMinigun</defName>
+		<graphicData>
+			<texPath>Effects/WhiteApeBow/RI_tail_WhiteApeBow</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.02</fadeInTime>
+		<solidTime>0.01</solidTime>
+		<fadeOutTime>0.28</fadeOutTime>
+		<growthRate>-0.9</growthRate>
+	</FleckDef>
+</Defs>

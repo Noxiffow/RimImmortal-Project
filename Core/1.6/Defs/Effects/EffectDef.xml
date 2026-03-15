@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<EffecterDef>
+		<defName>UpgradeLight</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<burstCount>3</burstCount>
+				<chancePerTick>0.05</chancePerTick>
+				<positionOffset>(0, 0, 0.5)</positionOffset>
+				<fleckDef>Text</fleckDef>
+				<soundDef>Zap_Loud</soundDef>
+				<positionRadius>1.5</positionRadius>
+				<positionRadiusMin>0.5</positionRadiusMin>
+				<scale>0.05~0.15</scale>
+				<speed>0.8</speed>
+				<rotation>0~360</rotation>
+				<rotationRate>25</rotationRate>
+				<spawnLocType>RandomCellOnTarget</spawnLocType>
+				<angle>0~360</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleckDef ParentName="FleckBase_RandomGraphic_Thrown">
+		<defName>Text</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.0</fadeInTime>
+		<solidTime>.1</solidTime>
+		<fadeOutTime>.1</fadeOutTime>
+		<growthRate>-.125</growthRate>
+		<randomGraphics>
+			<li>
+				<graphicClass>Graphic_FleckPulse</graphicClass>
+				<texPath>Things/Mote/EnergyCrackleB</texPath>
+				<shaderType>MoteGlowPulse</shaderType>
+				<renderInstanced>true</renderInstanced>
+				<shaderParameters>
+					<_Color>(1, 0, 0, 1)</_Color>
+					<_Interval>0.03</_Interval>
+				</shaderParameters>
+				<drawSize>12.0</drawSize>
+			</li>
+		</randomGraphics>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RedLightningGlow</defName>
+		<graphicData>
+			<texPath>Effects/Upgrade/RedThunder</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.2</fadeInTime>
+		<solidTime>0.4</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>GoldLightningGlow</defName>
+		<graphicData>
+			<texPath>Effects/Upgrade/GoldThunder</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.2</fadeInTime>
+		<solidTime>0.4</solidTime>
+		<fadeOutTime>1</fadeOutTime>
+	</FleckDef>
+
+	<!--天灯-->
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_RitualSkyLantern</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>Skyfaller</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.15</fadeInTime>
+			<solidTime>0.35</solidTime>
+			<fadeOutTime>0.25</fadeOutTime>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<texPath>Things/Ethereal/RI_SkyLanternMask</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>

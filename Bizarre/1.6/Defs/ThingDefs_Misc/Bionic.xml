@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 心素的眼睛 -->
+    <ThingDef ParentName="NzRI_BodyPartBionicBase">
+        <defName>NzRI_XinSu_Eye</defName>
+        <label>xinsu's eye</label>
+        <description>The eyes taken from Shinsu seemed to reflect a view that was not of this world</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallBionicEye</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+		<tradeTags>
+			<li>RI_NoTrade_Tag</li>
+		</tradeTags>
+    </ThingDef>
+
+    <!-- 仿生体基础 -->
+    <ThingDef Name="NzRI_BodyPartBionicBase" ParentName="BodyPartBase" Abstract="True">
+        <defName>NzRI_BodyPartBionicBase</defName>
+        <techLevel>Spacer</techLevel>
+        <thingCategories>
+            <li>BodyPartsBionic</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(189,169,118)</color>
+        </graphicData>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <!-- <statBases>
+          <WorkToMake>26000</WorkToMake>
+        </statBases> -->
+        <!-- <recipeMaker>
+          <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+          <workSkill>Crafting</workSkill>
+          <effectWorking>Smith</effectWorking>
+          <soundWorking>Recipe_Smith</soundWorking>
+          <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+          <skillRequirements>
+            <Crafting>8</Crafting>
+          </skillRequirements>
+            <researchPrerequisite>Bionics</researchPrerequisite>
+          <recipeUsers>
+              <li>FabricationBench</li>
+          </recipeUsers>
+          <displayPriority>300</displayPriority>
+        </recipeMaker> -->
+    </ThingDef>
+</Defs>

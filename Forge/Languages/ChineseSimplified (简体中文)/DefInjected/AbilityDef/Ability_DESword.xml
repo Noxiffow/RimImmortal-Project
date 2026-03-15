@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Poison shuttle -->
+  <RI_Ability_DESword.label>剧毒飞梭</RI_Ability_DESword.label>
+  <!-- EN: Release a venomous shuttle to attack up to 3 enemies. -->
+  <RI_Ability_DESword.description>释放一支剧毒飞梭，攻击最多3个敌人。</RI_Ability_DESword.description>
+  
+</LanguageData>

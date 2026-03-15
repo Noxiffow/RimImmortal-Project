@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ChiYou flame halberd【First-rate】 -->
+  <RI_Weapon_ChiYouFlameHalberd.label>蚩尤怒炎戟【一品】</RI_Weapon_ChiYouFlameHalberd.label>
+  <!-- EN: 【First-rate】Melee weapon\n\nA long halberd with violent power, the whole body constantly spewing fire. The halberd is said to have been inspired by the ancient myth of Chiyou, the warrior master, whose anger still burns bright and gushes out through the halberd. -->
+  <RI_Weapon_ChiYouFlameHalberd.description>【一品】近战兵器\n\n一把具有暴戾力量的长戟，周身不断冒出火舌。这把长戟据说灵感来自远古时期的神话，兵主蚩尤，他的怒火依旧熊熊燃烧，并通过长戟喷涌而出。</RI_Weapon_ChiYouFlameHalberd.description>
+  <!-- EN: 蚩尤怒炎 -->
+  <RI_Weapon_ChiYouFlameHalberd.comps.CompEquippableAbilityReloadable.chargeNoun>十字怒炎</RI_Weapon_ChiYouFlameHalberd.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_ChiYouFlameHalberd.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_ChiYouFlameHalberd.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 戟刃 -->
+  <RI_Weapon_ChiYouFlameHalberd.tools.0.label>戟刃</RI_Weapon_ChiYouFlameHalberd.tools.0.label>
+  <!-- EN: 戟尖 -->
+  <RI_Weapon_ChiYouFlameHalberd.tools.1.label>戟尖</RI_Weapon_ChiYouFlameHalberd.tools.1.label>
+  
+  <!-- EN: Dragon pattern stick【First-rate】 -->
+  <RI_Weapon_DragonPatternStick.label>盘龙通天棍【一品】</RI_Weapon_DragonPatternStick.label>
+  <!-- EN: 【First-rate】Melee weapon\n\nA long stick with the power of god, although this stick can not be free to grow or shrink, but with each stroke, it can make the earth tremble, and with each sweep, it can tear the air. -->
+  <RI_Weapon_DragonPatternStick.description>【一品】近战兵器\n\n一根具有通天伟力的长棍，虽然这根棍子无法做到自由变大缩小，但是其每次敲击，都能令大地颤抖，每次横扫，都能撕裂空气。</RI_Weapon_DragonPatternStick.description>
+  <!-- EN: 千钧断岳 -->
+  <RI_Weapon_DragonPatternStick.comps.CompEquippableAbilityReloadable.chargeNoun>断岳</RI_Weapon_DragonPatternStick.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_DragonPatternStick.comps.CompEquippableAbilityReloadable.cooldownGerund>TODO</RI_Weapon_DragonPatternStick.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 棍箍 -->
+  <RI_Weapon_DragonPatternStick.tools.0.label>棍箍</RI_Weapon_DragonPatternStick.tools.0.label>
+  <!-- EN: 棍箍 -->
+  <RI_Weapon_DragonPatternStick.tools.1.label>棍箍</RI_Weapon_DragonPatternStick.tools.1.label>
+  
+  <!-- EN: Glass pearl umbrella【First-rate】 -->
+  <RI_Weapon_GlassPearlUmbrella.label>琉璃珍珠伞【一品】</RI_Weapon_GlassPearlUmbrella.label>
+  <!-- EN: 【First-rate】Melee weapon\n\nThis is not a weapon of great destructive power, but it has powerful healing abilities. It is said that a practitioner once walked the earth, holding her umbrella aloft. The faint green light that emanated from the umbrella healed all the people who had been tortured by war into unrecognizable shapes. She was revered as a goddess and a temple was built in her honor. -->
+  <RI_Weapon_GlassPearlUmbrella.description>【一品】近战兵器\n\n这并不是一柄杀伤力强大的武器，但具有强大的治愈能力。相传，曾有一名修炼者步行人间，她举起伞，伞洒下淡淡绿光，将因为战乱被折磨得不成人形的人们通通治愈。而她也被尊为天仙，立庙供奉。</RI_Weapon_GlassPearlUmbrella.description>
+  <!-- EN: 琉璃珠光术 -->
+  <RI_Weapon_GlassPearlUmbrella.comps.CompEquippableAbilityReloadable.chargeNoun>琉璃珠光</RI_Weapon_GlassPearlUmbrella.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_GlassPearlUmbrella.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_GlassPearlUmbrella.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 伞柄 -->
+  <RI_Weapon_GlassPearlUmbrella.tools.0.label>伞柄</RI_Weapon_GlassPearlUmbrella.tools.0.label>
+  <!-- EN: 伞面 -->
+  <RI_Weapon_GlassPearlUmbrella.tools.1.label>伞面</RI_Weapon_GlassPearlUmbrella.tools.1.label>
+  
+  <!-- EN: PoJun sword【First-rate】 -->
+  <RI_Weapon_PojunSword.label>破军剑【一品】</RI_Weapon_PojunSword.label>
+  <!-- EN: 【First-rate】Melee weapon\n\nThis sword is a replica of a famous sword from ancient times. -->
+  <RI_Weapon_PojunSword.description>【一品】近战兵器\n\n这把剑是古代一名著名的佩剑的复制版。据说他曾经驾驭飞剑，独自一人突入千人大军中，刹那间生灵涂炭，他在斩杀百余人后为后续部队撕开了防线，力竭而亡。为了纪念他，他的配剑被作为一种象征，流传下来。</RI_Weapon_PojunSword.description>
+  <!-- EN: 破军飞剑 -->
+  <RI_Weapon_PojunSword.comps.CompEquippableAbilityReloadable.chargeNoun>破军飞剑</RI_Weapon_PojunSword.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_PojunSword.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_PojunSword.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 剑刃 -->
+  <RI_Weapon_PojunSword.tools.0.label>剑刃</RI_Weapon_PojunSword.tools.0.label>
+  <!-- EN: 剑尖 -->
+  <RI_Weapon_PojunSword.tools.1.label>剑尖</RI_Weapon_PojunSword.tools.1.label>
+  
+  <!-- EN: God slayer sword【First-rate】 -->
+  <RI_Weapon_SlayinglmmortalSword.label>斩仙剑【一品】</RI_Weapon_SlayinglmmortalSword.label>
+  <!-- EN: 【First-rate】Melee weapon\n\nA mysterious sword, which is said to be the first weapon used by the celestial gods to kill their own kind. After loading the spiritual crystal, you can unleash a strike that will kill any creature. -->
+  <RI_Weapon_SlayinglmmortalSword.description>【一品】近战兵器\n\n一把玄妙宝剑，据说是最早的天仙用来屠戮同类的兵器。在装填灵石后，可以释放出一次足以斩杀任何生灵的斩击。</RI_Weapon_SlayinglmmortalSword.description>
+  <!-- EN: 诛仙斩 -->
+  <RI_Weapon_SlayinglmmortalSword.comps.CompEquippableAbilityReloadable.chargeNoun>诛仙</RI_Weapon_SlayinglmmortalSword.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_SlayinglmmortalSword.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_SlayinglmmortalSword.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 剑刃 -->
+  <RI_Weapon_SlayinglmmortalSword.tools.0.label>剑刃</RI_Weapon_SlayinglmmortalSword.tools.0.label>
+  <!-- EN: 剑尖 -->
+  <RI_Weapon_SlayinglmmortalSword.tools.1.label>剑尖</RI_Weapon_SlayinglmmortalSword.tools.1.label>
+  
+</LanguageData>

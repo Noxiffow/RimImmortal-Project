@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--死眼-远程-->
+	<ThingDef ParentName="RI_ThingBase_Aberrant">
+		<defName>RI_EvilCreature_DeadShoot_Race</defName>
+		<label>dead shooter</label>
+		<description>Grade D Aberrant, Low Threat Level.\n\nWalking dead or Zombie are slow-moving and crave human flesh, but they are non-infectious.\n\nThese disgusting creatures have become a common sight on some planets, even integrating into popular culture.</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>2</FilthRate>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Human</body>
+			<baseHealthScale>1.2</baseHealthScale>
+			<trainability>Advanced</trainability>
+			<baseBodySize>1</baseBodySize>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<!--屠宰产物-->
+		<butcherProducts>
+			<RI_Resource_ConcentrateAberrantBlood>5</RI_Resource_ConcentrateAberrantBlood>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>RI_EvilCreature_DeadShoot</defName>
+		<label>dead shooter</label>
+		<race>RI_EvilCreature_DeadShoot_Race</race>
+		<combatPower>300</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<aiAvoidCover>true</aiAvoidCover>
+		<!--默认派系，设置为邪异就天生敌对-->
+		<defaultFactionType>RI_Faction_Aberrant</defaultFactionType>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_DeadShoot/RI_EvilCreature_DeadShootA</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/RI_EvilCreature_DeadShoot/RI_EvilCreature_DeadShootB</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_DeadShoot/RI_EvilCreature_DeadShoot</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.7, 0.3)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/RI_EvilCreature_Zombie/Dessicated_RI_EvilCreature_Zombie</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<startingHediffs>
+			<li>
+				<!--僵尸类hediff-->
+				<def>RI_Hediff_WalkingDead</def>
+			</li>
+			<li>
+				<!--炮台hediff-->
+				<def>RI_TurretHediff_BoneShoot</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+</Defs>

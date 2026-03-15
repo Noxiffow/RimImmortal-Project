@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Purple-fog mushroom -->
+  <RI_Resource_DuskyMushroom.label>紫雾菇</RI_Resource_DuskyMushroom.label>
+  <!-- EN: Purple-fog mushroom, a medicinal substance with properties of water elements.\n\nThere were very few records about this medicinal herb, but because of its rich nutritional content, some special pills would use this mushroom, so there were still countless people who were attracted to it. -->
+  <RI_Resource_DuskyMushroom.description>紫雾菇，一种具有药效的水属性药材。\n\n关于这种药材的记录极少，但因为其蕴含丰富的营养，一些特殊丹药会使用到这种蘑菇，所以还是有无数人趋之若鹜。</RI_Resource_DuskyMushroom.description>
+  
+  <!-- EN: Lantern berry -->
+  <RI_Resource_LanternBerries.label>提灯果</RI_Resource_LanternBerries.label>
+  <!-- EN: Lantern berry, a medicinal substance with properties of fire elements.\n\nThis fruit is like a lantern, emitting a faint light. But there is no flavor, and its medicinal effect is very mild, and it can be found by plucking the skin, glowing because the kernel of the fruit in it is like a small lamp, emitting a bright light. But a few days after the fruit is picked, the core will gradually not glow and become dim. -->
+  <RI_Resource_LanternBerries.description>提灯果，一种具有药效的火属性药材。\n\n这种果实如同一盏盏灯笼一般，散发出淡淡的光芒，味道很甜，其药效十分温和。撕开表皮就能发现，发光是因为其中的果核如同一盏小灯，散发出明亮的光。但在果实被摘下几天后，果核便渐渐不会发光，变得暗淡。</RI_Resource_LanternBerries.description>
+  
+  <!-- EN: LingZhi -->
+  <RI_Resource_LingZhi.label>灵芝</RI_Resource_LingZhi.label>
+  <!-- EN: LingZhi, a medicinal substance with properties of earth elements.\n\nMature LingZhi is ochre-red in color, exudes a light glow, and has a slightly bitter taste. This herb is extremely nutritious and cleanses the body of internal wastes, so it is often used to harmonize stimulating herbs. -->
+  <RI_Resource_LingZhi.description>灵芝，一种具有药效的土属性药材。\n\n成熟的灵芝为赭红色，散发出淡淡的光辉，味道微苦。这种药材营养极其丰富，能清理人体内部的废料，所以经常被用于调和刺激性的药材。</RI_Resource_LingZhi.description>
+  
+  <!-- EN: Plantain seed -->
+  <RI_Resource_PlantainSeed.label>车前子</RI_Resource_PlantainSeed.label>
+  <!-- EN: Plantain seed, a medicinal substance with properties of wood elements.\n\nPlantain seed is the seed of plantain, ground and used as a medicinal herb. Psyllium carries a healing effect that promotes wound healing and carries a slight antiseptic effect that is often used in a variety of healing remedies. -->
+  <RI_Resource_PlantainSeed.description>车前子，一种具有药效的木属性药材。\n\n车前子是车前草的种子，磨碎后作为药材使用。车前子带有疗愈的效果，能促进伤口愈合，并且带有轻微的杀菌效果，经常被用于各种疗伤药。</RI_Resource_PlantainSeed.description>
+  
+  <!-- EN: Silver GinSeng -->
+  <RI_Resource_SilverGinseng.label>银芯参</RI_Resource_SilverGinseng.label>
+  <!-- EN: Silver GinSeng, a medicinal substance with properties of metal elements.\n\nSilver Ginseng that has been grown over many years reflects a metallic color inside like silver. The longer it grows, the more silver-colored parts it has, the shinier it is, and the stronger its medicinal effect is. It is rich in minerals and nutrients, and just slicing it and using it to brew water can refresh and energize the body. -->
+  <RI_Resource_SilverGinseng.description>银芯参，一种具有药效的金属性药材。\n\n经过长年累月生长的银芯参，内部如银子一般反射出金属的色泽。生长时间越长，银色的部分越多，越闪亮，药效也越强。其富含矿物质和营养，单单是切片用来泡水，也能令人神清气爽，浑身畅通。</RI_Resource_SilverGinseng.description>
+  
+  <!-- EN: Snow flower -->
+  <RI_Resource_SnowLotus.label>雪莲</RI_Resource_SnowLotus.label>
+  <!-- EN: Snow flower, a medicinal substance with properties of water elements.\n\nSnow flower in full bloom is yellow with white and crystal clear. This herb is extremely rich in trace elements and has an extremely strong medicinal effect, while clearing heat and removing toxins, it is also said to be able to open up the human body's meridians and cure stubborn diseases. -->
+  <RI_Resource_SnowLotus.description>雪莲，一种具有药效的水属性药材。\n\n盛开的雪莲花黄里透白，晶莹剔透。这种药材中蕴含丰富的微量元素，药效极其强烈。在清热解毒的同时，据说还能打通人体经脉，治愈顽疾。</RI_Resource_SnowLotus.description>
+  
+  <!-- EN: Tillandsia dragon shoot -->
+  <RI_Resource_TillandsiaDragonShoot.label>火龙芽</RI_Resource_TillandsiaDragonShoot.label>
+  <!-- EN: Tillandsia dragon shoot, a medicinal substance with properties of fire elements.\n\nTillandsia Dragon Shoot is pinched from the softest shoots in the center of the Tillandsia Dragon Weed, which is the most potent of the herbs and has an incredibly spicy flavor. The herb contains extremely potent stimulants that act directly on the human nervous system and is often used as a stimulant, and public consumption of Tillandsia Dragon Shoot has been banned in some areas. -->
+  <RI_Resource_TillandsiaDragonShoot.description>火龙芽，一种具有药效的火属性药材。\n\n火龙芽是掐自火龙草中心最柔软的嫩芽，药效最好，味道奇辣无比。这种药材中蕴含极其猛烈的刺激性元素，能直接作用于人体的神经系统，常被用于各种兴奋剂，在某些地区已经禁止公开食用火龙芽。</RI_Resource_TillandsiaDragonShoot.description>
+  
+</LanguageData>

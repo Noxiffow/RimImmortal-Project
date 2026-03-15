@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] has been employed by an underground organization to poach Energy roots from free cultivators. Years of killing and surgical extraction have honed [PAWN_pronoun] skills in martial arts and medicine. -->
+  <RI_BackStory_Adult_EvilCultivator5.description>[PAWN_nameDef]一直在受雇于地下组织偷猎散修的灵芽，多年的杀戮和手术抽取让[PAWN_pronoun]练就了一身武功和医术。</RI_BackStory_Adult_EvilCultivator5.description>
+  <!-- EN: Energy root poacher -->
+  <RI_BackStory_Adult_EvilCultivator5.title>灵芽偷猎者</RI_BackStory_Adult_EvilCultivator5.title>
+  <!-- EN: Poacher -->
+  <RI_BackStory_Adult_EvilCultivator5.titleShort>偷猎者</RI_BackStory_Adult_EvilCultivator5.titleShort>
+  
+  <!-- EN: Due to [PAWN_nameDef]'s early mastery of soul magic, [PAWN_possessive] soul remained undying after death. [PAWN_nameDef] found a suitable body and successfully performed a soul possession. -->
+  <RI_BackStory_Adult_EvilCultivator6.description>[PAWN_nameDef]因早年学成夺舍秘术，死后灵魂不灭。[PAWN_pronoun]找到一具合适的肉体，成功夺舍。</RI_BackStory_Adult_EvilCultivator6.description>
+  <!-- EN: Occupy the soul -->
+  <RI_BackStory_Adult_EvilCultivator6.title>夺舍之人</RI_BackStory_Adult_EvilCultivator6.title>
+  <!-- EN: Occupy soul -->
+  <RI_BackStory_Adult_EvilCultivator6.titleShort>夺舍</RI_BackStory_Adult_EvilCultivator6.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is someone being hunted by various powerful factions, and from a distance, one can smell the bloodlust that emanates from [PAWN_possessive] very bones. -->
+  <RI_BackStory_Adult_EvilCultivator7.description>[PAWN_nameDef]是一个正在被各大势力追杀的家伙，远远就能闻到[PAWN_pronoun]身上那股从骨子里散发出来的血腥味儿。</RI_BackStory_Adult_EvilCultivator7.description>
+  <!-- EN: Exiled evil cultivator -->
+  <RI_BackStory_Adult_EvilCultivator7.title>流亡邪修</RI_BackStory_Adult_EvilCultivator7.title>
+  <!-- EN: Exiled evil cultivator -->
+  <RI_BackStory_Adult_EvilCultivator7.titleShort>流亡邪修</RI_BackStory_Adult_EvilCultivator7.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is an evil rogue cultivator, making a living by murder and pillaging. Cold and ruthless, [PAWN_nameDef] believes that only the strong can survive. [PAWN_nameDef] constantly improves [PAWN_possessive] cultivation, swearing to reach the peak of the cultivation world. When [PAWN_nameDef]’s name is mentioned, it strikes fear into the hearts of all. -->
+  <RI_BackStory_Adult_EvilCultivator8.description>[PAWN_nameDef]是一名邪恶的散修，靠杀人越货为生。冷酷无情的[PAWN_pronoun]认为只有强者才能生存，[PAWN_pronoun]不断提升自己的修为，誓要成为修仙界的顶峰。\n\n提起[PAWN_pronoun]的名字，无人不感到恐惧。</RI_BackStory_Adult_EvilCultivator8.description>
+  <!-- EN: Deeply consumed in evil -->
+  <RI_BackStory_Adult_EvilCultivator8.title>深陷魔道</RI_BackStory_Adult_EvilCultivator8.title>
+  <!-- EN: Evil cultivator -->
+  <RI_BackStory_Adult_EvilCultivator8.titleShort>深陷魔道</RI_BackStory_Adult_EvilCultivator8.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] excelled in stealth and assassination, often appearing under the cover of night to hunt lone cultivators. [PAWN_pronoun] methods were brutal, frequently leaving no remains of the victims. Despite this, [PAWN_pronoun] was never caught, moving like a phantom—silent, invisible, and untraceable. -->
+  <RI_BackStory_Adult_EvilCultivator9.description>[PAWN_nameDef]擅长隐匿和暗杀，常常在夜幕降临时出没，猎杀那些孤身行走的修士。[PAWN_possessive]手段残忍，往往让人死无全尸。\n\n尽管如此，[PAWN_pronoun]却从未被捉住，仿佛幽灵一般，来无影去无踪。</RI_BackStory_Adult_EvilCultivator9.description>
+  <!-- EN: Hidden in the Darkness -->
+  <RI_BackStory_Adult_EvilCultivator9.title>黑暗之人</RI_BackStory_Adult_EvilCultivator9.title>
+  <!-- EN: Hidden in the Darkness -->
+  <RI_BackStory_Adult_EvilCultivator9.titleShort>黑暗之人</RI_BackStory_Adult_EvilCultivator9.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] once joined an unorthodox sect called the "Heavenly Society," where the disciples mainly used people of different races as cauldrons. Whenever they wanted to kill or use someone, they had to seek approval from the elders. -->
+  <RI_BackStory_Adult_EvilSect1.description>[PAWN_nameDef]曾加入一个叫做“天下会”的外道宗门，那里的弟子把不同种族的人当作炉鼎用，想要杀人或用人时，都要经过长老的批准。</RI_BackStory_Adult_EvilSect1.description>
+  <!-- EN: Furnaces lover -->
+  <RI_BackStory_Adult_EvilSect1.title>炉鼎爱好者</RI_BackStory_Adult_EvilSect1.title>
+  <!-- EN: Furnaces lover -->
+  <RI_BackStory_Adult_EvilSect1.titleShort>炉鼎爱好者</RI_BackStory_Adult_EvilSect1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was originally a disciple in a small sect, essentially just doing menial tasks. Therefore, when the sect was destroyed, no one cared about [PAWN_possessive] life, allowing [PAWN_pronoun] to escape successfully. -->
+  <RI_BackStory_Adult_FreeCultivator10.description>[PAWN_nameDef]原本是一个小宗门的外门弟子，实际上就是个打杂的。因此当宗门被灭时，没人在乎[PAWN_possessive]死活，从而成功逃了出来。</RI_BackStory_Adult_FreeCultivator10.description>
+  <!-- EN: Sect survivor -->
+  <RI_BackStory_Adult_FreeCultivator10.title>宗门幸存者</RI_BackStory_Adult_FreeCultivator10.title>
+  <!-- EN: Survivor -->
+  <RI_BackStory_Adult_FreeCultivator10.titleShort>幸存者</RI_BackStory_Adult_FreeCultivator10.titleShort>
+  
+  <!-- EN: Although [PAWN_nameDef] had little experience in alchemy, [PAWN_pronoun] learned some knowledge of herb cultivation and healing through ancient books and years of exploration. [PAWN_nameDef] was originally a servant disciple in a small sect, and when the sect was destroyed, no one cared for [PAWN_pronoun], giving [PAWN_pronoun] the opportunity to escape. -->
+  <RI_BackStory_Adult_FreeCultivator5.description>[PAWN_nameDef]虽然炼丹经验不多，但靠着一本古书和多年的摸索，学会了些培育药草和治疗的知识。[PAWN_possessive]宗门被灭时没人管[PAWN_pronoun]，令[PAWN_nameDef]找到机会趁机逃了出来。</RI_BackStory_Adult_FreeCultivator5.description>
+  <!-- EN: Free cultivator alchemist -->
+  <RI_BackStory_Adult_FreeCultivator5.title>散修丹师</RI_BackStory_Adult_FreeCultivator5.title>
+  <!-- EN: Alchemist -->
+  <RI_BackStory_Adult_FreeCultivator5.titleShort>散修丹师</RI_BackStory_Adult_FreeCultivator5.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a solitary cultivator, existing outside the sects. With [PAWN_possessive] intelligence and wit, [PAWN_nameDef] found a place in the cultivation world. Despite lacking the protection of a sect, [PAWN_nameDef] still maintains [PAWN_possessive] passion and pursuit of immortality. [PAWN_nameDef] believes that as long as [PAWN_possessive] perseverance endures, one day [PAWN_nameDef] will find [PAWN_possessive] own path. -->
+  <RI_BackStory_Adult_FreeCultivator6.description>[PAWN_nameDef]是一名散修，游离于门派之外，凭借自己的聪明才智在修仙界找到一席之地。\n\n尽管没有门派的庇护，[PAWN_pronoun]依然保持对修仙的热情和追求。[PAWN_pronoun]相信，只要坚持不懈，总有一天会找到属于[PAWN_possessive]道。</RI_BackStory_Adult_FreeCultivator6.description>
+  <!-- EN: Carefree independent cultivator -->
+  <RI_BackStory_Adult_FreeCultivator6.title>逍遥散修</RI_BackStory_Adult_FreeCultivator6.title>
+  <!-- EN: Carefree cultivator -->
+  <RI_BackStory_Adult_FreeCultivator6.titleShort>逍遥散修</RI_BackStory_Adult_FreeCultivator6.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s life was neither exceptionally prosperous nor miserably poor. [PAWN_pronoun] enjoyed a free and unrestrained lifestyle, refusing to be bound by any constraints. Whenever someone needed help, [PAWN_pronoun] was always willing to lend a hand. -->
+  <RI_BackStory_Adult_FreeCultivator7.description>[PAWN_nameDef]的日子过得不好不坏，既没有大富大贵，也没有穷困潦倒。[PAWN_pronoun]喜欢自由自在的生活，不受任何束缚。\n\n每当有人需要帮助时，[PAWN_pronoun]总是乐于伸出援手。</RI_BackStory_Adult_FreeCultivator7.description>
+  <!-- EN: Kind free cultivator -->
+  <RI_BackStory_Adult_FreeCultivator7.title>善良散修</RI_BackStory_Adult_FreeCultivator7.title>
+  <!-- EN: Kind-heart -->
+  <RI_BackStory_Adult_FreeCultivator7.titleShort>善良散修</RI_BackStory_Adult_FreeCultivator7.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a survivor of a great tsunami, firmly believing [PAWN_pronoun] saw a strange figure amidst the massive waves. After recovering, [PAWN_pronoun] felt [PAWN_possessive] body had become extraordinarily strong. -->
+  <RI_BackStory_Adult_FreeCultivator8.description>[PAWN_nameDef]是一场大海啸的幸存者，[PAWN_pronoun]坚信在巨浪中看到了奇异的身影。康复后，[PAWN_pronoun]觉得自己的身体好得出奇。</RI_BackStory_Adult_FreeCultivator8.description>
+  <!-- EN: People of the sea -->
+  <RI_BackStory_Adult_FreeCultivator8.title>海之祀民</RI_BackStory_Adult_FreeCultivator8.title>
+  <!-- EN: People of the sea -->
+  <RI_BackStory_Adult_FreeCultivator8.titleShort>海之祀民</RI_BackStory_Adult_FreeCultivator8.titleShort>
+  
+  <!-- EN: After arriving the wasteland, [PAWN_nameDef] wandered the wastelands. The ruthless law of the jungle sharpened [PAWN_pronoun] extensive combat skills and equipped [PAWN_pronoun] with exceptional wilderness survival techniques. -->
+  <RI_BackStory_Adult_FreeCultivator9.description>在[PAWN_nameDef]来到这颗星球之后，便一直流浪于荒原。冷酷的丛林法则磨练了[PAWN_possessive]百般武艺，同时也让[PAWN_nameDef]掌握了一手高超的野外生存技术。</RI_BackStory_Adult_FreeCultivator9.description>
+  <!-- EN: Wasteland traveler -->
+  <RI_BackStory_Adult_FreeCultivator9.title>荒原旅行者</RI_BackStory_Adult_FreeCultivator9.title>
+  <!-- EN: Traveler -->
+  <RI_BackStory_Adult_FreeCultivator9.titleShort>旅行者</RI_BackStory_Adult_FreeCultivator9.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born into a local family of cultivators. From a young age, [PAWN_pronoun] was well-regarded by the family due to [PAWN_pronoun] natural talent and grew up healthy, eventually becoming a member of the sect. -->
+  <RI_BackStory_Adult_SectMember1.description>[PAWN_nameDef]出生于当地一个修仙世家，[PAWN_pronoun]从小就因为拥有不错的资质受到家族的喜爱，并健康长大，成为宗门的一员。</RI_BackStory_Adult_SectMember1.description>
+  <!-- EN: Healthy sect cultivator -->
+  <RI_BackStory_Adult_SectMember1.title>健康的宗门修士</RI_BackStory_Adult_SectMember1.title>
+  <!-- EN: Sect cultivator -->
+  <RI_BackStory_Adult_SectMember1.titleShort>宗门修士</RI_BackStory_Adult_SectMember1.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a member of a righteous sect. Not only is [PAWN_pronoun] exceptionally powerful, but [PAWN_pronoun] also enjoys helping those weaker than [PAWN_pronoun]. Among the fellow disciples, [PAWN_pronoun] has an excellent reputation. -->
+  <RI_BackStory_Adult_SectMember2.description>[PAWN_nameDef]是一名正道门派修士，[PAWN_pronoun]不仅实力非凡，且乐意于去帮扶其他弱小的人。[PAWN_pronoun]在同门师兄弟之间的口碑极好。</RI_BackStory_Adult_SectMember2.description>
+  <!-- EN: Outstanding Sect Cultivator -->
+  <RI_BackStory_Adult_SectMember2.title>优秀的宗门修士</RI_BackStory_Adult_SectMember2.title>
+  <!-- EN: Good sect cultivator -->
+  <RI_BackStory_Adult_SectMember2.titleShort>宗门修士</RI_BackStory_Adult_SectMember2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was originally an ordinary person with a happy family. On one Lantern Festival, [PAWN_nameDef] planned to give gifts to [PAWN_possessive] wife and daughter, but unexpectedly, [PAWN_nameDef]'s family perished in a fire caused by a battle between immortals.In a fit of rage, [PAWN_nameDef] killed an immortal at the Dan Transformation stage. Three quarters of the hour later, rainwater streamed down [PAWN_possessive] cheek, making it impossible to tell whether [PAWN_pronoun] was crying, but the vicious expression on [PAWN_possessive] face spoke volumes."Long time no see, I am the immortal slayer." -->
+  <RI_BackStory_Adult_Special1.description>[PAWN_nameDef]·桑，原本是一个家庭圆满的普通人，一次元宵节，[PAWN_pronoun]本打算送妻女礼物，却不料家人因仙人之战死于火海。\n\n愤怒之下，[PAWN_nameDef]杀死了一个化丹境的仙人。丑时三刻，雨水从[PAWN_possessive]脸颊流下，看不出在流泪，但其狰狞的面目表达了一切。\n\n“久仰，吾乃仙人杀手”</RI_BackStory_Adult_Special1.description>
+  <!-- EN: Immortals slayer -->
+  <RI_BackStory_Adult_Special1.title>仙人杀手</RI_BackStory_Adult_Special1.title>
+  <!-- EN: Immortals slayer -->
+  <RI_BackStory_Adult_Special1.titleShort>仙人杀手</RI_BackStory_Adult_Special1.titleShort>
+  
+  <!-- EN: After leaving [PAWN_nameDef]'s master, [PAWN_nameDef] suffered greatly in order to make a living. Eventually, [PAWN_nameDef] turned to a life of crime, becoming wealthy by selling counterfeit goods. -->
+  <RI_BackStory_Adult_Special2.description>离开师父后，[PAWN_nameDef]为了生计吃尽了苦头，最后[PAWN_pronoun]走上了犯罪的道路，靠着卖假冒的仙桃发家致富。</RI_BackStory_Adult_Special2.description>
+  <!-- EN: Immortal peach tycoon -->
+  <RI_BackStory_Adult_Special2.title>仙桃大亨</RI_BackStory_Adult_Special2.title>
+  <!-- EN: Peach tycoon -->
+  <RI_BackStory_Adult_Special2.titleShort>仙桃大亨</RI_BackStory_Adult_Special2.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was once a genius in the sect, but after losing [PAWN_possessive] spiritual bud in a martial arts competition, [PAWN_possessive] cultivation was lost, and [PAWN_nameDef] was abandoned by the sect. Just as [PAWN_nameDef] was about to fall into despair, [PAWN_possessive] childhood sweetheart, [PAWN_possessive] junior sister, stole the spiritual bud to save [PAWN_nameDef]. However, she was killed by the sect elders during the transfer. Carrying the hope and unwillingness of [PAWN_possessive] junior sister, [PAWN_nameDef] began a life of wandering. -->
+  <RI_BackStory_Adult_Special3.description>[PAWN_nameDef]曾是门派中的天才，但在一次比武中[PAWN_pronoun]被打伤灵芽，一身修为尽失，最终被门派抛弃。\n\n正当[PAWN_pronoun]绝望时，青梅竹马的小师妹为了帮[PAWN_pronoun]恢复伤势，偷取了宗门的上品灵芽，却在[PAWN_nameDef]的面前被门派长老击杀。\n\n带着小师妹的希望与不甘，[PAWN_nameDef]逃离宗门，开始了流浪的生活。</RI_BackStory_Adult_Special3.description>
+  <!-- EN: Fallen genius -->
+  <RI_BackStory_Adult_Special3.title>陨落天骄</RI_BackStory_Adult_Special3.title>
+  <!-- EN: Fallen genius -->
+  <RI_BackStory_Adult_Special3.titleShort>陨落天骄</RI_BackStory_Adult_Special3.titleShort>
+  
+  <!-- EN: \n			Under the righteous sect's siege, the Great Love Immortal [PAWN_nameDef] was forced to self-destruct and reincarnate with a rebirth worm. [PAWN_nameDef] was reborn into the body of a young man in the marginal world. Quickly adapting to the new environment, [PAWN_nameDef] concealed [PAWN_possessive] identity, secretly cultivated, and sought opportunities to increase [PAWN_possessive] strength.In the marginal world, [PAWN_nameDef] discovered that the cultivation system here was completely different from [PAWN_possessive] original world. [PAWN_nameDef] began to explore the spiritual energy and methods of this world, searching for rare herbs and magical artifacts, refining pills with various effects. Using [PAWN_possessive] wisdom and experience, [PAWN_nameDef] gradually made a name for [PAWN_possessive] self in this world.Despite being in a foreign realm, [PAWN_nameDef] remained determined to pursue immortality. Cold-hearted and ruthless, [PAWN_nameDef] viewed human life as worthless. As long as there were benefits to be gained, [PAWN_nameDef] would not hesitate to take action. Relying on [PAWN_possessive] past life’s memories and experiences, [PAWN_nameDef] quickly rose in the marginal world, becoming a terrifying figure. When asked why [PAWN_possessive] didn’t choose another way of living, [PAWN_nameDef] left only a verse: “Fate is predestined, in my destiny's defeat, the Immortal regrets but I do not!” -->
+  <RI_BackStory_Adult_Special4.description>正派围剿之下，大爱仙尊[PAWN_nameDef]自爆转生蛊重生，穿越到了边缘世界中一个年轻人身上。[PAWN_pronoun]迅速适应了新的环境，隐匿身份，暗中修炼，寻找机会提升[PAWN_possessive]实力。\n\n[PAWN_pronoun]开始探索这个世界，寻找稀有的药材和法宝，炼制丹药，逐渐在这个世界中崭露头角。\n\n尽管身处异界，[PAWN_nameDef]依然坚定追求长生的决心。[PAWN_pronoun]冷酷无情，视人命如草芥，只要有利益可图，便毫不犹豫地出手。凭借前世的记忆和经验，[PAWN_pronoun]在修仙界中迅速成为令人闻风丧胆的存在，当有人问及[PAWN_pronoun]为何不换一种活法，留下的只有一句残诗：\n\n“宿命天成命中败，仙尊悔而我不悔！”</RI_BackStory_Adult_Special4.description>
+  <!-- EN: Great-love immorals -->
+  <RI_BackStory_Adult_Special4.title>大爱仙尊</RI_BackStory_Adult_Special4.title>
+  <!-- EN: Great-love immorals -->
+  <RI_BackStory_Adult_Special4.titleShort>大爱仙尊</RI_BackStory_Adult_Special4.titleShort>
+  
+  <!-- EN: \n			[PAWN_nameDef] was known as the "Immortal of Wine." He was once an ambitious cultivator, pursuing immortality alongside [PAWN_possessive] Dao companion. However, fate was cruel, and [PAWN_possessive] Dao companion tragically perished in a conflict. Devastated, [PAWN_nameDef] swore to avenge [PAWN_possessive] companion. After years of hard cultivation, [PAWN_nameDef] finally avenged [PAWN_possessive] fallen companion.After completing the revenge, [PAWN_nameDef] felt an emptiness in [PAWN_possessive] heart and no longer engaged in matters of the immortal realm. [PAWN_nameDef] retreated into the mountains, focusing on cultivating rice and brewing fine wine. Every quiet night, [PAWN_nameDef] would drink alone, reminiscing about the beautiful moments shared with [PAWN_possessive] Dao companion."Unfeeling time urges relentlessly, the limited moments never return. Life is seldom drunk, regardless of right or wrong." -->
+  <RI_BackStory_Adult_Special5.description>[PAWN_nameDef]号称“酒中仙”，[PAWN_pronoun]曾经是一位心怀大志的修士，与道侣追求长生。然而大道无情，道侣在一次争斗中不幸身亡。悲痛欲绝的[PAWN_nameDef]发誓要为道侣复仇，经过多年艰苦修炼，终于手刃仇敌。\n\n完成复仇后，[PAWN_possessive]心中空虚，隐居山林，专心种植稻谷，酿制美酒。每当夜深人静，[PAWN_pronoun]便独自饮酒，回忆与道侣共度的美好时光。\n\n无情岁月紧紧催，有限光阴去不回。\n人生难得几回醉，管他是是与非非。</RI_BackStory_Adult_Special5.description>
+  <!-- EN: Immortal in wine -->
+  <RI_BackStory_Adult_Special5.title>酒中仙</RI_BackStory_Adult_Special5.title>
+  <!-- EN: Immortal in wine -->
+  <RI_BackStory_Adult_Special5.titleShort>酒中仙</RI_BackStory_Adult_Special5.titleShort>
+  
+  <!-- EN: Due to [PAWN_nameDef]'s traumatic childhood, [PAWN_pronoun] joined the Da Li Temple to cultivate. During a journey down the mountain to gain experience, [PAWN_pronoun] was asked five thousand times why [PAWN_pronoun] wasn’t a monk. Embarrassed and enraged, [PAWN_pronoun] unleashed a barrage of five thousand slaps, wreaking havoc and causing widespread devastation. Having caused a death, [PAWN_pronoun] fled in panic, accidentally boarding a passing colony ship that took [PAWN_pronoun] to an unknown RimWorld. -->
+  <RI_BackStory_Adult_Special6.description>[PAWN_nameDef]加入了大理寺修炼。在下山历练的途中被人问了五千次怎么不是个和尚，[PAWN_pronoun]红温到大打出手，状若鬼神地飞出五千巴掌，打得一片生灵涂炭。\n\n由于闹出了人命，于是[PAWN_pronoun]仓皇逃窜，阴差阳错地逃上了路过的殖民飞船，被带到了一个不知名的星球。</RI_BackStory_Adult_Special6.description>
+  <!-- EN: Red-faced demon -->
+  <RI_BackStory_Adult_Special6.title>赤面鬼</RI_BackStory_Adult_Special6.title>
+  <!-- EN: Red-faced demon -->
+  <RI_BackStory_Adult_Special6.titleShort>赤面鬼</RI_BackStory_Adult_Special6.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was once a general who defended the homeland, renowned for [PAWN_possessive] military prowess. In one battle, [PAWN_pronoun] led [PAWN_possessive] troops to annihilate an entire enemy force. However, when [PAWN_pronoun] hurried to escort the captured evil cultivators back, the fleeing evildoers made an offering to a dark transcendent intelligence with the unburied corpses from the battlefield. The flesh-eating beasts devoured the capital, leaving only the general alive.[PAWN_nameDef] turned gray overnight. Alone, [PAWN_pronoun] set out on a path of vengeance, slaying all the evil cultivators in three days. Yet, after the revenge, [PAWN_pronoun] was left with nothing but an endless emptiness and sorrow in [PAWN_pronoun] heart.In order to give peace to the souls of the fallen people, [PAWN_nameDef] decided to return to the homeland and gather the scattered bodies from the wilderness. Every day, [PAWN_pronoun] walked through the desolation, silently finding a resting place for each body, preserving the last dignity of the people."How can one conquer all armies yet exchange it for countless solitary graves?" -->
+  <RI_BackStory_Adult_Special7.description>[PAWN_nameDef]曾是保家卫国的将军，威名赫赫。在一次战役中，[PAWN_pronoun]领兵杀尽敌国的整支部队。然而，当[PAWN_pronoun]急于押送俘虏时，逃亡的邪修将战场未清理的尸山向黑暗超凡智能献祭，血肉兽涌出，吞没了[PAWN_nameDef]的部队，唯[PAWN_pronoun]一人生还。\n\n[PAWN_nameDef]一夜白头，[PAWN_pronoun]孤身一人，踏上了复仇之路，将剩余邪修尽数斩杀。\n\n然而，复仇之后的[PAWN_pronoun]，心中只剩下无尽的空虚和悲痛。为了让逝去的同胞安息，[PAWN_pronoun]决定回到故土，收敛散落在野外的尸体。[PAWN_pronoun]每日行走在荒野之间，默默地为每一具尸体寻找安息之所，守护着他们的尊严。\n\n“勇冠三军，怎换得无数孤冢？”</RI_BackStory_Adult_Special7.description>
+  <!-- EN: Corpse collector -->
+  <RI_BackStory_Adult_Special7.title>敛尸人</RI_BackStory_Adult_Special7.title>
+  <!-- EN: Corpse collector -->
+  <RI_BackStory_Adult_Special7.titleShort>敛尸人</RI_BackStory_Adult_Special7.titleShort>
+  
+</LanguageData>

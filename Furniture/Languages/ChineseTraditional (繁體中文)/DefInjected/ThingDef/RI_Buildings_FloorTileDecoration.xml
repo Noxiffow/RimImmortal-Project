@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Garden pattern tile -->
+  <RI_Building_BasicPatternFloor.label>花园铺地</RI_Building_BasicPatternFloor.label>
+  <!-- EN: The pattern arranged by the floor tiles is more complicated to make, but it is quite good-looking. -->
+  <RI_Building_BasicPatternFloor.description>用地砖排列的花纹，制作起来比较繁琐，不过相当好看。</RI_Building_BasicPatternFloor.description>
+  
+  <!-- EN: Longevity pattern tile -->
+  <RI_Building_LongevityPatternFloor.label>寿字纹铺地</RI_Building_LongevityPatternFloor.label>
+  <!-- EN: The pattern arranged by the floor tiles is more complicated to make, but it is quite good-looking. -->
+  <RI_Building_LongevityPatternFloor.description>用地砖排列的花纹，制作起来比较繁琐，不过相当好看。</RI_Building_LongevityPatternFloor.description>
+  
+  <!-- EN: Lotus pattern tile -->
+  <RI_Building_LotusPatternFloor.label>莲花纹铺地</RI_Building_LotusPatternFloor.label>
+  <!-- EN: The pattern arranged by the floor tiles is more complicated to make, but it is quite good-looking. -->
+  <RI_Building_LotusPatternFloor.description>用地砖排列的花纹，制作起来比较繁琐，不过相当好看。</RI_Building_LotusPatternFloor.description>
+  
+  <!-- EN: Tai-chi pattern tile -->
+  <RI_Building_TaiChiPatternFloor.label>太极纹铺地</RI_Building_TaiChiPatternFloor.label>
+  <!-- EN: The pattern arranged by the floor tiles is more complicated to make, but it is quite good-looking. -->
+  <RI_Building_TaiChiPatternFloor.description>用地砖排列的花纹，制作起来比较繁琐，不过相当好看。</RI_Building_TaiChiPatternFloor.description>
+  
+</LanguageData>

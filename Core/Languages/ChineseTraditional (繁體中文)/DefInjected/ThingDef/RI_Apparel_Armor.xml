@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Assassin half armor【third-rate】 -->
+  <RI_Apparel_HalfArmor.label>刺客半身札甲【三品】</RI_Apparel_HalfArmor.label>
+  <!-- EN: 【Third-rate】armor\n\nA piece of armor cobbled together from different pieces of armor. The armor is very draftable and only provides a little protection to key areas, but the advantage is that it does not affect the action, and it helps some assassins to accurately kill enemies in the dark.\n\n<color=#FFFF00>【Special effects】Hunting stealth +10%.\nMeleeDodgeChance+1\nMove speed+0.1.</color> -->
+  <RI_Apparel_HalfArmor.description>【三品】甲胄\n\n一件用不同的盔甲拼凑而成的护甲。这种护甲非常透风，只能给关键部位提供一点防护，但好处是不会影响行动，寂静无声，有助于一些刺客在黑暗中精准地暗杀敌人。\n\n&lt;color=#FFFF00>【特殊效果】\n狩猎隐蔽率+10。\n近战闪避率+1。\n移动速度+0.1。&lt;/color></RI_Apparel_HalfArmor.description>
+  
+  <!-- EN: Metallic rain hat【third-rate】 -->
+  <RI_Apparel_IronHat.label>斗笠【三品】</RI_Apparel_IronHat.label>
+  <!-- EN: 【Third-rate】armor\n\nRaindrops slid off the iron rain hat, the sword energy retracted, and blood splattered onto the earth, severing the enemy's soul. The man, holding the blood-stained wooden box, stroked his sword and sighed, "The grievance has been avenged, and I seek nothing more."\n\n——The Tale of the Broken Sword\n\nA strange metallic rain hat. Most of them are made from fragments of helmets found on the battlefield and some iron pieces, reinforced with iron bars. Some of the aesthetic strange, but afraid of rain wet body, but also want to balance the defense of the walkers, may choose this helmet.\n\n<color=#FFFF00>【Special effects】Provide rain shelter effect, eliminate the negative effects of mood.</color> -->
+  <RI_Apparel_IronHat.description>【三品】甲胄\n\n雨滴从铁斗笠上滑落，剑气收回，血溅大地，仇人魂断。男人抱着染血的木盒，抚剑叹曰：“冤屈已偿，别无所求。”\n\n——《残剑传》\n\n一顶外型特别的斗笠，由金属丝和金属条加固后制成。一些审美奇特的行者，又想要兼顾防御力，可能会选择穿戴这种斗笠。\n\n&lt;color=#FFFF00>【特殊效果】\n提供避雨效果。&lt;/color></RI_Apparel_IronHat.description>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crystal vein soil -->
+  <RI_LingMai.label>灵脉土地</RI_LingMai.label>
+  <!-- EN: A plot of land nourished by Underground Crystal Vein is far more fertile than ordinary soil, but once the soil is dug up, it quickly loses its fertility. -->
+  <RI_LingMai.description>一处被地下灵脉滋养的土地，其肥力远远超过普通泥土，但是一旦将泥土挖出，则会很快丧失肥力。</RI_LingMai.description>
+  <!-- EN: dirt -->
+  <RI_LingMai.tools.dirt.label>泥土</RI_LingMai.tools.dirt.label>
+  
+</LanguageData>

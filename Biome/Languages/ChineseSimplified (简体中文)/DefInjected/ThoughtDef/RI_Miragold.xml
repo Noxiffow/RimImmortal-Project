@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: walk upon air -->
+  <RI_Thought_MiragoldHigh.stages.walk_upon_air.label>飘飘欲仙</RI_Thought_MiragoldHigh.stages.walk_upon_air.label>
+  <!-- EN: Huh... Ha... I feel like I've become an immortal... The tips of the toes began to lift off the ground... -->
+  <RI_Thought_MiragoldHigh.stages.walk_upon_air.description>嘶…哈…我感觉已经成仙了…脚尖开始脱离地面…</RI_Thought_MiragoldHigh.stages.walk_upon_air.description>
+  
+  <!-- EN: miragold withdrawal -->
+  <RI_Thought_MiragoldWithdrawal.stages.miragold_withdrawal.label>弭金砂戒断</RI_Thought_MiragoldWithdrawal.stages.miragold_withdrawal.label>
+  <!-- EN: Just one more hit... I’m begging you... -->
+  <RI_Thought_MiragoldWithdrawal.stages.miragold_withdrawal.description>再让我抽一口…求你了…</RI_Thought_MiragoldWithdrawal.stages.miragold_withdrawal.description>
+  
+</LanguageData>

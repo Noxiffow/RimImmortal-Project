@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--工作Base添加-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RI_Building_CharmWorkbench</li>
+		</value>
+	</Operation>
+
+</Patch>

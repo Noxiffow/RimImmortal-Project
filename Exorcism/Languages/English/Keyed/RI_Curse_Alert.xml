@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RI_Alert_Curse_Label>Curse Level</RI_Alert_Curse_Label>
+  <RI_Alert_Curse_LabelWithValue>Curse Level: {0}</RI_Alert_Curse_LabelWithValue>
+
+  <RI_Curse_Alert_CurrentValue>Current curse value: {0}</RI_Curse_Alert_CurrentValue>
+  <RI_Curse_Alert_TargetValue>Target curse value: {0}</RI_Curse_Alert_TargetValue>
+  <RI_Curse_Alert_TowerCount>Ward tower count: {0}</RI_Curse_Alert_TowerCount>
+  <RI_Curse_Alert_ProtectedPawnCount>Protected pawn count: {0}</RI_Curse_Alert_ProtectedPawnCount>
+  <RI_Curse_Alert_CleansePerDay>Daily purification: {0}</RI_Curse_Alert_CleansePerDay>
+
+  <RI_Curse_Alert_TrendIncrease>increase</RI_Curse_Alert_TrendIncrease>
+  <RI_Curse_Alert_TrendDecrease>decrease</RI_Curse_Alert_TrendDecrease>
+  <RI_Curse_Alert_EstimatedToTarget>Estimated time to {0} toward target: {1}</RI_Curse_Alert_EstimatedToTarget>
+  <RI_Curse_Alert_AtTarget>Target curse value reached</RI_Curse_Alert_AtTarget>
+
+  <RI_Curse_Alert_IncidentInterval>Average cursed incident interval: {0}</RI_Curse_Alert_IncidentInterval>
+  <RI_Curse_Alert_Suggestion>Suggestion: Build ward towers, equip key pawns with evil-warding mirrors, and use powered ward towers to boost curse suppression for mirror bearers.</RI_Curse_Alert_Suggestion>
+</LanguageData>
+

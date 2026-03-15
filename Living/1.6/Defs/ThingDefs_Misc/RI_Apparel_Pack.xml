@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ===============背包基础=============== -->
+	<ThingDef Name="RI_Apparel_BackpackBase" ParentName="ApparelMakeableBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1.2</Mass>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<tags>
+				<li>IndustrialAdvanced</li>
+			</tags>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<east>
+					<offset>(0,-0.05)</offset>
+					<thin>
+						<offset>(0.2,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,0)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,0)</offset>
+					</fat>
+					<male>
+						<offset>(0.125,0)</offset>
+					</male>
+					<female>
+						<offset>(0.125,0)</offset>
+					</female>
+				</east>
+				<west>
+					<offset>(0,-0.05)</offset>
+					<thin>
+						<offset>(-0.2,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,0)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,0)</offset>
+					</fat>
+					<male>
+						<offset>(-0.125,0)</offset>
+					</male>
+					<female>
+						<offset>(-0.125,0)</offset>
+					</female>
+				</west>
+				<north>
+					<offset>(0,-0.1)</offset>
+					<thin>
+						<offset>(0,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,-0.05)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,-0.05)</offset>
+					</fat>
+				</north>
+				<male>
+					<scale>(1,1)</scale>
+				</male>
+				<female>
+					<scale>(1,1)</scale>
+				</female>
+				<thin>
+					<scale>(1,1)</scale>
+				</thin>
+				<hulk>
+					<scale>(1,1)</scale>
+				</hulk>
+				<fat>
+					<scale>(1,1)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Apparel_BackpackBase">
+		<defName>RI_Apparel_PackBasket</defName>
+		<label>Pack basket</label>
+		<description>Woven from light wooden strips and fitted with shoulder straps, the basket becomes a practical backpack. Farmers often keep such baskets at home, and they are also reliable companions for short journeys.</description>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_Research_MakingCloth</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_PackBasket/RI_Apparel_PackBasket</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RI_Apparel_PackBasket/RI_Apparel_PackBasket</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

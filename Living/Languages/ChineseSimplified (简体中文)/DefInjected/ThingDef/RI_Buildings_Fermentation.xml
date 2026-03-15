@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ice silkworm rearing box -->
+  <RI_Building_IceSilkwormRearingBox.label>冰蚕箱</RI_Building_IceSilkwormRearingBox.label>
+  <!-- EN: A box used to raise ice silkworms. After a period of time, it produces ice silkworm cocoons, which can be further processed into ice silkworm silk.\n\nThe box must be supplied with ice marrow as feed. -->
+  <RI_Building_IceSilkwormRearingBox.description>一个培养冰蚕的冰蚕箱，经过一段时间的等待后，将会产出冰蚕茧。冰蚕茧进一步加工就成了冰蚕丝。\n\n冰蚕箱需要装填寒髓作为养料。</RI_Building_IceSilkwormRearingBox.description>
+  
+  <!-- EN: Silkworm rearing box -->
+  <RI_Building_SilkwormRearingBox.label>蚕箱</RI_Building_SilkwormRearingBox.label>
+  <!-- EN: A box used to raise silkworms. After a period of time, it produces cocoons, which can be further processed into silk.\n\nThe box must be supplied with mulberry leaves as feed. -->
+  <RI_Building_SilkwormRearingBox.description>一个培养蚕的蚕箱，经过一段时间的等待后，将会产出蚕茧。蚕茧进一步加工就成了丝绸。\n\n蚕箱需要装填桑叶作为养料。</RI_Building_SilkwormRearingBox.description>
+  
+</LanguageData>

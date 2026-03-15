@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blood moon frenzy -->
+  <RI_BerserkBuff.label>血月狂乱</RI_BerserkBuff.label>
+  <!-- EN: The bloody moonlight driving the aberrants into madness. -->
+  <RI_BerserkBuff.description>绯红的月光散布着诅咒，令邪祟陷入狂乱。</RI_BerserkBuff.description>
+  
+  <!-- EN: curse -->
+  <RI_CurseHediff.label>诅咒</RI_CurseHediff.label>
+  <!-- EN: The curse inflicts dreadful effects upon all living beings.As time passes, its influence grows stronger, eventually leading to death.\n\nThe curse induces cellular degeneration, triggering various diseases and psychological disorders — extreme caution is advised. -->
+  <RI_CurseHediff.description>诅咒将会对生物造成可怕的影响，随着时间推移，诅咒会越来越严重，直至死亡。\n\n诅咒会导致细胞病变，诱发各种疾病和心理问题，需要格外注意。</RI_CurseHediff.description>
+  <!-- EN: Disturbance -->
+  <RI_CurseHediff.stages.Disturbance.label>不安</RI_CurseHediff.stages.Disturbance.label>
+  <!-- EN: Erosion -->
+  <RI_CurseHediff.stages.Erosion.label>侵蚀</RI_CurseHediff.stages.Erosion.label>
+  <!-- EN: Derangement -->
+  <RI_CurseHediff.stages.Derangement.label>失控</RI_CurseHediff.stages.Derangement.label>
+  <!-- EN: Haunting -->
+  <RI_CurseHediff.stages.Haunting.label>缠身</RI_CurseHediff.stages.Haunting.label>
+  
+</LanguageData>

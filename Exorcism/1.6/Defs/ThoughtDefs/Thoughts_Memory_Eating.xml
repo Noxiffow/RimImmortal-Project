@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--吃了邪祟肉-->
+	<ThoughtDef>
+		<defName>RI_Thought_AteAberrantMeat</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate aberrant meat</label>
+				<description>I feel sick... This meat... it’s disgusting...</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--吃了煮熟的邪祟肉-->
+	<ThoughtDef>
+		<defName>RI_Thought_AteAberrantMeatAsIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate cooked aberrant meat</label>
+				<description>It tastes like chewing a strip of leather soaked in rotten egg. Did we really have no other choice?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

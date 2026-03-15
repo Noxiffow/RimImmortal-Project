@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 冥尸缝合包 -->
+  <RI_MedicineCorpse.label>TODO</RI_MedicineCorpse.label>
+  <!-- EN: 治疗冥尸的物品。冥尸在受伤后，无法自我修复，于是只能用特制的丝线和有机物来缝合填补伤口。 -->
+  <RI_MedicineCorpse.description>TODO</RI_MedicineCorpse.description>
+  
+  <!-- EN: aberrant components -->
+  <RI_Resource_AberrantComponents.label>邪术零件</RI_Resource_AberrantComponents.label>
+  <!-- EN: 邪术的扭曲产物，仿佛以血肉和风磨铜打造的引擎和心脏的结合体。 -->
+  <RI_Resource_AberrantComponents.description>TODO</RI_Resource_AberrantComponents.description>
+  
+  <!-- EN: ancient bell -->
+  <RI_Resource_AncientBell.label>古朴铃铛</RI_Resource_AncientBell.label>
+  <!-- EN: The rare ancient bell, covered with twisted lines, has been around for an unknown amount of time. -->
+  <RI_Resource_AncientBell.description>外形诡异的巨大铜铃，表面覆盖着扭曲纹路，已经不知道存在了多久。</RI_Resource_AncientBell.description>
+  
+  <!-- EN: blood elixir -->
+  <RI_Resource_BloodElixir.label>血魄丹</RI_Resource_BloodElixir.label>
+  <!-- EN: 冥尸从【冥血】进化到【魇肉】的必备素材，需要提前吃下后，躺入炼冥棺的血池中进化。 -->
+  <RI_Resource_BloodElixir.description>升级冥尸的材料</RI_Resource_BloodElixir.description>
+  <!-- EN: Use {0_label} -->
+  <RI_Resource_BloodElixir.comps.CompUsable.useLabel>TODO</RI_Resource_BloodElixir.comps.CompUsable.useLabel>
+  <!-- EN: Ingest {0} -->
+  <RI_Resource_BloodElixir.ingestible.ingestCommandString>TODO</RI_Resource_BloodElixir.ingestible.ingestCommandString>
+  <!-- EN: Ingesting {0}. -->
+  <RI_Resource_BloodElixir.ingestible.ingestReportString>TODO</RI_Resource_BloodElixir.ingestible.ingestReportString>
+  
+  <!-- EN: charm paper -->
+  <RI_Resource_CharmPaper.label>符纸</RI_Resource_CharmPaper.label>
+  <!-- EN: Ordinary paper used for writing charms. By itself, charm paper has no supernatural power.Once a charm is written on it, however, it becomes a medium for communicating with heaven and earth.\n\nCharm paper is easy to produce, inexpensive, and can be purchased in large quantities from Daoist sects. -->
+  <RI_Resource_CharmPaper.description>一种特制的纸，供人写符之用。符纸本身并无神异，但画符后，便可成为沟通天地、镇鬼诛邪的媒介。\n\n这种符纸制作不难，并且价格便宜，能在道门市场大量购买。</RI_Resource_CharmPaper.description>
+  
+  <!-- EN: concentrated aberrant blood -->
+  <RI_Resource_ConcentrateAberrantBlood.label>浓缩邪血</RI_Resource_ConcentrateAberrantBlood.label>
+  <!-- EN: A small amount of refined blood extracted from aberrant entities. It is dark red, thick in texture, and radiates an ominous presence.\n\nScholars have found that this blood can resist natural decay, allowing corpses to remain active for long periods. Since aberrant entities began to spread, alchemists, folklorists, and wandering occult practitioners have all sought after it—whether for forbidden rituals, crafting cursed artifacts, or even attempting to reanimate the dead. -->
+  <RI_Resource_ConcentrateAberrantBlood.description>从具备肉身的邪祟体内提取的血液，色泽深红，质地浓稠，弥漫着不祥之气。\n\n学者们发现，这种血液能够抵御自然腐败，使尸骸长期保持活性。自邪祟横行以来，炼金术士、民俗学者，以及各类江湖术士皆为此物趋之若鹜——或用于禁忌的仪式，或锻造邪异的法宝，甚至妄图以此令尸体复生。</RI_Resource_ConcentrateAberrantBlood.description>
+  
+  <!-- EN: Yin oil -->
+  <RI_Resource_CorpseOil.label>阴脂</RI_Resource_CorpseOil.label>
+  <!-- EN: When solid, it is called fat; when melted, it is called oil.\n\nYin oil is refined from biological corpses. Unlike ordinary oils, it does not easily spoil, which is why candles made from it are known as everlasting lamps. The flame of yin oil burns with a dim green light, and the principle behind it remains unknown. -->
+  <RI_Resource_CorpseOil.description>凝者曰脂，释者曰膏。\n\n阴脂是以邪术秘法从尸体中分离获得。它并不像寻常油脂那样容易酸败，所以用阴脂做的蜡烛也被称为长明灯。\n\n点燃阴脂的火光呈幽绿色，温度不高，但其灼烧额外疼痛，其原理至今未知。</RI_Resource_CorpseOil.description>
+  
+  <!-- EN: crimson eye -->
+  <RI_Resource_CrimsonEye.label>血魔眼</RI_Resource_CrimsonEye.label>
+  <!-- EN: AA -->
+  <RI_Resource_CrimsonEye.description>？？</RI_Resource_CrimsonEye.description>
+  
+  <!-- EN: erosion bronze -->
+  <RI_Resource_ErosionBronze.label>风磨铜</RI_Resource_ErosionBronze.label>
+  <!-- EN: Erosion bronze is a special copper alloy. Its exact smelting formula has been lost, and today it can only be obtained by excavating ancient artifacts made from it deep underground.\n\nLegends say that ancient craftsmen mixed specific minerals into the alloy, giving it unique chemical properties that suppress aberrant entities.\n\nIn modern times, these bronze artifacts are often purchased and reforged into ritual tools and talismans. -->
+  <RI_Resource_ErosionBronze.description>风磨铜是一种古代冶炼的特殊铜合金，如今配方已失传，只能从地层中少量挖掘得到。\n\n相传古人在炼制过程中，会混入特定矿石，使其具备独特的化学特性，对邪祟之物有克制作用。古人虽然不知原理，但也会将风磨铜用于铸造铜币和护身符。\n\n到了现代，这些发掘的铜制文物，通常会被人买下，重新打造为法器。</RI_Resource_ErosionBronze.description>
+  
+  <!-- EN: ink jade -->
+  <RI_Resource_InkJade.label>墨玉</RI_Resource_InkJade.label>
+  <!-- EN: Ink jade is a deep green jade with a smooth and warm texture, usually found buried underground.\n\nIt has fine patterns and a calm, heavy color, and gives off a faint cold aura. Ancient people believed that wearing ink jade could ward off impurity, calm the mind, and resist misfortune. Some scholars speculate that it contains a weak form of energy that can resonate with the human body. -->
+  <RI_Resource_InkJade.description>墨玉是一种质地温润的深绿色玉石，通常在地下被挖掘发现。\n\n墨玉纹理细腻，色泽沉稳，散发出若有若无的清冷气息。古人相信佩戴此物，可辟秽安神，抵御不祥。更有学者推测，其内部蕴含某种微弱的能量，似乎能与人体产生共鸣。因而在诸多典籍中被赋予神秘色彩，常作为祭祀的重要器具。</RI_Resource_InkJade.description>
+  
+  <!-- EN: Heteromorph meat -->
+  <RI_Resource_UpgradeMeat.label>异构肉</RI_Resource_UpgradeMeat.label>
+  <!-- EN: 冥尸从【魇肉】进化到【不化骨】的必备素材，需要提前吃下后，躺入炼冥棺的血池中进化。 -->
+  <RI_Resource_UpgradeMeat.description>升级冥尸的材料</RI_Resource_UpgradeMeat.description>
+  <!-- EN: Use {0_label} -->
+  <RI_Resource_UpgradeMeat.comps.CompUsable.useLabel>TODO</RI_Resource_UpgradeMeat.comps.CompUsable.useLabel>
+  <!-- EN: Ingest {0} -->
+  <RI_Resource_UpgradeMeat.ingestible.ingestCommandString>TODO</RI_Resource_UpgradeMeat.ingestible.ingestCommandString>
+  <!-- EN: Ingesting {0}. -->
+  <RI_Resource_UpgradeMeat.ingestible.ingestReportString>TODO</RI_Resource_UpgradeMeat.ingestible.ingestReportString>
+  
+</LanguageData>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 肉菜大菜的前置 不按营养值计算-->
+	<RecipeDef Name="RI_MeatFoodRecipe_Base" ParentName="CookMealBase" Abstract="True">
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>RI_Building_CookTable</li>
+			<li>RI_Building_ModernCookingStove</li>
+		</recipeUsers>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>5</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>RI_Research_BetterFood</researchPrerequisite>
+	</RecipeDef>
+
+	<!--东坡肉-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookDongPoPork</defName>
+		<label>Cook soysauced DongPo pork</label>
+		<description>Use pork, pearls and spices to braise DongPo pork, a brilliant red and fragrant meat dish.</description>
+		<jobString>Cook soysauced DongPo pork</jobString>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Pig</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_DongPoPork>1</RI_Food_DongPoPork>
+		</products>
+	</RecipeDef>
+
+	<!--小鸡炖蘑菇-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookChickenWithMushroom</defName>
+		<label>Cook chicken with mushroom</label>
+		<description>Braised with chicken and mushrooms, a classic meat dish, delicious.</description>
+		<jobString>Cook chicken with mushroom</jobString>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Chicken</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_ChickenWithMushroom>1</RI_Food_ChickenWithMushroom>
+		</products>
+	</RecipeDef>
+
+	<!--八宝鸭-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookStuffedRoastDuck</defName>
+		<label>Cook stuffed roast duck</label>
+		<description>Duck meat, pearl spices and rice are used to make stuffed duck, a steamed meat dish filled with ingredients in the duck, which is very luxurious.</description>
+		<jobString>Cook stuffed roast duck</jobString>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Duck</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Food_CookedRice</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_StuffedRoastDuck>1</RI_Food_StuffedRoastDuck>
+		</products>
+	</RecipeDef>
+
+	<!--煨肘子-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookStewedPorkHock</defName>
+		<label>Cook stewed pork knuckle</label>
+		<description>Simmer the pork, pearl spices.</description>
+		<jobString>Cook stewed pork knuckle</jobString>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Pig</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_StewedPorkHock>1</RI_Food_StewedPorkHock>
+		</products>
+	</RecipeDef>
+
+	<!--红烧牛肉-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookBraisedBeef</defName>
+		<label>Cook braised beef</label>
+		<description>Use beef, pearls spices to make a braised beef, a classic home cooked dish.</description>
+		<jobString>Cook braised beef</jobString>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Cow</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RI_Resource_PearlSpice</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<RI_Food_BraisedBeef>1</RI_Food_BraisedBeef>
+		</products>
+	</RecipeDef>
+
+	<!--制作月饼-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookMooncake</defName>
+		<label>Cook mooncake</label>
+		<description>The dough and ingredients are made into cakes and then baked to get mooncakes.</description>
+		<jobString>Cook mooncake</jobString>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_Mooncake>4</RI_Food_Mooncake>
+		</products>
+	</RecipeDef>
+
+	<!--制作鲜肉月饼-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookMeatMooncake</defName>
+		<label>Cook meat mooncake</label>
+		<description>The pastry and meat are made into fresh meat cakes and then baked to get meat mooncakes.</description>
+		<jobString>Cook meat mooncake</jobString>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_Meatmooncake>4</RI_Food_Meatmooncake>
+		</products>
+	</RecipeDef>
+
+	<!--制作三角粽子-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookTriangleZongZi</defName>
+		<label>Cook triangle ZongZi</label>
+		<description>Cook the rice and ingredients wrapped in reed leaves.</description>
+		<jobString>Cook ZongZi</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_TriangleZongZi>5</RI_Food_TriangleZongZi>
+		</products>
+	</RecipeDef>
+
+	<!--制作四角粽子-->
+	<RecipeDef ParentName="RI_MeatFoodRecipe_Base">
+		<defName>RI_Recipe_CookPillowZongZi</defName>
+		<label>Cook pillow ZongZi</label>
+		<description>Cook the rice and ingredients wrapped in reed leaves.</description>
+		<jobString>Cook ZongZi</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<RI_Food_PillowZongZi>5</RI_Food_PillowZongZi>
+		</products>
+	</RecipeDef>
+
+
+</Defs>

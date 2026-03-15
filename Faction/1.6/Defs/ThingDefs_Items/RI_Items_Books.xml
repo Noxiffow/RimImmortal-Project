@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================== 新增的修炼功法 ====================================-->
+
+	<ThingDef Name="RI_BookBase_CultivationMethod" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Books/CultivationBook</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_CommonBooks</li>
+			<!--储存-->
+		</thingCategories>
+		<tradeTags>
+			<li>RI_Cultivation_Book</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--流云步法-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_AirStepExercise</defName>
+		<label>Skill book-Air step exercise</label>
+		<description>A seamless and fluid footwork technique not only enhances movement speed but also invigorates the body during motion, stimulating the meridians throughout and improving cultivation efficiency.</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_AirStepExercise</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--吞山魔功-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_MountainEating</defName>
+		<label>Skill book-Mountain-eating cultivation method</label>
+		<description>A unique cultivation method designed to forcibly enhance a person's appetite, extracting all nutrients from consumed food to nourish the spiritual seed within.\n\nThis technique was once incredibly popular but fell out of favor due to its origins as a creation of a demonic cultivator. Moreover, it caused practitioners to indulge in excessive and unrefined eating habits, which were deemed improper and unsightly. As a result, under the influence of a group of cultivators advocating for its replacement, this method gradually lost its legacy and was eventually supplanted by other practices.</description>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_MountainEatingCultivationMethod</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--玄天诀-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_MysticCultivation</defName>
+		<label>Skill book-Mystic cultivation method</label>
+		<description>It is said to be an ancient cultivation method that is no longer suitable for modern practitioners. This technique is excessively domineering, relying on a unique method of stimulating acupoints to forcibly absorb an overwhelming amount of qi and convert it for personal use.\n\nDuring its operation, this method causes pain in the muscles and meridians, making it impossible to master without extraordinary willpower.</description>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_MysticCultivationMethod</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--巧工速修法-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_RefinementWorkspeed</defName>
+		<label>Skill book-Refinement workspeed method</label>
+		<description>The origin of this cultivation method can be traced back to a carpenter who, while crafting a wooden box, became so deeply focused and immersed in his work that he reached a state of complete unity between himself and nature. This scene was witnessed by a passing cultivator, who was inspired to create the technique.\n\nThis method not only enhances work efficiency but also leverages the heightened state of concentration to slightly improve the practitioner's cultivation speed.</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_RefinementWorkspeedMethod</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--大息龟眠功-->
+	<ThingDef ParentName="RI_BookBase_CultivationMethod">
+		<defName>RI_BookAbility_TortoiseMeditation</defName>
+		<label>Skill book-Tortoise meditation method</label>
+		<description>A method of alchemy once produced an individual of remarkable longevity, reportedly living over 300 years before passing away due to illness. Before his departure, he left behind a book, chronicling his observations of local customs, changes over time, cultural geography, and the cultivation technique he claimed could extend one’s lifespan.\n\nIn his writings, he asserted, "The endurance of a civilization depends on who outlives the others, not who wins the wars. As long as one can live long enough to outlast their rivals, that in itself is the ultimate victory."</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="WhoXiuXian.CompProperties_BookStudiable">
+				<cost>20</cost>
+				<canCopy>true</canCopy>
+				<abilities>
+					<li>RI_Ability_TortoiseMeditationMethod</li>
+				</abilities>
+				<completedLetterTitle>{PARENT_label} becomes some sparks of Qi and disappears.</completedLetterTitle>
+				<completedLetterText>After reading {PARENT_label}, the cultivator {STUDIER_labelShort} learns the "Long range flying"!</completedLetterText>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

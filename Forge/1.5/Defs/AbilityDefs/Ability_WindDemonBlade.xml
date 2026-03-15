@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<AbilityDef>
+		<defName>RI_DemonWind</defName>
+		<label>Demon wind</label>
+		<description>A small tornado is released in one direction, causing damage to all objects in its path.</description>
+		<iconPath>Ability/Weapon/RI_DemonWind</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>false</ai_IsIncendiary>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>1220</cooldownTicksRange>
+		<!--RangedWeapon_Cooldown>4.10</RangedWeapon_Cooldown-->
+		<verbProperties>
+			<verbClass>RI_Starch.RI_Verbs.Verb_Ability</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>20</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>Psycast_Skip_Entry</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<defaultCooldownTime>1</defaultCooldownTime>
+		</verbProperties>
+		<comps>
+			<li Class="RI_Starch.RI_Ability.RI_CompProperties_DemonWind_Tornado">
+				<range>20</range>
+				<angle>0</angle>
+				<cooldownTicks>1200</cooldownTicks>
+				<tornado>RI_DemonWind_Tornado</tornado>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RI_DemonWind_Tornado</defName>
+		<label>Demon wind</label>
+		<thingClass>RI_Starch.RI_ThingClass.RI_Tornado</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+		<alwaysFlee>true</alwaysFlee>
+		<comps>
+			<li Class="CompProperties_WindSource" />
+		</comps>
+	</ThingDef>
+
+	<SoundDef>
+		<defName>RI_Tornado</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Misc/Tornado/TornadoLoop</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~16</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+				<distRange>
+					<min>50</min>
+					<max>100</max>
+				</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
+

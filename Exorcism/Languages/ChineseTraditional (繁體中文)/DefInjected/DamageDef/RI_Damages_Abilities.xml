@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corpse poison -->
+  <RI_Damage_ZombieInfection.label>尸毒</RI_Damage_ZombieInfection.label>
+  <!-- EN: {0} was torn apart by the undead. -->
+  <RI_Damage_ZombieInfection.deathMessage>{0}被毒死了。</RI_Damage_ZombieInfection.deathMessage>
+  
+  <!-- EN: blood curse -->
+  <RI_Dm_BloodCurse.label>诅咒</RI_Dm_BloodCurse.label>
+  <!-- EN: {0} was cursed to death -->
+  <RI_Dm_BloodCurse.deathMessage>{0}被咒杀了。</RI_Dm_BloodCurse.deathMessage>
+  
+  <!-- EN: 三清铃冲击波 -->
+  <RI_ZombieMelee_SanQingBell.label>三清铃冲击波</RI_ZombieMelee_SanQingBell.label>
+  <!-- EN: {0} has been purified by San Qing Bell. -->
+  <RI_ZombieMelee_SanQingBell.deathMessage>三清铃冲击波</RI_ZombieMelee_SanQingBell.deathMessage>
+  
+</LanguageData>

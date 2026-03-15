@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Curse immunity -->
+  <RI_CurseImmunity.label>诅咒免疫</RI_CurseImmunity.label>
+  <!-- EN: Colonists' resistance to curses. The higher this value, the more curse is reduced each day. -->
+  <RI_CurseImmunity.description>殖民者对诅咒的抵抗能力。该数值越高，每天受到的诅咒影响就越小。</RI_CurseImmunity.description>
+  
+</LanguageData>

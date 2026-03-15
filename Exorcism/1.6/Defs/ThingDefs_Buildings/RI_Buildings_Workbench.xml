@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--法器台-->
+	<!--法器exorcism instrument（驱魔仪器）-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_ExorcismInstrumentBench</defName>
+		<label>Exorcism instrument bench</label>
+		<description>An altar laid out with tools for restraining aberrations, serving as a workstation for crafting ritual implements.\n\nAs the curse spread, the Dao sect also reached the Rimworlds. In this harsh land, they were forced to adapt—recruiting people from all faction of life, mercenaries, and even xenoforms to stand against the aberrations. Thus, Exorcism instruments have circulated to the most remote corners of the Rim.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/ExorcismInstrumentBench/RI_Building_ExorcismInstrumentBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5.05,3.4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<RI_Resource_ErosionBronze>10</RI_Resource_ErosionBronze>
+		</costList>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<!--配方-->
+		<recipes>
+			<li>RI_Recipe_ChemfuelFromWood</li>
+			<li>RI_Recipe_ChemfuelFromWoodBulk</li>
+			<li>RI_Recipe_PurifyBlood</li>
+		</recipes>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+			<workTableRoomRole>Laboratory</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_DaoInherit</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--邪术合成台-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_AberrantWorkbench</defName>
+		<label>Aberrant workbench</label>
+		<description>A grim stone platform cluttered with jars and vials, used to synthesize various aberrant materials and products. Etched across its surface are obscure runes, meant to shield the maker from the influence of curses.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_AberrantWorkbench/RI_Building_AberrantWorkbench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.8,4.8)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_CharmPaper>20</RI_Resource_CharmPaper>
+		</costList>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<!--配方-->
+		<recipes>
+			<li>RI_Recipe_PrepareAberrantBlood</li>
+			<li>RI_Recipe_PrepareAberrantBloodBulk</li>
+			<li>RI_Recipe_SeparateCorpseOil</li>
+			<li>RI_Recipe_SeparateCorpseOilBulk</li>
+			<li>CremateCorpse</li>
+			<li>RI_Recipe_MakeEvilComponent</li>
+			<li>RI_Recipe_MakeEvilComponentBulk</li>
+		</recipes>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+			<workTableRoomRole>Laboratory</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
+		<comps>
+			<!--燃料——用邪血当燃料-->
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>50</fuelConsumptionRate>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>RI_Resource_CharmPaper</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<canEjectFuel>true</canEjectFuel>
+			</li>
+			<!--链接-->
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<!--绿光-->
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(35,204,132,0)</glowColor>
+			</li>
+			<!--绿色火光-->
+			<li Class="FireOnTorch.CompProperties_FireOverlayCustom">
+				<GraphicData>
+					<texPath>Things/Special/RI_GreenFlame</texPath>
+					<graphicClass>Graphic_Flicker</graphicClass>
+				</GraphicData>
+				<fireSize>0.05</fireSize>
+				<finalFireSize>0.05</finalFireSize>
+				<offset>(0,0,0.8)</offset>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_AberrantTechnology</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--尸匠台-->
+	<!--Corpse puppet（尸傀）-->
+	<ThingDef ParentName="BenchBase">
+		<defName>RI_Building_CorpseForge</defName>
+		<label>Corpse forge</label>
+		<description>.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_CorpseForge/RI_Building_CorpseForge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.6,3.6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_ConcentrateAberrantBlood>10</RI_Resource_ConcentrateAberrantBlood>
+			<RI_Resource_CorpseOil>10</RI_Resource_CorpseOil>
+		</costList>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<!--<uiIconPath>Things/Building/Production/RI_Building_CorpseForge_Icon</uiIconPath>-->
+		<uiIconScale>0.7</uiIconScale>
+		<designationCategory>Production</designationCategory>
+		<uiOrder>2100</uiOrder>
+		<passability>Standable</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellIcon Inherit="False"/>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<!--低级-->
+			<li>RI_Recipe_CreatePaperDoll</li>
+			<li>RI_Recipe_CreatePatchMan</li>
+			<li>RI_Recipe_CreateZombie</li>
+			<!--中级-->
+			<!--<li>RI_Recipe_CreateBoomer</li>-->
+			<li>RI_Recipe_CreateZombieCow</li>
+			<li>RI_Recipe_CreateZombieHorse</li>
+			<!--高级-->
+			<li>RI_Recipe_CreateIronPagoda</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<!--研究-->
+		<researchPrerequisites>
+			<li>RI_ExorcismResearch_EvilCreature</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

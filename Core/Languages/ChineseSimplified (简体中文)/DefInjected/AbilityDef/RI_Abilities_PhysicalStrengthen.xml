@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Asura -->
+  <RI_Ability_Asura.label>修罗</RI_Ability_Asura.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Great Accomplishment Realm of Body Refining\n\n</color>Entering the Shura state, greatly improving the melee ability and the overall physical state, reducing the consumption of techniques, and being almost invincible. However, when the buff is over, it will enter an extremely weak state, and the combat power is not as good as that of ordinary people. -->
+  <RI_Ability_Asura.description>&lt;color=#ED7434>此功法为 炼体法门 大成境界 所学\n\n&lt;/color>进入修罗状态，极大提高近战能力和全部肉体状态，减少功法消耗，几乎是无敌的。但是等buff过去，会进入极度虚弱状态，战斗力不如普通人</RI_Ability_Asura.description>
+  
+  <!-- EN: Blood boil -->
+  <RI_Ability_BloodBoil.label>气血翻涌</RI_Ability_BloodBoil.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Spiritual Pill Realm of the Body Refining Method\n\n</color>Auxiliary technique. After using this technique, you will be given a "madness" buff that lasts for 3 hours, greatly improving your melee ability and speed. However, after the buff ends, you will fall into a weak state, with reduced consciousness and reduced operation. -->
+  <RI_Ability_BloodBoil.description>&lt;color=#ED7434>此功法为 炼体法门 灵丹境界 所学\n\n&lt;/color>辅助功法，使用功法后给一个持续3小时的“狂意”buff，近战能力和速度大大提高，但buff结束后会陷入虚弱状态，扣意识，扣操作。</RI_Ability_BloodBoil.description>
+  
+  <!-- EN: Incendiary sky -->
+  <RI_Ability_IncendiarySky.label>焚天</RI_Ability_IncendiarySky.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Nascent Soul stage of the Body Refining Method\n\n</color>A palm technique that descends from the sky, infusing the whole body's spiritual energy into the palms in the air, fiercely slamming the ground to knock the enemy away. From a distance, the fire looks like an explosion, so it is named Incendiary sky. -->
+  <RI_Ability_IncendiarySky.description>&lt;color=#ED7434>此功法为 炼体法门 元婴境界 所学\n\n&lt;/color>一招从天而降的掌法，在空中将全身灵气灌注到双掌，狠狠轰击地面震飞敌人，远处望去，火光如同爆炸一般，故名为焚天。</RI_Ability_IncendiarySky.description>
+  <!-- EN: Incendiary sky -->
+  <RI_Ability_IncendiarySky.verbProperties.label>焚天</RI_Ability_IncendiarySky.verbProperties.label>
+  
+  <!-- EN: One-Inch punch -->
+  <RI_Ability_OneInchPunch.label>寸拳</RI_Ability_OneInchPunch.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Body Refining Method, Spiritual Transformation Realm\n\n</color>Inch Fist is a kind of boxing technique inherited from ancient wars, which emphasizes the burst of super high damage in a very short distance. This move is extremely powerful, but it also consumes a lot of spiritual energy. \n\nThe basic damage of this technique is: 10, and each level of combat skill is increased by +2 damage. -->
+  <RI_Ability_OneInchPunch.description>&lt;color=#ED7434>此功法为 炼体法门 化神境界 所学\n\n&lt;/color>寸拳是沿袭自古代战争的一种拳术，讲究在极短的距离内爆发出超高伤害。这招威力巨大，但也会消耗大量灵气。\n\n此功法基础伤害为：10，每提升一级格斗技能+2伤害。</RI_Ability_OneInchPunch.description>
+  
+  <!-- EN: YiWei QingKung -->
+  <RI_Ability_QuickJump.label>一苇轻功</RI_Ability_QuickJump.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Body Refining Method, Jindan Realm\n\n</color>Yiwei Qinggong is a technique that allows a person to burst out with super jumping power in a short period of time. It is said that if practiced to the extreme, one can touch the water with his toes and cross the river. -->
+  <RI_Ability_QuickJump.description>&lt;color=#ED7434>此功法为 炼体法门 结丹境界 所学\n\n&lt;/color>一苇轻功是可以让人在短时间爆发超强弹跳力的功法，据说修炼到极致可以令人脚尖点水，跨过大江。</RI_Ability_QuickJump.description>
+  <!-- EN: YiWei QingKung -->
+  <RI_Ability_QuickJump.verbProperties.label>一苇轻功</RI_Ability_QuickJump.verbProperties.label>
+  
+  <!-- EN: Stretching exercise -->
+  <RI_Ability_StretchingExercise.label>撑筋拔骨</RI_Ability_StretchingExercise.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Dan realm of the Body Refining Method\n\n</color>The bones are straight and the tendons are soft, and the qi and blood flow smoothly. By introducing spiritual energy into the meridians to assist in the training of tendons and bones, the body can feel lighter and the force can be more smooth. -->
+  <RI_Ability_StretchingExercise.description>&lt;color=#ED7434>此功法为 炼体法门 化丹境界 所学\n\n&lt;/color>骨正筋柔，气血以流。通过往经脉里引入灵气，来辅助筋骨的锻炼，可以令之后的身体感到更轻盈，发力更通畅。</RI_Ability_StretchingExercise.description>
+  
+  <!-- EN: Vajra punch -->
+  <RI_Ability_VajraBoxing.label>金刚拳</RI_Ability_VajraBoxing.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Solid Foundation Realm of the Body Refining Method\n\n</color>The Vajra Fist is a set of traditional ancient martial arts, with simple and powerful fists, fierce and decisive. \n\nThe basic damage of this technique is: 2, and each level of combat skill increases the damage by +2. \n\n(Hint: You can use the shortcut key P to hit continuously) -->
+  <RI_Ability_VajraBoxing.description>&lt;color=#ED7434>此功法为 炼体法门 固基境界 所学\n\n&lt;/color>金刚拳是一套传统的古武拳法，拳势古朴，遒劲雄强，凶狠果决。\n\n此功法基础伤害为：2，每提升一级格斗技能+2伤害。\n\n（提示：可以使用快捷键P连打）</RI_Ability_VajraBoxing.description>
+  
+  <!-- EN: Joint lock -->
+  <RI_Activity_FJCGS.label>分筋错骨手</RI_Activity_FJCGS.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Spiritual Pill Realm of the Body Refining Method\n\n</color>A domineering technique that can subdue a person in an instant through joint techniques. This move is extremely lethal to the human body, but for large animals or creatures without pain, this move can only leave some bruises. -->
+  <RI_Activity_FJCGS.description>&lt;color=#ED7434>此功法为 炼体法门 灵丹境界 所学\n\n&lt;/color>一种霸道的功法，可以在一瞬间通过关节技将人制服。此招对人体有极大的杀伤力，但是对于大体形的动物或者没有痛觉的生物来说，此招只能留下一些瘀伤。</RI_Activity_FJCGS.description>
+  
+  <!-- EN: Lotus position -->
+  <RI_Activity_LotusPosition.label>莲花坐</RI_Activity_LotusPosition.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Qi Condensation Realm of the Body Refining Method\n\n</color>Spiritual Energy Consumption: 0.33/second\n\nSitting in lotus position is a basic technique that improves the perception of spiritual energy and meridians in the body by sitting cross-legged. A skilled cultivator can consciously compress the arteries and slow down the blood flow through sitting in lotus position, so that the speed of practice after meditation can be accelerated, and small wounds can automatically recover over time.\n\nThis technique can be turned on and off freely, and spiritual energy will be slowly consumed when it is turned on. -->
+  <RI_Activity_LotusPosition.description>&lt;color=#ED7434>此功法为 炼体法门 凝气境界 所学\n\n&lt;/color>灵气消耗：0.33/秒\n\n莲花坐是一种通过盘腿打坐来提高对体内灵气和经脉感知的基础功法，一个熟练的修炼者可以通过莲花坐来有意识地压迫动脉减慢血液流速，使打坐之后修炼的速度加快，小伤口能随时间自动恢复。\n\n此功法可以自由开启关闭。</RI_Activity_LotusPosition.description>
+  
+  <!-- EN: Palm wind blast -->
+  <RI_NeutronPluse.label>十峰掌</RI_NeutronPluse.label>
+  <!-- EN: <color=#ED7434>This technique is learned in the Danhua realm of the Body Refining Method\n\n</color>By injecting spiritual energy into the palms, a powerful Qi bursts out during the fierce slapping, killing the enemy. \n\nThe basic damage of this technique is: 2, and each level of combat skill increases the damage by +2. -->
+  <RI_NeutronPluse.description>&lt;color=#ED7434>此功法为 炼体法门 化丹境界 所学\n\n&lt;/color>通过往双掌中注入灵气，在猛烈拍击中爆发出强大的气场，杀伤敌人。\n\n此功法基础伤害为：2，每提升一级格斗技能+2伤害。</RI_NeutronPluse.description>
+  
+</LanguageData>

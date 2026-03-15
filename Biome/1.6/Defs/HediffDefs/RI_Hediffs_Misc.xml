@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--昏睡-->
+	<HediffDef MayRequire="RI.RimImmortal.Core">
+		<defName>RI_Hediff_DrugTranquilizing</defName>
+		<label>tranquillizer</label>
+		<description>The sedative effects of the drug cause the user to fall into a deep sleep and reduce metabolic consumption.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.49,1,0.48)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>0.001</initialSeverity>
+		<isBad>false</isBad>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.25</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>wearing off</label>
+				<painFactor>0.7</painFactor>
+				<vomitMtbDays>4</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>stable</label>
+				<painFactor>0.5</painFactor>
+				<vomitMtbDays>0.25</vomitMtbDays>
+				<hungerRateFactor>0</hungerRateFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.7</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>5</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>deep coma</label>
+				<painFactor>0</painFactor>
+				<hungerRateFactor>0</hungerRateFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

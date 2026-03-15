@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: JunGou bezoar -->
+  <RI_Resource_JunGouBezoar.label>菌狗胆石</RI_Resource_JunGouBezoar.label>
+  <!-- EN: JunGou bezoar, an animal materials with properties of metal elements.\n\nJunGou, a fast running animal, needs to consume a lot of energy, excess cholesterol and special nutrients in JunGou's body will gradually form this yellowish solid. This gallstone is rich in nutrients and has marvelous medicinal properties, but if eaten directly it can lead to poisoning, vomiting and other adverse reactions. -->
+  <RI_Resource_JunGouBezoar.description>菌狗胆石，一种具有奇妙药效的金属性药材。\n\n菌狗奔跑速度极快，需要摄入许多食物来满足极高的新陈代谢。而多余的营养物质，会和它们的胆固醇在胆囊内逐渐形成这种黄澄澄的固体。这种胆石蕴含了丰富的营养，具有奇妙的药效，但如果直接吃下可能导致中毒呕吐等不良反应，必须经过提炼处理才能使用。</RI_Resource_JunGouBezoar.description>
+  
+  <!-- EN: JueRu antler -->
+  <RI_Resource_PiloseAntler.label>玃如茸角</RI_Resource_PiloseAntler.label>
+  <!-- EN: JueRu antler, a medicinal substance with properties of wood elements.\n\nJueRu antler horn is located below the ear and has a pair of either male or female. JueRu is a long-lived, intelligent animal that, when it notices a hunter approaching unsuspectingly, will voluntarily break its own antlers in exchange for a chance to flee for its life. jueRu Antlers have no medicinal properties when eaten raw, and only when combined with other herbs can they bring out their full nutritional benefits. -->
+  <RI_Resource_PiloseAntler.description>玃如茸角，一种具有奇妙药效的木属性药材。\n\n玃如的茸角位于耳朵下方，无论雌雄皆有一对。玃如是一种长寿的动物，十分聪颖。相传，当它发现有猎人靠近，就会主动以头撞树，折断自己的茸角，以换得逃命的机会。这种茸角具有奇妙的药效，但如果直接吃下可能导致中毒呕吐等不良反应，必须经过提炼处理才能使用。</RI_Resource_PiloseAntler.description>
+  
+</LanguageData>

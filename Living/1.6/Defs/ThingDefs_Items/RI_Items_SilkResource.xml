@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--蚕卵-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_SilkwormEgg</defName>
+		<label>Silkworm egg</label>
+		<description>A piece of paper with an egg attached. These eggs are easy to store, so they are often found in trading caravans.\n\nAfter it is placed in the silkworm box, it will automatically hatch into a silkworm. As time goes on, the silkworm will develop a large cocoon.</description>
+		<possessionCount>5</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_SilkwormEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tickerType>Rare</tickerType>
+		<tradeability>All</tradeability>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>8</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_AnimalProductRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>AnimalPart</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--冰蚕卵-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_IceSilkwormEgg</defName>
+		<label>Ice silkworm egg</label>
+		<description>A piece of paper attached to the egg of ice silkworm, a rare genetic modification of this wonderful silkworm.\n\nIce silkworms grow slowly, but the ice silk they spit out is very flexible and has the effect of absorbing heat, so the fabric made of ice silk feels very cold.</description>
+		<possessionCount>5</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_IceSilkwormEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tickerType>Rare</tickerType>
+		<tradeability>All</tradeability>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_AnimalProductRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>AnimalPart</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--蚕茧-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_SilkwormCocoon</defName>
+		<label>Silkworm cocoon</label>
+		<description>The cocoon woven by the silkworm, the silkworm emerges into a moth in the cocoon. But most of them are made into raw silk before they break the cocoon, and only some are turned into moths, which mate and leave behind young to continue making silk.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_SilkwormCocoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>9</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_AnimalProductRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<tradeTags>
+			<li>RI_Nothing_Buy</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--冰蚕茧-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_IceSilkwormCocoon</defName>
+		<label>Ice silkworm cocoon</label>
+		<description>The cocoon woven by the ice silkworm is cool to the touch. The processing of ice silk is very time-consuming and laborious, so often as soon as ice silkworms cocoon, craftsmen will immediately light the lamp all night and work overtime to make ice silk.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_IceSilkwormCocoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_AnimalProductRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<tradeTags>
+			<li>RI_Nothing_Buy</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--桑叶-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>RI_Resource_MulberryLeaf</defName>
+		<label>mulberry leaf</label>
+		<description>Mulberry leaves are the primary product of the mulberry tree and have been used in traditional sericulture since ancient times. Rich in nutrients and highly palatable, they can also serve as an alternative to hay and be used as animal feed.</description>
+		<stackLimit>200</stackLimit>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RI_Resource_MulberryLeaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.75</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<allowedArchonexusCount>400</allowedArchonexusCount>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

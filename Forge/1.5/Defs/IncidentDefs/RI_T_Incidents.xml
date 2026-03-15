@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>RI_IncentiveTalisman</defName>
+		<label>Inspiration of forge</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_IncentiveTalisman</workerClass>
+		<baseChance>6</baseChance>
+		<letterLabel>Inspiration of forge</letterLabel>
+		<letterText>While crafting the object, one colonist's mind suddenly became clear, and he fell into a state of self-oblivion. The process at hand suddenly became orderly and beautiful, which directly inspired him.</letterText>
+		<tale>MeteoriteImpact</tale>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>RI_DropBlackSteelChuck</defName>
+		<label>Black steel from space</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>WhoXiuXian.RI_IncidentWorker_DropBlackSteelChuck</workerClass>
+		<baseChance>2.5</baseChance>
+		<letterLabel>Black steel from space</letterLabel>
+		<letterText>A piece of a ship falls on your colony, and unlike other ship fragments, this piece can be found in the form of a hard steel - Black steel.</letterText>
+		<tale>MeteoriteImpact</tale>
+	</IncidentDef>
+
+</Defs>

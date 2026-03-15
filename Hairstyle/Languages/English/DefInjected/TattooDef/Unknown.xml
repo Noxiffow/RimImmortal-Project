@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Cultivator A -->
+  <Face_Cultivators_A.label>Cultivator A</Face_Cultivators_A.label>
+  
+  <!-- EN: Cultivator B -->
+  <Face_Cultivators_B.label>Cultivator B</Face_Cultivators_B.label>
+  
+  <!-- EN: Cultivator C -->
+  <Face_Cultivators_C.label>Cultivator C</Face_Cultivators_C.label>
+  
+  <!-- EN: Cultivator D -->
+  <Face_Cultivators_D.label>Cultivator D</Face_Cultivators_D.label>
+  
+  <!-- EN: Snake A -->
+  <Face_WickedCultivators_A.label>Snake A</Face_WickedCultivators_A.label>
+  
+  <!-- EN: Snake B -->
+  <Face_WickedCultivators_B.label>Snake B</Face_WickedCultivators_B.label>
+  
+  <!-- EN: Snake C -->
+  <Face_WickedCultivators_C.label>Snake C</Face_WickedCultivators_C.label>
+  
+  <!-- EN: Snake D -->
+  <Face_WickedCultivators_D.label>Snake D</Face_WickedCultivators_D.label>
+  
+</LanguageData>

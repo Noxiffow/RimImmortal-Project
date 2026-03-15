@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Ancient rifle【Second-rate】 -->
+  <Make_AncientGun.label>制作玄铁灵铳【二品】</Make_AncientGun.label>
+  <!-- EN: make Ancient rifle. -->
+  <Make_AncientGun.description>制作玄铁灵铳【二品】。</Make_AncientGun.description>
+  <!-- EN: Making Ancient rifle -->
+  <Make_AncientGun.jobString>制作玄铁灵铳【二品】中</Make_AncientGun.jobString>
+  
+  <!-- EN: make ChiYou flame halberd【First-rate】 -->
+  <Make_ChiYouFlameHalberd.label>制作蚩尤怒炎戟【一品】</Make_ChiYouFlameHalberd.label>
+  <!-- EN: make ChiYou flame halberd. -->
+  <Make_ChiYouFlameHalberd.description>制作蚩尤怒炎戟【一品】。</Make_ChiYouFlameHalberd.description>
+  <!-- EN: Making ChiYou flame halberd -->
+  <Make_ChiYouFlameHalberd.jobString>制作蚩尤怒炎戟【一品】中</Make_ChiYouFlameHalberd.jobString>
+  
+  <!-- EN: make Nephrite jade hammer【Second-rate】 -->
+  <Make_CyanogenJadeHammer.label>制作青玉锤【二品】</Make_CyanogenJadeHammer.label>
+  <!-- EN: Make Nephrite jade hammer. -->
+  <Make_CyanogenJadeHammer.description>制作青玉锤【二品】。</Make_CyanogenJadeHammer.description>
+  <!-- EN: Making Nephrite jade hammer -->
+  <Make_CyanogenJadeHammer.jobString>制作青玉锤【二品】中</Make_CyanogenJadeHammer.jobString>
+  
+  <!-- EN: make Poison shuttle【Second-rate】 -->
+  <Make_DESword.label>制作毒心梭【二品】</Make_DESword.label>
+  <!-- EN: make Poison shuttle. -->
+  <Make_DESword.description>制作毒心梭【二品】。</Make_DESword.description>
+  <!-- EN: Making Poison shuttle -->
+  <Make_DESword.jobString>制作毒心梭【二品】中</Make_DESword.jobString>
+  
+  <!-- EN: make Dragon cannon【Second-rate】 -->
+  <Make_DragonCannon.label>制作龙头炮【二品】</Make_DragonCannon.label>
+  <!-- EN: make Dragon cannon. -->
+  <Make_DragonCannon.description>制作龙头炮【二品】。</Make_DragonCannon.description>
+  <!-- EN: Making Dragon cannon -->
+  <Make_DragonCannon.jobString>制作龙头炮【二品】中</Make_DragonCannon.jobString>
+  
+  <!-- EN: make Dragon pattern stick【First-rate】 -->
+  <Make_DragonPatternStick.label>制作盘龙通天棍【一品】</Make_DragonPatternStick.label>
+  <!-- EN: make Dragon pattern stick. -->
+  <Make_DragonPatternStick.description>制作盘龙通天棍【一品】。</Make_DragonPatternStick.description>
+  <!-- EN: Making Dragon pattern stick -->
+  <Make_DragonPatternStick.jobString>制作盘龙通天棍【一品】中</Make_DragonPatternStick.jobString>
+  
+  <!-- EN: make Fly grenade【Second-rate】 -->
+  <Make_Flygrenade.label>制作飞蝇雷【二品】</Make_Flygrenade.label>
+  <!-- EN: make Fly grenade. -->
+  <Make_Flygrenade.description>制作飞蝇雷【二品】。</Make_Flygrenade.description>
+  <!-- EN: Making Fly grenade -->
+  <Make_Flygrenade.jobString>制作飞蝇雷【二品】中</Make_Flygrenade.jobString>
+  
+  <!-- EN: make Ghost fire crossbow【Second-rate】 -->
+  <Make_GhostFireCrossbow.label>制作鬼火连弩【二品】</Make_GhostFireCrossbow.label>
+  <!-- EN: make Fly grenade. -->
+  <Make_GhostFireCrossbow.description>制作鬼火连弩【二品】。</Make_GhostFireCrossbow.description>
+  <!-- EN: Making Fly grenade -->
+  <Make_GhostFireCrossbow.jobString>制作鬼火连弩【二品】中</Make_GhostFireCrossbow.jobString>
+  
+  <!-- EN: make Glass pearl umbrella【First-rate】 -->
+  <Make_GlassPearlUmbrella.label>制作琉璃珍珠伞【一品】</Make_GlassPearlUmbrella.label>
+  <!-- EN: make Glass pearl umbrella. -->
+  <Make_GlassPearlUmbrella.description>制作琉璃珍珠伞【一品】。</Make_GlassPearlUmbrella.description>
+  <!-- EN: Making Glass pearl umbrella -->
+  <Make_GlassPearlUmbrella.jobString>制作琉璃珍珠伞【一品】中</Make_GlassPearlUmbrella.jobString>
+  
+  <!-- EN: make Iron throwing-ball【Second-rate】 -->
+  <Make_IronThrowingBall.label>制作铁乌鸡【二品】</Make_IronThrowingBall.label>
+  <!-- EN: make Fly grenade. -->
+  <Make_IronThrowingBall.description>制作铁乌鸡【二品】。</Make_IronThrowingBall.description>
+  <!-- EN: Making Fly grenade -->
+  <Make_IronThrowingBall.jobString>制作铁乌鸡【二品】中</Make_IronThrowingBall.jobString>
+  
+  <!-- EN: make Jumen axe【Second-rate】 -->
+  <Make_JumenAxe.label>制作巨门斧【二品】</Make_JumenAxe.label>
+  <!-- EN: make Jumen axe. -->
+  <Make_JumenAxe.description>制作巨门斧【二品】。</Make_JumenAxe.description>
+  <!-- EN: Making Jumen axe -->
+  <Make_JumenAxe.jobString>制作巨门斧【二品】中</Make_JumenAxe.jobString>
+  
+  <!-- EN: make PoJun sword【First-rate】 -->
+  <Make_PojunSword.label>制作破军剑【一品】</Make_PojunSword.label>
+  <!-- EN: make PoJun sword. -->
+  <Make_PojunSword.description>制作破军剑【一品】。</Make_PojunSword.description>
+  <!-- EN: Making PoJun sword -->
+  <Make_PojunSword.jobString>制作破军剑【一品】中</Make_PojunSword.jobString>
+  
+  <!-- EN: make Rat whisker sword【Second-rate】 -->
+  <Make_RatWhiskerSword.label>制作鼠须剑【二品】</Make_RatWhiskerSword.label>
+  <!-- EN: make Fly grenade. -->
+  <Make_RatWhiskerSword.description>制作鼠须剑【二品】。</Make_RatWhiskerSword.description>
+  <!-- EN: Making Fly grenade -->
+  <Make_RatWhiskerSword.jobString>制作鼠须剑【二品】中</Make_RatWhiskerSword.jobString>
+  
+  <!-- EN: make Slaying immortal sword【First-rate】 -->
+  <Make_SlayinglmmortalSword.label>制作斩仙剑【一品】</Make_SlayinglmmortalSword.label>
+  <!-- EN: make Slaying immortal sword. -->
+  <Make_SlayinglmmortalSword.description>制作斩仙剑【一品】。</Make_SlayinglmmortalSword.description>
+  <!-- EN: Making Slaying immortal sword -->
+  <Make_SlayinglmmortalSword.jobString>制作斩仙剑【一品】中</Make_SlayinglmmortalSword.jobString>
+  
+  <!-- EN: make Thunder lord lance【Second-rate】 -->
+  <Make_ThunderLordLance.label>制作雷王枪【二品】</Make_ThunderLordLance.label>
+  <!-- EN: make Thunder lord lance. -->
+  <Make_ThunderLordLance.description>制作雷王枪【二品】。</Make_ThunderLordLance.description>
+  <!-- EN: Making Thunder lord lance -->
+  <Make_ThunderLordLance.jobString>制作雷王枪【二品】中</Make_ThunderLordLance.jobString>
+  
+  <!-- EN: make Thunder minigun【First-rate】 -->
+  <Make_ThunderMinigun.label>制作雷霆连珠铳【一品】</Make_ThunderMinigun.label>
+  <!-- EN: make Thunder minigun. -->
+  <Make_ThunderMinigun.description>制作雷霆连珠铳【一品】。</Make_ThunderMinigun.description>
+  <!-- EN: Making Thunder minigun -->
+  <Make_ThunderMinigun.jobString>制作雷霆连珠铳【一品】中</Make_ThunderMinigun.jobString>
+  
+  <!-- EN: make White ape bow【First-rate】 -->
+  <Make_WhiteApeBow.label>制作霜华弓【一品】</Make_WhiteApeBow.label>
+  <!-- EN: make White ape bow. -->
+  <Make_WhiteApeBow.description>制作霜华弓【一品】。</Make_WhiteApeBow.description>
+  <!-- EN: Making White ape bow -->
+  <Make_WhiteApeBow.jobString>制作霜华弓【一品】中</Make_WhiteApeBow.jobString>
+  
+  <!-- EN: make Wind demon blade【Second-rate】 -->
+  <Make_WindDemonBlade.label>制作风魔刀【二品】</Make_WindDemonBlade.label>
+  <!-- EN: make Wind demon blade. -->
+  <Make_WindDemonBlade.description>制作风魔刀【二品】。</Make_WindDemonBlade.description>
+  <!-- EN: Making Wind demon blade -->
+  <Make_WindDemonBlade.jobString>制作风魔刀【二品】中</Make_WindDemonBlade.jobString>
+  
+</LanguageData>

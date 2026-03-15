@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: sword qi -->
+  <RI_Bullet_StarSwordQi.label>剑气</RI_Bullet_StarSwordQi.label>
+  
+  <!-- EN: Ancestral peachwood sword -->
+  <RI_MeleeWeapon_AncestralPeachwoodSword.label>祖传桃木剑</RI_MeleeWeapon_AncestralPeachwoodSword.label>
+  <!-- EN: A family heirloom peachwood sword, roughly crafted and looking almost like a casual carving. Yet the wood is fine and sturdy, bringing a sense of calm when held.\n\nIt is said that a wandering Taoist once cut a peach branch into this sword and gifted it to the ancestor.\n\n*There is a faint trace of mystery within this blade. Perhaps it holds another purpose, and should be kept with care. -->
+  <RI_MeleeWeapon_AncestralPeachwoodSword.description>一把家中祖传的桃木剑，做工粗糙，仿佛只是随手雕刻的玩意儿。但木制细腻坚固，握在手中，令人安心。\n\n据说，此剑为一名云游道人，取桃枝削成，赠予先祖。\n\n*此剑有一丝奇异奥妙，或许另有作用，应当好好保管。</RI_MeleeWeapon_AncestralPeachwoodSword.description>
+  <!-- EN: handle -->
+  <RI_MeleeWeapon_AncestralPeachwoodSword.tools.handle.label>握柄</RI_MeleeWeapon_AncestralPeachwoodSword.tools.handle.label>
+  <!-- EN: point -->
+  <RI_MeleeWeapon_AncestralPeachwoodSword.tools.point.label>剑尖</RI_MeleeWeapon_AncestralPeachwoodSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_MeleeWeapon_AncestralPeachwoodSword.tools.edge.label>剑刃</RI_MeleeWeapon_AncestralPeachwoodSword.tools.edge.label>
+  
+  <!-- EN: Copper coin sword -->
+  <RI_MeleeWeapon_CopperCoinSword.label>铜钱剑</RI_MeleeWeapon_CopperCoinSword.label>
+  <!-- EN: A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure. -->
+  <RI_MeleeWeapon_CopperCoinSword.description>铜钱制作的长剑，对邪祟之物能造成额外的伤害。\n\n铜钱剑不仅是一种兵器，也是镇宅辟邪的吉祥物。特别是由古铜钱制作的铜钱剑，更是锐不可挡。</RI_MeleeWeapon_CopperCoinSword.description>
+  <!-- EN: point -->
+  <RI_MeleeWeapon_CopperCoinSword.tools.point.label>剑尖</RI_MeleeWeapon_CopperCoinSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_MeleeWeapon_CopperCoinSword.tools.edge.label>剑刃</RI_MeleeWeapon_CopperCoinSword.tools.edge.label>
+  
+  <!-- EN: seven-star sword -->
+  <RI_MeleeWeapon_SevenStarSword.label>七星剑</RI_MeleeWeapon_SevenStarSword.label>
+  <!-- EN: 融合了道门技术打造的特殊单手剑。其内部储存的特殊符咒可以辅助挥出剑气。 -->
+  <RI_MeleeWeapon_SevenStarSword.description>TODO</RI_MeleeWeapon_SevenStarSword.description>
+  <!-- EN: handle -->
+  <RI_MeleeWeapon_SevenStarSword.tools.handle.label>TODO</RI_MeleeWeapon_SevenStarSword.tools.handle.label>
+  <!-- EN: point -->
+  <RI_MeleeWeapon_SevenStarSword.tools.point.label>TODO</RI_MeleeWeapon_SevenStarSword.tools.point.label>
+  <!-- EN: edge -->
+  <RI_MeleeWeapon_SevenStarSword.tools.edge.label>TODO</RI_MeleeWeapon_SevenStarSword.tools.edge.label>
+  <!-- EN: seven-star sword -->
+  <RI_MeleeWeapon_SevenStarSword.verbs.Verb_Shoot.label>TODO</RI_MeleeWeapon_SevenStarSword.verbs.Verb_Shoot.label>
+  
+</LanguageData>

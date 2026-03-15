@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--镔铁-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_DamascusIron</defName>
+		<label>Pattern steel</label>
+		<description>It is a kind of high-quality steel obtained by repeatedly forging compressed steel and adding other metals to it. The color of iron is snow-white, and the silk pattern is inserted into it. It is very beautiful and has very good elasticity and hardness, suitable for making weapons.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_DamascusIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>12</MarketValue>
+			<Mass>0.4</Mass>
+			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>RI_Category_Ore</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.25</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(175,199,219)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0.3</Flammability>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--乌刚玉-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_BlackCorundum</defName>
+		<label>Black corundum</label>
+		<description>Black corundum is a small amount of emerald-like stone excavated from the mountains. Its hardness is very high, and the appearance is also quite good, but it is relatively rare, so that its price continues to rise. This material is like a piece of inky ice, and it is said that some body-hugging jewelry made with it has a calming effect.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_BlackCorundum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+			<MarketValue>18</MarketValue>
+			<Mass>2.1</Mass>
+			<StuffPower_Armor_Sharp>1.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>2.3</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.6</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>RI_Category_Ore</li>
+		</thingCategories>
+		<deepCommonality>0.5</deepCommonality>
+		<deepCountPerPortion>15</deepCountPerPortion>
+		<deepLumpSizeRange>1~4</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+			<!--<stuffAdjective>Black corundum</stuffAdjective>-->
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.05</commonality>
+			<color>(56,53,51)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<WorkToMake>2.1</WorkToMake>
+				<WorkToBuild>2.1</WorkToBuild>
+				<Beauty>2.5</Beauty>
+				<Flammability>0</Flammability>
+				<MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--青砖-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_BlackBrick</defName>
+		<label>Black brick</label>
+		<description>Fired bricks, can be turned into black bricks by adjusting the oxygen and oxidation levels during the firing process.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_BlackBrick</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<Mass>3</Mass>
+			<!--<StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>-->
+		</statBases>
+
+		<thingCategories>
+			<li>StoneBlocks</li>
+		</thingCategories>
+
+		<deepCommonality>0</deepCommonality>
+		<deepCountPerPortion>0</deepCountPerPortion>
+		<deepLumpSizeRange>0</deepLumpSizeRange>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>
+
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<appearance>Bricks</appearance>
+			<commonality>0</commonality>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
+			<color>(72, 82, 92, 255)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<WorkToMake>1</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>
+				<Beauty>0.5</Beauty>
+				<Flammability>0</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>500</allowedArchonexusCount>
+
+		<!--装备，会导致报错，下次大更新提前说明再加上-->
+		<!--<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>brick</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>-->
+	</ThingDef>
+
+	<!--红砖-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RI_Resource_RedBrick</defName>
+		<label>Black brick</label>
+		<description>Fired bricks, a common building material.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RI_Resource_RedBrick</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<Mass>3</Mass>
+			<!--<StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>-->
+		</statBases>
+
+		<thingCategories>
+			<li>StoneBlocks</li>
+		</thingCategories>
+		<deepCommonality>0</deepCommonality>
+		<deepCountPerPortion>0</deepCountPerPortion>
+		<deepLumpSizeRange>0</deepLumpSizeRange>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>
+
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<appearance>Bricks</appearance>
+			<commonality>0</commonality>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
+			<color>(176, 103, 81, 255)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<WorkToMake>1</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>
+				<Beauty>0.5</Beauty>
+				<Flammability>0</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>500</allowedArchonexusCount>
+
+		<!--装备，会导致报错，下次大更新提前说明再加上-->
+		<!--<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>brick</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>-->
+	</ThingDef>
+
+</Defs>

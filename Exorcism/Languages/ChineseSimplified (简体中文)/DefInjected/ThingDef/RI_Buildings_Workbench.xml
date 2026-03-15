@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aberrant workbench -->
+  <RI_Building_AberrantWorkbench.label>邪术工作台</RI_Building_AberrantWorkbench.label>
+  <!-- EN: A grim stone platform cluttered with jars and vials, used to synthesize various aberrant materials and products. Etched across its surface are obscure runes, meant to shield the maker from the influence of curses. -->
+  <RI_Building_AberrantWorkbench.description>一个阴森的石质平台，上面堆满了罐子和小瓶，曾用于合成各种奇异的材料和产物。其表面刻有难以辨认的符文，旨在保护制造者免受诅咒的影响。</RI_Building_AberrantWorkbench.description>
+  
+  <!-- EN: Corpse forge -->
+  <RI_Building_CorpseForge.label>尸匠台</RI_Building_CorpseForge.label>
+  <!-- EN: . -->
+  <RI_Building_CorpseForge.description>制造尸体傀儡的工作台。</RI_Building_CorpseForge.description>
+  
+  <!-- EN: Exorcism instrument bench -->
+  <RI_Building_ExorcismInstrumentBench.label>法器锻台</RI_Building_ExorcismInstrumentBench.label>
+  <!-- EN: An altar laid out with tools for restraining aberrations, serving as a workstation for crafting ritual implements.\n\nAs the curse spread, the Dao sect also reached the Rimworlds. In this harsh land, they were forced to adapt—recruiting people from all faction of life, mercenaries, and even xenoforms to stand against the aberrations. Thus, Exorcism instruments have circulated to the most remote corners of the Rim. -->
+  <RI_Building_ExorcismInstrumentBench.description>一个摆放着用于克制邪祟工具的祭坛，这里也是制作法器的工作台。</RI_Building_ExorcismInstrumentBench.description>
+  
+</LanguageData>

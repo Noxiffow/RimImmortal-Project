@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 冥血需求 -->
+  <!-- <NeedDef>
+    <defName>RI_Zombie_DrinkBlood</defName>
+    <needClass>RimZombieGirl.Need_Zombie_DrinkBlood</needClass>
+    <label>blood thirst</label>
+    <description>#</description>
+    <showOnNeedList>true</showOnNeedList>
+    <minIntelligence>Humanlike</minIntelligence>
+    <baseLevel>0.32</baseLevel>
+    <seekerRisePerHour>0.12</seekerRisePerHour>
+    <seekerFallPerHour>0.08</seekerFallPerHour>
+    <listPriority>1000</listPriority>
+    <major>true</major>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+    <showForCaravanMembers>true</showForCaravanMembers>
+    <onlyIfCausedByGenes>true</onlyIfCausedByGenes>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef> -->
+
+  <!-- 镇压需求 -->
+  <NeedDef>
+    <defName>RI_Zombie_Suppress</defName>
+    <needClass>RimZombieGirl.Need_Zombie_Suppress</needClass>
+    <label>suppress</label>
+    <description>#</description>
+    <listPriority>800</listPriority>
+    <major>true</major>
+    <showOnNeedList>true</showOnNeedList>
+    <showForCaravanMembers>true</showForCaravanMembers>
+    <minIntelligence>Humanlike</minIntelligence> <!-- 添加此行，限制为 Humanlike 智能 -->
+    <!-- <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter> -->
+    <onlyIfCausedByGene>true</onlyIfCausedByGene>
+  </NeedDef>
+
+
+</Defs>

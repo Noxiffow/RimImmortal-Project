@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--乱葬岗 -->
+	<TileMutatorDef>
+		<defName>RI_MutatorMassGraveyard</defName>
+		<label>mass graveyard</label>
+		<description>A cursed land littered with countless shallow graves. Bones and tattered remainscover the ground, whispering of the restless dead. The air is heavy with dread,and those who linger may attract dark forces.</description>
+		<categories>
+			<li>Flat</li>
+		</categories>
+		<priority>8</priority>
+		<workerClass>RimZombieGirl.TileMutatorWorker_MassGraveyard</workerClass>
+		<genOrder>-150</genOrder>
+		<minHilliness>Flat</minHilliness>
+		<coastSidesRange>0~0</coastSidesRange>
+		<preventNaturalElevation>true</preventNaturalElevation>
+		<biomeWhitelist>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>BorealForest</li>
+		</biomeWhitelist>
+		<preventGenSteps></preventGenSteps>
+		<extraGenSteps>
+			<li>CursedGrave</li>
+		</extraGenSteps>
+	</TileMutatorDef>
+
+	<!-- 世界地标：乱葬岗 -->
+	<LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey">
+		<defName>MassGraveyard</defName>
+		<label>cursed mass graveyard</label>
+		<iconTexturePath>World/Landmarks/Ruins</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>5</commonality>
+		<nameMaker>NamerLandmark_Graveyard</nameMaker>
+		<category>flat</category>
+		<mutatorChances>
+			<RI_MutatorMassGraveyard Required="True" />
+			<FoggyMutator>0.2</FoggyMutator>
+			<WetClimate>0.1</WetClimate>
+			<Marshy>0.1</Marshy>
+			<Muddy>0.15</Muddy>
+			<InsectMegahive>0.05</InsectMegahive>
+			<WildPlants>0.05</WildPlants>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Lake>0.02</Lake>
+			<Wetland>0.03</Wetland>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	
+	<GenStepDef>
+		<defName>CursedGrave</defName>
+		<order>700</order>
+		<genStep Class="RimZombieGirl.GenStep_CursedGrave" />
+	</GenStepDef>
+	
+	<RulePackDef>
+		<defName>NamerLandmark_Graveyard</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!--墓地相关词汇 -->
+				<li>terrain_word(p=5)-&gt;graveyard</li>
+				<li>terrain_word(p=4)-&gt;cemetery</li>
+				<li>terrain_word(p=3)-&gt;necropolis</li>
+				<li>terrain_word(p=3)-&gt;burial ground</li>
+				<li>terrain_word(p=2)-&gt;tombfield</li>
+				<li>terrain_word(p=2)-&gt;sepulcher</li>
+				<li>terrain_word-&gt;catacomb</li>
+				<li>terrain_word-&gt;mausoleum</li>
+				<li>terrain_word-&gt;crypt</li>
+				<li>terrain_word-&gt;ossuary</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

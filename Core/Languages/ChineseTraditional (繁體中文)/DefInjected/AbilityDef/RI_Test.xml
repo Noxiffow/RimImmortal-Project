@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Resurrect -->
+  <RI_Ability_Resurrect.label>丹魄还魂</RI_Ability_Resurrect.label>
+  <!-- EN: <color=#28BD75>This technique is learned by the ElixirsStrengthen method in the Master Realm\n\n</color>Qi cost440\n\nA feat that only top-level alchemists could master, using Qi to perfectly replicate a freshly dead corpse, even the cells were completely reorganized to bring the dead back to life. -->
+  <RI_Ability_Resurrect.description>&lt;color=#28BD75>此功法为 炼药法门 大成境界 所学\n\n&lt;/color>灵气消耗：440\n\n只有顶级的炼药师才能掌握的功法，用灵气完美复制一具刚刚死去的尸体，就连细胞也完全重组，实现起死回生。</RI_Ability_Resurrect.description>
+  
+  <!-- EN: test -->
+  <test1.label>TODO</test1.label>
+  <!-- EN: #TODO -->
+  <test1.description>TODO</test1.description>
+  
+</LanguageData>

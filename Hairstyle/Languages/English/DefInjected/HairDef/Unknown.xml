@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chinese bun (handsome) -->
+  <RI_HairStyle_BunHandsome.label>Chinese bun (handsome)</RI_HairStyle_BunHandsome.label>
+  
+  <!-- EN: Chinese bun (normal) -->
+  <RI_HairStyle_BunNormal.label>Chinese bun (normal)</RI_HairStyle_BunNormal.label>
+  
+  <!-- EN: Chinese bun (hero) -->
+  <RI_HairStyle_BunOld.label>Chinese bun (hero)</RI_HairStyle_BunOld.label>
+  
+  <!-- EN: Chinese bun (romantic) -->
+  <RI_HairStyle_BunRomantic.label>Chinese bun (romantic)</RI_HairStyle_BunRomantic.label>
+  
+  <!-- EN: Chinese bun (split) -->
+  <RI_HairStyle_BunSplit.label>Chinese bun (split)</RI_HairStyle_BunSplit.label>
+  
+  <!-- EN: Chinese bun (young) -->
+  <RI_HairStyle_BunYoung.label>Chinese bun (young)</RI_HairStyle_BunYoung.label>
+  
+  <!-- EN: Chinese bun (old) -->
+  <RI_HairStyle_ChineseManBun_A.label>Chinese bun (old)</RI_HairStyle_ChineseManBun_A.label>
+  
+  <!-- EN: Chinese bun (hairpin) -->
+  <RI_HairStyle_ChineseManBun_B.label>Chinese bun (hairpin)</RI_HairStyle_ChineseManBun_B.label>
+  
+  <!-- EN: Ming rich female A -->
+  <RI_HairStyle_FemaleBun.label>Ming rich female A</RI_HairStyle_FemaleBun.label>
+  
+  <!-- EN: Chinese bun (lazy) -->
+  <RI_HairStyle_Lazy.label>Chinese bun (lazy)</RI_HairStyle_Lazy.label>
+  
+  <!-- EN: Young girl -->
+  <RI_HairStyle_LittleGirl.label>Young girl</RI_HairStyle_LittleGirl.label>
+  
+  <!-- EN: Mad man -->
+  <RI_HairStyle_MadMan.label>Mad man</RI_HairStyle_MadMan.label>
+  
+  <!-- EN: Ming female bun A -->
+  <RI_HairStyle_MingFemale.label>Ming female bun A</RI_HairStyle_MingFemale.label>
+  
+  <!-- EN: Ming female bun B -->
+  <RI_HairStyle_MingFemale_B.label>Ming female bun B</RI_HairStyle_MingFemale_B.label>
+  
+  <!-- EN: Ming female bun C -->
+  <RI_HairStyle_MingFemale_C.label>Ming female bun C</RI_HairStyle_MingFemale_C.label>
+  
+  <!-- EN: Old lady -->
+  <RI_HairStyle_OldLady.label>Old lady</RI_HairStyle_OldLady.label>
+  
+  <!-- EN: Chinese bun (hero) -->
+  <RI_HairStyle_YoungHero.label>Chinese bun (hero)</RI_HairStyle_YoungHero.label>
+  
+</LanguageData>

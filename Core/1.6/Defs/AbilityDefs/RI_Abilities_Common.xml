@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<isCommon>true</isCommon>-->
+	<!--通用功法要在comp里加这条-->
+	
+	<!--百里神行-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Farskip</defName>
+		<label>Long range flying</label>
+		<description>Qi cost: 250\n\n. Fly at super speed by consuming large amounts of Qi.</description>
+		<iconPath>UI/Abilities/Common/RI_Ability_Farskip</iconPath>
+		<hotKey>Misc12</hotKey>
+		<targetWorldCell>True</targetWorldCell>
+		<showGizmoOnWorldView>True</showGizmoOnWorldView>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<warmupTime>5</warmupTime>
+			<range>4.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_RI_AbilityFarskip">
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-250</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--白焰雷-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_BombBullet</defName>
+		<label>Luminous bomb</label>
+		<description>Qi cost: 30.\n\nCondense the Qi into an unstable balloon, pop it out, and cause a small explosion.</description>
+		<iconPath>UI/Abilities/Common/RI_Ability_BombBullet</iconPath>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<hotKey>Misc12</hotKey>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<statBases>
+		</statBases>
+		<verbProperties>
+			<warmupTime>1</warmupTime>
+			<range>25</range>
+			<targetParams>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>BombBullet</projectileDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_QiBullet_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-30</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>BombBullet</defName>
+		<label>Luminous bomb</label>
+		<thingClass>WhoXiuXian.RI_projectile_FlyFireBoom</thingClass>
+		<graphicData>
+			<texPath>Effects/InternalPellet/QiBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>RI_Cut</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--御风术-->
+	<AbilityDef>
+		<defName>RI_Ability_QuickJumpWithNosight</defName>
+		<label>Wind flying</label>
+		<description>Qi cost: 20.\n\nFly short distances by disturbing the air flow around you with Qi.</description>
+		<iconPath>UI/Abilities/Common/RI_Ability_QuickJumpWithNosight</iconPath>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>WhoXiuXian.RI_AbilityVerb_QuickJump</verbClass>
+			<label>Wind flying</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.1</warmupTime>
+			<range>18</range>
+			<requireLineOfSight>false</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				<!--选中特效-->
+				<moteCastDef>RI_Ability_QuickJump_Mote</moteCastDef>
+				<!--蹦出周天功法几个字-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
+				<!--触发特效-->
+				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-20</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+		<jobDef>CastJump</jobDef>
+	</AbilityDef>
+
+	<!--隐身术-->
+	<AbilityDef>
+		<defName>RI_Ability_Invisible</defName>
+		<label>Invisible</label>
+		<description>Qi cost: 110.\n\nInvisibility is achieved by using Qi to create a shield around the body that reflects light.</description>
+		<iconPath>UI/Abilities/Common/RI_Ability_Invisible</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<!-- 3 hours -->
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>60</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<warmupTime>1</warmupTime>
+			<range>19.9</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>PsychicInvisibility</hediffDef>
+				<psychic>True</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-110</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--三段斩-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_Slash</defName>
+		<label>Triple slash</label>
+		<description>Qi cost: 35.\n\nBy condensing the blade with Qi on both arms, it delivers three strokes in an instant, unpredictable.</description>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hotKey>Misc12</hotKey>
+		<aiCanUse>true</aiCanUse>
+		<iconPath>UI/Abilities/Common/RI_Ability_Slash</iconPath>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>80</cooldownTicksRange>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>0</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetAnimals>True</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilitySlash">
+				<damage>1</damage>
+			</li>
+			<!--<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
+				-->
+			<!--斩击特效-->
+			<!--
+				<moteCastDef>RI_Ability_VajraBoxing_Mote</moteCastDef>
+			</li>-->
+			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
+				<!--读条特效-->
+				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
+				<!--光圈-->
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-35</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--化丹境界——竭气聚石-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_CreateCrystal</defName>
+		<label>Crystal production</label>
+		<description>Overdraft all Qi to produce a large amount of spiritual crystals in one go.\n\nThis technique will cause damage to the meridians.</description>
+		<iconPath>UI/Abilities/Base/LS</iconPath>
+		<hotKey></hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>3</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>RI_Sound_EnergyPreparationB</sound>
+				<preCastTicks>5</preCastTicks>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties_AbilitySpawnUseEnergy">
+				<perEnergyCost>50</perEnergyCost>
+				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+				<maxCount>1000</maxCount>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>0</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!--凝气境界——灵光-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_LG</defName>
+		<label>Qi lantern</label>
+		<description>&lt;color=#82FFCD&gt;This skill is learned by those in the Enlightenment Realm\n\n&lt;/color&gt;Qi Cost: 15\n\nAfter a simple adjustment, Qi can emit a faint glow. Spirit Light, on the other hand, creates multiple lenses above the head to refract and amplify light. This is considered a more efficient design approach that many cultivators see as an introductory cultivation technique.</description>
+		<iconPath>UI/Abilities/Base/LG</iconPath>
+		<hotKey></hotKey>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0.3</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>RI_LG</hediffDef>
+				<psychic>True</psychic>
+				<replaceExisting>True</replaceExisting>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<!--消耗灵气-->
+				<rEnergy>-15</rEnergy>
+				<isCommon>true</isCommon>
+				<!--消耗灵气-->
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>RI_Things_LG</defName>
+		<label>Qi Lantern</label>
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<drawOffscreen>true</drawOffscreen>
+		<category>PsychicEmitter</category>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Effects/Normal/JustNULL</texPath>
+			<shaderType>MoteGlowDistorted</shaderType>
+			<color>(180, 225, 225)</color>
+			<drawSize>2</drawSize>
+			<shaderParameters>
+				<_DistortionTex>/Other/Ripples</_DistortionTex>
+				<_distortionIntensity>0.05</_distortionIntensity>
+				<_DistortionScale>0.4</_DistortionScale>
+				<_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+			</shaderParameters>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(180,225,225,0)</glowColor>
+			</li>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>4000</delayTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--化神境界——神魂识-->
+	<AbilityDef ParentName="RI_PsycastBase">
+		<defName>RI_Ability_SHS</defName>
+		<label>Spirit revelation</label>
+		<description>&lt;color=#82FFCD&gt;his skill is learned by those in the Innate Refine Soul Realm\n\n&lt;/color&gt;Qi Cost: 150\n\nPerception Injection cannot be said to be a technique, but rather an inherent ability of cultivators. When a cultivator has a flash of inspiration in their mind, they can consciously blend this inspiration into a special spiritual thought, and through hypnosis, send this spiritual thought into the subconscious of others, enabling them to connect complex memories in their minds and thereby gain some unique inspirations.</description>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<iconPath>UI/Abilities/Base/SHS</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hotKey></hotKey>
+		<targetRequired>True</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+			<Ability_Duration>100</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<warmupTime>15</warmupTime>
+			<range>0</range>
+			<targetParams>
+				<onlyTargetColonists>True</onlyTargetColonists>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveInspiration">
+				<canTargetBaby>False</canTargetBaby>
+			</li>
+			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
+				<rEnergy>-150</rEnergy>
+				<isCommon>true</isCommon>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bake clay -->
+  <RI_WorkGiver_BakeBrick.label>烧砖</RI_WorkGiver_BakeBrick.label>
+  <!-- EN: bake at -->
+  <RI_WorkGiver_BakeBrick.gerund>烧砖于</RI_WorkGiver_BakeBrick.gerund>
+  <!-- EN: bake -->
+  <RI_WorkGiver_BakeBrick.verb>正在烧砖</RI_WorkGiver_BakeBrick.verb>
+  
+  <!-- EN: digging -->
+  <RI_WorkGiver_Digging.label>挖掘</RI_WorkGiver_Digging.label>
+  <!-- EN: dig at -->
+  <RI_WorkGiver_Digging.gerund>挖掘于</RI_WorkGiver_Digging.gerund>
+  <!-- EN: dig -->
+  <RI_WorkGiver_Digging.verb>正在挖掘</RI_WorkGiver_Digging.verb>
+  
+  <!-- EN: input resource -->
+  <RI_WorkGiver_FillRiceCooker.label>装入原料</RI_WorkGiver_FillRiceCooker.label>
+  <!-- EN: input -->
+  <RI_WorkGiver_FillRiceCooker.gerund>装入原料于</RI_WorkGiver_FillRiceCooker.gerund>
+  <!-- EN: input resource -->
+  <RI_WorkGiver_FillRiceCooker.verb>正在装入原料</RI_WorkGiver_FillRiceCooker.verb>
+  
+  <!-- EN: heat press resource -->
+  <RI_WorkGiver_HeatPress.label>热压原料</RI_WorkGiver_HeatPress.label>
+  <!-- EN: heat pressing at -->
+  <RI_WorkGiver_HeatPress.gerund>热压原料于</RI_WorkGiver_HeatPress.gerund>
+  <!-- EN: heat press at -->
+  <RI_WorkGiver_HeatPress.verb>正在热压原料</RI_WorkGiver_HeatPress.verb>
+  
+  <!-- EN: Operate industrial drilling -->
+  <RI_WorkGiver_IndustrialDrill.label>操作工业钻机</RI_WorkGiver_IndustrialDrill.label>
+  <!-- EN: drilling -->
+  <RI_WorkGiver_IndustrialDrill.gerund>操作工业钻机</RI_WorkGiver_IndustrialDrill.gerund>
+  <!-- EN: drill -->
+  <RI_WorkGiver_IndustrialDrill.verb>正在操作工业钻机</RI_WorkGiver_IndustrialDrill.verb>
+  
+  <!-- EN: timber -->
+  <RI_WorkGiver_Timber.label>木材加工</RI_WorkGiver_Timber.label>
+  <!-- EN: process at -->
+  <RI_WorkGiver_Timber.gerund>木材加工于</RI_WorkGiver_Timber.gerund>
+  <!-- EN: process -->
+  <RI_WorkGiver_Timber.verb>正在木材加工</RI_WorkGiver_Timber.verb>
+  
+</LanguageData>

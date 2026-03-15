@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fly sword -->
+  <RI_Ability_PojunSword.label>破军飞剑</RI_Ability_PojunSword.label>
+  <!-- EN: The sword fly out and attack up to 8 enemies. -->
+  <RI_Ability_PojunSword.description>破军剑飞出，攻击最多8个敌人。</RI_Ability_PojunSword.description>
+  
+</LanguageData>

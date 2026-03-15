@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--荒冢位置-->
+    <SitePartDef>
+        <defName>RI_AbandonedGraveSitePart</defName>
+        <label>Ruin of necropolis</label>
+        <description>A deserted necropolis with strange energies emanating from the largest grave.</description>
+        <siteTexture>World/WorldObjects/Sites/RI_RuinsSite_Grave</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/RI_AbandonedGraveSitePart</expandingIconTexture>
+        <!-- <approachOrderString>Investigate {0}</approachOrderString> -->
+        <!-- <approachingReportString>Investigate {0}</approachingReportString> -->
+        <!-- <arrivedLetterDef>NeutralEvent</arrivedLetterDef> -->
+        <!-- <wantsThreatPoints>true</wantsThreatPoints> -->
+        <!-- <minMapSize>(200, 1, 200)</minMapSize> -->
+        <tags>
+            <li>RI_AbandonedGraveSitePart</li>
+        </tags>
+    </SitePartDef>
+	
+    <GenStepDef>
+        <defName>RI_AbandonedGraveSitePart</defName>
+        <linkWithSite>RI_AbandonedGraveSitePart</linkWithSite>
+        <order>310</order>
+        <genStep Class="WhoXiuXian.GenStep_RI_AbandonedGrave" />
+    </GenStepDef>
+	
+</Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<!-- EN: Can not study -->
+  <CannotStudy>无法研读书籍</CannotStudy>
+    <!-- EN: No plants in the radius -->
+  <RI_WarnNoPlantInRadius>半径内没有植物</RI_WarnNoPlantInRadius>
+
+    <!-- EN: Successfully obtained the gong route -->
+  <RI_Ability_StealingGongRoute_Success>成功的获取了法门</RI_Ability_StealingGongRoute_Success>
+    <!-- EN: Failed -->
+  <RI_Ability_StealingGongRoute_Fail>失败了</RI_Ability_StealingGongRoute_Fail>
+
+    <!-- EN: No energy root -->
+  <RI_Ability_StealingGongRoute_NoRoot>没有灵芽</RI_Ability_StealingGongRoute_NoRoot>
+</LanguageData>

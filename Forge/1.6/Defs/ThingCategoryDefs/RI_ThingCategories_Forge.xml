@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================================仙路-法宝====================================-->
+
+	<!--仙路-法宝-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Talisman</defName>
+		<label>RI-Talisman</label>
+		<parent>Items</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/RI_Category_Weapon</iconPath>
+	</ThingCategoryDef>
+
+	<!--====================================仙路-假体====================================-->
+
+	<!--仙路-假体-->
+	<ThingCategoryDef>
+		<defName>RI_Category_Prostheses</defName>
+		<label>RI-Prostheses</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+
+	<!--假体分类-->
+	<ThingCategoryDef>
+		<defName>RI_Category_JadeBodyPart</defName>
+		<label>Jade</label>
+		<parent>RI_Category_Prostheses</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RI_Category_BlackSteelBodyPart</defName>
+		<label>Black steel</label>
+		<parent>RI_Category_Prostheses</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>RI_Category_InsideBodyPart</defName>
+		<label>Internal organ</label>
+		<parent>RI_Category_Prostheses</parent>
+	</ThingCategoryDef>
+
+</Defs>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==========================【一品】湮尘忘魂丹========================== -->
+	<ThingDef ParentName="RI_BestDrug_Base">
+		<defName>RI_Drug_OblivionSoulPurgingElixir</defName>
+		<label>【First-rate】Oblivion soul-purging elixir</label>
+		<description>"The primordial celestial immortals spent countless years in arduous contemplation, creating the Nine Primal Initial Approach. However, as their strength waned, they transmuted the remnants of their surroundings into a pill to erase their own knowledge, thus naming it the Soul-Purging Elixir. ——Records of the Celestial Immortals\n\nThis is a most enigmatic and wondrous elixir, its formula personally passed down by the immortals and unchanged through millennia. Only those with unwavering resolve, truly willing to abandon the Initial Approach they have mastered, can experience its effects. Should doubt linger in their hearts, the pill will be powerless, and the Initial Approach shall remain.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Elixir/RI_Drug_OblivionSoulPurgingElixir</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0</Nutrition>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>500</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<preferability>NeverForNutrition</preferability>
+			<ingestCommandString>服用 {0}</ingestCommandString>
+			<ingestReportString>服用 {0} 中</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_DeleteIA</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>210</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+		</comps>
+		<recipeMaker>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--=================二品丹药——麒麟丸=================-->
+
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_QiLinRestorationPill</defName>
+		<label>【Second-rate】QiLin restoration pill</label>
+		<description>Second-rate Elixir，The QiLin restoration pill is a pale green pill with a subtle bamboo fragrance. It is refined from the most healing ingredients, capable of healing skin scars and mildly enhancing the body's natural healing abilities.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Drug_QiLinRestorationPill</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>140</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_QiLinRestorationPill</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<!--浓缩灵液-->
+	<ThingDef ParentName="RI_BasicDrug_Base">
+		<defName>RI_Drug_CondensedSpiritualLiquid</defName>
+		<label>【Second-rate】Condensed spiritual liquid</label>
+		<description>Second-rate liquid, taste like water, can recover some Qi.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Drug_CondensedSpiritualLiquid</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>240</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Drug_CondensedSpiritualLiquidHediff</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+
+</Defs>

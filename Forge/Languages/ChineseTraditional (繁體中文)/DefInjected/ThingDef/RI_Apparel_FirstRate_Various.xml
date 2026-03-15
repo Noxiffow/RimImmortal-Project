@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fire dragon armor【First-rate】 -->
+  <RI_Apparel_FireDragonArmor.label>烛龙飞鳞甲【一品】</RI_Apparel_FireDragonArmor.label>
+  <!-- EN: Beyond the Northwestern Sea, north of the Red Water, lies Zhangwei Mountain. There is a god with a human face and a snake's body, red in color, with straight eyes that face forward. When it blinks, it becomes dark, and when it opens its eyes, it becomes bright. It does not eat, sleep, or rest, and it serves as a messenger of wind and rain. It is called Zhuozhiyin, or the Zhu dragon.\n\nThis is a powerful armor inspired by ancient cultivators' heritages and forged using ancient myths. The armor's defense capabilities have reached an incredible level thanks to the built-in magical components that allow some attacks to be absorbed by the armor. -->
+  <RI_Apparel_FireDragonArmor.description>西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是烛龙。\n\n这是一种从古代修炼者的遗产中得到灵感，结合上古神话所锻造而成的强大盔甲。这种盔甲的防护能力已经达到了不可思议的程度，这要归功于内置的法宝构件，令部分攻击可以被盔甲吸收。</RI_Apparel_FireDragonArmor.description>
+  
+  <!-- EN: Viper poison armor【First-rate】 -->
+  <RI_Apparel_PoisonPythonArmor.label>相柳白峭甲【一品】</RI_Apparel_PoisonPythonArmor.label>
+  <!-- EN: Beyond the Northwestern Sea, north of the Red Water, lies Zhangwei Mountain. There is a god with a human face and a snake's body, red in color, with straight eyes that face forward. When it blinks, it becomes dark, and when it opens its eyes, it becomes bright. It does not eat, sleep, or rest, and it serves as a messenger of wind and rain. It is called Zhuozhiyin, or the Zhu dragon.\n\nThis is a powerful armor inspired by ancient cultivators' heritages and forged using ancient myths. The armor's defense capabilities have reached an incredible level thanks to the built-in magical components that allow some attacks to be absorbed by the armor. -->
+  <RI_Apparel_PoisonPythonArmor.description>共工之臣曰相柳氏，九首，以食于九山。相柳之所抵，厥为泽溪。禹杀相柳，其血腥，不可以树五谷种。\n\n这是一种从古代修炼者的遗产中得到灵感，结合上古神话所锻造而成的强大盔甲。这种盔甲的防护能力一般，但是十分轻盈，不会影响行动。</RI_Apparel_PoisonPythonArmor.description>
+  
+</LanguageData>

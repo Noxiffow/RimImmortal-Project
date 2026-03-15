@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Life fire -->
+  <RI_He_Fire_BurningSoul.label>心炎</RI_He_Fire_BurningSoul.label>
+  <!-- EN: Unique Fire technique, upon activation, enhances one's abilities and grants six layers of Life Fire.\n\nSubsequent Fire skills will consume Life Fire as fuel. -->
+  <RI_He_Fire_BurningSoul.description>火行秘法，使用后可以增强自身能力，同时提供6层心炎，使用火行功法将会消耗心炎。</RI_He_Fire_BurningSoul.description>
+  <!-- EN: One fire -->
+  <RI_He_Fire_BurningSoul.stages.One_fire.label>一层</RI_He_Fire_BurningSoul.stages.One_fire.label>
+  <!-- EN: Two fire -->
+  <RI_He_Fire_BurningSoul.stages.Two_fire.label>二层</RI_He_Fire_BurningSoul.stages.Two_fire.label>
+  <!-- EN: Three fire -->
+  <RI_He_Fire_BurningSoul.stages.Three_fire.label>三层</RI_He_Fire_BurningSoul.stages.Three_fire.label>
+  <!-- EN: Four fire -->
+  <RI_He_Fire_BurningSoul.stages.Four_fire.label>四层</RI_He_Fire_BurningSoul.stages.Four_fire.label>
+  <!-- EN: Five fire -->
+  <RI_He_Fire_BurningSoul.stages.Five_fire.label>五层</RI_He_Fire_BurningSoul.stages.Five_fire.label>
+  <!-- EN: Six fire -->
+  <RI_He_Fire_BurningSoul.stages.Six_fire.label>六层</RI_He_Fire_BurningSoul.stages.Six_fire.label>
+  
+  <!-- EN: Qianyang flame field -->
+  <RI_He_Fire_Ring_Self.label>乾阳焱火</RI_He_Fire_Ring_Self.label>
+  <!-- EN: The Qianyang Blazing Flame scorches Kunlun's crest, refining souls and burning all eight realms.\nThe Primal One Fire devours sun and moon, while the Samadhi Divine Flame melts gold and steel. -->
+  <RI_He_Fire_Ring_Self.description>乾阳焱火燎八方，炼魄焚魂灭心狂。\n先天一焏吞日月，三昧真火熔金钢。</RI_He_Fire_Ring_Self.description>
+  
+  <!-- EN: Soul burning -->
+  <RI_He_Fire_Ring_Target.label>焚魂</RI_He_Fire_Ring_Target.label>
+  <!-- EN: Scorched by one's own Life Fire. -->
+  <RI_He_Fire_Ring_Target.description>受到自身的心火焚烧。</RI_He_Fire_Ring_Target.description>
+  
+  <!-- EN: Majestic flame -->
+  <RI_He_Fire_Shield.label>炎威</RI_He_Fire_Shield.label>
+  <!-- EN: Ignite Life Fire to awaken one's combat prowess, while forging a protective flame barrier upon the body. -->
+  <RI_He_Fire_Shield.description>以命火激发自身战斗力，同时在体表形成一层火焰防护。</RI_He_Fire_Shield.description>
+  
+  <!-- EN: Fire cultivation -->
+  <RI_He_FireCultivationHediff.label>离火</RI_He_FireCultivationHediff.label>
+  <!-- EN: Fire element cultivation technique, refining the five senses to heightened clarity. -->
+  <RI_He_FireCultivationHediff.description>火行修炼功法，可以增强人的五感。</RI_He_FireCultivationHediff.description>
+  
+</LanguageData>

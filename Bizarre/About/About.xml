@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>nz.RimImmortal.bizarre</packageId>
+	<name>边缘仙路-道诡异仙 RimImmortal-Bizarre</name>
+	<author>nightz</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>RI.RimImmortal.Core</packageId>
+			<displayName>边缘仙路-羽化登仙 RimImmortal-Core</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3296476341</steamWorkshopUrl>
+			<downloadUrl></downloadUrl>
+		</li>		
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>RI.RimImmortal.Core</li>
+	</loadAfter>
+
+	<incompatibleWith>
+		<!-- <li>username.modname</li> -->
+	</incompatibleWith>
+
+	<description>边缘仙路 道诡异仙 扩展</description>
+</ModMetaData>

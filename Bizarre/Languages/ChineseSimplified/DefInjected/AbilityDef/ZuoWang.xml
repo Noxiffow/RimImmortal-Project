@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <NzRI_Zw_GracefulWords.label>花言巧语</NzRI_Zw_GracefulWords.label>
+    <NzRI_Zw_GracefulWords.description>巧妙的恭维，让人心生好感，成功会生成少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_GracefulWords.description>
+
+    <NzRI_Zw_Counterfeit.label>混珠诳取</NzRI_Zw_Counterfeit.label>
+    <NzRI_Zw_Counterfeit.description>消耗少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;，幻化成目标梦寐以求的宝物，目标会使用自己的物品来交换，成功会产出少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_Counterfeit.description>
+
+    <NzRI_Zw_Scapegoat.label>李代桃僵</NzRI_Zw_Scapegoat.label>
+    <NzRI_Zw_Scapegoat.description>消耗少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;，将一个人身上的负面效果转移到另一个人身上，成功会产出少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_Scapegoat.description>
+
+    <NzRI_Zw_JoinUs.label>迷阵布施</NzRI_Zw_JoinUs.label>
+    <NzRI_Zw_JoinUs.description>消耗些许 &lt;color=#28BD75&gt;非罡&lt;/color&gt;，让目标产生虚假记忆，对方可能会因此加入你，成功会产出少量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_JoinUs.description>
+
+    <NzRI_Zw_FictionReality.label>化虚为实</NzRI_Zw_FictionReality.label>
+    <NzRI_Zw_FictionReality.description>消耗大量 &lt;color=#FFD700&gt;先天一气&lt;/color&gt;，将想象中的物品变为现实，但是这个法术并不稳定，不一定会产生什么物品，成功会产出大量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_FictionReality.description>
+
+    <NzRI_Zw_ReflectionInMirror.label>镜中之象</NzRI_Zw_ReflectionInMirror.label>
+    <NzRI_Zw_ReflectionInMirror.description>消耗大量 &lt;color=#FFD700&gt;先天一气&lt;/color&gt;，从虚幻与现实的镜子中取出目标的影子，由于镜子只映照出一半，所以目标会有残缺，会产出大量 &lt;color=#28BD75&gt;非罡&lt;/color&gt;。</NzRI_Zw_ReflectionInMirror.description>
+
+    <NzRI_Zw_InvokeDeity.label>罔天宝诰</NzRI_Zw_InvokeDeity.label>
+    <NzRI_Zw_InvokeDeity.description>消耗大量  &lt;color=#28BD75&gt;非罡&lt;/color&gt;，将司命“斗姥”暂时拉入凡间，你的敌人会因为目睹到司命，陷入到心想事成的幻觉之中，而身体由于失去控制倒地。</NzRI_Zw_InvokeDeity.description>
+
+    <NzRI_Zw_Therapy.label>灵丹妙药</NzRI_Zw_Therapy.label>
+    <NzRI_Zw_Therapy.description>消耗大量 &lt;color=#FFD700&gt;先天一气&lt;/color&gt;，短暂创造出一枚不存于世的活死人肉白骨、几乎治疗一切病痛的丹药，并喂目标服下。</NzRI_Zw_Therapy.description>
+</LanguageData>

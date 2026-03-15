@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--仙路文化风格——无界之象-->
+
+	<StyleCategoryDef>
+		<defName>RI_Style_NeoCultivation</defName>
+		<label>Neo-Cultivation</label>
+		<iconPath>UI/StyleCategories/RI_Style_NeoCultivation</iconPath>
+		<soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
+		<ritualVisualEffectDef>Techist</ritualVisualEffectDef>
+		<thingDefStyles>
+			<!--武器类-->
+			<!--钉头锤-->
+			<li>
+				<thingDef>MeleeWeapon_Mace</thingDef>
+				<styleDef>RI_ImmortalStyle_Mace</styleDef>
+			</li>
+			<!--短剑-->
+			<li>
+				<thingDef>MeleeWeapon_Gladius</thingDef>
+				<styleDef>RI_ImmortalStyle_Gladius</styleDef>
+			</li>
+			<!--短矛-->
+			<li>
+				<thingDef>MeleeWeapon_Ikwa</thingDef>
+				<styleDef>RI_ImmortalStyle_Ikwa</styleDef>
+			</li>
+			<!--匕首-->
+			<li>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<styleDef>RI_ImmortalStyle_Knife</styleDef>
+			</li>
+			<!--破墙斧-->
+			<li>
+				<thingDef>MeleeWeapon_BreachAxe</thingDef>
+				<styleDef>RI_ImmortalStyle_BreachAxe</styleDef>
+			</li>
+			<!--长剑-->
+			<li>
+				<thingDef>MeleeWeapon_LongSword</thingDef>
+				<styleDef>RI_ImmortalStyle_LongSword</styleDef>
+			</li>
+			<!--长矛-->
+			<li>
+				<thingDef>MeleeWeapon_Spear</thingDef>
+				<styleDef>RI_ImmortalStyle_Spear</styleDef>
+			</li>
+
+			<!--家具类-->
+			<!--祭坛1x1-->
+			<li>
+				<thingDef>Altar_Small</thingDef>
+				<styleDef>RI_NeoCultivation_AltarSmall</styleDef>
+			</li>
+			<!--祭坛2x3-->
+			<li>
+				<thingDef>Altar_Large</thingDef>
+				<styleDef>RI_NeoCultivation_AltarLarge</styleDef>
+			</li>
+			<!--祭坛3x3-->
+			<li>
+				<thingDef>Altar_Grand</thingDef>
+				<styleDef>RI_NeoCultivation_AltarGrand</styleDef>
+			</li>
+			<!--立柱-->
+			<li>
+				<thingDef>Column</thingDef>
+				<styleDef>RI_NeoCultivation_Column</styleDef>
+			</li>
+			<!--落地灯-->
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>RI_NeoCultivation_StandingLamp</styleDef>
+			</li>
+			<!--火炬-->
+			<li>
+				<thingDef>TorchLamp</thingDef>
+				<styleDef>RI_NeoCultivation_TorchLamp</styleDef>
+			</li>
+			<!--凳子-->
+			<li>
+				<thingDef>Stool</thingDef>
+				<styleDef>RI_NeoCultivation_Stool</styleDef>
+			</li>
+			<!--餐椅-->
+			<li>
+				<thingDef>DiningChair</thingDef>
+				<styleDef>RI_NeoCultivation_DiningChair</styleDef>
+			</li>
+			<!--桌子1x2-->
+			<li>
+				<thingDef>Table1x2c</thingDef>
+				<styleDef>RI_NeoCultivation_Table1x2c</styleDef>
+			</li>
+			<!--桌子2x2-->
+			<li>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>RI_NeoCultivation_Table2x2c</styleDef>
+			</li>
+			<!--桌子3x3-->
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>RI_NeoCultivation_Table3x3c</styleDef>
+			</li>
+			<!--桌子2x4-->
+			<li>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>RI_NeoCultivation_Table2x4c</styleDef>
+			</li>
+			<!--讲台-->
+			<li>
+				<thingDef>Lectern</thingDef>
+				<styleDef>RI_NeoCultivation_Lectern</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+
+	<!--后续继续添加家具，还能增加地毯一类的group-->
+
+</Defs>

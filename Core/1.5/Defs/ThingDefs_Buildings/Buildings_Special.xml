@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--登仙台-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_AscensionPlatform</defName>
+		<label>Ascension platform</label>
+		<description>Step onto the Ascension Platform, open the Path to Dao, and ascend to immortality.</description>
+		<thingClass>ImmortalBuilding.Building_Immortal</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/RI_Building_AscensionPlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(7,7)</drawSize>
+			<shadowData>
+				<volume>(4.8, 1, 3.6)</volume>
+				<offset>(0,0,-0.66)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(5,5)</size>
+
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<designationCategory>RI_RimImmortals_Group</designationCategory>
+		<!--不能造在室内-->
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<rotatable>false</rotatable>
+		<building>
+			<soundAmbient>ArchonexusCore_Ambience</soundAmbient>
+			<deconstructible>true</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<!--<li Class="CompProperties_MoteEmitter">
+				<mote>Mote_PsychicConditionCauserEffect</mote>
+				<emissionInterval>150</emissionInterval>
+				<soundOnEmission>Archonexus_Throb</soundOnEmission>
+			</li>-->
+			<li Class="ImmortalBuilding.CompProperties_AscensionBeam">
+				<width>1</width>
+				<color>(126, 247, 199, 202)</color>
+				<sound>OrbitalBeam</sound>
+			</li>
+			<li Class="ImmortalBuilding.CompProperties_CooldownTimer">
+				<cooldownTicks>6000</cooldownTicks>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(165,249,215)</glowColor>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="ImmortalBuilding.Building_Immortal_ModExtension">
+				<Sec>800</Sec>
+				<timeLeft>6000</timeLeft>
+				<!--开启飞升需要的hediff-->
+				<AscensionHediff>RI_ascension</AscensionHediff>
+				<!--飞升遗蜕-->
+				<DropThing>RI_Resource_ImmortalExuviae</DropThing>
+				<TicksBetweenStrikes>100</TicksBetweenStrikes>
+				<EnemyPawns>
+					<RI_Pawn_Outlaw>3</RI_Pawn_Outlaw>
+					<RI_Pawn_ShooterBendit>3</RI_Pawn_ShooterBendit>
+					<RI_Pawn_HeavyArmoredCriminal>1</RI_Pawn_HeavyArmoredCriminal>
+					<RI_Pawn_WickedCultivator>1</RI_Pawn_WickedCultivator>
+					<RI_Pawn_SinisterCultivator>1</RI_Pawn_SinisterCultivator>
+					<RI_Pawn_EvilCultivator>1</RI_Pawn_EvilCultivator>
+					<RI_Pawn_SwordMadMan>1</RI_Pawn_SwordMadMan>
+					<RI_Pawn_EvilBlade>1</RI_Pawn_EvilBlade>
+				</EnemyPawns>
+			</li>
+		</modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<drawerType>RealtimeOnly</drawerType>
+		<researchPrerequisites>
+			<li>RI_InitialApproach</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<JobDef>
+		<defName>ActivateImmortalBuilding</defName>
+		<driverClass>ImmortalBuilding.JobDriver_ActivateImmortalBuilding</driverClass>
+		<reportString>ascension at</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+
+	<!--歹修遁光-->
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>DropImmortalIncoming</defName>
+		<label>Light dash</label>
+		<thingClass>DropPodIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Special/DropImmortalIncoming</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<!--<shaderType>CutoutFlying</shaderType>-->
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+			<shadowSize>0</shadowSize>
+			<anticipationSound>DropPod_Fall</anticipationSound>
+			<anticipationSoundTicks>0</anticipationSoundTicks>
+			<impactSound>DropPod_Impact</impactSound>
+			<motesPerCell>0</motesPerCell>
+			<angleCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(1,0)</li>
+				</points>
+			</angleCurve>
+			<ticksToImpactRange>100</ticksToImpactRange>
+			<explosionRadius>5.3</explosionRadius>
+			<speed>5</speed>
+		</skyfaller>
+	</ThingDef>
+
+	<!--另一种歹修遁光？-->
+	<ThingDef ParentName="ActiveDropPod">
+		<defName>ActiveImmortalDropPod</defName>
+		<label>Light dash</label>
+		<category>Item</category>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>ImmortalBuilding.InstantPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<soundOpen>DropPod_Open</soundOpen>
+		<graphicData>
+			<texPath>Things/Special/DropImmortalIncoming</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2</drawSize>
+			<shaderType>MoteGlow</shaderType>
+			<shadowData>
+				<volume>(0.8, 0.6, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+	<GameConditionDef>
+		<defName>RI_DaoThunderStorm</defName>
+		<conditionClass>ImmortalBuilding.GameCondition_DaoThunderStorm</conditionClass>
+		<label>Ascension War</label>
+		<description>A cultivator who had reached the perfection of the Earth Immortal realm began their ascension. A massive influx of spiritual energy descended from the sky, sweeping across the land and stirring the clouds, causing countless bolts of lightning to strike down from above.\n\nSuch a celestial phenomenon attracted countless cultivators, who would stop at nothing to interrupt the ascension process.</description>
+		<endMessage>Ascension War is over</endMessage>
+		<letterText>The heavens and earth were torn apart, thunder rumbled, and a storm was imminent.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<preventRain>true</preventRain>
+		<canBePermanent>true</canBePermanent>
+		<jumpToSourceKey>ClickToJumpToFlashstorm</jumpToSourceKey>
+	</GameConditionDef>
+
+</Defs>

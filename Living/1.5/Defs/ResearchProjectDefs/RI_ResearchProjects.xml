@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef Name="RI_Research_Living_Base" Abstract="True">
+		<tab>RI_ResearchTab</tab>
+	</ResearchProjectDef>
+
+	<!--=============================== 部落到中世纪的科技 ===================================-->
+
+	<!--天工开物-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_BasicTechnology</defName>
+		<label>Works of Nature</label>
+		<description>Welcome to the era of slash-and-burn.\n\nUnlock the most basic technologies, such as tea making, cooking, etc.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.6</researchViewY>
+	</ResearchProjectDef>
+
+	<!--食为天-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Research_FoodRecipe</defName>
+		<label>Food recipe</label>
+		<description>Food is the Paramount necessity of the people.\n\nUnlock a series of basic traditional recipes.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>6.3</researchViewY>
+	</ResearchProjectDef>
+
+	<!--纺织-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Weaving</defName>
+		<label>Weaving</label>
+		<description>Sericulture, weaving, these brocade silk decorated people's lives, also brought wealth.\n\nUnlock textile technology, make silk, etc.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.9</researchViewY>
+	</ResearchProjectDef>
+
+	<!--布衣裁缝-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Research_MakingCloth</defName>
+		<label>Cloth tailoring</label>
+		<description>Weave and cut clothes.\n\nunlock a series of basic traditional costumes.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_Weaving</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--王朝锦衣-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Research_MakingDynastyCloth</defName>
+		<label>Dynasty cloth</label>
+		<description>People can distinguish high from low at a glance by how they dress.\n\nUnlock dynasty style clothing and related technology.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4.9</researchViewY>
+		<prerequisites>
+			<li>RI_Research_MakingCloth</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--做木工-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_CarpentryAndCrafting</defName>
+		<label>Crafting</label>
+		<description>"A hundred works are the works of saints."\n\nHundred works refers to a series of technical artisans including carpentry, painter, stone, and metalworking. The wise man created the instrument, the scholar wrote it down, the craftsman restored it, and this can be called "craft."\n\nUnlock a series of manual facilities, as well as the crafts associated with them, you need to study and complete the "rock cutting" first.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<prerequisites>
+			<li>RI_BasicTechnology</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--种植-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Planting</defName>
+		<label>Planting</label>
+		<description>Learn farming skills from the ancient ancestors to unlock various crops.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<prerequisites>
+			<li>RI_BasicTechnology</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--酿酒-->
+	<!--从粮食的天然发酵中获得灵感，学会制作酒曲和发酵液，用来酿造酒。-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Research_Brewing</defName>
+		<label>Brewing</label>
+		<description>Take inspiration from the natural fermentation of food and learn to make wine yeast and fermentation broth to make wine.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<prerequisites>
+			<li>Brewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--============================中世纪============================-->
+
+	<!--奇花异木-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_HighLevelPlanting</defName>
+		<label>Magical plants</label>
+		<description>Exotic plants brought by the cultivators, and the cultivation of these crops may have been of great help to the colony.\n\nNeed to study and complete the "tree planting" first.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<prerequisites>
+			<li>RI_Planting</li>
+			<li>TreeSowing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--锻钢-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Smithing</defName>
+		<label>Steel forging</label>
+		<description>Refined into steel, unlock better forging technology. Steel can be made into high-quality iron, and metal crafts can also be made. \n\nNeed to study the completion of the "Smithing".</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<prerequisites>
+			<li>RI_CarpentryAndCrafting</li>
+			<li>Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--珍馐烹调-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Research_BetterFood</defName>
+		<label>Gourmet cooking</label>
+		<description>With the improvement of forged steel technology, the frying pan has entered thousands of households and promoted the development of cooking technology.\n\nUnlocks delicacies and festive foods with more complex crafting techniques.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>6.3</researchViewY>
+		<prerequisites>
+			<li>RI_Smithing</li>
+			<li>RI_Research_FoodRecipe</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!--============================电力时代============================-->
+
+	<!--电力学-->
+	<ResearchProjectDef ParentName="RI_Research_Living_Base">
+		<defName>RI_Electric</defName>
+		<label>Electrical Technology</label>
+		<description>With the advent of the electrical age, electricity and steam engines became one of the most important industries. Unlock a range of power generation and electrical facilities.\n\nNeed to complete the study of "Electricity" first.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>11</researchViewX>
+		<researchViewY>5.6</researchViewY>
+		<prerequisites>
+			<li>RI_Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

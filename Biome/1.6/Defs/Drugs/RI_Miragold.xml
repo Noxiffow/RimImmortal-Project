@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--弭金砂-->
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>RI_Drug_Miragold</defName>
+		<label>miragold</label>
+		<description>Miragold is a paste-like narcotic refined from a blend of cannabis and the medicinal properties of the Illusory Golden Lotus, consumed by igniting it in a pipe. It rapidly relieves pain, induces intense euphoria, and can slightly increase cultivation efficiency, but it is extremely addictive.\n\nIt's highly dangerous, Miragold ensnares even cultivators with ease. Through traffickers and complicit intermediaries, it is repackaged as a gold-inlaid luxury item. While strictly banned in most regions, it remains popular in borderlands where law enforcement is weak.</description>
+		<possessionCount>3</possessionCount>
+		<descriptionHyperlinks>
+			<HediffDef>RI_Hediff_MiragoldHigh</HediffDef>
+			<HediffDef>RI_Hediff_MiragoldTolerance</HediffDef>
+			<HediffDef>RI_Hediff_MiragoldAddiction</HediffDef>
+			<HediffDef>Carcinoma</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/RI_Drugs_Miragold</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>700</WorkToMake>
+			<MarketValue>35</MarketValue>
+			<Mass>0.08</Mass>
+			<DeteriorationRate>3</DeteriorationRate>
+			<Flammability>1</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>1.0</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_MiragoldHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>RI_Chemical_Miragold</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RI_Hediff_MiragoldTolerance</hediffDef>
+					<toleranceChemical>RI_Chemical_Miragold</toleranceChemical>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<!--研究-->
+			<researchPrerequisite>RI_ElysiumDrugs</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+				<li>RI_Building_ElixirsWorkbench</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<displayPriority>1800</displayPriority>
+		</recipeMaker>
+		<costList>
+			<SmokeleafLeaves>2</SmokeleafLeaves>
+			<RI_Resource_PhantomGoldLotus>2</RI_Resource_PhantomGoldLotus>
+			<RI_Resource_GoldSand>1</RI_Resource_GoldSand>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>RI_Chemical_Miragold</chemical>
+				<addictiveness>0.020</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<!--弭金砂效果hediff-->
+	<HediffDef>
+		<defName>RI_Hediff_MiragoldHigh</defName>
+		<label>miragold effect</label>
+		<labelNoun>a miragold high</labelNoun>
+		<description>The active properties of Miragold enter the bloodstream and nervous system, producing powerful analgesic and euphoric effects, often accompanied by drowsiness and increased hunger.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactorOffset>1</hungerRateFactorOffset>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<GI_EnergyGainEff>0.1</GI_EnergyGainEff>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--飘飘欲仙-->
+	<ThoughtDef>
+		<defName>RI_Thought_MiragoldHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_MiragoldHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>walk upon air</label>
+				<description>Huh... Ha... I feel like I've become an immortal... The tips of the toes began to lift off the ground...</description>
+				<baseMoodEffect>37</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- Smokeleaf addiction -->
+
+	<!--弭金砂化学-->
+	<ChemicalDef>
+		<defName>RI_Chemical_Miragold</defName>
+		<label>Miragold</label>
+		<addictionHediff>RI_Hediff_MiragoldAddiction</addictionHediff>
+		<toleranceHediff>RI_Hediff_MiragoldTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.9</onGeneratedAddictedToleranceChance>
+		<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+		<geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>RI_ChemicalNeed_Miragold</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Miragold</label>
+		<description>Because of a miragold dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>25</listPriority>
+	</NeedDef>
+
+	<!--弭金砂耐受-->
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>RI_Hediff_MiragoldTolerance</defName>
+		<label>miragold tolerance</label>
+		<description>Tolerance to Miragold gradually develops. The more severe the tolerance becomes, the greater the amount of the addictive substance required to achieve the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>RI_Chemical_Miragold</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.36, 99999)</li>
+						<li>(0.4, 180)</li>
+						<li>(1, 135)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+	<!--弭金砂依赖hediff-->
+	<HediffDef ParentName="AddictionBase">
+		<defName>RI_Hediff_MiragoldAddiction</defName>
+		<label>miragold dependence</label>
+		<description>Long-term inhalation of miragold forces the brain to adapt to its sedative effects, making it difficult for the body to function normally without the drug. When regular intake is interrupted, users experience clear withdrawal symptoms, such as mental disarray and muscle pain.\nHowever, with prolonged and complete abstinence from Miragold, the body is compelled to readapt and gradually return to a normal state, allowing the addiction to be overcome.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<chemicalNeed>RI_ChemicalNeed_Miragold</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--弭金砂戒断心情-->
+	<ThoughtDef>
+		<defName>RI_Thought_MiragoldWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RI_Hediff_MiragoldAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>miragold withdrawal</label>
+				<description>Just one more hit... I’m begging you...</description>
+				<baseMoodEffect>-45</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

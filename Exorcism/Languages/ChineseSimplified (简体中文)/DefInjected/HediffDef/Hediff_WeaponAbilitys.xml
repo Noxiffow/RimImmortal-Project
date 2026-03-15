@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 八卦旗 -->
+  <RI_ZombieHediff_DetainGhostFlag.label>八卦旗</RI_ZombieHediff_DetainGhostFlag.label>
+  <!-- EN: 拘鬼旗主要hediff -->
+  <RI_ZombieHediff_DetainGhostFlag.description>八卦旗</RI_ZombieHediff_DetainGhostFlag.description>
+  
+  <!-- EN: 集中精神 -->
+  <RI_ZombieHediff_DetainGhostFlag_Buff.label>集中精神</RI_ZombieHediff_DetainGhostFlag_Buff.label>
+  <!-- EN: 集中精神 -->
+  <RI_ZombieHediff_DetainGhostFlag_Buff.description>集中精神</RI_ZombieHediff_DetainGhostFlag_Buff.description>
+  
+</LanguageData>

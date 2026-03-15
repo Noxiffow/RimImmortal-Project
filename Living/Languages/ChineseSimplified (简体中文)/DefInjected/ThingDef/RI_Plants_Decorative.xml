@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: chrysanthemum -->
+  <RI_Plant_Chrysanthemum.label>菊花</RI_Plant_Chrysanthemum.label>
+  <!-- EN: "Picking chrysanthemums by the eastern fence, I leisurely gaze toward the southern hills."\n\nThe chrysanthemum endures frost without withering and carries a noble aura. Since ancient times, its unique spirit has captivated scholars and poets, inspiring countless verses. -->
+  <RI_Plant_Chrysanthemum.description>采菊东篱下，悠然见南山。\n\n菊花凌霜不凋、气韵高洁。自古以来就以其独特的气质俘获了诸多文人芳心，留下无数诗句。</RI_Plant_Chrysanthemum.description>
+  
+  <!-- EN: narcissus -->
+  <RI_Plant_Narcissus.label>水仙</RI_Plant_Narcissus.label>
+  <!-- EN: The narcissus, a plant of the Amaryllidaceae family, is beloved for its emerald-green leaves, yellow and white flowers, and refreshing fragrance. It has long been favored by scholars for its graceful charm. -->
+  <RI_Plant_Narcissus.description>水仙是一种石蒜科植物，其叶色翠绿、花朵黄白、清香扑鼻，受到文人喜爱。</RI_Plant_Narcissus.description>
+  
+  <!-- EN: orchid -->
+  <RI_Plant_Orchid.label>兰花</RI_Plant_Orchid.label>
+  <!-- EN: The orchid grows in secluded mountains and quiet forests, with elegant branches and leaves, and a subtle fragrance. Though the Orchidaceae family is vast, Eastern cultures especially cherish those with a fresh and graceful temperament. These orchids may lack vivid colors, but they possess a quiet, unadorned charm and refined elegance. -->
+  <RI_Plant_Orchid.description>兰花产于深山幽林，枝叶典雅，花朵幽香。兰科植物繁多，而东方人独爱清新典雅的品种，没有浓艳的花色，却具有质朴文静、淡雅高洁的气质。</RI_Plant_Orchid.description>
+  
+  <!-- EN: peony -->
+  <RI_Plant_Peony.label>牡丹</RI_Plant_Peony.label>
+  <!-- EN: "Only the peony is the true national beauty; when it blooms, the whole capital is stirred."\n\nKnown as the king of flowers, the peony is celebrated for its full and substantial petals, varied forms, and rich colors. It offers a breathtaking visual feast, like a splendid sea of blossoms. -->
+  <RI_Plant_Peony.description>唯有牡丹真国色，花开时节动京城。\n\n牡丹被誉为花中之王。其花瓣丰满而厚实，花形多样，花色丰富，带给人繁花似锦的视觉享受。</RI_Plant_Peony.description>
+  
+</LanguageData>

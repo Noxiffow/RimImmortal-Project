@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Digging -->
+  <RI_DoBillsDiggingSth.label>挖掘</RI_DoBillsDiggingSth.label>
+  <!-- EN: dig at -->
+  <RI_DoBillsDiggingSth.gerund>挖掘于</RI_DoBillsDiggingSth.gerund>
+  <!-- EN: dig -->
+  <RI_DoBillsDiggingSth.verb>挖掘</RI_DoBillsDiggingSth.verb>
+  
+  <!-- EN: Bake clay -->
+  <RI_DoBillsFireBrick.label>烧制粘土</RI_DoBillsFireBrick.label>
+  <!-- EN: Bake at -->
+  <RI_DoBillsFireBrick.gerund>烧砖于</RI_DoBillsFireBrick.gerund>
+  <!-- EN: Bake -->
+  <RI_DoBillsFireBrick.verb>挖掘</RI_DoBillsFireBrick.verb>
+  
+  <!-- EN: 向电饭煲投料 -->
+  <RI_Fill_RiceCookerFrame.gerund>TODO</RI_Fill_RiceCookerFrame.gerund>
+  <!-- EN: 投料 -->
+  <RI_Fill_RiceCookerFrame.verb>TODO</RI_Fill_RiceCookerFrame.verb>
+  
+</LanguageData>

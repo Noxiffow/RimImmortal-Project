@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 基础基因 -->
+	<GeneDef Abstract="True" Name="RI_ZombieCore_GeneExt">
+		<defName>RI_ZombieCore_GeneExt</defName>
+		<geneClass>RimZombieGirl.GeneExt</geneClass>
+		<label>zombie gene extension</label>
+		<!-- TODO -->
+		<displayCategory>RI_GeneCategory_Zombie</displayCategory>
+		<description>#</description>
+		<iconPath>UI/Icons/Abilities/ViewGenes</iconPath>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<exclusionTags>
+			<li>RI_Core_GeneExt</li>
+		</exclusionTags>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<biostatArc>0</biostatArc>
+		<modExtensions>
+			<li Class="RimZombieGirl.GeneDefExt">
+				<mustEndogene>True</mustEndogene>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef Abstract="True" Name="RI_ZombieCore_GeneBase" ParentName="RI_ZombieCore_GeneExt">
+		<defName>RI_ZombieCore_GeneBase</defName>
+		<geneClass>RimZombieGirl.GeneExt</geneClass>
+		<disablesNeeds>
+			<!-- Core -->
+			<li>Rest</li>
+			<li>Beauty</li>
+			<li>Comfort</li>
+			<li>Outdoors</li>
+			<li>Indoors</li>
+			<li>DrugDesire</li>
+			<li>RoomSize</li>
+			<!-- Biotech -->
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">KillThirst</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Learning</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Play</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechEnergy</li>
+
+		</disablesNeeds>
+		<hediffGiversCannotGive>
+			<!-- 营养不良 -->
+			<li>Malnutrition</li>
+
+			<!-- 其他 -->
+			<li>CryptosleepSickness</li>
+			<li>LuciferiumHigh</li>
+			<li>LuciferiumAddiction</li>
+			<li>Scaria</li>
+			<li>CorpseTorment</li>
+			<li>CubeInterest</li>
+			<li>CubeWithdrawal</li>
+			<li>CubeComa</li>
+			<li>CubeRage</li>
+			<li>HeartAttack</li>
+			<li>Scaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplified</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+			<li>Inhumanized</li>
+		</hediffGiversCannotGive>
+		<modExtensions>
+			<li Class="RimZombieGirl.GeneDefExt">
+				<mustEndogene>True</mustEndogene>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+
+</Defs>

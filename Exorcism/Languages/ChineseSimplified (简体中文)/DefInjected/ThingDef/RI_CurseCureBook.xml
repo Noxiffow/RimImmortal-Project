@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 除咒术 -->
+  <RI_CurseCureBook.label>《天师除咒》</RI_CurseCureBook.label>
+  <!-- EN: 减少全局诅咒值，或者减少某个生物的诅咒度。 -->
+  <RI_CurseCureBook.description>减少全局诅咒值，或者减少某个生物的诅咒度。</RI_CurseCureBook.description>
+  
+</LanguageData>

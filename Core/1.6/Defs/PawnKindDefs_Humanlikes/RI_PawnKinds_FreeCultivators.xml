@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===========散修（都有灵芽的）——前置===========-->
+	<PawnKindDef Name="RI_Cultivator_Base" Abstract="True">
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<defaultFactionType>RI_Faction_FreeCultivators</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+
+		<!--背景故事-->
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_Cultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+
+		<!--禁止特性-->
+		<disallowedTraits>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--假体-->
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>100~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+
+		<!--俘虏抗性-->
+		<initialWillRange>5</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+
+		<!--携带物资-->
+		<inventoryOptions>
+			<skipChance>0.7</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef MayRequire="RI.RimImmortal.Forge">RI_BlindBox_Bag</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RI_Resource_SpiritualCrystal</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>5</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RI_TradeGood_FamilyLetter</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RI_TradeGood_CorrodedMedal</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RI_TradeGood_ShimmeringSpiritualCrystal</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+
+	<!--===========修炼者===========-->
+
+	<!--散修-->
+	<PawnKindDef ParentName="RI_Cultivator_Base">
+		<defName>RI_Pawn_Cultivator</defName>
+		<label>Cultivator</label>
+		<combatPower>200</combatPower>
+		<trader>true</trader>
+		<!--衣服-->
+		<apparelMoney>800~1500</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_RainHat</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_RainCape</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1000~3500</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>NeolithicRangedDecent</li>
+			<li>SimpleGun</li>
+			<li>RI_MagicalWeapon</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.01</severity>
+			</li>
+			<li>
+				<def>RI_LV2_Base</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_ShieldHediff_Blue</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<!--逍遥散修——必带上品灵芽，很少见-->
+	<PawnKindDef ParentName="RI_Cultivator_Base">
+		<defName>RI_Pawn_FreeCultivator</defName>
+		<label>Free cultivator</label>
+		<combatPower>400</combatPower>
+		<!--衣服-->
+		<apparelMoney>1500~3000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_RainCape</li>
+			<li>RI_Apparel_RainHat</li>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1000~3500</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>SimpleGun</li>
+			<li>RI_MagicalWeapon</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.01</severity>
+			</li>
+			<li>
+				<def>RI_LV2_Base</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_ShieldHediff_Green</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+	<!--剑修 三段斩-->
+	<PawnKindDef ParentName="RI_Cultivator_Base">
+		<defName>RI_Pawn_SwordCultivator</defName>
+		<label>Sword cultivator</label>
+		<combatPower>500</combatPower>
+		<!--衣服-->
+		<apparelMoney>1500~3000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>Apparel_FlakPants</li>
+			<li>RI_Apparel_LightCloak</li>
+			<li>RI_Apparel_ExerciseBandana</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1000~3500</weaponMoney>
+		<weaponTags>
+			<li>LongSword</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_LV4_Base</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_ShieldHediff_Orange</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+		<abilities>
+			<li>RI_Ability_Slash</li>
+		</abilities>
+	</PawnKindDef>
+
+	<!--半仙 三段斩 御风-->
+	<PawnKindDef ParentName="RI_Cultivator_Base">
+		<defName>RI_Pawn_HalfImmortal</defName>
+		<label>Half immortal</label>
+		<combatPower>1500</combatPower>
+		<!--衣服-->
+		<apparelMoney>4000~8000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_LightCloak</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>3000~8000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>RI_MagicalWeapon</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_LV6_Base</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_ShieldHediff_Green</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+		<abilities>
+			<li>RI_Ability_Slash</li>
+			<li>RI_Ability_QuickJumpWithNosight</li>
+		</abilities>
+	</PawnKindDef>
+
+	<!--年老散修-->
+	<PawnKindDef>
+		<defName>RI_Pawn_OldCultivator</defName>
+		<label>Old cultivator</label>
+		<!--战斗力~-->
+		<combatPower>800</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<!--年龄-->
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<!--衣服-->
+		<apparelMoney>4000~8000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>RI_Apparel_LightCloak</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>3000~8000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>RI_MagicalWeapon</li>
+		</weaponTags>
+		<!--附带hediff（控制境界和开局自带buff）-->
+		<startingHediffs>
+			<li>
+				<def>Hediff_RI_EnergyRoot</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_LV6_Base</def>
+				<chance>1</chance>
+				<severity>0.5</severity>
+			</li>
+			<li>
+				<def>RI_ShieldHediff_Green</def>
+				<chance>1</chance>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
+		<abilities>
+			<li>RI_Ability_Slash</li>
+			<li>RI_Ability_QuickJumpWithNosight</li>
+		</abilities>
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<defaultFactionType>RI_Faction_FreeCultivators</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+
+		<!--背景故事-->
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_Cultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+
+		<!--禁止特性-->
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>Brawler</li>
+		</disallowedTraits>
+
+		<!--假体-->
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>100~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+
+		<!--俘虏抗性-->
+		<initialWillRange>5</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+
+		<!--携带物资-->
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_Resource_OracleFragment</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+
+</Defs>

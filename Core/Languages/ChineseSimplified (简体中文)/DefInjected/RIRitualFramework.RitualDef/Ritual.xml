@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Upgrade -->
+  <text01.label>突破</text01.label>
+  <!-- EN: Upgrade failure -->
+  <text01.letterAICompleteFailureLabel>突破失败</text01.letterAICompleteFailureLabel>
+  <!-- EN: The lightning has cleared, the Upgrade is over -->
+  <text01.letterAICompleteFailureText>突破失败了</text01.letterAICompleteFailureText>
+  <!-- EN: RitualUpgrade -->
+  <text01.letterAICompleteLabel>突破结束</text01.letterAICompleteLabel>
+  <!-- EN: The lightning has cleared, the Upgrade is successful -->
+  <text01.letterAICompleteText>雷劫散去，突破结束了。</text01.letterAICompleteText>
+  <!-- EN: Upgrade -->
+  <text01.roles.0.label>突破</text01.roles.0.label>
+  
+</LanguageData>

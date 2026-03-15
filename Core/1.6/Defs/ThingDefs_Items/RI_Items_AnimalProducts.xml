@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_JunGouBezoar</defName>
+		<label>JunGou bezoar</label>
+		<description>JunGou bezoar, an animal materials with properties of metal elements.\n\nJunGou, a fast running animal, needs to consume a lot of energy, excess cholesterol and special nutrients in JunGou's body will gradually form this yellowish solid. This gallstone is rich in nutrients and has marvelous medicinal properties, but if eaten directly it can lead to poisoning, vomiting and other adverse reactions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_JunGouBezoar</texPath>
+		</graphicData>
+		<ingestible>
+			<ingestEffect>EatMeat</ingestEffect>
+			<foodType>AnimalProduct</foodType>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<statBases>
+			<MarketValue>23</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RI_Base_MedicalResource">
+		<defName>RI_Resource_PiloseAntler</defName>
+		<label>JueRu antler</label>
+		<description>JueRu antler, a medicinal substance with properties of wood elements.\n\nJueRu antler horn is located below the ear and has a pair of either male or female. JueRu is a long-lived, intelligent animal that, when it notices a hunter approaching unsuspectingly, will voluntarily break its own antlers in exchange for a chance to flee for its life. jueRu Antlers have no medicinal properties when eaten raw, and only when combined with other herbs can they bring out their full nutritional benefits.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/RawMedical/RI_Resource_PiloseAntler</texPath>
+		</graphicData>
+		<ingestible>
+			<ingestEffect>EatMeat</ingestEffect>
+			<foodType>AnimalProduct</foodType>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<statBases>
+			<MarketValue>31</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</Defs>

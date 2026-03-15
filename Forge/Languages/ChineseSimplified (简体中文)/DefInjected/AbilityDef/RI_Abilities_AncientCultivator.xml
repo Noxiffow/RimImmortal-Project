@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: AncientSkill -->
+  <RI_Ability_AncientSkill.label>天罡灵愈铠</RI_Ability_AncientSkill.label>
+  <!-- EN: <color=#96bdb8>This technique any rank can be learned\n\n</color>Qi cost: 80.\n\nThe exercises obtained from the ancient cultivator, it consumed too much Qi, so it was improved and produced a new skill. Can temporarily allow Qi to transform the body, making the whole body like copper skin and iron bones. At the same time, it can also improve human body function, improve melee ability and movement speed. -->
+  <RI_Ability_AncientSkill.description>&lt;color=#96bdb8>此功法任何境界可学\n\n&lt;/color>灵气消耗：80\n\n从古修手中获得的功法，但是古代功法消耗的灵气过多，于是经过改进，产生的新功法。可以暂时让灵气改造肉体，使得周身如铜皮铁骨一般。与此同时还能提升人体机能，提高近战能力和移速。</RI_Ability_AncientSkill.description>
+  
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--仙路生产-->
+	<DesignationCategoryDef>
+		<defName>RI_RimImmortals_Group</defName>
+		<label>RI Production</label>
+		<order>351</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+  
+</Defs>

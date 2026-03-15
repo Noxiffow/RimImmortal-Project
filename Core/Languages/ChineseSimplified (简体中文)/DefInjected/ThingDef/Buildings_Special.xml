@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Light dash -->
+  <ActiveImmortalDropPod.label>遁光</ActiveImmortalDropPod.label>
+  
+  <!-- EN: Light dash -->
+  <DropImmortalIncoming.label>遁光</DropImmortalIncoming.label>
+  
+  <!-- EN: Ascension platform -->
+  <RI_Building_AscensionPlatform.label>登仙台</RI_Building_AscensionPlatform.label>
+  <!-- EN: Step onto the Ascension Platform, open the Path to Dao, and ascend to immortality. -->
+  <RI_Building_AscensionPlatform.description>踏上登仙台，开启通天大道，羽化登仙。</RI_Building_AscensionPlatform.description>
+  
+</LanguageData>

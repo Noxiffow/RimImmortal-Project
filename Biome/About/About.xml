@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>边缘仙路-山海灵域 RimImmortal-Biome[1.6]</name>
+	<author>堂丸(TangW),漆黑之梦,chitoseMo</author>
+	<packageId>RI.RimImmortal.Biome</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://github.com/pardeike/HarmonyRimWorld</steamWorkshopUrl>
+		</li>
+		<!--<li>
+			<packageId>RI.RimImmortal.Living</packageId>
+			<displayName>边缘仙路-锦衣玉食 RimImmortal-Living[1.6]</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3326145525</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>RI.RimImmortal.Core</packageId>
+			<displayName>边缘仙路-羽化登仙 RimImmortal-Core[1.6]</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3296476341</steamWorkshopUrl>
+		</li>-->
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>RI.RimImmortal.Core</li>
+	</loadAfter>
+	<description>
+&lt;color=#7CC261&gt;&lt;b&gt;【夏鼎象九州，山经有遗载】&lt;/b&gt;&lt;/color&gt;
+感谢订阅边缘仙路-山海灵域！这是为仙路世界观增加了全新生态的模组！目前只新增了一个芳草桃源生态，更多生态将会放到以后更新！
+***此mod必须依赖锦衣玉食mod和羽化登仙mod。
+
+Thank you for subscribing our mod - RimImmortal-Biome! This mod adds entirely new biomes to the RimImmortal setting!
+At present, it introduces a single new biome: Peach blossom garden. More biomes will be added in future updates!
+***This mod requires Rimimmortal-Living and Rimimmortal-Core as dependencies.
+
+&lt;color=#7CC261&gt;&lt;b&gt;【主要内容】&lt;/b&gt;&lt;/color&gt;
+-全新的生态：芳草桃源。
+-新的药草，用于合成新丹药。
+-新的各种植物，以及桃树。
+-新的气候，灵光之雨和桃花障！
+
+&lt;color=#7CC261&gt;&lt;b&gt;【边缘仙路开发组成员】&lt;/b&gt;&lt;/color&gt;
+-堂丸(TangW)——主要负责人，策划，贴图，xml代码
+-爱新觉罗-派大星——主程序
+-漆黑之梦——程序
+-chitoseMo——程序
+-逍逍客——程序
+-術滅——策划，程序
+-玖日长弓——程序
+-凌洛(LingLuo)——程序
+-骸鸾——程序
+-灵能罐头——程序
+-玉米淀粉——程序
+-尘——程序
+
+&lt;color=#7CC261&gt;&lt;b&gt;【特别感谢】&lt;/b&gt;&lt;/color&gt;
+
+最后，也感谢各位支持的玩家！
+	</description>
+</ModMetaData>

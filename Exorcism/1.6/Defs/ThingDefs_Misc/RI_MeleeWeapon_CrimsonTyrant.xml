@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================血蛄侯武器====================-->
+
+	<!--三戈血煞戟-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RI_MeleeWeapon_CrimsonHalberd</defName>
+		<label>Crimson halberd</label>
+		<description>A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CrimsonTyrant/RI_MeleeWeapon_CrimsonHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3.9</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<!--血蛄侯专用-->
+		<weaponTags>
+			<li>RI_MeleeTag_Crimson</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>15</Mass>
+		</statBases>
+		<relicChance>0.5</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<!--合成-->
+		<costList>
+			<Gold>5</Gold>
+		</costList>
+
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>4.5</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>5</cooldownTime>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismInstrument</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>420</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--三尖血煞枪-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RI_MeleeWeapon_CrimsonSpear</defName>
+		<label>Crimson spear</label>
+		<description>A longsword forged from copper coins, capable of dealing extra damage to aberrant creatures.\n\nThe coin sword is not only a weapon, but also a talisman used to ward off evil and protect the household. In particular, those made from ancient copper coins are said to be sharp beyond measure.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/CrimsonTyrant/RI_MeleeWeapon_CrimsonSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3.9</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<!--血蛄侯专用-->
+		<weaponTags>
+			<li>RI_MeleeTag_Crimson</li>
+		</weaponTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>15</Mass>
+		</statBases>
+		<relicChance>0.5</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<!--合成-->
+		<costList>
+			<Gold>5</Gold>
+		</costList>
+
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>4.5</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>51</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>RI_ExorcismResearch_ExorcismInstrument</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>420</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

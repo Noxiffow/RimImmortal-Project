@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--新宗门开局的杂役-->
+<Defs>
+	<PawnKindDef>
+		<defName>RI_Pawn_Follower</defName>
+		<label>Follower</label>
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<combatPower>60</combatPower>
+		<!--年龄-->
+		<minGenerationAge>16</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_FreeCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>0~2500</apparelMoney>
+		<apparelTags>
+			<li>RI_Tag_ApparelBasic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<!--<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+			<li>RI_MagicalWeapon</li>
+		</weaponTags>-->
+		<techHediffsMoney>110~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+		<trader>true</trader>
+	</PawnKindDef>
+
+	<!--目前还是测试用的，特殊单位-->
+	<!--金甲卫士-->
+	<PawnKindDef>
+		<defName>RI_Pawn_GoldGuard</defName>
+		<label>Golden guard</label>
+		<race>Human</race>
+		<nameMaker>NamerPersonImmortal</nameMaker>
+		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
+		<combatPower>600</combatPower>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<defaultFactionType>RI_Faction_JusticeSect</defaultFactionType>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_FreeCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+		<!--衣服-->
+		<apparelMoney>6000~10000</apparelMoney>
+		<apparelTags>
+			<li>RI_Tag_ApparelBasic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_GoldBestHelmet_Mask</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_GoldBestArmor</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		
+		<!--武器-->
+		<weaponMoney>5000~10000</weaponMoney>
+		<weaponTags>
+			<li>RI_Tag_GoldWeapon</li>
+		</weaponTags>
+		
+		<techHediffsMoney>110~200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+		<trader>true</trader>
+	</PawnKindDef>
+
+</Defs>

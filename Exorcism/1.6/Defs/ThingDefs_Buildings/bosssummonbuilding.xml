@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--血铃供案-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RI_Building_BloodBellAltar</defName>
+		<label>Blood bell altar</label>
+		<description>An altar which can only be used once. As long as you ring the blood bell, then you will wake the Crimson Tyrant.\n\n Before the battle, be prepared.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/RI_Building_BloodBellAltar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.7,3.7)</drawSize>
+		</graphicData>
+
+		<!--原料-->
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<RI_Resource_AncientBell>1</RI_Resource_AncientBell>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<thingClass>Building</thingClass>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<designationCategory>Biotech</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<!--召唤按钮-->
+		<comps>
+			<li Class="FS_SuperiorZombie.TCP_SummonSuperiorZombie">
+				<iconPath>UI/Gizmos/RI_Building_BloodBellAltar</iconPath>
+				<gizmoLabel>summon Crimson Tyrant</gizmoLabel>
+				<gizmoDesc>desc</gizmoDesc>
+				<incidentDef>CD_Incident_RaidCandlelight</incidentDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

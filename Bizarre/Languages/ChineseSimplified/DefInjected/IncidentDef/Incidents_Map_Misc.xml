@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- EN: a XinSu wanders in -->
+    <Nz_XinSuWandersIn.label>迷茫的心素</Nz_XinSuWandersIn.label>
+    <!-- EN: lost {0} -->
+    <Nz_XinSuWandersIn.letterLabel>迷茫的心素</Nz_XinSuWandersIn.letterLabel>
+    <!-- EN: A lost {1} has wandered into the area, {PAWN_pronoun} is called {0}.\n\nCapture {PAWN_objective} before {PAWN_pronoun} causes more trouble. -->
+    <Nz_XinSuWandersIn.letterText>一个迷茫的{1}游荡到了这个区域，{PAWN_pronoun}叫{0}。\n\n在他/她造成更大的破坏前拘捕[PAWN_objective]。</Nz_XinSuWandersIn.letterText>
+</LanguageData>

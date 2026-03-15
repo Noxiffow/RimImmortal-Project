@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: poison arrow damage -->
+  <RI_Damage_PoisonArrow.label>毒箭</RI_Damage_PoisonArrow.label>
+  <!-- EN: {0} has been killed. -->
+  <RI_Damage_PoisonArrow.deathMessage>{0}被杀了</RI_Damage_PoisonArrow.deathMessage>
+  
+</LanguageData>

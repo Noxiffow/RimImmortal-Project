@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Persistent dark aura — maintained by HediffComp_DemonicAura while the pawn is awake.
+         Appears as a dark crimson ring around demonic cultivators at all times. -->
+    <ThingDef ParentName="MoteBase">
+        <defName>RI_CP_Mote_DemonicAura</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <mote>
+            <needsMaintenance>true</needsMaintenance>
+            <solidTime>9999</solidTime>
+            <fadeInTime>0.4</fadeInTime>
+            <fadeOutTime>0.4</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/CombatCommandMask</texPath>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <color>(0.55, 0.0, 0.12)</color>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <!-- Brief dark flash at caster position — spawned once on ability activation
+         for any pawn carrying the demonic cultivation path. -->
+    <ThingDef ParentName="MoteBase">
+        <defName>RI_CP_Mote_DemonicCast</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <solidTime>0.05</solidTime>
+            <fadeInTime>0.08</fadeInTime>
+            <fadeOutTime>0.45</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/CombatCommandMask</texPath>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <color>(0.85, 0.0, 0.15)</color>
+            <drawSize>3.0</drawSize>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

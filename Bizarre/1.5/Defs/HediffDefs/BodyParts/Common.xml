@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HediffDef Name="ZdBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
+        <!-- <hediffClass>Hediff_Implant</hediffClass> -->
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <priceImpact>false</priceImpact>
+        <stages>
+            <!-- <li>
+                <statFactors>
+                    <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
+                </statFactors>
+            </li> -->
+        </stages>
+    </HediffDef>
+</Defs>

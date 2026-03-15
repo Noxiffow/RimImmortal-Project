@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ripping claws -->
+  <RI_Zombie_RippingClaws.label>TODO</RI_Zombie_RippingClaws.label>
+  <!-- EN: A claw made of chitin and hardened bones, replacing the hands, the force\n            contained in it can even tear the enemy in half. -->
+  <RI_Zombie_RippingClaws.description>TODO</RI_Zombie_RippingClaws.description>
+  <!-- EN: claw -->
+  <RI_Zombie_RippingClaws.comps.HediffComp_VerbGiver.tools.claw.label>TODO</RI_Zombie_RippingClaws.comps.HediffComp_VerbGiver.tools.claw.label>
+  <!-- EN: ripping claws -->
+  <RI_Zombie_RippingClaws.labelNoun>TODO</RI_Zombie_RippingClaws.labelNoun>
+  
+</LanguageData>

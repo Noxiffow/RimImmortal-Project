@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Noviciate rank -->
+  <RI_Hediff_Beginning.label>凝气境界</RI_Hediff_Beginning.label>
+  <!-- EN: Spiritual root began to absorb the whole body Qi, Qi to improve the body, so that the physical quality becomes stronger. -->
+  <RI_Hediff_Beginning.description>岁月悠悠风与尘，登堂入室凝精神。\n仙路辗转沧桑客，灵气筑成小乾坤。\n\n灵芽开始吸收周身灵气，灵气对身体进行了改善,令身体素质变得更强。</RI_Hediff_Beginning.description>
+  
+  <!-- EN: Core-coagulation rank -->
+  <RI_Hediff_CoreCoagulation.label>结丹境界</RI_Hediff_CoreCoagulation.label>
+  <!-- EN: Have been able to do the Qi liquefaction, and gradually master the use of core tips. -->
+  <RI_Hediff_CoreCoagulation.description>天地圆融确如浑，鲸吞蟒咽壮根本。\n结丹更有补益效，毕功绝诣无能胜。\n\n已经可以做到将灵气液化，并逐步掌握丹田的使用窍门。</RI_Hediff_CoreCoagulation.description>
+  
+  <!-- EN: Core-formation rank -->
+  <RI_Hediff_CoreFormation.label>化丹境界</RI_Hediff_CoreFormation.label>
+  <!-- EN: Through the energy root, I initially felt the existence of core, and began to consciously use Qi to exercise core. -->
+  <RI_Hediff_CoreFormation.description>内观玄奥悟至真，始知世事皆浮沉。\n古来铸炁凶险处，几人化得丹田成？\n\n通过灵芽，初步感受到了丹田的存在，开始将灵气有意识地用于锻炼丹田。</RI_Hediff_CoreFormation.description>
+  
+  <!-- EN: Core-consummation rank -->
+  <RI_Hediff_CoreImmaculacy.label>灵丹境界</RI_Hediff_CoreImmaculacy.label>
+  <!-- EN: Finally in the core place to cultivate a perfect golden core, and can use this to nourish the body. -->
+  <RI_Hediff_CoreImmaculacy.description>六九调和太极生，水火交融性命轮。\n一朝金丹吞入腹，从此万般不求人。\n\n终于在丹田处培养出了一颗完美无瑕的灵丹，并可以借此来滋养肉身。</RI_Hediff_CoreImmaculacy.description>
+  
+  <!-- EN: Foundation rank -->
+  <RI_Hediff_Foundation.label>固基境界</RI_Hediff_Foundation.label>
+  <!-- EN: Qi opens up the meridians of the whole body and is used to transport Qi, making the release of Qi more stable. -->
+  <RI_Hediff_Foundation.description>玉宇琼楼竞奢遮，仙圣常吟归藏诀。\n紫气东来锻真元，固实根基弥天阙。\n\n打通了全身经脉，用于输送灵气，使得释放灵气更加稳定。</RI_Hediff_Foundation.description>
+  
+  <!-- EN: Terrestrial immortal rank -->
+  <RI_Hediff_Immortal.label>地仙境界</RI_Hediff_Immortal.label>
+  <!-- EN: You have been top, become the Terrestrial immortal through life, or became god, all in your mind between. -->
+  <RI_Hediff_Immortal.description>七十二变论豪雄，神气不与凡俗同。\n长生大道自我起，陆地神仙无上功。\n\n你已经神魂合一，成为地仙度过一生，还是羽化登仙，全在你一念之间。</RI_Hediff_Immortal.description>
+  
+  <!-- EN: Primordial-spirit baby rank -->
+  <RI_Hediff_PrimordialSpiritBaby.label>元婴境界</RI_Hediff_PrimordialSpiritBaby.label>
+  <!-- EN: In the core there is born a still insignificant consciousness, which is connected with the mind of the cultivator. This consciousness is the Primordial spirit, which can not only greatly enhance the individual ability of cultivator, but also make the Qi like an arm and exert unparalleled power. -->
+  <RI_Hediff_PrimordialSpiritBaby.description>宣夜孕就一气象，宇辰周处众星向。\n命住元胎何须寻，性从婴灵镇幽荒。\n\n在丹田处诞生了一道尚且微不足道的意识，与修炼者心意相通。这份意识就是元神，它不仅可以大幅提升人的个体能力，更能让灵气如臂使指，发挥出无与伦比的力量。</RI_Hediff_PrimordialSpiritBaby.description>
+  
+  <!-- EN: Primordial-spirit combine rank -->
+  <RI_Hediff_PrimordialSpiritCombine.label>合体境界</RI_Hediff_PrimordialSpiritCombine.label>
+  <!-- EN: The cultivator himself has been fully synchronized with the primitive God, and can become one, return to nature, and thus glimpse the road to immortal. -->
+  <RI_Hediff_PrimordialSpiritCombine.description>进境有穷意毋穷，方寸难容真英雄。\n为有究天鲲鹏志，合炼仙体斩蛟龙。\n\n修炼者自身已经和元神完全同步，可以合二为一，返璞归真，至此一窥登仙之路。</RI_Hediff_PrimordialSpiritCombine.description>
+  
+  <!-- EN: Primordial-spirit maturity rank -->
+  <RI_Hediff_PrimordialSpiritMaturation.label>大成境界</RI_Hediff_PrimordialSpiritMaturation.label>
+  <!-- EN: The Primordial deity has matured and can be regarded as the second embodiment of the cultivator, who can communicate with heaven and earth and mobilize part of the power of law while assisting cultivation. -->
+  <RI_Hediff_PrimordialSpiritMaturation.description>性命红尘全颠倒，危亡亦是自逍遥。\n功行圆满谓大成，仍使意气望云霄。\n\n元神已经发育成熟，可以视作是修炼者的第二分身，可以在辅助修炼的同时，沟通天地，并调动一部分的法则之力。</RI_Hediff_PrimordialSpiritMaturation.description>
+  
+  <!-- EN: Spirit constraint rank -->
+  <RI_Hediff_Shackle.label>化神桎梏境界</RI_Hediff_Shackle.label>
+  <!-- EN: A layer of fetters that is difficult to break through makes the progress of cultivation stagnate. -->
+  <RI_Hediff_Shackle.description>草木泥石尽渺殁，大限乃是命运梏。\n丹成不过人上尊，炼神方挥天下墨。\n\n练气化神，出神入化，一层难以突破的桎梏，令修炼进度停滞不前。</RI_Hediff_Shackle.description>
+  
+</LanguageData>

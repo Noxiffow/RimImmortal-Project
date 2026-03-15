@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Ghost fire arrow -->
+  <RI_Arrow_GhostFireCrossbow.label>鬼火箭</RI_Arrow_GhostFireCrossbow.label>
+  
+  <!-- EN: Iron ball -->
+  <RI_Arrow_IronThrowingBall.label>铁乌鸡</RI_Arrow_IronThrowingBall.label>
+  
+  <!-- EN: Dragon bullet -->
+  <RI_Bullet_DragonCannon.label>龙弹</RI_Bullet_DragonCannon.label>
+  
+  <!-- EN: 飞蝇雷 -->
+  <RI_Projectile_FlyGrenade.label>飞蝇雷</RI_Projectile_FlyGrenade.label>
+  
+  <!-- EN: Dragon cannon【Second-rate】 -->
+  <RI_Weapon_DragonCannon.label>龙头炮【二品】</RI_Weapon_DragonCannon.label>
+  <!-- EN: 【Second-rate】Range weapon\n\nA fire-blaster shaped like a dragon head with a laser firing system. The weapon was said to be a blunderbuss, but its caliber was closer to a cannonball, and it fired hot pellets that were terrifying to kill. At the same time, the weapon can adjust the muzzle to shoot a high-temperature laser through the energy array. -->
+  <RI_Weapon_DragonCannon.description>【二品】远程兵器\n\n一把龙头形状的火铳，加装了激光发射系统。这把武器说是手铳，但是口径更接近于炮弹，射出高温的弹丸，杀伤力恐怖。同时这把武器还能调整枪口，射出经过法阵加持的高温激光。</RI_Weapon_DragonCannon.description>
+  <!-- EN: 龙炎爆破 -->
+  <RI_Weapon_DragonCannon.comps.CompEquippableAbilityReloadable.chargeNoun>爆裂激光</RI_Weapon_DragonCannon.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_DragonCannon.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_DragonCannon.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 炮管 -->
+  <RI_Weapon_DragonCannon.tools.0.label>炮管</RI_Weapon_DragonCannon.tools.0.label>
+  <!-- EN: Dragon cannon【Second-rate】 -->
+  <RI_Weapon_DragonCannon.verbs.Verb_Shoot.label>龙头炮【二品】</RI_Weapon_DragonCannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Fly grenade【Second-rate】 -->
+  <RI_Weapon_FlyGrenade.label>飞蝇雷【二品】</RI_Weapon_FlyGrenade.label>
+  <!-- EN: 【Second-rate】Range weapon\n\nIt is said that the design of this weapon is inspired by the buzzing flies, and can shoot small grenades through a special barrel, crazy harassment of enemies, as annoying as flies. -->
+  <RI_Weapon_FlyGrenade.description>【二品】远程兵器\n\n据说这种武器的设计灵感来源于嗡嗡的苍蝇，可以通过特制的炮管连射小型的手雷，疯狂骚扰敌人，如同苍蝇一般烦人。</RI_Weapon_FlyGrenade.description>
+  <!-- EN: 烟雾弹 -->
+  <RI_Weapon_FlyGrenade.comps.CompEquippableAbilityReloadable.chargeNoun>烟雾弹</RI_Weapon_FlyGrenade.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_FlyGrenade.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_FlyGrenade.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 飞蝇雷 -->
+  <RI_Weapon_FlyGrenade.tools.0.label>飞蝇雷</RI_Weapon_FlyGrenade.tools.0.label>
+  <!-- EN: Fly grenade【Second-rate】 -->
+  <RI_Weapon_FlyGrenade.verbs.Verb_LaunchProjectile.label>飞蝇雷【二品】</RI_Weapon_FlyGrenade.verbs.Verb_LaunchProjectile.label>
+  
+  <!-- EN: Ghost fire crossbow【Second-rate】 -->
+  <RI_Weapon_GhostFireCrossbow.label>鬼火连弩【二品】</RI_Weapon_GhostFireCrossbow.label>
+  <!-- EN: 【Second-rate】Range weapon\n\nA crossbow with a ghostly fire attached to the energy array, hidden inside the mechanical structure, can shoot short bolts with extreme force. Consuming the spiritual crystal can trigger ghost fire, shooting crossbow with explosive burning effect. -->
+  <RI_Weapon_GhostFireCrossbow.description>【二品】远程兵器\n\n一把经过法阵附上了鬼火烧灼的连弩，内部隐藏了机械结构，可以以极强的威力射出短弩箭。消耗灵石可以激发鬼火，射出带有爆炸燃烧效果的弩箭。</RI_Weapon_GhostFireCrossbow.description>
+  <!-- EN: 连射 -->
+  <RI_Weapon_GhostFireCrossbow.comps.CompEquippableAbilityReloadable.chargeNoun>鬼火连射</RI_Weapon_GhostFireCrossbow.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_GhostFireCrossbow.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_GhostFireCrossbow.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: 弩臂 -->
+  <RI_Weapon_GhostFireCrossbow.tools.0.label>弩臂</RI_Weapon_GhostFireCrossbow.tools.0.label>
+  <!-- EN: Ghost fire crossbow【Second-rate】 -->
+  <RI_Weapon_GhostFireCrossbow.verbs.Verb_Shoot.label>鬼火连弩【二品】</RI_Weapon_GhostFireCrossbow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Iron throwing-ball【Second-rate】 -->
+  <RI_Weapon_IronThrowingBall.label>铁乌鸡【二品】</RI_Weapon_IronThrowingBall.label>
+  <!-- EN: 【Second-rate】Range weapon\n\nA weapon in which each ball is the size of a fist and can automatically levitate or attack according to the owner's wishes, like an arm, but manipulating too many balls can be mentally taxing. It is said that someone can control nine iron balls at once, and its power is enough to empty the whole body of enemies in an instant. -->
+  <RI_Weapon_IronThrowingBall.description>【二品】远程兵器\n\n一种暗器，每颗铁乌鸡都有拳头大小，可以根据主人的心意自动悬浮或攻击，如臂使指，但是操控太多铁乌鸡会耗费心神。据说有人可以一次性控制九颗铁乌鸡，其连发的威力足以顷刻间清空周身敌人。</RI_Weapon_IronThrowingBall.description>
+  <!-- EN: 连射 -->
+  <RI_Weapon_IronThrowingBall.comps.CompEquippableAbilityReloadable.chargeNoun>铁球连射</RI_Weapon_IronThrowingBall.comps.CompEquippableAbilityReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <RI_Weapon_IronThrowingBall.comps.CompEquippableAbilityReloadable.cooldownGerund>冷却中</RI_Weapon_IronThrowingBall.comps.CompEquippableAbilityReloadable.cooldownGerund>
+  <!-- EN: limb -->
+  <RI_Weapon_IronThrowingBall.tools.limb.label>铁球</RI_Weapon_IronThrowingBall.tools.limb.label>
+  <!-- EN: Iron throwing-ball【Second-rate】 -->
+  <RI_Weapon_IronThrowingBall.verbs.Verb_Shoot.label>铁乌鸡【二品】</RI_Weapon_IronThrowingBall.verbs.Verb_Shoot.label>
+  
+</LanguageData>

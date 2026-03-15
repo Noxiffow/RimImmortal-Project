@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Effect of cultivate-energy pill -->
+  <RI_CultivateEnergyHediff.label>归灵丸效果</RI_CultivateEnergyHediff.label>
+  <!-- EN: Recover a little Qi. -->
+  <RI_CultivateEnergyHediff.description>略微恢复一些灵气。</RI_CultivateEnergyHediff.description>
+  
+  <!-- EN: Effect of demon elixir -->
+  <RI_DemonElixirHediff.label>修罗魔喰丹效果</RI_DemonElixirHediff.label>
+  <!-- EN: In 24 hours to stimulate the potential and physical activity, greatly enhance the ability to melee combat, but accompanied by the ear around the whisper of the Thran, it is disturbing, unable to work. -->
+  <RI_DemonElixirHediff.description>在24小时内强行激发潜力和肉体活性，大大增强近战能力。\n但伴随的是环绕耳畔的喰仙低语，令人心神不宁，无法工作。</RI_DemonElixirHediff.description>
+  
+  <!-- EN: Effect of spirit jade pill -->
+  <RI_Drug_CultivateMoreEnergyPillHediff.label>灵玉丸效果</RI_Drug_CultivateMoreEnergyPillHediff.label>
+  <!-- EN: Directly restore some Qi and automatically restore Qi over a period of time. -->
+  <RI_Drug_CultivateMoreEnergyPillHediff.description>直接恢复部分灵气，并在一段时间内自动回复灵气。</RI_Drug_CultivateMoreEnergyPillHediff.description>
+  
+  <!-- EN: Effect of gold blood pill -->
+  <RI_Drug_GoldBloodPillHediff.label>金血丸效果</RI_Drug_GoldBloodPillHediff.label>
+  <!-- EN: The skin of the whole body is like an iron wall, which increases the defense force, but reduces the movement speed. -->
+  <RI_Drug_GoldBloodPillHediff.description>周身皮肤如铜墙铁壁，增加防御力，但是会减少移速。</RI_Drug_GoldBloodPillHediff.description>
+  
+  <!-- EN: Effect of celestial spirit elixir -->
+  <RI_FiveTreasuresElixirHediff.label>天灵宝玉丹效果</RI_FiveTreasuresElixirHediff.label>
+  <!-- EN: In 10 days, greatly increase the efficiency of Qi absorption. -->
+  <RI_FiveTreasuresElixirHediff.description>在10天内，极大地提升灵气的吸取效率。</RI_FiveTreasuresElixirHediff.description>
+  
+  <!-- EN: Effect of LingYun pill -->
+  <RI_FloatingCloudHediff.label>凌云丸效果</RI_FloatingCloudHediff.label>
+  <!-- EN: It makes you run faster in a short amount of time. -->
+  <RI_FloatingCloudHediff.description>令人脚下生风，短时间内跑得更快。</RI_FloatingCloudHediff.description>
+  
+  <!-- EN: Effect of foundation building elixir -->
+  <RI_FoundationBuildingElixirHediff.label>通玄筑基丹效果</RI_FoundationBuildingElixirHediff.label>
+  <!-- EN: In one days, increase the efficiency of Qi absorption. -->
+  <RI_FoundationBuildingElixirHediff.description>在一天内少量提升修炼效率，筑基丹主要用于突破到筑基境界。</RI_FoundationBuildingElixirHediff.description>
+  
+  <!-- EN: Effect of blood-saving pill -->
+  <RI_GreenBalmHediff.label>保血丸效果</RI_GreenBalmHediff.label>
+  <!-- EN: Pain relief, slightly faster recovery, and protection against infection. -->
+  <RI_GreenBalmHediff.description>止痛，略微提高恢复速度，防止感染。</RI_GreenBalmHediff.description>
+  <!-- EN: GreenBalm -->
+  <RI_GreenBalmHediff.labelNoun>保血丸效果</RI_GreenBalmHediff.labelNoun>
+  
+  <!-- EN: Effect of green balm -->
+  <RI_GreenPowderHediff.label>清风膏效果</RI_GreenPowderHediff.label>
+  <!-- EN: After applying, it keeps you awake for a long time. -->
+  <RI_GreenPowderHediff.description>涂抹之后，令人清醒百倍。</RI_GreenPowderHediff.description>
+  
+  <!-- EN: Effect of herb powder -->
+  <RI_HerbPowderHediff.label>回春散效果</RI_HerbPowderHediff.label>
+  <!-- EN: For a period of time to speed up wound recovery, analgesia, provide immunity to some diseases. -->
+  <RI_HerbPowderHediff.description>一段时间内加快伤口恢复速度，镇痛，提供一些疾病的免疫。</RI_HerbPowderHediff.description>
+  <!-- EN: HerbPowder -->
+  <RI_HerbPowderHediff.labelNoun>回春散效果</RI_HerbPowderHediff.labelNoun>
+  
+  <!-- EN: Effect of cold-frost pill -->
+  <RI_HypothermiaGoAwayHediff.label>玄寒丸效果</RI_HypothermiaGoAwayHediff.label>
+  <!-- EN: Removes heat stroke effects and increases temperature resistance over a period of time. -->
+  <RI_HypothermiaGoAwayHediff.description>清除中暑效果并在一段时间内提高温度抗性。</RI_HypothermiaGoAwayHediff.description>
+  
+  <!-- EN: Effect of medulla oblongata elixir -->
+  <RI_RepairAwayHediff.label>生肌理髓丹效果</RI_RepairAwayHediff.label>
+  <!-- EN: Within 12 hours, the healing capacity is greatly enhanced, infection is resisted, and severely injured patients can stabilize their wounds in a few breaths without any sequelae. -->
+  <RI_RepairAwayHediff.description>在12小时内，大大增强愈合能力，同时阻断感染。\n重伤的患者几个呼吸间就能稳定伤势，并且没有任何后遗症。</RI_RepairAwayHediff.description>
+  
+  <!-- EN: Effect of solid-foundation powder -->
+  <RI_SolidEnergyPowderHediff.label>固元散效果</RI_SolidEnergyPowderHediff.label>
+  <!-- EN: Awaken the meridians and slightly increase the success rate of upgrade over a period of time. -->
+  <RI_SolidEnergyPowderHediff.description>唤醒经脉，一段时间内少量增加突破成功率。</RI_SolidEnergyPowderHediff.description>
+  
+  <!-- EN: Effect of all-grain pill -->
+  <RI_StomachFillHediff.label>百粮丸效果</RI_StomachFillHediff.label>
+  <!-- EN: It feels like the stomach is full and won't be hungry for a while. -->
+  <RI_StomachFillHediff.description>感觉胃被填满了，一段时间内不会饥饿。</RI_StomachFillHediff.description>
+  
+  <!-- EN: Effect of scorching-Wind pill -->
+  <RI_SunstrokeGoAwayHediff.label>炙风丸效果</RI_SunstrokeGoAwayHediff.label>
+  <!-- EN: Removes hypothermia effects and increases temperature resistance over a period of time. -->
+  <RI_SunstrokeGoAwayHediff.description>清除低温症效果并在一段时间内提高温度抗性。</RI_SunstrokeGoAwayHediff.description>
+  
+  <!-- EN: Effect of three-rock powder -->
+  <RI_ThreeRockPowderHediff.label>三石散效果</RI_ThreeRockPowderHediff.label>
+  <!-- EN: Improve blood circulation, temporarily enhance combat effectiveness. -->
+  <RI_ThreeRockPowderHediff.description>提升血液循环，短暂增强战斗力。</RI_ThreeRockPowderHediff.description>
+  
+</LanguageData>

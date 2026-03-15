@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 【Nether blood】 -->
+  <RI_ZombieLevel1.label>【冥血】</RI_ZombieLevel1.label>
+  <!-- EN: # -->
+  <RI_ZombieLevel1.description>冥尸是徘徊于生死之间的生物，他们的肉体被邪术和诅咒塑造，通过吞食血魄丹，可以令肉体进化。</RI_ZombieLevel1.description>
+  
+  <!-- EN: 【Nightmare flesh】 -->
+  <RI_ZombieLevel2.label>【魇肉】</RI_ZombieLevel2.label>
+  <!-- EN: # -->
+  <RI_ZombieLevel2.description>魇肉是冥尸的第二阶段，肉体得到了强化。</RI_ZombieLevel2.description>
+  
+  <!-- EN: 【Eternal bone】 -->
+  <RI_ZombieLevel3.label>【不化骨】</RI_ZombieLevel3.label>
+  <!-- EN: # -->
+  <RI_ZombieLevel3.description>冥尸的最高形态。</RI_ZombieLevel3.description>
+  
+</LanguageData>

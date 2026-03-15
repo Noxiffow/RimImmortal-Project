@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===========普通歹修（没有灵芽的）——前置===========-->
+	<PawnKindDef Name="RI_EvilmanNoRoot_Base" Abstract="True">
+		<race>Human</race>
+		<nameMaker>RI_NameRule_NamerPersonChinese</nameMaker>
+		<nameMakerFemale>RI_NameRule_NamerPersonChineseFemale</nameMakerFemale>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<defaultFactionType>RI_Faction_WickedCultivators</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+
+		<!--禁止特性-->
+		<disallowedTraits>
+			<li>Greedy</li>
+			<li>Jealous</li>
+			<li>CreepyBreathing</li>
+			<li>Pyromaniac</li>
+			<li>PsychicSensitivity</li>
+		</disallowedTraits>
+
+		<!--假体-->
+		<techHediffsChance>0.2</techHediffsChance>
+		<techHediffsMoney>300~1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+
+		<!--俘虏抗性-->
+		<initialWillRange>5</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+	</PawnKindDef>
+
+	<!--===========普通歹修===========-->
+
+	<!--蟊贼-->
+	<PawnKindDef ParentName="RI_EvilmanNoRoot_Base">
+		<defName>RI_Pawn_Thief</defName>
+		<label>Thief</label>
+		<combatPower>70</combatPower>
+		<!--限制人数-->
+		<maxPerGroup>3</maxPerGroup>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_WickedCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<!--衣服-->
+		<apparelColor>(77,77,77)</apparelColor>
+		<apparelMoney>300~500</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_AssassinMask</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>500~1000</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Weapon_Boxing</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!--匪徒-->
+	<PawnKindDef ParentName="RI_EvilmanNoRoot_Base">
+		<defName>RI_Pawn_Outlaw</defName>
+		<label>Outlaw</label>
+		<combatPower>80</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_WickedCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<!--衣服-->
+		<apparelMoney>500~800</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_ExerciseBandana</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+			<li>RI_Apparel_Knapsack</li>
+			<li>RI_Apparel_CultivatorPants</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>500~1000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Weapon_Boxing</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!--人贩-->
+	<PawnKindDef ParentName="RI_EvilmanNoRoot_Base">
+		<defName>RI_Pawn_HumanTrafficker</defName>
+		<label>Human trafficker</label>
+		<combatPower>90</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_WickedCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<!--衣服-->
+		<apparelMoney>600~1000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>Apparel_SimpleHelmet</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>Apparel_PlateArmor</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+			<li>Spear</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Weapon_Boxing</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.3</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>130</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--射手罪犯-->
+	<PawnKindDef ParentName="RI_EvilmanNoRoot_Base">
+		<defName>RI_Pawn_ShooterBendit</defName>
+		<label>Shooter bendit</label>
+		<combatPower>110</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_WickedCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<!--衣服-->
+		<apparelMoney>1100~2500</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>RI_Apparel_HeadScarf</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>Apparel_FlakJacket</li>
+			<li>RI_Apparel_ExerciseApparel</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li MayRequire="RI.RimImmortal.Forge">RI_Tag_BasicGun</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.85</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_TradeGood_BloodstainedWoodenEffigy</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<!--重甲罪犯-->
+	<PawnKindDef ParentName="RI_EvilmanNoRoot_Base">
+		<defName>RI_Pawn_HeavyArmoredCriminal</defName>
+		<label>Heavy-armored criminal</label>
+		<combatPower>150</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RI_Pawn_WickedCultivator</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<!--衣服-->
+		<apparelMoney>2500~4000</apparelMoney>
+		<apparelTags>
+			<li>RI_Apparel_BasicCloth</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RI_Apparel_CultivatorUnderwear</li>
+			<li>Apparel_PlateArmor</li>
+			<li>RI_Apparel_CultivatorPants</li>
+			<li>Apparel_SimpleHelmet</li>
+		</apparelRequired>
+		<!--武器-->
+		<weaponMoney>500~1000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li  MayRequire="RI.RimImmortal.Forge">RI_Tag_MagicalWeapon_Sword</li>
+			<li  MayRequire="RI.RimImmortal.Forge">RI_Tag_MagicalWeapon_Third</li>
+		</weaponTags>
+		<!--携带的资源-->
+		<inventoryOptions>
+			<skipChance>0.85</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RI_TradeGood_BloodstainedWoodenEffigy</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+</Defs>
