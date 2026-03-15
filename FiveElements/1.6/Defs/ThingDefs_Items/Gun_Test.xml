@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 测试炽飞雀用的枪 -->
+	<!-- Test gun for the blazing sparrow -->
 
 	<!--<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>RI_Gun_BirdRevolver_Test</defName>
-		<label>测试枪</label>
+		<label>test gun</label>
 		<description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>

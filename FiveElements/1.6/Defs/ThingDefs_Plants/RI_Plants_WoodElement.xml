@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--====================================== 木行制造的植物 ======================================== -->
+	<!--====================================== Wood element created plants ======================================== -->
 
-	<!--生机草-->
+	<!--Vitality grass-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RI_Plant_VitalityGrass</defName>
 		<label>Vitality grass</label>
@@ -38,7 +38,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--生机灌木-->
+	<!--Vitality bush-->
 	<ThingDef ParentName="BushBase">
 		<defName>RI_Plant_VitalityBush</defName>
 		<label>Vitality bush</label>
@@ -53,7 +53,7 @@
 		<uiIconScale>0.85</uiIconScale>
 		<plant>
 			<growDays>1.5</growDays>
-			<!--收获得到草药-->
+			<!--Harvest yields herbal medicine-->
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
 			<harvestYield>1</harvestYield>
@@ -66,7 +66,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--生机海芋-->
+	<!--Vitality alocasia-->
 	<ThingDef ParentName="BushBase">
 		<defName>RI_Plant_VitalityAlocasia</defName>
 		<label>Vitality alocasia</label>

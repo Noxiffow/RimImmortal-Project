@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 乾元柱 -->
+	<!-- Earth column -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_StoneColumn</defName>
 		<label>earth column</label>
@@ -31,7 +31,7 @@
 		</statBases>
 		<holdsRoof>true</holdsRoof>
 		<rotatable>false</rotatable>
-		<!--支撑范围-->
+		<!--Support radius-->
 		<specialDisplayRadius>6.9</specialDisplayRadius>
 		<building>
 			<isInert>true</isInert>
@@ -43,7 +43,7 @@
 		<constructEffect>ConstructDirt</constructEffect>
 	</ThingDef>
 
-	<!--土壁-->
+	<!--Earth wall-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_EarthWall</defName>
 		<label>earth wall</label>
@@ -144,7 +144,7 @@
 		</damageMultipliers>
 	</ThingDef>
 
-	<!--可建造土壁-->
+	<!--Buildable earth wall-->
 	<ThingDef ParentName="BuildingBase" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Building_EarthWall_Buildable</defName>
 		<label>earth wall</label>
@@ -182,13 +182,13 @@
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 
-		<!--原料-->
+		<!--Materials-->
 		<costList MayRequire="RI.RimImmortal.Living">
 			<RI_Resource_BlackCorundum MayRequire="RI.RimImmortal.Living">5</RI_Resource_BlackCorundum>
 			<RI_Resource_Mud MayRequire="RI.RimImmortal.Living">5</RI_Resource_Mud>
 		</costList>
 
-		<!--研究完可以造，需要Living-->
+		<!--Unlocked by research; requires Living mod-->
 		<researchPrerequisites>
 			<li>RI_InitialApproach_FiveElements_Earth</li>
 		</researchPrerequisites>
@@ -257,7 +257,7 @@
 		</damageMultipliers>
 	</ThingDef>
 
-	<!-- 镇岳塔 -->
+	<!-- Guardian stone tower -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_WorldSealingStoneTower</defName>
 		<label>guardian stone Tower</label>
@@ -293,7 +293,7 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<deconstructible>false</deconstructible>
 		</building>
-		<!--显示范围-->
+		<!--Display radius-->
 		<specialDisplayRadius>6.9</specialDisplayRadius>
 		<!-- designationCategory set to None because building is spawned by ability, not player-built -->
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -324,7 +324,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--流沙陷阱-->
+	<!--Quicksand trap-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_SandTrap</defName>
 		<label>quicksand trap</label>
@@ -336,7 +336,7 @@
 		</graphicData>
 		<comps>
 			<li Class="RI_FiveElements.CompProperties_Quicksand">
-				<!--持续2小时-->
+				<!--Duration: 2 hours-->
 				<lifeTimeTicks>5000</lifeTimeTicks>
 			</li>
 			<li Class="CompProperties_InspectString">

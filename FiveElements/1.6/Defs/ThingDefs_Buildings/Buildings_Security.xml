@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--==================== 木行植物陷阱 ======================== -->
+	<!--==================== Wood element plant traps ======================== -->
 
-	<!--绞杀荆棘-->
+	<!--Strangle-thorn-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Trap_StrangleThorn</defName>
 		<label>Strangle-thorn</label>
@@ -53,7 +53,7 @@
 	</ThingDef>
 
 
-	<!--龙刺-->
+	<!--Agave-spike-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Trap_AgaveSpike</defName>
 		<label>Agave-spike</label>

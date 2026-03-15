@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--火行Base-->
+	<!--Fire element base-->
 	<HediffDef Name="RI_FireMethodHediff_Base" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.95,0.34,0.19)</defaultLabelColor>
@@ -12,7 +12,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--离火功法-->
+	<!--Fire cultivation method-->
 	<HediffDef ParentName="RI_FireMethodHediff_Base">
 		<defName>RI_He_FireCultivationHediff</defName>
 		<label>Fire cultivation</label>
@@ -59,7 +59,7 @@
 		</comps>
 	</HediffDef>
 
-	<!-- 焚心 -->
+	<!-- Life fire -->
 	<HediffDef>
 		<defName>RI_He_Fire_BurningSoul</defName>
 		<label>Life fire</label>
@@ -161,7 +161,7 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -179,18 +179,18 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<!--炎威-->
+	<<!--Majestic flame-->
 	<HediffDef ParentName="RI_FireMethodHediff_Base">
 		<defName>RI_He_Fire_Shield</defName>
 		<label>Majestic flame</label>
 		<description>Ignite Life Fire to awaken one's combat prowess, while forging a protective flame barrier upon the body.</description>
 		<comps>
-			<!--一段时间后消失-->
+			<!--Disappears after a time-->
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 				<disappearsAfterTicks>30000</disappearsAfterTicks>
 			</li>
-			<!--眼睛发光-->
+			<!--Eyes glow-->
 			<li Class="RI_Starch.RI_HediffComp.RI_HediffCompProperties_eyesGlow">
 				<EyeColor>(1.0,0.45,0.25)</EyeColor>
 			</li>
@@ -213,7 +213,7 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -249,7 +249,7 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<!-- 乾阳焱火决 自身 -->
+	<!-- Qianyang blazing flame technique (self) -->
 	<HediffDef ParentName="RI_FireMethodHediff_Base">
 		<defName>RI_He_Fire_Ring_Self</defName>
 		<label>Qianyang flame field</label>
@@ -277,7 +277,7 @@
 				<hediff>RI_He_Fire_Ring_Target</hediff>
 			</li>
 		</comps>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -295,7 +295,7 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<!-- 乾阳焱火决 目标 心火焚烧 -->
+	<!-- Qianyang blazing flame technique (target) — soul burning -->
 	<HediffDef ParentName="RI_FireMethodHediff_Base">
 		<defName>RI_He_Fire_Ring_Target</defName>
 		<label>Soul burning</label>
@@ -324,7 +324,7 @@
 				</damageFactors>
 			</li>
 		</stages>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -353,7 +353,7 @@
 		</mote>
 		<graphicData>
 			<graphicClass>Graphic_Mote</graphicClass>
-			<!-- TODO 替换 -->
+			<!-- TODO: replace -->
 			<texPath>Things/Mote/CombatCommandMask</texPath>
 			<shaderType>MoteGlow</shaderType>
 			<color>(255, 69, 0)</color>
@@ -375,7 +375,7 @@
 		</mote>
 		<graphicData>
 			<shaderType>MoteGlow</shaderType>
-			<!-- TODO 替换 -->
+			<!-- TODO: replace -->
 			<texPath>Things/Mote/WorkCommandLinkLine</texPath>
 		</graphicData>
 	</ThingDef>

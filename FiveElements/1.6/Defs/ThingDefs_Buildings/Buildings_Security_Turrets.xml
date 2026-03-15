@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--==================== 木行植物炮台 ======================== -->
+	<!--==================== Wood element plant turrets ======================== -->
 
 	<!--<killedLeavings>
 		<WoodLog>4</WoodLog>
@@ -10,7 +10,7 @@
 	<!--<tradeability>None</tradeability>-->
 	<!--<destroyOnDrop>true</destroyOnDrop>-->
 	
-	<!--玉米炮-->
+	<!--Corn-cannon turret-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_CornCannon</defName>
 		<label>Corn-cannon</label>
@@ -90,7 +90,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<!--玉米炮——枪-->
+	<!--Corn-cannon — gun-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_CornCannon</defName>
 		<label>Corn cannon</label>
@@ -166,7 +166,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--莓果塔-->
+	<!--Berry-shooter turret-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_BerryShooter</defName>
 		<label>Berry-shooter</label>
@@ -245,7 +245,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<!--莓果塔-枪-->
+	<!--Berry-shooter — gun-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_BerryShooter</defName>
 		<label>Berry-shooter</label>
@@ -287,7 +287,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--莓果塔-子弹-->
+	<!--Berry-shooter — bullet-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Projectile_BerryBullet</defName>
 		<label>berry bullet</label>
@@ -304,7 +304,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--多棱刺球-->
+	<!--Cactus-spitter turret-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_CactusSpitter</defName>
 		<label>Cactus-spitter</label>
@@ -384,7 +384,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<!--多棱刺球-枪-->
+	<!--Cactus-spitter — gun-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_CactusSpitter</defName>
 		<label>Cactus-spitter</label>
@@ -426,7 +426,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--多棱刺球-子弹-->
+	<!--Cactus-spitter — bullet-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Projectile_CactusSpike</defName>
 		<label>cactus spike</label>

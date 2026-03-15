@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--土行Base-->
+	<!--Earth element base-->
 	<HediffDef Name="RI_EarthMethodHediff_Base" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.79,0.73,0.33)</defaultLabelColor>
@@ -12,7 +12,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--坤土功法-->
+	<!--Earth cultivation method-->
 	<HediffDef ParentName="RI_EarthMethodHediff_Base">
 		<defName>RI_Hediff_EarthCultivationHediff</defName>
 		<label>Earth cultivation</label>
@@ -41,7 +41,7 @@
 		</comps>
 	</HediffDef>
 
-	<!-- 石甲 -->
+	<!-- Stone armor -->
 	<HediffDef ParentName="RI_EarthMethodHediff_Base">
 		<defName>RI_Hediff_StoneArmorEffect</defName>
 		<label>Stone armor</label>
@@ -72,7 +72,7 @@
 				</damageFactors>
 			</li>
 		</stages>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -90,7 +90,7 @@
 		</renderNodeProperties>
 	</HediffDef>
 
-	<!-- 碎岩 -->
+	<!-- Shattered rock -->
 	<HediffDef ParentName="RI_EarthMethodHediff_Base">
 		<defName>RI_Hediff_FlyingSand</defName>
 		<label>Shattered rock</label>
@@ -120,7 +120,7 @@
 		</stages>
 	</HediffDef>
 
-	<!-- 镇岳盾 -->
+	<!-- World-sealing shield -->
 	<HediffDef ParentName="RI_EarthMethodHediff_Base">
 		<defName>RI_Hediff_WorldSealingShield</defName>
 		<label>World-sealing shield</label>
@@ -136,14 +136,14 @@
 				<changeByRootLevel>false</changeByRootLevel>
 				<energyLoosePerDamage>1</energyLoosePerDamage>
 				<keepDisplaying>true</keepDisplaying>
-				<gizmoLabel>镇界护盾</gizmoLabel>
-				<gizmoTip>镇界护盾容量</gizmoTip>
+				<gizmoLabel>World-sealing shield</gizmoLabel>
+				<gizmoTip>World-sealing shield capacity</gizmoTip>
 				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
 				<drawBubbleSize>2.4</drawBubbleSize>
 				<rotateRandonly>false</rotateRandonly>
-				<!--不会自动恢复-->
+				<!--Does not auto-regenerate-->
 				<energyGainPerSecond>0</energyGainPerSecond>
-				<!--一出石塔范围就开始疯狂掉-->
+				<!--Drains rapidly when out of tower range-->
 				<energyLossPerSecond>10</energyLossPerSecond>
 			</li>
 		</comps>
@@ -154,7 +154,7 @@
 		</stages>
 	</HediffDef>
 
-	<!-- 石化 -->
+	<!-- Petrified -->
 	<HediffDef ParentName="RI_EarthMethodHediff_Base">
 		<defName>RI_Hediff_EarthDomainEffect</defName>
 		<label>Petrified</label>
@@ -180,7 +180,7 @@
 				</capMods>
 			</li>
 		</stages>
-		<!--附加特效-->
+		<!--Additional visual effects-->
 		<renderNodeProperties>
 			<li Class="PawnRenderNodeProperties">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>

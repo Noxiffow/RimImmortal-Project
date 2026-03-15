@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--三品——燕火刀（依赖炼器）-->
+	<!--Third-rate — Yan fire blade (requires Forge)-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_SteelFireBlade</defName>
 		<label>Yan fire blade【Third-rate】</label>
@@ -10,11 +10,11 @@
 			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_SteelFireBlade</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<!--图标贴图-->
+		<!--Icon texture-->
 		<uiIconPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_SteelFireBlade_Icon</uiIconPath>
 		<uiIconScale>1.35</uiIconScale>
 
-		<!--原料-->
+		<!--Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DamascusIron MayRequire="RI.RimImmortal.Living">30</RI_Resource_DamascusIron>
@@ -36,10 +36,10 @@
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
-			<!--依赖炼器-->
+			<!--Requires Forge mod-->
 			<researchPrerequisite MayRequire="RI.RimImmortal.Forge">RI_InitialApproach_FiveElements_Fire</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tags-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Sword</li>
 			<li>RI_Tag_MagicalWeapon_Third</li>
@@ -48,7 +48,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effects-->
 		<tools>
 			<li>
 				<label>point</label>
@@ -85,7 +85,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--三品——衡元棍（依赖炼器）-->
+	<!--Third-rate — HengYuan quarterstaff (requires Forge)-->
 	<ThingDef ParentName="RI_MagicalWeapon_Blunt_Base" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_EarthQuarterstaff</defName>
 		<label>HengYuan quarterstaff【Third-rate】</label>
@@ -95,11 +95,11 @@
 			<texPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_EarthQuarterstaff</texPath>
 			<drawSize>2.2</drawSize>
 		</graphicData>
-		<!--图标贴图-->
+		<!--Icon texture-->
 		<uiIconPath>Things/Item/Equipment/WeaponMelee/RI_Weapon_EarthQuarterstaff</uiIconPath>
 		<uiIconScale>1.1</uiIconScale>
 
-		<!--原料-->
+		<!--Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
 			<RI_Resource_BlackCorundum MayRequire="RI.RimImmortal.Living">20</RI_Resource_BlackCorundum>
@@ -122,10 +122,10 @@
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
-			<!--依赖炼器-->
+			<!--Requires Forge mod-->
 			<researchPrerequisite MayRequire="RI.RimImmortal.Forge">RI_InitialApproach_FiveElements_Earth</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tags-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Third</li>
 			<li>RI_Tag_MagicalWeapon</li>
@@ -133,7 +133,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effects-->
 		<tools>
 			<li>
 				<label>head</label>
@@ -144,7 +144,7 @@
 				<power>19</power>
 				<cooldownTime>2</cooldownTime>
 				<armorPenetration>0.1</armorPenetration>
-				<!--依赖炼器-->
+				<!--Requires Forge mod-->
 				<extraMeleeDamages MayRequire="RI.RimImmortal.Forge">
 					<li>
 						<def>RI_Damage_Vertigo</def>
@@ -156,7 +156,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--三品——见血封喉（依赖炼器）-->
+	<!--Third-rate — upas blood (requires Forge)-->
 	<ThingDef ParentName="BaseWeaponNeolithic" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_BambooPoisonBow</defName>
 		<label>upas blood【Third-rate】</label>
@@ -169,7 +169,7 @@
 		</graphicData>
 		<soundInteract>Bow_Small</soundInteract>
 
-		<!--原料-->
+		<!--Materials-->
 		<costList>
 			<RI_Resource_RawBamboo MayRequire="RI.RimImmortal.Living">50</RI_Resource_RawBamboo>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
@@ -200,7 +200,7 @@
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
 			</recipeUsers>
-			<!--依赖炼器-->
+			<!--Requires Forge mod-->
 			<researchPrerequisite MayRequire="RI.RimImmortal.Forge">RI_InitialApproach_FiveElements_Wood</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
@@ -256,7 +256,7 @@
 			<li>
 				<hediff>ToxicBuildup</hediff>
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
-				<!-- 按体型缩放 -->
+				<!-- Scales by body size -->
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ================================== 火行法门书 ====================================-->
+	<!-- ================================== Fire element technique book ====================================-->
 	<ThingDef ParentName="RI_BookBase">
 		<defName>RI_Book_FireElement</defName>
 		<label>Initial approach book-Fire element</label>
@@ -42,7 +42,7 @@
 		</comps>
 	</ThingDef>
 
-	<!-- ================================== 木行法门书 ====================================-->
+	<!-- ================================== Wood element technique book ====================================-->
 	<ThingDef ParentName="RI_BookBase">
 		<defName>RI_Book_WoodElement</defName>
 		<label>Initial approach book-Wood element</label>
@@ -81,7 +81,7 @@
 		</comps>
 	</ThingDef>
 
-	<!-- ================================== 土行法门书 ====================================-->
+	<!-- ================================== Earth element technique book ====================================-->
 	<ThingDef ParentName="RI_BookBase">
 		<defName>RI_Book_EarthElement</defName>
 		<label>Initial approach book-Earth element</label>

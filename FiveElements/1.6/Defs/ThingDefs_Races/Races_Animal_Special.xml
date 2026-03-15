@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--树精前置-->
+	<!--Verdant creature base-->
 	<ThingDef ParentName="AnimalThingBase" Name="RI_DryadBase" Abstract="True">
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
@@ -13,7 +13,7 @@
 			<FilthRate>0</FilthRate>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
-		<!--超链接-->
+		<!--Hyperlinks-->
 		<descriptionHyperlinks>
 			<ThingDef>Plant_TreeGauranlen</ThingDef>
 		</descriptionHyperlinks>
@@ -70,10 +70,10 @@
 			<li>RI_Animal_None</li>
 		</tradeTags>
 		<race>
-			<!--无性别-->
+			<!--No gender-->
 			<hasGenders>false</hasGenders>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<!--虫子Ai-->
+			<!--Insect AI-->
 			<thinkTreeMain>Insect</thinkTreeMain>
 			<thinkTreeConstant>InsectConstant</thinkTreeConstant>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -91,14 +91,14 @@
 			<playerCanChangeMaster>true</playerCanChangeMaster>
 			<hideTrainingTab>false</hideTrainingTab>
 			<disableAreaControl>true</disableAreaControl>
-			<!--DLC动物能力-->
+			<!--DLC animal abilities-->
 			<specialTrainables>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
 			</specialTrainables>
 
 			<petness>0</petness>
-			<!--给予hediff-->
+			<!--Grants hediff-->
 			<hediffGiverSets Inherit="False"/>
 			<foodType>None</foodType>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -107,15 +107,15 @@
 		</race>
 	</ThingDef>
 
-	<!--树精物种前置-->
+	<!--Verdant creature kind base-->
 	<PawnKindDef Name="RI_DryadKindBase" ParentName="AnimalKindBase" Abstract="True">
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 	</PawnKindDef>
 
-	<!-- 森林护卫 Verdant guard -->
-	<!--由一般的树木转变而成-->
+	<!-- Verdant guard -->
+	<!--Transformed from ordinary trees-->
 	<ThingDef ParentName="RI_DryadBase">
 		<defName>RI_Animal_VerdantGuard</defName>
 		<label>Verdant guardian</label>
@@ -152,7 +152,7 @@
 				<li>(-0.15, 0, 0.03)</li>
 			</headPosPerRotation>
 		</race>
-		<!--屠宰产物-->
+		<!--Butcher products-->
 		<butcherProducts>
 			<WoodLog>50</WoodLog>
 		</butcherProducts>
@@ -186,8 +186,8 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!-- 青冥树灵 QingMing dryad -->
-	<!--由青冥树转变而成-->
+	<!-- QingMing dryad -->
+	<!--Transformed from QingMing trees-->
 	<ThingDef ParentName="RI_DryadBase">
 		<defName>RI_Animal_QingMingDryad</defName>
 		<label>QingMing dryad</label>
@@ -257,7 +257,7 @@
 				<li>(-0.15, 0, 0.03)</li>
 			</headPosPerRotation>
 		</race>
-		<!--屠宰产物-->
+		<!--Butcher products-->
 		<butcherProducts>
 			<RI_Resource_QingMingMarrow>2</RI_Resource_QingMingMarrow>
 			<WoodLog>50</WoodLog>

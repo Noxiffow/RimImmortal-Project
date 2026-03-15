@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--火行法门-->
+	<!--Fire element technique-->
 
-	<!-- 离火 -->
+	<!-- Departing flame cultivation -->
 	<AbilityDef  ParentName="RI_PsycastBase">
 		<defName>RI_Ability_FireCultivation</defName>
 		<label>Fire element cultivation</label>
@@ -36,16 +36,16 @@
 				<durationSecondsOverride>99999</durationSecondsOverride>
 			</li>
 
-			<!-- TODO 下面需要处理 -->
+			<!-- TODO: handle below -->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger effect-->
 				<moteCastDef>RI_Ability_Fire_Cultivation</moteCastDef>
 			</li>
 
 		</comps>
 	</AbilityDef>
 
-	<!-- 心炎 -->
+	<!-- Life fire activation -->
 	<AbilityDef  ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_BurningSoul</defName>
 		<label>Heart flame</label>
@@ -85,14 +85,14 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 吹火 -->
+	<!-- Flame breath -->
 	<!-- MayRequire="Biotech" -->
 	<AbilityDef  ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_Spew</defName>
 		<label>Flame breath</label>
 		<description>&lt;color=#FF5832&gt;This technique is learned by the Core-coagulation rank of the Fire-element Path\n\n&lt;/color&gt;Qi cost: 30\n\nConsume one layer of Life Fire to unleash flames.\n\nUsing one’s own Life Fire as the source and Qi as the fuel, a great burst of flames is expelled from the mouth.</description>
 		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Spew</iconPath>
-		<!--冷却-->
+		<!--Cooldown-->
 		<cooldownTicksRange>5</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
@@ -125,7 +125,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 炽飞雀 -->
+	<!-- Blazing sparrow -->
 	<AbilityDef  ParentName="RI_PsycastBase">
 		<defName>RI_Ab_Fire_FireBall</defName>
 		<label>Blazing sparrow</label>
@@ -169,7 +169,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 炽飞雀小 -->
+	<!-- Blazing sparrow (small) -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Ab_Fire_FireBall_Projectile</defName>
 		<label>fire sparrow</label>
@@ -196,7 +196,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!-- 焚绝 -->
+	<!-- Burning annihilation -->
 	<AbilityDef  ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_Impact</defName>
 		<label>Burn off</label>
@@ -229,7 +229,7 @@
 				</damageTypes>
 				<!-- TODO -->
 				<!-- <effecterDef></effecterDef> -->
-				<!-- 声音 -->
+				<!-- Sound -->
 				<!--<explosionsound>RI_Sound_FireBall_C</explosionsound>-->
 			</li>
 			<li Class="RI_FiveElements.CompProperties_HediffAsEnergy">
@@ -243,12 +243,12 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 烈日炎威 -->
+	<!-- Blazing sun majestic flame -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_Shield</defName>
 		<label>Majestic flame</label>
 		<description>&lt;color=#FF5832&gt;This technique is learned by the Spirit-constraint rank of the Fire-element Path\n\n&lt;/color&gt;Qi cost: 150\n\nConsume one layer of Life Fire to enhance one’s combat power.\n\nWhen a Fire cultivator has fully mastered the manipulation of flames, they can use it to strengthen themselves, boosting their combat capabilities.</description>
-		<!--冷却时间-->
+		<!--Cooldown time-->
 		<cooldownTicksRange>6000</cooldownTicksRange>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Shield</iconPath>
@@ -288,7 +288,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 追焰 -->
+	<!-- Chasing flame -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_Jump</defName>
 		<label>Flame teleport</label>
@@ -322,13 +322,13 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 乾阳焱火决 -->
+	<!-- Qianyang blazing flame technique -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Fire_Ring</defName>
 		<label>Qianyang flame field</label>
 		<description>&lt;color=#FF5832&gt;This technique is learned by the Primordial-spirit combine rank of the Fire-element Path\n\n&lt;/color&gt;Qi cost: 350\n\nConsume one layer of Life Fire to create a domain centered on oneself, where any living being within the domain will be burned by Life Fire.\n\nQianyang Blazing Fire, the ultimate goal of all Fire cultivators. Mastering this technique allows one to ignite their own Life Fire and create a domain of Life Fire.\n\nWithin this domain, all living beings except the practitioner will have their Life Fire ignited, causing them to suffer from the flames burning them from the inside out.</description>
 		<iconPath>UI/Abilities/FireElement/RI_Ability_Fire_Ring</iconPath>
-		<!--冷却-->
+		<!--Cooldown-->
 		<cooldownTicksRange>3000</cooldownTicksRange>
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<targetRequired>False</targetRequired>

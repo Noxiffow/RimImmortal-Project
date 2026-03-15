@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--技能选中特效——木行——巽木-->
+	<!--Skill select effect — Wood element — Xun Wood cultivation-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Wood_Cultivation</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -17,7 +17,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——木行——春生-->
+	<!--Skill select effect — Wood element — Spring growth-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Wood_EverythingGrow</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -33,7 +33,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——木行——生机嫁接-->
+	<!--Skill select effect — Wood element — Vitality graft-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_WoodLifeGive</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -49,7 +49,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--生成植物特效-->
+	<!--Plant generation effect-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Wood_CreatePlantsBuilding</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -65,7 +65,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--抽取生机特效-->
+	<!--Vitality extraction effect-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Wood_VitalityAbsorption</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>

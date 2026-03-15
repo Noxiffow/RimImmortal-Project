@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--技能选中特效——土行——坤土-->
+	<!--Skill select effect — Earth element — Kun Earth cultivation-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Earth_Cultivation</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -18,7 +18,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——土行——基础-->
+	<!--Skill select effect — Earth element — basic-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Earth_Normal</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -35,7 +35,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——土行——地震-->
+	<!--Skill select effect — Earth element — earthquake-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Earth_Earthquake</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -52,7 +52,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——土行——土之领域-->
+	<!--Skill select effect — Earth element — Earth domain-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_Earth_EarthDomain</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>

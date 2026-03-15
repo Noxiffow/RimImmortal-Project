@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--荆棘伤害-->
+	<!--Thorn damage-->
 	<DamageArmorCategoryDef>
 		<defName>RI_ThornDamage_Category</defName>
 		<multStat>SharpDamageMultiplier</multStat>
@@ -12,7 +12,7 @@
 		<defName>TrapSlowDamage</defName>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<hediff>RI_Hediff_SlowRoot</hediff>
-		<!-- 下面定义的 Hediff -->
+		<!-- Hediff defined below -->
 		<externalViolence>true</externalViolence>
 	</DamageDef>
 

@@ -5,9 +5,9 @@
 		<tab>RI_ResearchTab</tab>
 	</ResearchProjectDef>-->
 
-	<!--=============================== 五行科技树 ===================================-->
+	<!--=============================== Five Elements tech tree ===================================-->
 
-	<!--=====离火======-->
+	<!--===== Fire element =====-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_InitialApproach_FiveElements_Fire</defName>
 		<label>Fire element</label>
@@ -21,7 +21,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--=====巽木======-->
+	<!--===== Wood element =====-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_InitialApproach_FiveElements_Wood</defName>
 		<label>Wood element</label>
@@ -35,7 +35,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--=====坤土======-->
+	<!--===== Earth element =====-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_InitialApproach_FiveElements_Earth</defName>
 		<label>Earth element</label>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 土行法门 -->
+	<!-- Earth element technique -->
 
-	<!-- 凝气境界——坤土 -->
+	<!-- Qi condensation — Kun Earth cultivation -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_EarthCultivation</defName>
 		<label>Earth element cultivation</label>
@@ -40,7 +40,7 @@
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
 				<moteCastDef>RI_Ability_ElixirsStrengthen_Singing</moteCastDef>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Cultivation</moteCastDef>
 			</li>
@@ -50,13 +50,13 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 凝气境界——乾元生柱 -->
+	<!-- Qi condensation — earth spirit column -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_EarthSpiritColumn</defName>
 		<label>Earth column</label>
 		<description>&lt;color=#C9B954&gt;This technique is learned by the Foundation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 50\n\nCreates one Earth Column.\n\nThe Earth Column is a technique unique to Earth cultivation. By resonating with the Qi within the ground, it refines and condenses it into an Earth Column, which serves as a medium for channeling other spells.\n\nThe Earth Column can exist indefinitely and is capable of bearing heavy weight. If destroyed by external force, it leaves nothing behind. Most advanced Earth cultivation techniques require an Earth Column as a triggering medium.</description>
 		<iconPath>UI/Abilities/EarthElement/RI_Ability_EarthSpiritColumn</iconPath>
-		<!--1小时-->
+		<!--1-hour cooldown-->
 		<cooldownTicksRange>2500</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<displayOrder>100</displayOrder>
@@ -82,14 +82,14 @@
 				<allowOnBuildings>false</allowOnBuildings>
 				<sendSkipSignal>true</sendSkipSignal>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 化丹境界——石甲护身 -->
+	<!-- Core formation — stone armor -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_StoneArmor</defName>
 		<label>Stone armor</label>
@@ -130,14 +130,14 @@
 					<onlyTargetColonists>true</onlyTargetColonists>
 				</targetingParameters>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 结丹境界——岩碎 -->
+	<!-- Golden core — shattered rock -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_FlyingSand</defName>
 		<label>Rock crushing</label>
@@ -179,14 +179,14 @@
 					<onlyTargetColonists>false</onlyTargetColonists>
 				</targetingParameters>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 结丹境界——土壁 -->
+	<!-- Golden core — earth wall -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_EarthWall</defName>
 		<label>Earth wall</label>
@@ -218,20 +218,20 @@
 				<width>5</width>
 				<height>1</height>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 灵丹境界——陷地吞沙 -->
+	<!-- Spirit core — sand trap -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_SandTrap</defName>
 		<label>Quicksand</label>
 		<description>&lt;color=#C9B954&gt;This technique is learned by the Core-consummation rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 240\n\nSelects an Earth column within the target area as a medium and transforms it into a Quicksand trap.\n\nThe Quicksand draws all creatures within its area toward the center, making it extremely dangerous.</description>
 		<iconPath>UI/Abilities/EarthElement/RI_Ability_SandTrap</iconPath>
-		<!--4小时冷却-->
+		<!--4-hour cooldown-->
 		<cooldownTicksRange>10000</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<displayOrder>500</displayOrder>
@@ -256,22 +256,22 @@
 				<targetThingDef>RI_Building_StoneColumn</targetThingDef>
 				<towerThingDef>RI_Building_SandTrap</towerThingDef>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Normal</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!--婴后-->
+	<!--Post-Nascent soul-->
 
-	<!-- 灵丹境界——石塔镇界 -->
+	<!-- Spirit core — guardian stone tower -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_WorldSealingStoneTower</defName>
 		<label>Stone tower guardian</label>
 		<description>&lt;color=#C9B954&gt;This technique is learned by the Primordial-spirit baby rank of the Earth-element Path\n\n&lt;/color&gt;Qi cost: 360\n\nSelects an Earth column as a medium and transforms it into a rising stone tower.\n\nThe tower occupies a 2×2 area and provides powerful shields to allied units within its range.</description>
 		<iconPath>UI/Abilities/EarthElement/RI_Ability_WorldSealingStoneTower</iconPath>
-		<!--24小时一个-->
+		<!--One per 24-hour cooldown-->
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<displayOrder>500</displayOrder>
@@ -296,14 +296,14 @@
 				<targetThingDef>RI_Building_StoneColumn</targetThingDef>
 				<towerThingDef>RI_Building_WorldSealingStoneTower</towerThingDef>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Earthquake</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 元婴境界——乾坤震地 -->
+	<!-- Nascent soul — earth-shaking quake -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Earthquake</defName>
 		<label>Earthquake</label>
@@ -341,14 +341,14 @@
 				<explosionSound>RI_Sound_RockShock</explosionSound>
 				<screenShakeFactor>2</screenShakeFactor>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_Earthquake</moteCastDef>
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!-- 合体境界大招——八荒磐岩 -->
+	<!-- Fusion realm ultimate — eight wastes bedrock -->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_EarthDomain</defName>
 		<label>Eight expanse domain</label>
@@ -390,7 +390,7 @@
 					<onlyTargetColonists>false</onlyTargetColonists>
 				</targetingParameters>
 			</li>
-			<!--技能准备特效-->
+			<!--Skill readying effect-->
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Mote_Earth_EarthDomain</moteCastDef>
 			</li>

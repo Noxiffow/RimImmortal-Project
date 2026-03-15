@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- 测试特效 -->
+	<!-- Test visual effect -->
 	<EffecterDef>
 		<defName>RI_Effecter_BlockedProjectile</defName>
 		<children>
@@ -14,11 +14,11 @@
 				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
 				<fleckDef>RedSun_Fleck_BlockedProjectile_A</fleckDef>
 				<maxMoteCount>1</maxMoteCount>
-				<!--只需要一次-->
+				<!--Only once-->
 				<rotationRate>90</rotationRate>
-				<!--顺时针旋转速度，360是每秒一圈，负是逆时针-->
+				<!--Clockwise rotation speed — 360 = one full turn per second, negative = counter-clockwise-->
 				<ticksBetweenMotes>90</ticksBetweenMotes>
-				<!--循环播放的间隔-->
+				<!--Loop interval-->
 				<positionRadius>0</positionRadius>
 				<attachToSpawnThing>true</attachToSpawnThing>
 				<spawnLocType>OnSource</spawnLocType>
@@ -82,7 +82,7 @@
 		</graphicData>
 	</FleckDef>
 
-	<!--技能选中特效——火行——离火-->
+	<!--Skill select effect — Fire element — Departing flame-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_Fire_Cultivation</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>

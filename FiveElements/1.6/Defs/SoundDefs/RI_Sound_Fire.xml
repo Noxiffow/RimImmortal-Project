@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--火球A-->
+	<!--Fireball A-->
 	<SoundDef>
 		<defName>RI_Sound_FireBall_A</defName>
 		<context>MapOnly</context>
@@ -25,7 +25,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--火球B-->
+	<!--Fireball B-->
 	<SoundDef>
 		<defName>RI_Sound_FireBall_B</defName>
 		<context>MapOnly</context>
@@ -49,7 +49,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--火球C-->
+	<!--Fireball C-->
 	<SoundDef>
 		<defName>RI_Sound_FireBall_C</defName>
 		<context>MapOnly</context>
@@ -73,7 +73,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--火焰启动-->
+	<!--Flame activation-->
 	<SoundDef>
 		<defName>RI_Sound_StartFire_A</defName>
 		<context>MapOnly</context>
@@ -97,7 +97,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--火行大招A-->
+	<!--Fire element ultimate A-->
 	<SoundDef>
 		<defName>RI_Sound_FireRing_A</defName>
 		<context>MapOnly</context>

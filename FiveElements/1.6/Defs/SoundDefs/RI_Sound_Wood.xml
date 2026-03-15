@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--植物生长-->
+	<!--Plant growth-->
 	<SoundDef>
 		<defName>RI_Sound_PlantsGrowing</defName>
 		<context>MapOnly</context>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--火行法门-->
+	<!--Fire element technique-->
 	<WhoXiuXian.RI_RouteDef>
 		<defName>RI_FiveElements_Fire</defName>
 		<label>Fire</label>
 		<description>...</description>
 		<routeLevels>
 			<li>
-				<!--凝气-->
+				<!--Qi condensation-->
 				<level>1</level>
 				<abilities>
 					<li>RI_Ability_FireCultivation</li>
 				</abilities>
 			</li>
 			<li>
-				<!--固基-->
+				<!--Foundation building-->
 				<level>2</level>
 				<abilities>
 					<li>RI_Ability_Fire_BurningSoul</li>
 				</abilities>
 			</li>
 			<li>
-				<!--化丹-->
+				<!--Core formation-->
 				<level>3</level>
 				<abilities>
 					<li>RI_Ability_Fire_Spew</li>
 				</abilities>
 			</li>
 			<li>
-				<!--结丹-->
+				<!--Golden core-->
 				<level>4</level>
 				<abilities>
 					<li>RI_Ab_Fire_FireBall</li>
@@ -37,22 +37,22 @@
 				</abilities>
 			</li>
 			<li>
-				<!--灵丹-->
+				<!--Spirit core-->
 				<level>5</level>
 				<abilities>
 					<li>RI_Ability_Fire_Shield</li>
 				</abilities>
 			</li>
-			<!--跳过化神-->
+			<!--Skip deity transformation-->
 			<li>
-				<!--元婴-->
+				<!--Nascent soul-->
 				<level>7</level>
 				<abilities>
 					<li>RI_Ability_Fire_Jump</li>
 				</abilities>
 			</li>
 			<li>
-				<!--大成-->
+				<!--Great completion-->
 				<level>8</level>
 				<abilities>
 					<li>RI_Ability_Fire_Ring</li>
@@ -61,28 +61,28 @@
 		</routeLevels>
 	</WhoXiuXian.RI_RouteDef>
 
-	<!--木行法门-->
+	<!--Wood element technique-->
 	<WhoXiuXian.RI_RouteDef>
 		<defName>RI_FiveElements_Wood</defName>
 		<label>Wood</label>
 		<description>...</description>
 		<routeLevels>
 			<li>
-				<!--凝气-->
+				<!--Qi condensation-->
 				<level>1</level>
 				<abilities>
 					<li>RI_Ability_WoodCultivation</li>
 				</abilities>
 			</li>
 			<li>
-				<!--固基-->
+				<!--Foundation building-->
 				<level>2</level>
 				<abilities>
 					<li>RI_Ability_EverythingGrow</li>
 				</abilities>
 			</li>
 			<li>
-				<!--化丹-->
+				<!--Core formation-->
 				<level>3</level>
 				<abilities>
 					<li>RI_Ability_VitalityAbsorption</li>
@@ -90,21 +90,21 @@
 				</abilities>
 			</li>
 			<li>
-				<!--结丹-->
+				<!--Golden core-->
 				<level>4</level>
 				<abilities>
 					<li>RI_Ability_GardenArmy</li>
 				</abilities>
 			</li>
 			<li>
-				<!--灵丹-->
+				<!--Spirit core-->
 				<level>5</level>
 				<abilities>
 					<li>RI_Ability_ForestGuardian</li>
 				</abilities>
 			</li>
 			<li>
-				<!--化神-->
+				<!--Deity transformation-->
 				<level>7</level>
 				<abilities>
 					<li>RI_Ability_WoodLifeGive</li>
@@ -113,35 +113,35 @@
 		</routeLevels>
 	</WhoXiuXian.RI_RouteDef>
 
-	<!--土行法门-->
+	<!--Earth element technique-->
 	<WhoXiuXian.RI_RouteDef>
 		<defName>RI_FiveElements_Earth</defName>
 		<label>Earth</label>
 		<description>...</description>
 		<routeLevels>
 			<li>
-				<!--凝气-->
+				<!--Qi condensation-->
 				<level>1</level>
 				<abilities>
 					<li>RI_Ability_EarthCultivation</li>
 				</abilities>
 			</li>
 			<li>
-				<!--固基-->
+				<!--Foundation building-->
 				<level>2</level>
 				<abilities>
 					<li>RI_Ability_EarthSpiritColumn</li>
 				</abilities>
 			</li>
 			<li>
-				<!--化丹-->
+				<!--Core formation-->
 				<level>3</level>
 				<abilities>
 					<li>RI_Ability_StoneArmor</li>
 				</abilities>
 			</li>
 			<li>
-				<!--结丹-->
+				<!--Golden core-->
 				<level>4</level>
 				<abilities>
 					<li>RI_Ability_FlyingSand</li>
@@ -149,21 +149,21 @@
 				</abilities>
 			</li>
 			<li>
-				<!--灵丹-->
+				<!--Spirit core-->
 				<level>5</level>
 				<abilities>
 					<li>RI_Ability_SandTrap</li>
 				</abilities>
 			</li>
 			<li>
-				<!--元婴-->
+				<!--Nascent soul-->
 				<level>7</level>
 				<abilities>
 					<li>RI_Ability_WorldSealingStoneTower</li>
 				</abilities>
 			</li>
 			<li>
-				<!--大成-->
+				<!--Great completion-->
 				<level>8</level>
 				<abilities>
 					<li>RI_Ability_Earthquake</li>
