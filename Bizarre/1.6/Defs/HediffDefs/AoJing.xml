@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- 蜕皮 -->
+	<!--Molt-->
 	<HediffDef>
 		<defName>NzRI_AoJing_Molt</defName>
 		<label>molt</label>
@@ -30,7 +30,7 @@
 			</li>
 		</comps>
 	</HediffDef>
-	<!-- 剧痛 -->
+	<!--Agony-->
 	<HediffDef>
 		<defName>NzRI_AoJing_Agony</defName>
 		<label>Agony</label>
@@ -51,7 +51,7 @@
 			</li>
 		</comps>
 	</HediffDef>
-	<!-- 登阶 -->
+	<!--Ascend-->
 	<HediffDef>
 		<defName>NzRI_AoJing_Ascend</defName>
 		<label>CangQiang Ascend</label>

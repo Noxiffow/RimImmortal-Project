@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 死战 -->
+    <!--Die fighting-->
     <HediffDef>
         <defName>NzRI_He_Bj_DieFighting</defName>
         <label>die fighting</label>
         <description>Enter a berserk fighting state, never surrendering or retreating</description>
         <hediffClass>HediffWithComps</hediffClass>
         <stages>
-            <!-- TODO 根据不同境界设计不同的强度 -->
+            <!--TODO Design different intensities per realm-->
             <li>
                 <statOffsets>
                     <MeleeHitChance>99</MeleeHitChance>
@@ -26,7 +26,7 @@
         <isBad>false</isBad>
     </HediffDef>
 
-    <!-- 列阵 -->
+    <!--Embattle-->
     <HediffDef>
         <defName>NzRI_He_Bj_Embattle</defName>
         <label>embattle</label>
@@ -58,7 +58,7 @@
             </li>
         </comps>
         <stages>
-            <!-- TODO 根据不同境界设计不同的强度 -->
+            <!--TODO Design different intensities per realm-->
             <li>
                 <statOffsets>
                     <MeleeHitChance>99</MeleeHitChance>
@@ -68,7 +68,7 @@
             </li>
         </stages>
     </HediffDef>
-    <!-- 待战 -->
+    <!--Standby-->
     <HediffDef>
         <defName>NzRI_He_Bj_Standby</defName>
         <label>standby</label>
@@ -85,7 +85,7 @@
             </li>
         </comps>
         <stages>
-            <!-- TODO 根据不同境界设计不同的强度 -->
+            <!--TODO Design different intensities per realm-->
             <li>
                 <statOffsets>
                     <MeleeHitChance>99</MeleeHitChance>

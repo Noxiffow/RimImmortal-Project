@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- 酸性粘液 -->
+    <!--Acid mucus-->
     <ThingDef ParentName="BaseFilth">
         <defName>NzRI_Filth_AcidMucus</defName>
         <label>acid mucus</label>

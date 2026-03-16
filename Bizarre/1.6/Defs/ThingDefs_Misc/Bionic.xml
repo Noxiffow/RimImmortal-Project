@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 心素的眼睛 -->
+    <!--Xinsu's eyes-->
     <ThingDef ParentName="NzRI_BodyPartBionicBase">
         <defName>NzRI_XinSu_Eye</defName>
         <label>xinsu's eye</label>
@@ -16,7 +16,7 @@
 		</tradeTags>
     </ThingDef>
 
-    <!-- 仿生体基础 -->
+    <!--Bionic base-->
     <ThingDef Name="NzRI_BodyPartBionicBase" ParentName="BodyPartBase" Abstract="True">
         <defName>NzRI_BodyPartBionicBase</defName>
         <techLevel>Spacer</techLevel>

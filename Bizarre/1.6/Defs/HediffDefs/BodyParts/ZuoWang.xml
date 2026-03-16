@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 心素的眼镜 -->
+    <!--Xinsu's eye-->
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>NzRI_XinSu_Eye</defName>
         <label>xinsu's eye</label>

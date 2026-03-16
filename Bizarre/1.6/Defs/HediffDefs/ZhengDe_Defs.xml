@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 正德寺 克己线 -->
+    <!--Zhengde temple — restraint line-->
     <NzRimImmortalBizarre.DefZdCultivationLine>
         <defName>Zd_Line_Restraint</defName>
         <lineName>Restraint</lineName>
@@ -22,7 +22,7 @@
         </high>
     </NzRimImmortalBizarre.DefZdCultivationLine>
 
-    <!-- 正德寺 明心线 -->
+    <!--Zhengde temple — enlightenment line-->
     <NzRimImmortalBizarre.DefZdCultivationLine>
         <defName>Zd_Line_Enlightenment</defName>
         <lineName>Enlightenment</lineName>
@@ -44,7 +44,7 @@
         </high>
     </NzRimImmortalBizarre.DefZdCultivationLine>
 
-    <!-- 正德寺 舍身线 -->
+    <!--Zhengde temple — sacrifice line-->
     <NzRimImmortalBizarre.DefZdCultivationLine>
         <defName>Zd_Line_Sacrifice</defName>
         <lineName>Sacrifice</lineName>

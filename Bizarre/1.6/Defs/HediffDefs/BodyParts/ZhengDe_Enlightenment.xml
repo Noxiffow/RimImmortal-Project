@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 明心相关身体部件 -->
+    <!--Enlightenment-related body parts-->
 
-    <!-- 菩提心 -->
-    <!-- 特效：脑后光环佛珠 -->
-    <!-- 光环：菩提: 范围内友方减伤加护甲 -->
+    <!--Bodhisattva heart-->
+    <!--Effect: Buddha bead halo behind head-->
+    <!--Halo — Bodhi: friendly units in range take less damage and gain armor-->
 
-    <!-- 梵鸣肺 -->
-    <!-- 狮子吼 范围降低视力听力操作 -->
+    <!--Thunder lung-->
+    <!--Lion's roar — reduces sight, hearing, manipulation in range-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_ThunderLung</defName>
         <label>thunder lung</label>
         <labelNoun>an thunder lung</labelNoun>
-        <!-- 伴随着每一次呼吸，似乎都有隐隐的佛经念颂声，当大声吼叫时，一定能震慑众生吧。 附加能力：狮子吼 -->
+        <!--With every breath, faint sutra chanting seems to echo. When you shout loudly, all living beings will be intimidated. Additional ability: 'lion's roar'-->
         <description>With every breath, there seems to be a faint chanting of sutras. When you shout
             loudly, you can definitely intimidate all living beings.\n\n Additional ability: "lion's
             roar"</description>
@@ -39,13 +39,13 @@
         </stages>
     </HediffDef>
 
-    <!-- 怒目 -->
-    <!-- 范围火焰\EMP加爆炸 -->
+    <!--Glaring eye-->
+    <!--Range flame/EMP plus explosion-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_GlaringEye</defName>
         <label>glaring eye</label>
         <labelNoun>an glaring eye</labelNoun>
-        <!-- 看似慈眉善目，然而隐隐也有丝丝火光闪烁。"佛虽慈悲亦有怒，三分火性隐心中。" 附加能力：怒目 -->
+        <!--It looks like a kind face, but there are faint flashes of fire. 'Although the Buddha is compassionate, there is also anger hidden within.' Additional ability: 'stare angrily'-->
         <description>It looks like a kind face, but there are also faint flashes of fire. "Although
             the Buddha is compassionate, there is also anger, and the fire nature is hidden in the
             heart."\n\n Additional ability: "stare angrily"</description>
@@ -72,13 +72,13 @@
         </stages>        
     </HediffDef>
 
-    <!-- 无动臂 -->
-    <!-- 触摸目标，添加减伤hediff，套盾 -->
+    <!--Unshakeable arm-->
+    <!--Touch target, add damage reduction hediff, apply shield-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_UnshakeableArm</defName>
         <label>unshakeable arm</label>
         <labelNoun>an unshakeable arm</labelNoun>
-        <!-- 肌肉坚实，如同石头一般，给人以十足的安全感。 附加能力：抚顶 -->
+        <!--Muscles solid as stone, giving a strong sense of security. Additional ability: 'touching head'-->
         <description>The muscles are solid, like stone, giving people a sense of security.
             Additional
             ability: "touching head"</description>
@@ -122,13 +122,13 @@
         </stages>        
     </HediffDef>
 
-    <!-- 金刚臂 -->
-    <!-- 打晕，击倒 -->
+    <!--Vajra arm-->
+    <!--Knockout, knockdown-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_VajraArm</defName>
         <label>vajra arm</label>
         <labelNoun>an vajra arm</labelNoun>
-        <!-- 肌肉虬结，表面隐隐流光闪烁，如同金刚石一般。 附加能力：撼山拳，慈悲掌 -->
+        <!--Muscles knotted, faintly shining like a diamond. Additional abilities: 'shake mountain fist', 'merciful hit'-->
         <description>The muscles are knotted, and the surface is faintly shining, like a diamond.
             Additional abilities: "shake mountain fist", "merciful hit"</description>
         <defaultInstallPart>Shoulder</defaultInstallPart>
@@ -172,13 +172,13 @@
         </stages>        
     </HediffDef>
 
-    <!-- 圆光腿 -->
-    <!-- 踢出流光,大扇形切割低伤害,stuck, -->
+    <!--Divine light kick-->
+    <!--Kick out a stream of light, large fan-shaped cut, low damage, stuck-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_DivineLightLeg</defName>
         <label>divine light</label>
         <labelNoun>an divine light</labelNoun>
-        <!-- 踩在地上时，地面仿若水面一样泛出涟漪，仔细一观，似乎又什么都没有。\n\n 附加能力：圆光腿 -->
+        <!--Stepping on the ground, it ripples like water. Upon closer inspection, nothing seems to be there. Additional ability: 'divine light kick'-->
         <description>Stepping on the ground, the ground ripples like the surface of the water. Upon
             closer inspection, it seems like there is nothing there.\n\n Additional ability: "divine
             light kick"</description>
@@ -205,8 +205,8 @@
         </stages>        
     </HediffDef>
 
-    <!-- 莲花腿 -->
-    <!-- 花开见佛，步步生莲。\n\n 附加能力：梵界 -->
+    <!--Lotus leg-->
+    <!--Flowers bloom to see the Buddha, lotus blossoms with each step. Additional ability: 'brahma area'-->
     <!--  -->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_LotusLeg</defName>

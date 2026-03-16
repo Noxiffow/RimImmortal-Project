@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <!-- 禅音 -->
+  <!--Zen sound-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zw_ZenSound</defName>
     <label>zen sound</label>
-    <!-- 发出一声蕴含禅意的声音，令人幡然醒悟。\n解除迷茫和狂暴状态，同时略微增加意识和操作 -->
-    <!-- 这会让你更接近 “明心” 路线 -->
+    <!--Emit a sound containing Zen meaning, making people suddenly realize. Removes confusion and berserk state, slightly increases consciousness and manipulation-->
+    <!--This will bring you closer to the "Enlightenment" route-->
     <description>Emit a sound containing Zen meaning, making people suddenly realize. Removes
       confusion and berserk state, and slightly increases consciousness and manipulation.\n\n
       it will make you closer to the "Enlightenment" route</description>
@@ -58,11 +58,11 @@
 
 
   <AbilityDef ParentName="AbilityTouchBase">
-    <!-- 布施 -->
+    <!--Almsgiving-->
     <defName>NzRI_Zd_Almsgiving</defName>
     <label>almsgiving</label>
-    <!-- 效仿佛祖，割肉饲鹰\n 补充目标的饱腹和休息，同时增强目标的愈合速度 -->
-    <!-- 这个会让你更接近 “舍身” 路线 -->
+    <!--Imitate the ancestors, cut meat to feed the eagle; supplement the target's fullness and rest, enhancing their healing speed-->
+    <!--This will bring you closer to the "Sacrifice" route-->
     <description>Imitate the ancestors, cut meat to feed the eagle\n
       Supplement the target's fullness and rest, while enhancing the target's healing speed.\n\n
       it will make you closer to the "Sacrifice" route</description>
@@ -118,12 +118,12 @@
     </comps>
   </AbilityDef>
 
-  <!-- 参禅 -->
-  <!-- 修炼状态，降低移速 -->
+  <!--Zen meditation-->
+  <!--Cultivation state, reduces movement speed-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_ZenMeditation</defName>
     <label>zen meditation</label>
-    <!-- 在行走坐卧中，参悟禅理，降低移动速度，但是修行进度会随时间上升\n\n 其他特殊能力会随着修行逐渐解锁 -->
+    <!--During walking, sitting and lying, meditate on Zen, reduce movement speed, but progress will increase over time; other abilities unlock with practice-->
     <description>During walking, sitting and lying, meditate on Zen, reduce movement speed, but the
       progress of practice will increase over time\n\n Other special abilities will gradually unlock
       with practice</description>
@@ -153,13 +153,13 @@
         <replaceExisting>True</replaceExisting>
         <onlyApplyToSelf>True</onlyApplyToSelf>
       </li>
-      <!-- TODO 加点特效 -->
+      <!--TODO Add visual effects-->
       <!-- <li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
 				<rEnergy>10</rEnergy>
 			</li> -->
     </comps>
   </AbilityDef>
 
-  <!-- 如来 -->
-  <!-- 短时间化身五智如来，持续时间内，体型增大，普攻带范围伤害，承伤 0%，不可阻挡，心灵敏感度0% -->
+  <!--Tathagata-->
+  <!--Briefly embody the Five Wisdom Tathagatas: enlarged body, AoE basic attacks, 0% damage taken, unstoppable, 0% psychic sensitivity-->
 </Defs>

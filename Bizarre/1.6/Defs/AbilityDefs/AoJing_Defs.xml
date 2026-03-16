@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 指甲技能 -->
+    <!--Fingernail ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defP1</defName>
         <group>projectile</group>
@@ -10,7 +10,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
 
-    <!-- 手指/脚趾技能 -->
+    <!--Finger/toe ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defP2</defName>
         <group>projectile</group>
@@ -21,7 +21,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
 
-    <!-- 手/脚技能 -->
+    <!--Hand/foot ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defP3</defName>
         <group>projectile</group>
@@ -32,7 +32,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
 
-    <!-- 手臂/腿技能 -->
+    <!--Arm/leg ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defP4</defName>
         <group>projectile</group>
@@ -43,7 +43,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
 
-    <!-- 火疗技能 -->
+    <!--Fire therapy ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defO1</defName>
         <group>offering</group>
@@ -54,7 +54,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
 
-    <!-- 再生技能 -->
+    <!--Regeneration ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defO2</defName>
         <group>offering</group>
@@ -65,7 +65,7 @@
         </bodyParts>
     </NzRimImmortalBizarre.DefPartHurtLevel>
     
-    <!-- 蜕皮技能 -->
+    <!--Molt ability-->
     <NzRimImmortalBizarre.DefPartHurtLevel>
         <defName>defO3</defName>
         <group>offering</group>

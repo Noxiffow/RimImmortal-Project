@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 列阵 -->
+    <!--Embattle-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Bj_Embattle</defName>
         <label>embattle</label>
-        <!-- 让你的盟友在周围列阵，增加他们的战斗力，持续6小时 -->
+        <!--Let your allies embattle around you, increasing their combat effectiveness, lasting 6 hours-->
         <description>Let your allies embattle around you, increasing their combat effectiveness, lasting 6 hours.</description>
         <iconPath>UI/Abilities/Base/LG</iconPath>
         <cooldownTicksRange>30000</cooldownTicksRange>
@@ -12,7 +12,7 @@
         <displayOrder>300</displayOrder>
         <!-- <category>Sanguophage</category> -->
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
-        <!-- TODO 替换声音为怒吼 -->
+        <!--TODO Replace sound with roar-->
         <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
         <targetRequired>False</targetRequired>
         <verbProperties>
@@ -38,11 +38,11 @@
         </comps>
     </AbilityDef> 
 
-    <!-- 血战 -->
+    <!--Die fighting-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Bj_DieFighting</defName>
         <label>die fighting</label>
-        <!-- 进入狂暴的战斗状态，决不投降，绝不后退 -->
+        <!--Enter a berserk fighting state, never surrendering or retreating-->
         <description>Enter a berserk fighting state, never surrendering or retreating</description>
         <iconPath>UI/Abilities/Base/LG</iconPath>
         <cooldownTicksRange>30000</cooldownTicksRange>
@@ -50,7 +50,7 @@
         <displayOrder>300</displayOrder>
         <!-- <category>Sanguophage</category> -->
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
-        <!-- TODO 替换声音为怒吼 -->
+        <!--TODO Replace sound with roar-->
         <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
         <targetRequired>False</targetRequired>
         <verbProperties>
@@ -82,15 +82,15 @@
         </comps>
     </AbilityDef>
 
-    <!-- 染煞 -->
+    <!--Dyeing evil-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Bj_DyeingEvil</defName>
         <label>dyeing evil</label>
-        <!-- 使一件近战武器沾染煞气，使用这件武器的人会变的非常强大，但是也会更加容易激怒 -->
+        <!--Make a melee weapon tainted with evil; the user becomes very powerful but is more easily angered-->
         <cooldownTicksRange>120000</cooldownTicksRange>
         <description>Make a melee weapon tainted with evil, the user of this weapon will become very powerful, but also more easily angered.</description>
         <iconPath>UI/Abilities/Base/LG</iconPath>
-        <!-- TODO 声音是皇权的 -->
+        <!--TODO Sound is from Royalty DLC-->
         <!-- <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound> -->
         <!-- <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound> -->
         <!-- <warmupEffecter>Implant_Xenogerm</warmupEffecter> -->
@@ -122,7 +122,7 @@
         </comps>
     </AbilityDef> 
 
-    <!-- 铁魄 -->
+    <!--Iron soul-->
 
-    <!-- 将相首 -->
+    <!--General-in-chief-->
 </Defs>

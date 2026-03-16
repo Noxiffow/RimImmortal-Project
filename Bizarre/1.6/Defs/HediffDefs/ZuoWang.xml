@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 非罡 -->
+    <!--FeiGang-->
     <HediffDef>
         <defName>NzRI_Zw_Fg</defName>
         <label>FeiGang</label>
@@ -12,7 +12,7 @@
         <isBad>false</isBad>
     </HediffDef>
 
-    <!-- 麻将牌 -->
+    <!--Mahjong tiles-->
     <HediffDef>
         <defName>NzRI_Zw_Mahjong</defName>
         <label>Mahjong tiles</label>
@@ -29,7 +29,7 @@
         </comps>
     </HediffDef>
 
-    <!-- 美好幻景 -->
+    <!--Fantasy world-->
     <HediffDef>
         <defName>NzRI_Zw_Fantasy</defName>
         <label>FantasyWorld</label>
@@ -56,7 +56,7 @@
         </stages>
     </HediffDef>
 
-    <!-- 美好回忆 -->
+    <!--Beautiful memory-->
     <HediffDef>
         <defName>NzRI_Zw_FantasyMemory</defName>
         <label>Memory</label>
@@ -86,7 +86,7 @@
         </stages>
     </HediffDef>
 
-    <!-- 心智残缺(心智被切割) -->
+    <!--Mental deficiency (mind cut)-->
     <HediffDef>
         <defName>NzRI_Zw_MentalCutting</defName>
         <label>MentalCutting</label>

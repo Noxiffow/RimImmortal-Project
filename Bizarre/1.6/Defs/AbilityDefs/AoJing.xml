@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- 指甲 -->
+  <!--Fingernail-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_AoJing_FingerNail</defName>
     <label>fingernail</label>
@@ -38,16 +38,16 @@
       </li>
     </comps>
   </AbilityDef>
-  <!-- 血糜 小 -->
+  <!--Blood guts (small)-->
   <ThingDef ParentName="BaseBullet">
     <defName>NzRI_SmallBloodGuts</defName>
     <label>blood guts</label>
-    <!-- TODO 这个貌似有点问题需要修复 -->
+    <!--TODO: this seems to have issues that need fixing-->
     <!-- <thingClass>NzRimImmortalBizarre.ProjectileExt</thingClass> -->
     <graphicData>
       <texPath>Things/Projectile/PiercingSpine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(0.6, 0, 0, 1)</color> <!-- 血红色 -->
+      <color>(0.6, 0, 0, 1)</color> <!--blood red-->
     </graphicData>
     <projectile>
       <damageDef>RangedStab</damageDef>
@@ -58,7 +58,7 @@
     </projectile>
   </ThingDef>
 
-  <!-- 手指/脚趾 -->
+  <!--Finger/toe-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_AoJing_Finger</defName>
     <label>finger</label>
@@ -106,7 +106,7 @@
     </comps>
   </AbilityDef>
 
-  <!-- 手/脚 -->
+  <!--Hand/foot-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_AoJing_Hand</defName>
     <label>hand</label>
@@ -143,7 +143,7 @@
       </li>
     </comps>
   </AbilityDef>
-  <!-- 血糜 中 -->
+  <!--Blood guts (medium)-->
   <ThingDef>
     <defName>NzRI_BloodGuts</defName>
     <label>blood guts</label>
@@ -157,7 +157,7 @@
       <texPath>Things/Mote/VaporizeExplosionGlow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>MoteGlow</shaderType>
-      <color>(0.6, 0, 0, 1)</color> <!-- 血红色 -->
+      <color>(0.6, 0, 0, 1)</color> <!--blood red-->
       <drawSize>2</drawSize>
     </graphicData>
     <projectile>
@@ -173,7 +173,7 @@
     </projectile>
   </ThingDef>
 
-  <!-- 胳膊/腿 -->
+  <!--Arm/leg-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_AoJing_Arm</defName>
     <label>Arm</label>
@@ -224,7 +224,7 @@
     </comps>
   </AbilityDef>
 
-  <!-- 血糜 大 -->
+  <!--Blood guts (large)-->
   <ThingDef>
     <defName>NzRI_BigBloodGuts</defName>
     <label>blood guts</label>
@@ -238,7 +238,7 @@
       <texPath>Things/Mote/VaporizeExplosionGlow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>MoteGlow</shaderType>
-      <color>(0.6, 0, 0, 1)</color> <!-- 血红色 -->
+      <color>(0.6, 0, 0, 1)</color> <!--blood red-->
       <drawSize>2</drawSize>
     </graphicData>
     <projectile>
@@ -254,7 +254,7 @@
     </projectile>
   </ThingDef>
 
-  <!-- 火疗 -->
+  <!--Fire therapy-->
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>NzRI_FireTherapy</defName>
     <label>fire therapy</label>
@@ -302,7 +302,7 @@
     </comps>
   </AbilityDef>
 
-  <!-- 再生 -->
+  <!--Regeneration-->
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>NzRI_AoJing_Regeneration</defName>
     <label>regeneration</label>
@@ -348,7 +348,7 @@
   </AbilityDef>
 
 
-  <!-- 蜕皮 -->
+  <!--Molt-->
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>NzRI_AoJing_Molt</defName>
     <label>molt</label>

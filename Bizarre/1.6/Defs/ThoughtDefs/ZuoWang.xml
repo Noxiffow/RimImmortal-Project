@@ -28,7 +28,7 @@
             </li>
         </stages>
     </ThoughtDef>
-    <!-- 好话 -->
+    <!--Good words-->
     <ThoughtDef>
         <defName>NzRI_T_GracefulWords</defName>
         <thoughtClass>Thought_MemorySocial</thoughtClass>
@@ -44,7 +44,7 @@
             </li>
         </stages>
     </ThoughtDef>
-    <!-- 无意义的话 -->
+    <!--Meaningless words-->
     <ThoughtDef>
         <defName>NzRI_T_NonsenseWords</defName>
         <thoughtClass>Thought_MemorySocial</thoughtClass>
@@ -62,7 +62,7 @@
         </stages>
     </ThoughtDef>
 
-    <!-- 好心情 -->
+    <!--Good mood-->
     <ThoughtDef>
         <defName>NzRI_Thought_Zw_FantasyMemory</defName>
         <label>Beautiful Memory</label>

@@ -13,7 +13,7 @@
                 </abilities>
             </li>
             <li>
-                <level>2</level> <!--对应的境界等级-->
+                <level>2</level> <!--Corresponding realm level-->
                 <abilities>
                     <li>NzRI_AoJing_Finger</li>
                     <li>NzRI_AoJing_Ascend</li>
@@ -130,8 +130,7 @@
                 </abilities>
             </li>
             
-            <!-- 
-            如来形态
+            <!-- Tathagata form (route level 9 — disabled)
             <li>
                 <level>9</level>
                 <abilities>

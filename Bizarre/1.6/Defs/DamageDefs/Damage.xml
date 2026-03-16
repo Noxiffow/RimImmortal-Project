@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 脓疮打击 -->
+    <!--Pustule strike-->
     <DamageDef ParentName="Bite">
         <defName>NzRI_Dm_PustuleStrike</defName>
         <label>pustule strike</label>

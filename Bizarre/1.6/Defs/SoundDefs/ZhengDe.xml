@@ -52,7 +52,7 @@
         </subSounds>
     </SoundDef>
 
-    <!-- 跳 -->
+    <!--Jump-->
     <SoundDef>
         <defName>NzRI_Jump</defName>
         <context>MapOnly</context>
@@ -70,7 +70,7 @@
         </subSounds>
     </SoundDef>
 
-    <!-- 切肉 -->
+    <!--Cut meat-->
     <SoundDef>
         <defName>NzRI_CutMeat</defName>
         <context>MapOnly</context>
@@ -88,7 +88,7 @@
         </subSounds>
     </SoundDef>
 
-    <!-- 空挥 -->
+    <!--Swing at air-->
     <SoundDef>
         <defName>NzRI_CutAir</defName>
         <context>MapOnly</context>
@@ -106,7 +106,7 @@
         </subSounds>
     </SoundDef>
 
-    <!-- 嘶吼 -->
+    <!--Scream-->
     <SoundDef>
         <defName>NzRI_Scream</defName>
         <context>MapOnly</context>
@@ -124,7 +124,7 @@
         </subSounds>
     </SoundDef>
 
-    <!-- 恐怖凝视 TerrifyingGaze -->
+    <!--Terrifying gaze TerrifyingGaze-->
     <SoundDef>
         <defName>NzRI_TerrifyingGaze</defName>
         <context>MapOnly</context>

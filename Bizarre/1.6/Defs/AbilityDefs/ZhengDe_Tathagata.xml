@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 如来形态技能 -->
+    <!--Tathagata form abilities-->
 
-    <!-- 手攻击 - 握碎 -->
+    <!--Hand attack - Crush grip-->
 
-    <!-- 手攻击 - 飞掷 如果目标位置有东西，则两者都造成伤害 -->
+    <!--Hand attack - Throw. If something is at the target location, both take damage-->
 
-    <!-- 腿部攻击 - 重踏(小范围打飞，击倒) -->
+    <!--Leg attack - Heavy stomp (small AoE knockback and knockdown)-->
 </Defs>

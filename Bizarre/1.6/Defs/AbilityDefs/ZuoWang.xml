@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 舌灿莲花 (群体花言巧语) -->
-    <!-- 花言巧语 -->
+    <!--Tongue blooming lotus (group sweet talk)-->
+    <!--Sweet talk-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_GracefulWords</defName>
         <label>graceful words</label>
@@ -60,7 +60,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 混珠诳取 -->
+    <!--Counterfeit trade-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_Counterfeit</defName>
         <label>Counterfeit trade</label>
@@ -112,7 +112,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 李代桃僵 -->
+    <!--Scapegoat-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_Scapegoat</defName>
         <label>scapegoat</label>
@@ -176,7 +176,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 迷阵布施 -->
+    <!--Illusion array blessing-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_JoinUs</defName>
         <label>join us</label>
@@ -221,7 +221,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 罔天宝诰 -->
+    <!--Invoke deity-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_InvokeDeity</defName>
         <label>Invoke deity</label>
@@ -231,7 +231,7 @@
             illusion of success because they see the fate, and their bodies will fall to the ground
             due to loss of control.</description>
         <iconPath>Ability/Zw5</iconPath>
-        <!-- TODO 声音是皇权的 -->
+        <!--TODO Sound is from Royalty DLC-->
         <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
         <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
         <aiCanUse>false</aiCanUse>
@@ -285,7 +285,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 灵丹妙药 -->
+    <!--Miraculous cure-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_Therapy</defName>
         <label>Miraculous cure</label>
@@ -329,7 +329,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 化虚为实 -->
+    <!--Fiction to reality-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_FictionReality</defName>
         <label>fiction to reality</label>
@@ -339,7 +339,7 @@
             any items, success will yield a large amount of &lt;color=#28BD75&gt;FeiGang&lt;
             /color&gt;.</description>
         <iconPath>Ability/Zwx1</iconPath>
-        <!-- TODO 声音是皇权的 -->
+        <!--TODO Sound is from Royalty DLC-->
         <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
         <warmupSound>PsycastCastLoop</warmupSound>
         <aiCanUse>false</aiCanUse>
@@ -386,7 +386,7 @@
         </comps>
     </AbilityDef>
 
-    <!-- 镜中之物 -->
+    <!--Reflection in a mirror-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zw_ReflectionInMirror</defName>
         <label>Reflection in a mirror</label>
@@ -396,7 +396,7 @@
             only reflects half, the target will be incomplete, and will produce a large amount of
             &lt;color=#28BD75&gt;FeiGang&lt;/color&gt;.</description>
         <iconPath>Ability/Zwx2</iconPath>
-        <!-- TODO 声音是皇权的 -->
+        <!--TODO Sound is from Royalty DLC-->
         <warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
         <warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
         <!-- <warmupEffecter>Implant_Xenogerm</warmupEffecter> -->

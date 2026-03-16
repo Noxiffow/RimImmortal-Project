@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 拉拽 -->
+    <!--Dragging-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_Drag</defName>
         <label>drag</label>
-        <!-- 让腿部扭曲变长，拖拽一个人到自己面前 -->
+        <!--Let the legs twist and elongate, dragging a person in front of you-->
         <description>let the legs twist and elongate, dragging a person in front of you</description>
         <iconPath>Ability/ZdS1</iconPath>
         <cooldownTicksRange>120</cooldownTicksRange>
@@ -32,8 +32,8 @@
             </li>
         </comps>
     </AbilityDef>
-    <!-- 扫堂腿 -->
-    <!-- 枯败腿伸展延长，并在周围造成一次切割伤害，由于位置较低，更大概率对敌人的腿部造成伤害,甚至可能会切断它们 -->
+    <!--Leg sweep-->
+    <!--The withered leg extends, dealing cutting damage in range. Due to the low position, it has a higher chance of hitting enemy legs, potentially severing them-->
     <AbilityDef
         ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_LegSweep</defName>
@@ -73,11 +73,11 @@
         </comps>
     </AbilityDef>
 
-    <!-- 恐怖嘶吼 -->
+    <!--Terror scream-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_TerrorScream</defName>
         <label>terror scream</label>
-        <!-- 发出一声恐怖的吼叫，恐吓敌人，降低其移动和攻击速度 -->
+        <!--Emit a terrifying roar, scaring enemies and reducing their movement and attack speed-->
         <description>emit a terrifying scream to scare enemies, reducing their movement and attack
             speed</description>
         <iconPath>Ability/ZdS3</iconPath>
@@ -85,7 +85,7 @@
         <aiCanUse>true</aiCanUse>
         <displayOrder>300</displayOrder>
         <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
-        <!-- TODO 替换为吼叫 -->
+        <!--TODO Replace with roar-->
         <warmupStartSound>NzRI_Scream</warmupStartSound>
         <targetRequired>True</targetRequired>
         <verbProperties>
@@ -120,11 +120,11 @@
         </comps>
     </AbilityDef>
 
-    <!-- 噩梦凝视 -->
+    <!--Nightmare gaze-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_NightmareGaze</defName>
         <label>nighmare gaze</label>
-        <!-- 冰冷的凝视，将扭曲与疯狂注入目标的心灵与处理器，即使是机器都会发疯 -->
+        <!--The cold gaze injects distortion and madness into the target's mind and processor; even machines will go crazy-->
         <description>the cold gaze that injects distortion and madness into the target's mind and
             processor, even machines will go crazy</description>
         <iconPath>Ability/ZdS4</iconPath>
@@ -168,12 +168,12 @@
         </comps>
     </AbilityDef>
 
-    <!-- 触须突刺 -->
+    <!--Tentacle stab-->
     <!-- ParentName="AbilityTouchBase" -->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_TentacleStab</defName>
         <label>tentacle stab</label>
-        <!-- 让触须中的活铁瞬间硬化，对敌人的心脏造成致命一击 -->
+        <!--The bioferrite in the tentacles hardens instantly, dealing a fatal blow to the enemy's heart-->
         <description>let the bioferrite in the tentacles harden instantly, causing a fatal blow to
             the enemy's heart</description>
         <iconPath>Ability/ZdS5</iconPath>
@@ -213,11 +213,11 @@
         </comps>
     </AbilityDef>
 
-    <!-- 触须挥砍 -->
+    <!--Tentacle slash-->
     <AbilityDef ParentName="RI_PsycastBase">
         <defName>NzRI_Zd_TentacleSlash</defName>
         <label>tentacle slash</label>
-        <!-- 让触须中的活铁瞬间硬化，对范围内的敌人进行一次挥砍 -->
+        <!--The bioferrite in the tentacles hardens instantly, slashing all enemies in range-->
         <description>let the bioferrite in the tentacles harden instantly, and make a slash on the
             enemies in the area</description>
         <iconPath>Ability/ZdS6</iconPath>
@@ -249,7 +249,7 @@
                 <lineWidthEnd>11</lineWidthEnd>
                 <damageType>Cut</damageType>
                 <damMultiplierStat>NzRI_ZhengDePowerMultiplier</damMultiplierStat>
-                <!-- TODO 修改为专有特效 -->
+                <!--TODO Change to custom effect-->
                 <effecterDef>NzRI_Ef_TentacleSlash</effecterDef>
                 <canHitFilledCells>true</canHitFilledCells>
             </li>

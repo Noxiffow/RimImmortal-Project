@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <!-- 怒视 -->
+  <!--Stare angrily-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_StareAngrily</defName>
     <label>stare angrily</label>
-    <!-- 愤怒的注释目标，造成火与电伤害。 “怒目金刚瞋目视，恶刹妖魔皆胆裂。” -->
+    <!--Angry gaze at the target, causing fire and electric damage. "The angry eyes of the Vajra frighten all evil demons."-->
     <description>Angry comment on the target, causing fire and electric damage. "The angry eyes of
       the Vajra, the evil temple demons are all frightened."</description>
     <iconPath>Ability/ZdE1</iconPath>
@@ -38,17 +38,17 @@
         </damageTypes>
         <!-- TODO -->
         <!-- <effecterDef></effecterDef> -->
-        <!-- TODO 替换声音 -->
+        <!--TODO Replace sound-->
         <!-- <explosionSound></explosionSound> -->
       </li>
     </comps>
   </AbilityDef>
 
-  <!-- 狮子吼 -->
+  <!--Lion's roar-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_LionRoar</defName>
     <label>lion's roar</label>
-    <!-- 发出一声洪亮的吼叫，震慑对方，让对方瑟瑟发抖，甚至无法握住自己的武器 -->
+    <!--Make a loud roar, intimidating the opponent and making them tremble, unable to hold their weapon-->
     <description>Make a loud roar, intimidate the opponent, make the opponent tremble, and even
       unable to hold their own weapon.</description>
     <iconPath>Ability/ZdE2</iconPath>
@@ -77,20 +77,20 @@
         <damageFactorStat>NzRI_ZhengDePowerMultiplier</damageFactorStat>
         <explosionSound>NzRI_SoundCall</explosionSound>
         <addHediffDefs>
-          <!-- 武器脱手 操作清零 3秒 -->
+          <!--Weapon drop: clears manipulation for 3 seconds-->
           <li>NzRI_Zd_WeaponDrop</li>
-          <!-- 头晕耳鸣 降低视力听力操作 一小时 -->
+          <!--Dizziness and tinnitus: reduces sight, hearing, manipulation for one hour-->
           <li>NzRI_Zd_Dizzy</li>
         </addHediffDefs>
         <!-- TODO -->
         <!-- <effecterDef></effecterDef> -->
-        <!-- TODO 替换声音(复制近战专家吼叫) -->
+        <!--TODO Replace sound (copy melee specialist roar)-->
         <!-- <explosionSound></explosionSound> -->
       </li>
     </comps>
   </AbilityDef>
 
-  <!-- 慧眼 -->
+  <!--Keen eye-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_DebunkingMyths</defName>
     <label>debunking myths</label>
@@ -124,14 +124,14 @@
         <psychic>False</psychic>
         <replaceExisting>true</replaceExisting>
       </li>
-      <!-- 之后加上金属异形的检测机制 -->
+      <!--Add xenogerm detection mechanism later-->
 
     </comps>
   </AbilityDef>
 
-  <!-- 梵界 -->
-  <!-- 盾包 -->
-  <!-- 技能：轻踏地面，撑起一片保护性的领域。"轻踏坤舆展妙场，护持信众意悠长。佛心化作遮灾域，不见兵戈入此疆" -->
+  <!--Brahma area-->
+  <!--Shield pack-->
+  <!--Ability: step lightly, erect a protective field. "Lightly stepping on the ground, protecting the believers; the Buddha's heart forms a disaster shield, weapons cannot enter."-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_BulletShield</defName>
     <label>brahma area</label>
@@ -159,13 +159,13 @@
       <li Class="NzRimImmortalBizarre.CompProperties_ReduceEnergy">
         <rEnergy>-100</rEnergy>
       </li>
-      <!-- 生成指定物体 -->
+      <!--Spawn specified thing-->
       <li Class="CompProperties_AbilitySpawn">
         <!-- TODO -->
         <thingDef>NzRI_Zd_BulletShield</thingDef>
       </li>
       <!-- TODO -->
-      <!-- 播放特效 -->
+      <!--Play visual effect-->
       <li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>BulletShieldAreaEffect</fleckDef>
         <sound>Psycast_Skip_Exit</sound>
@@ -173,11 +173,11 @@
     </comps>
   </AbilityDef>
 
-  <!-- 圆光腿 -->
+  <!--Divine light kick-->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>Zd_DivineLightKick</defName>
     <label>divine light kick</label>
-    <!-- 踢出一道流光，惩戒命中的目标，被击中的目标会被注入一道法力，这道法力会干扰目标的身体动作 -->
+    <!--Kick out a stream of light, punishing the target hit; the target is injected with qi that interferes with their body movements-->
     <description>Kick out a stream of light, punish the target hit, and inject qi into the target
       hit, which will interfere with the target's body movements.</description>
     <iconPath>Ability/ZdE3</iconPath>
@@ -185,7 +185,7 @@
     <aiCanUse>true</aiCanUse>
     <ai_IsIncendiary>true</ai_IsIncendiary>
     <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
-    <!-- TODO 修改声音 -->
+    <!--TODO Modify sound-->
     <!-- <warmupStartSound>NzRI_FireSpew_Warmup</warmupStartSound> -->
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -209,7 +209,7 @@
         <lineWidthEnd>11</lineWidthEnd>
         <damageType>Blunt</damageType>
         <damMultiplierStat>NzRI_ZhengDePowerMultiplier</damMultiplierStat>
-        <!-- TODO 修改为专有特效 -->
+        <!--TODO Change to custom effect-->
         <effecterDef>NzRI_Ef_DivineLightKick</effecterDef>
         <stunTime>6</stunTime>
         <canHitFilledCells>true</canHitFilledCells>
@@ -217,12 +217,12 @@
     </comps>
   </AbilityDef>
 
-  <!-- 慈悲掌 -->
+  <!--Merciful hit-->
   <!-- ParentName="AbilityTouchBase" -->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_MercyHit</defName>
     <label>merciful hit</label>
-    <!-- 使用巧劲攻击对方，尝试打晕目标 -->
+    <!--Use skill to attack the opponent, trying to stun the target-->
     <description>Use skill to attack the opponent, trying to stun the target.</description>
     <iconPath>Ability/ZdE5</iconPath>
     <cooldownTicksRange>120</cooldownTicksRange>
@@ -264,12 +264,12 @@
     </comps>
   </AbilityDef>
 
-  <!-- 撼山拳 -->
+  <!--Shake mountain fist-->
   <!-- ParentName="AbilityTouchBase" -->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_ShakeMountainFist</defName>
     <label>shake mountain fist</label>
-    <!-- 蓄力并打出重如山岳的一拳，对敌人造成大量伤害 -->
+    <!--Charge and hit a punch as heavy as a mountain, causing a lot of damage to the enemy-->
     <description>Charge and hit a punch as heavy as a mountain, causing a lot of damage to the
       enemy.</description>
     <iconPath>Ability/ZdE4</iconPath>
@@ -310,12 +310,12 @@
     </comps>
   </AbilityDef>
 
-  <!-- 抚顶 -->
+  <!--Touch head-->
   <!-- ParentName="AbilityTouchBase" -->
   <AbilityDef ParentName="RI_PsycastBase">
     <defName>NzRI_Zd_TouchingHead</defName>
     <label>touch head</label>
-    <!-- 抚摸对方的头部，使用法力庇护对方 -->
+    <!--Touch the opponent's head, use Qi to protect them-->
     <description>Touch the opponent head, use Qi to protect the opponent.</description>
     <iconPath>Ability/ZdE7</iconPath>
     <cooldownTicksRange>120</cooldownTicksRange>

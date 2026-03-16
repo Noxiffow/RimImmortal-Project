@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 舍身相关身体部件 -->
+    <!--Sacrifice-related body parts-->
 
-    <!-- 济世心 -->
-    <!-- 特效：脑后血色荆棘 -->
-    <!-- 光环: 战栗,降低护甲,承伤系数*3 -->
+    <!--Bodhisattva heart (sacrifice)-->
+    <!--Effect: blood-colored thorns behind head-->
+    <!--Halo — tremor, reduce armor, damage taken x3-->
 
-    <!-- 猩红眼 -->
-    <!-- 噩梦凝视，小范围精神错乱 -->
+    <!--Crimson eyes-->
+    <!--Nightmare gaze, small area mental breakdown-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_CrimsonEyes</defName>
         <label>crimson eyes</label>
         <labelNoun>an crimson eyes</labelNoun>
-        <!-- 闪烁着猩红的光芒，这与你在那座古怪的巨石上看到的条纹几乎一致 -->
+        <!--Shining with crimson light, almost identical to the stripes you saw on that strange monolith-->
         <description>Shining with crimson light, it is almost identical to the stripes you saw on that strange
             monolith.</description>
         <defaultInstallPart>Eye</defaultInstallPart>
@@ -38,13 +38,13 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 怪异舌 -->
-    <!-- 恐怖嘶吼，范围惊吓 -->
+    <!--Strange tongue-->
+    <!--Terror scream, range fear-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_StrangeTongue</defName>
         <label>strange tongue</label>
         <labelNoun>an strange tongue</labelNoun>
-        <!-- 上面覆盖了诡异的纹路，扭曲仿若蛇舌，隐隐还有眼球连接在其上 -->
+        <!--Covered with strange patterns, twisted like a snake's tongue, with faint eyeballs connected to it-->
         <description>It is covered with strange patterns, twisted like a snake's tongue, and there are faint
             eyeballs connected to it.</description>
         <defaultInstallPart>Tongue</defaultInstallPart>
@@ -70,14 +70,14 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 增生肝 -->
-    <!-- 吐出血肉野兽 -->
+    <!--Hypertrophy liver-->
+    <!--Spit out a flesh beast-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_HypertrophyLiver</defName>
         <label>hypertrophy liver</label>
         <labelNoun>an strange tongue</labelNoun>
-        <!-- 时不时传来隐隐的胀痛 -->
-        <description>#开发中</description>
+        <!--Occasional dull bloating pain-->
+        <description>#in development</description>
         <defaultInstallPart>Liver</defaultInstallPart>
         <tags>
             <li>NzRI_ZhengDe_BodyPart</li>
@@ -102,13 +102,13 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 脓疮臂 -->
-    <!-- 攻击造成恶心 -->
+    <!--Abscess arm-->
+    <!--Attacks cause nausea-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_AbscessArm</defName>
         <label>abscess arm</label>
         <labelNoun>an abscess arm</labelNoun>
-        <!-- 你的手臂上面覆盖着脓疱，其他部分也呈现半腐烂状态 -->
+        <!--Your arm is covered with pustules, with other parts in a semi-rotten state-->
         <description>There are pustules on your arm, and other parts are also in a semi-rotten state.</description>
         <defaultInstallPart>Shoulder</defaultInstallPart>
         <tags>
@@ -157,13 +157,13 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 盘卷臂 -->
-    <!-- 高切割伤害 -->
+    <!--Coiled arm-->
+    <!--High cutting damage-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_CoiledArm</defName>
         <label>coiled arms</label>
         <labelNoun>an vajra arm</labelNoun>
-        <!-- 一条真正的触须，在坚硬和柔软之间快速变动着，\n\n在'大傩'以外的世界，似乎司命'五智如来'的回应被某种可怕的东西截取了 -->
+        <!--A real tentacle that rapidly alternates between hardness and softness. Outside the world of 'DaNuo', it seems the response of the 'Five Wisdom Tathagatas' was intercepted by something terrible-->
         <description>A real tentacle, quickly moving between hardness and softness, it seems that the response of
             the 'Five Wisdom Tathagatas' to the 'DaNuo' has been intercepted by something terrible.</description>
         <defaultInstallPart>Shoulder</defaultInstallPart>
@@ -172,9 +172,9 @@
             <li>NzRI_ZhengDe_Sacrifice</li>
         </tags>
         <abilities>
-            <!-- 斩击 -->
+            <!--Slash-->
             <li>NzRI_Zd_TentacleSlash</li>
-            <!-- 刺穿 -->
+            <!--Stab-->
             <li>NzRI_Zd_TentacleStab</li>
         </abilities>
         <stages>
@@ -209,13 +209,13 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 扭结腿 -->
-    <!-- 拉拽 -->
+    <!--Twisted leg-->
+    <!--Dragging-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_TwistedLeg</defName>
         <label>twisted leg</label>
         <labelNoun>an twisted leg</labelNoun>
-        <!-- 这条腿扭结错乱，几乎没有骨骼，如触须一般，缺格外坚韧灵活 -->
+        <!--This leg is twisted and disordered, nearly boneless like a tentacle, yet surprisingly tough and flexible-->
         <description>One of the legs is twisted and disordered, almost boneless, like tentacles, but
             it is particularly tough and flexible.</description>
         <defaultInstallPart>Leg</defaultInstallPart>
@@ -241,13 +241,13 @@
         </abilities>
     </HediffDef>
 
-    <!-- 枯败腿 -->
-    <!-- 周围切腿 -->
+    <!--Withered leg-->
+    <!--Surrounding leg cut-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>NzRI_Zd_WitheredLeg</defName>
         <label>withered leg</label>
         <labelNoun>an withered leg</labelNoun>
-        <!-- 这条腿黑瘦枯干，却格外结实有力，上面覆满了丑陋的疤痕和螺纹，还散发出腐肉般的臭味，还有一种奇异的兼具有机物与金属的特性的纤维物质点缀其中 -->
+        <!--This leg is black, thin, and withered yet powerfully strong. Covered in ugly scars and wrinkles, it emits a stench of rotten flesh, with a strange fiber material bearing both organic and metallic properties-->
         <description>This leg is black, thin, and withered, but it is particularly strong and powerful. It is covered
             with ugly scars and wrinkles, and it emits a stench of rotten flesh. There is also a strange fiber
             material with both organic and metallic properties.</description>

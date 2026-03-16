@@ -10,7 +10,7 @@
         <fleckDef>NzRI_Fl_ZenSound2_1</fleckDef>
         <chancePerTick>1.0</chancePerTick>
         <speed>0.0</speed>
-        <scale>0.1~12.0</scale> <!-- 初始大小为0.1，最大大小为2.0 -->
+        <scale>0.1~12.0</scale> <!--Initial size 0.1, maximum size 2.0-->
         <angle>0</angle>
         <positionLerpFactor>1.0</positionLerpFactor>
         <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
@@ -24,7 +24,7 @@
     <fadeInTime>0.5</fadeInTime>
     <solidTime>1.0</solidTime>
     <fadeOutTime>0.5</fadeOutTime>
-    <growthRate>2.0</growthRate> <!-- 设置增长率 -->
+    <growthRate>2.0</growthRate> <!--Set growth rate-->
     <graphicData>
       <graphicClass>Graphic_FleckPulse</graphicClass>
       <shaderType>MoteGlow</shaderType>
@@ -43,11 +43,11 @@
         <positionRadius>0.0</positionRadius>
         <fleckDef>NzRI_Fl_DivineLightKick</fleckDef>
         <burstCount>1</burstCount>
-        <speed>20.0</speed> <!-- 设置速度，使其发射出去 -->
-        <scale>1.0~2.0</scale> <!-- 初始大小为1.0，最大大小为2.0 -->
+        <speed>20.0</speed> <!--Set speed to launch-->
+        <scale>1.0~2.0</scale> <!--Initial size 1.0, maximum size 2.0-->
         <angle>0</angle>
         <positionLerpFactor>1.0</positionLerpFactor>
-        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!-- 使用角度来计算速度 -->
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!--Use angle to calculate velocity-->
       </li>
     </children>
   </EffecterDef>
@@ -58,14 +58,14 @@
     <fadeInTime>0.1</fadeInTime>
     <solidTime>0.3</solidTime>
     <fadeOutTime>0.1</fadeOutTime>
-    <growthRate>1.0</growthRate> <!-- 设置增长率 -->
+    <growthRate>1.0</growthRate> <!--Set growth rate-->
     <graphicData>
       <graphicClass>Graphic_FleckPulse</graphicClass>
-      <shaderType>MoteGlow</shaderType> <!-- 使用支持透明度的着色器 -->
-      <texPath>Things/Mote/Ability/ZdE2</texPath> <!-- 替换为你的纹理路径 -->
+      <shaderType>MoteGlow</shaderType> <!--Use transparency-compatible shader-->
+      <texPath>Things/Mote/Ability/ZdE2</texPath> <!--Replace with your texture path-->
       <drawSize>5</drawSize>
     </graphicData>
-    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!-- 使其朝向移动方向旋转 -->
+    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!--Rotate towards movement direction-->
   </FleckDef>
 
   <EffecterDef>
@@ -76,11 +76,11 @@
         <positionRadius>0.5</positionRadius>
         <fleckDef>NzRI_Fl_TentacleSlash</fleckDef>
         <burstCount>1</burstCount>
-        <speed>1.0</speed> <!-- 设置速度，使其发射出去 -->
-        <scale>1.0~2.0</scale> <!-- 初始大小为1.0，最大大小为2.0 -->
+        <speed>1.0</speed> <!--Set speed to launch-->
+        <scale>1.0~2.0</scale> <!--Initial size 1.0, maximum size 2.0-->
         <angle>0</angle>
         <positionLerpFactor>1.0</positionLerpFactor>
-        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!-- 使用角度来计算速度 -->
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity> <!--Use angle to calculate velocity-->
       </li>
     </children>
   </EffecterDef>
@@ -91,14 +91,14 @@
     <fadeInTime>0.1</fadeInTime>
     <solidTime>0.3</solidTime>
     <fadeOutTime>0.1</fadeOutTime>
-    <growthRate>1.0</growthRate> <!-- 设置增长率 -->
+    <growthRate>1.0</growthRate> <!--Set growth rate-->
     <graphicData>
       <graphicClass>Graphic_FleckPulse</graphicClass>
-      <shaderType>MoteGlow</shaderType> <!-- 使用支持透明度的着色器 -->
-      <texPath>Things/Mote/Ability/ZdS2</texPath> <!-- 替换为你的纹理路径 -->
+      <shaderType>MoteGlow</shaderType> <!--Use transparency-compatible shader-->
+      <texPath>Things/Mote/Ability/ZdS2</texPath> <!--Replace with your texture path-->
       <drawSize>5</drawSize>
     </graphicData>
-    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!-- 使其朝向移动方向旋转 -->
+    <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection> <!--Rotate towards movement direction-->
   </FleckDef>
 
 </Defs>

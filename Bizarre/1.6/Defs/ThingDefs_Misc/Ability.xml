@@ -9,7 +9,7 @@
         <drawOffscreen>true</drawOffscreen>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <!-- 可能依赖DLC -->
+            <!--May depend on DLC-->
             <texPath>Things/Ethereal/PsychicShieldRipples</texPath>
             <shaderType>NzRI_Zd_BulletShield</shaderType>
             <!-- <color>(255, 223, 186)</color> -->
@@ -25,7 +25,7 @@
             </shaderParameters>
         </graphicData>
         <comps>
-            <!-- 依赖DLC Royalty -->
+            <!--Requires DLC Royalty-->
             <li Class="CompProperties_ProjectileInterceptor">
                 <radius>4.9</radius>
                 <interceptGroundProjectiles>true</interceptGroundProjectiles>

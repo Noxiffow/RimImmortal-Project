@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 克己相关身体部件 -->
+    <!--Restraint-related body parts-->
 
-    <!-- 无量心 -->
-    <!-- 特效：脑后光环 -->
-    <!-- 光环: 实干:范围内加工作效率,苦行:降低饥饿休息需求 -->
+    <!--Boundless heart-->
+    <!--Effect: Halo behind head-->
+    <!--Halo — diligence: increase work efficiency in range; asceticism: reduce hunger and rest requirements-->
 
-    <!-- 慧眼 -->
-    <!-- 夜视，技能，移除隐形，若有DLC，顺便移除黑暗灵能隐形 -->
-    <!-- 得慧眼，不见众生，尽灭一异相 -->
+    <!--Keen eye-->
+    <!--Night vision, ability, remove invisibility; if DLC, also remove dark psychic invisibility-->
+    <!--With discerning eyes, all beings are unseen, all differences extinguished-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_KeenEyes</defName>
         <label>keen eyes</label>
@@ -36,7 +36,7 @@
             </li>
         </stages>
         <!-- TODO Patch System.Boolean RimWorld.StatPart_Glow::ActiveFor(Verse.Thing) -->
-        <!-- TODO 不受黑暗影响 -->
+        <!--TODO Unaffected by darkness-->
         <aptitudes>
             <Social>8</Social>
         </aptitudes>
@@ -47,9 +47,9 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 辩才舌 -->
-    <!-- 交易、传教相关系数 -->
-    <!-- “菩提本无树，明镜亦非台” -->
+    <!--Eloquence tongue-->
+    <!--Trade and preaching coefficients-->
+    <!--"Bodhi is not a tree, the mirror has no stand"-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_EloquenceTongue</defName>
         <label>eloquence tongue</label>
@@ -82,9 +82,9 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 斋藏胃 -->
-    <!-- 免疫食物中毒，毒素hediff免疫，成瘾免疫 -->
-    <!-- 一切有为法，如梦幻泡影，如露亦如电，应作如是观 -->
+    <!--Asceticism stomach-->
+    <!--Immune to food poisoning, toxin hediffs, and addiction-->
+    <!--All material things are like dreams and bubbles, like dew and lightning, and should be viewed as such-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_AsceticismStomach</defName>
         <label>asceticism stomach</label>
@@ -98,16 +98,16 @@
         </tags>
         <stages>
             <li>
-                <!-- 食物中毒几率 -->
+                <!--Food poisoning chance-->
                 <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
                 <statFactors>
                     <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
-                    <!-- 毒素抵抗 -->
+                    <!--Toxin resistance-->
                     <ToxicResistance>1.0</ToxicResistance>
                     <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>
                 <makeImmuneTo>
-                    <!-- 免疫原版成瘾品 -->
+                    <!--Immune to vanilla addictions-->
                     <li>GutWorms</li>
                     <li>AlcoholAddiction</li>
                     <li>AmbrosiaAddiction</li>
@@ -126,9 +126,9 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 笃行腿 -->
-    <!-- 不可阻挡 -->
-    <!-- “欲速则不达。”修行如同攀登高峰，需一步一个脚印，稳健前行。若贪图捷径，往往会导致根基不稳 -->
+    <!--Devote leg-->
+    <!--Unstoppable-->
+    <!--"More haste, less speed." Cultivation is like climbing a peak — steady steps forward. Seeking shortcuts often leads to an unstable foundation-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_DevoteLeg</defName>
         <label>devote leg</label>
@@ -145,7 +145,7 @@
             <li>
                 <statFactors>
                     <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
-                    <!-- 不可阻挡 -->
+                    <!--Unstoppable-->
                     <StaggerDurationFactor>0</StaggerDurationFactor>
                     <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>
@@ -158,9 +158,9 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 般若腿 -->
-    <!-- 般若的含义是辨识智慧、辨识才智 -->
-    <!-- 影响研究速度 -->
+    <!--Prajna leg-->
+    <!--Prajna means to discern wisdom and intelligence-->
+    <!--Affects research speed-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_PrajnaLeg</defName>
         <label>prajna leg</label>
@@ -176,9 +176,9 @@
             <li>
                 <statFactors>
                     <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
-                    <!-- 普通工作速度 -->
+                    <!--General work speed-->
                     <ResearchSpeed>2.0</ResearchSpeed>
-                    <!-- 破解速度 -->
+                    <!--Hacking speed-->
                     <HackingSpeed>2.0</HackingSpeed>
                     <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>
@@ -196,10 +196,10 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 匠心臂 -->
-    <!-- 加质量偏移(见手工大师) -->
-    <!-- 心如工画师，能画诸世间。五蕴悉从生，无法而不造。 -->
-    <!-- 我们的心如同画师，能够绘制出世间万象，而修行正是要描绘出内心的清净与智慧。 -->
+    <!--Craftsmanship arm-->
+    <!--Add quality offset (see master craftsman)-->
+    <!--Our mind is like a painter, capable of painting all the images of the world. The five aggregates all arise from this, and no dharma cannot be created.-->
+    <!--Our mind is like a painter, capable of painting all the world's images; meditation precisely paints the purity and wisdom of the heart.-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_CraftsmanshipArm</defName>
         <label>craftsmanship arm</label>
@@ -226,7 +226,7 @@
                     </li>
                 </tools>
             </li>
-            <!-- 制造质量偏移 -->
+            <!--Production quality offset-->
             <li Class="NzRimImmortalBizarre.CompProperties_ProductionQualityOffset">
                 <offset>2</offset>
             </li>
@@ -235,9 +235,9 @@
             <li>
                 <statFactors>
                     <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
-                    <!-- 普通工作速度 -->
+                    <!--General work speed-->
                     <GeneralLaborSpeed>2.1</GeneralLaborSpeed>
-                    <!-- 建造速度 -->
+                    <!--Construction speed-->
                     <ConstructionSpeed>2.0</ConstructionSpeed>
                     <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>
@@ -256,9 +256,9 @@
         </addedPartProps>
     </HediffDef>
 
-    <!-- 勤工臂 -->
-    <!-- 全局工作效率，操作 -->
-    <!-- 修行非一蹴而就之事，需以勤劳之心，持续不断地耕耘。 -->
+    <!--Diligence arm-->
+    <!--Global work efficiency, manipulation-->
+    <!--Cultivation cannot be accomplished overnight; it requires a diligent heart and continuous effort.-->
     <HediffDef ParentName="ZdBodyPartBase">
         <defName>Zd_DiligenceArm</defName>
         <label>diligence arm</label>
@@ -291,11 +291,11 @@
             <li>
                 <statFactors>
                     <NzRI_ZhengDePowerMultiplier>1.1</NzRI_ZhengDePowerMultiplier>
-                    <!-- 全局工作速度 -->
+                    <!--Global work speed-->
                     <WorkSpeedGlobal>1.3</WorkSpeedGlobal>
-                    <!-- 种植速度 -->
+                    <!--Planting speed-->
                     <PlantWorkSpeed>3</PlantWorkSpeed>
-                    <!-- 挖掘速度 -->
+                    <!--Mining speed-->
                     <MiningSpeed>3</MiningSpeed>
                     <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>

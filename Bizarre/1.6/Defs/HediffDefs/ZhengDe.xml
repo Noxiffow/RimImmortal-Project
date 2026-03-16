@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- 正德 果位(修行进度) -->
+    <!--Zhengde fruition (cultivation progress)-->
     <HediffDef>
         <defName>NzRI_Zd_Fruition</defName>
         <label>Fruition</label>
@@ -10,7 +10,7 @@
         <isBad>false</isBad>
     </HediffDef>
 
-    <!-- 正德 修行中 -->
+    <!--Zhengde — cultivation in progress-->
     <!--  ParentName="RI_InternalpelletHediff_Base" -->
     <HediffDef>
         <defName>NzRI_Zd_Cultivation</defName>
@@ -45,9 +45,9 @@
 
     <HediffDef>
         <defName>NzRI_Zd_ZenSound</defName>
-        <!-- 禅音 -->
+        <!--Zen sound-->
         <label>zen sound</label>
-        <!-- 听到了禅音, 感到内心平静 -->
+        <!--Heard the zen sound, feeling calm-->
         <description>Heard the sound of Zen, felt calm inside</description>
         <isBad>false</isBad>
         <hediffClass>HediffWithComps</hediffClass>
@@ -83,9 +83,9 @@
     </HediffDef>
 
     <HediffDef>
-        <!-- 布施Hediff -->
+        <!--Almsgiving hediff-->
         <defName>NzRI_Zd_Feed</defName>
-        <!-- 接受了喂养 -->
+        <!--Accepted feeding-->
         <label>feed</label>
         <description>Accepted feeding</description>
         <isBad>false</isBad>
@@ -117,7 +117,7 @@
         </stages>
     </HediffDef>
 
-    <!-- 慧眼 -->
+    <!--Keen eye-->
     <HediffDef>
         <defName>NzRI_Zd_KeenEyes</defName>
         <label>keen eye</label>
@@ -149,7 +149,7 @@
             </li>
         </comps>
     </HediffDef>
-    <!-- 识真 -->
+    <!--Recognize truth-->
     <HediffDef>
         <defName>NzRI_Zd_RecognizeTruth</defName>
         <label>recognize truth</label>
@@ -176,11 +176,11 @@
             </li>
         </comps>
     </HediffDef>
-    <!-- 禁锢 -->
+    <!--Imprisonment-->
     <HediffDef>
         <defName>NzRI_Zd_Imprisonment</defName>
         <label>imprisonment</label>
-        <!-- 受到禁锢 -->
+        <!--Imprisoned-->
         <description>Imprisoned</description>
         <isBad>true</isBad>
         <hediffClass>HediffWithComps</hediffClass>
@@ -204,13 +204,13 @@
         </stages>
     </HediffDef>
 
-    <!-- 不动如山 -->
+    <!--Unshakeable-->
     <HediffDef>
         <!-- Zd_TouchingHead Hediff -->
         <defName>NzRI_Zd_Unshakeable</defName>
         <label>unshakeable</label>
-        <!-- 佛法护佑，似有神庇，邪祟难侵 -->
-        <!-- TODO 添加护盾贴图 -->
+        <!--Buddhist protection — feels divinely sheltered, evil spirits cannot intrude-->
+        <!--TODO Add shield texture-->
         <description>Buddhist protection, as if there is a divine shelter, evil spirits are
             difficult to invade</description>
         <isBad>false</isBad>
@@ -240,11 +240,11 @@
         </stages>
     </HediffDef>
 
-    <!-- 头晕耳鸣 -->
+    <!--Dizziness and tinnitus-->
     <HediffDef>
         <defName>NzRI_Zd_Dizzy</defName>
         <label>dizzy</label>
-        <!-- 被巨大的声音震得头晕耳鸣 -->
+        <!--Struck by a huge sound, dizzy with ringing ears-->
         <description>Shocked by the huge sound, dizzy and ringing in the ears</description>
         <isBad>false</isBad>
         <hediffClass>HediffWithComps</hediffClass>
@@ -260,17 +260,17 @@
             <li>
                 <capMods>
                     <li>
-                        <!-- 将视力最大值设置为 0.5 -->
+                        <!--Set maximum sight to 0.5-->
                         <capacity>Sight</capacity>
                         <setMax>0.5</setMax>
                     </li>
                     <li>
-                        <!-- 将听力最大值设置为 0.5 -->
+                        <!--Set maximum hearing to 0.5-->
                         <capacity>Hearing</capacity>
                         <setMax>0.5</setMax>
                     </li>
                     <li>
-                        <!-- 将操作最大值设置为 0.5 -->
+                        <!--Set maximum manipulation to 0.5-->
                         <capacity>Manipulation</capacity>
                         <setMax>0.5</setMax>
                     </li>
@@ -279,11 +279,11 @@
         </stages>
     </HediffDef>
 
-    <!-- 兵器脱手 -->
+    <!--Weapon drop-->
     <HediffDef>
         <defName>NzRI_Zd_WeaponDrop</defName>
         <label>weapon drop</label>
-        <!-- 几乎无法握住兵器 -->
+        <!--Almost unable to grip weapon-->
         <description>Almost unable to hold the weapon</description>
         <isBad>false</isBad>
         <hediffClass>HediffWithComps</hediffClass>
@@ -307,23 +307,23 @@
         </stages>
     </HediffDef>
 
-    <!-- 恐怖嘶吼 -->
+    <!--Terror scream-->
     <HediffDef>
         <defName>NzRI_Zd_He_TerrorScream</defName>
         <label>terror scream</label>
-        <!-- 听到了恐怖的吼叫，感到恐惧 -->
+        <!--Heard the terrifying scream, feeling fear-->
         <description>Heard the terrifying scream and felt fear</description>
         <isBad>true</isBad>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_DisappearsOnDeath" />
             <li Class="HediffCompProperties_Disappears">
-                <!-- 30秒后消失 -->
+                <!--Disappears after 30 seconds-->
                 <disappearsAfterTicks>1800</disappearsAfterTicks>
                 <showRemainingTime>true</showRemainingTime>
                 <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
             </li>
-            <!-- 造成恐惧 -->
+            <!--Causes fear-->
             <li Class="NzRimImmortalBizarre.Comp_MentalBreakGiver">
                 <mentalBreak>PanicFlee</mentalBreak>
             </li>
@@ -344,34 +344,34 @@
         </stages>
     </HediffDef>
 
-    <!-- 梦魇凝视 -->
+    <!--Dream phantom gaze-->
     <HediffDef>
         <defName>NzRI_Zd_He_NightmareGaze</defName>
         <label>nightmare gaze</label>
-        <!-- 感觉被一个恐怖的存在盯上，眼中/传感器中传来的一切，都变成了扭曲的幻象 -->
+        <!--Feeling watched by a terrifying entity — everything in your eyes/sensors becomes a distorted illusion-->
         <description>Being stared at by a terrifying existence, everything in the eyes/sensors has become a distorted illusion</description>
         <isBad>true</isBad>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_DisappearsOnDeath" />
             <li Class="HediffCompProperties_Disappears">
-                <!-- 30秒后消失 -->
+                <!--Disappears after 30 seconds-->
                 <disappearsAfterTicks>1800</disappearsAfterTicks>
                 <showRemainingTime>true</showRemainingTime>
                 <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
             </li>
-            <!-- 造成崩溃  -->
+            <!--Causes breakdown-->
             <li Class="NzRimImmortalBizarre.Comp_MentalBreakGiver">
                 <mentalBreak>Berserk</mentalBreak>
             </li>
         </comps>
     </HediffDef>
 
-    <!-- 脓疮覆盖 -->
+    <!--Pustule corrosion-->
     <HediffDef>
         <defName>NzRI_Zd_He_PustuleCorrosion</defName>
         <label>pustule corrosion</label>
-        <!-- 被脓疮覆盖，感到剧烈的恶心 -->
+        <!--Covered by pustules, feeling intense nausea-->
         <description>Being covered by pustules, feeling intense nausea</description>
         <isBad>true</isBad>
         <hediffClass>HediffWithComps</hediffClass>
@@ -380,7 +380,7 @@
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>-8</severityPerDay>
             </li>
-            <!-- 根据浓度，每隔一段时间之后会呕吐 -->
+            <!--Will vomit at intervals based on concentration-->
             <li Class="NzRimImmortalBizarre.Comp_MentalBreakGiver">
                 <vomit>true</vomit>
                 <tickInterval>600</tickInterval>
