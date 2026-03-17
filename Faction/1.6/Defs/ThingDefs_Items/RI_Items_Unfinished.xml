@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<!--苍穹商旅呼叫器-->
+	<!--Celestial Caravan orbital pager-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Thing_OrbitalShipCaller</defName>
 		<label>"Celestial Caravan" orbital pager</label>
@@ -22,16 +22,16 @@
 		</thingCategories>
 		<stackLimit>10</stackLimit>
 		<comps>
-			<!-- 允许使用 -->
+			<!-- Allow use -->
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
 				<useLabel>Call trader</useLabel>
 			</li>
 			<li Class="SpecialTraderCall.CompProperties_UseEffect_CallOrbitalTrader">
-				<!-- 指定商船 -->
+				<!-- Specify trade ship -->
 				<traderKind>RI_Trader_CelestialCaravanOrbital_BulkGoods</traderKind>
 				<minTicks>3000</minTicks>
-				<!-- 1 天 -->
+				<!-- 1 day -->
 				<maxTicks>6000</maxTicks>
 			</li>
 		</comps>

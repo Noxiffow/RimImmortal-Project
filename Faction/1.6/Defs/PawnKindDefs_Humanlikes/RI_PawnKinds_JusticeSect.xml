@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--正道宗门pawn的base-->
+	<!--Righteous sect pawn base-->
 	<PawnKindDef Abstract="True" Name="RI_JusticeSectPawn_Base">
 		<race>Human</race>
 		<isFighter>true</isFighter>
@@ -12,7 +12,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<humanPregnancyChance>0.01</humanPregnancyChance>
-		<!--正道派系-->
+		<!--Righteous faction-->
 		<defaultFactionType>RI_Faction_JusticeSect</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<biocodeWeaponChance>0.5</biocodeWeaponChance>
@@ -20,7 +20,7 @@
 		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 
-		<!--背景故事-->
+		<!--Backstory-->
 		<!--<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -32,20 +32,20 @@
 			</li>
 		</backstoryFiltersOverride>-->
 
-		<!--禁止特性-->
+		<!--Prohibited traits-->
 		<disallowedTraits>
 			<li>Nudist</li>
 			<li>Brawler</li>
 		</disallowedTraits>
 
-		<!--假体-->
+		<!--Prosthetic-->
 		<techHediffsChance>0.05</techHediffsChance>
 		<techHediffsMoney>100~200</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
 		
-		<!--携带物资-->
+		<!--Carried supplies-->
 		<inventoryOptions>
 			<skipChance>0.5</skipChance>
 			<subOptionsChooseOne>
@@ -66,21 +66,21 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<!--俘虏抗性-->
+		<!--Captive resistance-->
 		<initialWillRange>5</initialWillRange>
 		<initialResistanceRange>10~15</initialResistanceRange>
 	</PawnKindDef>
 
-	<!--杂役-->
+	<!--Laborer/Servant-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_SectFollower</defName>
 		<label>Sect follower</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>50</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>10</minGenerationAge>
 		<maxGenerationAge>20</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -90,12 +90,12 @@
 			<li>RI_Apparel_ExerciseApparel</li>
 			<li>RI_Apparel_CultivatorPants</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>800~1500</weaponMoney>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -103,21 +103,21 @@
 				<severity>0.5</severity>
 			</li>
 		</startingHediffs>
-		<!--携带食物-->
+		<!--Carried food-->
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 	</PawnKindDef>
 
-	<!--外门弟子-->
+	<!--Outer Disciple-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_OuterDisciple</defName>
 		<label>Outer disciple</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>100</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>15</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -128,13 +128,13 @@
 			<li>RI_Apparel_CultivatorPants</li>
 			<li>RI_Apparel_HeadScarf</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>800~1500</weaponMoney>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 			<li>RI_MagicalWeapon</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -146,28 +146,28 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
 		</startingHediffs>
-		<!--携带食物-->
+		<!--Carried food-->
 		<invNutrition>1</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 	</PawnKindDef>
 
-	<!--内门弟子-->
+	<!--Inner Disciple-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_InnerDisciple</defName>
 		<label>Inner disciple</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>200</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -179,13 +179,13 @@
 			<li>RI_Apparel_LightCloak</li>
 			<li>RI_Apparel_ExerciseBandana</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>800~1500</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -202,7 +202,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
@@ -211,16 +211,16 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<!--亲传弟子-->
+	<!--Direct Disciple-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_DirectDisciple</defName>
 		<label>Direct disciple</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>500</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>15</minGenerationAge>
 		<maxGenerationAge>40</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -232,13 +232,13 @@
 			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_SoftIronJacket</li>
 			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_LiquidJadeHeadband</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>800~1500</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -255,7 +255,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
@@ -264,17 +264,17 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<!--护法 炼体化神-->
+	<!--Sect guard — body tempering cultivation-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_SectGuard</defName>
 		<label>Guard</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>600</combatPower>
 		<maxPerGroup>12</maxPerGroup>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>30</minGenerationAge>
 		<maxGenerationAge>50</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -285,13 +285,13 @@
 			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_TigerGuardArmor</li>
 			<li>RI_Apparel_CultivatorPants</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>1500~3000</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -308,7 +308,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
@@ -317,17 +317,17 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<!--执事——一般只作为商贩出现-->
+	<!--Deacon — generally only appears as trader-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_SectDeacon</defName>
 		<label>Deacon</label>
 		<trader>true</trader>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>100</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>40</minGenerationAge>
 		<maxGenerationAge>60</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -338,13 +338,13 @@
 			<li MayRequire="RI.RimImmortal.Forge">RI_Apparel_SoftIronJacket</li>
 			<li>RI_Apparel_CultivatorPants</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>800~1500</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -356,7 +356,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
@@ -365,17 +365,17 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<!--长老 内丹大成-->
+	<!--Elder — internal elixir mastery-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_SectElder</defName>
 		<label>Elder</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>800</combatPower>
 		<maxPerGroup>8</maxPerGroup>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>60</minGenerationAge>
 		<maxGenerationAge>100</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -387,14 +387,14 @@
 			<li>RI_Apparel_LightCloak</li>
 			<li>RI_Apparel_LotusCrown</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>1000~3000</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 			<li>RI_BetterWeapon_Tag</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -411,7 +411,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>
@@ -420,17 +420,17 @@
 		</startingHediffs>
 	</PawnKindDef>
 
-	<!--掌门 内丹登仙-->
+	<!--Sect Master — internal elixir ascension-->
 	<PawnKindDef ParentName="RI_JusticeSectPawn_Base">
 		<defName>RI_Pawn_SectMaster</defName>
 		<label>Master</label>
-		<!--战斗力~-->
+		<!--Combat power ~-->
 		<combatPower>2500</combatPower>
 		<factionLeader>true</factionLeader>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>80</minGenerationAge>
 		<maxGenerationAge>200</maxGenerationAge>
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>800~1500</apparelMoney>
 		<apparelTags>
 			<li>RI_Apparel_BasicCloth</li>
@@ -442,14 +442,14 @@
 			<li>RI_Apparel_LightRobe</li>
 			<li>RI_Apparel_LotusCrown</li>
 		</apparelRequired>
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>3000~8000</weaponMoney>
 		<weaponTags>
 			<li>RI_MagicalWeapon</li>
 			<li>RI_JadeBambooWeapons_Base</li>
 			<li>RI_BetterWeapon_Tag</li>
 		</weaponTags>
-		<!--附带hediff（控制境界和开局自带buff）-->
+		<!--Starting hediffs (controls realm and initial buffs)-->
 		<startingHediffs>
 			<li>
 				<def>Hediff_RI_EnergyRoot</def>
@@ -466,7 +466,7 @@
 				<chance>1</chance>
 				<severity>1</severity>
 			</li>
-			<!--百粮丸效果-->
+			<!--Hundred-Grain Pill effect-->
 			<li>
 				<def>RI_StomachFillHediff</def>
 				<chance>1</chance>

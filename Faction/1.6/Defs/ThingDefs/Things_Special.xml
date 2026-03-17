@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--修仙版本的穿梭机-->
+	<!--Cultivation-themed shuttle-->
 	<ThingDef Name="RI_ShuttleBase" ParentName="BuildingBase">
 		<defName>RI_Shuttle</defName>
-		<label>仙舟</label>
-		<description>仙舟</description>
+		<label>Immortal Boat</label>
+		<description>Immortal Boat</description>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>
@@ -16,7 +16,7 @@
 		<highlightColor>(0.56, 0.62, 0.9)</highlightColor>
 		<graphicData>
 			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
-			<!--记得修改贴图-->
+			<!--Remember to change texture-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6.5,6.5)</drawSize>
 			<color>(255,255,255)</color>
@@ -71,8 +71,8 @@
 
 	<WorldObjectDef>
     <defName>RI_TravelingShuttle</defName>
-    <label>仙舟</label>
-    <description>仙舟行于高空</description>
+    <label>Immortal Boat</label>
+    <description>The Immortal Boat soars at high altitude</description>
     <worldObjectClass>TravellingTransporters</worldObjectClass>
     <texture>Things/Building/Misc/RI_Shuttle</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
@@ -88,7 +88,7 @@
 
 	<TransportShipDef>
 		<defName>Ship_RI_Shuttle</defName>
-		<label>仙舟</label>
+		<label>Immortal Boat</label>
 		<shipThing>RI_Shuttle</shipThing>
 		<arrivingSkyfaller>RI_ShuttleIncoming</arrivingSkyfaller>
 		<leavingSkyfaller>RI_ShuttleLeaving</leavingSkyfaller>
@@ -98,11 +98,11 @@
 
 	<ThingDef ParentName="ShuttleSkyfallerBase">
 		<defName>RI_ShuttleIncoming</defName>
-		<label>仙舟 (incoming)</label>
+		<label>Immortal Boat (incoming)</label>
 		<thingClass>ShuttleIncoming</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
-			<!--记得修改贴图-->
+			<!--Remember to change texture-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutFlying</shaderType>
 			<drawSize>(6.5,6.5)</drawSize>
@@ -143,11 +143,11 @@
 
 	<ThingDef ParentName="ShuttleSkyfallerBase">
 		<defName>RI_ShuttleLeaving</defName>
-		<label>仙舟 (leaving)</label>
+		<label>Immortal Boat (leaving)</label>
 		<thingClass>FlyShipLeaving</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
-			<!--记得修改贴图-->
+			<!--Remember to change texture-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutFlying</shaderType>
 			<drawSize>(6.5,6.5)</drawSize>

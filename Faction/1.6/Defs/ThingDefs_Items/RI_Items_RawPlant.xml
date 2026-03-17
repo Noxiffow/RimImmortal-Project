@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--玲珑珍果-->
+	<!--LingLong precious fruit-->
 	<ThingDef Abstract="True" Name="RI_Base_OrganicProductBase" ParentName="ResourceBase">
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -40,7 +40,7 @@
 		<chairSearchRadius>8</chairSearchRadius>
 	</ingestible>-->
 
-	<!--玲珑珍果-->
+	<!--LingLong precious fruit-->
 	<ThingDef ParentName="RI_Base_APlantFoodRawBase">
 		<defName>RI_Resource_LingLongFruit</defName>
 		<label>LingLong fruit</label>
@@ -70,7 +70,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--吃了玲珑珍果-->
+	<!--Ate LingLong fruit-->
 	<ThoughtDef>
 		<defName>RI_Thought_AteLingLongFruit</defName>
 		<durationDays>1</durationDays>

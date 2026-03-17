@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--聚气灵域-->
+	<!--Focused Qi Domain-->
 
 	<AbilityDef>
     <defName>RI_Ability_PracticeArea</defName>
@@ -52,7 +52,7 @@
     </comps>
   </AbilityDef>
 
-	<!--搜魂术-->
+	<!--Soul searching technique-->
     <AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_ReadingMemory</defName>
 		<label>Soul searching</label>

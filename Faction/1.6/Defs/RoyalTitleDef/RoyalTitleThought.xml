@@ -9,8 +9,8 @@
 		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
 		<stages>
 			<li>
-				<label>成为掌门</label>
-				<description>我现在已经是掌门了</description>
+				<label>Became Sect Master</label>
+				<description>I am now the Sect Master</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>
@@ -26,8 +26,8 @@
 		</nullifyingTraits>
 		<stages>
 			<li>
-				<label>获得 {TITLE} 头衔</label>
-				<description>我现在已经是{TITLE}中的一员了, 这能让我更接近修仙之路！</description>
+				<label>Gained {TITLE} title</label>
+				<description>I am now a member of {TITLE}, bringing me closer to the path of immortality!</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>
@@ -43,8 +43,8 @@
 		</nullifyingTraits>
 		<stages>
 			<li>
-				<label>失去 {TITLE} 头衔</label>
-				<description>我不再是{TITLE}了，可恶啊！</description>
+				<label>Lost {TITLE} title</label>
+				<description>I am no longer {TITLE} — how infuriating!</description>
 				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
@@ -60,8 +60,8 @@
 		</nullifyingTraits>
 		<stages>
 			<li>
-				<label>获得 {TITLE} 头衔</label>
-				<description>换句话说......我现在门派的核心了？我现在是真正的修仙者了吗？我是吗？！</description>
+				<label>Gained {TITLE} title</label>
+				<description>In other words... am I now the core of the sect? Am I a true cultivator now? Am I?!</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>

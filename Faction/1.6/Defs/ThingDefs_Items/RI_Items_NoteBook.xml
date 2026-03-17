@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--RI_ReadableBook_Base在核心-->
+	<!--RI_ReadableBook_Base in Core-->
 
 	<ThingDef ParentName="RI_ReadableBook_Base" Name="RI_Notebook_base" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Books/RI_Book_SectBook</texPath>
 		</graphicData>
-		<!--只有宗门的书籍商队才卖这个-->
+		<!--Only the sect's book trader sells this-->
 		<tradeTags>
 			<li>RI_Sect_NoteBook_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--苍穹商旅传单-->
+	<!--Celestial Caravan flyer-->
 	<ThingDef ParentName="RI_ReadableBook_Base">
 		<defName>RI_Book_CelestialCaravanNote</defName>
 		<label>Celestial Caravan flyer</label>
@@ -22,7 +22,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Books/RI_Book_SectBook</texPath>
 		</graphicData>
-		<!--只有宗门的书籍商队才卖这个-->
+		<!--Only the sect's book trader sells this-->
 		<!--<tradeTags>
 			<li>RI_Sect_NoteBook_Tag</li>
 		</tradeTags>-->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!--新宗门开局的杂役-->
+<!--Laborer for new sect start-->
 <Defs>
 	<PawnKindDef>
 		<defName>RI_Pawn_Follower</defName>
@@ -9,7 +9,7 @@
 		<nameMaker>NamerPersonImmortal</nameMaker>
 		<nameMakerFemale>NamerPersonImmortalFemale</nameMakerFemale>
 		<combatPower>60</combatPower>
-		<!--年龄-->
+		<!--Age-->
 		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>30</maxGenerationAge>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
@@ -50,8 +50,8 @@
 		<trader>true</trader>
 	</PawnKindDef>
 
-	<!--目前还是测试用的，特殊单位-->
-	<!--金甲卫士-->
+	<!--Currently still for testing — special unit-->
+	<!--Golden guard-->
 	<PawnKindDef>
 		<defName>RI_Pawn_GoldGuard</defName>
 		<label>Golden guard</label>
@@ -70,7 +70,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		
-		<!--衣服-->
+		<!--Clothing-->
 		<apparelMoney>6000~10000</apparelMoney>
 		<apparelTags>
 			<li>RI_Tag_ApparelBasic</li>
@@ -86,7 +86,7 @@
 		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		
-		<!--武器-->
+		<!--Weapon-->
 		<weaponMoney>5000~10000</weaponMoney>
 		<weaponTags>
 			<li>RI_Tag_GoldWeapon</li>

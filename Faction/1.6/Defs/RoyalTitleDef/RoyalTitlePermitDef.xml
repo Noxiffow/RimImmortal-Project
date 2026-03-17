@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ============================= 头衔的能力 前置 ============================= -->
+	<!--============================= Title ability prerequisite =============================-->
 	<RoyalTitlePermitDef Name="RI_Sect_DropResourcesBase" Abstract="True">
 		<workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
 		<faction>RI_Faction_JusticeSect</faction>
@@ -13,11 +13,11 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 
-	<!-- ============================= 正道宗门 ============================= -->
+	<!--============================= Righteous Sect =============================-->
 
-	<!--外门弟子许可-->
+	<!--Outer Disciple permit-->
 	
-	<!--申请建材-->
+	<!--Request building materials-->
 	<RoyalTitlePermitDef ParentName="RI_Sect_DropResourcesBase">
 		<defName>RI_Sect_Drop_RequestBuildingMaterials</defName>
 		<label>Request building materials</label>
@@ -36,7 +36,7 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 
-	<!--申请修炼资源-->
+	<!--Request cultivation resources-->
 	<RoyalTitlePermitDef ParentName="RI_Sect_DropResourcesBase">
 		<defName>RI_Sect_Drop_RequestCultivationResources</defName>
 		<label>Request little cultivation resources</label>
@@ -52,9 +52,9 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 
-	<!--内门弟子许可-->
+	<!--Inner Disciple permit-->
 	
-	<!--申请药材-->
+	<!--Request medicinal herbs-->
 	<RoyalTitlePermitDef ParentName="RI_Sect_DropResourcesBase">
 		<defName>RI_Sect_Drop_RequestMedicinalHerbs</defName>
 		<label>Request medicinal herbs</label>
@@ -76,7 +76,7 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 	
-	<!--申请丹药-->
+	<!--Request pills-->
 	<RoyalTitlePermitDef ParentName="RI_Sect_DropResourcesBase">
 		<defName>RI_Sect_Drop_RequestPills</defName>
 		<label>Request pills</label>
@@ -96,7 +96,7 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 	
-	<!--呼叫仙舟-->
+	<!--Call Immortal Boat-->
 	<RoyalTitlePermitDef>
 		<defName>RI_Sect_Drop_CallCelestialShip</defName>
 		<label>Call celestial ship</label>
@@ -115,9 +115,9 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 
-	<!--亲传弟子许可-->
+	<!--Direct Disciple permit-->
 	
-	<!--呼叫弟子助阵-->
+	<!--Call disciples' assistance-->
 	<RoyalTitlePermitDef>
 		<defName>RI_Sect_CallDisciplesAssistance</defName>
 		<label>Call disciples' assistance</label>
@@ -130,14 +130,14 @@
 		<royalAid>
 			<favorCost>8</favorCost>
 			<pawnKindDef>RI_Pawn_SectGuard</pawnKindDef>
-			<!--记得修改pawnkind-->
+			<!--Remember to change pawnkind-->
 			<pawnCount>8</pawnCount>
 			<targetingRange>39.9</targetingRange>
 		</royalAid>
 		<cooldownDays>30</cooldownDays>
 	</RoyalTitlePermitDef>
 
-	<!--呼叫宗门轨道轰炸-->
+	<!--Call sect's orbital bombardment-->
 	<RoyalTitlePermitDef>
 		<defName>RI_Sect_CallSectOrbitalBombardment</defName>
 		<label>Call sect's orbital bombardment</label>
@@ -159,7 +159,7 @@
 		</royalAid>
 	</RoyalTitlePermitDef>
 
-	<!--杂役派遣-->
+	<!--Follower dispatch-->
 	<RoyalTitlePermitDef>
 		<defName>RI_Sect_FollowerDispatch</defName>
 		<label>Follower dispatch</label>
@@ -172,7 +172,7 @@
 		<royalAid>
 			<favorCost>4</favorCost>
 			<pawnKindDef>RI_Pawn_SectFollower</pawnKindDef>
-			<!--记得修改pawnkind，最好是有百粮丸啥的starthediff，不用吃饭-->
+			<!--Remember to change pawnkind; ideally one with a starthediff like the Hundred-Grain Pill so they don't need food-->
 			<pawnCount>5</pawnCount>
 			<aidDurationDays>15</aidDurationDays>
 			<targetingRange>44.9</targetingRange>

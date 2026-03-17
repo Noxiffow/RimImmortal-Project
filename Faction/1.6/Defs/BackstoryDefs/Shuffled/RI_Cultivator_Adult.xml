@@ -1,43 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--[PAWN_nameDef]
-	[PAWN_pronoun]他/她
-	[PAWN_possessive]他/她的
-	[PAWN_objective]宾格？
-	
-	<workDisables>
-	<li>ManualDumb</li>
-	</workDisables>
-	
-	<Melee>3</Melee>
-	<Plants>3</Plants>
-	<Medicine>2</Medicine>
-	<Social>-2</Social>
-	<Construction>3</Construction>建造
-	<Animals>3</Animals>
-	<Crafting>3</Crafting>
-	<Mining>8</Mining>
-	<Cooking>-4</Cooking>
-	<Shooting>3</Shooting>
-	<Intellectual>2</Intellectual>
-	
-	<requiredWorkTags>
-	<li>Violent</li>
-	<li>Animals</li>
-	<li>ManualDumb</li>
-	</requiredWorkTags>
-	
-	<bodyTypeMale>Male</bodyTypeMale>
-	<bodyTypeFemale>Female</bodyTypeFemale>
-	
-	<possessions>
-	<Cloth>10</Cloth>
-	</possessions>
-	-->
+	<!--Developer template — pawn pronoun and skill reference block-->
 
-	<!--所有成年修炼者 背景故事 前置-->
-	<!--都能干暴力工作和研究-->
+	<!--All adult cultivator backstory prerequisite-->
+	<!--Can all do violent work and research-->
 	<BackstoryDef Name="RI_Backstory_Base" Abstract="True">
 		<slot>Adulthood</slot>
 		<requiredWorkTags>
@@ -46,7 +13,7 @@
 		</requiredWorkTags>
 	</BackstoryDef>
 
-	<!--============散修成年 前置============-->
+	<!--============Rogue cultivator adult prerequisite============-->
 
 	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_FreeCultivator_Base" Abstract="True">
 		<spawnCategories>
@@ -54,7 +21,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<!--散修丹师-->
+	<!--Rogue cultivator alchemist-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator5</defName>
 		<title>Free cultivator alchemist</title>
@@ -71,7 +38,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--逍遥散修-->
+	<!--Carefree independent cultivator-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator6</defName>
 		<title>Carefree independent cultivator</title>
@@ -87,7 +54,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--善良散修-->
+	<!--Kind free cultivator-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator7</defName>
 		<title>Kind free cultivator</title>
@@ -101,7 +68,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--海之祀民-->
+	<!--People of the sea-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator8</defName>
 		<title>People of the sea</title>
@@ -114,7 +81,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--荒原旅者-->
+	<!--Wasteland traveler-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator9</defName>
 		<title>Wasteland traveler</title>
@@ -128,7 +95,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--宗门幸存者-->
+	<!--Sect survivor-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_FreeCultivator_Base">
 		<defName>RI_BackStory_Adult_FreeCultivator10</defName>
 		<title>Sect survivor</title>
@@ -142,7 +109,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--============歹修成年 前置============-->
+	<!--============Evil cultivator adult prerequisite============-->
 
 	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_EvilCultivator_Base" Abstract="True">
 		<spawnCategories>
@@ -150,7 +117,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<!--灵芽偷猎者-->
+	<!--Energy root poacher-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
 		<defName>RI_BackStory_Adult_EvilCultivator5</defName>
 		<title>Energy root poacher</title>
@@ -164,7 +131,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--夺舍之人-->
+	<!--Occupy the soul-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
 		<defName>RI_BackStory_Adult_EvilCultivator6</defName>
 		<title>Occupy the soul</title>
@@ -178,7 +145,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--流亡邪修-->
+	<!--Exiled evil cultivator-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
 		<defName>RI_BackStory_Adult_EvilCultivator7</defName>
 		<title>Exiled evil cultivator</title>
@@ -191,7 +158,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--深陷魔道-->
+	<!--Deeply consumed in evil-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
 		<defName>RI_BackStory_Adult_EvilCultivator8</defName>
 		<title>Deeply consumed in evil</title>
@@ -205,7 +172,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--黑暗之人-->
+	<!--Hidden in the Darkness-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilCultivator_Base">
 		<defName>RI_BackStory_Adult_EvilCultivator9</defName>
 		<title>Hidden in the Darkness</title>
@@ -218,7 +185,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--============特殊成年 前置============-->
+	<!--============Special adult backstory prerequisite============-->
 
 	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_Special_Base" Abstract="True">
 		<spawnCategories>
@@ -227,7 +194,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<!--仙人杀手-->
+	<!--Immortal Killer-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special1</defName>
 		<title>Immortals slayer</title>
@@ -244,7 +211,7 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--仙桃大亨-->
+	<!--Immortal Peach Magnate-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special2</defName>
 		<title>Immortal peach tycoon</title>
@@ -257,7 +224,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--陨落天才-->
+	<!--Fallen genius-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special3</defName>
 		<title>Fallen genius</title>
@@ -276,7 +243,7 @@
 		</possessions>
 	</BackstoryDef>
 
-	<!--大爱仙尊-->
+	<!--Great-love immortal-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special4</defName>
 		<title>Great-love immorals</title>
@@ -303,7 +270,7 @@
 		</forcedTraits>
 	</BackstoryDef>
 
-	<!--酒中仙-->
+	<!--Immortal in wine-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special5</defName>
 		<title>Immortal in wine</title>
@@ -321,7 +288,7 @@
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--赤面鬼-->
+	<!--Red-faced demon-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special6</defName>
 		<title>Red-faced demon</title>
@@ -339,7 +306,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--敛尸人-->
+	<!--Corpse collector-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_Special_Base">
 		<defName>RI_BackStory_Adult_Special7</defName>
 		<title>Corpse collector</title>
@@ -357,7 +324,7 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--============正道门派修士成年 前置============-->
+	<!--============Righteous sect adult cultivator prerequisite============-->
 
 	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_SectMember_Base" Abstract="True">
 		<spawnCategories>
@@ -366,7 +333,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<!--健康的门派修士-->
+	<!--Healthy sect cultivator-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_SectMember_Base">
 		<defName>RI_BackStory_Adult_SectMember1</defName>
 		<title>Healthy sect cultivator</title>
@@ -381,7 +348,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--优秀的门派修士-->
+	<!--Excellent sect cultivator-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_SectMember_Base">
 		<defName>RI_BackStory_Adult_SectMember2</defName>
 		<title>Outstanding Sect Cultivator</title>
@@ -398,7 +365,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
-	<!--============外道门派修士成年 前置============-->
+	<!--============Heterodox sect adult cultivator prerequisite============-->
 
 	<BackstoryDef ParentName="RI_Backstory_Base" Name="RI_Backstory_Adult_EvilSect_Base" Abstract="True">
 		<spawnCategories>
@@ -406,7 +373,7 @@
 		</spawnCategories>
 	</BackstoryDef>
 
-	<!--炉鼎爱好者-->
+	<!--Furnace lover-->
 	<BackstoryDef ParentName="RI_Backstory_Adult_EvilSect_Base">
 		<defName>RI_BackStory_Adult_EvilSect1</defName>
 		<title>Furnaces lover</title>

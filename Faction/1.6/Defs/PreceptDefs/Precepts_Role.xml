@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--新增两个职位-->
+	<!--Two new roles added-->
 
-	<!--太上长老-->
+	<!--Grand elder-->
 	<PreceptDef ParentName="PreceptRoleMultiBase">
 		<defName>RI_IdeoRole_GrandElder</defName>
 		<label>Grand elder</label>
@@ -37,7 +37,7 @@
 				<modifier>0.5</modifier>
 			</li>
 		</roleEffects>
-		<!--给予的能力-->
+		<!--Granted abilities-->
 		<grantedAbilities>
 			<li>RI_Ability_PracticeArea</li>
 			<li>WorkDrive</li>
@@ -62,7 +62,7 @@
 		</roleApparelRequirements>
 	</PreceptDef>
 
-	<!--首席护法-->
+	<!--Chief guard-->
 	<PreceptDef ParentName="PreceptRoleMultiBase">
 		<defName>RI_IdeoRole_ChiefGuard</defName>
 		<label>Chief guard</label>
@@ -97,13 +97,13 @@
 			</li>
 		</roleEffects>
 		<displayOrderInImpact>2</displayOrderInImpact>
-		<!--给予的能力-->
+		<!--Granted abilities-->
 		<grantedAbilities>
 			<li>BerserkTrance</li>
 			<li>MarksmanCommand</li>
 			<li>CombatCommand</li>
 		</grantedAbilities>
-		<!--无法工作-->
+		<!--Cannot work-->
 		<roleDisabledWorkTags>
 			<li>ManualDumb</li>
 			<li>Cooking</li>

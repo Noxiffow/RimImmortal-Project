@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--麒麟丹-->
+	<!--QiLin restoration pill-->
 	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
 		<defName>RI_MakeQiLinRestorationPill</defName>
 		<label>Make QiLin restoration pill</label>
@@ -47,9 +47,9 @@
 		</products>
 	</RecipeDef>
 
-	<!--=============================一品丹=============================-->
+	<!--============================= Grade 1 pill =============================-->
 
-	<!--忘魂丹-->
+	<!--Oblivion soul-purging elixir-->
 	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
 		<defName>RI_Recipe_MakeOblivionSoulPurgingElixir</defName>
 		<label>Make Oblivion soul-purging elixir</label>
@@ -95,7 +95,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--玲珑月辉丹-->
+	<!--LingLong moonlight elixir-->
 	<RecipeDef ParentName="RI_RecipeBase_MakeBestDrugs">
 		<defName>RI_Recipe_MakeLingLongMoonlightElixir</defName>
 		<label>Make LingLong moonlight elixir</label>
@@ -149,7 +149,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--炼制浓缩灵液-->
+	<!--Refine condensed spiritual liquid-->
 	<RecipeDef ParentName="RI_RecipeBase_withBigDanStove">
 		<defName>RI_MakeCondensedSpiritualLiquid</defName>
 		<label>Make Condensed spiritual liquid</label>
@@ -179,7 +179,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--制作玲珑仙酿-->
+	<!--Make LingLong immortal wine-->
 	<RecipeDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>RI_Recipe_MakeLingLongWine</defName>
 		<label>make LingLong wine</label>

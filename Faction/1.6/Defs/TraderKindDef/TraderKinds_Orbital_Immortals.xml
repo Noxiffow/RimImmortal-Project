@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--苍穹商旅 轨道货船-->
+	<!--Celestial Caravan orbital cargo ship-->
 	<TraderKindDef>
 		<defName>RI_Trader_CelestialCaravanOrbital_BulkGoods</defName>
 		<label>Celestial Caravan orbital cargo ship</label>
 		<commonality>1.3</commonality>
 		<orbital>true</orbital>
 		<stockGenerators>
-			<!-- 基础材料 -->
+			<!-- Basic materials -->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>2500~5000</countRange>
@@ -41,12 +41,12 @@
 				<thingDef>Plasteel</thingDef>
 				<countRange>100~500</countRange>
 			</li>
-			<!--传单-->
+			<!--Pamphlet-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>RI_Book_CelestialCaravanNote</thingDef>
 				<countRange>1~1</countRange>
 			</li>
-			<!--零部件-->
+			<!--Components-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>10~50</countRange>
@@ -55,12 +55,12 @@
 				<thingDef>ComponentSpacer</thingDef>
 				<countRange>5~30</countRange>
 			</li>
-			<!--呼叫器-->
+			<!--Caller device-->
 			<li Class="StockGenerator_SingleDef" MayRequire="RI.RimImmortal.Faction">
 				<thingDef>RI_Thing_OrbitalShipCaller</thingDef>
 				<countRange>5~10</countRange>
 			</li>
-			<!-- 药品 -->
+			<!--Medicine-->
 			<li Class="StockGenerator_Category">
 				<categoryDef>RI_Category_Drugs</categoryDef>
 				<thingDefCountRange>5~12</thingDefCountRange>
@@ -72,28 +72,28 @@
 				<countRange>15~30</countRange>
 			</li>
 
-			<!--三品武器-->
+			<!--Grade 3 weapon-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_ThirdWeapon_Tag</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 寻常衣物 -->
+			<!--Ordinary clothing-->
 			<li  Class="StockGenerator_Category">
 				<categoryDef>RI_Category_Apparel</categoryDef>
 				<thingDefCountRange>5~7</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 通用功法书 -->
+			<!--General technique books-->
 			<li  Class="StockGenerator_Category">
 				<categoryDef>RI_Category_CommonBooks</categoryDef>
 				<thingDefCountRange>5~9</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 故事书 -->
+			<!--Story books-->
 			<li  Class="StockGenerator_Category">
 				<categoryDef>RI_Category_StoryBooks</categoryDef>
 				<thingDefCountRange>1~3</thingDefCountRange>
@@ -117,7 +117,7 @@
 
 			<!-- Cultist apparel -->
 
-			<!-- 买的东西 -->
+			<!--Things to buy-->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>Art</tag>
@@ -125,7 +125,7 @@
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>HiTechArmor</tag>
 			</li>
-			<!--仙路的兵器盔甲，什么商队都收-->
+			<!--Immortal path weapons and armor — accepted by any caravan-->
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>RI_AllWeapon_AllArmor_Tag</tag>
 			</li>

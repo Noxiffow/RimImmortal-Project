@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--文化符号，先不写具体meme，之后再补上-->
+	<!--Culture symbols — specific memes to be added later-->
 
-	<!--古修-->
+	<!--Ancient cultivation-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_AncientA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_AncientA</iconPath>
@@ -19,7 +19,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_AncientC</iconPath>
 	</IdeoIconDef>
 	
-	<!--中国文化：一大堆-->
+	<!--Chinese culture: a large variety-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_CultureA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_CultureA</iconPath>
@@ -50,7 +50,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_CultureF</iconPath>
 	</IdeoIconDef>
 
-	<!--龙-->
+	<!--Dragon-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_DragonA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_DragonA</iconPath>
@@ -71,7 +71,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_DragonD</iconPath>
 	</IdeoIconDef>
 	
-	<!--丹药：丹炉，葫芦-->
+	<!--Pills: alchemy furnace, gourd-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_DrugA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_DrugA</iconPath>
@@ -87,7 +87,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_DrugC</iconPath>
 	</IdeoIconDef>
 	
-	<!--元素：云，天空，太阳-->
+	<!--Elements: clouds, sky, sun-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_ElementA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_ElementA</iconPath>
@@ -113,7 +113,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_ElementE</iconPath>
 	</IdeoIconDef>
 	
-	<!--鱼-->
+	<!--Fish-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_FishA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_FishA</iconPath>
@@ -124,7 +124,7 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_FishB</iconPath>
 	</IdeoIconDef>
 	
-	<!--自然：花，树，草-->
+	<!--Nature: flowers, trees, grass-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_NatureA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_NatureA</iconPath>
@@ -140,13 +140,13 @@
 		<iconPath>UI/Ideoligions/RI_Ideo_NatureC</iconPath>
 	</IdeoIconDef>
 	
-	<!--掠夺：战争，头骨-->
+	<!--Plunder: war, skulls-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_PirateA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_PirateA</iconPath>
 	</IdeoIconDef>
 
-	<!--灵气：气，修炼-->
+	<!--Qi: aura, cultivation-->
 	<IdeoIconDef>
 		<defName>RI_Ideo_QiA</defName>
 		<iconPath>UI/Ideoligions/RI_Ideo_QiA</iconPath>

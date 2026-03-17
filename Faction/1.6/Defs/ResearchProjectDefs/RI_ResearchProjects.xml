@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============================== 宗门科技 ===================================-->
+	<!--=============================== Sect technology ===================================-->
 
-	<!--宗门的科技都在灵气革命之后-->
+	<!--All sect technologies come after the Qi revolution-->
 
-	<!--电气石科技-->
+	<!--Tourmaline technology-->
 	<!--<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_ToramalliTechnology</defName>
 		<label>Toramalli technology</label>
@@ -21,7 +21,7 @@
 	</ResearchProjectDef>
 
 	-->
-	<!--灵气技术爆炸-->
+	<!--Qi technology explosion-->
 	<!--
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_AdvancedQiEnergyTechnology</defName>
@@ -37,7 +37,7 @@
 		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>-->
 
-	<!--宗门科技——需要蓝图解锁，先不做-->
+	<!--Sect technology — requires blueprint to unlock, not implemented yet-->
 	<!--<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_SectResearch</defName>
 		<label>Sect </label>

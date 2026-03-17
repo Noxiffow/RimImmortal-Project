@@ -10,7 +10,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--大息龟眠功 龟眠之法-->
+	<!--Tortoise meditation method — Tortoise sleep technique-->
 	<HediffDef ParentName="RI_CultivationMethodHediffBase">
 		<defName>RI_Hediff_TortoiseMeditationMethod</defName>
 		<label>Cultivation method: Tortoise meditation</label>
@@ -28,7 +28,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--吞山魔功 吞山魔功-->
+	<!--Mountain-eating cultivation method-->
 	<HediffDef ParentName="RI_CultivationMethodHediffBase">
 		<defName>RI_Hediff_MountainEatingCultivationMethod</defName>
 		<label>Cultivation method: Mountain eating</label>
@@ -44,7 +44,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--玄天诀 玄天秘法-->
+	<!--Mystic cultivation method — Mystic heaven secret art-->
 	<HediffDef ParentName="RI_CultivationMethodHediffBase">
 		<defName>RI_Hediff_MysticCultivationMethod</defName>
 		<label>Cultivation method: Mystic</label>
@@ -60,7 +60,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--百炼速修 精研细工-->
+	<!--Refinement workspeed method — Careful craftsmanship-->
 	<HediffDef ParentName="RI_CultivationMethodHediffBase">
 		<defName>RI_Hediff_RefinementWorkspeedMethod</defName>
 		<label>Cultivation method: Refinement handwork</label>
@@ -81,7 +81,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--流云步法 流云步法-->
+	<!--Air step footwork method-->
 	<HediffDef ParentName="RI_CultivationMethodHediffBase">
 		<defName>RI_Hediff_AirStepExercise</defName>
 		<label>Cultivation method: Air step</label>

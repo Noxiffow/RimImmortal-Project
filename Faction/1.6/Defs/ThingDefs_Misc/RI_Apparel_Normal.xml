@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--芙蓉冠-->
+	<!--Flonne crown-->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>RI_Apparel_FlonneCrown</defName>
 		<label>Flonne crown</label>
@@ -17,7 +17,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-		<!--贸易标签-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>RI_ThirdRateArmor_Tag</li>
 		</tradeTags>
@@ -56,7 +56,7 @@
 		</apparel>
 	</ThingDef>
 
-	<!--莲花冠-->
+	<!--Lotus crown-->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>RI_Apparel_LotusCrown</defName>
 		<label>Lotus crown</label>
@@ -72,7 +72,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-		<!--贸易标签-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>RI_ThirdRateArmor_Tag</li>
 		</tradeTags>
@@ -111,7 +111,7 @@
 		</apparel>
 	</ThingDef>
 
-	<!--仙门斗篷-->
+	<!--Immortal sect cloak-->
 	<ThingDef ParentName="RI_BasicApparel_Base">
 		<defName>RI_Apparel_LightRobe</defName>
 		<label>Light robe</label>
@@ -151,7 +151,7 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--贸易标签-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>RI_ThirdRateArmor_Tag</li>
 		</tradeTags>
@@ -161,7 +161,7 @@
 		</recipeMaker>
 	</ThingDef>
 	
-	<!--制式交领短衫-->
+	<!--Standard cross-collar shirt-->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>RI_Apparel_BasicSectShirt</defName>
 		<label>Sect collar shirt</label>
@@ -211,7 +211,7 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<!--贸易标签-->
+		<!--Trade tag-->
 		<tradeTags>
 			<li>RI_ThirdRateArmor_Tag</li>
 		</tradeTags>

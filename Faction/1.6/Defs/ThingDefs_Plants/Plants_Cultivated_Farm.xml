@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=========================== 玲珑果树 ==============================-->
+	<!--=========================== LingLong fruit tree ==============================-->
 
 	<ThingDef ParentName="TreeBase">
 		<defName>RI_Plant_TreeLingLong</defName>

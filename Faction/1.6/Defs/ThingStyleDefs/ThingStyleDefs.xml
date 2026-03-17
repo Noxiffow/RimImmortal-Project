@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 原版文化的Bases，只是家具有用 -->
+	<!-- Vanilla culture Bases — only furniture applies -->
 
 	<ThingStyleDef Name="IdeoTableStyleBase" Abstract="True">
 		<graphicData>
@@ -15,9 +15,9 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!-- 仙路文化风格——无界之象 -->
+	<!-- Immortal path culture style — Boundless Form -->
 
-	<!--武器-->
+	<!--Weapon-->
 
 	<ThingStyleDef>
 		<defName>RI_ImmortalStyle_Mace</defName>
@@ -75,9 +75,9 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--家具-->
+	<!--Furniture-->
 
-	<!--祭坛1x1-->
+	<!--Altar 1x1-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_AltarSmall</defName>
 		<graphicData>
@@ -90,7 +90,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--祭坛2x3-->
+	<!--Altar 2x3-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_AltarLarge</defName>
 		<graphicData>
@@ -103,7 +103,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--祭坛3x3-->
+	<!--Altar 3x3-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_AltarGrand</defName>
 		<graphicData>
@@ -116,7 +116,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--立柱-->
+	<!--Column-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_Column</defName>
 		<graphicData>
@@ -127,7 +127,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--落地灯-->
+	<!--Standing lamp-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_StandingLamp</defName>
 		<graphicData>
@@ -137,7 +137,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--火炬-->
+	<!--Torch-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_TorchLamp</defName>
 		<graphicData>
@@ -147,7 +147,7 @@
 		<uiIconPath>Things/Building/BuildingStyles/NeoCultivation/RI_NeoCultivation_TorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
 
-	<!--凳子-->
+	<!--Stool-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_Stool</defName>
 		<graphicData>
@@ -169,7 +169,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--餐椅-->
+	<!--Dining chair-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_DiningChair</defName>
 		<graphicData>
@@ -188,7 +188,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--桌子1x2-->
+	<!--Table 1x2-->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>RI_NeoCultivation_Table1x2c</defName>
 		<graphicData>
@@ -197,7 +197,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--桌子2x2-->
+	<!--Table 2x2-->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>RI_NeoCultivation_Table2x2c</defName>
 		<graphicData>
@@ -206,7 +206,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--桌子3x3-->
+	<!--Table 3x3-->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>RI_NeoCultivation_Table3x3c</defName>
 		<graphicData>
@@ -215,7 +215,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--桌子2x4-->
+	<!--Table 2x4-->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>RI_NeoCultivation_Table2x4c</defName>
 		<graphicData>
@@ -224,7 +224,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<!--讲台-->
+	<!--Lectern-->
 	<ThingStyleDef>
 		<defName>RI_NeoCultivation_Lectern</defName>
 		<graphicData>

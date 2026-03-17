@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--仙路文化风格——无界之象-->
+	<!--Immortal path culture style — Boundless Form-->
 
 	<StyleCategoryDef>
 		<defName>RI_Style_NeoCultivation</defName>
@@ -10,105 +10,105 @@
 		<soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
 		<ritualVisualEffectDef>Techist</ritualVisualEffectDef>
 		<thingDefStyles>
-			<!--武器类-->
-			<!--钉头锤-->
+			<!--Weapons-->
+			<!--Mace-->
 			<li>
 				<thingDef>MeleeWeapon_Mace</thingDef>
 				<styleDef>RI_ImmortalStyle_Mace</styleDef>
 			</li>
-			<!--短剑-->
+			<!--Short sword-->
 			<li>
 				<thingDef>MeleeWeapon_Gladius</thingDef>
 				<styleDef>RI_ImmortalStyle_Gladius</styleDef>
 			</li>
-			<!--短矛-->
+			<!--Short spear-->
 			<li>
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>RI_ImmortalStyle_Ikwa</styleDef>
 			</li>
-			<!--匕首-->
+			<!--Dagger-->
 			<li>
 				<thingDef>MeleeWeapon_Knife</thingDef>
 				<styleDef>RI_ImmortalStyle_Knife</styleDef>
 			</li>
-			<!--破墙斧-->
+			<!--Breach axe-->
 			<li>
 				<thingDef>MeleeWeapon_BreachAxe</thingDef>
 				<styleDef>RI_ImmortalStyle_BreachAxe</styleDef>
 			</li>
-			<!--长剑-->
+			<!--Long sword-->
 			<li>
 				<thingDef>MeleeWeapon_LongSword</thingDef>
 				<styleDef>RI_ImmortalStyle_LongSword</styleDef>
 			</li>
-			<!--长矛-->
+			<!--Spear-->
 			<li>
 				<thingDef>MeleeWeapon_Spear</thingDef>
 				<styleDef>RI_ImmortalStyle_Spear</styleDef>
 			</li>
 
-			<!--家具类-->
-			<!--祭坛1x1-->
+			<!--Furniture-->
+			<!--Altar 1x1-->
 			<li>
 				<thingDef>Altar_Small</thingDef>
 				<styleDef>RI_NeoCultivation_AltarSmall</styleDef>
 			</li>
-			<!--祭坛2x3-->
+			<!--Altar 2x3-->
 			<li>
 				<thingDef>Altar_Large</thingDef>
 				<styleDef>RI_NeoCultivation_AltarLarge</styleDef>
 			</li>
-			<!--祭坛3x3-->
+			<!--Altar 3x3-->
 			<li>
 				<thingDef>Altar_Grand</thingDef>
 				<styleDef>RI_NeoCultivation_AltarGrand</styleDef>
 			</li>
-			<!--立柱-->
+			<!--Column-->
 			<li>
 				<thingDef>Column</thingDef>
 				<styleDef>RI_NeoCultivation_Column</styleDef>
 			</li>
-			<!--落地灯-->
+			<!--Standing lamp-->
 			<li>
 				<thingDef>StandingLamp</thingDef>
 				<styleDef>RI_NeoCultivation_StandingLamp</styleDef>
 			</li>
-			<!--火炬-->
+			<!--Torch-->
 			<li>
 				<thingDef>TorchLamp</thingDef>
 				<styleDef>RI_NeoCultivation_TorchLamp</styleDef>
 			</li>
-			<!--凳子-->
+			<!--Stool-->
 			<li>
 				<thingDef>Stool</thingDef>
 				<styleDef>RI_NeoCultivation_Stool</styleDef>
 			</li>
-			<!--餐椅-->
+			<!--Dining chair-->
 			<li>
 				<thingDef>DiningChair</thingDef>
 				<styleDef>RI_NeoCultivation_DiningChair</styleDef>
 			</li>
-			<!--桌子1x2-->
+			<!--Table 1x2-->
 			<li>
 				<thingDef>Table1x2c</thingDef>
 				<styleDef>RI_NeoCultivation_Table1x2c</styleDef>
 			</li>
-			<!--桌子2x2-->
+			<!--Table 2x2-->
 			<li>
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>RI_NeoCultivation_Table2x2c</styleDef>
 			</li>
-			<!--桌子3x3-->
+			<!--Table 3x3-->
 			<li>
 				<thingDef>Table3x3c</thingDef>
 				<styleDef>RI_NeoCultivation_Table3x3c</styleDef>
 			</li>
-			<!--桌子2x4-->
+			<!--Table 2x4-->
 			<li>
 				<thingDef>Table2x4c</thingDef>
 				<styleDef>RI_NeoCultivation_Table2x4c</styleDef>
 			</li>
-			<!--讲台-->
+			<!--Lectern-->
 			<li>
 				<thingDef>Lectern</thingDef>
 				<styleDef>RI_NeoCultivation_Lectern</styleDef>
@@ -116,6 +116,6 @@
 		</thingDefStyles>
 	</StyleCategoryDef>
 
-	<!--后续继续添加家具，还能增加地毯一类的group-->
+	<!--Will continue to add furniture, can also add carpet-type groups-->
 
 </Defs>

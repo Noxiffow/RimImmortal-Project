@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--头衔Base-->
+	<!--Title Base-->
 	<RoyalTitleDef Abstract="True" Name="RI_Sect_TitleBase">
 		<tags>
 			<li>RI_Sect_Title</li>
@@ -11,7 +11,7 @@
 		<lostThought>RI_Sect_LostTitle</lostThought>
 	</RoyalTitleDef>
 
-	<!--杂役-->
+	<!--Laborer/Servant-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_A</defName>
 		<label>Follower</label>
@@ -27,7 +27,7 @@
 		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
 	</RoyalTitleDef>
 
-	<!--外门弟子-->
+	<!--Outer Disciple-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_B</defName>
 		<label>Outer disciple</label>
@@ -44,7 +44,7 @@
 		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
 	</RoyalTitleDef>
 
-	<!--内门弟子-->
+	<!--Inner Disciple-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_C</defName>
 		<label>Inner disciple</label>
@@ -65,7 +65,7 @@
 		</permits>
 	</RoyalTitleDef>
 
-	<!--亲传弟子-->
+	<!--Direct Disciple-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_D</defName>
 		<label>Direct disciple</label>
@@ -85,7 +85,7 @@
 		</permits>
 	</RoyalTitleDef>
 
-	<!--长老-->
+	<!--Elder-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_E</defName>
 		<label>Elder</label>
@@ -106,7 +106,7 @@
 		</permits>
 	</RoyalTitleDef>
 
-	<!--掌门-->
+	<!--Sect Master-->
 	<RoyalTitleDef ParentName="RI_Sect_TitleBase">
 		<defName>RI_Sect_Title_F</defName>
 		<label>Master</label>

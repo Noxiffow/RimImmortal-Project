@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ==========================【一品】湮尘忘魂丹========================== -->
+	<!--========================== [Grade 1] Oblivion Soul-Purging Elixir ==========================-->
 	<ThingDef ParentName="RI_BestDrug_Base">
 		<defName>RI_Drug_OblivionSoulPurgingElixir</defName>
 		<label>【First-rate】Oblivion soul-purging elixir</label>
@@ -48,7 +48,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!-- ==========================【一品】玲珑月辉丹========================== -->
+	<!--========================== [Grade 1] Exquisite Moonlight Elixir ==========================-->
 	<ThingDef ParentName="RI_BestDrug_Base">
 		<defName>RI_Drug_LingLongMoonlightElixir</defName>
 		<label>【First-rate】LingLong moonlight elixir</label>
@@ -95,7 +95,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<!--一品药 玲珑仙酿-->
+	<!--Grade 1 elixir — Exquisite Immortal Brew-->
 	<ThingDef ParentName="RI_BasicDrug_Base" MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>RI_Drug_LingLongWine</defName>
 		<label>【First-rate】LingLong wine</label>
@@ -118,7 +118,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--=================二品丹药——麒麟丸=================-->
+	<!--================= Grade 2 pill — QiLin Pill =================-->
 
 	<ThingDef ParentName="RI_BasicDrug_Base">
 		<defName>RI_Drug_QiLinRestorationPill</defName>
@@ -141,7 +141,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--浓缩灵液-->
+	<!--Condensed spiritual liquid-->
 	<ThingDef ParentName="RI_BasicDrug_Base">
 		<defName>RI_Drug_CondensedSpiritualLiquid</defName>
 		<label>【Second-rate】Condensed spiritual liquid</label>

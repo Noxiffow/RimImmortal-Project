@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ================================== 邪修功法 ====================================-->
+	<!--================================== Evil cultivation techniques ====================================-->
 
-	<!--搜魂术-->
+	<!--Soul searching technique-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_ReadingMemory</defName>
 		<label>Skill book-Soul searching</label>

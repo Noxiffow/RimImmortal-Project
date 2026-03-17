@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ================================== 新增的修炼功法 ====================================-->
+	<!--================================== Newly added cultivation techniques ====================================-->
 
 	<ThingDef Name="RI_BookBase_CultivationMethod" ParentName="ResourceBase" Abstract="True">
 		<graphicData>
@@ -21,14 +21,14 @@
 		</statBases>
 		<thingCategories>
 			<li>RI_Category_CommonBooks</li>
-			<!--储存-->
+			<!--Storage-->
 		</thingCategories>
 		<tradeTags>
 			<li>RI_Cultivation_Book</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--流云步法-->
+	<!--Air step footwork-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_AirStepExercise</defName>
 		<label>Skill book-Air step exercise</label>
@@ -50,7 +50,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--吞山魔功-->
+	<!--Mountain-eating cultivation method-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_MountainEating</defName>
 		<label>Skill book-Mountain-eating cultivation method</label>
@@ -72,7 +72,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--玄天诀-->
+	<!--Mystic cultivation method-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_MysticCultivation</defName>
 		<label>Skill book-Mystic cultivation method</label>
@@ -94,7 +94,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--巧工速修法-->
+	<!--Refinement workspeed method-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_RefinementWorkspeed</defName>
 		<label>Skill book-Refinement workspeed method</label>
@@ -116,7 +116,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--大息龟眠功-->
+	<!--Tortoise meditation method-->
 	<ThingDef ParentName="RI_BookBase_CultivationMethod">
 		<defName>RI_BookAbility_TortoiseMeditation</defName>
 		<label>Skill book-Tortoise meditation method</label>

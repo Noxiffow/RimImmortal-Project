@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 灵炳信仰 -->
+	<!--Spiritual Brilliance Faith-->
 
   <MemeDef>
     <defName>RI_Structure_QiOriginFaith</defName>
@@ -14,25 +14,25 @@
     <randomizationSelectionWeightFactor>1</randomizationSelectionWeightFactor>
     <deityCount>0</deityCount>
     <consumableBuildings>
-      <!--解锁独有建筑-->
+      <!--Unlock unique buildings-->
     </consumableBuildings>
     <renderOrder>-1</renderOrder>
     <generalRules>
       <rulesStrings>
-        <li>memeHyphenPrefix->道</li>
-        <li>memeLeaderNoun->心魄</li>
-        <li>memeLeaderNoun->决断者</li>
-        <li>memeLeaderNoun->宗主</li>
-        <li>memeLeaderAdjective->正道</li>
-        <li>memeLeaderAdjective->仁义</li>
-        <li>memeLeaderAdjective->悟道</li>
-        <li>memeMoralist->谋士</li>
-        <li>memeMoralist->道学家</li>
-        <li>memeMoralist->德行者</li>
-        <li>memeMoralist->仙家</li>
-        <li>memeMoralist->智者</li>
-        <li>memeMoralist->儒士</li>
-        <li>memeMoralist->辩士</li>
+        <li>memeHyphenPrefix->Dao</li>
+        <li>memeLeaderNoun->Soul</li>
+        <li>memeLeaderNoun->Arbiter</li>
+        <li>memeLeaderNoun->Patriarch</li>
+        <li>memeLeaderAdjective->Righteous</li>
+        <li>memeLeaderAdjective->Benevolent</li>
+        <li>memeLeaderAdjective->Enlightened</li>
+        <li>memeMoralist->Counselor</li>
+        <li>memeMoralist->Way Scholar</li>
+        <li>memeMoralist->Virtuous One</li>
+        <li>memeMoralist->Immortal Sage</li>
+        <li>memeMoralist->Sage</li>
+        <li>memeMoralist->Confucian Scholar</li>
+        <li>memeMoralist->Orator</li>
     </rulesStrings>
     </generalRules>
     <descriptionMaker>

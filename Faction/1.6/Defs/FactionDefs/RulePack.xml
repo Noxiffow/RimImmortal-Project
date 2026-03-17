@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- =============================== 正道 派系名字 =============================== -->
+	<!--=============================== Righteous faction name ===============================-->
 	<RulePackDef>
 		<defName>RI_Namer_JusticeSect</defName>
 		<rulePack>
@@ -15,7 +15,7 @@
 		</rulePack>
 	</RulePackDef>
 
-	<!-- =============================== 外道 派系名字 =============================== -->
+	<!--=============================== Heterodox faction name ===============================-->
 	<RulePackDef>
 		<defName>RI_Namer_EvilSect</defName>
 		<rulePack>
@@ -29,7 +29,7 @@
 		</rulePack>
 	</RulePackDef>
 
-	<!-- =============================== 派系基地名字 =============================== -->
+	<!--=============================== Faction base name ===============================-->
 	<RulePackDef>
 		<defName>RI_Namer_SectSettlement</defName>
 		<rulePack>

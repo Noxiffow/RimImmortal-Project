@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--=================外道门派的商队=================-->
+	<!--================= Heterodox sect caravan =================-->
 
-	<!--暗坊-->
+	<!--Shadow market-->
 	<TraderKindDef>
 		<defName>RI_Sect_Caravan_ShadowTrader</defName>
 		<label>Shadow trader</label>
 		<stockGenerators>
-			<!--========出售========-->
+			<!--======== For sale ========-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>750~1200</countRange>
@@ -136,24 +136,24 @@
 				<countRange>0~1</countRange>
 			</li>
 			
-			<!--========购买========-->
+			<!--======== For purchase ========-->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<!--黄金-->
+			<!--Gold-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>Gold</thingDef>
 			</li>
-			<!--灵石-->
+			<!--Spirit stone-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
 			</li>
-			<!--仙路的兵器盔甲，什么商队都收-->
+			<!--Immortal path weapons and armor — accepted by any caravan-->
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>RI_AllWeapon_AllArmor_Tag</tag>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>
 
-	<!--贩奴人-->
+	<!--Slave trafficker-->
 	<TraderKindDef>
 		<defName>RI_Sect_Caravan_SlaveTraffickingCaravan</defName>
 		<label>Slave trafficking caravan</label>
@@ -165,7 +165,7 @@
 			</points>
 		</commonalityMultFromPopulationIntent>
 		<stockGenerators>
-			<!--========出售========-->
+			<!--======== For sale ========-->
 			<!-- Resources -->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
@@ -193,17 +193,17 @@
 				<!-- 50% chance for 1~2 -->
 			</li>
 
-			<!--========购买========-->
+			<!--======== For purchase ========-->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
-			<!--黄金-->
+			<!--Gold-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>Gold</thingDef>
 			</li>
-			<!--灵石-->
+			<!--Spirit stone-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
 			</li>
-			<!--仙路的兵器盔甲，什么商队都收-->
+			<!--Immortal path weapons and armor — accepted by any caravan-->
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>RI_AllWeapon_AllArmor_Tag</tag>
 			</li>

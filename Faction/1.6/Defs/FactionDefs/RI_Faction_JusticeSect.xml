@@ -13,21 +13,21 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Master</leaderTitle>
-		<!--头衔点数——贡献点-->
+		<!--Title point cost — Contribution points-->
 		<royalFavorLabel>Contribution</royalFavorLabel>
 		<royalFavorIconPath>UI/Icons/RI_Faction_SectContribution</royalFavorIconPath>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<factionIconPath>World/WorldObjects/Expanding/RI_Faction_JusticeSect</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Ultra</techLevel>
-		<!--命名-->
+		<!--Naming-->
 		<factionNameMaker>RI_Namer_JusticeSect</factionNameMaker>
 		<settlementNameMaker>RI_Namer_SectSettlementPack</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.55, 0.94, 0.9)</li>
 		</colorSpectrum>
 
-		<!--文化-->
+		<!--Culture-->
 		<requiredMemes>
 			<li>RI_Meme_FrankAndRighteous</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
@@ -42,17 +42,17 @@
 		<structureMemeWeights>
 			<RI_Structure_QiOriginFaith>1</RI_Structure_QiOriginFaith>
 		</structureMemeWeights>
-		<!--风格-->
+		<!--Style-->
 		<allowedCultures>
 			<li>RI_Qi_Culture</li>
 		</allowedCultures>
 
-		<!--异种-->
+		<!--Xenotype-->
 		<xenotypeSet>
 
 		</xenotypeSet>
 
-		<!--背景故事-->
+		<!--Backstory-->
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -67,7 +67,7 @@
 				<commonality>0.1</commonality>
 			</li>
 		</backstoryFilters>
-		<!--服饰-->
+		<!--Apparel-->
 		<apparelStuffFilter>
 			<stuffCategoriesToAllow>
 				<li>Metallic</li>
@@ -77,9 +77,9 @@
 				<li>Leather_Human</li>
 			</disallowedThingDefs>
 		</apparelStuffFilter>
-		<!--温度-->
+		<!--Temperature-->
 		<allowedArrivalTemperatureRange>-50~100</allowedArrivalTemperatureRange>
-		<!--头衔-->
+		<!--Title-->
 		<fixedLeaderKinds>
 			<li>RI_Pawn_SectMaster</li>
 		</fixedLeaderKinds>
@@ -91,7 +91,7 @@
 		</royalTitleInheritanceRelations>
 		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
 
-		<!--商队-->
+		<!--Trade caravan-->
 		<baseTraderKinds>
 			<li>RI_Base_JusticeSect_Standard</li>
 		</baseTraderKinds>
@@ -106,7 +106,7 @@
 			<li>RI_Sect_Caravan_ContributionPatrolCollector</li>
 		</caravanTraderKinds>
 
-		<!--袭击-->
+		<!--Raid-->
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 1)</li>
@@ -125,7 +125,7 @@
 		</maxPawnCostPerTotalPointsCurve>
 
 		<pawnGroupMakers>
-			<!-- 商队 -->
+			<!--Trade caravan-->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -143,7 +143,7 @@
 				</guards>
 			</li>
 			<li>
-				<!-- 普通修仙者袭击 -->
+				<!-- Normal cultivator raid -->
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
@@ -177,12 +177,12 @@
 	</FactionDef>
 
 	<ThingDef ParentName="ActiveDropPod">
-		<!--空投，贴图记得改，可以是Graphic_Random-->
+		<!--Drop pod — remember to change texture, can use Graphic_Random-->
 		<defName>ActiveDropPod_RI_Sect_Faction</defName>
-		<label>仙舟</label>
+		<label>Immortal Boat</label>
 		<graphicData>
 			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
-			<!--记得修改贴图-->
+			<!--Remember to change texture-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
@@ -193,12 +193,12 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DropPodIncoming">
-		<!--空投，贴图记得改，可以是Graphic_Random-->
+		<!--Drop pod — remember to change texture, can use Graphic_Random-->
 		<defName>DropPodIncoming_RI_Sect_Faction</defName>
-		<label>仙舟：飞行中</label>
+		<label>Immortal Boat: in flight</label>
 		<graphicData>
 			<texPath>Things/Building/Misc/RI_Shuttle</texPath>
-			<!--记得修改贴图-->
+			<!--Remember to change texture-->
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>

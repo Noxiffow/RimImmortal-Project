@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--正道派系定居点卖的东西-->
+	<!--Items sold at righteous faction settlements-->
 
 	<TraderKindDef>
 		<defName>RI_Base_JusticeSect_Standard</defName>
 		<stockGenerators>
-			<!--基础物资-->
+			<!--Basic supplies-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>3500~6000</countRange>
@@ -15,7 +15,7 @@
 				<thingDef>Steel</thingDef>
 				<countRange>300~800</countRange>
 			</li>
-			<!--灵石-->
+			<!--Spirit stone-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
 				<countRange>500~1000</countRange>
@@ -40,7 +40,7 @@
 				<thingDef>Neutroamine</thingDef>
 				<countRange>125~350</countRange>
 			</li>
-			<!--零部件-->
+			<!--Components-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>40~150</countRange>
@@ -49,13 +49,13 @@
 				<thingDef>ComponentSpacer</thingDef>
 				<countRange>30~70</countRange>
 			</li>
-			<!--皮料-->
+			<!--Leather/Textiles-->
 			<li Class="StockGenerator_Category">
 				<categoryDef>Textiles</categoryDef>
 				<thingDefCountRange>5~10</thingDefCountRange>
 				<totalPriceRange>800~1800</totalPriceRange>
 			</li>
-			<!--药品-->
+			<!--Medicine-->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>MedicineIndustrial</thingDef>
 				<countRange>15~30</countRange>
@@ -68,7 +68,7 @@
 				<thingDef>Dye</thingDef>
 				<countRange>20~30</countRange>
 			</li>
-			<!--布帛菽粟土木-->
+			<!--Cloth, grain, earth, wood-->
 			<li Class="StockGenerator_Category" MayRequire="RI.RimImmortal.Living">
 				<categoryDef>RI_Category_WoodStone</categoryDef>
 				<thingDefCountRange>1~6</thingDefCountRange>
@@ -80,7 +80,7 @@
 				<totalPriceRange>3600~4800</totalPriceRange>
 			</li>
 
-			<!--蚕卵-->
+			<!--Silkworm eggs-->
 			<li Class="StockGenerator_SingleDef" MayRequire="RI.RimImmortal.Living">
 				<thingDef>RI_Resource_SilkwormEgg</thingDef>
 				<countRange>500~700</countRange>
@@ -90,14 +90,14 @@
 				<countRange>120~360</countRange>
 			</li>
 
-			<!--丹药-->
+			<!--Pills/Elixirs-->
 			<li Class="StockGenerator_Category">
 				<categoryDef>RI_Category_Drugs</categoryDef>
 				<thingDefCountRange>6~12</thingDefCountRange>
 				<totalPriceRange>5000~8400</totalPriceRange>
 			</li>
 
-			<!--仙路食品-->
+			<!--Immortal path food-->
 			<li Class="StockGenerator_Category" MayRequire="RI.RimImmortal.Farmcraft">
 				<categoryDef>RI_Category_CookFood</categoryDef>
 				<thingDefCountRange>1~6</thingDefCountRange>
@@ -189,28 +189,28 @@
 				<countRange>-2~1</countRange>
 			</li>
 
-			<!-- 法门书 -->
+			<!--Cultivation method books-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Special_Book</tradeTag>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 通用功法书 -->
+			<!--General technique books-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Common_Book</tradeTag>
 				<thingDefCountRange>3~5</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 修炼功法书 -->
+			<!--Cultivation technique books-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Cultivation_Book</tradeTag>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!-- 宗门书卷 -->
+			<!--Sect scroll books-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Sect_NoteBook_Tag</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
@@ -221,41 +221,41 @@
 				<countRange>-2~1</countRange>
 			</li>
 
-			<!-- 仙路武器 -->
-			<!--三品-->
+			<!--Immortal path weapon-->
+			<!--Grade 3-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_ThirdWeapon_Tag</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
-			<!--苍血竹系列-->
+			<!--Azure-blood bamboo series-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Weapon_Jade_Tag</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
-			<!--鎏金系列-->
+			<!--Gilt gold series-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_Weapon_Gold_Tag</tradeTag>
 				<thingDefCountRange>1~3</thingDefCountRange>
 				<countRange>1~1</countRange>
 			</li>
-			<!--二品-->
+			<!--Grade 2-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_SecondWeapon_Tag</tradeTag>
 				<thingDefCountRange>1~3</thingDefCountRange>
 				<countRange>1~1</countRange>
 			</li>
 
-			<!-- 仙路盔甲 -->
-			<!--三品-->
+			<!--Immortal path armor-->
+			<!--Grade 3-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_ThirdRateArmor_Tag</tradeTag>
 				<thingDefCountRange>3~7</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
 
-			<!--二品-->
+			<!--Grade 2-->
 			<li Class="StockGenerator_Tag">
 				<tradeTag>RI_SecondRateArmor_Tag</tradeTag>
 				<thingDefCountRange>2~4</thingDefCountRange>
@@ -310,7 +310,7 @@
 				</createMatingPair>
 			</li>
 
-			<!-- 收购 -->
+			<!--Purchasing-->
 			<li Class="StockGenerator_BuyExpensiveSimple" />
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>Art</tag>
@@ -342,15 +342,15 @@
 			<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
 				<thingDef>RevenantSpine</thingDef>
 			</li>
-			<!--黄金-->
+			<!--Gold-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>Gold</thingDef>
 			</li>
-			<!--灵石-->
+			<!--Spirit stone-->
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>RI_Resource_SpiritualCrystal</thingDef>
 			</li>
-			<!--仙路的兵器盔甲，什么商队都收-->
+			<!--Immortal path weapons and armor — accepted by any caravan-->
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>RI_AllWeapon_AllArmor_Tag</tag>
 			</li>

@@ -13,7 +13,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Master</leaderTitle>
-		<!--头衔点数——贡献点-->
+		<!--Title point cost — Contribution points-->
 		<royalFavorLabel>Contribution</royalFavorLabel>
 		<royalFavorIconPath>UI/Icons/RI_Faction_SectContribution</royalFavorIconPath>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -23,11 +23,11 @@
 			<li>(0.65, 0.25, 0.27)</li>
 		</colorSpectrum>
 		<techLevel>Ultra</techLevel>
-		<!--命名-->
+		<!--Naming-->
 		<factionNameMaker>RI_Namer_EvilSect</factionNameMaker>
 		<settlementNameMaker>RI_Namer_SectSettlementPack</settlementNameMaker>
 
-		<!--文化-->
+		<!--Culture-->
 		<requiredMemes>
 			<li>RI_Meme_EvilWays</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
@@ -42,19 +42,19 @@
 		<structureMemeWeights>
 			<RI_Structure_QiOriginFaith>1</RI_Structure_QiOriginFaith>
 		</structureMemeWeights>
-		<!--风格-->
+		<!--Style-->
 		<allowedCultures>
 			<li>RI_Qi_Culture</li>
 		</allowedCultures>
 
-		<!--异种-->
+		<!--Xenotype-->
 		<xenotypeSet>
 			
 		</xenotypeSet>
 
 		<naturalEnemy>true</naturalEnemy>
 
-		<!--背景故事-->
+		<!--Backstory-->
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -70,16 +70,16 @@
 			</li>
 		</backstoryFilters>
 
-		<!--服饰-->
+		<!--Apparel-->
 		<apparelStuffFilter>
 			<stuffCategoriesToAllow>
 				<li>Metallic</li>
 				<li>Fabric</li>
 			</stuffCategoriesToAllow>
 		</apparelStuffFilter>
-		<!--温度-->
+		<!--Temperature-->
 		<allowedArrivalTemperatureRange>-50~60</allowedArrivalTemperatureRange>
-		<!--头衔-->
+		<!--Title-->
 		<fixedLeaderKinds>
 			<li>RI_Pawn_SectLeader</li>
 		</fixedLeaderKinds>
@@ -87,7 +87,7 @@
 			<li>RI_Sect_Title</li>
 		</royalTitleTags>
 
-		<!--商队-->
+		<!--Trade caravan-->
 		<baseTraderKinds>
 			<li>RI_Base_JusticeSect_Standard</li>
 		</baseTraderKinds>
@@ -101,7 +101,7 @@
 			<li>RI_Sect_Caravan_ContributionPatrolCollector</li>
 		</caravanTraderKinds>
 
-		<!--袭击-->
+		<!--Raid-->
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 1)</li>
@@ -120,7 +120,7 @@
 		</maxPawnCostPerTotalPointsCurve>
 
 		<pawnGroupMakers>
-			<!-- 商队 -->
+			<!--Trade caravan-->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -137,7 +137,7 @@
 				</guards>
 			</li>
 			<li>
-				<!-- 普通修仙者袭击 -->
+				<!-- Normal cultivator raid -->
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
@@ -145,7 +145,7 @@
 					<RI_Pawn_NormalEvilMember>20</RI_Pawn_NormalEvilMember>
 					<RI_Pawn_CadreMember>10</RI_Pawn_CadreMember>
 					<RI_Pawn_MiddleManager>5</RI_Pawn_MiddleManager>
-					<RI_Pawn_SectLeader>1</RI_Pawn_SectLeader><!--leader必须出现在袭击的group里面，不然会报红字-->
+					<RI_Pawn_SectLeader>1</RI_Pawn_SectLeader><!--Leader must appear in the raid group list, otherwise red errors will occur-->
 				</options>
 			</li>
 			<li>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 影响：低 -->
+	<!-- Impact: Low -->
 
 	<MemeGroupDef>
 		<defName>RI_Primacy</defName>
@@ -10,21 +10,21 @@
 		<renderOrder>1900</renderOrder>
 	</MemeGroupDef>
 
-	<!--正道之途-->
+	<!--Righteous path-->
 	<MemeDef>
 		<defName>RI_Meme_FrankAndRighteous</defName>
 		<label>Righteous path</label>
-		<description>心如明镜，终成大道。我们始终行走于正道之上，不会偏离。</description>
+		<description>Heart clear as a mirror, achieving the supreme Way. We always walk the righteous path, never deviating.</description>
 		<iconPath>UI/Memes/RI_Meme_FrankAndRighteous</iconPath>
 		<allowDuringTutorial>true</allowDuringTutorial>
 		<groupDef MayRequire="Ludeon.RimWorld.Ideology">Misc</groupDef>
 		<impact>1</impact>
 		<renderOrder>35</renderOrder>
-		<!--不相容-->
+		<!--Incompatible-->
 		<exclusionTags>
 			<li>RI_Primacy</li>
 		</exclusionTags>
-		<!--=====规定戒律=====-->
+		<!--===== Specified precepts =====-->
 		<requireOne>
 			<li>
 				<li>OrganUse_Abhorrent</li>
@@ -67,7 +67,7 @@
 				</li>
 			</preceptThingPairs>
 		</selectOneOrNone>
-		<!--风格-->
+		<!--Style-->
 		<styleItemTags>
 			<li>
 				<tag>Wild</tag>
@@ -75,18 +75,18 @@
 				<weightFactor>0</weightFactor>
 			</li>
 		</styleItemTags>
-		<!--认同特性-->
+		<!--Approved traits-->
 		<agreeableTraits>
 			<li>Kind</li>
 		</agreeableTraits>
-		<!--不认同特性-->
+		<!--Disapproved traits-->
 		<disagreeableTraits>
 			<li>Psychopath</li>
 			<li>Cannibal</li>
 		</disagreeableTraits>
 	</MemeDef>
 
-	<!--邪魔外道-->
+	<!--Thran deviant path-->
 	<MemeDef>
 		<defName>RI_Meme_EvilWays</defName>
 		<label>Thran deviant path</label>
@@ -95,11 +95,11 @@
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
 		<renderOrder>35</renderOrder>
-		<!--不相容-->
+		<!--Incompatible-->
 		<exclusionTags>
 			<li>RI_Primacy</li>
 		</exclusionTags>
-		<!--=====规定戒律=====-->
+		<!--===== Specified precepts =====-->
 		<requireOne>
 			<li>
 				<li>Skullspike_Desired</li>
@@ -148,13 +148,13 @@
 		<!--<replaceRitualsWithTags>
 			<li>CelebratedDate</li>
 		</replaceRitualsWithTags>-->
-		<!--认同特性-->
+		<!--Approved traits-->
 		<!--<agreeableTraits>
 			<li>Psychopath</li>
 			<li>Cannibal</li>
 			<li>RI_Trait_BodyMaker</li>
 		</agreeableTraits>
-		--><!--不认同特性--><!--
+		--><!--Disapproved traits--><!--
 		<disagreeableTraits>
 			<li>Kind</li>
 			<li>Greedy</li>
@@ -162,10 +162,10 @@
 		</disagreeableTraits>-->
 	</MemeDef>
 
-	<!-- 影响：中 -->
+	<!-- Impact: Medium -->
 
-	<!--修炼至上-->
-	<!--之后更新再说吧-->
+	<!--Cultivation Supremacy-->
+	<!--Update in a future version-->
 
 
 </Defs>

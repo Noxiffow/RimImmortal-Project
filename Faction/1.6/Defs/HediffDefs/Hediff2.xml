@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--聚气冥想法-->
+	<!--Focused qi meditation method-->
 	<HediffDef>
 		<defName>RI_PracticeAreaHediff</defName>
 		<label>Focused qi meditation</label>
@@ -46,7 +46,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--冥想指点-->
+	<!--Meditation guidance-->
 	<HediffDef>
 		<defName>RI_PracticeAreaHediffTarget</defName>
 		<label>Meditation guidance</label>

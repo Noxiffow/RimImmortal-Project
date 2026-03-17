@@ -36,8 +36,8 @@
 					<method>DropPods</method>
 					<visible>false</visible>
 				</li>
-				<!-- 开局物资 -->
-				<!--基础物资-->
+				<!--Starting supplies-->
+				<!--Basic supplies-->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Silver</thingDef>
@@ -90,7 +90,7 @@
 					<count>1</count>
 				</li>
 
-				<!--装备-->
+				<!--Equipment-->
 				<li Class="ScenPart_StartingThing_Defined" MayRequire="RI.RimImmortal.Forge">
 					<def>StartingThing_Defined</def>
 					<thingDef>RI_Weapon_JumenAxe</thingDef>
@@ -105,7 +105,7 @@
 					<thingDef>Apparel_FlakVest</thingDef>
 				</li>
 
-				<!--开局科技-->
+				<!--Starting research-->
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>RI_ImmortalStart</project>

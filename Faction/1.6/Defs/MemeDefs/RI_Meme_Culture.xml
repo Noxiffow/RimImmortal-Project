@@ -4,8 +4,8 @@
 
 <CultureDef>
     <defName>RI_Qi_Culture</defName>
-    <label>灵炳信仰</label>
-    <description>飘飘乎如遗世独立，羽化而登仙</description>
+    <label>Spiritual Brilliance Faith</label>
+    <description>Drifting, isolated from the world, transforming and ascending to immortality</description>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
@@ -58,7 +58,7 @@
     <defName>LeaderTitleMaker_RI_Qi_Culture</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_leaderTitle->掌门</li>
+        <li>r_leaderTitle->Sect Master</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

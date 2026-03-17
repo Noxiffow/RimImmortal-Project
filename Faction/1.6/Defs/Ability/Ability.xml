@@ -20,7 +20,7 @@
 		</verbProperties>
 	</AbilityDef>
 
-	<!--大息龟眠功A-->
+	<!--Tortoise Meditation Method A-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_TortoiseMeditationMethod</defName>
 		<label>Tortoise meditation method</label>
@@ -51,12 +51,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
@@ -66,8 +66,8 @@
 		</comps>
 	</AbilityDef>
 
-	<!--吞山魔功B-->
-	<!--能学会-->
+	<!--Mountain-eating Cultivation Method B-->
+	<!--Can be learned-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_MountainEatingCultivationMethod</defName>
 		<label>Mountain-eating cultivation method</label>
@@ -98,12 +98,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
@@ -113,8 +113,8 @@
 		</comps>
 	</AbilityDef>
 
-	<!--玄天诀C-->
-	<!--能学会-->
+	<!--Mystic Cultivation Method C-->
+	<!--Can be learned-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_MysticCultivationMethod</defName>
 		<label>Mystic cultivation method</label>
@@ -145,12 +145,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
@@ -160,8 +160,8 @@
 		</comps>
 	</AbilityDef>
 
-	<!--巧工速修法D-->
-	<!--能学会-->
+	<!--Refinement Workspeed Method D-->
+	<!--Can be learned-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_RefinementWorkspeedMethod</defName>
 		<label>Refinement workspeed method</label>
@@ -192,12 +192,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
@@ -207,7 +207,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!--流云步法E-->
+	<!--Air Step Footwork E-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_AirStepExercise</defName>
 		<label>Air step exercise</label>
@@ -238,12 +238,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_InternalPellet_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">

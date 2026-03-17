@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--合成玄天诀-->
+	<!--Craft Mystic cultivation method-->
 
 	<RecipeDef>
 		<defName>RI_MakeMysticCultivationMethod</defName>
@@ -73,7 +73,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--合成商船呼叫器-->
+	<!--Craft Celestial Caravan orbital pager-->
 	<RecipeDef>
 		<defName>RI_Recipe_Make_OrbitalPager</defName>
 		<label>produce "Celestial Caravan" orbital pager</label>
