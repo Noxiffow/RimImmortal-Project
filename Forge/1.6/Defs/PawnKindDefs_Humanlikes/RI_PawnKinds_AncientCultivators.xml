@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--古修者boss-->
-	<!--耐打，记得加上功法hediff啥的-->
+	<!--Ancient Cultivator Boss-->
+	<!--Durable — remember to add cultivation method hediff etc.-->
 	<PawnKindDef>
 		<defName>RI_Pawn_AncientCultivator</defName>
 		<label>Ancient cultivator</label>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--雷霆机枪-->
+	<!--Thunder Machine Gun-->
 	<ThingDef ParentName="RI_MagicalWeapon_Range_Base">
 		<defName>RI_Weapon_ThunderMinigun</defName>
 		<label>Thunder minigun【First-rate】</label>
@@ -41,7 +41,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>枪管</label>
+				<label>Barrel Strike</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
@@ -124,7 +124,7 @@
 		<growthRate>-1.6</growthRate>
 	</FleckDef>
 
-	<!--霜弓-->
+	<!--Frost Bow-->
 	<ThingDef ParentName="RI_MagicalWeapon_Range_Base">
 		<defName>RI_Weapon_WhiteApeBow</defName>
 		<label>White ape bow【First-rate】</label>
@@ -236,7 +236,7 @@
 		<color>(1,1,1,1)</color>
 	</ThingDef>
 
-	<!--白色拖尾-->
+	<!--White Trail-->
 	<FleckDef ParentName="RI_Fleck_Tail">
 		<defName>RI_Fleck_Tail_WhiteApeBow</defName>
 		<graphicData>

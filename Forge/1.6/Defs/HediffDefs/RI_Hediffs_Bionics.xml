@@ -23,7 +23,7 @@
 		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 	</HediffDef>
 
-	<!-- 翠玉系列 -->
+	<!--Jade (Green) Series-->
 
 	<HediffDef ParentName="RI_addedPartAdvanced">
 		<defName>RI_Hediff_JadeFakeArm</defName>
@@ -119,7 +119,7 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<!--庚钢系列-->
+	<!--Geng-steel Series-->
 
 	<HediffDef ParentName="RI_addedPartAdvanced">
 		<defName>RI_Hediff_BlackSteelArm</defName>
@@ -308,9 +308,9 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<!--五行系列-->
+	<!--Five Elements Series-->
 
-	<!--胃-->
+	<!--Stomach-->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>RI_Hediff_EarthBionicStomach</defName>
 		<label>Bionic stomach-Earth</label>
@@ -335,7 +335,7 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<!--心-->
+	<!--Core/Heart-->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>RI_Hediff_FireBionicHeart</defName>
 		<label>Bionic heart-Fire</label>

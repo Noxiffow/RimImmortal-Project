@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--短铳-->
+	<!--Short Rifle-->
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>RI_Weapon_Harquebus</defName>
 		<label>Triple shot harquebus【Third-rate】</label>
@@ -96,7 +96,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--鹰眼火铳-->
+	<!--Eagle-Eye Fire Rifle-->
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>RI_Weapon_LongRangeMusket</defName>
 		<label>Long range musket【Third-rate】</label>
@@ -182,7 +182,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--飞蝗弓-->
+	<!--Locust Bow-->
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RI_Weapon_BasicBow</defName>
 		<label>Flying locust bow【Third-rate】</label>
@@ -266,7 +266,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--脱手镖-->
+	<!--Throwing Dart-->
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RI_Weapon_ThrowingKnife</defName>
 		<label>Throwing knife【Third-rate】</label>

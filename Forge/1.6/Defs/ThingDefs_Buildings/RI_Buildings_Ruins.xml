@@ -122,12 +122,12 @@
 		</costList>
 	</ThingDef>
 
-	<!--特殊建筑-->
+	<!--Special Building-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_AncientCultivatorCryptosleepCasket</defName>
-		<label>灵气逸散的建筑</label>
-		<description>建筑中蕴含有极其深厚的灵气，不断向外逸散</description>
+		<label>Qi-Radiating Building</label>
+		<description>The building contains extremely rich Qi that continuously radiates outward.</description>
 		<thingClass>WhoXiuXian.RI_Building_AncientCultivatorCryptosleepCasket</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>

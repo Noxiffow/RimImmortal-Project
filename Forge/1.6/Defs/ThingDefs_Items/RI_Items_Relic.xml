@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--法门书盲盒-->
+	<!--Cultivation Method Book Blind Box-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_InitialApproachBook</defName>
 		<label>Mysterious initial approach book</label>
@@ -15,7 +15,7 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--书-->
+					<!--Books-->
 					<li>RI_BookA</li>
 					<li>RI_BookB</li>
 					<li>RI_BookC</li>
@@ -25,17 +25,17 @@
 					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_EarthElement</li>
 					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_WoodElement</li>
 					<li MayRequire="RI.RimImmortal.FiveElements">RI_Book_MetalElement</li>-->
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>Synthread</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--书-->
+					<!--Books-->
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>30</li>
 				</thingDefListNum>
 				<cost>5</cost>
@@ -47,7 +47,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--功法书盲盒-->
+	<!--Skill Book Blind Box-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_SkillBook</defName>
 		<label>Mysterious skill book</label>
@@ -61,33 +61,33 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--书-->
+					<!--Books-->
 					<li>RI_BookAbility_Transport</li>
 					<li>RI_BookAbility_BombBullet</li>
 					<li>RI_BookAbility_Slash</li>
 					<li>RI_BookAbility_QuickJumpWithNosight</li>
 					<li>RI_BookAbility_Invisible</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>Synthread</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--书-->
+					<!--Books-->
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>2</li>
 					<li>3</li>
 					<li>5</li>
 					<li>6</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>30</li>
 				</thingDefListNum>
 				<cost>5</cost>
@@ -99,7 +99,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--武器盲盒-->
+	<!--Weapon Blind Box-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_Weapon</defName>
 		<label>Mysterious ancient weapon</label>
@@ -113,18 +113,18 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--兵器-->
+					<!--Weapons-->
 					<li>RI_Weapon_DESword</li>
 					<li>RI_Weapon_JumenAxe</li>
 					<li>RI_Weapon_RatWhiskerSword</li>
 					<li>RI_Weapons_WindDemonBlade</li>
 					<li>RI_Weapon_FlyGrenade</li>
 					<li>RI_Weapon_GhostFireCrossbow</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>RI_Resource_AncientWeaponRelic</li>
 					<li>RI_Resource_AncientWeaponRelic</li>
 					<li>RI_Resource_AncientWeaponRelic</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>Steel</li>
 					<li>Steel</li>
 					<li>Steel</li>
@@ -133,18 +133,18 @@
 					<li>Silver</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--兵器-->
+					<!--Weapons-->
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
 					<li>1</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>1</li>
 					<li>2</li>
 					<li>3</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>200</li>
 					<li>300</li>
 					<li>100</li>
@@ -161,7 +161,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--盔甲盲盒-->
+	<!--Armor Blind Box-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_Armor</defName>
 		<label>Mysterious ancient armor</label>
@@ -175,10 +175,10 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--盔甲-->
+					<!--Armor-->
 					<li>RI_Apparel_AncientCultivatorArmor</li>
 					<li>RI_Apparel_AncientCultivatorHelmet</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>RI_Resource_AncientArmorRelic</li>
 					<li>RI_Resource_AncientArmorRelic</li>
 					<li>RI_Resource_AncientArmorRelic</li>
@@ -186,7 +186,7 @@
 					<li>RI_Resource_AncientArmorRelic</li>
 					<li>RI_Resource_AncientArmorRelic</li>
 					<li>RI_Resource_AncientArmorRelic</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>Steel</li>
 					<li>Steel</li>
 					<li>Steel</li>
@@ -199,10 +199,10 @@
 					<li>Silver</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--兵器-->
+					<!--Weapons-->
 					<li>1</li>
 					<li>1</li>
-					<!--保底-->
+					<!--Guaranteed-->
 					<li>1</li>
 					<li>2</li>
 					<li>3</li>
@@ -210,7 +210,7 @@
 					<li>4</li>
 					<li>4</li>
 					<li>5</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>200</li>
 					<li>150</li>
 					<li>250</li>
@@ -231,7 +231,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--储物袋盲盒-->
+	<!--Storage Bag Blind Box-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_Bag</defName>
 		<label>Unknown storage bag</label>
@@ -245,14 +245,14 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--灵石啥的-->
+					<!--Spirit stones etc.-->
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
-					<!--丹药-->
+					<!--Pills-->
 					<li>RI_Drug_CultivateEnergyPill</li>
 					<li>RI_Drug_HealBalm</li>
 					<li>RI_Drug_AllCropsPill</li>
@@ -260,7 +260,7 @@
 					<li>RI_Drug_ExpelHotPill</li>
 					<li>RI_Drug_ExpelColdPill</li>
 					<li>RI_Drug_CultivateMoreEnergyPill</li>
-					<!--金银-->
+					<!--Gold and Silver-->
 					<li>Gold</li>
 					<li>Gold</li>
 					<li>Gold</li>
@@ -269,14 +269,14 @@
 					<li>Silver</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--灵石啥的-->
+					<!--Spirit stones etc.-->
 					<li>2</li>
 					<li>1</li>
 					<li>10</li>
 					<li>8</li>
 					<li>5</li>
 					<li>13</li>
-					<!--丹药-->
+					<!--Pills-->
 					<li>2</li>
 					<li>3</li>
 					<li>3</li>
@@ -284,7 +284,7 @@
 					<li>2</li>
 					<li>2</li>
 					<li>2</li>
-					<!--金银-->
+					<!--Gold and Silver-->
 					<li>50</li>
 					<li>75</li>
 					<li>60</li>

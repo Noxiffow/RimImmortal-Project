@@ -2,21 +2,21 @@
 
 <Defs>
 
-	<!--==========测试法门==========-->
-	<!--1凝气境界——Noviciate rank测试-->
-	<!--2固基境界——Foundation rank测试-->
-	<!--3化丹境界——Core formation rank测试-->
-	<!--4结丹境界——Core coagulation rank测试-->
-	<!--5灵丹境界——Core consummation rank测试-->
-	<!--6化神境界——Spirit constraint rank测试-->
-	<!--7元婴境界——Primordial spirit baby rank测试-->
-	<!--8大成境界——Primordial spirit maturity rank测试-->
-	<!--9合体境界——Primordial spirit combine rank测试-->
+	<!--Test Cultivation Method-->
+	<!--Noviciate Rank 1 — test-->
+	<!--Foundation Rank 2 — test-->
+	<!--Core Formation Rank 3 — test-->
+	<!--Core Coagulation Rank 4 — test-->
+	<!--Core Consummation Rank 5 — test-->
+	<!--Spirit Constraint Rank 6 — test-->
+	<!--Primordial Spirit Baby Rank 7 — test-->
+	<!--Primordial Spirit Maturity Rank 8 — test-->
+	<!--Primordial Spirit Combine Rank 9 — test-->
 
-	<!-- 炼器 -->
+	<!--Forging-->
 	<WhoXiuXian.RI_RouteDef>
 		<defName>TalismanCreating</defName>
-		<label>炼器法门</label>
+		<label>Forging Cultivation Method</label>
 		<description>...</description>
 		<routeLevels>
 			<li>
@@ -27,12 +27,12 @@
 			</li>
 			<li>
 				<levelDef>RI_Training2</levelDef>
-				<!--对应的境界等级-->
+				<!--Corresponding realm level-->
 				<abilities>
 					<li>RI_Ability_Repair</li>
 				</abilities>
 			</li>
-			<!-- 上面两种写法只要保证level和ability都有一个就行了 -->
+			<!--Either format works as long as both level and ability are specified-->
 			<li>
 				<levelDef>RI_Training3</levelDef>
 				<abilities>

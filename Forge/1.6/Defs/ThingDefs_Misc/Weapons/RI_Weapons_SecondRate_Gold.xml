@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--天兵风格武器，新增的-->
+	<!--Celestial soldier style weapons — newly added-->
 
-	<!--鎏金龙虎剑-->
+	<!--Gilt Dragon-Tiger Sword-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_GoldSword</defName>
 		<label>Gilded dragon-tiger sword【Second-rate】</label>
@@ -14,7 +14,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
@@ -45,18 +45,18 @@
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Sword</li>
 			<li>RI_Tag_MagicalWeapon_Second</li>
 			<li>RI_Tag_GoldWeapon</li>
 		</weaponTags>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_Weapon_Gold_Tag</li>
 		    <li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>edge</label>
@@ -77,7 +77,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--鎏金鱼尾斧-->
+	<!--Gilt Fish-Tail Axe-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_GoldAxe</defName>
 		<label>Gilded fish-tail axe【Second-rate】</label>
@@ -88,7 +88,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
@@ -119,12 +119,12 @@
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Second</li>
 			<li>RI_Tag_GoldWeapon</li>
 		</weaponTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>edge</label>
@@ -145,7 +145,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--鎏金八棱锤-->
+	<!--Gilt Octagonal Hammer-->
 	<ThingDef ParentName="RI_MagicalWeapon_Blunt_Base">
 		<defName>RI_Weapon_GoldMace</defName>
 		<label>Gilded octagonal mace【Second-rate】</label>
@@ -157,7 +157,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
@@ -188,12 +188,12 @@
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Second</li>
 			<li>RI_Tag_GoldWeapon</li>
 		</weaponTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>head</label>
@@ -216,7 +216,7 @@
 	</ThingDef>
 
 
-	<!--鎏金三尖两刃刀-->
+	<!--Gilt Triple-Blade Knife-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_GoldThreeSpear</defName>
 		<label>Gilded three-pointed double-edged spear【Second-rate】</label>
@@ -228,7 +228,7 @@
 		</graphicData>
 		<uiIconScale>1</uiIconScale>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
@@ -259,12 +259,12 @@
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Second</li>
 			<li>RI_Tag_GoldWeapon</li>
 		</weaponTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>point</label>
@@ -285,7 +285,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--鎏金蛇矛-->
+	<!--Gilt Serpent Spear-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_GoldSnakeSpear</defName>
 		<label>Gilded serpent spear【Second-rate】</label>
@@ -296,7 +296,7 @@
 			<drawSize>2.5</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>10</RI_Resource_SpiritualCrystal>
 			<RI_Resource_DeviceCoreComponent>1</RI_Resource_DeviceCoreComponent>
@@ -327,12 +327,12 @@
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<displayPriority>410</displayPriority>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Second</li>
 			<li>RI_Tag_GoldWeapon</li>
 		</weaponTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>point</label>

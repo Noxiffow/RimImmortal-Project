@@ -9,7 +9,7 @@
 		<alwaysShowSeverity>false</alwaysShowSeverity>
 	</HediffDef>
 
-	<!--雷霆激发-->
+	<!--Thunder Activation-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_ThunderMinigun</defName>
 		<label>Spark of thunder</label>
@@ -27,7 +27,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--白霜灵视-->
+	<!--White Frost Spirit Vision-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_WhiteApeBow</defName>
 		<label>White frost vision</label>
@@ -45,7 +45,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--蚩尤神力-->
+	<!--ChiYou Divine Strength-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_ChiYouFlameHalberd</defName>
 		<label>Divine power of Chiyou</label>
@@ -59,7 +59,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--势如破竹-->
+	<!--Overwhelming Force-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_PojunSword</defName>
 		<label>Unstoppable</label>
@@ -98,7 +98,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--赐福-->
+	<!--Blessing-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_PojunSword_Ability</defName>
 		<label>Divine blessing</label>
@@ -120,7 +120,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--琉璃珠光-->
+	<!--Glass Pearl Light-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_GlassPearlUmbrella</defName>
 		<label>Pearl light</label>
@@ -136,7 +136,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--珠光疗愈-->
+	<!--Pearl Light Healing-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_GlassPearlUmbrella_Ability</defName>
 		<label>Glaze pearl</label>
@@ -158,7 +158,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--破军-->
+	<!--Pojun-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_PojunSword</defName>
 		<label>Army destroyer</label>
@@ -179,7 +179,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--斩仙-->
+	<!--Immortal Slayer-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_SlayinglmmortalSword</defName>
 		<label>God slayer</label>
@@ -202,7 +202,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--龙鸣急速-->
+	<!--Dragon-Roar Rapid Speed-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_DragonPatternStick</defName>
 		<label>Dragon haste</label>
@@ -217,7 +217,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--鼠眼-->
+	<!--Rat Eye-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_Weapon_RatWhiskerSword</defName>
 		<label>Rat eye</label>
@@ -235,7 +235,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--金光剑-->
+	<!--Golden Light Sword-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_LightSword</defName>
 		<label>Light sword</label>
@@ -260,7 +260,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--破阵斧鸣-->
+	<!--Formation-Breaking Axe-Cry-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_AxeExcitation</defName>
 		<label>Boost morale</label>
@@ -304,7 +304,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--鼠须疗愈-->
+	<!--Rat Whisker Healing-->
 	<HediffDef ParentName="RI_WeaponHediff_Base">
 		<defName>RI_Hediff_RatWhiskerSword</defName>
 		<label>Unstoppable</label>
@@ -375,7 +375,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--与子偕作-->
+	<!--Working Together-->
 	<HediffDef>
 		<defName>RI_Hediff_AncientGun</defName>
 		<label>Qi connection</label>

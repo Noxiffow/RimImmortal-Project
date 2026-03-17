@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============== 庚钢 ====================-->
+	<!--Geng-steel Section-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>RI_Resource_BlackSteel</defName>
 		<label>Black steel</label>
@@ -31,7 +31,7 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>true</smeltable>
 		<stuffProps>
-			<!--气密性-->
+			<!--Airtightness-->
 			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Metallic</li>

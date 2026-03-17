@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!--无古修 -->
+	<!--Without ancient cultivator-->
 	<QuestScriptDef>
 		<defName>RI_OpportunitySite_AncientComplex_Talismaker</defName>
 		<rootSelectionWeight>0.4</rootSelectionWeight>
@@ -70,7 +70,7 @@
 		</threats>
 	</ComplexLayoutDef>
 
-	<!--有古修 -->
+	<!--With ancient cultivator-->
 
 	<QuestScriptDef>
 		<defName>RI_OpportunitySite_AncientComplex_TalismakerWithCasketRoom</defName>
@@ -139,7 +139,7 @@
 			</li>-->
 		</threats>
 	</ComplexLayoutDef>
-	<!--组件 -->
+	<!--Components-->
 	<GenStepDef>
 		<defName>AncientComplex_Talismaker</defName>
 		<linkWithSite>AncientComplex_Talismaker</linkWithSite>
@@ -172,7 +172,7 @@
 		</resolvers>
 	</RuleDef>
 
-	<!--房屋部分-->
+	<!--Building Section-->
 
 	<LayoutRoomDef>
 		<defName>AncientTalismakerRoom</defName>

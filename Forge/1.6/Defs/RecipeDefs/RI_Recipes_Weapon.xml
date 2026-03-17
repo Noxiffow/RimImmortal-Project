@@ -25,9 +25,9 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<!--==================================二品近战==================================-->
+	<!--Grade 2 Melee-->
 
-	<!--青玉锤【二品】-->
+	<!--Nephrite Jade Hammer [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_CyanogenJadeHammer</defName>
 		<label>make Nephrite jade hammer【Second-rate】</label>
@@ -85,7 +85,7 @@
 		<displayPriority>100</displayPriority>
 	</RecipeDef>
 
-	<!--巨门斧【二品】-->
+	<!--Jumen Axe [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_JumenAxe</defName>
 		<label>make Jumen axe【Second-rate】</label>
@@ -131,7 +131,7 @@
 		<displayPriority>101</displayPriority>
 	</RecipeDef>
 
-	<!--雷王枪【二品】-->
+	<!--Thunder Lord Lance [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_ThunderLordLance</defName>
 		<label>make Thunder lord lance【Second-rate】</label>
@@ -186,7 +186,7 @@
 		<displayPriority>102</displayPriority>
 	</RecipeDef>
 
-	<!--风魔刀【二品】-->
+	<!--Wind Demon Blade [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_WindDemonBlade</defName>
 		<label>make Wind demon blade【Second-rate】</label>
@@ -232,9 +232,9 @@
 		<displayPriority>103</displayPriority>
 	</RecipeDef>
 
-	<!--==================================二品远程==================================-->
+	<!--Grade 2 Ranged-->
 	
-	<!--龙头炮【二品】-->
+	<!--Dragon Cannon [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_DragonCannon</defName>
 		<label>make Dragon cannon【Second-rate】</label>
@@ -288,7 +288,7 @@
 		<displayPriority>104</displayPriority>
 	</RecipeDef>
 
-	<!--飞蝇雷【二品】-->
+	<!--Fly Grenade [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_Flygrenade</defName>
 		<label>make Fly grenade【Second-rate】</label>
@@ -334,7 +334,7 @@
 		<displayPriority>105</displayPriority>
 	</RecipeDef>
 
-	<!--鬼火连弩【二品】-->
+	<!--Ghost Fire Crossbow [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_GhostFireCrossbow</defName>
 		<label>make Ghost fire crossbow【Second-rate】</label>
@@ -380,7 +380,7 @@
 		<displayPriority>106</displayPriority>
 	</RecipeDef>
 
-	<!--铁乌鸡【二品】-->
+	<!--Iron Throwing Ball [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_IronThrowingBall</defName>
 		<label>make Iron throwing-ball【Second-rate】</label>
@@ -426,7 +426,7 @@
 		<displayPriority>107</displayPriority>
 	</RecipeDef>
 
-	<!--鼠须剑【二品】-->
+	<!--Rat Whisker Sword [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_RatWhiskerSword</defName>
 		<label>make Rat whisker sword【Second-rate】</label>
@@ -472,7 +472,7 @@
 		<displayPriority>108</displayPriority>
 	</RecipeDef>
 
-	<!--毒心飞梭【二品】-->
+	<!--Poison Heart Flying Shuttle [Grade 2]-->
 	<RecipeDef ParentName="RI_BetterWeaponRecipeBase">
 		<defName>Make_DESword</defName>
 		<label>make Poison shuttle【Second-rate】</label>
@@ -527,7 +527,7 @@
 		<displayPriority>109</displayPriority>
 	</RecipeDef>
 
-	<!--古修枪-->
+	<!--Ancient Cultivator Rifle-->
 	<RecipeDef>
 		<defName>Make_AncientGun</defName>
 		<label>make Ancient rifle【Second-rate】</label>
@@ -591,9 +591,9 @@
 		<displayPriority>110</displayPriority>
 	</RecipeDef>
 
-	<!--==================================一品==================================-->
+	<!--Grade 1-->
 	
-	<!--蚩尤怒炎戟【一品】-->
+	<!--ChiYou Flame Halberd [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_ChiYouFlameHalberd</defName>
 		<label>make ChiYou flame halberd【First-rate】</label>
@@ -657,7 +657,7 @@
 		<displayPriority>200</displayPriority>
 	</RecipeDef>
 
-	<!--盘龙通天棍【一品】-->
+	<!--Dragon-Coiling Heaven-Staff [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_DragonPatternStick</defName>
 		<label>make Dragon pattern stick【First-rate】</label>
@@ -721,7 +721,7 @@
 		<displayPriority>201</displayPriority>
 	</RecipeDef>
 
-	<!--琉璃珍珠伞【一品】-->
+	<!--Glass Pearl Umbrella [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_GlassPearlUmbrella</defName>
 		<label>make Glass pearl umbrella【First-rate】</label>
@@ -784,7 +784,7 @@
 		<displayPriority>202</displayPriority>
 	</RecipeDef>
 
-	<!--破军剑【一品】-->
+	<!--Pojun Sword [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_PojunSword</defName>
 		<label>make PoJun sword【First-rate】</label>
@@ -848,7 +848,7 @@
 		<displayPriority>203</displayPriority>
 	</RecipeDef>
 
-	<!--斩仙剑【一品】-->
+	<!--Immortal-Slaying Sword [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_SlayinglmmortalSword</defName>
 		<label>make Slaying immortal sword【First-rate】</label>
@@ -912,7 +912,7 @@
 		<displayPriority>204</displayPriority>
 	</RecipeDef>
 
-	<!--雷霆连珠铳【一品】-->
+	<!--Thunder Minigun [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_ThunderMinigun</defName>
 		<label>make Thunder minigun【First-rate】</label>
@@ -976,7 +976,7 @@
 		<displayPriority>205</displayPriority>
 	</RecipeDef>
 
-	<!--白猿长弓【一品】-->
+	<!--White Ape Bow [Grade 1]-->
 	<RecipeDef ParentName="RI_BestWeaponRecipeBase">
 		<defName>Make_WhiteApeBow</defName>
 		<label>make White ape bow【First-rate】</label>

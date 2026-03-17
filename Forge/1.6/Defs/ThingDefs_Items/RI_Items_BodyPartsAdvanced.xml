@@ -30,7 +30,7 @@
 		<pathCost>10</pathCost>
 	</ThingDef>
 
-	<!--翠玉前置-->
+	<!--Jade (Green) Prerequisite-->
 	<ThingDef Name="RI_JadeBodypartBase" ParentName="RI_BodyPartModBase" Abstract="True">
 		<tradeTags>
 			<li>TechHediff</li>
@@ -43,7 +43,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--庚钢前置-->
+	<!--Geng-steel Prerequisite-->
 	<ThingDef Name="RI_BlackSteelBodypartBase" ParentName="RI_BodyPartModBase" Abstract="True">
 		<tradeTags>
 			<li>AdvancedProstheses</li>
@@ -56,7 +56,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--五脏前置，买不到，只能自己做-->
+	<!--Five viscera prerequisite — cannot buy, must craft-->
 	<ThingDef Name="RI_InsideBodyPartBase" ParentName="RI_BodyPartModBase" Abstract="True">
 		<tradeTags>
 			<li>RI_InsideBodyPartTag</li>
@@ -66,7 +66,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!-- 翠玉系列 -->
+	<!--Jade (Green) Series-->
 
 	<ThingDef ParentName="RI_JadeBodypartBase">
 		<defName>RI_Prostheses_JadeFakeHand</defName>
@@ -144,7 +144,7 @@
 		</techHediffsTags>
 	</ThingDef>
 
-	<!--庚钢系列-->
+	<!--Geng-steel Series-->
 
 	<ThingDef ParentName="RI_BlackSteelBodypartBase">
 		<defName>RI_Prostheses_BlackSteelHand</defName>
@@ -241,7 +241,7 @@
 		</techHediffsTags>
 	</ThingDef>
 
-	<!--五行内脏-->
+	<!--Five Elements Organs-->
 
 	<ThingDef ParentName="RI_InsideBodyPartBase">
 		<defName>RI_Prostheses_EarthBionicStomach</defName>

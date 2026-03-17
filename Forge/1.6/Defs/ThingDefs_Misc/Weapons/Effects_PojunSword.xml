@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-<!--====破阵斧鸣  需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck====-->
+<!--"Formation-Breaking Axe-Cry" — use RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
  <FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
     <defName>RI_Fleck_PojunSword</defName>
     <graphicData>

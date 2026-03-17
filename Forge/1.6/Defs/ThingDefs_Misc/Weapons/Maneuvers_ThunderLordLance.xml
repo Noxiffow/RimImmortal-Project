@@ -17,7 +17,7 @@
 
 	<ToolCapacityDef>
 		<defName>RI_Stab_ThunderLordLance</defName>
-		<label>刺伤</label>
+		<label>Stab</label>
 	</ToolCapacityDef>
 
 </Defs>

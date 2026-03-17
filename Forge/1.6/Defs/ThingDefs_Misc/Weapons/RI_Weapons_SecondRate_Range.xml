@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--二品 远程兵器 前置-->
+	<!--Grade 2 ranged weapon prerequisite-->
 	<ThingDef Name="RI_SecondWeapon_Range_Base" ParentName="RI_MagicalWeapon_Range_Base" Abstract="True">
 		<tradeTags>
 			<li>RI_SecondWeapon_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--龙头炮-->
+	<!--Dragon Cannon-->
 	<ThingDef ParentName="RI_SecondWeapon_Range_Base">
 		<defName>RI_Weapon_DragonCannon</defName>
 		<label>Dragon cannon【Second-rate】</label>
@@ -51,7 +51,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>炮管</label>
+				<label>Cannon Barrel Strike</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
@@ -75,7 +75,7 @@
 				<abilityDef>RI_DragonCannon_Ability</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>龙炎爆破</chargeNoun>
+				<chargeNoun>Dragon Flame Blast</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>180</baseReloadTicks>
@@ -125,7 +125,7 @@
 		<shaking>0</shaking>
 	</ThingDef>
 
-	<!--飞蝇雷-->
+	<!--Fly Grenade-->
 	<ThingDef ParentName="RI_SecondWeapon_Range_Base">
 		<defName>RI_Weapon_FlyGrenade</defName>
 		<label>Fly grenade【Second-rate】</label>
@@ -165,7 +165,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>飞蝇雷</label>
+				<label>Fly Grenade</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
@@ -187,7 +187,7 @@
 				<abilityDef>RI_FlyGrenade_Ability</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>烟雾弹</chargeNoun>
+				<chargeNoun>Smoke Bomb</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -208,7 +208,7 @@
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>RI_Projectile_FlyGrenade</defName>
-		<label>飞蝇雷</label>
+		<label>Fly Grenade</label>
 		<graphicData>
 			<texPath>Things/Projectile/RI_Projectile_FlyGrenade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -233,7 +233,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--鬼火连弩-->
+	<!--Ghost Fire Crossbow-->
 	<ThingDef ParentName="RI_SecondWeapon_Range_Base">
 		<defName>RI_Weapon_GhostFireCrossbow</defName>
 		<label>Ghost fire crossbow【Second-rate】</label>
@@ -271,7 +271,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>弩臂</label>
+				<label>Crossbow Arm Strike</label>
 				<capacities>
 					<li>Blunt</li>
 					<li>Poke</li>
@@ -293,7 +293,7 @@
 				<abilityDef>RI_Arrow_GhostFireCrossbow_Ability</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>连射</chargeNoun>
+				<chargeNoun>Rapid Fire</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -336,7 +336,7 @@
 		<shaking>0.01</shaking>
 	</ThingDef>
 
-	<!--铁乌鸡-->
+	<!--Iron Throwing Ball-->
 	<ThingDef ParentName="RI_SecondWeapon_Range_Base">
 		<defName>RI_Weapon_IronThrowingBall</defName>
 		<label>Iron throwing-ball【Second-rate】</label>
@@ -392,7 +392,7 @@
 				<abilityDef>RI_Arrow_IronThrowingBall_Ability</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>连射</chargeNoun>
+				<chargeNoun>Rapid Fire</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--白霜雨-->
+	<!--White Frost Rain-->
 	<AbilityDef>
 		<defName>RI_WhiteApeBow_Ability</defName>
 		<label>Frozen rain</label>

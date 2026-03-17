@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--制作符箓-->
+	<!--Craft Charm Scroll-->
 	<WorkGiverDef>
 		<defName>RI_CharmMake</defName>
 		<label>Make charm</label>
@@ -19,7 +19,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--制作法宝-->
+	<!--Craft Talisman-->
 	<WorkGiverDef>
 		<defName>RI_MakeTalisman</defName>
 		<label>Make talisman</label>

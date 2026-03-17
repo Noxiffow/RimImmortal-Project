@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
-		<!--地图-->
+		<!--Map-->
 		<defName>RI_Items_Quest_AncientComplex_Talismaker</defName>
 		<label>Ancient cultivator compass-Ruins</label>
 		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction ofancient cultivator relic sites.</description>
@@ -38,7 +38,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<!--地图-->
+		<!--Map-->
 		<defName>RI_Items_Quest_AncientGrave_Talismaker</defName>
 		<label>Cultivator compass-Graves</label>
 		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass is very sensitive to the direction of cultivator's grave.</description>
@@ -74,7 +74,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<!--地图-->
+		<!--Map-->
 		<defName>RI_Items_Quest_AncientComplexWithCasket_Talismaker</defName>
 		<label>Ancient cultivator compass-Ancient boss</label>
 		<description>The Qi from the ancient cultivator relics was studied using a spiritual energy analyzer, which led to the invention of a special detection compass that can distinguish ancient cultivator spiritual Qi. It contains a complex chip structure and will burn out after one use.\n\nThis compass has a special sensitivity to the ancient cryogenic sleep chambers, allowing for precise location of a functioning ancient cultivator cryogenic sleep chamber.</description>

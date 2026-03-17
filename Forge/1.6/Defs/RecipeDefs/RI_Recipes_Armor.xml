@@ -25,9 +25,9 @@
 		</skillRequirements>
 	</RecipeDef>
 	
-	<!--==================================一品盔甲==================================-->
+	<!--Grade 1 Armor-->
 	
-	<!--烛龙吞火盔【一品】-->
+	<!--Candle Dragon Fire-Devouring Helmet [Grade 1]-->
 	<RecipeDef ParentName="RI_BestArmorRecipeBase">
 		<defName>Make_FireDragonHelmet</defName>
 		<label>make Fire dragon helmet【First-rate】</label>
@@ -100,7 +100,7 @@
 		<displayPriority>801</displayPriority>
 	</RecipeDef>
 
-	<!--相柳暗毒盔【一品】-->
+	<!--Xiangliu Poison Helmet [Grade 1]-->
 	<RecipeDef ParentName="RI_BestArmorRecipeBase">
 		<defName>Make_PoisonPythonHelmet</defName>
 		<label>make Viper poison helmet【First-rate】</label>
@@ -173,7 +173,7 @@
 		<displayPriority>803</displayPriority>
 	</RecipeDef>
 
-	<!--相柳白峭甲【一品】-->
+	<!--Xiangliu White Armor [Grade 1]-->
 	<RecipeDef ParentName="RI_BestArmorRecipeBase">
 		<defName>Make_PoisonPythonArmor</defName>
 		<label>make Viper poison armor【First-rate】</label>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--激光-->
+	<!--Laser-->
 	<SoundDef>
 		<defName>RI_Laser</defName>
 		<context>MapOnly</context>
@@ -25,7 +25,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--苍血竹武器声-->
+	<!--Azure-Blood Bamboo Weapon Sound-->
 	<SoundDef>
 		<defName>RI_SoundShot_EnergyBlade</defName>
 		<context>MapOnly</context>
@@ -43,7 +43,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--激光炮台枪声A-->
+	<!--Laser Turret Gunshot A-->
 	<SoundDef>
 		<defName>RI_Sound_LaserGunShot_A</defName>
 		<context>MapOnly</context>
@@ -61,7 +61,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!--激光炮台枪声B-->
+	<!--Laser Turret Gunshot B-->
 	<SoundDef>
 		<defName>RI_Sound_LaserGunShot_B</defName>
 		<context>MapOnly</context>

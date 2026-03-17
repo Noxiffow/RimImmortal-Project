@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--====================================仙路-法宝====================================-->
+	<!--Immortal Path — Talismans-->
 
-	<!--仙路-法宝-->
+	<!--Immortal Path — Talismans-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Talisman</defName>
 		<label>RI-Talisman</label>
@@ -12,16 +12,16 @@
 		<iconPath>UI/Icons/RI_Category_Weapon</iconPath>
 	</ThingCategoryDef>
 
-	<!--====================================仙路-假体====================================-->
+	<!--Immortal Path — Prosthetics-->
 
-	<!--仙路-假体-->
+	<!--Immortal Path — Prosthetics-->
 	<ThingCategoryDef>
 		<defName>RI_Category_Prostheses</defName>
 		<label>RI-Prostheses</label>
 		<parent>Items</parent>
 	</ThingCategoryDef>
 
-	<!--假体分类-->
+	<!--Prosthetic Category-->
 	<ThingCategoryDef>
 		<defName>RI_Category_JadeBodyPart</defName>
 		<label>Jade</label>

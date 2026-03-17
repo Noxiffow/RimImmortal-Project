@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--蚩尤戟-->
+	<!--ChiYou Halberd-->
 	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_ChiYouFlameHalberd</defName>
 		<label>ChiYou flame halberd【First-rate】</label>
@@ -35,7 +35,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>戟刃</label>
+				<label>Halberd Blade</label>
 				<capacities>
 					<li>RI_Cut_ChiYouFlameHalberd</li>
 				</capacities>
@@ -56,7 +56,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>戟尖</label>
+				<label>Halberd Tip</label>
 				<capacities>
 					<li>Stab</li>
 					<li>RI_Cut_ChiYouFlameHalberd</li>
@@ -97,7 +97,7 @@
 				<abilityDef>RI_Ability_ChiYouFlameHalberd</abilityDef>
 				<maxCharges>7</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>蚩尤怒炎</chargeNoun>
+				<chargeNoun>ChiYou Flame Charge</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>3</ammoCountPerCharge>
 				<baseReloadTicks>210</baseReloadTicks>
@@ -116,7 +116,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--破军剑-->
+	<!--Pojun Sword-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_PojunSword</defName>
 		<label>PoJun sword【First-rate】</label>
@@ -132,7 +132,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>剑刃</label>
+				<label>Sword Edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -148,7 +148,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>剑尖</label>
+				<label>Sword Tip</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -178,7 +178,7 @@
 				<abilityDef>RI_Ability_PojunSword</abilityDef>
 				<maxCharges>7</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>破军飞剑</chargeNoun>
+				<chargeNoun>Pojun Flying Sword</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>3</ammoCountPerCharge>
 				<baseReloadTicks>150</baseReloadTicks>
@@ -200,7 +200,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--斩仙剑-->
+	<!--Immortal-Slaying Sword-->
 	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_SlayinglmmortalSword</defName>
 		<label>God slayer sword【First-rate】</label>
@@ -222,7 +222,7 @@
 		</weaponTags>
 		<tools>
 			<li>
-				<label>剑刃</label>
+				<label>Sword Edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -239,7 +239,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>剑尖</label>
+				<label>Sword Tip</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -272,7 +272,7 @@
 				<abilityDef>RI_SlayinglmmortalSword</abilityDef>
 				<maxCharges>1</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>诛仙斩</chargeNoun>
+				<chargeNoun>Immortal-Slaying Strike</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>10</ammoCountPerCharge>
 				<baseReloadTicks>250</baseReloadTicks>
@@ -291,7 +291,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--盘龙棍-->
+	<!--Dragon-Coiling Staff-->
 	<ThingDef Class="RI_Starch.RI_ThingDef.RI_DragonPatternStick" ParentName="RI_MagicalWeapon_Blunt_Base">
 		<defName>RI_Weapon_DragonPatternStick</defName>
 		<label>Dragon pattern stick【First-rate】</label>
@@ -311,7 +311,7 @@
 		<equippedAngleOffset>-30</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>棍箍</label>
+				<label>Staff Hoop Strike</label>
 				<capacities>
 					<li>RI_Stab_DragonPatternStick</li>
 				</capacities>
@@ -327,7 +327,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>棍箍</label>
+				<label>Staff Hoop Strike</label>
 				<capacities>
 					<li>RI_Stab_DragonPatternStick</li>
 				</capacities>
@@ -353,7 +353,7 @@
 				<abilityDef>RI_DragonPatternStick</abilityDef>
 				<maxCharges>7</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>千钧断岳</chargeNoun>
+				<chargeNoun>Thousand-Jun Mountain-Breaker</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>3</ammoCountPerCharge>
 				<baseReloadTicks>150</baseReloadTicks>
@@ -372,7 +372,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--珍珠伞-->
+	<!--Pearl Umbrella-->
 	<ThingDef  ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_GlassPearlUmbrella</defName>
 		<label>Glass pearl umbrella【First-rate】</label>
@@ -391,7 +391,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>伞柄</label>
+				<label>Umbrella Handle Strike</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -408,7 +408,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>伞面</label>
+				<label>Umbrella Surface Strike</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -442,7 +442,7 @@
 				<abilityDef>RI_Ability_GlassPearlUmbrella</abilityDef>
 				<maxCharges>7</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>琉璃珠光术</chargeNoun>
+				<chargeNoun>Glass Pearl Light Art</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>3</ammoCountPerCharge>
 				<baseReloadTicks>150</baseReloadTicks>

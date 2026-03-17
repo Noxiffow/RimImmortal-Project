@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--[PAWN_nameDef]
-	[PAWN_pronoun]他/她
-	[PAWN_possessive]他/她的
-	[PAWN_objective]宾格？
+	[PAWN_pronoun]he/she
+	[PAWN_possessive]his/her
+	[PAWN_objective]obj?
 	
 	<workDisables>
 	<li>ManualDumb</li>
@@ -41,7 +41,7 @@
 	
 	-->
 
-	<!--============古修者============-->
+	<!--Ancient Cultivator-->
 
 	<BackstoryDef>
 		<defName>RI_Backstory_AncientWarrior</defName>

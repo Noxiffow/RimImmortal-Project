@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--古修盔-->
+	<!--Ancient Cultivator Helmet-->
 	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
 		<defName>RI_Apparel_AncientCultivatorHelmet</defName>
 		<label>Ancient cultivator helmet</label>
@@ -30,7 +30,7 @@
 				<li>RI_AncientCultivatorArmor</li>
 			</tags>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ancient/RI_Apparel_AncientCultivatorHelmet</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displayed simultaneously with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -43,13 +43,13 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>-1</PsychicSensitivity>
 		</equippedStatOffsets>
-				<!--贸易标签-->
+				<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--柔玉抹额【三品】-->
+	<!--Soft Jade Headband [Grade 3]-->
 	<ThingDef ParentName="RI_MakeableHatNostuffCategories_Base">
 		<defName>RI_Apparel_LiquidJadeHeadband</defName>
 		<label>Liquid jade headband【Third-rate】</label>
@@ -58,7 +58,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/SoftJadeHeadband/RI_Apparel_SoftJadeHeadband</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Cloth>50</Cloth>
 			<RI_Resource_LiquidJade>3</RI_Resource_LiquidJade>
@@ -82,7 +82,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SoftJadeHeadband/RI_Apparel_SoftJadeHeadband</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displayed simultaneously with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -99,14 +99,14 @@
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 		<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--武曲纯阳巾【二品】-->
+	<!--Wuqu Pure-Yang Cloth [Grade 2]-->
 	<ThingDef ParentName="RI_MakeableHatNostuffCategories_Base">
 		<defName>RI_Apparel_WuQuHat</defName>
 		<label>WuQu hat【Second-rate】</label>
@@ -115,7 +115,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/DemonSlayer/RI_Apparel_HatHat</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Gold>2</Gold>
 			<Cloth>40</Cloth>
@@ -145,7 +145,7 @@
 				<li>RI_DaoCloth</li>
 			</tags>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DemonSlayer/RI_Apparel_HatHat</wornGraphicPath>
-			<!--和发型同时显示-->
+			<!--Displayed simultaneously with hairstyle-->
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -166,14 +166,14 @@
 			<ResearchSpeed>0.15</ResearchSpeed>
 			<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.15</EntityStudyRate>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 		<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--鎏金天王盔-->
+	<!--Gilt Heavenly King Helmet-->
 	<ThingDef ParentName="RI_MakeableHelmetNostuffCategories_Base">
 		<defName>RI_Apparel_GoldBestHelmet</defName>
 		<label>Gilded general helmet【Second-rate】</label>
@@ -183,7 +183,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Gold>5</Gold>
 			<Plasteel>40</Plasteel>
@@ -229,21 +229,21 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.05</SuppressionPower>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 		<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--鎏金天王盔（面甲）-->
+	<!--Gilt Heavenly King Helmet (Faceplate)-->
 	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
 		<defName>RI_Apparel_GoldBestHelmet_Mask</defName>
 		<label>Gilded general helmet (mask)【Second-rate】</label>
@@ -253,7 +253,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Gold>5</Gold>
 			<Plasteel>40</Plasteel>
@@ -299,21 +299,21 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.05</SuppressionPower>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 		<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--精铁虎卫盔-->
+	<!--Refined Iron Tiger Guard Helmet-->
 	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
 		<defName>RI_Apparel_TigerGuardHelmet</defName>
 		<label>Tiger guard helmet【Second-rate】</label>
@@ -323,7 +323,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Steel>150</Steel>
 			<RI_Resource_BlackSteel>5</RI_Resource_BlackSteel>
@@ -368,14 +368,14 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			<ArrestSuccessChance>0.05</ArrestSuccessChance>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.05</SuppressionPower>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 		<li>RI_AllWeapon_AllArmor_Tag</li>

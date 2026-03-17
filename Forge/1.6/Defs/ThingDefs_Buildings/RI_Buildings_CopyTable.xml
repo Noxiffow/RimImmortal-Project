@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--灵气研究器-->
+	<!--Qi Research Device-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_SpiritAnalyzer</defName>
 		<label>Spirit analyzer</label>
@@ -69,7 +69,7 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<!--拷贝台-->
+	<!--Copy Table-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_CopyTable</defName>
 		<label>Book duplicator</label>

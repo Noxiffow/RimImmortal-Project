@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--盲盒前置-->
+	<!--Blind Box Prerequisite-->
 	<ThingDef ParentName="ResourceBase" Name="RI_BlindBoxBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -23,11 +23,11 @@
 		<techLevel>Medieval</techLevel>
 		<tradeTags>
 			<li>RI_BlindBox_Tag</li>
-			<!--商队tag-->
+			<!--Caravan tag-->
 		</tradeTags>
 	</ThingDef>
 
-	<!--玄妙石块（赌石？）-->
+	<!--Mysterious stones (gambling stone?)-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_Rock</defName>
 		<label>Gambling stone</label>
@@ -41,34 +41,34 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--顶级，柔玉，灵石-->
+					<!--Top-grade — soft jade, spirit stone-->
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_SpiritualCrystal</li>
 					<li>RI_Resource_QingMingMarrow</li>
-					<!--中级-->
+					<!--Intermediate-->
 					<li>Gold</li>
 					<li>Jade</li>
 					<li>Silver</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>Steel</li>
 					<li>Steel</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--顶级，柔玉，灵石-->
+					<!--Top-grade — soft jade, spirit stone-->
 					<li>5</li>
 					<li>7</li>
 					<li>20</li>
 					<li>30</li>
 					<li>30</li>
 					<li>1</li>
-					<!--中级-->
+					<!--Intermediate-->
 					<li>20</li>
 					<li>30</li>
 					<li>100</li>
-					<!--垃圾-->
+					<!--Junk-->
 					<li>5</li>
 					<li>5</li>
 				</thingDefListNum>
@@ -81,7 +81,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--修士宝匣，给很多好东西哦-->
+	<!--Cultivator treasure chest — lots of good stuff!-->
 	<ThingDef ParentName="RI_BlindBoxBase">
 		<defName>RI_BlindBox_CultivatorBox</defName>
 		<label>Mysterious cultivator box</label>
@@ -95,7 +95,7 @@
 		<comps>
 			<li Class="RI_Talisman.CompProperties_BlindBoxUsing">
 				<thingDefList>
-					<!--顶级资源，都是能放很久的-->
+					<!--Top-grade resources — all can be stored long-term-->
 					<li>RI_Resource_OracleFragment</li>
 					<li>RI_Resource_OracleFragment</li>
 					<li>RI_Resource_OracleFragment</li>
@@ -104,14 +104,14 @@
 					<li>RI_Things_JadeLiquidPro</li>
 					<li>RI_Drug_FoundationBuildingElixir</li>
 					<li>RI_Drug_FoundationBuildingElixir</li>
-					<!--中级，只有柔玉-->
+					<!--Intermediate — soft jade only-->
 					<li>RI_Resource_LiquidJade</li>
 					<li>RI_Resource_LiquidJade</li>
-					<!--垃圾很少-->
+					<!--Very little junk-->
 					<li>RI_Resource_SpiritualCrystal</li>
 				</thingDefList>
 				<thingDefListNum>
-					<!--顶级资源，都是能放很久的-->
+					<!--Top-grade resources — all can be stored long-term-->
 					<li>1</li>
 					<li>1</li>
 					<li>2</li>
@@ -120,10 +120,10 @@
 					<li>1</li>
 					<li>1</li>
 					<li>2</li>
-					<!--中级，只有柔玉-->
+					<!--Intermediate — soft jade only-->
 					<li>8</li>
 					<li>8</li>
-					<!--垃圾很少-->
+					<!--Very little junk-->
 					<li>40</li>
 				</thingDefListNum>
 				<cost>5</cost>

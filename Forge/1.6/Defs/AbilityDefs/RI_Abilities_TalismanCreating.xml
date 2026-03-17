@@ -2,20 +2,20 @@
 
 <Defs>
 
-	<!--==========测试法门==========-->
-	<!--1凝气境界——Noviciate rank测试-->
-	<!--2固基境界——Foundation rank测试-->
-	<!--3化丹境界——Core formation rank测试-->
-	<!--4结丹境界——Core coagulation rank测试-->
-	<!--5灵丹境界——Core consummation rank测试-->
-	<!--6化神境界——Spirit constraint rank测试-->
-	<!--7元婴境界——Primordial spirit baby rank测试-->
-	<!--8大成境界——Primordial spirit maturity rank测试-->
-	<!--9合体境界——Primordial spirit combine rank测试-->
+	<!--Test Cultivation Method-->
+	<!--Noviciate Rank 1 — test-->
+	<!--Foundation Rank 2 — test-->
+	<!--Core Formation Rank 3 — test-->
+	<!--Core Coagulation Rank 4 — test-->
+	<!--Core Consummation Rank 5 — test-->
+	<!--Spirit Constraint Rank 6 — test-->
+	<!--Primordial Spirit Baby Rank 7 — test-->
+	<!--Primordial Spirit Maturity Rank 8 — test-->
+	<!--Primordial Spirit Combine Rank 9 — test-->
 
-	<!--====================炼器法门TalismanCreating====================-->
+	<!--Forging Cultivation Method (TalismanCreating)-->
 
-	<!--凝气境界——匠心-->
+	<!--Noviciate — Artisan's Heart-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_WorkFocus</defName>
 		<label>Work focus</label>
@@ -38,13 +38,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_WorkFocus_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
@@ -54,14 +54,14 @@
 				<canTargetBaby>False</canTargetBaby>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
-				<!--消耗灵气-->
+				<!--Consumes Qi-->
 				<rEnergy>-25</rEnergy>
-				<!--消耗灵气-->
+				<!--Consumes Qi-->
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!--化丹境界——修复-->
+	<!--Core Formation — Repair-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_Repair</defName>
 		<label>Repair</label>
@@ -85,13 +85,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_Repair_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
 				<rEnergy>-50</rEnergy>
@@ -103,7 +103,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!--结丹境界——铳铁再造-->
+	<!--Core Coagulation — Gun-Iron Reforge-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_TurretAssemble</defName>
 		<label>Turret assemble</label>
@@ -125,13 +125,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_TurretAssemble_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
 				<rEnergy>-100</rEnergy>
@@ -146,7 +146,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!--化神境界——工匠激励-->
+	<!--Spirit Constraint — Artisan's Inspiration-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_WorkInsentive</defName>
 		<label>Work insentive</label>
@@ -184,13 +184,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_WorkInsentive_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
@@ -200,14 +200,14 @@
 				<canTargetBaby>False</canTargetBaby>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
-				<!--消耗灵气-->
+				<!--Consumes Qi-->
 				<rEnergy>-110</rEnergy>
-				<!--消耗灵气-->
+				<!--Consumes Qi-->
 			</li>
 		</comps>
 	</AbilityDef>
 
-	<!--元婴境界——百材分解-->
+	<!--Primordial Spirit Baby — Hundred Materials Decomposition-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_MaterialDecomposition</defName>
 		<label>Material decomposition</label>
@@ -237,13 +237,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_ComponentRefine_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
 				<rEnergy>-70</rEnergy>
@@ -253,7 +253,7 @@
 		</comps>
 	</AbilityDef>
 
-	<!--大成境界——神机诞生-->
+	<!--Great Attainment — Divine Machinery Birth-->
 	<AbilityDef ParentName="RI_PsycastBase">
 		<defName>RI_Ability_ComponentRefine</defName>
 		<label>Spirit creation</label>
@@ -277,13 +277,13 @@
 		</verbProperties>
 		<comps>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_MaterialDecompositione_Mote</moteCastDef>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="CompProperties_AbilityEffecterOnTarget">
 				<effecterDef>Skip_Exit</effecterDef>

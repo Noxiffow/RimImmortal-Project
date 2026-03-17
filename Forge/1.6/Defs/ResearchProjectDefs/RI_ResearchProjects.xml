@@ -5,9 +5,9 @@
 		<tab>RI_ResearchTab</tab>
 	</ResearchProjectDef>
 
-	<!--=============================== 部落到中世纪的科技 ===================================-->
+	<!--Tribal to Medieval Technology-->
 
-	<!--简易假肢-->
+	<!--Simple prosthetics-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_Prosthetic</defName>
 		<label>Simple prosthetic</label>
@@ -18,7 +18,7 @@
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
-	<!--基础法宝合成-->
+	<!--Basic talisman synthesis-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_CharmResearch</defName>
 		<label>Basic talisman</label>
@@ -32,7 +32,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--低级修士兵器-->
+	<!--Low-grade cultivator weapons-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_CultivatorWeapon</defName>
 		<label>Basic cultivator weapon</label>
@@ -46,7 +46,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!--庚钢合成技术-->
+	<!--Geng-steel synthesis technology-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_BlackSteelSyntheticTechnology</defName>
 		<label>Black steel synthetic technology</label>
@@ -61,7 +61,7 @@
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 
-	<!--神机造物-->
+	<!--Divine machinery creation-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_BetterWeapon</defName>
 		<label>Forge creation</label>
@@ -76,7 +76,7 @@
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 
-	<!--低阶灵械傀儡-->
+	<!--Low-tier spirit-mechanical golem-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_Golem</defName>
 		<label>Basic golem</label>
@@ -91,7 +91,7 @@
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 
-	<!--造化医典-->
+	<!--Transformation medicine compendium-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_Research_ModernMedicine</defName>
 		<label>Modern medicine</label>
@@ -107,7 +107,7 @@
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
-	<!--现代化修炼设施-->
+	<!--Modernized cultivation facilities-->
 	<!--
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_ModernCultivateBuilding</defName>
@@ -123,7 +123,7 @@
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>-->
 
-	<!--逆生技术突破-->
+	<!--Retrogenesis technology breakthrough-->
 	<!--
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_RetrogenesisTechnology</defName>
@@ -139,9 +139,9 @@
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>-->
 
-	<!--=============================== 工业时期科技 ===================================-->
+	<!--Industrial Era Technology-->
 
-	<!--古修风格复原-->
+	<!--Ancient cultivator style restoration-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_AncientCultivatorRestoration</defName>
 		<label>Ancient cultivator restoration</label>
@@ -156,7 +156,7 @@
 		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>
 
-	<!--炼器宗师-->
+	<!--Forging grandmaster-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_MasterOfSmithing</defName>
 		<label>Master Of Smithing</label>
@@ -172,7 +172,7 @@
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 
-	<!--灵气军事学-->
+	<!--Qi military science-->
 	<ResearchProjectDef ParentName="RI_Research_Base">
 		<defName>RI_QiBasedMilitaryScience</defName>
 		<label>Qi-based military science</label>

@@ -67,9 +67,9 @@
 		<drawOrder>302</drawOrder>
 	</ApparelLayerDef>
 
-	<!--==============三品法宝==============-->
+	<!--Grade 3 Talisman-->
 
-	<!--玉如意-->
+	<!--Jade Ruyi-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_JadeRuyi</defName>
 		<label>Jade Ruyi【Third-rate】</label>
@@ -91,11 +91,11 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--铜钱吊坠-->
+	<!--Copper Coin Pendant-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_CoinsPendant</defName>
 		<label>Coin pendant【Third-rate】</label>
@@ -146,11 +146,11 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--象牙项链-->
+	<!--Ivory Necklace-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_TuskPendant</defName>
 		<label>Tusk pendant【Third-rate】</label>
@@ -172,11 +172,11 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--毒铃-->
+	<!--Toxic Bell-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_ToxicBell</defName>
 		<label>Toxic bell【Third-rate】</label>
@@ -198,11 +198,11 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--檀木令牌-->
+	<!--Sandalwood Token-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_SandalwoodToken</defName>
 		<label>Wooden token【Third-rate】</label>
@@ -224,13 +224,13 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 	
-	<!--==============二品法宝==============-->
+	<!--Grade 2 Talisman-->
 
-	<!--储物袋-->
+	<!--Storage Bag-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_StorageBag</defName>
 		<label>Storage bag【Second-rate】</label>
@@ -240,7 +240,7 @@
 		</graphicData>
 		<equippedStatOffsets>
 			<RI_MassCarryCapacity>30</RI_MassCarryCapacity>
-			<!--30Kg偏移值-->
+			<!--30 kg offset value-->
 			<CarryingCapacity>150</CarryingCapacity>
 		</equippedStatOffsets>
 		<statBases>
@@ -251,11 +251,11 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--聚石塔-->
+	<!--Stone-Gathering Tower-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_PolyStoneTower</defName>
 		<label>Poly stone tower【Second-rate】</label>
@@ -284,7 +284,7 @@
 			<li>
 				<verbClass>RI_Talisman_Item.Verb_RI_Talisman_PolyStoneTower</verbClass>
 				<label>Flying sand and stone</label>
-				<!--飞沙走石-->
+				<!--Flying Sand and Rolling Stones-->
 				<commandIcon>Ability/Talisman/RI_Talisman_CoinsPendant_Shield</commandIcon>
 				<defaultProjectile>RI_BlankProjectile</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
@@ -304,17 +304,17 @@
 	</ThingDef>
 	<DamageDef>
 		<defName>RI_Talisman_PolyStoneTower_Damage</defName>
-		<label>聚石</label>
+		<label>Stone-Gathering</label>
 		<workerClass>DamageWorker_AddGlobal</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0}被击碎了.</deathMessage>
+		<deathMessage>{0} was shattered.</deathMessage>
 		<hediff>RI_Talisman_PolyStoneTower_Hediff</hediff>
 		<!--<armorCategory>Sharp</armorCategory>-->
 		<makesBlood>false</makesBlood>
 		<isRanged>true</isRanged>
 	</DamageDef>
 
-	<!--风戒-->
+	<!--Wind Ring-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_WindRing</defName>
 		<label>Wind ring【Second-rate】</label>
@@ -362,7 +362,7 @@
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
@@ -406,17 +406,17 @@
 
 	<DamageDef>
 		<defName>RI_Talisman_WindRing_Damage</defName>
-		<label>狂风</label>
+		<label>Raging Wind</label>
 		<workerClass>DamageWorker_AddGlobal</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0}被撕裂了.</deathMessage>
+		<deathMessage>{0} was torn apart.</deathMessage>
 		<hediff>RI_Talisman_WindRing_Hediff</hediff>
 		<!--<armorCategory>Sharp</armorCategory>-->
 		<makesBlood>false</makesBlood>
 		<isRanged>true</isRanged>
 	</DamageDef>
 
-	<!--纳火珠-->
+	<!--Fire-Catching Pearl-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_Firefighter</defName>
 		<label>Fire pearl【Second-rate】</label>
@@ -437,7 +437,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--青囊葫芦-->
+	<!--Herb Gourd-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_Greengourd</defName>
 		<label>Medical gourd【Second-rate】</label>
@@ -458,16 +458,16 @@
 		</statBases>
 		<equippedStatOffsets>
 			<RI_MassCarryCapacity>3</RI_MassCarryCapacity>
-			<!--3Kg偏移值-->
+			<!--3 kg offset value-->
 		</equippedStatOffsets>
 		<thingSetMakerTags>
 			<!--<li>RewardStandardQualitySuper</li>-->
 			<li>RewardStandardLowFreq</li>
-			<!--罕见任务奖励-->
+			<!--Rare quest reward-->
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<!--一品-紫金葫芦-->
+	<!--Grade 1 - Purple-Gold Gourd-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_PurpleGoldenGourd</defName>
 		<label>Purple golden gourd【First-rate】</label>
@@ -483,17 +483,17 @@
 		</statBases>
 		<equippedStatOffsets>
 			<RI_MassCarryCapacity>10</RI_MassCarryCapacity>
-			<!--3Kg偏移值-->
+			<!--3 kg offset value-->
 		</equippedStatOffsets>
 		<comps>
 			<li Class="RI_Talisman_Item.CompProperties_RIEatMan">
-				<Ri_EatManIcon>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</Ri_EatManIcon><!--这个就是吸入的贴图-->
+				<Ri_EatManIcon>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</Ri_EatManIcon><!--This is the absorption texture-->
 				<Ri_OutEatManIcon>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</Ri_OutEatManIcon>
-			</li><!--提供一个翻译Keyed:<RI_NoSeePawn>无法吸入装备者不可见的目标</RI_NoSeePawn>-->
+			</li><!--Translation key: <RI_NoSeePawn>Cannot absorb targets invisible to the equipment wearer</RI_NoSeePawn>-->
 		</comps>
 	</ThingDef>
 
-	<!--金钵-->
+	<!--Golden Bowl-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_GoldenBowl</defName>
 		<label>Golden bowl【First-rate】</label>
@@ -595,12 +595,12 @@
 			<li Class="CompProperties_DestroyAfterDelay">
 				<delayTicks>1800</delayTicks>
 				<destroyMode>KillFinalize</destroyMode>
-				<countdownLabel>消散于</countdownLabel>
+				<countdownLabel>Dissipates in</countdownLabel>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<!--一品-白玉瓶-->
+	<!--Grade 1 - White Jade Vase-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_WhiteJadeVase</defName>
 		<label>White jade vase【First-rate】</label>
@@ -631,7 +631,7 @@
 				<verbClass>RI_Talisman_Item.Verb_LaunchProjectileStaticWithIcon</verbClass>
 				<label>White jade shield</label>
 				<commandIcon>Ability/Talisman/RI_Talisman_WhiteJadeVase</commandIcon>
-				<!--白玉露-->
+				<!--White Jade Dew-->
 				<defaultProjectile>RI_Talisman_WhiteJadeVase_Bullet</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
 				<range>15</range>
@@ -716,12 +716,12 @@
 			<li Class="CompProperties_DestroyAfterDelay">
 				<delayTicks>1800</delayTicks>
 				<destroyMode>KillFinalize</destroyMode>
-				<countdownLabel>消散于</countdownLabel>
+				<countdownLabel>Dissipates in</countdownLabel>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<!--一品-玲珑塔-->
+	<!--Grade 1 - Exquisite Pagoda-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_ThreeKingTower</defName>
 		<label>Three king tower【First-rate】</label>
@@ -772,7 +772,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--一品-乾坤袋-->
+	<!--Grade 1 - Heaven-Earth Bag-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_QiankunStorageBag</defName>
 		<label>QianKun bag【First-rate】</label>
@@ -788,12 +788,12 @@
 		</statBases>
 		<equippedStatOffsets>
 			<RI_MassCarryCapacity>1000</RI_MassCarryCapacity>
-			<!--500Kg偏移值-->
+			<!--500 kg offset value-->
 			<CarryingCapacity>370</CarryingCapacity>
 		</equippedStatOffsets>
 	</ThingDef>
 
-	<!--一品-捆仙索-->
+	<!--Grade 1 - Immortal-Binding Cord-->
 	<ThingDef ParentName="RI_Talisman_Base">
 		<defName>RI_Talisman_ImmortalBindingRope</defName>
 		<label>Immortal-binding rope【First-rate】</label>

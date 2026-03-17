@@ -14,7 +14,7 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<!--安装翠玉系列-->
+	<!--Install jade series-->
 	<RecipeDef ParentName="RI_Prostheses_Base">
 		<defName>RI_InstallJadeFakeArm</defName>
 		<label>Install Jade arm</label>
@@ -183,7 +183,7 @@
 		<addsHediff>RI_Hediff_JadeFakeFoot</addsHediff>
 	</RecipeDef>
 
-	<!--安装庚钢系列-->
+	<!--Install geng-steel series-->
 
 	<RecipeDef ParentName="RI_Prostheses_Base">
 		<defName>RI_InstallBlackSteelArm</defName>
@@ -396,9 +396,9 @@
 		<addsHediff>RI_Hediff_BlackSteelSpine</addsHediff>
 	</RecipeDef>
 
-	<!--===============================五行内脏===============================-->
+	<!--Five Elements Organs-->
 
-	<!--千壶焱心-->
+	<!--Thousand-Cauldron Fire Heart-->
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallFireBionicHeart</defName>
 		<label>install Bionic heart-Fire</label>
@@ -425,7 +425,7 @@
 		<addsHediff>RI_Hediff_FireBionicHeart</addsHediff>
 	</RecipeDef>
 
-	<!--戍土鼎胃-->
+	<!--Earth-Warden Cauldron Stomach-->
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallEarthBionicStomach</defName>
 		<label>install Bionic stomach-Earth</label>
@@ -452,7 +452,7 @@
 		<addsHediff>RI_Hediff_EarthBionicStomach</addsHediff>
 	</RecipeDef>
 
-	<!--肃金御肺-->
+	<!--Metal-Master Imperial Lungs-->
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallMetalBionicLung</defName>
 		<label>install Bionic lung-Metal</label>
@@ -479,7 +479,7 @@
 		<addsHediff>RI_Hediff_MetalBionicLung</addsHediff>
 	</RecipeDef>
 
-	<!--寒灵水肾-->
+	<!--Cold-Spirit Water Kidneys-->
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallWaterBionicKidney</defName>
 		<label>install Bionic kidney-Water</label>
@@ -506,7 +506,7 @@
 		<addsHediff>RI_Hediff_WaterBionicKidney</addsHediff>
 	</RecipeDef>
 
-	<!--棠木枝肝-->
+	<!--Crabapple Branch Liver-->
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallWoodBionicLiver</defName>
 		<label>install Bionic liver-Wood</label>

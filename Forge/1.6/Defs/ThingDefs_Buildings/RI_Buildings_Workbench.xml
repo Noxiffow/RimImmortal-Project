@@ -1,6 +1,6 @@
 <Defs>
 
-	<!--灵器锻炉-->
+	<!--Spirit Instrument Forge-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_EnergyForge</defName>
 		<label>Energy talisman forge</label>
@@ -49,9 +49,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<recipes>
-			<!--庚钢-->
+			<!--Geng-steel-->
 			<li>Make_BlackSteel</li>
-			<!--兵器-->
+			<!--Weapons-->
 			<li>Make_CyanogenJadeHammer</li>
 			<li>Make_JumenAxe</li>
 			<li>Make_ThunderLordLance</li>
@@ -63,15 +63,15 @@
 			<li>Make_IronThrowingBall</li>
 			<li>Make_GhostFireCrossbow</li>
 			<li>Make_AncientGun</li>
-			<!--庚钢假体-->
+			<!--Geng-steel Prosthetics-->
 			<li>Make_BlackSteelArm</li>
 			<li>Make_BlackSteelLeg</li>
 			<li>Make_BlackSteelFoot</li>
 			<li>Make_BlackSteelHand</li>
 			<li>Make_BlackSteelSpine</li>
-			<!--构件-->
+			<!--Components-->
 			<li>Make_DeviceCoreComponent</li>
-			<!--罗盘-->
+			<!--Compass-->
 			<li>RI_MakeQuestCaller_AncientComplex_Talismaker</li>
 			<li>RI_MakeQuestCaller_AncientGrave_Talismaker</li>
 		</recipes>
@@ -118,7 +118,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--法宝制作台-->
+	<!--Talisman Crafting Bench-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_CharmWorkbench</defName>
 		<label>Talisman-making workbench</label>
@@ -159,7 +159,7 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<recipes>
-			<!--法宝-->
+			<!--Talisman-->
 			<li>Make_JadeRuyi</li>
 			<li>Make_CoinsPendant</li>
 			<li>Make_TuskPendant</li>
@@ -170,7 +170,7 @@
 			<li>Make_WindRing</li>
 			<li>Make_Firefighter</li>
 			<li>Make_Greengourd</li>
-			<!--翠玉-->
+			<!--Jade (Green)-->
 			<li>Make_JadeFakeHand</li>
 			<li>Make_JadeFakeArm</li>
 			<li>Make_JadeFakeFoot</li>
@@ -208,7 +208,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--神魂宝器锻炉-->
+	<!--Soul Treasure Forge-->
 	<ThingDef ParentName="BenchBase">
 		<defName>RI_Building_SpiritForge</defName>
 		<label>Spirit talisman forge</label>
@@ -268,10 +268,10 @@
 		</comps>
 		
 		<recipes>
-			<!--庚钢-->
+			<!--Geng-steel-->
 			<li>Make_BlackSteel</li>
 			<li>Make_BlackSteelBulk</li>
-			<!--武器-->
+			<!--Weapon-->
 			<li>Make_CyanogenJadeHammer</li>
 			<li>Make_JumenAxe</li>
 			<li>Make_ThunderLordLance</li>
@@ -289,7 +289,7 @@
 			<li>Make_SlayinglmmortalSword</li>
 			<li>Make_ThunderMinigun</li>
 			<li>Make_WhiteApeBow</li>
-			<!--法宝-->
+			<!--Talisman-->
 			<li>Make_JadeRuyi</li>
 			<li>Make_CoinsPendant</li>
 			<li>Make_TuskPendant</li>
@@ -306,25 +306,25 @@
 			<li>Make_ThreeKingTower</li>
 			<li>Make_QiankunStorageBag</li>
 			<li>Make_ImmortalBindingRope</li>
-			<!--构件-->
+			<!--Components-->
 			<li>Make_DeviceCoreComponent</li>
-			<!--罗盘-->
+			<!--Compass-->
 			<li>RI_MakeQuestCaller_AncientGrave_Talismaker</li>
 			<li>RI_MakeQuestCaller_AncientComplex_Talismaker</li>
 			<li>RI_MakeQuestCaller_AncientComplexWithCasket_Talismaker</li>
-			<!--五行-->
+			<!--Five Elements-->
 			<li>Make_EarthBionicStomach</li>
 			<li>Make_FireBionicHeart</li>
 			<li>Make_WaterBionicKidney</li>
 			<li>Make_WoodBionicLiver</li>
 			<li>Make_MetalBionicLung</li>
-			<!--庚钢假体-->
+			<!--Geng-steel Prosthetics-->
 			<li>Make_BlackSteelArm</li>
 			<li>Make_BlackSteelLeg</li>
 			<li>Make_BlackSteelFoot</li>
 			<li>Make_BlackSteelHand</li>
 			<li>Make_BlackSteelSpine</li>
-			<!--盔甲-->
+			<!--Armor-->
 			<li>Make_FireDragonHelmet</li>
 			<li>Make_PoisonPythonHelmet</li>
 			<li>Make_PoisonPythonArmor</li>
@@ -355,7 +355,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--铁砧-->
+	<!--Anvil-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_Anvil</defName>
 		<label>Anvil</label>
@@ -413,7 +413,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<!--工具桌-->
+	<!--Workbench-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_ToolTable</defName>
 		<label>Forging tool table</label>

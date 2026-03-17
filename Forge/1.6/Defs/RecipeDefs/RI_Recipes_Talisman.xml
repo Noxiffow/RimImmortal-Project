@@ -9,22 +9,22 @@
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 
-	<!--低阶法宝前置-->
+	<!--Low-tier talisman prerequisite-->
 	<RecipeDef Name="RI_TierThird_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
 		<researchPrerequisite>RI_CharmResearch</researchPrerequisite>
 	</RecipeDef>
 
-	<!--中阶法宝前置-->
+	<!--Mid-tier talisman prerequisite-->
 	<RecipeDef Name="RI_TierSecond_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
 		<researchPrerequisite>RI_Research_BetterWeapon</researchPrerequisite>
 	</RecipeDef>
 
-	<!--高阶法宝前置-->
+	<!--High-tier talisman prerequisite-->
 	<RecipeDef Name="RI_TierFirst_TalismanRecipeBase" Abstract="True" ParentName="RI_TalismanRecipeBase">
 		<researchPrerequisite>RI_MasterOfSmithing</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--玉如意-->
+	<!--Jade Ruyi-->
 	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
 		<defName>Make_JadeRuyi</defName>
 		<label>make Jade Ruyi【Third-rate】</label>
@@ -64,7 +64,7 @@
 		<displayPriority>9</displayPriority>
 	</RecipeDef>
 
-	<!--硬币吊坠-->
+	<!--Coin Pendant-->
 	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
 		<defName>Make_CoinsPendant</defName>
 		<label>make Coin pendant【Third-rate】</label>
@@ -101,7 +101,7 @@
 		<displayPriority>10</displayPriority>
 	</RecipeDef>
 
-	<!--象牙吊坠-->
+	<!--Ivory Pendant-->
 	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
 		<defName>Make_TuskPendant</defName>
 		<label>make Tusk pendant【Third-rate】</label>
@@ -138,7 +138,7 @@
 		<displayPriority>11</displayPriority>
 	</RecipeDef>
 
-	<!--毒铃-->
+	<!--Toxic Bell-->
 	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
 		<defName>Make_ToxicBell</defName>
 		<label>make Toxic bell【Third-rate】</label>
@@ -175,7 +175,7 @@
 		<displayPriority>12</displayPriority>
 	</RecipeDef>
 
-	<!--令牌-->
+	<!--Token-->
 	<RecipeDef ParentName="RI_TierThird_TalismanRecipeBase">
 		<defName>Make_SandalwoodToken</defName>
 		<label>make Wooden token【Third-rate】</label>
@@ -212,9 +212,9 @@
 		<displayPriority>13</displayPriority>
 	</RecipeDef>
 
-	<!--==================================二品==================================-->
+	<!--Grade 2-->
 
-	<!--储物袋-->
+	<!--Storage Bag-->
 	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
 		<defName>Make_StorageBag</defName>
 		<label>make Storage bag【Second-rate】</label>
@@ -260,7 +260,7 @@
 		<displayPriority>50</displayPriority>
 	</RecipeDef>
 
-	<!--聚石塔-->
+	<!--Stone-Gathering Tower-->
 	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
 		<defName>Make_PolyStoneTower</defName>
 		<label>make Poly stone tower【Second-rate】</label>
@@ -315,7 +315,7 @@
 		<displayPriority>51</displayPriority>
 	</RecipeDef>
 
-	<!--风戒-->
+	<!--Wind Ring-->
 	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
 		<defName>Make_WindRing</defName>
 		<label>make Wind ring【Second-rate】</label>
@@ -352,7 +352,7 @@
 		<displayPriority>52</displayPriority>
 	</RecipeDef>
 
-	<!--纳火珠-->
+	<!--Fire-Catching Pearl-->
 	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
 		<defName>Make_Firefighter</defName>
 		<label>make Fire pearl【Second-rate】</label>
@@ -389,7 +389,7 @@
 		<displayPriority>53</displayPriority>
 	</RecipeDef>
 
-	<!--青囊葫芦-->
+	<!--Herb Gourd-->
 	<RecipeDef ParentName="RI_TierSecond_TalismanRecipeBase">
 		<defName>Make_Greengourd</defName>
 		<label>make Medical gourd【Second-rate】</label>
@@ -453,9 +453,9 @@
 		<displayPriority>54</displayPriority>
 	</RecipeDef>
 
-	<!--==================================一品==================================-->
+	<!--Grade 1-->
 
-	<!--紫金葫芦-->
+	<!--Purple-Gold Gourd-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_PurpleGoldenGourd</defName>
 		<label>make Purple golden gourd【First-rate】</label>
@@ -501,7 +501,7 @@
 		<displayPriority>60</displayPriority>
 	</RecipeDef>
 
-	<!--金钵-->
+	<!--Golden Bowl-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_GoldenBowl</defName>
 		<label>make Golden bowl【First-rate】</label>
@@ -538,7 +538,7 @@
 		<displayPriority>61</displayPriority>
 	</RecipeDef>
 
-	<!--白玉瓶-->
+	<!--White Jade Vase-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_WhiteJadeVase</defName>
 		<label>make White jade vase【First-rate】</label>
@@ -584,7 +584,7 @@
 		<displayPriority>62</displayPriority>
 	</RecipeDef>
 
-	<!--玲珑塔-->
+	<!--Exquisite Pagoda-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_ThreeKingTower</defName>
 		<label>make Three king tower【First-rate】</label>
@@ -639,7 +639,7 @@
 		<displayPriority>63</displayPriority>
 	</RecipeDef>
 
-	<!--乾坤袋-->
+	<!--Heaven-Earth Bag-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_QiankunStorageBag</defName>
 		<label>make QianKun bag【First-rate】</label>
@@ -685,7 +685,7 @@
 		<displayPriority>64</displayPriority>
 	</RecipeDef>
 
-	<!--捆仙绳-->
+	<!--Immortal-Binding Rope-->
 	<RecipeDef ParentName="RI_TierFirst_TalismanRecipeBase">
 		<defName>Make_ImmortalBindingRope</defName>
 		<label>make Immortal-binding rope【First-rate】</label>

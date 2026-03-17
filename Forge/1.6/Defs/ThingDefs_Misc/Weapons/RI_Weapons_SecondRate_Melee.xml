@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--二品 近战锐器兵器 前置-->
+	<!--Grade 2 melee sharp weapon prerequisite-->
 	<ThingDef Name="RI_SecondWeapon_Sharp_Base" ParentName="RI_MagicalWeapon_Sharp_Base" Abstract="True">
 		<tradeTags>
 			<li>RI_SecondWeapon_Tag</li>
@@ -14,7 +14,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!--巨门斧-->
+	<!--Jumen Axe-->
 	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
 		<defName>RI_Weapon_JumenAxe</defName>
 		<label>Jumen axe【Second-rate】</label>
@@ -34,7 +34,7 @@
 		<equippedAngleOffset>-90</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>斧刃</label>
+				<label>Axe Blade</label>
 				<capacities>
 					<li>Cut</li>
 					<li>Demolish</li>
@@ -52,7 +52,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>斧刃</label>
+				<label>Axe Blade</label>
 				<capacities>
 					<li>Cut</li>
 					<li>Demolish</li>
@@ -84,7 +84,7 @@
 				<abilityDef>RI_AxeExcitation</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>破阵斧鸣</chargeNoun>
+				<chargeNoun>Formation-Breaking Axe-Cry</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -103,7 +103,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--毒心梭-->
+	<!--Poison Heart Shuttle-->
 	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
 		<defName>RI_Weapon_DESword</defName>
 		<label>Poison shuttle【Second-rate】</label>
@@ -172,7 +172,7 @@
 				<abilityDef>RI_Ability_DESword</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>剧毒飞刃</chargeNoun>
+				<chargeNoun>Deadly Poison Flying Blade</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -191,7 +191,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--青玉锤-->
+	<!--Nephrite Jade Hammer-->
 	<ThingDef ParentName="RI_SecondWeapon_Blunt_Base">
 		<defName>RI_Weapon_CyanogenJadeHammer</defName>
 		<label>Nephrite jade hammer【Second-rate】</label>
@@ -208,7 +208,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>摧破</label>
+				<label>Shattering Strike</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -224,7 +224,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>摧破</label>
+				<label>Shattering Strike</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -255,7 +255,7 @@
 				<abilityDef>RI_Weapon_CyanogenJadeSword_Ability</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>青玉摧破</chargeNoun>
+				<chargeNoun>Nephrite Jade Shattering</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -274,7 +274,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--风魔刀-->
+	<!--Wind Demon Blade-->
 	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
 		<defName>RI_Weapons_WindDemonBlade</defName>
 		<label>Wind demon blade【Second-rate】</label>
@@ -290,7 +290,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>刀刃</label>
+				<label>Blade Strike</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -307,7 +307,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>刀背</label>
+				<label>Blade-Back Strike</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -338,7 +338,7 @@
 				<abilityDef>RI_DemonWind</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>地煞狂风</chargeNoun>
+				<chargeNoun>Earth Demon Storm</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>110</baseReloadTicks>
@@ -358,7 +358,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--雷王枪-->
+	<!--Thunder Lord Lance-->
 	<ThingDef Class="RI_Starch.RI_ThingDef.RI_ThunderLordLance" ParentName="RI_SecondWeapon_Sharp_Base">
 		<defName>RI_Weapon_ThunderLordLance</defName>
 		<label>Thunder lord lance【Second-rate】</label>
@@ -379,7 +379,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>枪头</label>
+				<label>Spearhead Strike</label>
 				<capacities>
 					<li>RI_Stab_ThunderLordLance</li>
 				</capacities>
@@ -395,7 +395,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>枪杆</label>
+				<label>Shaft Strike</label>
 				<capacities>
 					<li>RI_Stab_ThunderLordLance</li>
 				</capacities>
@@ -418,7 +418,7 @@
 				<abilityDef>RI_ThunderLordLance_lightningStrike</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>卿云迅雷</chargeNoun>
+				<chargeNoun>Swift Thunder</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>
@@ -437,7 +437,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--鼠须剑-->
+	<!--Rat Whisker Sword-->
 	<ThingDef ParentName="RI_SecondWeapon_Sharp_Base">
 		<defName>RI_Weapon_RatWhiskerSword</defName>
 		<label>Rat whisker sword【Second-rate】</label>
@@ -453,7 +453,7 @@
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tools>
 			<li>
-				<label>剑刃</label>
+				<label>Sword Edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -470,7 +470,7 @@
 				</extraMeleeDamages>
 			</li>
 			<li>
-				<label>剑尖</label>
+				<label>Sword Tip</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -500,7 +500,7 @@
 				<abilityDef>RI_RatWhiskerSword</abilityDef>
 				<maxCharges>9</maxCharges>
 				<soundReload>Standard_Reload</soundReload>
-				<chargeNoun>势如破竹</chargeNoun>
+				<chargeNoun>Overwhelming Force</chargeNoun>
 				<ammoDef>RI_Resource_SpiritualCrystal</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>100</baseReloadTicks>

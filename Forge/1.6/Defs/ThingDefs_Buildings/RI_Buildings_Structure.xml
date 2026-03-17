@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=========================古修门=============================-->
+	<!--Ancient Cultivator Sect-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_AncientDoor</defName>

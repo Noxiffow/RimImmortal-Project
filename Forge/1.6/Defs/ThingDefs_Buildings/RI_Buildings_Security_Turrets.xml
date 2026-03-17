@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============== “鹤鸣”连射弩炮 ===============-->
+	<!--"Crane-Song" Rapid-Fire Crossbow Cannon-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_SmallCrossbowTurret</defName>
@@ -78,7 +78,7 @@
 		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
-		<!--成本-->
+		<!--Cost-->
 		<costList>
 			<Steel>150</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
@@ -103,7 +103,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--鹤鸣炮台子弹-->
+	<!--Crane-Song Turret Bullet-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Bullet_SmallCrossbowTurret</defName>
 		<label>Light bullet</label>
@@ -121,7 +121,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--鹤鸣炮台-->
+	<!--Crane-Song Turret-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_SmallCrossbowTurrent</defName>
 		<label>"Crane Cry" auto-turret gun</label>
@@ -157,7 +157,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--=============== “鲸吞”防卫炮 ===============-->
+	<!--"Leviathan" Defense Cannon-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_SmallShotgunTurret</defName>
@@ -234,7 +234,7 @@
 		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
-		<!--成本-->
+		<!--Cost-->
 		<costList>
 			<Steel>250</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
@@ -258,7 +258,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--鲸吞炮台子弹-->
+	<!--Leviathan Turret Bullet-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Bullet_SmallShotgunTurret</defName>
 		<label>Light bullet</label>
@@ -277,7 +277,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--鲸吞炮台-->
+	<!--Leviathan Turret-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_SmallShotgunTurret</defName>
 		<label>"Whale Gulp" auto-turret gun</label>
@@ -313,7 +313,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--=============== “怒蛟”狙击炮 ===============-->
+	<!--"Angry Dragon" Sniper Cannon-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_BigSniperTurrent</defName>
 		<label>"Flood Dragon" sniper turret</label>
@@ -366,7 +366,7 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
-		<!--成本-->
+		<!--Cost-->
 		<costList>
 			<Steel>350</Steel>
 			<Plasteel>20</Plasteel>
@@ -381,7 +381,7 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<!--子弹消耗-->
+			<!--Ammunition consumption-->
 			<li Class="CompProperties_Refuelable">
 				<fuelLabel>Shots until barrel change</fuelLabel>
 				<fuelGizmoLabel>Crystal durability</fuelGizmoLabel>
@@ -413,7 +413,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--怒蛟炮台子弹-->
+	<!--Angry Dragon Turret Bullet-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_Bullet_BigSniperTurrent</defName>
 		<label>Light bullet</label>
@@ -431,7 +431,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<!--怒蛟炮台-->
+	<!--Angry Dragon Turret-->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RI_Gun_BigSniperTurrent</defName>
 		<label>"Flood Dragon" turrent</label>

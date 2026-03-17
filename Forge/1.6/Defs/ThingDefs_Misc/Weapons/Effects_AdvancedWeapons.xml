@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!--====破阵斧鸣  需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck====-->
+	<!--"Formation-Breaking Axe-Cry" — use RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
 	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
 		<defName>RI_Fleck_AxeExcitation</defName>
 		<graphicData>
@@ -18,7 +18,7 @@
 		<VelocityAngle>0~360</VelocityAngle>
 	</FleckDef>
 
-	<!--====势如破竹  需使用RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck====-->
+	<!--"Overwhelming Force" — use RI_Starch.RI_FLecks.RI_FleckMaker.ThrowRotationFleck-->
 	<FleckDef Class="RI_Starch.RI_ThingDef.RI_FleckDef" ParentName="FleckBase_Thrown">
 		<defName>RI_Fleck_RatWhiskerSword</defName>
 		<graphicData>
@@ -34,7 +34,7 @@
 		<VelocityAngle>0~360</VelocityAngle>
 	</FleckDef>
 
-	<!--雷电主干-->
+	<!--Thunder Lightning Trunk-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Lighting</defName>
 		<graphicData>
@@ -48,7 +48,7 @@
 		<growthRate>-0.4</growthRate>
 	</FleckDef>
 
-	<!--雷电主干_差分1-->
+	<!--Thunder Lightning Trunk Variant 1-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Lighting_1</defName>
 		<graphicData>
@@ -62,7 +62,7 @@
 		<growthRate>-0.4</growthRate>
 	</FleckDef>
 
-	<!--雷电主干_差分2-->
+	<!--Thunder Lightning Trunk Variant 2-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Lighting_2</defName>
 		<graphicData>
@@ -76,7 +76,7 @@
 		<growthRate>-0.4</growthRate>
 	</FleckDef>
 
-	<!--雷电短-->
+	<!--Short Thunder Lightning-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Lighting1</defName>
 		<graphicData>
@@ -89,7 +89,7 @@
 		<landSound>Explosion_EMP</landSound>
 		<growthRate>-0.4</growthRate>
 	</FleckDef>
-	<!--雷电短_差分1-->
+	<!--Short Thunder Lightning Variant 1-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Lighting1_1</defName>
 		<graphicData>
@@ -103,7 +103,7 @@
 		<growthRate>-0.4</growthRate>
 	</FleckDef>
 
-	<!--雷电命中点-->
+	<!--Thunder Lightning Hit Point-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Hit</defName>
 		<graphicData>
@@ -116,8 +116,8 @@
 		<fadeOutTime>0.45</fadeOutTime>
 	</FleckDef>
 
-	<!--================================持续闪电================================-->
-	<!--雷电主干-->
+	<!--Continuous Lightning-->
+	<!--Thunder Lightning Trunk-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Moment</defName>
 		<graphicData>
@@ -128,7 +128,7 @@
 		<solidTime>0.01</solidTime>
 	</FleckDef>
 
-	<!--雷电主干_差分1-->
+	<!--Thunder Lightning Trunk Variant 1-->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>RI_ThunderLordLance_Moment1</defName>
 		<graphicData>

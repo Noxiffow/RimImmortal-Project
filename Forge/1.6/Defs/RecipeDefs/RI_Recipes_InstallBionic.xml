@@ -27,7 +27,7 @@
 		<displayPriority>0</displayPriority>
 	</RecipeDef>
 
-	<!--===============================庚钢===============================-->
+	<!--Geng-steel-->
 
 	<RecipeDef ParentName="RI_MakeBionicBase">
 		<defName>Make_BlackSteelArm</defName>
@@ -249,7 +249,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--===============================翠玉===============================-->
+	<!--Jade (Green)-->
 
 	<RecipeDef ParentName="RI_MakeBionicBase">
 		<defName>Make_JadeFakeHand</defName>
@@ -378,7 +378,7 @@
 		</products>
 	</RecipeDef>
 
-	<!--五行器官-->
+	<!--Five Elements Organs-->
 
 	<RecipeDef ParentName="RI_MakeBionicBase">
 		<defName>Make_EarthBionicStomach</defName>

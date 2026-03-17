@@ -3,7 +3,7 @@
 <Defs>
     <ThingDef Class="RI_Starch.RI_ThingDef.RI_DEV_fleck">
 		<defName>RI_DEV_fleck</defName>
-		<label>仙路特效测试器</label>
+		<label>Immortal Path Effects Tester</label>
 		    <category>Item</category>
 		 <drawerType>MapMeshOnly</drawerType>
 		<thingClass>RI_Starch.RI_ThingClass.RI_DEV_fleck</thingClass>

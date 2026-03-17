@@ -41,7 +41,7 @@
 
 	<ThingDef Class="RI_Starch.RI_ThingDef.RI_BesselFleckBullet" ParentName="BaseBullet">
 		<defName>RI_Projectile_GlassPearlUmbrella</defName>
-		<label>琉璃珠</label>
+		<label>Glass Pearl</label>
 		<thingClass>RI_Starch.RI_Projectile.RI_BesselFleckBullet_Cure</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/RI_GlassPearlUmbrella</texPath>

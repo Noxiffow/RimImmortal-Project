@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============== 石矩炮 ===============-->
+	<!--Stone Cube Cannon-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Turret_StoneTower</defName>
@@ -115,7 +115,7 @@
 		</verbs>
 	</ThingDef>
 
-	<!--=============== 锈弩车 ===============-->
+	<!--Rusted Crossbow Cart-->
 
 	<ThingDef ParentName="BuildingBase" Name="RI_AutocannonTurret" Abstract="True">
 		<thingClass>Building_TurretGun</thingClass>

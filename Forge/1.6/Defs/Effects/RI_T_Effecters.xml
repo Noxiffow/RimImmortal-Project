@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!--=====================内丹法门技能特效===========================-->
+	<!--Internal Elixir Method Skill Effects-->
 
-	<!--技能选中特效——炼器——匠心-->
+	<!--Skill selection effect — Forging — Artisan's Heart-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_WorkFocus_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -17,7 +17,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——炼器——修复-->
+	<!--Skill selection effect — Forging — Repair-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_Repair_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -32,7 +32,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——炼器——铳铁再造-->
+	<!--Skill selection effect — Forging — Gun-Iron Reforge-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_TurretAssemble_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -47,7 +47,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——炼器——工匠激励-->
+	<!--Skill selection effect — Forging — Artisan's Inspiration-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_WorkInsentive_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -62,7 +62,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——炼器——神机-->
+	<!--Skill selection effect — Forging — Divine Machinery-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_MaterialDecompositione_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -77,7 +77,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能选中特效——炼器——分解-->
+	<!--Skill selection effect — Forging — Decompose-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_ComponentRefine_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -92,7 +92,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能释放特效——炼器——铳铁-->
+	<!--Skill trigger effect — Forging — Gun-Iron-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_TurretAssembleActive_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -107,7 +107,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--技能释放特效——炼器——修复-->
+	<!--Skill trigger effect — Forging — Repair-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Ability_RepairActive_Mote</defName>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
@@ -122,7 +122,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<!--武器特效——古修枪-->
+	<!--Weapon effect — ancient cultivator rifle-->
 	<ThingDef ParentName="MoteBase">
 		<defName>RI_Mote_AncientGun</defName>
 		<graphicData>

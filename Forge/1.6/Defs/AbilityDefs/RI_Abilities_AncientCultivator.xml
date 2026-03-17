@@ -2,18 +2,18 @@
 
 <Defs>
 
-	<!--==========测试法门==========-->
-	<!--1凝气境界——Noviciate rank测试-->
-	<!--2固基境界——Foundation rank测试-->
-	<!--3化丹境界——Core formation rank测试-->
-	<!--4结丹境界——Core coagulation rank测试-->
-	<!--5灵丹境界——Core consummation rank测试-->
-	<!--6化神境界——Spirit constraint rank测试-->
-	<!--7元婴境界——Primordial spirit baby rank测试-->
-	<!--8大成境界——Primordial spirit maturity rank测试-->
-	<!--9合体境界——Primordial spirit combine rank测试-->
+	<!--Test Cultivation Method-->
+	<!--Noviciate Rank 1 — test-->
+	<!--Foundation Rank 2 — test-->
+	<!--Core Formation Rank 3 — test-->
+	<!--Core Coagulation Rank 4 — test-->
+	<!--Core Consummation Rank 5 — test-->
+	<!--Spirit Constraint Rank 6 — test-->
+	<!--Primordial Spirit Baby Rank 7 — test-->
+	<!--Primordial Spirit Maturity Rank 8 — test-->
+	<!--Primordial Spirit Combine Rank 9 — test-->
 
-	<!--古修功法-->
+	<!--Ancient Cultivator Technique-->
 	<AbilityDef  ParentName="RI_PsycastBase" >
 		<defName>RI_Ability_AncientSkill</defName>
 		<label>AncientSkill</label>
@@ -52,12 +52,12 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
-				<!--选中特效-->
+				<!--Selection visual effect-->
 				<moteCastDef>RI_Ability_Asura_Mote</moteCastDef>
-				<!--蹦出周天功法几个字-->
+				<!--Pop-up circulation technique text-->
 			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">
-				<!--触发特效-->
+				<!--Trigger visual effect-->
 				<scale>2</scale>
 				<fleckDefs>
 					<li>RI_BloodBoilAsura</li>
@@ -65,9 +65,9 @@
 				</fleckDefs>
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties__ReduceEnergy">
 				<rEnergy>-80</rEnergy>

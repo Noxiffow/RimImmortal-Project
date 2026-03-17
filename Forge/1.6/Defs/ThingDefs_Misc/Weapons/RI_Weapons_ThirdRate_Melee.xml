@@ -57,7 +57,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--拳击手套-->
+	<!--Boxing Gloves-->
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>RI_Weapon_BoxingGloves</defName>
 		<label>Boxing gloves</label>
@@ -115,7 +115,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--三品玄剑-->
+	<!--Grade 3 Mystic Sword-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_BasicSword</defName>
 		<label>Mysterious sword【Third-rate】</label>
@@ -126,7 +126,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
 		</costList>
@@ -155,7 +155,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Sword</li>
 			<li>RI_Tag_MagicalWeapon_Third</li>
@@ -164,7 +164,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>point</label>
@@ -192,7 +192,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--开山斧-->
+	<!--Mountain-Cleaving Axe-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_BasicAxe</defName>
 		<label>Splitting axe【Third-rate】</label>
@@ -203,7 +203,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Stony</li>
@@ -232,7 +232,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Third</li>
 			<li>RI_Tag_MagicalWeapon</li>
@@ -240,7 +240,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>head</label>
@@ -261,7 +261,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--三品追风刀-->
+	<!--Grade 3 Wind-Chasing Blade-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_BasicSaber</defName>
 		<label>Chasing wind blade【Third-rate】</label>
@@ -273,7 +273,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
 		</costList>
@@ -302,7 +302,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Sword</li>
 			<li>RI_Tag_MagicalWeapon_Third</li>
@@ -311,7 +311,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>edge</label>
@@ -331,7 +331,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--龙岩锤-->
+	<!--Dragon Rock Hammer-->
 	<ThingDef ParentName="RI_MagicalWeapon_Blunt_Base">
 		<defName>RI_Weapon_BasicHammer</defName>
 		<label>Dragon rock mace【Third-rate】</label>
@@ -372,7 +372,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Third</li>
 			<li>RI_Tag_MagicalWeapon</li>
@@ -380,7 +380,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>head</label>
@@ -402,7 +402,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--穿心矛-->
+	<!--Heart-Piercing Spear-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_BasicSpear</defName>
 		<label>Heart piercing spear【Third-rate】</label>
@@ -413,7 +413,7 @@
 			<drawSize>2.5</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Stony</li>
@@ -442,7 +442,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Sword</li>
 			<li>RI_Tag_MagicalWeapon_Third</li>
@@ -451,7 +451,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>point</label>
@@ -472,7 +472,7 @@
 		</tools>
 	</ThingDef>
 
-	<!--拳刺-->
+	<!--Punch Spike-->
 	<ThingDef ParentName="RI_MagicalWeapon_Sharp_Base">
 		<defName>RI_Weapon_ThrumboHornPushDagger</defName>
 		<label>Thrumbo horn push-dagger【Third-rate】</label>
@@ -483,7 +483,7 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Stony</li>
@@ -512,7 +512,7 @@
 			<displayPriority>410</displayPriority>
 			<researchPrerequisite>RI_Research_CultivatorWeapon</researchPrerequisite>
 		</recipeMaker>
-		<!--标签-->
+		<!--Tag-->
 		<weaponTags>
 			<li>RI_Tag_MagicalWeapon_Boxing</li>
 			<li>RI_Tag_MagicalWeapon_Third</li>
@@ -521,7 +521,7 @@
 		<tradeTags>
 			<li>RI_ThirdWeapon_Tag</li>
 		</tradeTags>
-		<!--武器攻击效果-->
+		<!--Weapon attack effect-->
 		<tools>
 			<li>
 				<label>point</label>

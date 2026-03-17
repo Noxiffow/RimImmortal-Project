@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--百炼铁衣-->
+	<!--Hundred-Forged Iron Armor-->
 	<ThingDef ParentName="RI_BasicApparel_Base">
 		<defName>RI_Apparel_SoftIronJacket</defName>
 		<label>Iron cloak【Third-rate】</label>
@@ -10,7 +10,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/IronCoat/RI_Apparel_SoftIronJacket</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -52,18 +52,18 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<MoveSpeed>0.05</MoveSpeed>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--八卦衣-->
+	<!--Bagua Robe-->
 	<ThingDef ParentName="RI_ApparelNostuffCategories_Base">
 		<defName>RI_Apparel_BaGuaCoat</defName>
 		<label>BaGua robe【Second-rate】</label>
@@ -72,7 +72,7 @@
 			<texPath>Things/Pawn/Humanlike/Apparel/DemonSlayer/RI_Apparel_BaGuaCoat</texPath>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Cloth>100</Cloth>
 			<RI_Resource_SpiritualCrystal>5</RI_Resource_SpiritualCrystal>
@@ -111,19 +111,19 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<ResearchSpeed>0.3</ResearchSpeed>
 			<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.3</EntityStudyRate>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--古修盔甲-->
+	<!--Ancient Cultivator Armor-->
 	<ThingDef ParentName="RI_BestArmor_NostuffCategories_Base">
 		<defName>RI_Apparel_AncientCultivatorArmor</defName>
 		<label>Ancient cultivator armor【Second-rate】</label>
@@ -161,17 +161,17 @@
 				<li>RI_AncientCultivatorArmor</li>
 			</tags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--鎏金天王甲-->
+	<!--Gilt Heavenly King Armor-->
 	<ThingDef ParentName="RI_ArmorNostuffCategories_Base">
 		<defName>RI_Apparel_GoldBestArmor</defName>
 		<label>Gilded general armor【Second-rate】</label>
@@ -181,7 +181,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Gold>10</Gold>
 			<Plasteel>100</Plasteel>
@@ -230,7 +230,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
 			<PainShockThreshold>0.1</PainShockThreshold>
@@ -239,14 +239,14 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--精铁虎卫甲-->
+	<!--Refined Iron Tiger Guard Armor-->
 	<ThingDef ParentName="RI_ArmorNostuffCategories_Base">
 		<defName>RI_Apparel_TigerGuardArmor</defName>
 		<label>Tiger guard armor【Second-rate】</label>
@@ -256,7 +256,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
-		<!--原料-->
+		<!--Raw Materials-->
 		<costList>
 			<Steel>300</Steel>
 			<RI_Resource_BlackSteel>10</RI_Resource_BlackSteel>
@@ -304,12 +304,12 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!--特殊效果-->
+		<!--Special Effect-->
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<PainShockThreshold>0.1</PainShockThreshold>
 		</equippedStatOffsets>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_SecondRateArmor_Tag</li>
 			<li>RI_AllWeapon_AllArmor_Tag</li>

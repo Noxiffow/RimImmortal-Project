@@ -17,6 +17,6 @@
   
     <ToolCapacityDef>
     <defName>RI_Stab_DragonPatternStick</defName>
-    <label>棍击</label>
+    <label>Staff Strike</label>
   </ToolCapacityDef>
 </Defs>

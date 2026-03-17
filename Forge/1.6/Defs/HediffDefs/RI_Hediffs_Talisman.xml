@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=========生存类法宝前置=========-->
+	<!--Survival-type talisman prerequisite-->
 	<HediffDef Name="RI_TalismanCarry_Base" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			<!--脱下法宝消失-->
+			<!--Talisman disappears when unequipped-->
 			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
-			<!--死亡后消失-->
+			<!--Disappears on death-->
 			<li Class="HediffCompProperties_DisappearsOnDeath" />
 		</comps>
 		<defaultLabelColor>(0.45,0.78,0.56)</defaultLabelColor>
@@ -15,7 +15,7 @@
 		<isBad>false</isBad>
 	</HediffDef>
 
-	<!--如意庇护-->
+	<!--Ruyi Protection-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_JadeRuyi</defName>
 		<label>Ruyi protection</label>
@@ -29,7 +29,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--毒铃庇护-->
+	<!--Toxic Bell Protection-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_ToxicBell</defName>
 		<label>Toxic protection</label>
@@ -44,7 +44,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--令牌熏香-->
+	<!--Token Incense-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_SandalwoodToken</defName>
 		<label>Wood incense</label>
@@ -59,7 +59,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--速之牙-->
+	<!--Speed Fang-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_TuskPendant</defName>
 		<label>Elephant king speed</label>
@@ -77,7 +77,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--避火-->
+	<!--Fire Immunity-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_Firefighter</defName>
 		<label>Flame shelter</label>
@@ -92,7 +92,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--青囊妙药-->
+	<!--Herb Pouch Medicine-->
 	<HediffDef ParentName="RI_TalismanCarry_Base">
 		<defName>RI_Talisman_GreenGourd</defName>
 		<label>Elixir of green gourd</label>
@@ -109,7 +109,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--铜钱护体-->
+	<!--Copper Coin Protection-->
 	<HediffDef>
 		<defName>RI_ShieldHediff_CoinShield</defName>
 		<label>Coin shield</label>
@@ -118,41 +118,41 @@
 		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
 		<isBad>false</isBad>
 		<comps>
-			<!--一段时间后消失-->
+			<!--Disappears after a period of time-->
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 				<disappearsAfterTicks>6000~8000</disappearsAfterTicks>
 			</li>
-			<!--死亡后消失-->
+			<!--Disappears on death-->
 			<li Class="HediffCompProperties_DisappearsOnDeath" />
-			<!--护盾comp-->
+			<!--Shield comp-->
 			<li Class="WhoXiuXian.Shield.HediffCompProperties_RIShield">
 				<compClass>WhoXiuXian.Shield.HediffComp_RIShield</compClass>
 				<bubbleMatPath>Things/Mote/Shield/RI_ShieldHediff_CoinShield</bubbleMatPath>
 				<hitSound/>
-				<!--受击音效-->
+				<!--Hit Sound Effect-->
 				<hitFleck/>
-				<!--受击fleck-->
+				<!--Hit Fleck-->
 				<brokenSound/>
-				<!--破盾音效-->
+				<!--Shield-Break Sound-->
 				<brokenFleck/>
-				<!--破盾fleck-->
+				<!--Shield-Break Fleck-->
 				<baseEnergy>70</baseEnergy>
-				<!--最大盾容-->
+				<!--Maximum shield capacity-->
 				<energyLoosePerDamage>0.5</energyLoosePerDamage>
 				<keepDisplaying/>
-				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
-				<gizmoLabel>铜钱护体</gizmoLabel>
-				<gizmoTip>灵气护盾容量</gizmoTip>
+				<!--Whether to always draw the shield bubble; false = only when drafted (default false)-->
+				<gizmoLabel>Copper Coin Protection</gizmoLabel>
+				<gizmoTip>Qi shield capacity</gizmoTip>
 				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
 				<drawBubbleSize>1.6</drawBubbleSize>
 				<rotateRandonly>false</rotateRandonly>
-				<!--材质随机旋转-->
+				<!--Material random rotation-->
 			</li>
 		</comps>
 	</HediffDef>
 
-	<!--宝塔护盾-->
+	<!--Pagoda Shield-->
 	<HediffDef>
 		<defName>RI_ShieldHediff_PagodaShield</defName>
 		<label>Pagoda shield</label>
@@ -161,36 +161,36 @@
 		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
 		<isBad>false</isBad>
 		<comps>
-			<!--一段时间后消失-->
+			<!--Disappears after a period of time-->
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 				<disappearsAfterTicks>6000~8000</disappearsAfterTicks>
 			</li>
-			<!--死亡后消失-->
+			<!--Disappears on death-->
 			<li Class="HediffCompProperties_DisappearsOnDeath" />
-			<!--护盾comp-->
+			<!--Shield comp-->
 			<li Class="WhoXiuXian.Shield.HediffCompProperties_RIShield">
 				<compClass>WhoXiuXian.Shield.HediffComp_RIShield</compClass>
 				<bubbleMatPath>Things/Mote/Shield/RI_ShieldHediff_PagodaShield</bubbleMatPath>
 				<hitSound/>
-				<!--受击音效-->
+				<!--Hit Sound Effect-->
 				<hitFleck/>
-				<!--受击fleck-->
+				<!--Hit Fleck-->
 				<brokenSound/>
-				<!--破盾音效-->
+				<!--Shield-Break Sound-->
 				<brokenFleck/>
-				<!--破盾fleck-->
+				<!--Shield-Break Fleck-->
 				<baseEnergy>500</baseEnergy>
-				<!--最大盾容-->
+				<!--Maximum shield capacity-->
 				<energyLoosePerDamage>0.1</energyLoosePerDamage>
 				<keepDisplaying/>
-				<!--是否一直绘制护盾泡泡，false则只在征召绘制，默认为false-->
-				<gizmoLabel>铜钱护体</gizmoLabel>
-				<gizmoTip>灵气护盾容量</gizmoTip>
+				<!--Whether to always draw the shield bubble; false = only when drafted (default false)-->
+				<gizmoLabel>Copper Coin Protection</gizmoLabel>
+				<gizmoTip>Qi shield capacity</gizmoTip>
 				<ShaderTypeDef>MoteGlow</ShaderTypeDef>
 				<drawBubbleSize>1.6</drawBubbleSize>
 				<rotateRandonly>false</rotateRandonly>
-				<!--材质随机旋转-->
+				<!--Material random rotation-->
 			</li>
 		</comps>
 	</HediffDef>

@@ -66,13 +66,13 @@
 				<minSafeTemperature>-9999</minSafeTemperature>
 				<maxSafeTemperature>9999</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
-				<!--损坏的进程，不用管-->
+				<!--Damage progress — ignore-->
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="RI_GolemBoxBase">
-		<!--前置是爆炸陷阱的前置-->
+		<!--Prerequisite is the explosion trap prerequisite-->
 		<defName>RI_WoodenPuppetTrap</defName>
 		<label>Wooden golem box</label>
 		<description>Low-level wooden golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
@@ -86,9 +86,9 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>0.9</explosiveRadius>
-				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<!--Best not to change — transparent building generation is calculated by explosion grid-->
 				<explosiveDamageType>Extinguish</explosiveDamageType>
-				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<!--Extinguish explosion type — prevents explosion damage to golems; can be changed-->
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
 				<wickTicks>30</wickTicks>
 				<postExplosionSpawnThingDef>RI_WoodenPuppetEgg</postExplosionSpawnThingDef>
@@ -101,7 +101,7 @@
 			</li>
 			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
 				<researchProjectDef>RI_Research_Golem</researchProjectDef>
-				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+				<!--Required Props for trap to activate after unlocking tech; replace "Electricity" with the desired tech's defname-->
 			</li>
 		</comps>
 	</ThingDef>
@@ -112,14 +112,14 @@
 		<comps>
 			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
 				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
-				<!--需要0.00001天孵化-->
+				<!--Requires 0.00001 days to hatch-->
 				<hatcherPawn>RI_WoodenPuppet</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="RI_GolemBoxBase">
-		<!--前置是爆炸陷阱的前置-->
+		<!--Prerequisite is the explosion trap prerequisite-->
 		<defName>RI_StonyPuppetTrap</defName>
 		<label>Stony golem box</label>
 		<description>Low-level stony golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
@@ -136,9 +136,9 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>0.9</explosiveRadius>
-				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<!--Best not to change — transparent building generation is calculated by explosion grid-->
 				<explosiveDamageType>Extinguish</explosiveDamageType>
-				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<!--Extinguish explosion type — prevents explosion damage to golems; can be changed-->
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
 				<wickTicks>30</wickTicks>
 				<postExplosionSpawnThingDef>RI_StonyPuppetEgg</postExplosionSpawnThingDef>
@@ -151,7 +151,7 @@
 			</li>
 			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
 				<researchProjectDef>RI_Research_Golem</researchProjectDef>
-				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+				<!--Required Props for trap to activate after unlocking tech; replace "Electricity" with the desired tech's defname-->
 			</li>
 		</comps>
 	</ThingDef>
@@ -162,14 +162,14 @@
 		<comps>
 			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
 				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
-				<!--需要0.00001天孵化-->
+				<!--Requires 0.00001 days to hatch-->
 				<hatcherPawn>RI_StonyPuppet</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="RI_GolemBoxBase">
-		<!--前置是爆炸陷阱的前置-->
+		<!--Prerequisite is the explosion trap prerequisite-->
 		<defName>RI_SteelPuppetTrap</defName>
 		<label>Steel golem box</label>
 		<description>Low-level steel golems made of device core circuit and raw materials can only follow one rule, which is to attack all living creatures from birth.</description>
@@ -183,9 +183,9 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>0.9</explosiveRadius>
-				<!--这个最好别改，因为透明建筑的生成是按爆炸格子来计算的-->
+				<!--Best not to change — transparent building generation is calculated by explosion grid-->
 				<explosiveDamageType>Extinguish</explosiveDamageType>
-				<!--熄灭的爆炸类型，防止爆炸伤害傀儡，想改也可以-->
+				<!--Extinguish explosion type — prevents explosion damage to golems; can be changed-->
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
 				<wickTicks>30</wickTicks>
 				<postExplosionSpawnThingDef>RI_SteelPuppetEgg</postExplosionSpawnThingDef>
@@ -198,7 +198,7 @@
 			</li>
 			<li Class="RI_Puppet.CompProperties_TrapExplosiveStartWick">
 				<researchProjectDef>RI_Research_Golem</researchProjectDef>
-				<!--必须要的Props，让陷阱在解锁某科技之后可主动激活，如果想改成其他科技就用对应科技的defname替换“Electricity”就可以-->
+				<!--Required Props for trap to activate after unlocking tech; replace "Electricity" with the desired tech's defname-->
 			</li>
 		</comps>
 	</ThingDef>
@@ -209,13 +209,13 @@
 		<comps>
 			<li Class="RI_Puppet.CompProperties_RI_Hatcher">
 				<hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
-				<!--需要0.00001天孵化-->
+				<!--Requires 0.00001 days to hatch-->
 				<hatcherPawn>RI_SteelPuppet</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<!--只需要一个pawn且不希望被其他mod影响数量（有一些mod会擅自修改pawn的combatPower，说的就是你！Yayo ComBat！）用上面的方法，需要一次性生成多个pawn用下面的方法-->
+	<!--Only need one pawn and don't want other mods affecting the count (some mods modify pawn combatPower — looking at you, Yayo Combat!); use the above method; to spawn multiple pawns at once use the method below-->
 
 	<!--<ThingDef ParentName="BuildingBase" Name="RI_PuppetSpawnerBase" Abstract="True">
 		<thingClass>Building</thingClass>
@@ -257,8 +257,8 @@
 
   <ThingDef ParentName="RI_PuppetSpawnerBase">
 		<defName>RI_WoodenPuppetSpawner</defName>
-		<label>木制傀儡激活</label>
-		<description>木制傀儡激活</description>
+		<label>Wooden Golem Activation</label>
+		<description>Wooden Golem Activation</description>
 		<graphicData>
 			
 		</graphicData>

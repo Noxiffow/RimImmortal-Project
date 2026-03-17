@@ -64,7 +64,7 @@
 
 
 
-	<!--====================木制傀儡===================-->
+	<!--Wooden Golem-->
 
 
 	<ThingDef ParentName="BaseRI_Puppet">
@@ -151,7 +151,7 @@
 		</weaponTags>
 	</PawnKindDef>
 
-	<!--====================石制傀儡===================-->
+	<!--Stone Golem-->
 
 
 	<ThingDef ParentName="BaseRI_Puppet">
@@ -241,7 +241,7 @@
 	</PawnKindDef>
 
 
-	<!--====================铁制傀儡===================-->
+	<!--Steel Golem-->
 
 
 	<ThingDef ParentName="BaseRI_Puppet">
@@ -330,8 +330,8 @@
 		</weaponTags>
 	</PawnKindDef>
 
-	<!--================古修傀儡================-->
-	<!--出现在古修遗迹的傀儡，无法被玩家制作-->
+	<!--Ancient Cultivator Golem-->
+	<!--Golems appearing in ancient ruins; cannot be crafted by players-->
 
 	<ThingDef ParentName="BaseRI_Puppet">
 		<defName>RI_Mech_AncientPuppetA</defName>

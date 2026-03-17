@@ -10,7 +10,7 @@
 		<alwaysShowSeverity>false</alwaysShowSeverity>
 	</HediffDef>
 
-	<!--刺痛-->
+	<!--Stabbing Pain-->
 	<HediffDef ParentName="RI_DamageHediff_Base">
 		<defName>RI_Hediff_IronThrowingBall</defName>
 		<label>Stabbing pain</label>
@@ -32,7 +32,7 @@
 		</stages>
 	</HediffDef>
 
-	<!--风沙冲击-->
+	<!--Sand Shock-->
 	<HediffDef ParentName="RI_DamageHediff_Base">
 		<defName>RI_Talisman_PolyStoneTower_Hediff</defName>
 		<label>Sand shock</label>
@@ -55,7 +55,7 @@
 		</comps>
 	</HediffDef>
 
-	<!--捆绑-->
+	<!--Binding-->
 	<HediffDef ParentName="RI_DamageHediff_Base">
 		<defName>RI_Talisman_BingingImmortalRopeHediff</defName>
 		<label>Binding</label>

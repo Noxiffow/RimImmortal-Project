@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!--苍血竹武器前置-->
+	<!--Azure-Blood Bamboo Weapon Prerequisite-->
 	<ThingDef ParentName="BaseGunWithQuality" Name="RI_WeaponBase_JadeBamboo" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -40,7 +40,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!--苍血竹剑-->
+	<!--Azure-Blood Bamboo Sword-->
 	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_JadeBambooSword</defName>
 		<label>Jade bamboo sword【Third-rate】</label>
@@ -94,7 +94,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--额外的tag，给剑狂用-->
+		<!--Extra tag for sword fanatics-->
 		<weaponTags>
 			<li>RI_MagicalWeapon_Sword</li>
 		</weaponTags>
@@ -117,7 +117,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--苍血竹刀-->
+	<!--Azure-Blood Bamboo Knife-->
 	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_JadeBambooBlade</defName>
 		<label>Jade bamboo blade【Third-rate】</label>
@@ -193,7 +193,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--苍血竹飞刀-->
+	<!--Azure-Blood Bamboo Throwing Knife-->
 	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_JadeBambooFlyKnife</defName>
 		<label>Jade bamboo throw-knife【Third-rate】</label>
@@ -266,7 +266,7 @@
 		</projectile>
 	</ThingDef>
 
-	<!--苍血竹枪-->
+	<!--Azure-Blood Bamboo Spear-->
 	<ThingDef ParentName="RI_WeaponBase_JadeBamboo" MayRequire="RI.RimImmortal.Living">
 		<defName>RI_Weapon_JadeBambooSpear</defName>
 		<label>Jade bamboo spear【Third-rate】</label>

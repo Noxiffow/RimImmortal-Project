@@ -218,7 +218,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--邪不胜正！-->
+	<!--Evil cannot overcome righteousness!-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
 		<defName>RI_Weapon_LightSword</defName>
 		<label>Light Sword</label>

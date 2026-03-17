@@ -79,13 +79,13 @@
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--烛龙甲-->
+	<!--Candle Dragon Armor-->
 
 	<ThingDef ParentName="RI_ApparelArmorPowerBase">
 		<defName>RI_Apparel_FireDragonArmor</defName>
@@ -121,7 +121,7 @@
 		<recipeMaker>
 			<displayPriority>155</displayPriority>
 		</recipeMaker>
-			<!--贸易标签-->
+			<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
@@ -172,7 +172,7 @@
 		</comps>
 	</ThingDef>-->
 
-	<!--相柳甲-->
+	<!--Xiangliu Armor-->
 	<ThingDef ParentName="RI_BestArmor_NostuffCategories_Base">
 		<defName>RI_Apparel_PoisonPythonArmor</defName>
 		<label>Viper poison armor【First-rate】</label>
@@ -210,7 +210,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
-			<!--贸易标签-->
+			<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>

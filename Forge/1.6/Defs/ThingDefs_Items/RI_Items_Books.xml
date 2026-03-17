@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!-- ================================== 炼器法门书 ====================================-->
+	<!--Forge Cultivation Method Book-->
 	<ThingDef ParentName="RI_BookBase">
 		<defName>RI_BookD</defName>
 		<label>Initial approach book-Forge</label>
@@ -39,7 +39,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--古修功法书-->
+	<!--Ancient Cultivator Technique Book-->
 	<!--An Ancient book made up of Qi, titled "RUA！！！"-->
 	<ThingDef ParentName="RI_BookBase_Common">
 		<defName>RI_BookAbility_RI_AncientCultivatorPlayer</defName>

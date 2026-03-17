@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!-- 这是个模板，所有的抄书逻辑都是根据这个生成的 -->
-	<!-- 别手贱，如果没有ingredients会报错 -->
+	<!--This is a template; all book-copying logic is generated from this-->
+	<!--Don't touch — it will error if there are no ingredients-->
 	<RecipeDef Name="RI_RecipeBase_CopyBook">
 		<defName>RI_RecipeBase_CopyBook</defName>
 		<workSpeedStat>ResearchSpeed</workSpeedStat>

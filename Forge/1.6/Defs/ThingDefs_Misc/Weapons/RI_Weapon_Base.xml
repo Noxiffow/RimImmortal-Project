@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!--炼器-兵器前置-高级锐器-->
+	<!--Forge weapon prerequisite — advanced sharp weapon-->
 	<ThingDef Name="RI_MagicalWeapon_Sharp_Base" ParentName="BaseWeapon" Abstract="True">
 		<smeltable>false</smeltable>
 		<burnableByRecipe>true</burnableByRecipe>
@@ -25,7 +25,7 @@
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<relicChance>1</relicChance>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
@@ -42,7 +42,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!--炼器-兵器前置-高级钝器-->
+	<!--Forge weapon prerequisite — advanced blunt weapon-->
 	<ThingDef Name="RI_MagicalWeapon_Blunt_Base" ParentName="BaseWeapon" Abstract="True">
 		<smeltable>false</smeltable>
 		<burnableByRecipe>true</burnableByRecipe>
@@ -66,7 +66,7 @@
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
 		<relicChance>1</relicChance>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
@@ -83,7 +83,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--炼器-兵器前置-远程武器-->
+	<!--Forge weapon prerequisite — ranged weapon-->
 	<ThingDef Name="RI_MagicalWeapon_Range_Base" Abstract="True" ParentName="BaseWeapon">
 		<techLevel>Industrial</techLevel>
 		<smeltable>false</smeltable>
@@ -107,7 +107,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
@@ -124,7 +124,7 @@
 		</comps>
 	</ThingDef>
 
-	<!--占位投射物-->
+	<!--Placeholder Projectile-->
 	<ThingDef ParentName="BaseBullet">
 		<defName>RI_BlankProjectile</defName>
 		<label>Blank</label>

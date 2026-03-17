@@ -1,9 +1,9 @@
 <Defs>
 
-	<!--电气石发电机-->
+	<!--Tourmaline Generator-->
 	<!--<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_ElecCrystalPoweredGenerator</defName>
-		<label>电气石发电机</label>
+		<label>Tourmaline Generator</label>
 		<description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -93,7 +93,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>-->
 
-	<!--古修聚元鼎-->
+	<!--Ancient Cultivator Energy-Gathering Cauldron-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RI_Building_InfiniteCrystal</defName>
 		<label>Ancient-cultivator Juyuan Ding</label>
@@ -153,7 +153,7 @@
 		<tradeTags>
 			<li>ExoticBuilding</li>
 		</tradeTags>
-		<!--不能放在屋顶下-->
+		<!--Cannot be placed under a roof-->
 		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -164,7 +164,7 @@
 				<basePowerConsumption>500</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<!--生成产物-->
+			<!--Generated product-->
 			<li Class="CompProperties_Spawner">
 				<requiresPower>true</requiresPower>
 				<thingToSpawn>RI_Resource_SpiritualCrystal</thingToSpawn>

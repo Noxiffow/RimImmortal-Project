@@ -156,9 +156,9 @@
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCasting">
 			</li>
 			<li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteSinging">
-				<!--读条特效-->
+				<!--Cast visual effect-->
 				<moteCastDef>RI_Ability_PhysicalStrengthen_Singing</moteCastDef>
-				<!--光圈-->
+				<!--Halo effect-->
 			</li>
 			<!--li Class="WhoXiuXian.Abilities.CompProperties_SpawnMoteCast">
 				<moteCastDef>RI_Ability_InternalFunction_Mote</moteCastDef>
@@ -169,12 +169,12 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- 新的Flyer实体，对应dll里Verb的jumpFlyerDef -->
+	<!--New Flyer entity — corresponds to jumpFlyerDef in Verb in the DLL-->
 	<ThingDef ParentName="EtherealThingBase">
 		<defName>RI_CyanogenJadeSwordFlyer</defName>
-		<label>青玉摧破</label>
+		<label>Nephrite Jade Shatter</label>
 		<thingClass>RI_XXK.PawnRectilinearFlyer</thingClass>
-		<!-- 对应dll里thingClass ，如果改了Dll这个也要改-->
+		<!--Corresponds to thingClass in the DLL; must change if the DLL changes-->
 		<useHitPoints>false</useHitPoints>
 		<drawOffscreen>true</drawOffscreen>
 		<tickerType>Normal</tickerType>
@@ -184,7 +184,7 @@
 			<flightDurationMin>0.5</flightDurationMin>
 			<flightSpeed>48</flightSpeed>
 			<workerClass>PawnFlyerWorker</workerClass>
-			<!-- 对应原版里workerClass，想改也可以，没必要 -->
+			<!--Corresponds to workerClass in vanilla; can be changed but not necessary-->
 			<heightFactor>3</heightFactor>
 			<progressCurve>
 				<points>

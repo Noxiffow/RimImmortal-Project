@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--烛龙盔-->
+	<!--Candle Dragon Helmet-->
 	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
 		<defName>RI_Apparel_FireDragonHelmet</defName>
 		<label>Fire dragon helmet</label>
@@ -31,7 +31,7 @@
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FireDragonHelmet/RI_Apparel_FireDragonHelmet</wornGraphicPath>
 		</apparel>
 
-		<!--喷火技能-->
+		<!--Flamethrower skill-->
 		<verbs>
 			<li>
 				<label>Flame</label>
@@ -50,7 +50,7 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-				<!--喷火伤害-->
+				<!--Flamethrower damage-->
 				<meleeArmorPenetrationBase>3</meleeArmorPenetrationBase>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
@@ -67,13 +67,13 @@
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 			</li>
 		</comps>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
 	</ThingDef>
 
-	<!--相柳盔-->
+	<!--Xiangliu Helmet-->
 	<ThingDef ParentName="RI_BestMakeableHelmet_NostuffCategories_Base">
 		<defName>RI_Apparel_PoisonPythonHelmet</defName>
 		<label>Viper poison helmet【First-rate】</label>
@@ -110,7 +110,7 @@
 				<part>Torso</part>
 			</li>
 		</comps>
-		<!--贸易标签-->
+		<!--Trade Tag-->
 		<tradeTags>
 			<li>RI_AllWeapon_AllArmor_Tag</li>
 		</tradeTags>
